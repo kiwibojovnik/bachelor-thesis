@@ -21,7 +21,10 @@ def parse_results(results):
 
     for result in results:
         page = result['URL']
-        ip_address = get_ip_from_ping(str(result['PING Result']))
+        if str(result['PING Result']) is not "N/A":
+            ip_address = get_ip_from_ping(str(result['PING Result']))
+        else:
+            ip_address = "N/A"
 
         # Vytvoření kopie původního slovníku a odstranění položky 'URL'
         test_script = result.copy()

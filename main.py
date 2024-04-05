@@ -4,13 +4,14 @@ from tests import test_web_connection
 # from tests import test_middle_box
 # from tests import test_network_throttling
 from utils import save_to_JSON
+from utils import geolocation
 
 
 def main():
     # TODO:  Udělat pro každy vstup extra vystup
     urls_file = 'data/input_data/alexa_top_500_websites.csv'
     input_file = "alexa_top_500_websites.csv"
-    output_file = 'data/output_data/website_test_results'#+'_'+input_file+'.json'
+    output_file = 'data/output_data/website_test_results.json'#+'_'+input_file+'.json'
     output_content_folder = 'data/output_data/content_folder'
 
     with open(urls_file, 'r') as csvfile:

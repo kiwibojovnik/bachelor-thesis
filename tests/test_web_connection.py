@@ -4,22 +4,28 @@ import time
 import os
 import subprocess
 import re
+from timeout_decorator import timeout
 
-from utils import save_to_JSON
 
-
+@timeout(5)
 def ping_test(address):
     try:
+
         ping_response = subprocess.check_output(["ping", "-c", "1", address])
         ping_response_str = ping_response.decode("utf-8")
 
         ip_address_match = re.search(r'\((.*?)\)', ping_response_str)
         ip_address = ip_address_match.group(1) if ip_address_match else "N/A"
         return 'OK_(' + ip_address + ')' if "1 packets transmitted, 1 packets received" in ping_response_str else 'Fail'
+
+    except TimeoutError:
+        print("Ping test exceeded timeout of 5 seconds")
+        return "N/A"
     except Exception as e:
         return "N/A", str(e)
 
 
+@timeout(5)
 def perform_trace(address):
     try:
         # Run traceroute with the -I switch to determine the path to the destination server
@@ -31,20 +37,28 @@ def perform_trace(address):
 
         return last_hop
 
+    except TimeoutError:
+        print("Ping test exceeded timeout of 5 seconds")
+        return "N/A"
     except Exception as e:
         return "N/A", str(e)
 
 
+@timeout(5)
 def dns_lookup(website):
     try:
         # Can return more ip_addresses in the tuple
         ip_addresses = socket.gethostbyname_ex(website)[2]
         return ip_addresses
+    except TimeoutError:
+        print("Ping test exceeded timeout of 5 seconds")
+        return "N/A"
     except socket.gaierror:
         return "N/A", str(socket.gaierror)
 
 
 # TODO: opravit
+@timeout(5)
 def http_get_request(url):
     try:
         if is_url(url):
@@ -62,19 +76,27 @@ def http_get_request(url):
 
         response = get_url
         return response.status_code, len(response.content), response.headers, response.text
+    except TimeoutError:
+        print("Ping test exceeded timeout of 5 seconds")
+        return "N/A"
     except Exception as e:
         return "N/A", "N/A", "N/A", str(e)
 
 
 # Used to identify the resolver that is used to resolve domain names to IP addresses.
+@timeout(5)
 def resolver_identification():
     try:
         resolver_ip = socket.gethostbyname('whoami.akamai.com')
         return resolver_ip
+    except TimeoutError:
+        print("Ping test exceeded timeout of 5 seconds")
+        return "N/A"
     except socket.gaierror:
         return "N/A", str(socket.gaierror)
 
 
+@timeout(5)
 def tcp_connect(ip_address, port):
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
@@ -86,6 +108,9 @@ def tcp_connect(ip_address, port):
 
             sock.close()
             return response
+    except TimeoutError:
+        print("Ping test exceeded timeout of 5 seconds")
+        return "N/A"
     except Exception as e:
         return "N/A", str(e)
 
