@@ -21,7 +21,7 @@ def parse_results(results):
 
     for result in results:
         page = result['URL']
-        if str(result['PING Status']) is not "N/A":
+        if 'PING Status' in result and str(result['PING Status']) != "N/A":
             ip_address = result['PING IP']
         else:
             ip_address = "N/A"
