@@ -4,7 +4,10 @@ import time
 import os
 import subprocess
 import re
+
+from scapy.layers.inet import TCP, IP
 from timeout_decorator import timeout
+from scapy.all import *
 
 
 @timeout(5)
@@ -16,13 +19,14 @@ def ping_test(address):
 
         ip_address_match = re.search(r'\((.*?)\)', ping_response_str)
         ip_address = ip_address_match.group(1) if ip_address_match else "N/A"
-        return 'OK_(' + ip_address + ')' if "1 packets transmitted, 1 packets received" in ping_response_str else 'Fail'
+        return 'OK', ip_address if "1 packets transmitted, 1 packets received" in ping_response_str else 'Fail', "N/A"
 
     except TimeoutError:
         print("Ping test exceeded timeout of 5 seconds")
-        return "N/A"
+        return "N/A", "N/A"
     except Exception as e:
-        return "N/A", str(e)
+        print("PING TEST ERROR: " + str(e))
+        return "PING TEST ERROR: " + str(e), "N/A"
 
 
 @timeout(5)
@@ -35,13 +39,14 @@ def perform_trace(address):
         lines = output.split('\n')
         last_hop = lines[-2] if len(lines) > 1 else "N/A"
 
-        return last_hop
+        return 'OK', last_hop
 
     except TimeoutError:
         print("Ping test exceeded timeout of 5 seconds")
-        return "N/A"
+        return "N/A", "N/A"
     except Exception as e:
-        return "N/A", str(e)
+        print("PERFOM TRACE ERROR: " + str(e))
+        return "PERFOM TRACE ERROR: " + str(e), "N/A"
 
 
 @timeout(5)
@@ -49,12 +54,13 @@ def dns_lookup(website):
     try:
         # Can return more ip_addresses in the tuple
         ip_addresses = socket.gethostbyname_ex(website)[2]
-        return ip_addresses
+        return 'OK', ip_addresses
     except TimeoutError:
         print("Ping test exceeded timeout of 5 seconds")
-        return "N/A"
+        return "N/A", "N/A"
     except socket.gaierror:
-        return "N/A", str(socket.gaierror)
+        print("DNS LOOKUP ERROR: " + str(socket.gaierror))
+        return "DNS LOOKUP ERROR: " + str(socket.gaierror), "N/A"
 
 
 # TODO: opravit
@@ -78,9 +84,10 @@ def http_get_request(url):
         return response.status_code, len(response.content), response.headers, response.text
     except TimeoutError:
         print("Ping test exceeded timeout of 5 seconds")
-        return "N/A"
+        return "N/A", "N/A", "N/A", "N/A",
     except Exception as e:
-        return "N/A", "N/A", "N/A", str(e)
+        print("HTTP GET ERROR: " + str(e))
+        return "HTTP GET ERROR: " + str(e), "N/A", "N/A", "N/A"
 
 
 # Used to identify the resolver that is used to resolve domain names to IP addresses.
@@ -88,31 +95,34 @@ def http_get_request(url):
 def resolver_identification():
     try:
         resolver_ip = socket.gethostbyname('whoami.akamai.com')
-        return resolver_ip
+        return 'OK', resolver_ip
     except TimeoutError:
         print("Ping test exceeded timeout of 5 seconds")
-        return "N/A"
+        return "N/A", "N/A"
     except socket.gaierror:
-        return "N/A", str(socket.gaierror)
+        print("RESOLVER ERROR: " + str(socket.gaierror))
+        return "RESOLVER ERROR: " + str(socket.gaierror), "N/A"
 
 
 @timeout(5)
-def tcp_connect(ip_address, port):
+def tcp_connect(ip_address, port=80):
     try:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            sock.settimeout(5)
-            if sock.connect_ex((ip_address, port)) == 0:
-                response = 'Established'
-            else:
-                response = 'Failed'
+        # Odeslání SYN paketu
+        response = sr1(IP(dst=ip_address) / TCP(dport=port, flags="S"), timeout=5, verbose=False)
 
-            sock.close()
-            return response
+        # Zpracování odpovědi
+        if response and response.haslayer(TCP) and response[TCP].flags == 18:  # Odpověď: SYN-ACK
+            # Uložení IP adresy komunikující strany
+            remote_ip = response[IP].src
+            return "Established", remote_ip
+        else:
+            return "Failed", "N/A"
     except TimeoutError:
         print("Ping test exceeded timeout of 5 seconds")
-        return "N/A"
+        return "N/A", "N/A"
     except Exception as e:
-        return "N/A", str(e)
+        print("TCP ERROR: " + str(e))
+        return "TCP ERROR: " + str(e), "N/A"
 
 
 def is_url(url):
@@ -160,42 +170,50 @@ class WebConnectivityTester:
         try:
             start_time = time.time()
 
-            trace_hop = None
-
             resolver_ip = resolver_identification()
             dns_result = dns_lookup(website)
 
             if dns_result == "N/A":
                 pass
 
-            tcp_result = tcp_connect(dns_result[0], 80)
+            tcp_result = tcp_connect(dns_result[1])
             ping_result = ping_test(website)
 
-            if ping_result == "fail" or ping_result == "N/A":
+            if ping_result[0] == "fail" or ping_result[0] == "N/A":
                 trace_hop = perform_trace(website)
+            else:
+                trace_hop = {
+                    'Trace hop Status': "NOT RUN",
+                    'Trace hop IP': "N/A"
+                }
 
             http_status, content_length, headers, html_content = http_get_request(website)
 
             end_time = time.time()
-
             duration = round(end_time - start_time, 2)
 
             output_content = website + '_content.html'
+
             self.save_html_content(output_content, html_content)
+
             return {
                 'Time': duration,
                 'URL': str(website),
-                'Resolver IP': resolver_ip,
-                'DNS Result': dns_result,
-                'TCP Status': tcp_result,
-                'PING Result': ping_result,
-                'Trace hop': trace_hop,
+                'Resolver Status': resolver_ip[0],
+                'Resolver IP': resolver_ip[1],
+                'DNS Status': dns_result[0],
+                'DNS IPs': dns_result[1],
+                'TCP Status': tcp_result[0],
+                'TCP Remote IP': tcp_result[1],
+                'PING Status': ping_result[0],
+                'PING IP': ping_result[1],
+                'Trace hop Status': trace_hop[0],
+                'Trace hop IP': trace_hop[1],
                 'HTTP Status': http_status,
                 'Content Length': content_length,
                 'Headers': headers,
                 'HTML Content': output_content
             }
-
 
         except Exception as e:
             print(f"Error testing {website}: {e}")
@@ -209,4 +227,5 @@ class WebConnectivityTester:
         for website in self.urls:
             results.append(self.test_website(website))
 
+        print(results)
         return results
