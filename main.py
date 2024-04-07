@@ -7,6 +7,8 @@ from utils import save_to_JSON
 from utils import geolocation
 
 
+
+
 def main():
     # TODO:  Udělat pro každy vstup extra vystup
     urls_file = 'data/input_data/alexa_top_500_websites.csv'
