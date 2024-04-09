@@ -3,10 +3,11 @@ import random
 import string
 
 
-
 class CensorshipDetector:
     def __init__(self, url):
         self.url = url
+
+
 
     def http_header_manipulation(self):
         headers = {
@@ -35,25 +36,22 @@ class CensorshipDetector:
 
     def invalid_request_line(self):
         invalid_methods = ['FOO', 'BAR', 'BAZ', 'QUX']
-        for method in invalid_methods:
-            if method == 'GET':
-                invalid_request = f"{method} / HTTP/99.9\r\nHost: {self.url}\r\n\r\n"
-            elif method == 'HEAD':
-                invalid_request = f"{method} / HTTP/99.9\r\nHost: {self.url}\r\n\r\n"
-            else:
-                invalid_request = f"{method} / HTTP/1.1\r\nHost: {self.url}\r\n\r\n"
-            print(f"\nSending invalid HTTP request line:")
-            print(invalid_request)
+        manipulation_count = 0
 
+        for method in invalid_methods:
             try:
-                response = requests.request('GET', self.url, data=invalid_request)
-                print("\nReceived response:")
-                print(response.text)
+                response = requests.request(method, self.url)
 
                 if response.status_code == 400:
-                    print("\nHTTP manipulation detected.")
-                else:
-                    print("\nNo error received. No HTTP manipulation detected.")
+                    manipulation_count += 1
 
-            except requests.exceptions.RequestException as e:
-                print(f"\nError received: {e}. HTTP manipulation detected.")
+            except requests.exceptions.RequestException:
+                manipulation_count += 1
+
+        return manipulation_count, len(invalid_methods)
+
+
+detector = CensorshipDetector("https://linkedin.com")
+detector.http_header_manipulation()
+
+print(detector.invalid_request_line())

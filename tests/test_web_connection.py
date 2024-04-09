@@ -10,7 +10,7 @@ from timeout_decorator import timeout
 from scapy.all import *
 
 
-@timeout(5)
+@timeout(30)
 def ping_test(address):
     try:
         ping_response = subprocess.check_output(["ping", "-c", "1", address])
@@ -29,15 +29,21 @@ def ping_test(address):
         return "PING TEST ERROR: " + str(e), "N/A", "N/A"
 
 
-@timeout(5)
+# TODO: Otestovat tuhle funkci
+@timeout(30)
 def perform_trace(address):
     try:
         result = subprocess.run(['traceroute', '-I', address], capture_output=True, text=True)
         output = result.stdout
         lines = output.split('\n')
-        last_hop = lines[-2] if len(lines) > 1 else "N/A"
+        hop_ips = []
+        for line in lines[1:]:  # Skip header line
+            if line.strip():
+                hop_ip = line.split()[3]  # Assuming the IP address is at the fourth column
+                hop_ips.append(hop_ip)
 
-        return 'OK', last_hop
+        return 'OK', hop_ips
+
 
     except TimeoutError:
         print("Trace test exceeded timeout of 5 seconds")
@@ -47,7 +53,8 @@ def perform_trace(address):
         return "PERFORM TRACE ERROR: " + str(e), "N/A"
 
 
-@timeout(5)
+# TODO: Neměl bych doimplementovat něco? injection? hijacking?
+@timeout(30)
 def dns_lookup(website):
     try:
         ip_addresses = socket.gethostbyname_ex(website)[2]
@@ -60,7 +67,7 @@ def dns_lookup(website):
         return "DNS LOOKUP ERROR: " + str(e), "N/A"
 
 
-@timeout(5)
+@timeout(30)
 def http_get_request(url):
     try:
         if is_url(url):
@@ -85,7 +92,7 @@ def http_get_request(url):
         return "HTTP GET ERROR: " + str(e), "N/A", "N/A", "N/A"
 
 
-@timeout(5)
+@timeout(30)
 def resolver_identification():
     try:
         resolver_ip = socket.gethostbyname('whoami.akamai.com')
@@ -98,7 +105,7 @@ def resolver_identification():
         return "RESOLVER ERROR: " + str(e), "N/A"
 
 
-@timeout(5)
+@timeout(30)
 def tcp_connect(ip_address, port=80):
     try:
         response = sr1(IP(dst=ip_address) / TCP(dport=port, flags="S"), timeout=5, verbose=False)
@@ -199,10 +206,3 @@ class WebConnectivityTester:
                 'URL': website,
                 'Error': str(e)
             }
-
-    def run_tests(self):
-        results = []
-        for website in self.urls:
-            results.append(self.test_website(website))
-
-        return results
