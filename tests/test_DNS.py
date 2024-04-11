@@ -28,8 +28,11 @@ class DNSAttackDetector:
     def detect_dns_hijacking(self, hostname):
         try:
             # Dotaz na existující hostname, cenzorovaný DNS server by neměl vrátit odpověď
-            self.resolver.resolve(hostname, 'A')
-            return False  # Pokud server vrátí odpověď, je detekován útok
+            answers = self.resolver.resolve(hostname, 'A')
+            if answers:
+                return False  # Pokud server vrátí odpověď, je detekován útok
+            else:
+                return True  # Pokud server nevrátí odpověď, není detekován útok
         except dns.resolver.NoAnswer:
             return True  # Pokud server nevrátí odpověď, není detekován útok
         except Exception as e:
