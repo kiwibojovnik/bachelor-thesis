@@ -16,6 +16,38 @@ def get_ip_from_ping(ping):
         return None
 
 
+def update_json_results(results, filename):
+    try:
+        # Načtení obsahu stávajícího souboru, pokud existuje
+        with open(filename, 'r') as json_file:
+            existing_data = json.load(json_file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        # Pokud soubor neexistuje nebo neobsahuje platný JSON obsah, inicializujte prázdný slovník
+        existing_data = {"results": []}
+
+    # Přidání nových dat nebo aktualizace existujících
+    for result in results:
+        page = result['page']
+        ip_address = result['ip_address']
+        test_scripts = result['test_scripts']
+
+        # Kontrola existence záznamu s danou adresou
+        found = False
+        for entry in existing_data["results"]:
+            if entry["page"] == page and entry["ip_address"] == ip_address:
+                entry["test_scripts"].extend(test_scripts)
+                found = True
+                break
+
+        # Pokud záznam s adresou neexistuje, vytvořte nový
+        if not found:
+            existing_data["results"].append(result)
+
+    # Uložení aktualizovaných dat zpět do souboru
+    with open(filename, 'w') as json_file:
+        json.dump(existing_data, json_file, indent=4)
+
+
 def parse_results(results):
     parsed_results = defaultdict(list)
 
@@ -71,5 +103,7 @@ def save_to_json(parsed_results, filename):
 
 
 def process_results(results, output_file):
-    parsed_results = parse_results(results)
+    # Filtrujeme výsledky, aby se zbavili None hodnot
+    filtered_results = [result for result in results if result is not None]
+    parsed_results = parse_results(filtered_results)
     save_to_json(parsed_results, output_file)

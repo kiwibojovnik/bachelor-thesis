@@ -1,7 +1,7 @@
 import argparse
 import csv
-from tests import test_web_connection, test_middle_box
-from utils import save_to_JSON
+from tests import test_web_connection, test_middle_box, test_DNS
+from utils import save_to_JSON, sendFile
 
 
 def parse_arguments():
@@ -10,23 +10,6 @@ def parse_arguments():
     parser.add_argument('-p', '--process', action='store_true', help='process data')
     parser.add_argument('-f', '--files', nargs='+', help='input files')
     return parser.parse_args()
-
-# TODO: udělat parsovaní jednotlivých webu
-#  abych je mohl posílat funkci hned po jednom
-def parse_file():
-    def run_tests(self):
-        results = []
-        for website in self.urls:
-            results.append(self.test_website(website))
-
-        return results
-
-# TODO: dodělat ukládání výsledku do tupple
-def save_to_tuple(response):
-
-
-    return result
-
 
 
 def main():
@@ -46,25 +29,38 @@ def main():
                     next(reader)
                     website_list = [row[1] for row in reader]
 
-                output_file = f'data/output_data/website_test_results  ' # {input_file.split(".")[0]}_results.json'
+                output_file = f'data/output_data/website_test_results'  # {input_file.split(".")[0]}_results.json'
                 output_content_folder = f'data/output_data/content_folder'
 
                 # Rozdělení seznamu URL na skupiny po 10
-                for i in range(0, len(website_list), 10):
+                for index, i in enumerate(range(0, len(website_list), 10), start=1):
                     batch = website_list[i:i + 10]
 
-                    tester = test_web_connection.WebConnectivityTester(batch, output_content_folder, output_file)
+
+                    # Tady nechci posilat cely batch, ale chci tam strakt vždycky jen jednu strankku
+                    tester = test_web_connection.WebConnectivityTester(batch, output_content_folder)
                     results = tester.run_tests()
 
-                    tester_middle_box = tester_middle_box.CensorshipDetector()
+                    tester_middle_box = test_middle_box.CensorshipDetector(batch)
+                    results_middle_box = tester_middle_box.run_tests
 
+                    tester_dns = test_DNS.DNSAttackDetector(batch)
+                    results_dns = tester_dns.run_tests()
 
 
                     # Uložení výsledků do JSON souboru po každé skupině 10 URL
                     print("Saving to JSON")
-                    save_to_JSON.process_results(results, output_file+str(i)+'.json')
 
-                    # TODO: posílát file do česka
+                    # !! Nebudu to řešit a appendnu ty results do jednoho ze všech funkcí...!!
+
+                    save_to_JSON.process_results(results, output_file+str(i)+'.json')
+                    save_to_JSON.process_results(results_middle_box, output_file+str(i)+'.json')
+                    save_to_JSON.process_results(results_dns, output_file+str(i)+'.json')
+
+
+                # TODO: posílát file do česka
+                #  sendFile.sendFile(results_content)
+
         else:
             print("No input files specified.")
 

@@ -1,9 +1,4 @@
 import requests
-import socket
-import time
-import os
-import subprocess
-import re
 
 from scapy.layers.inet import TCP, IP
 from timeout_decorator import timeout
@@ -19,7 +14,7 @@ def ping_test(address):
         ip_address_match = re.search(r'\((.*?)\)', ping_response_str)
         ip_address = ip_address_match.group(1) if ip_address_match else "N/A"
 
-        return 'OK', ip_address, "N/A" if "1 packets transmitted, 1 packets received" in ping_response_str else 'Fail'
+        return 'OK', ip_address if "1 packets transmitted, 1 packets received" in ping_response_str else 'Fail', "N/A"
 
     except TimeoutError:
         print("Ping test exceeded timeout of 5 seconds")
@@ -30,7 +25,7 @@ def ping_test(address):
 
 
 # TODO: Otestovat tuhle funkci
-@timeout(30)
+@timeout(100)
 def perform_trace(address):
     try:
         result = subprocess.run(['traceroute', '-I', address], capture_output=True, text=True)
@@ -53,7 +48,6 @@ def perform_trace(address):
         return "PERFORM TRACE ERROR: " + str(e), "N/A"
 
 
-# TODO: Neměl bych doimplementovat něco? injection? hijacking?
 @timeout(30)
 def dns_lookup(website):
     try:
@@ -74,7 +68,11 @@ def http_get_request(url):
             get_url = requests.get(url)
 
         elif is_domain(url):
-            get_url = requests.get('https://' + url)
+            try:
+                get_url = requests.get('https://' + url)
+            except requests.exceptions.RequestException as e:
+                print(f"HTTP GET request to {url} failed: {e}")
+                return "N/A", "N/A", "N/A", "N/A"
 
         elif is_ip(url):
             domain = socket.gethostbyaddr(url)[0]
@@ -90,6 +88,7 @@ def http_get_request(url):
     except Exception as e:
         print("HTTP GET ERROR: " + str(e))
         return "HTTP GET ERROR: " + str(e), "N/A", "N/A", "N/A"
+
 
 
 @timeout(30)
@@ -145,10 +144,9 @@ def is_ip(url):
 
 
 class WebConnectivityTester:
-    def __init__(self, url_list, output_content_folder, output_file):
+    def __init__(self, url_list, output_content_folder):
         self.urls = url_list
         self.output_content_folder = output_content_folder
-        self.output_file = output_file
 
     def save_html_content(self, filename, content):
         # Create the output folder if it doesn't exist
@@ -200,9 +198,18 @@ class WebConnectivityTester:
                     'Headers': headers,
                     'HTML Content': output_content
                 }
+
         except Exception as e:
             print(f"Error testing {website}: {e}")
             return {
-                'URL': website,
+                'URL': str(website),
                 'Error': str(e)
             }
+
+    def run_tests(self):
+        results = []
+        for website in self.urls:
+            results.append({'URL': str(website)})
+            results.append(self.test_website(website))
+
+        return results

@@ -2,7 +2,8 @@ import dns.resolver
 
 
 class DNSAttackDetector:
-    def __init__(self):
+    def __init__(self, url_list):
+        self.urls = url_list
         self.resolver = dns.resolver.Resolver()
 
     def detect_dns_repeated_query(self, hostname):
@@ -46,20 +47,22 @@ class DNSAttackDetector:
             print("Chyba při detekci DNS injection:", e)
             return False
 
+    def test_website(self, website):
 
-# Příklad použití
-detector = DNSAttackDetector()
+        dns_repeated = self.detect_dns_repeated_query(website)
+        dns_hijacking = self.detect_dns_hijacking(website)
+        dns_injection = self.detect_dns_injection(website)
 
-# Detekce opakovaného DNS dotazu
-hostname = "www.idnes.cz"
-repeated_query_detected = detector.detect_dns_repeated_query(hostname)
-print("Detekce opakovaného DNS dotazu:", repeated_query_detected)
+        return {
+            'URL': str(website),
+            'DNS repeated': dns_repeated,
+            'DNS Hijacking': dns_hijacking,
+            'DNS Injection': dns_injection
+        }
 
-# Detekce DNS hijackingu
-hijacking_detected = detector.detect_dns_hijacking("example.com")
-print("Detekce DNS hijackingu:", hijacking_detected)
+    def run_tests(self):
+        results = []
+        for website in self.urls:
+            results.append(self.test_website(website))
 
-# Detekce DNS injection
-ip_address = "192.0.2.1"
-injection_detected = detector.detect_dns_injection(ip_address)
-print("Detekce DNS injection:", injection_detected)
+        return results

@@ -3,55 +3,72 @@ import random
 import string
 
 
-class CensorshipDetector:
-    def __init__(self, url):
-        self.url = url
+def http_header_manipulation(website):
+    headers = {
+        "UsEr-AgEnT": "MoZiLLa/5.0 (WinDoWW NT 10.0; Win64; x64) AppleWEbKIT/537.36 (KHTML, like GeCko) ChROmE/58.0.3029.110 SaFAri/537.3"
+    }
 
-
-
-    def http_header_manipulation(self):
-        headers = {
-            "UsEr-AgEnT": "MoZiLLa/5.0 (WinDoWW NT 10.0; Win64; x64) AppleWEbKIT/537.36 (KHTML, like GeCko) ChROmE/58.0.3029.110 SaFAri/537.3"
-        }
-
-        response = requests.get(self.url, headers=headers)
+    try:
+        response = requests.get("https://" + website, headers=headers)
         original_headers = {key.lower(): value for key, value in headers.items()}
         received_headers = {key.lower(): value for key, value in response.request.headers.items()}
-
-        print("\nOriginal headers sent:")
-        print(original_headers)
-
-        print("\nReceived headers:")
-        print(received_headers)
 
         # Procházení poslaných hlaviček a porovnání pouze s těmi, které byly přijaty
         for key, value in original_headers.items():
             if key in received_headers and received_headers[key] == value:
-                print(f"\nHeader '{key}' matches.")
+                detector = "No manipulation"
             else:
-                print(f"\nHeader '{key}' does not match. HTTP header manipulation detected.")
-                return
+                detector = "Manipulated"
 
-        print("\nNo HTTP header manipulation detected.")
+        return {
+            'URL': str(website),
+            'http_header_manipulation': detector
+        }
 
-    def invalid_request_line(self):
-        invalid_methods = ['FOO', 'BAR', 'BAZ', 'QUX']
-        manipulation_count = 0
+    except requests.exceptions.RequestException as e:
+        print(f"Error occurred during HTTP header manipulation test for {website}: {e}")
+        return {
+            'URL': str(website),
+            'http_header_manipulation': 'Error'
+        }
 
+
+def invalid_request_line(website):
+    invalid_methods = ['FOO', 'BAR', 'BAZ', 'QUX']
+    manipulation_count = 0
+
+    try:
         for method in invalid_methods:
-            try:
-                response = requests.request(method, self.url)
+            response = requests.request(method, 'https://'+website)
 
-                if response.status_code == 400:
-                    manipulation_count += 1
-
-            except requests.exceptions.RequestException:
+            if response.status_code == 400:
                 manipulation_count += 1
 
-        return manipulation_count, len(invalid_methods)
+        return {
+            'URL': str(website),
+            'Invalid_request_line score': manipulation_count,
+            'Invalid_request_line test count ': len(invalid_methods)
+        }
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error occurred during invalid request line test for {website}: {e}")
+        return {
+            'URL': str(website),
+            'Invalid_request_line score': 'Error',
+            'Invalid_request_line test count ': len(invalid_methods)
+        }
 
 
-detector = CensorshipDetector("https://linkedin.com")
-detector.http_header_manipulation()
+class CensorshipDetector:
+    def __init__(self, batch):
+        self.batch = batch
 
-print(detector.invalid_request_line())
+    @property
+    def run_tests(self):
+        results = []
+        for website in self.batch:
+            results.append({'URL': str(website)})
+            results.append(invalid_request_line(website))
+            results.append(http_header_manipulation(website))
+
+        return results
