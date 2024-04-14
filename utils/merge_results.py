@@ -13,7 +13,7 @@ def merge_records(records):
     return {"results": list(merged_records.values())}
 
 
-with open("/Users/daliborkyjovsky/Documents/VUTFIT23/BP-2.0/bachelor-thesis/data/output_data/website_test_results0.json", "r") as file:
+with open("/Users/daliborkyjovsky/Documents/VUTFIT23/BP-2.0/bachelor-thesis/data/output_data/results80.json", "r") as file:
     data = json.load(file)
 
 

@@ -16,3 +16,6 @@ def get_info(ip_address):
         'Country': details.country,
         'Hostname': details.hostname
     }
+
+
+get_info('93.125.114.187')

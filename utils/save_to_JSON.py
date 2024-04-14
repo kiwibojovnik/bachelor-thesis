@@ -1,19 +1,8 @@
 import json
 from collections import defaultdict
-import re
 
 import requests
 from datetime import datetime
-
-
-def get_ip_from_ping(ping):
-    ip_regex = r'\((\d+\.\d+\.\d+\.\d+)\)'
-    match = re.search(ip_regex, ping)
-    if match:
-        ip_address = match.group(1)
-        return ip_address
-    else:
-        return None
 
 
 def update_json_results(results, filename):

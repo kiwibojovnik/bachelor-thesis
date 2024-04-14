@@ -34,7 +34,7 @@ def perform_trace(address):
         hop_ips = []
         for line in lines[1:]:  # Skip header line
             if line.strip():
-                hop_ip = line.split()[3]  # Assuming the IP address is at the fourth column
+                hop_ip = line.split()[2]  # Assuming the IP address is at the fourth column
                 hop_ips.append(hop_ip)
 
         return 'OK', hop_ips

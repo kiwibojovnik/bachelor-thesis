@@ -1,7 +1,4 @@
 import requests
-import random
-import string
-
 
 def http_header_manipulation(website):
     headers = {
