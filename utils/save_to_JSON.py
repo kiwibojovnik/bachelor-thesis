@@ -1,3 +1,10 @@
+# Name: save_to_JSON.py
+# Author: Dalibor Kyjovský (xkyjov03)
+# Date: April 11, 2024
+# Description:
+# Python Version: 3.9
+
+# Importing necessary libraries
 import json
 from collections import defaultdict
 

@@ -7,7 +7,7 @@
 # Importování potřebných knihoven
 import csv
 
-
+# TODO: Někde je chyba. Na daddy to hazelo chypu s pop.
 def move_url_to_first_column(input_file):
     with open(input_file, 'r') as infile:
         reader = csv.reader(infile)
@@ -38,5 +38,6 @@ def move_url_to_first_column(input_file):
 
             # Procházej řádky a přesuň URL nebo doménu na první pozici v každém řádku
             for row in reader:
-                row.insert(0, row.pop(url_or_domain_index))
+                if row:  # Kontrola, zda řádek není prázdný
+                    row.insert(0, row.pop(url_or_domain_index))
                 writer.writerow(row)

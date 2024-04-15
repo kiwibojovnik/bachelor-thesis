@@ -7,8 +7,9 @@
 # Importing necessary libraries
 import argparse
 import csv
+from datetime import datetime
 from tests import test_web_connection, test_middle_box, test_DNS
-from utils import save_to_JSON, send_file, edit_csv_file
+from utils import save_to_JSON, send_file, edit_csv_file, load_config
 
 
 def parse_arguments():
@@ -55,18 +56,18 @@ def main():
                     tester_dns = test_DNS.DNSAttackDetector(batch)
                     results_dns = tester_dns.run_tests()
 
-                    # TODO: doupravit výstupní soubor a přidat čas a datum
-                    output_filename = "results_{typ_testu}_dd-mm-rrrr_hh-mm"+str(i)+'.json'
+                    # TODO: doupravit výstupní soubor
+                    date_time = datetime.now().strftime("%d-%m-%Y_%H-%M")
+                    output_filename = "results_{typ_testu-"+str(i)+"}_"+date_time+".json"
 
+                    print(output_filename)
                     print("Saving to JSON")
                     save_to_JSON.process_results(results, output_filepath+output_filename)
                     save_to_JSON.process_results(results_middle_box, output_filepath+output_filename)
                     save_to_JSON.process_results(results_dns, output_filepath+output_filename)
 
-
                     # Save file to this path with name of output file.
-                    # TODO: Dat tu cestu do config souboru - muže se měnit podle serveru
-                    remote_file_path = "/home/ms772qzljerv/bp/data/"+output_filename
+                    remote_file_path = load_config.load_credentials("server_path_for_files")+output_filename
 
                     # Posilani souboru na server do česka
                     send_file.send_file_via_ssh(output_filepath+output_filename, remote_file_path)

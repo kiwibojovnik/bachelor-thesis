@@ -1,11 +1,22 @@
+# Name: test_web_connection.py
+# Author: Dalibor Kyjovský (xkyjov03)
+# Date: April 11, 2024
+# Description:
+# Python Version: 3.9
+
+# Importing necessary libraries
 import requests
 
 from scapy.layers.inet import TCP, IP
 from timeout_decorator import timeout
 from scapy.all import *
+from utils import reformat_url
+
+function_timeout = 30
+function_timeout_long = 200
 
 
-@timeout(30)
+@timeout(function_timeout)
 def ping_test(address):
     try:
         ping_response = subprocess.check_output(["ping", "-c", "1", address])
@@ -14,18 +25,20 @@ def ping_test(address):
         ip_address_match = re.search(r'\((.*?)\)', ping_response_str)
         ip_address = ip_address_match.group(1) if ip_address_match else "N/A"
 
-        return 'OK', ip_address if "1 packets transmitted, 1 packets received" in ping_response_str else 'Fail', "N/A"
+        if "1 packets transmitted, 1 packets received" in ping_response_str:
+            return 'OK', ip_address, "N/A"
+        else:
+            return 'Fail', "N/A", "N/A"
 
     except TimeoutError:
-        print("Ping test exceeded timeout of 5 seconds")
+        print("Ping test exceeded timeout.")
         return "N/A", "N/A", "N/A"
     except Exception as e:
         print("PING TEST ERROR: " + str(e))
         return "PING TEST ERROR: " + str(e), "N/A", "N/A"
 
 
-# TODO: Otestovat tuhle funkci
-@timeout(100)
+@timeout(function_timeout_long)
 def perform_trace(address):
     try:
         result = subprocess.run(['traceroute', '-I', address], capture_output=True, text=True)
@@ -39,59 +52,57 @@ def perform_trace(address):
 
         return 'OK', hop_ips
 
-
     except TimeoutError:
-        print("Trace test exceeded timeout of 5 seconds")
+        print("Trace test exceeded timeout.")
         return "N/A", "N/A"
     except Exception as e:
         print("PERFORM TRACE ERROR: " + str(e))
         return "PERFORM TRACE ERROR: " + str(e), "N/A"
 
 
-@timeout(30)
+@timeout(function_timeout)
 def dns_lookup(website):
     try:
         ip_addresses = socket.gethostbyname_ex(website)[2]
         return 'OK', ip_addresses
     except TimeoutError:
-        print("DNS lookup test exceeded timeout of 5 seconds")
+        print("DNS lookup test exceeded timeout.")
         return "N/A", "N/A"
     except socket.gaierror as e:
         print("DNS LOOKUP ERROR: " + str(e))
         return "DNS LOOKUP ERROR: " + str(e), "N/A"
 
 
-@timeout(30)
+# TODO: ještě otestovat, ale asi je  to funkční a vpohodě...
+@timeout(function_timeout)
 def http_get_request(url):
     try:
-        if is_url(url):
-            get_url = requests.get(url)
+        # Zkusíme HTTP variantu
+        get_url = requests.get("http://" + url)
+        if get_url.status_code == 200:
+            return get_url.status_code, len(get_url.content), get_url.headers, get_url.text
 
-        elif is_domain(url):
-            try:
-                get_url = requests.get('https://' + url)
-            except requests.exceptions.RequestException as e:
-                print(f"HTTP GET request to {url} failed: {e}")
-                return "N/A", "N/A", "N/A", "N/A"
+        # Pokud HTTP selže, zkoušíme HTTPS variantu
+        get_url = requests.get("https://" + url)
+        if get_url.status_code == 200:
+            return get_url.status_code, len(get_url.content), get_url.headers, get_url.text
 
-        elif is_ip(url):
-            domain = socket.gethostbyaddr(url)[0]
-            get_url = requests.get('http://' + domain)
-        else:
-            raise ValueError("Invalid input format")
+        # Pokud ani jedna z variant nevrátila úspěch, vracíme "N/A"
+        print(f"HTTP GET request to {url} failed with status codes: HTTP - {get_url.status_code}")
+        return "N/A", "N/A", "N/A", "N/A"
 
-        response = get_url
-        return response.status_code, len(response.content), response.headers, response.text
+    except requests.exceptions.RequestException as e:
+        print(f"HTTP GET request to {url} failed: {e}")
+        return str(e), "N/A", "N/A", "N/A"
     except TimeoutError:
-        print("HTTP GET request exceeded timeout of 5 seconds")
+        print("HTTP GET request exceeded timeout.")
         return "N/A", "N/A", "N/A", "N/A"
     except Exception as e:
         print("HTTP GET ERROR: " + str(e))
         return "HTTP GET ERROR: " + str(e), "N/A", "N/A", "N/A"
 
 
-
-@timeout(30)
+@timeout(function_timeout)
 def resolver_identification():
     try:
         resolver_ip = socket.gethostbyname('whoami.akamai.com')
@@ -104,7 +115,8 @@ def resolver_identification():
         return "RESOLVER ERROR: " + str(e), "N/A"
 
 
-@timeout(30)
+# TODO: proč to padá
+@timeout(function_timeout)
 def tcp_connect(ip_address, port=80):
     try:
         response = sr1(IP(dst=ip_address) / TCP(dport=port, flags="S"), timeout=5, verbose=False)
@@ -119,28 +131,6 @@ def tcp_connect(ip_address, port=80):
     except Exception as e:
         print("TCP ERROR: " + str(e))
         return "TCP ERROR: " + str(e), "N/A"
-
-
-def is_url(url):
-    url_pattern = re.compile(
-        r'^(?:http|ftp)s?://'
-        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'
-        r'localhost|'
-        r'(?::\d+)?'
-        r')(?:/?|[/?]\S+)$', re.IGNORECASE)
-    return re.match(url_pattern, url) is not None
-
-
-def is_domain(url):
-    domain_pattern = re.compile(
-        r'^(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+(?:[a-zA-Z]{2,}\.?)$', re.IGNORECASE)
-    return re.match(domain_pattern, url) is not None
-
-
-def is_ip(url):
-    ip_pattern = re.compile(
-        r'^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$')
-    return re.match(ip_pattern, url) is not None
 
 
 class WebConnectivityTester:
