@@ -6,10 +6,23 @@
 
 # Importování potřebných knihoven
 import csv
+import os
+import filecmp
 
 
-# TODO. někde je stale chbička Asi neni vhodne přepisovat puvodni soubor - baad přístup
 def move_url_to_first_column(input_file):
+    # Získej jméno původního souboru
+    base_name = os.path.basename(input_file)
+    directory = os.path.dirname(input_file)
+
+    # Vytvoř název pomocného souboru
+    output_file = os.path.join(directory, "helper_" + base_name)
+
+    # Pokud existuje pomocný soubor a shoduje se s původním souborem, použij původní soubor
+    if os.path.exists(output_file) and filecmp.cmp(input_file, output_file):
+        print("Pomocný soubor již existuje a shoduje se s původním souborem, použije se původní soubor.")
+        return input_file
+
     with open(input_file, 'r') as infile:
         reader = csv.reader(infile)
 
@@ -31,7 +44,7 @@ def move_url_to_first_column(input_file):
         # Přesuň sloupec s URL nebo doménou na první pozici
         header.insert(0, header.pop(url_or_domain_index))
 
-        with open(input_file, 'w', newline='') as outfile:
+        with open(output_file, 'w', newline='') as outfile:
             writer = csv.writer(outfile)
 
             # Zapiš novou hlavičku
@@ -46,3 +59,6 @@ def move_url_to_first_column(input_file):
                     row[url_or_domain_index] = url
                     row.insert(0, url)
                 writer.writerow(row)
+
+    # Vrať cestu k pomocnému souboru
+    return output_file
