@@ -9,7 +9,7 @@ import argparse
 import csv
 from datetime import datetime
 from tests import test_web_connection, test_middle_box, test_DNS
-from utils import save_to_JSON, send_file, edit_csv_file, load_config
+from utils import save_to_JSON, send_file, edit_csv_file, load_config, merge_results
 
 
 def parse_arguments():
@@ -65,6 +65,9 @@ def main():
                     save_to_JSON.process_results(results, output_filepath+output_filename)
                     save_to_JSON.process_results(results_middle_box, output_filepath+output_filename)
                     save_to_JSON.process_results(results_dns, output_filepath+output_filename)
+
+                    # TODO: Dělat rovnou v tom json file
+                    merge_results.run_merging(output_filepath+output_filename)
 
                     # Save file to this path with name of output file.
                     remote_file_path = load_config.load_credentials("server_path_for_files")+output_filename

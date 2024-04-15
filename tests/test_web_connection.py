@@ -3,6 +3,7 @@
 # Date: April 11, 2024
 # Description:
 # Python Version: 3.9
+import socket
 
 # Importing necessary libraries
 import requests
@@ -19,13 +20,13 @@ function_timeout_long = 200
 @timeout(function_timeout)
 def ping_test(address):
     try:
-        ping_response = subprocess.check_output(["ping", "-c", "1", address])
+        ping_response = subprocess.check_output(["ping", "-c", "1", reformat_url.remove_http(address)])
         ping_response_str = ping_response.decode("utf-8")
 
         ip_address_match = re.search(r'\((.*?)\)', ping_response_str)
         ip_address = ip_address_match.group(1) if ip_address_match else "N/A"
 
-        if "1 packets transmitted, 1 packets received" in ping_response_str:
+        if ip_address != "N/A":
             return 'OK', ip_address, "N/A"
         else:
             return 'Fail', "N/A", "N/A"
@@ -38,12 +39,16 @@ def ping_test(address):
         return "PING TEST ERROR: " + str(e), "N/A", "N/A"
 
 
+# TODO: otestit
 @timeout(function_timeout_long)
 def perform_trace(address):
     try:
         result = subprocess.run(['traceroute', '-I', address], capture_output=True, text=True)
-        output = result.stdout
-        lines = output.split('\n')
+
+        result = subprocess.check_output(["traceroute", "-I", reformat_url.remove_http(address)])
+        result_str = result.decode("utf-8")
+
+        lines = result_str.split('\n')
         hop_ips = []
         for line in lines[1:]:  # Skip header line
             if line.strip():
@@ -63,7 +68,8 @@ def perform_trace(address):
 @timeout(function_timeout)
 def dns_lookup(website):
     try:
-        ip_addresses = socket.gethostbyname_ex(website)[2]
+        ip_addresses = socket.gethostbyname_ex(
+            reformat_url.remove_http(website))[2]
         return 'OK', ip_addresses
     except TimeoutError:
         print("DNS lookup test exceeded timeout.")
@@ -73,23 +79,13 @@ def dns_lookup(website):
         return "DNS LOOKUP ERROR: " + str(e), "N/A"
 
 
-# TODO: ještě otestovat, ale asi je  to funkční a vpohodě...
+# TODO: ještě otestovat, ale asi je  to funkční a vpohodě... CO TO HTTP je to ok?
 @timeout(function_timeout)
 def http_get_request(url):
     try:
         # Zkusíme HTTP variantu
-        get_url = requests.get("http://" + url)
-        if get_url.status_code == 200:
-            return get_url.status_code, len(get_url.content), get_url.headers, get_url.text
-
-        # Pokud HTTP selže, zkoušíme HTTPS variantu
-        get_url = requests.get("https://" + url)
-        if get_url.status_code == 200:
-            return get_url.status_code, len(get_url.content), get_url.headers, get_url.text
-
-        # Pokud ani jedna z variant nevrátila úspěch, vracíme "N/A"
-        print(f"HTTP GET request to {url} failed with status codes: HTTP - {get_url.status_code}")
-        return "N/A", "N/A", "N/A", "N/A"
+        response = requests.get(reformat_url.add_https(url))
+        return response.status_code, len(response.content), response.headers, response.text
 
     except requests.exceptions.RequestException as e:
         print(f"HTTP GET request to {url} failed: {e}")
@@ -115,8 +111,7 @@ def resolver_identification():
         return "RESOLVER ERROR: " + str(e), "N/A"
 
 
-# TODO: proč to padá
-@timeout(function_timeout)
+# TODO: proč to padá - asi sere pes
 def tcp_connect(ip_address, port=80):
     try:
         response = sr1(IP(dst=ip_address) / TCP(dport=port, flags="S"), timeout=5, verbose=False)
@@ -126,8 +121,11 @@ def tcp_connect(ip_address, port=80):
         else:
             return "Failed", "N/A"
     except TimeoutError:
-        print("TCP connection test exceeded timeout of 5 seconds")
+        print("TCP connection test to {}:{} exceeded timeout of 5 seconds".format(ip_address, port))
         return "N/A", "N/A"
+    except PermissionError as pe:
+        print("TCP connection test to {}:{} failed due to permission error: {}".format(ip_address, port, pe))
+        return "Permission Error", "N/A"
     except Exception as e:
         print("TCP ERROR: " + str(e))
         return "TCP ERROR: " + str(e), "N/A"
@@ -160,13 +158,12 @@ class WebConnectivityTester:
                     trace_hop = perform_trace(website)
                 else:
                     trace_hop = "NOT RUN", "N/A"
-
                 http_status, content_length, headers, html_content = http_get_request(website)
 
                 end_time = time.time()
                 duration = round(end_time - start_time, 2)
 
-                output_content = website + '_content.html'
+                output_content = reformat_url.remove_http(website) + '_content.html'
 
                 self.save_html_content(output_content, html_content)
 

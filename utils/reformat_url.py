@@ -1,4 +1,7 @@
 import re
+import requests
+from urllib.parse import urlparse
+
 
 # TODO: Opravdu tohle potřebuju? Asi je tento soubor na odstranění?
 def is_url(url):
@@ -24,9 +27,19 @@ def is_ip(url):
 
 
 def add_https(url):
-    # Zkontroluj, zda URL začíná prefixem "http://" nebo "https://"
-    if url.startswith("www"):
-        return url
-    else:
-        # Pokud neobsahuje prefix, přidej "https://"
-        return "www." + url
+    # Pokud adresa neobsahuje prefix "http://", přidej ho
+    if not url.startswith("http"):
+        url = "http://" + url
+
+    return url
+
+
+def remove_http(url):
+    # Odstranění prefixu "http://"
+    if url.startswith("http://"):
+        url = url[len("http://"):]
+    # Odstranění prefixu "https://"
+    elif url.startswith("https://"):
+        url = url[len("https://"):]
+
+    return url

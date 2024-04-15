@@ -1,4 +1,18 @@
 import dns.resolver
+import socket
+
+from utils import reformat_url
+
+
+def get_ip_address(website):
+    try:
+        ip_addresses = socket.gethostbyname_ex(
+            reformat_url.remove_http(website))[2]
+        return ip_addresses
+    except TimeoutError:
+        return "Fail"
+    except socket.gaierror as e:
+        return "Fail"
 
 
 class DNSAttackDetector:
@@ -9,7 +23,7 @@ class DNSAttackDetector:
     def detect_dns_repeated_query(self, hostname):
         try:
             # První dotaz na neexistující hostname
-            self.resolver.resolve(hostname, 'A')
+            self.resolver.resolve(reformat_url.remove_http(hostname), 'A')
             return False  # Pokud nevyvolá chybu, není detekován útok
         except dns.resolver.NXDOMAIN:
             try:
@@ -28,7 +42,7 @@ class DNSAttackDetector:
     def detect_dns_hijacking(self, hostname):
         try:
             # Dotaz na existující hostname, cenzorovaný DNS server by neměl vrátit odpověď
-            answers = self.resolver.resolve(hostname, 'A')
+            answers = self.resolver.resolve(reformat_url.remove_http(hostname), 'A')
             if answers:
                 return False  # Pokud server vrátí odpověď, je detekován útok
             else:
@@ -39,11 +53,15 @@ class DNSAttackDetector:
             print("Chyba při detekci DNS hijackingu:", e)
             return False
 
-    def detect_dns_injection(self, ip_address):
+    def detect_dns_injection(self, hostname):
         try:
             # Dotaz na neexistující hostname na identifikované IP adrese
-            self.resolver.resolve(ip_address + '.example.com', 'A')
-            return False  # Pokud nevyvolá chybu, není detekován útok
+            ip_address = get_ip_address(hostname)
+            if str(ip_address) != "Fail":
+                self.resolver.resolve(str(ip_address) + '.example.com', 'A')
+                return False  # Pokud nevyvolá chybu, není detekován útok
+            else:
+                return "NOT RUN"
         except dns.resolver.NXDOMAIN:
             return True  # Pokud je vrácena NXDOMAIN, je detekován útok
         except Exception as e:

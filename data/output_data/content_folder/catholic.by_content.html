@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+<html lang="be-by" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.95, maximum-scale=3.0, user-scalable=yes">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="width" />
+	<meta name="apple-mobile-web-app-capable" content="YES" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/3/templates/catholic/img/icons/icon-57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="/3/templates/catholic/img/icons/icon-60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/3/templates/catholic/img/icons/icon-72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="/3/templates/catholic/img/icons/icon-76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/3/templates/catholic/img/icons/icon-114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="/3/templates/catholic/img/icons/icon-120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/3/templates/catholic/img/icons/icon-144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="/3/templates/catholic/img/icons/icon-152.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/3/templates/catholic/img/icons/icon-32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="/3/templates/catholic/img/icons/icon-96.png" />
+	<link rel="icon" type="image/png" sizes="128x128" href="/3/templates/catholic/img/icons/icon-128.png" />
+	<link rel="icon" type="image/png" sizes="196x196" href="/3/templates/catholic/img/icons/icon-196.png" />
+
+	<meta charset="utf-8" />
+	<base href="https://catholic.by/3/index.php" />
+	<meta name="keywords" content="Касцел Царква каталіцтва святыя святыні храмы санктуарыі навіны Ватыкан дыяцэзіі" />
+	<meta name="description" content="Рыма-Каталіцкі Касцёл у Беларусі. Навіны, агульные дадзеныя, афіцыйныя дакументы. Усё пра каталіцтва па беларуску." />
+	<meta name="generator" content="jo-ho-ho" />
+	<title>Catholic.by - Рыма-Каталіцкі Касцёл у Беларусі</title>
+	<link href="/3/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="/3/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="/3/templates/catholic/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/3/templates/catholic/css/all-styles19.css" rel="stylesheet" />
+	<link href="/3/templates/catholic/css/fp-styles43.css" rel="stylesheet" />
+	<link href="/3/templates/catholic/css/scrollprogress.css" rel="stylesheet" media="screen" />
+	<link href="/3/templates/catholic/css/slick.css" rel="stylesheet" media="screen" />
+	<link href="/3/templates/catholic/css/fp-dates-2024-03-30_2024-05-18.css" rel="stylesheet" />
+	<link href="/3/media/jui/css/chosen.css?fff0ee3919c94ae5e7c702d09ae783b5" rel="stylesheet" />
+	<link href="/3/media/com_finder/css/finder.css?fff0ee3919c94ae5e7c702d09ae783b5" rel="stylesheet" />
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"b407bb1e663dea2ccf6ec5afcc79d399","system.paths":{"root":"\/3","base":"\/3"}}</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/3/templates/catholic/js/bootstrap.js"></script>
+	<script src="/3/templates/catholic/js/scrollprogress.js"></script>
+	<script src="/3/templates/catholic/js/scrollup.js"></script>
+	<script src="/3/templates/catholic/js/slick.js"></script>
+	<script src="/3/templates/catholic/js/lazyloader.js"></script>
+	<script src="/3/ajax/JsHttpRequest/JsHttpRequest.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="/3/media/jui/js/chosen.jquery.min.js?fff0ee3919c94ae5e7c702d09ae783b5"></script>
+	<script src="/3/media/jui/js/jquery.autocomplete.min.js?fff0ee3919c94ae5e7c702d09ae783b5"></script>
+	<script>
+
+	jQuery(function ($) {
+		initChosen();
+		$("body").on("subform-row-add", initChosen);
+
+		function initChosen(event, container)
+		{
+			container = container || document;
+			$(container).find(".advancedSelect").chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Type or select some options","placeholder_text_single":"\u0410\u0431\u044f\u0440\u044b\u0446\u0435 \u043e\u043f\u0446\u044b\u044e","no_results_text":"\u041d\u044f\u043c\u0430 \u0432\u044b\u043d\u0456\u043a\u0430\u045e"});
+		}
+	});
+	
+jQuery(document).ready(function() {
+	var value, searchword = jQuery('#mod-finder-searchword109');
+
+		// Get the current value.
+		value = searchword.val();
+
+		// If the current value equals the default value, clear it.
+		searchword.on('focus', function ()
+		{
+			var el = jQuery(this);
+
+			if (el.val() === 'Пошук  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .')
+			{
+				el.val('');
+			}
+		});
+
+		// If the current value is empty, set the previous value.
+		searchword.on('blur', function ()
+		{
+			var el = jQuery(this);
+
+			if (!el.val())
+			{
+				el.val(value);
+			}
+		});
+
+		jQuery('#mod-finder-searchform109').on('submit', function (e)
+		{
+			e.stopPropagation();
+			var advanced = jQuery('#mod-finder-advanced109');
+
+			// Disable select boxes with no value selected.
+			if (advanced.length)
+			{
+				advanced.find('select').each(function (index, el)
+				{
+					var el = jQuery(el);
+
+					if (!el.val())
+					{
+						el.attr('disabled', 'disabled');
+					}
+				});
+			}
+		});
+	var suggest = jQuery('#mod-finder-searchword109').autocomplete({
+		serviceUrl: '/3/component/finder/?task=suggestions.suggest&amp;format=json&amp;tmpl=component',
+		paramName: 'q',
+		minChars: 1,
+		maxHeight: 400,
+		width: 300,
+		zIndex: 9999,
+		deferRequestBy: 500
+	});});
+	</script>
+
+
+	
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQGSKLVZ1J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QQGSKLVZ1J');
+</script>
+
+
+
+
+</head>
+	
+<body class="fp">
+
+	
+<div id="exterier">
+
+<div id="extleft"><div id="extmenu">
+	<ul class="nav menu mod-list">
+<li class="item-101 default current active"><a href="/3/" >Галоўная</a></li><li class="item-123 deeper parent"><a href="/3/news" >Навіны</a><ul class="nav-child unstyled small"><li class="item-124"><a href="/3/news/announcements" >Анонсы</a></li><li class="item-126 divider"><span class="separator ">divider</span>
+</li><li class="item-125"><a href="/3/news/belarus" >Беларусь</a></li><li class="item-132"><a href="/3/news/vatican" >Ватыкан</a></li><li class="item-133"><a href="/3/news/world" >Замежжа</a></li><li class="item-139 divider"><span class="separator ">divider2</span>
+</li><li class="item-138"><a href="/3/news/sendnews" >Дашлі навіну</a></li></ul></li><li class="item-134 deeper parent"><a href="/3/pub" >Публіцыстыка</a><ul class="nav-child unstyled small"><li class="item-140"><a href="/3/pub/interview" >Інтэрв'ю</a></li><li class="item-141"><a href="/3/pub/auth" >Аўтарскія матэрыялы</a></li><li class="item-142"><a href="/3/pub/trans" >Пераклады</a></li></ul></li><li class="item-136 divider deeper parent"><span class="separator ">Касцёл у Беларусі</span>
+<ul class="nav-child unstyled small"><li class="item-143"><a href="/3/kasciol/parishes" >Адрасы касцёлаў</a></li><li class="item-144"><a href="/3/kasciol/parishes" >Дыяцэзіі</a></li><li class="item-145"><a href="/3/kasciol/conference" >Біскупы</a></li><li class="item-146"><a href="/3/kasciol/conference" >Канферэнцыя Біскупаў у Беларусі</a></li><li class="item-147"><a href="/3/kasciol/nuntiature" >Апостальская Нунцыятура ў РБ</a></li><li class="item-153 divider"><span class="separator ">divider3</span>
+</li><li class="item-148"><a href="/3/kasciol/education" >Навучальныя ўстановы</a></li><li class="item-252"><a href="/3/kasciol/sud" >Касцёльны суд</a></li><li class="item-149"><a href="/3/kasciol/monks" >Манаскія супольнасці</a></li><li class="item-150"><a href="/3/kasciol/community" >Рухі і супольнасці</a></li><li class="item-151"><a href="/3/kasciol/charity" >Дабрачынныя арганізацыі</a></li><li class="item-154 divider"><span class="separator ">divider4</span>
+</li><li class="item-233"><a href="/3/kasciol/history" >Гісторыя Касцёла ў Беларусі</a></li><li class="item-230"><a href="/3/kasciol/sanctuarium" >Санктуарыі</a></li><li class="item-232 divider"><span class="separator ">divider5</span>
+</li><li class="item-152"><a href="/3/kasciol/mass-media" >СМІ і выдавецтвы</a></li><li class="item-155"><a href="/3/kasciol/pressoffice" >Прэс-сакратар</a></li></ul></li><li class="item-135 divider deeper parent"><span class="separator ">Літургія</span>
+<ul class="nav-child unstyled small"><li class="item-205"><a href="/3/liturgy/feasts" >Урачыстасці і святы</a></li><li class="item-157"><a href="/3/liturgy/lit-calendar" >Літургічны каляндар</a></li><li class="item-158 parent"><a href="/3/liturgy/lectionary" >Лекцыянарый</a></li><li class="item-250"><a href="http://lh.catholic.by" target="_blank" rel="noopener noreferrer">Літургія гадзінаў</a></li><li class="item-159 parent"><a href="/3/liturgy/for-liturgy" >Матэрыялы для літургіі</a></li><li class="item-163"><a href="/3/liturgy/liturgical-books" >Агульныя ўводзіны да літургічных кніг</a></li><li class="item-204"><a href="/3/liturgy/saints" >Святыя</a></li></ul></li><li class="item-104 divider deeper parent"><span class="separator ">Бібліятэка</span>
+<ul class="nav-child unstyled small"><li class="item-165 parent"><a href="/3/lib/bible" >Святое Пісанне</a></li><li class="item-166 parent"><a href="/3/lib/documents" >Афіцыйныя дакументы</a></li><li class="item-224"><a href="/3/lib/homilies" >Гаміліі іерархаў</a></li><li class="item-170"><a href="/3/lib/pray" >Малітоўнік</a></li><li class="item-172"><a href="/2/conference/credo.html" target="_blank" rel="noopener noreferrer">Матэрыялы для катэхетаў</a></li><li class="item-237 parent"><a href="/3/lib/svyataram" >Святарам</a></li><li class="item-171"><a href="/3/lib/dictionary" >Слоўнік</a></li><li class="item-249"><a href="https://www.youtube.com/user/catholicby/playlists" target="_blank" rel="noopener noreferrer">Відэа</a></li></ul></li><li class="item-137 divider deeper parent"><span class="separator ">Пра нас</span>
+<ul class="nav-child unstyled small"><li class="item-174"><a href="/3/aboutus/editoring" >Рэдакцыя</a></li><li class="item-175"><a href="/3/aboutus/contact" >Кантакты</a></li><li class="item-222 divider"><span class="separator ">divider6</span>
+</li><li class="item-221"><a href="/3/aboutus/terms" >Умовы выкарыстання матэрыялаў</a></li></ul></li></ul>
+
+</div></div>
+
+<div id="extright">&nbsp;</div>
+
+<div id="page">
+
+<script>
+function langsOn() {
+	document.getElementById('modalwraper').style.display = 'block';
+	document.getElementById('smartlangs').style.display = 'block';
+}
+function searchOn() {
+	document.getElementById('modalwraper').style.display = 'block';
+	document.getElementById('smartsearch').style.display = 'block';
+	document.getElementById('mod-finder-searchword109').focus();
+}
+function modalOff() {
+	document.getElementById('modalwraper').style.display = 'none';
+	document.getElementById('smartlangs').style.display = 'none';
+	document.getElementById('smartsearch').style.display = 'none';
+}
+</script>
+
+<div id="modalwraper" onClick="modalOff();"></div>
+
+<div id="smartsearch">
+	<div id="smartclose" onClick="modalOff();"><span class="fas fa-times"></span></div>
+	<div id="smartsearchwraper">
+	<div id="smartsearhform">
+		<div>Пошук</div>
+		
+<form id="mod-finder-searchform109" action="/3/search" method="get" class="form-search">
+	<div class="finder">
+		<label for="mod-finder-searchword109" class="element-invisible finder">Пошук </label><input type="text" name="q" id="mod-finder-searchword109" class="search-query input-medium" size="25" value="" placeholder="Пошук  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."/><button class="btn btn-primary  finder" type="submit" title="Шукаць"><span class="xicon-search xicon-white fas fa-search"></span><!--Шукаць--></button>
+							</div>
+</form>
+
+	</div>
+	</div>
+</div>
+
+<div id="smartlangs">
+	<div id="smartclose" onClick="modalOff();"><span class="fas fa-times"></span></div>
+	<div id="smartlangswraper">
+		<a href="/" class="smartlangsitem">Беларуская</a>
+		<a href="http://rusnews.catholic.by" class="smartlangsitem">Русский</a>
+		<!--<a href="/2/pl/" class="smartlangsitem">Polski</a>-->
+		<!--<a href="/2/en/" class="smartlangsitem">English</a>-->
+	</div>
+</div>
+
+<div id="header">
+	<div id="hdrIconsLine" style="font-size: 0.75em; line-height: 2.5em; height: 30px;">
+	<div id="hdrsoc-func">
+		<span class="icon right" onClick="searchOn();"><span class="fas fa-search"></span></span>
+		
+	</div>
+	<div id="hdrsoc0">
+		<a class="icon" href="https://www.instagram.com/catholic.by" target="_blank"><span class="fab fa-instagram"></span></a>
+		<a class="icon" href="https://vk.com/catholicby" target="_blank"><span class="fab fa-vk"></span></a>
+		<a class="icon" href="https://www.facebook.com/catholic.by" target="_blank"><span class="fab fa-facebook-f" style="xfont-size: 0.9em"></span></a>
+				<a class="icon" href="https://www.youtube.com/catholicby" target="_blank"><span class="fab fa-youtube"></span></a>
+		<a class="icon" href="https://t.me/catholicby" target="_blank"><span class="fab fa-telegram-plane"></span></a>
+		<a class="icon" href="https://www.whatsapp.com/channel/0029Va5OCNiLikgF3nHrLO43" target="_blank"><span class="fab fa-whatsapp"></span></a>
+	</div>
+	</div>
+		<div id="hdrlogo">
+		<a href="/"><div id="fplogoimg"></div></a>
+	</div>
+	
+<div id="hdrmenu">
+<div id="navigation" class="navbar navbar-inverse">
+	<button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#toolbar">
+		<i class="fas fa-bars"></i> 
+<!--		<span class="mmenubar"><i class="fas fa-bars"></i></span> -->
+	</button>
+	<div id="toolbar" class="navbar-collapse collapse">
+		<div id="smartSocMenu">
+			<a class="icon" href="https://vk.com/catholicby" target="_blank"><span class="fab fa-vk"></span></a>
+			<a class="icon" href="https://www.facebook.com/catholic.by" target="_blank"><span class="fab fa-facebook-f" style="xfont-size: 0.9em"></span></a>
+			<a class="icon" href="https://www.instagram.com/catholic.by" target="_blank"><span class="fab fa-instagram"></span></a>
+						<a class="icon" href="https://www.youtube.com/catholicby" target="_blank"><span class="fab fa-youtube"></span></a>
+			<a class="icon" href="https://t.me/catholicby" target="_blank"><span class="fab fa-telegram-plane"></span></a>
+			<a class="icon" href="https://www.whatsapp.com/channel/0029Va5OCNiLikgF3nHrLO43" target="_blank"><span class="fab fa-whatsapp"></span></a>
+		</div>
+		<ul class="nav menu mod-list">
+<li class="item-101 default current active"><a href="/3/" >Галоўная</a></li><li class="item-123 deeper parent"><a href="/3/news" >Навіны</a><ul class="nav-child unstyled small"><li class="item-124"><a href="/3/news/announcements" >Анонсы</a></li><li class="item-126 divider"><span class="separator ">divider</span>
+</li><li class="item-125"><a href="/3/news/belarus" >Беларусь</a></li><li class="item-132"><a href="/3/news/vatican" >Ватыкан</a></li><li class="item-133"><a href="/3/news/world" >Замежжа</a></li><li class="item-139 divider"><span class="separator ">divider2</span>
+</li><li class="item-138"><a href="/3/news/sendnews" >Дашлі навіну</a></li></ul></li><li class="item-134 deeper parent"><a href="/3/pub" >Публіцыстыка</a><ul class="nav-child unstyled small"><li class="item-140"><a href="/3/pub/interview" >Інтэрв'ю</a></li><li class="item-141"><a href="/3/pub/auth" >Аўтарскія матэрыялы</a></li><li class="item-142"><a href="/3/pub/trans" >Пераклады</a></li></ul></li><li class="item-136 divider deeper parent"><span class="separator ">Касцёл у Беларусі</span>
+<ul class="nav-child unstyled small"><li class="item-143"><a href="/3/kasciol/parishes" >Адрасы касцёлаў</a></li><li class="item-144"><a href="/3/kasciol/parishes" >Дыяцэзіі</a></li><li class="item-145"><a href="/3/kasciol/conference" >Біскупы</a></li><li class="item-146"><a href="/3/kasciol/conference" >Канферэнцыя Біскупаў у Беларусі</a></li><li class="item-147"><a href="/3/kasciol/nuntiature" >Апостальская Нунцыятура ў РБ</a></li><li class="item-153 divider"><span class="separator ">divider3</span>
+</li><li class="item-148"><a href="/3/kasciol/education" >Навучальныя ўстановы</a></li><li class="item-252"><a href="/3/kasciol/sud" >Касцёльны суд</a></li><li class="item-149"><a href="/3/kasciol/monks" >Манаскія супольнасці</a></li><li class="item-150"><a href="/3/kasciol/community" >Рухі і супольнасці</a></li><li class="item-151"><a href="/3/kasciol/charity" >Дабрачынныя арганізацыі</a></li><li class="item-154 divider"><span class="separator ">divider4</span>
+</li><li class="item-233"><a href="/3/kasciol/history" >Гісторыя Касцёла ў Беларусі</a></li><li class="item-230"><a href="/3/kasciol/sanctuarium" >Санктуарыі</a></li><li class="item-232 divider"><span class="separator ">divider5</span>
+</li><li class="item-152"><a href="/3/kasciol/mass-media" >СМІ і выдавецтвы</a></li><li class="item-155"><a href="/3/kasciol/pressoffice" >Прэс-сакратар</a></li></ul></li><li class="item-135 divider deeper parent"><span class="separator ">Літургія</span>
+<ul class="nav-child unstyled small"><li class="item-205"><a href="/3/liturgy/feasts" >Урачыстасці і святы</a></li><li class="item-157"><a href="/3/liturgy/lit-calendar" >Літургічны каляндар</a></li><li class="item-158 parent"><a href="/3/liturgy/lectionary" >Лекцыянарый</a></li><li class="item-250"><a href="http://lh.catholic.by" target="_blank" rel="noopener noreferrer">Літургія гадзінаў</a></li><li class="item-159 parent"><a href="/3/liturgy/for-liturgy" >Матэрыялы для літургіі</a></li><li class="item-163"><a href="/3/liturgy/liturgical-books" >Агульныя ўводзіны да літургічных кніг</a></li><li class="item-204"><a href="/3/liturgy/saints" >Святыя</a></li></ul></li><li class="item-104 divider deeper parent"><span class="separator ">Бібліятэка</span>
+<ul class="nav-child unstyled small"><li class="item-165 parent"><a href="/3/lib/bible" >Святое Пісанне</a></li><li class="item-166 parent"><a href="/3/lib/documents" >Афіцыйныя дакументы</a></li><li class="item-224"><a href="/3/lib/homilies" >Гаміліі іерархаў</a></li><li class="item-170"><a href="/3/lib/pray" >Малітоўнік</a></li><li class="item-172"><a href="/2/conference/credo.html" target="_blank" rel="noopener noreferrer">Матэрыялы для катэхетаў</a></li><li class="item-237 parent"><a href="/3/lib/svyataram" >Святарам</a></li><li class="item-171"><a href="/3/lib/dictionary" >Слоўнік</a></li><li class="item-249"><a href="https://www.youtube.com/user/catholicby/playlists" target="_blank" rel="noopener noreferrer">Відэа</a></li></ul></li><li class="item-137 divider deeper parent"><span class="separator ">Пра нас</span>
+<ul class="nav-child unstyled small"><li class="item-174"><a href="/3/aboutus/editoring" >Рэдакцыя</a></li><li class="item-175"><a href="/3/aboutus/contact" >Кантакты</a></li><li class="item-222 divider"><span class="separator ">divider6</span>
+</li><li class="item-221"><a href="/3/aboutus/terms" >Умовы выкарыстання матэрыялаў</a></li></ul></li></ul>
+
+	</div>
+</div>
+</div>
+
+
+</div>
+
+
+<div id="actBtn">
+	<div id="actBtnSendNews"><a href="/3/news/sendnews">дашлі навіну</a></div>
+	<div id="actBtnDonate"><a href="/3/donate">ахвяраваць</a></div>
+</div>
+
+
+
+<div id="firstline">
+<div id="firstline-inner">
+	<div class="leftcol">
+
+		<div id="newslineblock">
+			<div class="locmenu"><ul class="newsline">
+<li class="newsdate active">Панядзелак, 15&nbsp;красавіка</li><li><span class="newstime">13:05</span><span class="newstitle"><a href="/3/news/announcements/17195-forum-na-temu-dushpastyrstva-moladzi-adbudzetstsa-minska-magiljo-skaj-arkhidyyatsezii"> Форум на тэму душпастырства моладзi адбудзецца ў Мінска-Магілёўскай архідыяцэзіі</a>  </span></li><li><span class="newstime">10:44</span><span class="newstitle"><a href="/3/news/belarus/17191-u-minsku-adbylasya-sustrecha-ministrantau-udzelniki-yakoj-malilisya-na-imshy-razam-z-artsybiskupam-staneuskim"> У Мінску адбылася сустрэча міністрантаў, удзельнікі якой маліліся на Імшы разам з арцыбіскупам Станеўскім</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li><li><span class="newstime">10:33</span><span class="newstitle"><a href="/3/news/belarus/17196-u-maladzechne-biskup-kasabutski-dzyali-svyatarskae-pasvyachenne-bratu-pa-lu-kuzmichu-kaputsynu"> У Маладзечне біскуп Касабуцкі ўдзяліў святарскае пасвячэнне брату Паўлу Кузьмічу, капуцыну</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li><li><span class="newstime">09:45</span><span class="newstitle"><a href="/3/news/announcements/17193-u-krasaviku-u-navagrudku-adbudutstsa-rekalektsyi-kursa-nazaret-z-ksyandzom-zharnasekam"> У красавіку ў Навагрудку адбудуцца рэкалекцыі курса «Назарэт» з ксяндзом Жарнасекам</a>  </span></li><li><span class="newstime">08:40</span><span class="newstitle"><a href="/3/news/belarus/17194-khto-taki-biskup-kaad-yutar-vyjshau-novy-numary-gazety-grodzenskaj-dyyatsezii-slova-zhytstsya"> Хто такі біскуп каад’ютар? Выйшаў новы нумары газеты Гродзенскай дыяцэзіі «Слова жыцця»</a>  </span></li><li><span class="newstime">07:17</span><span class="newstitle"><a href="/3/news/belarus/17192-artsybiskup-staneuski-tretsi-minska-magiljouski-mitrapalit-tselebravau-imshu-padzyaki-u-33-yu-gadavinu-z-chasu-zasnavannya-arkhidyyatsezii"> Арцыбіскуп Станеўскі, трэці Мінска-Магілёўскі Мітрапаліт, цэлебраваў Імшу падзякі ў 33-ю гадавіну з часу заснавання архідыяцэзіі</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li><li class="newsdate">Пятніца, 12&nbsp;красавіка</li><li><span class="newstime">21:57</span><span class="newstitle"><a href="/3/news/belarus/17190-padarunak-na-yubilej-kastsjola-navagrudskaj-parafii-svyatoga-arkhanjola-mikhala-belaruskiya-mastaki-peradali-svae-pratsy"> Падарунак на юбілей касцёла: навагрудскай парафіі святога Арханёла Міхала беларускія мастакі перадалі свае працы</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li><li><span class="newstime">21:31</span><span class="newstitle"><a href="/3/news/belarus/17189-u-minsku-z-udzelam-nuntsyya-jozicha-prajshlo-pasyadzhenne-nastayatselya-i-pradasta-niko-manaskikh-supolnastsya-z-usjoj-belarusi"> У Мінску з удзелам нунцыя Ёзіча прайшло пасяджэнне настаяцеляў і прадастаўнікоў манаскіх супольнасцяў з усёй Беларусі</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li><li><span class="newstime">17:05</span><span class="newstitle"><a href="/3/news/belarus/17188-da-25-goddzya-vitsebskaj-dyyatsezii-byla-prymerkavana-velikodnaya-vecharyna-yakaya-prajshla-vitsebsku-z-udzelam-biskupa-butkevicha"> Да 25-годдзя Віцебскай дыяцэзіі была прымеркавана велікодная вечарына, якая прайшла ў Віцебску з удзелам біскупа Буткевіча</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li><li><span class="newstime">10:24</span><span class="newstitle"><a href="/3/news/belarus/17186-u-lidze-razam-malilisya-najstarejshy-i-najmalodshy-biskupy-belarusi"> У Лідзе разам маліліся найстарэйшы і наймалодшы біскупы Беларусі</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li><li><span class="newstime">06:00</span><span class="newstitle"><a href="/3/news/belarus/17187-u-lyubovi-nyama-strakhu-pa-staronkakh-velikodnaga-numara-chasopisa-ave-maria"> «У любові няма страху…» Па старонках велікоднага нумара часопіса «Ave Maria»</a>  </span></li><li class="newsdate">Чацвер, 11&nbsp;красавіка</li><li><span class="newstime">15:25</span><span class="newstitle"><a href="/3/news/belarus/17185-artsybiskup-kandrusevich-pasvyatsi-altary-gonar-svyatykh-zhanchyn-u-starada-nim-kastsjole-brygitak-u-grodne"> Арцыбіскуп Кандрусевіч пасвяціў алтары ў гонар святых жанчын у старадаўнім касцёле брыгітак у Гродне</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li><li><span class="newstime">12:12</span><span class="newstitle"><a href="/3/news/announcements/17184-vechary-dlya-zakakhanykh-startuyuts-u-krasaviku-zastaetstsa-mensh-za-tydzen-kab-daluchytstsa"> «Вечары для закаханых» стартуюць у красавіку: застаецца менш за тыдзень, каб далучыцца</a>  </span></li><li><span class="newstime">11:01</span><span class="newstitle"><a href="/3/news/announcements/17183-u-mjory-na-adkryty-turnir-pa-mini-futbole-syarod-ministranta-z-nagody-25-goddzya-vitsebskaj-dyyatsezii-zaprashayuts-udzelnika-z-usjoj-belarusi"> У Мёры на адкрыты турнір па міні-футболе сярод міністрантаў з нагоды 25-годдзя Віцебскай дыяцэзіі запрашаюць удзельнікаў з усёй Беларусі</a>  </span></li><li class="newsdate">Серада, 10&nbsp;красавіка</li><li><span class="newstime">15:00</span><span class="newstitle"><a href="/3/news/belarus/17178-u-misii-dobraga-samaranina-u-minsku-adbylasya-malitva-praslaulennya-dzetsi-nyasuts-milasernasts-na-yakoj-prysutnichau-artsybiskup-staneuski"> У Місіі Добрага Самараніна ў Мінску адбылася малітва праслаўлення «Дзеці нясуць міласэрнасць», на якой прысутнічаў арцыбіскуп Станеўскі</a> <span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span >  </span></li>	
+</ul></div>
+
+<div class="allnews"><a href="/3/news">Глядзець усе навіны</a></div>
+<div class="sendnews"><a href="/3/news/sendnews">Дашлі навіну</a></div>
+		</div>
+
+	</div>
+	<div class="centercol">
+		
+		﻿<style>.subtitle {display: inline-block; color: #e31e25;}</style>
+
+	
+		<div class="iframetest" style="display: none"></div>
+	<div class="introtest" style="display: none"><p><img class="imgcenter" src="/3/images/news/2024/04/17196/2024-04-15-Pasviachenie-20240415-015.jpg" /></p>
+<p><strong>У суботу 13 красавіка ў касцёле святога Піо парафіі святога Казіміра ў Маладзечне (Мінска-Магілёўская архідыяцэзія), дзе нясуць служэнне Меншыя Браты Капуцыны, сакрамэнт пасвячэння ў ступені прэзбітэрату прыняў брат Павел Кузьміч OFMCap.</strong></p>
+</div>
+	<div class="splashnews">
+		<div class="splashcontainer">
+			<a href="/3/news/belarus/17196-u-maladzechne-biskup-kasabutski-dzyali-svyatarskae-pasvyachenne-bratu-pa-lu-kuzmichu-kaputsynu"><img src="/3/images/news/2024/04/17196/2024-04-15-Pasviachenie-20240415-015.jpg" /></a>			<a href="/3/news/belarus/17196-u-maladzechne-biskup-kasabutski-dzyali-svyatarskae-pasvyachenne-bratu-pa-lu-kuzmichu-kaputsynu"><div class="splash-title ">У Маладзечне біскуп Касабуцкі ўдзяліў святарскае пасвячэнне брату Паўлу Кузьмічу, капуцыну</div></a>
+		</div>
+		<div class="splash-text">
+			<a href="/3/news/belarus/17196-u-maladzechne-biskup-kasabutski-dzyali-svyatarskae-pasvyachenne-bratu-pa-lu-kuzmichu-kaputsynu">
+У суботу 13 красавіка ў касцёле святога Піо парафіі святога Казіміра ў Маладзечне (Мінска-Магілёўская архідыяцэзія), дзе нясуць служэнне Меншыя Браты Капуцыны, сакрамэнт пасвячэння ў ступені прэзбітэрату прыняў брат Павел Кузьміч OFMCap.
+</a>
+		</div>
+		<a href="/3/news"><div class="corner">Навіны</div></a>	</div>
+
+
+
+		<div class="topnews-outer "><div class="topnews-inner first">
+		<a href="/3/news/announcements/17195-forum-na-temu-dushpastyrstva-moladzi-adbudzetstsa-minska-magiljo-skaj-arkhidyyatsezii">
+			<img src="/3/images/previews/news/2024/04/p-2023-09-20-DonBoscoFest_20230815_008.jpg">
+						<span class="topnews-title">Форум на тэму душпастырства моладзi адбудзецца ў Мінска-Магілёўскай архідыяцэзіі</span>
+		</a>
+	</div></div>
+	
+		<div class="topnews-outer "><div class="topnews-inner second">
+		<a href="/3/news/belarus/17192-artsybiskup-staneuski-tretsi-minska-magiljouski-mitrapalit-tselebravau-imshu-padzyaki-u-33-yu-gadavinu-z-chasu-zasnavannya-arkhidyyatsezii">
+			<img src="/3/images/previews/news/2024/04/17192/p-2024-04-13-33-godzie-20240413-007.jpg">
+						<span class="topnews-title">Арцыбіскуп Станеўскі, трэці Мінска-Магілёўскі Мітрапаліт, цэлебраваў Імшу падзякі ў 33-ю гадавіну з часу заснавання архідыяцэзіі</span>
+		</a>
+	</div></div>
+	<div class="clr"></div>
+		<div class="topnews-outer  minusnews2"><div class="topnews-inner first">
+		<a href="/3/news/belarus/17189-u-minsku-z-udzelam-nuntsyya-jozicha-prajshlo-pasyadzhenne-nastayatselya-i-pradasta-niko-manaskikh-supolnastsya-z-usjoj-belarusi">
+			<img src="/3/images/previews/news/2024/04/17189/p-2024-04-12-Plenum-20240411-007.jpg">
+						<span class="topnews-title">У Мінску з удзелам нунцыя Ёзіча прайшло пасяджэнне настаяцеляў і прадастаўнікоў манаскіх супольнасцяў з усёй Беларусі</span>
+		</a>
+	</div></div>
+	
+		<div class="topnews-outer  minusnews2"><div class="topnews-inner second">
+		<a href="/3/news/belarus/17188-da-25-goddzya-vitsebskaj-dyyatsezii-byla-prymerkavana-velikodnaya-vecharyna-yakaya-prajshla-vitsebsku-z-udzelam-biskupa-butkevicha">
+			<img src="/3/images/previews/news/2024/04/p-2024-04-04-vicebsk-009.jpg">
+			<div class="corner">Вялікдзень 2024</div>			<span class="topnews-title">Да 25-годдзя Віцебскай дыяцэзіі была прымеркавана велікодная вечарына, якая прайшла ў Віцебску з удзелам біскупа Буткевіча</span>
+		</a>
+	</div></div>
+	<div class="clr"></div>
+		<div class="topnews-outer  minusnews minusnews2"><div class="topnews-inner first">
+		<a href="/3/news/belarus/17186-u-lidze-razam-malilisya-najstarejshy-i-najmalodshy-biskupy-belarusi">
+			<img src="/3/images/previews/news/2024/04/17186/p-2024-04-12-Lida-20240407-054.jpg">
+						<span class="topnews-title">У Лідзе разам маліліся найстарэйшы і наймалодшы біскупы Беларусі</span>
+		</a>
+	</div></div>
+	
+		<div class="topnews-outer  minusnews minusnews2"><div class="topnews-inner second">
+		<a href="/3/news/belarus/17187-u-lyubovi-nyama-strakhu-pa-staronkakh-velikodnaga-numara-chasopisa-ave-maria">
+			<img src="/3/images/previews/news/2024/04/p-2024-04-12-AM349news.jpg">
+			<div class="corner">Вялікдзень 2024</div>			<span class="topnews-title">«У любові няма страху…» Па старонках велікоднага нумара часопіса «Ave Maria»</span>
+		</a>
+	</div></div>
+	<div class="clr"></div>
+		<div class="topnews-outer  minusnews minusnews2"><div class="topnews-inner first">
+		<a href="/3/news/belarus/17185-artsybiskup-kandrusevich-pasvyatsi-altary-gonar-svyatykh-zhanchyn-u-starada-nim-kastsjole-brygitak-u-grodne">
+			<img src="/3/images/previews/news/2024/04/17185/p-2024-04-13-Altary-20240408-010.jpg">
+						<span class="topnews-title">Арцыбіскуп Кандрусевіч пасвяціў алтары ў гонар святых жанчын у старадаўнім касцёле брыгітак у Гродне</span>
+		</a>
+	</div></div>
+	
+		<div class="topnews-outer  minusnews minusnews2"><div class="topnews-inner second">
+		<a href="/3/news/announcements/17183-u-mjory-na-adkryty-turnir-pa-mini-futbole-syarod-ministranta-z-nagody-25-goddzya-vitsebskaj-dyyatsezii-zaprashayuts-udzelnika-z-usjoj-belarusi">
+			<img src="/3/images/previews/news/2024/04/p-2024-04-11-turnir.jpg">
+			<div class="corner">25 гадоў Віцебскай дыяцэзіі</div>			<span class="topnews-title">У Мёры на адкрыты турнір па міні-футболе сярод міністрантаў з нагоды 25-годдзя Віцебскай дыяцэзіі запрашаюць удзельнікаў з усёй Беларусі</span>
+		</a>
+	</div></div>
+	<div class="clr"></div>
+
+<style>
+	#minus-17196, #minus-17195, #minus-17192 {display: none;}
+	@media screen and (min-width: 551px) {
+		#minus-17189, #minus-17188 {display: none;}
+	}	
+</style>
+		
+
+<div class="custom"  >
+	<div class="minus500">
+<p><a href="https://t.me/catholicby" target="_blank" rel="noopener noreferrer"><img src="/3/images/news/2020/11/telega-b.jpg" style="width: 100%;" /></a></p>
+</div></div>
+<div class="newslineminus">
+<ul class="newsline">
+<li id="minus-17195"><span class="newstime">15.04 13:05</span><span class="newstitle"><a href="/3/news/announcements/17195-forum-na-temu-dushpastyrstva-moladzi-adbudzetstsa-minska-magiljo-skaj-arkhidyyatsezii">Форум на тэму душпастырства моладзi адбудзецца ў Мінска-Магілёўскай архідыяцэзіі</a></span></li><li id="minus-17191"><span class="newstime">15.04 10:44</span><span class="newstitle"><a href="/3/news/belarus/17191-u-minsku-adbylasya-sustrecha-ministrantau-udzelniki-yakoj-malilisya-na-imshy-razam-z-artsybiskupam-staneuskim">У Мінску адбылася сустрэча міністрантаў, удзельнікі якой маліліся на Імшы разам з арцыбіскупам Станеўскім</a><span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span > </span></li><li id="minus-17196"><span class="newstime">15.04 10:33</span><span class="newstitle"><a href="/3/news/belarus/17196-u-maladzechne-biskup-kasabutski-dzyali-svyatarskae-pasvyachenne-bratu-pa-lu-kuzmichu-kaputsynu">У Маладзечне біскуп Касабуцкі ўдзяліў святарскае пасвячэнне брату Паўлу Кузьмічу, капуцыну</a><span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span > </span></li><li id="minus-17193"><span class="newstime">15.04 09:45</span><span class="newstitle"><a href="/3/news/announcements/17193-u-krasaviku-u-navagrudku-adbudutstsa-rekalektsyi-kursa-nazaret-z-ksyandzom-zharnasekam">У красавіку ў Навагрудку адбудуцца рэкалекцыі курса «Назарэт» з ксяндзом Жарнасекам</a></span></li><li id="minus-17194"><span class="newstime">15.04 08:40</span><span class="newstitle"><a href="/3/news/belarus/17194-khto-taki-biskup-kaad-yutar-vyjshau-novy-numary-gazety-grodzenskaj-dyyatsezii-slova-zhytstsya">Хто такі біскуп каад’ютар? Выйшаў новы нумары газеты Гродзенскай дыяцэзіі «Слова жыцця»</a></span></li><li id="minus-17192"><span class="newstime">15.04 07:17</span><span class="newstitle"><a href="/3/news/belarus/17192-artsybiskup-staneuski-tretsi-minska-magiljouski-mitrapalit-tselebravau-imshu-padzyaki-u-33-yu-gadavinu-z-chasu-zasnavannya-arkhidyyatsezii">Арцыбіскуп Станеўскі, трэці Мінска-Магілёўскі Мітрапаліт, цэлебраваў Імшу падзякі ў 33-ю гадавіну з часу заснавання архідыяцэзіі</a><span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span > </span></li><li id="minus-17190"><span class="newstime">12.04 21:57</span><span class="newstitle"><a href="/3/news/belarus/17190-padarunak-na-yubilej-kastsjola-navagrudskaj-parafii-svyatoga-arkhanjola-mikhala-belaruskiya-mastaki-peradali-svae-pratsy">Падарунак на юбілей касцёла: навагрудскай парафіі святога Арханёла Міхала беларускія мастакі перадалі свае працы</a><span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span > </span></li><li id="minus-17189"><span class="newstime">12.04 21:31</span><span class="newstitle"><a href="/3/news/belarus/17189-u-minsku-z-udzelam-nuntsyya-jozicha-prajshlo-pasyadzhenne-nastayatselya-i-pradasta-niko-manaskikh-supolnastsya-z-usjoj-belarusi">У Мінску з удзелам нунцыя Ёзіча прайшло пасяджэнне настаяцеляў і прадастаўнікоў манаскіх супольнасцяў з усёй Беларусі</a><span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span > </span></li><li id="minus-17188"><span class="newstime">12.04 17:05</span><span class="newstitle"><a href="/3/news/belarus/17188-da-25-goddzya-vitsebskaj-dyyatsezii-byla-prymerkavana-velikodnaya-vecharyna-yakaya-prajshla-vitsebsku-z-udzelam-biskupa-butkevicha">Да 25-годдзя Віцебскай дыяцэзіі была прымеркавана велікодная вечарына, якая прайшла ў Віцебску з удзелам біскупа Буткевіча</a><span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span > </span></li><li id="minus-17186"><span class="newstime">12.04 10:24</span><span class="newstitle"><a href="/3/news/belarus/17186-u-lidze-razam-malilisya-najstarejshy-i-najmalodshy-biskupy-belarusi">У Лідзе разам маліліся найстарэйшы і наймалодшы біскупы Беларусі</a><span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span > </span></li><li id="minus-17187"><span class="newstime">12.04 06:00</span><span class="newstitle"><a href="/3/news/belarus/17187-u-lyubovi-nyama-strakhu-pa-staronkakh-velikodnaga-numara-chasopisa-ave-maria">«У любові няма страху…» Па старонках велікоднага нумара часопіса «Ave Maria»</a></span></li><li id="minus-17185"><span class="newstime">11.04 15:25</span><span class="newstitle"><a href="/3/news/belarus/17185-artsybiskup-kandrusevich-pasvyatsi-altary-gonar-svyatykh-zhanchyn-u-starada-nim-kastsjole-brygitak-u-grodne">Арцыбіскуп Кандрусевіч пасвяціў алтары ў гонар святых жанчын у старадаўнім касцёле брыгітак у Гродне</a><span class="neswline_icon flag_photo" title="Ёсць фота"><img src="https://catholic.by/3/templates/catholic/img/flag-photo.png"></span > </span></li></ul>	
+<div class="readallnews">
+	<div class="allnews"><a href="/3/news">Глядзець усе навіны</a></div>
+	<div class="sendnews"><a href="/3/news/sendnews">Дашлі навіну</a></div>
+</div>
+</div>
+
+	</div>
+	<div class="rightcol">
+			
+		
+		
+﻿
+
+<div class="liturgy">
+<div class="today">
+<div class="today-caption"><span class="litcolor litcolor3"></span>Сёння ў літургіі:</div>
+		<div class="today-saint">Панядзелак — ІIІ Велікодны тыдзень.</div>
+	</div>
+
+	<div class="quote">
+	<div class="quote-l">
+	<div class="quote-r">
+	<div class="quote-text"><a href="/3/liturgy/lectionary/velikodny/5131-panyadzelak-iii-velikodny-tydzen">У тым справа Божая, каб вы верылі ў таго, каго Ён паслаў</a></div>
+	</div>
+	</div>
+	</div>
+<style>
+#fpreadingsblock {
+	padding: 0.5em 0 0.5em 1em;
+	font-size: 0.9em;
+	line-height: 1.2em;
+	xdisplay: none;
+}
+#fpreadingsblock .also {
+	color: #ffffff;
+}
+#fpreadingsblock a {
+	text-decoration: underline;
+}
+#fpreadingsblock a:hover {
+	text-decoration: none;
+}
+</style>
+<script>
+function switchReadings() {
+	obj = document.getElementById('fpreadingsblock');
+	if (!obj) {return;}
+	if (obj.style.display == "block") {
+		obj.style.display = "none";
+	} else {
+		obj.style.display = "block";
+	}
+}
+</script>
+<div class="reading">
+<div class="lectionary">
+<ul>
+<li>Чытанні<div id="fpreadingsblock"><a href="/3/liturgy/lectionary/velikodny/5131-panyadzelak-iii-velikodny-tydzen">Дз 6, 8–15; Пс 119 (118), 23–24. 26–27. 29–30; Ев. Ян 6, 22–29</a></div></li>
+
+<li><a href="/3/liturgy/lectionary">Лекцыянарый</a></li>
+<li><a href="http://lh.catholic.by">Літургія гадзінаў</a></li>
+<!--<span style="vertical-align: super; color: #e85122; font-size: 0.8em; font-weight: bold;"> new</span>-->
+</ul>
+</div>
+<div class="reflections">
+<script>// <![CDATA[
+function openPrastora() {
+		var windowWidth = 500; //max 640
+		var windowHeight = 680;
+		var centerWidth = (window.screen.width - windowWidth) / 2;
+		var centerHeight = (window.screen.height - windowHeight) / 2;
+
+		newWin = window.open('http://www.prastoramalitvy.by/', 'Прастора малітвы',
+			'status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=' + windowHeight + ',width=' + windowWidth + ',left=' + centerWidth + ',top=' + centerHeight);
+		newWin.focus();
+	}
+// ]]></script>
+<ul>
+<li><a href="/3/liturgy/for-liturgy/homilies">Нядзельнае казанне</a></li>
+<li><a href="/3/liturgy/for-liturgy/comments">Каментарыі да літургіі</a></li>
+<li><a href="#" onClick="openPrastora();return false;">Прастора малітвы</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="ann">
+			<div class="ann-feature">
+				<a href="/3/news/announcements/17184-vechary-dlya-zakakhanykh-startuyuts-u-krasaviku-zastaetstsa-mensh-za-tydzen-kab-daluchytstsa">
+				<div class="ann-feature-img"><img src="/3/images/previews/news/2023/03/q-2022-04-01-0-02-05-dff5.jpg"></div>
+				<div class="ann-item">
+					<span class="ann-date">16.04 – 25.05</span>
+					<span class="ann-title">«Вечары для закаханых» стартуюць у красавіку: застаецца менш за тыдзень, каб далучыцца</span>
+				</div>
+				</a>
+			</div>
+			<div class="ann-item">
+				<span class="ann-date">19.04 – 21.04</span>
+				<span class="ann-title"><a href="/3/news/announcements/17159-frantsishkane-zaprashayuts-akhvotnykh-u-ivyanets-na-nezvychajnyya-biblijna-muzychnyya-rekalektsyi">Францішкане запрашаюць ахвотных у Івянец на незвычайныя біблійна-музычныя рэкалекцыі</a></span>
+			</div>
+			<div class="ann-item">
+				<span class="ann-date">22.04 – 23.04</span>
+				<span class="ann-title"><a href="/3/news/announcements/17174-custrecha-maladykh-kansekravanykh-asobau-z-usjoj-belarusi-projdze-u-baranavichakh">Cустрэча маладых кансэкраваных асобаў з усёй Беларусі пройдзе ў Баранавічах</a></span>
+			</div>
+			<div class="ann-item">
+				<span class="ann-date">27.04</span>
+				<span class="ann-title"><a href="/3/news/announcements/17195-forum-na-temu-dushpastyrstva-moladzi-adbudzetstsa-minska-magiljo-skaj-arkhidyyatsezii">Форум на тэму душпастырства моладзi адбудзецца ў Мінска-Магілёўскай архідыяцэзіі</a></span>
+			</div>
+			<div class="ann-item">
+				<span class="ann-date">26.04 – 28.04</span>
+				<span class="ann-title"><a href="/3/news/announcements/17193-u-krasaviku-u-navagrudku-adbudutstsa-rekalektsyi-kursa-nazaret-z-ksyandzom-zharnasekam">У красавіку ў Навагрудку адбудуцца рэкалекцыі курса «Назарэт» з ксяндзом Жарнасекам</a></span>
+			</div>
+			<a href="/3/news/announcements"><div class="corner">Анонсы</div></a>
+</div>
+
+<div class="custom"  >
+	<div class="katedraonline">
+<p><iframe style="width: 100%; height: 150px;" src="https://youtube.com/embed/gRLWZEok2GU" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe></p>
+<!-- <p class="alllink"><a href="/3/stream">Усе трансляцыі</a> &gt;&gt;</p> --></div></div>
+
+
+<div class="custom"  >
+	<div style="background: #786b62; text-align: center; padding-top: 16px;"><a href="/3/lib/bible/audio"><img style="width: 80%; max-width: 180px; border-radius: 50%; border: 1px solid #ffffff;" src="/3/images/news/2022/02/2022-01-14-bible.jpg" alt="" /></a>
+<div style="padding-bottom: 1rem;"><a style="color: #ffffff;" href="/3/lib/bible/audio">Евангелле ў аўдыё</a></div>
+</div></div>
+
+	
+		<div class="radio">
+		</div>
+		
+	</div>
+</div>	
+	<div class="righttoolbar">
+		
+
+		<div class="toolitem"><a  href="/3/donate"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/donate-3.png');" ></div><span class="toolitem-caption">Ахвяраванне</span></a></div>
+		<div class="toolitem"><a  href="/3/news/sendnews"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/02.png');" ></div><span class="toolitem-caption">Дашлі навіну</span></a></div>
+		<div class="toolitem"><a  href="/3/tags/god-padzyaki-matsi-bozhaj"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/22.png');" ></div><span class="toolitem-caption">Год падзякі</span></a></div>
+		<div class="toolitem"><a  href="/3/kasciol/parishes"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/05.png');" ></div><span class="toolitem-caption">Адрасы касцёлаў</span></a></div>
+		<div class="toolitem"><a  href="/3/lib/bible"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/08.png');" ></div><span class="toolitem-caption">Святое Пісанне</span></a></div>
+		<div class="toolitem"><a  href="/3/tags/sinod-2023"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/21.png');" ></div><span class="toolitem-caption">Сінод Біскупаў</span></a></div>
+		<div class="toolitem"><a  target="_blank"  href="http://lh.catholic.by"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/18.png');" ></div><span class="toolitem-caption">Літургія гадзінаў</span></a></div>
+		<div class="toolitem"><a  href="/3/lib/documents"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/03.png');" ></div><span class="toolitem-caption">Дакументы Касцёла</span></a></div>
+		<div class="toolitem"><a  href="/3/kasciol/conference"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/04.png');" ></div><span class="toolitem-caption">Іерархі</span></a></div>
+		<div class="toolitem"><a  href="/3/liturgy/lectionary"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/10.png');" ></div><span class="toolitem-caption">Лекцыяна&shy;рый</span></a></div>
+		<div class="toolitem"><a  href="/3/lib/pray"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/09.png');" ></div><span class="toolitem-caption">Малітоўнік</span></a></div>
+		<div class="toolitem"><a  href="/3/liturgy/saints"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/16.png');" ></div><span class="toolitem-caption">Святыя</span></a></div>
+		<div class="toolitem"><a  href="/3/kasciol/monks"><div class="toolitem-img" style="background-image: url('/3/images/resources/icons/17.png');" ></div><span class="toolitem-caption">Манаскія супольнасці</span></a></div>
+
+
+	</div>
+</div>
+
+
+<div class="lazy" id="lazy1"></div>
+
+<div class="lazy" id="lazy2"></div>
+
+<div class="lazy" id="lazy3"></div>
+
+<div class="lazy" id="lazy4"></div>
+
+<div class="lazy" id="lazy5"></div>
+
+
+<div id="footer">
+	<img id="footerimg" src="/3/templates/catholic/img/footer.png" />
+
+	<div class="ftrline"></div>
+
+<!--	
+	<div id="ftrtitle">&copy; Афіцыйны інтэрнэт-партал Каталіцкага Касцёла ў Беларусі</div>
+	<div id="ftrcontact">info@catholic.by &nbsp;&nbsp; +375 (25) 537-50-43 &nbsp;&nbsp; г. Мінск, вул. Кальцова 153</div>
+	<div id="ftrsearhform">
+-->	
+		
+<!--
+	</div>
+-->	
+	<div id="ftrsocial" style="margin-top: -1rem; margin-bottom: 1rem;">
+		<a class="ftrsocbtn" id="ftrins" href="https://www.instagram.com/catholic.by/" target="_blank"><span class="fab fa-instagram"></span></a>
+		<a class="ftrsocbtn" id="ftrvk" href="https://vk.com/catholicby" target="_blank"><span class="fab fab fa-vk"></span></a>
+		<a class="ftrsocbtn" id="ftrfb" href="https://www.facebook.com/catholic.by" target="_blank"><span class="fab fa-facebook-f"></span></a>
+		<a class="ftrsocbtn" id="ftryou" href="https://www.youtube.com/catholicby" target="_blank"><span class="fab fa-youtube"></span></a>
+		<a class="ftrsocbtn" id="ftrtel" href="https://t.me/catholicby" target="_blank"><span class="fab fa-telegram-plane"></span></a>
+		<a class="ftrsocbtn" id="ftrwa" href="https://www.whatsapp.com/channel/0029Va5OCNiLikgF3nHrLO43" target="_blank"><span class="fab fa-whatsapp"></span></a>
+<!--		
+		<a class="ftrsocbtn" id="ftrtwi" href="https://twitter.com/catholicby" target="_blank"><span class="fab fa-twitter"></span></a>
+		<a class="ftrsocbtn" id="ftrvib" href="https://invite.viber.com/?g2=AQAOXMc2uTPVuEihyoT99V6X0QrPqWh%2BL4J%2FLCiEuhqBOMU4%2BuoCeDcvNsE25QX3" target="_blank"><span class="fab fa-viber"></span></a>
+-->		
+	</div>
+	
+
+
+	<div id="donateftr">
+		<div class="offdata">
+			<nobr>&copy; Мiнска-Магiлёўская</nobr> архiдыяцэзiя <nobr>Рымска-каталіцкага</nobr> Касцёла <nobr>ў Рэспубліцы Беларусь /</nobr><br>
+			<nobr>УНП 101568363 /</nobr>
+			<nobr>Рэспубліка Беларусь,</nobr> <nobr>г. Мінск, вул. Рэвалюцыйная, 1а /</nobr>
+			<nobr>e-mail: <b>info@catholic.by</b> /</nobr>
+			<!--<nobr>тэл.: <b>+375 (25) 537 5043</b> /</nobr>-->
+			<nobr>працоўныя гадзіны: 10.00 – 18.00</nobr>
+		</div>
+		
+		<div class="finance" style="padding: 1rem;">
+			<a class="paybtn" href="/3/donate">Ахвяраваць</a>
+			<a class="donatelogos" href="/3/donate"><img src="/3/modules/mod_mc_webpay/images/webpay-icons-min1.png" /></a>
+		</div>
+	</div>
+	
+	<div class="ftrdblline"></div>
+	<div id="ftrmenu"><div id="ftrmenuwraper">
+			<div class="lazy" id="lazy6"></div>
+		<div class="clr"></div>	
+	</div></div>
+
+
+
+</div> <!-- #footer -->
+
+</div> <!-- #page -->
+
+
+</div> <!-- #exterier -->
+
+<div id="cont">
+    <div id="progress"></div>
+</div>
+
+<div id="scrollup">
+	<img src="/3/templates/catholic/img/up.png" class="up" alt="Уверх" />
+</div>
+
+<script>
+	InitScrollUp();
+</script>
+
+<script type="text/javascript">
+//    $(document).on('ready', function() {
+
+      $(".regular").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+	autoplay: true,
+	autoplaySpeed: 10000
+        });
+//      $(".program").slick({
+//        dots: true,
+//        infinite: true,
+//        slidesToShow: 4,
+//        variableWidth: true,
+//        autoplay: true,
+//        autoplaySpeed: 5000
+//        });
+//      $(".program2").slick({
+//        dots: true,
+//        infinite: true,
+//        slidesToShow: 4,
+//        variableWidth: true,
+//        autoplay: true,
+//        autoplaySpeed: 5000
+//        });
+
+//    });
+</script>
+
+</body>
+</html>
