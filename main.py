@@ -1,8 +1,11 @@
+# -*- coding: utf-8 -*-
 # Name: main.py
 # Author: Dalibor Kyjovský (xkyjov03)
 # Date: April 11, 2024
 # Description: This script execute of various classes and functions for testing network connectivity and others.
 # Python Version: 3.9
+
+
 
 # Importing necessary libraries
 import argparse
@@ -31,7 +34,7 @@ def main():
     if args.get:
         if args.files:
             for input_file in args.files:
-                print(f"Processing {input_file}...")
+                print("Processing " + input_file + "...")
 
                 edit_csv_file.move_url_to_first_column(input_file)
 
@@ -41,8 +44,8 @@ def main():
                     website_list = [row[0] for row in reader]
 
                 print(input_file)
-                output_filepath = f'data/output_data/'
-                output_content_folder = f'data/output_data/content_folder'
+                output_filepath = 'data/output_data/'
+                output_content_folder = 'data/output_data/content_folder'
 
                 # Rozdělení seznamu URL na skupiny po 10
                 for index, i in enumerate(range(0, len(website_list), 10), start=1):
@@ -58,7 +61,7 @@ def main():
                     results_dns = tester_dns.run_tests()
 
                     date_time = datetime.now().strftime("%d-%m-%Y_%H-%M")
-                    output_filename = "results_" + args.filename + "-" + str(i) + "}_" + date_time + ".json"
+                    output_filename = "results_" + str(args.filename) + "-" + str(i) + "_" + date_time + ".json"
 
                     print(output_filename)
                     print("Saving to JSON")

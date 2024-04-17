@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Name: test_web_connection.py
 # Author: Dalibor Kyjovský (xkyjov03)
 # Date: April 11, 2024
@@ -11,14 +12,14 @@ import requests
 from scapy.layers.inet import TCP, IP
 from timeout_decorator import timeout
 from scapy.all import *
-from utils import reformat_url
+from utils import reformat_url, icmp_test
 
-function_timeout = 30
+function_timeout = 200
 function_timeout_long = 200
 
 
 @timeout(function_timeout)
-def ping_test(address):
+def ping_test_old(address):
     try:
         ping_response = subprocess.check_output(["ping", "-c", "1", reformat_url.remove_http(address)])
         ping_response_str = ping_response.decode("utf-8")
@@ -27,21 +28,21 @@ def ping_test(address):
         ip_address = ip_address_match.group(1) if ip_address_match else "N/A"
 
         if ip_address != "N/A":
-            return 'OK', ip_address, "N/A"
+            return 'OK', ip_address
         else:
-            return 'Fail', "N/A", "N/A"
+            return 'Fail', "N/A"
 
     except TimeoutError:
         print("Ping test exceeded timeout.")
-        return "N/A", "N/A", "N/A"
+        return "N/A", "N/A"
     except Exception as e:
         print("PING TEST ERROR: " + str(e))
-        return "PING TEST ERROR: " + str(e), "N/A", "N/A"
+        return "PING TEST ERROR: " + str(e), "N/A"
 
 
 # TODO: otestit
 @timeout(function_timeout_long)
-def perform_trace(address):
+def perform_trace_old(address):
     try:
         result = subprocess.run(['traceroute', '-I', address], capture_output=True, text=True)
 
@@ -79,7 +80,7 @@ def dns_lookup(website):
         return "DNS LOOKUP ERROR: " + str(e), "N/A"
 
 
-# TODO: ještě otestovat, ale asi je  to funkční a vpohodě... CO TO HTTP je to ok?
+# TODO: ještě otestovat...
 @timeout(function_timeout)
 def http_get_request(url):
     try:
@@ -114,7 +115,7 @@ def resolver_identification():
 # TODO: proč to padá - asi sere pes
 def tcp_connect(ip_address, port=80):
     try:
-        response = sr1(IP(dst=ip_address) / TCP(dport=port, flags="S"), timeout=5, verbose=False)
+        response = sr1(IP(dst=ip_address) / TCP(dport=port, flags="S"), timeout=100, verbose=False)
         if response and response.haslayer(TCP) and response[TCP].flags == 18:
             remote_ip = response[IP].src
             return "Established", remote_ip
@@ -152,12 +153,12 @@ class WebConnectivityTester:
 
             if dns_result[0] == "OK":
                 tcp_result = tcp_connect(dns_result[1][0])
-                ping_result = ping_test(website)
+                ping_result = icmp_test.ping_test(reformat_url.remove_http(website))          #ping_test(website)
 
-                if ping_result[0] != "OK":
-                    trace_hop = perform_trace(website)
-                else:
-                    trace_hop = "NOT RUN", "N/A"
+               # if ping_result[0] != "OK":
+                trace_hop = icmp_test.perform_trace(reformat_url.remove_http(website))
+               # else:
+               #     trace_hop = "NOT RUN", "N/A"
                 http_status, content_length, headers, html_content = http_get_request(website)
 
                 end_time = time.time()
@@ -178,8 +179,8 @@ class WebConnectivityTester:
                     'TCP Remote IP': tcp_result[1],
                     'PING Status': ping_result[0],
                     'PING IP': ping_result[1],
-                    'Trace hop Status': trace_hop[0],
-                    'Trace hop IP': trace_hop[1],
+                    #'Trace hop Status': trace_hop[0],
+                    'Trace hop IP': trace_hop,
                     'HTTP Status': http_status,
                     'Content Length': content_length,
                     'Headers': headers,

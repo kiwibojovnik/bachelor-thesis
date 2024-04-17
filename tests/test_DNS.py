@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import dns.resolver
 import socket
 
