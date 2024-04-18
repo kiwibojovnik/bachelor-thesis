@@ -5,17 +5,20 @@
 # Description:
 # Python Version: 3.9
 import socket
+import ssl
 
 # Importing necessary libraries
 import requests
+import time
 
+from requests.structures import CaseInsensitiveDict
 from scapy.layers.inet import TCP, IP
 from timeout_decorator import timeout
 from scapy.all import *
 from utils import reformat_url, icmp_test
 
-function_timeout = 200
-function_timeout_long = 200
+function_timeout = 10
+function_timeout_long = 10
 
 
 @timeout(function_timeout)
@@ -132,6 +135,69 @@ def tcp_connect(ip_address, port=80):
         return "TCP ERROR: " + str(e), "N/A"
 
 
+def tcp_handshake_new(destination_ip, destination_port=80):
+    try:
+        # Vytvoření socketu pro TCP spojení
+        tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+        # Nastavení časovače pro případ, že spojení nebude úspěšné
+        tcp_socket.settimeout(1)
+
+        # Zahájení spojení s cílovou adresou a portem
+        tcp_socket.connect((destination_ip, destination_port))
+
+        # Získání lokální IP adresy, na kterou bylo připojení navázáno
+        remote_ip = tcp_socket.getpeername()[0]
+
+        # Uzavření spojení
+        tcp_socket.close()
+
+        # Pokud se spojení podařilo navázat a uzavřít, handshake byl úspěšný
+        return "Established", remote_ip
+
+    except Exception as e:
+        # Pokud došlo k chybě při navazování spojení, handshake se nezdařil
+        print("TCP handshake error:", e)
+        return "N/A", "N/A"
+
+
+# TODO: doimplementovat tohle...
+def detect_redirect(url):
+    try:
+        # Provádění HTTP GET požadavku
+        response = requests.get(reformat_url.add_https(url), allow_redirects=False)
+
+        # Kontrola, zda byl požadavek přesměrován
+        if response.is_redirect:
+            return "Redirected", response.headers['Location']
+        else:
+            return "Not redirected", "N/A"
+
+    except Exception as e:
+        print("Redirect test error:", e)
+        return "N/A", "N/A"
+
+
+# Uloženi certifikatu na pozdějši jeho ověření
+def get_https_certificate(hostname, port=443):
+    try:
+        # Vytvoření spojení na zadané stránce
+        context = ssl.create_default_context()
+        with socket.create_connection((hostname, port)) as sock:
+            # Pokud se jedná o HTTPS, pokusíme se získat certifikát
+            if port == 443:
+                with context.wrap_socket(sock, server_hostname=hostname) as ssock:
+                    # Získání certifikátu ze socketu
+                    cert = ssock.getpeercert()
+                    return "OK", cert
+            else:
+                print("Stránka nevyužívá HTTPS, není dostupný certifikát.")
+                return "Failed", "N/A"
+    except Exception as e:
+        print("Chyba při získávání certifikátu:", e)
+        return "N/A", str(e)
+
+
 class WebConnectivityTester:
     def __init__(self, url_list, output_content_folder):
         self.urls = url_list
@@ -153,22 +219,27 @@ class WebConnectivityTester:
 
             if dns_result[0] == "OK":
                 tcp_result = tcp_connect(dns_result[1][0])
-                ping_result = icmp_test.ping_test(reformat_url.remove_http(website))          #ping_test(website)
+                tcp_result_new = tcp_handshake_new(dns_result[1][0])
+                ping_result = icmp_test.ping_test(reformat_url.remove_http(website))  # ping_test(website)
 
-               # if ping_result[0] != "OK":
+                # if ping_result[0] != "OK":
                 trace_hop = icmp_test.perform_trace(reformat_url.remove_http(website))
-               # else:
-               #     trace_hop = "NOT RUN", "N/A"
+                # else:
+                #     trace_hop = "NOT RUN", "N/A"
+
+                redirect = detect_redirect(website)
+
                 http_status, content_length, headers, html_content = http_get_request(website)
+
+                cert = get_https_certificate(dns_result[1][0])
 
                 end_time = time.time()
                 duration = round(end_time - start_time, 2)
 
                 output_content = reformat_url.remove_http(website) + '_content.html'
-
                 self.save_html_content(output_content, html_content)
 
-                return {
+                return CaseInsensitiveDict({
                     'Time': duration,
                     'URL': str(website),
                     'Resolver Status': resolver_ip[0],
@@ -177,15 +248,22 @@ class WebConnectivityTester:
                     'DNS IPs': dns_result[1],
                     'TCP Status': tcp_result[0],
                     'TCP Remote IP': tcp_result[1],
+                    'TCP Status new': tcp_result_new[0],
+                    'TCP Remote IP new': tcp_result_new[1],
                     'PING Status': ping_result[0],
                     'PING IP': ping_result[1],
-                    #'Trace hop Status': trace_hop[0],
+                    # 'Trace hop Status': trace_hop[0],
                     'Trace hop IP': trace_hop,
+                    'Redirected Status': redirect[0],
+                    'Redirected Location': redirect[1],
                     'HTTP Status': http_status,
                     'Content Length': content_length,
                     'Headers': headers,
-                    'HTML Content': output_content
-                }
+                    'HTML Content': output_content,
+                    'Cert Status': cert[0],
+                    'Cert Content': cert[1],
+                    'Timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                })
 
         except Exception as e:
             print(f"Error testing {website}: {e}")

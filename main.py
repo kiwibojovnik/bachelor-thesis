@@ -54,23 +54,20 @@ def main():
                     tester = test_web_connection.WebConnectivityTester(batch, output_content_folder)
                     results = tester.run_tests()
 
-                    tester_middle_box = test_middle_box.CensorshipDetector(batch)
-                    results_middle_box = tester_middle_box.run_tests
-
-                    tester_dns = test_DNS.DNSAttackDetector(batch)
-                    results_dns = tester_dns.run_tests()
-
                     date_time = datetime.now().strftime("%d-%m-%Y_%H-%M")
-                    output_filename = "results_" + str(args.filename) + "-" + str(i) + "_" + date_time + ".json"
+
+                    if args.filename:
+                        name = str(args.filename) + "-"
+                    else:
+                        name = ""
+
+                    output_filename = "results_" + name + str(i) + "_" + date_time + ".json"
 
                     print(output_filename)
                     print("Saving to JSON")
-                    save_to_JSON.process_results(results, output_filepath + output_filename)
-                    save_to_JSON.process_results(results_middle_box, output_filepath + output_filename)
-                    save_to_JSON.process_results(results_dns, output_filepath + output_filename)
+                    print(results)
 
-                    # TODO: Dělat rovnou v tom json file
-                    merge_results.run_merging(output_filepath + output_filename)
+                    save_to_JSON.save_test_results(results, output_filepath + output_filename)
 
                     # Save file to this path with name of output file.
                     remote_file_path = load_config.load_credentials("server_path_for_files") + output_filename
