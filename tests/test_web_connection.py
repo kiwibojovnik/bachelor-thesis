@@ -22,54 +22,6 @@ function_timeout_long = 10
 
 
 @timeout(function_timeout)
-def ping_test_old(address):
-    try:
-        ping_response = subprocess.check_output(["ping", "-c", "1", reformat_url.remove_http(address)])
-        ping_response_str = ping_response.decode("utf-8")
-
-        ip_address_match = re.search(r'\((.*?)\)', ping_response_str)
-        ip_address = ip_address_match.group(1) if ip_address_match else "N/A"
-
-        if ip_address != "N/A":
-            return 'OK', ip_address
-        else:
-            return 'Fail', "N/A"
-
-    except TimeoutError:
-        print("Ping test exceeded timeout.")
-        return "N/A", "N/A"
-    except Exception as e:
-        print("PING TEST ERROR: " + str(e))
-        return "PING TEST ERROR: " + str(e), "N/A"
-
-
-# TODO: otestit
-@timeout(function_timeout_long)
-def perform_trace_old(address):
-    try:
-        result = subprocess.run(['traceroute', '-I', address], capture_output=True, text=True)
-
-        result = subprocess.check_output(["traceroute", "-I", reformat_url.remove_http(address)])
-        result_str = result.decode("utf-8")
-
-        lines = result_str.split('\n')
-        hop_ips = []
-        for line in lines[1:]:  # Skip header line
-            if line.strip():
-                hop_ip = line.split()[2]  # Assuming the IP address is at the fourth column
-                hop_ips.append(hop_ip)
-
-        return 'OK', hop_ips
-
-    except TimeoutError:
-        print("Trace test exceeded timeout.")
-        return "N/A", "N/A"
-    except Exception as e:
-        print("PERFORM TRACE ERROR: " + str(e))
-        return "PERFORM TRACE ERROR: " + str(e), "N/A"
-
-
-@timeout(function_timeout)
 def dns_lookup(website):
     try:
         ip_addresses = socket.gethostbyname_ex(
@@ -118,7 +70,7 @@ def resolver_identification():
 # TODO: proč to padá - asi sere pes
 def tcp_connect(ip_address, port=80):
     try:
-        response = sr1(IP(dst=ip_address) / TCP(dport=port, flags="S"), timeout=100, verbose=False)
+        response = sr1(IP(dst=ip_address) / TCP(dport=port, flags="S"), timeout=200, verbose=False)
         if response and response.haslayer(TCP) and response[TCP].flags == 18:
             remote_ip = response[IP].src
             return "Established", remote_ip
@@ -141,7 +93,7 @@ def tcp_handshake_new(destination_ip, destination_port=80):
         tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
         # Nastavení časovače pro případ, že spojení nebude úspěšné
-        tcp_socket.settimeout(1)
+        tcp_socket.settimeout(20)
 
         # Zahájení spojení s cílovou adresou a portem
         tcp_socket.connect((destination_ip, destination_port))

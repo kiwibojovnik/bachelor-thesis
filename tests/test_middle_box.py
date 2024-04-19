@@ -13,7 +13,7 @@ def http_header_manipulation(website):
     }
 
     try:
-        response = requests.get(reformat_url.add_https(website), headers=headers)
+        response = requests.get(reformat_url.add_http(website), headers=headers)
         original_headers = {key.lower(): value for key, value in headers.items()}
         received_headers = {key.lower(): value for key, value in response.request.headers.items()}
 
@@ -22,55 +22,26 @@ def http_header_manipulation(website):
             if key in received_headers and received_headers[key] == value:
                 detector = "No manipulation"
 
-        return {
-            'URL': str(website),
-            'Http header manipulation status': detector
-        }
+        return detector
 
     except requests.exceptions.RequestException as e:
         print(f"Error occurred during HTTP header manipulation test for {website}: {e}")
-        return {
-            'URL': str(website),
-            'http_header_manipulation': 'Error'
-        }
+        return "N/A"
 
 
 def invalid_request_line(website):
     invalid_methods = ['FOO', 'BAR', 'BAZ', 'QUX']
-    manipulation_count = 0
+    manipulation_score = 0
 
     try:
         for method in invalid_methods:
-            response = requests.request(method, reformat_url.add_https(website))
+            response = requests.request(method, reformat_url.add_http(website))
 
             if response.status_code == 400:
-                manipulation_count += 1
+                manipulation_score += 1
 
-        return {
-            'URL': str(website),
-            'Invalid request line score': manipulation_count,
-            'Invalid request line test count ': len(invalid_methods)
-        }
+        return manipulation_score, len(invalid_methods)
 
     except requests.exceptions.RequestException as e:
         print(f"Error occurred during invalid request line test for {website}: {e}")
-        return {
-            'URL': str(website),
-            'Invalid_request_line score': 'Fail',
-            'Invalid_request_line total tests ': len(invalid_methods)
-        }
-
-
-class CensorshipDetector:
-    def __init__(self, batch):
-        self.batch = batch
-
-    @property
-    def run_tests(self):
-        results = []
-        for website in self.batch:
-            results.append({'URL': str(website)})
-            results.append(invalid_request_line(website))
-            results.append(http_header_manipulation(website))
-
-        return results
+        return "Fail", "N/A"

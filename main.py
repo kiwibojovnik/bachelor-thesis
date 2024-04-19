@@ -6,13 +6,12 @@
 # Python Version: 3.9
 
 
-
 # Importing necessary libraries
 import argparse
 import csv
 from datetime import datetime
-from tests import test_web_connection, test_middle_box, test_DNS
-from utils import save_to_JSON, send_file, edit_csv_file, load_config, merge_results
+from tests import call_test
+from utils import save_to_JSON, send_file, edit_csv_file, load_config
 
 
 def parse_arguments():
@@ -21,6 +20,8 @@ def parse_arguments():
     parser.add_argument('-p', '--process', action='store_true', help='process data')
     parser.add_argument('-f', '--files', nargs='+', help='input files')
     parser.add_argument('-n', '--filename', help='name of the output file')
+    parser.add_argument('-a', '--address', help='preferred ipv4 or ipv6')
+
     return parser.parse_args()
 
 
@@ -36,7 +37,7 @@ def main():
             for input_file in args.files:
                 print("Processing " + input_file + "...")
 
-                edit_csv_file.move_url_to_first_column(input_file)
+               # edit_csv_file.move_url_to_first_column(input_file)
 
                 with open(input_file, 'r') as csvfile:
                     reader = csv.reader(csvfile)
@@ -51,7 +52,10 @@ def main():
                 for index, i in enumerate(range(0, len(website_list), 10), start=1):
                     batch = website_list[i:i + 10]
 
-                    tester = test_web_connection.WebConnectivityTester(batch, output_content_folder)
+                    if not args.address:
+                        args.address = "ipv4"
+
+                    tester = call_test.WebConnectivityTester(batch, output_content_folder, args.address)
                     results = tester.run_tests()
 
                     date_time = datetime.now().strftime("%d-%m-%Y_%H-%M")
@@ -63,9 +67,7 @@ def main():
 
                     output_filename = "results_" + name + str(i) + "_" + date_time + ".json"
 
-                    print(output_filename)
-                    print("Saving to JSON")
-                    print(results)
+                    print("Saving to JSON file: " + output_filename)
 
                     save_to_JSON.save_test_results(results, output_filepath + output_filename)
 

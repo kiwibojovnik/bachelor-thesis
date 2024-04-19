@@ -12,7 +12,10 @@ def convert_to_dict(case_insensitive_dict):
 # Upravená funkce pro ukládání výsledků testu
 def save_test_results(test_results, filename):
     # Vytvoření nového slovníku pro výsledky s převedenými hlavičkami
-    results_dict = {result['URL']: {k: convert_to_dict(v) for k, v in result.items()} for result in test_results}
+    results_dict = {}
+    for result in test_results:
+        if result is not None:
+            results_dict[result['URL']] = {k: convert_to_dict(v) for k, v in result.items()}
 
     # Uložení výsledků do souboru JSON
     with open(filename, 'w') as file:

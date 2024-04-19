@@ -1,31 +1,36 @@
 import json
 
-def compare_results(results1, results2):
-    censored_content = []
 
-    for i in range(len(results1['results'])):
-        for key, value in results1['results'][i].items():
-            if key != 'test_scripts':
-                if value != results2['results'][i][key]:
-                    censored_content.append({
-                        'page': results1['results'][i]['page'],
-                        'key': key,
-                        'value1': value,
-                        'value2': results2['results'][i][key]
-                    })
+def compare_files(file1, file2):
+    with open(file1, 'r') as f1, open(file2, 'r') as f2:
+        data1 = json.load(f1)
+        data2 = json.load(f2)
 
-    return censored_content
+    for url, details1 in data1.items():
+        if url in data2:
+            details2 = data2[url]
 
-# Load results from JSON files
-with open('results1.json', 'r') as f:
-    results1 = json.load(f)
+            dns_status1 = details1.get("DNS IPs")
+            dns_status2 = details2.get("DNS IPs")
+            print("1", dns_status1)
+            print("2", dns_status2)
 
-with open('results2.json', 'r') as f:
-    results2 = json.load(f)
+           # details1_filtered = {key: value for key, value in details1.items() if key != "Time"}
+           # details2_filtered = {key: value for key, value in details2.items() if key != "Time"}
 
-# Compare the results
-censored_content = compare_results(results1, results2)
+            if dns_status1 == dns_status2:
+                print("1D", dns_status1)
+                print("2D", dns_status2)
 
-# Print the potentially censored content
-for entry in censored_content:
-    print(f"Page: {entry['page']}, Key: {entry['key']}, Value1: {entry['value1']}, Value2: {entry['value2']}")
+                print(f"Differences for URL: {url}")
+                print("Details in File 1:")
+              #  print(details1_filtered)
+                print("Details in File 2:")
+              #  print(details2_filtered)
+                print()
+
+
+file1 = 'results_belarusAll-80_18-04-2024_17-15.json'
+file2 = 'results_czechAll-80_19-04-2024_00-36.json'
+
+compare_files(file1, file2)
