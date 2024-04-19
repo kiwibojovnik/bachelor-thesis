@@ -59,6 +59,7 @@ def dns_lookup(address, ip):
     """
     try:
         domain = reformat_url.extract_domain(address)
+        print(domain)
 
         # Retrieve IPv4 addresses
         ip_addresses_ipv4 = socket.gethostbyname_ex(domain)[2]
@@ -346,71 +347,16 @@ def extract_ipv4_from_mapped_ipv6(ipv6_address):
         return ipv6_address
 
 
-#TODO: dodělat pro ipv6 ping, jde jen čtyřka
-@timeout(function_timeout)
-def ping_test(ip_address):
+def create_icmp4_echo_request():
     """
-    Performs a ping test to the specified IP address or domain.
-
-    Args:
-        ip_address (str): The IP address or domain to ping.
-
-    Returns:
-        tuple: A tuple containing the status ('OK', 'Fail', or 'N/A') and the source IP address.
-        If an error occurs, it returns the error message followed by 'N/A'.
+    Create an ICMPv4 Echo Request packet.
     """
-    try:
-        ip_address = extract_ipv4_from_mapped_ipv6(ip_address)
-
-        if check_ip_address_type(ip_address) == "ipv6":
-            socket_type = socket.AF_INET6
-            socker_proto = socket.getprotobyname('ipv6-icmp')
-        else:
-            socket_type = socket.AF_INET
-            socker_proto = socket.IPPROTO_ICMP
-
-
-            # Create a socket for sending ICMP packets
-        icmp_socket = socket.socket(socket_type, socket.SOCK_RAW, socker_proto)
-
-        # Set a timeout in case there's no response
-        icmp_socket.settimeout(3)
-
-        # Create an ICMP Echo Request packet
-        icmp_checksum = 0
-        icmp_id = os.getpid() & 0xFFFF  # Process ID for identification
-        icmp_seq = 1  # Packet sequence number
-        icmp_packet = struct.pack('!BBHHH', 8, 0, icmp_checksum, icmp_id, icmp_seq)
-        icmp_checksum = calculate_checksum(icmp_packet)
-
-        # Update the packet with the computed checksum
-        icmp_packet = struct.pack('!BBHHH', 8, 0, socket.htons(icmp_checksum), icmp_id, icmp_seq)
-
-        # Send the ICMP packet to the specified address
-        icmp_socket.sendto(icmp_packet, (ip_address, 1))
-
-        # Read the response
-        read_sockets, _, _ = select.select([icmp_socket], [], [], 1)
-        if read_sockets:
-            response, _ = icmp_socket.recvfrom(1024)
-            icmp_type = response[20]
-            if icmp_type == 0:  # ICMP Echo Reply
-                ip_header = response[:20]
-                ip_header_fields = struct.unpack("!BBHHHBBH4s4s", ip_header)
-                ip_source_address = socket.inet_ntoa(ip_header_fields[8])
-                return 'OK', ip_source_address
-            else:
-                return 'Fail', "N/A"
-        else:
-            return 'Fail', "N/A"
-
-    except socket.timeout:
-        print("Ping test exceeded timeout.")
-        return "N/A", "N/A"
-
-    except Exception as e:
-        print("PING TEST ERROR: " + str(e))
-        return "PING TEST ERROR: " + str(e), "N/A"
+    icmp_checksum = 0
+    icmp_id = os.getpid() & 0xFFFF  # Process ID for identification
+    icmp_seq = 1  # Packet sequence number
+    icmp_packet = struct.pack('!BBHHH', 8, 0, icmp_checksum, icmp_id, icmp_seq)
+    icmp_checksum = calculate_checksum(icmp_packet)
+    return struct.pack('!BBHHH', 8, 0, socket.htons(icmp_checksum), icmp_id, icmp_seq)
 
 
 def create_icmp6_echo_request():
@@ -428,51 +374,67 @@ def create_icmp6_echo_request():
     return struct.pack('!BBHHH', icmp6_type, icmp6_code, icmp6_checksum, icmp6_id, icmp6_seq) + payload
 
 
-def ping_test6(target_host):
+@timeout(function_timeout)
+def ping_test(ip_address):
     """
-    Send an ICMPv6 Echo Request and receive an Echo Reply.
+    Performs a ping test to the specified IP address.
+
+    Args:
+        ip_address (str): The IP address to ping.
+
+    Returns:
+        tuple: A tuple containing the status ('OK', 'Fail', or 'N/A') and the source IP address.
+        If an error occurs, it returns the error message followed by 'N/A'.
     """
     try:
+        # Extract IPv4 address from a mapped IPv6 address if necessary
+        ip_address = extract_ipv4_from_mapped_ipv6(ip_address)
 
-        print(extract_ipv4_from_mapped_ipv6(target_host))
-        # Get the target address
-        target_address = socket.getaddrinfo(target_host, None, socket.AF_INET6, 0, socket.IPPROTO_ICMPV6)[0][4][0]
+        # Determine the IP address type
+        ip_type = check_ip_address_type(ip_address)
 
-        # Create a raw socket
-        sock = socket.socket(socket.AF_INET6, socket.SOCK_RAW, socket.getprotobyname('ipv6-icmp')
-                             )
-        sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        sock.settimeout(2)
+        # Set socket parameters based on IP address type
+        socket_type = socket.AF_INET6 if ip_type == "ipv6" else socket.AF_INET
+        socket_proto = socket.getprotobyname('ipv6-icmp') if ip_type == "ipv6" else socket.IPPROTO_ICMP
 
-        # Create an ICMPv6 Echo Request packet
-        packet = create_icmp6_echo_request()
+        # Create a socket for sending ICMP packets
+        with socket.socket(socket_type, socket.SOCK_RAW, socket_proto) as sock:
+            # Set a timeout
+            sock.settimeout(3)
 
-        # Send the packet
-        sock.sendto(packet, (target_host, 0, 0, 0))
+            # Create and send the ICMP packet based on IP address type
+            icmp_packet = create_icmp6_echo_request() if ip_type == "ipv6" else create_icmp4_echo_request()
+            sock.sendto(icmp_packet, (ip_address, 0) if ip_type == "ipv6" else (ip_address, 1))
 
-        # Wait for a response
-        start_time = os.times()[4]
-        while True:
-            ready = select.select([sock], [], [], 1)
-            if not ready[0]:  # Timeout
-                print(f"Request timed out for {target_host}")
-                return "N/A", "N/A"
+            # Wait for a response
+            read_sockets, _, _ = select.select([sock], [], [], 1)
+            if read_sockets:
+                response, addr = sock.recvfrom(1024)
 
-            time_received = os.times()[4]
-            recv_packet, addr = sock.recvfrom(1024)
-            icmp_header = recv_packet[0:8]
-            icmp_type, icmp_code, icmp_checksum, icmp_id, icmp_seq = struct.unpack('!BBHHH', icmp_header)
+                # Process the response based on IP address type
+                if ip_type == "ipv4":
+                    icmp_type = response[20]
+                    if icmp_type == 0:  # ICMP Echo Reply
+                        ip_header = response[:20]
+                        ip_header_fields = struct.unpack("!BBHHHBBH4s4s", ip_header)
+                        ip_source_address = socket.inet_ntoa(ip_header_fields[8])
+                        return 'OK', ip_source_address
+                else:
+                    icmp_header = response[:8]
+                    icmp_type, _, _, icmp_id, _ = struct.unpack('!BBHHH', icmp_header)
+                    if icmp_type == 129 and icmp_id == os.getpid() & 0xFFFF:  # Echo Reply
+                        return 'OK', addr[0]
 
-            if icmp_type == 129 and icmp_id == os.getpid() & 0xFFFF:  # Echo Reply
-                print(f"Reply from {addr[0]}: time={(time_received - start_time) * 1000} ms")
-                return 'OK', addr[0]
+                return 'Fail', "N/A"
+            else:
+                return 'Fail', "N/A"
 
-    except socket.error as e:
-        print(f"Socket error: {e}")
+    except socket.timeout:
+        print("Ping test exceeded timeout.")
         return "N/A", "N/A"
 
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"PING TEST ERROR: {e}")
         return "N/A", "N/A"
 
 
@@ -523,3 +485,61 @@ def perform_trace(ip_address):
                 pass
 
     return trace_result
+
+
+def perform_trace6(ip_address):
+    """
+    Performs a traceroute to the specified IPv6 address.
+
+    Args:
+        ip_address (str): The IPv6 address to trace the route to.
+
+    Returns:
+        list: A list of tuples containing the IP address of each hop and the round-trip time.
+    """
+    max_hops = 30
+    port = 33434
+    trace_result = []
+
+    try:
+        # Extract IPv4 address from a mapped IPv6 address if necessary
+        ip_address = extract_ipv4_from_mapped_ipv6(ip_address)
+
+        # Determine the IP address type
+        ip_type = check_ip_address_type(ip_address)
+
+        destination_address = socket.getaddrinfo(ip_address, None, socket.AF_INET6)[0][4][0]
+
+        for ttl in range(1, max_hops + 1):
+            with socket.socket(socket.AF_INET6, socket.SOCK_DGRAM, socket.IPPROTO_UDP) as send_socket:
+                # Set the time-to-live for the packet
+                send_socket.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_UNICAST_HOPS, ttl)
+                # Send an empty packet to the address and port
+                send_socket.sendto(b'', (destination_address, port))
+
+            with socket.socket(socket.AF_INET6, socket.SOCK_RAW, socket.getprotobyname('ipv6-icmp')) as recv_socket:
+                # Set a timeout for the receive operation
+                recv_socket.settimeout(1)
+                try:
+                    start_time = time.time()
+                    # Receive the packet
+                    packet, addr = recv_socket.recvfrom(512)
+                    end_time = time.time()
+                    # Append the address and round-trip time to the result
+                    trace_result.append((addr[0], end_time - start_time))
+
+                    # Check if we have reached the destination server
+                    if addr[0] == destination_address:
+                        print(f"Reached destination: {addr[0]}")
+                        break  # Exit the loop upon reaching the destination
+
+                except socket.timeout:
+                    # If no response is received, continue to the next hop
+                    pass
+
+        return trace_result
+
+    except Exception as e:
+        print(f"TRACEROUTE TEST ERROR: {e}")
+        return "N/A", "N/A"
+

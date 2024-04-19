@@ -55,15 +55,15 @@ class WebConnectivityTester:
                 print(ip_address)
                 tcp_result = tests_IPv6.tcp_handshake(ip_address)
                 ping_result = tests_IPv6.ping_test(ip_address)
-                trace_hop = tests_IPv6.perform_trace(ip_address)
-                redirect = tests_IPv6.detect_redirect(address)
-                http_status, content_length, headers, html_content = tests_IPv6.http_get_request(address)
-                certificate = tests_IPv6.get_https_certificate(ip_address, address)
+                trace_hop = tests_IPv6.perform_trace6(ip_address)
+             #   redirect = tests_IPv6.detect_redirect(address)
+             #   http_status, content_length, headers, html_content = tests_IPv6.http_get_request(address)
+             #   certificate = tests_IPv6.get_https_certificate(ip_address, address)
 
                 end_time = time.time()
                 duration = round(end_time - start_time, 2)
-                output_content = reformat_url.extract_domain(address) + '_content.html'
-                self.save_html_content(output_content, html_content)
+            #    output_content = reformat_url.extract_domain(address) + '_content.html'
+             #   self.save_html_content(output_content, html_content)
 
                 return CaseInsensitiveDict({
                     'Time': duration,
@@ -77,14 +77,14 @@ class WebConnectivityTester:
                     'PING Status': ping_result[0],
                     'PING IP': ping_result[1],
                     'Trace hop IP': trace_hop,
-                    'Redirected Status': redirect[0],
-                    'Redirected Location': redirect[1],
-                    'HTTP Status': http_status,
-                    'Content Length': content_length,
-                    'Headers': headers,
-                    'HTML Content': output_content,
-                    'Cert Status': certificate[0],
-                    'Cert Content': certificate[1],
+             #       'Redirected Status': redirect[0],
+             #       'Redirected Location': redirect[1],
+             #       'HTTP Status': http_status,
+             #       'Content Length': content_length,
+             #       'Headers': headers,
+             #       'HTML Content': output_content,
+             #       'Cert Status': certificate[0],
+             #       'Cert Content': certificate[1],
                     'Timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 })
 
