@@ -37,8 +37,6 @@ def main():
             for input_file in args.files:
                 print("Processing " + input_file + "...")
 
-               # edit_csv_file.move_url_to_first_column(input_file)
-
                 with open(input_file, 'r') as csvfile:
                     reader = csv.reader(csvfile)
                     next(reader)
@@ -55,7 +53,7 @@ def main():
                     if not args.address:
                         args.address = "ipv4"
 
-                    tester = call_test.WebConnectivityTester(batch, output_content_folder, args.address)
+                    tester = call_test.WebConnectivityTester(batch, output_content_folder, args.address.lower())
                     results = tester.run_tests()
 
                     date_time = datetime.now().strftime("%d-%m-%Y_%H-%M")

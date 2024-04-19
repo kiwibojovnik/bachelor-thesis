@@ -12,13 +12,14 @@ import requests
 import time
 
 from scapy.all import *
-# from utils import reformat_url
 from timeout_decorator import timeout
 
 from utils import reformat_url
 
 function_timeout = 300
 
+
+# TODO: opravit errory ve vystupu - asi odstranit nefunguje to s něma
 
 @timeout(function_timeout)
 def resolver_identification():
@@ -38,11 +39,11 @@ def resolver_identification():
 
     except socket.gaierror as e:
         print(f"RESOLVER ERROR: {e}")
-        return "RESOLVER ERROR: N/A", "N/A"
+        return "RESOLVER ERROR: " + str(e), "N/A"
 
 
 @timeout(function_timeout)
-def dns_lookup(domain):
+def dns_lookup(address, ip):
     """
     Performs DNS lookup for a given website.
 
@@ -50,21 +51,27 @@ def dns_lookup(domain):
     they are preferred and returned. Otherwise, falls back to retrieving IPv4 addresses.
 
     Args:
-        domain (str): Website to perform DNS lookup for. Either in the format www.example.com or example.com.
+        address (str): Website to perform DNS lookup for. Either in the format www.example.com or example.com.
+        ip (str):
 
     Returns:
         tuple: A tuple containing the status ('OK' or 'N/A') and a list of IP addresses (both IPv4 and IPv6).
     """
     try:
-        # Attempt to retrieve IPv6 addresses
-      #  ip_addresses_ipv6 = socket.getaddrinfo(reformat_url.remove_http(domain), None, socket.AF_INET6)
-      #  ipv6_addresses = [addr[4][0] for addr in ip_addresses_ipv6]
+        domain = reformat_url.extract_domain(address)
 
         # Retrieve IPv4 addresses
-        ip_addresses_ipv4 = socket.gethostbyname_ex(reformat_url.remove_http(domain))[2]
+        ip_addresses_ipv4 = socket.gethostbyname_ex(domain)[2]
 
-        # Combine both IPv4 and IPv6 addresses
-        all_addresses = ip_addresses_ipv4 # + ipv6_addresses
+        # Attempt to retrieve IPv6 addresses
+        if ip == "ipv6":
+            ip_addresses_ipv6 = socket.getaddrinfo(domain, None, socket.AF_INET6)
+            ipv6_addresses = [addr[4][0] for addr in ip_addresses_ipv6]
+
+            # Combine both IPv4 and IPv6 addresses
+            all_addresses = ip_addresses_ipv4 + ipv6_addresses
+        else:
+            all_addresses = ip_addresses_ipv4
 
         # If any addresses are available, return 'OK'
         if all_addresses:
@@ -90,22 +97,40 @@ def check_ip_address_type(ip_address):
         ip_address (str): The IP address to check.
 
     Returns:
-        str: 'IPv4' if the address is IPv4, 'IPv6' if the address is IPv6, or 'Unknown' if neither.
+        str: 'ipv4' if the address is IPv4, 'ipv6' if the address is IPv6, or 'Unknown' if neither.
     """
     try:
         # Attempt to create a socket for the given IP address
         socket.inet_pton(socket.AF_INET, ip_address)
         # If it's a valid IPv4 address, return "IPv4"
-        return "IPv4"
+        return "ipv4"
     except socket.error:
         try:
             # Attempt to create a socket for the given IP address
             socket.inet_pton(socket.AF_INET6, ip_address)
             # If it's a valid IPv6 address, return "IPv6"
-            return "IPv6"
+            return "ipv6"
         except socket.error:
             # If a socket cannot be created for either IPv4 or IPv6 address, return "Unknown"
             return "Unknown"
+
+
+def get_ip_address(ip_list, ip_type):
+    """
+    Returns a sample IP address from the list based on the type specified.
+
+    Args:
+        ip_list (list): The list of IP addresses.
+        ip_type (str): The type of IP address to return ('IPv4' or 'IPv6').
+
+    Returns:
+        str: A IP address of the specified type from the list, or 'No match' if none found.
+    """
+    # Filter the list based on the IP type using the check_ip_address_type function
+    filtered_list = [ip for ip in ip_list if check_ip_address_type(ip) == ip_type]
+
+    # Return a random sample from the filtered list, or 'No match' if the list is empty
+    return random.choice(filtered_list) if filtered_list else 'No match'
 
 
 def calculate_checksum(data):
@@ -143,7 +168,7 @@ def calculate_checksum(data):
 
 
 @timeout(function_timeout)
-def get_https_certificate(ip_address, domain, port=443):
+def get_https_certificate(ip_address, url, port=443):
     """
     Retrieves the HTTPS certificate for a given IP address and domain.
 
@@ -167,7 +192,7 @@ def get_https_certificate(ip_address, domain, port=443):
 
                 sock.connect((ip_address, port))
 
-                with context.wrap_socket(sock, server_hostname=reformat_url.remove_http(domain)) as ssock:
+                with context.wrap_socket(sock, server_hostname=reformat_url.extract_domain(url)) as ssock:
                     # Obtain the certificate from the socket
                     cert = ssock.getpeercert()
                     return "OK", cert
@@ -179,7 +204,7 @@ def get_https_certificate(ip_address, domain, port=443):
     except Exception as e:
         # Print an error message if there is an issue retrieving the certificate
         print(f"Error retrieving certificate for address {ip_address}: {e}")
-        return "N/A", "N/A"
+        return "N/A", str(e)
 
     except TimeoutError:
         print("Retrieving certificate exceeded timeout.")
@@ -201,8 +226,13 @@ def tcp_handshake(destination_ip, destination_port=80):
         and the remote IP address.
     """
     try:
+        if check_ip_address_type(destination_ip) == "ipv6":
+            socket_type = socket.AF_INET6
+        else:
+            socket_type = socket.AF_INET
+
         # Create a socket for TCP connection
-        tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        tcp_socket = socket.socket(socket_type, socket.SOCK_STREAM)
 
         # Set a timeout in case the connection is not successful
         tcp_socket.settimeout(20)
@@ -245,22 +275,14 @@ def http_get_request(url):
     """
     try:
         # Attempt an HTTP GET request with IPv6 support
-        #response = requests.get(reformat_url.add_http(url))
-
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36'
-        }
-
-        session = requests.Session()
-        response = session.get(reformat_url.add_http(url),
-                               headers=headers)
-
+        response = requests.get(reformat_url.add_http(url),
+                                headers={'Host': reformat_url.add_http(url)})
         return (response.status_code, len(response.content),
                 response.headers, response.text)
 
     except requests.exceptions.RequestException as e:
         print(f"HTTP GET request to {url} failed: {e}")
-        return "N/A", "N/A", "N/A", "N/A"
+        return str(e), "N/A", "N/A", "N/A"
 
     except TimeoutError:
         print("HTTP GET request exceeded timeout.")
@@ -298,6 +320,33 @@ def detect_redirect(url):
         return "N/A", "N/A"
 
 
+def extract_ipv4_from_mapped_ipv6(ipv6_address):
+    """
+    Check if the given IPv6 address is a mapped IPv4 address and extract the IPv4 part.
+
+    Args:
+        ipv6_address (str): The IPv6 address to check.
+
+    Returns:
+        str: The extracted IPv4 address if the IPv6 address is a mapped address, otherwise None.
+    """
+    # Check if the address starts with the IPv6 mapped IPv4 prefix
+    if ipv6_address.startswith("::ffff:"):
+        # Extract the IPv4 part after the prefix
+        ipv4_part = ipv6_address.split(":")[-1]
+        try:
+            # Validate the extracted part is a valid IPv4 address
+            socket.inet_aton(ipv4_part)
+            return ipv4_part
+        except socket.error:
+            # The extracted part is not a valid IPv4 address
+            return ipv6_address
+    else:
+        # The address is not a mapped IPv4 address
+        return ipv6_address
+
+
+#TODO: dodělat pro ipv6 ping, jde jen čtyřka
 @timeout(function_timeout)
 def ping_test(ip_address):
     """
@@ -311,11 +360,21 @@ def ping_test(ip_address):
         If an error occurs, it returns the error message followed by 'N/A'.
     """
     try:
-        # Create a socket for sending ICMP packets
-        icmp_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP)
+        ip_address = extract_ipv4_from_mapped_ipv6(ip_address)
+
+        if check_ip_address_type(ip_address) == "ipv6":
+            socket_type = socket.AF_INET6
+            socker_proto = socket.getprotobyname('ipv6-icmp')
+        else:
+            socket_type = socket.AF_INET
+            socker_proto = socket.IPPROTO_ICMP
+
+
+            # Create a socket for sending ICMP packets
+        icmp_socket = socket.socket(socket_type, socket.SOCK_RAW, socker_proto)
 
         # Set a timeout in case there's no response
-        icmp_socket.settimeout(1)
+        icmp_socket.settimeout(3)
 
         # Create an ICMP Echo Request packet
         icmp_checksum = 0
@@ -351,7 +410,70 @@ def ping_test(ip_address):
 
     except Exception as e:
         print("PING TEST ERROR: " + str(e))
-        return f"PING TEST ERROR: N/A", "N/A"
+        return "PING TEST ERROR: " + str(e), "N/A"
+
+
+def create_icmp6_echo_request():
+    """
+    Create an ICMPv6 Echo Request packet.
+    """
+    icmp6_type = 128  # Echo Request
+    icmp6_code = 0
+    icmp6_checksum = 0
+    icmp6_id = os.getpid() & 0xFFFF
+    icmp6_seq = 1
+    payload = b'abcdefghijklmnopqrstuvwabcdefghi'  # Payload data
+    pseudo_header = struct.pack('!BBHHH', icmp6_type, icmp6_code, icmp6_checksum, icmp6_id, icmp6_seq)
+    icmp6_checksum = calculate_checksum(pseudo_header + payload)
+    return struct.pack('!BBHHH', icmp6_type, icmp6_code, icmp6_checksum, icmp6_id, icmp6_seq) + payload
+
+
+def ping_test6(target_host):
+    """
+    Send an ICMPv6 Echo Request and receive an Echo Reply.
+    """
+    try:
+
+        print(extract_ipv4_from_mapped_ipv6(target_host))
+        # Get the target address
+        target_address = socket.getaddrinfo(target_host, None, socket.AF_INET6, 0, socket.IPPROTO_ICMPV6)[0][4][0]
+
+        # Create a raw socket
+        sock = socket.socket(socket.AF_INET6, socket.SOCK_RAW, socket.getprotobyname('ipv6-icmp')
+                             )
+        sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        sock.settimeout(2)
+
+        # Create an ICMPv6 Echo Request packet
+        packet = create_icmp6_echo_request()
+
+        # Send the packet
+        sock.sendto(packet, (target_host, 0, 0, 0))
+
+        # Wait for a response
+        start_time = os.times()[4]
+        while True:
+            ready = select.select([sock], [], [], 1)
+            if not ready[0]:  # Timeout
+                print(f"Request timed out for {target_host}")
+                return "N/A", "N/A"
+
+            time_received = os.times()[4]
+            recv_packet, addr = sock.recvfrom(1024)
+            icmp_header = recv_packet[0:8]
+            icmp_type, icmp_code, icmp_checksum, icmp_id, icmp_seq = struct.unpack('!BBHHH', icmp_header)
+
+            if icmp_type == 129 and icmp_id == os.getpid() & 0xFFFF:  # Echo Reply
+                print(f"Reply from {addr[0]}: time={(time_received - start_time) * 1000} ms")
+                return 'OK', addr[0]
+
+    except socket.error as e:
+        print(f"Socket error: {e}")
+        return "N/A", "N/A"
+
+    except Exception as e:
+        print(f"Error: {e}")
+        return "N/A", "N/A"
 
 
 @timeout(function_timeout)

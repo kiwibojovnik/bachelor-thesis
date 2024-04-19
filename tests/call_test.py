@@ -2,23 +2,23 @@ from datetime import datetime
 import os
 import time
 from requests.structures import CaseInsensitiveDict
-from tests import tests_IPv6, test_middle_box
+from tests import tests_IPv6
 from utils import reformat_url
 
 
 class WebConnectivityTester:
-    def __init__(self, url_list, output_content_folder, address):
+    def __init__(self, url_list, output_content_folder, ip_type):
         """
         Initializes the WebConnectivityTester.
 
         Args:
             url_list (list): List of URLs to test.
             output_content_folder (str): Folder where HTML content will be saved.
-            address (str): Preferred Ip address (IPv4 or IPv6)
+            ip_type (str): Preferred Ip address (IPv4 or IPv6)
         """
         self.urls = url_list
         self.output_content_folder = output_content_folder
-        self.address = address
+        self.ip_type = ip_type
 
     def save_html_content(self, filename, content):
         """
@@ -34,42 +34,40 @@ class WebConnectivityTester:
         with open(os.path.join(self.output_content_folder, filename), 'w', encoding='utf-8') as content_file:
             content_file.write(content)
 
-    def test_website(self, website):
+    def test_website(self, address):
         """
         Tests a website for connectivity.
 
         Args:
-            website (str): The website URL to test.
+            address (str): The website URL to test.
 
         Returns:
             CaseInsensitiveDict: A dictionary containing test results.
         """
-        print(f"Testing {website}...")
+        print(f"Testing {address}...")
         try:
             start_time = time.time()
             resolver_ip = tests_IPv6.resolver_identification()
-            dns_result = tests_IPv6.dns_lookup(website)
+            dns_result = tests_IPv6.dns_lookup(address, self.ip_type)
 
             if dns_result[0] == "OK":
-                ip_address = dns_result[1][0]
+                ip_address = tests_IPv6.get_ip_address(dns_result[1], self.ip_type)
+                print(ip_address)
                 tcp_result = tests_IPv6.tcp_handshake(ip_address)
                 ping_result = tests_IPv6.ping_test(ip_address)
                 trace_hop = tests_IPv6.perform_trace(ip_address)
-                redirect = tests_IPv6.detect_redirect(website)
-                http_status, content_length, headers, html_content = tests_IPv6.http_get_request(website)
-                certificate = tests_IPv6.get_https_certificate(ip_address, website)
+                redirect = tests_IPv6.detect_redirect(address)
+                http_status, content_length, headers, html_content = tests_IPv6.http_get_request(address)
+                certificate = tests_IPv6.get_https_certificate(ip_address, address)
 
                 end_time = time.time()
                 duration = round(end_time - start_time, 2)
-                output_content = reformat_url.remove_http(website) + '_content.html'
+                output_content = reformat_url.extract_domain(address) + '_content.html'
                 self.save_html_content(output_content, html_content)
-
-                middle_box_header = test_middle_box.http_header_manipulation(website)
-                middle_box_request_score, middle_box_request_attempts = test_middle_box.invalid_request_line(website)
 
                 return CaseInsensitiveDict({
                     'Time': duration,
-                    'URL': str(website),
+                    'URL': str(address),
                     'Resolver Status': resolver_ip[0],
                     'Resolver IP': resolver_ip[1],
                     'DNS Status': dns_result[0],
@@ -87,16 +85,13 @@ class WebConnectivityTester:
                     'HTML Content': output_content,
                     'Cert Status': certificate[0],
                     'Cert Content': certificate[1],
-                    'Timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    'Http header manipulation': middle_box_header,
-                    'Invalid request manipulation score': middle_box_request_score,
-                    'Invalid request manipulation attempts': middle_box_request_attempts
+                    'Timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 })
 
         except Exception as e:
-            print(f"Error testing {website}: {e}")
+            print(f"Error testing {address}: {e}")
             return {
-                'URL': str(website),
+                'URL': str(address),
                 'Error': str(e)
             }
 

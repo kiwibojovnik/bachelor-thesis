@@ -72,18 +72,26 @@ def add_http(url):
     return url
 
 
-def remove_http(url):
+def extract_domain(url):
     """
-    Removes 'http://' or 'https://' prefix from the URL.
+    Extracts the domain from a URL, ensuring it returns only the domain without any paths or parameters.
 
     Args:
-        url (str): The URL to format.
+        url (str): The URL to extract the domain from.
 
     Returns:
-        str: The URL without the 'http://' or 'https://' prefix.
+        str: The extracted domain.
     """
-    if url.startswith("http://"):
-        url = url[len("http://"):]
-    elif url.startswith("https://"):
-        url = url[len("https://"):]
-    return url
+    # Add scheme if missing
+    if not urlparse(url).scheme:
+        url = '//' + url
+
+    # Parse the URL to extract the netloc part which contains the domain
+    parsed_url = urlparse(url)
+    domain = parsed_url.netloc
+
+    # Remove any port number if present (e.g., www.example.com:80 -> www.example.com)
+    domain = domain.split(':')[0]
+
+    # Return the domain
+    return domain
