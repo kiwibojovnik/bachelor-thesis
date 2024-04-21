@@ -54,7 +54,12 @@ class WebConnectivityTester:
                 ip_address = tests_IPv6.get_ip_address(dns_result[1], self.ip_type)
                 tcp_result = tests_IPv6.tcp_handshake(ip_address)
                 ping_result = tests_IPv6.ping_test(ip_address)
-                trace_hop = tests_IPv6.perform_trace(ip_address)
+
+                if ping_result[0] != "OK":
+                    trace_hop = tests_IPv6.perform_trace(ip_address)
+                else:
+                    trace_hop = "N/A"
+
                 redirect = tests_IPv6.detect_redirect(address, self.ip_type)
                 http_status, content_length, headers, html_content = tests_IPv6.http_get_request(address)
                 certificate = tests_IPv6.get_https_certificate(ip_address, address)

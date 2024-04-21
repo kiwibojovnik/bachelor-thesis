@@ -5,12 +5,14 @@
 # Verze Pythonu: 3.9
 
 # Importing necessary libraries
-import requests, ssl
+import requests
+import ssl
 from scapy.all import *
 from timeout_decorator import timeout
+
 from utils import reformat_url
 
-function_timeout = 300
+function_timeout = 150
 
 
 @timeout(function_timeout)

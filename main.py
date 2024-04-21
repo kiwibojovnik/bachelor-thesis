@@ -11,16 +11,22 @@ import argparse
 import csv
 from datetime import datetime
 from tests import call_test
-from utils import save_to_JSON, send_file, edit_csv_file, load_config
+from utils import save_to_JSON, send_file, load_config
+from process_data import process
 
-
+# TODO: opravit tyhle když je -p tak jsou vstupen jen dvě složky
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Process some data.')
-    parser.add_argument('-g', '--get', action='store_true', help='get data')
-    parser.add_argument('-p', '--process', action='store_true', help='process data')
-    parser.add_argument('-f', '--files', nargs='+', help='input files')
-    parser.add_argument('-n', '--filename', help='name of the output file')
-    parser.add_argument('-a', '--address', help='preferred ipv4 or ipv6')
+    parser.add_argument('-g', '--get', action='store_true', help='Retrieve data from a specified source. Use this '
+                                                                 'flag to initiate data fetching.')
+    parser.add_argument('-p', '--process', action='store_true', help='Process the retrieved data. This flag triggers '
+                                                                     'the data processing operations.')
+    parser.add_argument('-f', '--files', nargs='+', help='List of input files to be processed. Separate multiple file '
+                                                         'paths with spaces.')
+    parser.add_argument('-n', '--filename', help='Define the filename for the output file. The results will be saved '
+                                                 'to this file.')
+    parser.add_argument('-a', '--address', type=str, choices=['ipv4', 'ipv6'],
+                        help='Specify the preferred IP version to use. Choose "ipv4" or "ipv6".')
 
     return parser.parse_args()
 
@@ -80,9 +86,9 @@ def main():
 
     elif args.process:
         if args.files:
-            for input_file in args.files:
-                # TODO: dodělat tenhle modul
-                print("Processing data.")
+            # TODO: maximalni počet vstupu je 2 -- dvě složky na porovnani.
+            process.process(args.files[0], args.files[1])
+
         else:
             print("No input files specified.")
 
