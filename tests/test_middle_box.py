@@ -4,7 +4,7 @@ import requests
 from utils import reformat_url
 
 
-def http_header_manipulation(website):
+def http_header_manipulation(url):
     detector = "Manipulated"
 
     headers = {
@@ -13,7 +13,7 @@ def http_header_manipulation(website):
     }
 
     try:
-        response = requests.get(reformat_url.add_http(website), headers=headers)
+        response = requests.get(reformat_url.add_http(url), headers=headers)
         original_headers = {key.lower(): value for key, value in headers.items()}
         received_headers = {key.lower(): value for key, value in response.request.headers.items()}
 
@@ -25,23 +25,24 @@ def http_header_manipulation(website):
         return detector
 
     except requests.exceptions.RequestException as e:
-        print(f"Error occurred during HTTP header manipulation test for {website}: {e}")
+        print(f"Error occurred during HTTP header manipulation test.")
         return "N/A"
 
 
-def invalid_request_line(website):
+def invalid_request_line(url):
     invalid_methods = ['FOO', 'BAR', 'BAZ', 'QUX']
     manipulation_score = 0
 
     try:
         for method in invalid_methods:
-            response = requests.request(method, reformat_url.add_http(website))
+            response = requests.request(method, reformat_url.add_http(url))
 
             if response.status_code == 400:
                 manipulation_score += 1
 
-        return manipulation_score, len(invalid_methods)
+        score = manipulation_score / len(invalid_methods)
+        return score
 
     except requests.exceptions.RequestException as e:
-        print(f"Error occurred during invalid request line test for {website}: {e}")
-        return "Fail", "N/A"
+        print(f"Error occurred during invalid request line test.")
+        return "Fail"

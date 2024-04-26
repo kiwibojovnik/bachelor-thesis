@@ -1,30 +1,48 @@
-import json
-
 
 def determine_censorship_type(differences):
     # Definujeme pravidla pro určení typu cenzury
     censorship_rules = {
-        'Filtrovani paketu': {
+        'Manipulace s HTTP': {  #Je pozměněn výsledný content stránky
             'PING IP': {
                 'File1': None,
                 'File2': lambda x: x is not None
             }
         },
-        'Filtrovani paketu': {
+        'Manipulace s DNS': {   #Asi TODO ještě...
+            'PING IP': {
+                'File1': None,
+                'File2': lambda x: x is not None
+            }
+        },
+        'Přerušení TCP spojení': {  #nejde navázat TCP handshake
             'PING Status': {
                 'File1': lambda x: x,
                 'File2': lambda y: y,
                 'comparison': lambda x, y: x != y
             },
         },
-        'DNS Censorship': {
+        'Omezená přístupnost k webové stránce': {      #tohle když nefungujje pingnuti se na stránku
             'DNS IPs': {
                 'File1': lambda x: x,
                 'File2': lambda y: y,
                 'comparison': lambda x, y: x != y
             }
         },
-        'DNsS Censorship': {
+        'Přesměrování stránky': {
+            'HTTP Status': {
+                'File1': lambda x: x,
+                'File2': lambda y: y,
+                'comparison': lambda x, y: x != y
+            }
+        },
+        'Výskyt domény v google vyhledávání': {
+            'HTTP Status': {
+                'File1': lambda x: x,
+                'File2': lambda y: y,
+                'comparison': lambda x, y: x != y
+            }
+        },
+        'Přítomnost middle boxu': {
             'HTTP Status': {
                 'File1': lambda x: x,
                 'File2': lambda y: y,

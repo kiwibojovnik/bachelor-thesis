@@ -71,6 +71,23 @@ def add_http(url):
         url = "http://" + url
     return url
 
+def remove_www(url):
+    """
+    Removes the 'www.' prefix from a URL if it's present.
+
+    Args:
+        url (str): The URL to format.
+
+    Returns:
+        str: The formatted URL without the 'www.' prefix.
+    """
+    # Remove 'www.' prefix if present
+    if url.startswith("www."):
+        url = url.replace("www.", "")
+
+    return url
+
+
 
 def extract_domain(url):
     """
@@ -95,3 +112,30 @@ def extract_domain(url):
 
     # Return the domain
     return domain
+
+
+def get_keyword(domain):
+    """
+    Uses the extract_domain function to get the keyword from a domain.
+    For example, from 'www.golos3524.cz' it would extract 'golos3524'.
+
+    Args:
+        url (str): The URL to extract the keyword from.
+
+    Returns:
+        str: The extracted keyword.
+    """
+    # First, extract the domain from the URL
+    domain = extract_domain(domain)
+
+    # Split the domain by dots and get the second to last element
+    # This is because the last element is typically the TLD (e.g., 'com', 'cz')
+    parts = domain.split('.')
+    if len(parts) >= 2:
+        keyword = parts[-2]  # This is typically the part just before the TLD
+    else:
+        keyword = domain  # In case the URL is something like 'localhost'
+
+    # Return the keyword
+    return keyword
+

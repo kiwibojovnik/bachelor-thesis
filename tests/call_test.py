@@ -2,8 +2,10 @@ from datetime import datetime
 import os
 import time
 from requests.structures import CaseInsensitiveDict
-from tests import tests_IPv6
+from tests import tests_IPv6, google_search, test_middle_box, dns_tests
 from utils import reformat_url
+
+sleeping_time = 10
 
 
 class WebConnectivityTester:
@@ -64,6 +66,14 @@ class WebConnectivityTester:
                 http_status, content_length, headers, html_content = tests_IPv6.http_get_request(address)
                 certificate = tests_IPv6.get_https_certificate(ip_address, address)
 
+                middle_box_header = test_middle_box.http_header_manipulation(address)
+                middle_box_invalid_request = test_middle_box.invalid_request_line(address)
+
+                dns_manipulation1 = dns_tests.detect_dns_repeated_query(address)
+                dns_manipulation2 = dns_tests.detect_dns_hijacking(address)
+
+                search_results = google_search.is_domain_in_results(address)
+
                 end_time = time.time()
                 duration = round(end_time - start_time, 2)
                 output_content = reformat_url.extract_domain(address) + '_content.html'
@@ -90,6 +100,9 @@ class WebConnectivityTester:
                     'HTML Content': output_content,
                     'Cert Status': certificate[0],
                     'Cert Content': certificate[1],
+                    'Middle box - header manipulation test': middle_box_header,
+                    'Middle box - invalid request line': middle_box_invalid_request,
+                    'Is domain in G search': search_results,
                     'Timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 })
 
@@ -109,7 +122,23 @@ class WebConnectivityTester:
         """
         results = []
         for website in self.urls:
+            time.sleep(sleeping_time)
             results.append({'URL': str(website)})
-            results.append(self.test_website(website))
-
+            retry_count = 0
+            while retry_count < 6:  # Retry for a maximum of 5 times
+                result = self.test_website(website)
+                # Check if result is not None before proceeding
+                if result is not None and '429' in str(result.get('Error', '')):  # If 429 error occurred
+                    retry_count += 1
+                    print(f"Received 429 error, retrying in {5 ** retry_count} seconds...")
+                    time.sleep(5 ** retry_count)  # Exponential backoff
+                elif result is not None:
+                    results.append(result)
+                    break
+                else:
+                    # Handle the case where result is None
+                    print(f"Failed to get a result for {website}, skipping...")
+                    break
+            else:
+                print("Failed to test website after multiple retries.")
         return results

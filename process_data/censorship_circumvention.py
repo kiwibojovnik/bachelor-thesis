@@ -90,3 +90,5 @@ if response_text:
     print(response_text)
 else:
     print("Chyba při získávání obsahu.")
+
+

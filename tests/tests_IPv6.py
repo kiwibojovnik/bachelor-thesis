@@ -12,7 +12,7 @@ from timeout_decorator import timeout
 
 from utils import reformat_url
 
-function_timeout = 150
+function_timeout = 200
 
 
 @timeout(function_timeout)

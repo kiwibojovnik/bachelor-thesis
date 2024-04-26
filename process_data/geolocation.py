@@ -2,11 +2,11 @@
 
 import ipinfo
 import ipaddress
+from utils import load_config
 
 # Instantiate an IPInfo object with your API token
-# TODO: Acces token dat do configu
-access_token = '29334f89941369'
-handler = ipinfo.getHandler(access_token)
+
+handler = ipinfo.getHandler(load_config.load_credentials("ipinfo-access_token"))
 
 
 def get_info(ip_address):
@@ -15,6 +15,7 @@ def get_info(ip_address):
         return {
             'Region': details.region,
             'Country': details.country,
+            'City': details.city,
             'GPS - latitude': details.latitude,
             'GPS - longitude': details.longitude
         }
