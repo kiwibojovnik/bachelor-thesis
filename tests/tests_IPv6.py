@@ -12,7 +12,7 @@ from timeout_decorator import timeout
 
 from utils import reformat_url
 
-function_timeout = 200
+function_timeout = 60
 
 
 @timeout(function_timeout)
@@ -314,7 +314,7 @@ def detect_redirect(url, ip_type):
     """
     try:
         # Perform an HTTP GET request without following redirects
-        response = requests.get(reformat_url.add_http(url), allow_redirects=False)
+        response = requests.get(reformat_url.add_http(url), allow_redirects=False, timeout=function_timeout)
 
         # Check if the request was redirected
         if response.is_redirect:

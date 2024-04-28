@@ -29,6 +29,7 @@ def parse_arguments():
     parser.add_argument('-s', '--start', type=int,
                         help='Specify the index from which to start the testing. The value represents the number of cycles '
                              '(each cycle corresponds to a group of 10 URLs) to be skipped before testing begins.')
+    parser.add_argument('-n', '--not_sending', action='store_true',  help='') #TODO
 
     return parser.parse_args()
 
@@ -91,11 +92,12 @@ def main():
 
                     save_to_JSON.save_test_results(results, output_filepath + output_filename)
 
-                    # Save file to this path with the name of the output file.
-                    remote_file_path = load_config.load_credentials("server_path_for_files") + output_filename
+                    if not args.not_sending:
+                        # Save file to this path with the name of the output file.
+                        remote_file_path = load_config.load_credentials("server_path_for_files") + output_filename
 
-                    # Send the file to the server in Czech Republic
-                    send_file.send_file_via_ssh(output_filepath + output_filename, remote_file_path)
+                        # Send the file to the server in Czech Republic
+                        send_file.send_file_via_ssh(output_filepath + output_filename, remote_file_path)
 
         else:
             print("No input files specified.")

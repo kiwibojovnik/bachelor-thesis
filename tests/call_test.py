@@ -6,16 +6,14 @@ from requests.structures import CaseInsensitiveDict
 from tests import tests_IPv6, google_search, test_middle_box, dns_tests
 from utils import reformat_url
 
-sleeping_time = 10
-
 
 def timeout():
     print("Waiting...")
     # Generujte náhodný časový limit mezi 25 a 70 sekundami
-    timeout = random.randint(25, 70)
+    timeout_random = random.randint(25, 70)
 
     # Počkejte dobu trvání časového limitu
-    time.sleep(timeout)
+    time.sleep(timeout_random)
 
 
 class WebConnectivityTester:
@@ -73,6 +71,7 @@ class WebConnectivityTester:
                     trace_hop = "N/A"
 
                 redirect = tests_IPv6.detect_redirect(address, self.ip_type)
+
                 http_status, content_length, headers, html_content = tests_IPv6.http_get_request(address)
                 certificate = tests_IPv6.get_https_certificate(ip_address, address)
 
@@ -85,6 +84,7 @@ class WebConnectivityTester:
                 search_results = google_search.is_domain_in_results(address)
 
                 end_time = time.time()
+
                 duration = round(end_time - start_time, 2)
                 output_content = reformat_url.extract_domain(address) + '_content.html'
                 self.save_html_content(output_content, html_content)

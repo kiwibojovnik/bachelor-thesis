@@ -2,8 +2,13 @@
 import requests
 
 from utils import reformat_url
+from timeout_decorator import timeout
 
 
+function_timeout = 60
+
+
+@timeout(function_timeout)
 def http_header_manipulation(url):
     detector = "Manipulated"
 
@@ -24,11 +29,17 @@ def http_header_manipulation(url):
 
         return detector
 
+
+    except TimeoutError:
+        print("Resolver identification test exceeded timeout.")
+        return "N/A", "N/A"
+
     except requests.exceptions.RequestException as e:
         print(f"Error occurred during HTTP header manipulation test.")
         return "N/A"
 
 
+@timeout(function_timeout)
 def invalid_request_line(url):
     invalid_methods = ['FOO', 'BAR', 'BAZ', 'QUX']
     manipulation_score = 0
@@ -42,6 +53,11 @@ def invalid_request_line(url):
 
         score = manipulation_score / len(invalid_methods)
         return score
+
+
+    except TimeoutError:
+        print("Resolver identification test exceeded timeout.")
+        return "N/A", "N/A"
 
     except requests.exceptions.RequestException as e:
         print(f"Error occurred during invalid request line test.")

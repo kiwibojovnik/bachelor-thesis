@@ -1,0 +1,2083 @@
+{
+    "mozilla.com": {
+        "Time": 35.33,
+        "URL": "mozilla.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.74",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "44.235.246.155",
+            "44.236.48.31",
+            "44.236.72.93"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "44.236.72.93",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.004664897918701172
+            ],
+            [
+                "90.181.198.158",
+                0.003737926483154297
+            ],
+            [
+                "90.181.197.157",
+                0.0083770751953125
+            ],
+            [
+                "194.228.21.250",
+                0.00884103775024414
+            ],
+            [
+                "62.115.122.138",
+                0.028443098068237305
+            ],
+            [
+                "62.115.122.159",
+                0.10129785537719727
+            ],
+            [
+                "62.115.114.86",
+                0.1559739112854004
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://mozilla.com",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "44.235.246.155",
+                "44.236.48.31",
+                "44.236.72.93"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 68495,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Server": "gunicorn",
+            "Date": "Sun, 28 Apr 2024 19:00:10 GMT",
+            "X-Frame-Options": "DENY",
+            "Content-Security-Policy": "frame-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org www.googletagmanager.com www.google-analytics.com trackertest.org www.surveygizmo.com accounts.firefox.com accounts.firefox.com.cn www.youtube.com js.stripe.com; child-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org www.googletagmanager.com www.google-analytics.com trackertest.org www.surveygizmo.com accounts.firefox.com accounts.firefox.com.cn www.youtube.com js.stripe.com; img-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org data: mozilla.org www.googletagmanager.com www.google-analytics.com creativecommons.org images.ctfassets.net; font-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org; script-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com www.google-analytics.com tagmanager.google.com www.youtube.com s.ytimg.com js.stripe.com; default-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org; connect-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org www.googletagmanager.com www.google-analytics.com region1.google-analytics.com sentry.prod.mozaws.net o1069899.sentry.io o1069899.ingest.sentry.io https://accounts.firefox.com/ stage.cjms.nonprod.cloudops.mozgcp.net cjms.services.mozilla.com; style-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org 'unsafe-inline'",
+            "Cache-Control": "max-age=600",
+            "Expires": "Sun, 28 Apr 2024 19:10:10 GMT",
+            "X-Clacks-Overhead": "GNU Terry Pratchett",
+            "Content-Language": "en-US",
+            "X-Backend-Server": "bedrock-6969559d78-f5fzv.gcp-eu-west1",
+            "Strict-Transport-Security": "max-age=31536000",
+            "X-Content-Type-Options": "nosniff",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Via": "1.1 google, 1.1 bb390afd921c223e0fe4921fbc23bbe8.cloudfront.net (CloudFront)",
+            "Content-Encoding": "gzip",
+            "ETag": "W/\"e52bb0989d2ea79e37d3d59423d0e0ae\"",
+            "Vary": "Accept-Encoding",
+            "X-Cache": "Hit from cloudfront",
+            "X-Amz-Cf-Pop": "PRG50-C1",
+            "X-Amz-Cf-Id": "FAmxjZYeejkEC01PQTSTeuP8ExiGmlRb5a4m8uKngOWJXGUR4cCnXQ==",
+            "Age": "9"
+        },
+        "HTML Content": "mozilla.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mozilla.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "031017D7C6C96B348C95EB4506AD67ABE958",
+            "notBefore": "Apr 10 22:53:44 2024 GMT",
+            "notAfter": "Jul  9 22:53:43 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "mozilla.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 21:00:28"
+    },
+    "ziddu.com": {
+        "Time": 8.38,
+        "URL": "ziddu.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "51.81.174.128"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "51.81.174.128",
+        "PING Status": "OK",
+        "PING IP": "51.81.174.128",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.ziddu.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "51.81.174.128"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 57053,
+        "Headers": {
+            "Connection": "Keep-Alive",
+            "Keep-Alive": "timeout=5, max=100",
+            "x-dns-prefetch-control": "on",
+            "content-type": "text/html; charset=UTF-8",
+            "link": "<https://www.ziddu.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.ziddu.com/wp-json/wp/v2/pages/10186>; rel=\"alternate\"; type=\"application/json\", <https://www.ziddu.com/>; rel=shortlink",
+            "etag": "\"432620-1714224726;gz\"",
+            "x-litespeed-cache": "hit",
+            "content-encoding": "gzip",
+            "vary": "Accept-Encoding",
+            "content-length": "12788",
+            "date": "Sun, 28 Apr 2024 19:01:30 GMT",
+            "server": "LiteSpeed",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+        },
+        "HTML Content": "ziddu.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.ziddu.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "048D8353A48D5F07EB0C99DC576CD62A8FAE",
+            "notBefore": "Apr  6 13:42:34 2024 GMT",
+            "notAfter": "Jul  5 13:42:33 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.ziddu.com"
+                ],
+                [
+                    "DNS",
+                    "ziddu.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 21:01:37"
+    },
+    "guardian.co.uk": {
+        "Time": 5.19,
+        "URL": "guardian.co.uk",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.129.111",
+            "151.101.193.111",
+            "151.101.1.111",
+            "151.101.65.111"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.1.111",
+        "PING Status": "OK",
+        "PING IP": "151.101.1.111",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://guardian.co.uk/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.129.111",
+                "151.101.193.111",
+                "151.101.1.111",
+                "151.101.65.111"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 1029757,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "128103",
+            "content-encoding": "gzip",
+            "x-gu-dotcomponents": "true",
+            "onion-location": "https://www.guardian2zotagl6tmjucg3lrhxdk4dw3lhbqnkvvkywawy3oqfoprid.onion/europe",
+            "content-type": "text/html; charset=UTF-8",
+            "etag": "W/\"hash2663368857355591684\"",
+            "x-gu-frontend-git-commit-id": "41efae949133f9c2b7950aaa5b9ac01b090fc710",
+            "link": "<https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?rum=0&features=es6%2Ces7%2Ces2017%2Ces2018%2Ces2019%2Cdefault-3.6%2CHTMLPictureElement%2CIntersectionObserver%2CIntersectionObserverEntry%2CURLSearchParams%2Cfetch%2CNodeList.prototype.forEach%2Cnavigator.sendBeacon%2Cperformance.now%2CPromise.allSettled&flags=gated&callback=guardianPolyfilled&unknown=polyfill&cacheClear=1>; rel=prefetch,<https://assets.guim.co.uk/assets/frameworks.client.web.39932f7be07ac95f86fe.js>; rel=prefetch,<https://assets.guim.co.uk/assets/index.client.web.ef612c920f6c383f492f.js>; rel=prefetch,<https://assets.guim.co.uk/javascripts/commercial/8af7a5cc688cc342f317/graun.standalone.commercial.js>; rel=prefetch,,<https://assets.guim.co.uk/>; rel=preconnect,<https://i.guim.co.uk>; rel=preconnect,<https://j.ophan.co.uk>; rel=preconnect,<https://ophan.theguardian.com>; rel=preconnect,<https://api.nextgen.guardianapps.co.uk>; rel=preconnect,<https://hits-secure.theguardian.com>; rel=preconnect,<https://interactive.guim.co.uk>; rel=preconnect,<https://phar.gu-web.net>; rel=preconnect,<https://static.theguardian.com>; rel=preconnect,<https://support.theguardian.com>; rel=preconnect",
+            "Accept-Ranges": "bytes",
+            "Age": "342",
+            "Date": "Sun, 28 Apr 2024 19:02:10 GMT",
+            "Set-Cookie": "GU_mvt_id=861807; expires=Sat, 27 Jul 2024 19:02:10 GMT; path=/; domain=.theguardian.com; Secure, GU_geo_country=CZ; path=/; Secure",
+            "X-Timer": "S1714330931.591913,VS0,VE2",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Security-Policy": "default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval' blob: 'unsafe-inline'; frame-src https: data:; style-src https: 'unsafe-inline'; img-src https: data: blob:; media-src https: data: blob:; font-src 'self' https://assets.guim.co.uk https://pasteup.guim.co.uk https://interactive.guim.co.uk https://dashboard.ophan.co.uk data:; connect-src https: wss: blob:; child-src https: blob:; object-src 'none'; base-uri 'none'",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "Feature-Policy": "camera 'none'; microphone 'none'; midi 'none'; geolocation 'none'",
+            "Permissions-Policy": "camera=(), microphone=(), midi=(), geolocation=(), interest-cohort=()",
+            "X-GU-Edition": "eur",
+            "Cache-Control": "max-age=60, stale-while-revalidate=6, stale-if-error=864000, private,no-transform",
+            "Vary": "Accept-Encoding,User-Agent",
+            "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
+        },
+        "HTML Content": "guardian.co.uk_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "theguardian.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Atlas R3 DV TLS CA 2023 Q4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0175070B2C7F269A0E607EFEFE249D74",
+            "notBefore": "Nov 14 10:45:28 2023 GMT",
+            "notAfter": "Dec 15 10:45:27 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "*.advertising.theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "*.code.dev-guardianapis.com"
+                ],
+                [
+                    "DNS",
+                    "*.code.dev-theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "*.dev-theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "*.editorial.theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "*.email.theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "*.guardian.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.guardianapis.com"
+                ],
+                [
+                    "DNS",
+                    "*.guim.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.guimcode.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.ophan.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.qa.dev-guardianapis.com"
+                ],
+                [
+                    "DNS",
+                    "*.service.theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "*.theguardian.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "*.theguardian.design"
+                ],
+                [
+                    "DNS",
+                    "api.nextgen.guardianapps.co.uk"
+                ],
+                [
+                    "DNS",
+                    "code.api.nextgen.guardianapps.co.uk"
+                ],
+                [
+                    "DNS",
+                    "dev-gutools.co.uk"
+                ],
+                [
+                    "DNS",
+                    "dev-theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "guardian.co.uk"
+                ],
+                [
+                    "DNS",
+                    "guim.co.uk"
+                ],
+                [
+                    "DNS",
+                    "gutools.co.uk"
+                ],
+                [
+                    "DNS",
+                    "i.guimcode.co.uk"
+                ],
+                [
+                    "DNS",
+                    "media.guim.co.uk"
+                ],
+                [
+                    "DNS",
+                    "pasteup.guim.co.uk"
+                ],
+                [
+                    "DNS",
+                    "subscribe.theguardian.com"
+                ],
+                [
+                    "DNS",
+                    "theguardian.co.uk"
+                ],
+                [
+                    "DNS",
+                    "theguardian.design"
+                ],
+                [
+                    "DNS",
+                    "mta-sts.observer.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.wordiply.com"
+                ],
+                [
+                    "DNS",
+                    "wordiply.com"
+                ],
+                [
+                    "DNS",
+                    "theguardianfoundation.org"
+                ],
+                [
+                    "DNS",
+                    "theguardian.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/ca/gsatlasr3dvtlsca2023q4"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsatlasr3dvtlsca2023q4.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/ca/gsatlasr3dvtlsca2023q4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 21:02:15"
+    },
+    "twitch.tv": {
+        "Time": 4.54,
+        "URL": "twitch.tv",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.66.167",
+            "151.101.130.167",
+            "151.101.194.167",
+            "151.101.2.167"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.130.167",
+        "PING Status": "OK",
+        "PING IP": "151.101.130.167",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://twitch.tv/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.66.167",
+                "151.101.130.167",
+                "151.101.194.167",
+                "151.101.2.167"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 127491,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Type": "text/html",
+            "Content-Encoding": "gzip",
+            "Set-Cookie": "server_session_id=8d17cca553e84377826c579d7e813585; domain=.twitch.tv; path=/; secure; samesite=none, unique_id=6DVQPg6VZuzTS71E7h7smtlY2HaPerFT; expires=Wed, 28 May 2025 19:03:24 GMT; domain=.twitch.tv; path=/; secure; samesite=none, unique_id_durable=6DVQPg6VZuzTS71E7h7smtlY2HaPerFT; expires=Wed, 28 May 2025 19:03:24 GMT; domain=.twitch.tv; path=/; secure; samesite=none; httponly, twitch.lohp.countryCode=CZ; domain=.twitch.tv; path=/; expires=Fri, 23 May 2025 19:03:24 GMT;",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Cache-Control": "private, max-age=0",
+            "Date": "Sun, 28 Apr 2024 19:03:24 GMT",
+            "Vary": "Accept-Encoding",
+            "transfer-encoding": "chunked"
+        },
+        "HTML Content": "twitch.tv_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "twitch.tv"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Atlas R3 DV TLS CA 2023 Q3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "01D150A856D6584596CB1D659B3BCAE7",
+            "notBefore": "Sep  1 21:33:12 2023 GMT",
+            "notAfter": "Oct  2 21:33:11 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "twitch.tv"
+                ],
+                [
+                    "DNS",
+                    "*.twitch.tv"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/ca/gsatlasr3dvtlsca2023q3"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsatlasr3dvtlsca2023q3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/ca/gsatlasr3dvtlsca2023q3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 21:03:28"
+    },
+    "sedo.com": {
+        "Time": 5.22,
+        "URL": "sedo.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.16.141.114",
+            "104.16.140.114"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.16.140.114",
+        "PING Status": "OK",
+        "PING IP": "104.16.140.114",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://sedo.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.16.141.114",
+                "104.16.140.114"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 86715,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 19:04:15 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "x-frame-options": "sameorigin",
+            "x-sedo-request-id": "ID-7d7d5cbdcd-9fdhh-b5c5955656d633aeaba139b19c956bf4",
+            "content-language": "en",
+            "age": "1214",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87b95126e89d2774-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "sedo.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "DE"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Nordrhein-Westfalen"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "K\u00f6ln"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sedo GmbH"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.sedo.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GeoTrust TLS RSA CA G1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0E33A84B8A51138A059904807A2DD4A1",
+            "notBefore": "May 11 00:00:00 2023 GMT",
+            "notAfter": "May 31 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.sedo.com"
+                ],
+                [
+                    "DNS",
+                    "sedo.com"
+                ]
+            ],
+            "OCSP": [
+                "http://status.geotrust.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.geotrust.com/GeoTrustTLSRSACAG1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://cdp.geotrust.com/GeoTrustTLSRSACAG1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 21:04:19"
+    },
+    "foxnews.com": {
+        "Time": 4.54,
+        "URL": "foxnews.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "173.222.9.65"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "173.222.9.65",
+        "PING Status": "OK",
+        "PING IP": "173.222.9.65",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://foxnews.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "173.222.9.65"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 638388,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "61976",
+            "last-modified": "Sun, 28 Apr 2024 19:04:52 GMT",
+            "etag": "\"591f1529390ba18aad79eb37df12c0de\"",
+            "content-type": "text/html; charset=UTF-8",
+            "x-amz-server-side-encryption": "AES256",
+            "via": "1.1 varnish, 1.1 varnish, 1.1 varnish",
+            "Content-Encoding": "gzip",
+            "X-Debug-Backend": "prod_fn_hp_foxnews",
+            "X-Debug-Url": "/index.html",
+            "Cache-Control": "max-age=90, public",
+            "Accept-Ranges": "bytes",
+            "Date": "Sun, 28 Apr 2024 19:05:30 GMT",
+            "Age": "39",
+            "access-control-allow-origin": "*",
+            "access-control-allow-headers": "*",
+            "access-control-allow-credentials": "false",
+            "access-control-max-age": "86400",
+            "access-control-allow-methods": "GET,HEAD",
+            "Accept-CH": "Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA, Sec-CH-UA-Arch, Sec-CH-UA-Bitness",
+            "Permissions-Policy": "ch-ua-model=*,ch-ua-platform-version=*,ch-ua=*,ch-ua-mobile=*,ch-ua-platform=*,ch-ua-full-version-list=*,ch-ua-arch=*,ch-ua-bitness=*,ch-ua-model=*",
+            "X-Served-By": "cache-iad-kiad7000161-IAD, cache-iad-kiad7000167-IAD, cache-vie6323-VIE",
+            "X-Cache": "MISS, HIT, HIT",
+            "X-Cache-Hits": "0, 60, 1",
+            "X-Timer": "S1714331131.601287,VS0,VE2",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=300"
+        },
+        "HTML Content": "foxnews.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Fox News Network, LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "wildcard.foxnews.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "018C16B6957D70D795CF2DA871F90EE3",
+            "notBefore": "May 15 00:00:00 2023 GMT",
+            "notAfter": "May 15 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "wildcard.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "video.magazine.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "video.latino.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "video.insider.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "video.imag.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "try.nation.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "stage-video.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "stage-video.foxbusiness.com"
+                ],
+                [
+                    "DNS",
+                    "stage-try.nation.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "stage-pre-try.nation.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "secure.media.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "qa.global.fncstatic.com"
+                ],
+                [
+                    "DNS",
+                    "public.media.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "pre-try.nation.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "hp.staging-cms.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "hp.dev-cms.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "hp.cms.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "foxnewsinternational.com"
+                ],
+                [
+                    "DNS",
+                    "foxnewsinsider.com"
+                ],
+                [
+                    "DNS",
+                    "foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "foxbusiness.com"
+                ],
+                [
+                    "DNS",
+                    "feeds.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "feeds.foxbusiness.com"
+                ],
+                [
+                    "DNS",
+                    "events.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "dev-video.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "dev-video.foxbusiness.com"
+                ],
+                [
+                    "DNS",
+                    "dev-try.nation.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "beta.video.magazine.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "beta.video.latino.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "beta.video.insider.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "beta.video.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "beta.video.foxbusiness.com"
+                ],
+                [
+                    "DNS",
+                    "ak.premium.foxnewsradio.com"
+                ],
+                [
+                    "DNS",
+                    "ak.podcast.foxnewsradio.com"
+                ],
+                [
+                    "DNS",
+                    "ak.podcast-testing.foxnewsradio.com"
+                ],
+                [
+                    "DNS",
+                    "ak.cuts.foxnewsradio.com"
+                ],
+                [
+                    "DNS",
+                    "affiliates.radio.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "*.foxnewsradio.com"
+                ],
+                [
+                    "DNS",
+                    "*.foxnewsinternational.com"
+                ],
+                [
+                    "DNS",
+                    "*.foxnews.com"
+                ],
+                [
+                    "DNS",
+                    "*.foxbusiness.com"
+                ],
+                [
+                    "DNS",
+                    "*.fncstatic.com"
+                ],
+                [
+                    "DNS",
+                    "*.fbnstatic.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 21:05:34"
+    },
+    "rambler.ru": {
+        "Time": 25.67,
+        "URL": "rambler.ru",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "81.19.82.1",
+            "81.19.82.2",
+            "81.19.82.0"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "81.19.82.0",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.004742860794067383
+            ],
+            [
+                "90.181.198.158",
+                0.0035049915313720703
+            ],
+            [
+                "90.181.197.157",
+                0.00806879997253418
+            ],
+            [
+                "194.228.21.250",
+                0.008393049240112305
+            ],
+            [
+                "62.115.124.26",
+                0.01986098289489746
+            ],
+            [
+                "62.115.134.95",
+                0.03574991226196289
+            ],
+            [
+                "62.115.143.25",
+                0.05353116989135742
+            ],
+            [
+                "62.115.135.94",
+                0.05275297164916992
+            ],
+            [
+                "62.115.135.106",
+                0.07315802574157715
+            ],
+            [
+                "213.248.89.10",
+                0.052787065505981445
+            ],
+            [
+                "81.19.64.81",
+                0.058608293533325195
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.rambler.ru/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "81.19.82.1",
+                "81.19.82.2",
+                "81.19.82.0"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 367351,
+        "Headers": {
+            "server": "envoy",
+            "date": "Sun, 28 Apr 2024 19:06:37 GMT",
+            "content-type": "text/html; charset=utf-8",
+            "document-policy": "no-font-display-late-swap",
+            "x-app-version": "2.82.1",
+            "accept-ch": "Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile",
+            "etag": "W/\"59af7-/41Bl8jrhKdOb0w7T3rTkIp7lko\"",
+            "x-srv-addr": "10.132.144.25:8080",
+            "x-frame-options": "SAMEORIGIN",
+            "set-cookie": "ruid=vAsAAD2eLmalWSA8AcMFAAB=; expires=Thu, 31-Dec-37 23:55:55 GMT; domain=.rambler.ru; path=/; Secure; SameSite=None",
+            "p3p": "CP=\"NON DSP NID ADMa DEVa TAIa PSAa PSDa OUR IND UNI COM NAV\"",
+            "content-encoding": "gzip",
+            "x-envoy-upstream-service-time": "72",
+            "transfer-encoding": "chunked"
+        },
+        "HTML Content": "rambler.ru_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.rambler.ru"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign GCC R3 DV TLS CA 2020"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "4BDC9F00B64616091F7EACBF",
+            "notBefore": "Apr 17 12:25:44 2023 GMT",
+            "notAfter": "May 18 12:25:43 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.rambler.ru"
+                ],
+                [
+                    "DNS",
+                    "rambler.ru"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/gsgccr3dvtlsca2020"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsgccr3dvtlsca2020.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/gsgccr3dvtlsca2020.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 21:06:42"
+    },
+    "books.google.com": {
+        "Time": 5.9,
+        "URL": "books.google.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.251.36.78"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.251.36.78",
+        "PING Status": "OK",
+        "PING IP": "142.251.36.78",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://books.google.com/?hl=en",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "142.251.36.78"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 2406605,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 19:07:21 GMT",
+            "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "Cache-Control": "no-cache, must-revalidate",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "Strict-Transport-Security": "max-age=604800",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html; charset=UTF-8",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "OFE/0.1",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "books.google.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.google.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "514D00BE72D2A39A094D5A826B3A516A",
+            "notBefore": "Apr  8 06:34:56 2024 GMT",
+            "notAfter": "Jul  1 06:34:55 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.google.com"
+                ],
+                [
+                    "DNS",
+                    "*.appengine.google.com"
+                ],
+                [
+                    "DNS",
+                    "*.bdn.dev"
+                ],
+                [
+                    "DNS",
+                    "*.origin-test.bdn.dev"
+                ],
+                [
+                    "DNS",
+                    "*.cloud.google.com"
+                ],
+                [
+                    "DNS",
+                    "*.crowdsource.google.com"
+                ],
+                [
+                    "DNS",
+                    "*.datacompute.google.com"
+                ],
+                [
+                    "DNS",
+                    "*.google.ca"
+                ],
+                [
+                    "DNS",
+                    "*.google.cl"
+                ],
+                [
+                    "DNS",
+                    "*.google.co.in"
+                ],
+                [
+                    "DNS",
+                    "*.google.co.jp"
+                ],
+                [
+                    "DNS",
+                    "*.google.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.google.com.ar"
+                ],
+                [
+                    "DNS",
+                    "*.google.com.au"
+                ],
+                [
+                    "DNS",
+                    "*.google.com.br"
+                ],
+                [
+                    "DNS",
+                    "*.google.com.co"
+                ],
+                [
+                    "DNS",
+                    "*.google.com.mx"
+                ],
+                [
+                    "DNS",
+                    "*.google.com.tr"
+                ],
+                [
+                    "DNS",
+                    "*.google.com.vn"
+                ],
+                [
+                    "DNS",
+                    "*.google.de"
+                ],
+                [
+                    "DNS",
+                    "*.google.es"
+                ],
+                [
+                    "DNS",
+                    "*.google.fr"
+                ],
+                [
+                    "DNS",
+                    "*.google.hu"
+                ],
+                [
+                    "DNS",
+                    "*.google.it"
+                ],
+                [
+                    "DNS",
+                    "*.google.nl"
+                ],
+                [
+                    "DNS",
+                    "*.google.pl"
+                ],
+                [
+                    "DNS",
+                    "*.google.pt"
+                ],
+                [
+                    "DNS",
+                    "*.googleapis.cn"
+                ],
+                [
+                    "DNS",
+                    "*.googlevideo.com"
+                ],
+                [
+                    "DNS",
+                    "*.gstatic.cn"
+                ],
+                [
+                    "DNS",
+                    "*.gstatic-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googlecnapps.cn"
+                ],
+                [
+                    "DNS",
+                    "*.googlecnapps.cn"
+                ],
+                [
+                    "DNS",
+                    "googleapps-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googleapps-cn.com"
+                ],
+                [
+                    "DNS",
+                    "gkecnapps.cn"
+                ],
+                [
+                    "DNS",
+                    "*.gkecnapps.cn"
+                ],
+                [
+                    "DNS",
+                    "googledownloads.cn"
+                ],
+                [
+                    "DNS",
+                    "*.googledownloads.cn"
+                ],
+                [
+                    "DNS",
+                    "recaptcha.net.cn"
+                ],
+                [
+                    "DNS",
+                    "*.recaptcha.net.cn"
+                ],
+                [
+                    "DNS",
+                    "recaptcha-cn.net"
+                ],
+                [
+                    "DNS",
+                    "*.recaptcha-cn.net"
+                ],
+                [
+                    "DNS",
+                    "widevine.cn"
+                ],
+                [
+                    "DNS",
+                    "*.widevine.cn"
+                ],
+                [
+                    "DNS",
+                    "ampproject.org.cn"
+                ],
+                [
+                    "DNS",
+                    "*.ampproject.org.cn"
+                ],
+                [
+                    "DNS",
+                    "ampproject.net.cn"
+                ],
+                [
+                    "DNS",
+                    "*.ampproject.net.cn"
+                ],
+                [
+                    "DNS",
+                    "google-analytics-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.google-analytics-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googleadservices-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googleadservices-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googlevads-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googlevads-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googleapis-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googleapis-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googleoptimize-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googleoptimize-cn.com"
+                ],
+                [
+                    "DNS",
+                    "doubleclick-cn.net"
+                ],
+                [
+                    "DNS",
+                    "*.doubleclick-cn.net"
+                ],
+                [
+                    "DNS",
+                    "*.fls.doubleclick-cn.net"
+                ],
+                [
+                    "DNS",
+                    "*.g.doubleclick-cn.net"
+                ],
+                [
+                    "DNS",
+                    "doubleclick.cn"
+                ],
+                [
+                    "DNS",
+                    "*.doubleclick.cn"
+                ],
+                [
+                    "DNS",
+                    "*.fls.doubleclick.cn"
+                ],
+                [
+                    "DNS",
+                    "*.g.doubleclick.cn"
+                ],
+                [
+                    "DNS",
+                    "dartsearch-cn.net"
+                ],
+                [
+                    "DNS",
+                    "*.dartsearch-cn.net"
+                ],
+                [
+                    "DNS",
+                    "googletraveladservices-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googletraveladservices-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googletagservices-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googletagservices-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googletagmanager-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googletagmanager-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googlesyndication-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googlesyndication-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.safeframe.googlesyndication-cn.com"
+                ],
+                [
+                    "DNS",
+                    "app-measurement-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.app-measurement-cn.com"
+                ],
+                [
+                    "DNS",
+                    "gvt1-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.gvt1-cn.com"
+                ],
+                [
+                    "DNS",
+                    "gvt2-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.gvt2-cn.com"
+                ],
+                [
+                    "DNS",
+                    "2mdn-cn.net"
+                ],
+                [
+                    "DNS",
+                    "*.2mdn-cn.net"
+                ],
+                [
+                    "DNS",
+                    "googleflights-cn.net"
+                ],
+                [
+                    "DNS",
+                    "*.googleflights-cn.net"
+                ],
+                [
+                    "DNS",
+                    "admob-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.admob-cn.com"
+                ],
+                [
+                    "DNS",
+                    "googlesandbox-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.googlesandbox-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.safenup.googlesandbox-cn.com"
+                ],
+                [
+                    "DNS",
+                    "*.gstatic.com"
+                ],
+                [
+                    "DNS",
+                    "*.metric.gstatic.com"
+                ],
+                [
+                    "DNS",
+                    "*.gvt1.com"
+                ],
+                [
+                    "DNS",
+                    "*.gcpcdn.gvt1.com"
+                ],
+                [
+                    "DNS",
+                    "*.gvt2.com"
+                ],
+                [
+                    "DNS",
+                    "*.gcp.gvt2.com"
+                ],
+                [
+                    "DNS",
+                    "*.url.google.com"
+                ],
+                [
+                    "DNS",
+                    "*.youtube-nocookie.com"
+                ],
+                [
+                    "DNS",
+                    "*.ytimg.com"
+                ],
+                [
+                    "DNS",
+                    "android.com"
+                ],
+                [
+                    "DNS",
+                    "*.android.com"
+                ],
+                [
+                    "DNS",
+                    "*.flash.android.com"
+                ],
+                [
+                    "DNS",
+                    "g.cn"
+                ],
+                [
+                    "DNS",
+                    "*.g.cn"
+                ],
+                [
+                    "DNS",
+                    "g.co"
+                ],
+                [
+                    "DNS",
+                    "*.g.co"
+                ],
+                [
+                    "DNS",
+                    "goo.gl"
+                ],
+                [
+                    "DNS",
+                    "www.goo.gl"
+                ],
+                [
+                    "DNS",
+                    "google-analytics.com"
+                ],
+                [
+                    "DNS",
+                    "*.google-analytics.com"
+                ],
+                [
+                    "DNS",
+                    "google.com"
+                ],
+                [
+                    "DNS",
+                    "googlecommerce.com"
+                ],
+                [
+                    "DNS",
+                    "*.googlecommerce.com"
+                ],
+                [
+                    "DNS",
+                    "ggpht.cn"
+                ],
+                [
+                    "DNS",
+                    "*.ggpht.cn"
+                ],
+                [
+                    "DNS",
+                    "urchin.com"
+                ],
+                [
+                    "DNS",
+                    "*.urchin.com"
+                ],
+                [
+                    "DNS",
+                    "youtu.be"
+                ],
+                [
+                    "DNS",
+                    "youtube.com"
+                ],
+                [
+                    "DNS",
+                    "*.youtube.com"
+                ],
+                [
+                    "DNS",
+                    "youtubeeducation.com"
+                ],
+                [
+                    "DNS",
+                    "*.youtubeeducation.com"
+                ],
+                [
+                    "DNS",
+                    "youtubekids.com"
+                ],
+                [
+                    "DNS",
+                    "*.youtubekids.com"
+                ],
+                [
+                    "DNS",
+                    "yt.be"
+                ],
+                [
+                    "DNS",
+                    "*.yt.be"
+                ],
+                [
+                    "DNS",
+                    "android.clients.google.com"
+                ],
+                [
+                    "DNS",
+                    "developer.android.google.cn"
+                ],
+                [
+                    "DNS",
+                    "developers.android.google.cn"
+                ],
+                [
+                    "DNS",
+                    "source.android.google.cn"
+                ],
+                [
+                    "DNS",
+                    "developer.chrome.google.cn"
+                ],
+                [
+                    "DNS",
+                    "web.developers.google.cn"
+                ],
+                [
+                    "DNS",
+                    "codelabs.developers.google.cn"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/fVJxbV-Ktmk.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 21:07:27"
+    },
+    "stanford.edu": {
+        "Time": 8.64,
+        "URL": "stanford.edu",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "171.67.215.200"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "171.67.215.200",
+        "PING Status": "OK",
+        "PING IP": "171.67.215.200",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.stanford.edu/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.194.133",
+                "151.101.2.133",
+                "151.101.66.133",
+                "151.101.130.133"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 132883,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "40095",
+            "Cache-Control": "public, max-age=600",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Link": "<https://www.stanford.edu/wp-json/>; rel=\"https://api.w.org/\", <https://www.stanford.edu/wp-json/wp/v2/pages/64>; rel=\"alternate\"; type=\"application/json\", <https://www.stanford.edu/>; rel=shortlink",
+            "Server": "nginx",
+            "Strict-Transport-Security": "max-age=300",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Pantheon-Styx-Hostname": "styx-fe1-b-66d79b4b7-wwn9v",
+            "X-Styx-Req-Id": "911d0c43-0591-11ef-8e01-7ad7a55b083e",
+            "Age": "484",
+            "Accept-Ranges": "bytes",
+            "Via": "1.1 varnish, 1.1 varnish, 1.1 varnish",
+            "Date": "Sun, 28 Apr 2024 19:08:28 GMT",
+            "X-Served-By": "cache-chi-kigq8000048-CHI, cache-chi-kigq8000048-CHI, cache-vie6366-VIE",
+            "X-Cache": "HIT, MISS, MISS",
+            "X-Cache-Hits": "29, 0, 0",
+            "X-Timer": "S1714331308.881176,VS0,VE125",
+            "Vary": "Accept-Encoding, Cookie"
+        },
+        "HTML Content": "stanford.edu_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Stanford University"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "stanford.edu"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "MI"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Ann Arbor"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Internet2"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "InCommon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "InCommon RSA Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "9962EA7F8770E9146A21AD0F874FF934",
+            "notBefore": "May  5 00:00:00 2023 GMT",
+            "notAfter": "May  4 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "stanford.edu"
+                ],
+                [
+                    "DNS",
+                    "*.stanford.edu"
+                ],
+                [
+                    "DNS",
+                    "web.stanford.edu"
+                ],
+                [
+                    "DNS",
+                    "www-v6.stanford.edu"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.usertrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.usertrust.com/InCommonRSAServerCA_2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.incommon-rsa.org/InCommonRSAServerCA.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 21:08:34"
+    },
+    "wikihow.com": {
+        "Time": 7.46,
+        "URL": "wikihow.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.129.91",
+            "151.101.193.91",
+            "151.101.1.91",
+            "151.101.65.91"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.129.91",
+        "PING Status": "OK",
+        "PING IP": "151.101.129.91",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://wikihow.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.129.91",
+                "151.101.193.91",
+                "151.101.1.91",
+                "151.101.65.91"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 272092,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "59625",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-language": "en",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Cache-Control": "s-maxage=3600, must-revalidate, max-age=0",
+            "Last-Modified": "Sat, 27 Apr 2024 07:39:55 GMT",
+            "Content-Encoding": "gzip",
+            "Accept-Ranges": "bytes",
+            "Age": "44770",
+            "Date": "Sun, 28 Apr 2024 19:09:28 GMT",
+            "X-Timer": "S1714331368.260349,VS0,VE103",
+            "x-c": "cache-vie6377-VIE,M cache-iad-kcgs7200155-IAD,h,44770",
+            "x-content-type-options": "nosniff",
+            "x-xss-protection": "1; mode=block",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "Set-Cookie": "whv=nz1NHNlwQdCrEPgWGUUY; expires=Wed, 26 Apr 2034 19:09:28 GMT; domain=.wikihow.com; path=/; secure, vr=CZ-63; domain=.wikihow.com; path=/; secure, vi=EU; domain=.wikihow.com; path=/; secure",
+            "Vary": "Cookie, Accept-Encoding",
+            "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
+        },
+        "HTML Content": "wikihow.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "wikihow.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "043500E0B9C49A0169E63B11A92172D8A4F1",
+            "notBefore": "Mar 20 09:52:11 2024 GMT",
+            "notAfter": "Jun 18 09:52:10 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "wikihow.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 21:09:35"
+    }
+}

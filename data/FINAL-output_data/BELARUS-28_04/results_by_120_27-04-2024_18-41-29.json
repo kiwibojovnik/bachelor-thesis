@@ -1,0 +1,970 @@
+{
+    "https://dramaturg.org": {
+        "Time": 16.09,
+        "URL": "https://dramaturg.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "13.248.169.48",
+            "76.223.54.146"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "13.248.169.48",
+        "PING Status": "OK",
+        "PING IP": "13.248.169.48",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 114,
+        "Headers": {
+            "Content-Type": "text/html",
+            "Date": "Sat, 27 Apr 2024 22:35:12 GMT",
+            "Content-Length": "114"
+        },
+        "HTML Content": "dramaturg.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "dramaturg.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "B1F894AF6D133EF5",
+            "notBefore": "Apr 21 15:38:19 2024 GMT",
+            "notAfter": "Apr 21 15:38:19 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.dramaturg.org"
+                ],
+                [
+                    "DNS",
+                    "dramaturg.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-20386.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:35:26"
+    },
+    "http://love-in.by/ru/search.phtml": {
+        "Time": 5.56,
+        "URL": "http://love-in.by/ru/search.phtml",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "193.0.170.23",
+            "193.0.170.24"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "193.0.170.23",
+        "PING Status": "OK",
+        "PING IP": "193.0.170.23",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://love-in.by/ru/search.phtml",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "193.0.170.24",
+                "193.0.170.23"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 198858,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Sat, 27 Apr 2024 22:35:57 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Powered-By": "Express",
+            "X-Node": "wwwnew124",
+            "X-Date": "202404251033",
+            "X-Version": "1.616.0",
+            "X-Frame-Options": "sameorigin",
+            "cache-control": "post-check=0, pre-check=0, no-store, no-cache, must-revalidate, private",
+            "pragma": "no-cache",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "love-in.by_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "love-in.by"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04CC67ED0344E24CFC68D4EACFB965B54DE3",
+            "notBefore": "Feb 29 17:42:32 2024 GMT",
+            "notAfter": "May 29 17:42:31 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.love-in.by"
+                ],
+                [
+                    "DNS",
+                    "love-in.by"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:36:02"
+    },
+    "https://www.mamba.ru/landing/ru/belarus-248": {
+        "Time": 33.14,
+        "URL": "https://www.mamba.ru/landing/ru/belarus-248",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.165.123.195"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.165.123.195",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.002016782760620117
+            ],
+            [
+                "212.98.161.17",
+                0.0015807151794433594
+            ],
+            [
+                "185.11.76.22",
+                0.001035451889038086
+            ],
+            [
+                "185.11.76.26",
+                0.0024261474609375
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "/not-found",
+        "Redirected Location IPs": [
+            "N/A",
+            "N/A"
+        ],
+        "HTTP Status": 404,
+        "Content Length": 222249,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Sat, 27 Apr 2024 22:37:04 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "X-Powered-By": "Express",
+            "X-Node": "wwwnew133",
+            "X-Date": "202404251033",
+            "X-Version": "1.616.0",
+            "X-Frame-Options": "sameorigin",
+            "Cache-Control": "post-check=0, pre-check=0, no-store, no-cache, must-revalidate, private",
+            "Pragma": "no-cache",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            "Content-Encoding": "gzip",
+            "X-VARITI-CCR": "1624336784:1",
+            "Connection": "close"
+        },
+        "HTML Content": "www.mamba.ru_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "RU"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Moscow"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Moscow"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "JSC Mamba"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.mamba.ru"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign RSA OV SSL CA 2018"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "33DC5CF95F1222B391296A69",
+            "notBefore": "Mar 27 16:06:24 2024 GMT",
+            "notAfter": "Apr 28 16:06:23 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.mamba.ru"
+                ],
+                [
+                    "DNS",
+                    "mamba.ru"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/gsrsaovsslca2018"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsrsaovsslca2018.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/gsrsaovsslca2018.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:37:09"
+    },
+    "https://2995.polovinka.org": {
+        "Time": 6.25,
+        "URL": "https://2995.polovinka.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "37.1.195.47"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "37.1.195.47",
+        "PING Status": "OK",
+        "PING IP": "37.1.195.47",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.polovinka.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "37.1.195.47"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 120799,
+        "Headers": {
+            "Server": "nginx/1.16.1",
+            "Date": "Sat, 27 Apr 2024 22:37:37 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0, no-store, no-cache, must-revalidate",
+            "Pragma": "no-cache",
+            "Content-Encoding": "gzip",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "geobase=s%3A0%3A%22%22%3B; expires=Sat, 04-May-2024 22:37:37 GMT; Max-Age=604800, USER_CITY_ID=0; expires=Sat, 27-Apr-2024 23:37:37 GMT; Max-Age=3600; path=/",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains, max-age=31536000;",
+            "X-Permitted-Cross-Domain-Policies": "none",
+            "X-Content-Type-Options": "nosniff"
+        },
+        "HTML Content": "2995.polovinka.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "polovinka.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04E59F2F7498B577946AB52DA457E493E5A2",
+            "notBefore": "Mar 15 23:50:11 2024 GMT",
+            "notAfter": "Jun 13 23:50:10 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.polovinka.org"
+                ],
+                [
+                    "DNS",
+                    "polovinka.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:37:42"
+    },
+    "https://probusiness.io": {
+        "Time": 3.82,
+        "URL": "https://probusiness.io",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "178.172.250.56"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "178.172.250.56",
+        "PING Status": "OK",
+        "PING IP": "178.172.250.56",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 127731,
+        "Headers": {
+            "Server": "nginx/1.18.0",
+            "Date": "Sat, 27 Apr 2024 22:38:21 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Accept-Encoding, Cookie",
+            "Strict-Transport-Security": "max-age=15768000",
+            "Content-Security-Policy": "upgrade-insecure-requests",
+            "Referrer-Policy": "unsafe-url",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "probusiness.io_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.probusiness.io"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "AlphaSSL CA - SHA256 - G4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "3AFDBC52C7ED51457BDC8978",
+            "notBefore": "Jun 13 08:47:11 2023 GMT",
+            "notAfter": "Jul 14 08:47:10 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.probusiness.io"
+                ],
+                [
+                    "DNS",
+                    "probusiness.io"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/alphasslcasha256g4"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/alphasslcasha256g4.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/alphasslcasha256g4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-27 18:38:24"
+    },
+    "https://biznet.by": {
+        "Time": 5.89,
+        "URL": "https://biznet.by",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.79.222",
+            "172.67.171.146"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.79.222",
+        "PING Status": "OK",
+        "PING IP": "104.21.79.222",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 122097,
+        "Headers": {
+            "Date": "Sat, 27 Apr 2024 22:39:00 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Last-Modified": "Sun, 05 Mar 2023 10:10:30 GMT",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=LrAJVeF2Qp9L76LT0clOku2UO5AR%2FFMBC3FL3jOcHrW7DirP3PT2I6%2BzEbKadgLCqihiBcXwg%2BLeM3nyhM0BKC6tR%2B5TMBJJP26sNte9Ve8B1qutxH%2BFI%2FsEzmw%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87b24e5cc8d2bfd2-WAW",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "biznet.by_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "biznet.by"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0383D7D95A8F253B9CC63CFF56118F948D45",
+            "notBefore": "Apr 17 17:47:07 2024 GMT",
+            "notAfter": "Jul 16 17:47:06 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.biznet.by"
+                ],
+                [
+                    "DNS",
+                    "biznet.by"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:39:05"
+    },
+    "https://bel.biz": {
+        "Time": 3.8,
+        "URL": "https://bel.biz",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "92.205.0.220"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "92.205.0.220",
+        "PING Status": "OK",
+        "PING IP": "92.205.0.220",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='bel.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:877)'),))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "bel.biz_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:39:40"
+    },
+    "http://www.bk.by": {
+        "Time": 3.21,
+        "URL": "http://www.bk.by",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "85.209.148.14"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "85.209.148.14",
+        "PING Status": "OK",
+        "PING IP": "85.209.148.14",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.bk.by/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "85.209.148.14"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 108753,
+        "Headers": {
+            "Connection": "Keep-Alive",
+            "Keep-Alive": "timeout=5, max=100",
+            "content-type": "text/html",
+            "last-modified": "Mon, 08 Apr 2024 13:48:43 GMT",
+            "accept-ranges": "bytes",
+            "content-encoding": "gzip",
+            "vary": "Accept-Encoding",
+            "content-length": "15197",
+            "date": "Sat, 27 Apr 2024 22:40:19 GMT",
+            "server": "LiteSpeed",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+        },
+        "HTML Content": "www.bk.by_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.bk.by"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03BB3DFC2B6DCCB55EA926760635D02C97FB",
+            "notBefore": "Mar 22 00:29:30 2024 GMT",
+            "notAfter": "Jun 20 00:29:29 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.bk.by"
+                ],
+                [
+                    "DNS",
+                    "bk.by"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:40:22"
+    },
+    "http://bii.by": {
+        "Time": 29.97,
+        "URL": "http://bii.by",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.179.80.190"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.179.80.190",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0017061233520507812
+            ],
+            [
+                "31.130.202.105",
+                0.003479480743408203
+            ],
+            [
+                "93.84.125.193",
+                0.0009491443634033203
+            ],
+            [
+                "178.124.134.61",
+                0.003991127014160156
+            ],
+            [
+                "93.85.86.50",
+                0.0005998611450195312
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://bii.by/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "185.179.80.190"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 74230,
+        "Headers": {
+            "Content-Type": "text/html",
+            "Server": "Microsoft-IIS/8.5",
+            "Date": "Sat, 27 Apr 2024 22:41:00 GMT",
+            "Content-Length": "74230"
+        },
+        "HTML Content": "bii.by_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "bii.by"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "AlphaSSL CA - SHA256 - G4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "4C76C6639FCC4488E342B746",
+            "notBefore": "Jun  2 11:38:48 2023 GMT",
+            "notAfter": "Jul  3 11:38:47 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "bii.by"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/alphasslcasha256g4"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/alphasslcasha256g4.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/alphasslcasha256g4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:41:07"
+    },
+    "http://bizshop.by": {
+        "Time": 3.71,
+        "URL": "http://bizshop.by",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "93.125.99.66"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "93.125.99.66",
+        "PING Status": "OK",
+        "PING IP": "93.125.99.66",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 124706,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Sat, 27 Apr 2024 22:41:26 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Powered-By": "PHP/7.4.33",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "Pragma": "no-cache",
+            "Set-Cookie": "PHPSESSID=ac8b2e908beb270cc6124303500b55cc; expires=Sat, 04-May-2024 22:41:25 GMT; Max-Age=604800; path=/; HttpOnly",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "bizshop.by_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "egrn.perspekt.by"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03BB490477CF9BDE03528F28B85C933AA3EA",
+            "notBefore": "Apr 18 10:34:41 2024 GMT",
+            "notAfter": "Jul 17 10:34:40 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "bizshop.by"
+                ],
+                [
+                    "DNS",
+                    "bizshop.perspekt.by"
+                ],
+                [
+                    "DNS",
+                    "egrn.by"
+                ],
+                [
+                    "DNS",
+                    "egrn.perspekt.by"
+                ],
+                [
+                    "DNS",
+                    "mail.bizshop.by"
+                ],
+                [
+                    "DNS",
+                    "www.bizshop.by"
+                ],
+                [
+                    "DNS",
+                    "www.bizshop.perspekt.by"
+                ],
+                [
+                    "DNS",
+                    "www.egrn.by"
+                ],
+                [
+                    "DNS",
+                    "www.egrn.perspekt.by"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 18:41:29"
+    }
+}

@@ -48,8 +48,8 @@ def compare_files(data1, data2, ignore_keys=None, ignore_header_items=None):
                             differences[url] = {}
                         if 'Headers' not in differences[url]:
                             differences[url]['Headers'] = {}
-                        differences[url]['Headers'][header_key] = {'File1': headers1[header_key],
-                                                                   'File2': headers2[header_key]}
+                        differences[url]['Headers'][header_key] = {'CZ': headers1[header_key],
+                                                                   'BY': headers2[header_key]}
 
             # Compare the remaining keys
             for key in details1_filtered:
@@ -58,6 +58,6 @@ def compare_files(data1, data2, ignore_keys=None, ignore_header_items=None):
                 if details1_filtered[key] != details2_filtered[key]:
                     if url not in differences:
                         differences[url] = {}
-                    differences[url][key] = {'File1': details1_filtered[key], 'File2': details2_filtered[key]}
+                    differences[url][key] = {'CZ': details1_filtered[key], 'BY': details2_filtered[key]}
 
     return differences

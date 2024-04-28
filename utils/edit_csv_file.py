@@ -62,3 +62,5 @@ def move_url_to_first_column(input_file):
 
     # Vrať cestu k pomocnému souboru
     return output_file
+
+move_url_to_first_column("/Users/daliborkyjovsky/Documents/VUTFIT23/BP-2.0/bachelor-thesis/data/input_data/download.csv")

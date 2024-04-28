@@ -1,0 +1,1608 @@
+{
+    "zendesk.com": {
+        "Time": 30.24,
+        "URL": "zendesk.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.74",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "216.198.1.61",
+            "216.198.1.62",
+            "216.198.1.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "216.198.1.60",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.011368989944458008
+            ],
+            [
+                "90.181.198.158",
+                0.0035638809204101562
+            ],
+            [
+                "90.181.197.157",
+                0.008938074111938477
+            ],
+            [
+                "194.228.21.250",
+                0.011143922805786133
+            ],
+            [
+                "62.115.58.198",
+                0.013349056243896484
+            ],
+            [
+                "62.115.122.138",
+                0.0253908634185791
+            ],
+            [
+                "62.115.122.159",
+                0.1028130054473877
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.zendesk.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "172.64.153.205",
+                "104.18.34.51"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 508273,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 18:04:37 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "public, max-age=3600",
+            "vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "nc": "T",
+            "content-security-policy": "default-src * wss://*.zopim.com 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self' app.optimizely.com *.zendesk.com *.zendesk.co.jp *.zendesk.co.uk *.zendesk.com.br *.zendesk.com.mx *.zendesk.de *.zendesk.es *.zendesk.fr *.zendesk.kr *.zendesk.nl *.zendesk.tw *.zendesk.hk; font-src * data:; img-src * data:; media-src * blob:;worker-src 'self' blob:",
+            "CF-Cache-Status": "HIT",
+            "Age": "621",
+            "Last-Modified": "Sun, 28 Apr 2024 17:54:16 GMT",
+            "Expires": "Sun, 28 Apr 2024 19:04:37 GMT",
+            "Strict-Transport-Security": "max-age=0; preload",
+            "Set-Cookie": "georedirect=false; Domain=www.zendesk.com; Path=/;",
+            "Server": "cloudflare",
+            "CF-RAY": "87b8f9d0f831b389-PRG"
+        },
+        "HTML Content": "zendesk.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Zendesk, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.zendesk.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0D83349090163436E8ADCEA25E6970C5",
+            "notBefore": "Aug 22 00:00:00 2023 GMT",
+            "notAfter": "Aug 21 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.zendesk.com"
+                ],
+                [
+                    "DNS",
+                    "zendesk.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl",
+                "http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 20:04:43"
+    },
+    "cpanel.com": {
+        "Time": 8.52,
+        "URL": "cpanel.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.74",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.96.9",
+            "188.114.97.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.97.9",
+        "PING Status": "OK",
+        "PING IP": "188.114.97.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://cpanel.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.96.9",
+                "188.114.97.9"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 47222,
+        "Headers": {
+            "Connection": "Keep-Alive",
+            "Keep-Alive": "timeout=5, max=100",
+            "cache-control": "public, max-age=300",
+            "expires": "Sun, 28 Apr 2024 18:10:47 GMT",
+            "content-type": "text/html",
+            "last-modified": "Thu, 18 Apr 2024 20:58:03 GMT",
+            "accept-ranges": "bytes",
+            "content-encoding": "gzip",
+            "vary": "Accept-Encoding,User-Agent,User-Agent",
+            "content-length": "11643",
+            "date": "Sun, 28 Apr 2024 18:05:47 GMT",
+            "server": "LiteSpeed",
+            "x-content-type-options": "nosniff",
+            "x-xss-protection": "1; mode=block",
+            "x-frame-options": "SAMEORIGIN",
+            "strict-transport-security": "max-age=31536000",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+        },
+        "HTML Content": "cpanel.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "cpanel.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "B662DAA5237ED71511058256B44C393B",
+            "notBefore": "Mar 18 02:53:09 2024 GMT",
+            "notAfter": "Jun 16 02:53:08 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "cpanel.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/iCOO7aRFdnY"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/-UJLLl0QCdc.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 20:05:54"
+    },
+    "vistaprint.com": {
+        "Time": 7.22,
+        "URL": "vistaprint.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.18.40.110",
+            "172.64.147.146"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.64.147.146",
+        "PING Status": "OK",
+        "PING IP": "172.64.147.146",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://vistaprint.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.18.40.110",
+                "172.64.147.146"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 397385,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 18:07:01 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87b8fd522bf2278c-PRG",
+            "CF-Cache-Status": "DYNAMIC",
+            "Age": "99",
+            "Cache-Control": "no-cache, private, max-age=0",
+            "Expires": "Thu, 01 Jan 1970 00:00:00 UTC",
+            "Set-Cookie": "userContext={%22ctc%22:{%22v1%22:[%22design_services_hub_inspiration%22%2C%22login_prompt_not_logged_in_customers%22%2C%22site_tagging_new_customer%22%2C%22new_user_registered_nonregistered%22]}%2C%22userProfile%22:{%22v1%22:{%22culture%22:%22en-US%22}}}; path=/; domain=.vistaprint.com; expires=Mon, 29 Apr 2024 06:07:01 GMT, ucSearchParams=%7B%7D; path=/; domain=.vistaprint.com; expires=Tue, 28 May 2024 18:07:01 GMT, testUserId=_1e812533-09d0-4a35-9596-96a02818b6f6; path=/; domain=.vistaprint.com; Max-Age=15552000, optimizelyEndUserId=_1e812533-09d0-4a35-9596-96a02818b6f6; path=/; domain=.vistaprint.com; Max-Age=15552000, expCtx=; path=/; domain=.vistaprint.com; Max-Age=0, cf-ipcountry=CZ; Secure; Path=/; SameSite=None",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "Accept-Encoding",
+            "Via": "1.1 e85f40b9e4a0224c05d79e84598c0254.cloudfront.net (CloudFront)",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "pragma": "no-cache",
+            "vp-ingress-route": "Default",
+            "x-amz-cf-id": "Hn5k2Ecy4juisaD4MkfWxi_BiRuXKg1BBHOPFJNF-QaHIqZgBOzq9A==",
+            "x-amz-cf-pop": "DUB56-P1",
+            "x-amz-expiration": "expiry-date=\"Mon, 06 May 2024 00:00:00 GMT\", rule-id=\"NTFiMjNkZmYtN2ZlNS00OWQzLWI3MjYtZTFjOGZkNmE0NjVk\"",
+            "x-amz-meta-exclusive-hint": "/page-data/en-us/camp/usapril19homepageproductrowtest/exp/fy24_q4_us_use_case_homepage_row/test_use_case/page-data-462f7fce-08b7-4844-88a1-83f31ca687d5.json",
+            "x-amz-meta-hint-domain": "/static/merch/home-page-vistaprint-na.prod",
+            "x-amz-meta-shared-hint": "/framework-cbf1d142ea87d9c9edf4.js,/2aea8525-1e5a0f933523a1d45f98.js,/component---src-pages-healthcheck-jsx-bc3328731db5590a1fba.js,/component---src-templates-auth-page-layout-jsx-6dd660614aff211dba3f.js,/component---src-templates-home-page-layout-jsx-00927aa5cc5095c783e2.js,/styles.17e28d26243b24029d7f.css,/e5a9570c-50e9bdff6f6d93151f24.js,/webpack-runtime-89e93b560baa0ea3d350.js,/component---src-pages-404-jsx-ac47cee5b27bd0c16792.js,/34364da4-d9df82850f1a808a3e78.js,/app-f67cb23c19aa45c0db07.js,/~partytown/partytown.js,/~partytown/partytown-atomics.js,/~partytown/partytown-sw.js,/~partytown/partytown-media.js,/~partytown/debug/partytown-sandbox-sw.js,/~partytown/debug/partytown.js,/~partytown/debug/partytown-atomics.js,/~partytown/debug/partytown-sw.js,/~partytown/debug/partytown-media.js,/~partytown/debug/partytown-ww-sw.js,/~partytown/debug/partytown-ww-atomics.js",
+            "x-cache": "Hit from cloudfront",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "vistaprint.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "NL"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Limburg"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Venlo"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Vistaprint Netherlands B.V."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.vistaprint.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign RSA OV SSL CA 2018"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "607836CDADA1115ADCD9BF5E",
+            "notBefore": "Sep 25 21:06:08 2023 GMT",
+            "notAfter": "Oct 26 21:06:07 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.vistaprint.com"
+                ],
+                [
+                    "DNS",
+                    "vistaprint.biz"
+                ],
+                [
+                    "DNS",
+                    "vistaprint.ca"
+                ],
+                [
+                    "DNS",
+                    "vistaprint.mx"
+                ],
+                [
+                    "DNS",
+                    "vistaprint.co.kr"
+                ],
+                [
+                    "DNS",
+                    "www.vistaprint.biz"
+                ],
+                [
+                    "DNS",
+                    "www.vistaprint.ca"
+                ],
+                [
+                    "DNS",
+                    "www.vistaprint.mx"
+                ],
+                [
+                    "DNS",
+                    "www.vistaprint.co.kr"
+                ],
+                [
+                    "DNS",
+                    "vistaprint.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/gsrsaovsslca2018"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsrsaovsslca2018.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/gsrsaovsslca2018.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 20:07:07"
+    },
+    "sky.com": {
+        "Time": 27.6,
+        "URL": "sky.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "90.216.128.5"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "90.216.128.5",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.008110761642456055
+            ],
+            [
+                "90.181.198.158",
+                0.0052568912506103516
+            ],
+            [
+                "90.181.197.157",
+                0.008892297744750977
+            ],
+            [
+                "194.228.21.250",
+                0.018811941146850586
+            ],
+            [
+                "62.115.58.198",
+                0.008925914764404297
+            ],
+            [
+                "62.115.124.26",
+                0.02057814598083496
+            ],
+            [
+                "80.91.249.10",
+                0.0346989631652832
+            ],
+            [
+                "62.115.127.7",
+                0.0389251708984375
+            ],
+            [
+                "62.115.184.147",
+                0.0343630313873291
+            ],
+            [
+                "2.120.9.1",
+                0.035533905029296875
+            ],
+            [
+                "2.127.241.61",
+                0.037030935287475586
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.sky.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.85.50.187"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 199944,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Content-Type": "text/html",
+            "ETag": "\"9ca438deb2200c12b4199c031f39aa26:1714118161.433177\"",
+            "Last-Modified": "Fri, 26 Apr 2024 07:56:01 GMT",
+            "Server": "AkamaiNetStorage",
+            "X-Akamai-Transformed": "9 - 0 pmb=mTOE,3",
+            "Expires": "Sun, 28 Apr 2024 18:08:12 GMT",
+            "Cache-Control": "max-age=0, no-cache",
+            "Pragma": "no-cache",
+            "Date": "Sun, 28 Apr 2024 18:08:12 GMT",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive, Transfer-Encoding",
+            "Set-Cookie": "countryAKA=other; path=/; domain=.sky.com; secure, _abck=1066DA09C6C62A54A6CDC6D053678A87~-1~YAAQU4HdWNk+mxWPAQAAIqbkJQuoZpIO7vo8Yv1deSZ4hIVfPmrKQnt6Kg4183wjivGwxpGHt632TF+V9hCPCaQUOItSSQmwVULlcryFAo9/UKFk3t/LSjNGW+iaMNqHScB5kQv4CsisjF00znJjJbZJvPfqho3CoixWyZfC1GaxvA/ByVKotZbiO5szyDMYkICxvwwO/2H9QVXGbGCpFP9KN+liVljFGZJChCLdTmqIfspSTzvheuQrlgWhFSFagurZOVtd8MU4UXeXxckrw7vgo0RvZlVvhO4G8N+RKSZ12UCqKKixmREtg9cHuBGehooDKXUe9ctfURo8zVGbXAob6aZpbU52x+ufoZdFXAGtva8++MWPQi8=~-1~-1~-1; Domain=.sky.com; Path=/; Expires=Mon, 28 Apr 2025 18:08:12 GMT; Max-Age=31536000; Secure, ak_bmsc=FD2386D1316E02F0987C16ACA1F868D6~000000000000000000000000000000~YAAQU4HdWNo+mxWPAQAAIqbkJRfuiuRa+/Z6jA0bMaaYYHLqrAb6z9pp2BoyboAGBws57EiH9iUjJ0EKnfR0Sd06sB3ZxYZfZ35EjExE5KpBocjg5NxnaE4X/NWEN1jko7dMU0bQF5/Wf2PHgoAbPC1qlN/3hZxk8Xh/ydTbp5kAiTN2J4C/FLmKuFJVJapTbEL3kOiZS9wtDVK54DkEMnnkwxwLiW/5okPnivr9YGlQA1JgTEVhaSDDLsQCf7yKLV/2DeXbfcOfUI5lEM8bnjYwKYY9xxJOZZ1lnctLyZEAIscDb5AdaPPUm9giAbRKrmekETzaVcqt0A92BvYwQH4yo9vvyLa7eO6Q7TSnjjtlVkz7DugGnb/HcA==; Domain=.sky.com; Path=/; Expires=Sun, 28 Apr 2024 20:08:12 GMT; Max-Age=7200; HttpOnly, bm_mi=E28DF6275E5CA06F5602C708BDBC4B2C~YAAQU4HdWNs+mxWPAQAAIqbkJRedwAZmGjNcd4yuUSibKufjYq/pbp9IaGhcf5Hg9IDFCbLlCSyoo1PDEDvodSjrP3cebAq1h9Si4jAJOGXQooyiz3RJXMXlHPXUCmNEoxcbQpNL11S3r5tm7tAWf3fg0Xg8aZ8+XnaJT49mLtYqDPcc6I4k4nWC6BdHKngxAGOo9vh3ixdbxpc5NNkDzmbruEV9KH7FbvfORrXCMSCv5778gHj1dkDlonlIi8yllupzHdirH2G4ZnFBIwnjg8FO2bxz/CpzvAsMHXzsXmJF3IDRdO8dS+ZM~1; Domain=.sky.com; Path=/; Expires=Sun, 28 Apr 2024 18:08:12 GMT; Max-Age=0; Secure, bm_sz=F57DA5DC09B47D80AE50A8D722EFBF68~YAAQU4HdWNw+mxWPAQAAIqbkJReY3yLxyBNeeXHb033VhAGnEoVp+gIVorWxO7Zl2Zws4j/ULnUNwO11CFFm6AZ9J1auYZgSdwI9O58zdr4QbcLpRuAb+OOa9H3+rq5N/Otjb/+hGezRa6LgGi0CTdxk3T/zTdKkJLAJf7pjZxJWyUdSOAeYq9FGZXpROysbICMWSQe3cFkhs7EvAuNgRhp+PA69HeSM/PbQXn52Ie6+3pWw6z1H0HFAy72rkrw7BYoHligysp6JcpxEAwxVrPLV2EWypv+rlzrl4Tr0LCtyhiJ1+ZHmOAkGgM2xu9HmcETSvYbOK8wo8rHv/4RuAkOAyHKY6UCNv31Ldg==~3356209~4403504; Domain=.sky.com; Path=/; Expires=Sun, 28 Apr 2024 22:08:12 GMT; Max-Age=14400",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Type-Options": "nosniff",
+            "x-xss-protection": "1; mode=block",
+            "Strict-Transport-Security": "max-age=63072000; preload",
+            "Content-Security-Policy": "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' android-webview-video-poster: *.sky.com *.bskyb.com *.skyassets.com *.lpsnmedia.net *.liveperson.net *.doubleclick.net analytics.twitter.com assets.adobedtm.com bat.bing.com *.clicktale.net *.tvsquared.com connect.facebook.net *.googlesyndication.com secure.quantserve.com *.qualtrics.com smct.co track.uniqodo.com www.dwin1.com www.google-analytics.com www.googletagmanager.com static.ads-twitter.com staging-liveperson-dtm.herokuapp.com cdn.tt.omtrdc.net *.demdex.net ssl.google-analytics.com britishskybroadcasti.tt.omtrdc.net platform.twitter.com s0.2mdn.net www.zenaps.com *.google.com *.google.co.uk *.google.ie www.facebook.com *.optimizely.com cdn.spatialbuzz.com cdn.privacy-mgmt.com *.contentsquare.net www.googleadservices.com servedby.flashtalking.com *.lucidcx.com www.gstatic.com cdnjs.cloudflare.com rules.quantcount.com t.contentsquare.net contentsquare.com app.contentsquare.com cdn-assets-prod.s3.amazonaws.com sc-static.net acdn.adnxs.com s.pinimg.com ib.adnxs.com dmp.vfwmrm.net *.snapchat.com secure.adnxs.com www.uqd.io *.yimg.com yahoo.com smct.co js.smct.co smct.io js.smct.io js-cdn.dynatrace.com unpkg.com maps.googleapis.com cdn.co-buying.com *.yext-pixel.com aax-eu.amazon-adsystem.com *.stripe.com answers2-embed.sky.com.pagescdn.com assets.sitescdn.net content.zeotap.com api.taggstar.com *.taggstar.com cdn.taggstar.com qa.taggstar.com *.awin1.com the.sciencebehindecommerce.com edge.adobedc.net t.promotionx.io analytics.tiktok.com c.amazon-adsystem.com *.intercom.io *.intercomcdn.com *.kampyle.com *.medallia.eu; style-src 'self' 'unsafe-inline' *.sky.com *.skyassets.com s0.2mdn.net www.gstatic.com *.liveperson.net www.facebook.com *.doubleclick.net assets.adobedtm.com www.google-analytics.com *.lpsnmedia.net *.clicktale.net *.contentsquare.net *.googlesyndication.com sky.lucidcx.com fonts.googleapis.com assets.sitescdn.net *.kampyle.com *.medallia.eu; font-src 'self' data: *.sky.com fonts.gstatic.com *.skyassets.com use.typekit.net *.google.com *.google.co.uk *.google.ie sky.lucidcx.com *.snapchat.com www.pinterest.com fonts.smct.co fonts.smct.io fonts.gstatic.com *.intercomcdn.com *.kampyle.com *.medallia.eu; img-src 'self' data: android-webview-video-poster: *.sky.com *.doubleclick.net *.skyassets.com bat.bing.com *.clicktale.net *.optimizely.com *.tvsquared.com *.demdex.net *.online-metrix.net *.qualtrics.com t.co tracking.audio.thisisdax.com www.facebook.com www.google-analytics.com *.google.com *.google.co.uk *.google.ie *.atdmt.com *.cloudfront.net live.staticflickr.com tags.w55c.net www.googletagmanager.com *.contentstack.io *.lpsnmedia.net s0.2mdn.net www.zenaps.com connect.facebook.net engagement.uniqodo.com *.liveperson.net www.gstatic.com www.awin1.com analytics.twitter.com cdn.spatialbuzz.com assets.adobedtm.com cdn.privacy-mgmt.com *.googlesyndication.com *.contentsquare.net www.googleadservices.com servedby.flashtalking.com *.lucidcx.com uniqodo.s3-eu-west-1.amazonaws.com production-image-placeholder.herokuapp.com pixel.quantserve.com *.sky 8th.io sc-static.net acdn.adnxs.com s.pinimg.com ib.adnxs.com match.adsrvr.org pm.w55c.net dmp.v.fwmrm.net ct.pinterest.com *.snapchat.com www.pinterest.com secure.adnxs.com events.smct.co *.yahoo.com *.gumgum.com smct.co cdn.smct.co smct.io cdn.smct.io px.smct.co px.smct.io ep.smct.co ep.smct.io maps.gstatic.com maps.googleapis.com *.mktgcdn.com *.yext-pixel.com aax-eu.amazon-adsystem.com a.promotionx.io cm.g.doubleclick.net cms.quantserve.com mwzeom.zeotap.com c.amazon-adsystem.com analytics.tiktok.com *.intercomassets.eu *.intercomassets.com *.intercom.io *.intercomcdn.eu *.intercomcdn.com *.kampyle.com *.medallia.eu; connect-src 'self' blob: android-webview-video-poster: *.sky.com a.promotionx.io aax-eu.amazon-adsystem.com acdn.adnxs.com analytics.tiktok.com api.amplitude.com api.amplitude.com api.iperceptions.com api.taggstar.com assets.adobedtm.com awk.epgsky.com bat.bing.com britishskybroadcasti.tt.omtrdc.net c.amazon-adsystem.com cdn-assets-prod.s3.amazonaws.com cdn.privacy-mgmt.com cdn.spatialbuzz.com cdn.taggstar.com cfg.smct.co cfg.smct.io connect.facebook.net cognito-identity.eu-west-1.amazonaws.com ct.pinterest.com dmp.v.fwmrm.net edge.adobedc.net engagement.uniqodo.com ep.smct.co ep.smct.io firehose.eu-west-1.amazonaws.com help-search-api-stage.herokuapp.com https://google.com ib.adnxs.com insights.uniqodo.com ipb.smct.co ipb.smct.io ipl.smct.co ipl.smct.io js.smct.co js.smct.io justo.uniqodo.com *.yext.com maps.googleapis.com match.adsrvr.org mwzeom.zeotap.com pm.w55c.net poc.idscan.cloud prod.idscan.cloud prod-my-photo-api.herokuapp.com production-retriever.herokuapp.com qa.taggstar.com s0.2mdn.net s.pinimg.com sc-static.net secure.adnxs.com smct.co smct.io spl.zeotap.com t.promotionx.io track.uniqodo.com the.sciencebehindecommerce.com vip.timezonedb.com wss://*.liveperson.net wss://*.sky.com www.facebook.com www.google-analytics.com www.googleadservices.com www.googletagmanager.com www.gstatic.com www.pinterest.com www.pinterest.co.uk www.zenaps.com *.akstat.io *.assistant.watson.appdomain.cloud *.bf.dynatrace.com *.bskyb.com *.clicktale.net *.contentsquare.net *.contentstack.io *.demdex.net *.doubleclick.net *.google.com *.google.co.uk *.google.ie *.googlesyndication.com *.liveperson.net *.lpsnmedia.net *.lucidcx.com *.optimizely.com *.qualtrics.com *.skyassets.com *.snapchat.com *.taggstar.com *.tvsquared.com *.wepowerconnections.com *.yext-pixel.com *.yimg.com *.intercom.io *.intercomcdn.com *.intercomcdn.eu *.intercomusercontent.com *.yextapis.com *.kampyle.com *.medallia.eu; frame-src 'self' blob: *.sky.com *.bskyb.com *.skyassets.com *.doubleclick.net *.optimizely.com *.demdex.net *.online-metrix.net *.lpsnmedia.net *.qualtrics.com www.facebook.com cdn.privacy-mgmt.com universal.iperceptions.com *.google.com *.google.co.uk *.google.ie *.clicktale.net s0.2mdn.net www.zenaps.com connect.facebook.net *.liveperson.net www.google-analytics.com analytics.twitter.com cdn.spatialbuzz.com assets.adobedtm.com *.googlesyndication.com *.contentsquare.net www.googleadservices.com sky.lucidcx.com live.tvgenius.net servedby.flashtalking.com players.brightcove.net sc-static.net acdn.adnxs.com s.pinimg.com ib.adnxs.com match.adsrvr.org pm.w55c.net dmp.v.fwmrm.net *.snapchat.com ct.pinterest.com www.pinterest.com secure.adnxs.com www.pinterest.co.uk smct.co smct.io ls.smct.co ls.smct.io d2d7do8qaecbru.cloudfront.net w.etadirect.com aax-eu.amazon-adsystem.com *.stripe.com answers2-embed.sky.com.pagescdn.com www.awin1.com c.amazon-adsystem.com *.kampyle.com *.medallia.eu; frame-ancestors 'self'; worker-src 'self' blob: *.sky.com *.skyassets.com assets.adobedtm.com *.liveperson.net; child-src 'self' blob: *.intercom-sheets.com; media-src 'self' data: *.sky.com *.skyassets.com *.contentstack.io *.lpsnmedia.net *.doubleclick.net *.google.com *.google.co.uk *.google.ie *.clicktale.net *.liveperson.net www.facebook.com bat.bing.com *.demdex.net assets.adobedtm.com www.google-analytics.com *.contentsquare.net *.googlesyndication.com *.intercomcdn.com; object-src 'self' *.sky.com; form-action *.intercom.io *.intercom.help; report-uri /csp-reports"
+        },
+        "HTML Content": "sky.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Middlesex"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sky Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "sky.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Organization Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "97705141BDC574FE283E50199FF918E5",
+            "notBefore": "Feb 27 00:00:00 2024 GMT",
+            "notAfter": "Mar 29 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "sky.com"
+                ],
+                [
+                    "DNS",
+                    "www.sky.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 20:08:19"
+    },
+    "windows.net": {
+        "Time": 8.41,
+        "URL": "windows.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "20.112.250.133",
+            "20.231.239.246",
+            "20.236.44.162",
+            "20.70.246.20",
+            "20.76.201.171"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "20.236.44.162",
+        "PING Status": "OK",
+        "PING IP": "20.236.44.162",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://www.microsoft.com/net",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.218.209.163"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 277432,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 18:09:09 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "no-store",
+            "Content-Encoding": "gzip",
+            "Set-Cookie": "TiPMix=22.264290114216646; path=/; HttpOnly; Domain=dotnetwebsite.azurewebsites.net; Max-Age=3600; Secure; SameSite=None, x-ms-routing-name=self; path=/; HttpOnly; Domain=dotnetwebsite.azurewebsites.net; Max-Age=3600; Secure; SameSite=None",
+            "Vary": "Accept-Encoding",
+            "Request-Context": "appId=cid-v1:109cec76-ff6c-4be0-97b5-4f02dbac2451",
+            "X-Powered-By": "ASP.NET",
+            "X-Content-Type-Options": "nosniff",
+            "x-azure-ref": "20240428T180909Z-1565cdbddbds2bg6nza3ed1qb8000000021000000000e5g7",
+            "X-Cache": "CONFIG_NOCACHE"
+        },
+        "HTML Content": "windows.net_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 20:09:14"
+    },
+    "alicdn.com": {
+        "URL": "alicdn.com",
+        "Error": "'Timed Out'"
+    },
+    "google.ca": {
+        "Time": 6.36,
+        "URL": "google.ca",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.251.36.99"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.251.36.99",
+        "PING Status": "OK",
+        "PING IP": "142.251.36.99",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://www.google.ca/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "142.251.36.131"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 287834,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 18:12:45 GMT",
+            "Expires": "-1",
+            "Cache-Control": "private, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-0V7X6N0uNU6J4f-w2xsJdw' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+            "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"gws\"",
+            "Report-To": "{\"group\":\"gws\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gws/other\"}]}",
+            "Accept-CH": "Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Arch, Sec-CH-UA-Model, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64",
+            "Permissions-Policy": "unload=()",
+            "Origin-Trial": "Ap+qNlnLzJDKSmEHjzM5ilaa908GuehlLqGb6ezME5lkhelj20qVzfv06zPmQ3LodoeujZuphAolrnhnPA8w4AIAAABfeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJQZXJtaXNzaW9uc1BvbGljeVVubG9hZCIsImV4cGlyeSI6MTY4NTY2Mzk5OX0=, AvudrjMZqL7335p1KLV2lHo1kxdMeIN0dUI15d0CPz9dovVLCcXk8OAqjho1DX4s6NbHbA/AGobuGvcZv0drGgQAAAB9eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJCYWNrRm9yd2FyZENhY2hlTm90UmVzdG9yZWRSZWFzb25zIiwiZXhwaXJ5IjoxNjkxNTM5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "Content-Encoding": "gzip",
+            "Server": "gws",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Set-Cookie": "__Secure-ENID=19.SE=XHhSegueeZZMoXxfbI_D236Qhp8YBv3Y2HBKiiV9w90sCwCnekjKi0X8M2ZxPfXdaaecvw83mzR98gW9nb4ak0OHWiDRriL3FGXo3SofxPKzksN9pjrincruYbru-P3sYqzAGwhP04OYKFx3FlFT5HocP_Q1LJyT3pKsuNhT85YvE6kuKoq-laRSbw; expires=Thu, 29-May-2025 10:31:03 GMT; path=/; domain=.google.ca; Secure; HttpOnly; SameSite=lax",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "google.ca_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.google.ca"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "2E99203BF9E7A642129BCC54A4A6028D",
+            "notBefore": "Apr  8 07:36:42 2024 GMT",
+            "notAfter": "Jul  1 07:36:41 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.google.ca"
+                ],
+                [
+                    "DNS",
+                    "google.ca"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/QOvJ0N1sT2A.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 20:12:49"
+    },
+    "lemonde.fr": {
+        "Time": 5.59,
+        "URL": "lemonde.fr",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.2.137"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.2.137",
+        "PING Status": "OK",
+        "PING IP": "151.101.2.137",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.lemonde.fr/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.130.217",
+                "151.101.194.217",
+                "151.101.2.217",
+                "151.101.66.217"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 316003,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "81330",
+            "content-security-policy": "default-src data: 'unsafe-inline' 'unsafe-eval' https:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob:; style-src data: 'unsafe-inline' https:; img-src data: https: blob:; font-src data: https:; connect-src https: wss:; media-src https: blob:; object-src https:; child-src https: data: blob:; form-action https:; block-all-mixed-content;",
+            "x-content-type-options": "nosniff",
+            "content-encoding": "gzip",
+            "x-xss-protection": "1; mode=block",
+            "via": "1.1 varnish, 1.1 varnish",
+            "x-frame-options": "SAMEORIGIN",
+            "content-type": "text/html;charset=UTF-8",
+            "Accept-Ranges": "bytes",
+            "Date": "Sun, 28 Apr 2024 18:13:17 GMT",
+            "Age": "39",
+            "X-Served-By": "cache-vie6321-VIE, cache-vie6364-VIE",
+            "X-Cache": "MISS, HIT",
+            "X-Cache-Hits": "0, 2",
+            "X-Timer": "S1714327997.364161,VS0,VE0",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "lmd_edgeuid=7075e343-51bf-42a4-a6e1-0f5307dc109a; path=/; max-age=2592000, lmd_edge=1714327997; path=/; max-age=2592000",
+            "Strict-Transport-Security": "max-age=31557600"
+        },
+        "HTML Content": "lemonde.fr_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "lemonde.fr"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04D40098EAC18B32CFBD7F4808E822BEFDE4",
+            "notBefore": "Feb 29 21:21:52 2024 GMT",
+            "notAfter": "May 29 21:21:51 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "lemonde.fr"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 20:13:22"
+    },
+    "newyorker.com": {
+        "Time": 5.68,
+        "URL": "newyorker.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.75",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.64.239",
+            "151.101.128.239",
+            "151.101.192.239",
+            "151.101.0.239"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.192.239",
+        "PING Status": "OK",
+        "PING IP": "151.101.192.239",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.newyorker.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.64.239",
+                "151.101.128.239",
+                "151.101.192.239",
+                "151.101.0.239"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 2091761,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Type": "text/html; charset=utf-8",
+            "Via": "1.1 varnish, 1.1 varnish",
+            "Content-Security-Policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; child-src https: data: blob:; connect-src https: data: blob: wss://*.hotjar.com wss://*.conde.digital; font-src https: data:; img-src https: blob: data: android-webview-video-poster:; media-src blob: data: https:; object-src https:; script-src https: data: blob: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; block-all-mixed-content; upgrade-insecure-requests",
+            "X-ESI": "on",
+            "Cache-Control": "max-age=300",
+            "Verso": "true",
+            "Accept-Ranges": "none",
+            "Date": "Sun, 28 Apr 2024 18:14:18 GMT",
+            "Age": "188",
+            "Set-Cookie": "CN_xid=c498469d-90e9-4a54-9fdc-a299f20dcacb; Expires=Fri, 25 Oct 2024 18:14:18 GMT; Domain=.newyorker.com; path=/; Secure; SameSite=None;, CN_xid_refresh=c498469d-90e9-4a54-9fdc-a299f20dcacb; Expires=Mon, 28 Apr 2025 18:14:18 GMT; Domain=.newyorker.com; path=/; Secure; httponly; SameSite=None;, verso_bucket=577; Expires=Mon, 28 Apr 2025 18:14:18 GMT; path=/;",
+            "Strict-Transport-Security": "max-age=86400; preload",
+            "X-Served-By": "cache-iad-kcgs7200110-IAD, cache-vie6329-VIE",
+            "X-Cache": "HIT, HIT",
+            "X-Cache-Hits": "55, 1",
+            "X-Timer": "S1714328059.970890,VS0,VE5",
+            "X-UA-Device": "desktop",
+            "Vary": "accept-encoding, Accept-Encoding, cn-experiments, X-UA-Device, high-ad-cadence, Verso, Accept-Encoding",
+            "content-encoding": "gzip",
+            "transfer-encoding": "chunked"
+        },
+        "HTML Content": "newyorker.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "condenast.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Atlas R3 DV TLS CA 2024 Q1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "01C22DAC19522903E27EC867C7FCE58E",
+            "notBefore": "Apr  8 21:45:34 2024 GMT",
+            "notAfter": "May 10 21:45:33 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "condenast.com"
+                ],
+                [
+                    "DNS",
+                    "*.admagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "*.allure.com"
+                ],
+                [
+                    "DNS",
+                    "*.allurereaderschoiceawards.com"
+                ],
+                [
+                    "DNS",
+                    "*.architecturaldigest.com"
+                ],
+                [
+                    "DNS",
+                    "*.architecturaldigest.in"
+                ],
+                [
+                    "DNS",
+                    "*.assets.cntraveller.in"
+                ],
+                [
+                    "DNS",
+                    "*.backchannel.com"
+                ],
+                [
+                    "DNS",
+                    "*.bonappetit.com"
+                ],
+                [
+                    "DNS",
+                    "*.cnspotlight.com"
+                ],
+                [
+                    "DNS",
+                    "*.cntraveler.com"
+                ],
+                [
+                    "DNS",
+                    "*.cntraveller.in"
+                ],
+                [
+                    "DNS",
+                    "*.conde.io"
+                ],
+                [
+                    "DNS",
+                    "*.condenast.com"
+                ],
+                [
+                    "DNS",
+                    "*.condenast.io"
+                ],
+                [
+                    "DNS",
+                    "*.condenastdigital.com"
+                ],
+                [
+                    "DNS",
+                    "*.condenasthealth.com"
+                ],
+                [
+                    "DNS",
+                    "*.condenaststudio.com"
+                ],
+                [
+                    "DNS",
+                    "*.condenet.com"
+                ],
+                [
+                    "DNS",
+                    "*.epicurious.com"
+                ],
+                [
+                    "DNS",
+                    "*.glamour.com"
+                ],
+                [
+                    "DNS",
+                    "*.glamour.es"
+                ],
+                [
+                    "DNS",
+                    "*.gq.com"
+                ],
+                [
+                    "DNS",
+                    "*.lacucinaitaliana.com"
+                ],
+                [
+                    "DNS",
+                    "*.media.admagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "*.newyorker.com"
+                ],
+                [
+                    "DNS",
+                    "*.pitchfork.com"
+                ],
+                [
+                    "DNS",
+                    "*.pitchforkmusicfestival.com"
+                ],
+                [
+                    "DNS",
+                    "*.revistaad.es"
+                ],
+                [
+                    "DNS",
+                    "*.revistavanityfair.es"
+                ],
+                [
+                    "DNS",
+                    "*.self.com"
+                ],
+                [
+                    "DNS",
+                    "*.smartwaterinspiration.com"
+                ],
+                [
+                    "DNS",
+                    "*.stag-assets.cntraveller.in"
+                ],
+                [
+                    "DNS",
+                    "*.stag-media.admagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "*.stag.admagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "*.teenvogue.com"
+                ],
+                [
+                    "DNS",
+                    "*.teenvogueinsider.com"
+                ],
+                [
+                    "DNS",
+                    "*.them.us"
+                ],
+                [
+                    "DNS",
+                    "*.vanityfair.com"
+                ],
+                [
+                    "DNS",
+                    "*.vanityfair.fr"
+                ],
+                [
+                    "DNS",
+                    "*.vogue.com"
+                ],
+                [
+                    "DNS",
+                    "*.vogueinternational.com"
+                ],
+                [
+                    "DNS",
+                    "*.wired.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.wired.com"
+                ],
+                [
+                    "DNS",
+                    "admagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "ads.thestudio.condenast.com"
+                ],
+                [
+                    "DNS",
+                    "allure.com"
+                ],
+                [
+                    "DNS",
+                    "allurereaderschoiceawards.com"
+                ],
+                [
+                    "DNS",
+                    "architecturaldigest.com"
+                ],
+                [
+                    "DNS",
+                    "architecturaldigest.in"
+                ],
+                [
+                    "DNS",
+                    "assets.architecturaldigest.in"
+                ],
+                [
+                    "DNS",
+                    "assets.cntraveller.in"
+                ],
+                [
+                    "DNS",
+                    "backchannel.com"
+                ],
+                [
+                    "DNS",
+                    "bonappetit.com"
+                ],
+                [
+                    "DNS",
+                    "cna.st"
+                ],
+                [
+                    "DNS",
+                    "cnspotlight.com"
+                ],
+                [
+                    "DNS",
+                    "cntraveler.com"
+                ],
+                [
+                    "DNS",
+                    "cntraveller.in"
+                ],
+                [
+                    "DNS",
+                    "conde.io"
+                ],
+                [
+                    "DNS",
+                    "condenast.io"
+                ],
+                [
+                    "DNS",
+                    "condenastdigital.com"
+                ],
+                [
+                    "DNS",
+                    "condenasthealth.com"
+                ],
+                [
+                    "DNS",
+                    "condenaststudio.com"
+                ],
+                [
+                    "DNS",
+                    "condenet.com"
+                ],
+                [
+                    "DNS",
+                    "epicurious.com"
+                ],
+                [
+                    "DNS",
+                    "glamour.com"
+                ],
+                [
+                    "DNS",
+                    "glamour.es"
+                ],
+                [
+                    "DNS",
+                    "gq-magazine.co.uk"
+                ],
+                [
+                    "DNS",
+                    "gq.com"
+                ],
+                [
+                    "DNS",
+                    "gqmagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "media.admagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "media.lacucinaitaliana.com"
+                ],
+                [
+                    "DNS",
+                    "newyorker.com"
+                ],
+                [
+                    "DNS",
+                    "pitchfork.com"
+                ],
+                [
+                    "DNS",
+                    "pitchforkmusicfestival.com"
+                ],
+                [
+                    "DNS",
+                    "revistaad.es"
+                ],
+                [
+                    "DNS",
+                    "revistavanityfair.es"
+                ],
+                [
+                    "DNS",
+                    "self.com"
+                ],
+                [
+                    "DNS",
+                    "smartwaterinspiration.com"
+                ],
+                [
+                    "DNS",
+                    "stag-assets.architecturaldigest.in"
+                ],
+                [
+                    "DNS",
+                    "stag-assets.cntraveller.in"
+                ],
+                [
+                    "DNS",
+                    "stag-media.admagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "stag.admagazine.fr"
+                ],
+                [
+                    "DNS",
+                    "teenvogue.com"
+                ],
+                [
+                    "DNS",
+                    "teenvogueinsider.com"
+                ],
+                [
+                    "DNS",
+                    "them.us"
+                ],
+                [
+                    "DNS",
+                    "vanityfair.com"
+                ],
+                [
+                    "DNS",
+                    "vanityfair.fr"
+                ],
+                [
+                    "DNS",
+                    "vogue.com"
+                ],
+                [
+                    "DNS",
+                    "vogueinternational.com"
+                ],
+                [
+                    "DNS",
+                    "wired.co.uk"
+                ],
+                [
+                    "DNS",
+                    "wired.com"
+                ],
+                [
+                    "DNS",
+                    "*.traveler.es"
+                ],
+                [
+                    "DNS",
+                    "traveler.es"
+                ],
+                [
+                    "DNS",
+                    "*.wired.jp"
+                ],
+                [
+                    "DNS",
+                    "wired.jp"
+                ],
+                [
+                    "DNS",
+                    "media.traveler.es"
+                ],
+                [
+                    "DNS",
+                    "stag-media.traveler.es"
+                ],
+                [
+                    "DNS",
+                    "*.admagazine.com"
+                ],
+                [
+                    "DNS",
+                    "admagazine.com"
+                ],
+                [
+                    "DNS",
+                    "*.glamour.mx"
+                ],
+                [
+                    "DNS",
+                    "glamour.mx"
+                ],
+                [
+                    "DNS",
+                    "*.stag.worldofinteriors.com"
+                ],
+                [
+                    "DNS",
+                    "*.worldofinteriors.com"
+                ],
+                [
+                    "DNS",
+                    "stag.worldofinteriors.com"
+                ],
+                [
+                    "DNS",
+                    "worldofinteriors.com"
+                ],
+                [
+                    "DNS",
+                    "*.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "*.interactive-stag.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "*.interactive.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "*.media-stag.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "*.media.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "*.multiverso.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "*.stag.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "interactive-stag.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "interactive.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "media-stag.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "media.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "multiverso.es.wired.com"
+                ],
+                [
+                    "DNS",
+                    "stag.es.wired.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/ca/gsatlasr3dvtlsca2024q1"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsatlasr3dvtlsca2024q1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/ca/gsatlasr3dvtlsca2024q1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 20:14:24"
+    },
+    "webnode.page": {
+        "Time": 32.78,
+        "URL": "webnode.page",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.75",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "3.73.23.93",
+            "18.195.46.128"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.195.46.128",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.008062124252319336
+            ],
+            [
+                "90.181.198.158",
+                0.004088163375854492
+            ],
+            [
+                "90.181.197.157",
+                0.008949995040893555
+            ],
+            [
+                "194.228.21.248",
+                0.008231163024902344
+            ],
+            [
+                "52.95.216.62",
+                0.008994102478027344
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.webnode.page/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "18.195.46.128",
+                "3.73.23.93"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 49070,
+        "Headers": {
+            "server": "webnode",
+            "date": "Sun, 28 Apr 2024 18:15:26 GMT",
+            "content-type": "text/html; charset=UTF-8",
+            "set-cookie": "PHPSESSID=uug9qa09tn6fgcrm9ptfagqmac; path=/; secure; HttpOnly, ubh=f5ea1cf7142cb78ec3065148ff4f30eb8b7d1579; expires=Tue, 28-Apr-2026 18:15:26 GMT; Max-Age=63072000; path=/; domain=www.webnode.com; HttpOnly, usi=1714328126662e923e7110e; path=/; domain=www.webnode.com; HttpOnly, tu=f5ea1cf7142cb78ec3065148ff4f30eb8b7d1579.1714328126662e923e7110e, mfd=1; expires=Mon, 29-Apr-2024 18:15:26 GMT; Max-Age=86400, mfdp=1; expires=Fri, 28-Apr-2034 18:15:26 GMT; Max-Age=315532800",
+            "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "pragma": "no-cache",
+            "cache-control": "private,max-age=0,no-cache,no-store",
+            "content-security-policy": "default-src *;script-src 'self' resource://pdf.js 'unsafe-hashes' 'unsafe-inline' 'unsafe-eval' *.teamblue.services d1rv23qj5kas56.cloudfront.net d3nn3278imm5nr.cloudfront.net d1di2lzuh97fh2.cloudfront.net duyn491kcolsw.cloudfront.net events.webnode.com js.stripe.com www.gstatic.com www.googleadservices.com www.googletagmanager.com bat.bing.com connect.facebook.net a.quora.com www.google-analytics.com googleads.g.doubleclick.net c.imedia.cz www.google.com www.google.de www.google.com.br cdn.inspectlet.com *.clarity.ms *.bing.com c.seznam.cz pagead2.googlesyndication.com s.yimg.jp cdn.euc-freshbots.ai blob: euc-widget.freshworks.com/widgets/101000002785.js euc-widget.freshworks.com/widgetBase/ b98.yahoo.co.jp https://s.pinimg.com https://track.adform.net https://s2.adform.net;style-src 'self' 'unsafe-inline' 'unsafe-eval' d1rv23qj5kas56.cloudfront.net d3nn3278imm5nr.cloudfront.net www.gstatic.com js.stripe.com d11bh4d8fhuq47.cloudfront.net d1di2lzuh97fh2.cloudfront.net duyn491kcolsw.cloudfront.net use.typekit.net p.typekit.net cdn.euc-freshbots.ai euc-widget.freshworks.com/widgetBase/static/media/;img-src 'self' data: mediastream: blob: filesystem: *.teamblue.services d1rv23qj5kas56.cloudfront.net d3nn3278imm5nr.cloudfront.net du5rkdszt1kq5.cloudfront.net d11bh4d8fhuq47.cloudfront.net d1bz77arbww182.cloudfront.net d1me9yvfki5736.cloudfront.net d6scj24zvfbbo.cloudfront.net *.pbhom-cdnwnd.com *.cbaul-cdnwnd.com *.clvaw-cdnwnd.com www.webnode.com www.gstatic.com q.stripe.com bat.bing.com q.quora.com www.google.com www.google.cz www.google.de www.google.com.br www.google-analytics.com googleads.g.doubleclick.net cx.atdmt.com c.seznam.cz www.facebook.com www.googletagmanager.com *.clarity.ms *.bing.com *.webnode.com *.webnode.cz *.webnode.sk *.webnode.at *.webnode.es *.webnode.cl *.webnode.com.ve *.webnode.com.uy *.webnode.mx *.webnode.com.co *.webnode.co *.webnode.com.ar *.webnode.com.py *.webnode.bo *.webnode.do *.webnode.ec *.webnode.pe *.webnode.cr *.webnode.com.br *.webnode.pt *.webnode.it *.webnode.fr *.webnode.us *.webnode.in *.webnode.gr *.webnode.com.tr *.webnode.cn *.webnode.tw *.webnode.nl *.webnode.be *.webnode.jp *.webnode.hu *.webnode.ru *.webnode.com.ua *.webnode.se *.webnode.dk *.webnode.lv *.webnode.hr *.webnode.no *.webnode.co.uk *.webnode.vn *.webnode.ro *.webnode.cat *.webnode.kr *.webnode.fi ct.capterra.com d1di2lzuh97fh2.cloudfront.net duyn491kcolsw.cloudfront.net cdn.euc-freshbots.ai cdn.freshbots.ai fc-euc1-00-pics-bkt-00.s3.eu-central-1.amazonaws.com https://s3-eu-central-1.amazonaws.com/euc-cdn.freshdesk.com/ https://ct.pinterest.com https://track.adform.net https://server.seadform.net/serving/cookie/;frame-ancestors 'self';",
+            "strict-transport-security": "max-age=15768000",
+            "x-frame-options": "DENY",
+            "content-encoding": "gzip",
+            "transfer-encoding": "chunked"
+        },
+        "HTML Content": "webnode.page_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "webnode.page"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04B0B40F5388C007855D98ED9C68AB7E9BF6",
+            "notBefore": "Mar 10 12:23:45 2024 GMT",
+            "notAfter": "Jun  8 12:23:44 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.cms.webnode.page"
+                ],
+                [
+                    "DNS",
+                    "*.preview.webnode.page"
+                ],
+                [
+                    "DNS",
+                    "*.static.webnode.page"
+                ],
+                [
+                    "DNS",
+                    "*.user.webnode.page"
+                ],
+                [
+                    "DNS",
+                    "*.webnode.page"
+                ],
+                [
+                    "DNS",
+                    "webnode.page"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 20:15:31"
+    }
+}

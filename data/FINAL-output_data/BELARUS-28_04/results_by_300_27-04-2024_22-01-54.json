@@ -1,0 +1,409 @@
+{
+    "https://agitka2020.com": {
+        "URL": "https://agitka2020.com"
+    },
+    "https://opg.ucoz.net": {
+        "Time": 4.09,
+        "URL": "https://opg.ucoz.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "195.216.243.221"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "195.216.243.221",
+        "PING Status": "OK",
+        "PING IP": "195.216.243.221",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://vnezakona.net/",
+        "Redirected Location IPs": [
+            "N/A",
+            "N/A"
+        ],
+        "HTTP Status": "HTTPConnectionPool(host='vnezakona.net', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f20e37fe9b0>: Failed to establish a new connection: [Errno -2] Name or service not known',))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "opg.ucoz.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.ucoz.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "LV"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Riga"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoGetSSL"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GoGetSSL RSA DV CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "DBDF1A1BF5F7F473BF36912332CE04",
+            "notBefore": "Mar 20 00:00:00 2024 GMT",
+            "notAfter": "Apr 19 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.ucoz.net"
+                ],
+                [
+                    "DNS",
+                    "ucoz.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.usertrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.usertrust.com/GoGetSSLRSADVCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.usertrust.com/GoGetSSLRSADVCA.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": 1.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 21:57:41"
+    },
+    "http://vnezakona.net": {
+        "URL": "http://vnezakona.net"
+    },
+    "https://narodny-opros.info": {
+        "Time": 36.63,
+        "URL": "https://narodny-opros.info",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "31.24.230.237"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "31.24.230.237",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0012230873107910156
+            ],
+            [
+                "212.98.161.17",
+                0.0009913444519042969
+            ],
+            [
+                "185.11.76.22",
+                0.0012094974517822266
+            ],
+            [
+                "185.11.76.30",
+                0.0011730194091796875
+            ],
+            [
+                "80.81.195.41",
+                0.04537248611450195
+            ],
+            [
+                "98.158.181.137",
+                0.05572628974914551
+            ],
+            [
+                "98.158.181.96",
+                0.06336307525634766
+            ],
+            [
+                "212.78.92.219",
+                0.04961514472961426
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 75987,
+        "Headers": {
+            "date": "Sun, 28 Apr 2024 01:58:55 GMT",
+            "link": "<https://narodny-opros.info/wp-json/>; rel=\"https://api.w.org/\"",
+            "vary": "Accept-Encoding",
+            "content-encoding": "gzip",
+            "content-length": "12353",
+            "content-type": "text/html; charset=UTF-8",
+            "x-powered-by": "PHP/7.4.30",
+            "server": "Apache/2.4.54 (Debian)"
+        },
+        "HTML Content": "narodny-opros.info_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "narodny-opros.info"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04184E72142F554B5459548E96E0E1BB6A22",
+            "notBefore": "Apr  8 01:01:47 2024 GMT",
+            "notAfter": "Jul  7 01:01:46 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "narodny-opros.info"
+                ],
+                [
+                    "DNS",
+                    "www.narodny-opros.info"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 21:59:05"
+    },
+    "https://statkevich.org": {
+        "Time": 7.21,
+        "URL": "https://statkevich.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "154.41.248.161"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "154.41.248.161",
+        "PING Status": "OK",
+        "PING IP": "154.41.248.161",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 85780,
+        "Headers": {
+            "Server": "hcdn",
+            "Date": "Sun, 28 Apr 2024 01:59:22 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "18904",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "x-powered-by": "PHP/8.1.27",
+            "link": "<https://statkevich.org/wp-json/>; rel=\"https://api.w.org/\"",
+            "etag": "\"30631-1713917559;gz\"",
+            "x-litespeed-cache": "hit",
+            "content-encoding": "gzip",
+            "platform": "hostinger",
+            "content-security-policy": "upgrade-insecure-requests",
+            "Age": "6619",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-hcdn-request-id": "3b273269ca88572b426193110068844b-bnk-edge2",
+            "x-hcdn-cache-status": "HIT",
+            "Accept-Ranges": "bytes"
+        },
+        "HTML Content": "statkevich.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "statkevich.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04A83C0759CD9D6D595C397874E42FDBE3C6",
+            "notBefore": "Apr  4 08:04:09 2024 GMT",
+            "notAfter": "Jul  3 08:04:08 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "statkevich.org"
+                ],
+                [
+                    "DNS",
+                    "www.statkevich.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-27 21:59:29"
+    },
+    "https://belarus.regnum.ru": {
+        "Time": 3.49,
+        "URL": "https://belarus.regnum.ru",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "95.181.181.56"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "95.181.181.56",
+        "PING Status": "OK",
+        "PING IP": "95.181.181.56",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='belarus.regnum.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:877)'),))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "belarus.regnum.ru_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 22:00:00"
+    },
+    "https://eurobelarus.info": {
+        "Time": 3.5,
+        "URL": "https://eurobelarus.info",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "31.172.70.189"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "31.172.70.189",
+        "PING Status": "OK",
+        "PING IP": "31.172.70.189",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='eurobelarus.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:877)'),))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "eurobelarus.info_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-27 22:00:39"
+    },
+    "http://spring96.org/ru": {
+        "Time": 3.73,
+        "URL": "http://spring96.org/ru",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.98.233",
+            "188.114.99.233"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.99.233",
+        "PING Status": "OK",
+        "PING IP": "188.114.99.233",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://spring96.org/ru",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.99.233",
+                "188.114.98.233"
+            ]
+        ],
+        "HTTP Status": "HTTPSConnectionPool(host='spring96.org', port=443): Max retries exceeded with url: /ru (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:877)'),))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "spring96.org_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-27 22:01:05"
+    },
+    "https://ucpb.info": {
+        "URL": "https://ucpb.info"
+    },
+    "http://svaboda2.net": {
+        "URL": "http://svaboda2.net"
+    }
+}

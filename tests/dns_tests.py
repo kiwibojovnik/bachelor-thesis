@@ -1,8 +1,12 @@
 import dns.resolver
 
 from utils import reformat_url
+from timeout_decorator import timeout
+
+function_timeout = 60
 
 
+@timeout(function_timeout)
 def detect_dns_repeated_query(address):
     domain = reformat_url.extract_domain(address)
 
@@ -21,11 +25,17 @@ def detect_dns_repeated_query(address):
         except Exception as e:
             print("Chyba při druhém dotazu:", e)
             return "No manipulation"
+
+    except TimeoutError:
+        print("Resolver identification test exceeded timeout.")
+        return "N/A"
+
     except Exception as e:
         print("Chyba při detekci opakovaného DNS dotazu:", e)
         return "No manipulation"
 
 
+@timeout(function_timeout)
 def detect_dns_hijacking(address):
     domain = reformat_url.extract_domain(address)
 
@@ -40,6 +50,11 @@ def detect_dns_hijacking(address):
             return "Manipulate"  # Pokud server nevrátí žádnou odpověď, může být detekován útok
     except dns.resolver.NoAnswer:
         return True  # Pokud server nevrátí odpověď, může být detekován útok
+
+    except TimeoutError:
+        print("Resolver identification test exceeded timeout.")
+        return "N/A"
+
     except Exception as e:
         print("Chyba při detekci DNS hijackingu:", e)
         return "No manipulation"  # V případě jiné výjimky se předpokládá, že útok není detekován

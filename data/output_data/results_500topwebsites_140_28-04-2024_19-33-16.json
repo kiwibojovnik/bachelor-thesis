@@ -1,0 +1,1488 @@
+{
+    "thesun.co.uk": {
+        "Time": 20.06,
+        "URL": "thesun.co.uk",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.75",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "192.0.66.2"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "192.0.66.2",
+        "PING Status": "OK",
+        "PING IP": "192.0.66.2",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://thesun.co.uk/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "192.0.66.2"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 973169,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "156033",
+            "Connection": "keep-alive",
+            "Date": "Sun, 28 Apr 2024 17:24:53 GMT",
+            "Server": "nginx/1.25.3",
+            "X-Generated-By": "@newsint/nu-sun-helios 1.1244.0",
+            "Content-Encoding": "gzip",
+            "Cache-Control": "max-age=30, s-maxage=30, stale-if-error=600, public",
+            "x-rendered-from": "redis-1714325032170-gzip",
+            "Set-Cookie": "nuk_customer_country_code=GB; Path=/; Secure; SameSite=None",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            "ETag": "W/\"26181-c8xTryzM4ij37QNFA56mw3DRvWg\"",
+            "X-Cache": "Hit from cloudfront",
+            "Via": "1.1 0803e66d64c794aaadfd4a88601bc68e.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "PRG50-C1",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "X-Amz-Cf-Id": "jvDhyGIY2dev9Gh3OuoPqCyz-UJTz8YY8YJrLeKhyzX_GYq9Ggfr9A==",
+            "Age": "22"
+        },
+        "HTML Content": "thesun.co.uk_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "iframe.thesun.co.uk"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0323B60B7BB2388314AC2DDF48DE9C503155",
+            "notBefore": "Apr 12 07:17:27 2024 GMT",
+            "notAfter": "Jul 11 07:17:26 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "iframe.thesun.co.uk"
+                ],
+                [
+                    "DNS",
+                    "thesun.co.uk"
+                ],
+                [
+                    "DNS",
+                    "www.thesun.co.uk"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 19:25:34"
+    },
+    "wp.com": {
+        "Time": 7.56,
+        "URL": "wp.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.75",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "192.0.78.25",
+            "192.0.78.24"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "192.0.78.25",
+        "PING Status": "OK",
+        "PING IP": "192.0.78.25",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://wp.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "192.0.78.25",
+                "192.0.78.24"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 285742,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Sun, 28 Apr 2024 17:26:23 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Cookie",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "X-hacker": "Want root?  Visit join.a8c.com/hacker and mention this header.",
+            "Host-Header": "WordPress.com",
+            "Set-Cookie": "tk_ai=drKH6H1MD9ptFpMABfQOnPKC; expires=Fri, 27-Apr-2029 17:26:23 GMT; Max-Age=157680000; path=/; domain=.wordpress.com; secure; SameSite=None, tk_ai_explat=drKH6H1MD9ptFpMABfQOnPKC; expires=Fri, 27-Apr-2029 17:26:23 GMT; Max-Age=157680000; path=/; domain=.wordpress.com; secure; SameSite=None, tk_qs=_en%3Dwpcom_experiment_variation_assigned%26_ut%3Danon%26_ui%3DdrKH6H1MD9ptFpMABfQOnPKC%26_ts%3D1714325183738%26experiment_id%3D21731%26experiment_variation_id%3D3979%26reason%3Dset_by_anon_id; path=/; domain=.wordpress.com; secure; SameSite=Strict, explat_test_aa_weekly_lohp_2024_week_17=treatment; expires=Mon, 13-May-2024 00:00:00 GMT; Max-Age=1233217; path=/; domain=.wordpress.com; secure; SameSite=None, tk_qs=_en%3Dwpcom_experiment_variation_assigned%26_ut%3Danon%26_ui%3DdrKH6H1MD9ptFpMABfQOnPKC%26_ts%3D1714325183738%26experiment_id%3D21731%26experiment_variation_id%3D3979%26reason%3Dset_by_anon_id%20_en%3Dwpcom_experiment_variation_assigned%26_ut%3Danon%26_ui%3DdrKH6H1MD9ptFpMABfQOnPKC%26_ts%3D1714325183739%26experiment_id%3D21749%26experiment_variation_id%3D4021%26reason%3Dset_by_anon_id; path=/; domain=.wordpress.com; secure; SameSite=Strict, wpcom_lohp_add_migrate_button_2024=control; expires=Wed, 22-May-2024 00:00:00 GMT; Max-Age=2010817; path=/; domain=.wordpress.com; secure; SameSite=None",
+            "Content-Encoding": "gzip",
+            "X-ac": "1.hhn _dfw MISS",
+            "Strict-Transport-Security": "max-age=31536000; preload",
+            "Alt-Svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "wp.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.wp.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo ECC Domain Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "9B1953EBD84E8A38F2E03A7C752328F5",
+            "notBefore": "Nov 28 00:00:00 2023 GMT",
+            "notAfter": "Dec 28 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.wp.com"
+                ],
+                [
+                    "DNS",
+                    "wp.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 19:26:30"
+    },
+    "cnet.com": {
+        "Time": 6.68,
+        "URL": "cnet.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.75",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "34.149.196.126"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "34.149.196.126",
+        "PING Status": "OK",
+        "PING IP": "34.149.196.126",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.cnet.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "199.232.194.154",
+                "199.232.198.154"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 1338671,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "252557",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Sun, 28 Apr 2024 17:22:18 GMT",
+            "Date": "Sun, 28 Apr 2024 17:27:02 GMT",
+            "Set-Cookie": "fly_geo={\"countryCode\": \"cz\"}; max-age=604800; path=/; domain=.cnet.com; Secure;, fly_device=desktop; max-age=604800; path=/; domain=.cnet.com; Secure;, fly_zip=(null); max-age=604800; path=/; domain=.cnet.com; Secure;, country_code=cz; max-age=604800; path=/; domain=.cnet.com; Secure; SameSite=Lax;",
+            "Vary": "Accept-Encoding, User-Agent",
+            "cache-control": "max-age=300, private",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            "accept-ranges": "bytes"
+        },
+        "HTML Content": "cnet.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "cnet.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1D4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "7947CD21AE8A6A4A129F7AEF2445D7EB",
+            "notBefore": "Mar 28 15:53:16 2024 GMT",
+            "notAfter": "Jun 26 16:47:10 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "cnet.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1d4/qeyK-VuV3z0"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1d4.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1d4/UVCbgQfovWE.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 19:27:08"
+    },
+    "instagram.com": {
+        "Time": 5.32,
+        "URL": "instagram.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.74",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "157.240.30.174"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "157.240.30.174",
+        "PING Status": "OK",
+        "PING IP": "157.240.30.174",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://instagram.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "157.240.30.174"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 259340,
+        "Headers": {
+            "Content-Encoding": "gzip",
+            "Set-Cookie": "csrftoken=uZ5u4guEoY5fWWaUhTXGY4; expires=Sun, 27-Apr-2025 17:27:46 GMT; Max-Age=31449600; path=/; domain=.instagram.com; secure; SameSite=None",
+            "accept-ch-lifetime": "4838400",
+            "accept-ch": "viewport-width,dpr,Sec-CH-Prefers-Color-Scheme,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Platform-Version,Sec-CH-UA-Model",
+            "Pragma": "no-cache",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate",
+            "Expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+            "content-security-policy-report-only": "default-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;script-src *.instagram.com static.cdninstagram.com *.facebook.com *.fbcdn.net *.facebook.net 'unsafe-inline' 'unsafe-eval' blob: data: 'self';style-src *.instagram.com static.cdninstagram.com data: blob: 'unsafe-inline' *.fbcdn.net *.facebook.com;connect-src *.instagram.com wss://edge-chat.instagram.com connect.facebook.net *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* blob: *.cdninstagram.com wss://*.instagram.com:* 'self';font-src *.instagram.com static.cdninstagram.com data: *.fbcdn.net *.intern.facebook.com *.facebook.com;img-src *.instagram.com *.facebook.com *.fbcdn.net data: *.cdninstagram.com blob: *.fbsbx.com android-webview-video-poster:;media-src *.facebook.com *.fbcdn.net *.instagram.com *.cdninstagram.com cdn.fbsbx.com data: blob:;frame-src *.instagram.com *.facebook.com *.fbsbx.com fbsbx.com data:;worker-src *.instagram.com/static_resources/webworker_v1/init_script/ *.instagram.com/static_resources/webworker/init_script/ *.instagram.com/static_resources/sharedworker/init_script/ *.instagram.com/www-service-worker.js;block-all-mixed-content;report-uri https://www.facebook.com/csp/reporting/?m=c&minimize=0;",
+            "content-security-policy": "default-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;script-src *.instagram.com static.cdninstagram.com *.facebook.com *.fbcdn.net *.facebook.net 'unsafe-inline' 'unsafe-eval' blob: data: 'self';style-src *.instagram.com static.cdninstagram.com data: blob: 'unsafe-inline' *.fbcdn.net *.facebook.com;connect-src *.instagram.com wss://edge-chat.instagram.com connect.facebook.net *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* blob: *.cdninstagram.com wss://*.instagram.com:* 'self';font-src *.instagram.com static.cdninstagram.com data: *.fbcdn.net *.intern.facebook.com *.facebook.com;img-src *.instagram.com *.facebook.com *.fbcdn.net data: *.cdninstagram.com *.whatsapp.net blob: *.fbsbx.com android-webview-video-poster: *.oculuscdn.com;media-src *.facebook.com *.fbcdn.net *.instagram.com *.cdninstagram.com cdn.fbsbx.com data: blob:;frame-src *.instagram.com *.facebook.com *.fbsbx.com fbsbx.com data:;block-all-mixed-content;upgrade-insecure-requests;report-uri https://www.facebook.com/csp/reporting/?m=c&minimize=0;",
+            "X-Frame-Options": "DENY",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "0",
+            "reporting-endpoints": "coop_report=\"https://www.facebook.com/browser_reporting/coop/?minimize=0\", coep_report=\"https://www.facebook.com/browser_reporting/coep/?minimize=0\", default=\"https://www.instagram.com/error/ig_web_error_reports/?device_level=unknown\"",
+            "report-to": "{\"max_age\":2592000,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coop\\/?minimize=0\"}],\"group\":\"coop_report\",\"include_subdomains\":true}, {\"max_age\":86400,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coep\\/?minimize=0\"}],\"group\":\"coep_report\"}, {\"max_age\":259200,\"endpoints\":[{\"url\":\"https:\\/\\/www.instagram.com\\/error\\/ig_web_error_reports\\/?device_level=unknown\"}]}",
+            "cross-origin-embedder-policy-report-only": "require-corp;report-to=\"coep_report\"",
+            "cross-origin-opener-policy": "same-origin-allow-popups;report-to=\"coop_report\"",
+            "Vary": "Sec-Fetch-Site, Sec-Fetch-Mode, Accept-Encoding",
+            "Strict-Transport-Security": "max-age=31536000; preload; includeSubDomains",
+            "x-stack": "www",
+            "Content-Type": "text/html; charset=\"utf-8\"",
+            "X-FB-Debug": "lclq6oBjuJQJzW9IcP2jx5kqBSwHap1vrwgnfdvkOuBb/LhVakcJNwnUpYD75Yj8jHIPy0esZHGudoJptWHQ2A==",
+            "Date": "Sun, 28 Apr 2024 17:27:46 GMT",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive"
+        },
+        "HTML Content": "instagram.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Menlo Park"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Meta Platforms, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.instagram.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 High Assurance Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0F1CA43C0C0B969D9E5659E7BC3ED1E8",
+            "notBefore": "Feb  6 00:00:00 2024 GMT",
+            "notAfter": "May  6 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.instagram.com"
+                ],
+                [
+                    "DNS",
+                    "*.cdninstagram.com"
+                ],
+                [
+                    "DNS",
+                    "*.igcdn.com"
+                ],
+                [
+                    "DNS",
+                    "*.igsonar.com"
+                ],
+                [
+                    "DNS",
+                    "cdninstagram.com"
+                ],
+                [
+                    "DNS",
+                    "igcdn.com"
+                ],
+                [
+                    "DNS",
+                    "igsonar.com"
+                ],
+                [
+                    "DNS",
+                    "instagram.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ha-server-g6.crl",
+                "http://crl4.digicert.com/sha2-ha-server-g6.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 19:27:50"
+    },
+    "researchgate.net": {
+        "Time": 4.26,
+        "URL": "researchgate.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.17.33.105",
+            "104.17.32.105"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.17.32.105",
+        "PING Status": "OK",
+        "PING IP": "104.17.32.105",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.researchgate.net/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.17.33.105",
+                "104.17.32.105"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 40412,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 17:28:38 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87b8c5166f366e98-PRG",
+            "CF-Cache-Status": "HIT",
+            "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Last-Modified": "Sun, 28 Apr 2024 08:00:05 GMT",
+            "Set-Cookie": "tsid=UIrlltl2Ntf5y1B_OJ9S3uhpoIePaJMX8c0o4htTRoyGNKmiFI5xq5_zWRGg-vBsUed-eThX9H1vscLB0MeijeS1U8uPRn6p-jDlbxqilJMS0qgox2TjmKb5e38Sv9bH;Path=/;Domain=.www.researchgate.net;Secure;HttpOnly",
+            "Strict-Transport-Security": "max-age=15552000; includeSubDomains; preload",
+            "p3p": "CP=\"IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA\"",
+            "pragma": "no-cache",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "SAMEORIGIN",
+            "x-rg-pi": "1",
+            "x-ua-compatible": "IE=Edge",
+            "x-xss-protection": "1; mode=block",
+            "Vary": "Accept-Encoding",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "researchgate.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.researchgate.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "AlphaSSL CA - SHA256 - G4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "01E497B4E5615260B336ED9A",
+            "notBefore": "Oct 19 12:49:03 2023 GMT",
+            "notAfter": "Nov 19 12:49:02 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.researchgate.net"
+                ],
+                [
+                    "DNS",
+                    "researchgate.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/alphasslcasha256g4"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/alphasslcasha256g4.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/alphasslcasha256g4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 19:28:42"
+    },
+    "google.it": {
+        "Time": 6.23,
+        "URL": "google.it",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.251.37.99"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.251.37.99",
+        "PING Status": "OK",
+        "PING IP": "142.251.37.99",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://www.google.it/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "142.251.36.99"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 287513,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 17:29:17 GMT",
+            "Expires": "-1",
+            "Cache-Control": "private, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-_TyhRJtABVHZrP2mRXPVwQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+            "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"gws\"",
+            "Report-To": "{\"group\":\"gws\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gws/other\"}]}",
+            "Accept-CH": "Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Arch, Sec-CH-UA-Model, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64",
+            "Permissions-Policy": "unload=()",
+            "Origin-Trial": "Ap+qNlnLzJDKSmEHjzM5ilaa908GuehlLqGb6ezME5lkhelj20qVzfv06zPmQ3LodoeujZuphAolrnhnPA8w4AIAAABfeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJQZXJtaXNzaW9uc1BvbGljeVVubG9hZCIsImV4cGlyeSI6MTY4NTY2Mzk5OX0=, AvudrjMZqL7335p1KLV2lHo1kxdMeIN0dUI15d0CPz9dovVLCcXk8OAqjho1DX4s6NbHbA/AGobuGvcZv0drGgQAAAB9eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJCYWNrRm9yd2FyZENhY2hlTm90UmVzdG9yZWRSZWFzb25zIiwiZXhwaXJ5IjoxNjkxNTM5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "Content-Encoding": "gzip",
+            "Server": "gws",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Set-Cookie": "__Secure-ENID=19.SE=MgoFS7-39nJbygKeF0-Hgtf7KvCkK4tmWq7w6byeDqEqjSegWpRG7vEG2rYFoVpMXZZmEZHxVAQtKvzCyzkozn7dnxJ9B9ngvnWTkqfhQTRC-CETfK5hm_QqICUj0-W9duq6OLqyBZc8qDIMhPC7SEZQDknZ2pCRCBpTaU06OjANDhz6mSEPUN-ShA; expires=Thu, 29-May-2025 09:47:35 GMT; path=/; domain=.google.it; Secure; HttpOnly; SameSite=lax",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "google.it_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.google.it"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "984D250787545EAA0AE7BC0879BEDCE9",
+            "notBefore": "Apr  8 07:43:52 2024 GMT",
+            "notAfter": "Jul  1 07:43:51 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.google.it"
+                ],
+                [
+                    "DNS",
+                    "google.it"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/fVJxbV-Ktmk.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 19:29:22"
+    },
+    "fandom.com": {
+        "Time": 4.96,
+        "URL": "fandom.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "199.232.212.194",
+            "199.232.208.194"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "199.232.208.194",
+        "PING Status": "OK",
+        "PING IP": "199.232.208.194",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.fandom.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "199.232.212.194",
+                "199.232.208.194"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 103985,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "20273",
+            "server": "envoy",
+            "cache-control": "max-age=60, public",
+            "link": "<https://www.fandom.com/f2/assets/common.css?v=1f76f45932bcfa61fe63337b1f3f393f1a5c5ac7>; rel=\"preload\"; as=\"style\", <https://www.fandom.com/f2/assets/news-and-stories.css?v=1f76f45932bcfa61fe63337b1f3f393f1a5c5ac7>; rel=\"preload\"; as=\"style\", <https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,hebrew,latin-ext>; rel=\"preload\"; as=\"style\", <https://www.fandom.com/f2/assets/common.en.js?v=1f76f45932bcfa61fe63337b1f3f393f1a5c5ac7>; rel=\"preload\"; as=\"script\", <https://www.fandom.com/f2/assets/news-and-stories.en.js?v=1f76f45932bcfa61fe63337b1f3f393f1a5c5ac7>; rel=\"preload\"; as=\"script\"",
+            "x-frame-options": "SAMEORIGIN",
+            "fandom.f2.datacenter": "sjc",
+            "content-security-policy": "upgrade-insecure-requests",
+            "content-security-policy-report-only": "default-src https: 'self' data: blob:; script-src https: 'self' data: 'unsafe-inline' 'unsafe-eval' blob:; style-src https: 'self' 'unsafe-inline' blob:; report-uri https://services.fandom.com/csp-logger/csp/f2",
+            "content-encoding": "gzip",
+            "content-type": "text/html; charset=UTF-8",
+            "x-envoy-upstream-service-time": "988",
+            "Via": "1.1 varnish, 1.1 varnish",
+            "Accept-Ranges": "bytes",
+            "Date": "Sun, 28 Apr 2024 17:29:50 GMT",
+            "Age": "18",
+            "X-Served-By": "f2, cache-wk-sjc11420-SJC, cache-vie6354-VIE",
+            "X-Cache": "HIT, HIT",
+            "X-Cache-Hits": "3, 1",
+            "X-Timer": "S1714325391.562394,VS0,VE1",
+            "Vary": "Fastly-SSL, Fastly-SSL, Geo-Region,Accept-Encoding,Accept-Language",
+            "Set-Cookie": "Geo={%22region%22:%2263%22%2C%22city%22:%22bystrice nad pernstejnem%22%2C%22country_name%22:%22czech republic%22%2C%22country%22:%22CZ%22%2C%22continent%22:%22EU%22}; path=/; domain=.fandom.com; SameSite=None; Secure;"
+        },
+        "HTML Content": "fandom.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.fandom.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Atlas R3 DV TLS CA 2024 Q1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "01930BFB25FB9777A678403B8EAE350B",
+            "notBefore": "Jan 19 18:13:29 2024 GMT",
+            "notAfter": "Feb 19 18:13:28 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.fandom.com"
+                ],
+                [
+                    "DNS",
+                    "*.cortexroleplaying.com"
+                ],
+                [
+                    "DNS",
+                    "*.cortexrpg.com"
+                ],
+                [
+                    "DNS",
+                    "*.cursecdn.com"
+                ],
+                [
+                    "DNS",
+                    "*.externaltest.gamepedia.com"
+                ],
+                [
+                    "DNS",
+                    "*.fandom-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "*.fandom-dev.us"
+                ],
+                [
+                    "DNS",
+                    "*.fandom.wikia.com"
+                ],
+                [
+                    "DNS",
+                    "*.gamepedia.com"
+                ],
+                [
+                    "DNS",
+                    "*.gamepedia.io"
+                ],
+                [
+                    "DNS",
+                    "*.gamepedia.wiki"
+                ],
+                [
+                    "DNS",
+                    "*.legendsofgrayskull.com"
+                ],
+                [
+                    "DNS",
+                    "*.legendsofgreyskull.com"
+                ],
+                [
+                    "DNS",
+                    "*.minecraftwiki.net"
+                ],
+                [
+                    "DNS",
+                    "*.muthead.com"
+                ],
+                [
+                    "DNS",
+                    "*.nocookie.net"
+                ],
+                [
+                    "DNS",
+                    "*.preview.gamepedia.com"
+                ],
+                [
+                    "DNS",
+                    "*.showcase.gamepedia.com"
+                ],
+                [
+                    "DNS",
+                    "*.strawpoll.me"
+                ],
+                [
+                    "DNS",
+                    "*.talesofxadia.com"
+                ],
+                [
+                    "DNS",
+                    "*.verify.gamepedia.com"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-dev.com"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-dev.us"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-staging.com"
+                ],
+                [
+                    "DNS",
+                    "*.wikia.com"
+                ],
+                [
+                    "DNS",
+                    "*.wikia.nocookie.net"
+                ],
+                [
+                    "DNS",
+                    "*.wikia.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikiafanstudio.com"
+                ],
+                [
+                    "DNS",
+                    "cortexroleplaying.com"
+                ],
+                [
+                    "DNS",
+                    "cortexrpg.com"
+                ],
+                [
+                    "DNS",
+                    "cursecdn.com"
+                ],
+                [
+                    "DNS",
+                    "fandom-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "fandom-dev.us"
+                ],
+                [
+                    "DNS",
+                    "fandom.com"
+                ],
+                [
+                    "DNS",
+                    "gamepedia.com"
+                ],
+                [
+                    "DNS",
+                    "gamepedia.io"
+                ],
+                [
+                    "DNS",
+                    "legendsofgrayskull.com"
+                ],
+                [
+                    "DNS",
+                    "legendsofgreyskull.com"
+                ],
+                [
+                    "DNS",
+                    "minecraftwiki.net"
+                ],
+                [
+                    "DNS",
+                    "muthead.com"
+                ],
+                [
+                    "DNS",
+                    "strawpoll.me"
+                ],
+                [
+                    "DNS",
+                    "talesofxadia.com"
+                ],
+                [
+                    "DNS",
+                    "wikia-dev.com"
+                ],
+                [
+                    "DNS",
+                    "wikia-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "wikia-dev.us"
+                ],
+                [
+                    "DNS",
+                    "wikia-inc.com"
+                ],
+                [
+                    "DNS",
+                    "wikia-staging.com"
+                ],
+                [
+                    "DNS",
+                    "wikia.com"
+                ],
+                [
+                    "DNS",
+                    "wikia.org"
+                ],
+                [
+                    "DNS",
+                    "wikiafanstudio.com"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-services.com"
+                ],
+                [
+                    "DNS",
+                    "wikia-services.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/ca/gsatlasr3dvtlsca2024q1"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsatlasr3dvtlsca2024q1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/ca/gsatlasr3dvtlsca2024q1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 19:29:55"
+    },
+    "office.com": {
+        "Time": 6.04,
+        "URL": "office.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "13.107.6.156"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "13.107.6.156",
+        "PING Status": "OK",
+        "PING IP": "13.107.6.156",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.office.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "13.107.6.156"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 212307,
+        "Headers": {
+            "Cache-Control": "no-store,no-cache",
+            "Pragma": "no-cache",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Encoding": "gzip",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "OH.SID=95dd53b3-334a-4fcf-a296-fcff762f9cd9; path=/; secure; samesite=none; httponly, OH.FLID=a640fe88-a727-44cc-8138-3f9f98bcf8fe; expires=Mon, 28 Apr 2025 17:31:03 GMT; path=/; secure; samesite=none; httponly, MUID=00221099E6036B773BB704F6E7E46AA5; path=/; secure; expires=Fri, 23-May-2025 17:31:03 GMT; domain=office.com",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-UA-Compatible": "IE=edge,chrome=1",
+            "NEL": "{\"report_to\":\"NelOfficeHubUpload1\",\"max_age\":3600,\"failure_fraction\":1.0,\"success_fraction\":0.01}",
+            "Report-To": "{\"group\":\"NelOfficeHubUpload1\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://officehub.nel.measure.office.net/api/report?tenantId=unknown&destinationEndpoint=weu&frontEnd=AFD\"}]}, { \"group\": \"csp-endpoint\", \"max_age\": 86400, \"endpoints\": [{ \"url\": \"https://csp.microsoft.com/report/Harmony-App-PROD\" }]}",
+            "Content-Security-Policy": "default-src 'self';base-uri 'self';script-src 'nonce-IeAZnh/ZH8mqZdd2ZguX6Q==' 'strict-dynamic' 'report-sample' https:;report-to csp-endpoint;upgrade-insecure-requests;style-src 'self' *.cdn.office.net *.microsoft.com res-dev.cdn.officeppe.net 'unsafe-inline' https://www.microsoft.com/;font-src 'self' data: *.cdn.office.net res-dev.cdn.officeppe.net data c.s-microsoft.com *.microsoft.com;connect-src 'self' https://browser.pipe.aria.microsoft.com https://browser.events.data.microsoft.com *.office.com *.cdn.office.net res-dev.cdn.officeppe.net https://consentreceiverfd-prod.azurefd.net data:;frame-src https://login.microsoftonline.com https://login.live.com mem.gfx.ms amcdn.msftauth.net amcdn.msauth.net;img-src * data: blob:;worker-src 'self' blob:;child-src 'self' blob:;report-uri https://csp.microsoft.com/report/Harmony-App-PROD;",
+            "X-Cache": "CONFIG_NOCACHE",
+            "X-MSEdge-Ref": "Ref A: FCFAAC0162BF40EE8BE68FBF38E50068 Ref B: VIEEDGE3215 Ref C: 2024-04-28T17:31:03Z",
+            "Date": "Sun, 28 Apr 2024 17:31:02 GMT"
+        },
+        "HTML Content": "office.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "WA"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Redmond"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "portal.office.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Microsoft Azure RSA TLS Issuing CA 08"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "3300177DBE1824BA6555DD074E000000177DBE",
+            "notBefore": "Feb 16 19:53:46 2024 GMT",
+            "notAfter": "Feb 10 19:53:46 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "portal.office.com"
+                ],
+                [
+                    "DNS",
+                    "portal.microsoftonline.com"
+                ],
+                [
+                    "DNS",
+                    "portalprv.microsoftonline.com"
+                ],
+                [
+                    "DNS",
+                    "ncuportalprv.office.com"
+                ],
+                [
+                    "DNS",
+                    "office.com"
+                ],
+                [
+                    "DNS",
+                    "portal.microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "home.office.com"
+                ],
+                [
+                    "DNS",
+                    "portal-sdf.office.com"
+                ],
+                [
+                    "DNS",
+                    "prod.msocdn.com"
+                ],
+                [
+                    "DNS",
+                    "www.office.com"
+                ],
+                [
+                    "DNS",
+                    "*.portal.office.com"
+                ],
+                [
+                    "DNS",
+                    "*.www.office.com"
+                ],
+                [
+                    "DNS",
+                    "admin.microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "admin.microsoft365.com"
+                ],
+                [
+                    "DNS",
+                    "www.microsoft365.com"
+                ],
+                [
+                    "DNS",
+                    "ntp.www.office.com"
+                ],
+                [
+                    "DNS",
+                    "fluid.office.com"
+                ],
+                [
+                    "DNS",
+                    "microsoft365.com"
+                ],
+                [
+                    "DNS",
+                    "word.office.com"
+                ],
+                [
+                    "DNS",
+                    "excel.office.com"
+                ],
+                [
+                    "DNS",
+                    "powerpoint.office.com"
+                ],
+                [
+                    "DNS",
+                    "visio.office.com"
+                ],
+                [
+                    "DNS",
+                    "apps.office.com"
+                ],
+                [
+                    "DNS",
+                    "stream.office.com"
+                ],
+                [
+                    "DNS",
+                    "portal.office365.com"
+                ],
+                [
+                    "DNS",
+                    "m365.go.microsoft"
+                ],
+                [
+                    "DNS",
+                    "m365.cloud.microsoft"
+                ],
+                [
+                    "DNS",
+                    "helpdeskbusinessassist.microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "admin.cloud.microsoft"
+                ]
+            ],
+            "OCSP": [
+                "http://oneocsp.microsoft.com/ocsp"
+            ],
+            "caIssuers": [
+                "http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2008%20-%20xsign.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://www.microsoft.com/pkiops/crl/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2008.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 19:31:09"
+    },
+    "list-manage.com": {
+        "Time": 10.05,
+        "URL": "list-manage.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "205.201.132.96"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "205.201.132.96",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.008831262588500977
+            ],
+            [
+                "90.181.198.158",
+                0.0037050247192382812
+            ],
+            [
+                "90.181.197.157",
+                0.008502006530761719
+            ],
+            [
+                "194.228.21.250",
+                0.00923013687133789
+            ],
+            [
+                "62.115.58.198",
+                0.009659051895141602
+            ],
+            [
+                "62.115.184.35",
+                0.008474111557006836
+            ],
+            [
+                "4.69.219.146",
+                0.12291502952575684
+            ],
+            [
+                "63.209.194.154",
+                0.12357902526855469
+            ],
+            [
+                "205.201.132.96",
+                0.12135815620422363
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://mailchimp.com/about/mcsv-static",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.41.180.128"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 628,
+        "Headers": {
+            "Content-Length": "628",
+            "Last-Modified": "Fri, 31 Jan 2020 19:01:32 GMT",
+            "ETag": "\"274-59d7433b57043\"",
+            "Accept-Ranges": "bytes",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Cache-Control": "max-age=27483570",
+            "Expires": "Wed, 12 Mar 2025 19:51:27 GMT",
+            "Date": "Sun, 28 Apr 2024 17:31:57 GMT",
+            "Connection": "keep-alive",
+            "Server-Timing": "cdn-cache; desc=HIT, edge; dur=3, ak_p; desc=\"1714325517765_390277148_88578606_297_39175_60_20_-\";dur=1",
+            "Content-Type": "text/plain; charset=utf-8",
+            "Set-Cookie": "_abck=9D76783DC1207BA12B281711B69F618D~-1~YAAQHChDF8TDxx+PAQAABHbDJQulYpzOFw1S7vGfqyl+q2iO7M8TYIKk5H4b4xMiMUdkvx1x2FqyAZGcCTHoJuAKxgEOzowafhyf4LgNAbUlJX7/VCXpcrD6bZOArzRJr5ySBKPw19H2iHn/GrsM9Qdy+hjG0t4hpfFnv7bskaDqoQDb0eAcqoP35+Np7PyzFBwP9XoN6xqIWqQ4LZVdSqCZCDRyJtDHiibjt8c3GDJhlJ0fuKTLJMkSvXZ+ycBjJmU/gww9smTg0bePsDJhgT7uSEzUEa/iU06Xb/G8IM5JDeokVusioOpAml+h/Fx/gcfQr7nIEB90t1oCzr3OPLR/0P3C8Afd8zbpboWZ/5W9Dh7X3TH7ZPH7R/5yUFM=~-1~-1~-1; Domain=.mailchimp.com; Path=/; Expires=Mon, 28 Apr 2025 17:31:57 GMT; Max-Age=31536000; SameSite=None; Secure, ak_bmsc=9B1843706B8877B72F36E9615B3115BB~000000000000000000000000000000~YAAQHChDF8XDxx+PAQAABHbDJRci/w9lFs3pVbaUQwEa72tvdiWwYO/fOFRcBbr8NaC7UvdpVYS4tKQS5IbRyMlHHNOIe3jEEzHSTP97yO7sjjTV0UHYGuJtpB/Ik1Fg7Rpq8LaHM7KPJuOPpzPjoU1ZPGQCx1SpkQ1FQ0A1Z+u3qEHtCZe6o8dqEopgpzdnCv3titnmHJ050ENQIvp2/aEvglSGFOn91jN7JGAAxp+6InhfVlWN54nh/2Hmu0zL2m2jOsfW10oD2BkY95ccMNIYHw2R/OVc7UmC2CR2/iFWU8VjwuBoMCc+9lshLORhLFLwPEwB9h7njKngVAAe/V8zHHhXHLa15tphz3zuTrRXmGWbHjFNf+UIP4lZ5rfsxQ==; Domain=.mailchimp.com; Path=/; Expires=Sun, 28 Apr 2024 19:31:57 GMT; Max-Age=7200; SameSite=None; Secure; HttpOnly, bm_sz=BC44AEC777ACE680F3982F295E81BEC8~YAAQHChDF8bDxx+PAQAABHbDJRdYKAbpraK9+GzZt67HkDo06Kh/c5l1c7Qq7v/3s2OWVYq+y6DRW3W6F/AX3qx8jbz0b77AxIFjTUrSU5fCAlZMZkLCXPf4z3SavXPIINikf2fh4q5GYIBxkckReTX+DrHWt2TxFgnelOBelqi9aYCwgLG2bS3E9YFudLRci1NKqXLL5626AUE3snfeOvsmHuome/VVkG1WFJfkCaVBHtdwP7T7XR+Zqnr+P67yfSM3gs1b19BKtVncR++9EKlxjLr/kpRZD0RHHQmDzHKYLQMYITz8XhMFNcWOHel+ODMfsP5E9j8BfQLLWnFn4qjRYrovm2zS0qz1gnF//+Dc2g==~3424581~3420215; Domain=.mailchimp.com; Path=/; Expires=Sun, 28 Apr 2024 21:31:57 GMT; Max-Age=14400; SameSite=None; Secure"
+        },
+        "HTML Content": "list-manage.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 19:32:03"
+    },
+    "msn.com": {
+        "Time": 5.23,
+        "URL": "msn.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "204.79.197.219"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "204.79.197.219",
+        "PING Status": "OK",
+        "PING IP": "204.79.197.219",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://msn.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "204.79.197.219"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 45998,
+        "Headers": {
+            "Cache-Control": "no-store, no-cache",
+            "Pragma": "no-cache",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=utf-8",
+            "Set-Cookie": "_C_ETH=1; expires=Sat, 27 Apr 2024 17:33:11 GMT; domain=.msn.com; path=/; secure; httponly, _C_Auth=, USRLOC=; expires=Tue, 28 Apr 2026 17:33:11 GMT; domain=.msn.com; path=/; secure; samesite=none; httponly, _EDGE_S=F=1&SID=3DF9FC50DE5C68A90215E83FDFF76981; domain=.msn.com; path=/; httponly",
+            "Access-Control-Allow-Methods": "HEAD,GET,OPTIONS",
+            "X-Ceto-Origin-ForwardOnError": "https://staticview.msn.com",
+            "Content-Security-Policy": "block-all-mixed-content;connect-src 'self' data: 'unsafe-inline' 'unsafe-eval' https: blob: wss:;default-src 'self' data: 'unsafe-inline' 'unsafe-eval' https: blob: wss: 'report-sample';font-src 'self' data: https: blob: wss: assets.msn.com assets2.msn.com assets.msn.cn assets2.msn.cn;frame-ancestors 'self' int1.msn.com ntp.msn.cn ntp.msn.com windows-int1.msn.com windows.msn.cn windows.msn.com www.bing.com www.msn.com mathsolver.microsoft.com mathsolver-dev.microsoft.com chrome-extension://lklfbkdigihjaaeamncibechhgalldgl;media-src 'self' https: blob:;report-to csp-endpoint;worker-src 'self' https: blob: 'report-sample';",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1",
+            "X-UA-Compatible": "IE=Edge;chrome=1",
+            "x-fabric-cluster": "pmeprodneu",
+            "nel": "{\"report_to\":\"network-errors\",\"max_age\":604800,\"success_fraction\":0.001,\"failure_fraction\":0.5}",
+            "report-to": "{\"group\":\"network-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://deff.nelreports.net/api/report?cat=msn\"}]},{\"group\":\"csp-endpoint\",\"max_age\":86400,\"endpoints\":[{\"url\":\"https://deff.nelreports.net/api/report\"}]}",
+            "Strict-Transport-Security": "max-age=1209600; includeSubDomains; preload",
+            "X-Ceto-ref": "662e88575b9945a583e76d8c843f030a|AFD:2FC380D0C7BD496BB57B994D147644BC|2024-04-28T17:33:11.758Z",
+            "X-Cache": "CONFIG_NOCACHE",
+            "Accept-CH": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+            "X-MSEdge-Ref": "Ref A: 2FC380D0C7BD496BB57B994D147644BC Ref B: PRG01EDGE1015 Ref C: 2024-04-28T17:33:11Z",
+            "Date": "Sun, 28 Apr 2024 17:33:11 GMT"
+        },
+        "HTML Content": "msn.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "WA"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Redmond"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.msn.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Microsoft Azure TLS Issuing CA 05"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "3300CCFA6671F5FAC42868F9B5000000CCFA66",
+            "notBefore": "Aug 11 22:44:21 2023 GMT",
+            "notAfter": "Jun 27 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.msn.com"
+                ],
+                [
+                    "DNS",
+                    "*.services.msn.com"
+                ],
+                [
+                    "DNS",
+                    "msn.com"
+                ]
+            ],
+            "OCSP": [
+                "http://oneocsp.microsoft.com/ocsp"
+            ],
+            "caIssuers": [
+                "http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://www.microsoft.com/pkiops/crl/Microsoft%20Azure%20TLS%20Issuing%20CA%2005.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 19:33:16"
+    }
+}

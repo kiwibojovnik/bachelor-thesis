@@ -77,9 +77,13 @@ def determine_censorship_type(differences):
                 if CZ_condition(differences.get(key, {}).get('CZ')) and BY_condition(
                         differences.get(key, {}).get('BY')):
                     return rule_name
+                    # Přidáme přiřazení výsledného typu cenzury, pokud je nalezena odpovídající podmínka
+                    differences['CENSORSHIP TYPE'] = rule_name
             elif differences.get(key, {}).get('CZ') == CZ_condition and differences.get(key, {}).get(
                     'BY') == BY_condition:
                 return rule_name
+                # Přidáme přiřazení výsledného typu cenzury, pokud je nalezena odpovídající podmínka
+                differences['CENSORSHIP TYPE'] = rule_name
     return None
 
 

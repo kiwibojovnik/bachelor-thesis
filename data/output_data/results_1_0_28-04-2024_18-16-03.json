@@ -1,0 +1,167 @@
+{
+    "planalto.gov.br": {
+        "Time": 40.23,
+        "URL": "planalto.gov.br",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "170.246.255.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "170.246.255.9",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.01658797264099121
+            ],
+            [
+                "90.181.198.158",
+                0.004694938659667969
+            ],
+            [
+                "90.181.197.157",
+                0.008431196212768555
+            ],
+            [
+                "194.228.21.250",
+                0.00893402099609375
+            ],
+            [
+                "62.115.58.198",
+                0.008690834045410156
+            ],
+            [
+                "62.115.124.26",
+                0.02025580406188965
+            ],
+            [
+                "80.91.249.10",
+                0.03616809844970703
+            ],
+            [
+                "62.115.113.20",
+                0.11313199996948242
+            ],
+            [
+                "62.115.112.71",
+                0.1075892448425293
+            ],
+            [
+                "62.115.47.187",
+                0.10850000381469727
+            ],
+            [
+                "200.25.51.55",
+                0.255385160446167
+            ]
+        ],
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 1775,
+        "Headers": {
+            "Content-Type": "text/html",
+            "Last-Modified": "Wed, 31 Jul 2019 21:17:32 GMT",
+            "Accept-Ranges": "bytes",
+            "ETag": "\"954bdb5de547d51:0\"",
+            "Date": "Sun, 28 Apr 2024 16:17:28 GMT",
+            "Content-Length": "1775",
+            "Set-Cookie": "f5_cspm=1234;, TS01178234=0150f80db1e9bc88e2c3ff5e2534bc8799a0093363289639c9fd815e0954c63a77fad9157f16caf9b92a87166b5417db01232732f470434e13e5ab04186c776de0ad89b1ae; Path=/; Domain=.planalto.gov.br"
+        },
+        "HTML Content": "planalto.gov.br_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "BR"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Distrito Federal"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "PRESIDENCIA DA REPUBLICA"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.planalto.gov.br"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Organization Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "4AF0192202D9ED3C306C74188C202B50",
+            "notBefore": "Jan 29 00:00:00 2024 GMT",
+            "notAfter": "Jan 28 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.planalto.gov.br"
+                ],
+                [
+                    "DNS",
+                    "planalto.gov.br"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 18:16:03"
+    }
+}

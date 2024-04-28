@@ -1,0 +1,802 @@
+{
+    "http://www.iiseps.org": {
+        "Time": 2.7,
+        "URL": "http://www.iiseps.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "192.252.146.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "192.252.146.60",
+        "PING Status": "OK",
+        "PING IP": "192.252.146.60",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 35050,
+        "Headers": {
+            "Date": "Sun, 21 Apr 2024 16:38:25 GMT",
+            "Server": "Apache",
+            "Link": "<http://www.iiseps.org/?rest_route=/>; rel=\"https://api.w.org/\"",
+            "Set-Cookie": "qtrans_front_language=ru; expires=Mon, 21-Apr-2025 16:38:25 GMT; Max-Age=31536000; path=/",
+            "Upgrade": "h2",
+            "Connection": "Upgrade, Keep-Alive",
+            "Keep-Alive": "timeout=60, max=10000",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.iiseps.org_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Timestamp": "2024-04-21 12:38:26"
+    },
+    "http://www.interfax.by": {
+        "Time": 308.38,
+        "URL": "http://www.interfax.by",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "178.172.136.237"
+        ],
+        "TCP Status": "Failed",
+        "TCP Remote IP": "N/A",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.002142190933227539
+            ],
+            [
+                "31.130.201.106",
+                0.002485036849975586
+            ],
+            [
+                "185.11.76.77",
+                0.017486572265625
+            ],
+            [
+                "185.11.76.46",
+                0.01278829574584961
+            ],
+            [
+                "212.98.160.189",
+                0.011961698532104492
+            ],
+            [
+                "52.81.18.33",
+                0.3529512882232666
+            ],
+            [
+                "71.136.127.28",
+                0.06869077682495117
+            ],
+            [
+                "54.223.201.205",
+                0.15185070037841797
+            ]
+        ],
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPConnectionPool(host='www.interfax.by', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f31ce763400>: Failed to establish a new connection: [Errno 110] Connection timed out',))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "www.interfax.by_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Timestamp": "2024-04-21 12:43:35"
+    },
+    "http://www.probelarus.ru": {
+        "Time": 5.79,
+        "URL": "http://www.probelarus.ru",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.219.43.56"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.219.43.56",
+        "PING Status": "OK",
+        "PING IP": "185.219.43.56",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://probelarus.ru/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "185.219.43.56"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 18801,
+        "Headers": {
+            "Server": "nginx/1.20.2",
+            "Date": "Sun, 21 Apr 2024 16:43:40 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "PHP/7.4.33",
+            "Expires": "Thu, Thu, 21 Mar 2024 16:43:40 GMT",
+            "Cache-Control": "no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
+            "Pragma": "no-cache",
+            "Last-Modified": "Sun, 21 Apr 2024 16:43:40 GMT",
+            "Strict-Transport-Security": "max-age=31536000;",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.probelarus.ru_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "probelarus.ru"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04EC5D3050F2FD1752EB4B47AFADBF48169D",
+            "notBefore": "Jan 26 23:23:11 2024 GMT",
+            "notAfter": "Apr 25 23:23:10 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.probelarus.ru"
+                ],
+                [
+                    "DNS",
+                    "probelarus.ru"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Timestamp": "2024-04-21 12:43:41"
+    },
+    "http://www.zbsb.org": {
+        "Time": 1.18,
+        "URL": "http://www.zbsb.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.248.250.117"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.248.250.117",
+        "PING Status": "OK",
+        "PING IP": "104.248.250.117",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://zbsb.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.248.250.117"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 42108,
+        "Headers": {
+            "Server": "nginx/1.14.0 (Ubuntu)",
+            "Date": "Sun, 21 Apr 2024 16:43:41 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Expires": "Fri, 07 Jun 1974 04:00:00 GMT",
+            "Last-Modified": "Sat, 20 Apr 2024 10:01:28 GMT",
+            "X-Bitrix-Composite": "Cache (200)",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.zbsb.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "zbsb.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04B2252E98EC5CEC32BCBF4F1178BCFEC1DA",
+            "notBefore": "Mar 12 15:17:55 2024 GMT",
+            "notAfter": "Jun 10 15:17:54 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.zbsb.org"
+                ],
+                [
+                    "DNS",
+                    "zbsb.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Timestamp": "2024-04-21 12:43:42"
+    },
+    "http://zautra.by": {
+        "URL": "http://zautra.by"
+    },
+    "http://www.bchd.info": {
+        "Time": 2.64,
+        "URL": "http://www.bchd.info",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.9.141",
+            "172.67.160.132"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.9.141",
+        "PING Status": "OK",
+        "PING IP": "104.21.9.141",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.bchd.info/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.21.9.141",
+                "172.67.160.132"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 62660,
+        "Headers": {
+            "Date": "Sun, 21 Apr 2024 16:43:44 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "x-powered-by": "PHP/8.1.27",
+            "last-modified": "Thu, 11 Apr 2024 23:29:45 GMT",
+            "vary": "Accept-Encoding",
+            "platform": "hostinger",
+            "content-security-policy": "upgrade-insecure-requests",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-turbo-charged-by": "LiteSpeed",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=o9Tc1DQFKyL6mo%2BwWN9%2Fa57rS6JlkCFc%2F5iXdkHrhGn%2FqxF%2Bw%2B6Bbv%2FJz14f5BkbC5jOhcrChXWuNuhcLad6L36GQjZbpWq11WWRk6q5IHixV0vs8AsR95kvJh4%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Strict-Transport-Security": "max-age=0; includeSubDomains",
+            "Server": "cloudflare",
+            "CF-RAY": "877ed5affcb90057-DME",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.bchd.info_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "bchd.info"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03E9DF515668431CC6215C125AEE74AED563",
+            "notBefore": "Apr 13 23:08:42 2024 GMT",
+            "notAfter": "Jul 12 23:08:41 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.bchd.info"
+                ],
+                [
+                    "DNS",
+                    "bchd.info"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Timestamp": "2024-04-21 12:43:44"
+    },
+    "http://www.bielarus.net": {
+        "Time": 1.84,
+        "URL": "http://www.bielarus.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.97.1",
+            "188.114.96.1"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.97.1",
+        "PING Status": "OK",
+        "PING IP": "188.114.97.1",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.bielarus.net/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.97.1",
+                "188.114.96.1"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 60230,
+        "Headers": {
+            "Date": "Sun, 21 Apr 2024 16:43:46 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Pingback": "https://www.bielarus.net/xmlrpc.php",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=UOH9y2rANoAS37B0VKjoG4o36B9svjgl63OHqP%2BWDxIIgrj4YUjCYbpGkw%2FXkKVFeNXg3Do4oTw9pWchgU0%2FZAnZyG7C0MAuNFCGm2s8Nuux4XwwV6%2Fo0BFRea0i1AOAFXhD\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "877ed5bce8339a1e-FRA",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.bielarus.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "bielarus.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "AFF20658DC4F8E8C0E2A1A748CC03395",
+            "notBefore": "Apr 13 21:26:28 2024 GMT",
+            "notAfter": "Jul 12 21:26:27 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "bielarus.net"
+                ],
+                [
+                    "DNS",
+                    "*.bielarus.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/wtJNjVRMEhg"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/10Z3OpSylro.crl"
+            ]
+        },
+        "Timestamp": "2024-04-21 12:43:46"
+    },
+    "http://www.bsdp.org": {
+        "Time": 2.29,
+        "URL": "http://www.bsdp.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.89.181",
+            "172.67.190.141"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.190.141",
+        "PING Status": "OK",
+        "PING IP": "172.67.190.141",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 404,
+        "Content Length": 1236,
+        "Headers": {
+            "Date": "Sun, 21 Apr 2024 16:43:48 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "cache-control": "private, no-cache, max-age=0",
+            "pragma": "no-cache",
+            "vary": "Accept-Encoding",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=XpUrpGKg29msqjGI56i5wUydrArXWBPEv8WEtzmPF4HEl9qfoNJKdNqtSHCTWw0G3%2BQJededzAW8UzWeo6wBv280G0WX%2Fw57e%2BLsJMsKXID3gaMJa6tEfauqejftFbE%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "877ed5cb5c6f2de5-DME",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.bsdp.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "bsdp.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "D1CF0130B9E24374112554C1673837B5",
+            "notBefore": "Mar 14 23:25:49 2024 GMT",
+            "notAfter": "Jun 12 23:25:48 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "bsdp.org"
+                ],
+                [
+                    "DNS",
+                    "*.bsdp.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/z1Fh99JLBhA"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/QAbdIRPj4FY.crl"
+            ]
+        },
+        "Timestamp": "2024-04-21 12:43:49"
+    },
+    "https://www.lawtrend.org": {
+        "Time": 21.97,
+        "URL": "https://www.lawtrend.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "78.47.114.6"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "78.47.114.6",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0023636817932128906
+            ],
+            [
+                "212.98.161.17",
+                0.0021677017211914062
+            ],
+            [
+                "185.11.76.22",
+                0.0016067028045654297
+            ],
+            [
+                "185.11.76.30",
+                0.004066944122314453
+            ],
+            [
+                "213.133.125.129",
+                0.02790212631225586
+            ],
+            [
+                "213.239.252.17",
+                0.02357959747314453
+            ],
+            [
+                "213.239.245.253",
+                0.031012296676635742
+            ],
+            [
+                "213.239.203.214",
+                0.031642913818359375
+            ],
+            [
+                "52.81.245.47",
+                0.4264209270477295
+            ],
+            [
+                "71.136.127.9",
+                0.055416107177734375
+            ],
+            [
+                "52.81.27.139",
+                0.23923873901367188
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 80496,
+        "Headers": {
+            "Date": "Sun, 21 Apr 2024 16:44:10 GMT",
+            "Server": "Apache",
+            "Link": "<https://www.lawtrend.org/wp-json/>; rel=\"https://api.w.org/\"",
+            "Upgrade": "h2",
+            "Connection": "Upgrade, Keep-Alive",
+            "Keep-Alive": "timeout=15, max=100",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.lawtrend.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "lawtrend.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0425F4D04499B11A242AA05BEB90A5D274AF",
+            "notBefore": "Apr  7 13:04:26 2024 GMT",
+            "notAfter": "Jul  6 13:04:25 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "lawtrend.org"
+                ],
+                [
+                    "DNS",
+                    "www.lawtrend.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Timestamp": "2024-04-21 12:44:11"
+    },
+    "http://www.ucpb.org": {
+        "Time": 1.89,
+        "URL": "http://www.ucpb.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "15.197.240.20"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "15.197.240.20",
+        "PING Status": "OK",
+        "PING IP": "15.197.240.20",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 114,
+        "Headers": {
+            "Server": "openresty",
+            "Date": "Sun, 21 Apr 2024 16:44:12 GMT",
+            "Content-Type": "text/html",
+            "Content-Length": "114",
+            "Connection": "keep-alive"
+        },
+        "HTML Content": "www.ucpb.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.ucpb.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "DF75065A99D315A9",
+            "notBefore": "Apr  9 11:18:11 2024 GMT",
+            "notAfter": "Apr  9 11:18:11 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.ucpb.org"
+                ],
+                [
+                    "DNS",
+                    "ucpb.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-19773.crl"
+            ]
+        },
+        "Timestamp": "2024-04-21 12:44:12"
+    }
+}

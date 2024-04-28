@@ -68,5 +68,5 @@ def process(folder1, folder2):
 
     print("Saving results of each test with additional information to file.")
     # Ukládáme rozdíly do souboru
-    with open('differenceshh.json', 'w') as diff_file:
+    with open('try.json', 'w') as diff_file:
         json.dump(diffs, diff_file, ensure_ascii=False, indent=4)
