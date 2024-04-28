@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+
+  <script async src="https://www.googleoptimize.com/optimize.js?id=GTM-TTDR244"></script>
+
+  <script async>
+      gtag('config', 'G-NRHVL69807');
+
+    gtag('js', new Date());
+
+    {
+      const storageString = localStorage.getItem( 'brwscOptimizeData' );
+      const storageValue = storageString ? JSON.parse( storageString ) : {};
+
+      gtag( 'event', 'optimize.callback', {
+        'callback': ( variant/*: string*/, id/*: string*/ ) => {
+          if( storageValue[ id ] === variant ) return;
+
+          storageValue[ id ] = variant;
+
+          localStorage.setItem( 'brwscOptimizeData', JSON.stringify( storageValue ) );
+
+          ( async() => {
+            const response = await fetch( '/api/v1/users/experiments', {
+              'method': 'POST',
+              'body': JSON.stringify({
+                'experiments': Object.entries( storageValue ).map(
+                  ( [ experimentId, variant ] ) => ({ 'exp_id': experimentId, 'variant_id': variant })
+                )
+              }),
+              'credentials': 'include',
+              'headers': {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              }
+            });
+
+          })();
+        }
+      });
+    }
+  </script>
+
+    <title>VPN Service | Privacy and Security Online | Browsec VPN</title><meta name="description" content="Browsec VPN lets you access any site and download any content. Easy setup, top speed, total anonymity. Protect your browsing with one of the best VPNs."></meta>
+
+    <link rel="preload" href="/assets/fonts/Browsec-Font-432548e953dd12a1319727b0f955fbeb319694cfd0c5c35c6ecea054240d93af.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/opensans-regular-1452dd164915bfbcdafeab2f732331df342cdc357036c0a86987e9b5993b143f.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/opensans-light-c10737896d560ad22f3f5c7711aaee284d08db745eac7525b3d837da8beaf325.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/opensans-semibold-8ac7db4263fecce3e4dce57d624eb7368a5324b485af7615a49ea87d5e089891.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <meta property="og:title" content="Browsec VPN your Personal Privacy and Security Online" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://browsec.com/" />
+    <meta property="og:image" content="https://browsec.com/assets/share_image-cc835581c9c91f8d950d4a0e6ed91f7da57daae970dea3363e3355687a4d21c5.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="theme-color" content="#1c304e">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OhZ8l_E_oroiTbjsjJMbpCHCsC4LW4OjL5mdh5OpRnXpah_i5F_r3POXC94ssJFKxZ0QA5UuIpNoiGzZ6ygpow" />
+      <link rel="alternate" hreflang="en" href="/en/" />
+  <link rel="alternate" hreflang="tr" href="/tr/" />
+  <link rel="alternate" hreflang="ko" href="/ko/" />
+  <link rel="alternate" hreflang="x-default" href="/en/" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/main_page-4e3f13d64168ad93cbe397f9cf33fb4d180879b9933a78d5dd724e9192dcdb9a.css" />
+    <script src="/assets/global-c5bf20f56f7b622300294a1cc5fc1ecafda1d8d2d39a0183f6628c67242f2d27.js" defer="defer"></script>
+    <script src="/assets/main_page-5ed6cc051e6d633ea97ab074fda74038c9798241458720bffc418696f0d5c0c9.js" defer="defer"></script>
+      <link rel="chrome-webstore-item" href="https://chromewebstore.google.com/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh"></link>
+  
+
+    <link rel="canonical" href="https://browsec.com/en/">
+  </head>
+
+  <body data-spy="scroll" data-target="#main-nav" data-offset="400">
+    
+    <div class="Main">
+      <!-- HEAD -->
+<div class="Head" data-role="navigation" >
+  <div class="Head_Placeholder"></div>
+  <div class="In">
+    <div class="B"><div class="In">
+      <div class="L">
+        <div class="Head_Logo">
+          <a class="Head_Logo_Link" href="/en/">Browsec</a>
+        </div>
+      </div>
+      <div class="C">
+        <div class="Menu"><ul class="In"><li>
+            <span class="Menu_Link withLevel ">
+              Apps
+            </span>
+            <div class="Menu_Level"><div class="In">
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/chrome-vpn">VPN for Chrome</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/firefox-vpn">VPN for Firefox</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/ios-vpn">VPN for iOS</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/android-vpn">VPN for Android</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/windows-vpn">VPN for Windows</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/vpn-mac">VPN for Mac</a></div>
+            </div></div>
+          </li><li>
+              <a class="Menu_Link" href="/en/plans">Premium</a>
+          </li><li>
+            <span class="Menu_Link withLevel ">
+              VPN Locations
+            </span>
+            <div class="Menu_Level Menu_Level_locations"><div class="In">
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/australia">
+                    <div class="Flag au"></div>
+                    Australia
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/austria">
+                    <div class="Flag at"></div>
+                    Austria
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/belgium">
+                    <div class="Flag be"></div>
+                    Belgium
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/brazil">
+                    <div class="Flag br"></div>
+                    Brazil
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/bulgaria">
+                    <div class="Flag bg"></div>
+                    Bulgaria
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/canada">
+                    <div class="Flag ca"></div>
+                    Canada
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/chile">
+                    <div class="Flag cl"></div>
+                    Chile
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/czech-republic">
+                    <div class="Flag cz"></div>
+                    Czech Republic
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/denmark">
+                    <div class="Flag dk"></div>
+                    Denmark
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/finland">
+                    <div class="Flag fi"></div>
+                    Finland
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/france">
+                    <div class="Flag fr"></div>
+                    France
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/germany">
+                    <div class="Flag de"></div>
+                    Germany
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/hong-kong">
+                    <div class="Flag hk"></div>
+                    Hong Kong
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/hungary">
+                    <div class="Flag hu"></div>
+                    Hungary
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/iceland">
+                    <div class="Flag is"></div>
+                    Iceland
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/india">
+                    <div class="Flag in"></div>
+                    India
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/ireland">
+                    <div class="Flag ie"></div>
+                    Ireland
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/israel">
+                    <div class="Flag il"></div>
+                    Israel
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/italy">
+                    <div class="Flag it"></div>
+                    Italy
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/japan">
+                    <div class="Flag jp"></div>
+                    Japan
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/latvia">
+                    <div class="Flag lv"></div>
+                    Latvia
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/lithuania">
+                    <div class="Flag lt"></div>
+                    Lithuania
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/luxembourg">
+                    <div class="Flag lu"></div>
+                    Luxembourg
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/mexico">
+                    <div class="Flag mx"></div>
+                    Mexico
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/netherlands">
+                    <div class="Flag nl"></div>
+                    Netherlands
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/new-zealand">
+                    <div class="Flag nz"></div>
+                    New Zealand
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/norway">
+                    <div class="Flag no"></div>
+                    Norway
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/poland">
+                    <div class="Flag pl"></div>
+                    Poland
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/romania">
+                    <div class="Flag ro"></div>
+                    Romania
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/russia">
+                    <div class="Flag ru"></div>
+                    Russia
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/serbia">
+                    <div class="Flag rs"></div>
+                    Serbia
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/singapore">
+                    <div class="Flag sg"></div>
+                    Singapore
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/slovenia">
+                    <div class="Flag si"></div>
+                    Slovenia
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/south-africa">
+                    <div class="Flag za"></div>
+                    South Africa
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/south-korea">
+                    <div class="Flag kr"></div>
+                    South Korea
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/spain">
+                    <div class="Flag es"></div>
+                    Spain
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/sweden">
+                    <div class="Flag se"></div>
+                    Sweden
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/switzerland">
+                    <div class="Flag ch"></div>
+                    Switzerland
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/turkey">
+                    <div class="Flag tr"></div>
+                    Turkey
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/ukraine">
+                    <div class="Flag ua"></div>
+                    Ukraine
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/united-kingdom">
+                    <div class="Flag uk"></div>
+                    United Kingdom
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/us">
+                    <div class="Flag us"></div>
+                    United States
+                  </a>
+                </div>
+                <div class="E">
+                  <a class="Menu_2ndLevelLink Menu_2ndLevelLink_Locations " href="/en/locations/us-west">
+                    <div class="Flag us"></div>
+                    United States (West)
+                  </a>
+                </div>
+            </div></div>
+          </li><li>
+              <span class="Menu_Link withLevel">Help</span>
+            <div class="Menu_Level"><div class="In">
+              <div class="E"><a class="Menu_2ndLevelLink" href="https://browsec.zendesk.com/hc/en-us?utm_source=website&amp;utm_medium=referral&amp;utm_campaign=mainmenu">Help Center</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/contact_us">Contact us</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/free-vpn">Free VPN</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/what-is-a-vpn">What is a VPN</a></div>
+              <div class="E"><a class="Menu_2ndLevelLink" href="/en/what-is-my-ip">What is my IP</a></div>
+            </div></div>
+          </li><li>
+                <a class="Menu_Link" href="/en/users/new">Sign up</a>
+            </li><li>
+                <a class="Menu_Link" href="/en/login">Sign in</a>
+            </li></ul></div></div>
+      <div class="R"><div class="DownloadRoundButton"><a rel="noopener" data-click="ga" data-ga-category="Download" data-ga-action="Chrome Extension" data-ga-label="topMenu" href="https://chromewebstore.google.com/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh">Download</a></div>
+<div class="switchLang collapse" id="js-switchLang" role="tabpanel">
+  <a class="switchLang__current" title="English" href="/en/">
+    <span class='switchLangFlag _eng'></span>
+    English
+</a>  <ul class="switchLang__list">
+      <li>
+        <a class="switchLang__item" title="Turkish" data-lang="tr" href="/tr/">
+          <span class='switchLangFlag _tur'></span>
+          Türkçe
+</a>      </li>
+      <li>
+        <a class="switchLang__item" title="Korean" data-lang="ko" href="/ko/">
+          <span class='switchLangFlag _kor'></span>
+          한국어
+</a>      </li>
+  </ul>
+</div>
+</div>
+      <div class="Head_MobileButtons"><div class="E">
+          <div class="Head_MobileButtons_Language"><span class='switchLangFlag _eng'></span></div>
+        </div><div class="E">
+          <div class="Head_MobileButtons_OpenMenu">
+            <div class="Head_MobileButtons_OpenMenu_Line"></div>
+            <div class="Head_MobileButtons_OpenMenu_Line"></div>
+            <div class="Head_MobileButtons_OpenMenu_Line"></div>
+          </div>
+        </div></div>
+    </div></div>
+  </div>
+  <div class="Head_Dimensions"></div>
+</div>
+<!-- HEAD END -->
+
+      <div class="In">
+        <div class="Index">
+  
+
+  <!-- CALL TO ACTION -->
+  <section class="CallToAction"><div class="In">
+    <div class="L"><div class="cta-message">
+      <strong>Start using Browsec&nbsp;VPN <nobr>in&nbsp;one click.</nobr></strong>
+      <br/>
+      No&nbsp;registration or&nbsp;hidden fees!
+    </div></div>
+    <div class="R">
+      <div class="CallToAction_Buttons"><div class="E">
+          <div class="InstallButtonBlock">
+  <div class="main-link-block">
+    <a data-type-ga="Main" data-platform="Chrome Extension" class="main-link green" href="https://chromewebstore.google.com/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh" rel="nofollow noopener" target="_blank">
+        <i class="icon-chrome"></i>
+          <strong>Install Browsec</strong><br>for FREE
+</a>  </div>
+
+    <div class="PlatformLinksBlock">
+      <div>Browsec is also compatible with</div>
+    <div class="PlatformLinks">
+      <div class="E">
+          <a data-platform="Chrome Extension" class="PlatformLink chrome current" rel="nofollow noopener" target="_blank" title="Browsec for Chrome" href="https://chromewebstore.google.com/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh">Browsec for Chrome</a>
+        </div><div class="E">
+          <a data-platform="Firefox Extension" class="PlatformLink firefox" rel="nofollow noopener" target="_blank" title="Browsec for Firefox" href="https://addons.mozilla.org/firefox/addon/browsec/">Browsec for Firefox</a>
+        </div><div class="E">
+          <a data-platform="Edge Browser Extension" class="PlatformLink edge" rel="nofollow noopener" target="_blank" title="Browsec for Edge" href="https://microsoftedge.microsoft.com/addons/detail/fjnehcbecaggobjholekjijaaekbnlgj">Browsec for Edge</a>
+        </div><div class="E">
+          <a data-platform="Opera Extension" class="PlatformLink opera" rel="nofollow noopener" target="_blank" title="Browsec for Opera" href="https://addons.opera.com/extensions/details/browsec/">Browsec for Opera</a>
+        </div><div class="E">
+          <a data-platform="iOS Application" class="PlatformLink ios" rel="nofollow noopener" target="_blank" title="Browsec for iOS" href="https://itunes.apple.com/app/apple-store/id978583103?pt=117740668&amp;ct=Browsec.com&amp;mt=8">Browsec for iOS</a>
+        </div><div class="E">
+          <a data-platform="Android Application" class="PlatformLink android" rel="nofollow noopener" target="_blank" title="Browsec for Android" href="https://browsec.page.link/app">Browsec for Android</a>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+        </div></div>
+    </div>
+  </div></section>
+
+  <!-- MAIN -->
+  <header id="home" class="jumbotron">
+  <div class="container_sequence"><div id="sequence-theme"><div id="sequence">
+    <ul class="sequence-canvas container">
+      <li class="seq-step2" id="step2">
+        <div class="message-slide3">
+          <div class="SequenceTitle in-from-left fast delay1">Browsec&nbsp;&mdash; your online VPN</div>
+          <ul class="in-from-left slider-list fast delay3">
+            <li class="slider-list--item">Private Internet access on all platforms</li>
+            <li class="slider-list--item">Top security and protection</li>
+            <li class="slider-list--item">No additional software required</li>
+          </ul>
+        </div>
+        <div class="slide3-img1 in-from-top fast">
+          <img class="img-responsive" alt="" src="/assets/slider/imac-22cf0c7f639e98ee85fd97105c08e4fba9b2923439562add46dcf14fb250003d.png" />
+          <div class="imac-screen">
+            <img class="img-responsive" alt="" src="/assets/slider/placeholder-500x300-be9cb953094fa097f8b31c1bb2acae97e2eaadc0dac97a7f0cfb0ac133a44089.png" />
+          </div>
+        </div>
+        <div class="slide3-img2 in-from-top fast delay1">
+          <img class="img-responsive" alt="" src="/assets/slider/ipad-flat-ab4e3a07a71874a96bc2702253888138ca4b3192bc9ae51b2c929b72b3952da9.png" />
+          <div class="ipad-screen">
+            <img class="img-responsive" alt="" src="/assets/slider/placeholder-300x400-f3afb549cf57bcb1660146415e4a3a91653bd67363e178072c1f9895e88e2bd7.jpeg" />
+          </div>
+        </div>
+        <div class="slide3-img3 in-from-top fast delay2">
+          <img class="img-responsive" alt="" src="/assets/slider/iphone-flat-c98276ea036bd7cb37b31839ca728631c3c5701fc9ccd90ac83dc8f890cef2c9.png" />
+          <div class="iphone-screen">
+            <img class="img-responsive" alt="" src="/assets/slider/placeholder-80x140-c182f0b4010e753547e40e59a1e5a4560858f100a9c79db0fae5e5031d2afb1d.jpeg" />
+          </div>
+        </div>
+      </li>
+      <li class="animate-in seq-step1" id="step1">
+        <div class="message-slide2">
+          <div class="SequenceTitle in-from-right fast delay1">Absolute protection for mobile devices</div>
+          <ul class="in-from-right slider-list fast delay3">
+            <li class="slider-list--item">Access to your favorite content</li>
+            <li class="slider-list--item">Steadfast traffic encryption</li>
+            <li class="slider-list--item">An app for iOS and Android</li>
+          </ul>
+        </div>
+        <div class="slide2-img in-from-top fast">
+          <img class="img-responsive" alt="" src="/assets/slider/iphone-flat-2-110c37baf3ed4beba59a7172574573f1e0c9336c5a8a0968a15ec9b6eef8ed4f.png" />
+          <div class="iphone2-screen">
+            <img class="img-responsive" alt="" src="/assets/slider/placeholder-iphone-2-ba8d2d1b0578816d14b535a35837af3c14de11567669ca36a059e32d0430ff21.jpeg" />
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="controls">
+      <li class="sequence-prev"><i class="fa fa-angle-left fa-fw"></i></li>
+      <li class="sequence-next"><i class="fa fa-angle-right fa-fw"></i></li>
+    </ul>
+
+    <ul rel="sequence" class="sequence-pagination" role="navigation" aria-label="Pagination">
+      <li rel="step1" class="sequence-pagination--item"></li>
+      <li rel="step2" class="sequence-pagination--item"></li>
+    </ul>
+  </div></div></div>
+</header>
+
+
+
+  <!-- SERVICES -->
+  <section id="services" class="white-bg padding-top-bottom">
+    <div class="container">
+      <h1 class="section-title">Top-notch VPN service</h1>
+      <div class="row services">
+        <div class="col-sm-3 item text-center scrollimation fade-right d2">
+          <div class="icon"><i class="ico-access"></i></div>
+          <div class="ServicesTitle">Legal access to any content</div>
+          <p>Avoid site blockers regardless of geographical restrictions.</p>
+        </div>
+        <div class="col-sm-3 item text-center scrollimation fade-right">
+          <div class="icon"><i class="ico-connectionspeed"></i></div>
+          <div class="ServicesTitle">High connection speed</div>
+          <p>Get the fastest Internet of up to 1000 Mbit/s.</p>
+        </div>
+        <div class="col-sm-3 item text-center scrollimation fade-left">
+          <div class="icon"><i class="ico-visit"></i></div>
+          <div class="ServicesTitle">Multiple virtual locations</div>
+          <p>Mask your geo-location by using a proxy server.</p>
+        </div>
+        <div class="col-sm-3 item text-center scrollimation fade-left d2">
+          <div class="icon"><i class="ico-privacy"></i></div>
+          <div class="ServicesTitle">Strong encryption</div>
+          <p>Your data will be safe thanks to our encryption algorithms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA-2 -->
+  <section class="green-bg light-typo padding-top-bottom cta-iphones">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="iphones-wrapper scrollimation">
+            <div class="iphone-portrait-frame">
+              <img class="img-responsive" alt="" src="/assets/iphone-portrait-8cf123b21a5b30c950abb695657f8569b1ccf69d6b5cb5c11ef476f30ee3a75a.png" />
+              <div class="iphone-portrait-screen">
+                <img class="img-responsive" alt="" src="/assets/placeholder-160x275-321897fcdcbb443a12e99184b559c5a8cbb5d8bbe1e1820cbc8be653f942c757.jpeg" />
+              </div>
+            </div>
+            <div class="iphone-landscape-frame">
+              <img class="img-responsive" alt="" src="/assets/iphone-landscape-410d11ccc92c54691200b4ca24652658b9c8d273bc0d2b6a201f6a5488b420b7.png" />
+              <div class="iphone-landscape-screen">
+                <img class="img-responsive" alt="" src="/assets/placeholder-275x160-97c7dd9334e0e6cb149cfd606e3af42430b1f55aa9233492b21f311ae69d12d0.jpeg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-sm-offset-1">
+          <h2>What you can do with an online VPN</h2>
+          <ul class="in-from-left slider-list fast delay3">
+            <li class="slider-list--item">Stay safe when using public Wi-Fi</li>
+            <li class="slider-list--item">Hide personal information</li>
+            <li class="slider-list--item">Use a VPN to download any content you want</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <div class="IndexFeatures"><div class="In">
+    <h2 class="section-title">What you get with Browsec</h2>
+    <div class="IndexFeatures_Blocks"><!--
+   --><div class="E"><div class="IndexFeatures_Block scrollimation fade-up">
+       <div class="IndexFeatures_Icon">
+         <div class="IndexFeatures_Icon_Static ico-privacy"></div>
+         <div class="IndexFeatures_Icon_Hover ico-privacy"></div>
+       </div>
+       <div class="R">
+         <h3>Privacy</h3>
+         <div class="IndexFeatures_Text">Protect your data from sniffers and MitM attacks across any networks with AES-256 military-grade encryption.</div>
+       </div>
+     </div></div><!--
+   --><div class="E"><div class="IndexFeatures_Block scrollimation fade-up d1">
+        <div class="IndexFeatures_Icon">
+          <div class="IndexFeatures_Icon_Static ico-anonymous"></div>
+          <div class="IndexFeatures_Icon_Hover ico-anonymous_hover"></div>
+        </div>
+        <div class="R">
+          <h3>Anonymity</h3>
+          <div class="IndexFeatures_Text">Browsec does its best to hide your identity and lets you stay anonymous.</div>
+        </div>
+      </div></div><!--
+   --><div class="E"><div class="IndexFeatures_Block scrollimation fade-up d2">
+        <div class="IndexFeatures_Icon">
+          <div class="IndexFeatures_Icon_Static ico-eazyinstalation"></div>
+          <div class="IndexFeatures_Icon_Hover ico-eazyinstalation_hover"></div>
+        </div>
+        <div class="R">
+          <h3>Easy setup</h3>
+          <div class="IndexFeatures_Text">Everything you need is&nbsp;installed in&nbsp;just one click.</div>
+        </div>
+      </div></div><!--
+   --><div class="E">
+        <div class="IndexFeatures_Block scrollimation fade-up">
+          <div class="IndexFeatures_Icon">
+            <div class="IndexFeatures_Icon_Static ico-safe"></div>
+            <div class="IndexFeatures_Icon_Hover ico-safe_hover"></div>
+          </div>
+          <div class="R">
+            <h3>Secure browsing</h3>
+            <div class="IndexFeatures_Text">Browsec protects your traffic in Chrome, Firefox, or any other browser at all times.</div>
+          </div>
+        </div>
+      </div><!--
+   --><div class="E">
+        <div class="IndexFeatures_Block scrollimation fade-up d1">
+          <div class="IndexFeatures_Icon">
+            <div class="IndexFeatures_Icon_Static ico-anytime"></div>
+            <div class="IndexFeatures_Icon_Hover ico-anytime_hover"></div>
+          </div>
+          <div class="R">
+            <h3>Multiplatform access</h3>
+            <div class="IndexFeatures_Text">Browsec works on Windows and Mac. The client is also available for Android-based devices, iPhones, and iPads.</div>
+          </div>
+        </div>
+      </div><!--
+   --><div class="E">
+        <div class="IndexFeatures_Block scrollimation fade-up d2">
+          <div class="IndexFeatures_Icon">
+            <div class="IndexFeatures_Icon_Static ico-morethan"></div>
+            <div class="IndexFeatures_Icon_Hover ico-morethan_hover"></div>
+          </div>
+          <div class="R">
+            <h3>Trusted VPN provider</h3>
+            <div class="IndexFeatures_Text">More than 8,000,000 people already use and trust our VPN service.</div>
+          </div>
+        </div>
+      </div><!--
+ --></div>
+  </div></div>
+
+  <!-- CTA-3 -->
+  <section class="cta-bottom">
+    <div class="container">
+      <div class="InstallButtonBlock">
+  <div class="main-link-block">
+    <a data-type-ga="Main" data-platform="Chrome Extension" class="main-link default" href="https://chromewebstore.google.com/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh" rel="nofollow noopener" target="_blank">
+        <i class="icon-chrome"></i>
+          <strong>Install Browsec</strong><br>for FREE
+</a>  </div>
+
+    <div class="PlatformLinksBlock">
+      <div>Browsec is also compatible with</div>
+    <div class="PlatformLinks">
+      <div class="E">
+          <a data-platform="Chrome Extension" class="PlatformLink chrome current" rel="nofollow noopener" target="_blank" title="Browsec for Chrome" href="https://chromewebstore.google.com/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh">Browsec for Chrome</a>
+        </div><div class="E">
+          <a data-platform="Firefox Extension" class="PlatformLink firefox" rel="nofollow noopener" target="_blank" title="Browsec for Firefox" href="https://addons.mozilla.org/firefox/addon/browsec/">Browsec for Firefox</a>
+        </div><div class="E">
+          <a data-platform="Edge Browser Extension" class="PlatformLink edge" rel="nofollow noopener" target="_blank" title="Browsec for Edge" href="https://microsoftedge.microsoft.com/addons/detail/fjnehcbecaggobjholekjijaaekbnlgj">Browsec for Edge</a>
+        </div><div class="E">
+          <a data-platform="Opera Extension" class="PlatformLink opera" rel="nofollow noopener" target="_blank" title="Browsec for Opera" href="https://addons.opera.com/extensions/details/browsec/">Browsec for Opera</a>
+        </div><div class="E">
+          <a data-platform="iOS Application" class="PlatformLink ios" rel="nofollow noopener" target="_blank" title="Browsec for iOS" href="https://itunes.apple.com/app/apple-store/id978583103?pt=117740668&amp;ct=Browsec.com&amp;mt=8">Browsec for iOS</a>
+        </div><div class="E">
+          <a data-platform="Android Application" class="PlatformLink android" rel="nofollow noopener" target="_blank" title="Browsec for Android" href="https://browsec.page.link/app">Browsec for Android</a>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+    </div>
+  </section>
+</div>
+
+      </div>
+
+      <footer class="Footer"><div class="In"><table><tbody>
+  <tr class="Footer_MobileExpandedRow">
+    <td>
+      <div class="Footer_Columns"><div class="E">
+          <div class="Footer_Label">Platforms</div>
+          <div class="Footer_Links"><ul>
+            <li><a href="/en/chrome-vpn">VPN for Chrome</a></li>
+            <li><a href="/en/firefox-vpn">VPN for Firefox</a></li>
+            <li><a href="/en/ios-vpn">VPN for iOS</a></li>
+            <li><a href="/en/android-vpn">VPN for Android</a></li>
+            <li><a href="/en/windows-vpn">VPN for Windows</a></li>
+            <li><a href="/en/vpn-mac">VPN for Mac OS</a></li>
+          </ul></div>
+        </div><div class="E">
+          <div class="Footer_Label">Prices</div>
+          <div class="Footer_Links"><ul>
+            <li><a href="/en/orders/new?plan_id=annual">Plans and pricing</a></li>
+            <li><a href="/en/plans">Premium</a></li>
+          </ul></div>
+        </div><div class="E">
+          <div class="Footer_Label">Why use a VPN</div>
+          <div class="Footer_Links"><ul>
+            <li><a href="/en/what-is-my-ip">What is my IP</a></li>
+            <li><a href="/en/what-is-a-vpn">What is a VPN</a></li>
+            <li><a href="/en/free-vpn">Free VPN</a></li>
+            <li><a href="/en/vpn-check">Check your VPN</a></li>
+            <li><a href="/en/how-to-tell-if-your-phone-is-hacked">Is your phone hacked</a></li>
+          </ul></div>
+        </div><div class="E">
+          <div class="Footer_Label">Information</div>
+          <div class="Footer_Links"><ul>
+            <li><a href="/en/contact_us">Contact us</a></li>
+            <li><a href="/en/faq">FAQ</a></li>
+            <li><a href="https://browsec.zendesk.com/hc/en-us?utm_source=website&amp;utm_medium=referral&amp;utm_campaign=footer">Help Center</a></li>
+            <li><a class="Footer_Links_Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/BrowsecVPN/">Facebook</a></li>
+          </ul></div>
+        </div></div>
+    </td>
+    <td class="Footer_DownloadCell">
+      <div class="Footer_Label Footer_Download_Label">Downloads</div>
+      <div class="Footer_Download"><div class="E onlyNotMobile"><a class="Footer_Download_Link chromeWebStore" href="https://chromewebstore.google.com/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh">Available in the Chrome Web Store</a></div><div class="E"><a class="Footer_Download_Link googlePlay" href="https://browsec.page.link/app">Get it on Google Play</a></div><div class="E"><a class="Footer_Download_Link appleStore" href="https://itunes.apple.com/app/apple-store/id978583103?pt=117740668&amp;ct=Browsec.com&amp;mt=8">Download on the AppStore</a></div></div>
+    </td>
+  </tr>
+
+  <tr class="Footer_MobileExpandedRow Footer_LocationsLinks">
+    <td colspan="99">
+      <div class="Footer_Columns">
+        <div class="E">
+          <div class="Footer_Label">VPN locations</div>
+
+          <div class="Footer_Links">
+              <a href="/en/locations/australia">
+                <div class="Flag au"></div>
+                Australia
+              </a>
+              <a href="/en/locations/austria">
+                <div class="Flag at"></div>
+                Austria
+              </a>
+              <a href="/en/locations/belgium">
+                <div class="Flag be"></div>
+                Belgium
+              </a>
+              <a href="/en/locations/brazil">
+                <div class="Flag br"></div>
+                Brazil
+              </a>
+              <a href="/en/locations/bulgaria">
+                <div class="Flag bg"></div>
+                Bulgaria
+              </a>
+              <a href="/en/locations/canada">
+                <div class="Flag ca"></div>
+                Canada
+              </a>
+              <a href="/en/locations/chile">
+                <div class="Flag cl"></div>
+                Chile
+              </a>
+              <a href="/en/locations/czech-republic">
+                <div class="Flag cz"></div>
+                Czech Republic
+              </a>
+              <a href="/en/locations/denmark">
+                <div class="Flag dk"></div>
+                Denmark
+              </a>
+              <a href="/en/locations/finland">
+                <div class="Flag fi"></div>
+                Finland
+              </a>
+              <a href="/en/locations/france">
+                <div class="Flag fr"></div>
+                France
+              </a>
+              <a href="/en/locations/germany">
+                <div class="Flag de"></div>
+                Germany
+              </a>
+              <a href="/en/locations/hong-kong">
+                <div class="Flag hk"></div>
+                Hong Kong
+              </a>
+              <a href="/en/locations/hungary">
+                <div class="Flag hu"></div>
+                Hungary
+              </a>
+              <a href="/en/locations/iceland">
+                <div class="Flag is"></div>
+                Iceland
+              </a>
+              <a href="/en/locations/india">
+                <div class="Flag in"></div>
+                India
+              </a>
+              <a href="/en/locations/ireland">
+                <div class="Flag ie"></div>
+                Ireland
+              </a>
+              <a href="/en/locations/israel">
+                <div class="Flag il"></div>
+                Israel
+              </a>
+              <a href="/en/locations/italy">
+                <div class="Flag it"></div>
+                Italy
+              </a>
+              <a href="/en/locations/japan">
+                <div class="Flag jp"></div>
+                Japan
+              </a>
+              <a href="/en/locations/latvia">
+                <div class="Flag lv"></div>
+                Latvia
+              </a>
+              <a href="/en/locations/lithuania">
+                <div class="Flag lt"></div>
+                Lithuania
+              </a>
+              <a href="/en/locations/luxembourg">
+                <div class="Flag lu"></div>
+                Luxembourg
+              </a>
+              <a href="/en/locations/mexico">
+                <div class="Flag mx"></div>
+                Mexico
+              </a>
+              <a href="/en/locations/netherlands">
+                <div class="Flag nl"></div>
+                Netherlands
+              </a>
+              <a href="/en/locations/new-zealand">
+                <div class="Flag nz"></div>
+                New Zealand
+              </a>
+              <a href="/en/locations/norway">
+                <div class="Flag no"></div>
+                Norway
+              </a>
+              <a href="/en/locations/poland">
+                <div class="Flag pl"></div>
+                Poland
+              </a>
+              <a href="/en/locations/romania">
+                <div class="Flag ro"></div>
+                Romania
+              </a>
+              <a href="/en/locations/russia">
+                <div class="Flag ru"></div>
+                Russia
+              </a>
+              <a href="/en/locations/serbia">
+                <div class="Flag rs"></div>
+                Serbia
+              </a>
+              <a href="/en/locations/singapore">
+                <div class="Flag sg"></div>
+                Singapore
+              </a>
+              <a href="/en/locations/slovenia">
+                <div class="Flag si"></div>
+                Slovenia
+              </a>
+              <a href="/en/locations/south-africa">
+                <div class="Flag za"></div>
+                South Africa
+              </a>
+              <a href="/en/locations/south-korea">
+                <div class="Flag kr"></div>
+                South Korea
+              </a>
+              <a href="/en/locations/spain">
+                <div class="Flag es"></div>
+                Spain
+              </a>
+              <a href="/en/locations/sweden">
+                <div class="Flag se"></div>
+                Sweden
+              </a>
+              <a href="/en/locations/switzerland">
+                <div class="Flag ch"></div>
+                Switzerland
+              </a>
+              <a href="/en/locations/turkey">
+                <div class="Flag tr"></div>
+                Turkey
+              </a>
+              <a href="/en/locations/ukraine">
+                <div class="Flag ua"></div>
+                Ukraine
+              </a>
+              <a href="/en/locations/united-kingdom">
+                <div class="Flag uk"></div>
+                United Kingdom
+              </a>
+              <a href="/en/locations/us">
+                <div class="Flag us"></div>
+                United States
+              </a>
+              <a href="/en/locations/us-west">
+                <div class="Flag us"></div>
+                United States (West)
+              </a>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td><div class="Footer_Logo" data-click="ga" data-ga-category="Footer" data-ga-action="Click" data-ga-label="Logo">Browsec</div><div class="Footer_Copy">
+        &copy; 2012 &mdash; 2024 Browsec Inc
+      </div></td>
+    <td>
+      <div class="Footer_BottomMenu"><div class="E onlyMobile">
+          <a href="/en/contact_us">Contact us</a>
+        </div><div class="E">
+        <a href="/en/privacypolicy">Privacy policy</a>
+        </div><div class="E">
+          <a href="/en/terms_of_service">Terms of service</a>
+        </div></div>
+    </td>
+  </tr>
+</tbody></table></div></footer>
+
+        <div class="install-overlay">
+    <div class="install-overlay--inner success">
+      <img class="overlay-logo" width="356" height="126" alt="" src="/assets/logo__overlay-f7e79f3dcb830587c3f773e54277f3fdce35199dc1b4e66f02acd17da4cd5cc5.png" />
+      <div class="steps">
+        <div class="step">
+          <img width="300" height="360" alt="" src="/assets/steps/step1-a6e5f783db0f666c5477ec77d541411f0c7c916fa78c08621753396ca0d27cfe.jpeg" />
+        </div>
+        <div class="step">
+          <img width="300" height="360" alt="" src="/assets/steps/step2-f7baeb726402121091a8481b9c77156133b308e002204e73a88a43cdb108c54d.jpeg" />
+        </div>
+        <div class="step">
+          <img width="300" height="360" alt="" src="/assets/steps/step3-2802e77b437c60ff1fc7bf5e20559645088f7ec3f0a76305902a1723240b093c.jpeg" />
+        </div>
+      </div>
+    </div>
+    <div class="install-overlay--inner fail">
+      <div class="fail-text">
+        <div class="overlay-heading">
+          <span class="oops">Oops</span><br>
+          Something went wrong
+        </div>
+        <span class="install-overlay--store-type">Chrome Web Store</span>: <span class="install-overlay--error-text">User cancelled install</span>
+      </div>
+      <div class="overlay-button">Try again</div>
+    </div>
+  </div>
+
+    </div>
+</body>
+  <!-- Sentry -->
+
+  <script
+    src="https://browser.sentry-cdn.com/7.36.0/bundle.tracing.min.js"
+    integrity="sha384-yOwcO3gcLQCYgPKCSjGSA+KQvWOce9kc/Cjs5LnQhAy+OusjkGgXWkJlA5QxWey7"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    Sentry.init({
+      dsn: "https://5964b07d83bb44469d61ca1b185c0c55@o218660.ingest.sentry.io/4504598646095872",
+      integrations: [new Sentry.BrowserTracing()],
+      tracesSampleRate: 0.07,
+    });
+  </script>
+
+</html>

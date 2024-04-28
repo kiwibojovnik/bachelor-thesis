@@ -37,7 +37,7 @@ def detect_dns_hijacking(address):
         if answers:
             return "No manipulation"  # Pokud server vrátí platnou odpověď, není detekován útok
         else:
-            return "Manipulated"  # Pokud server nevrátí žádnou odpověď, může být detekován útok
+            return "Manipulate"  # Pokud server nevrátí žádnou odpověď, může být detekován útok
     except dns.resolver.NoAnswer:
         return True  # Pokud server nevrátí odpověď, může být detekován útok
     except Exception as e:

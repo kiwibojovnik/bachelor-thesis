@@ -26,6 +26,9 @@ def parse_arguments():
                                                          'paths with spaces.')
     parser.add_argument('-a', '--address', type=str, choices=['ipv4', 'ipv6'],
                         help='Specify the preferred IP version to use. Choose "ipv4" or "ipv6".')
+    parser.add_argument('-s', '--start', type=int,
+                        help='Specify the index from which to start the testing. The value represents the number of cycles '
+                             '(each cycle corresponds to a group of 10 URLs) to be skipped before testing begins.')
 
     return parser.parse_args()
 
@@ -63,8 +66,12 @@ def main():
                 output_filepath = 'data/output_data/'
                 output_content_folder = 'data/output_data/content_folder'
 
+                start_index = 0
+                if args.start:
+                    start_index = args.start * 10
+
                 # Split the list of URLs into groups of 10
-                for index, i in enumerate(range(0, len(website_list), 10), start=1):
+                for index, i in enumerate(range(start_index, len(website_list), 10), start=1):
                     batch = website_list[i:i + 10]
 
                     if not args.address:
@@ -98,7 +105,7 @@ def main():
             fold1, fold2 = args.files
             process.process(fold1, fold2)
         else:
-            print("Please specify exactly two folders for processing.")
+            print("Please specify exactly two folders (First is CZ, second is BY) for processing.")
 
 
 if __name__ == '__main__':

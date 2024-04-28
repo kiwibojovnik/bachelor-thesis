@@ -5,11 +5,11 @@ import re
 from process_data import compare, define_censorship, geolocation
 
 
-def match_filename(file1, file2):
+def match_filename(CZ, BY):
     pattern = r"results_([a-zA-Z]+_\d+)_.*\.json"
 
-    match_pattern1 = re.match(pattern, file1)
-    match_pattern2 = re.match(pattern, file2)
+    match_pattern1 = re.match(pattern, CZ)
+    match_pattern2 = re.match(pattern, BY)
 
     if match_pattern1 and match_pattern2:
         country_identifier1 = match_pattern1.group(1)
@@ -31,12 +31,12 @@ def match_filename(file1, file2):
 def process_two_files(folder1, folder2):
     diffs = {}
 
-    for file1 in os.listdir(folder1):
-        for file2 in os.listdir(folder2):
-            if match_filename(file1, file2):
+    for CZ in os.listdir(folder1):
+        for BY in os.listdir(folder2):
+            if match_filename(CZ, BY):
                 # Load JSON data from both files
-                with open(os.path.join(folder1, file1), 'r', encoding='utf-8', errors='replace') as f1, \
-                        open(os.path.join(folder2, file2), 'r', encoding='utf-8', errors='replace') as f2:
+                with open(os.path.join(folder1, CZ), 'r', encoding='utf-8', errors='replace') as f1, \
+                        open(os.path.join(folder2, BY), 'r', encoding='utf-8', errors='replace') as f2:
                     json_data1 = json.load(f1)
                     json_data2 = json.load(f2)
 
@@ -44,7 +44,7 @@ def process_two_files(folder1, folder2):
                     file_diffs = compare.compare_files(json_data1, json_data2)
 
                     # Add differences to diffs dictionary
-                    diffs[file1] = file_diffs
+                    diffs[CZ] = file_diffs
 
     return diffs
 

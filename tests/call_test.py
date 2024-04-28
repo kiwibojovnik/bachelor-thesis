@@ -1,11 +1,21 @@
 from datetime import datetime
 import os
+import random
 import time
 from requests.structures import CaseInsensitiveDict
 from tests import tests_IPv6, google_search, test_middle_box, dns_tests
 from utils import reformat_url
 
 sleeping_time = 10
+
+
+def timeout():
+    print("Waiting...")
+    # Generujte náhodný časový limit mezi 25 a 70 sekundami
+    timeout = random.randint(25, 70)
+
+    # Počkejte dobu trvání časového limitu
+    time.sleep(timeout)
 
 
 class WebConnectivityTester:
@@ -102,6 +112,8 @@ class WebConnectivityTester:
                     'Cert Content': certificate[1],
                     'Middle box - header manipulation test': middle_box_header,
                     'Middle box - invalid request line': middle_box_invalid_request,
+                    'DNS manipulation - repeated query': dns_manipulation1,
+                    'DNS manipulation - hijacking detect': dns_manipulation2,
                     'Is domain in G search': search_results,
                     'Timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 })
@@ -121,8 +133,11 @@ class WebConnectivityTester:
             list: A list of dictionaries containing test results.
         """
         results = []
+
+        timeout()
+
         for website in self.urls:
-            time.sleep(sleeping_time)
+            timeout()
             results.append({'URL': str(website)})
             retry_count = 0
             while retry_count < 6:  # Retry for a maximum of 5 times

@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Радыё Свабода</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="onion-location" content="https://www.svabodmmmsdce3rmzoor5cw3byj6rqss4q6bh2yfhux2dbmobnpg5ead.onion">
+    <script src="main.js?h=8d0955fd"></script>
+    <link rel="stylesheet" href="fonts.css?h=dc7b7e35">
+    <link rel="icon" href="custom/rferl/favicon_rferl.svg?h=d226500d">
+        <style>
+     body {
+       background-color: #fcfdfb;
+       font-family: NotoSans;
+       margin: 0;
+     }
+     h1 {
+       font-size: 44px;
+       font-family: NotoSansBlack;
+     }
+     h2 {
+       font-size: 30px;
+       font-family: NotoSansBold;
+     }
+     a {
+       text-decoration: none;
+       color: #BB5402ff;;
+     }
+     p {
+       font-size: 18px;
+     }
+     #navigation-container {
+       display: flex;
+       justify-content: space-between;
+       padding: 0 2%;
+     }
+     #site-header {
+       background-color: #BB540213;;
+       padding: 0;
+     }
+     #nav-list, #nav-list-mobile {
+       list-style-type: none;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       display: inline;
+       text-align: center;
+       vertical-align: top !important;
+       //padding-left: 14%;
+       padding-left: 0;
+     }
+     #site-header li {
+       padding: 16px;
+       display: inline;
+       list-style-type: none;
+     }
+     #site-header li a {
+       color: black;
+       line-height: 90px;
+       padding: 5px 15px;
+     }
+     .shape {
+       position: absolute;
+       overflow: hidden;
+       height: 80px;
+       width: 100%;
+     }
+     .shape::before {
+       border-radius: 100%;
+       position: absolute;
+       background: #BB540213;;
+       right: -200px;
+       left: -200px;
+       top: -200px;
+       content: '';
+       bottom: 0;
+       z-index: -100;
+     }
+     #content {
+       margin: 0 auto;
+       margin-bottom: 6%;
+     }
+     #header-container {
+       background-color: #BB540213;;
+       margin: 0;
+       padding-left: 10%;
+       padding-right: 8%;
+     }
+     #header-container * {
+       margin: 0;
+     }
+     #header-container header {
+       max-width: 1200px;
+       margin: 0 auto;
+     }
+     #page-content {
+       max-width: 1200px;
+       margin: 2% auto;
+       margin-bottom: 72px;
+       width: 82vw;
+       border-radius: 13px;
+       background-color: white;
+       box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+       padding: 3% 5%;
+       box-sizing: border-box;
+     }
+     .parent {
+       display: flex;
+       justify-content: space-between;
+     }
+     #steps-container {
+       width: 82vw;
+       margin: 0 auto;
+       max-width: 1200px;
+     }
+     #steps-container > .parent {
+       margin-bottom: 72px;
+     }
+     .step-text {
+       width: 50%;
+     }
+     .onion-url-container {
+       background-color: #EA69031a;;
+       display: inline-block;
+       padding: 1%;
+       border-radius: 10px;
+       padding-right: 8px;
+     }
+     .onion-url-container:hover {
+       background-color: #EA690340;;
+
+       /* The .button:hover rule underlines the whitespace in the url container, we don't want that */
+       text-decoration: none !important;
+     }
+     .onion-url-container:hover span {
+       text-decoration: underline;
+     }
+     .onion-url-container:active {
+       background-color: #EA690366;;
+     }
+     .onion-url-container p {
+       color: #BB5402ff;;
+       display: inline;
+     }
+     .button {
+       background-color: #EA6903ff;;
+       padding: 0 24px 16px 24px;
+       border-radius: 100px;
+       box-shadow: 2px 4px #EA690333;;
+       font-family: NotoSansSemibold;
+       height: 40px;
+       width: max-content;
+       color: white;
+       display: inline-block;
+     }
+     .button:hover {
+       background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #EA6903ff;;
+     }
+     .button:active {
+       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #EA6903ff;;
+     }
+     .button a {
+       color: white;
+     }
+     a:hover {
+       text-decoration: underline;
+     }
+     a.button:hover {
+       text-decoration: none;
+     }
+     .onion-glyph-download {
+       height: 20px;
+       width: 20px;
+       padding: 10px;
+       padding-top: 5px;
+       transform: translateY(11px);
+       filter: invert(100%) sepia(0%) saturate(7468%) hue-rotate(246deg) brightness(105%) contrast(101%);
+       background-size: contain;
+       display: inline-block;
+       background: url(onion-glyph.svg?h=5a504140);
+       background-size: 24px;
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+     .onion-url-lock {
+       transform: translateY(4px);
+       filter: invert(47%) sepia(34%) saturate(5042%) hue-rotate(21deg) brightness(99%) contrast(99%);
+       display: inline-block;
+       background-image: url(onion-site-lock.svg?h=b66d07d8);
+       width: 32px;
+       height: 32px;
+       background-repeat: no-repeat;
+       background-size: contain;
+     }
+     #support-footer {
+       width: 100%;
+       background-color: white;
+       box-shadow: 0 0 30px #0000001a;
+       padding-top: 5%;
+       padding-bottom: 5%;
+     }
+     .chevron-down {
+       background-image: url(chevron-down-solid.svg?h=0eb05d49);
+       width: 20px;
+       height: 20px;
+       background-repeat: no-repeat;
+       float: right;
+     }
+     summary.no-marker {
+       list-style: none;
+     }
+     details[open] > summary > i.chevron-down {
+       transform: rotate(180deg);
+     }
+     details.collapsible-text > summary {
+       font-weight: bold;
+       background-color: rgba(0, 0, 0, 0.03);
+       padding: 2%;
+       border-radius: 5px;
+       font-size: 1em;
+       border: 1px solid rgba(0, 0, 0, 0.05);
+     }
+     details[open].collapsible-text > summary {
+       border-radius: 5px 5px 0 0;
+     }
+     details.collapsible-text {
+       border-radius: 5px;
+       border: 1px solid rgba(0, 0, 0, 0.05);
+     }
+     details.collapsible-text > summary:hover {
+       background-color: rgba(0, 0, 0, 0.09);
+       cursor: pointer;
+     }
+     details.collapsible-text > summary:active {
+       background-color: rgba(0, 0, 0, 0.15);
+     }
+     details.collapsible-text > div.details-container {
+       padding: 0 5%;
+       color: rgba(0, 0, 0, 0.54);
+     }
+     .onion-url-desktop {
+       display: none !important;
+       font-size: 1em;
+     }
+     .onion-url-desktop, .onion-url-mobile {
+       font-weight: bold;
+       font-size: 16px;
+       padding: 2%;
+       padding-right: 24px;
+     }
+     .social-button {
+       margin-top: 2%; margin-bottom: 5%; display: inline; margin-right: 2%;
+     }
+     #footer-container {
+       margin: 0 auto;
+       text-align: center;
+       max-width: 1200px;
+     }
+     #footer-container p {
+       width: 36vw;
+       margin: auto;
+     }
+     #steps-container > div.parent:nth-child(2n) {
+       flex-direction: row-reverse;
+     }
+     #footer-container > img:first-child {
+       width: 175px;
+       height: 175px;
+     }
+     .details-container li {
+       font-size: 18px;
+     }
+     .details-container h3 {
+       font-weight: bold;
+     }
+     .child.step-text h2 {
+       margin-bottom: 16px;
+     }
+     .child.step-text details {
+       margin-top: 32px;
+     }
+     .circle-bg {
+       display: inline-block;
+       width: 275px;
+       height: 275px;
+       position: absolute;
+       background-color: #EA69031a;;
+       z-index: -1;
+       border-radius: 100%;
+     }
+     #site-intro {
+       display: inline-block;
+       margin-top: 2%;
+     }
+     .onion-glyph-download.rtl-show {
+       display: none;
+     }
+     .social-button img.rtl-show {
+       display: none;
+     }
+     .onion-url-desktop span {
+       display: inline-block;
+       transform: translateY(-7px);
+     }
+     #download-tor-button {
+       margin-top: 2%;
+       margin-bottom: 5%;
+     }
+     #os-span-data {
+       display: none !important;
+     }
+     #language-select:hover #language-dropdown {
+       display: block;
+     }
+     #language-dropdown {
+       overflow: auto;
+       max-height: 70vh;
+     }
+     #site-logo > img {
+       height: 66px;
+       padding-top: 20px;
+     }
+     .dropdown-item:hover {
+       background-color: #EA690340;;
+     }
+
+     /* tablet */
+     /* some of these rules aren't overriden on mobile, so they affect mobile too*/
+     @media (max-width: 1122px) {
+       .button {
+         height: 32px;
+         padding-bottom: 24px;
+       }
+       .child > img {
+         width: 275px;
+       }
+       h1 {
+         font-size: 2em;
+       }
+       h2 {
+         font-size: 1.5em;
+       }
+       #footer-container {
+         width: 90vw;
+       }
+       #steps-container {
+         width: 90vw;
+       }
+       #nav-list {
+         display: none;
+       }
+       #nav-list-mobile {
+         margin-bottom: 0;
+         margin-top: 0;
+         padding: 3% 0 3% 0 !important;
+         justify-content: space-around;
+         background-color: #EA690326;;
+         display: block;
+       }
+       #nav-list > li, #nav-list-mobile > li  {
+         margin: 0;
+         padding: 0;
+       }
+       #nav-list > li > a, #nav-list-mobile > li > a {
+         padding-top: 0 !important;
+         padding-bottom: 0 !important;
+         line-height: initial !important;
+       }
+       #language-select {
+         position: absolute;
+         top: 0;
+         right: 0;
+         margin-top: 1.5% !important;
+         margin-right: 26px;
+       }
+       #language-select-button {
+         height: 48px;
+         padding-left: 20px;
+         padding-right: 24px;
+         padding-bottom: 0;
+       }
+       #language-select-text {
+           padding-top: 15px;
+       }
+       #nav-list li a, #nav-list-mobile li a {
+         color: #BB5402ff;;
+         font-weight: bolder;
+       }
+       h1 {
+         font-size: 32px;
+       }
+       h2 {
+         font-size: 28px;
+       }
+       h3 {
+         font-size: 18px;
+       }
+       p {
+         font-size: 16px;
+       }
+       .button {
+         font-size: 14px;
+       }
+       .social-button:first-child {
+         margin-right: 16px !important;
+       }
+       #social-button-container {
+         justify-content: center !important;
+       }
+       #header-container {
+         padding-top: 7%;
+         padding-bottom: 5%;
+       }
+       .details-container li {
+         font-size: 16px;
+       }
+       #site-logo > img {
+         padding-top: 10px;
+         padding-bottom: 10px;
+       }
+     }
+
+     /* desktop */
+     @media (min-width: 1123px) {
+       .onion-url-desktop {
+         display: inline-block !important;
+       }
+       .onion-url-mobile {
+         display: none !important;
+       }
+       .circle-bg {
+         width: 400px;
+         height: 400px;
+       }
+       #nav-list {
+         margin-top: 0;
+         padding-top: 0;
+         display: flex !important;
+       }
+       #nav-list-mobile {
+         display: none;
+       }
+       #site-logo > img {
+         height: 96px;
+       }
+     }
+
+     /* mobile */
+     @media(max-width: 650px) {
+       #download-tor-button {
+         text-align: center;
+       }
+       div.onion-url {
+         text-align: center;
+         padding-top: 16px;
+         padding-bottom: 16px;
+       }
+       #site-intro {
+         width: unset !important;
+         padding-top: 15% !important;
+       }
+       #steps-container > div.parent {
+         flex-direction: column-reverse !important;
+       }
+       .step-text {
+         width: 100%;
+       }
+       .social-button {
+         display: block;
+       }
+       .social-button:not(last-child) {
+         margin-bottom: 2%;
+       }
+       #social-button-container {
+         flex-direction: column;
+       }
+       #header-image {
+         display: none !important;
+       }
+       #header-container {
+         display: block;
+       }
+       #header-container > div.child:first-child {
+         display: block !important;
+         width: 90vw;
+         margin: 0 auto !important;
+         padding-top: 2%;
+       }
+       #page-content {
+         width: 90vw;
+       }
+       #language-dropdown {
+         width: 90vw;
+         padding: 15% 15% 15% 15%;
+       }
+       #language-select {
+         margin-top: 3.5% !important;
+       }
+       #language-select-button {
+         height: 40px;
+       }
+       #language-select-text {
+         padding-top: 12px !important;
+       }
+       /* center step images for mobile */
+       #steps-container div.child > img {
+         display: block;
+         margin: 0 auto;
+       }
+       .circle-bg {
+         left: 0;
+         right: 0;
+         margin: 0 auto;
+       }
+       .details-container li {
+         font-size: 14px;
+       }
+       p {
+         font-size: 14px;
+       }
+       summary {
+         font-size: 0.8em !important;
+       }
+       #site-logo > img {
+         padding-top: 10px;
+         padding-bottom: 10px;
+       }
+       #nav-list-mobile {
+         padding: 5% 0 5% 0 !important;
+       }
+     }
+
+     .social-button img {
+       height: 20px;
+       width: 20px;
+       padding: 10px;
+       padding-top: 10px;
+       padding-top: 10px;
+       padding-top: 5px;
+       transform: translateY(13px);
+       filter: invert(100%) sepia(0%) saturate(7468%) hue-rotate(246deg) brightness(105%) contrast(101%);
+       background-size: contain;
+       display: inline-block;
+     }
+
+     #social-button-container {
+       justify-content: space-around;
+       margin-top: 40px;
+     }
+
+     #social-button-container div a {
+       margin: 10px;
+     }
+
+     #language-select {
+       margin-top: 1%;
+       border: none;
+     }
+     #language-select i.chevron-down {
+       filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(258deg) brightness(104%) contrast(102%);
+       width: 19px;
+       margin-right: 2px;
+     }
+     #language-dropdown {
+       background-color: white;
+       position: absolute;
+       box-sizing: border-box;
+       right: 2%;
+       display: none;
+       border-radius: 15px;
+       z-index: 1;
+       box-shadow: 0 0 20px 0 rgba(0,0,0, .2);
+     }
+     .dropdown-item {
+       display: block;
+       text-decoration: none;
+       color: black;
+       padding-left: 24px;
+       padding-right: 24px;
+     }
+     .dropdown-item:not(:first-child) {
+       padding-top: 10px;
+     }
+     .dropdown-item:first-child {
+       padding-top: 24px;
+     }
+     .dropdown-item:not(:last-child) {
+       padding-bottom: 10px;
+     }
+     .dropdown-item:last-child {
+       padding-bottom: 24px;
+     }
+     #language-select-button {
+       border: none;
+       width: 100px;
+     }
+     #language-select-text {
+       padding-top: 17px;
+     }
+
+     #site-description {
+       margin-top: 2%;
+       margin-bottom: 2%;
+     }
+     #page-content h2 {
+       margin-top: 0;
+     }
+
+     .onion-url-desktop .onion-url-span-uncopied {
+       display: none;
+     }
+     .onion-url-desktop .onion-url-span-copied {
+       display: none;
+       margin-top: 15px !important;
+     }
+
+     .onion-url-mobile {
+       width: max-content;
+     }
+     .onion-url-mobile .onion-url-span-uncopied {
+       display: none;
+       transform: translateY(-7px);
+     }
+     .onion-url-mobile .onion-url-span-copied {
+       display: none;
+       margin-top: 7px;
+     }
+
+     .consent-banner {
+       display: none;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       padding: 1em;
+       position: fixed;
+       background-color: #FCEDE1ff;;
+       margin: 2% auto;
+       width: 92vw;
+       border-radius: 13px;
+     }
+
+     .consent-banner a p {
+       margin-top: 15px;
+     }
+
+     .consent-buttons {
+       float: right;
+     }
+
+     #consent-ok {
+       margin-right: 20px;
+     }
+
+     #consent-cancel {
+       background-color: inherit;
+       box-shadow: inherit;
+       color: #BB5402ff;;
+     }
+    </style>
+    
+  </head>
+  <body >
+    
+  <div id="os-span-data">
+    <span id="ios-browser-name">Onion Браўзер</span>
+    
+      <span data-os-name="ipad">Для iOS</span>
+    
+      <span data-os-name="iphone">Для iOS</span>
+    
+      <span data-os-name="linux">Для Linux</span>
+    
+      <span data-os-name="x11">Для Linux</span>
+    
+      <span data-os-name="mac">Для Mac OS</span>
+    
+      <span data-os-name="windows">Для Windows</span>
+    
+  </div>
+
+
+    <div id="site-header">
+      <div id="navigation-container">
+        <div id="site-logo">
+          <img src="custom/rferl/logo_rferl_belarusian_be.svg?h=ec0b9ab7" alt="Радыё Свабода" title="Радыё Свабода">
+        </div>
+        <ul id="nav-list">
+          
+      <li><a href="#step1">Спампаваць</a></li>
+      <li><a href="#step2">Злучыцца</a></li>
+      <li><a href="#step3">Доступ</a></li>
+      <li><a href="#support-footer">Падтрымка</a></li>
+      <li><a href="policy">Палітыка прыватнасці</a></li>
+
+        </ul>
+        
+        <div id="language-select" onmouseleave="hideLanguageSelect()">
+          <div id="language-select-button" class="button" onmouseover="showLanguageSelect()" onmousedown="clickHandler()">
+            <div id="language-select-text">беларуская мова<i class="chevron-down"></i></div>
+          </div>
+          <div id="language-dropdown">
+            
+            
+
+            
+              <a href="en/" class="dropdown-item">English (en)</a>
+            
+              <a href="./" class="dropdown-item">беларуская мова (be)</a>
+            
+          </div>
+        </div>
+        
+      </div>
+
+      
+      <ul id="nav-list-mobile">
+        
+      <li><a href="#step1">Спампаваць</a></li>
+      <li><a href="#step2">Злучыцца</a></li>
+      <li><a href="#step3">Доступ</a></li>
+      <li><a href="#support-footer">Падтрымка</a></li>
+      <li><a href="policy">Палітыка прыватнасці</a></li>
+
+      </ul>
+      
+    </div>
+
+    <div id="content">
+      
+      <div id="header-container">
+        <header class="parent">
+          <div class="child" id="site-intro">
+            <h1>Парады па абыходзе блакавання Радыё Свабода</h1>
+            <div id="site-description">
+              <p>Немагчыма атрымаць доступ да <a href="https://svaboda.org">svaboda.org</a>?
+На гэтай старонцы падрабязна апісваецца, як можна абысці цэнзуру.</p>
+
+            </div>
+            <div class="onion-url"><a href="https://www.svabodmmmsdce3rmzoor5cw3byj6rqss4q6bh2yfhux2dbmobnpg5ead.onion" class="onion-url-desktop onion-url-container" data-urlbg="#EA6903ff">
+    <i class="onion-url-lock"></i>
+    <span class="onion-url-span">https://www.svabodmmmsdce3rmzoor5cw3byj6rqss4q6bh2yfhux2dbmobnpg5ead.onion</span>
+    <span class="onion-url-span-uncopied">Скапіюйце адрас onion</span>
+    <span class="onion-url-span-copied">Скапіявана!</span>
+  </a>
+  <a href="https://www.svabodmmmsdce3rmzoor5cw3byj6rqss4q6bh2yfhux2dbmobnpg5ead.onion" class="onion-url-mobile onion-url-container" data-urlbg="#EA6903ff">
+    <i class="onion-url-lock"></i>
+    <span class="onion-url-span">Наведаць сайт Радыё Свабода .onion</span>
+    <span class="onion-url-span-uncopied">Скапіюйце адрас onion</span>
+    <span class="onion-url-span-copied">Скапіявана!</span>
+  </a>
+</div>
+          </div>
+          <div class="child">
+            <img src="header-tor.png?h=14e4d965" id="header-image">
+          </div>
+        </header>
+      </div>
+
+      <div class="shape"></div>
+
+      <div id="page-content">
+        <h2>Абысці цэнзуру з дапамогай Tor</h2>
+        <p>Tor дае магчымасць ананімнага карыстання інтэрнэтам, дапамагаючы <strong>пазбегнуць як цэнзуры, так і сачэння</strong>. Браўзер Tor нічым не адрозніваецца ад любога іншага ўжыванага вамі браўзера - Chrome, Firefox, Safari, Yandex , - за адзіным выняткам: замест таго, каб паказваць усе вашы дзеянні ў інтэрнэце вашаму інтэрнэт-правайдару і ўсім астатнім, хто адсочвае ваш трафік, ён <strong>хавае ваш трафік</strong>, які шыфруецца і прапускаецца праз тры выпадковыя валанцёрскія вузлы (гэтыя вузлы таксама называюцца "рэле"). Гэты працэс хавае, хто вы, дзе вы знаходзіцеся і куды кіруеце (г.зн., які вэб-сайт вы наведваеце).</p>
+
+        <p>Tor выкарыстоўваецца праваабаронцамі, актывістамі і людзьмі з усяго свету, якім неабходна <strong>пазбегнуць цэнзуру і сачэнне</strong>. Больш даведацца пра Tor і пра тое, як ён працуе можна наведаўшы <a href="https://tb-manual.torproject.org">Дапаможнік па браўзеры Tor</a>.</p>
+
+      </div>
+
+      <div id="steps-container">
+        <div id="step1" class="parent">
+  <div class="child step-text">
+    <h2>Крок 1: Спампаваць браўзер Tor</h2>
+    <p>Самы бяспечны і просты спосаб спампаваць браўзер Tor - гэта з афіцыйнага сайту праекту Tor.
+<span id="os-span">Для вашай аперацыйнай сістэмы</span> вы можаце спампаваць <span id="browser-span">Tor Browser</span> па спасылцы ніжэй:</p>
+
+    
+      <div id="download-tor-button">
+  <a href="https://www.torproject.org/download/" class="button"><i class="onion-glyph-download rtl-hide"></i>Спампаваць браўзер Tor<i class="onion-glyph-download rtl-show"></i></a>
+</div>
+    
+    
+      <details class="collapsible-text">
+        <summary class="no-marker">Узніклі праблемы, каб спампаваць браўзер Tor?<i class="chevron-down"></i></summary>
+        <div class="details-container">
+          <p>Бываюць выпадкі, калі вы не зможаце атрымаць доступ да вэб-сайту праекту Tor: напрыклад, ён можа быць заблакаваным у вашай сетцы.
+Калі так адбываецца, можна выкарыстаць адзін з альтэрнатыўных спосабаў, пералічаных ніжэй.</p>
+<h3>Люстэркі</h3>
+<p>Вы можаце паспрабаваць спампаваць браўзер Tor з аднаго з наступных афіцыйных сайтаў-люстэркаў:</p>
+<ul>
+<li><a href="https://tor.eff.org/">https://tor.eff.org/</a></li>
+<li><a href="http://tor.calyxinstitute.org/">http://tor.calyxinstitute.org/</a></li>
+</ul>
+<h3>GetTor (Атрымаць Tor)</h3>
+<p>Калі і сайты-люстэркі заблакаваныя, вы можаце зрабіць запыт на атрыманне браўзеру Tor праз GetTor.
+GetTor - гэта сэрвіс, які аўтаматычна адказвае на паведамленні са спасылкамі на апошнюю версію браўзера Tor, размешчаную ў розных месцах, такіх як Dropbox, Google Drive і GitHub:</p>
+<ul>
+<li><p><strong>Крок 1</strong>: Адправіць электронны запыт на gettor@torproject.org, а ў асноўным тэксце паведамлення проста напішыце "windows", "osx" або "linux" (без двукосся) у залежнасці ад вашай аперацыйнай сістэмы. Вы таксама можаце дадаць код мовы, каб атрымаць браўзер Tor на іншай мове, чым на англійскай. Напрыклад, для атрымання спасылак, каб спампаваць браўзер Tor на кітайскай мове (Кітай) для Windows, адпраўце электронны запыт на адрас gettor@torproject.org з тэкстам "windows zh_CN".</p>
+</li>
+<li><p><strong>Крок 2</strong>: Ад GetTor прыйдзе ліст, дзе будуць змяшчацца спасылкі, па якіх вы зможаце загрузіць пакет браўзера Tor, крыптаграфічны подпіс (неабходны для праверкі спампоўкі), адбітак ключа, які выкарыстоўваецца для стварэння подпісу, і кантрольная сума пакету. Вам можа быць прапанаваным праграмнае забеспячэнне на выбар: "32-bit" або "64-bit" - гэта залежыць ад мадэлі ўжыванага вамі камп’ютара.</p>
+</li>
+</ul>
+<p>Вы таксама можаце атрымаць доступ да дакументацыі і іншых рэсурсаў праз наступныя люстэркі:</p>
+<ul>
+<li><a href="https://support.tor.invidious.site/">Партал падтрымкі Tor</a></li>
+<li><a href="https://tb-manual.tor.invidious.site/">Дапаможнік па браўзеры Tor</a></li>
+<li><a href="https://blog.tor.invidious.site/">Блог праекту Tor</a></li>
+<li><a href="https://tor.invidious.site/">Асноўны вэб-сайт Tor</a></li>
+</ul>
+
+        </div>
+      </details>
+    
+  </div>
+  <div class="child">
+    <div class="circle-bg"></div>
+    <img src="download-tor.png?h=b9322ba0">
+  </div>
+</div>
+
+<div id="step2" class="parent">
+  <div class="child step-text">
+    <h2></h2>
+    <h2>Крок 2: Падлучэнне Tor</h2>
+<p>Калі вы ўпершыню запусціце браўзер Tor, дык убачыце вакно падлучэння Tor.
+Гэта дае вам магчымасць або падлучыцца наўпрост да сеткі Tor, або наладзіць браўзер Tor для вашага злучэння.
+Там ёсць сцяжок з пытаннем, ці заўсёды вы хочаце аўтаматычна падлучацца да сеткі Tor; калі гэта так, пазначце гэты сцяжок.</p>
+<p>Магчымасць пачаць прагляд вэб-старонак з дапамогай браўзера Tor з'явіцца неўзабаве пасля запуску праграмы і націскання кнопкі "падлучыцца", калі вы выкарыстоўваеце яе ўпершыню.</p>
+
+    
+    
+      <details class="collapsible-text">
+        <summary class="no-marker">Узніклі праблемы з падлучэннем Tor?<i class="chevron-down"></i></summary>
+        <div class="details-container">
+          <p>Наўпроставы доступ да сеткі Tor часам можа быць заблакаваным вашым інтэрнэт-правайдарам або ўладамі.
+Браўзер Tor мае некаторыя інструменты абыходу такога блакавання.
+У такіх выпадках дастаткова проста наладзіць ваш браўзер для падлучэння праз мост.
+Масты - гэта проста рэлейныя пункты, якія з'яўляюцца прыватнымі і іх цяжэй заблакаваць.</p>
+<h3>Інструкцыі, як актываваць масты для стацыянарнага камп'ютара:</h3>
+<p>Выкарыстоўваць мост у Tor Браўзэр для працоўнага стала можна, пяройдучы ў меню: Налады &gt; Злучэнне &gt; Масты &gt; Выбраць убудаваны мост.
+Па стане на 22 снежня 2021 года ўбудаваныя наўпрост у браўзер Tor масты былі заблакаваныя ў Расіі.</p>
+<p>У такім выпадку карыстальнікам трэба зрабіць запыт атрымаць мост адным з наступных спосабаў:</p>
+<ul>
+<li>Запыт моста з Tor Browser на працоўным стале: Налады &gt; Злучэнне &gt; Масты &gt; Запытаць мост з torproject.org &gt; Вырашыць CAPTCHA</li>
+<li>Адпраўка «/bridges» на спецыяльны канал Telegram <a href="https://t.me/GetBridgesBot">@GetBridgesBot</a>, а затым даданне адраса моста, атрыманага ўручную праз скапіраванне і ўстаўку ў браўзеры Tor: Налады &gt; Падключэнне &gt; Масты &gt; Увядзіце адрас моста вы ўжо ведаеце</li>
+<li>Наведайце сайт <a href="https://bridges.torproject.org/">https://bridges.torproject.org/</a> і прытрымлівайцеся інструкцыям</li>
+<li>Запыт маста па электроннай пошце: bridges@torproject.org з адраса электроннай пошты Gmail або Riseup; а затым даданне адрасу маста, атрыманага ўручную, шляхам капіявання і ўстаўкі ў Tor Браўзэр: Налады &gt; Злучэнне &gt; Масты &gt; Увядзіце ўжо вядомы вам адрас маста</li>
+<li>Падключэнне праз Snowflake з браўзэра Tor: Налады &gt; Злучэнне &gt; Масты &gt; Выбраць убудаваны мост &gt; Snowflake</li>
+</ul>
+<h3>Інструкцыі, як актываваць масты для Android:</h3>
+<p>Карыстальнікі могуць ужываць мост на Android, зайшоўшы: Значок наладаў &gt; Канфігураваць мост &gt; Улучыць мост.</p>
+<p>У выпадку, калі блакуюцца наўпрост убудаваныя ў браўзер Tor масты, карыстальнікі могуць зрабіць запыт атрымаць мост адным з наступных спосабаў:</p>
+<ul>
+<li>Адпраўка "/bridges" у спецыяльны Telegram-канал <a href="https://t.me/GetBridgesBot">@GetBridgesBot</a> і наступнае даданне атрыманых радкоў мастоў уручную шляхам капіявання і ўстаўкі ў Tor Браўзэр: Канфігурацыя маста &gt; Даць вядомы мне мост</li>
+<li>Наведайце сайт <a href="https://bridges.torproject.org/">https://bridges.torproject.org/</a> і прытрымлівайцеся інструкцыям</li>
+<li>Запыт маста па электроннай пошце: bridges@torproject.org з адраса Gmail або Riseup; а затым даданне атрыманых радкоў мастоў уручную шляхам капіявання і ўстаўкі ў Tor Браўзэр: Канфігурацыя маста &gt; Даць вядомы мне мост</li>
+<li>Падключэнне праз Snowflake з браўзэра Tor: Канфігурацыя маста &gt; Snowflake</li>
+</ul>
+<h3>Інструкцыі, як актываваць масты для iOS:</h3>
+<p>Карыстальнікі могуць ужываць мост на iOS, зайшоўшы: Значок Onion (Цыбуля) пры праглядзе вэб-сайта &gt; Канфігурацыя маста.</p>
+<p>У выпадку, калі блакуюцца наўпрост убудаваныя ў браўзер Tor масты, можна зрабіць запыт атрымаць мост, адным з наступных спосабаў:</p>
+<ul>
+<li>Адпраўка "/bridges" у спецыяльны Telegram-канал <a href="https://t.me/GetBridgesBot">@GetBridgesBot</a> і наступнае даданне атрыманых радкоў мастоў уручную шляхам капіявання і ўстаўкі ў Tor Браўзэр: Канфігурацыя мастоў &gt; Карыстальніцкія масты</li>
+<li>Наведайце сайт <a href="https://bridges.torproject.org/">https://bridges.torproject.org/</a> і прытрымлівайцеся інструкцыям</li>
+<li>Запыт маста па электроннай пошце: bridges@torproject.org з адраса электроннай пошты Gmail або Riseup; а затым даданне радкоў мастоў, атрыманых уручную, шляхам капіявання і ўстаўкі ў Tor Browser: Канфігурацыя мастоў &gt; Карыстальніцкія масты</li>
+<li>Падключэнне праз Snowflake з браўзэра Tor: Канфігурацыя маста &gt; Snowflake</li>
+</ul>
+
+        </div>
+      </details>
+    
+  </div>
+  <div class="child">
+    <div class="circle-bg"></div>
+    <img src="connect-tor.png?h=550e4b7e">
+  </div>
+</div>
+
+<div id="step3" class="parent">
+  <div class="child step-text">
+    <h2></h2>
+    <h2>Крок 3: Доступ да Onion-сэрвісу</h2>
+<p>Onion-сэрвісы (раней вядомыя як "схаваныя сэрвісы") - гэта сэрвісы (напрыклад, вэб-сайты), даступныя толькі праз сетку Tor.
+Як і з любым іншым вэб-сайтам, вам трэба будзе ведаць адрас адпаведнага Onion-сэрвісу, каб падлучыцца да яго.
+Onion-адрас - гэта радок з 56 у асноўным выпадковых літараў і лічбаў, за якім стаіць ".onion" (цыбуля).
+Каб даведацца больш пра Onion-сэрвісы, наведайце <a href="https://tb-manual.torproject.org/onion-services">Дапаможнік па браўзеры Tor</a>.</p>
+<p>Каб атрымаць доступ да службы onion Радыё Свабода, проста скапіруйце і ўстаўце наступны URL у браўзер Tor:</p>
+
+    
+      <div class="onion-url"><a href="https://www.svabodmmmsdce3rmzoor5cw3byj6rqss4q6bh2yfhux2dbmobnpg5ead.onion" class="onion-url-desktop onion-url-container" data-urlbg="#EA6903ff">
+    <i class="onion-url-lock"></i>
+    <span class="onion-url-span">https://www.svabodmmmsdce3rmzoor5cw3byj6rqss4q6bh2yfhux2dbmobnpg5ead.onion</span>
+    <span class="onion-url-span-uncopied">Скапіюйце адрас onion</span>
+    <span class="onion-url-span-copied">Скапіявана!</span>
+  </a>
+  <a href="https://www.svabodmmmsdce3rmzoor5cw3byj6rqss4q6bh2yfhux2dbmobnpg5ead.onion" class="onion-url-mobile onion-url-container" data-urlbg="#EA6903ff">
+    <i class="onion-url-lock"></i>
+    <span class="onion-url-span">Наведаць сайт Радыё Свабода .onion</span>
+    <span class="onion-url-span-uncopied">Скапіюйце адрас onion</span>
+    <span class="onion-url-span-copied">Скапіявана!</span>
+  </a>
+</div>
+    
+    
+  </div>
+  <div class="child">
+    <div class="circle-bg"></div>
+    <img src="onion-services.png?h=4bae6936">
+  </div>
+</div>
+      </div>
+
+    </div>
+    <footer id="support-footer">
+  <div id="footer-container">
+    <img src="support-tor.png?h=ef2d9d24">
+    <h2>Трэба падтрымка?</h2>
+    <p>Калі вам трэба падтрымка па любым пытанні датычна Tor, са службай падтрымкі Tor можна звязацца праз Telegram. Таксама ёсць адмысловы актыўны форум, дзе кожны ахвотны можа пакінуць сваё пытанне, водгук ці распавесці пра праблему.</p>
+    <div id="social-button-container">
+      <div class="social-button">
+        <a href="https://t.me/TorProjectSupportBot" class="button"><img src="telegram-brands.svg?h=fb54983f" class="rtl-hide">Telegram: @TorProjectSupportBot<img src="telegram-brands.svg?h=fb54983f" class="rtl-show"></a>
+      </div>
+
+      <div class="social-button">
+        <a href="https://signal.me/#p/+17787431312" class="button"><img src="signal.svg?h=e6cdd02a" class="rtl-hide">Signal: +1 778-743-1312<img src="signal.svg?h=e6cdd02a" class="rtl-show"></a>
+      </div>
+
+      <div class="social-button">
+        <a href="https://forum.torproject.net/" class="button"><img src="discourse-brands.svg?h=3587ce10" class="rtl-hide">Форум праекта Tor<img src="discourse-brands.svg?h=3587ce10" class="rtl-show"></a>
+      </div>
+
+      <div class="social-button">
+        <a href="mailto:frontdesk@torproject.org" class="button"><img src="mail.svg?h=63bb0054" class="rtl-hide">frontdesk@torproject.org<img src="mail.svg?h=63bb0054" class="rtl-show"></a>
+      </div>
+
+      <div class="social-button">
+        <a href="https://wa.me/447421000612" class="button"><img src="whatsapp.svg?h=c7bcbd36" class="rtl-hide">WhatsApp: +44 7421 000612<img src="whatsapp.svg?h=c7bcbd36" class="rtl-show"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+        
+    <div class="consent-banner page-content">
+        <p>Ці можна сабраць наступную інфармацыю аб Вашым візіце?</p>
+
+
+        <ul>
+          <li>
+            <p>Старонкі, якія вы наведваеце.</p>
+
+          </li>
+
+          
+          <li>
+            <p>The first 2 octets of your current IP address.</p>
+
+          </li>
+          
+
+          
+
+          
+        </ul>
+
+        
+        To learn more about why we're collecting this information, for how long, and with whom we share this information with, please visit our <a href="policy" target="_blank">full privacy policy</a>.
+
+        <div class="consent-buttons">
+          <a class="button" id="consent-ok"><p>Ухваліць</p>
+</a>
+          <a class="button" id="consent-cancel"><p>Адхіліць</p>
+</a>
+        </div>
+    </div>
+
+    <script>
+      // Consent UX and "Decline" button
+      const banner  = document.getElementsByClassName('consent-banner')[0]
+      const cancel  = document.getElementById('consent-cancel')
+
+      // Handle the "Decline" button
+      cancel.onclick = () => {
+        banner.style.display = 'none'
+      }
+
+      // Thanks https://stackoverflow.com/questions/16947459/is-it-possible-to-check-the-value-of-firefox-dnt-with-javascript
+      var isDNT = navigator.doNotTrack   === "yes" ||
+                  navigator.doNotTrack   === "1"   ||
+                  navigator.msDoNotTrack === "1";
+
+      // Only display the consent banner if Do Not Track is disabled
+      // We're respecting the DNT setting even if it's deprecated
+      // Check the Onion Launchpad Analytics documentation for details
+      if (!isDNT) {
+        banner.style.display = 'block'
+      }
+    </script>
+
+    
+          <script>
+      // Loads Matomo
+      // See https://developer.matomo.org/api-reference/tracking-javascript
+      function loadMatomo() {
+        var _paq = window._paq = window._paq || [];
+
+        _paq.push(['trackPageView']);
+
+        
+
+        
+        _paq.push(['disableBrowserFeatureDetection']);
+        
+
+        _paq.push(['disablePerformanceTracking']);
+        _paq.push(['setDoNotTrack', true]);
+
+        (function() {
+          var u='https://metrics.cleaninsights.org/';
+
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId',     '28']);
+
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      }
+
+      // The 'Accept' button
+      const consent = document.getElementById('consent-ok')
+
+      // Handle the 'Accept' button
+      consent.onclick = () => {
+        // Hide the Consent UX
+        banner.style.display = 'none'
+
+        // Load Matomo
+        loadMatomo()
+      }
+    </script>
+    
+    
+
+  </body>
+</html>

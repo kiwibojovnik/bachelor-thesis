@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="minimum-scale=1,initial-scale=1,width=device-width">
+<link rel="preconnect" href="https://api-maps.yandex.ru">
+<link rel="dns-prefetch" href="https://api-maps.yandex.ru">
+<title>ÐÐ¾Ð»Ð¾Ñ</title>
+<meta property="og:site_name" content="ÐÐ»Ð°ÑÑÐ¾ÑÐ¼Ð° ÐÐ¾Ð»Ð¾Ñ">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="ÐÐ¾Ð»Ð¾Ñ">
+<meta property="og:description" content="ÐÐ»Ð°ÑÑÐ¾ÑÐ¼Ð°, ÑÑÐ¾Ð±Ñ ÑÑÐ»ÑÑÐ°ÑÑ ÐºÐ°Ð¶Ð´Ð¾Ð³Ð¾ Ð±ÐµÐ»Ð¾ÑÑÑÐ°">
+<meta property="og:image" content="https://golos2020.org/sharing_logo4.png">
+<script>
+const mapApiKeys = 'ea4a46a1-7ce4-47fc-8044-8355211e8d78,43d1a75b-a259-42d5-9b63-c4b50cdf14c4,d618619a-c67f-43c4-b832-05312f126771'.split(',');
+    const selectedKey = mapApiKeys[Math.floor(Math.random() * mapApiKeys.length)];
+    const script = document.createElement('script');
+    script.src = `https://api-maps.yandex.ru/2.1/?lang=ru_RU&coordorder=longlat&apikey=${selectedKey}&load=Map,map.addon.balloon,Placemark,ObjectManager,objectManager.addon.objectsBalloon,objectManager.addon.clustersBalloon,control.Button,control.SearchControl,control.ZoomControl,control.GeolocationControl,geolocation,templateLayoutFactory`;
+    script.type= 'text/javascript';
+
+    document.head.appendChild(script);
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173158975-3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173158975-3');
+</script>
+</head>
+<body>
+<div id="root"></div>
+<script src="/home/home.bundle.js"></script></body>
+</html>
