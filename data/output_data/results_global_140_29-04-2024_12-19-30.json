@@ -1,0 +1,1245 @@
+{
+    "https://nmap.org": {
+        "Time": 10.18,
+        "URL": "https://nmap.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "45.33.49.119"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "45.33.49.119",
+        "PING Status": "OK",
+        "PING IP": "45.33.49.119",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 19639,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:10:51 GMT",
+            "Server": "Apache/2.4.6 (CentOS)",
+            "Strict-Transport-Security": "max-age=31536000; preload",
+            "Vary": "Host",
+            "Accept-Ranges": "bytes",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=utf-8"
+        },
+        "HTML Content": "nmap.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "insecure.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03075F6B671B21E72480AE3EF121EA2F388A",
+            "notBefore": "Apr 12 09:07:43 2024 GMT",
+            "notAfter": "Jul 11 09:07:42 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "insecure.com"
+                ],
+                [
+                    "DNS",
+                    "insecure.org"
+                ],
+                [
+                    "DNS",
+                    "issues.nmap.org"
+                ],
+                [
+                    "DNS",
+                    "issues.npcap.org"
+                ],
+                [
+                    "DNS",
+                    "nmap.com"
+                ],
+                [
+                    "DNS",
+                    "nmap.net"
+                ],
+                [
+                    "DNS",
+                    "nmap.org"
+                ],
+                [
+                    "DNS",
+                    "npcap.com"
+                ],
+                [
+                    "DNS",
+                    "npcap.org"
+                ],
+                [
+                    "DNS",
+                    "seclists.com"
+                ],
+                [
+                    "DNS",
+                    "seclists.net"
+                ],
+                [
+                    "DNS",
+                    "seclists.org"
+                ],
+                [
+                    "DNS",
+                    "sectools.com"
+                ],
+                [
+                    "DNS",
+                    "sectools.net"
+                ],
+                [
+                    "DNS",
+                    "sectools.org"
+                ],
+                [
+                    "DNS",
+                    "secwiki.com"
+                ],
+                [
+                    "DNS",
+                    "secwiki.net"
+                ],
+                [
+                    "DNS",
+                    "secwiki.org"
+                ],
+                [
+                    "DNS",
+                    "svn.nmap.org"
+                ],
+                [
+                    "DNS",
+                    "www.nmap.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:11:00"
+    },
+    "https://norml.org": {
+        "Time": 21.44,
+        "URL": "https://norml.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "192.0.78.24",
+            "192.0.78.25"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "192.0.78.24",
+        "PING Status": "OK",
+        "PING IP": "192.0.78.24",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 212298,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 10:11:56 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "Accept-Encoding, accept, content-type, cookie",
+            "X-hacker": "Want root?  Visit join.a8c.com and mention this header.",
+            "Host-Header": "WordPress.com",
+            "Set-Cookie": "PHPSESSID=9f5e637e9cea82b6630364498ca7a006; path=/",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "Pragma": "no-cache",
+            "Link": "<https://norml.org/wp-json/>; rel=\"https://api.w.org/\", <https://wp.me/aTRjQ>; rel=shortlink",
+            "Content-Encoding": "gzip",
+            "X-ac": "3.vie _atomic_ams MISS",
+            "Alt-Svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "norml.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "tls.automattic.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04AA484597066AF8A9E465D057BCD804D19B",
+            "notBefore": "Mar 15 00:41:00 2024 GMT",
+            "notAfter": "Jun 13 00:40:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "allensamjyl8.science.blog"
+                ],
+                [
+                    "DNS",
+                    "auxiliary-beauty.com"
+                ],
+                [
+                    "DNS",
+                    "bornovafenbilimleri.com"
+                ],
+                [
+                    "DNS",
+                    "corefour.com"
+                ],
+                [
+                    "DNS",
+                    "ellaknightufgs123.movie.blog"
+                ],
+                [
+                    "DNS",
+                    "finditrach.family.blog"
+                ],
+                [
+                    "DNS",
+                    "greenwilliamhv7hn.poetry.blog"
+                ],
+                [
+                    "DNS",
+                    "katysoneighth.com"
+                ],
+                [
+                    "DNS",
+                    "lindsaystevensqofm123.movie.blog"
+                ],
+                [
+                    "DNS",
+                    "louisrichardsonzkil123.movie.blog"
+                ],
+                [
+                    "DNS",
+                    "modeseven.org"
+                ],
+                [
+                    "DNS",
+                    "mrlifestyleexplorer.com"
+                ],
+                [
+                    "DNS",
+                    "neverabadgame.com"
+                ],
+                [
+                    "DNS",
+                    "norml.org"
+                ],
+                [
+                    "DNS",
+                    "ourstorkisascientist.com"
+                ],
+                [
+                    "DNS",
+                    "pheroofficial.com"
+                ],
+                [
+                    "DNS",
+                    "purposedliving.org"
+                ],
+                [
+                    "DNS",
+                    "rachelegusella.com"
+                ],
+                [
+                    "DNS",
+                    "redcrone.au"
+                ],
+                [
+                    "DNS",
+                    "renewptnwa.com"
+                ],
+                [
+                    "DNS",
+                    "sarahonabike.com"
+                ],
+                [
+                    "DNS",
+                    "sch.archi"
+                ],
+                [
+                    "DNS",
+                    "thewatchdog.code.blog"
+                ],
+                [
+                    "DNS",
+                    "tls.automattic.com"
+                ],
+                [
+                    "DNS",
+                    "www.allensamjyl8.science.blog"
+                ],
+                [
+                    "DNS",
+                    "www.auxiliary-beauty.com"
+                ],
+                [
+                    "DNS",
+                    "www.bornovafenbilimleri.com"
+                ],
+                [
+                    "DNS",
+                    "www.britetrace.co"
+                ],
+                [
+                    "DNS",
+                    "www.caerdtroia.uk"
+                ],
+                [
+                    "DNS",
+                    "www.ellaknightufgs123.movie.blog"
+                ],
+                [
+                    "DNS",
+                    "www.finditrach.family.blog"
+                ],
+                [
+                    "DNS",
+                    "www.greennathanbhi.politics.blog"
+                ],
+                [
+                    "DNS",
+                    "www.gregharrisonngti123.movie.blog"
+                ],
+                [
+                    "DNS",
+                    "www.harveywhitefdsl123.movie.blog"
+                ],
+                [
+                    "DNS",
+                    "www.louisrichardsonzkil123.movie.blog"
+                ],
+                [
+                    "DNS",
+                    "www.ml-gfx.com"
+                ],
+                [
+                    "DNS",
+                    "www.mrlifestyleexplorer.com"
+                ],
+                [
+                    "DNS",
+                    "www.neverabadgame.com"
+                ],
+                [
+                    "DNS",
+                    "www.norml.org"
+                ],
+                [
+                    "DNS",
+                    "www.ourstorkisascientist.com"
+                ],
+                [
+                    "DNS",
+                    "www.poetryforsocialjustice.co.uk"
+                ],
+                [
+                    "DNS",
+                    "www.purposedliving.org"
+                ],
+                [
+                    "DNS",
+                    "www.redcrone.au"
+                ],
+                [
+                    "DNS",
+                    "www.renewptnwa.com"
+                ],
+                [
+                    "DNS",
+                    "www.rollersports360.com"
+                ],
+                [
+                    "DNS",
+                    "www.sarahonabike.com"
+                ],
+                [
+                    "DNS",
+                    "www.sch.archi"
+                ],
+                [
+                    "DNS",
+                    "www.serwistelefonow.poetry.blog"
+                ],
+                [
+                    "DNS",
+                    "www.thewatchdog.code.blog"
+                ],
+                [
+                    "DNS",
+                    "www.thompsonevan44ko.game.blog"
+                ],
+                [
+                    "DNS",
+                    "www.tylercoxking123.movie.blog"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:12:12"
+    },
+    "https://now.org": {
+        "Time": 6.3,
+        "URL": "https://now.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.194.159"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.194.159",
+        "PING Status": "OK",
+        "PING IP": "151.101.194.159",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 89733,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "21962",
+            "content-encoding": "gzip",
+            "referrer-policy": "no-referrer-when-downgrade",
+            "x-content-type-options": "nosniff",
+            "x-fw-dynamic": "TRUE",
+            "content-type": "text/html; charset=UTF-8",
+            "x-fw-hash": "felmlj55lp",
+            "link": "<https://now.org/wp-json/>; rel=\"https://api.w.org/\", <https://now.org/wp-json/wp/v2/pages/26354>; rel=\"alternate\"; type=\"application/json\", <https://now.org/>; rel=shortlink",
+            "x-fw-version": "5.0.0",
+            "x-xss-protection": "1",
+            "x-fw-server": "Flywheel/5.1.0",
+            "Server": "Flywheel/5.1.0",
+            "X-Cacheable": "YES",
+            "Fastly-Restarts": "1",
+            "Accept-Ranges": "bytes",
+            "Date": "Mon, 29 Apr 2024 10:12:59 GMT",
+            "X-Served-By": "cache-vie6321-VIE, cache-vie6383-VIE",
+            "X-Cache": "MISS, HIT",
+            "X-Cache-Hits": "0, 1",
+            "X-Timer": "S1714385579.365406,VS0,VE3",
+            "Vary": "Accept-Encoding",
+            "X-FW-Serve": "TRUE",
+            "X-FW-Static": "NO",
+            "X-FW-Type": "VISIT"
+        },
+        "HTML Content": "now.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "now.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03D8114CC18FE919A302EA7A20D54DFB1D90",
+            "notBefore": "Mar 20 20:03:14 2024 GMT",
+            "notAfter": "Jun 18 20:03:13 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "now.org"
+                ],
+                [
+                    "DNS",
+                    "www.now.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:13:04"
+    },
+    "https://nypost.com": {
+        "Time": 12.37,
+        "URL": "https://nypost.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "192.0.66.32"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "192.0.66.32",
+        "PING Status": "OK",
+        "PING IP": "192.0.66.32",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 1306326,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 10:13:57 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-hacker": "If you're reading this, you should visit wpvip.com/careers and apply to join the fun, mention this header.",
+            "X-Powered-By": "WordPress VIP <https://wpvip.com>",
+            "Host-Header": "a9130478a60e5f9135f765b23f26593b",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "Content-Security-Policy": "frame-ancestors nypost.com decider.com pagesix.com *.nypost.com *.decider.com *.pagesix.com",
+            "Link": "<https://nypost.com/wp-json/>; rel=\"https://api.w.org/\", <https://wp.me/b3Qpq>; rel=shortlink",
+            "Content-Encoding": "gzip",
+            "Strict-Transport-Security": "max-age=31536000",
+            "x-rq": "vie1 111 254 443",
+            "accept-ranges": "bytes",
+            "cache-control": "private, no-store",
+            "x-cache": "HIT"
+        },
+        "HTML Content": "nypost.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "nypost.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04E320C095B852D4629C15615576A9D47B87",
+            "notBefore": "Mar 26 14:20:32 2024 GMT",
+            "notAfter": "Jun 24 14:20:31 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "nypost.com"
+                ],
+                [
+                    "DNS",
+                    "www.nypost.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:14:08"
+    },
+    "https://www.oca.org": {
+        "Time": 8.72,
+        "URL": "https://www.oca.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "45.79.144.159"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "45.79.144.159",
+        "PING Status": "OK",
+        "PING IP": "45.79.144.159",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 21584,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 10:14:53 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "o_tracker=%7B%220%22%3A%22index%22%2C%22token%22%3A%22a89a552a30b354e90da7a3e87355d7748a862333613df127632de4efbd0099b977045f517d6111ce2e9af9b4eda6cf75%22%7D; path=/; domain=www.oca.org; secure; HttpOnly; SameSite=Lax",
+            "Strict-Transport-Security": "max-age=15768000",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.oca.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "oca.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0395629741A8E90F440CBD6B71CDDDCE12FD",
+            "notBefore": "Apr 27 04:15:01 2024 GMT",
+            "notAfter": "Jul 26 04:15:00 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "oca.org"
+                ],
+                [
+                    "DNS",
+                    "www.oca.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:15:00"
+    },
+    "https://occupystreams.org": {
+        "Time": 10.46,
+        "URL": "https://occupystreams.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "84.17.46.53"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "84.17.46.53",
+        "PING Status": "OK",
+        "PING IP": "84.17.46.53",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 48413,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:16:04 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Server": "BunnyCDN-AMS1-879",
+            "CDN-PullZone": "1294385",
+            "CDN-Uid": "b18b7cd2-3e2c-4670-83f5-9684ce57804d",
+            "CDN-RequestCountryCode": "CZ",
+            "Cache-Control": "max-age=3600",
+            "Expires": "Mon, 29 Apr 2024 10:27:16 GMT",
+            "X-Powered-By": "PHP/7.4.32",
+            "Link": "<https://occupystreams.org/wp-json/>; rel=\"https://api.w.org/\"",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "CDN-ProxyVer": "1.04",
+            "CDN-RequestPullSuccess": "True",
+            "CDN-RequestPullCode": "200",
+            "CDN-CachedAt": "04/29/2024 09:33:31",
+            "CDN-EdgeStorageId": "879",
+            "CDN-Status": "200",
+            "CDN-RequestId": "73f7969b04f242daeea97f76b1e2925f",
+            "CDN-Cache": "HIT",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "occupystreams.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "occupystreams.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04CE2E4F33182A34B3EC3F634BFC41B1CFC9",
+            "notBefore": "Apr 23 07:10:09 2024 GMT",
+            "notAfter": "Jul 22 07:10:08 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "occupystreams.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:16:14"
+    },
+    "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage": {
+        "Time": 5.1,
+        "URL": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.200.189.225"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.200.189.225",
+        "PING Status": "OK",
+        "PING IP": "23.200.189.225",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 201253,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Content-Type": "text/html",
+            "ETag": "\"85de642e1467807f64f7e10807df3869:1711562737.176211\"",
+            "Last-Modified": "Tue, 26 Mar 2024 18:16:43 GMT",
+            "Server": "AkamaiNetStorage",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Date": "Mon, 29 Apr 2024 10:17:05 GMT",
+            "Content-Length": "12623",
+            "Connection": "keep-alive"
+        },
+        "HTML Content": "www.microsoft.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "WA"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Redmond"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.microsoft.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Microsoft Azure RSA TLS Issuing CA 07"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "330003E2CD1066AD8DB81C060800000003E2CD",
+            "notBefore": "Sep 14 17:24:20 2023 GMT",
+            "notAfter": "Sep  8 17:24:20 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "wwwqa.microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "www.microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "staticview.microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "i.s-microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "c.s-microsoft.com"
+                ],
+                [
+                    "DNS",
+                    "privacy.microsoft.com"
+                ]
+            ],
+            "OCSP": [
+                "http://oneocsp.microsoft.com/ocsp"
+            ],
+            "caIssuers": [
+                "http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2007%20-%20xsign.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://www.microsoft.com/pkiops/crl/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2007.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:17:10"
+    },
+    "https://www.wsj.com": {
+        "Time": 4.48,
+        "URL": "https://www.wsj.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "65.9.95.43",
+            "65.9.95.57",
+            "65.9.95.63",
+            "65.9.95.100"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "65.9.95.100",
+        "PING Status": "OK",
+        "PING IP": "65.9.95.100",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 401,
+        "Content Length": 577,
+        "Headers": {
+            "Content-Type": "text/html;charset=utf-8",
+            "Content-Length": "577",
+            "Connection": "keep-alive",
+            "Server": "CloudFront",
+            "Date": "Mon, 29 Apr 2024 10:17:47 GMT",
+            "x-datadome": "protected",
+            "accept-ch": "Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory",
+            "charset": "utf-8",
+            "cache-control": "max-age=0, private, no-cache, no-store, must-revalidate",
+            "pragma": "no-cache",
+            "access-control-allow-credentials": "true",
+            "access-control-expose-headers": "x-dd-b, x-set-cookie",
+            "access-control-allow-origin": "*",
+            "x-datadome-cid": "AHrlqAAAAAMAWAjjkmv17ZEAk_sNtA==",
+            "x-dd-b": "1",
+            "set-cookie": "datadome=A3V6kYuXCcWbWAxvpee4u9C~ld9isdUFB9tqq30O4v1JnCPq2~wQfK59ug1oBdAz8DErPf2zhmv4xMKuCHv5APY2jPA7mnl8w5UK39_sLCyBmNK2O3mvZPHZX2ZB4LOt; Max-Age=31536000; Domain=.wsj.com; Path=/; Secure; SameSite=Lax",
+            "X-Cache": "LambdaGeneratedResponse from cloudfront",
+            "Via": "1.1 3da92f19744e3229b09a019ec66be172.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "PRG50-C1",
+            "X-Amz-Cf-Id": "TDk0yfdEMLje70aU2ge1XCh-_Mn6nIMClTHfCtd3_IKmCfEuMIgSXA=="
+        },
+        "HTML Content": "www.wsj.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.wsj.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M01"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "046874F2A4DF20301D3CA702ECA65415",
+            "notBefore": "Sep  3 00:00:00 2023 GMT",
+            "notAfter": "Oct  1 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.wsj.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m01.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m01.amazontrust.com/r2m01.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m01.amazontrust.com/r2m01.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:17:52"
+    },
+    "http://onlybingo.com": {
+        "Time": 19.03,
+        "URL": "http://onlybingo.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "169.62.32.252"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "169.62.32.252",
+        "PING Status": "OK",
+        "PING IP": "169.62.32.252",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 503,
+        "Content Length": 42,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:18:28 GMT",
+            "Server": "Apache",
+            "Content-Length": "42",
+            "Connection": "close",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "onlybingo.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:18:47"
+    },
+    "https://ooni.torproject.org": {
+        "Time": 9.0,
+        "URL": "https://ooni.torproject.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.198.14.52"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.198.14.52",
+        "PING Status": "OK",
+        "PING IP": "104.198.14.52",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://ooni.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "75.2.60.5"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 11005,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Age": "67805",
+            "Cache-Control": "public,max-age=0,must-revalidate",
+            "Cache-Status": "\"Netlify Edge\"; hit",
+            "Content-Encoding": "gzip",
+            "Content-Length": "3328",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Date": "Mon, 29 Apr 2024 10:19:23 GMT",
+            "Etag": "\"f7654f0692727c1512194b3ee1724958-ssl-df\"",
+            "Permissions-Policy": "interest-cohort=()",
+            "Server": "Netlify",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "Accept-Encoding",
+            "X-Nf-Request-Id": "01HWMNVJFV7E67M99MN7NG0T9G"
+        },
+        "HTML Content": "ooni.torproject.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "labs.ooni.io"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0356A6D1A588B8952416FCEB0C990D23E2CD",
+            "notBefore": "Mar  8 03:20:31 2024 GMT",
+            "notAfter": "Jun  6 03:20:30 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "labs.ooni.io"
+                ],
+                [
+                    "DNS",
+                    "msg.ooni.io"
+                ],
+                [
+                    "DNS",
+                    "ooni.io"
+                ],
+                [
+                    "DNS",
+                    "ooni.org"
+                ],
+                [
+                    "DNS",
+                    "ooni.torproject.org"
+                ],
+                [
+                    "DNS",
+                    "www.ooni.io"
+                ],
+                [
+                    "DNS",
+                    "www.ooni.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:19:30"
+    }
+}

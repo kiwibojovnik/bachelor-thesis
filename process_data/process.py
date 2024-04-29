@@ -5,11 +5,11 @@ import re
 from process_data import compare, define_censorship, geolocation
 
 
-def match_filename(CZ, BY):
+def match_filename(filename1, filename2):
     pattern = r"results_([a-zA-Z]+_\d+)_.*\.json"
 
-    match_pattern1 = re.match(pattern, CZ)
-    match_pattern2 = re.match(pattern, BY)
+    match_pattern1 = re.match(pattern, filename1)
+    match_pattern2 = re.match(pattern, filename2)
 
     if match_pattern1 and match_pattern2:
         country_identifier1 = match_pattern1.group(1)
@@ -26,47 +26,55 @@ def match_filename(CZ, BY):
     return False
 
 
-# Define a function to process the files in the given folders - vždycky dostanu dva fily
-# se stejnymi strankami
 def process_two_files(folder1, folder2):
     diffs = {}
+    different_keys_count_total = 0
+    same_keys_count_total = 0
+    fail_address_records_total = 0
 
-    for CZ in os.listdir(folder1):
-        for BY in os.listdir(folder2):
-            if match_filename(CZ, BY):
+    for file1 in os.listdir(folder1):
+        for file2 in os.listdir(folder2):
+            if match_filename(file1, file2):
                 # Load JSON data from both files
-                with open(os.path.join(folder1, CZ), 'r', encoding='utf-8', errors='replace') as f1, \
-                        open(os.path.join(folder2, BY), 'r', encoding='utf-8', errors='replace') as f2:
+                with open(os.path.join(folder1, file1), 'r', encoding='utf-8', errors='replace') as f1, \
+                        open(os.path.join(folder2, file2), 'r', encoding='utf-8', errors='replace') as f2:
                     json_data1 = json.load(f1)
                     json_data2 = json.load(f2)
 
+                    fail_address_records = compare.count_keys_with_no_results(json_data1, json_data2)
+
                     # Find differences
-                    file_diffs = compare.compare_files(json_data1, json_data2)
+                    diffs, different_keys_count, same_keys_count = compare.compare_files(json_data1, json_data2)
 
-                    # Add differences to diffs dictionary
-                    diffs[CZ] = file_diffs
+                # Add differences to diffs dictionary
+                diffs[file1] = diffs
+                different_keys_count_total += different_keys_count
+                same_keys_count_total += same_keys_count
+                fail_address_records_total += fail_address_records
 
-    return diffs
+    return diffs, different_keys_count_total, same_keys_count_total, fail_address_records_total
 
 
 def process(folder1, folder2):
-    # To seznamu dostanu všechny rozdilny testy
-    print("Finding differences in each tests.")
-    diffs = process_two_files(folder1, folder2)
-    print(diffs)
+    # Ze seznamu dostanu všechny rozdilny testy
+    print("Finding differences in each test.")
+    diffs, different_keys_count_total, same_keys_count_total, fail_address_records_total = process_two_files(folder1, folder2)
 
-    print("Definition of censorship type.")
-    # Definovat typ cenzury na zakladě failů testů - přidám tam označení
-    diffs = define_censorship.add_censorship_type_to_differences(diffs)
+    print("\nDefinition of censorship type.")
+    # Definovat typ cenzury na základě selhání testů - přidám tam označení
+    differences = define_censorship.add_censorship_type_to_differences(diffs)
 
-    print("Adding geolocation informations to traceroute informations.")
-    # Get gps location na konkretni ipiny v traceroutu, asi jen na ty bělorusky ...
-    diffs = geolocation.add_geolocation(diffs)
+    print("Adding geolocation information to traceroute data.")
+    # Get GPS location for specific IP addresses in traceroute data, possibly only for those from Belarus
+    differences_to_save = geolocation.add_geolocation(differences)
 
-    print("Printing statistics about censorship")
+    print("Printing statistics about censorship: ")
 
+    print("The number of different tests for website addresses: ", different_keys_count_total)
+    print("The number of identical results for addresses: ", same_keys_count_total)
+    print("The number of failed addresses (not working in CZ): ", fail_address_records_total)
 
     print("Saving results of each test with additional information to file.")
-    # Ukládáme rozdíly do souboru
-    with open('try.json', 'w') as diff_file:
-        json.dump(diffs, diff_file, ensure_ascii=False, indent=4)
+    # Save differences to a file
+    with open('try2.json', 'w') as diff_file:
+        json.dump(differences_to_save, diff_file, ensure_ascii=False, indent=4)

@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Acquisition P2P (for Mac OS X)</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <style type="text/css">
+    
+        body {
+            background: black;
+            font-family: lucida grande, trebuchet, verdana;
+            font-size: 13px;
+            min-width: 600px;
+            margin: 0px;
+            color: #7c7c7c;
+        }
+        
+        td {
+            font-size: 12px;
+        }
+        
+        .Feature {
+            color: #555;
+        }
+        
+        .Feature B {
+            line-height: 22px;
+            white-space: nowrap;
+        }
+        
+        .Main b {
+            font-size: 14px;
+            color: white;
+            font-weight: normal;
+        }
+        
+        .InlineImage {
+             padding-left: 3px; padding-right: 3px;
+        }
+    
+        .DownloadButton {
+            display: block;
+            width: 279px;
+            height: 74px;
+            background: url(DownloadBG.png);
+            text-decoration: none;
+            text-shadow: 0px -1px 2px black;
+            color: white;
+        }
+        
+        .DownloadButton:hover {
+            background: url(DownloadBG.png) 0px -74px;
+        }
+        
+        .Hidden {
+            display: none;
+        }
+
+        .Hidden0 {
+            opacity: 0;
+        }
+
+        .Links A, .Download A {
+            padding: 2px;
+            text-decoration: none;
+        }
+        .Links A:hover, .Download A:hover {
+            color: black;
+            background-color: white;
+        }
+        .Links A:active, .Download A:active {
+            background-color: lightblue;
+        }
+        
+        .Links {
+            color: #222;
+            font-size: 10px;
+        }
+        .Links A {
+            color: #444;
+            font-size: 10px;
+        }
+
+        .VersionNumber {
+            font-size: 14px;
+            float: left;
+            color: white;
+            text-align: right;
+        }
+        
+        .BuildNumber {
+            color: #444;
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+        .VersionNotes {
+            font-size: 11px;
+            color: black;
+            padding-left: 105px;
+            padding-bottom: 10px;
+            list-style-type: circle;
+            
+            text-align: left;
+            color: white;
+            text-transform: lowercase;
+        }
+        
+	    .MainPrice {
+	        white-space: nowrap;
+	        font-size: 14px;
+	        text-align: right;
+	        font-weight: bold;
+	        color: #005E8C;
+	        padding-left: 34px;
+	    }
+
+	    .OptionPrice {
+	        white-space: nowrap;
+	        font-size: 14px;
+	        font-weight: bold;
+	        text-align: right;
+	        color: #005E8C;
+	        padding-left: 34px;
+	    }
+
+	    .Description {
+	        padding-left: 10px;
+	        font-size: 14px;
+	        font-weight: bold;
+	        padding-right: 34px;
+	        padding-left: 25px;
+	        color: black;
+	    }
+
+	    .Secondary {
+	        font-size: 11px;
+	        color: gray;
+	        font-weight: normal;
+	    }
+
+        .SmallLink {
+            color: #444;
+            text-decoration: none;
+            font-size: 10px;
+            padding-top: 1px;
+            padding-left: 16px;
+        }
+        
+        .SmallLink:hover {
+            color: #999;
+            text-decoration: underline;
+        }
+
+    </style>
+    <script src="mootools-release-1.11.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var currentIndex = 1;
+        
+        function onLoad() {
+            setTimeout(function() { progression() }, 1000);
+        }
+        
+        function progression() {
+            var currentImage = $('Icon' + currentIndex);
+
+            currentIndex = currentIndex + 1;
+            if (currentIndex > 4) currentIndex = 1;
+            var nextImage = $('Icon' + currentIndex);
+
+            currentImage.effect('opacity', { onComplete: function() {
+                currentImage.className = "Hidden";
+                nextImage.className = "Hidden0";
+                nextImage.effect('opacity').start(0,1);
+
+                setTimeout(function() { progression() }, 3000);
+            }}
+            ).start(1,0);
+        }
+        
+    </script>
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/newsfirex/blog"/>
+</head>
+<body onload="onLoad();"><center>
+
+<div style="background: url(BG1000.png) repeat-x;">
+    <div style="background: url(BGStars17.png) repeat-x;">
+        <div style="background: url(BGWhite24.png) repeat-x 0px 270px;">
+            <div style="background: url(A.png) no-repeat 15% 132px; max-width: 940px;">
+                <div style="background: url(B.png) no-repeat 96% 155px;">
+
+    <!-- begin header -->
+    
+    <table cellspacing="0" cellpadding="0"  style="padding-top: 5px;"><tr>
+        <td valign="top" align="center"><a href="/"><img src="Icon153.png" width="153" height="153" border="0" style="padding-right: 10px;"></a></td>
+        <td style="padding-top: 66px;" align="center" valign="top"><a href="/"><img src="Acquisition2.png" width="334" height="39" border="0"></a></td>
+
+        <td style="white-space: nowrap; padding-top: 65px; padding-left: 24px; padding-right: 5px;" align="right" valign="top">
+            <img src="1.png" width="38" height="38" id="Icon1">
+            <img src="2.png" width="38" height="38" id="Icon2" class="Hidden">
+            <img src="3.png" width="38" height="38" id="Icon3" class="Hidden">
+            <img src="4.png" width="38" height="38" id="Icon4" class="Hidden">
+        </td>
+
+        <td valign="top" style="padding-top: 46px; white-space: nowrap;" align="right">
+            <a href="https://nextdns.io/?from=2ww74qz8" class="DownloadButton"><center style="padding-left: 21px; padding-top: 28px;"><span style="font-size: 14px; font-weight: bold;">DOWNLOAD</span></center></a>
+
+			<!--
+            <div style="padding-right: 22px;">
+                <a href="releasenotes.php" class="SmallLink" style="background: url(New.png) no-repeat;">Release Notes</a>
+                <a href="purchase.php" class="SmallLink" style="background: url(Check.png) no-repeat; margin-left: 3px;">Purchase Acquisition Pro!</a>
+            </div>
+			-->
+    </td>
+    </tr></table>
+    
+    <!-- / header -->
+    <!-- begin main content -->
+    
+    <div class="Main" style="padding-top: 330px;"><center>
+
+
+	Acquisition is no longer available for download.
+
+
+
+
+
+    </center></div>
+    
+    <!-- / main content -->
+    <!-- begin footer -->
+    
+    <center>
+        <div class="Links" style="margin-top: 40px; margin-bottom: 10px;">
+            <a href="http://www.amazon.com/exec/obidos/ASIN/B000FK88JK/exoscience">Mac OS X Leopard Required</a> &mdash;
+            <a href="code.php">Activation Code Redelivery</a>  &mdash;
+            <a href="faq.php">FAQ</a>
+            <div style="color: #252525; font-size: 10px; margin-top: 5px;">All sales are final.</div>
+        </div>
+    </center>
+
+</div></div></div></div></div>
+</center></body></html>

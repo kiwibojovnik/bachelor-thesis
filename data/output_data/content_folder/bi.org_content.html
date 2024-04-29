@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="utf-8">
+
+<title>Bi.org</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5c3e96">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="#ffffff">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="csrf-token" content="m0d3jA3o5JMY1ABScsNUDNn6XAnL6jELgmYRRbmP">
+<meta name="g-api-key" content="AIzaSyAU5OKTPdG5zh-5xSnIxaKz7tKkWjDy5jM">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+<link rel="stylesheet" href="/css/app.css">
+
+
+<link rel="stylesheet" href="/flickity/flickity-fade.css">
+<link rel="stylesheet" href="/flickity/flickity.min.css">
+<script src="/flickity/flickity.pkgd.min.js"></script>
+<script src="/flickity/flickity-fade.js"></script>
+
+
+<meta property="fb:app_id" content="151905268989828" />
+
+
+    <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@BiDotOrg" />
+  <meta name="twitter:creator" content="@BiDotOrg" />
+
+  <meta property="og:title" content="Bi.org">
+  <meta property="og:site_name" content="Bi.org">
+  <meta property="og:url" content="http://bi.org/en/">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="page">
+      <meta property="og:image" content="/images/logo.png">
+    <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="600" />
+
+<script type="text/javascript">
+  //<![CDATA[
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40937579-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'https://') + 'stats.g.doubleclick.net/dc.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+  //]]>
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XCXZPSZBT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5XCXZPSZBT');
+</script>
+
+
+<style>
+  .flickity-page-dots {
+    bottom: 10px;
+  }
+
+  .carousel-cell {
+    width: 100%;
+  }
+
+
+
+  /* position dots in carousel */
+  .flickity-page-dots {
+    bottom: 30px;
+  }
+
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  }
+
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: white;
+  }
+</style>
+
+
+</head>
+
+<body class="bg-white relative">
+
+    <div class="container mx-auto overflow-hidden">
+        <!-- <div class="ssk-sticky ssk-left ssk-center ssk-lg">
+    <a href="" class="ssk ssk-facebook" data-ssk-ready="true"></a>
+    <a href="" class="ssk ssk-twitter" data-ssk-ready="true"></a>
+    <a href="" class="ssk ssk-tumblr" data-ssk-ready="true"></a>
+    <a href="" class="ssk ssk-email" data-ssk-ready="true"></a>
+</div>
+ -->
+        <!-- This uses vue -->
+        <div id="app" class="overflow-hidden relative w-screen">
+            
+<header>
+    <div class="fixed container w-full bg-white z-65001">
+        <div class=" mx-auto lg:px-8 h-20">
+
+            <nav id="header-nav">
+
+                <div class="lg:flex w-full justify-between mx-auto md:px-8 lg:px-0">
+
+                    <div class="flex h-20 items-center justify-between lg:block px-4 md:px-0 logo-area">
+
+                        <a class="w-16 lg:mt-4 flex-no-shrink inline-block biorg-logo" id="biorg-logo" href="/">
+                            <img src="/images/logo.png" alt="Bi.org" height=48" width="64">
+                        </a>
+
+                        <div class="flex justify-end items-center w-full">
+                            <button class="lg:hidden px-2 pt-2 pb-1 -mt-1 text-2xl" id="nav-slideout-toggle">
+                                <span class="sr-only">Open menu</span>
+                                <i class="fas fa-bars hover:text-indigo-dark text-black" id="toggle-open"></i>
+                                <i class="fas fa-times icon-hide text-black" id="toggle-close"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="w-full">
+
+                        <div class="lg:flex lg:items-start w-full justify-between hidden md:visible">
+                            <div class="lg:flex items-center w-full ">
+                                <div id="main-nav" class="mt-4 mx-auto lg:justify-center">
+                                    <nav role="navigation">
+    <ul class="navbar">
+        <li class="navbar-item" id="nav-articles">
+            <a class="navbar-link" href="/articles">
+                Articles            </a>
+        </li>
+        <li class="navbar-item" id="nav-articles">
+            <a class="navbar-link" href="/bi-media">
+                Media            </a>
+        </li>
+        <li aria-haspopup="true" class="navbar-item" id="nav-people">
+            <a class="navbar-link has-dropdown" href="#">
+                People            </a>
+            <div class="ml-4 lg:ml-0 lg:absolute lg:left-0 lg:w-full lg:z-50">
+                <nav aria-label="submenu" class="navbar-dropdown" id="dropdown-people">
+    <ul class="container navbar-dropdown-container">
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" href="https://bi.org/famous-bi-people">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/c13ecb7e-625b-44c8-9b3a-adfaa8b456d1/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" href="https://bi.org/famous-bi-people">
+                    Famous Bi People</a>
+                </a>
+            </h2>
+        </li>
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" href="https://bi.org/bi-characters">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/1280a863-e3b7-4af1-8edf-2ba349dce7a8/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" href="https://bi.org/bi-characters">
+                    Bi Characters in Fiction                </a>
+            </h2>
+        </li>
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" href="https://bi.org/what-bi-looks-like">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/98e25866-a356-46b7-836b-9c192017fc91/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" href="https://bi.org/what-bi-looks-like">
+                    What Bi Looks Like                </a>
+            </h2>
+        </li>
+    </ul>
+</nav>            </div>
+        </li>
+        <li aria-haspopup="true" class="navbar-item" id="nav-resources">
+            <a class="navbar-link has-dropdown" href="#">
+                Resources            </a>
+            <div class="ml-4 lg:ml-0 lg:absolute lg:left-0 lg:w-full lg:z-50">
+                <nav aria-label="submenu" class="navbar-dropdown" id="dropdown-resources">
+    <ul class="container navbar-dropdown-container">
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" href="https://bi.org/questions">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/028f0591-65c5-4d17-8a2d-a6d099b75958/-/crop/1344x1009/0,37/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" href="https://bi.org/questions">
+                    Q&amp;A</a>
+                </a>
+            </h2>
+        </li>
+
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" href="https://bi.org/en/101">
+                 <img class="navbar-dropdown-img" src="https://ucarecdn.com/4ed66cf7-34c3-492a-babd-9c4ce24b1547/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" href="https://bi.org/en/101">
+                    Bi 101                </a>
+            </h2>
+        </li>
+
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" href="https://bi.org/coming-out">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/d5f5f688-f0b0-44d5-9767-359fa39cbb9a/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" href="https://bi.org/coming-out">
+                    Coming Out                </a>
+            </h2>
+        </li>
+
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" href="https://bi.org/klein-grid">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/40606b41-75d2-4d32-aea1-eb5cacfc5bd4/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" href="https://bi.org/klein-grid">
+                    Klein Grid                </a>
+            </h2>
+        </li>
+        
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" href="https://bi.org/glossary">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/674c06bf-1d4e-4be4-8014-22a80a824d18/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                 <a class="navbar-dropdown-link" href="https://bi.org/glossary">
+                    Glossary                </a>
+            </h2>
+        </li>
+    </ul>
+</nav>            </div>
+        </li>
+        <li aria-haspopup="true" class="navbar-item" id="nav-get-involved">
+            <a class="navbar-link has-dropdown" href="#">
+                Get Involved            </a>
+            <div class="ml-4 lg:ml-0 lg:absolute lg:left-0 lg:w-full lg:z-50">
+                <nav aria-label="submenu" class="navbar-dropdown" id="dropdown-get-involved">
+    <ul class="container navbar-dropdown-container">
+        <li class="navbar-dropdown-card">
+                    <a class="navbar-dropdown-link-img" href="https://donorbox.org/bi-org" target="_blank">
+                        <img class="navbar-dropdown-img" src="https://ucarecdn.com/ec5f3690-c70f-43a9-a87c-3c0db5e3ebb8/-/crop/481x360/171,0/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                                <a class="navbar-dropdown-link" href="https://donorbox.org/bi-org" target="_blank">
+                    Donate                </a>
+                            </h2>
+        </li>
+       
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" target="_blank" href="http://www.ambi.org/">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/057e189e-21c8-4862-ba8f-42ac6960849d/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" target="_blank" href="http://www.ambi.org/">
+                    Join amBi                </a>
+            </h2>
+        </li>
+        <li class="navbar-dropdown-card">
+            <a class="navbar-dropdown-link-img" target="_blank" href="https://bi.org/subscribe-mailing-list">
+                <img class="navbar-dropdown-img" src="https://ucarecdn.com/cc991946-25fe-4086-a4a8-fd5248347b9d/-/resize/320x240/-/progressive/yes/-/sharp/5/-/format/auto/" alt="">
+
+            </a>
+            <h2 class="navbar-dropdown-headline">
+                <a class="navbar-dropdown-link" target="_blank" href="https://bi.org/subscribe-mailing-list">
+                    Join Our Mailing List                </a>
+            </h2>
+        </li>
+    </ul>
+</nav>            </div>
+        </li>
+    </ul>
+</nav>                                </div>
+                            </div>
+                            <div class="">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="hidden lg:block">
+                    <div class="inline-block relative  ">
+        <language-select :selected="'en'"
+                     :datatype='{"en":{"label":"English","route":"http:\/\/bi.org\/en"},"es":{"label":"Espa\u00f1ol","route":"http:\/\/bi.org\/es"}}'
+                     :filterkind="'Language'"
+                     class=""
+    ></language-select>
+</div></div>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+    
+    <div class="bg-white fixed h-screen nav-slideout overflow-y-scroll p-4 w-full lg:hidden" id="nav-slideout-toggle-area">
+    <div>
+        <div class="pt-12">
+            <div class="mt-8">
+                <div class="inline-block relative  ">
+        <language-select :selected="'en'"
+                     :datatype='{"en":{"label":"English","route":"http:\/\/bi.org\/en"},"es":{"label":"Espa\u00f1ol","route":"http:\/\/bi.org\/es"}}'
+                     :filterkind="'Language'"
+                     class=""
+    ></language-select>
+</div>            </div>
+            <nav class="slideout-nav mt-4">
+    <h2>
+        Articles    </h2>
+    <ul>
+        <li>
+            <a href="/articles">
+                Articles            </a>
+        </li>
+        <li>
+            <a href="/bi-media">
+                Media            </a>
+        </li>
+    </ul>
+    <h2>
+        People    </h2>
+
+    <ul>
+        <li>
+            <a href="https://bi.org/en/famous-bi-people">
+                Famous Bi People            </a>
+        </li>
+        <li>
+            <a href="https://bi.org/en/bi-characters">
+                Bi Characters in Fiction            </a>
+        </li>
+        <li>
+            <a href="https://bi.org/en/what-bi-looks-like">
+                What Bi Looks Like            </a>
+        </li>
+    </ul>
+    <h2>
+        Resources    </h2>
+    <ul>
+        <li>
+            <a href="https://bi.org/en/questions">
+                Q&amp;A            </a>
+        </li>
+        <li>
+            <a href="https://bi.org/en/101">
+                Bi 101            </a>
+        </li>
+        <li>
+            <a href="https://bi.org/en/coming-out">
+                Coming Out            </a>
+        </li>
+        <li>
+            <a href="https://bi.org/en/klein-grid">
+                Klein Grid            </a>
+        </li>
+        <li>
+            <a href="https://bi.org/en/glossary">
+                Glossary            </a>
+        </li>
+    </ul>
+    <h2>
+        Get Involved    </h2>
+    <ul>
+        <li>
+                        <a href="https://donorbox.org/bi-org" target="_blank">
+                Donate            </a>
+                    </li>
+        
+        <li>
+            <a target="_blank" href="http://www.ambi.org/">
+                Join amBi            </a>
+        </li>
+
+        <li>
+            <a href="https://bi.org/subscribe-mailing-list">
+                Join Our Mailing List            </a>
+        </li>
+
+
+    </ul>
+</nav>        </div>
+    </div>
+</div>
+    <!-- apply on all pages but home -->
+        <div class="h-20" id="navbar-end"></div>
+    
+</header>
+<div class="bg-hero container xl:rounded-t-lg overflow-hidden" style="max-height: 50vh !important; overflow: hidden;" data-flickity='{
+    "cellAlign": "left",
+    "contain": true,
+    "prevNextButtons": false,
+    "wrapAround" : true }'>
+
+        <div class="carousel-cell bg-center bg-cover min-h-screen-50" style="background-image: url(https://ucarecdn.com/ad0081fd-3ae6-46d0-a196-705e395fd4df/-/progressive/yes/-/sharp/5/-/format/auto/), url(https://ucarecdn.com/c9637fa8-a469-45b2-83b0-dbb5bbca8c18/-/crop/3996x1998/0,2093/-/resize/1200x600/-/format/auto/-/quality/lighter/-/max_icc_size/10/)">
+    <img class="sr-only" src="https://ucarecdn.com/c9637fa8-a469-45b2-83b0-dbb5bbca8c18/-/crop/3996x1998/0,2093/-/resize/1200x600/-/resize/40x20/-/format/auto/-/quality/lighter/-/max_icc_size/10/" alt="" />
+        <div class="flex items-center text-white h-screen-50 justify-center text-center ">
+            <div class="px-8 flex items-center">
+                <div class="w-full mx-auto  ">
+                    <h1 class="font-black text-4xl md:text-5xl">
+                        Bi 101                    </h1>
+                    <p class="leading-normal  text-2xl">
+                        bisexuality and beyond                    </p>
+                                        <a class="btn text-sm font-bold mt-4" href="/101">
+                        Learn more
+                    </a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="carousel-cell bg-center bg-cover min-h-screen-50" style="background-image: url(https://ucarecdn.com/655e0d68-23b5-4d2a-a31f-a165a6f72813/-/progressive/yes/-/sharp/5/-/format/auto/), url(https://ucarecdn.com/6e31d3d4-9122-433b-92a9-fef13f4d3e3c/-/crop/1524x763/163,288/-/resize/1200x600/-/format/auto/-/quality/lighter/-/max_icc_size/10/)">
+    <img class="sr-only" src="https://ucarecdn.com/6e31d3d4-9122-433b-92a9-fef13f4d3e3c/-/crop/1524x763/163,288/-/resize/1200x600/-/resize/40x20/-/format/auto/-/quality/lighter/-/max_icc_size/10/" alt="" />
+        <div class="flex items-center text-white h-screen-50 justify-center text-center ">
+            <div class="px-8 flex items-center">
+                <div class="w-full mx-auto  ">
+                    <h1 class="font-black text-4xl md:text-5xl">
+                        Articles                    </h1>
+                    <p class="leading-normal  text-2xl">
+                        read more from bi.org                    </p>
+                                        <a class="btn text-sm font-bold mt-4" href="/articles">
+                        View articles
+                    </a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="carousel-cell bg-center bg-cover min-h-screen-50" style="background-image: url(https://ucarecdn.com/ad0081fd-3ae6-46d0-a196-705e395fd4df/-/progressive/yes/-/sharp/5/-/format/auto/), url(https://ucarecdn.com/97603692-8d07-4cd9-86e5-da4de553342a/-/crop/1370x685/176,0/-/resize/1200x600/-/format/auto/-/quality/lighter/-/max_icc_size/10/)">
+    <img class="sr-only" src="https://ucarecdn.com/97603692-8d07-4cd9-86e5-da4de553342a/-/crop/1370x685/176,0/-/resize/1200x600/-/resize/40x20/-/format/auto/-/quality/lighter/-/max_icc_size/10/" alt="" />
+        <div class="flex items-center text-white h-screen-50 justify-center text-center ">
+            <div class="px-8 flex items-center">
+                <div class="w-full mx-auto  ">
+                    <h1 class="font-black text-4xl md:text-5xl">
+                        Famous Bis                    </h1>
+                    <p class="leading-normal  text-2xl">
+                        learn about famous bi people.                    </p>
+                                        <a class="btn text-sm font-bold mt-4" href="/famous-bi-people">
+                        View the list
+                    </a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="carousel-cell bg-center bg-cover min-h-screen-50" style="background-image: url(https://ucarecdn.com/ecb27d17-a61a-4f75-9935-7ea5d437b7f5/-/progressive/yes/-/sharp/5/-/format/auto/), url(https://ucarecdn.com/3fc0db1d-12e6-4104-ac02-5db6cf04700c/-/crop/1401x701/0,0/-/resize/1200x600/-/format/auto/-/quality/lighter/-/max_icc_size/10/)">
+    <img class="sr-only" src="https://ucarecdn.com/3fc0db1d-12e6-4104-ac02-5db6cf04700c/-/crop/1401x701/0,0/-/resize/1200x600/-/resize/40x20/-/format/auto/-/quality/lighter/-/max_icc_size/10/" alt="" />
+        <div class="flex items-center text-white h-screen-50 justify-center text-center ">
+            <div class="px-8 flex items-center">
+                <div class="w-full mx-auto  ">
+                    <h1 class="font-black text-4xl md:text-5xl">
+                        Bi Characters                    </h1>
+                    <p class="leading-normal  text-2xl">
+                        bi representation in fiction                    </p>
+                                        <a class="btn text-sm font-bold mt-4" href="/bi-characters">
+                        View the list
+                    </a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    </div><div class="container ">
+    
+    <div class="flex flex-wrap mb-3 md:mb-0">
+        <div class="flex w-full items-stretch flex-wrap">
+                            <div class="flex w-full md:w-1/3">
+                    <a class="bg-black  w-full overflow-hidden relative px-4 pt-4 md:pt-0 md:px-0 md:px-0 no-underline text-black hover:text-purple-500" href="/articles/everything-youve-ever-wanted-to-know-about-bisexuality-an-interview-with-lewis-oakley">
+                        <img class="h-auto w-full opacity-60" src="https://ucarecdn.com/32879fcd-4d11-447f-a1a3-69255ff1e790/-/crop/3802x3803/895,0/-/preview/-/scale_crop/600x500/center/-/format/auto/-/quality/lighter/-/max_icc_size/10/'" alt="$article->hero_alt" width="600" height="500">
+
+                        <div class="bg-cover px-8 absolute bottom-0 z-20 flex items-end pb-8 w-full h-full">
+                                                            <h2 class="font-shadow text-2xl text-white font-bold mb-2">
+                                    Everything You’ve Ever Wanted to Know About Bisexuality: an Interview with Lewis Oakley
+                                </h2>
+                                                                                </div>
+                    </a>
+                </div>
+                            <div class="flex w-full md:w-1/3">
+                    <a class="bg-black  w-full overflow-hidden relative px-4 pt-4 md:pt-0 md:px-0 md:px-0 no-underline text-black hover:text-purple-500" href="/articles/ask-a-bi-dad-i-made-a-mess-of-my-marriage-by-coming-out-as-gay-and-cheating-on-my-wife-how-do-i-fix-things">
+                        <img class="h-auto w-full opacity-60" src="https://ucarecdn.com/9b2294d8-29ad-45f8-91bc-d08bfe3e5dbc/-/crop/1091x1090/312,0/-/preview/-/scale_crop/600x500/center/-/format/auto/-/quality/lighter/-/max_icc_size/10/'" alt="$article->hero_alt" width="600" height="500">
+
+                        <div class="bg-cover px-8 absolute bottom-0 z-20 flex items-end pb-8 w-full h-full">
+                                                            <h2 class="font-shadow text-2xl text-white font-bold mb-2">
+                                    Ask A Bi Dad: I made a mess of my marriage by coming out as gay and cheating on my wife. How do I fix things?
+                                </h2>
+                                                                                </div>
+                    </a>
+                </div>
+                            <div class="flex w-full md:w-1/3">
+                    <a class="bg-black  w-full overflow-hidden relative px-4 pt-4 md:pt-0 md:px-0 md:px-0 no-underline text-black hover:text-purple-500" href="/articles/what-a-difference-a-decade-made-new-york-times-cover-story-on-bisexuality">
+                        <img class="h-auto w-full opacity-60" src="https://ucarecdn.com/fd8e5807-7625-4d6e-b24c-f05f40c9ea94/-/crop/1133x1135/617,0/-/preview/-/scale_crop/600x500/center/-/format/auto/-/quality/lighter/-/max_icc_size/10/'" alt="$article->hero_alt" width="600" height="500">
+
+                        <div class="bg-cover px-8 absolute bottom-0 z-20 flex items-end pb-8 w-full h-full">
+                                                            <h2 class="font-shadow text-2xl text-white font-bold mb-2">
+                                    What a Difference a Decade Made: New York Times Cover Story on Bisexuality
+                                </h2>
+                                                                                </div>
+                    </a>
+                </div>
+                    </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Everything else -->
+        <div>
+                    </div>
+
+                <footer class="bg-white mt-8">
+    <div class="container mx-auto overflow-hidden py-8 px-8 text-xl">
+        <div class="flex flex-wrap -mx-2 py-4">
+
+            <div class="mb-8 md:mb-0 px-2 pb-4 lg:pb-0 w-full md:w-1/2 lg:w-1/6">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-3305 355.202 238.488 175.175" height="95">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-2 {
+        fill: #eb234b;
+      }
+
+      .cls-3 {
+        fill: #af2074;
+      }
+
+      .cls-4 {
+        fill: #5c3e96;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_9" data-name="Rectangle 9" width="238.488" height="175.175"/>
+    </clipPath>
+  </defs>
+  <g id="Group_173" data-name="Group 173" transform="translate(-3305 355.202)">
+    <g id="Group_2" data-name="Group 2" class="cls-1">
+      <path id="Path_1" data-name="Path 1" class="cls-2" d="M282.839,108.862A78.219,78.219,0,0,0,212.243-.033c-.472,0-.877-.067-1.349-.067A78.2,78.2,0,0,0,155.2,23.23a78.815,78.815,0,0,1,37.759,28.859,82.141,82.141,0,0,1,8.9,16.654v-2.9h12.609v4.383a22.681,22.681,0,0,1,5.6-4.518,12.991,12.991,0,0,1,5.866-1.281,17.713,17.713,0,0,1,9.372,2.967l-5.192,10.451a10.886,10.886,0,0,0-6.338-2.36c-6.2,0-9.3,4.72-9.3,14.092v25.555h-9.44a78.176,78.176,0,0,1-12,26.634A75.335,75.335,0,0,1,184.6,151.88a86.791,86.791,0,0,0,8.428,2.495,78.65,78.65,0,0,0,17.936,2.09,9.038,9.038,0,0,0,1.349-.067,77.865,77.865,0,0,0,54.346-23.262,35.179,35.179,0,0,1-9.575,1.146,37.2,37.2,0,0,1-12.474-1.821,21.983,21.983,0,0,1-8.5-5.327,21.554,21.554,0,0,1-5.124-8.563h13.755a11.479,11.479,0,0,0,4.787,3.169,21.032,21.032,0,0,0,6.878,1.079,19.031,19.031,0,0,0,8.226-1.551,9.434,9.434,0,0,0,4.383-3.978c.877-1.618,1.281-4.45,1.281-8.428A20.071,20.071,0,0,1,254.991,115a22.958,22.958,0,0,1-17.126-7.147c-4.652-4.787-7.012-10.788-7.012-18.138,0-7.821,2.495-14.092,7.417-18.812a23.076,23.076,0,0,1,24.274-4.855A25.715,25.715,0,0,1,270.3,71.17V65.708h12.609v42.209a4.771,4.771,0,0,0-.068.944" transform="translate(-50.554 0.033)"/>
+    </g>
+    <g id="Group_3" data-name="Group 3" class="cls-1">
+      <path id="Path_2" data-name="Path 2" class="cls-2" d="M299.755,112.8a13.157,13.157,0,0,0-9.844,3.911A13.525,13.525,0,0,0,286,126.555a13.718,13.718,0,0,0,3.978,10.114,13.569,13.569,0,0,0,9.979,3.911,13.161,13.161,0,0,0,9.709-3.843,13.675,13.675,0,0,0,3.843-10.114A13.174,13.174,0,0,0,299.755,112.8" transform="translate(-93.16 -36.743)"/>
+    </g>
+    <g id="Group_4" data-name="Group 4" class="cls-1">
+      <path id="Path_3" data-name="Path 3" class="cls-3" d="M171.488,112.9a13.163,13.163,0,0,0-9.777,3.978,13.983,13.983,0,0,0-3.911,10.249,14.48,14.48,0,0,0,3.843,10.451,14.167,14.167,0,0,0,19.756-.067,15.754,15.754,0,0,0,.067-20.7,13.953,13.953,0,0,0-9.979-3.911" transform="translate(-51.401 -36.775)"/>
+    </g>
+    <g id="Group_5" data-name="Group 5" class="cls-1">
+      <path id="Path_4" data-name="Path 4" class="cls-3" d="M190.78,126.4V80.013a75.966,75.966,0,0,0-8.9-16.654A78.815,78.815,0,0,0,144.121,34.5a78.185,78.185,0,0,0-18.879,78.485,9.118,9.118,0,0,1,1.955-.27,6.874,6.874,0,0,1,4.922,1.955,6.472,6.472,0,0,1,2.023,4.787,6.621,6.621,0,0,1-2.023,4.855,9.69,9.69,0,0,1-1.686,1.214,78.583,78.583,0,0,0,43.018,37.557,80.768,80.768,0,0,0,8.428-10.114,78.174,78.174,0,0,0,12-26.634h-3.1Zm-8.159-11.732a10.977,10.977,0,0,1-.742,1.146,25.413,25.413,0,0,1-8.968,8.361,26.931,26.931,0,0,1-13.485,3.439,25.184,25.184,0,0,1-18.475-7.552,25.715,25.715,0,0,1,.944-37.557,25.616,25.616,0,0,1,17.463-6.675,26.768,26.768,0,0,1,13.418,3.506,24.93,24.93,0,0,1,9.035,8.293c.27.4.472.742.742,1.146a24.829,24.829,0,0,1,3.506,12.879,24.162,24.162,0,0,1-3.439,13.013" transform="translate(-39.609 -11.238)"/>
+    </g>
+    <g id="Group_6" data-name="Group 6" class="cls-1">
+      <path id="Path_5" data-name="Path 5" class="cls-4" d="M42.422,141.661a13.092,13.092,0,0,0,9.777-4.113,14.673,14.673,0,0,0,3.978-10.519,14.194,14.194,0,0,0-3.911-10.384,13.014,13.014,0,0,0-9.844-4.046,13.468,13.468,0,0,0-9.912,3.978c-2.63,2.63-3.911,6.136-3.911,10.451a14.732,14.732,0,0,0,3.911,10.653,13.468,13.468,0,0,0,9.912,3.978" transform="translate(-9.316 -36.678)"/>
+    </g>
+    <g id="Group_7" data-name="Group 7" class="cls-1">
+      <path id="Path_6" data-name="Path 6" class="cls-4" d="M90.891,123.411a6.776,6.776,0,0,1-3.236.809,6.907,6.907,0,0,1-6.945-6.878,6.367,6.367,0,0,1,2.023-4.787,6.2,6.2,0,0,1,3.034-1.686,78.185,78.185,0,0,1,18.879-78.485A78.1,78.1,0,0,0,19.891,54.029h0V80.258A25.026,25.026,0,0,1,27.308,75.2a21.236,21.236,0,0,1,8.5-1.686A22.318,22.318,0,0,1,52.593,80.8c4.585,4.855,6.878,11.125,6.878,18.677,0,7.35-2.36,13.485-7.147,18.407A22.81,22.81,0,0,1,35.4,125.3a21.348,21.348,0,0,1-8.091-1.551,24.155,24.155,0,0,1-7.484-4.99v5.192H7.282V72.908A79.441,79.441,0,0,0,0,106.015,78.194,78.194,0,0,0,133.909,160.9a78.207,78.207,0,0,1-43.018-37.489m-14.025.674H64.19V74.864H76.866ZM75.383,64.75a6.772,6.772,0,0,1-4.922,2.023A6.907,6.907,0,0,1,63.516,59.9a6.367,6.367,0,0,1,2.023-4.787,6.71,6.71,0,0,1,4.922-1.955,6.874,6.874,0,0,1,4.922,1.955A6.472,6.472,0,0,1,77.406,59.9a6.621,6.621,0,0,1-2.023,4.855" transform="translate(0 -9.055)"/>
+    </g>
+  </g>
+</svg>            </div>
+
+            <div class=" mb-8 lg:mb-0 px-2 pb-4 md:pb-0 w-full md:w-1/2 lg:w-2/5">
+                <p class="leading-normal">
+                    <a class="no-underline text-black hover:text-black" href="https://www.americaninstituteofbisexuality.org/" target="_blank">
+                        American Institute of Bisexuality</a>
+                </p>
+                <p class="leading-normal">
+                    <a class="no-underline text-black hover:text-black" href="https://www.tandfonline.com/loi/wjbi20" target="_blank">Journal of Bisexuality</a>
+                </p>
+
+                                <a class="btn btn-secondary inline-block mt-6 mb-8 text-base" href="https://donorbox.org/bi-org" target="_blank">
+                    <i class="mr-3 mt-1 fas fa-heart"></i>Donate <i class="ml-8 fas fa-angle-right"></i>
+                </a>
+                
+            </div>
+
+            <div class="mb-8 md:mb-0 px-2 pb-4 md:pb-0 w-full  md:w-1/2 lg:w-1/6">
+                <div class="flex items-center justify-between mb-6 md:mb-0">
+                    <h2 class="md:mb-6 text-red text-xl font-bold">
+                        Follow Us                    </h2>
+                </div>
+                <ul class="flex list-none">
+                    <li class="mr-6">
+                        <a class="no-underline text-grey-darkest hover:text-black" href="https://www.facebook.com/BiDotOrg/" target="_blank">
+                            <span class="sr-only">Facebook</span>
+                            <i class="fab fa-lg fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="mr-6">
+                        <a class="no-underline text-grey-darkest hover:text-black" href="https://twitter.com/BiDotOrg" target="_blank">
+                            <span class="sr-only">Twitter</span>
+                            <i class="fab fa-lg fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="mr-6">
+                        <a class="no-underline text-grey-darkest hover:text-black" href="https://www.instagram.com/BiDotOrg/" target="_blank">
+                            <span class="sr-only">Instagram</span>
+                            <i class="fab fa-lg fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="px-2 w-full md:w-1/2 lg:w-1/4">
+                <h2 class="block mb-4 text-red text-xl font-bold" for="email-subscribe">
+                    Subscribe                </h2>
+                <!-- Begin MailChimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+                <div id="">
+                    <form action="https://www.us18.list-manage.com/subscribe/post?u=dda7de408ba65f1cbe43370ea&amp;id=4540160bc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+
+                            <div class="">
+                                <label for="mce-EMAIL" class="sr-only">Email Address </label>
+                                <input type="email" placeholder="Enter email" value="" name="EMAIL" class="text-base py-2 w-full required email ml-0 pl-2 border rounded border-grey" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response text-base" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><label aria-hidden="true" class="sr-only" for="mail-chimp-hidden">Hidden Input</label>"<input aria-hidden="true" id="mail-chimp-hidden" type="text" name="b_dda7de408ba65f1cbe43370ea_4540160bc1" tabindex="-1" value=""></div>
+                            <button type="submit" name="subscribe" class="bg-black text-white px-4 rounded ml-0 text-base cursor-pointer mt-2 py-2">
+                                Subscribe                            </button>
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>
+                    (function($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0] = 'EMAIL';
+                        ftypes[0] = 'email';
+                        fnames[1] = 'FNAME';
+                        ftypes[1] = 'text';
+                        fnames[2] = 'LNAME';
+                        ftypes[2] = 'text';
+                        fnames[3] = 'ADDRESS';
+                        ftypes[3] = 'address';
+                        fnames[4] = 'PHONE';
+                        ftypes[4] = 'phone';
+                        fnames[5] = 'BIRTHDAY';
+                        ftypes[5] = 'birthday';
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);
+                </script>
+                <!--End mc_embed_signup-->
+
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-white border-t border-grey-light pt-1 pb-0 text-black text-sm">
+        <div class="container flex flex-col-reverse md:flex-row md:items-center mx-auto px-8">
+            <p class="leading-normal mt-4 md:mr-8 md:mb-4">&copy; 2024 Bi.org</p>
+            <ul class="md:flex md:items-center list-none md:ml-8">
+                <li class="md:mr-6">
+                    <a class="block md:inline no-underline py-2 md:py-0 text-black" href="https://bi.org/about">About</a>
+                </li>
+                <li class="md:mr-6">
+                    <a class="block md:inline no-underline py-2 md:py-0 text-black" href="https://bi.org/glossary">Glossary</a>
+                </li>
+                <li class="md:mr-6">
+                    <a class="block md:inline no-underline py-2 md:py-0 text-black" href="https://bi.org/submissions">Submissions</a>
+                </li>
+                <li class="md:mr-6">
+                    <a class="block md:inline no-underline py-2 md:py-0 text-black" href="https://bi.org/contact">Contact</a>
+                </li>
+                <li class="md:mr-6">
+                    <a target="_blank" class="block md:inline no-underline py-2 md:py-0 text-black" href="https://bi.org/privacy-policy">Privacy Policy</a>
+                </li>
+                <li class="md:mr-6">
+                    <a target="_blank" class="block md:inline no-underline py-2 md:py-0 text-black" href="https://bi.org/terms-of-use">Terms of Use</a>
+                </li>
+                <li class="md:mr-6">
+                    <a target="_blank" class="block md:inline no-underline py-2 md:py-0 text-black" href="https://bi.org/cookie-policy">Cookie Policy</a>
+                </li>
+                <li class="md:mr-6">
+                    <a target="_blank" class="block md:inline no-underline py-2 md:py-0 text-black" href="https://bi.org/disclaimer">Disclaimer</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>    </div>
+
+    <script>
+  window._token = 'm0d3jA3o5JMY1ABScsNUDNn6XAnL6jELgmYRRbmP';
+  window.redactorUpdated = {
+    timestamp: null,
+    subscribers: []
+  };
+</script>
+<script src="/js/app.js"></script>
+
+
+
+
+<script>
+/**
+ * Get the height of the header and offset the anchors by that value
+ * to prevent the header of overlaying the anchor content; without
+ * this, the header will appear above the linked anchor, making it
+ * look glitchy.
+ */
+ if(document.getElementById('header-nav') && document.getElementsByClassName('glossary-anchor')){
+  var headerNavHeight = document.getElementById('header-nav').clientHeight;
+  var anchoredContents = document.getElementsByClassName('glossary-anchor');
+
+  for(i = 0; i < anchoredContents.length; i++) {
+    anchoredContents[i].style.display='block';
+    anchoredContents[i].style.position='relative';
+    anchoredContents[i].style.top='-'+headerNavHeight+'px';
+  }
+}
+ </script>
+ 
+</body>
+
+</html>

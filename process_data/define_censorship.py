@@ -1,11 +1,13 @@
+import json
 
-def determine_censorship_type(differences):
+
+def determine_censorship(differences):
     # Definujeme pravidla pro určení typu cenzury
     censorship_rules = {
-        'Manipulace s DNS': {  #Je pozměněn výsledný content stránky
+        'Manipulace s DNS': {  # Je pozměněn výsledný content stránky
             'DNS IPs': {
                 'CZ': lambda x: x is not None,
-                'BY': None
+                'BY': lambda y: y == "N/A"  # TODO: je to dobře?
             },
             'DNS manipulation - repeated query': {
                 'CZ': lambda x: x == "No manipulation",
@@ -15,23 +17,27 @@ def determine_censorship_type(differences):
                 'CZ': lambda x: x == "No manipulation",
                 'BY': lambda y: y == "Manipulate"
             },
+            'DNS status': {
+                'CZ': lambda x: x == "OK",
+                'BY': lambda y: y == "Fail"
+            },
         },
 
         'Manipulace s TCP': {
-            'TCP Status': {
+            'TCP Remote IP': {
                 'CZ': lambda x: x == "Established",
                 'BY': lambda y: y == "Failed" or y == "N/A"
             }
         },
 
         'Přerušení PING': {
-            'PING Status': {
+            'PING IP': {
                 'CZ': lambda x: x == "OK",
                 'BY': lambda y: y == "Fail" or y == "N/A"
             },
         },
         'Vynucené přesměrování': {
-            'Redirected Status': {
+            'Redirected Location IPs': {
                 'CZ': lambda x: x == "Not redirected",
                 'BY': lambda y: y == "Redirected"
             }
@@ -68,30 +74,42 @@ def determine_censorship_type(differences):
         }
     }
 
-    for rule_name, conditions in censorship_rules.items():
-        for key, value in conditions.items():
-            CZ_condition = value['CZ']
-            BY_condition = value['BY']
-            # Zkontrolujeme, zda je podmínka funkce, a pokud ano, zavoláme ji, jinak porovnáme hodnoty
-            if callable(CZ_condition) and callable(BY_condition):
-                if CZ_condition(differences.get(key, {}).get('CZ')) and BY_condition(
-                        differences.get(key, {}).get('BY')):
-                    return rule_name
-                    # Přidáme přiřazení výsledného typu cenzury, pokud je nalezena odpovídající podmínka
-                    differences['CENSORSHIP TYPE'] = rule_name
-            elif differences.get(key, {}).get('CZ') == CZ_condition and differences.get(key, {}).get(
-                    'BY') == BY_condition:
-                return rule_name
-                # Přidáme přiřazení výsledného typu cenzury, pokud je nalezena odpovídající podmínka
-                differences['CENSORSHIP TYPE'] = rule_name
-    return None
+    keys = list(differences.keys())
 
+    for key in keys:
+        rule_matched = False  # Příznak, zda bylo pravidlo shodné
+        # Pro každé pravidlo zjišťujeme, zda vstupní data splňují podmínky
+        for rule_name, conditions in censorship_rules.items():
+            for condition_name, condition_values in conditions.items():
+                for country, condition in condition_values.items():
+                    value = differences[key].get(condition_name, {}).get(country)
+                    if value is not None and condition(value):
+                        print(f"Pravidlo '{rule_name}' shodné pro {country} s hodnotou: {value}")
+                        rule_matched = True
+                        differences[key]['CENSORSHIP TYPE'] = rule_name
+                        break  # Přerušíme vnitřní cyklus, pokud bylo pravidlo shodné
+                if rule_matched:
+                    break  # Přerušíme vnější cyklus, pokud bylo pravidlo shodné
+            if rule_matched:
+                break  # Přerušíme nejvnější cyklus, pokud bylo pravidlo shodné
 
-def add_censorship_type_to_differences(differences):
-    for url, diff in differences.items():
-        censorship_type = determine_censorship_type(diff)
-        if censorship_type:
-            diff['CENSORSHIP TYPE'] = censorship_type
+        if not rule_matched:
+            print("NECENZURA")
+            differences[key]['CENSORSHIP TYPE'] = 'No censorship found'
 
     return differences
 
+
+def add_censorship_type_to_differences(differences):
+    differences_return = []
+    for url, diff in list(differences.items()):
+        print("URL", url)
+        differences_test = diff
+        differences_return.append(determine_censorship(differences_test))
+        print(differences_return)
+
+        # diff['CENSORSHIP TYPE'] = censorship_type
+
+        # print(diff)
+
+    return differences_return

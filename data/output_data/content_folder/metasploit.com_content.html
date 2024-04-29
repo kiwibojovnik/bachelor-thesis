@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metasploit | Penetration Testing Software, Pen Testing Security | Metasploit</title>
+    <meta name="title" content="Metasploit | Penetration Testing Software, Pen Testing Security | Metasploit" />
+    <meta name="description" content="Find security issues, verify vulnerability mitigations &amp; manage security assessments with Metasploit. Get the world&#x27;s best penetration testing software now." />
+    <meta property="og:title" content="Metasploit | Penetration Testing Software, Pen Testing Security | Metasploit" />
+    <meta property="og:image" content="https://www.metasploit.com/includes/images/metasploit-og.png" />
+    <meta property="og:url" content="https://www.metasploit.com/" />
+    <meta property="og:site_name" content="Metasploit" />
+    <meta property="og:description" content="Find security issues, verify vulnerability mitigations &amp; manage security assessments with Metasploit. Get the world&#x27;s best penetration testing software now." />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.metasploit.com/">
+    <link rel="alternate" href="https://www.metasploit.com/" hreflang="en">
+    <link rel="icon" type="image/x-icon" href="/includes/images/favicon.ico">
+    <link rel="stylesheet" href="/includes/css/foundation.min.css">
+    <link rel="stylesheet" href="/includes/css/all.min.css">
+
+    <script src="https://js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4622520-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-4622520-7', { 'anonymize_ip': true });
+    </script>
+</head>
+
+<body id="home-page" class="">
+        <!--[if lte IE 9]>
+        <div id="ie-conditional"><spa>Your IE browser is out of date - Upgrade to the latest version of IE or Chrome for an optimal website experience.</span> <a href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads" title="Upgrade IE Now" class="button smBtn darkClear" target="_blank">Upgrade IE Now</a>
+        <button class="close-button" type="button" id="closeIEBar">
+            <img src="/includes/img/close_white.svg">
+        </button> 
+        </div>
+        <![endif]-->  
+        <div id="__"></div>
+        <div id="gdprAlert">
+            <p>This site uses cookies for anonymized analytics. For more information or to change your cookie settings, view our <a href="https://www.rapid7.com/privacy-policy/tracking-technologies/" target="_blank">Cookie Policy</a>.</p>
+            <div class="close" id="gdprClose"><img src="/includes/images/close-white.svg"></div>
+        </div>
+        <script>document.getElementById('gdprAlert').style.display = 'none';</script> 
+    
+        <div class="row collapse expanded" data-equalizer="main-sections" data-equalize-on="medium">
+            <div class="columns medium-3 sidebar-wrapper" data-sticky-container data-sticky-on="medium">
+            	<div class="menu-toggle show-for-small-only" data-toggle="offCanvas">
+            		<img src="/includes/images/menu.svg" />
+            	</div>
+            	<div class="off-canvas position-left reveal-for-medium" id="offCanvas" data-off-canvas data-transition="push">
+            		<a class="close-button" data-close>
+            		  	<span aria-hidden="true">&times;</span>
+            		</a>
+            		<div id="sidebar" class="sticky" data-sticky>
+            			<div data-equalizer-watch="main-sections">
+            				<div id="logo">
+            					<a href="/"><img src="/includes/images/metasploit-r7-logo.svg" width="200" /></a>
+            				</div>
+            				<div id="left-nav">
+            					<ul>
+            						<li><a href="/get-started" class="">Get Started</a></li>
+            						<li><a href="/contribute" class="">Contribute</a></li>
+            						<li><a href="https://docs.metasploit.com/" target="_blank" rel="noopener">Metasploit Docs</a></li>
+            						<li><a href="https://metasploit.help.rapid7.com" target="_blank" rel="noopener">Metasploit Pro Docs</a></li>
+            						<li><a href="/help" class="">Help</a></li>
+            					</ul>
+            					<div class="button-wrapper">
+            						<a href="download" class="button mdBtn blue">Download</a>
+            					</div>
+            				</div>
+            				<hr>
+            				<div class="social-icons">
+            					<h3>Join Us On</h3>
+            					<ul>
+            						<li class="slack"><a href="https://join.slack.com/t/metasploit/shared_invite/zt-2g89b3a9u-AJbmaqn03PoH51Qw49rpow" target="_blank">Slack</a></li>
+            						<li class="github"><a href="https://github.com/rapid7/metasploit-framework" target="_blank">GitHub</a></li>
+            						<li class="twitter"><a href="https://twitter.com/metasploit" target="_blank">Twitter</a></li>
+            						<li class="mastodon"><a href="https://infosec.exchange/@metasploit" target="_blank" rel="me">Mastodon</a></li>
+            					</ul>
+            				</div>
+            		    </div>
+            		</div>
+            	</div>
+            </div>
+            <div class="columns medium-9">
+                <div class="off-canvas-content" data-off-canvas-content>
+                    <div id="mainContent" data-equalizer-watch="main-sections">
+                        <div id="bodyContent">
+                        	<div class="row collapse expanded">
+    <div class="medium-10 medium-offset-1 columns">
+        <div class="intro-section section">
+            <div class="row expanded">
+                <div class="medium-12 large-6 columns">
+                    <img src="/includes/images/metasploit-r7-logo.svg" width="200" class="show-for-small-only" />
+                    <img src="/includes/images/metasploit-logo.svg" class="logo show-for-medium" />
+                    <h1>The world’s most used penetration testing framework</h1>
+                    <h2>Knowledge is power, especially when it’s shared. A collaboration between the open source community and Rapid7, Metasploit helps security teams do more than just verify vulnerabilities, manage security assessments, and improve security awareness; it empowers and arms defenders to always stay one step (or two) ahead of the game.</h2>
+                   <div class="stargazers">
+                        <div class="star-button stars">
+                            <div class="left">
+                                <a href="https://github.com/rapid7/metasploit-framework" target="_blank"><span class="star"><img src="/includes/images/star-icon.svg" /></span>Star</a>
+                            </div>
+                            <div class="right">
+                                <a href="https://github.com/rapid7/metasploit-framework/stargazers" target="_blank"><span id="metasploit-framework-star-count">32,814</span></a>
+                            </div>
+                        </div>
+                        <div class="octocat-github-link">
+                            <a href="https://github.com/rapid7/metasploit-framework" target="_blank"><img src="/includes/images/github-icon.svg" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="medium-12 large-6 columns">
+                    <div class="download-box">
+                        <div class="heading">
+                            <h3>Get Metasploit</h3>
+                        </div>
+                        <div class="bottom-boxes">
+                            <div class="row collapse expanded">
+                                <div class="medium-6 columns">
+                                    <div class="box left">
+                                        <h4>Open Source</h4>
+                                        <h3>Metasploit <br>Framework</h3>
+                                        <a href="https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html" class="button mdBtn blue" target="_blank">Download</a>
+                                        <p>Latest<p>
+                                    </div>
+                                </div>
+                                <div class="medium-6 columns">
+                                    <div class="box right">
+                                        <h4>Commercial Support</h4>
+                                        <h3>Metasploit <br>Pro</h3>
+                                        <a href="https://www.rapid7.com/products/metasploit/download/" class="button mdBtn blue" target="_blank">Download</a>
+                                        <p>Latest<p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <p>Get visibility into your network with Rapid7's InsightVM <br /><a href="https://www.rapid7.com/trial/insightvm" target="_blank">30-Day Trial</a></p>
+                        </div>
+                    </div>
+                    <div class="other-products-link">
+                        <a href="https://www.rapid7.com/products/metasploit/download/editions/" class="arrow-link" target="_blank">Compare Features</a> <br>
+                        <a href="/download#projects" class="arrow-link">View More Projects</a>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<div class="row collapse expanded">         
+    <div class="medium-12 columns">
+        <hr class="main">
+    </div>
+</div>
+<div class="row expanded">
+    <div class="medium-10 medium-offset-1 columns">
+        <div class="section">
+            <a href="https://www.rapid7.com/db/modules/" class="arrow-link right hide-for-small-only" target="_blank">View All Modules</a>
+            <h2 class="latest-modules"><a href="https://www.rapid7.com/db/modules/" target="_blank">Latest Metasploit Modules</a></h2>
+            <div class="table-scroll">
+            <table class="section">
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Author</th>
+                </tr>
+                    <tr>
+                        <td><a href="https://github.com/rapid7/metasploit-framework/commit/aea95c052ecfdb7c1f4c4f38589b1b48386db115" target="_blank">Land #18723, Improve Gitlab fingerprinting
+            
+            A webpage exists that can be reached without authentication that
+            contains a hash that can be used to determine the approximate version of
+            gitlab running on the endpoint. This PR adds enhances our current GitLab
+            fingerprinting capabilities to include the aforementioned technique.</a></td>
+                        <td>Apr 24, 2024</td>
+                        <td><a href="https://github.com/jheysel-r7" target="_blank">jheysel-r7</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/rapid7/metasploit-framework/commit/e5cf357f9eb55087ad0f0604671e608552ed2c75" target="_blank">Land #19078, ldap acceptance tests</a></td>
+                        <td>Apr 24, 2024</td>
+                        <td><a href="https://github.com/adfoster-r7" target="_blank">adfoster-r7</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/rapid7/metasploit-framework/commit/718cc0fff40fbcc9b049401fd9d603d7a6454211" target="_blank">Land #19122, add EVENT_DEPENDENT to vcenter vmon priv esc</a></td>
+                        <td>Apr 23, 2024</td>
+                        <td><a href="https://github.com/adfoster-r7" target="_blank">adfoster-r7</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/rapid7/metasploit-framework/commit/26a108aadcd971d58b95a267e7f18f3f30f2572a" target="_blank">Land #19046, Apache Solr Backup Restore RCE [CVE-2023-50386]</a></td>
+                        <td>Apr 23, 2024</td>
+                        <td><a href="https://github.com/zgoldman-r7" target="_blank">zgoldman-r7</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/rapid7/metasploit-framework/commit/4bbe2c306c67a12507acc3cc561fca2199b64c3e" target="_blank">Land #19079, Fix PASSWORD_SPRAY being ignored for LDAP (and potentially other modules)</a></td>
+                        <td>Apr 22, 2024</td>
+                        <td><a href="https://github.com/cgranleese-r7" target="_blank">cgranleese-r7</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/rapid7/metasploit-framework/commit/c6fc5ad2e11f54ca4af6937a7e0fbc452bf8c03b" target="_blank">Land #19114, Better enforce types to prevent nil values from causing stack traces
+            
+            Merge branch &#x27;land-19114&#x27; into upstream-master</a></td>
+                        <td>Apr 19, 2024</td>
+                        <td><a href="https://github.com/bwatters-r7" target="_blank">bwatters-r7</a></td>
+                    </tr>
+            </table>
+            </div>            <a href="/contribute" class="arrow-link">Contribute a Module</a>
+        </div>
+    </div>
+</div>
+
+<div class="row collapse expanded">         
+    <div class="medium-12 columns">
+        <hr class="main">
+    </div>
+</div>
+<div class="row expanded">
+    <div class="medium-10 medium-offset-1 columns">
+        <div class="section">
+            <a href="https://github.com/rapid7/metasploit-framework/pulls" class="arrow-link right hide-for-small-only" target="_blank">View All Pull Requests</a>
+            <h2 class="latest-pull-requests"><a href="https://github.com/rapid7/metasploit-framework/pulls" target="_blank">Latest Pull Requests</a></h2>
+            <div class="table-scroll">
+            <table class="section">
+            <tr>
+                <th>Name</th>
+                <th>Labels</th>
+                <th>Author</th>
+            </tr>
+                <tr>
+                    <td><a href="https://github.com/rapid7/metasploit-framework/pull/19129" target="_blank">Add missing &#x27;-S&#x27; to cmd_notes</a></td>
+                    <td>
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/library" target="_blank">library</a>
+                            , 
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/easy" target="_blank">easy</a>
+                            , 
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/rn-fix" target="_blank">rn-fix</a>
+                    </td>
+                    <td><a href="https://github.com/nrathaus" target="_blank">nrathaus</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/rapid7/metasploit-framework/pull/19124" target="_blank">Fixed output of db_import command in spec</a></td>
+                    <td>
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/rn-no-release-notes" target="_blank">rn-no-release-notes</a>
+                    </td>
+                    <td><a href="https://github.com/jheysel-r7" target="_blank">jheysel-r7</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/rapid7/metasploit-framework/pull/19122" target="_blank">add EVENT_DEPENDENT to vcenter vmon priv esc</a></td>
+                    <td>
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/rn-enhancement" target="_blank">rn-enhancement</a>
+                    </td>
+                    <td><a href="https://github.com/h00die" target="_blank">h00die</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/rapid7/metasploit-framework/pull/19114" target="_blank">Better enforce types to prevent nil values from causing stack traces</a></td>
+                    <td>
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/library" target="_blank">library</a>
+                            , 
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/bug" target="_blank">bug</a>
+                            , 
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/easy" target="_blank">easy</a>
+                            , 
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/rn-fix" target="_blank">rn-fix</a>
+                    </td>
+                    <td><a href="https://github.com/zeroSteiner" target="_blank">zeroSteiner</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/rapid7/metasploit-framework/pull/19113" target="_blank">Revert &quot;Sql sessions have correct history manager&quot;</a></td>
+                    <td>
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/rn-fix" target="_blank">rn-fix</a>
+                    </td>
+                    <td><a href="https://github.com/adfoster-r7" target="_blank">adfoster-r7</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/rapid7/metasploit-framework/pull/19112" target="_blank">add arch and platform detection for mssql sessions</a></td>
+                    <td>
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/enhancement" target="_blank">enhancement</a>
+                            , 
+                            <a href="https://github.com/rapid7/metasploit-framework/labels/rn-enhancement" target="_blank">rn-enhancement</a>
+                    </td>
+                    <td><a href="https://github.com/zgoldman-r7" target="_blank">zgoldman-r7</a></td>
+                </tr>
+            </table>
+            </div>            <a href="https://github.com/rapid7/metasploit-framework/pulls" class="arrow-link" target="_blank">Create a Pull Request</a>
+        </div>
+    </div>
+</div>
+
+<div class="row collapse expanded">         
+    <div class="medium-12 columns">
+        <hr class="main">
+    </div>
+</div>
+<div class="row expanded">
+    <div class="medium-10 medium-offset-1 columns">
+        <div class="section">
+            <div class="row collapse expanded">
+                <div class="medium-12 columns">
+                    <h2 class="blog-posts"><a href="https://blog.rapid7.com/tag/metasploit/" target="_blank">Recent Blog Posts</a></h2>
+                                <div class="post">
+                                    <p class="date">Fri Apr 26 2024</p>
+                                    <h3 class="title"><a href="https://blog.rapid7.com/2024/04/26/metasploit-weekly-wrap-up-04-26-24/" target="_blank">Metasploit Weekly Wrap-Up 04/26/24</a></h3>
+                                    <p>Rancher Modules
+                    This week, Metasploit community member h00die added the second of two modules targeting Rancher instances. These modules each leak sensitive information from vulnerable instances of the application which is in...</p>
+                                </div>
+                                    <hr class="main">
+                                <div class="post">
+                                    <p class="date">Mon Apr 22 2024</p>
+                                    <h3 class="title"><a href="https://blog.rapid7.com/2024/04/22/take-command-summit-take-breaches-from-inevitable-to-preventable-on-may-21/" target="_blank">Take Command Summit: Take Breaches from Inevitable to Preventable on May 21</a></h3>
+                                    <p>Registration is now open for Take Command, a day-long virtual summit in partnership with AWS. You’ll get new attack intelligence, insight into AI disruption, transparent MDR partnerships, and more....</p>
+                                </div>
+                                    <hr class="main">
+                                <div class="post">
+                                    <p class="date">Fri Apr 19 2024</p>
+                                    <h3 class="title"><a href="https://blog.rapid7.com/2024/04/19/metasploit-weekly-wrap-up-04-19-24/" target="_blank">Metasploit Weekly Wrap-Up 04/19/24</a></h3>
+                                    <p>Welcome Ryan and the new CrushFTP module
+                    It&#x27;s not every week we add an awesome new exploit module to the Framework while adding the original discoverer of the vulnerability to the Rapid7 team as well. We&#x27;re very excited to we...</p>
+                                </div>
+                    <a href="https://blog.rapid7.com/tag/metasploit/" target="_blank" class="arrow-link">View More Metasploit Blog Posts</a>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row collapse expanded">         
+    <div class="medium-12 columns">
+        <hr class="main">
+    </div>
+</div>
+<div class="row expanded">
+    <div class="medium-10 medium-offset-1 columns">
+        <div class="section">
+            <div class="row collapse expanded">
+                <div class="medium-12 columns">
+                    <div class="video-box">
+                        <h2 class="metasploit-videos"><a href="https://www.youtube.com/c/MetasploitR7" target="_blank">Metasploit in Action</a></h2>
+                        <h3 class="upper">Featured Video</h3>
+                        <div class="embed-container">
+                            <iframe src="https://www.youtube.com/embed/cYtDxfKdlqs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <a href="https://www.youtube.com/c/MetasploitR7" class="arrow-link left-block" target="_blank">View More Metasploit Videos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row collapse expanded">         
+    <div class="medium-12 columns">
+        <hr class="main">
+    </div>
+</div>
+<div class="row expanded">
+    <div class="medium-10 medium-offset-1 columns">
+        <div class="section">
+            <a href="https://github.com/rapid7/metasploit-framework/graphs/contributors" class="arrow-link right hide-for-small-only" target="_blank">View All Contributors</a>
+            <h2 class="contributors"><a href="">Top Contributors</a></h2>
+
+            <h3 class="icon upper"><span class="float-left">Last 12 Months</span>
+                <span class="octocat-github-link icon">
+                    <a href="https://github.com/rapid7/metasploit-framework/graphs/contributors" target="_blank"><img src="/includes/images/github-icon.svg" /></a>
+                </span>
+            </h3>
+            <div class="clearfix"></div>
+            <div class="contributors-box">
+                <div class="contributor-icons last-twelve-months">
+                        <a data-name="" data-handle="adfoster-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/60357436?v&#x3D;4" /></a>
+                        <a data-name="Spencer McIntyre" data-handle="zeroSteiner" data-bio="Information Security Research &amp; Development"><img src="https://avatars.githubusercontent.com/u/2058303?v&#x3D;4" /></a>
+                        <a data-name="" data-handle="jheysel-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/23320005?v&#x3D;4" /></a>
+                        <a data-name="h00die" data-handle="h00die" data-bio=""><img src="https://avatars.githubusercontent.com/u/752491?v&#x3D;4" /></a>
+                        <a data-name="" data-handle="dwelch-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/19910435?v&#x3D;4" /></a>
+                        <a data-name="" data-handle="cgranleese-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/69522014?v&#x3D;4" /></a>
+                        <a data-name="Stephen Fewer" data-handle="sfewer-r7" data-bio="Principal Security Researcher at Rapid7"><img src="https://avatars.githubusercontent.com/u/122022313?v&#x3D;4" /></a>
+                        <a data-name="Simon Janusz" data-handle="sjanusz-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/85949464?v&#x3D;4" /></a>
+                        <a data-name="Grant Willcox" data-handle="gwillcox-r7" data-bio="This is my work account. For my personal account, see @tekwizz123. https://howivscode.com/gwillcox-r7 for my Metasploit work setup using VSCode."><img src="https://avatars.githubusercontent.com/u/63261883?v&#x3D;4" /></a>
+                        <a data-name="Spencer McIntyre" data-handle="smcintyre-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/58950994?v&#x3D;4" /></a>
+                        <a data-name="RadioLogic" data-handle="rad10" data-bio="Mathlete, Physics nerd, Computer Vision and AI Philosopher, Swiss-army programmer. if it involves a keyboard and monitor, I&#x27;m all over it."><img src="https://avatars.githubusercontent.com/u/11878508?v&#x3D;4" /></a>
+                        <a data-name="Ashley Donaldson" data-handle="smashery" data-bio=""><img src="https://avatars.githubusercontent.com/u/8895835?v&#x3D;4" /></a>
+                        <a data-name="Brendan" data-handle="bwatters-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/17987018?v&#x3D;4" /></a>
+                        <a data-name="H00die.Gr3y" data-handle="h00die-gr3y" data-bio=""><img src="https://avatars.githubusercontent.com/u/38109035?v&#x3D;4" /></a>
+                        <a data-name="Christophe De La Fuente" data-handle="cdelafuente-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/56716719?v&#x3D;4" /></a>
+                        <a data-name="Ege Balcı" data-handle="EgeBalci" data-bio="Security Researcher"><img src="https://avatars.githubusercontent.com/u/17179401?v&#x3D;4" /></a>
+                        <a data-name="Jeffrey Martin" data-handle="jmartin-tech" data-bio=""><img src="https://avatars.githubusercontent.com/u/7873740?v&#x3D;4" /></a>
+                        <a data-name="Ismail Dawoodjee" data-handle="ismaildawoodjee" data-bio="Cybersecurity | OSCP (CREST-CRT equivalent), AWS SAA"><img src="https://avatars.githubusercontent.com/u/58870992?v&#x3D;4" /></a>
+                        <a data-name="Valentin Lobstein" data-handle="Chocapikk" data-bio=""><img src="https://avatars.githubusercontent.com/u/88535377?v&#x3D;4" /></a>
+                        <a data-name="Zach Goldman" data-handle="zgoldman-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/106169455?v&#x3D;4" /></a>
+                        <a data-name="Julien Voisin" data-handle="jvoisin" data-bio=""><img src="https://avatars.githubusercontent.com/u/325724?v&#x3D;4" /></a>
+                        <a data-name="Shelby Pace" data-handle="space-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/40177151?v&#x3D;4" /></a>
+                        <a data-name="" data-handle="simonirwin-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/12156460?v&#x3D;4" /></a>
+                        <a data-name="Adam Robinson" data-handle="aRobinson-R7" data-bio=""><img src="https://avatars.githubusercontent.com/u/14922412?v&#x3D;4" /></a>
+                        <a data-name="Catatonic Prime" data-handle="catatonicprime" data-bio="Computer Enthusiast"><img src="https://avatars.githubusercontent.com/u/2341167?v&#x3D;4" /></a>
+                        <a data-name="Gaurav Jain" data-handle="errorxyz" data-bio=""><img src="https://avatars.githubusercontent.com/u/64748057?v&#x3D;4" /></a>
+                        <a data-name="Erik Wynter" data-handle="ErikWynter" data-bio="Penetration Tester,
+            Programmer,
+            Security Researcher"><img src="https://avatars.githubusercontent.com/u/55885619?v&#x3D;4" /></a>
+                        <a data-name="Aleksa Zatezalo" data-handle="AleksaZatezalo" data-bio=""><img src="https://avatars.githubusercontent.com/u/59803757?v&#x3D;4" /></a>
+                        <a data-name="Noam Rathaus" data-handle="nrathaus" data-bio=""><img src="https://avatars.githubusercontent.com/u/2032238?v&#x3D;4" /></a>
+                        <a data-name="Jemmy Wang" data-handle="Jemmy1228" data-bio=""><img src="https://avatars.githubusercontent.com/u/37937841?v&#x3D;4" /></a>
+                </div>
+                <div class="user-info last-twelve-months">
+                    <div class="content">
+                            <h4 class="arrow-link"><a href="https://github.com/adfoster-r7" target="_blank"><span class="name"></span><span class="divider-bar">/</span><span class="handle">adfoster-r7</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="upper">All Time</h3>
+                <div class="contributors-box">
+                    <div class="contributor-icons all-time">
+                            <a data-name="sinn3r" data-handle="wchen-r7" data-bio="Former Lead Security Researcher / Exploit Developer for the Metasploit Project at Rapid7 (Mar 2011 - Nov 2019)
+            
+            Other github accounts: @sinn3r, @atxsinn3r"><img src="https://avatars.githubusercontent.com/u/1170914?v&#x3D;4" /></a>
+                            <a data-name="HD Moore" data-handle="hdm" data-bio=""><img src="https://avatars.githubusercontent.com/u/1171392?v&#x3D;4" /></a>
+                            <a data-name="juan.vazquez" data-handle="juanvazquez" data-bio=""><img src="https://avatars.githubusercontent.com/u/949753?v&#x3D;4" /></a>
+                            <a data-name="" data-handle="egypt" data-bio="Scrub. Newb. Has-been."><img src="https://avatars.githubusercontent.com/u/287967?v&#x3D;4" /></a>
+                            <a data-name="Tod Beardsley" data-handle="todb-r7" data-bio="A more real version of my GitHub presence is over at @todb. This was my Rapid7-specific account."><img src="https://avatars.githubusercontent.com/u/1170909?v&#x3D;4" /></a>
+                            <a data-name="Brent Cook" data-handle="busterb" data-bio="Metasploit / LibreSSL / OpenBSD contributor. Zucchini grower."><img src="https://avatars.githubusercontent.com/u/4108654?v&#x3D;4" /></a>
+                            <a data-name="" data-handle="wvu" data-bio=""><img src="https://avatars.githubusercontent.com/u/4551878?v&#x3D;4" /></a>
+                            <a data-name="Elle Imhoff" data-handle="KronicDeth" data-bio="🏳️‍🌈🩷💛💙🏳️‍⚧️ 👩‍👩‍👦"><img src="https://avatars.githubusercontent.com/u/298259?v&#x3D;4" /></a>
+                            <a data-name="Joshua J. Drake" data-handle="jduck" data-bio="A funemployed researcher living in the intersection between security and embedded Rust."><img src="https://avatars.githubusercontent.com/u/479840?v&#x3D;4" /></a>
+                            <a data-name="Spencer McIntyre" data-handle="zeroSteiner" data-bio="Information Security Research &amp; Development"><img src="https://avatars.githubusercontent.com/u/2058303?v&#x3D;4" /></a>
+                            <a data-name="OJ Reeves" data-handle="OJ" data-bio="CLIMBER NERD!"><img src="https://avatars.githubusercontent.com/u/28896?v&#x3D;4" /></a>
+                            <a data-name="Ben Campbell" data-handle="Meatballs1" data-bio=""><img src="https://avatars.githubusercontent.com/u/1854557?v&#x3D;4" /></a>
+                            <a data-name="" data-handle="skape" data-bio=""><img src="https://avatars.githubusercontent.com/u/8264250?v&#x3D;4" /></a>
+                            <a data-name="Jon Hart" data-handle="jhart-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/3869433?v&#x3D;4" /></a>
+                            <a data-name="h00die" data-handle="h00die" data-bio=""><img src="https://avatars.githubusercontent.com/u/752491?v&#x3D;4" /></a>
+                            <a data-name="" data-handle="adfoster-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/60357436?v&#x3D;4" /></a>
+                            <a data-name="Grant Willcox" data-handle="gwillcox-r7" data-bio="This is my work account. For my personal account, see @tekwizz123. https://howivscode.com/gwillcox-r7 for my Metasploit work setup using VSCode."><img src="https://avatars.githubusercontent.com/u/63261883?v&#x3D;4" /></a>
+                            <a data-name="" data-handle="wvu-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/160065621?v&#x3D;4" /></a>
+                            <a data-name="Tim" data-handle="timwr" data-bio=""><img src="https://avatars.githubusercontent.com/u/684924?v&#x3D;4" /></a>
+                            <a data-name="Joe Vennix" data-handle="joevennix" data-bio=""><img src="https://avatars.githubusercontent.com/u/648995?v&#x3D;4" /></a>
+                            <a data-name="Brendan" data-handle="bwatters-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/17987018?v&#x3D;4" /></a>
+                            <a data-name="" data-handle="bcoles" data-bio="&#x60; rm -rf /* &#x60;"><img src="https://avatars.githubusercontent.com/u/434827?v&#x3D;4" /></a>
+                            <a data-name="Carlos Perez" data-handle="darkoperator" data-bio=""><img src="https://avatars.githubusercontent.com/u/521246?v&#x3D;4" /></a>
+                            <a data-name="Shelby Pace" data-handle="space-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/40177151?v&#x3D;4" /></a>
+                            <a data-name="Christian Mehlmauer" data-handle="firefart" data-bio=""><img src="https://avatars.githubusercontent.com/u/105281?v&#x3D;4" /></a>
+                            <a data-name="Spencer McIntyre" data-handle="smcintyre-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/58950994?v&#x3D;4" /></a>
+                            <a data-name="Mario Ceballos" data-handle="ceballosm" data-bio=""><img src="https://avatars.githubusercontent.com/u/30805891?v&#x3D;4" /></a>
+                            <a data-name="Matt Weeks" data-handle="scriptjunkie" data-bio="Currently at Aurora"><img src="https://avatars.githubusercontent.com/u/1174495?v&#x3D;4" /></a>
+                            <a data-name="" data-handle="jbarnett-r7" data-bio=""><img src="https://avatars.githubusercontent.com/u/12236529?v&#x3D;4" /></a>
+                            <a data-name="Jeffrey Martin" data-handle="jmartin-tech" data-bio=""><img src="https://avatars.githubusercontent.com/u/7873740?v&#x3D;4" /></a>
+                    </div>
+                    <div class="user-info all-time">
+                        <div class="content">
+                                <h4 class="arrow-link"><a href="https://github.com/wchen-r7" target="_blank"><span class="name">sinn3r</span><span class="divider-bar">/</span><span class="handle">wchen-r7</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+            <a href="https://github.com/rapid7/metasploit-framework" class="arrow-link" target="_blank">Contribute to Metasploit</a>
+        </div>
+    </div>
+</div>
+
+<div class="row collapse expanded">         
+    <div class="medium-12 columns">
+        <hr class="main">
+    </div>
+</div>
+<div class="row expanded">
+    <div class="medium-10 medium-offset-1 columns">
+        <div class="section last">
+            <a href="/download#products" class="arrow-link right hide-for-small-only">View All</a>
+            <h2 class="projects"><a href="/download#products">Related Products &amp; Projects</a></h2>
+            <div class="row collapse expanded" data-equalizer="projects" data-equalize-on="medium">
+                <div class="medium-12 large-4 column">
+                    <div class="grey-box" data-equalizer-watch="projects">
+                        <h3><a href="https://www.rapid7.com/products/insightvm/" target="_blank">InsightVM</a></h3>
+                        <p>Rapid7’s solution for advanced vulnerability management analytics and reporting.</p>
+                        <a href="https://www.rapid7.com/products/insightvm/" class="arrow-link" target="_blank">Free Trial</a>
+                    </div>
+                </div>
+                <div class="medium-12 large-4 columns">
+                    <div class="grey-box" data-equalizer-watch="projects">
+                        <h3><a href="https://www.rapid7.com/products/insightidr/" target="_blank">InsightIDR</a></h3>
+                        <p>Rapid7’s incident detection and response solution unifying SIEM, EDR, and UBA capabilities.</p>
+                        <a href="https://www.rapid7.com/products/insightidr/" class="arrow-link" target="_blank">Free Trial</a>
+                    </div>
+                </div>
+                <div class="medium-12 large-4 columns end">
+                    <div class="grey-box last" data-equalizer-watch="projects">
+                        <h3><a href="https://github.com/rapid7/metasploitable3" target="_blank">Metasploitable</a></h3>
+                        <p>Virtual machines full of intentional security vulnerabilities. Exploit at will!</p>
+                        <a href="https://github.com/rapid7/metasploitable3" class="arrow-link" target="_blank">Download Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                        </div> 
+                        <footer>
+                        	<div class="row expanded">
+                        		<div class="medium-10 medium-offset-1 columns end">
+                        			<div class="back-to-top scroll center">
+                        		        <a href="#__" class="smooth"><img src="/includes/images/back-to-top-arrow.png" /></a>
+                        		    </div>
+                        	    </div>
+                            </div>
+                            <section class="footer-links">
+                                <div class="row expanded">
+                                	<div class="medium-11 medium-offset-1 columns end">
+                                		<div class="row collapse expanded">
+                        	            <div class="medium-3 columns">
+                        	                <h3><a href="/download">Download</a></h3>
+                        	                <ul>
+                        	                    <li>
+                        	                        <a href="https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html" target="_blank">Metasploit Framework</a>
+                        	                    </li>
+                        	                    <li>
+                        	                        <a href="https://www.rapid7.com/products/metasploit/download/" target="_blank">Metasploit Pro Download</a>
+                        	                    </li>
+                        	                    <li>
+                        	                        <a href="/download#products">Other Products</a>
+                        	                    </li>
+                        	                    <li>
+                        	                        <a href="/download#projects">Other Projects</a>
+                        	                    </li>
+                        	                </ul>
+                        	            </div>
+                        	            <div class="medium-3 columns">
+                        	                <h3><a href="/get-started#learn">Learn</a></h3>
+                        	                <ul>
+                        	                    <li>
+                        	                        <a href="/get-started">Get Started</a>
+                        	                    </li>
+                        	                    <li>
+                        	                        <a href="https://docs.metasploit.com/" target="_blank">Metasploit Docs</a>
+                        	                    </li>
+                        	                    <li>
+                        	                        <a href="https://metasploit.help.rapid7.com" target="_blank">Metasploit Pro Docs</a>
+                        	                    </li>
+                        	                </ul>
+                        	            </div>
+                        	            <div class="medium-3 columns">
+                        	                <h3><a href="/contribute">Contribute</a></h3>
+                        	                <ul>
+                        	                    <li>
+                        	                        <a href="https://docs.metasploit.com/docs/development/get-started/contributing-to-metasploit.html#server-exploits" target="_blank">Build Modules</a>
+                        	                    </li>
+                        	                    <li>
+                        	                        <a href="https://docs.metasploit.com/docs/development/get-started/contributing-to-metasploit.html#framework-bugs-and-features" target="_blank">Fix Bugs</a>
+                        	                    </li>
+                        	                    <li>
+                        	                        <a href="https://docs.metasploit.com/docs/development/get-started/contributing-to-metasploit.html#non-code" target="_blank">Provide Docs</a>
+                        	                    </li>
+                        	                </ul>
+                        	            </div>
+                        	            <div class="medium-3 columns end">
+                        	                <h3><a href="/help">Help</a></h3>
+                        	                <ul>
+                        	                    <li>
+                        	                        <a href="https://join.slack.com/t/metasploit/shared_invite/zt-2g89b3a9u-AJbmaqn03PoH51Qw49rpow" target="_blank">Slack</a>
+                        	                    </li>
+                        	                    <li>
+                        	                        <a href="https://twitter.com/metasploit" target="_blank">Twitter</a>
+                        	                    </li>
+                        	                </ul>
+                        	            </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="footer-bottom-links">
+                            	<div class="row expanded">
+                                	<div class="medium-11 medium-offset-1 columns end">
+                        		    	<a href="https://www.rapid7.com" target="_blank"><img src="/includes/images/metasploit-r7-footer-logo.png" class="footer-logo" /></a>
+                        		    	<ul>
+                        		    		<li><a href="https://www.rapid7.com/legal/" target="_blank">Legal</a></li>
+                        		    		<li><a href="https://github.com/rapid7/metasploit-framework/blob/master/LICENSE" target="_blank">License</a></li>
+                        		    		<li><a href="https://www.rapid7.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+                        		    		<li><a href="https://www.rapid7.com/disclosure/" target="_blank">Disclosure Policy</a></li>
+                        		    		<li><a href="https://www.rapid7.com/contact/" target="_blank">Contact</a></li>
+                        		    	</ul>
+                        		    </div>
+                        		</div>
+                            </section>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <!-- scripts -->
+        <script src="/includes/js/jquery.min.js" charset="utf-8"></script>
+        <script src="/includes/js/all.min.js" charset="utf-8"></script>
+        <!-- end scripts -->
+    </body>
+</html>

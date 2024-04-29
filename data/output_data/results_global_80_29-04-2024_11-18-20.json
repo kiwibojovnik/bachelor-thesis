@@ -1,0 +1,1097 @@
+{
+    "https://freemuse.org": {
+        "Time": 4.87,
+        "URL": "https://freemuse.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "194.163.170.87"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "194.163.170.87",
+        "PING Status": "OK",
+        "PING IP": "194.163.170.87",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 32993,
+        "Headers": {
+            "Cache-Control": "private",
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Mon, 29 Apr 2024 09:09:22 GMT",
+            "Content-Length": "32993"
+        },
+        "HTML Content": "freemuse.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "freemuse.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "041CDE003E49BAEE1913D33CB9D65E72A522",
+            "notBefore": "Mar 27 10:18:32 2024 GMT",
+            "notAfter": "Jun 25 10:18:31 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "freemuse.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 11:09:27"
+    },
+    "https://freenetproject.org": {
+        "Time": 4.14,
+        "URL": "https://freenetproject.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "65.9.95.12",
+            "65.9.95.48",
+            "65.9.95.78",
+            "65.9.95.101"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "65.9.95.78",
+        "PING Status": "OK",
+        "PING IP": "65.9.95.78",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.hyphanet.org/index.html",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 8667,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "2995",
+            "Server": "GitHub.com",
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Wed, 31 Jan 2024 13:38:41 GMT",
+            "Access-Control-Allow-Origin": "*",
+            "ETag": "W/\"65ba4d61-21db\"",
+            "expires": "Mon, 29 Apr 2024 09:20:21 GMT",
+            "Cache-Control": "max-age=600",
+            "Content-Encoding": "gzip",
+            "x-proxy-cache": "MISS",
+            "X-GitHub-Request-Id": "D0BC:1C4371:18AAD8D:196873E:662F63FB",
+            "Accept-Ranges": "bytes",
+            "Age": "0",
+            "Date": "Mon, 29 Apr 2024 09:10:21 GMT",
+            "Via": "1.1 varnish",
+            "X-Served-By": "cache-vie6369-VIE",
+            "X-Cache": "MISS",
+            "X-Cache-Hits": "0",
+            "X-Timer": "S1714381822.625257,VS0,VE118",
+            "Vary": "Accept-Encoding",
+            "X-Fastly-Request-ID": "ee0d65af7158617fa0bacccaee237b18ba1b5ab6"
+        },
+        "HTML Content": "freenetproject.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "freenetproject.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M01"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07A35C22AFFFC7269F7B1D934EFE80A0",
+            "notBefore": "Sep  2 00:00:00 2023 GMT",
+            "notAfter": "Sep 30 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "freenetproject.org"
+                ],
+                [
+                    "DNS",
+                    "*.freenetproject.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m01.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m01.amazontrust.com/r2m01.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m01.amazontrust.com/r2m01.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 11:10:25"
+    },
+    "https://www.gawker.com": {
+        "Time": 27.66,
+        "URL": "https://www.gawker.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "18.192.94.96",
+            "52.58.254.253"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.192.94.96",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.1",
+                0.008656978607177734
+            ],
+            [
+                "147.251.243.86",
+                0.01891803741455078
+            ],
+            [
+                "147.251.242.195",
+                0.002049684524536133
+            ],
+            [
+                "147.251.242.194",
+                0.020845890045166016
+            ],
+            [
+                "147.251.241.129",
+                0.1022179126739502
+            ],
+            [
+                "147.251.241.129",
+                0.01409602165222168
+            ],
+            [
+                "91.210.16.120",
+                0.007489919662475586
+            ],
+            [
+                "52.93.43.97",
+                0.012774944305419922
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://gawker.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "75.2.60.5"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 9830,
+        "Headers": {
+            "Age": "0",
+            "Cache-Control": "private,no-cache,no-store,max-age=0,must-revalidate",
+            "Cache-Status": "\"Netlify Edge\"; fwd=miss",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Mon, 29 Apr 2024 09:11:42 GMT",
+            "Netlify-Vary": "query,cookie=__next_preview_data:presence|__prerender_bypass:presence",
+            "Server": "Netlify",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "RSC,Next-Router-State-Tree,Next-Router-Prefetch,Accept-Encoding",
+            "X-Middleware-Next": "1",
+            "X-Nf-Render-Mode": "ssr",
+            "X-Nf-Request-Id": "01HWMHZM65DJRWD2Q2HKC5PSY0",
+            "X-Powered-By": "Next.js",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "www.gawker.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "gawker.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04D563DBC38FC2A666FDD89B6BB6C82E2E29",
+            "notBefore": "Mar  9 13:20:10 2024 GMT",
+            "notAfter": "Jun  7 13:20:09 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "gawker.com"
+                ],
+                [
+                    "DNS",
+                    "www.gawker.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 11:11:45"
+    },
+    "http://gaytoday.com": {
+        "Time": 11.86,
+        "URL": "http://gaytoday.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "162.250.76.161"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "162.250.76.161",
+        "PING Status": "OK",
+        "PING IP": "162.250.76.161",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 138584,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 09:12:34 GMT",
+            "Server": "Apache/2.4.48 (Unix)",
+            "Connection": "close",
+            "Link": "<https://www.gaytoday.com/index.php/wp-json/>; rel=\"https://api.w.org/\"",
+            "Content-Security-Policy": "upgrade-insecure-requests;",
+            "Vary": "Accept-Encoding,User-Agent",
+            "Content-Encoding": "gzip",
+            "Content-Length": "27583",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "gaytoday.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "gaytoday.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04F55D309A7DA273FC5E37ED7C4FFF4D8677",
+            "notBefore": "Mar  8 19:41:21 2024 GMT",
+            "notAfter": "Jun  6 19:41:20 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "gaytoday.com"
+                ],
+                [
+                    "DNS",
+                    "www.gaytoday.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 11:12:44"
+    },
+    "https://geti2p.net": {
+        "Time": 4.51,
+        "URL": "https://geti2p.net",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "81.7.7.63"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "81.7.7.63",
+        "PING Status": "OK",
+        "PING IP": "81.7.7.63",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://geti2p.net/en/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "81.7.7.63"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 30376,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 09:13:19 GMT",
+            "Server": "Apache/2.4.25 (Debian)",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Keep-Alive": "timeout=5, max=99",
+            "Connection": "Keep-Alive",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=utf-8"
+        },
+        "HTML Content": "geti2p.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "docs.i2p-projekt.de"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0321BD44EFD8877C5357492B5E43D3B9A5F2",
+            "notBefore": "Apr 24 04:32:15 2024 GMT",
+            "notAfter": "Jul 23 04:32:14 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "docs.i2p-projekt.de"
+                ],
+                [
+                    "DNS",
+                    "geti2p.net"
+                ],
+                [
+                    "DNS",
+                    "i2p-projekt.de"
+                ],
+                [
+                    "DNS",
+                    "i2p.net"
+                ],
+                [
+                    "DNS",
+                    "syndie.i2p-projekt.de"
+                ],
+                [
+                    "DNS",
+                    "www.geti2p.net"
+                ],
+                [
+                    "DNS",
+                    "www.i2p-projekt.de"
+                ],
+                [
+                    "DNS",
+                    "www.i2p.net"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 11:13:23"
+    },
+    "https://www.globaleaks.org": {
+        "Time": 4.22,
+        "URL": "https://www.globaleaks.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "95.174.23.119"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "95.174.23.119",
+        "PING Status": "OK",
+        "PING IP": "95.174.23.119",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 153300,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 09:14:08 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "18333",
+            "Connection": "keep-alive",
+            "X-Powered-By": "PHP/8.2.18",
+            "Link": "<https://www.globaleaks.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.globaleaks.org/wp-json/wp/v2/pages/949>; rel=\"alternate\"; type=\"application/json\", <https://www.globaleaks.org/>; rel=shortlink",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Referrer-Policy": "no-referrer-when-downgrade, no-referrer",
+            "X-Cache-Status": "STALE",
+            "Strict-Transport-Security": "max-age=15768000; includeSubDomains, max-age=10886400; includeSubDomains",
+            "Permissions-Policy": "camera=(),document-domain=(),fullscreen=(),geolocation=(),microphone=()",
+            "X-Frame-Options": "deny",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block"
+        },
+        "HTML Content": "www.globaleaks.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "globaleaks.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04F9B4DC98CE18FF56BB365B5A1ADDA00DAC",
+            "notBefore": "Mar  6 14:35:32 2024 GMT",
+            "notAfter": "Jun  4 14:35:31 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "globaleaks.org"
+                ],
+                [
+                    "DNS",
+                    "www.globaleaks.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 11:14:12"
+    },
+    "https://www.globalwitness.org": {
+        "Time": 4.86,
+        "URL": "https://www.globalwitness.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.20.130.42",
+            "104.20.131.42",
+            "172.67.2.178"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.2.178",
+        "PING Status": "OK",
+        "PING IP": "172.67.2.178",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "/en/",
+        "Redirected Location IPs": [
+            "N/A",
+            "N/A"
+        ],
+        "HTTP Status": 200,
+        "Content Length": 89973,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 09:15:00 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "X-Requested-With, Cookie, Accept-Encoding",
+            "expires": "Thu, 02 May 2024 17:14:37 GMT",
+            "Cache-Control": "max-age=600, stale-while-revalidate=10",
+            "x-wagtail-cache": "hit",
+            "content-language": "en",
+            "x-frame-options": "SAMEORIGIN",
+            "x-content-type-options": "nosniff",
+            "x-xss-protection": "1; mode=block",
+            "set-cookie": "django_language=en; Path=/",
+            "permissions-policy": "interest-cohort=()",
+            "CF-Cache-Status": "BYPASS",
+            "Server": "cloudflare",
+            "CF-RAY": "87be2f5d8ca66e9a-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.globalwitness.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "globalwitness.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03C6D4166D9137A37AA4565D183E67064C3E",
+            "notBefore": "Apr 16 01:09:53 2024 GMT",
+            "notAfter": "Jul 15 01:09:52 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.globalwitness.org"
+                ],
+                [
+                    "DNS",
+                    "globalwitness.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 11:15:04"
+    },
+    "https://globalvoices.org": {
+        "Time": 5.13,
+        "URL": "https://globalvoices.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "213.108.108.29"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "213.108.108.29",
+        "PING Status": "OK",
+        "PING IP": "213.108.108.29",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 185188,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 09:16:14 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "35698",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Age": "42",
+            "X-Cache": "HIT",
+            "X-Cache-Hits": "4",
+            "Accept-Ranges": "bytes",
+            "Strict-Transport-Security": "max-age=15768000; includeSubDomains"
+        },
+        "HTML Content": "globalvoices.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.globalvoices.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Domain Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "4B12247040EC54CB16897F43DD642E7F",
+            "notBefore": "Jun 13 00:00:00 2023 GMT",
+            "notAfter": "Jul 13 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.globalvoices.org"
+                ],
+                [
+                    "DNS",
+                    "globalvoices.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 11:16:19"
+    },
+    "https://mail.google.com": {
+        "Time": 5.44,
+        "URL": "https://mail.google.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.251.37.101"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.251.37.101",
+        "PING Status": "OK",
+        "PING IP": "142.251.37.101",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "/mail/",
+        "Redirected Location IPs": [
+            "N/A",
+            "N/A"
+        ],
+        "HTTP Status": 200,
+        "Content Length": 648616,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "X-Frame-Options": "DENY",
+            "Vary": "Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site",
+            "x-auto-login": "realm=com.google&args=service%3Dmail%26continue%3Dhttps://mail.google.com/mail/u/0/",
+            "Link": "<https://www.google.com/gmail/>; rel=\"canonical\"",
+            "x-ua-compatible": "IE=edge",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+            "Date": "Mon, 29 Apr 2024 09:16:51 GMT",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+            "Content-Security-Policy": "require-trusted-types-for 'script';report-uri /v3/signin/_/AccountsSignInUi/cspreport, script-src 'report-sample' 'nonce-ddVTZ2KpbjUWDopqbpBCsQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /v3/signin/_/AccountsSignInUi/cspreport;worker-src 'self', script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com;report-uri /v3/signin/_/AccountsSignInUi/cspreport/allowlist",
+            "Accept-CH": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+            "Cross-Origin-Resource-Policy": "same-site",
+            "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*",
+            "Report-To": "{\"group\":\"AccountsSignInUi\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/AccountsSignInUi\"}]}",
+            "Cross-Origin-Opener-Policy-Report-Only": "same-origin; report-to=\"AccountsSignInUi\"",
+            "reporting-endpoints": "default=\"/v3/signin/_/AccountsSignInUi/web-reports?context=eJzj6mHU4pJicNOQYjigtIvJMfYJkysQL3__lGk1EMesesaUAMQH454zHQXitwkvmD4CcWvrC6ZOIN7c84JpOxBP43nJNAuIj2x_yXQCiCW-vmTSAGL5X9NZlYHYKX0GaxAQ-9TPYI0B4tab51inAnHSv_OsRUA8y-IC6zwgFuLmaD69dyObwI-FS6IBAa1GYQ\"",
+            "Content-Encoding": "gzip",
+            "Server": "ESF",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "mail.google.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mail.google.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "DEE10C46EBFF265E109F35B3614C5326",
+            "notBefore": "Apr  8 07:33:50 2024 GMT",
+            "notAfter": "Jul  1 07:33:49 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "mail.google.com"
+                ],
+                [
+                    "DNS",
+                    "inbox.google.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/zdATt0Ex_Fk.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 11:16:56"
+    },
+    "https://goaskalice.columbia.edu": {
+        "Time": 28.07,
+        "URL": "https://goaskalice.columbia.edu",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "34.238.11.122"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "34.238.11.122",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.1",
+                0.0062808990478515625
+            ],
+            [
+                "147.251.243.80",
+                0.022023916244506836
+            ],
+            [
+                "147.251.241.130",
+                0.024199247360229492
+            ],
+            [
+                "147.251.242.194",
+                0.15202617645263672
+            ],
+            [
+                "147.251.242.194",
+                0.015269756317138672
+            ],
+            [
+                "147.251.241.129",
+                0.02142024040222168
+            ],
+            [
+                "195.178.87.1",
+                0.0034439563751220703
+            ],
+            [
+                "213.144.184.24",
+                0.016329288482666016
+            ],
+            [
+                "213.144.184.24",
+                0.02624678611755371
+            ],
+            [
+                "195.22.195.67",
+                0.12760710716247559
+            ],
+            [
+                "195.22.206.61",
+                0.13696599006652832
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 281892,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Cache-Control": "no-cache",
+            "Content-Length": "281892",
+            "Content-Type": "text/html",
+            "Date": "Mon, 29 Apr 2024 09:18:13 GMT",
+            "Etag": "\"662f5a34-44d24\"",
+            "Expires": "Mon, 29 Apr 2024 09:18:12 GMT",
+            "Last-Modified": "Mon, 29 Apr 2024 08:28:36 GMT",
+            "Strict-Transport-Security": "max-age=0",
+            "Traceresponse": "00-17cab59cf9e531492ab0b82a6b6d4733-1cf9d477f6af34a0-01",
+            "Vary": "Accept-Encoding",
+            "X-Debug-Info": "eyJyZXRyaWVzIjowfQ==",
+            "X-Platform-Cache": "MISS",
+            "X-Platform-Cluster": "x7nlapda3rhfc-master-7rqtwti",
+            "X-Platform-Processor": "fhkcr3mwsog5sl2iekierconte",
+            "X-Platform-Router": "b6vmf3oapzai2cc2o7vm5ggqmq"
+        },
+        "HTML Content": "goaskalice.columbia.edu_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "goaskalice.columbia.edu"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0331C8094701637553A5D1AE7A070A663D63",
+            "notBefore": "Apr  7 10:51:15 2024 GMT",
+            "notAfter": "Jul  6 10:51:14 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "goaskalice.columbia.edu"
+                ],
+                [
+                    "DNS",
+                    "search.goaskalice.columbia.edu"
+                ],
+                [
+                    "DNS",
+                    "www.goaskalice.columbia.edu"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 11:18:20"
+    }
+}

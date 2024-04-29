@@ -1,0 +1,1200 @@
+{
+    "http://anonymouse.org": {
+        "Time": 16.0,
+        "URL": "http://anonymouse.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "193.200.150.82",
+            "193.200.150.125"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "193.200.150.82",
+        "PING Status": "OK",
+        "PING IP": "193.200.150.82",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 3560,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 07:54:47 GMT",
+            "Server": "Apache",
+            "Upgrade": "h2c",
+            "Connection": "Upgrade, Keep-Alive",
+            "Last-Modified": "Sat, 17 Feb 2024 15:27:07 GMT",
+            "Accept-Ranges": "bytes",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Length": "1506",
+            "Keep-Alive": "timeout=5, max=100",
+            "Content-Type": "text/html"
+        },
+        "HTML Content": "anonymouse.org_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:55:03"
+    },
+    "https://archive.org": {
+        "Time": 7.86,
+        "URL": "https://archive.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "207.241.224.2"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "207.241.224.2",
+        "PING Status": "OK",
+        "PING IP": "207.241.224.2",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 2587,
+        "Headers": {
+            "Server": "nginx/1.25.1",
+            "Date": "Mon, 29 Apr 2024 07:56:01 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "content-security-policy": "base-uri 'self'; default-src *; img-src * data:; object-src 'none'; script-src https://archive.org/offshoot_assets/ https://*.archive.org/offshoot_assets/ https://offshoot.prod.archive.org/offshoot_assets/ https://archive.org/includes/ https://*.archive.org/includes/ https://offshoot.prod.archive.org/includes/ https://archive.org/components/ https://*.archive.org/components/ https://offshoot.prod.archive.org/components/ https://archive.org/jw/ https://*.archive.org/jw/ https://offshoot.prod.archive.org/jw/ https://av.prod.archive.org/js/ https://esm.archive.org/ https://polyfill.archive.org/v3/polyfill.min.js 'sha256-CoX53XgCdkM1zegYEEpMUeYIZnv663inNm8bQv2VRbM='; style-src 'unsafe-inline' https://archive.org/ https://*.archive.org/ https://offshoot.prod.archive.org/;",
+            "Strict-Transport-Security": "max-age=15724800",
+            "Onion-Location": "https://archive6zg5vrdwm4ljllgxleekeoj43lqayscd4d4kmhnyblq4h3ead.onion/",
+            "Expires": "Mon, 29 Apr 2024 08:11:01 GMT",
+            "Cache-Control": "max-age=900",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "archive.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.archive.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "12BCB2F174BDCD3F",
+            "notBefore": "Dec 23 14:17:22 2023 GMT",
+            "notAfter": "Jan 23 14:17:22 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.archive.org"
+                ],
+                [
+                    "DNS",
+                    "archive.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-14080.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:56:08"
+    },
+    "https://archiveofourown.org": {
+        "Time": 4.48,
+        "URL": "https://archiveofourown.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.20.57.117",
+            "104.20.58.117"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.20.58.117",
+        "PING Status": "OK",
+        "PING IP": "104.20.58.117",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 25333,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 07:56:38 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87bdbc93bd23b351-PRG",
+            "CF-Cache-Status": "HIT",
+            "Age": "839",
+            "Cache-Control": "max-age=0, private, must-revalidate",
+            "Link": "</stylesheets/sandbox.css>; rel=preload; as=style; nopush,</javascripts/livevalidation_standalone.js>; rel=preload; as=script; nopush,</javascripts/jquery.scrollTo.min.js>; rel=preload; as=script; nopush,</javascripts/jquery.livequery.min.js>; rel=preload; as=script; nopush,</javascripts/rails.js>; rel=preload; as=script; nopush,</javascripts/application.js>; rel=preload; as=script; nopush,</javascripts/bootstrap/bootstrap-dropdown.min.js>; rel=preload; as=script; nopush,</javascripts/jquery-shuffle.js>; rel=preload; as=script; nopush,</javascripts/jquery.tokeninput.min.js>; rel=preload; as=script; nopush,</javascripts/jquery.trap.min.js>; rel=preload; as=script; nopush,</javascripts/ao3modal.min.js>; rel=preload; as=script; nopush,</javascripts/js.cookie.min.js>; rel=preload; as=script; nopush,</javascripts/filters.min.js>; rel=preload; as=script; nopush",
+            "Vary": "Accept, Accept-Encoding",
+            "content-security-policy": "frame-ancestors 'self'",
+            "potential_upstream": "unicorn_bots",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-ao3-priority": "0",
+            "x-aooo-debug1": "Archive Unicorn",
+            "x-clacks-overhead": "GNU Terry Pratchett",
+            "x-content-type-options": "nosniff",
+            "x-download-options": "noopen",
+            "x-frame-options": "SAMEORIGIN",
+            "x-hostname": "ao3-front09",
+            "x-permitted-cross-domain-policies": "none",
+            "x-request-id": "44b11488-cfcd-4e96-9d6b-7d48ee913025",
+            "x-runtime": "0.034221",
+            "x-xss-protection": "1; mode=block",
+            "Set-Cookie": "__cf_bm=GUM6PyxyfbSm0e1M8rdwcBIbY9BdaVD8YIe1iAE9Dz0-1714377398-1.0.1.1-XOX7ffSloWaDq.Ux2.P8F6dwsJlReg9BPNJvulmPTFiI35pL2QPgaulgUSq_rJ3nJTDzsGC2tq6nMYQipcE0FQ; path=/; expires=Mon, 29-Apr-24 08:26:38 GMT; domain=.archiveofourown.org; HttpOnly; Secure; SameSite=None, _cfuvid=1Wc8oOAMzzS2BCQduH1FlzmkCyvBfzGBwwBq.655z24-1714377398383-0.0.1.1-604800000; path=/; domain=.archiveofourown.org; HttpOnly; Secure; SameSite=None",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "archiveofourown.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "archiveofourown.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "D9A5AF87BD6830500DEA331410CDDF68",
+            "notBefore": "Mar  3 20:37:07 2024 GMT",
+            "notAfter": "Jun  1 20:37:06 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "archiveofourown.org"
+                ],
+                [
+                    "DNS",
+                    "*.archiveofourown.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/60l3r0BeDf8"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/et-Lsmj_QTM.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:56:42"
+    },
+    "https://asiatimes.com": {
+        "Time": 13.75,
+        "URL": "https://asiatimes.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "192.0.78.182",
+            "192.0.78.229"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "192.0.78.229",
+        "PING Status": "OK",
+        "PING IP": "192.0.78.229",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 440140,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 07:57:50 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "Accept-Encoding, Cookie",
+            "Last-Modified": "Mon, 29 Apr 2024 07:51:07 GMT",
+            "Cache-Control": "max-age=54, must-revalidate",
+            "X-nananana": "Batcache-Hit",
+            "Host-Header": "Newspack",
+            "Link": "<https://asiatimes.com/wp-json/>; rel=\"https://api.w.org/\", <https://asiatimes.com/wp-json/wp/v2/pages/422475>; rel=\"alternate\"; type=\"application/json\", <https://asiatimes.com/>; rel=shortlink",
+            "Content-Encoding": "gzip",
+            "X-ac": "3.vie _atomic_ams UPDATING",
+            "Alt-Svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "asiatimes.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "tls.automattic.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03AFFECF833531F32A1B8C29A3872B051D31",
+            "notBefore": "Mar 14 23:55:17 2024 GMT",
+            "notAfter": "Jun 12 23:55:16 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "allbabymusica.com"
+                ],
+                [
+                    "DNS",
+                    "andersonsophiaqti22.poetry.blog"
+                ],
+                [
+                    "DNS",
+                    "animalcaresoundscape.car.blog"
+                ],
+                [
+                    "DNS",
+                    "ardy.finance.blog"
+                ],
+                [
+                    "DNS",
+                    "asiatimes.com"
+                ],
+                [
+                    "DNS",
+                    "autoevanstoxu.car.blog"
+                ],
+                [
+                    "DNS",
+                    "avnirah.code.blog"
+                ],
+                [
+                    "DNS",
+                    "brankas.id"
+                ],
+                [
+                    "DNS",
+                    "carrieresnouvelles.car.blog"
+                ],
+                [
+                    "DNS",
+                    "carterisaacrs39o.car.blog"
+                ],
+                [
+                    "DNS",
+                    "cashjyxo.finance.blog"
+                ],
+                [
+                    "DNS",
+                    "damdochax.com"
+                ],
+                [
+                    "DNS",
+                    "darbyenterprises.com"
+                ],
+                [
+                    "DNS",
+                    "devonphysiotherapy.blog"
+                ],
+                [
+                    "DNS",
+                    "drooshgroove.in"
+                ],
+                [
+                    "DNS",
+                    "eugene.game.blog"
+                ],
+                [
+                    "DNS",
+                    "hatleysefi.fashion.blog"
+                ],
+                [
+                    "DNS",
+                    "heathandwellness.health.blog"
+                ],
+                [
+                    "DNS",
+                    "hlcdsm.code.blog"
+                ],
+                [
+                    "DNS",
+                    "induk.code.blog"
+                ],
+                [
+                    "DNS",
+                    "kinsakubonus.family.blog"
+                ],
+                [
+                    "DNS",
+                    "lizamanundaycare.car.blog"
+                ],
+                [
+                    "DNS",
+                    "madgeniuslife.com"
+                ],
+                [
+                    "DNS",
+                    "meshop.family.blog"
+                ],
+                [
+                    "DNS",
+                    "palliativecarehealthmatters.fitness.blog"
+                ],
+                [
+                    "DNS",
+                    "thebodyofchrist.family.blog"
+                ],
+                [
+                    "DNS",
+                    "thompkinsreho.family.blog"
+                ],
+                [
+                    "DNS",
+                    "tls.automattic.com"
+                ],
+                [
+                    "DNS",
+                    "www.allbabymusica.com"
+                ],
+                [
+                    "DNS",
+                    "www.allenelizabethmezo4.poetry.blog"
+                ],
+                [
+                    "DNS",
+                    "www.andersonsophiaqti22.poetry.blog"
+                ],
+                [
+                    "DNS",
+                    "www.animalcaresoundscape.car.blog"
+                ],
+                [
+                    "DNS",
+                    "www.ardy.finance.blog"
+                ],
+                [
+                    "DNS",
+                    "www.artofhenrybailey.com"
+                ],
+                [
+                    "DNS",
+                    "www.autoevanstoxu.car.blog"
+                ],
+                [
+                    "DNS",
+                    "www.avnirah.code.blog"
+                ],
+                [
+                    "DNS",
+                    "www.brankas.id"
+                ],
+                [
+                    "DNS",
+                    "www.carrieresnouvelles.car.blog"
+                ],
+                [
+                    "DNS",
+                    "www.carterisaacrs39o.car.blog"
+                ],
+                [
+                    "DNS",
+                    "www.damdochax.com"
+                ],
+                [
+                    "DNS",
+                    "www.devonphysiotherapy.blog"
+                ],
+                [
+                    "DNS",
+                    "www.drooshgroove.in"
+                ],
+                [
+                    "DNS",
+                    "www.hatleysefi.fashion.blog"
+                ],
+                [
+                    "DNS",
+                    "www.hlcdsm.code.blog"
+                ],
+                [
+                    "DNS",
+                    "www.kinsakubonus.family.blog"
+                ],
+                [
+                    "DNS",
+                    "www.lizamanundaycare.car.blog"
+                ],
+                [
+                    "DNS",
+                    "www.madgeniuslife.com"
+                ],
+                [
+                    "DNS",
+                    "www.meshop.family.blog"
+                ],
+                [
+                    "DNS",
+                    "www.palliativecarehealthmatters.fitness.blog"
+                ],
+                [
+                    "DNS",
+                    "www.thebodyofchrist.family.blog"
+                ],
+                [
+                    "DNS",
+                    "www.thompkinsreho.family.blog"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:58:04"
+    },
+    "https://astalavista.box.sk": {
+        "Time": 6.22,
+        "URL": "https://astalavista.box.sk",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "88.212.29.3"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "88.212.29.3",
+        "PING Status": "OK",
+        "PING IP": "88.212.29.3",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://box.sk/search",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "88.212.29.3"
+            ]
+        ],
+        "HTTP Status": 503,
+        "Content Length": 384,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 07:58:54 GMT",
+            "Server": "Apache/2.4.56 (Debian)",
+            "Content-Length": "384",
+            "Connection": "close",
+            "Content-Type": "text/html; charset=iso-8859-1"
+        },
+        "HTML Content": "astalavista.box.sk_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.box3.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "044C4F146546D2448C590853F56E1F3A8B50",
+            "notBefore": "Apr 14 06:23:34 2024 GMT",
+            "notAfter": "Jul 13 06:23:33 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "astalavista.box.sk"
+                ],
+                [
+                    "DNS",
+                    "box.sk"
+                ],
+                [
+                    "DNS",
+                    "box3.net"
+                ],
+                [
+                    "DNS",
+                    "www.box.sk"
+                ],
+                [
+                    "DNS",
+                    "www.box3.net"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 09:59:00"
+    },
+    "https://attrition.org": {
+        "Time": 31.28,
+        "URL": "https://attrition.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.148.129.110"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.148.129.110",
+        "PING Status": "OK",
+        "PING IP": "185.148.129.110",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 6943,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 07:59:42 GMT",
+            "Server": "Temple of Hate 6.3.1",
+            "Accept-Ranges": "bytes",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Length": "2885",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html"
+        },
+        "HTML Content": "attrition.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "attrition.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04AE4DC2C457F2490EA8232E1BA08E41ADEB",
+            "notBefore": "Apr 10 12:36:23 2024 GMT",
+            "notAfter": "Jul  9 12:36:22 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "attrition.org"
+                ],
+                [
+                    "DNS",
+                    "www.attrition.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:00:11"
+    },
+    "https://secure.avaaz.org": {
+        "Time": 4.91,
+        "URL": "https://secure.avaaz.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.17.155.81",
+            "104.17.156.81"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.17.155.81",
+        "PING Status": "OK",
+        "PING IP": "104.17.155.81",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://secure.avaaz.org/page/en/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.17.155.81",
+                "104.17.156.81"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 73297,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:00:49 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87bdc2b36f66278c-PRG",
+            "CF-Cache-Status": "REVALIDATED",
+            "Cache-Control": "public, max-age=14400",
+            "ETag": "W/\"f49d1f4400d0f7ca07a243f0cb51fbb5-1\"",
+            "Expires": "Mon, 29 Apr 2024 12:00:49 GMT",
+            "Last-Modified": "Thu, 25 Apr 2024 21:26:06 GMT",
+            "Strict-Transport-Security": "max-age=15552000; includeSubDomains; preload",
+            "Vary": "Accept-Encoding",
+            "x-amz-id-2": "8dad+a8KZLLOluDoxsfJvCcOn5KTWwe+2ZyrwEKnCaCyzOawEv5T6ZpqjBpkqE/8c0omkIyLdk8=",
+            "x-amz-request-id": "H0CMC1JF0DMH07G0",
+            "x-amz-version-id": "evX87Cdo7iR3SdezzC4SPPaFb_KWoFZD",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Security-Policy": "frame-ancestors 'self'",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "secure.avaaz.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Avaaz Foundation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.avaaz.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "083979D28D03166A5BA99BDD36BEA382",
+            "notBefore": "Jul 24 00:00:00 2023 GMT",
+            "notAfter": "Aug  2 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.avaaz.org"
+                ],
+                [
+                    "DNS",
+                    "avaaz.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl",
+                "http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:00:53"
+    },
+    "https://www.autistici.org": {
+        "Time": 8.03,
+        "URL": "https://www.autistici.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "82.94.249.234",
+            "93.190.126.19",
+            "198.167.222.108"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "198.167.222.108",
+        "PING Status": "OK",
+        "PING IP": "198.167.222.108",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 6522,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 08:01:34 GMT",
+            "Content-Type": "text/html",
+            "Content-Length": "2620",
+            "Connection": "keep-alive",
+            "Content-Location": "index.en.html.gz",
+            "Vary": "negotiate,accept-language,accept-encoding,cookie",
+            "TCN": "choice",
+            "Last-Modified": "Tue, 23 Apr 2024 09:15:38 GMT",
+            "ETag": "\"a3c-616bfff4c0280\"",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Content-Encoding": "gzip",
+            "Content-Language": "en",
+            "X-Cache-Status": "HIT",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            "Report-To": "{\"group\": \"default\", \"max_age\": 86400, \"endpoints\": [{\"url\": \"https://live-reports.autistici.org/ingest/v1\"}]}",
+            "NEL": "{\"report_to\": \"default\", \"max_age\": 86400, \"failure_fraction\": 0.1, \"success_fraction\": 0.0}",
+            "Accept-Ranges": "bytes"
+        },
+        "HTML Content": "www.autistici.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "autistici.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04F4D145B235E334E8372B477438D7BF8636",
+            "notBefore": "Apr 19 16:57:08 2024 GMT",
+            "notAfter": "Jul 18 16:57:07 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "autistici.org"
+                ],
+                [
+                    "DNS",
+                    "www.autistici.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:01:41"
+    },
+    "https://noblogs.org": {
+        "Time": 5.02,
+        "URL": "https://noblogs.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "82.94.249.234",
+            "93.190.126.19",
+            "198.167.222.108"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "93.190.126.19",
+        "PING Status": "OK",
+        "PING IP": "93.190.126.19",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 38598,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 08:02:22 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "9819",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding,Cookie",
+            "Link": "<https://noblogs.org/wp-json/>; rel=\"https://api.w.org/\", <https://noblogs.org/wp-json/wp/v2/pages/367>; rel=\"alternate\"; type=\"application/json\", <https://noblogs.org/>; rel=shortlink",
+            "Content-Encoding": "gzip",
+            "X-Content-Type-Options": "nosniff",
+            "X-Cache-Status": "HIT",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            "Report-To": "{\"group\": \"default\", \"max_age\": 86400, \"endpoints\": [{\"url\": \"https://live-reports.autistici.org/ingest/v1\"}]}",
+            "NEL": "{\"report_to\": \"default\", \"max_age\": 86400, \"failure_fraction\": 0.1, \"success_fraction\": 0.0}"
+        },
+        "HTML Content": "noblogs.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.noblogs.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "FR"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Paris"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Paris"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Gandi"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Gandi Standard SSL CA 2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "1F35E1E72A4AF6C05F8DEA8F1B03D63D",
+            "notBefore": "May  9 00:00:00 2023 GMT",
+            "notAfter": "May 13 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.noblogs.org"
+                ],
+                [
+                    "DNS",
+                    "noblogs.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.usertrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.usertrust.com/GandiStandardSSLCA2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.usertrust.com/GandiStandardSSLCA2.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:02:26"
+    },
+    "https://beeg.com": {
+        "Time": 4.32,
+        "URL": "https://beeg.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.56.86",
+            "172.67.181.179"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.56.86",
+        "PING Status": "OK",
+        "PING IP": "104.21.56.86",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 7703,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:02:54 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "access-control-allow-origin": "*",
+            "last-modified": "Fri, 26 Apr 2024 08:30:54 GMT",
+            "vary": "Origin",
+            "x-frame-options": "DENY",
+            "x-xss-protection": "1; mode=block",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ZFxy81fOvm2zjbraw94%2FoazfS5kBSkL7nTWYvg%2FMIoi7NhkJE9hMZfIhta1NUM24DUjhA1Z%2B2Wmz6ln4BLk4luD1SX436HyqV1ftyjobzVHrITcoY7oKLMbIvA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87bdc5c049bf4131-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "beeg.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "beeg.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07DB6C784C1270C60D417EF770B21B50",
+            "notBefore": "Mar 30 07:39:19 2024 GMT",
+            "notAfter": "Jun 28 07:39:18 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "beeg.com"
+                ],
+                [
+                    "DNS",
+                    "*.beeg.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/mIb7HSNfXdA"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/RK_XF6-6ZE8.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:02:58"
+    }
+}

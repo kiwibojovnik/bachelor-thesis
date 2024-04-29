@@ -1,0 +1,875 @@
+{
+    "https://proxify.com": {
+        "Time": 5.19,
+        "URL": "https://proxify.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "173.208.81.207"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "173.208.81.207",
+        "PING Status": "OK",
+        "PING IP": "173.208.81.207",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='proxify.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1000)')))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "proxify.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:43:27"
+    },
+    "http://proxy.org": {
+        "Time": 6.06,
+        "URL": "http://proxy.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.105.134.43"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.105.134.43",
+        "PING Status": "OK",
+        "PING IP": "23.105.134.43",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 20470,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:44:01 GMT",
+            "Server": "Apache",
+            "X-Powered-By": "BlockScript/2.1292",
+            "Set-Cookie": "rs522c2=xv8oJ5GRIUpL2WjJlvmLu57Ps0w6tnM%3D; expires=Wed, 01-May-2024 10:44:01 GMT; Max-Age=172800; path=/",
+            "Expires": "Mon, 23 Jul 1993 05:00:00 GMT",
+            "Last-Modified": "Mon, 29 Apr 2024 10:44:01 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html; charset=UTF-8",
+            "X-Cache": "MISS from 127.0.0.1",
+            "Transfer-Encoding": "chunked",
+            "Via": "1.1 127.0.0.1 (squid)",
+            "Connection": "keep-alive"
+        },
+        "HTML Content": "proxy.org_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:44:07"
+    },
+    "http://proxytools.sourceforge.net": {
+        "Time": 5.68,
+        "URL": "http://proxytools.sourceforge.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.18.12.149",
+            "104.18.13.149"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.18.13.149",
+        "PING Status": "OK",
+        "PING IP": "104.18.13.149",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://proxytools.sourceforge.net/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.18.12.149",
+                "104.18.13.149"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 12308,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:45:09 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding, Host, Accept-Encoding",
+            "last-modified": "Thu, 04 Apr 2002 17:57:24 GMT",
+            "etag": "W/\"3014-39dd0558a0900\"",
+            "cache-control": "max-age=3600",
+            "expires": "Mon, 29 Apr 2024 11:44:57 GMT",
+            "x-from": "sfp-ioweb82-3",
+            "content-encoding": "gzip",
+            "CF-Cache-Status": "DYNAMIC",
+            "Content-Security-Policy": "upgrade-insecure-requests",
+            "Server": "cloudflare",
+            "CF-RAY": "87beb36f6e306e94-PRG",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "proxytools.sourceforge.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "sourceforge.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0FCAB67BFDB0D0B4924E77B94DFB8590",
+            "notBefore": "Feb  4 00:00:00 2024 GMT",
+            "notAfter": "Dec 31 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "sourceforge.net"
+                ],
+                [
+                    "DNS",
+                    "*.sourceforge.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:45:15"
+    },
+    "https://prq.se": {
+        "Time": 5.29,
+        "URL": "https://prq.se",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "88.80.30.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "88.80.30.60",
+        "PING Status": "OK",
+        "PING IP": "88.80.30.60",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 3518,
+        "Headers": {
+            "Server": "nginx/1.10.3",
+            "Date": "Mon, 29 Apr 2024 10:46:11 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "prq.se_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "prq.se"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "047B54EC0478F9C523293891589640CD7A98",
+            "notBefore": "Mar 15 13:28:29 2024 GMT",
+            "notAfter": "Jun 13 13:28:28 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "ip.prq.se"
+                ],
+                [
+                    "DNS",
+                    "ipv6.prq.se"
+                ],
+                [
+                    "DNS",
+                    "prq.se"
+                ],
+                [
+                    "DNS",
+                    "webmail.prq.se"
+                ],
+                [
+                    "DNS",
+                    "www.prq.se"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:46:16"
+    },
+    "https://psiphon.ca": {
+        "Time": 7.0,
+        "URL": "https://psiphon.ca",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.18.154.84",
+            "104.18.155.84"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.18.154.84",
+        "PING Status": "OK",
+        "PING IP": "104.18.154.84",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 12459,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:47:21 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Last-Modified": "Tue, 06 Feb 2024 18:17:34 GMT",
+            "CF-Cache-Status": "DYNAMIC",
+            "expect-ct": "max-age=86400, enforce",
+            "referrer-policy": "same-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "SAMEORIGIN",
+            "x-xss-protection": "1; mode=block",
+            "Server": "cloudflare",
+            "CF-RAY": "87beb6a52ea86e96-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "psiphon.ca_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "psiphon.ca"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "RapidSSL TLS RSA CA G1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "09CEAA6F9E7C9733D9A8C6A2FE1624CA",
+            "notBefore": "May 23 00:00:00 2023 GMT",
+            "notAfter": "Jun 16 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "psiphon.ca"
+                ],
+                [
+                    "DNS",
+                    "www.psiphon.ca"
+                ]
+            ],
+            "OCSP": [
+                "http://status.rapidssl.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.rapidssl.com/RapidSSLTLSRSACAG1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://cdp.rapidssl.com/RapidSSLTLSRSACAG1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:47:27"
+    },
+    "https://radiofreetexas.com": {
+        "Time": 35.33,
+        "URL": "https://radiofreetexas.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "3.134.190.129"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "3.134.190.129",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.4",
+                0.009998798370361328
+            ],
+            [
+                "147.251.243.80",
+                0.017769336700439453
+            ],
+            [
+                "147.251.241.130",
+                0.015476226806640625
+            ],
+            [
+                "147.251.242.194",
+                0.02175283432006836
+            ],
+            [
+                "147.251.242.194",
+                0.022330760955810547
+            ],
+            [
+                "195.178.87.1",
+                0.0030121803283691406
+            ],
+            [
+                "213.144.184.24",
+                0.012369871139526367
+            ],
+            [
+                "195.22.195.35",
+                0.16941523551940918
+            ],
+            [
+                "195.22.206.61",
+                0.1155691146850586
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 328911,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 10:48:29 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "34245",
+            "Connection": "keep-alive",
+            "Cache-Provider": "CLOUDWAYS-CACHE-DE",
+            "Content-Encoding": "gzip",
+            "Vary": "Accept-Encoding",
+            "Last-Modified": "Sat, 16 Mar 2024 19:03:01 GMT"
+        },
+        "HTML Content": "radiofreetexas.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "radiofreetexas.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "037A3D5D7E6CC9B08B05AC6D3D4DD8843A2F",
+            "notBefore": "Apr 22 11:18:21 2024 GMT",
+            "notAfter": "Jul 21 11:18:20 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "radiofreetexas.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:48:41"
+    },
+    "https://rapidgator.net": {
+        "Time": 4.5,
+        "URL": "https://rapidgator.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "195.211.222.2"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "195.211.222.2",
+        "PING Status": "OK",
+        "PING IP": "195.211.222.2",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 24831,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 10:49:29 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Set-Cookie": "PHPSESSID=d0cth0t6hispjsf1ov68uve36q; path=/; secure; HttpOnly, __token=eTRuUE51eEhWN0ZBRmV5R0NaX0Z3SDBvUzROWWNyT0T2UrLSQ8FwpkY_X9cWYU4Yr8FG3AdAZMwzo-jIERyHBw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate, no-cache,must-revalidate",
+            "Pragma": "no-cache, no-cache",
+            "Access-Control-Allow-Origin": "*",
+            "Content-Encoding": "gzip",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff"
+        },
+        "HTML Content": "rapidgator.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.rapidgator.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Domain Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "62FF64C7066EA98127624FF341FED08F",
+            "notBefore": "May 24 00:00:00 2023 GMT",
+            "notAfter": "Jun 23 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.rapidgator.net"
+                ],
+                [
+                    "DNS",
+                    "rapidgator.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:49:33"
+    },
+    "https://www.rarbg.to": {
+        "URL": "https://www.rarbg.to"
+    },
+    "https://reliefweb.int": {
+        "Time": 29.51,
+        "URL": "https://reliefweb.int",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "34.195.217.179",
+            "44.214.251.131",
+            "52.23.135.37"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "34.195.217.179",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.4",
+                0.007460117340087891
+            ],
+            [
+                "147.251.243.86",
+                0.019194841384887695
+            ],
+            [
+                "147.251.242.195",
+                0.002300739288330078
+            ],
+            [
+                "147.251.242.194",
+                0.020512104034423828
+            ],
+            [
+                "147.251.242.194",
+                0.02187800407409668
+            ],
+            [
+                "195.178.87.1",
+                0.0035212039947509766
+            ],
+            [
+                "213.144.184.24",
+                0.019765138626098633
+            ],
+            [
+                "213.144.184.24",
+                0.012581110000610352
+            ],
+            [
+                "195.22.195.35",
+                0.13930010795593262
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 138702,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:51:23 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "39724",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Cookie",
+            "Cache-Control": "max-age=120, public",
+            "Link": "<https://fonts.googleapis.com>; rel=\"preconnect\", <https://fonts.gstatic.com>; rel=\"preconnect\"; crossorigin=\"1\", <https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap>; rel=\"preload\"; as=\"style\"; onload=\"this.onload=null;this.setAttribute(`rel`, `stylesheet`);\"",
+            "Content-language": "en",
+            "X-Content-Type-Options": "nosniff",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "Last-Modified": "Mon, 29 Apr 2024 10:51:19 GMT",
+            "ETag": "W/\"1714387879\"",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload; always;",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "Content-Encoding": "gzip",
+            "Age": "3",
+            "Accept-Ranges": "bytes"
+        },
+        "HTML Content": "reliefweb.int_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.reliefweb.int"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M02"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0333EBFD2ECF6AE1C802E1EBB6FAE002",
+            "notBefore": "Jan 27 00:00:00 2024 GMT",
+            "notAfter": "Feb 23 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.reliefweb.int"
+                ],
+                [
+                    "DNS",
+                    "reliefweb.int"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m02.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m02.amazontrust.com/r2m02.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m02.amazontrust.com/r2m02.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:51:29"
+    },
+    "https://repo1.maven.org": {
+        "Time": 4.68,
+        "URL": "https://repo1.maven.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "199.232.16.209"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "199.232.16.209",
+        "PING Status": "OK",
+        "PING IP": "199.232.16.209",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 308,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "308",
+            "Last-Modified": "Wed, 10 Aug 2016 15:08:35 GMT",
+            "ETag": "\"870468c6fc5c993981a7cdfc340bff13\"",
+            "Content-Type": "text/html",
+            "Via": "1.1 varnish, 1.1 varnish",
+            "Accept-Ranges": "bytes",
+            "Date": "Mon, 29 Apr 2024 10:52:04 GMT",
+            "Age": "554847",
+            "X-Served-By": "cache-iad-kcgs7200144-IAD, cache-vie6370-VIE",
+            "X-Cache": "HIT, HIT",
+            "X-Cache-Hits": "25036, 2",
+            "X-Timer": "S1714387925.598965,VS0,VE0"
+        },
+        "HTML Content": "repo1.maven.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "repo1.maven.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Atlas R3 DV TLS CA 2023 Q4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0188BE00E19B071CC5266771C5756B44",
+            "notBefore": "Dec 17 14:57:23 2023 GMT",
+            "notAfter": "Jan 17 14:57:22 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "repo1.maven.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/ca/gsatlasr3dvtlsca2023q4"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsatlasr3dvtlsca2023q4.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/ca/gsatlasr3dvtlsca2023q4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:52:09"
+    }
+}

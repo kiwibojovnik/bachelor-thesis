@@ -1,0 +1,1725 @@
+{
+    "cnbc.com": {
+        "Time": 29.39,
+        "URL": "cnbc.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "50.234.250.31",
+            "50.234.250.32"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "50.234.250.31",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.008216142654418945
+            ],
+            [
+                "90.181.198.158",
+                0.004987239837646484
+            ],
+            [
+                "90.181.197.157",
+                0.011657953262329102
+            ],
+            [
+                "194.228.21.250",
+                0.010740995407104492
+            ],
+            [
+                "62.115.124.28",
+                0.020985841751098633
+            ],
+            [
+                "62.115.172.123",
+                0.015076160430908203
+            ],
+            [
+                "89.149.129.218",
+                0.10399603843688965
+            ],
+            [
+                "76.74.101.46",
+                0.10549092292785645
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.cnbc.com",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.73.140.119"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 2394375,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "314692",
+            "X-Request-Id": "1feee2fc-555e-41b1-8011-575c7fadba68",
+            "Access-Control-Allow-Origin": "*",
+            "X-Aicache-OS": "xxx.xx.10.39:3000, x.xx1.11.41:80",
+            "Content-Encoding": "gzip",
+            "Cache-Control": "max-age=15",
+            "Expires": "Sun, 28 Apr 2024 21:05:58 GMT",
+            "Date": "Sun, 28 Apr 2024 21:05:43 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, User-Agent",
+            "Content-Security-Policy": "frame-ancestors 'self' *.cnbc.com;"
+        },
+        "HTML Content": "cnbc.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "NBCUniversal Media, LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "cnbc.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Entrust, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "See www.entrust.net/legal-terms"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "(c) 2012 Entrust, Inc. - for authorized use only"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Entrust Certification Authority - L1K"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "125E8FBF08DC9053504EEA527B5F7AE5",
+            "notBefore": "Mar 14 17:00:42 2024 GMT",
+            "notAfter": "Mar 14 17:00:41 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "cnbc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cnbc.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.entrust.net"
+            ],
+            "caIssuers": [
+                "http://aia.entrust.net/l1k-chain256.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.entrust.net/level1k.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:05:48"
+    },
+    "loc.gov": {
+        "Time": 9.56,
+        "URL": "loc.gov",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.16.55.16",
+            "104.16.54.16"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.16.54.16",
+        "PING Status": "OK",
+        "PING IP": "104.16.54.16",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://loc.gov/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.16.55.16",
+                "104.16.54.16"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 159877,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 21:06:19 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "159877",
+            "Connection": "keep-alive",
+            "x-frame-options": "sameorigin",
+            "access-control-allow-origin": "*",
+            "referrer-policy": "no-referrer-when-downgrade",
+            "strict-transport-security": "max-age=3600; preload",
+            "x-content-type-options": "nosniff",
+            "etag": "\"f59877d9dfb71a572dae83aa401d0d5c\"",
+            "expires": "Sun, 28 Apr 2024 20:43:02 GMT",
+            "content-security-policy": "block-all-mixed-content;         default-src https://loc.gov/ https://*.loc.gov/ ;         media-src https://loc.gov/ https://*.loc.gov/              https://*.readspeaker.com/             https://*.arcgis.com/ https://*.arcgisonline.com/  https://webapps-cdn.esri.com/             blob:;         worker-src https://loc.gov/ https://*.loc.gov/              blob:;         font-src https://loc.gov/ https://*.loc.gov/              https://*.arcgis.com/ https://*.arcgisonline.com/  https://webapps-cdn.esri.com/             https://ssl.p.jwpcdn.com/             data:;         img-src https://loc.gov/ https://*.loc.gov/              https://congress.gov/ https://*.congress.gov/             https://*.readspeaker.com/             https://*.arcgis.com/ https://*.arcgisonline.com/  https://webapps-cdn.esri.com/             https://*.ssa.gov/             https://dpm.demdex.net/             https://cm.everesttech.net/             https://*.amazonaws.com             data:             blob:;         connect-src https://loc.gov/ https://*.loc.gov/              https://*.arcgis.com/ https://*.arcgisonline.com/  https://webapps-cdn.esri.com/             https://chat-us.libanswers.com/             https://thelibraryofcongress.tt.omtrdc.net/             https://dpm.demdex.net/ \t        https://d3c605m4lmznjl.cloudfront.net/             https://*.s3.us-east-1.amazonaws.com/;         style-src https://loc.gov/ https://*.loc.gov/              https://*.readspeaker.com/             https://*.arcgis.com/ https://*.arcgisonline.com/  https://webapps-cdn.esri.com/             https://ssl.p.jwpcdn.com/             https://assets.adobedtm.com/             https://*.ssa.gov/             'unsafe-inline'             blob:;         script-src https://loc.gov/ https://*.loc.gov/              https://*.readspeaker.com/             https://*.arcgis.com/ https://*.arcgisonline.com/  https://webapps-cdn.esri.com/             https://ssl.p.jwpcdn.com/             https://assets.adobedtm.com/             https://*.blackbaudcdn.net/ https://*.blackbaud.com/             https://ajax.googleapis.com/ajax/libs/jquery/             https://*.ssa.gov/             https://s.ytimg.com/             'unsafe-inline'             'unsafe-eval';         frame-src https://loc.gov/ https://*.loc.gov/              https://*.readspeaker.com/             https://*.blackbaudcdn.net/ https://*.blackbaud.com/             https://www.nlstalkingbooks.org/             https://unitedstateslibraryofcongress.demdex.net             https://www.youtube-nocookie.com/;         frame-ancestors https://loc.gov/ https://*.loc.gov/              https://*.blackbaudcdn.net/ https://*.blackbaud.com/             https://loc.libwizard.com/;         report-uri https://errorlogging.loc.gov/api/51/security/?sentry_key=2176ae0b9acd4cd59297edc0e064cc95&sentry_environment=production ;",
+            "x-grace": "none",
+            "x-nearside-cache": "HIT",
+            "x-nearside-cache-hits": "70",
+            "Cache-Control": "no-transform, max-age=3600",
+            "Age": "1787",
+            "CF-Cache-Status": "HIT",
+            "Accept-Ranges": "bytes",
+            "Vary": "Accept-Encoding",
+            "Server": "cloudflare",
+            "CF-RAY": "87ba03f98892b369-PRG"
+        },
+        "HTML Content": "loc.gov_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "District of Columbia"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Washington"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Library of Congress"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.loc.gov"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Entrust, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "See www.entrust.net/legal-terms"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "(c) 2012 Entrust, Inc. - for authorized use only"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Entrust Certification Authority - L1K"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "75855B870ED6C4CF43A5624F5EAEE524",
+            "notBefore": "May  3 04:20:21 2023 GMT",
+            "notAfter": "Jun  3 04:20:21 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.loc.gov"
+                ],
+                [
+                    "DNS",
+                    "loc.gov"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.entrust.net"
+            ],
+            "caIssuers": [
+                "http://aia.entrust.net/l1k-chain256.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.entrust.net/level1k.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:06:28"
+    },
+    "qq.com": {
+        "Time": 12.33,
+        "URL": "qq.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "123.150.76.218",
+            "203.205.254.157",
+            "113.108.81.189"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "123.150.76.218",
+        "PING Status": "OK",
+        "PING IP": "123.150.76.218",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.qq.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.73.140.209"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 109180,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "21247",
+            "Server": "tRPC-Gateway",
+            "Content-Encoding": "gzip",
+            "Inews_trace_id": "40396647090429050721",
+            "Inews-Trace-Id": "40396647090429050721",
+            "X-Upstream-Latency": "5",
+            "X-Proxy-Latency": "1",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Content-Security-Policy": "frame-ancestors none",
+            "Date": "Sun, 28 Apr 2024 21:07:21 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=2628000 ; preload"
+        },
+        "HTML Content": "qq.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "CN"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Guangdong Province"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Shenzhen"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Shenzhen Tencent Computer Systems Company Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "qq.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert Secure Site CN CA G3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "050BED08E0A3964AFD370E4E5DCCAE3F",
+            "notBefore": "May 10 00:00:00 2023 GMT",
+            "notAfter": "Jun  9 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "qq.com"
+                ],
+                [
+                    "DNS",
+                    "qq.wang"
+                ],
+                [
+                    "DNS",
+                    "www.qq.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.cn"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.cn/DigiCertSecureSiteCNCAG3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.digicert.cn/DigiCertSecureSiteCNCAG3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:07:30"
+    },
+    "buzzfeed.com": {
+        "Time": 3.94,
+        "URL": "buzzfeed.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "65.9.95.59",
+            "65.9.95.80",
+            "65.9.95.31",
+            "65.9.95.49"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "65.9.95.49",
+        "PING Status": "OK",
+        "PING IP": "65.9.95.49",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.buzzfeed.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.130.114",
+                "151.101.194.114",
+                "151.101.2.114",
+                "151.101.66.114"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 1389860,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "218596",
+            "Content-Type": "text/html; charset=utf-8",
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Content-Encoding": "gzip",
+            "Content-Language": "en",
+            "Document-Policy": "js-profiling",
+            "Etag": "\"153524-P2CyucbY2fUCOp9bUK06osyaICY\"",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "Set-Cookie": "next-i18next=en; path=/; expires=Mon, 28 Apr 2025 21:06:56 GMT, dsl25_frhf=control;expires=Sun, 26 May 2024 21:07:59 GMT;, bf_mission_possible=disable;expires=Mon, 29 Apr 2024 21:07:59 GMT;path=/, bf-geo-country=CZ; expires=Mon, 29 Apr 2024 21:07:59 GMT; path=/; domain=.buzzfeed.com;, gdpr=true; expires=Sun, 12 May 2024 21:07:59 GMT; path=/; domain=www.buzzfeed.com;",
+            "X-Request-Id": "0c08e96e6f60c13055440d354b89152b",
+            "Accept-Ranges": "bytes",
+            "Age": "63",
+            "Date": "Sun, 28 Apr 2024 21:07:59 GMT",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Content-Security-Policy": "upgrade-insecure-requests",
+            "Strict-Transport-Security": "max-age=31536000; preload",
+            "Timing-Allow-Origin": "*",
+            "X-Served-By": "cache-vie6349-VIE",
+            "X-Cache": "HIT",
+            "X-Cache-Hits": "0",
+            "X-Timer": "S1714338479.085556,VS0,VE2",
+            "Vary": "X-BF-Homepage-Alias, X-BF-Mission-Possible, X-BF-User-Edition, Accept-Encoding"
+        },
+        "HTML Content": "buzzfeed.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "buzzfeed.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M02"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0F7681F386359047EFCF1375D0B27FAB",
+            "notBefore": "Dec  6 00:00:00 2023 GMT",
+            "notAfter": "Jan  3 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "buzzfeed.com"
+                ],
+                [
+                    "DNS",
+                    "*.buzzfeed.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m02.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m02.amazontrust.com/r2m02.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m02.amazontrust.com/r2m02.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:08:02"
+    },
+    "godaddy.com": {
+        "Time": 7.37,
+        "URL": "godaddy.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "208.109.192.70"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "208.109.192.70",
+        "PING Status": "OK",
+        "PING IP": "208.109.192.70",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.godaddy.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.218.182.140"
+            ]
+        ],
+        "HTTP Status": 403,
+        "Content Length": 365,
+        "Headers": {
+            "Server": "AkamaiGHost",
+            "Mime-Version": "1.0",
+            "Content-Type": "text/html",
+            "Content-Length": "365",
+            "Expires": "Sun, 28 Apr 2024 21:09:12 GMT",
+            "Date": "Sun, 28 Apr 2024 21:09:12 GMT",
+            "Connection": "close",
+            "Set-Cookie": "market=en-GB; expires=Mon, 28-Apr-2025 21:09:12 GMT; path=/; domain=.godaddy.com",
+            "X-Frame-Options": "DENY",
+            "X-ORIGIN-TAG": "frontdoor",
+            "X-ARC": "2, 6a",
+            "Server-Timing": "ak_p; desc=\"1714338552750_35019278_57762664_23_154765_35_21_-\";dur=1"
+        },
+        "HTML Content": "godaddy.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "godaddy.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "21C7D335B1935C1A",
+            "notBefore": "Dec 29 21:00:29 2023 GMT",
+            "notAfter": "Jan 29 21:00:29 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "godaddy.com"
+                ],
+                [
+                    "DNS",
+                    "www.godaddy.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-14457.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:09:18"
+    },
+    "ikea.com": {
+        "Time": 5.26,
+        "URL": "ikea.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.74",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.211.75.49"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.211.75.49",
+        "PING Status": "OK",
+        "PING IP": "23.211.75.49",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://ikea.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.211.75.49"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 130845,
+        "Headers": {
+            "Server": "IKEA Server",
+            "Content-Type": "text/html; charset=utf-8",
+            "Akamai-GRN": "0.8f6ed417.1714338628.43867e5c",
+            "Strict-Transport-Security": "max-age=31536000",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Server-Timing": "edge; dur=1, cdn-cache; desc=HIT, ak_p; desc=\"1714338628578_399797903_1132887644_43_46117_22_14_-\";dur=1",
+            "x-ms-version": "2018-03-28",
+            "x-ms-request-id": "6784ae61-801e-0078-6901-973ece000000",
+            "ETag": "\"0x8DC651912D3D79D\"",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Cache-Control": "max-age=900",
+            "Expires": "Sun, 28 Apr 2024 21:25:28 GMT",
+            "Date": "Sun, 28 Apr 2024 21:10:28 GMT",
+            "Content-Length": "15851",
+            "Connection": "keep-alive",
+            "Akamai-Cache-Status": "Hit from child",
+            "Set-Cookie": "_abck=D2EFB0469B943C85CBF0721672FF9FEC~-1~YAAQj27UF9kI7ueOAQAA54SLJguQ2ULdX31CUTV0oQociPkjdEQT2JnuvcpVuesSXFJxPYeqVKp8e44whj82U1qbIv5RN8LBq2y8h+lW7F7V/sgmmQ4zXIRzZmUPlOB014OvHJnrEZko+ariKa/E3InWIfO6/BiQLqSHXlakpC/4a3y548NnO6WSrHg3jq52w+x/poo1cqjhsFrmKTZ2ZBzfRzwSls9tpgY2u8b2qvTW1jxJXt52SdXOFVBdPobLdeZ+94t/enER+x+sH+mwZ9PldxyLMrVhQzkDRlZ2HOM3hSXc+JEzTBSyxDq4Pm3mBnkwS+4981T6/pnbohXrBJvuwGfDK4QShJcTYfUZAx73tL5YS1Ocschz~-1~-1~-1; Domain=.ikea.com; Path=/; Expires=Mon, 28 Apr 2025 21:10:28 GMT; Max-Age=31536000; Secure, bm_sz=CA28E2394B2FC768C61BAFBD795B41B6~YAAQj27UF9oI7ueOAQAA54SLJhd+lARcV89bwzKonuDeLIMsvC93IeTv6ZiklAFGHXtfrk5axkFCtPnm7FKVGkYJhg0qwFchn0LQjm07N3KNh/kAJXlgs7VUJblvfT26jJ4WDBDtZaFJN3KedrFYwuR12GW3Fe/ePDkvGEDwIc/cxNlJ6wUj0a4+xCuDaLtOlgK0yCVZimsy0yt5xFRCEbsS1sxIMPIXIrOzubu2IFeDBJ8e7Xp3SHNeUBbngZRQWor3JsW+yyGSUvU8M2kcX8wrnvh2fUMKNz3VwnNezxym0yD30lFBa8PaVBUYPSBn2sP4JPfQWtp+dOW3+lFEQ84OARUw9Y9izZaRhNY=~3425329~3617348; Domain=.ikea.com; Path=/; Expires=Mon, 29 Apr 2024 01:10:28 GMT; Max-Age=14400"
+        },
+        "HTML Content": "ikea.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "jurisdictionCountryName",
+                        "NL"
+                    ]
+                ],
+                [
+                    [
+                        "businessCategory",
+                        "Private Organization"
+                    ]
+                ],
+                [
+                    [
+                        "serialNumber",
+                        "27232886"
+                    ]
+                ],
+                [
+                    [
+                        "countryName",
+                        "NL"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Zuid-Holland"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Delft"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Inter IKEA Systems B.V."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "ikea.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 Extended Validation Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "05C9A67BFC775DADD2B066347D379641",
+            "notBefore": "Oct  3 00:00:00 2023 GMT",
+            "notAfter": "Jun 10 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "ikea.com"
+                ],
+                [
+                    "DNS",
+                    "api.kitchen.planner.ikea.com"
+                ],
+                [
+                    "DNS",
+                    "kiosk.kitchen.planner.ikea.com"
+                ],
+                [
+                    "DNS",
+                    "kitchen.planner.ikea.com"
+                ],
+                [
+                    "DNS",
+                    "polyfill.ikea.net"
+                ],
+                [
+                    "DNS",
+                    "shop.api.ingka.ikea.com"
+                ],
+                [
+                    "DNS",
+                    "shop.static.ingka.ikea.com"
+                ],
+                [
+                    "DNS",
+                    "ww8.ikea.com"
+                ],
+                [
+                    "DNS",
+                    "www.ikea.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2ExtendedValidationServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ev-server-g3.crl",
+                "http://crl4.digicert.com/sha2-ev-server-g3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:10:33"
+    },
+    "disqus.com": {
+        "Time": 4.04,
+        "URL": "disqus.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.64.134",
+            "151.101.128.134",
+            "151.101.192.134",
+            "151.101.0.134"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.0.134",
+        "PING Status": "OK",
+        "PING IP": "151.101.0.134",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://disqus.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.64.134",
+                "151.101.128.134",
+                "151.101.192.134",
+                "151.101.0.134"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 5827,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "1579",
+            "Server": "nginx",
+            "Content-Type": "text/html; charset=utf-8",
+            "p3p": "CP=\"DSP IDC CUR ADM DELi STP NAV COM UNI INT PHY DEM\"",
+            "Cache-Control": "no-cache, private, must-revalidate, s-maxage=60",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "Content-Encoding": "gzip",
+            "Date": "Sun, 28 Apr 2024 21:11:30 GMT",
+            "Age": "9",
+            "Cross-Origin-Resource-Policy": "cross-origin",
+            "Strict-Transport-Security": "max-age=300; includeSubdomains"
+        },
+        "HTML Content": "disqus.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.disqus.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Domain Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "1B0E753FB8D32A170F102F2FB49EC812",
+            "notBefore": "Apr 16 00:00:00 2024 GMT",
+            "notAfter": "Apr 16 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.disqus.com"
+                ],
+                [
+                    "DNS",
+                    "disqus.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:11:34"
+    },
+    "taringa.net": {
+        "Time": 7.2,
+        "URL": "taringa.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.18.234.105",
+            "104.18.233.105"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.18.233.105",
+        "PING Status": "OK",
+        "PING IP": "104.18.233.105",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://taringa.net/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.18.234.105",
+                "104.18.233.105"
+            ]
+        ],
+        "HTTP Status": 403,
+        "Content Length": 16301,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 21:12:27 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "close",
+            "Accept-CH": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+            "Cross-Origin-Embedder-Policy": "require-corp",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Origin-Agent-Cluster": "?1",
+            "Permissions-Policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+            "Referrer-Policy": "same-origin",
+            "X-Frame-Options": "SAMEORIGIN",
+            "cf-mitigated": "challenge",
+            "cf-chl-out": "5hliiOMgQFTzlBk6I9dKUfhXep1+RgTeuLXMqDkgQBvsBAohPqfl96+sTlUUvXkjYRzgdQQ0cZHhUW635Slj4Y0iwIWJje8ZH76/UKbh3JguCQ2eEl4tsIveV02tAhhMioh5Kigqlr9RRfVCNdI2iQ==$N8V1CfO7rP/jkPiUKJiBzQ==",
+            "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=2592000; includeSubDomains",
+            "X-Content-Type-Options": "nosniff",
+            "Server": "cloudflare",
+            "CF-RAY": "87ba0cf4cf8b6e96-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "taringa.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "taringa.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "039B92A3A07DF5D76761ECFAF26CB9F0005A",
+            "notBefore": "Mar 25 12:12:28 2024 GMT",
+            "notAfter": "Jun 23 12:12:27 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "taringa.net"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 23:12:34"
+    },
+    "ea.com": {
+        "Time": 6.26,
+        "URL": "ea.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.73.141.42"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.73.141.42",
+        "PING Status": "OK",
+        "PING IP": "23.73.141.42",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://ea.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.73.141.42"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 268341,
+        "Headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "Last-Modified": "Sun, 28 Apr 2024 21:04:37 UTC",
+            "Content-Encoding": "gzip",
+            "Content-Length": "26076",
+            "Cache-Control": "max-age=515",
+            "Expires": "Sun, 28 Apr 2024 21:21:47 GMT",
+            "Date": "Sun, 28 Apr 2024 21:13:12 GMT",
+            "Connection": "keep-alive",
+            "Set-Cookie": "jobs-locale=en; SameSite=Strict; Path=/; Secure, PLAY_LANG=en-US; SameSite=Lax; Path=/, EDGESCAPE_COUNTRY=CZ; path=/, EDGESCAPE_REGION=; path=/, EDGESCAPE_TIMEZONE=GMT+1; path=/",
+            "Vary": "Accept-Encoding",
+            "Alt-Svc": "h3=\":443\"; ma=93600",
+            "X-LDNR-IS-EN-US": "yes",
+            "X-LDNR-ROOT-HL-SET": "yes",
+            "X-L-Path": "inert",
+            "X-Environment-Context": "prod",
+            "X-Application-Context": "eacom",
+            "Content-Security-Policy": "frame-ancestors 'self'",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Strict-Transport-Security": "max-age=86400"
+        },
+        "HTML Content": "ea.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "CALIFORNIA"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Redwood City"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Electronic Arts, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.origin.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0BFBD31CFD8368D6C513EF0EDF334D41",
+            "notBefore": "Jul 18 00:00:00 2023 GMT",
+            "notAfter": "Jul 17 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.origin.com"
+                ],
+                [
+                    "DNS",
+                    "*.stagea.content.easports.com"
+                ],
+                [
+                    "DNS",
+                    "*.spearhead.kr"
+                ],
+                [
+                    "DNS",
+                    "*.spark.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.pvzheroes.com"
+                ],
+                [
+                    "DNS",
+                    "*.pvzgardenwarfare.com"
+                ],
+                [
+                    "DNS",
+                    "*.pulse.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.popcap.com"
+                ],
+                [
+                    "DNS",
+                    "*.pogospike.com"
+                ],
+                [
+                    "DNS",
+                    "*.pogolt64.pogo.com"
+                ],
+                [
+                    "DNS",
+                    "*.pogodev.pogo.com"
+                ],
+                [
+                    "DNS",
+                    "*.pogobeta.com"
+                ],
+                [
+                    "DNS",
+                    "*.pogo.com"
+                ],
+                [
+                    "DNS",
+                    "*.masseffect.com"
+                ],
+                [
+                    "DNS",
+                    "*.maddenseason.org"
+                ],
+                [
+                    "DNS",
+                    "*.maddenseason.net"
+                ],
+                [
+                    "DNS",
+                    "*.maddenseason.info"
+                ],
+                [
+                    "DNS",
+                    "*.leap.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.labs.popcap.com"
+                ],
+                [
+                    "DNS",
+                    "*.jobs.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.firemonkeys.com.au"
+                ],
+                [
+                    "DNS",
+                    "*.ember.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.ecs.popcap.com"
+                ],
+                [
+                    "DNS",
+                    "*.easports.com"
+                ],
+                [
+                    "DNS",
+                    "*.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.dragonage.spark.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.dragonage.com"
+                ],
+                [
+                    "DNS",
+                    "*.content.easports.com"
+                ],
+                [
+                    "DNS",
+                    "*.commandandconquer.com"
+                ],
+                [
+                    "DNS",
+                    "*.clubpogo.com"
+                ],
+                [
+                    "DNS",
+                    "*.cert.content.easports.com"
+                ],
+                [
+                    "DNS",
+                    "*.careers.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.bejblitz.com"
+                ],
+                [
+                    "DNS",
+                    "*.battlefrontii.com"
+                ],
+                [
+                    "DNS",
+                    "*.battlefront2.com"
+                ],
+                [
+                    "DNS",
+                    "*.battlefieldwebcore.spark.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.awayoutgame.com"
+                ],
+                [
+                    "DNS",
+                    "*.anthemthegame.com"
+                ],
+                [
+                    "DNS",
+                    "*.anthemgame.com"
+                ],
+                [
+                    "DNS",
+                    "*.alpha.pogo.com"
+                ],
+                [
+                    "DNS",
+                    "*.ak.popcap.com"
+                ],
+                [
+                    "DNS",
+                    "www.visceralgames.com"
+                ],
+                [
+                    "DNS",
+                    "www.projectapex.com"
+                ],
+                [
+                    "DNS",
+                    "www.playapex.com"
+                ],
+                [
+                    "DNS",
+                    "www.maddenchampionship.com"
+                ],
+                [
+                    "DNS",
+                    "www.electronicarts.fr"
+                ],
+                [
+                    "DNS",
+                    "www.electronicarts.com"
+                ],
+                [
+                    "DNS",
+                    "www.eacashcard.com"
+                ],
+                [
+                    "DNS",
+                    "www.dawngate.com"
+                ],
+                [
+                    "DNS",
+                    "www.crysis.jp"
+                ],
+                [
+                    "DNS",
+                    "www.conquerwithcharacter.com"
+                ],
+                [
+                    "DNS",
+                    "www.chillingo.com"
+                ],
+                [
+                    "DNS",
+                    "www.bejewled-stars.com"
+                ],
+                [
+                    "DNS",
+                    "www.bejeweledstars.com"
+                ],
+                [
+                    "DNS",
+                    "visceralgames.com"
+                ],
+                [
+                    "DNS",
+                    "starwarsbattlefront2.com"
+                ],
+                [
+                    "DNS",
+                    "starwarsbattlefront.com"
+                ],
+                [
+                    "DNS",
+                    "spearhead.kr"
+                ],
+                [
+                    "DNS",
+                    "pvzheroes.com"
+                ],
+                [
+                    "DNS",
+                    "projectapex.com"
+                ],
+                [
+                    "DNS",
+                    "popcap.com"
+                ],
+                [
+                    "DNS",
+                    "pogobeta.com"
+                ],
+                [
+                    "DNS",
+                    "pogo.com"
+                ],
+                [
+                    "DNS",
+                    "playapex.com"
+                ],
+                [
+                    "DNS",
+                    "origin.com"
+                ],
+                [
+                    "DNS",
+                    "masseffect.com"
+                ],
+                [
+                    "DNS",
+                    "maddenseason.org"
+                ],
+                [
+                    "DNS",
+                    "maddenseason.net"
+                ],
+                [
+                    "DNS",
+                    "maddenseason.info"
+                ],
+                [
+                    "DNS",
+                    "maddenchampionship.com"
+                ],
+                [
+                    "DNS",
+                    "hutpromos.com"
+                ],
+                [
+                    "DNS",
+                    "futpromos.com"
+                ],
+                [
+                    "DNS",
+                    "electronicarts.fr"
+                ],
+                [
+                    "DNS",
+                    "electronicarts.com"
+                ],
+                [
+                    "DNS",
+                    "easports.jp"
+                ],
+                [
+                    "DNS",
+                    "easports.com"
+                ],
+                [
+                    "DNS",
+                    "eacashcard.com"
+                ],
+                [
+                    "DNS",
+                    "ea.com"
+                ],
+                [
+                    "DNS",
+                    "dragonage.com"
+                ],
+                [
+                    "DNS",
+                    "dawngate.com"
+                ],
+                [
+                    "DNS",
+                    "crysis.jp"
+                ],
+                [
+                    "DNS",
+                    "conquerwithcharacter.com"
+                ],
+                [
+                    "DNS",
+                    "commandandconquer.com"
+                ],
+                [
+                    "DNS",
+                    "chillingo.com"
+                ],
+                [
+                    "DNS",
+                    "bejewled-stars.com"
+                ],
+                [
+                    "DNS",
+                    "bejeweledstars.com"
+                ],
+                [
+                    "DNS",
+                    "battlefrontii.com"
+                ],
+                [
+                    "DNS",
+                    "battlefront2.com"
+                ],
+                [
+                    "DNS",
+                    "awayoutgame.com"
+                ],
+                [
+                    "DNS",
+                    "anthemthegame.com"
+                ],
+                [
+                    "DNS",
+                    "anthemgame.com"
+                ],
+                [
+                    "DNS",
+                    "*.www.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.thesims.spark.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.test.content.easports.com"
+                ],
+                [
+                    "DNS",
+                    "*.starwarsbattlefront2.com"
+                ],
+                [
+                    "DNS",
+                    "*.starwarsbattlefront.com"
+                ],
+                [
+                    "DNS",
+                    "*.starwars.ea.com"
+                ],
+                [
+                    "DNS",
+                    "*.stageb.easports.com"
+                ],
+                [
+                    "DNS",
+                    "*.stageb.content.easports.com"
+                ],
+                [
+                    "DNS",
+                    "*.stagea.easports.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2SecureServerCA-2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigicertSHA2SecureServerCA-1.crl",
+                "http://crl4.digicert.com/DigicertSHA2SecureServerCA-1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:13:15"
+    },
+    "dropcatch.com": {
+        "Time": 6.23,
+        "URL": "dropcatch.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.74",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.15.191",
+            "104.22.4.77",
+            "104.22.5.77"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.5.77",
+        "PING Status": "OK",
+        "PING IP": "104.22.5.77",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.dropcatch.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.22.4.77",
+                "104.22.5.77",
+                "172.67.15.191"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 15388,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 21:14:17 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "last-modified": "Thu, 04 Apr 2024 15:30:34 GMT",
+            "x-amz-server-side-encryption": "AES256",
+            "vary": "Accept-Encoding",
+            "x-cache": "Hit from cloudfront",
+            "via": "1.1 eb83e7e264681d87a86c9b6a2159e502.cloudfront.net (CloudFront)",
+            "x-amz-cf-pop": "FRA2-C1",
+            "x-amz-cf-id": "RZvrkfVoJAFPB6RQ3f6au313EIlykzkzgx0HV_ktTgf77uft_K-Cmw==",
+            "Age": "6",
+            "CF-Cache-Status": "DYNAMIC",
+            "Content-Security-Policy": "frame-ancestors 'self'; frame-src 'self' https://www.sitecdn.com braintreegateway.com assets.braintreegateway.com googletagmanager.com https://client.dropcatch.com https://*.paypal.com https://*.paypalobjects.com https://ssl.kaptcha.com; script-src 'self' https://*.paypal.com https://*.googletagmanager.com https://secure.dropcatch.com https://*.google-analytics.com 'unsafe-inline'; connect-src 'self' https://*.amazonaws.com https://*.braintreegateway.com https://*.braintree-api.com https://uilogging.tcdevops.com https://*.google-analytics.com https://translate.dropcatch.com https://client.dropcatch.com wss://rt.dropcatch.com",
+            "X-FRAME-OPTIONS": "SAMEORIGIN",
+            "Server": "cloudflare",
+            "CF-RAY": "87ba0fa4fbe1b351-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "dropcatch.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "dropcatch.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03A28BBADEA3044876E2991869BE3338C258",
+            "notBefore": "Mar 25 07:16:54 2024 GMT",
+            "notAfter": "Jun 23 07:16:53 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.dropcatch.com"
+                ],
+                [
+                    "DNS",
+                    "dropcatch.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 23:14:22"
+    }
+}

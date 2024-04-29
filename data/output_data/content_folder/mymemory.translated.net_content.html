@@ -1,0 +1,504 @@
+<html>
+<head>
+    <title>MyMemory - Machine translation meets human translation</title>
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="MyMemory is the world largest collaborative translation archive."/>   
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="canonical" href="https://mymemory.translated.net"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/img/favicon-16x16.png">
+    <link rel="mask-icon" href="/public/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/public/css/build/mym-translated.min.css?v=20191128" rel="stylesheet" type="text/css"/>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5M6Q96G');</script>
+        <!-- End Google Tag Manager --></head>
+<body class=home data-ui-lang="en">
+<!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M6Q96G"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) --><header class="header--standard header header--not-bottom header--pinned header--top">
+    <div class="layout layout--norow">
+        <a href="https://mymemory.translated.net" class="logo">
+            <img src="/public/img/mym_logo_horizontal.svg" class="img-logo" />
+        </a>
+        <input id="input-hamburger" type="checkbox" />
+        <label for="input-hamburger"><i class="icon  ">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" strokewidth="1" class="icon__fill" fill-rule="evenodd">
+                        <path d="M3,13 C2.44771525,13 2,12.5522847 2,12 C2,11.4477153 2.44771525,11 3,11 L21,11 C21.5522847,11 22,11.4477153 22,12 C22,12.5522847 21.5522847,13 21,13 L3,13 Z M3,7 C2.44771525,7 2,6.55228475 2,6 C2,5.44771525 2.44771525,5 3,5 L21,5 C21.5522847,5 22,5.44771525 22,6 C22,6.55228475 21.5522847,7 21,7 L3,7 Z M3,19 C2.44771525,19 2,18.5522847 2,18 C2,17.4477153 2.44771525,17 3,17 L21,17 C21.5522847,17 22,17.4477153 22,18 C22,18.5522847 21.5522847,19 21,19 L3,19 Z" id="path-1"></path>
+                    </g></svg></i><i class="icon  ">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" strokewidth="1" class="icon__fill" fill-rule="evenodd">
+                        <path d="M13.4142136,12 L18.7071068,17.2928932 C19.0976311,17.6834175 19.0976311,18.3165825 18.7071068,18.7071068 C18.3165825,19.0976311 17.6834175,19.0976311 17.2928932,18.7071068 L12,13.4142136 L6.70710678,18.7071068 C6.31658249,19.0976311 5.68341751,19.0976311 5.29289322,18.7071068 C4.90236893,18.3165825 4.90236893,17.6834175 5.29289322,17.2928932 L10.5857864,12 L5.29289322,6.70710678 C4.90236893,6.31658249 4.90236893,5.68341751 5.29289322,5.29289322 C5.68341751,4.90236893 6.31658249,4.90236893 6.70710678,5.29289322 L12,10.5857864 L17.2928932,5.29289322 C17.6834175,4.90236893 18.3165825,4.90236893 18.7071068,5.29289322 C19.0976311,5.68341751 19.0976311,6.31658249 18.7071068,6.70710678 L13.4142136,12 Z" id="path-1"></path>
+                    </g></svg></i>
+        </label>
+                <nav>
+            <ol>
+                                    <li><a href="/doc/spec.php">Translation API</a></li>
+                    <li><a href="/doc/">About MyMemory</a></li>
+                
+                <li id="userInfo" class="header__userInfo ">
+    <a id="signin">
+        <i class="icon">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" strokewidth="1" class="icon__fill" fill-rule="evenodd">
+                        <path d="M21,21 C21,21.5522847 20.5522847,22 20,22 C19.4477153,22 19,21.5522847 19,21 L19,19 C19,17.3431458 17.6568542,16 16,16 L8,16 C6.34314575,16 5,17.3431458 5,19 L5,21 C5,21.5522847 4.55228475,22 4,22 C3.44771525,22 3,21.5522847 3,21 L3,19 C3,16.2385763 5.23857625,14 8,14 L16,14 C18.7614237,14 21,16.2385763 21,19 L21,21 Z M12,12 C9.23857625,12 7,9.76142375 7,7 C7,4.23857625 9.23857625,2 12,2 C14.7614237,2 17,4.23857625 17,7 C17,9.76142375 14.7614237,12 12,12 Z M12,10 C13.6568542,10 15,8.65685425 15,7 C15,5.34314575 13.6568542,4 12,4 C10.3431458,4 9,5.34314575 9,7 C9,8.65685425 10.3431458,10 12,10 Z" id="path-1">
+                        </path>
+                    </g>
+            </svg>
+        </i>
+        <span>Log in</span>
+    </a>
+</li>
+                <li class="nav__button"><a class="button button--compact" id="import-tmx">Contribute a TMX</a></li>
+        </nav>
+            </div>
+</header>
+<section class="section--overflow">
+    <div class="layout">
+        <div class="layout__row layout__row--center ">
+            <div class="layout__col-12 layout__col-xs-12">
+                <div class="hero-text hero-text--center distance--top-42 distance--bottom--18">
+                    <h1>
+                        Get a better translation with                        </span></br>7,731,933,128 human contributions                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section--overflow">
+    <div class="layout">
+        <div class="contact-form">
+            <div class="select-with-icon__wrapper">
+                <form action="/search.php" method="get" id="search-form" class="row_form_inline">
+                    <!--<div class="expand-area">
+                        <span id="expbt" class="icon-plus-bigger"></span>
+                    </div>-->
+                   
+                    <div class="input-area">
+                        <input id="text" class="input" name="q" type="text" value=""/>
+                        <input type="hidden" name="lang" value="en"/>
+                        <div class="source_target">
+                            <div class="icon__wrapper select-with-icon__wrapper">
+                                <select id="select_source_mm" name="sl">
+
+                                                                            <option selected value="Autodetect">Autodetect</option>";
+                                    
+                                    <option value="------" disabled="disabled">------</option>
+                                                                                                                                                                <option value="af-ZA">Afrikaans</option>
+                                                                                                                                                                                                        <option value="sq-AL">Albanian</option>
+                                                                                                                                                                                                        <option value="am-ET">Amharic</option>
+                                                                                                                                                                                                        <option value="ar-SA">Arabic</option>
+                                                                                                                                                                                                        <option value="hy-AM">Armenian</option>
+                                                                                                                                                                                                        <option value="az-AZ">Azerbaijani</option>
+                                                                                                                                                                                                        <option value="bjs-BB">Bajan</option>
+                                                                                                                                                                                                        <option value="rm-RO">Balkan Gipsy</option>
+                                                                                                                                                                                                        <option value="eu-ES">Basque</option>
+                                                                                                                                                                                                        <option value="bem-ZM">Bemba</option>
+                                                                                                                                                                                                        <option value="bn-IN">Bengali</option>
+                                                                                                                                                                                                        <option value="be-BY">Bielarus</option>
+                                                                                                                                                                                                        <option value="bi-VU">Bislama</option>
+                                                                                                                                                                                                        <option value="bs-BA">Bosnian</option>
+                                                                                                                                                                                                        <option value="br-FR">Breton</option>
+                                                                                                                                                                                                        <option value="bg-BG">Bulgarian</option>
+                                                                                                                                                                                                        <option value="my-MM">Burmese</option>
+                                                                                                                                                                                                        <option value="ca-ES">Catalan</option>
+                                                                                                                                                                                                        <option value="ceb-PH">Cebuano</option>
+                                                                                                                                                                                                        <option value="ch-GU">Chamorro</option>
+                                                                                                                                                                                                        <option value="zh-CN">Chinese (Simplified)</option>
+                                                                                                                                                                                                        <option value="zh-TW">Chinese Traditional</option>
+                                                                                                                                                                                                        <option value="zdj-KM">Comorian (Ngazidja)</option>
+                                                                                                                                                                                                        <option value="cop-EG">Coptic</option>
+                                                                                                                                                                                                        <option value="aig-AG">Creole English (Antigua and Barbuda)</option>
+                                                                                                                                                                                                        <option value="bah-BS">Creole English (Bahamas)</option>
+                                                                                                                                                                                                        <option value="gcl-GD">Creole English (Grenadian)</option>
+                                                                                                                                                                                                        <option value="gyn-GY">Creole English (Guyanese)</option>
+                                                                                                                                                                                                        <option value="jam-JM">Creole English (Jamaican)</option>
+                                                                                                                                                                                                        <option value="svc-VC">Creole English (Vincentian)</option>
+                                                                                                                                                                                                        <option value="vic-US">Creole English (Virgin Islands)</option>
+                                                                                                                                                                                                        <option value="ht-HT">Creole French (Haitian)</option>
+                                                                                                                                                                                                        <option value="acf-LC">Creole French (Saint Lucian)</option>
+                                                                                                                                                                                                        <option value="crs-SC">Creole French (Seselwa)</option>
+                                                                                                                                                                                                        <option value="pov-GW">Creole Portuguese (Upper Guinea)</option>
+                                                                                                                                                                                                        <option value="hr-HR">Croatian</option>
+                                                                                                                                                                                                        <option value="cs-CZ">Czech</option>
+                                                                                                                                                                                                        <option value="da-DK">Danish</option>
+                                                                                                                                                                                                        <option value="nl-NL">Dutch</option>
+                                                                                                                                                                                                        <option value="dz-BT">Dzongkha</option>
+                                                                                                                                                                                                        <option value="en-GB">English</option>
+                                                                                                                                                                                                                                                                                            <option value="eo-EU">Esperanto</option>
+                                                                                                                                                                                                        <option value="et-EE">Estonian</option>
+                                                                                                                                                                                                        <option value="fn-FNG">Fanagalo</option>
+                                                                                                                                                                                                        <option value="fo-FO">Faroese</option>
+                                                                                                                                                                                                        <option value="fi-FI">Finnish</option>
+                                                                                                                                                                                                                                                                                            <option value="fr-FR">French</option>
+                                                                                                                                                                                                        <option value="gl-ES">Galician</option>
+                                                                                                                                                                                                        <option value="ka-GE">Georgian</option>
+                                                                                                                                                                                                        <option value="de-DE">German</option>
+                                                                                                                                                                                                        <option value="el-GR">Greek</option>
+                                                                                                                                                                                                        <option value="grc-GR">Greek (Classical)</option>
+                                                                                                                                                                                                        <option value="gu-IN">Gujarati</option>
+                                                                                                                                                                                                        <option value="ha-NE">Hausa</option>
+                                                                                                                                                                                                        <option value="haw-US">Hawaiian</option>
+                                                                                                                                                                                                        <option value="he-IL">Hebrew</option>
+                                                                                                                                                                                                        <option value="hi-IN">Hindi</option>
+                                                                                                                                                                                                        <option value="hu-HU">Hungarian</option>
+                                                                                                                                                                                                        <option value="is-IS">Icelandic</option>
+                                                                                                                                                                                                        <option value="id-ID">Indonesian</option>
+                                                                                                                                                                                                        <option value="kl-GL">Inuktitut (Greenlandic)</option>
+                                                                                                                                                                                                        <option value="ga-IE">Irish Gaelic</option>
+                                                                                                                                                                                                        <option value="it-IT">Italian</option>
+                                                                                                                                                                                                        <option value="ja-JP">Japanese</option>
+                                                                                                                                                                                                        <option value="jv-ID">Javanese</option>
+                                                                                                                                                                                                        <option value="kea-CV">Kabuverdianu</option>
+                                                                                                                                                                                                        <option value="kab-DZ">Kabylian</option>
+                                                                                                                                                                                                        <option value="kn-IN">Kannada</option>
+                                                                                                                                                                                                        <option value="kk-KZ">Kazakh</option>
+                                                                                                                                                                                                        <option value="km-KM">Khmer</option>
+                                                                                                                                                                                                        <option value="rw-RW">Kinyarwanda</option>
+                                                                                                                                                                                                        <option value="rn-BI">Kirundi</option>
+                                                                                                                                                                                                        <option value="ko-KR">Korean</option>
+                                                                                                                                                                                                        <option value="ku-TR">Kurdish</option>
+                                                                                                                                                                                                        <option value="ckb-IQ">Kurdish Sorani</option>
+                                                                                                                                                                                                        <option value="ky-KG">Kyrgyz</option>
+                                                                                                                                                                                                        <option value="lo-LA">Lao</option>
+                                                                                                                                                                                                        <option value="la-VA">Latin</option>
+                                                                                                                                                                                                        <option value="lv-LV">Latvian</option>
+                                                                                                                                                                                                        <option value="lt-LT">Lithuanian</option>
+                                                                                                                                                                                                        <option value="lb-LU">Luxembourgish</option>
+                                                                                                                                                                                                        <option value="mk-MK">Macedonian</option>
+                                                                                                                                                                                                        <option value="mg-MG">Malagasy</option>
+                                                                                                                                                                                                        <option value="ms-MY">Malay</option>
+                                                                                                                                                                                                        <option value="dv-MV">Maldivian</option>
+                                                                                                                                                                                                        <option value="mt-MT">Maltese</option>
+                                                                                                                                                                                                        <option value="gv-IM">Manx Gaelic</option>
+                                                                                                                                                                                                        <option value="mi-NZ">Maori</option>
+                                                                                                                                                                                                        <option value="mh-MH">Marshallese</option>
+                                                                                                                                                                                                        <option value="men-SL">Mende</option>
+                                                                                                                                                                                                        <option value="mn-MN">Mongolian</option>
+                                                                                                                                                                                                        <option value="mfe-MU">Morisyen</option>
+                                                                                                                                                                                                        <option value="ne-NP">Nepali</option>
+                                                                                                                                                                                                        <option value="niu-NU">Niuean</option>
+                                                                                                                                                                                                        <option value="no-NO">Norwegian</option>
+                                                                                                                                                                                                        <option value="ny-MW">Nyanja</option>
+                                                                                                                                                                                                        <option value="ur-PK">Pakistani</option>
+                                                                                                                                                                                                        <option value="pau-PW">Palauan</option>
+                                                                                                                                                                                                        <option value="pa-IN">Panjabi</option>
+                                                                                                                                                                                                        <option value="pap-CW">Papiamentu</option>
+                                                                                                                                                                                                        <option value="ps-PK">Pashto</option>
+                                                                                                                                                                                                        <option value="fa-IR">Persian</option>
+                                                                                                                                                                                                        <option value="pis-SB">Pijin</option>
+                                                                                                                                                                                                        <option value="pl-PL">Polish</option>
+                                                                                                                                                                                                        <option value="pt-PT">Portuguese</option>
+                                                                                                                                                                                                                                                                                            <option value="pot-US">Potawatomi</option>
+                                                                                                                                                                                                                                                                                            <option value="qu-PE">Quechua</option>
+                                                                                                                                                                                                        <option value="ro-RO">Romanian</option>
+                                                                                                                                                                                                        <option value="ru-RU">Russian</option>
+                                                                                                                                                                                                        <option value="sm-WS">Samoan</option>
+                                                                                                                                                                                                        <option value="sg-CF">Sango</option>
+                                                                                                                                                                                                        <option value="gd-GB">Scots Gaelic</option>
+                                                                                                                                                                                                        <option value="sr-RS">Serbian</option>
+                                                                                                                                                                                                        <option value="sn-ZW">Shona</option>
+                                                                                                                                                                                                        <option value="si-LK">Sinhala</option>
+                                                                                                                                                                                                        <option value="sk-SK">Slovak</option>
+                                                                                                                                                                                                        <option value="sl-SI">Slovenian</option>
+                                                                                                                                                                                                        <option value="so-SO">Somali</option>
+                                                                                                                                                                                                        <option value="st-ST">Sotho, Southern</option>
+                                                                                                                                                                                                        <option value="es-ES">Spanish</option>
+                                                                                                                                                                                                                                                                                            <option value="srn-SR">Sranan Tongo</option>
+                                                                                                                                                                                                        <option value="sw-SZ">Swahili</option>
+                                                                                                                                                                                                        <option value="sv-SE">Swedish</option>
+                                                                                                                                                                                                        <option value="de-CH">Swiss German</option>
+                                                                                                                                                                                                        <option value="syc-TR">Syriac (Aramaic)</option>
+                                                                                                                                                                                                        <option value="tl-PH">Tagalog</option>
+                                                                                                                                                                                                        <option value="tg-TJ">Tajik</option>
+                                                                                                                                                                                                        <option value="tmh-DZ">Tamashek (Tuareg)</option>
+                                                                                                                                                                                                        <option value="ta-LK">Tamil</option>
+                                                                                                                                                                                                        <option value="te-IN">Telugu</option>
+                                                                                                                                                                                                        <option value="tet-TL">Tetum</option>
+                                                                                                                                                                                                        <option value="th-TH">Thai</option>
+                                                                                                                                                                                                        <option value="bo-CN">Tibetan</option>
+                                                                                                                                                                                                        <option value="ti-TI">Tigrinya</option>
+                                                                                                                                                                                                        <option value="tpi-PG">Tok Pisin</option>
+                                                                                                                                                                                                        <option value="tkl-TK">Tokelauan</option>
+                                                                                                                                                                                                        <option value="to-TO">Tongan</option>
+                                                                                                                                                                                                        <option value="tn-BW">Tswana</option>
+                                                                                                                                                                                                        <option value="tr-TR">Turkish</option>
+                                                                                                                                                                                                        <option value="tk-TM">Turkmen</option>
+                                                                                                                                                                                                        <option value="tvl-TV">Tuvaluan</option>
+                                                                                                                                                                                                        <option value="uk-UA">Ukrainian</option>
+                                                                                                                                                                                                        <option value="ppk-ID">Uma</option>
+                                                                                                                                                                                                        <option value="uz-UZ">Uzbek</option>
+                                                                                                                                                                                                        <option value="vi-VN">Vietnamese</option>
+                                                                                                                                                                                                        <option value="wls-WF">Wallisian</option>
+                                                                                                                                                                                                        <option value="cy-GB">Welsh</option>
+                                                                                                                                                                                                        <option value="wo-SN">Wolof</option>
+                                                                                                                                                                                                        <option value="xh-ZA">Xhosa</option>
+                                                                                                                                                                                                        <option value="yi-YD">Yiddish</option>
+                                                                                                                                                                                                        <option value="zu-ZA">Zulu</option>
+                                                                                                            </select>
+                                <div class="select-with-icon__right-icon">
+                                    <svg width="14px" height="8px" viewBox="0 0 14 8"><g stroke="none" stroke-width="1" class="icon__fill" fill-rule="evenodd"><g transform="translate(-5.000000, -8.000000)" fill-rule="nonzero"><path d="M17.2928932,8.29289322 C17.6834175,7.90236893 18.3165825,7.90236893 18.7071068,8.29289322 C19.0976311,8.68341751 19.0976311,9.31658249 18.7071068,9.70710678 L12.7071068,15.7071068 C12.3165825,16.0976311 11.6834175,16.0976311 11.2928932,15.7071068 L5.29289322,9.70710678 C4.90236893,9.31658249 4.90236893,8.68341751 5.29289322,8.29289322 C5.68341751,7.90236893 6.31658249,7.90236893 6.70710678,8.29289322 L12,13.5857864 L17.2928932,8.29289322 Z"></path></g></g></svg>
+                                </div>
+                            </div>
+                           <div class="swap-language"><span class="icon-swap" id="swp-language"></span></div>
+                            <div class="icon__wrapper select-with-icon__wrapper">
+                                <select id="select_target_mm" name="tl">
+                                                                                                                                                                <option value="af-ZA">Afrikaans</option>
+                                                                                                                                                                                                        <option value="sq-AL">Albanian</option>
+                                                                                                                                                                                                        <option value="am-ET">Amharic</option>
+                                                                                                                                                                                                        <option value="ar-SA">Arabic</option>
+                                                                                                                                                                                                        <option value="hy-AM">Armenian</option>
+                                                                                                                                                                                                        <option value="az-AZ">Azerbaijani</option>
+                                                                                                                                                                                                        <option value="bjs-BB">Bajan</option>
+                                                                                                                                                                                                        <option value="rm-RO">Balkan Gipsy</option>
+                                                                                                                                                                                                        <option value="eu-ES">Basque</option>
+                                                                                                                                                                                                        <option value="bem-ZM">Bemba</option>
+                                                                                                                                                                                                        <option value="bn-IN">Bengali</option>
+                                                                                                                                                                                                        <option value="be-BY">Bielarus</option>
+                                                                                                                                                                                                        <option value="bi-VU">Bislama</option>
+                                                                                                                                                                                                        <option value="bs-BA">Bosnian</option>
+                                                                                                                                                                                                        <option value="br-FR">Breton</option>
+                                                                                                                                                                                                        <option value="bg-BG">Bulgarian</option>
+                                                                                                                                                                                                        <option value="my-MM">Burmese</option>
+                                                                                                                                                                                                        <option value="ca-ES">Catalan</option>
+                                                                                                                                                                                                        <option value="ceb-PH">Cebuano</option>
+                                                                                                                                                                                                        <option value="ch-GU">Chamorro</option>
+                                                                                                                                                                                                        <option value="zh-CN">Chinese (Simplified)</option>
+                                                                                                                                                                                                        <option value="zh-TW">Chinese Traditional</option>
+                                                                                                                                                                                                        <option value="zdj-KM">Comorian (Ngazidja)</option>
+                                                                                                                                                                                                        <option value="cop-EG">Coptic</option>
+                                                                                                                                                                                                        <option value="aig-AG">Creole English (Antigua and Barbuda)</option>
+                                                                                                                                                                                                        <option value="bah-BS">Creole English (Bahamas)</option>
+                                                                                                                                                                                                        <option value="gcl-GD">Creole English (Grenadian)</option>
+                                                                                                                                                                                                        <option value="gyn-GY">Creole English (Guyanese)</option>
+                                                                                                                                                                                                        <option value="jam-JM">Creole English (Jamaican)</option>
+                                                                                                                                                                                                        <option value="svc-VC">Creole English (Vincentian)</option>
+                                                                                                                                                                                                        <option value="vic-US">Creole English (Virgin Islands)</option>
+                                                                                                                                                                                                        <option value="ht-HT">Creole French (Haitian)</option>
+                                                                                                                                                                                                        <option value="acf-LC">Creole French (Saint Lucian)</option>
+                                                                                                                                                                                                        <option value="crs-SC">Creole French (Seselwa)</option>
+                                                                                                                                                                                                        <option value="pov-GW">Creole Portuguese (Upper Guinea)</option>
+                                                                                                                                                                                                        <option value="hr-HR">Croatian</option>
+                                                                                                                                                                                                        <option value="cs-CZ">Czech</option>
+                                                                                                                                                                                                        <option value="da-DK">Danish</option>
+                                                                                                                                                                                                        <option value="nl-NL">Dutch</option>
+                                                                                                                                                                                                        <option value="dz-BT">Dzongkha</option>
+                                                                                                                                                                                                        <option selected="selected" value="en-GB">English</option>
+                                                                                                                                                                                                                                                                                            <option value="eo-EU">Esperanto</option>
+                                                                                                                                                                                                        <option value="et-EE">Estonian</option>
+                                                                                                                                                                                                        <option value="fn-FNG">Fanagalo</option>
+                                                                                                                                                                                                        <option value="fo-FO">Faroese</option>
+                                                                                                                                                                                                        <option value="fi-FI">Finnish</option>
+                                                                                                                                                                                                                                                                                            <option value="fr-FR">French</option>
+                                                                                                                                                                                                        <option value="gl-ES">Galician</option>
+                                                                                                                                                                                                        <option value="ka-GE">Georgian</option>
+                                                                                                                                                                                                        <option value="de-DE">German</option>
+                                                                                                                                                                                                        <option value="el-GR">Greek</option>
+                                                                                                                                                                                                        <option value="grc-GR">Greek (Classical)</option>
+                                                                                                                                                                                                        <option value="gu-IN">Gujarati</option>
+                                                                                                                                                                                                        <option value="ha-NE">Hausa</option>
+                                                                                                                                                                                                        <option value="haw-US">Hawaiian</option>
+                                                                                                                                                                                                        <option value="he-IL">Hebrew</option>
+                                                                                                                                                                                                        <option value="hi-IN">Hindi</option>
+                                                                                                                                                                                                        <option value="hu-HU">Hungarian</option>
+                                                                                                                                                                                                        <option value="is-IS">Icelandic</option>
+                                                                                                                                                                                                        <option value="id-ID">Indonesian</option>
+                                                                                                                                                                                                        <option value="kl-GL">Inuktitut (Greenlandic)</option>
+                                                                                                                                                                                                        <option value="ga-IE">Irish Gaelic</option>
+                                                                                                                                                                                                        <option value="it-IT">Italian</option>
+                                                                                                                                                                                                        <option value="ja-JP">Japanese</option>
+                                                                                                                                                                                                        <option value="jv-ID">Javanese</option>
+                                                                                                                                                                                                        <option value="kea-CV">Kabuverdianu</option>
+                                                                                                                                                                                                        <option value="kab-DZ">Kabylian</option>
+                                                                                                                                                                                                        <option value="kn-IN">Kannada</option>
+                                                                                                                                                                                                        <option value="kk-KZ">Kazakh</option>
+                                                                                                                                                                                                        <option value="km-KM">Khmer</option>
+                                                                                                                                                                                                        <option value="rw-RW">Kinyarwanda</option>
+                                                                                                                                                                                                        <option value="rn-BI">Kirundi</option>
+                                                                                                                                                                                                        <option value="ko-KR">Korean</option>
+                                                                                                                                                                                                        <option value="ku-TR">Kurdish</option>
+                                                                                                                                                                                                        <option value="ckb-IQ">Kurdish Sorani</option>
+                                                                                                                                                                                                        <option value="ky-KG">Kyrgyz</option>
+                                                                                                                                                                                                        <option value="lo-LA">Lao</option>
+                                                                                                                                                                                                        <option value="la-VA">Latin</option>
+                                                                                                                                                                                                        <option value="lv-LV">Latvian</option>
+                                                                                                                                                                                                        <option value="lt-LT">Lithuanian</option>
+                                                                                                                                                                                                        <option value="lb-LU">Luxembourgish</option>
+                                                                                                                                                                                                        <option value="mk-MK">Macedonian</option>
+                                                                                                                                                                                                        <option value="mg-MG">Malagasy</option>
+                                                                                                                                                                                                        <option value="ms-MY">Malay</option>
+                                                                                                                                                                                                        <option value="dv-MV">Maldivian</option>
+                                                                                                                                                                                                        <option value="mt-MT">Maltese</option>
+                                                                                                                                                                                                        <option value="gv-IM">Manx Gaelic</option>
+                                                                                                                                                                                                        <option value="mi-NZ">Maori</option>
+                                                                                                                                                                                                        <option value="mh-MH">Marshallese</option>
+                                                                                                                                                                                                        <option value="men-SL">Mende</option>
+                                                                                                                                                                                                        <option value="mn-MN">Mongolian</option>
+                                                                                                                                                                                                        <option value="mfe-MU">Morisyen</option>
+                                                                                                                                                                                                        <option value="ne-NP">Nepali</option>
+                                                                                                                                                                                                        <option value="niu-NU">Niuean</option>
+                                                                                                                                                                                                        <option value="no-NO">Norwegian</option>
+                                                                                                                                                                                                        <option value="ny-MW">Nyanja</option>
+                                                                                                                                                                                                        <option value="ur-PK">Pakistani</option>
+                                                                                                                                                                                                        <option value="pau-PW">Palauan</option>
+                                                                                                                                                                                                        <option value="pa-IN">Panjabi</option>
+                                                                                                                                                                                                        <option value="pap-CW">Papiamentu</option>
+                                                                                                                                                                                                        <option value="ps-PK">Pashto</option>
+                                                                                                                                                                                                        <option value="fa-IR">Persian</option>
+                                                                                                                                                                                                        <option value="pis-SB">Pijin</option>
+                                                                                                                                                                                                        <option value="pl-PL">Polish</option>
+                                                                                                                                                                                                        <option value="pt-PT">Portuguese</option>
+                                                                                                                                                                                                                                                                                            <option value="pot-US">Potawatomi</option>
+                                                                                                                                                                                                                                                                                            <option value="qu-PE">Quechua</option>
+                                                                                                                                                                                                        <option value="ro-RO">Romanian</option>
+                                                                                                                                                                                                        <option value="ru-RU">Russian</option>
+                                                                                                                                                                                                        <option value="sm-WS">Samoan</option>
+                                                                                                                                                                                                        <option value="sg-CF">Sango</option>
+                                                                                                                                                                                                        <option value="gd-GB">Scots Gaelic</option>
+                                                                                                                                                                                                        <option value="sr-RS">Serbian</option>
+                                                                                                                                                                                                        <option value="sn-ZW">Shona</option>
+                                                                                                                                                                                                        <option value="si-LK">Sinhala</option>
+                                                                                                                                                                                                        <option value="sk-SK">Slovak</option>
+                                                                                                                                                                                                        <option value="sl-SI">Slovenian</option>
+                                                                                                                                                                                                        <option value="so-SO">Somali</option>
+                                                                                                                                                                                                        <option value="st-ST">Sotho, Southern</option>
+                                                                                                                                                                                                        <option value="es-ES">Spanish</option>
+                                                                                                                                                                                                                                                                                            <option value="srn-SR">Sranan Tongo</option>
+                                                                                                                                                                                                        <option value="sw-SZ">Swahili</option>
+                                                                                                                                                                                                        <option value="sv-SE">Swedish</option>
+                                                                                                                                                                                                        <option value="de-CH">Swiss German</option>
+                                                                                                                                                                                                        <option value="syc-TR">Syriac (Aramaic)</option>
+                                                                                                                                                                                                        <option value="tl-PH">Tagalog</option>
+                                                                                                                                                                                                        <option value="tg-TJ">Tajik</option>
+                                                                                                                                                                                                        <option value="tmh-DZ">Tamashek (Tuareg)</option>
+                                                                                                                                                                                                        <option value="ta-LK">Tamil</option>
+                                                                                                                                                                                                        <option value="te-IN">Telugu</option>
+                                                                                                                                                                                                        <option value="tet-TL">Tetum</option>
+                                                                                                                                                                                                        <option value="th-TH">Thai</option>
+                                                                                                                                                                                                        <option value="bo-CN">Tibetan</option>
+                                                                                                                                                                                                        <option value="ti-TI">Tigrinya</option>
+                                                                                                                                                                                                        <option value="tpi-PG">Tok Pisin</option>
+                                                                                                                                                                                                        <option value="tkl-TK">Tokelauan</option>
+                                                                                                                                                                                                        <option value="to-TO">Tongan</option>
+                                                                                                                                                                                                        <option value="tn-BW">Tswana</option>
+                                                                                                                                                                                                        <option value="tr-TR">Turkish</option>
+                                                                                                                                                                                                        <option value="tk-TM">Turkmen</option>
+                                                                                                                                                                                                        <option value="tvl-TV">Tuvaluan</option>
+                                                                                                                                                                                                        <option value="uk-UA">Ukrainian</option>
+                                                                                                                                                                                                        <option value="ppk-ID">Uma</option>
+                                                                                                                                                                                                        <option value="uz-UZ">Uzbek</option>
+                                                                                                                                                                                                        <option value="vi-VN">Vietnamese</option>
+                                                                                                                                                                                                        <option value="wls-WF">Wallisian</option>
+                                                                                                                                                                                                        <option value="cy-GB">Welsh</option>
+                                                                                                                                                                                                        <option value="wo-SN">Wolof</option>
+                                                                                                                                                                                                        <option value="xh-ZA">Xhosa</option>
+                                                                                                                                                                                                        <option value="yi-YD">Yiddish</option>
+                                                                                                                                                                                                        <option value="zu-ZA">Zulu</option>
+                                                                                                            </select>
+                                <div class=" select-with-icon__right-icon">
+                                    <svg width="14px" height="8px" viewBox="0 0 14 8"><g stroke="none" stroke-width="1" class="icon__fill" fill-rule="evenodd"><g transform="translate(-5.000000, -8.000000)" fill-rule="nonzero"><path d="M17.2928932,8.29289322 C17.6834175,7.90236893 18.3165825,7.90236893 18.7071068,8.29289322 C19.0976311,8.68341751 19.0976311,9.31658249 18.7071068,9.70710678 L12.7071068,15.7071068 C12.3165825,16.0976311 11.6834175,16.0976311 11.2928932,15.7071068 L5.29289322,9.70710678 C4.90236893,9.31658249 4.90236893,8.68341751 5.29289322,8.29289322 C5.68341751,7.90236893 6.31658249,7.90236893 6.70710678,8.29289322 L12,13.5857864 L17.2928932,8.29289322 Z"></path></g></g></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-area home-search-area">
+                            <input id="search-button" class="button search-button--home" type="submit" value="Search"/>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section--overflow distance--top distance--bottom">
+    <div class="layout">
+        <div class="layout__row layout__row--center ">
+            <div class="layout__col-12 layout__col-xs-12">
+                <div class="hero-text ">
+                    <h4><b>Help!</b> Rate short translations that users are typing right now</h4>
+                    <p><b>How to contribute?</b> Delete wrong alignments, vote translations, add new ones.</p>
+                </div>
+                <div class="hero-text distance--bottom--18">
+                    <br/>
+                    <div id="otherlinks" class="hidemobile"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="layout layout--norow">
+        <div class="footer__credits">           
+            <div>                
+                <p>MyMemory is the world's largest Translation Memory. It has been created collecting TMs from the European Union and United Nations, and aligning the best domain-specific multilingual websites.</p>
+                <p>We're part of Translated, so if you ever need professional translation services, then go checkout our <a target="_blank" href="https://translated.com/welcome">main site</a></p>
+            </div>
+        </div>
+        <div class="footer__menu">
+            <ul>
+                                <li><a href="mailto:mymemory@translated.net?subject=MyMemory%20Abuse&body=http://mymemory.translated.net/">Report Abuse</a></li>
+                <li><a href="/terms-and-conditions">Terms of Service</a></li>
+              
+                <li><a href="/doc/">About MyMemory</a></li>
+               
+                <li><a href="mailto:mymemory@translated.net?subject=About%20MyMemory">Contact Us</a></li>
+                <li><a href="https://translatedlabs.com/welcome" class="translated_labs_link">Translated <span>LABS</span></a></li>
+            </ul>
+
+        </div>
+        <div class="footer__menu languages icon__wrapper select-with-icon__wrapper">
+
+            <!--MyMemory in your language:-->
+            <div class="choose_lang">
+                <ul>
+                                        <li><a rel="alternate" hreflang="en" href="https://mymemory.translated.net">English</a></li>
+                    <li><a rel="alternate" hreflang="it" href="https://mymemory.translated.net/it/">Italiano</a></li>
+                    <li><a rel="alternate" hreflang="es" href="https://mymemory.translated.net/es/">Español</a></li>
+                    <li><a rel="alternate" hreflang="fr" href="https://mymemory.translated.net/fr/">Français</a></li>
+                    <li><a rel="alternate" hreflang="de" href="https://mymemory.translated.net/de/">Deutsch</a></li>
+                    <li><a rel="alternate" hreflang="nl" href="https://mymemory.translated.net/nl/">Nederlands</a></li>
+                    <li><a rel="alternate" hreflang="sv" href="https://mymemory.translated.net/sv/">Svenska</a></li>
+                    <li><a rel="alternate" hreflang="pt" href="https://mymemory.translated.net/pt/">Português</a></li>
+                    <li><a rel="alternate" hreflang="ru" href="https://mymemory.translated.net/ru/">Русский</a></li>
+                    <li><a rel="alternate" hreflang="ja" href="https://mymemory.translated.net/ja/">日本語</a></li>
+                    <li><a rel="alternate" hreflang="zh" href="https://mymemory.translated.net/zh/">汉语</a></li>
+                    <li><a rel="alternate" hreflang="ko" href="https://mymemory.translated.net/ko/">한국어</a></li>
+                    <li><a rel="alternate" hreflang="tr" href="https://mymemory.translated.net/tr/">Türkçe</a></li>
+                                    </ul>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="privacy-policy"><div><span>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="https://translated.com/confidentiality" target="_blank" title="Privacy Policy">Learn more.</a></span>
+        <span class="privacy-policy-accept"><a>OK</a></span></div></div>
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/public/js/build/mymemory.min.js?v=20191128"></script>
+<script>
+var messages = {"connection_error":"There was a problem contacting the server.\\n\\n","save":"Save","cancel":"Cancel","wait_previuos_op":"Please, wait until the previuos operation is complete.","done":"done","req_prob":"There was a problem with the request.","http_req_error":"Cannot create XMLHTTP instance","low_score":"Do you want to give a low score to this translation?","confirm_deletion":"Do you want to delete this row?","mozilla_extra":"For this browser you need extra privileges to copy the text.\\n\\nPlease contact mymemory@translated.net for further information.","copied_clipboard":"Done. Type CTRL+V to paste in your application","info_formats":"You can import the following formats:\\n\\nTMX: Easy to export from Trados and other CAT tools\\nZIP: Can contain one or more tmx files (suggested)","confirm_file_deletion":"Do you want to delete all segments associated with this file from the TMS?","confirm_no_subject":"Are you sure you don\\'t want to select a subject?","queue":"In queue","processing":"Processing","wait":"Wait","confirm_tmx_deletion":"Do you want to delete this file?","info_mt":"To upgrade the number of found matches in your file, you can use machine translation for segments with no matches in our\/your memory.","info_mm":"You can choose to limit the search for matches to segments that you uploaded.","login_required":"Login or Register to use this function","close_insert":"Close insert area","add_translation":"Add a translation","contribution":"contribution(s)","op_wait":"Another operation is in progress. Please wait.","similar_notice":"There are more similar translations to the one you edited.\\nDo you want to see them?","last_up":"Last Update:","quality":"Quality:","subject":"Subject:","star0":"Be the first to vote","star1":"Not a translation","star2":"Translation with error","star3":"Not sure","star4":"Good in specific context","star5":"Excellent","vote":"Vote added!","update":"Updating...","error_pair":"Please, specify two different languages","select_source_lang":"Source language","select_target_lang":"Target language","insert":"Insert"};var MM = {"cid":null,"baseURL":"https:\/\/mymemory.translated.net"}</script>
+<div id="snackbar" class="snackbar">
+        <p class="snackbar__copy"></p>
+        <div class="snackbar__close-wrapper">
+            <i class="icon snackbar__close">
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" strokewidth="1" class="icon__fill" fill-rule="evenodd">
+        <path d="M13.4142136,12 L18.7071068,17.2928932 C19.0976311,17.6834175 19.0976311,18.3165825 18.7071068,18.7071068 C18.3165825,19.0976311 17.6834175,19.0976311 17.2928932,18.7071068 L12,13.4142136 L6.70710678,18.7071068 C6.31658249,19.0976311 5.68341751,19.0976311 5.29289322,18.7071068 C4.90236893,18.3165825 4.90236893,17.6834175 5.29289322,17.2928932 L10.5857864,12 L5.29289322,6.70710678 C4.90236893,6.31658249 4.90236893,5.68341751 5.29289322,5.29289322 C5.68341751,4.90236893 6.31658249,4.90236893 6.70710678,5.29289322 L12,10.5857864 L17.2928932,5.29289322 C17.6834175,4.90236893 18.3165825,4.90236893 18.7071068,5.29289322 C19.0976311,5.68341751 19.0976311,6.31658249 18.7071068,6.70710678 L13.4142136,12 Z" id="path-1"></path>
+    </g></svg></i>
+        </div>
+    </div>
+</body>
+</html>
+<!-- /silence is golden/ -->

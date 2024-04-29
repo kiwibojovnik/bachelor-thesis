@@ -1,0 +1,1121 @@
+{
+    "https://www.casino.com": {
+        "Time": 9.12,
+        "URL": "https://www.casino.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "147.251.4.41",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "159.203.128.199"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "159.203.128.199",
+        "PING Status": "OK",
+        "PING IP": "159.203.128.199",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.casino.com/cz/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "159.203.128.199"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 282185,
+        "Headers": {
+            "Server": "openresty",
+            "Date": "Mon, 29 Apr 2024 08:24:59 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
+            "x-nextjs-cache": "STALE",
+            "X-Powered-By": "Next.js",
+            "ETag": "\"wolvpv23y45uuz\"",
+            "Content-Encoding": "gzip",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains, max-age=31536000; preload"
+        },
+        "HTML Content": "www.casino.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.casino.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Domain Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "A90DADAA6E50E9BFDECCAD39187CE023",
+            "notBefore": "Oct 26 00:00:00 2023 GMT",
+            "notAfter": "Oct 26 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.casino.com"
+                ],
+                [
+                    "DNS",
+                    "casino.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:25:06"
+    },
+    "https://www.ccc.de": {
+        "Time": 4.82,
+        "URL": "https://www.ccc.de",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "195.54.164.39"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "195.54.164.39",
+        "PING Status": "OK",
+        "PING IP": "195.54.164.39",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 9996,
+        "Headers": {
+            "Server": "nginx/1.24.0",
+            "Date": "Mon, 29 Apr 2024 08:25:45 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "9996",
+            "Connection": "keep-alive",
+            "Status": "200 OK",
+            "Cache-Control": "max-age=1200, public",
+            "X-Runtime": "38",
+            "ETag": "\"c1b6c143f3070d1b407d842a84ebfe73\""
+        },
+        "HTML Content": "www.ccc.de_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.ccc.de"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04F4B9926677FBF48FB77E2D17C5AD8D23FD",
+            "notBefore": "Mar 14 08:39:27 2024 GMT",
+            "notAfter": "Jun 12 08:39:26 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.ccc.de"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:25:50"
+    },
+    "https://ccrjustice.org": {
+        "Time": 12.91,
+        "URL": "https://ccrjustice.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.22.66.129",
+            "104.22.67.129",
+            "172.67.20.91"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.20.91",
+        "PING Status": "OK",
+        "PING IP": "172.67.20.91",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 59997,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:26:22 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "x-drupal-cache": "HIT",
+            "content-language": "en",
+            "x-frame-options": "SAMEORIGIN",
+            "x-content-type-options": "nosniff",
+            "x-generator": "Drupal 7 (http://drupal.org)",
+            "link": "<https://ccrjustice.org/>; rel=\"canonical\",<https://ccrjustice.org/>; rel=\"shortlink\"",
+            "Cache-Control": "public, max-age=21600",
+            "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "vary": "Cookie,Accept-Encoding",
+            "strict-transport-security": "max-age=63072000",
+            "content-security-policy": "frame-ancestors 'self'",
+            "x-xss-protection": "1; mode=block",
+            "last-modified": "Mon, 29 Apr 2024 08:02:38 GMT",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87bde81baf91b385-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "ccrjustice.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "ccrjustice.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "4D67FDE3F7807CBD11A810556C51923D",
+            "notBefore": "Mar 10 22:32:58 2024 GMT",
+            "notAfter": "Jun  8 22:32:57 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "ccrjustice.org"
+                ],
+                [
+                    "DNS",
+                    "*.ccrjustice.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/s8A3lqg79NI"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/UbXMIdXm_2k.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:26:32"
+    },
+    "https://cdt.org": {
+        "Time": 6.62,
+        "URL": "https://cdt.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.20.36.249",
+            "104.20.37.249",
+            "172.67.16.165"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.20.36.249",
+        "PING Status": "OK",
+        "PING IP": "104.20.36.249",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 102822,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:27:40 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "cache-provider": "CLOUDWAYS-CACHE-DE",
+            "last-modified": "Mon, 29 Apr 2024 04:01:39 GMT",
+            "Cache-Control": "max-age=0",
+            "expires": "Mon, 29 Apr 2024 08:02:10 GMT",
+            "vary": "Accept-Encoding",
+            "Age": "1525",
+            "x-cache": "HIT",
+            "CF-Cache-Status": "DYNAMIC",
+            "Strict-Transport-Security": "max-age=15552000; preload",
+            "Server": "cloudflare",
+            "CF-RAY": "87bdea0a784b4131-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "cdt.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "cdt.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03C0A872C14BD9E8A4107E71B2059858995C",
+            "notBefore": "Mar  1 13:24:56 2024 GMT",
+            "notAfter": "May 30 13:24:55 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.cdt.org"
+                ],
+                [
+                    "DNS",
+                    "cdt.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:27:46"
+    },
+    "https://censorship.no": {
+        "Time": 6.39,
+        "URL": "https://censorship.no",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "51.77.117.40",
+            "142.132.196.168",
+            "172.104.232.45"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.104.232.45",
+        "PING Status": "OK",
+        "PING IP": "172.104.232.45",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 437,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 08:28:27 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Set-Cookie": "deflect_session=NSVnfAbJI0cAAAAAZi9oOw%3D%3D; Path=/; Max-Age=3600; HttpOnly",
+            "Last-Modified": "Mon, 22 Apr 2024 18:26:55 GMT",
+            "Vary": "Accept-Encoding",
+            "Access-Control-Allow-Origin": "*",
+            "ETag": "W/\"6626abef-1b5\"",
+            "expires": "Mon, 29 Apr 2024 08:38:27 GMT",
+            "Cache-Control": "max-age=600",
+            "Content-Encoding": "gzip",
+            "x-proxy-cache": "MISS",
+            "X-GitHub-Request-Id": "E9F8:83384:669C46E:6E79708:662F5A2B",
+            "X-Server": "Deflect.ca (nginx)",
+            "X-Deflect-Cache": "MISS",
+            "X-Deflect-Edge": "159077e98613"
+        },
+        "HTML Content": "censorship.no_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "censorship.no"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03DF6EA818437330C425A04ACB539DA08FA4",
+            "notBefore": "Mar  5 05:32:04 2024 GMT",
+            "notAfter": "Jun  3 05:32:03 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "censorship.no"
+                ],
+                [
+                    "DNS",
+                    "www.censorship.no"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:28:32"
+    },
+    "https://www.chinadaily.com.cn": {
+        "Time": 4.35,
+        "URL": "https://www.chinadaily.com.cn",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "163.181.92.231",
+            "163.181.92.232",
+            "163.181.92.233",
+            "163.181.92.234",
+            "163.181.92.235",
+            "163.181.92.236",
+            "163.181.92.237",
+            "163.181.92.238"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "163.181.92.234",
+        "PING Status": "OK",
+        "PING IP": "163.181.92.234",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 126930,
+        "Headers": {
+            "Server": "Tengine",
+            "Content-Type": "text/html;charset=UTF-8",
+            "Content-Length": "126930",
+            "Connection": "keep-alive",
+            "Date": "Mon, 29 Apr 2024 08:27:02 GMT",
+            "X-Content-Type-Options": "nosniff",
+            "Cache-Control": "max-age=180",
+            "Pragma": "public",
+            "Expires": "0",
+            "Ali-Swift-Global-Savetime": "1714379305",
+            "Via": "cache21.l2de2[171,170,304-0,M], cache19.l2de2[172,0], ens-cache15.de5[0,0,200-0,H], ens-cache4.de5[0,0]",
+            "Vary": "Accept-Encoding",
+            "Last-Modified": "Mon, 29 Apr 2024 08:08:04 GMT",
+            "Age": "52",
+            "X-Cache": "HIT TCP_MEM_HIT dirn:12:481712669",
+            "X-Swift-SaveTime": "Mon, 29 Apr 2024 08:28:25 GMT",
+            "X-Swift-CacheTime": "300",
+            "Timing-Allow-Origin": "*",
+            "EagleId": "a3b55c9817143793578923590e"
+        },
+        "HTML Content": "www.chinadaily.com.cn_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "CN"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "\u5317\u4eac\u5e02"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "\u4e2d\u62a5\u56fd\u9645\u6587\u5316\u4f20\u5a92\uff08\u5317\u4eac\uff09\u6709\u9650\u516c\u53f8"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.chinadaily.com.cn"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "CN"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "TrustAsia Technologies, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "TrustAsia RSA OV TLS CA G3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "AEE79045035D1CF0780AD07AA48F4D78",
+            "notBefore": "Jan 23 00:00:00 2024 GMT",
+            "notAfter": "Feb 21 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.chinadaily.com.cn"
+                ],
+                [
+                    "DNS",
+                    "chinadaily.com.cn"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.trust-provider.cn"
+            ],
+            "caIssuers": [
+                "http://crt.trust-provider.cn/TrustAsiaRSAOVTLSCAG3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.trust-provider.cn/TrustAsiaRSAOVTLSCAG3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:29:21"
+    },
+    "https://cites.org": {
+        "Time": 4.03,
+        "URL": "https://cites.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.22.46.86",
+            "104.22.47.86",
+            "172.67.25.202"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.46.86",
+        "PING Status": "OK",
+        "PING IP": "104.22.46.86",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 65391,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:29:50 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "private, max-age=1200, must-revalidate",
+            "Content-language": "en",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "Permissions-Policy": "web-share=(*), fullscreen=(*)",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "Strict-Transport-Security": "max-age=15552000; includeSubDomains",
+            "Vary": "Accept-Encoding",
+            "X-Content-Type-Options": "nosniff",
+            "X-Drupal-Dynamic-Cache": "UNCACHEABLE",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Generator": "Drupal 10 (https://www.drupal.org)",
+            "X-XSS-Protection": "1; mode=block",
+            "Last-Modified": "Mon, 29 Apr 2024 08:26:08 GMT",
+            "CF-Cache-Status": "HIT",
+            "Server": "cloudflare",
+            "CF-RAY": "87bded38a988b38f-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "cites.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "cites.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "F4145A233F887F940DE82B55952B87B2",
+            "notBefore": "Apr  4 23:15:59 2024 GMT",
+            "notAfter": "Jul  3 23:15:58 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "cites.org"
+                ],
+                [
+                    "DNS",
+                    "*.cites.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/SbOPsDHQhIw"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/Cn4EaIf2FJk.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:29:54"
+    },
+    "https://citizenlab.ca": {
+        "Time": 29.43,
+        "URL": "https://citizenlab.ca",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "66.70.203.130"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "66.70.203.130",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.4",
+                0.00688481330871582
+            ],
+            [
+                "147.251.243.80",
+                0.02138805389404297
+            ],
+            [
+                "147.251.241.130",
+                0.011870861053466797
+            ],
+            [
+                "147.251.242.195",
+                0.002537965774536133
+            ],
+            [
+                "147.251.242.194",
+                0.019035816192626953
+            ],
+            [
+                "147.251.241.129",
+                0.015954971313476562
+            ],
+            [
+                "91.210.16.129",
+                0.012427091598510742
+            ],
+            [
+                "91.210.16.129",
+                0.005831003189086914
+            ],
+            [
+                "54.36.50.243",
+                0.02979111671447754
+            ],
+            [
+                "198.27.73.204",
+                0.11435174942016602
+            ],
+            [
+                "198.27.73.204",
+                0.10584497451782227
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 66657,
+        "Headers": {
+            "Server": "nginx/1.21.6",
+            "Date": "Mon, 29 Apr 2024 08:31:22 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "14424",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "PHP/7.4.33",
+            "Access-Control-Allow-Origin": "https://targetedthreats.net",
+            "Content-Encoding": "gzip",
+            "X-Varnish": "3441692 1901636",
+            "Age": "3315",
+            "Via": "1.1 varnish-v4",
+            "X-Cache-Svr": "citizenlab.ca",
+            "X-Cache": "HIT",
+            "Accept-Ranges": "bytes",
+            "Strict-Transport-Security": "max-age=15768000",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Referrer-Policy": "strict-origin",
+            "Feature-Policy": "sync-xhr 'self'",
+            "Content-Security-Policy": "default-src 'self' citizenlab.ca www.citizenlab.ca citizenlab.org www.citizenlab.org; font-src 'self' data: ; img-src * data: ; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.google-analytics.com www.googletagmanager.com www.youtube.com; frame-src 'self' www.youtube-nocookie.com  www.youtube.com ; style-src 'self' 'unsafe-inline'; connect-src 'self' www.google-analytics.com;"
+        },
+        "HTML Content": "citizenlab.ca_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "citizenlab.ca"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0450CACCD773C7E1EB02618048E6655E90EB",
+            "notBefore": "Mar 11 05:41:54 2024 GMT",
+            "notAfter": "Jun  9 05:41:53 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "citizenlab.ca"
+                ],
+                [
+                    "DNS",
+                    "www.citizenlab.ca"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:31:29"
+    },
+    "https://cocaine.org": {
+        "Time": 8.46,
+        "URL": "https://cocaine.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.96.9",
+            "188.114.97.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.97.9",
+        "PING Status": "OK",
+        "PING IP": "188.114.97.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 66491,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:32:04 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "cf-edge-cache": "cache,platform=wordpress",
+            "link": "<https://cocaine.org/wp-json/>; rel=\"https://api.w.org/\", <https://cocaine.org/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\", <https://cocaine.org/>; rel=shortlink",
+            "Cache-Control": "max-age=600",
+            "expires": "Mon, 29 Apr 2024 08:42:04 GMT",
+            "vary": "Accept-Encoding,User-Agent",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=LZvX6Ur%2FePC0iaQp4VaIGqJxHoVBVHW03r5viq1k00yNd66t5GHk%2BbYMnA4tC9wQYsgUZeGgaL61h463QjpTWow8SlY%2B7hz6MdMd8XORc39C%2FMXXK9fHoRz9B%2BkHtg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87bdf0792e70b385-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "cocaine.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "cocaine.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "30FC5C2D7DF4BCD413881368C85193D8",
+            "notBefore": "Apr 18 17:51:45 2024 GMT",
+            "notAfter": "Jul 17 17:51:44 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "cocaine.org"
+                ],
+                [
+                    "DNS",
+                    "*.cocaine.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/Td6QIUJ1_tQ"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/WG5wH53YbGk.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:32:11"
+    },
+    "https://www.common-fund.org": {
+        "Time": 9.22,
+        "URL": "https://www.common-fund.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "199.223.115.240"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "199.223.115.240",
+        "PING Status": "OK",
+        "PING IP": "199.223.115.240",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 83732,
+        "Headers": {
+            "Date": "Thu, 25 Apr 2024 13:41:47 GMT",
+            "Server": "Apache",
+            "Cache-Control": "must-revalidate, no-cache, private",
+            "X-Drupal-Dynamic-Cache": "UNCACHEABLE",
+            "Content-language": "en",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "X-Generator": "Drupal 10 (https://www.drupal.org)",
+            "X-Drupal-Cache": "HIT",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.common-fund.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "drupal9.cfc-amsterdam.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "TX"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Houston"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "cPanel, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "cPanel, Inc. Certification Authority"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "6729A0C8FCAB2EB4DD0313446B1C994D",
+            "notBefore": "Feb 11 00:00:00 2024 GMT",
+            "notAfter": "May 11 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "drupal9.cfc-amsterdam.org"
+                ],
+                [
+                    "DNS",
+                    "common-fund.org"
+                ],
+                [
+                    "DNS",
+                    "cpanel.drupal9.cfc-amsterdam.org"
+                ],
+                [
+                    "DNS",
+                    "cpcalendars.drupal9.cfc-amsterdam.org"
+                ],
+                [
+                    "DNS",
+                    "cpcontacts.drupal9.cfc-amsterdam.org"
+                ],
+                [
+                    "DNS",
+                    "mail.drupal9.cfc-amsterdam.org"
+                ],
+                [
+                    "DNS",
+                    "webdisk.drupal9.cfc-amsterdam.org"
+                ],
+                [
+                    "DNS",
+                    "webmail.drupal9.cfc-amsterdam.org"
+                ],
+                [
+                    "DNS",
+                    "www.common-fund.org"
+                ],
+                [
+                    "DNS",
+                    "www.drupal9.cfc-amsterdam.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.comodoca.com"
+            ],
+            "caIssuers": [
+                "http://crt.comodoca.com/cPanelIncCertificationAuthority.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.comodoca.com/cPanelIncCertificationAuthority.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:33:03"
+    }
+}

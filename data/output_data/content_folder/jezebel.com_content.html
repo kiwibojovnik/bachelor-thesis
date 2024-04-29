@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en-US" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=2.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="alternate" type="application/rss+xml" title="Jezebel" href="https://www.jezebel.com/rss.xml">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQJMT985');</script>
+
+<link rel="icon" sizes="196x196" href="https://www.jezebel.com/wp-content/themes/pastemagazine/img/icon-196x196.png">
+<link rel="icon" sizes="128x128" href="https://www.jezebel.com/wp-content/themes/pastemagazine/img/icon-128x128.png">
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.jezebel.com/wp-content/themes/pastemagazine/img/icon-57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.jezebel.com/wp-content/themes/pastemagazine/img/icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.jezebel.com/wp-content/themes/pastemagazine/img/icon-144x144.png">
+<link rel="shortcut icon" href="https://www.jezebel.com/wp-content/themes/pastemagazine/img/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="stylesheet" type="text/css" href="https://htlbid.com/v3/jezebel.com/htlbid.css" />
+<script src="https://htlbid.com/v3/jezebel.com/htlbid.js"></script> <script>
+    
+    
+    
+    //googletag.cmd.push(detectAdLoad);
+function refreshSlotOnTimter(slotId, delay) {
+ myCounter.incrementCountForSlotId(slotId);
+ let myCnt = myCounter.getCountForSlotId(slotId);
+   console.log('slotId: ' + slotId + ' Count: ' + myCnt); 
+   if (myCnt<4 ) {
+     setTimeout(function() {
+       // console.log('Refresh Blank: ' + slotId )
+          htlbid.refreshSlot(slotId);
+        }, delay);
+   } else {//console.log('Skip refresh()');
+       
+   }
+}
+
+class RefreshCounter {
+    constructor() {
+        this.arr = [];
+    }
+       
+    increment() { this.count =  this.count +1; }
+    getCountForSlotId(slotId) { 
+        if (this.arr[slotId] ) { 
+            return this.arr[slotId];
+        
+        } else {
+            return 0;
+            
+        } 
+        
+    }
+    resetAllCounts() {
+           console.log('resetAllCounts()'); 
+           this.arr = [];
+   }
+    incrementCountForSlotId(slotId) {
+    if (this.arr[slotId] ) {
+        this.arr[slotId] = this.arr[slotId] + 1;
+        
+    } else {
+        this.arr[slotId] = 1;} 
+        
+    }
+}
+let myCounter = new RefreshCounter();
+
+function detectAdLoad() {
+ 
+    if(window.googletag && googletag.pubadsReady) {
+        console.log("pubadsReady");
+        
+        googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+       const slotId = event.slot.getSlotElementId();
+    
+     
+     
+        const {isEmpty, slot} = event;
+        myCounter.increment();
+        
+        if (isEmpty) {
+        // let sa =  document.querySelector('#' + slotId );
+       
+         // if (sa ) {
+            //console.log('display vis ' + slotId  + ': ' + sa.style.display);
+        // console.log('visible ' + slotId  + ': ' + sa.style.visibility);  
+               refreshSlotOnTimter(slotId,5000);
+          //} else {
+          //    console.log('Not Visible ' + slotId);
+         // }
+           
+        } else {
+    
+            // console.log('NOT EMPTY ' + slotId); 
+        }
+         
+
+            
+           
+        });
+    } else {
+        // console.log("googletag not detected, defaulting");
+        setTimeout(function() {
+          
+            console.log("pubads not detected");
+            detectAdLoad() ;
+        }, 300);
+    }
+}
+    setupAds();
+
+    setInterval(refreshAds, 30000);
+   function refreshAds() {
+   myCounter.resetAllCounts();
+        console.log('refreshAds()');
+       
+       
+  htlbid.refresh();
+     // retryEmptyAdSlots(7000,1);
+   // retryEmptyAdSlots(7000+5000,2); 
+   // retryEmptyAdSlots(7000+5000+5000,3);
+   } 
+    function setupAds() {
+    console.log('setupAds()');
+  window.htlbid = window.htlbid || {};
+  htlbid.cmd = htlbid.cmd || [];
+  htlbid.cmd.push(function() {
+    htlbid.setTargeting("is_testing","no");  
+htlbid.setTargeting("is_home", "yes"); 
+htlbid.setTargeting("category", "homepage");  
+htlbid.setTargeting("post_id", "/"); 
+ htlbid.layout();
+});
+  } 
+ googletag.cmd.push(detectAdLoad);</script>
+<script>
+    var pm = {
+        servers: {
+            pastemagazine: "www.jezebel.com",
+            wolfgangs: "www.wolfgangs.com"
+        },
+        version: "0",
+        page: {
+            "type": "Landing",
+            "mediaType": "Unknown",
+            "articleType": "Unknown",
+            "articleId": -1,
+            "author": null,
+            "services": "/pastemagazine.svc/pastemagazine/",
+            "isMobile": false,
+            "isIos": false,
+            "videoEmbedPlayerId": 30540132,
+            "testGroup": null,
+            "adblocker": true
+        }
+    };
+     </script>
+<script>
+    window.pageloadTimer = new Date();
+    window.templateDirURI = 'https://www.jezebel.com/wp-content/themes/pastemagazine';
+    window.ajaxurl = 'https://www.jezebel.com/wp-admin/admin-ajax.php';
+    window.isFrontPage = 1;
+    </script>
+<meta property="fb:admins" content="679468950">
+<meta property="fb:admins" content="1185614656">
+<meta property="fb:app_id" content="127550380613969">
+<meta property="fb:pages" content="18512903240">
+<meta name="p:domain_verify" content="8f36922bc91ba221f10d82c407d8b6a9">
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    </script>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<link media="screen" href="https://www.jezebel.com/wp-content/cache/autoptimize/css/autoptimize_caef230de9141e3babffdd9b38630164.css" rel="stylesheet"><style media="print">@media print{.pmpro_a-print{display:none;position:absolute;left:-9999px}}</style><link media="all" href="https://www.jezebel.com/wp-content/cache/autoptimize/css/autoptimize_3f2245be3d1f467c1f83dd58e22be61d.css" rel="stylesheet"><title>Home - Jezebel</title>
+<meta name="description" content="Celebrity, Politics, Entertainment... with Teeth" />
+<link rel="canonical" href="https://www.jezebel.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Home" />
+<meta property="og:description" content="Since 2007, Jezebel has been the Internet&#039;s most treasured source for everything celebrities, sex, and politics...with teeth." />
+<meta property="og:url" content="https://www.jezebel.com/" />
+<meta property="og:site_name" content="Jezebel" />
+<meta property="article:publisher" content="https://www.facebook.com/Jezebel" />
+<meta property="article:modified_time" content="2023-12-18T22:12:18+00:00" />
+<meta property="og:image" content="https://img.pastemagazine.com/wp-content/juploads/2024/01/logo-1200x675-1.jpg" />
+<meta property="og:image:width" content="676" />
+<meta property="og:image:height" content="380" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@jezebel" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"NewsArticle","@id":"https://www.jezebel.com/#article","isPartOf":{"@id":"https://www.jezebel.com/"},"author":{"name":"Jezebel Admin","@id":"https://www.jezebel.com/#/schema/person/6589d07cda7e062d42f05249179740b3"},"headline":"Home","datePublished":"2023-12-14T14:26:48+00:00","dateModified":"2023-12-18T22:12:18+00:00","mainEntityOfPage":{"@id":"https://www.jezebel.com/"},"wordCount":1,"commentCount":0,"publisher":{"@id":"https://www.jezebel.com/#organization"},"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.jezebel.com/#respond"]}]},{"@type":"WebPage","@id":"https://www.jezebel.com/","url":"https://www.jezebel.com/","name":"Home - Jezebel","isPartOf":{"@id":"https://www.jezebel.com/#website"},"about":{"@id":"https://www.jezebel.com/#organization"},"datePublished":"2023-12-14T14:26:48+00:00","dateModified":"2023-12-18T22:12:18+00:00","description":"Celebrity, Politics, Entertainment... with Teeth","breadcrumb":{"@id":"https://www.jezebel.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.jezebel.com/"]}]},{"@type":"BreadcrumbList","@id":"https://www.jezebel.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.jezebel.com/#website","url":"https://www.jezebel.com/","name":"Jezebel","description":"Since 2007, Jezebel has been the Internet&#039;s most treasured source for everything celebrities, sex, and politics...with teeth.","publisher":{"@id":"https://www.jezebel.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.jezebel.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.jezebel.com/#organization","name":"Jezebel","url":"https://www.jezebel.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.jezebel.com/#/schema/logo/image/","url":"https://img.pastemagazine.com/wp-content/juploads/2024/01/logo-696x696-1.jpg","contentUrl":"https://img.pastemagazine.com/wp-content/juploads/2024/01/logo-696x696-1.jpg","width":676,"height":676,"caption":"Jezebel"},"image":{"@id":"https://www.jezebel.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/Jezebel","https://twitter.com/jezebel","https://www.instagram.com/jezebel","https://www.tiktok.com/@jezebeldotcom","https://www.youtube.com/@jezebel"],"description":"Jezebel remains as committed as ever to fostering a space dedicated to championing diverse voices and standard-setting journalism that challenges and exposes the powers that be."},{"@type":"Person","@id":"https://www.jezebel.com/#/schema/person/6589d07cda7e062d42f05249179740b3","name":"Jezebel Admin","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.jezebel.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/7e9f5b00074e8f57b1e842fa72e1b066?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/7e9f5b00074e8f57b1e842fa72e1b066?s=96&d=mm&r=g","caption":"Jezebel Admin"},"url":"https://www.jezebel.com/author/pm_admin"}]}</script>
+
+
+<script src="//www.googletagmanager.com/gtag/js?id=G-DD26PJV9Z2" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.26.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.jezebel.com\/"};
+				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-DD26PJV9Z2',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-DD26PJV9Z2', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/www.jezebel.com","hash_tracking":"false","v4_id":"G-DD26PJV9Z2"};/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.jezebel.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" defer src="https://www.jezebel.com/wp-content/themes/pastemagazine/js/pm_custom.js?ver=662e65edd6167" id="pm-custom-js"></script>
+<style type="text/css">
+	.article-shares-links.four {
+		/* display: none; */
+	}
+	.single-article #article-detail-container .copy.entry {
+		padding-top: 0 !important;
+	}
+	#top_leaderboard {
+		display: none !important;
+	}
+	#above_logo {
+		position: fixed;
+		margin: 0 auto;
+		width: 100% !important;
+		height: 90px !important;
+		margin-top: -90px;
+		margin-bottom: 0 !important;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		z-index: 3;
+	}
+	#article-detail-container .article-shares-links .icon-pinterest, #article-detail-container .article-shares-links .icon-reddit-alien {
+	/*	display: none; */
+	}
+	body.term-food #landing-reviews {
+		display: none;
+	}
+	#master-header {
+		padding-top: 0 !important;
+		margin-top: 90px;
+	}
+/*	#master-header nav:not(.noisetrade-navigation) {
+		justify-content: flex-end !important;
+	}*/
+	#master-header .search.icon-search:before {
+		right: 0 !important;
+	}
+	@media (max-width: 480px) {
+		#top_leaderboard {
+			display: block !important;
+			min-height: 66px !important;
+		}
+		#above_logo {
+			display: none !important;
+			/**** TODO: You can remove this in May 2023 ****/
+			/*height: 50px !important;
+			margin-bottom: 0 !important;*/
+		}
+		#master-header {
+			margin-top: 0 !important;
+		}
+	}
+</style>
+<style type="text/css">
+	a[href*="#content"].skip-link, a.skip-link.screen-reader-text {
+		display: none;
+	}
+	#top_leaderboard {
+		height: fit-content !important;
+		position: sticky !important;
+	}
+	.site-navigation {
+		margin-top: 0 !important;
+	}
+	#article-detail-container .main-image {
+		margin-bottom: 1rem;
+	}
+	/**** TODO: You can remove this in May 2023 ****/
+	/*@media screen and (min-width: 64em) {
+		.site-navigation {
+			margin-top: 50px !important;
+		}
+	}
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+		.site-navigation {
+			margin-top: 50px !important;
+		}
+	}
+	@media screen and (max-width: 39.9375em) {
+		.site-navigation {
+			margin-top: 12px !important;
+		}
+	}*/
+</style>
+<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><link rel="icon" href="https://img.pastemagazine.com/wp-content/juploads/2023/12/cropped-icon-512x512-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://img.pastemagazine.com/wp-content/juploads/2023/12/cropped-icon-512x512-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://img.pastemagazine.com/wp-content/juploads/2023/12/cropped-icon-512x512-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://img.pastemagazine.com/wp-content/juploads/2023/12/cropped-icon-512x512-1-270x270.jpg" />
+<style type="text/css" id="wp-custom-css">
+			.um input[type=submit]:disabled:hover {
+    background: #a90026;
+}
+
+.um a.um-button,.um a.um-button.um-disabled:active,.um a.um-button.um-disabled:focus,.um a.um-button.um-disabled:hover,.um input[type=submit].um-button,.um input[type=submit].um-button:focus {
+    background: #a90026;
+}
+
+.um a.um-link {
+    color: #a90026;
+}
+.um .um-field-label {
+    color: #a90026;
+	font-family: Tahoma,sans-serif;
+}
+.um-col-131 {
+    float: left;
+    width: 60%;
+}
+
+ .um-dropdown ul {
+    background: #fff;
+    position: relative;
+    z-index: 16;
+    text-align: left;
+}
+
+#wpdcom .wpd-form-row div.wc_email-wrapper { 
+    display: none !important; 
+}
+#wpdcom input.wc_name {
+    display: none !important;
+}
+
+.um .um-form input[type=password], .um .um-form input[type=search], .um .um-form input[type=tel], .um .um-form input[type=text], .um .um-form textarea {
+    color: #666;
+	font-family: Tahoma,sans-serif;
+}
+.um a.um-button, .um a.um-button.um-disabled:active, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:hover, .um input[type=submit].um-button, .um input[type=submit].um-button:focus {
+    background: #a90026;
+	font-family: Tahoma,sans-serif;
+}
+
+.um-field-checkbox-option, .um-field-radio-option {
+    margin: 0 0 0 36px;
+    line-height: 24px;
+    color: #888!important;
+    display: block;
+	font-family: Tahoma,sans-serif;
+
+}
+a.um-link-alt {
+    line-height: 22px;
+    color: #888!important;
+    display: block!important;
+    text-decoration: none!important;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: none!important;
+    	font-family: Tahoma,sans-serif;
+}
+
+
+form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmpro_form input[type=email], form.pmpro_form input[type=number], form.pmpro_form textarea, form.pmpro_form select, #loginform input[type=text], #loginform input[type=password] {
+    display: inline-block;
+    max-width: 90%;
+    min-height: 1.5rem;
+    margin: 4px 2px 2px 2px;
+}
+
+.pmpro_btn, .pmpro_btn:link, .pmpro_content_message a, .pmpro_content_message a:link {font-weight:normal;
+}
+	
+form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmpro_form input[type=email], form.pmpro_form input[type=number], form.pmpro_form textarea, form.pmpro_form select, #loginform input[type=text], #loginform input[type=password] {
+    display: inline-block;
+    max-width: 90%;
+    min-height: 1.5rem;
+	/* margin: 8px 2px 2px 2px; */
+	margin-top:6px;
+}
+
+
+form.pmpro_form label, #loginform label {
+    font-weight: normal;
+    display: block;
+    margin: 0 0 5px 0;
+    text-align: left;
+    padding-bottom: 0;
+  
+    display: inline-block;
+    width: 220px;
+}
+.login-remember {display:none;}
+.pmpro_table th {text-align:left;}
+.pmpro_account-membership-levelname {line-height:1.5;}
+
+.pmpro_message {background-color:rgba(0, 0, 0, .1); color:#000000;}
+
+.wpd-login > a {color:#a90026 !important;}
+
+.pmpro_account-membership-levelname {
+    line-height: 2;
+}
+
+.form.pmpro_form .pmpro_submit {
+    margin-top: 1em;
+	text-align:center;
+}
+
+#comments {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #333333;
+    font-style: normal;
+}
+
+.pmpro_account-membership-levelname {text-align:left;vertical-align:top;}
+.pmpro_account-membership-levelfee {text-align:left; vertical-align:top;}
+.pmpro_account-membership-expiration {text-align:left;vertical-align:top;}
+.pmpro_actionlinks {margin-top:20px;}
+.pmpro_box {text-align:left;}
+.pmpro_box > ul {list-style-type:none;}
+#pmpro_account .pmpro_box ul {margin-left:0;}
+.pmpro_billing_wrap {text-align:left !important;}
+.pmpro_billing_wrap  > ul {list-style-type:none;margin-left:0;}
+.pmpro_member_profile_edit-field {text-align:left; font-weight:600;}
+.pmpro_change_password-field {text-align:left; }
+.pmpro_change_password-field > label {text-align:left; font-weight:600 !important;}
+
+.pmpro_member_profile_edit-field > label {text-align:left; font-weight:600 !important;}
+
+#wpdcom .wpd-form-wrap .wpd-login-to-comment {
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0 0 0;
+    background-color: #a90026;
+    color: #ffffff;
+    display: inline-block;
+	width:50%;
+	height: 50px;}
+
+#wpdcom * {
+    box-sizing: border-box;
+    line-height: initial;
+    text-align: center;
+}
+.wpd-login { text-align:left;}
+#wpdcom .wpd-comment-text p {
+   /* margin-bottom: 10px; */
+    text-align: left;
+}
+
+#wpdcom .wpd-form .wpdiscuz-textarea-wrap.wpd-txt .wpd-textarea-wrap {
+    flex-basis: calc( 100% - 0px );
+	 text-align: left;
+}
+
+#wpdcom.wpdiscuz_no_avatar .wpd-form .wpdiscuz-textarea-wrap.wpd-txt textarea {text-align:left}
+#pmpro_levels_table .pmpro_btn {
+    color:#ffffff !important;background-color:#a90026 !important;
+}
+
+form.pmpro_form .pmpro_checkout-fields div, #loginform p {
+    margin: 0 0 .5em;
+    text-align: left;
+}
+.pmpro_confirmation_wrap {
+
+    text-align: left !important;
+}
+
+#wpdcom .pmpro_confirmation_wrap {
+
+    text-align: left !important;
+}
+
+
+#wpdcom .wpd-auth {
+    display: block;
+   width:100%;
+}
+
+#wpdcom .wpd-auth .wpd-login {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+}
+
+
+#wpdcom .wpd-auth .wpd-login >a:not(.logged-in-link) {
+	
+background-color:#a90026 !important; color:#ffffff !important; font-size:12pt;width:100% !important;
+	display:inline-block !important; padding:4px 4px 4px 4px;
+}
+
+#wpdcom .wpd-form-wrap {
+    padding-bottom: 10px;
+	/*visibility: hidden; */
+}
+
+
+form.pmpro_form label, #loginform label { width:100%;}
+
+#pmpro_form hr {display:none;}
+
+.pmpro_checkout h2 span.pmpro_checkout-h2-msg > a { background-color:#a90026; color:#ffffff !important; padding:4px 4px 4px 4px;
+text-transform: uppercase;font-style:normal;margin-bottom:6px;}
+
+#wpdcom.wpd-layout-3 .wpd-comment .wpd-comment-header .wpd-comment-author, #wpdcom.wpd-layout-3 .wpd-comment .wpd-comment-header .wpd-comment-author a { color:#000000;}
+
+.pmpro_actionlinks a {display:block;line-height:1.4;font-family: Tahoma, sans-serif;}
+
+.pmpro_checkout_gateway-stripe {text-align:left !important;}
+
+#wpdcom .wpd-sbs-toggle {display:none}
+
+
+.pmpro_checkout h2 span.pmpro_checkout-h2-name {
+    
+    margin: 0 .5rem .25rem 0;
+}		</style>
+<style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-page-break-color: #066aab;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+
+				}
+			</style>
+
+<script type="text/javascript" src="//b-code.liadm.com/b-00aw.min.js" async="true" charset="utf-8"></script>
+<script type="text/javascript">
+window.liQ = window.liQ || [];
+window.liQ.push({ "event": "convsersion"});
+</script>
+</head>
+<body class="home page-template-default page page-id-374297 wp-embed-responsive pmpro-body-has-access">
+<a href="#content" class="skip-link screen-reader-text">Skip to the content</a>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQJMT985"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="htlad-top_leaderboard" id="top_leaderboard"></div>
+<div class="expanded site-navigation" id="site_navigation" data-pagetype="Landing">
+<div class="htlad-above_logo" id="above_logo"></div>
+<div class="grid-container">
+<header id="master-header" class="grid-y landing top-bar">
+<div id="site-bar" "><ul><li><a href="https://www.pastemagazine.com">Paste</a></li> | <li><a href="https://www.avclub.com">The AV Club</a></li> | <li><a href="https://www.jezebel.com">Jezebel</a></li> | <li><a href="https://www.splinter.com">Splinter</a></li></ul></div>
+<div class="top-bar-container grid-x">
+<div class="top-bar-right hide-for-large cell">
+<a href="#" class="menu" aria-label="Section Menu" data-toggle="small-navigation-menu" aria-controls="small-navigation-menu" data-is-focus="false" data-yeti-box="small-navigation-menu" aria-haspopup="true" aria-expanded="false" id="32rdph-dd-anchor"><i class="icon-menu">
+
+</i>
+</a>
+<ul class="vertical dropdown-pane menu has-position-left has-alignment-top" id="small-navigation-menu" data-dropdown="vd5cbf-dropdown" data-position="left" data-alignment="top" data-close-on-click="true" data-auto-focus="false" aria-labelledby="32rdph-dd-anchor" aria-hidden="true" data-yeti-box="small-navigation-menu" data-resize="small-navigation-menu" data-events="resize" style="top: 0px; left: -536.78px;">
+<li>
+<a href="/latest" class="large-1 cell">Latest</a>
+</li>
+<li>
+<a href="/politics " class="large-1 cell">Politics </a>
+</li>
+<li>
+<a href="/entertainment" class="large-1 cell">Entertainment</a>
+</li>
+<li>
+<a href="/celebrities " class="large-1 cell">Celebrities </a>
+</li>
+<li>
+<a href="/in-depth" class="large-1 cell">In Depth</a>
+</li>
+<li>
+<a href="/dirt-bag" class="large-1 cell">Dirt Bag</a>
+</li>
+<li class="empty">
+
+</li>
+
+<li class="hide-not-large">
+<a href="/video">Video</a>
+</li>
+<li class="hide-not-large">
+<a href="/newsletter">Newsletter</a>
+</li>
+<li class="hide-not-large">
+<a href="https://www.tiktok.com/@jezebeldotcom">TikTok </a>
+</li>
+<li class="hide-not-large">
+<a href="https://www.instagram.com/jezebel">Instagram</a>
+</li>
+<li class="hide-not-large">
+<a href="https://twitter.com/jezebel">Twitter</a>
+</li>
+<li class="hide-not-large">
+<a href="https://www.facebook.com/Jezebel">Facebook</a>
+</li>
+<li class="hide-not-large">
+<a href="  https://www.youtube.com/@jezebel/videos">YouTube</a>
+</li>
+
+</ul>
+
+</div>
+<div class="title-bar grid-x cell align-bottom">
+<h1 class="large-1 medium-1 small-5 cell logo">
+<a href="/">
+
+<svg id="Layter_1" xmlns="http://www.w3.org/2000/svg" width="206" height="48" aria-label="Jezebel logo" viewBox="0 0 206 48">
+<path fill="#A90026" fill-rule="evenodd" d="M1.66 0H13v30.8c0 3.93-3.33 10.38-7.46 13.3A17.73 17.73 0 0 1 0 47l.01-2.4c1.13-1.12 1.65-4.36 1.65-6.92V0zm18.35 0h23.47v9.07H31.3v3.45h11.88v6.65H31.3v3.71H44V32H20V0zm31.77 0h27.6c.03 1.4.07 6.84.07 6.84L67.1 23H80v9H51l.08-6.75L63.55 9.17H51.78V0zM181 0h11.08l.05 22.76 13.87-.04V32h-25V0zm-64 0h11.02c2.27 0 3.88-.01 5.75.22 2.37.3 5.24 2 6.55 3.34.9.92 2.59 3.48 2.32 5.72-.19 1.67-.83 3.75-3.26 6.01 4.56 2.65 4.62 6.89 4.62 6.82 0 7.59-7.12 9.83-10.86 9.83-3.9 0-16.12.06-16.12.06L117 0zm13.56 8a2.35 2.35 0 0 1 2.44 2.35c-.06 1.2-.3 2.13-1.25 2.43-.48.32-2 .2-2.75.18V8l1.56-.01zm-.17 10.03c2.01 0 3.61.94 3.61 2 0 2.9-1.6 2.97-5 2.97v-5c.51 0 .97.03 1.4.03zM86 0h23.48v9.07H97.3v3.45h11.88v6.65H97.3v3.71H110V32H86V0zm64 0h23.48v9.07H161.3v3.45h11.88v6.65H161.3v3.71H174V32h-24V0z"></path>
+</svg>
+</a>
+</h1>
+<div class="grid-x article-shares-links four">
+<a href="https://www.jezebel.com/" data-title="Jezebel: Your Guide to the Best Music, Movies &amp; TV Shows" class="small-3 icon-facebook">Share</a>
+<a href="https://www.jezebel.com/" data-title="Jezebel: Your Guide to the Best Music, Movies &amp; TV Shows" class="small-3 icon-twitter">Tweet</a>
+<a href="https://www.jezebel.com/" data-title="Jezebel: Your Guide to the Best Music, Movies &amp; TV Shows" class="small-3 icon-reddit-alien only-view-large">Submit</a>
+<a href="https://www.jezebel.com/" data-title="Jezebel: Your Guide to the Best Music, Movies &amp; TV Shows" data-image="https://www.jezebel.com/pastemagazine.img/logo.jpg" class="small-3 icon-pinterest">Pin</a>
+</div>
+</div>
+
+<nav>
+<div class="show-for-medium cell horizontal">
+
+<a href="/video" class="icon-newspaper large-auto ">Video</a>
+<b class="div">
+
+</b>
+<a href="/newsletter" class="icon-newspaper large-auto ">Newsletter</a>
+<b class="div">
+
+</b>
+<a href="https://www.tiktok.com/@jezebeldotcom" class="icon-newspaper large-auto ">TikTok</a>
+<b class="div">
+
+</b>
+<a href="https://www.instagram.com/jezebel" class="icon-newspaper large-auto ">Instagram</a>
+<b class="div">
+
+</b>
+<a href="https://twitter.com/jezebel" class="icon-newspaper large-auto ">Twitter</a>
+<b class="div">
+
+</b>
+<a href="https://www.youtube.com/@jezebel/videos" class="icon-newspaper large-auto ">YouTube</a>
+<b class="div">
+
+</b>
+<a href="https://www.facebook.com/Jezebel" class="icon-newspaper large-auto ">Facebook</a>
+</div>
+<a class="large-auto medium-auto cell search closed icon-search" href="/search" aria-label="Search">
+</a>
+<a href="/latest">Latest</a>
+<a href="/politics">Politics</a>
+<a href="/entertainment">Entertainment</a>
+<a href="/celebrities">Celebrities</a>
+<a href="/in-depth">In Depth</a>
+
+
+<a class="large-auto medium-auto cell subscribe" href="/membership-account" aria-label="Subscribe">
+</a>
+
+
+<div class="top-bar-right show-for-large cell">
+<a href="#" class="menu" aria-label="Section Menu" data-toggle="large-navigation-menu" aria-controls="large-navigation-menu" data-is-focus="false" data-yeti-box="large-navigation-menu" aria-haspopup="true" aria-expanded="false" id="ojytlk-dd-anchor">
+<i class="icon-menu">
+
+</i>
+</a>
+
+<ul class="vertical dropdown-pane menu has-position-left has-alignment-top" id="large-navigation-menu" data-dropdown="0iyk7c-dropdown" data-position="left" data-alignment="top" data-close-on-click="true" data-auto-focus="false" aria-labelledby="ojytlk-dd-anchor" aria-hidden="true" data-yeti-box="large-navigation-menu" data-resize="large-navigation-menu" data-events="resize">
+
+<li>
+<a href="/video">Video</a>
+</li>
+<li>
+<a href="/newsletter">Newsletter</a>
+</li>
+<li>
+<a href="https://www.tiktok.com/@jezebeldotcom">TikTok</a>
+</li>
+<li>
+<a href="https://www.instagram.com/jezebel">Instagram</a>
+</li>
+<li>
+<a href="https://twitter.com/jezebel">Twitter</a>
+</li>
+<li>
+<a href="https://www.youtube.com/@jezebel/videos">YouTube</a>
+</li>
+<li>
+<a href="https://www.facebook.com/Jezebel">Facebook</a>
+</li>
+
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<div class="header-top-ad cell center dfp">
+</div>
+</div>
+</div><main class="expanded site-body" id="site_body" role="main">
+<div class="grid-container">
+<div class="grid-x grid-padding-x landing-top">
+<div class="large-12 cell articles">
+<ul>
+<li>
+<a class="image" href="https://www.jezebel.com/kristi-noem-brags-in-new-book-about-killing-a-14-month-old-puppy">
+<picture data-sizes="[&quot;(min-width: 40em)&quot;,&quot;(min-width: 64em)&quot;]" class="main" data-sources="[&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/barf151-1.jpg&quot;,&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/barf.jpg&quot;,&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/barf.jpg&quot;]">
+<source media="(min-width: 40em)" srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/barf.jpg">
+<source media="(min-width: 64em)" srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/barf.jpg"><img class="no-lazy skip-layz data-skip-lazy" alt="Kristi Noem Brags in New Book About Killing 'Worthless' 14-Month-Old Puppy" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/barf151-1.jpg">
+</picture>
+
+</a>
+<a class="copy-container" href="https://www.jezebel.com/kristi-noem-brags-in-new-book-about-killing-a-14-month-old-puppy">
+<b class="type hide-for-medium">Movies</b>
+<b class="title">Kristi Noem Brags in New Book About Killing 'Worthless' 14-Month-Old Puppy</b>
+<b class="byline hide-for-medium">By Susan Rinkunas</b>
+<b class="time hide-for-medium">April 26, 2024 | 6:31pm</b>
+</a>
+</li>
+<li>
+<a class="image" href="https://www.jezebel.com/challengers-is-a-tour-de-force-tour-tale-of-two-simps">
+<picture data-sizes="[&quot;(min-width: 40em)&quot;,&quot;(min-width: 64em)&quot;]" class="main" data-sources="[&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/1511sdfsdf.jpg&quot;,&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/zendaya.jpg&quot;,&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/zendaya.jpg&quot;]">
+<source media="(min-width: 40em)" srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/zendaya.jpg">
+<source media="(min-width: 64em)" srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/zendaya.jpg"><img class="no-lazy skip-layz data-skip-lazy" alt="'Challengers' Is a Tour de Force Tour Tale of 2 Simps" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/1511sdfsdf.jpg">
+</picture>
+
+</a>
+<a class="copy-container" href="https://www.jezebel.com/challengers-is-a-tour-de-force-tour-tale-of-two-simps">
+<b class="type hide-for-medium">Movies</b>
+<b class="title">'Challengers' Is a Tour de Force Tour Tale of 2 Simps</b>
+<b class="byline hide-for-medium">By Audra Heinrichs</b>
+<b class="time hide-for-medium">April 26, 2024 | 5:49pm</b>
+</a>
+</li>
+<li>
+<a class="image" href="https://www.jezebel.com/trump-sad-he-cant-spend-melanias-birthday-with-her-to-be-in-court-over-hush-money-to-women-he-cheated-on-her-with">
+<picture data-sizes="[&quot;(min-width: 40em)&quot;,&quot;(min-width: 64em)&quot;]" class="main" data-sources="[&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/trump151-1.jpg&quot;,&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/trump-1.jpg&quot;,&quot;https://img.pastemagazine.com/wp-content/juploads/2024/04/trump-1.jpg&quot;]">
+<source media="(min-width: 40em)" srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/trump-1.jpg">
+<source media="(min-width: 64em)" srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/trump-1.jpg"><img class="no-lazy skip-layz data-skip-lazy" alt="Sad! Florida Man Bummed to Miss Wife's Birthday Due to Trial Involving Alleged Mistresses" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/trump151-1.jpg">
+</picture>
+
+</a>
+<a class="copy-container" href="https://www.jezebel.com/trump-sad-he-cant-spend-melanias-birthday-with-her-to-be-in-court-over-hush-money-to-women-he-cheated-on-her-with">
+<b class="type hide-for-medium">Movies</b>
+<b class="title">Sad! Florida Man Bummed to Miss Wife's Birthday Due to Trial Involving Alleged Mistresses</b>
+<b class="byline hide-for-medium">By Kylie Cheung</b>
+<b class="time hide-for-medium">April 26, 2024 | 4:13pm</b>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="grid-x landing-wrapper __web-inspector-hide-shortcut__">
+<div class="large-12 cell">
+<div class="grid-x small-up-1 medium-up-2 large-up-12">
+<div class="large-auto medium-auto small-auto">
+<p a="sql" style="display:none;">SELECT SQL_CALC_FOUND_ROWS ID,
+post_title,
+post_date,
+IF(lead_img_url_cdn IS NULL OR lead_img_url_cdn='', lead_img_url, lead_img_url_cdn) AS lead_img_url,
+permalink,
+co_authors,
+rating
+FROM pm_article_index AS a
+WHERE 1=1
+AND post_status = 'publish'
+AND ID NOT IN (SELECT ai.ID FROM `pm_article_index` as ai
+inner join pm_top_article_display as d ON (d.id=ai.id) where position IN (1,2,3) AND d.section = 'home'
+ORDER BY position)
+ORDER BY post_date DESC LIMIT 25 OFFSET 0</p><div class="grid-x articles-standard" id="landing-more-featured">
+<div class="large-12 cell articles-header  show-for-medium"><a href="/latest" class="float-left hed">Latest</a></div><ul class="articles grid-margin-x flex-container flex-dir-column"><li class="grid-x grid-padding-x"><a x="sam" class="large-3 medium-3 cell image" href="https://www.jezebel.com/democrats-are-taking-money-endorsements-from-pro-israel-pac-thats-backing-anti-abortion-candidates" aria-label="Democrats Are Taking Money From Pro-Israel PAC That’s Backing Anti-Abortion Candidates">
+<img class="no-lazy lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Democrats Are Taking Money From Pro-Israel PAC That’s Backing Anti-Abortion Candidates" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151-1.jpg" decoding="async" /><noscript><img class="no-lazy" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151-1.jpg" alt="Democrats Are Taking Money From Pro-Israel PAC That’s Backing Anti-Abortion Candidates" data-eio="l" /></noscript>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/democrats-are-taking-money-endorsements-from-pro-israel-pac-thats-backing-anti-abortion-candidates"><b class="title">Democrats Are Taking Money From Pro-Israel PAC That’s Backing Anti-Abortion Candidates</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-26T14:37:40+00:00">April 26, 2024 | 2:37pm</b></a></li><li class="grid-x grid-padding-x"><a x="sam" class="large-3 medium-3 cell image" href="https://www.jezebel.com/kylie-jenner-wore-a-tracksuit-to-a-funeral-ignited-the-wildest-rumor-about-her-yet" aria-label="Kylie Jenner Wore a Tracksuit to a Funeral & Ignited the Wildest Rumor About Her Yet">
+<img class="no-lazy lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Kylie Jenner Wore a Tracksuit to a Funeral & Ignited the Wildest Rumor About Her Yet" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/chalamet151.jpg" decoding="async" /><noscript><img class="no-lazy" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/chalamet151.jpg" alt="Kylie Jenner Wore a Tracksuit to a Funeral & Ignited the Wildest Rumor About Her Yet" data-eio="l" /></noscript>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/kylie-jenner-wore-a-tracksuit-to-a-funeral-ignited-the-wildest-rumor-about-her-yet"><b class="title">Kylie Jenner Wore a Tracksuit to a Funeral & Ignited the Wildest Rumor About Her Yet</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-26T10:01:31+00:00">April 26, 2024 | 10:01am</b></a></li><li class="grid-x grid-padding-x"><a x="sam" class="large-3 medium-3 cell image" href="https://www.jezebel.com/sophia-bush-wrote-a-moving-essay-on-coming-into-queerness-later-in-life" aria-label="Sophia Bush Wrote a Moving Essay on Coming Into Queerness Later In Life">
+<img class="no-lazy lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Sophia Bush Wrote a Moving Essay on Coming Into Queerness Later In Life" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151sophia.jpg" decoding="async" /><noscript><img class="no-lazy" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151sophia.jpg" alt="Sophia Bush Wrote a Moving Essay on Coming Into Queerness Later In Life" data-eio="l" /></noscript>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/sophia-bush-wrote-a-moving-essay-on-coming-into-queerness-later-in-life"><b class="title">Sophia Bush Wrote a Moving Essay on Coming Into Queerness Later In Life</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-25T17:19:49+00:00">April 25, 2024 | 5:19pm</b></a></li><li class="grid-x grid-padding-x"><a x="sam" class="large-3 medium-3 cell image" href="https://www.jezebel.com/harvey-weinsteins-2020-rape-conviction-was-overturned-in-new-york-but-will-remain-in-prison" aria-label="Harvey Weinstein's 2020 Rape Conviction Overturned in New York, But Will Remain in Prison">
+<img class="no-lazy lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Harvey Weinstein's 2020 Rape Conviction Overturned in New York, But Will Remain in Prison" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/weinstein151.jpg" decoding="async" /><noscript><img class="no-lazy" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/weinstein151.jpg" alt="Harvey Weinstein's 2020 Rape Conviction Overturned in New York, But Will Remain in Prison" data-eio="l" /></noscript>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/harvey-weinsteins-2020-rape-conviction-was-overturned-in-new-york-but-will-remain-in-prison"><b class="title">Harvey Weinstein's 2020 Rape Conviction Overturned in New York, But Will Remain in Prison</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-25T16:24:13+00:00">April 25, 2024 | 4:24pm</b></a></li><li class="grid-x grid-padding-x"><a x="sam" class="large-3 medium-3 cell image" href="https://www.jezebel.com/surprise-sydney-sweeney-glen-powells-on-set-romance-rumors-were-a-marketing-ploy" aria-label="Surprise! Sydney Sweeney & Glen Powell's Romance Rumors Were a Marketing Ploy">
+<img class="no-lazy lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Surprise! Sydney Sweeney & Glen Powell's Romance Rumors Were a Marketing Ploy" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151kbjb.jpg" decoding="async" /><noscript><img class="no-lazy" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151kbjb.jpg" alt="Surprise! Sydney Sweeney & Glen Powell's Romance Rumors Were a Marketing Ploy" data-eio="l" /></noscript>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/surprise-sydney-sweeney-glen-powells-on-set-romance-rumors-were-a-marketing-ploy"><b class="title">Surprise! Sydney Sweeney & Glen Powell's Romance Rumors Were a Marketing Ploy</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-25T14:30:12+00:00">April 25, 2024 | 2:30pm</b></a></li><li><div "dfp" data-chars><div class="htlad-mid_leaderboard_rectangle_1" id="mid_leaderboard_rectangle_1"></div></div></li><li class="grid-x grid-padding-x"><a x="sam" class="large-3 medium-3 cell image" href="https://www.jezebel.com/trauma-brought-us-together-when-we-were-16-18-21-25-i-dont-know-what-brings-us-together-now" aria-label="Trauma Brought Us Together When We Were 16, 18, 21, 25. I Don’t Know What Brings Us Together Now.">
+<img class="no-lazy lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Trauma Brought Us Together When We Were 16, 18, 21, 25. I Don’t Know What Brings Us Together Now." data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/traumaart151.jpg" decoding="async" /><noscript><img class="no-lazy" src="https://img.pastemagazine.com/wp-content/juploads/2024/04/traumaart151.jpg" alt="Trauma Brought Us Together When We Were 16, 18, 21, 25. I Don’t Know What Brings Us Together Now." data-eio="l" /></noscript>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/trauma-brought-us-together-when-we-were-16-18-21-25-i-dont-know-what-brings-us-together-now"><b class="title">Trauma Brought Us Together When We Were 16, 18, 21, 25. I Don’t Know What Brings Us Together Now.</b><b class="byline">By Camonghne Felix</b><b class="time" data-iso-date="2024-04-25T12:27:46+00:00">April 25, 2024 | 12:27pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/apparently-donna-kelces-spilling-about-a-certain-double-date-at-a-qvc-event" aria-label="Apparently, Donna Kelce's Spilling About a Certain Double Date at a QVC Event">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/swiftsfhj.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Apparently, Donna Kelce's Spilling About a Certain Double Date at a QVC Event" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/swiftsfhj.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/swiftsfhj.jpg" alt="Apparently, Donna Kelce's Spilling About a Certain Double Date at a QVC Event" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/apparently-donna-kelces-spilling-about-a-certain-double-date-at-a-qvc-event"><b class="title">Apparently, Donna Kelce's Spilling About a Certain Double Date at a QVC Event</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-25T09:59:49+00:00">April 25, 2024 | 9:59am</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/scotus-justices-raised-these-horrific-anecdotes-while-weighing-whether-pregnant-people-deserve-emergency-care" aria-label="The Liberal Justices Had to Explain Why Pregnant Women Should Be Treated Like Human Beings">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/scotus151-1.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The Liberal Justices Had to Explain Why Pregnant Women Should Be Treated Like Human Beings" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/scotus151-1.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/scotus151-1.jpg" alt="The Liberal Justices Had to Explain Why Pregnant Women Should Be Treated Like Human Beings" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/scotus-justices-raised-these-horrific-anecdotes-while-weighing-whether-pregnant-people-deserve-emergency-care"><b class="title">The Liberal Justices Had to Explain Why Pregnant Women Should Be Treated Like Human Beings</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-24T18:16:32+00:00">April 24, 2024 | 6:16pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/arizona-house-finally-passes-bill-to-repeal-civil-war-abortion-ban-but-its-not-over-yet" aria-label="Arizona House Finally Passes Bill to Repeal 1864 Abortion Ban, But It's Not Over Yet">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/ugh151-1.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Arizona House Finally Passes Bill to Repeal 1864 Abortion Ban, But It's Not Over Yet" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/ugh151-1.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/ugh151-1.jpg" alt="Arizona House Finally Passes Bill to Repeal 1864 Abortion Ban, But It's Not Over Yet" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/arizona-house-finally-passes-bill-to-repeal-civil-war-abortion-ban-but-its-not-over-yet"><b class="title">Arizona House Finally Passes Bill to Repeal 1864 Abortion Ban, But It's Not Over Yet</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-24T18:02:16+00:00">April 24, 2024 | 6:02pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/billie-eilish-on-self-pleasure-people-should-be-jerking-it-man" aria-label="Billie Eilish on Self-Pleasure: 'People Should Be Jerking It, Man'">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/billie151-1.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Billie Eilish on Self-Pleasure: 'People Should Be Jerking It, Man'" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/billie151-1.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/billie151-1.jpg" alt="Billie Eilish on Self-Pleasure: 'People Should Be Jerking It, Man'" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/billie-eilish-on-self-pleasure-people-should-be-jerking-it-man"><b class="title">Billie Eilish on Self-Pleasure: 'People Should Be Jerking It, Man'</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-24T17:31:10+00:00">April 24, 2024 | 5:31pm</b></a></li><li><div "dfp" data-chars><div class="htlad-mid_leaderboard_rectangle_2" id="mid_leaderboard_rectangle_2"></div></div></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/emtala-tktktk" aria-label="The Latest Supreme Court Abortion Arguments Were a Terrifying GOP Fever Dream">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/abortion151fgsfd.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The Latest Supreme Court Abortion Arguments Were a Terrifying GOP Fever Dream" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/abortion151fgsfd.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/abortion151fgsfd.jpg" alt="The Latest Supreme Court Abortion Arguments Were a Terrifying GOP Fever Dream" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/emtala-tktktk"><b class="title">The Latest Supreme Court Abortion Arguments Were a Terrifying GOP Fever Dream</b><b class="byline">By Susan Rinkunas</b><b class="time" data-iso-date="2024-04-24T16:41:11+00:00">April 24, 2024 | 4:41pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/megan-thee-stallion-accused-of-harassment-by-former-cameraman" aria-label="Megan Thee Stallion Accused of Harassment by Former Cameraman">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/stallion151-1.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Megan Thee Stallion Accused of Harassment by Former Cameraman" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/stallion151-1.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/stallion151-1.jpg" alt="Megan Thee Stallion Accused of Harassment by Former Cameraman" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/megan-thee-stallion-accused-of-harassment-by-former-cameraman"><b class="title">Megan Thee Stallion Accused of Harassment by Former Cameraman</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-24T12:46:32+00:00">April 24, 2024 | 12:46pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/vanessa-hudgens-explains-why-she-skipped-coachella" aria-label="Vanessa Hudgens Finally Gives Us the Explanation We've All Been Waiting For">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/vanessa151.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Vanessa Hudgens Finally Gives Us the Explanation We've All Been Waiting For" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/vanessa151.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/vanessa151.jpg" alt="Vanessa Hudgens Finally Gives Us the Explanation We've All Been Waiting For" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/vanessa-hudgens-explains-why-she-skipped-coachella"><b class="title">Vanessa Hudgens Finally Gives Us the Explanation We've All Been Waiting For</b><b class="byline">By Lauren Tousignant</b><b class="time" data-iso-date="2024-04-24T10:03:23+00:00">April 24, 2024 | 10:03am</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/nyu-protest-tk-tk" aria-label="NYU Faculty Member Who Spent Night in Jail After NYPD Raided Pro-Palestine Encampment: 'I Will Do It Again'">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/palestine151.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="NYU Faculty Member Who Spent Night in Jail After NYPD Raided Pro-Palestine Encampment: 'I Will Do It Again'" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/palestine151.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/palestine151.jpg" alt="NYU Faculty Member Who Spent Night in Jail After NYPD Raided Pro-Palestine Encampment: 'I Will Do It Again'" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/nyu-protest-tk-tk"><b class="title">NYU Faculty Member Who Spent Night in Jail After NYPD Raided Pro-Palestine Encampment: 'I Will Do It Again'</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-23T19:12:50+00:00">April 23, 2024 | 7:12pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/kari-lake-flip-flops-again-on-civil-war-era-abortion-ban" aria-label="Kari Lake Flip-Flops—Again!—on Civil War-Era Abortion Ban">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/kari151-1.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Kari Lake Flip-Flops—Again!—on Civil War-Era Abortion Ban" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/kari151-1.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/kari151-1.jpg" alt="Kari Lake Flip-Flops—Again!—on Civil War-Era Abortion Ban" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/kari-lake-flip-flops-again-on-civil-war-era-abortion-ban"><b class="title">Kari Lake Flip-Flops—Again!—on Civil War-Era Abortion Ban</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-23T17:15:14+00:00">April 23, 2024 | 5:15pm</b></a></li><li><div "dfp" data-chars><div class="htlad-mid_leaderboard_rectangle_3" id="mid_leaderboard_rectangle_3"></div></div></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/madonnas-fans-are-suing-her-again" aria-label="Madonna's Fans Are Suing Her (Again)">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/madonnnna.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Madonna's Fans Are Suing Her (Again)" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/madonnnna.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/madonnnna.jpg" alt="Madonna's Fans Are Suing Her (Again)" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/madonnas-fans-are-suing-her-again"><b class="title">Madonna's Fans Are Suing Her (Again)</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-23T15:02:46+00:00">April 23, 2024 | 3:02pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/the-latest-on-marjorie-taylor-greenes-passion-project-to-oust-speaker-johnson" aria-label="The Latest on Marjorie Taylor Greene's Passion Project to Oust Mike Johnson">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/green151.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The Latest on Marjorie Taylor Greene's Passion Project to Oust Mike Johnson" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/green151.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/green151.jpg" alt="The Latest on Marjorie Taylor Greene's Passion Project to Oust Mike Johnson" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/the-latest-on-marjorie-taylor-greenes-passion-project-to-oust-speaker-johnson"><b class="title">The Latest on Marjorie Taylor Greene's Passion Project to Oust Mike Johnson</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-23T13:05:03+00:00">April 23, 2024 | 1:05pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/dominic-west-is-participating-in-revisionist-history" aria-label="Dominic West Is Participating in Revisionist History!!">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/151sdfs.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Dominic West Is Participating in Revisionist History!!" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151sdfs.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151sdfs.jpg" alt="Dominic West Is Participating in Revisionist History!!" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/dominic-west-is-participating-in-revisionist-history"><b class="title">Dominic West Is Participating in Revisionist History!!</b><b class="byline">By Kady Ruth Ashcraft</b><b class="time" data-iso-date="2024-04-23T09:53:17+00:00">April 23, 2024 | 9:53am</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/people-hate-chris-pratt-and-katherine-schwarzenegger-again" aria-label="People Hate Chris Pratt Again">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/chris151.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="People Hate Chris Pratt Again" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/chris151.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/chris151.jpg" alt="People Hate Chris Pratt Again" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/people-hate-chris-pratt-and-katherine-schwarzenegger-again"><b class="title">People Hate Chris Pratt Again</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-22T17:09:06+00:00">April 22, 2024 | 5:09pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/the-biden-admin-has-finalized-a-rule-to-protect-abortion-patients-providers-privacy" aria-label="Biden Administration Tightens Privacy Rule to Protect Patients From Being Reported for Abortions">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/15151515.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Biden Administration Tightens Privacy Rule to Protect Patients From Being Reported for Abortions" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/15151515.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/15151515.jpg" alt="Biden Administration Tightens Privacy Rule to Protect Patients From Being Reported for Abortions" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/the-biden-admin-has-finalized-a-rule-to-protect-abortion-patients-providers-privacy"><b class="title">Biden Administration Tightens Privacy Rule to Protect Patients From Being Reported for Abortions</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-22T16:28:49+00:00">April 22, 2024 | 4:28pm</b></a></li><li><div "dfp" data-chars><div class="htlad-mid_leaderboard_rectangle_4" id="mid_leaderboard_rectangle_4"></div></div></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/kristi-noem-trump-vp-frontrunner-rejects-rape-exceptions-for-abortion" aria-label="Kristi Noem, Trump VP Frontrunner, Rejects Rape Exceptions for Abortion">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/151.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Kristi Noem, Trump VP Frontrunner, Rejects Rape Exceptions for Abortion" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151.jpg" alt="Kristi Noem, Trump VP Frontrunner, Rejects Rape Exceptions for Abortion" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/kristi-noem-trump-vp-frontrunner-rejects-rape-exceptions-for-abortion"><b class="title">Kristi Noem, Trump VP Frontrunner, Rejects Rape Exceptions for Abortion</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-22T12:49:46+00:00">April 22, 2024 | 12:49pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/days-after-keith-mcnally-called-lauren-sanchez-revolting-on-instagram-he-had-a-rodent-problem-in-his-restaurant" aria-label="Days After Keith McNally Called Lauren Sánchez 'Revolting,' He Had a Rodent Problem in His Restaurant...">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/mcnally.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Days After Keith McNally Called Lauren Sánchez 'Revolting,' He Had a Rodent Problem in His Restaurant..." data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/mcnally.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/mcnally.jpg" alt="Days After Keith McNally Called Lauren Sánchez 'Revolting,' He Had a Rodent Problem in His Restaurant..." data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/days-after-keith-mcnally-called-lauren-sanchez-revolting-on-instagram-he-had-a-rodent-problem-in-his-restaurant"><b class="title">Days After Keith McNally Called Lauren Sánchez 'Revolting,' He Had a Rodent Problem in His Restaurant...</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-22T10:02:44+00:00">April 22, 2024 | 10:02am</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/barf-4-19" aria-label="Sarah Huckabee Sanders Uses a Jay-Z Sample in Hype Video to Defend $19,000 Podium">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/barf151.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Sarah Huckabee Sanders Uses a Jay-Z Sample in Hype Video to Defend $19,000 Podium" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/barf151.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/barf151.jpg" alt="Sarah Huckabee Sanders Uses a Jay-Z Sample in Hype Video to Defend $19,000 Podium" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/barf-4-19"><b class="title">Sarah Huckabee Sanders Uses a Jay-Z Sample in Hype Video to Defend $19,000 Podium</b><b class="byline">By Susan Rinkunas</b><b class="time" data-iso-date="2024-04-19T17:31:57+00:00">April 19, 2024 | 5:31pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/the-j-lo-hate-train-keeps-on-tuggin" aria-label="The J.Lo Hate Train Keeps on Tuggin'">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/151dsfsd.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The J.Lo Hate Train Keeps on Tuggin'" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151dsfsd.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/151dsfsd.jpg" alt="The J.Lo Hate Train Keeps on Tuggin'" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/the-j-lo-hate-train-keeps-on-tuggin"><b class="title">The J.Lo Hate Train Keeps on Tuggin'</b><b class="byline">By Audra Heinrichs</b><b class="time" data-iso-date="2024-04-19T15:42:28+00:00">April 19, 2024 | 3:42pm</b></a></li><li class="grid-x grid-padding-x"><a x="dave" class="large-3 medium-3 cell image" href="https://www.jezebel.com/scotus-case-on-whether-pregnant-women-can-receive-emergency-care-relates-to-fetal-personhood" aria-label="The 'WTF Is Happening' Guide to the Supreme Court's 2nd Abortion Case">
+<picture class="lazyload">
+<source media="(min-width:40em)" data-srcset="https://img.pastemagazine.com/wp-content/juploads/2024/04/supreme151.jpg">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The 'WTF Is Happening' Guide to the Supreme Court's 2nd Abortion Case" data-src="https://img.pastemagazine.com/wp-content/juploads/2024/04/supreme151.jpg" decoding="async" class="lazyload" /><noscript><img src="https://img.pastemagazine.com/wp-content/juploads/2024/04/supreme151.jpg" alt="The 'WTF Is Happening' Guide to the Supreme Court's 2nd Abortion Case" data-eio="l" /></noscript>
+</picture>
+</a><a class="auto cell copy-container" href="https://www.jezebel.com/scotus-case-on-whether-pregnant-women-can-receive-emergency-care-relates-to-fetal-personhood"><b class="title">The 'WTF Is Happening' Guide to the Supreme Court's 2nd Abortion Case</b><b class="byline">By Kylie Cheung</b><b class="time" data-iso-date="2024-04-19T14:45:54+00:00">April 19, 2024 | 2:45pm</b></a></li><li><div "dfp" data-chars><div class="htlad-mid_leaderboard_rectangle_5" id="mid_leaderboard_rectangle_5"></div></div></li><li class="more">
+<a href="/latest">More</a>
+</li></div>
+</div>
+<aside id="sidebar" role="complementary" class="large-3 medium-3 small-auto">
+<ul class="aside">
+<li id="block-12" class="widget-container widget_block"><div class="htlad-top_rectangle" id="top_rectangle"></div></li><li id="block-8" class="widget-container widget_block"><p>
+<div class="grid-x articles-abbreviated" id="article-detail-essentials-small">
+<div class="large-12 cell articles-header">
+<a href="#" class="float-left hed"> Most Popular</a>
+</div>
+<ul class="articles grid-margin-x flex-container flex-dir-column">
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/vanessa-hudgens-explains-why-she-skipped-coachella" class="auto cell copy-container noimage">
+<b class="title">Vanessa Hudgens Finally Gives Us the Explanation We've All Been Waiting For</b>
+<b class="byline hide-for-large">By Lauren Tousignant</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-24T10:03:23+00:00">April 24, 2024 | 10:03am</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/kylie-jenner-wore-a-tracksuit-to-a-funeral-ignited-the-wildest-rumor-about-her-yet" class="auto cell copy-container noimage">
+<b class="title">Kylie Jenner Wore a Tracksuit to a Funeral & Ignited the Wildest Rumor About Her Yet</b>
+<b class="byline hide-for-large">By Kylie Cheung</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-26T10:01:31+00:00">April 26, 2024 | 10:01am</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/people-hate-chris-pratt-and-katherine-schwarzenegger-again" class="auto cell copy-container noimage">
+<b class="title">People Hate Chris Pratt Again</b>
+<b class="byline hide-for-large">By Audra Heinrichs</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-22T17:09:06+00:00">April 22, 2024 | 5:09pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/trauma-brought-us-together-when-we-were-16-18-21-25-i-dont-know-what-brings-us-together-now" class="auto cell copy-container noimage">
+<b class="title">Trauma Brought Us Together When We Were 16, 18, 21, 25. I Don’t Know What Brings Us Together Now.</b>
+<b class="byline hide-for-large">By Camonghne Felix</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-25T12:27:46+00:00">April 25, 2024 | 12:27pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/sophia-bush-wrote-a-moving-essay-on-coming-into-queerness-later-in-life" class="auto cell copy-container noimage">
+<b class="title">Sophia Bush Wrote a Moving Essay on Coming Into Queerness Later In Life</b>
+<b class="byline hide-for-large">By Audra Heinrichs</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-25T17:19:49+00:00">April 25, 2024 | 5:19pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/apparently-donna-kelces-spilling-about-a-certain-double-date-at-a-qvc-event" class="auto cell copy-container noimage">
+<b class="title">Apparently, Donna Kelce's Spilling About a Certain Double Date at a QVC Event</b>
+<b class="byline hide-for-large">By Audra Heinrichs</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-25T09:59:49+00:00">April 25, 2024 | 9:59am</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/billie-eilish-on-self-pleasure-people-should-be-jerking-it-man" class="auto cell copy-container noimage">
+<b class="title">Billie Eilish on Self-Pleasure: 'People Should Be Jerking It, Man'</b>
+<b class="byline hide-for-large">By Audra Heinrichs</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-24T17:31:10+00:00">April 24, 2024 | 5:31pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/kristi-noem-brags-in-new-book-about-killing-a-14-month-old-puppy" class="auto cell copy-container noimage">
+<b class="title">Kristi Noem Brags in New Book About Killing 'Worthless' 14-Month-Old Puppy</b>
+<b class="byline hide-for-large">By Susan Rinkunas</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-26T18:31:45+00:00">April 26, 2024 | 6:31pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/surprise-sydney-sweeney-glen-powells-on-set-romance-rumors-were-a-marketing-ploy" class="auto cell copy-container noimage">
+<b class="title">Surprise! Sydney Sweeney & Glen Powell's Romance Rumors Were a Marketing Ploy</b>
+<b class="byline hide-for-large">By Kylie Cheung</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-25T14:30:12+00:00">April 25, 2024 | 2:30pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.jezebel.com/dominic-west-is-participating-in-revisionist-history" class="auto cell copy-container noimage">
+<b class="title">Dominic West Is Participating in Revisionist History!!</b>
+<b class="byline hide-for-large">By Kady Ruth Ashcraft</b>
+<b class="time hide-for-medium" data-iso-date="2024-04-23T09:53:17+00:00">April 23, 2024 | 9:53am</b>
+</a>
+</li>
+<li class="more">
+<a href="#">More Most Popular</a>
+</li>
+</ul>
+</div></p>
+</li><li id="block-13" class="widget-container widget_block"><div class="htlad-middle_rectangle" id="middle_rectangle"></div></li><li id="block-9" class="widget-container widget_block">
+<p>
+<div class="grid-x articles-abbreviated" id="article-detail-essentials-small">
+<div class="large-12 cell articles-header pm-blue">
+<a href="https://www.pastemagazine.com" class="float-left hed pm-blue">Paste Magazine</a>
+</div>
+<ul class="articles grid-margin-x flex-container flex-dir-column">
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/music/johnny-cash/the-20-best-songs-from-johnny-cashs-american-recordings-series" class="auto cell copy-container noimage">
+<b class="title">The 20 Best Songs From Johnny Cash’s American Recordings Series</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-28T10:00:51+00:00">April 28, 2024 | 10:00am</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/music/john-prine/time-capsule-john-prine-sweet-revenge" class="auto cell copy-container noimage">
+<b class="title">Time Capsule: John Prine, Sweet Revenge</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-27T10:00:51+00:00">April 27, 2024 | 10:00am</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/movies/bill-skarsgard/boy-kills-world-review" class="auto cell copy-container noimage">
+<b class="title">Insufferable Boy Kills World Dishonors H. Jon Benjamin’s Beautiful Voice</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-26T16:34:53+00:00">April 26, 2024 | 4:34pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/tv/apple-tv-plus/best-apple-shows-ranked" class="auto cell copy-container noimage">
+<b class="title">The 30 Best Apple TV+ Shows, Ranked</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-26T16:00:00+00:00">April 26, 2024 | 4:00pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/games/umurangi-generation/umurangi-generation-vr-a-modern-classic-from-a-new-perspective" class="auto cell copy-container noimage">
+<b class="title">Umurangi Generation VR: A Modern Classic from a New Perspective</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-26T15:12:27+00:00">April 26, 2024 | 3:12pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/tv/best-on-netflix/best-tv-on-netflix" class="auto cell copy-container noimage">
+<b class="title">The 50 Best TV Shows on Netflix, Ranked (April 2024)</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-26T15:00:00+00:00">April 26, 2024 | 3:00pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/games/hunter-x-hunter-nen-x-impact/hunter-x-hunter-nen-x-impact-first-trailer" class="auto cell copy-container noimage">
+<b class="title">Hunter x Hunter: Nen x Impact, a Fighting Game Based on the Hit Manga and Anime, Gets First Trailer</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-26T14:14:40+00:00">April 26, 2024 | 2:14pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/games/tales-of-kenzera-zau/tales-of-kenzera-zau-understands-the-complexity-of-grief" class="auto cell copy-container noimage">
+<b class="title">Tales of Kenzera: ZAU Understands the Complexity of Grief</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-26T14:12:03+00:00">April 26, 2024 | 2:12pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/media/podcasts/2024s-most-bingeworthy-podcasts-so-far" class="auto cell copy-container noimage">
+<b class="title">2024’s Most Bingeworthy Podcasts (So Far)</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-26T14:08:56+00:00">April 26, 2024 | 2:08pm</b>
+</a>
+</li>
+<li class="grid-x grid-padding-x">
+<a href="https://www.pastemagazine.com/music/new-albums/new-music" class="auto cell copy-container noimage">
+<b class="title">Best New Albums: This Week's Records to Stream</b>
+
+<b class="time hide-for-medium" data-iso-date="2024-04-26T14:00:00+00:00">April 26, 2024 | 2:00pm</b>
+</a>
+</li>
+<li class="more pm-blue">
+<a class="pm-blue" href="https://www.pastemagazine.com">More Paste Magazine</a>
+</li>
+</ul>
+</div></p>
+</li><li id="block-10" class="widget-container widget_block"><p></p>
+</li><li id="block-11" class="widget-container widget_block"><div class="pm-sticky">
+<div class="htlad-bottom_rectangle" id="bottom_rectangle"></div>
+</div></li> </ul>
+</aside>
+<div class="newsletter-container">
+<div class="newsletter-copy-container">
+<p class="copy-a">GET JEZEBEL RIGHT IN YOUR INBOX</p>
+<p class="copy-b">Celebrity, Politics, Entertainment... with Teeth</p>
+<p id="newsletter-signup-result" class="copy-a"></p>
+<div id="newsletter-signup" class="copy newsletter-signup">
+<script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-374427" method="post" data-id="374427" data-name="Subscribe Form"><div class="mc4wp-form-fields"><p class="grid-x grid-margin-x">
+<input id="newsletter-signup-email" class="medium-8 small-8 cell" type="email" placeholder="email address" name="EMAIL">
+<button type="submit" id="newsletter-signup-submit" class="medium-2 small-4 button">Sign
+Up</button>
+</p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1714316782" /><input type="hidden" name="_mc4wp_form_id" value="374427" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer id="master-footer" class="row" role="contentinfo">
+
+<ul id="menu-footer-menu" class="menu"><li id="menu-item-374579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374579"><a href="https://www.jezebel.com/newsletter" itemprop="url">Newsletter</a></li>
+<li id="menu-item-374580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374580"><a href="https://www.jezebel.com/masthead" itemprop="url">Masthead</a></li>
+<li id="menu-item-374581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374581"><a href="https://www.jezebel.com/contact-us" itemprop="url">Contact Us</a></li>
+<li id="menu-item-374582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374582"><a href="https://www.jezebel.com/advertise" itemprop="url">Advertise</a></li>
+<li id="menu-item-374583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374583"><a href="https://www.jezebel.com/about" itemprop="url">About</a></li>
+<li id="menu-item-374584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374584"><a href="https://www.jezebel.com/copyright" itemprop="url">Copyright</a></li>
+<li id="menu-item-374585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-374585"><a rel="privacy-policy" href="https://www.jezebel.com/privacy" itemprop="url">Privacy</a></li>
+</ul>
+<p>&copy; 2024 Paste Media Group. All Rights Reserved</p>
+</footer>
+<div id="bottom-fixed-unit" class="dfp">
+<div>
+<div class="htlad-bottom_leaderboard" id="bottom_leaderboard"></div>
+</div>
+</div>
+
+<script>(function() {function maybePrefixUrlField () {
+  const value = this.value.trim()
+  if (value !== '' && value.indexOf('http') !== 0) {
+    this.value = 'http://' + value
+  }
+}
+
+const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+for (let j = 0; j < urlFields.length; j++) {
+  urlFields[j].addEventListener('blur', maybePrefixUrlField)
+}
+})();</script><script type="text/javascript" defer>
+	const isiOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/); // pm.page.isIos;
+	jQuery(document).ready(function($) {
+		if ( !isiOS ) {
+			return;
+		}
+		setTimeout( function() {
+			console.log("Handling youtube frames for iOS.");
+			const $iframes = $(`iframe`);
+			console.log($iframes);
+			$iframes.each(function() {
+				const src = $(this).data('src');
+				if ( !src.includes("www.youtube.com") ) {
+					return;
+				}
+				$(this).replaceWith(`<object>
+				<param name="movie" value="${src}">
+				<embed src="${src}" type="application/x-shockwave-flash">
+			</object>`);
+			});
+		}, 100 );
+	});
+</script>
+<script type="text/javascript">
+        // Get all anchor tags on the page
+        var anchors = document.getElementsByTagName('a');
+
+        // Regular expression pattern to replace 'page' with 'paged' after '?'
+        var regex = /\bpage=([^&#]*)/g;
+
+        // Iterate through each anchor tag
+        for (var i = 0; i < anchors.length; i++) {
+            var href = anchors[i].href;
+
+            // Replace 'page' with 'paged' in the href attribute
+            var newHref = href.replace(regex, 'page=$1');
+
+            // Update the href attribute with the modified URL
+            anchors[i].href = newHref;
+        }
+    </script>
+<script>
+jQuery(document).ready(function($) {
+    var deviceAgent = navigator.userAgent.toLowerCase();
+    if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+        $("html").addClass("ios");
+        $("html").addClass("mobile");
+    }
+    if (deviceAgent.match(/(Android)/)) {
+        $("html").addClass("android");
+        $("html").addClass("mobile");
+    }
+    if (navigator.userAgent.search("MSIE") >= 0) {
+        $("html").addClass("ie");
+    } else if (navigator.userAgent.search("Chrome") >= 0) {
+        $("html").addClass("chrome");
+    } else if (navigator.userAgent.search("Firefox") >= 0) {
+        $("html").addClass("firefox");
+    } else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+        $("html").addClass("safari");
+    } else if (navigator.userAgent.search("Opera") >= 0) {
+        $("html").addClass("opera");
+    }
+});
+</script>
+<script type="text/javascript">
+		/* MonsterInsights Scroll Tracking */
+		if ( typeof(jQuery) !== 'undefined' ) {
+		jQuery( document ).ready(function(){
+		function monsterinsights_scroll_tracking_load() {
+		if ( ( typeof(__gaTracker) !== 'undefined' && __gaTracker && __gaTracker.hasOwnProperty( "loaded" ) && __gaTracker.loaded == true ) || ( typeof(__gtagTracker) !== 'undefined' && __gtagTracker ) ) {
+		(function(factory) {
+		factory(jQuery);
+		}(function($) {
+
+		/* Scroll Depth */
+		"use strict";
+		var defaults = {
+		percentage: true
+		};
+
+		var $window = $(window),
+		cache = [],
+		scrollEventBound = false,
+		lastPixelDepth = 0;
+
+		/*
+		* Plugin
+		*/
+
+		$.scrollDepth = function(options) {
+
+		var startTime = +new Date();
+
+		options = $.extend({}, defaults, options);
+
+		/*
+		* Functions
+		*/
+
+		function sendEvent(action, label, scrollDistance, timing) {
+		if ( 'undefined' === typeof MonsterInsightsObject || 'undefined' === typeof MonsterInsightsObject.sendEvent ) {
+		return;
+		}
+			var paramName = action.toLowerCase();
+	var fieldsArray = {
+	send_to: 'G-DD26PJV9Z2',
+	non_interaction: true
+	};
+	fieldsArray[paramName] = label;
+
+	if (arguments.length > 3) {
+	fieldsArray.scroll_timing = timing
+	MonsterInsightsObject.sendEvent('event', 'scroll_depth', fieldsArray);
+	} else {
+	MonsterInsightsObject.sendEvent('event', 'scroll_depth', fieldsArray);
+	}
+			}
+
+		function calculateMarks(docHeight) {
+		return {
+		'25%' : parseInt(docHeight * 0.25, 10),
+		'50%' : parseInt(docHeight * 0.50, 10),
+		'75%' : parseInt(docHeight * 0.75, 10),
+		/* Cushion to trigger 100% event in iOS */
+		'100%': docHeight - 5
+		};
+		}
+
+		function checkMarks(marks, scrollDistance, timing) {
+		/* Check each active mark */
+		$.each(marks, function(key, val) {
+		if ( $.inArray(key, cache) === -1 && scrollDistance >= val ) {
+		sendEvent('Percentage', key, scrollDistance, timing);
+		cache.push(key);
+		}
+		});
+		}
+
+		function rounded(scrollDistance) {
+		/* Returns String */
+		return (Math.floor(scrollDistance/250) * 250).toString();
+		}
+
+		function init() {
+		bindScrollDepth();
+		}
+
+		/*
+		* Public Methods
+		*/
+
+		/* Reset Scroll Depth with the originally initialized options */
+		$.scrollDepth.reset = function() {
+		cache = [];
+		lastPixelDepth = 0;
+		$window.off('scroll.scrollDepth');
+		bindScrollDepth();
+		};
+
+		/* Add DOM elements to be tracked */
+		$.scrollDepth.addElements = function(elems) {
+
+		if (typeof elems == "undefined" || !$.isArray(elems)) {
+		return;
+		}
+
+		$.merge(options.elements, elems);
+
+		/* If scroll event has been unbound from window, rebind */
+		if (!scrollEventBound) {
+		bindScrollDepth();
+		}
+
+		};
+
+		/* Remove DOM elements currently tracked */
+		$.scrollDepth.removeElements = function(elems) {
+
+		if (typeof elems == "undefined" || !$.isArray(elems)) {
+		return;
+		}
+
+		$.each(elems, function(index, elem) {
+
+		var inElementsArray = $.inArray(elem, options.elements);
+		var inCacheArray = $.inArray(elem, cache);
+
+		if (inElementsArray != -1) {
+		options.elements.splice(inElementsArray, 1);
+		}
+
+		if (inCacheArray != -1) {
+		cache.splice(inCacheArray, 1);
+		}
+
+		});
+
+		};
+
+		/*
+		* Throttle function borrowed from:
+		* Underscore.js 1.5.2
+		* http://underscorejs.org
+		* (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+		* Underscore may be freely distributed under the MIT license.
+		*/
+
+		function throttle(func, wait) {
+		var context, args, result;
+		var timeout = null;
+		var previous = 0;
+		var later = function() {
+		previous = new Date;
+		timeout = null;
+		result = func.apply(context, args);
+		};
+		return function() {
+		var now = new Date;
+		if (!previous) previous = now;
+		var remaining = wait - (now - previous);
+		context = this;
+		args = arguments;
+		if (remaining <= 0) {
+		clearTimeout(timeout);
+		timeout = null;
+		previous = now;
+		result = func.apply(context, args);
+		} else if (!timeout) {
+		timeout = setTimeout(later, remaining);
+		}
+		return result;
+		};
+		}
+
+		/*
+		* Scroll Event
+		*/
+
+		function bindScrollDepth() {
+
+		scrollEventBound = true;
+
+		$window.on('scroll.scrollDepth', throttle(function() {
+		/*
+		* We calculate document and window height on each scroll event to
+		* account for dynamic DOM changes.
+		*/
+
+		var docHeight = $(document).height(),
+		winHeight = window.innerHeight ? window.innerHeight : $window.height(),
+		scrollDistance = $window.scrollTop() + winHeight,
+
+		/* Recalculate percentage marks */
+		marks = calculateMarks(docHeight),
+
+		/* Timing */
+		timing = +new Date - startTime;
+
+		checkMarks(marks, scrollDistance, timing);
+		}, 500));
+
+		}
+
+		init();
+		};
+
+		/* UMD export */
+		return $.scrollDepth;
+
+		}));
+
+		jQuery.scrollDepth();
+		} else {
+		setTimeout(monsterinsights_scroll_tracking_load, 200);
+		}
+		}
+		monsterinsights_scroll_tracking_load();
+		});
+		}
+		/* End MonsterInsights Scroll Tracking */
+		
+</script><script type="text/javascript" id="eio-lazy-load-js-before">
+/* <![CDATA[ */
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0};
+/* ]]> */
+</script>
+<script>
+//slideInit();
+
+
+function loadScript(url, callback) {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    if (script.readyState) {
+        //IE
+        script.onreadystatechange = function() {
+            if (script.readyState == "loaded" || script.readyState == "complete") {
+                script.onreadystatechange = null;
+               //if (callback) {
+                    callback();
+              // }
+            }
+        };
+    } else {
+        //Others
+        script.onload = function() {
+            if (callback) {
+                callback();
+             }
+        };
+    }
+    script.src = url;
+    document.getElementsByTagName("head")[0].appendChild(script);
+}
+//2700
+
+setTimeout(
+    loadScript,
+    5000,
+    `https://www.jezebel.com/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.8.8`,
+    function() {}
+);
+
+//setTimeout(loadScript, 5000, 'https://tag.bounceexchange.com/6929/i.js');
+</script>
+<script defer src="https://www.jezebel.com/wp-content/cache/autoptimize/js/autoptimize_85db6de5b0c5643d3b644cdc99a6f05a.js"></script></body>
+</html>

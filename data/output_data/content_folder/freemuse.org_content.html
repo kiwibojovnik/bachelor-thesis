@@ -1,0 +1,725 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freemuse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+<link href="/css/RTE.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/js/select2/select2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+          integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css"
+          integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc3+eQMUcEQY1RIDPGvuA7SNQ2w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.0.0.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title></title>
+
+<meta name="description" content= />
+<meta name="keywords" content= />
+
+<link rel="canonical" href="" />
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" />
+    
+	 <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/87c71b0ad29cdcabf2c4f43782e1c3b3.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WZP9HBH');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class=home-page>
+    
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="navbar-wrap">
+            <nav class="menu">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+            <div class="logo">
+                <a href="/">
+                                <img src="/media/bm3kwt0r/logo.png" alt="logo">
+                            <img src="/media/bm3kwt0r/logo.png" alt="logo">
+
+
+                </a>
+            </div>
+            <div class="search">
+                <div class="icon-search">
+				<img src="/images/search_nav-white.png" alt="search-icon">
+                    <img src="/images/search_nav.png" alt="search-icon">
+                    
+                </div>
+                <div class="search-bar">
+                    <div>
+                        <input type="text" name="term" onkeypress="searchredirect(event,this)" placeholder="Search" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-bottom">
+            <div class="container">
+                <div class="navi-wrap">
+                    <ul class="navi row">
+<!-- Header -->
+<li class="col-md-4 col-sm-12">
+    <a href="/#">Who we are</a>
+    <ul class="sub-menu">
+                    <li><a href="/about/">About us</a></li>
+                    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                    Secretariat
+                                </a>
+                        <ul class="dropdown-menu sub-items" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/about/#executive">Executive Director</a></li>
+                                    <li><a class="dropdown-item" href="/about/#staff">Staff</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li><a href="/executive-committee/">Governance</a></li>
+
+    </ul>
+    <button class="sub-menu-toggle">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</li><!--End Header --><!-- Header -->
+<li class="col-md-4 col-sm-12">
+    <a href="/">What we do</a>
+    <div class="sub-menu sect-wrap row">
+                <div class="sect">
+                    <ul class="sub-menu-items">
+                                    <li><a href="/">We do</a></li>
+                                    <li class="nav-item dropdown">
+                                                                <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                    Research
+                                                                </a>
+                                        <ul class="dropdown-menu sub-items" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="/resource-list/">Reports</a></li>
+                                                    <li><a class="dropdown-item" href="/news/">News</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                                                <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                    Advocacy
+                                                                </a>
+                                        <ul class="dropdown-menu sub-items" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="/submissions/">Submissions</a></li>
+                                                    <li><a class="dropdown-item" href="/statements/">Statements</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="/small-changes/">Small Changes Project</a></li>
+
+                    </ul>
+                </div>
+                <div class="sect">
+                    <ul class="sub-menu-items">
+                                    <li><a href="/campaigns-list/">Campaigns</a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+
+                    </ul>
+                </div>
+
+    </div>
+    <button class="sub-menu-toggle">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</li>
+<!--End Header --><!-- Header -->
+<li class="col-md-4 col-sm-12">
+    <a href="/issues-in-focus/">Issues In Focus</a>
+    <div class="sub-menu sect-wrap row">
+                <div class="sect">
+                    <ul class="sub-menu-items">
+                                    <li><a href="/issues-in-focus/sogie-sexual-orientation-and-gender-identity-and-expression/">SOGIE - Sexual orientation and gender identity and expression</a></li>
+                                    <li><a href="/issues-in-focus/gender-discrimination/">Gender discrimination</a></li>
+                                    <li><a href="/issues-in-focus/racial-discrimination/">Racial discrimination</a></li>
+                                    <li><a href="/issues-in-focus/minorities/">Minorities</a></li>
+                                    <li><a href="/issues-in-focus/religion/">Religion</a></li>
+
+                    </ul>
+                </div>
+                <div class="sect">
+                    <ul class="sub-menu-items">
+                                    <li><a href="/issues-in-focus/indecency/">Indecency</a></li>
+                                    <li><a href="/issues-in-focus/digital/">Digital</a></li>
+                                    <li><a href="/issues-in-focus/politics/">Politics</a></li>
+                                    <li><a href="/issues-in-focus/national-security-and-terrorism/">National Security and Terrorism</a></li>
+                                    <li><a href="/issues-in-focus/conflict/">Conflict</a></li>
+                                    <li><a href="/issues-in-focus/official-pre-requisites/">Official pre-requisites</a></li>
+
+                    </ul>
+                </div>
+
+    </div>
+    <button class="sub-menu-toggle">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</li>
+<!--End Header -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--End Header -->
+
+    
+
+<main>
+    
+    
+    
+    <div class="umb-grid">
+                <div class="grid-section">
+        <div style="background-color:#f1f2f2;">
+            
+            <div class="">
+                    <div class="spacing-m0">
+                        <div>
+                                    
+
+    <a class="social-cards">
+            <div class="icon">
+                <img src="/media/4ezbfmas/skjermbilde-2023-06-12-kl-19-56-07.png" alt="Skjermbilde 2023 06 12 Kl. 19.56.07">
+            </div>
+                    <div class="image">
+                <img src="/media/2osehd04/freemuse-heading.jpg" alt="Freemuse Heading">
+            </div>
+    </a>
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <div >
+            
+            <div class="">
+                    <div >
+                        <div>
+                                    
+    <section class="report">
+        <div class="content-section" style="background-color:#">
+            <div class="content-section-inner">
+                <h1>MUSIC FREEDOM DAY 2024</h1>
+                <p>Did you know that musicians are the most persecuted artists in the world and artists all over the world are threatened by governments, authorities, and civil society?</p>
+<p><strong>Join MFD on March 3<sup>rd</sup> by sharing an article, a censored song or by making a statement. </strong></p>
+<p><a href="/events/music-freedom-day-2024/">Read more</a></p>
+            </div>
+        </div>
+            <div class="img-section">
+                <div class="bg-image" style="background-image: url(/media/u1mbpdpu/ezgif-com-animated-gif-maker.gif);"></div>
+            </div>
+
+    </section>
+
+
+                                    
+    <section class="report">
+        <div class="content-section" style="background-color:#000000">
+            <div class="content-section-inner">
+                <h1>THE STATE OF ARTISTIC FREEDOM</h1>
+                <p style="font-weight: 400;"><strong>Freemuse</strong> <strong>State of Artistic Freedom Report 2023</strong></p>
+<p style="font-weight: 400;">We are proud to announce that the annual Freemuse report, State of Artistic Freedom 2023, documenting violations of artistic freedom worldwide will be launched in Drammen, Monday 19th June @ 12:30 pm CET as part of the opening day of the event "Kulturytring".</p>
+<p><a href="/media/cvajxuvr/saf-2023-compressed.pdf" title="SAF 2023 REPORT">You can read the report here.</a></p>
+            </div>
+        </div>
+            <div class="img-section">
+                <div class="bg-image" style="background-image: url(/media/lsgf1xrs/saf-front-page-web-4-3.jpg);"></div>
+            </div>
+
+    </section>
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="pb-50">
+            
+            <div class="">
+                    <div >
+                        <div>
+                                    
+
+
+    <section class="homepage-cards card-gallary pt-0 mb-25">
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="card-wrap">
+                            <a href="/news/">
+                                <div class="custom-card color-card bottom-left" style="background-color: #000000;">
+                                    <div class="card-content">
+                                        <h4>News</h4>
+                                        <p>SEE ALL</p>
+                                    </div>
+                                    <div class="card-icon">
+                                        <img src="/images/right_arrow.png" alt="right_arrow">
+                                    </div>
+                                </div>
+                            </a>
+
+                    </div>
+                </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <a href="/news/nigeria-filmmaker-declared-wanted-for-allegedly-promoting-immorality-in-film/">
+                            <div class="card-wrap">
+                                    <div class="custom-card img-card bottom-center overlay"
+                                         style="background-image: url(/media/xran1hmr/untitled-590-300-px-590-300-px.png);">
+                                    </div>
+
+                                <div class="card-content">
+                                    <p>Nigeria: Filmmaker declared wanted for allegedly promoting immorality in film </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <a href="/news/russia-poet-sentenced-to-15-days-of-administrative-detention-over-an-instagram-post/">
+                            <div class="card-wrap">
+                                    <div class="custom-card img-card bottom-center overlay"
+                                         style="background-image: url(/media/1oadsvcz/untitled-design-25.png);">
+                                    </div>
+
+                                <div class="card-content">
+                                    <p>Russia: Poet sentenced to administrative detention over an Instagram post</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <a href="/news/united-nations-working-group-on-arbitrary-detentions-demands-the-release-of-cuban-rapper-maykel-osorbo/">
+                            <div class="card-wrap">
+                                    <div class="custom-card img-card bottom-center overlay"
+                                         style="background-image: url(/media/0uxblbos/untitled-design-26.png);">
+                                    </div>
+
+                                <div class="card-content">
+                                    <p>UNITED NATIONS WORKING GROUP ON ARBITRARY DETENTIONS DEMANDS THE RELEASE OF MAYKEL OSORBO</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+                                    
+
+
+    <section class="homepage-cards card-gallary pt-0 mb-25">
+        <div class="container">
+            <div class="row flex-row-reverse">
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="card-wrap">
+                            <a href="/campaigns-list/">
+                                <div class="custom-card color-card bottom-left" style="background-color: #f1c40d;">
+                                    <div class="card-content">
+                                        <h4>CAMPAIGNS</h4>
+                                        <p>SEE ALL</p>
+                                    </div>
+                                    <div class="card-icon">
+                                        <img src="/images/right_arrow.png" alt="right_arrow">
+                                    </div>
+                                </div>
+                            </a>
+
+                    </div>
+                </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <a href="/campaigns-list/trapped/">
+                            <div class="card-wrap">
+                                    <div class="custom-card img-card bottom-center overlay"
+                                         style="background-image: url(/media/1edjulax/trapped-web.png);">
+                                    </div>
+
+                                <div class="card-content">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <a href="/campaigns-list/lgbti-voices/">
+                            <div class="card-wrap">
+                                    <div class="custom-card img-card bottom-center overlay"
+                                         style="background-image: url(/media/v2zbikl1/_lgbti-campaign-graphic.png);">
+                                    </div>
+
+                                <div class="card-content">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <a href="/campaigns-list/reclaiming-the-space/">
+                            <div class="card-wrap">
+                                    <div class="custom-card img-card bottom-center overlay"
+                                         style="background-image: url(/media/scfi4dba/copy-of-reclaiming-the-space.png);">
+                                    </div>
+
+                                <div class="card-content">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <div >
+            
+            <div class="">
+                    <div >
+                        <div>
+                                    
+    <div class="events">
+        <div class="events-upper" style="background-image:url(/media/xzrepbzl/background-gb6b97f132_1280.jpg);">
+            <div class="container">
+                <div class="content">
+                    <h2>EVENTS</h2>
+                        <a href="/events/">SEE ALL EVENTS</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div>
+                    <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="custom-card events-cards card-design2">
+                                        <div class="card-img">
+                                            <img src="/media/oeaghevv/cuba-case-mfd24.jpg" alt="Cuba Case MFD24">
+                                        </div>
+
+                                    <div class="card-content">
+                                        <div class="card-inner">
+                                            <div>
+                                                <h4>Music Freedom Day 2024</h4>
+                                                <div class="equal-height" style="height: 78px;">
+                                                        <p>
+                                                           Join MFD on March 3rd by sharing an article, a censored song or by making a statement.
+                                                        </p>
+
+                                                </div>
+                                            </div>
+                                            <a href="/events/music-freedom-day-2024/" class="btn2">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="custom-card events-cards card-design2">
+                                        <div class="card-img">
+                                            <img src="/media/un0bqymp/2024-edition-memory-in-the-present-graphics.png" alt="2024 Edition Memory In The Present Graphics">
+                                        </div>
+
+                                    <div class="card-content">
+                                        <div class="card-inner">
+                                            <div>
+                                                <h4>International Art Contest </h4>
+                                                <div class="equal-height" style="height: 78px;">
+                                                        <p>
+                                                           International Art Contest with OHCHR, UNHCR and Freemuse
+                                                        </p>
+
+                                                </div>
+                                            </div>
+                                            <a href="/events/international-art-contest-for-minority-artists/" class="btn2">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="custom-card events-cards card-design2">
+                                        <div class="card-img">
+                                            <img src="/media/inwhlzt1/web-event-1.png" alt="Web Event (1)">
+                                        </div>
+
+                                    <div class="card-content">
+                                        <div class="card-inner">
+                                            <div>
+                                                <h4>UN Human Rights Office (OHCHR) and Freemuse’s event: Celebrating Minority Artists</h4>
+                                                <div class="equal-height" style="height: 78px;">
+
+                                                </div>
+                                            </div>
+                                            <a href="/events/un-human-rights-office-ohchr-and-freemuse-s-event-celebrating-minority-artists/" class="btn2">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="newsletter pt-70">
+        <div class="container">
+            
+            <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                                    
+    <div class="card-wrap overlay">
+            <div class="bg-image" style="background-image: url(/media/pp4fdiib/graffiti-gc7cbae751_1920.jpg);"></div>
+        <div class="custom-card">
+            <div class="content ">
+                <h5>NEWSLETTER</h5>
+<p>Receive updates on our work</p>                                    <a href="/newsletter-registration/" class="subscribe-btn">
+Subscribe                    </a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                                    
+    <div class="card-wrap overlay">
+            <div class="bg-image" style="background-image: url(/media/pb0p2iym/mobile-phone-g2cc2f1b10_1920.jpg);"></div>
+        <div class="custom-card">
+            <div class="content social yt">
+                <h5>YOUTUBE</h5>
+                                    <a href="https://www.youtube.com/user/freemuseorg" class="">
+                            <img src="/media/bwqfr0sj/youtube-icon-small.png" alt="Youtube">
+                    </a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="newsletter pb-70 pt-30">
+        <div class="container">
+            
+            <div class="row">
+                    <div class="col-md-4">
+                        <div>
+                                    
+
+    <div class="card-wrap overlay">
+            <div class="bg-image" style="background-image: url(/media/ygzbtzks/background-g6a764111f_1280.jpg);"></div>
+        <div class="custom-card">
+            <div class="content social">
+                    <a href="https://www.facebook.com/Freemuse98"><img src="/media/laqpb3ku/facebook_white.png" alt="Facebook White"></a>
+            </div>
+        </div>
+    </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                                    
+
+    <div class="card-wrap overlay">
+            <div class="bg-image" style="background-image: url(/media/uhrjblmq/background-g5bbdb7b3c_1280.jpg);"></div>
+        <div class="custom-card">
+            <div class="content social">
+                    <a href="https://www.instagram.com/freemuse.98"><img src="/media/ogqb31zp/instagram_white.png" alt="Instagram White"></a>
+            </div>
+        </div>
+    </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                                    
+
+    <div class="card-wrap overlay">
+            <div class="bg-image" style="background-image: url(/media/tvwhrwrl/background-gb6b97f132_1280.jpg);"></div>
+        <div class="custom-card">
+            <div class="content social">
+                    <a href="https://twitter.com/Freemuse98"><img src="/media/wscfznlk/twitter_white.png" alt="Twitter White"></a>
+            </div>
+        </div>
+    </div>
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+                </div>
+    </div>
+
+
+
+</main>
+
+
+
+
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                                    <img src="/media/bm3kwt0r/logo.png" alt="logo_light">
+
+
+                        </div>
+                        <div class="social-links">
+                                    <a href="https://www.facebook.com/Freemuse98" target="_blank">
+                                                <img src="/media/ay0ck4hi/facebook.png" alt="iconimage">
+
+                                    </a>
+                                    <a href="https://twitter.com/Freemuse98" target="_blank">
+                                                <img src="/media/sacjaqpz/twitter.png" alt="iconimage">
+
+                                    </a>
+                                    <a href="https://www.instagram.com/freemuse.98">
+                                                <img src="/media/5f1h4cw3/instagram.png" alt="iconimage">
+
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/freemuse" target="_blank">
+                                                <img src="/media/j4losuaz/linkedin.png" alt="iconimage">
+
+                                    </a>
+
+                        </div>
+                    </div>
+                </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-links">
+                            <div class="footer-section">
+                                <h4>ABOUT US</h4>
+                                        <a href="/about/">About</a>
+                                        <a href="/jobs/">Jobs</a>
+                                        <a href="/social-media-moderation-policy/">Social Media Moderation Policy</a>
+                                        <a href="/privacy-policy/">Privacy Policy</a>
+                                        <a href="/cookies-policy/">Cookies Policy</a>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-links">
+                            <div class="footer-section">
+                                <h4>RESOURCES</h4>
+                                        <a href="/resource-list/">Reports</a>
+
+                            </div>
+                        </div>
+
+                <div class="col-x-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="footer-section">
+                        <h4>STAY CONNECTED</h4>
+                        <p>Sign up for our newsletter</p>
+                        <a href="/newsletter-registration/" class="signup-btn">SIGN UP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--End Footer -->
+
+    
+    
+    
+
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/fontawesome.min.js"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/FIlter.js"></script>
+    <script src="/js/grid.js"></script>
+    <script src="/js/select2/select2.full.min.js"></script>
+</body>
+</html>

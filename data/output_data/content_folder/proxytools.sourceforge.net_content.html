@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+                            
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+                            
+  <meta name="GENERATOR"
+ content="Mozilla/4.74 [en] (Win98; U) [Netscape]">
+                       
+  <meta name="Author" content="wayne@nym.alias.net">
+                       
+  <meta name="Keywords" content="proxies UAE KSA wayne censorship">
+                       
+  <meta name="Description"
+ content="A set of tools to analyze network environments, and to aid in avoiding censorship by firewall and proxy blocking">
+  <title>proxyTools</title>
+             
+  <link rel="SHORTCUT ICON" href="favicon.ico">
+                                      
+  <link href="index_files/stylesheet.css" rel="stylesheet">
+  
+</head>
+
+<body text="#000000" bgcolor="#cfcfcf" link="#0000ee" vlink="#551a8b"
+ alink="#ff0000" topmargin="0" leftmargin="0" bottommargin="0"
+ rightmargin="0" marginwidth="0" marginheight="0">
+ 
+ 
+<table border="2" width="100%">
+      <tbody>
+       <tr>
+        <td align="center" colspan="2" bgcolor="#cfcfcf" class="topheading"><br>
+        <b><font size="+2">proxyTools</font></b></td>
+       </tr>
+       <tr>
+        <td valign="top">                                           
+        <table border="1" cellspacing="0" cellpadding="0" width="130">
+       <tbody>
+        <tr>
+         <p><img src="1.gif" height="10" width="10" alt="localProxy icon">
+									<b>Feedback</b> <br>
+									<a href="lists.htm">Mailing Lists</a> <br>
+									<a href="bugs.htm">Reporting Bugs</a> </p>          
+         <p><img src="1.gif" height="10" width="10" alt="localProxy icon">
+         <b>Miscellaneous</b><br>
+         
+ <a href="http://www.sourceforge.net/projects/proxytools/">ProxyTools  Main Project Page</a><br>
+ <a href="http://freshmeat.net/projects/proxytools/">Anti-censorship (ProxyTools) project at Freshmeat.net</a> <br>
+	<a href="http://www.angelfire.com/my/6waynes/">waynes</a><br>
+	<a href="http://plaguesplace.dyndns.org/wayne/">Wayne's Mirror</a><br>
+	<a href="http://groups.yahoo.com/group/proxy-elites/">Proxy-Elites</a>
+	
+	
+	</p>
+	<center>                                                    
+                         
+            <p><a href="http://sourceforge.net/"><img src="sflogo.gif"
+ alt="SourceForge Logo" border="0" height="31" width="88">
+	</a></p>
+	</center>
+       </td>
+       </tr>
+                                                             
+       </tbody>                                          
+      </table>
+       </td>
+       <td valign="top"> 
+      <table border="1" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+          <td><b>CVS files, mailing lists, news etc.</b></td>
+          <td><b><a href="http://www.sourceforge.net/projects/proxytools/"> ProxyTools 
+            Main Project Page</a></b></td>
+        </tr>
+        <tr>
+         <td><b>proxyTools</b></td>
+         <td><b><a href="http://sourceforge.net/projects/proxytools/">Latest
+ stable   version</a></b></td>
+       </tr>
+       <tr>
+        <td><b>proxyTools</b></td>
+        <td><b><a
+ href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/proxytools/proxyTools/">
+      Latest development version</a></b></td>
+       </tr>
+                                                             
+      </tbody>                                          
+      </table>
+                                                  
+      <dl compact="">
+        <h2>Overview</h2>
+        <p align="left">ProxyTools is a package of Perl network utilities 
+designed  mainly to assist those  whose Internet access is censored, unreliable, 
+or  otherwise damaged. Uncensored access is provided to any outside service
+ required  (Usenet News, Web browsing, IRC, Socks etc.). Setup requires installation
+  of Perl and some modules; this is doable by even a novice MS Windows user
+  with email instruction, allowing help to be provided to those inside these
+  countries from expert users outside.   </p>
+        <p align="left">In pursuit of this rather non-specific goal, some 
+interesting  network utilities have already been produced.  We think the code
+is  interesting  in itself, useful in other areas, and would welcome contributions
+to the  overall sum of ideas, concepts and ideals expressed in these tools.
+ </p>
+        <p align="left">The project is of interest to the following groups 
+of people:   </p>
+        <ul>
+     	<li> those who live in Internet censoring countries (or corporations, 
+ schools, universities)  such as the Middle East (United Arab Emirates, Kingdom 
+ of Saudi Arabia, Kuwait, Syria),  China, Burma, etc. 	</li>
+      <li> those who would wish to assist those in the group above. 	</li>
+      <li> those who are interested in Perl code dealing with many aspects
+ of  networks  at the socket level, and transactions using HTTP proxies.
+One  tool  in this project  offers a 'failover' capability, and intelligent
+choice,  between various censor-bypassing strategies and network paths, offering
+the  user a robust, uncensored connection even in a  low bandwidth, unreliable,
+ packet filtered and proxy-poor environment. 	</li>
+      <li> those who administer the firewalls which do the censoring, and 
+those  who might  be considering this. 	</li>
+      <li> those who are just curious about the current techniques used by
+ the   first group above. </li>
+                           
+        </ul>
+        <h2>Tools</h2>
+        <p align="left">The project distribution contains the following tools: 
+  </p>
+        <h3>localProxy (<a href="lpScreenShot.jpg">screen shot</a>)</h3>
+This is essentially a character switch, with some interest in the content
+   switched. Normally run on the user's computer (but runnable on a Unix
+ISP   shell outside the user's firewall) this application provides a user
+with   localhost services to use which implement censor avoidance strategies
+in   the background. A front end GUI &nbsp;is included which allows convenient
+  control of the localProxy engine. A single 'AutoConfigure' button allows 
+even a novice user  to map his local firewall rules and create a configuration
+file which describes  his network environment, specifies proxy capabilities
+which may be used to enable (by default) uncensored HTTP proxy and Usenet
+News services; selection of this configuration will cause LP to build and
+run the configuration. LocalProxy will build a running configuration based
+ on a database of usable hosts and proxies, applying several sources of information
+ relevant to accessible hosts, services, firewall rules and firewalled subnets.
+ LocalProxy runs this configuration and makes connections for the user, learning
+ to use  the fastest and most reliable of the censor-avoidance strategies
+and  multiple proxy hosts/chains available. The application maintains (and
+displays)  a 'useful data speed' for each level of the 'user'-&gt;'strategy'-&gt;'host'-&gt;'host'-&gt;website/service 
+ chain, to assist the user with configuration.  The choices made by localProxy 
+ in switching each request is based on  these speeds, ensuring localProxy 
+avoids non-working strategies/hosts, and  ensuring maximum use of the available 
+'uncensored bandwidth'.  Failover capabilities and robustness are built in, 
+so that users need not frequently update the database of hosts whenever one
+dies, becomes blocked, or is temporarily down.<br>
+        <br>
+LocalProxy (excluding Perl modules) is approximately 6000 lines of commented,
+  debugged Perl code now. Worth a look, just for the spectacle!<br>
+        <p align="left">Implemented strategies so far, are: </p>
+        <ul>
+     	<li> use of lists of available external proxies which are accessible
+ on  ports  which are not blocked to the user (usually non-standard port
+HTTP  proxies) 	</li>
+      <li> use of lists of available external TCP/IP bouncers (redirectors, 
+ relays,  ...) accessible on ports not blocked to the user, usually on shell 
+ accounts  	</li>
+      <li> use of lists of local proxies which are insecurely configured
+to  allow  creation of tunnels via CONNECT to external proxies/services on
+ports  which would be otherwise  blocked (port 80, 3128, 8080, 119 etc.)
+	</li>
+      <li> use of various URL encoding mechanisms to evade regexp based censoring
+  (many of these are from Rain Forest Puppy's Whisker).</li>
+      <li>use of &nbsp;various CGI proxies (which need not rewrite links).</li>
+          <li>fragmentation of the URL request over TCP packets.        
+ </li>
+                           
+        </ul>
+Possible future strategies:                         
+        <ul>
+     	<li>built-in Socks 4, 5 (LP is already able to abstract an external 
+Socks  proxy to provide an accessible, localhost Socks4 proxy) 	</li>
+      <li> SSL</li>
+      <li>Triangle Boy client<br>
+      </li>
+                           
+        </ul>
+        <h3>statProxy</h3>
+A tool to test various aspects of a proxy's function to allow a user  to
+determine it's usefulness for his purposes. It scans ports on  the proxy
+if required, tests for CONNECT tunneling capability, censoring, anonymity,
+speed, Socks capability etc. The output format is suitable for use by 'mergeHosts'
+to merge these test results into the hosts database automatically.      
+                   
+        <h3>sortProxy</h3>
+A simple sort and merge utility for lists of hosts. A fast, parallel DNS
+ forward and reverse lookup is done on each entry to produce a standard 
+format  output. Dupes are recognized by IP address and removed. The output
+format  is suitable for piping to both findProxy or statProxy.          
+               
+        <h3>findProxy</h3>
+This tool scans web pages, local files, bulletin boards, mailing lists  etc.
+  for likely looking proxy entries and tests them. This uses LWP,  so it's
+ slower than statProxy (which uses socket level code).  It's useful for it's
+ extensive proxy entry recognition ability  (roughly done with Perl regexps)
+ and it's final test for censoring  by the tested proxies.              
+           
+        <h3>master</h3>
+This tool is intended to analyze the user's network environment and  produce
+  an XML configuration file for use by the other tools to aid  the user in
+ choices of proxies and strategies. The firewall rules are analyzed by direct
+ testing, DNS servers are verified, localhost Internet interface IP address
+ is established and confirmed and all is written to the configuration file
+ for use by localProxy at build time. All operations are done in portable
+ways.                          
+        <h2>Purpose</h2>
+        <p align="left">The reason for going public with these tools is to 
+ensure a wide  distribution to those in need, and to elicit ideas, and comments,
+   from the networking community. These tools have been completely developed
+in an environment consisting of myself (network/proxy consultant) and a group
+of naive users. It is likely that the Internet community would be able to
+add new perspectives to the project.</p>
+        <p align="left">Comments and feature suggestions, as well as code, 
+are welcome here.  </p>
+        <h2>Links</h2>
+        <p align="left">The proxyTools project <a
+ href="http://sourceforge.net/projects/proxytools/">   summary page</a>  shows
+the current status of the project, file downloads,  mailing lists, news etc.
+        </p>
+        <p align="left">This project is an implementation of many of the strategies
+ discussed at <a href="http://www.angelfire.com/my/6waynes/">this site</a>
+     </p>
+        <p align="left">Thanks for your time.  </p>
+        <p align="left"> <a
+ href="mailto:wayne_nym@users.sourceforge.net">wayne_nym@users.sourceforge.net</a>
+     <br>
+     <a href="mailto:wayne@nym.alias.net">wayne@nym.alias.net</a>  </p>
+      </dl>
+         </td>
+       </tr>
+           
+  </tbody>   
+</table>
+   <br>
+
+<center>
+<p><font size=-1>Last updated April 4, 2002. Send feedback, comments and
+criticism to <a href="mailto:wayne@nym.alias.net">Wayne</a>.
+</font></center>
+
+     
+</body>
+</html>

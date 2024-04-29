@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html"
+		  charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	<link rel="profile" href="https://gmpg.org/xfn/11"/>
+	<title>REST API &#8211; WordPress.com Developer Resources</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//cdn.parsely.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="WordPress.com Developer Resources &raquo; Feed" href="https://developer.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="WordPress.com Developer Resources &raquo; Comments Feed" href="https://developer.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1710334132i&ver=6.6-alpha-57987"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/wp-content/mu-plugins/jetpack-plugin/sun/modules/related-posts/related-posts.css?m=1705523988i&cssminify=yes' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:#9747ff}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+.has-text-align-justify {
+	text-align:justify;
+}
+.wp-block-cover__image-background.has-parallax {
+	background-size: cover;
+}
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-4-1' href='https://s0.wp.com/_static/??-eJydkt1uwyAMhV9oDks3Ke3FtGch4Ka0gBE27fb2I0n/pq652A2ykb9j+4A6JTAUBaOo5MvgIitDvSdzYLVq2nXTAruQPELGY/OurGO5VgDLt8fGML+oOyG9NnAROyVDASweQXYYELS1VK81M0ptxZcK3lEWQxZnTX4QDQVuA2as9yFpGSsCWqfRV/UoS9jJ2eHadIpB8GsZmWbr+5SRGeoZXAnzJo8TXiCvo03aHFRfnLcq6uMTn54AWyLB/ISZe48W36xFTwnzmR63Gzz12v+PtWTK6KQWR3HJmz3KOPQ5V1yiCmRLfbur00IJEnGN/l7mTm1Agvqnpq6/Eth67fISmrH+xqGGw7TALR2hz/DRdu1bt1l1r5v9D6WbGhc=&cssminify=yes' type='text/css' media='all' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-6-1' href='https://s2.wp.com/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all' />
+<script crossorigin='anonymous' type='text/javascript'  src='https://s0.wp.com/_static/??-eJyNj9EOgjAMRX/IMUkM8mL8FmSFdNla7DqVv3ckPOxBo09N2nN7cu1zMSOTAqn1yUa+YQCTE8gwl51Bmrjx6WALhzSG7CBtoL9nkHUfTUT6CZmIswwKNVyZJahZhF/rp0cOk9oHkGPZTguHdcIQCgOi3+x1SKC0KZ2UxUgmxQj/xCrXjl/jpT23x77rTn3v34nbdgw='></script>
+<script id="rlt-proxy-js-after">
+	window.addEventListener( 'DOMContentLoaded', function() {
+		rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+	} );
+</script>
+<script crossorigin='anonymous' crossorigin='anonymous' src="https://s0.wp.com/wp-content/plugins/gutenberg-core/v18.1.2/build/hooks/index.min.js?m=1713425039i&amp;ver=3aee234ea7807d8d70bc" id="wp-hooks-js"></script>
+<script crossorigin='anonymous' crossorigin='anonymous' src="https://s0.wp.com/wp-content/plugins/gutenberg-core/v18.1.2/build/i18n/index.min.js?m=1713425039i&amp;ver=5baa98e4345eccc97e24" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="media-video-jwt-bridge-js-extra">
+var videopressAjax = {"ajaxUrl":"https:\/\/developer.wordpress.com\/wp-admin\/admin-ajax.php","bridgeUrl":"\/wp-content\/mu-plugins\/jetpack-plugin\/sun\/jetpack_vendor\/automattic\/jetpack-videopress\/build\/lib\/token-bridge.js","post_id":"99407"};
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='https://s1.wp.com/_static/??-eJylj9EKwjAMRX/IGqfI9EH8FOnaODK7pDTp/H0nOBGfBB8Tzr2HC/fsgrAhG4zV5VR7YoUBLftwe92glZfXZUKOUsBXk9GbUXjDXhVNoauUIlBzYJfERyzrQVfw4VkkyXN8Bl8J9tOPZJdk1oVEM+M0FMrmriKGxSkGI+Hvon+nTRRRckFd5iXqwOSG7LpCscdZeB5PTdtstvtj2+yGB+FPgdw='></script>
+<script id="wp-jp-i18n-loader-js-after">
+wp.jpI18nLoader.state = {"baseUrl":"https://widgets.wp.com/languages/","locale":"en_US","domainMap":{"jetpack-admin-ui":"plugins/jetpack","jetpack-assets":"plugins/jetpack","jetpack-backup-pkg":"plugins/jetpack","jetpack-blaze":"plugins/jetpack","jetpack-boost-core":"plugins/jetpack","jetpack-boost-speed-score":"plugins/jetpack","jetpack-compat":"plugins/jetpack","jetpack-config":"plugins/jetpack","jetpack-connection":"plugins/jetpack","jetpack-forms":"plugins/jetpack","jetpack-google-fonts-provider":"plugins/jetpack","jetpack-idc":"plugins/jetpack","jetpack-image-cdn":"plugins/jetpack","jetpack-import":"plugins/jetpack","jetpack-ip":"plugins/jetpack","jetpack-jitm":"plugins/jetpack","jetpack-licensing":"plugins/jetpack","jetpack-my-jetpack":"plugins/jetpack","jetpack-password-checker":"plugins/jetpack","jetpack-plugins-installer":"plugins/jetpack","jetpack-post-list":"plugins/jetpack","jetpack-publicize-pkg":"plugins/jetpack","jetpack-search-pkg":"plugins/jetpack","jetpack-stats":"plugins/jetpack","jetpack-stats-admin":"plugins/jetpack","jetpack-sync":"plugins/jetpack","jetpack-videopress-pkg":"plugins/jetpack","jetpack-waf":"plugins/jetpack","jetpack-wordads":"plugins/jetpack","woocommerce-analytics":"plugins/jetpack"},"domainPaths":{"jetpack-admin-ui":"jetpack_vendor/automattic/jetpack-admin-ui/","jetpack-assets":"jetpack_vendor/automattic/jetpack-assets/","jetpack-backup-pkg":"jetpack_vendor/automattic/jetpack-backup/","jetpack-blaze":"jetpack_vendor/automattic/jetpack-blaze/","jetpack-boost-core":"jetpack_vendor/automattic/jetpack-boost-core/","jetpack-boost-speed-score":"jetpack_vendor/automattic/jetpack-boost-speed-score/","jetpack-compat":"jetpack_vendor/automattic/jetpack-compat/","jetpack-config":"jetpack_vendor/automattic/jetpack-config/","jetpack-connection":"jetpack_vendor/automattic/jetpack-connection/","jetpack-forms":"jetpack_vendor/automattic/jetpack-forms/","jetpack-google-fonts-provider":"jetpack_vendor/automattic/jetpack-google-fonts-provider/","jetpack-idc":"jetpack_vendor/automattic/jetpack-identity-crisis/","jetpack-image-cdn":"jetpack_vendor/automattic/jetpack-image-cdn/","jetpack-import":"jetpack_vendor/automattic/jetpack-import/","jetpack-ip":"jetpack_vendor/automattic/jetpack-ip/","jetpack-jitm":"jetpack_vendor/automattic/jetpack-jitm/","jetpack-licensing":"jetpack_vendor/automattic/jetpack-licensing/","jetpack-my-jetpack":"jetpack_vendor/automattic/jetpack-my-jetpack/","jetpack-password-checker":"jetpack_vendor/automattic/jetpack-password-checker/","jetpack-plugins-installer":"jetpack_vendor/automattic/jetpack-plugins-installer/","jetpack-post-list":"jetpack_vendor/automattic/jetpack-post-list/","jetpack-publicize-pkg":"jetpack_vendor/automattic/jetpack-publicize/","jetpack-search-pkg":"jetpack_vendor/automattic/jetpack-search/","jetpack-stats":"jetpack_vendor/automattic/jetpack-stats/","jetpack-stats-admin":"jetpack_vendor/automattic/jetpack-stats-admin/","jetpack-sync":"jetpack_vendor/automattic/jetpack-sync/","jetpack-videopress-pkg":"jetpack_vendor/automattic/jetpack-videopress/","jetpack-waf":"jetpack_vendor/automattic/jetpack-waf/","jetpack-wordads":"jetpack_vendor/automattic/jetpack-wordads/","woocommerce-analytics":"jetpack_vendor/automattic/woocommerce-analytics/"}};
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://developer.wordpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='https://wp.me/p2gHKz-pRl' />
+	<style>
+		@font-face {
+			font-family: Recoleta;
+			font-display: swap;
+			src: url('https://s1.wp.com/i/fonts/recoleta/400.woff2')
+		}
+	</style>
+	<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Fapi%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Fapi%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="REST API" />
+<meta property="og:url" content="https://developer.wordpress.com/docs/api/" />
+<meta property="og:description" content="Welcome to the WordPress.com REST API. Below, you&#8217;ll find a full listing of all the available endpoints. As we add more endpoints, they will be automatically documented here and available thr…" />
+<meta property="article:published_time" content="2024-02-21T12:24:23+00:00" />
+<meta property="article:modified_time" content="2024-04-26T14:36:47+00:00" />
+<meta property="og:site_name" content="WordPress.com Developer Resources" />
+<meta property="og:image" content="https://developer.files.wordpress.com/2024/02/wp_favicon_devs_64x64px.png?w=128" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:creator" content="@AutomatticEng" />
+<meta name="twitter:site" content="@AutomatticEng" />
+<meta name="twitter:text:title" content="REST API" />
+<meta name="twitter:image" content="https://developer.files.wordpress.com/2024/02/wp_favicon_devs_64x64px.png?w=128" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:app:name:iphone" content="Jetpack" />
+<meta name="twitter:app:id:iphone" content="1565481562" />
+<meta name="twitter:app:name:ipad" content="Jetpack" />
+<meta name="twitter:app:id:ipad" content="1565481562" />
+<meta name="twitter:app:name:googleplay" content="Jetpack" />
+<meta name="twitter:app:id:googleplay" content="com.jetpack.android" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel='openid.server' href='https://developer.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://developer.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://developer.wordpress.com/osd.xml" title="WordPress.com Developer Resources" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/developer.wordpress.com\/docs\/api\/"},"headline":"REST API","url":"http:\/\/developer.wordpress.com\/docs\/api\/","thumbnailUrl":"","image":{"@type":"ImageObject","url":""},"dateCreated":"2024-02-21T12:24:23Z","datePublished":"2024-02-21T12:24:23Z","dateModified":"2024-04-26T14:36:47Z","articleSection":"Uncategorized","author":[{"@type":"Person","name":"Paulo Trentin"}],"creator":["Paulo Trentin"],"publisher":{"@type":"Organization","name":"WordPress.com Developer Resources","logo":"https:\/\/developer.wordpress.com\/wp-content\/uploads\/2024\/02\/wp_favicon_devs_64x64px.png"},"keywords":[]}</script><link rel="canonical" href="https://developer.wordpress.com/docs/api/" />
+<script type="application/ld+json">
+{"@context":"https:\/\/schema.org","@graph":[{"@type":"Corporation","@id":"https:\/\/automattic.com\/#organization","url":"https:\/\/automattic.com\/","name":"Automattic","legalName":"Automattic, Inc.","foundingDate":"2005-08-01","slogan":"We don\u2019t make software for free, we make it for freedom.","description":"We are the people behind <a href=\"https:\/\/wordpress.com\/\">WordPress.com<\/a>, <a href=\"https:\/\/woocommerce.com\/\">WooCommerce<\/a>, <a href=\"https:\/\/jetpack.com\/\">Jetpack<\/a>, <a href=\"https:\/\/simplenote.com\/\">Simplenote<\/a>, <a href=\"https:\/\/longreads.com\/\">Longreads<\/a>, <a href=\"https:\/\/vaultpress.com\/\">VaultPress<\/a>, <a href=\"https:\/\/akismet.com\/\">Akismet<\/a>, <a href=\"https:\/\/gravatar.com\/\">Gravatar<\/a>, <a href=\"\">Crowdsignal<\/a>, <a href=\"https:\/\/cloudup.com\/\">Cloudup<\/a>, and more. We believe in making the web a better place, and <a href=\"https:\/\/github.com\/Automattic\">we believe in Open Source<\/a>. The vast majority of our work is available under the GPL.","logo":{"@type":"ImageObject","@id":"https:\/\/automattic.com\/#logo","url":"https:\/\/automattic.com\/wp-content\/themes\/a8c\/automattic-2011\/images\/automattic-logo-2x.png","width":552,"height":60,"caption":"Automattic"},"image":{"@id":"https:\/\/automattic.com\/#logo"},"address":{"@type":"PostalAddress","streetAddress":"60 29th Street #343","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94110","addressCountry":"US"},"founder":{"@type":"Person","@id":"https:\/\/wordpress.com\/schema.org\/author\/5#person","name":"Matt Mullenweg","description":"In 2002 I started contributing to Open Source software, and life has just gotten better from there. Co-founder of WordPress, founder Automattic.","image":{"@type":"ImageObject","@id":"https:\/\/wordpress.com\/schema.org\/author\/5#personimage","url":"https:\/\/secure.gravatar.com\/avatar\/767fc9c115a1b989744c755db47feb60?s=96&d=identicon&r=g","width":96,"height":96,"caption":"Matt Mullenweg"}},"numberOfEmployees":1957,"sameAs":["https:\/\/twitter.com\/automattic","https:\/\/www.facebook.com\/AutomatticInc","https:\/\/www.linkedin.com\/company\/automattic\/","https:\/\/en.wikipedia.org\/wiki\/Automattic","https:\/\/www.youtube.com\/c\/automattic"],"subOrganization":{"@id":"https:\/\/wordpress.com\/#organization"}},{"@type":"Organization","@id":"https:\/\/wordpress.com\/#organization","url":"https:\/\/wordpress.com\/","name":"WordPress.com","legalName":"Automattic, Inc.","foundingDate":"2005-08-01","slogan":"Build a website, build a movement.","description":"Create a free website or build a blog with ease on WordPress.com. Dozens of free, customizable, mobile-ready designs and themes. Free hosting and support.","logo":{"@type":"ImageObject","@id":"https:\/\/wordpress.com\/#logo","url":"https:\/\/s1.wp.com\/home.logged-out\/images\/wpcom-a-website-that-can.jpg","width":1024,"height":512,"caption":"WordPress.com"},"image":{"@id":"https:\/\/wordpress.com\/#logo"},"address":{"@type":"PostalAddress","streetAddress":"60 29th Street #343","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94110","addressCountry":"US"},"founder":{"@type":"Person","@id":"https:\/\/wordpress.com\/schema.org\/author\/5#person","name":"Matt Mullenweg","description":"In 2002 I started contributing to Open Source software, and life has just gotten better from there. Co-founder of WordPress, founder Automattic.","image":{"@type":"ImageObject","@id":"https:\/\/wordpress.com\/schema.org\/author\/5#personimage","url":"https:\/\/secure.gravatar.com\/avatar\/767fc9c115a1b989744c755db47feb60?s=96&d=identicon&r=g","width":96,"height":96,"caption":"Matt Mullenweg"}},"numberOfEmployees":1957,"sameAs":["https:\/\/twitter.com\/wordpressdotcom","https:\/\/www.facebook.com\/WordPresscom","https:\/\/www.instagram.com\/wordpressdotcom\/","https:\/\/www.linkedin.com\/company\/wordpress","https:\/\/www.youtube.com\/WordPressdotcom","https:\/\/www.pinterest.com\/wordpressdotcom\/","https:\/\/en.wikipedia.org\/wiki\/WordPress.com"],"parentOrganization":{"@id":"https:\/\/automattic.com\/#organization"}},{"@type":"WebSite","@id":"https:\/\/developer.wordpress.com\/#website","url":"https:\/\/developer.wordpress.com\/","name":"WordPress.com Developer Resources","description":"Create cool applications that integrate with WordPress.com","potentialAction":{"@type":"SearchAction","target":"https:\/\/developer.wordpress.com\/search\/{search_term_string}\/","query-input":"required name=search_term_string"},"publisher":{"@id":"https:\/\/wordpress.com\/#organization"}},{"@type":"BreadcrumbList","@id":"https:\/\/developer.wordpress.com\/docs\/api\/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":0,"item":{"@type":"WebSite","@id":"https:\/\/developer.wordpress.com\/#website-breadcrumb","url":"https:\/\/developer.wordpress.com\/","name":"Home"}},{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/developer.wordpress.com\/docs\/api\/#webpage-breadcrumb","url":"https:\/\/developer.wordpress.com\/docs\/api\/","name":"REST API \u2014"}}]},{"@type":"ImageObject","@id":"https:\/\/developer.wordpress.com\/docs\/api\/#primaryimage","url":"https:\/\/developer.files.wordpress.com\/2024\/02\/wp_favicon_devs_64x64px.png?w=128","width":200,"height":200,"caption":"REST API \u2014"},{"@type":"WebPage","@id":"https:\/\/developer.wordpress.com\/docs\/api\/#webpage","url":"https:\/\/developer.wordpress.com\/docs\/api\/","name":"REST API \u2014","description":"Create cool applications that integrate with WordPress.com","inLanguage":"en","isPartOf":{"@id":"https:\/\/developer.wordpress.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/developer.wordpress.com\/docs\/api\/#primaryimage"},"breadcrumb":{"@id":"https:\/\/developer.wordpress.com\/docs\/api\/#breadcrumbs"},"publisher":{"@id":"https:\/\/wordpress.com\/#organization"},"datePublished":"2024-02-21T12:24:23+0000","dateModified":"2024-04-26T14:36:47+0000"},{"@type":"Article","@id":"https:\/\/developer.wordpress.com\/docs\/api\/#article","headline":"REST API \u2014","commentCount":0,"keywords":"","datePublished":"2024-02-21T12:24:23+0000","dateModified":"2024-04-26T14:36:47+0000","mainEntityOfPage":{"@id":"https:\/\/developer.wordpress.com\/docs\/api\/#webpage"},"isPartOf":{"@id":"https:\/\/developer.wordpress.com\/docs\/api\/#webpage"},"image":{"@id":"https:\/\/developer.wordpress.com\/docs\/api\/#primaryimage"},"publisher":{"@id":"https:\/\/wordpress.com\/#organization"},"author":{"@id":"https:\/\/wordpress.com\/#organization"}}]}
+</script>
+<meta name="application-name" content="WordPress.com Developer Resources" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Create cool applications that integrate with WordPress.com" /><meta name="description" content="Welcome to the WordPress.com REST API. Below, you&#039;ll find a full listing of all the available endpoints. As we add more endpoints, they will be automatically documented here and available through the Developer Console. If you&#039;re not sure how to make calls to the API, you might want to check out the Getting Started guide&hellip;" />
+<link rel="icon" href="https://developer.files.wordpress.com/2024/02/wp_favicon_devs_64x64px.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://developer.files.wordpress.com/2024/02/wp_favicon_devs_64x64px.png?w=128" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://developer.files.wordpress.com/2024/02/wp_favicon_devs_64x64px.png?w=128" />
+<meta name="msapplication-TileImage" content="https://developer.files.wordpress.com/2024/02/wp_favicon_devs_64x64px.png?w=128" />
+			<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=2gHKz&#038;cscache=6&#038;csrev=105" />
+			<!-- Your Google Analytics Plugin is missing the tracking ID -->
+</head>
+<body class="documentation-template-default single single-documentation postid-99407 wp-embed-responsive jps-theme-a8c/wpcom-developer customizer-styles-applied jetpack-reblog-enabled">
+
+<a class="screen-reader-text-focusable" href="#site-content">
+	Skip to content</a>
+
+<div class="a8c-docs-layout">
+
+	<header class="a8c-docs-layout__header" role="banner">
+
+		
+		<div class="a8c-docs-layout__header__inner">
+
+			<a
+				class="a8c-docs-layout__header__brand"
+				href="https://developer.wordpress.com/"
+				aria-label="WordPress.com Developer Resources"
+			>
+				<span class="a8c-docs-layout__header__brand__text">
+					<svg width="280" height="29" viewBox="0 0 280 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M179.651 9.05811H184.67C188.65 9.05811 190.97 11.4888 190.97 15.6914C190.97 19.9868 188.678 22.4453 184.67 22.4453H179.651V9.05811ZM182.045 11.127V20.3765H184.355C187.018 20.3765 188.53 18.7158 188.53 15.7285C188.53 12.8062 186.98 11.127 184.355 11.127H182.045ZM197.308 13.9194C195.935 13.9194 194.97 14.9028 194.868 16.3872H199.646C199.6 14.8843 198.69 13.9194 197.308 13.9194ZM199.665 19.6528H201.845C201.427 21.499 199.73 22.6494 197.336 22.6494C194.349 22.6494 192.549 20.6733 192.549 17.4077C192.549 14.1421 194.377 12.0918 197.317 12.0918C200.212 12.0918 201.947 14.0122 201.947 17.2129V17.9551H194.859V18.0757C194.915 19.7642 195.889 20.8218 197.401 20.8218C198.542 20.8218 199.331 20.4043 199.665 19.6528ZM212.442 12.2959L208.851 22.4453H206.318L202.71 12.2959H205.177L207.525 20.1445H207.682L210.011 12.2959H212.442ZM217.815 13.9194C216.442 13.9194 215.477 14.9028 215.375 16.3872H220.153C220.107 14.8843 219.197 13.9194 217.815 13.9194ZM220.172 19.6528H222.352C221.934 21.499 220.236 22.6494 217.843 22.6494C214.856 22.6494 213.056 20.6733 213.056 17.4077C213.056 14.1421 214.883 12.0918 217.824 12.0918C220.719 12.0918 222.454 14.0122 222.454 17.2129V17.9551H215.366V18.0757C215.422 19.7642 216.396 20.8218 217.908 20.8218C219.049 20.8218 219.838 20.4043 220.172 19.6528ZM224.432 22.4453V8.37158H226.733V22.4453H224.432ZM233.6 22.6494C230.557 22.6494 228.72 20.6641 228.72 17.3706C228.72 14.0957 230.585 12.0918 233.6 12.0918C236.624 12.0918 238.48 14.0864 238.48 17.3706C238.48 20.6641 236.634 22.6494 233.6 22.6494ZM233.6 20.7197C235.205 20.7197 236.114 19.4951 236.114 17.3706C236.114 15.2554 235.196 14.0215 233.6 14.0215C231.995 14.0215 231.076 15.2554 231.076 17.3706C231.076 19.4951 231.995 20.7197 233.6 20.7197ZM245.904 12.1289C248.473 12.1289 250.088 14.1143 250.088 17.3706C250.088 20.6084 248.492 22.6123 245.931 22.6123C244.475 22.6123 243.352 21.9814 242.833 20.9053H242.675V25.8223H240.374V12.2959H242.592V13.9751H242.749C243.334 12.8247 244.512 12.1289 245.904 12.1289ZM245.18 20.6548C246.776 20.6548 247.722 19.4209 247.722 17.3706C247.722 15.3203 246.766 14.0864 245.189 14.0864C243.621 14.0864 242.638 15.3481 242.629 17.3706C242.638 19.4023 243.612 20.6548 245.18 20.6548ZM256.231 13.9194C254.858 13.9194 253.893 14.9028 253.791 16.3872H258.569C258.523 14.8843 257.614 13.9194 256.231 13.9194ZM258.588 19.6528H260.768C260.35 21.499 258.653 22.6494 256.259 22.6494C253.272 22.6494 251.472 20.6733 251.472 17.4077C251.472 14.1421 253.3 12.0918 256.241 12.0918C259.135 12.0918 260.87 14.0122 260.87 17.2129V17.9551H253.782V18.0757C253.838 19.7642 254.812 20.8218 256.324 20.8218C257.465 20.8218 258.254 20.4043 258.588 19.6528ZM262.755 22.4453V12.2959H264.973V13.873H265.13C265.409 12.8711 266.503 12.1289 267.811 12.1289C268.145 12.1289 268.554 12.166 268.767 12.231V14.3647C268.591 14.2998 267.978 14.2349 267.589 14.2349C266.095 14.2349 265.056 15.1626 265.056 16.582V22.4453H262.755ZM269.78 15.1997C269.78 13.3628 271.45 12.0918 273.844 12.0918C276.256 12.0918 277.768 13.1587 277.935 15.0049H275.773C275.606 14.2905 274.929 13.8359 273.853 13.8359C272.805 13.8359 272.016 14.3369 272.016 15.0698C272.016 15.645 272.499 15.9976 273.519 16.2295L275.31 16.6377C277.249 17.0737 278.148 17.9087 278.148 19.4023C278.148 21.3506 276.358 22.6494 273.825 22.6494C271.292 22.6494 269.697 21.5547 269.52 19.7085H271.793C272.016 20.46 272.73 20.9053 273.881 20.9053C275.041 20.9053 275.848 20.395 275.848 19.6436C275.848 19.0684 275.412 18.7065 274.447 18.4932L272.647 18.0757C270.699 17.6304 269.78 16.7305 269.78 15.1997Z" fill="#3858E9"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M20.3643 25.3242L24.2153 14.2089C24.9351 12.4132 25.1745 10.9775 25.1745 9.70074C25.1745 9.2372 25.1439 8.80713 25.0895 8.40625C26.0738 10.1989 26.634 12.2563 26.634 14.4449C26.634 19.0883 24.113 23.1428 20.3643 25.3242ZM15.7627 8.54454C16.5218 8.50476 17.2058 8.42503 17.2058 8.42503C17.8851 8.34496 17.8052 7.34806 17.1255 7.38784C17.1255 7.38784 15.0832 7.54781 13.7647 7.54781C12.5255 7.54781 10.4436 7.38784 10.4436 7.38784C9.76376 7.34806 9.68406 8.38491 10.3639 8.42503C10.3639 8.42503 11.007 8.50476 11.6862 8.54454L13.6506 13.9176L10.8906 22.1785L6.29941 8.54454C7.05915 8.50476 7.74227 8.42503 7.74227 8.42503C8.42163 8.34496 8.34125 7.34806 7.66172 7.38784C7.66172 7.38784 5.6197 7.54781 4.30118 7.54781C4.06481 7.54781 3.78584 7.54184 3.48927 7.53245C5.74422 4.11576 9.61958 1.85937 14.0248 1.85937C17.3075 1.85937 20.2966 3.1122 22.5397 5.16406C22.4857 5.16064 22.4323 5.15381 22.3766 5.15381C21.1377 5.15381 20.2589 6.23079 20.2589 7.38784C20.2589 8.42503 20.8584 9.30242 21.4976 10.34C21.977 11.1783 22.537 12.2551 22.537 13.8109C22.537 14.8888 22.217 16.2444 21.5776 17.8803L20.3197 22.075L15.7627 8.54454ZM14.0257 27.0339C12.7881 27.0339 11.5934 26.8522 10.4637 26.5212L14.2474 15.5469L18.1229 26.1466C18.1484 26.2084 18.1796 26.2654 18.2133 26.3199C16.9026 26.78 15.4943 27.0339 14.0257 27.0339ZM1.41309 14.4429C1.41309 12.618 1.80528 10.8854 2.50517 9.32031L8.51986 25.7708C4.31303 23.7309 1.41309 19.4254 1.41309 14.4429ZM14.0245 0.445312C6.2916 0.445312 0 6.72534 0 14.4446C0 22.1646 6.2916 28.4453 14.0245 28.4453C21.7576 28.4453 28.0494 22.1646 28.0494 14.4446C28.0494 6.72534 21.7576 0.445312 14.0245 0.445312Z" fill="#101517"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M49.6736 8.44531L46.8771 19.1708L44.081 8.44531H41.2582L41.9155 10.7439L39.4539 19.5338L36.7769 8.44531H34.0625L37.8783 22.4533H40.8361L43.1218 14.9642L45.263 22.4533H48.2211L52.2263 8.44531H49.6736ZM130.987 22.4527H133.467V19.9023H130.987V22.4527ZM56.9388 12.2695C53.5249 12.2695 51.9119 14.4651 51.9119 17.4967C51.9119 20.5283 53.5249 22.7031 56.9388 22.7031C60.3321 22.7031 61.9658 20.5283 61.9658 17.4967C61.9658 14.4651 60.3321 12.2695 56.9388 12.2695ZM56.9392 20.7173C55.3263 20.7173 54.4679 19.6721 54.4679 17.4973C54.4679 15.3439 55.3263 14.2773 56.9392 14.2773C58.5521 14.2773 59.3902 15.3231 59.3902 17.4973C59.3902 19.6513 58.5521 20.7173 56.9392 20.7173ZM78.1416 12.501C77.4083 12.3551 76.8848 12.2711 76.2774 12.2711C72.8634 12.2711 70.9992 14.5502 70.9992 17.8747C70.9992 21.178 72.8634 22.7047 75.0627 22.7047C76.1521 22.7047 77.4713 22.2025 78.2673 21.5336V22.4533H80.6129V8.44531H78.1416V12.501ZM78.1398 19.5907C77.3441 20.3223 76.5898 20.7198 75.7942 20.7198C74.4324 20.7198 73.5527 19.8204 73.5527 17.7089C73.5527 15.4298 74.6419 14.2383 76.5272 14.2383C77.1134 14.2383 77.7211 14.3844 78.1398 14.5517V19.5907ZM88.2467 8.44531H83.6691V22.4533H86.3083V17.5818H88.2467C91.2421 17.5818 93.4207 15.9718 93.4207 12.9613C93.4207 9.92914 91.2421 8.44531 88.2467 8.44531ZM88.2691 15.5333H86.3096V10.5156H88.2691C89.8612 10.5156 90.6573 11.3935 90.6573 12.9619C90.6573 14.5087 89.9243 15.5333 88.2691 15.5333ZM106.843 12.2695C103.659 12.2695 102.005 14.7369 102.005 17.4338C102.005 21.1349 103.952 22.7031 107.112 22.7031C108.389 22.7031 109.493 22.5334 110.781 22.1383V20.0868C109.744 20.4667 108.808 20.6955 107.803 20.6955C105.96 20.6955 104.728 20.1939 104.665 18.0193H111.032C111.074 17.6223 111.116 17.246 111.116 16.5561C111.116 14.4651 110.006 12.2695 106.843 12.2695ZM104.686 16.3909C104.832 15.0109 105.586 14.1328 106.822 14.1328C108.142 14.1328 108.54 15.1785 108.54 16.3909H104.686ZM115.412 15.3016C115.412 14.5486 116.229 14.2563 117.108 14.2563C118.527 14.2563 119.873 14.6949 119.873 14.6949V12.6458C118.952 12.3742 118.009 12.2695 116.92 12.2695C114.532 12.2695 112.856 13.3986 112.856 15.2384C112.856 18.8138 117.8 17.8943 117.8 19.6294C117.8 20.4867 117.024 20.7167 115.894 20.7167C115.097 20.7167 113.82 20.4066 112.899 20.0868V22.1151C113.666 22.4165 114.741 22.7031 115.81 22.7031C118.134 22.7031 120.355 22.0128 120.355 19.5249C120.355 16.075 115.412 16.974 115.412 15.3016ZM149.71 12.2695C146.296 12.2695 144.684 14.4651 144.684 17.4967C144.684 20.5283 146.296 22.7031 149.71 22.7031C153.104 22.7031 154.738 20.5283 154.738 17.4967C154.738 14.4651 153.104 12.2695 149.71 12.2695ZM149.71 20.7173C148.098 20.7173 147.239 19.6721 147.239 17.4973C147.239 15.3439 148.098 14.2773 149.71 14.2773C151.324 14.2773 152.161 15.3231 152.161 17.4973C152.161 19.6513 151.324 20.7173 149.71 20.7173ZM168.878 12.2695C167.81 12.2695 166.595 12.855 165.484 13.5869L165.191 13.7752C164.668 12.667 163.62 12.2695 162.469 12.2695C161.4 12.2695 160.186 12.8135 159.075 13.5452V12.5207H156.729V22.4518H159.222V15.3224C160.143 14.7161 161.128 14.3398 161.84 14.3398C162.657 14.3398 163.16 14.7786 163.16 16.1798V22.4518H165.631V15.3432C166.553 14.7369 167.538 14.3398 168.249 14.3398C169.066 14.3398 169.569 14.7786 169.569 16.1798V22.4518H172.04V15.5944C172.04 13.6704 170.888 12.2695 168.878 12.2695ZM97.3514 14.1548H97.2678V12.5239H94.9637V22.455H97.4351V16.5382C98.21 15.0748 99.1526 14.5939 100.723 14.5939H100.975V12.4404C100.975 12.4404 100.619 12.3984 100.304 12.3984C98.9643 12.3984 98.0424 12.921 97.3514 14.1548ZM66.3461 14.1548H66.2625V12.5239H63.9581V22.455H66.43V16.5382C67.2048 15.0748 68.1473 14.5939 69.7181 14.5939H69.9697V12.4404C69.9697 12.4404 69.6133 12.3984 69.2996 12.3984C67.9587 12.3984 67.0373 12.921 66.3461 14.1548ZM137.439 17.3923C137.439 15.0716 138.717 14.2767 140.225 14.2767C141.23 14.2767 142.288 14.5698 142.999 14.8414V12.7507C142.161 12.4787 141.419 12.2695 140.183 12.2695C136.894 12.2695 134.862 14.2767 134.862 17.5175C134.862 20.591 136.329 22.7031 140.036 22.7031C141.209 22.7031 142.12 22.473 143.125 22.1383V20.0892C141.994 20.5283 141.125 20.6955 140.35 20.6955C138.717 20.6955 137.439 19.9429 137.439 17.3923ZM124.407 15.3016C124.407 14.5486 125.224 14.2563 126.104 14.2563C127.523 14.2563 128.869 14.6949 128.869 14.6949V12.6458C127.947 12.3742 127.004 12.2695 125.915 12.2695C123.527 12.2695 121.852 13.3986 121.852 15.2384C121.852 18.8138 126.795 17.8943 126.795 19.6294C126.795 20.4867 126.02 20.7167 124.889 20.7167C124.093 20.7167 122.816 20.4066 121.894 20.0868V22.1151C122.661 22.4165 123.737 22.7031 124.805 22.7031C127.13 22.7031 129.35 22.0128 129.35 19.5249C129.35 16.075 124.407 16.974 124.407 15.3016Z" fill="#101517"/>
+					</svg>
+				</span>
+			</a>
+			<!-- .a8c-docs-layout__header__brand -->
+
+			<div class="a8c-docs-layout__header__search">
+				<div class="a8c-docs-search-form-header__wrapper">
+	<form class="a8c-docs-search-form" action="https://developer.wordpress.com" method="get" role="search">
+		<label for="search" class="a8c-docs-search-form__label visually-hidden">Search</label>
+		<input aria-label="search" class="a8c-docs-search-input a8c-docs-input"
+			   placeholder="Search the docs…" type="search" name="s"
+			   autocomplete="off"
+			   value="">
+		<button type="submit" for="search" class="a8c-docs-search-form__icon">Search</button>
+	</form>
+</div>			</div>
+			<!-- .a8c-docs-layout__header__search -->
+
+		</div>
+		<!-- .a8c-docs-layout__header__inner -->
+
+	</header>
+	<!-- .a8c-docs-layout__header -->
+
+	<div class="a8c-docs-layout__main" id="site-content">
+
+		<div class="a8c-docs-layout__main__inner">
+
+			
+<button
+	aria-controls="menu-navigation-nav-mobile"
+	aria-expanded="false"
+	id="A8C_DOCS_MENU_BUTTON"
+	class="a8c-docs-layout__toggle"
+	onclick="this.setAttribute('aria-expanded', 'true' !== this.getAttribute('aria-expanded'))"
+>
+	Menu</button>
+
+<nav aria-label="Main Menu" class="a8c-docs-layout__sidebar__mobile">
+
+	<div class="a8c-docs-search-form-sidebar__wrapper">
+	<form class="a8c-docs-search-form" action="https://developer.wordpress.com" method="get" role="search">
+		<label for="search" class="a8c-docs-search-form__label visually-hidden">Search</label>
+		<input aria-label="search" class="a8c-docs-search-input a8c-docs-input"
+			   placeholder="Search the docs…" type="search" name="s"
+			   autocomplete="off"
+			   value="">
+		<button type="submit" for="search" class="a8c-docs-search-form__icon">Search</button>
+	</form>
+</div><ul class="a8c-docs-sidebar-list"><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99427"><a href="https://developer.wordpress.com/docs/get-started/">Get Started</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Get Started"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99428"><a href="https://developer.wordpress.com/docs/get-started/build-new-or-migrate/">Build New or Migrate</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Build New or&nbsp;Migrate"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99429"><a href="https://developer.wordpress.com/docs/get-started/build-new-or-migrate/build-new/">Build a New Site</a></li>		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99430"><a href="https://developer.wordpress.com/docs/get-started/build-new-or-migrate/migrate-existing/">Migrate an Existing Site</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99431"><a href="https://developer.wordpress.com/docs/get-started/add-additional-users/">Add Additional Users</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Add Additional Users"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-101925"><a href="https://developer.wordpress.com/docs/get-started/add-additional-users/manage-permissions/">Manage Permissions</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99432"><a href="https://developer.wordpress.com/docs/domain/">Connect or Transfer a Domain</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99433"><a href="https://developer.wordpress.com/docs/get-started/launch/">Launch</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99434"><a href="https://developer.wordpress.com/docs/support/">Support</a></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation current-menu-ancestor current-menu-parent menu-item-has-children menu-item-99435"><a href="https://developer.wordpress.com/docs/developer-tools/">Developer Tools</a>
+				<button
+					aria-expanded="true"
+					aria-label="Submenu for Developer Tools"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99436"><a href="https://developer.wordpress.com/docs/developer-tools/staging-sites/">Staging Sites</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Staging Sites"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-101926"><a href="https://developer.wordpress.com/docs/developer-tools/staging-sites/beta/">Switch to the Latest WordPress Beta Version</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99437"><a href="https://developer.wordpress.com/docs/developer-tools/wp-cli/">WP-CLI</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-112004"><a href="https://developer.wordpress.com/docs/developer-tools/studio/">Studio</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-100151"><a href="https://developer.wordpress.com/docs/developer-tools/github-deployments/">GitHub Deployments</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for GitHub Deployments"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-100152"><a href="https://developer.wordpress.com/docs/developer-tools/github-deployments/create-github-deployment-source-files/">Creating a GitHub Repository from Existing Source Files</a></li>		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-100153"><a href="https://developer.wordpress.com/docs/developer-tools/github-deployments/github-deployments-workflow-recipes/">GitHub Deployments Recipes</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-101845"><a href="https://developer.wordpress.com/docs/developer-tools/block-patterns/">Block Patterns</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99438"><a href="https://developer.wordpress.com/docs/developer-tools/sftp/">SFTP</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-100425"><a href="https://developer.wordpress.com/docs/developer-tools/ssh/">SSH</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99439"><a href="https://developer.wordpress.com/docs/developer-tools/database-access/">Database Access</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99440"><a href="https://developer.wordpress.com/docs/developer-tools/web-server-settings/">Web Server Settings</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation current-menu-item menu-item-99441 current-menu-item"><a href="https://developer.wordpress.com/docs/api/" aria-current="page">REST API</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99442"><a href="https://developer.wordpress.com/docs/site-performance/">Site Performance</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Site Performance"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99443"><a href="https://developer.wordpress.com/docs/site-performance/global-edge-cache/">Global Edge Cache</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99444"><a href="https://developer.wordpress.com/docs/site-performance/site-accelerator-cdn/">Site Accelerator CDN</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99445"><a href="https://developer.wordpress.com/docs/platform-features/">Platform Features</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Platform Features"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99446"><a href="https://developer.wordpress.com/docs/platform-features/domain-management/">Domain Management</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99447"><a href="https://developer.wordpress.com/docs/platform-features/real-time-backup-restore/">Real Time Backup</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Real Time Backup"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-100723"><a href="https://developer.wordpress.com/docs/platform-features/real-time-backup-restore/manually-restore-backup/">Manually Restore Your Site from a Jetpack Backup</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99448"><a href="https://developer.wordpress.com/docs/platform-features/storage/">Storage</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99449"><a href="https://developer.wordpress.com/docs/platform-features/sitemaps/">Sitemap</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99450"><a href="https://developer.wordpress.com/docs/platform-features/jetpack-scan/">Jetpack Scan</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99451"><a href="https://developer.wordpress.com/docs/platform-features/account-security/">Account Security</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99452"><a href="https://developer.wordpress.com/docs/troubleshooting/">Troubleshooting</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Troubleshooting"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99453"><a href="https://developer.wordpress.com/docs/troubleshooting/site-monitoring/">Site Monitoring</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99454"><a href="https://developer.wordpress.com/docs/troubleshooting/debugging/">Debugging</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99455"><a href="https://developer.wordpress.com/docs/troubleshooting/jetpack-activity-log/">Jetpack Activity Log</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-112897"><a href="https://developer.wordpress.com/docs/tutorials/">Tutorials</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Tutorials"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-101927"><a href="https://developer.wordpress.com/docs/tutorials/add-http-headers/">Add HTTP Headers</a></li></ul></li></ul>
+</nav>
+<!-- .a8c-docs-layout__sidebar -->
+
+<nav aria-label="Main menu" class="a8c-docs-layout__sidebar__desktop">
+
+	<ul class="a8c-docs-sidebar-list"><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99427"><a href="https://developer.wordpress.com/docs/get-started/">Get Started</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Get Started"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99428"><a href="https://developer.wordpress.com/docs/get-started/build-new-or-migrate/">Build New or Migrate</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Build New or&nbsp;Migrate"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99429"><a href="https://developer.wordpress.com/docs/get-started/build-new-or-migrate/build-new/">Build a New Site</a></li>		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99430"><a href="https://developer.wordpress.com/docs/get-started/build-new-or-migrate/migrate-existing/">Migrate an Existing Site</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99431"><a href="https://developer.wordpress.com/docs/get-started/add-additional-users/">Add Additional Users</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Add Additional Users"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-101925"><a href="https://developer.wordpress.com/docs/get-started/add-additional-users/manage-permissions/">Manage Permissions</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99432"><a href="https://developer.wordpress.com/docs/domain/">Connect or Transfer a Domain</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99433"><a href="https://developer.wordpress.com/docs/get-started/launch/">Launch</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99434"><a href="https://developer.wordpress.com/docs/support/">Support</a></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation current-menu-ancestor current-menu-parent menu-item-has-children menu-item-99435"><a href="https://developer.wordpress.com/docs/developer-tools/">Developer Tools</a>
+				<button
+					aria-expanded="true"
+					aria-label="Submenu for Developer Tools"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99436"><a href="https://developer.wordpress.com/docs/developer-tools/staging-sites/">Staging Sites</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Staging Sites"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-101926"><a href="https://developer.wordpress.com/docs/developer-tools/staging-sites/beta/">Switch to the Latest WordPress Beta Version</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99437"><a href="https://developer.wordpress.com/docs/developer-tools/wp-cli/">WP-CLI</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-112004"><a href="https://developer.wordpress.com/docs/developer-tools/studio/">Studio</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-100151"><a href="https://developer.wordpress.com/docs/developer-tools/github-deployments/">GitHub Deployments</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for GitHub Deployments"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-100152"><a href="https://developer.wordpress.com/docs/developer-tools/github-deployments/create-github-deployment-source-files/">Creating a GitHub Repository from Existing Source Files</a></li>		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-100153"><a href="https://developer.wordpress.com/docs/developer-tools/github-deployments/github-deployments-workflow-recipes/">GitHub Deployments Recipes</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-101845"><a href="https://developer.wordpress.com/docs/developer-tools/block-patterns/">Block Patterns</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99438"><a href="https://developer.wordpress.com/docs/developer-tools/sftp/">SFTP</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-100425"><a href="https://developer.wordpress.com/docs/developer-tools/ssh/">SSH</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99439"><a href="https://developer.wordpress.com/docs/developer-tools/database-access/">Database Access</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99440"><a href="https://developer.wordpress.com/docs/developer-tools/web-server-settings/">Web Server Settings</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation current-menu-item menu-item-99441 current-menu-item"><a href="https://developer.wordpress.com/docs/api/" aria-current="page">REST API</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99442"><a href="https://developer.wordpress.com/docs/site-performance/">Site Performance</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Site Performance"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99443"><a href="https://developer.wordpress.com/docs/site-performance/global-edge-cache/">Global Edge Cache</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99444"><a href="https://developer.wordpress.com/docs/site-performance/site-accelerator-cdn/">Site Accelerator CDN</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99445"><a href="https://developer.wordpress.com/docs/platform-features/">Platform Features</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Platform Features"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99446"><a href="https://developer.wordpress.com/docs/platform-features/domain-management/">Domain Management</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99447"><a href="https://developer.wordpress.com/docs/platform-features/real-time-backup-restore/">Real Time Backup</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Real Time Backup"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-2">		<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-100723"><a href="https://developer.wordpress.com/docs/platform-features/real-time-backup-restore/manually-restore-backup/">Manually Restore Your Site from a Jetpack Backup</a></li></ul></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99448"><a href="https://developer.wordpress.com/docs/platform-features/storage/">Storage</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99449"><a href="https://developer.wordpress.com/docs/platform-features/sitemaps/">Sitemap</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99450"><a href="https://developer.wordpress.com/docs/platform-features/jetpack-scan/">Jetpack Scan</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99451"><a href="https://developer.wordpress.com/docs/platform-features/account-security/">Account Security</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-99452"><a href="https://developer.wordpress.com/docs/troubleshooting/">Troubleshooting</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Troubleshooting"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99453"><a href="https://developer.wordpress.com/docs/troubleshooting/site-monitoring/">Site Monitoring</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99454"><a href="https://developer.wordpress.com/docs/troubleshooting/debugging/">Debugging</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-99455"><a href="https://developer.wordpress.com/docs/troubleshooting/jetpack-activity-log/">Jetpack Activity Log</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-has-children menu-item-112897"><a href="https://developer.wordpress.com/docs/tutorials/">Tutorials</a>
+				<button
+					aria-expanded="false"
+					aria-label="Submenu for Tutorials"
+					class="a8c-docs-sidebar-list__toggle"
+				></button><ul class="sub-menu a8c-docs-menu-level-1">	<li class="menu-item menu-item-type-post_type menu-item-object-documentation menu-item-101927"><a href="https://developer.wordpress.com/docs/tutorials/add-http-headers/">Add HTTP Headers</a></li></ul></li></ul>
+</nav>
+<!-- .a8c-docs-layout__sidebar -->
+
+			<div class="a8c-docs-layout__main__content" id="a8c-docs-toc-scroll">
+
+								<div class="a8c-docs-layout__main__content__inner"
+				id="a8c-docs-toc-content"">
+
+	<div class="a8c-docs-layout__main__content__primary">
+
+		<main>
+			
+			
+<article
+	class="a8c-docs-entry post-99407 documentation type-documentation status-publish hentry"	aria-label="REST API"
+	id="post-99407"
+>
+	<header class="a8c-docs-entry__header">
+
+		
+<h1 class="a8c-docs-entry__title">
+	REST API</h1>
+
+		
+	</header>
+	<!-- .a8c-docs-entry__header -->
+
+	<div class="a8c-docs-entry__content">
+
+		
+<p>Welcome to the WordPress.com REST API. Below, you&#8217;ll find a full listing of all the available endpoints. As we add more endpoints, they will be automatically documented here and available through the <a href="https://developer.wordpress.com/docs/api/console/">Developer Console</a>.</p>
+
+
+
+<p>If you&#8217;re not sure how to make calls to the API, you might want to check out the <a href="https://developer.wordpress.com/docs/api/getting-started/">Getting Started</a> guide or the walkthrough on <a href="https://developer.wordpress.com/docs/oauth2/">authentication</a>.</p>
+
+
+
+<p>For more information about a particular endpoint, click on its name under the Resource header. You&#8217;ll be taken to the endpoint&#8217;s documentation page, which includes what query parameters the endpoint will accept, what the JSON object&#8217;s parameters will be in the response, and an example query/response.</p>
+
+
+
+<p>If you&#8217;re looking for the WordPress REST API that shipped as part of WordPress core in version 4.7, see <a href="https://developer.wordpress.org/rest-api/">its documentation</a>. Note that this API is also enabled on WordPress.com, but the URL structure on WordPress.com is slightly different than for self-hosted sites.&nbsp;See <a href="https://developer.wordpress.com/2016/11/11/wordpress-rest-api-on-wordpress-com/">this post</a> for more details.</p>
+
+
+
+<h2 class="wp-block-heading">Users</h2>
+
+
+
+<p>View user information data such as username, name, email, blog, and Gravatar.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/users/">GET/sites/$site/users</a></td><td>List the users of a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/users/%24user_id/">POST/sites/$site/users/$user_id</a></td><td>Update details of a user of a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/invites/new/">POST/sites/$site/invites/new</a></td><td>Invite one or more users to your site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/users/login:%24user_id/">GET/sites/$site/users/login:$user_id</a></td><td>Get details of a user of a site by login.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/users/%24user_ID/delete/">POST/sites/$site/users/$user_ID/delete</a></td><td>Deletes or removes a user of a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/users/suggest/">GET/users/suggest</a></td><td>Get a list of possible users to suggest for @mentions.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/">GET/me</a></td><td>Get metadata about the current user.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/billing-history/">GET/me/billing-history</a></td><td>Get list of current user&#8217;s billing history and upcoming charges.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/settings/">GET/me/settings/</a></td><td>Get the current user&#8217;s settings.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/settings/">POST/me/settings/</a></td><td>Update the current user&#8217;s settings.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/preferences/">GET/me/preferences/</a></td><td>Get the current user&#8217;s settings.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/preferences/">POST/me/preferences/</a></td><td>Update the current user&#8217;s preferences.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/settings/password/validate/">POST/me/settings/password/validate</a></td><td>Verify strength of a user&#8217;s new password.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/settings/profile-links/">GET/me/settings/profile-links/</a></td><td>Get current user&#8217;s profile links.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/settings/profile-links/new/">POST/me/settings/profile-links/new</a></td><td>Add a link to current user&#8217;s profile.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/settings/profile-links/%24slug/delete/">POST/me/settings/profile-links/$slug/delete</a></td><td>Delete a link from current user&#8217;s profile.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/connected-applications/">GET/me/connected-applications/</a></td><td>Get current user&#8217;s connected applications.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/connected-applications/%24ID/">GET/me/connected-applications/$ID</a></td><td>Get one of current user&#8217;s connected applications.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/connected-applications/%24ID/delete/">POST/me/connected-applications/$ID/delete</a></td><td>Delete one of current user&#8217;s connected application access tokens.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/two-step/">GET/me/two-step</a></td><td>Get information about current user&#8217;s two factor configuration.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/two-step/sms/new/">POST/me/two-step/sms/new</a></td><td>Sends a two-step code via SMS to the current user.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/likes/">GET/me/likes/</a></td><td>Get a list of the current user&#8217;s likes.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Sites</h2>
+
+
+
+<p>View general site information and options.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/shortcodes/render/">GET/sites/$site/shortcodes/render</a></td><td>Get a rendered shortcode for a site. Note: The current user must have publishing access.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/shortcodes/">GET/sites/$site/shortcodes</a></td><td>Get a list of shortcodes available on a site. Note: The current user must have publishing access.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/embeds/render/">GET/sites/$site/embeds/render</a></td><td>Get a rendered embed for a site. Note: The current user must have publishing access.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/embeds/">GET/sites/$site/embeds</a></td><td>Get a list of embeds available on a site. Note: The current user must have publishing access.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/">GET/sites/$site</a></td><td>Get information about a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/page-templates/">GET/sites/$site/page-templates</a></td><td>Get a list of page templates supported by a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/post-types/">GET/sites/$site/post-types</a></td><td>Get a list of post types available for a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/post-counts/%24post_type/">GET/sites/$site/post-counts/$post_type</a></td><td>Get number of posts in the post type groups by post status</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/widgets/">GET/sites/$site/widgets</a></td><td>Retrieve the active and inactive widgets for a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/widgets/new/">POST/sites/$site/widgets/new</a></td><td>Activate a widget on a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/wordads/settings/">GET/sites/$site/wordads/settings</a></td><td>Get detailed WordAds settings information about a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/wordads/settings/">POST/sites/$site/wordads/settings</a></td><td>Update WordAds settings for a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/wordads/earnings/">GET/sites/$site/wordads/earnings</a></td><td>Get detailed WordAds earnings information about a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/wordads/tos/">GET/sites/$site/wordads/tos</a></td><td>Get WordAds TOS information about a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/wordads/tos/">POST/sites/$site/wordads/tos</a></td><td>Update WordAds TOS setting for a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/wordads/approve/">POST/sites/$site/wordads/approve</a></td><td>Request streamlined approval to join the WordAds program.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/wordads/stats/">GET/sites/$site/wordads/stats</a></td><td>Get WordAds stats for a site</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/sites/">GET/me/sites</a></td><td>Get a list of the current user&#8217;s sites.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/sites/features/">GET/me/sites/features</a></td><td>Get a list of the current user&#8217;s sites features</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/sites/plugins/">GET/me/sites/plugins</a></td><td>Get a list of the current user&#8217;s sites plugins</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/search/">POST/sites/$site/search</a></td><td>Search within a site using an Elasticsearch Query API.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/widgets/widget:%24id/">GET/sites/$site/widgets/widget:$id</a></td><td>Retrieve a widget on a site by its ID.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/widgets/widget:%24id/">POST/sites/$site/widgets/widget:$id</a></td><td>Update a widget on a site by its ID.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/widgets/widget:%24id/delete/">POST/sites/$site/widgets/widget:$id/delete</a></td><td>Deactivate a widget on a site by its ID. Will delete if already deactivated.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/headers/%24theme_slug/">GET/sites/$site/headers/$theme_slug</a></td><td>Get the custom header options for a site with a particular theme.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/headers/mine/">GET/sites/$site/headers/mine</a></td><td>Get the custom header options for a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/headers/mine/">POST/sites/$site/headers/mine</a></td><td>Set the custom header options for a site.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Posts</h2>
+
+
+
+<p>View and manage posts including reblogs and likes.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/dropdown-pages/">GET/sites/$site/dropdown-pages/</a></td><td>Get a list of pages to be displayed as options in a select-a-page-dropdown.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/%24post_ID/">GET/sites/$site/posts/$post_ID</a></td><td>Get a single post (by ID).</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post_ID/">POST/sites/$site/posts/$post_ID</a></td><td>Edit a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/slug:%24post_slug/">GET/sites/$site/posts/slug:$post_slug</a></td><td>Get a single post (by slug).</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/">GET/sites/$site/posts/</a></td><td>Get a list of matching posts.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/new/">POST/sites/$site/posts/new</a></td><td>Create a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post_ID/delete/">POST/sites/$site/posts/$post_ID/delete</a></td><td>Delete a post. Note: If the trash is enabled, this request will send the post to the trash. A second request will permanently delete the post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post_ID/restore/">POST/sites/$site/posts/$post_ID/restore</a></td><td>Restore a post or page from the trash to its previous status.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/delete/">POST/sites/$site/posts/delete</a></td><td>Delete multiple posts. Note: If the trash is enabled, this request will send non-trashed posts to the trash. Trashed posts will be permanently deleted.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/restore/">POST/sites/$site/posts/restore</a></td><td>Restore multiple posts.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/posts/">GET/me/posts</a></td><td>Get a list of posts across all the user&#8217;s sites.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/%24post_ID/likes/">GET/sites/$site/posts/$post_ID/likes/</a></td><td>Get a list of the likes for a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post_ID/likes/new/">POST/sites/$site/posts/$post_ID/likes/new</a></td><td>Like a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post_ID/likes/mine/delete/">POST/sites/$site/posts/$post_ID/likes/mine/delete</a></td><td>Unlike a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/%24post_ID/likes/mine/">GET/sites/$site/posts/$post_ID/likes/mine/</a></td><td>Get the current user&#8217;s like status for a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/%24post/subscribers/">GET/sites/$site/posts/$post/subscribers/</a></td><td>Get a list of the specified post&#8217;s subscribers.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/%24post/subscribers/mine/">GET/sites/$site/posts/$post/subscribers/mine</a></td><td>Get subscription status of the specified post for the current user.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post/subscribers/new/">POST/sites/$site/posts/$post/subscribers/new</a></td><td>Subscribe current user to be notified of the specified post&#8217;s comments.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post/subscribers/mine/update/">POST/sites/$site/posts/$post/subscribers/mine/update</a></td><td>Subscribe current user to be notified of the specified post&#8217;s comments.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post/subscribers/mine/delete/">POST/sites/$site/posts/$post/subscribers/mine/delete</a></td><td>Unsubscribe the current user from the specified post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post_ID/reblogs/new/">POST/sites/$site/posts/$post_ID/reblogs/new</a></td><td>Reblog a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/%24post_ID/reblogs/mine/">GET/sites/$site/posts/$post_ID/reblogs/mine</a></td><td>Get reblog status for a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post/related/">POST/sites/$site/posts/$post/related</a></td><td>Search within a site for related posts.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Comments</h2>
+
+
+
+<p>View and manage a post&#8217;s comments.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/comments/%24comment_ID/">GET/sites/$site/comments/$comment_ID</a></td><td>Get a single comment.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/comments/%24comment_ID/">POST/sites/$site/comments/$comment_ID</a></td><td>Edit a comment.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/comments/">GET/sites/$site/comments/</a></td><td>Get a list of recent comments.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/%24post_ID/replies/">GET/sites/$site/posts/$post_ID/replies/</a></td><td>Get a list of recent comments on a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/posts/%24post_ID/replies/new/">POST/sites/$site/posts/$post_ID/replies/new</a></td><td>Create a comment on a post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/comments/%24comment_ID/replies/new/">POST/sites/$site/comments/$comment_ID/replies/new</a></td><td>Create a comment as a reply to another comment.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/comments/%24comment_ID/delete/">POST/sites/$site/comments/$comment_ID/delete</a></td><td>Delete a comment.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/comment-counts/">GET/sites/$site/comment-counts</a></td><td>Get comment counts for each available status</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/comment-history/%24comment_ID/">GET/sites/$site/comment-history/$comment_ID</a></td><td>Get the audit history for given comment</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/comments/%24comment_ID/likes/">GET/sites/$site/comments/$comment_ID/likes/</a></td><td>Get the likes for a comment.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/comments/%24comment_ID/likes/new/">POST/sites/$site/comments/$comment_ID/likes/new</a></td><td>Like a comment.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/comments/%24comment_ID/likes/mine/delete/">POST/sites/$site/comments/$comment_ID/likes/mine/delete</a></td><td>Remove your like from a comment.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/comments/%24comment_ID/likes/mine/">GET/sites/$site/comments/$comment_ID/likes/mine/</a></td><td>Get your like status for a comment.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/kill-switch/comment-likes/">GET/kill-switch/comment-likes</a></td><td>Kill comment likes</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Taxonomy</h2>
+
+
+
+<p>View and manage a site&#8217;s tags and categories.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/categories/">GET/sites/$site/categories</a></td><td>Get a list of a site&#8217;s categories.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/tags/">GET/sites/$site/tags</a></td><td>Get a list of a site&#8217;s tags.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/categories/slug:%24category/">GET/sites/$site/categories/slug:$category</a></td><td>Get information about a single category.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/categories/slug:%24category/">POST/sites/$site/categories/slug:$category</a></td><td>Edit a category.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/tags/slug:%24tag/">GET/sites/$site/tags/slug:$tag</a></td><td>Get information about a single tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/tags/slug:%24tag/">POST/sites/$site/tags/slug:$tag</a></td><td>Edit a tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/taxonomies/%24taxonomy/terms/slug:%24slug/">GET/sites/$site/taxonomies/$taxonomy/terms/slug:$slug</a></td><td>Get information about a single term.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/taxonomies/%24taxonomy/terms/slug:%24slug/">POST/sites/$site/taxonomies/$taxonomy/terms/slug:$slug</a></td><td>Edit a term.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/post-types/%24post_type/taxonomies/">GET/sites/$site/post-types/$post_type/taxonomies</a></td><td>Get a list of taxonomies associated with a post type.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/taxonomies/%24taxonomy/terms/">GET/sites/$site/taxonomies/$taxonomy/terms</a></td><td>Get a list of a site&#8217;s terms by taxonomy.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/categories/new/">POST/sites/$site/categories/new</a></td><td>Create a new category.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/tags/new/">POST/sites/$site/tags/new</a></td><td>Create a new tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/categories/slug:%24category/delete/">POST/sites/$site/categories/slug:$category/delete</a></td><td>Delete a category.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/tags/slug:%24tag/delete/">POST/sites/$site/tags/slug:$tag/delete</a></td><td>Delete a tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/taxonomies/%24taxonomy/terms/new/">POST/sites/$site/taxonomies/$taxonomy/terms/new</a></td><td>Create a new term.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/taxonomies/%24taxonomy/terms/slug:%24slug/delete/">POST/sites/$site/taxonomies/$taxonomy/terms/slug:$slug/delete</a></td><td>Delete a term.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Follow</h2>
+
+
+
+<p>Follow and unfollow blogs.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/follows/">GET/sites/$site/follows/</a></td><td>List a site&#8217;s followers in reverse chronological order.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/follows/new/">POST/sites/$site/follows/new</a></td><td>Follow a blog.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/follows/mine/delete/">POST/sites/$site/follows/mine/delete</a></td><td>Unfollow a blog.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/follows/mine/">GET/sites/$site/follows/mine</a></td><td>Get blog following status for the current user.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Sharing</h2>
+
+
+
+<p>Connect social media services to automatically share new posts and manage sharing buttons on a site.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/sharing-buttons/">GET/sites/$site/sharing-buttons/</a></td><td>Get a list of a site&#8217;s sharing buttons.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/sharing-buttons/">POST/sites/$site/sharing-buttons</a></td><td>Edit all sharing buttons for a site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/meta/external-services/">GET/meta/external-services/</a></td><td>Get a list of third-party services that WordPress.com or Jetpack sites can integrate with via keyring.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/meta/external-services/%24service/">GET/meta/external-services/$service</a></td><td>Get information about a single external service that WordPress.com or Jetpack sites can integrate with via keyring.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/publicize-connections/">GET/me/publicize-connections/</a></td><td>Get a list of publicize connections that the current user has set up.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/publicize-connections/%24publicize_connection_ID/">GET/me/publicize-connections/$publicize_connection_ID</a></td><td>Get a single publicize connection that the current user has set up.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/publicize-connections/%24publicize_connection_ID/">POST/me/publicize-connections/$publicize_connection_ID</a></td><td>Update a single publicize connection belonging to the current user.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/publicize-connections/%24publicize_connection_ID/delete/">POST/me/publicize-connections/$publicize_connection_ID/delete</a></td><td>Delete the specified publicize connection.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/keyring-connections/">GET/me/keyring-connections/</a></td><td>Get a list of all the keyring connections associated with the current user.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/me/keyring-connections/%24keyring_connection_ID/">GET/me/keyring-connections/$keyring_connection_ID</a></td><td>Get a single Keyring connection that the current user has setup.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/me/keyring-connections/%24keyring_connection_ID/delete/">POST/me/keyring-connections/$keyring_connection_ID/delete</a></td><td>Delete the Keyring connection (and associated token) with the provided ID. Also deletes all associated publicize connections.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/publicize-connections/">GET/sites/$site/publicize-connections/</a></td><td>Get a list of publicize connections that are associated with the specified site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/publicize-connections/%24publicize_connection_ID/">GET/sites/$site/publicize-connections/$publicize_connection_ID</a></td><td>Get a single publicize connection that is associated with the specified site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/publicize-connections/%24publicize_connection_ID/">POST/sites/$site/publicize-connections/$publicize_connection_ID</a></td><td>Update a single publicize connection belonging to the specified site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/publicize-connections/new/">POST/sites/$site/publicize-connections/new</a></td><td>Create a new publicize connection that is associated with the specified site.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/publicize-connections/%24publicize_connection_ID/delete/">POST/sites/$site/publicize-connections/$publicize_connection_ID/delete</a></td><td>Delete the specified publicize connection.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/meta/sharing-buttons/">GET/meta/sharing-buttons</a></td><td>Get a list of external services for which sharing buttons are supported.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Freshly Pressed</h2>
+
+
+
+<p>View Freshly Pressed posts from the WordPress.com homepage.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/freshly-pressed/">GET/freshly-pressed/</a></td><td>Get a list of Freshly Pressed posts. (Note: Freshly Pressed has been retired. Please visit <a href="https://discover.wordpress.com" rel="nofollow">https://discover.wordpress.com</a> to get the best content published across our network.)</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Notifications</h2>
+
+
+
+<p>View and manage a user&#8217;s notifications.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/notifications/seen/">POST/notifications/seen</a></td><td>Set the timestamp of the most recently seen notification.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/notifications/read/">POST/notifications/read</a></td><td>Mark a set of notifications as read.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Insights</h2>
+
+
+
+<p>View analytics for your application.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/insights/">GET/insights</a></td><td>Get a list of stats/metrics/insights that the current user has access to.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/insights/%24slug/">GET/insights/$slug</a></td><td>Get raw data for a particular graph.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Reader</h2>
+
+
+
+<p>Manage and view a user&#8217;s subscriptions to the WordPress.com Reader.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/menu/">GET/read/menu/</a></td><td>Get default reader menu.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/feed/%24feed_url_or_id/">GET/read/feed/$feed_url_or_id</a></td><td>Get details about a feed.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/sites/%24site/posts/%24post_ID/">GET/read/sites/$site/posts/$post_ID</a></td><td>Get a single post (by ID).</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/following/">GET/read/following/</a></td><td>Get a list of posts from the blogs a user follows.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/liked/">GET/read/liked/</a></td><td>Get a list of posts from the blogs a user likes.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/tags/%24tag/posts/">GET/read/tags/$tag/posts</a></td><td>Get a list of posts from a tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/tags/">GET/read/tags</a></td><td>Get a list of tags subscribed to by the user.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/tags/alphabetic/">GET/read/tags/alphabetic</a></td><td>Get a filtered list of top tags, grouped by letter.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/trending/tags/">GET/read/trending/tags</a></td><td>Get a list of trending tags.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/tags/%24tag/">GET/read/tags/$tag</a></td><td>Get details about a specified tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/tags/%24tag/mine/">GET/read/tags/$tag/mine</a></td><td>Get the subscribed status of the user to a given tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/read/tags/%24tag/mine/new/">POST/read/tags/$tag/mine/new</a></td><td>Subscribe to a new tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/read/tags/%24tag/mine/delete/">POST/read/tags/$tag/mine/delete</a></td><td>Unsubscribe from a tag.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/following/mine/">GET/read/following/mine</a></td><td>Get a list of the feeds the user is following.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/read/following/mine/new/">POST/read/following/mine/new</a></td><td>Follow the specified blog.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/read/following/mine/delete/">POST/read/following/mine/delete</a></td><td>Unfollow the specified blog.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/feed/">GET/read/feed/</a></td><td>Get the ID and subscribe URL of one or more matching feeds by domain or URL.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/email-settings/">GET/read/email-settings/</a></td><td>Returns the email settings</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/read/email-settings/">POST/read/email-settings/</a></td><td>Returns the email settings</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/subscriptions-count/">GET/read/subscriptions-count/</a></td><td>Returns the number of blog, comment and pending subscriptions.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/read/recommendations/mine/">GET/read/recommendations/mine/</a></td><td>Get a list of blog recommendations for the current user.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Stats</h2>
+
+
+
+<p>View stats for a site.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/highlights/">GET/sites/$site/stats/highlights</a></td><td>View highlight metrics from the last seven days.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/">GET/sites/$site/stats</a></td><td>Get a site&#8217;s stats</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/summary/">GET/sites/$site/stats/summary</a></td><td>View a site&#8217;s summarized views, visitors, likes and comments</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/top-posts/">GET/sites/$site/stats/top-posts</a></td><td>View a site&#8217;s top posts and pages by views</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/video/%24post_id/">GET/sites/$site/stats/video/$post_id</a></td><td>View the details of a single video</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/referrers/">GET/sites/$site/stats/referrers</a></td><td>View a site&#8217;s referrers</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/">GET/sites/$site/stats/clicks</a></td><td>View a site&#8217;s outbound clicks</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/tags/">GET/sites/$site/stats/tags</a></td><td>View a site&#8217;s views by tags and categories</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/top-authors/">GET/sites/$site/stats/top-authors</a></td><td>View a site&#8217;s top authors</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/comments/">GET/sites/$site/stats/comments</a></td><td>View a site&#8217;s top comment authors and most-commented posts</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/video-plays/">GET/sites/$site/stats/video-plays</a></td><td>View a site&#8217;s video plays</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/file-downloads/">GET/sites/$site/stats/file-downloads</a></td><td>View a site&#8217;s file downloads</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/post/%24post_id/">GET/sites/$site/stats/post/$post_id</a></td><td>View a post&#8217;s views</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/country-views/">GET/sites/$site/stats/country-views</a></td><td>View a site&#8217;s views by country</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/followers/">GET/sites/$site/stats/followers</a></td><td>View a site&#8217;s followers</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/comment-followers/">GET/sites/$site/stats/comment-followers</a></td><td>View a site&#8217;s comment followers</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/stats/referrers/spam/new/">POST/sites/$site/stats/referrers/spam/new</a></td><td>Report a referrer as spam</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/stats/referrers/spam/delete/">POST/sites/$site/stats/referrers/spam/delete</a></td><td>Unreport a referrer as spam</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/publicize/">GET/sites/$site/stats/publicize</a></td><td>View a site&#8217;s publicize follower counts</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/search-terms/">GET/sites/$site/stats/search-terms</a></td><td>View search terms used to find the site</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/views/posts/">GET/sites/$site/stats/views/posts</a></td><td>View the total number of views for each post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/emails/summary/">GET/sites/$site/stats/emails/summary</a></td><td>View the total number of email opens and clicks for each post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/opens/emails/summary/">GET/sites/$site/stats/opens/emails/summary</a></td><td>View the total number of email opens for each post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/opens/emails/%24post_id/">GET/sites/$site/stats/opens/emails/$post_id</a></td><td>View multiple stats related to email opens by post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/opens/emails/%24post_id/client/">GET/sites/$site/stats/opens/emails/$post_id/client</a></td><td>View email opens stats by client.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/opens/emails/%24post_id/country/">GET/sites/$site/stats/opens/emails/$post_id/country</a></td><td>View email opens stats by country.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/opens/emails/%24post_id/device/">GET/sites/$site/stats/opens/emails/$post_id/device</a></td><td>View email opens stats by device.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/opens/emails/%24post_id/rate/">GET/sites/$site/stats/opens/emails/$post_id/rate</a></td><td>View email opens rate by post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/emails/%24post_id/">GET/sites/$site/stats/clicks/emails/$post_id</a></td><td>View chart stats related to email clicks by period.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/emails/%24post_id/rate/">GET/sites/$site/stats/clicks/emails/$post_id/rate</a></td><td>View email clicks rate by post. Returns mock data.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/emails/%24post_id/country/">GET/sites/$site/stats/clicks/emails/$post_id/country</a></td><td>View email clicks by country.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/emails/%24post_id/device/">GET/sites/$site/stats/clicks/emails/$post_id/device</a></td><td>View email clicks by device.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/emails/%24post_id/client/">GET/sites/$site/stats/clicks/emails/$post_id/client</a></td><td>View email clicks by client.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/emails/%24post_id/link/">GET/sites/$site/stats/clicks/emails/$post_id/link</a></td><td>View email clicks by link.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/emails/%24post_id/user-content-link/">GET/sites/$site/stats/clicks/emails/$post_id/user-content-link</a></td><td>View email clicks by user content link.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/clicks/emails/summary/">GET/sites/$site/stats/clicks/emails/summary</a></td><td>View the total number of email clicks for each post.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/utm/%24utm_param_name/">GET/sites/$site/stats/utm/$utm_param_name</a></td><td>Fetch site&#8217;s UTM param statistics.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/utm/%24utm_param_name/top_posts/">GET/sites/$site/stats/utm/$utm_param_name/top_posts</a></td><td>Fetch top posts for a given UTM parameter value.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/streak/">GET/sites/$site/stats/streak</a></td><td>Get stats for Calendar Heatmap. Returns data with each post timestamp.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Media</h2>
+
+
+
+<p>Manage a site&#8217;s media library.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/media/%24media_ID/delete/">POST/sites/$site/media/$media_ID/delete</a></td><td>Delete a piece of media. Note: Media is deleted and not trashed.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/media/%24media_ID/">GET/sites/$site/media/$media_ID</a></td><td>Get a single media item (by ID).</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/media/%24media_ID/">POST/sites/$site/media/$media_ID</a></td><td>Edit basic information about a media item.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/media/">GET/sites/$site/media/</a></td><td>Get a list of items in the media library.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/media/new/">POST/sites/$site/media/new</a></td><td>Upload a new piece of media.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/media/%24media_ID/edit/">POST/sites/$site/media/$media_ID/edit</a></td><td>Edit a media item.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Menus</h2>
+
+
+
+<p>View and manage a site&#8217;s menus.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/menus/new/">POST/sites/$site/menus/new</a></td><td>Create a new navigation menu.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/menus/%24menu_id/">POST/sites/$site/menus/$menu_id</a></td><td>Update a navigation menu.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/menus/%24menu_id/">GET/sites/$site/menus/$menu_id</a></td><td>Get a single navigation menu.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/menus/">GET/sites/$site/menus</a></td><td>Get a list of all navigation menus.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/menus/%24menu_id/delete/">POST/sites/$site/menus/$menu_id/delete</a></td><td>Delete a navigation menu</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Batch</h2>
+
+
+
+<p>Batch several API GET requests into one.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/batch/">GET/batch/</a></td><td>Run several GET endpoints and return them as an array.</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Videos</h2>
+
+
+
+<p>View video information.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Resource</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/videos/%24guid/">GET/videos/$guid</a></td><td>Get the metadata for a specified VideoPress video.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/videos/%24guid/poster/">GET/videos/$guid/poster</a></td><td>Get the poster for a specified VideoPress video.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/videos/%24guid/poster/">POST/videos/$guid/poster</a></td><td>Upload and set a poster for a specified VideoPress video.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/videos/%24guid/chapters/">GET/videos/$guid/chapters</a></td><td>Get the chapters for a specified VideoPress video.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/get/videos/%24guid/playlist/%24format/">GET/videos/$guid/playlist/$format</a></td><td>Get the poster for a specified VideoPress video.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/videos/%24guid/tracks/">POST/videos/$guid/tracks</a></td><td>Upload a subtitle/caption track for a specified VideoPress video.</td></tr><tr><td><a href="https://developer.wordpress.com/docs/api/1.1/post/videos/%24guid/tracks/delete/">POST/videos/$guid/tracks/delete</a></td><td>Delete an existing subtitle/caption track for a specified VideoPress video.</td></tr></tbody></table></figure>
+
+	</div>
+	<!-- .a8c-docs-entry-content -->
+
+	<p class='a8c-docs-last-updated-text'>Last updated: April 26, 2024</p>	
+<div class="a8c-docs-footer-cta">
+    <p>Ready to get started with WordPress.com?</p>
+    <a class="a8c-docs-button" href="https://wordpress.com/start/hosting?ref=developer-lp&flow=new-hosted-site&ref=developer-docs">Start free trial</a>
+</div></article>
+<!-- .a8c-docs-entry -->
+		</main>
+
+		
+<footer class="a8c-docs-layout__main__content__footer">
+
+	<hr/>
+
+	
+	<p class="has-text-align-center a8c-docs-gutter-bottom-none font-small">
+		Documentation is licensed under a	</p>
+
+	<p class="has-text-align-center font-small">
+		<a href="https://creativecommons.org/licenses/by-sa/4.0/">
+			Creative Commons Attribution-ShareAlike 4.0 International License		</a>
+	</p>
+
+	<div class="a8c-docs-automattic-block">
+		<p>
+			<a href="https://automattic.com/">
+				An <span class="screen-reader-text">Automattic</span><svg class="svg-icon svg-icon-automattic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 15.4"><path d="M72.5 15.4c-5.1 0-8.4-3.7-8.4-7.5v-.4c0-3.9 3.3-7.5 8.4-7.5 5.1 0 8.4 3.6 8.4 7.5V8c0 3.8-3.3 7.4-8.4 7.4zm5.7-7.9c0-2.8-2-5.3-5.7-5.3s-5.7 2.5-5.7 5.3v.3c0 2.8 2 5.3 5.7 5.3s5.7-2.5 5.7-5.3v-.3z" fill="#3298CB"/><path d="M15 14.9l-1.9-3.6H4.7l-1.8 3.6H0L7.8.5H10l7.9 14.4H15zM8.8 3.3l-3.1 6h6.4l-3.3-6zm21.4 12.1c-5.2 0-7.6-2.8-7.6-6.5V.5h2.7V9c0 2.7 1.7 4.2 5.1 4.2 3.4 0 4.8-1.6 4.8-4.2V.5h2.7v8.4c0 3.6-2.3 6.5-7.7 6.5zM52.9 2.8v12.1h-2.7V2.8h-6.3V.5h15.3v2.2h-6.3zM105 14.9V3.5l-.7 1.3-6 10.1H97L91 4.8l-.7-1.3v11.4h-2.6V.5h3.7l5.7 9.9.7 1.2.7-1.2 5.6-9.9h3.7v14.4H105zm23.1 0l-1.9-3.6h-8.4l-1.8 3.6h-3L120.8.5h2.2l7.9 14.4h-2.8zm-6.2-11.6l-3.1 6h6.4l-3.3-6zm19.9-.5v12.1h-2.7V2.8h-6.3V.5h15.3v2.2h-6.3zm19.8 0v12.1h-2.7V2.8h-6.3V.5h15.3v2.2h-6.3zm12.9 12.1v-13c1.1 0 1.5-.6 1.5-1.4h1.1v14.4h-2.6zm23.8-10.3c-1.3-1.2-3.2-2.3-5.8-2.3-3.8 0-6 2.6-6 5.4V8c0 2.7 2.2 5.3 6.2 5.3 2.4 0 4.4-1.1 5.6-2.3l1.6 1.7c-1.6 1.6-4.3 2.9-7.4 2.9-5.4 0-8.7-3.5-8.7-7.4v-.6c0-3.9 3.6-7.6 8.9-7.6 3 0 5.8 1.3 7.3 2.9l-1.7 1.7zM74.3 5c.5.3.6 1 .3 1.5l-2.5 3.8c-.3.5-1 .6-1.5.3s-.6-1-.3-1.5l2.5-3.8c.4-.5 1-.6 1.5-.3z"/></svg> Creation			</a>
+		</p>
+	</div>
+	<!-- .a8c-docs-automattic-block -->
+
+</footer>
+<!-- .a8c-docs-layout__main__content__footer -->
+
+	</div>
+	<!-- .a8c-docs-layout__main__content__primary -->
+
+	<div class="a8c-docs-layout__main__content__secondary">
+		
+		<nav id="docs-toc-nav" class="a8c-docs-table-of-contents__sticky" aria-label="Table of Contents">
+					</nav>
+	</div>
+	<!-- .a8c-docs-layout__main__content__secondary -->
+
+					</div>
+					<!-- .a8c-docs-layout__main__content__inner -->
+
+				</div>
+				<!-- .a8c-docs-layout__main__content -->
+
+			</div>
+			<!-- .a8c-docs-layout__main__inner -->
+
+		</div>
+		<!-- .a8c-docs-layout__main -->
+
+	</div>
+	<!-- .a8c-docs-layout -->
+
+<!--  -->
+		<div class="jetpack-instant-search__widget-area" style="display: none">
+					</div>
+				<script type="text/javascript">
+			window.addEventListener("load", function() {
+				const scriptElement = document.createElement( 'script' );
+
+				scriptElement.setAttribute( 'id', 'ze-snippet' );
+				scriptElement.setAttribute( 'src', 'https://static.zdassets.com/ekr/snippet.js?key=216bf91d-f10f-4f66-bf65-a0cba220cd38' );
+				scriptElement.setAttribute( 'type', 'text/javascript' );
+				scriptElement.setAttribute( 'async', true );
+				scriptElement.addEventListener( 'load', () => {
+					if ( typeof window.zE !== 'function' ) {
+						return;
+					}
+
+					window.zE(
+						'messenger:set',
+						'conversationFields',
+						[
+							{
+								id: 23752099174548,
+								value: window.location.href,
+							},
+						]
+					);
+				} );
+
+				document.body.appendChild( scriptElement );
+			} );
+		</script>
+					<!-- A8C Analytics [start] -->
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						window.a8cAnalyticsConfig = {"cookieBanner":{"version":"2","cssZIndex":50001,"skipBanner":false,"cookieDomain":"wordpress.com","v1CookieName":"sensitive_pixel_option","v2CookieName":"sensitive_pixel_options","v1Text":"Our websites and dashboards use cookies. By continuing, you agree to their use. <a target=\"_blank\" href=\"https:\/\/automattic.com\/cookies\/\">Learn more<\/a>, including how to control cookies.","v2Text":"As an open source company, we take your privacy seriously and want to be as transparent as possible. So: We use cookies to collect some personal data from you (like your browsing data, IP addresses, and other unique identifiers). Some of these cookies we absolutely need in order to make things work, and others you can choose in order to optimize your experience while using our site and services.","v2OptionsText":"Your privacy is critically important to us. We and our partners use, store, and process your personal data to optimize: our <strong>website<\/strong> such as by improving security or conducting analytics, <strong>marketing activities<\/strong> to help deliver relevant marketing or content, and your <strong>user experience<\/strong> such as by remembering your account name, language settings, or cart information, where applicable. You can customize your cookie settings below. Learn more in our <a href=\"https:\/\/automattic.com\/privacy\/\" target=\"_blank\">Privacy Policy<\/a> and <a href=\"https:\/\/automattic.com\/cookies\/\" target=\"_blank\">Cookie Policy<\/a>.","v2EssentialOptionHeading":"Required","v2EssentialOptionText":"These cookies are essential for our websites and services to perform basic functions and are necessary for us to operate certain features, like allowing registered users to authenticate and perform account-related functions, storing preferences set by users (like account name, language, and location), and ensuring our services operate properly.","v2AnalyticsOptionHeading":"Analytics","v2AnalyticsOptionText":"These cookies allow us to optimize performance by collecting information on how users interact with our websites.","v2AdvertisingOptionHeading":"Advertising","v2AdvertisingOptionText":"We and our advertising partners set these cookies to provide you with relevant content and to understand that content\u2019s effectiveness.","v1ButtonText":"Got It!","v2CustomizeButtonText":"Customize","v2AcceptAllButtonText":"Accept all","v2AcceptSelectionButtonText":"Accept selection","hiddenConsents":[],"isLoggedIn":false},"doNotSellDialog":{"contactEmailAddress":"privacypolicyupdates@automattic.com"},"adminAnalytics":"analytics-wpcom-admin.php","fireAnalyticsOptions":[]};
+					};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+
+			
+<script type="text/javascript">
+	( function () {
+		'use strict';
+
+		document.addEventListener( 'a8c-analytics:loaded', function () {
+			var cb = window.a8cAnalytics.cb;
+			var kit = window.a8cAnalytics.kit;
+
+			if ( kit.doNotTrack() ) {
+				return;
+			}
+
+			var pagePath = window.location.pathname;
+
+			const fireTracks = () => {
+				window._tkq = window._tkq || [];
+				const props = Object.assign( {}, kit.getQueryVars( '', kit.QUERY_PARAMS ), { path: pagePath } );
+				window._tkq.push( [ 'recordEvent', 'wpcom_developer_page_view', props ] );
+			};
+
+			function fireGoogleAnalyticsFour() {
+				var gtagOptions = { 'anonymize_ip': true };
+				kit.loadGtag( 'G-9KY8BFVEK3', gtagOptions );
+			}
+
+			function fireRedditAdvertisingPixel() {
+				!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+				rdt('init','a2_ehx23cq176s3');
+				rdt('track', 'PageVisit');
+				addRedditEventToCtaClicks();
+			}
+
+			function addRedditEventToCtaClicks() {
+				if ( ! window.rdt ) {
+					return;
+				}
+				// The URL pattern we're interested in tracking. It's just one for now.
+				const ctaUrlStartsWith = 'https://wordpress.com/start/hosting';
+
+				// Get all links starting with the above pattern.
+				const links = document.querySelectorAll(`a[href^="${ctaUrlStartsWith}"]`);
+
+				// Add event listener with callback to fire off a lead event to Reddit.
+				links.length > 0 && links.forEach(link => {
+					link.addEventListener("click", () => {
+						rdt('track', 'Lead', {});
+					});
+				});
+			}
+
+			// ------- Fire Normal Pixels -------
+
+						cb.addTracker( 'analytics', false, fireTracks );
+			cb.addTracker( 'analytics', true, fireGoogleAnalyticsFour );
+			cb.addTracker( 'advertising', true, fireRedditAdvertisingPixel );
+		} );
+	} )();
+</script>
+
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+					var currentScript = document.currentScript;
+
+					var setupAnalytics = function() {
+						function getScript() {
+							var script = document.createElement( 'script' );
+							var prev = currentScript || document.getElementsByTagName( 'script' )[ 0 ];
+							script.setAttribute( 'src', "https:\/\/s0.wp.com\/wp-content\/mu-plugins\/a8c-analytics\/a8c-analytics.js?v=1712316471" );
+							script.setAttribute( 'async', true );
+							prev.parentNode.insertBefore( script, prev );
+						}
+
+													getScript();
+											};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+			<!-- A8C Analytics [end] -->
+		<script src="//0.gravatar.com/js/hovercards/hovercards.min.js?ver=2024184d47d929f88574eb4a47e5b1778b683b87e7f6078bb6a33f34c1178752e83406" id="grofiles-cards-js"></script>
+<script id="wpgroho-js-extra">
+var WPGroHo = {"my_hash":""};
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='https://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile': 'Edit your profile',
+							'View profile': 'View profile',
+							'Sorry, we are unable to load this Gravatar profile.': 'Sorry, we are unable to load this Gravatar profile.',
+							'Sorry, we are unable to load this Gravatar profile. Please check your internet connection.': 'Sorry, we are unable to load this Gravatar profile. Please check your internet connection.',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	</div>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+
+				.is-style-asterisk:before {
+					content: '';
+					width: 1.5rem;
+					height: 3rem;
+					background: var(--wp--preset--color--contrast-2, currentColor);
+					clip-path: path('M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z');
+					display: block;
+				}
+
+				/* Hide the asterisk if the heading has no content, to avoid using empty headings to display the asterisk only, which is an A11Y issue */
+				.is-style-asterisk:empty:before {
+					content: none;
+				}
+
+				.is-style-asterisk:-moz-only-whitespace:before {
+					content: none;
+				}
+
+				.is-style-asterisk.has-text-align-center:before {
+					margin: 0 auto;
+				}
+
+				.is-style-asterisk.has-text-align-right:before {
+					margin-left: auto;
+				}
+
+				.rtl .is-style-asterisk.has-text-align-left:before {
+					margin-right: auto;
+				}
+</style>
+<style id='wp-block-table-inline-css'>
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:initial;border-bottom:1px solid #f0f0f0;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:#0000}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:initial}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:initial}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+</style>
+<script crossorigin='anonymous' type='text/javascript'  src='https://s1.wp.com/wp-content/a8c-plugins/wpcom-dev-theme-addons/assets/js/user-management.js?m=1707313762i'></script>
+<script id="wpcom-platform-js-extra">
+var wpcomPlatform = {"titles":{"timelines":"Embeddable Timelines","followButton":"Follow Button","wpEmbeds":"WordPress Embeds"}};
+</script>
+<script crossorigin='anonymous' crossorigin='anonymous' src="//widgets.wp.com/platform.js?ver=20230516" id="wpcom-platform-js"></script>
+<script crossorigin='anonymous' type='text/javascript'  src='https://s0.wp.com/_static/??-eJyNzEEKAjEMheEL2ekMjowb8SwxDZrSJnXSKnp6izsXovBWj4/f34tjwdQCmY9910brwzf2qCsNmWWItvFfFWB3gVV+06zN/iiuZPyEU/qgqFJJqoc9upLamcX6jZpdoJurF8rkIATtN5hRfTehsAuK1iPHfJiWcZnHad5t4wvCfllY'></script>
+<script crossorigin='anonymous' crossorigin='anonymous' src="//stats.wp.com/w.js?67" id="wpcom-stats-js"></script>
+<script crossorigin='anonymous' crossorigin='anonymous' src="https://s0.wp.com/wp-content/plugins/gutenberg-core/v18.1.2/build/url/index.min.js?m=1713425039i&amp;ver=413660a39c97a1da8d51" id="wp-url-js"></script>
+<script id="jetpack-instant-search-js-before">
+var JetpackInstantSearchOptions=JSON.parse(decodeURIComponent("%7B%22overlayOptions%22%3A%7B%22colorTheme%22%3A%22light%22%2C%22enableInfScroll%22%3Atrue%2C%22enableFilteringOpensOverlay%22%3Atrue%2C%22enablePostDate%22%3Atrue%2C%22enableSort%22%3Atrue%2C%22highlightColor%22%3A%22%23FFC%22%2C%22overlayTrigger%22%3A%22submit%22%2C%22resultFormat%22%3A%22minimal%22%2C%22showPoweredBy%22%3Atrue%2C%22defaultSort%22%3A%22relevance%22%2C%22excludedPostTypes%22%3A%5B%5D%7D%2C%22homeUrl%22%3A%22https%3A%5C%2F%5C%2Fdeveloper.wordpress.com%22%2C%22locale%22%3A%22en%22%2C%22postsPerPage%22%3A10%2C%22siteId%22%3A33534099%2C%22postTypes%22%3A%7B%22post%22%3A%7B%22singular_name%22%3A%22Post%22%2C%22name%22%3A%22Posts%22%7D%2C%22page%22%3A%7B%22singular_name%22%3A%22Page%22%2C%22name%22%3A%22Pages%22%7D%2C%22attachment%22%3A%7B%22singular_name%22%3A%22Media%22%2C%22name%22%3A%22Media%22%7D%2C%22documentation%22%3A%7B%22singular_name%22%3A%22Doc%22%2C%22name%22%3A%22Docs%22%7D%7D%2C%22webpackPublicPath%22%3A%22https%3A%5C%2F%5C%2Fs2.wp.com%5C%2Fwp-content%5C%2Fmu-plugins%5C%2Fjetpack-plugin%5C%2Fsun%5C%2Fjetpack_vendor%5C%2Fautomattic%5C%2Fjetpack-search%5C%2Fbuild%5C%2Finstant-search%5C%2F%22%2C%22isPhotonEnabled%22%3Atrue%2C%22isFreePlan%22%3Afalse%2C%22apiRoot%22%3A%22https%3A%5C%2F%5C%2Fpublic-api.wordpress.com%5C%2F%22%2C%22apiNonce%22%3A%221c38c7e817%22%2C%22isPrivateSite%22%3Afalse%2C%22isWpcom%22%3Atrue%2C%22hasOverlayWidgets%22%3Afalse%2C%22widgets%22%3A%5B%5D%2C%22widgetsOutsideOverlay%22%3A%5B%5D%2C%22hasNonSearchWidgets%22%3Afalse%2C%22preventTrackingCookiesReset%22%3Atrue%2C%22adminQueryFilter%22%3A%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22post_type%22%3A%22documentation%22%7D%7D%5D%7D%7D%7D"));
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='https://s0.wp.com/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-search/build/instant-search/jp-search.js?m=1712608771i'></script>
+<script crossorigin='anonymous' crossorigin='anonymous' src="//stats.wp.com/w.js?ver=202418" id="jp-tracks-js"></script>
+<script crossorigin='anonymous' type='text/javascript'  src='https://s2.wp.com/wp-content/plugins/wp-parsely/build/loader.js?m=1651502011i'></script>
+<script data-parsely-site="developer.wordpress.com" src="https://cdn.parsely.com/keys/developer.wordpress.com/p.js?ver=3.3.2" id="parsely-cfg"></script>
+<script crossorigin='anonymous' type='text/javascript'  src='https://s0.wp.com/_static/??-eJyVzMsNgCAQANGGxBU5wMVYC5+NQoAlAtK+tOB93sAozFJumBu0GxNW0MrCKJYSc/hipIIPmO6jg1DhimR0XENd4Kd0ZHuasW6e8hyc6eCSCyX3TezhA4tiMUM='></script>
+
+	<script type="text/javascript">
+		(function () {
+			var wpcom_reblog = {
+				source: 'toolbar',
+
+				toggle_reblog_box_flair: function (obj_id, post_id) {
+
+					// Go to site selector. This will redirect to their blog if they only have one.
+					const postEndpoint = `https://wordpress.com/post`;
+
+					// Ideally we would use the permalink here, but fortunately this will be replaced with the 
+					// post permalink in the editor.
+					const originalURL = `${ document.location.href }?page_id=${ post_id }`; 
+					
+					const url =
+						postEndpoint +
+						'?url=' +
+						encodeURIComponent( originalURL ) +
+						'&is_post_share=true' +
+						'&v=5';
+
+					const redirect = function () {
+						if (
+							! window.open( url, '_blank' )
+						) {
+							location.href = url;
+						}
+					};
+
+					if ( /Firefox/.test( navigator.userAgent ) ) {
+						setTimeout( redirect, 0 );
+					} else {
+						redirect();
+					}
+				},
+			};
+
+			window.wpcom_reblog = wpcom_reblog;
+		})();
+	</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?67" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'33534099','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'33534099','v':'wpcom','tz':'0','user_id':'0','post':'99407','subd':'developer'}]);
+		_stq.push(['extra', {'crypt':'UE5tW3cvZGQwfi8sJmlwMiZpNnlpWkhMazZ0Y1MlQyxQLWcmRlFzVnpbTmttN3pXLWpGY0ktbHR1ayVkNDlKVStydmYuRlJZPzJXNzNDbi1Dekk0RX55WUJ3c2o5R0dtU19lYVgudEFJcSVCZlplP35rc2ZhYz1NK1M2RDNXN3xHSjdYZXFPLFMtdXdnQWVPRTJPcUZtT3BwW0g3ci9wTH5tTy0zaHFPTzZ4a2IyVnwleHdDRTVCbW9ScXA0b05YcWJQOEk1NC94ZVBnMWUubTZOUkpMVTZuN218SXctNzg2WyV1dU1EWg=='}]);
+_stq.push([ 'clickTrackerInit', '33534099', '99407' ]);
+</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>

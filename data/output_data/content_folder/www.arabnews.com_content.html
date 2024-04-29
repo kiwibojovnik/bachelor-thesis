@@ -1,0 +1,2719 @@
+<!--page__front--><!doctype html>
+<html itemscope itemtype="https://schema.org/Webpage" class="no-js" lang="en" dir="ltr">
+<head>
+<script async src="https://cdn.onthe.io/io.js/hmQ2k7Pkherb"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1588898890",accountID:"1660669",trustKey:"26315",xpid:"VQABUVBVARABUVZWBgEFUl0C",licenseKey:"754f84eaad",applicationID:"1574102493"};;/*! For license information please see nr-loader-spa-1.257.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>E,OP:()=>N,lF:()=>D,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>w,sU:()=>O});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function E(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const _=(0,n.mF)().o;var x=r(385),R=r(6818);const T={buildEnv:R.Re,customTransaction:void 0,disabled:!1,distMethod:R.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:R.q4,denyList:void 0,harvestCount:0,timeKeeper:void 0},S={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!S[e])throw new Error("Runtime for ".concat(e," was never set"));return S[e]}function O(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");S[e]=(0,i.D)(t,T);const r=(0,n.ek)(e);r&&(r.runtime=S[e])}function D(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.257.0",i="PROD",o="CDN",a="2.0.0-alpha.12"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(Date.now()-performance.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occurred while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{LP:()=>l,RP:()=>c,o5:()=>u});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){d(e),s[e].get(t)&&s[e].delete(t),s[e].size&&f(e)}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return h(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=[...s[e]];t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),h(e,r)})))}function h(e,t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)p(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}r.isolatedBacklog||delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=h(n),c=g(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=v()[s[e]];p&&p.push([f,e,r,a]);return a},get:m,listeners:g,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function p(e,t){n[e]=g(e).concat(t)}function g(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.fP)();d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>u,K4:()=>i,oD:()=>o,uT:()=>c,wO:()=>s});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>c,T:()=>s});var n=r(8325),i=r(385);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i._A.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},7872:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{D:()=>n,Z:()=>i})},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(385),i=r(7894);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n._A.NREUM||(n._A.NREUM={}),void 0===n._A.newrelic&&(n._A.newrelic=n._A.NREUM),n._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:n._A.setTimeout,SI:n._A.setImmediate,CT:n._A.clearTimeout,XHR:n._A.XMLHttpRequest,REQ:n._A.Request,EV:n._A.Event,PR:n._A.Promise,MO:n._A.MutationObserver,FETCH:n._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},7806:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>S,QU:()=>D,_L:()=>j,Gm:()=>M,Lg:()=>L,BV:()=>Z,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var A="fetch-",E=A+"body-",w=["arrayBuffer","blob","json","text","formData"],_=f._A.Request,x=f._A.Response,R="prototype";const T={};function S(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(_&&x&&f._A.fetch))return t;if(T[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return T[t.debugId]=1,w.forEach((e=>{r(_[R],e,E),r(x[R],e,E)})),r(f._A,"fetch",A),t.on(A+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(A+"done",[null,r],n)}else t.emit(A+"done",[e],n)})),t}const N={},O=["pushState","replaceState"];function D(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||N[t.debugId]++||(N[t.debugId]=1,c(t).inPlace(window.history,O,"-")),t}var P=r(3239);const I={},C=["appendChild","insertBefore","replaceChild"];function j(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||I[t.debugId])return t;I[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,C,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,P.m$)(!1)),e.removeEventListener("error",f,(0,P.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,P.m$)(!1)),e.removeEventListener("error",f,(0,P.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,P.m$)(!1)),e.addEventListener("error",f,(0,P.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function M(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const H={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(H[t.debugId])return t;H[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const U={},z="setTimeout",F="setInterval",B="clearTimeout",G="-start",q="-",V=[z,"setImmediate",F,B,"clearImmediate"];function Z(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(U[t.debugId]++)return t;U[t.debugId]=1;var r=c(t);return r.inPlace(f._A,V.slice(0,2),z+q),r.inPlace(f._A,V.slice(2,3),F+q),r.inPlace(f._A,V.slice(3),B+q),t.on(F+G,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(z+G,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var K=r(50);const W={},X=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(W[r.debugId]++)return r;W[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",E)}),(0,P.m$)(!1))}catch(e){(0,K.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",E)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,X,"-xhr-",E),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(A):u?u(A):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function E(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{Ef:()=>o,J0:()=>f,Mi:()=>l,Vb:()=>a,Ye:()=>c,fm:()=>u,i9:()=>s,t9:()=>i,u0:()=>d});var n=r(7056);const i=r(3325).D.sessionReplay,o={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c=1e6,u=64e3,d={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},l={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},f=5e3},3112:(e,t,r)=>{"use strict";r.d(t,{HM:()=>c,ev:()=>o,rU:()=>s,wi:()=>u});var n=r(234),i=r(385);function o(e){return i.il&&!0===(0,n.Mt)(e,"privacy.cookies_enabled")}function a(e){return!!n.Yu.MO&&o(e)&&!0===(0,n.Mt)(e,"session_trace.enabled")}function s(e){return!0===(0,n.Mt)(e,"session_replay.preload")&&a(e)}function c(e,t){return!!a(e)&&(!!t?.isNew||!!t?.state.sessionReplayMode)}function u(e,t){const r=t.correctAbsoluteTimestamp(e);return{originalTimestamp:e,correctedTimestamp:r,timestampDiff:e-r,timeKeeperOriginTime:t.originTime,timeKeeperCorrectedOriginTime:t.correctedOriginTime,timeKeeperDiff:Math.floor(t.originTime-t.correctedOriginTime)}}},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},6216:(e,t,r)=>{"use strict";r.d(t,{K8:()=>s,QZ:()=>c,cS:()=>o,sE:()=>i,t9:()=>a,vh:()=>u});var n=r(3325);const i=["click","keydown","submit"],o="api",a=n.D.softNav,s={INITIAL_PAGE_LOAD:"",ROUTE_CHANGE:1,UNSPECIFIED:2},c={INTERACTION:1,AJAX:2,CUSTOM_END:3,CUSTOM_TRACER:4},u={IP:"in progress",FIN:"finished",CAN:"cancelled"}},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>w,CB_END:()=>_,CB_START:()=>u,END:()=>E,FEATURE_NAME:()=>i,FETCH:()=>R,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>x,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>A,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,A="-start",E="-end",w="-body",_="cb"+E,x="jsTime",R="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2758:(e,t,r)=>{"use strict";r.d(t,{j:()=>_});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(8e3),c=r(3960),u=r(385),d=r(50),l=r(3081),f=r(8632),h=r(7144);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay",h.Ef.RECORD,h.Ef.PAUSE],g=["setErrorHandler","finished","addToTrace","addRelease"];var m=r(7894),v=r(7056);function b(){const e=(0,f.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}const y={};var A=r(2825);const E=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let w=!1;function _(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,_=arguments.length>3?arguments[3]:void 0,{init:x,info:R,loader_config:T,runtime:S={loaderType:p},exposed:N=!0}=t;const O=(0,f.gG)();R||(x=O.init,R=O.info,T=O.loader_config),(0,i.Dg)(e.agentIdentifier,x||{}),(0,i.GE)(e.agentIdentifier,T||{}),R.jsAttributes??={},u.v6&&(R.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,R);const D=(0,i.P_)(e.agentIdentifier),P=[R.beacon,R.errorBeacon];w||(D.proxy.assets&&(E(D.proxy.assets),P.push(D.proxy.assets)),D.proxy.beacon&&P.push(D.proxy.beacon),b(),(0,f.EZ)("activatedFeatures",A.T),e.runSoftNavOverSpa&&=!0===D.soft_navigations.enabled&&D.feature_flags.includes("soft_nav")),S.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?P:[]],(0,i.sU)(e.agentIdentifier,S),void 0===e.api&&(e.api=function(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.RP)(e,"api");const p={};var b=a.ee.get(e),A=b.get("tracer");y[e]=v.IK.OFF,b.on(h.Ef.REPLAY_RUNNING,(t=>{y[e]=t}));var E="api-",w=E+"ixn-";function _(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),T(E,n,!0,o||null===r?"session":void 0)(t,r)}function x(){}g.forEach((e=>{p[e]=T(E,e,!0,"api")})),p.addPageAction=T(E,"addPageAction",!0,n.D.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,T(E,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return _(e,t,"setCustomAttribute",r);(0,d.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,d.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setUserId=function(e){if("string"==typeof e||null===e)return _("enduser.id",e,"setUserId",!0);(0,d.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return _("application.version",e,"setApplicationVersion",!1);(0,d.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},p.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(l.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,b);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,d.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{b.emit("".concat(e,"-opt-in"))}))}catch(e){(0,d.Z)("An unexpected issue occurred",e)}},p[h.Ef.RECORD]=function(){(0,o.p)(l.xS,["API/recordReplay/called"],void 0,n.D.metrics,b),(0,o.p)(h.Ef.RECORD,[],void 0,n.D.sessionReplay,b)},p[h.Ef.PAUSE]=function(){(0,o.p)(l.xS,["API/pauseReplay/called"],void 0,n.D.metrics,b),(0,o.p)(h.Ef.PAUSE,[],void 0,n.D.sessionReplay,b)},p.interaction=function(e){return(new x).get("object"==typeof e?e:{})};const R=x.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(l.xS,["API/createTracer/called"],void 0,n.D.metrics,b),f||(0,o.p)(w+"tracer",[(0,m.z)(),e,r],i,n.D.spa,b),function(){if(A.emit((a?"":"no-")+"fn-start",[(0,m.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw A.emit("fn-err",[arguments,this,e],r),e}finally{A.emit("fn-end",[(0,m.z)()],r)}}}};function T(e,t,r,i){return function(){return(0,o.p)(l.xS,["API/"+t+"/called"],void 0,n.D.metrics,b),i&&(0,o.p)(e+t,[(0,m.z)(),...arguments],r?null:this,i,b),r?void 0:this}}function S(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,s.LP)(e,"api")})).catch((()=>{(0,d.Z)("Downloading runtime APIs failed..."),b.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{R[e]=T(w,e,void 0,f?n.D.softNav:n.D.spa)})),p.setCurrentRouteName=f?T(w,"routeName",void 0,n.D.softNav):T(E,"routeName",!0,n.D.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(l.xS,["API/noticeError/called"],void 0,n.D.metrics,b),(0,o.p)("err",[t,(0,m.z)(),!1,r,!!y[e]],void 0,n.D.jserrors,b)},u.il?(0,c.b2)((()=>S()),!0):S(),p}(e.agentIdentifier,_,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=N),w=!0}},8993:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.softNav]:9,[n.sessionReplay]:10}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.257.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.257.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-ANmGkHR8C/aA941pbKL4FBoXtrR+1TeFfluIxpUQ535UOjSH+R7WSAVxIstTpyEp073k4brvwNNUX2c10rYrIA==",433:"sha512-N8gRlCqzw2lS+m3CL/mMjjNHJfRgBBf1Wfm55jx7Wv931+jmXGDC3pxe1yqoD84+px94W8pRM9DOlwxTTz6YMQ==",164:"sha512-rwz2SW2q0W35zYJMBkNUd4b2uib909wiCPDSMMR/4ecOYSJOwG3RUWWIUW04vVmSYnmQbJHkMibLArUPJBimkw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.257.0.PROD"]=self["webpackChunk:NRBA-1.257.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8993);var e=i(50),t=i(7144),r=i(4402);class n{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.ky)(16);this.agentIdentifier=e}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.Ef.RECORD)}pauseReplay(){return this.#e(t.Ef.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var o=i(3325),a=i(234);const s=Object.values(o.D);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(2758);var d=i(8e3),l=i(5938),f=i(3960),h=i(385),p=i(3112),g=i(7872);class m extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.RP)(e,r):this.ee.on("".concat(this.featureName,"-opt-in"),(0,g.Z)((()=>{(0,d.RP)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if((0,p.ev)(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t),this.featureName===o.D.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.LP)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),r),this.abortHandler?.(),(0,d.LP)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};h.il?(0,f.b2)((()=>n()),!0):n()}#t(e,t){return e!==o.D.sessionReplay||(0,p.HM)(this.agentIdentifier,t)}}var v=i(7633);class b extends m{static featureName=v.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,v.t,r),this.importAggregator()}}var y=i(1117),A=i(1284);class E extends y.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,A.D)(e,(function(e,r){t[e]=w(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,A.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=w(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=_(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=w(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=_(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function _(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var x=i(8632),R=i(4351);var T=i(5546),S=i(7956),N=i(3239),O=i(9251),D=i(7894);class P extends m{static featureName=O.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,O.t,r),h.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,D.z)()],void 0,O.t,this.ee)),!0),(0,N.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,D.z)()],void 0,O.t,this.ee))),this.importAggregator())}}var I=i(3081);class C extends m{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var j=i(6660);class k{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class M extends m{static featureName=j.t;#r=new Set;#n=!1;constructor(e,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,j.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,r)=>{this.abortHandler&&!this.#r.has(r)&&(this.#r.add(r),(0,T.p)("err",[this.#i(r),(0,D.z)()],void 0,o.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#i(e),(0,D.z)(),!0,{},this.#n],void 0,o.D.jserrors,this.ee)})),this.ee.on(t.Ef.REPLAY_RUNNING,(e=>{this.#n=e})),h._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#o(e),(0,D.z)(),!1,{unhandledPromiseRejection:1},this.#n],void 0,o.D.jserrors,this.ee)}),(0,N.m$)(!1,this.removeOnAbort?.signal)),h._A.addEventListener("error",(e=>{this.abortHandler&&(this.#r.has(e.error)?this.#r.delete(e.error):(0,T.p)("err",[this.#a(e),(0,D.z)(),!1,{},this.#n],void 0,o.D.jserrors,this.ee))}),(0,N.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#s,this.importAggregator()}#s(){this.removeOnAbort?.abort(),this.#r.clear(),this.abortHandler=void 0}#i(e){return e instanceof Error?e:void 0!==e?.message?new k(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new k("string"==typeof e?e:(0,R.P)(e))}#o(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new k(t);const r=this.#i(e.reason);return r.message=t+r.message,r}#a(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new k(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new k(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let L=1;const U="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===h._A?0:(0,H.X)(e,U,(function(){return L++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,R.P)(e).length}catch(e){return}}}var B=i(7806),G=i(7243);class q{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,a.DL)(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!i)return null;var s=(0,r.M)(),c=(0,r.Ht)(),u=Date.now(),d={spanId:s,traceId:c,timestamp:u};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(s,c),d.traceContextStateHeader=this.generateTraceContextStateHeader(s,u,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(s,c,u,n,i,o)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof h._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,R.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,a.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,a.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,G.e)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}isDtEnabled(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),Z=["load","error","abort","timeout"],K=Z.length,W=a.Yu.REQ,X=a.Yu.XHR;class Y extends m{static featureName=V.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,r),(0,a.OP)(e).xhrWrappable){this.dt=new q(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};h._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};J(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,o.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,r,n){function i(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=w,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){_(t,e)}),(0,N.m$)(!1)),h.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,N.m$)(!1))}function s(e){this.params={method:e[0]},J(this,e[1]),this.metrics={}}function c(t,r){var i=(0,a.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var o=n.generateTracePayload(this.parsedOrigin);if(o){var s=!1;o.newrelicHeader&&(r.setRequestHeader("newrelic",o.newrelicHeader),s=!0),o.traceContextParentHeader&&(r.setRequestHeader("traceparent",o.traceContextParentHeader),o.traceContextStateHeader&&r.setRequestHeader("tracestate",o.traceContextStateHeader),s=!0),s&&(this.dt=o)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<K;s++)r.addEventListener(Z[s],this.listener,(0,N.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function l(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&h.il&&(t=""+h._A.location.href):e[0]&&e[0].url?t=e[0].url:h._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,G.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=n.generateTracePayload(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,i)&&(this.dt=i);else{var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),s(o.headers,i)&&(this.dt=i),e.length>1?e[1]=o:e.push(o)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:h._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),J(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function E(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var i={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this,o.D.ajax)}function w(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;i<K;i++)e.removeEventListener(Z[i],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):_(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,o.D.ajax))}}function _(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var i=r.getResponseHeader("X-NewRelic-App-Data");i&&((0,T.p)(I.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,o.D.metrics,t),e.params.cat=i.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",i),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",l),t.on("xhr-load-removed",f),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",E)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function J(e,t){var r=(0,G.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Q=i(3614);const{BST_RESOURCE:ee,RESOURCE:te,START:re,END:ne,FEATURE_NAME:ie,FN_END:oe,FN_START:ae,PUSH_STATE:se}=Q;var ce=i(7056);class ue extends m{static featureName=t.t9;constructor(e,r){let n,i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,t.t9,i),this.replayRunning=!1;try{n=JSON.parse(localStorage.getItem("".concat(ce.Bq,"_").concat(ce.K4)))}catch(e){}this.#c(n)?this.#u(n?.sessionReplayMode):this.importAggregator(),this.ee.on("err",(e=>{this.replayRunning&&(this.errorNoticed=!0,(0,T.p)(t.Ef.ERROR_DURING_REPLAY,[e],void 0,this.featureName,this.ee))})),this.ee.on(t.Ef.REPLAY_RUNNING,(e=>{this.replayRunning=e}))}#c(e){return e&&(e.sessionReplayMode===ce.IK.FULL||e.sessionReplayMode===ce.IK.ERROR)||(0,p.rU)(this.agentIdentifier)}async#u(e){const{Recorder:t}=await Promise.all([i.e(111),i.e(433)]).then(i.bind(i,4345));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier,ee:this.ee}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording,this.importAggregator({recorder:this.recorder,errorNoticed:this.errorNoticed})}}var de=i(6216);class le extends m{static featureName=de.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,de.t9,r),!h.il||!a.Yu.MO)return;const n=(0,B.QU)(this.ee),i=(0,B.em)(this.ee),o=()=>(0,T.p)("newURL",[(0,D.z)(),""+window.location],void 0,this.featureName,this.ee);n.on("pushState-end",o),n.on("replaceState-end",o);try{this.removeOnAbort=new AbortController}catch(e){}(0,N.bP)("popstate",(e=>(0,T.p)("newURL",[e.timeStamp,""+window.location],void 0,this.featureName,this.ee)),!0,this.removeOnAbort?.signal);let s=!1;const c=new a.Yu.MO(((e,t)=>{s||(s=!0,requestAnimationFrame((()=>{(0,T.p)("newDom",[(0,D.z)()],void 0,this.featureName,this.ee),s=!1})))})),u=(0,g.D)((e=>{(0,T.p)("newUIEvent",[e],void 0,this.featureName,this.ee),c.observe(document.body,{attributes:!0,childList:!0,subtree:!0,characterData:!0})}),100,{leading:!0});i.on("fn-start",(e=>{let[t]=e;de.sE.includes(t?.type)&&u(t)}));for(let e of de.sE)document.addEventListener(e,(()=>{}));this.abortHandler=function(){this.removeOnAbort?.abort(),c.disconnect(),this.abortHandler=void 0},this.importAggregator({domObserver:c})}}var fe=i(7836);const{FEATURE_NAME:he,START:pe,END:ge,BODY:me,CB_END:ve,JS_TIME:be,FETCH:ye,FN_START:Ae,CB_START:Ee,FN_END:we}=fe;var _e=i(4649);class xe extends m{static featureName=_e.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,_e.t,r),this.importAggregator()}}new class extends n{constructor(t,r){super(r),h._A?(this.sharedAggregator=new E({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(b),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.D.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initialize the agent. Could not determine the runtime environment.")}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.p[e.featureName]-o.p[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.D.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.D.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.D.softNav)return;const n=function(e){switch(e){case o.D.ajax:return[o.D.jserrors];case o.D.sessionTrace:return[o.D.ajax,o.D.pageViewEvent];case o.D.sessionReplay:return[o.D.sessionTrace];case o.D.pageViewTiming:return[o.D.pageViewEvent];default:return[]}}(r.featureName);n.every((e=>e in this.features))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has not been initialized (").concat((0,R.P)(n),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[Y,b,P,class extends m{static featureName=ie;constructor(e,t){if(super(e,t,ie,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!h.il)return;const r=this.ee;let n;(0,B.QU)(r),this.eventsEE=(0,B.em)(r),this.eventsEE.on(ae,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(oe,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,o.D.sessionTrace,r)})),r.on(se+re,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),r.on(se+ne,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,o.D.sessionTrace,r)}));try{n=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(ee,[t],void 0,o.D.sessionTrace,r)})),n.observe({type:te,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:n})}},ue,C,xe,M,le,class extends m{static featureName=he;constructor(e,t){if(super(e,t,he,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!h.il)return;if(!(0,a.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,n=0;const i=this.ee.get("tracer"),o=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),l=(0,B.u5)(this.ee),f=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){f.emit("newURL",[""+window.location,t])}function m(){n++,r=window.location.hash,this[Ae]=(0,D.z)()}function v(){n--,window.location.hash!==r&&g(0,!0);var e=(0,D.z)();this[be]=~~this[be]+e-this[Ae],this[we]=e}function b(e,t){e.on(t,(function(){this[t]=(0,D.z)()}))}this.ee.on(Ae,m),s.on(Ee,m),o.on(Ee,m),this.ee.on(we,v),s.on(ve,v),o.on(ve,v),this.ee.buffer([Ae,we,"xhr-resolved"],this.featureName),d.buffer([Ae],this.featureName),c.buffer(["setTimeout"+ge,"clearTimeout"+pe,Ae],this.featureName),u.buffer([Ae,"new-xhr","send-xhr"+pe],this.featureName),l.buffer([ye+pe,ye+"-done",ye+me+pe,ye+me+ge],this.featureName),f.buffer(["newURL"],this.featureName),p.buffer([Ae],this.featureName),s.buffer(["propagate",Ee,ve,"executor-err","resolve"+pe],this.featureName),i.buffer([Ae,"no-"+Ae],this.featureName),o.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(l,ye+pe),b(l,ye+"-done"),b(o,"new-jsonp"),b(o,"jsonp-end"),b(o,"cb-start"),f.on("pushState-end",g),f.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,N.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,N.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,n>1)}),(0,N.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#s,this.importAggregator()}#s(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="Arab News RSS" href="https://www.arabnews.com/rss.xml" />
+<link rel="shortcut icon" href="https://www.arabnews.com/sites/default/files/index23.png" type="image/png" />
+<meta property="fb:pages" content="10250877124" />
+<meta name="description" content="Arab News - Saudi Arabia based leading English newspaper in the Middle East. Keep up with the latest breaking news, regional news, politics, and business news." />
+<meta name="abstract" content="Arab News - Saudi Arabia based leading English newspaper in the Middle East. Keep up with the latest breaking news, regional news, politics, and business news." />
+<meta name="keywords" content="Jubail,Al-Ahsa,Al-Kharj,Taif,Qatif,oil,Dammam,Abha,Asir,Yanbu,islam,jobs,sports,Khalij times,gulf news,saudi gazette,Riyadh,Tabuk,Mecca,Medina,AlMadinah,Jeddah,Makkah,Hail,Mecca,Makkah,Eastern,King Abdullah, jobs in Saudi,work in saudi arabia, umrah,Hajj،عرب نيوز" />
+<link rel="canonical" href="https://www.arabnews.com/" />
+<link rel="shortlink" href="https://www.arabnews.com/" />
+<meta property="fb:app_id" content="331299401208963" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Arab News" />
+<meta property="og:url" content="https://www.arabnews.com/" />
+<meta property="og:title" content="Arab News" />
+<meta property="og:description" content="Established in 1975, the Saudi-based Arab News is the Middle East’s newspaper of record and the biggest English language daily in the Kingdom." />
+<meta property="og:image" content="https://www.arabnews.com/sites/all/themes/narabnews/assets/img/logo.jpg" />
+<meta property="og:image:url" content="https://www.arabnews.com/sites/all/themes/narabnews/assets/img/logo.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Arab_News" />
+<meta name="twitter:site:id" content="69172612" />
+<meta name="twitter:creator" content="@Arab_News" />
+<meta name="twitter:url" content="https://www.arabnews.com/" />
+<meta name="twitter:creator:id" content="69172612" />
+<meta name="twitter:title" content="Arab News" />
+<meta name="twitter:description" content="Worldwide Latest Breaking News &amp; Updates" />
+<meta name="twitter:image" content="https://www.arabnews.com/sites/all/themes/narabnews/assets/img/logo.jpg" />
+<meta itemprop="name" content="Arab News" />
+<meta itemprop="description" content="Worldwide Latest Breaking News &amp; Updates" />
+<meta itemprop="image" content="https://www.arabnews.com/sites/all/themes/narabnews/assets/img/logo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="fb:pages" content="10250877124" />
+<title>Arab News | Worldwide News, Latest Breaking News & Updates</title>
+<link type="text/css" rel="stylesheet" href="https://www.arabnews.com/sites/default/files/css/css_rEI_5cK_B9hB4So2yZUtr5weuEV3heuAllCDE6XsIkI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.arabnews.com/sites/default/files/css/css_9hm-p5LGPaXT-8OIGbF8FHMc8D4ubbYzyWTJ4ia_P10.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.arabnews.com/sites/default/files/css/css_4FArPz7mDmQSyiedbEAWYuEf-Qd7GKj-TF3_eUitDfU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.arabnews.com/sites/default/files/css/css_fpDlwRFNkGZC2kzx14mIbyaFfNTgGw-9RArTnrxJRiY.css" media="all" />
+<script type="text/javascript" src="https://www.arabnews.com/sites/default/files/js/js_zS-CmNFGyegtLYJmqFRpxQvvQrfPIFrOMq_3T3C8sZE.js"></script>
+<script type="text/javascript" src="https://www.arabnews.com/sites/default/files/js/js_z6QwRydc-HDbvHQw5238Sm8aAe-kyRpZMAJ_Ikxi88Y.js"></script>
+<script type="text/javascript" src="https://www.arabnews.com/sites/default/files/js/js_6EA9Y4wdfUCaOC4nH7KJ9Dx-Q-N4gC6aoZx01M8WPzQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  window.most_article = function (period, folder_type) {
+      jQuery.getJSON('https://www.arabnews.com/sites/default/files/'+folder_type+'/'+period+'.json?v='+(new Date).getTime(), function(data) {
+        var _url ='https://www.arabnews.com/sites/default/files/'+folder_type+'/'+period+'.json';
+          //console.log(_url);
+          //console.log(data);
+          var html="";
+          jQuery.each(data.articles.list, function(i,item){
+          var _number_view = "";
+          if(folder_type == "mostread"){
+            _number_view = item.pageviews;
+          } else{
+            _number_view = item.facebook;
+          }
+          var _nid_article =  item.url.split("/"); 
+          var _img_public = item.type_article.split("public://");
+
+          //console.log(_img_public);
+
+          if(_img_public.length == 2){
+            var _img_most = 'https://www.arabnews.com/sites/default/files/'+_img_public[1];
+            
+          } else if (_img_public.length == 1){
+            var _img_most = item.type_article;
+          }
+          html +='<div class="object-item" data-nid="'+_nid_article[2]+'"><div class="media-object"><div class="media-object-section"><div class="media-object-img"><a href="'+item.url+'"><img title="'+item.page+'" alt="'+item.page+'" width="100" src="'+_img_most+'"></a></div><div class="meta-area"><span class="views-count  views-count-placeholder nid-'+_nid_article[2]+'"><i class="icomoon-icon icon-views"></i> <span>'+_number_view+'</span></span></div></div><div class="media-object-section"><h6 class="font-bold"><a href="'+item.url+'">'+item.page+'</a></h6></div></div>';
+              if (i == 5){
+              return false;
+              }    
+          });
+          var _div_id ='#share_'+folder_type+'_'+period;
+          jQuery(_div_id).append(html);
+      });
+    }
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.arabnews.com/sites/default/files/js/js_65qAiRuJjlLf4e1Qgex4hhocjEB2cK629zFq8wSbOsE.js"></script>
+<script type="text/javascript" src="https://www.arabnews.com/sites/default/files/js/js_3zTtuLqPRIZJB8pxEjcaQHIJo5boq1iPxcDu4ewPlqk.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"narabnews","theme_token":"OqChfJfWGI_r1I0b0WXmwm6SVCZGtjEPvgkW0SOCR60","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"sites\/all\/modules\/dialog\/misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/ajax_links_api\/ajax_links_api.js":1,"sites\/all\/modules\/fb_instant_articles\/modules\/fb_instant_articles_display\/js\/admin.js":1,"0":1,"sites\/all\/modules\/views_ajax_get\/views_ajax_get.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/gd_infinite_scroll\/js\/gd_infinite_scroll.js":1,"sites\/all\/themes\/narabnews\/assets\/js\/Pageviews-2.0.js":1,"sites\/all\/themes\/narabnews\/assets\/js\/mostread.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"sites\/all\/modules\/ajax_links_api\/ajax_links_api.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/gd_infinite_scroll\/css\/gd_infinite_scroll.css":1,"sites\/all\/themes\/narabnews\/assets\/css\/app.css":1}},"ajax_links_api":{"selector":"#content","trigger":".ajax-link","negative_triggers":"#toolbar a","html5":0,"vpager":1},"viewsAjaxGet":["ticker"],"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:b4e21e0b5aaf884db858ec15e4ddb0f8":{"view_name":"ticker","view_display_id":"block","view_args":"4+37+38+39+40+2+1+5+8+50+51+52+1351+147","view_path":"node","view_base_path":"ticker-json","view_dom_id":"b4e21e0b5aaf884db858ec15e4ddb0f8","pager_element":0}}},"urlIsAjaxTrusted":{"\/views\/ajax":true,"\/":true},"gd_infinite_scroll":{"1":{"img_path":"https:\/\/www.arabnews.com\/sites\/all\/modules\/gd_infinite_scroll\/images\/ajax-loader.gif","name":"opinion_list","pager_selector":"ul.pager","next_selector":"li.pager-next a:first","content_selector":".view-landing-page.view-id-landing_page.view-display-id-page .view-content","items_selector":".objects-list .object-item","load_more":1,"load_more_markup":"\u003Cdiv class=\u0022btns-area load-more\u0022\u003E\u003Cbutton class=\u0022button hollow small gray\u0022\u003ELoad more\u003C\/button\u003E\u003C\/div\u003E","ajax_pager":0,"database_override":true,"url":"opinion\r\n"}}});
+//--><!]]>
+</script>
+<script type="text/javascript">
+      
+      // var obj = new Pageviews();
+      // obj.getViews("1554791", function(data) {
+      //         console.log('data', data)
+      //     });
+   </script>
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+        window.googletag = window.googletag || {cmd: []};
+         var anchorSlot;
+            function isMobileDevice() {
+        return /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+        googletag.cmd.push(function() {
+  var isDesktop = !isMobileDevice() && window.innerWidth > 1024;
+            var isTablet = window.innerWidth > 767 && window.innerWidth <= 1024;
+            var isMobile = isMobileDevice();
+
+             googletag.pubads().disableInitialLoad();
+
+             var topMapping = googletag.sizeMapping()
+            .addSize([1080, 0], [[728, 90],[970,90]])
+            .addSize([750, 400], [[728, 90],[970,250],[970,90]])
+            .addSize([470, 400], [[320, 50], [320, 100], [300, 100], [300,50]])
+            .addSize([0, 0], [[320, 50], [320, 100], [300, 100], [320, 50]])
+            .build();
+
+            var midMapping = googletag.sizeMapping()
+            .addSize([1080, 0], [[300, 250], [336, 280], [300, 600], [160, 600]])
+            .addSize([750, 400], [[300, 250], [336, 280],[300,600],[160,600]])
+            .addSize([470, 400], [[300, 250], [336, 280],[250, 250], [200, 200]])
+            .addSize([0, 0], [[300, 250], [336, 280],[250, 250], [200, 200]])
+            .build();
+
+            var bottomMapping = googletag.sizeMapping()
+            .addSize([1080, 0], [[728, 90], [970, 250], [970, 90], [300, 250]])
+            .addSize([750, 400], [[250, 250],[300, 250], [336, 280]])
+            .addSize([470, 400], [[300, 250], [250, 250], [200, 200], [336, 280]])
+            .addSize([0, 0], [[320, 50], [250, 250], [200, 200], [336, 280]])
+            .build();
+
+            googletag.defineSlot('/5910/arabnews/home', [1, 1], 'div-gpt-ad-3341368-0').addService(googletag.pubads());
+
+            googletag.defineOutOfPageSlot('/5910/arabnews/home', 'div-gpt-ad-3341368-1')
+             .addService(googletag.pubads());            googletag.defineSlot('/5910/arabnews/home',  [[728, 90], [970, 90], [970, 250], [970, 90], [320, 50], [320, 100], [300, 100], [300, 50]], 'div-gpt-ad-3341368-2')
+                .defineSizeMapping(topMapping)
+                .setTargeting('position', 'atf')
+                .addService(googletag.pubads());
+
+          googletag.defineSlot('/5910/arabnews/home',   [[300, 250], [336, 280], [300, 600], [160, 600], [250, 250], [200, 200]], 'div-gpt-ad-3341368-3')
+        .defineSizeMapping(midMapping)
+        .setTargeting('position', 'Mid1')
+        .addService(googletag.pubads());
+
+            googletag.defineSlot('/5910/arabnews/home',  [[300, 250], [336, 280], [300, 600], [160, 600], [250, 250], [200, 200],['Fluid']], 'div-gpt-ad-3341368-4')
+            .defineSizeMapping(midMapping)
+            .setTargeting('position', 'Mid2')
+       .addService(googletag.pubads());
+         
+            googletag.defineSlot('/5910/arabnews/home', [[728, 90], [970, 250], [970, 90], [300, 250], [250, 250], [336, 280], [320, 50], [200, 200],['Fluid']], 'div-gpt-ad-3341368-5')
+                .defineSizeMapping(bottomMapping)
+                .setTargeting('position', 'btf')
+                .addService(googletag.pubads());
+
+
+             if (document.body.clientWidth <= 1024) {
+             anchorSlot = googletag.defineOutOfPageSlot(
+            '/5910/arabnews/home', googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR);
+            }
+             if (anchorSlot) {
+                 anchorSlot
+              .setTargeting('Page', 'Homepage')
+              .addService(googletag.pubads());
+        }
+
+            // Configure page-level targeting.
+            googletag.pubads().setTargeting('Page',['Homepage']);
+            googletag.pubads().setTargeting('url', [window.location.pathname]);
+            googletag.pubads().enableLazyLoad({
+                // Fetch slots within 2 viewports.
+                fetchMarginPercent: 200,
+                // Render slots within 1 viewports.
+                renderMarginPercent: 100,
+                mobileScaling: 2.0
+            });
+						var ppid = '88115770316ecc956fe47214fa2b01fae75b128affcf715946b285289eb15d94'; 
+            googletag.pubads().setPublisherProvidedId(ppid);
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.pubads().setCentering(true);
+            googletag.enableServices();
+        });
+
+        // networkCode is provided
+        window.googletag = window.googletag || { cmd: [] };
+        googletag.secureSignalProviders = googletag.secureSignalProviders || [];
+        googletag.secureSignalProviders.push({
+            networkCode: "5910",
+            collectorFunction: () => {
+                // ...custom signal generation logic...
+                return Promise.resolve("signal");
+            },
+        });
+    </script>
+<script async="async" src="https://cdn.adsafeprotected.com/iasPET.1.js"></script>
+<script>
+    var IAS_PET_TIMEOUT = 1500;
+    var adserverRequestSent = false;
+
+    var iasDataHandler;
+    var __iasPET = __iasPET || {};
+    __iasPET.queue = __iasPET.queue || [];
+    __iasPET.pubId = '926618';
+
+    requestAds = function() {
+      console.log("Display Ads function");
+      if (adserverRequestSent) return;
+      clearTimeout(iasTimeOut);
+      googletag.pubads().refresh();
+      adserverRequestSent = true;
+    }
+
+    iasDataHandler = function (adSlotData) {
+      console.log("Callback function");
+      __iasPET.setTargetingForGPT();
+      requestAds();
+    }
+
+    var iasTimeOut = setTimeout(function() {
+      requestAds();
+    }, IAS_PET_TIMEOUT);
+
+    googletag.cmd.push(function() {
+      var gptSlots = googletag.pubads().getSlots();
+      var iasPETSlots = [];
+
+      for (var i = 0; i < gptSlots.length; i++) {
+        var sizes = gptSlots[i].getSizes().map(function(size) {
+              if (size.getWidth && size.getHeight)
+                return [size.getWidth(), size.getHeight()];
+              else
+                return [1, 1];
+          });
+        iasPETSlots.push({
+          adSlotId: gptSlots[i].getSlotElementId(),
+          size: sizes,
+          adUnitPath: gptSlots[i].getAdUnitPath()
+        });
+      }
+
+      __iasPET.queue.push({
+        adSlots: iasPETSlots,
+        dataHandler: iasDataHandler
+      });
+    });
+    </script>
+
+
+<script type="text/javascript"> var d_site = d_site || '4FEB7F626C76F9D3DAB07405'; </script>
+<script src="https://widget.privy.com/assets/widget.js"></script>
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "42c76e57-8ca3-4fa8-bbe4-f2040d289bfe",
+      autoRegister: false,
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K2V74X2');</script>
+
+</head>
+<body class="html front not-logged-in no-sidebars page-node domain-www-arabnews-com">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2V74X2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<img src="//mena-gmtdmp.mookie1.com/t/v2/learn?tagid=V2_605775&src.rand=[timestamp]" style="display:none;" />
+<div id="main-wrap">
+<div canvas="container">
+<div class="container">
+<div id="sb-blocker"></div>
+<script>
+
+    jQuery.ajax({
+      url: '/views/ajax',
+      type: 'get',
+      data: {
+        view_name: 'ticker',
+        view_display_id: 'block_2', //your display id
+        view_args: {}, // your views arguments
+      },
+      dataType: 'json',
+      success: function (response) {
+        if (response[1] !== undefined) {
+           jQuery('.break-news-header').append(response[1].data);
+          // Drupal.attachBehaviors();
+         //  Drupal.attachBehaviors($('#raayleft'), Drupal.settings);
+        }
+
+      },
+      complete:function(){
+           // jQuery(".author-slick").slick("getSlick").refresh();
+      }
+});
+</script>
+<style>
+.twitter-timeline {
+  display: none !important;
+}
+</style>
+<div id="div-gpt-ad-3341368-0">
+<script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-0'); });
+    </script>
+</div>
+<div id="div-gpt-ad-3341368-1">
+<script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-1'); });
+    </script>
+</div>
+<header id="main-header">
+<div id="sticky-header-waypoint">
+<div class="break-news-header show-for-large">
+</div>
+<div class="sticky-header-spacer"></div>
+<div class="main-header-before show-for-medium">
+<div class="grid-container">
+<div class="grid-x grid-margin-x">
+<div class="cell shrink show-for-medium-only">
+<button class="toggle-nav-panel" type="button" aria-label="Menu" aria-controls="navigation"><i class="icomoon-icon icon-hamburger"></i></button>
+</div>
+<div class="cell auto">
+<div class="dropdown-wrapper">
+<button class="dropdown button small" type="button"><i class="icomoon-icon icon-arrow-down"></i>Arab News</button>
+<div class="dropdown-menu">
+<ul class="menu vertical">
+<li><a href="https://www.arabnews.pk/">Arab News PK</a></li>
+<li><a href="https://www.arabnews.jp/">Arab News JP</a></li>
+<li><a href="https://www.arabnews.fr/">Arab News FR</a></li>
+</ul>
+</div>
+</div>
+<div class="current-date">
+<time>Monday .  April 29, 2024 </time> </div>
+</div>
+<div class="cell shrink">
+<div class="text-right">
+<div class="holder-area">
+<div class="search-area">
+<form class="searchbox" action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+<h2 class="element-invisible">Search form</h2>
+<div class="form-item form-type-textfield form-item-search-block-form">
+<label class="element-invisible" for="edit-search-block-form--2">Search </label>
+<input title="Enter the terms you wish to search for." placeholder="Search here ..." class="searchbox-input form-text" onkeyup="buttonUp();" type="text" id="edit-search-block-form--2" name="search_block_form" value size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input class="searchbox-submit form-submit" type="submit" id="edit-submit" name="op" value="" /><span class="searchbox-icon"><i class="icomoon-icon icon-search"></i></span></div><input type="hidden" name="form_build_id" value="form-GXCn2KxeFasO3fQeLY7pKi3K50rBaEPg5dcZZZoGh9I" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form> </div>
+</div>
+<div class="socials-area">
+<div class="socials-btns">
+<a href="https://www.facebook.com/pages/Arab-News/10250877124" class="social-btn facebook-btn-hover" target="_blank"><i class="icomoon-icon icon-facebook"></i></a>
+<a href="https://twitter.com/arabnews" class="social-btn twitter-btn-hover" target="_blank"><i class="icomoon-icon icon-twitter"></i></a>
+<a href="https://www.linkedin.com/company/arabnews/?viewAsMember=true" class="social-btn linkedin-btn-hover" target="_blank"><i class="icomoon-icon icon-linkedin"></i></a>
+<a href="https://www.instagram.com/arabnews" class="social-btn instagram-btn-hover" target="_blank"><i class="icomoon-icon icon-instagram"></i></a>
+
+<a href="/rss" class="social-btn" target="_blank"><i class="icomoon-icon icon-rss"></i></a>
+<a href="https://www.youtube.com/channel/UCI8DegIWgK51cGakXcf1dOQ" class="social-btn youtube-btn-hover" target="_blank"><i class="icomoon-icon icon-youtube2"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-header-inner show-for-medium">
+<div class="grid-container">
+<div class="grid-x grid-margin-x align-justify align-middle">
+<div class="cell auto">
+<div class="logo">
+<a href="/"><img src="/sites/all/themes/narabnews/assets/img/logo-with-banners.png?22" alt="Logo" title="Arabnews"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="sticky-header" canvas>
+<div class="ad-block ad-block-header block-wrapper bottom-spacer" id="leaderboard" data-duration="2">
+<div class="block-wrapper__content">
+<div class="ad-block__holder small text-center">
+<script>
+if (!isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-2'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-2'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+</div>
+<div class="break-news-header show-for-medium-only">
+</div>
+<div class="main-header-after show-for-large">
+<div class="grid-container">
+<div class="grid-x grid-margin-x">
+<div class="cell">
+<nav class="nav-container">
+<ul class="menu align-center show-for-medium"><li class="first expanded saudi-arabia-theme-bg-hover menu-503"><a href="/saudiarabia">Saudi Arabia</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-24056"><a href="/saudiarabia">News</a></li>
+<li class="leaf menu-23576"><a href="/tags/theplace">The Place</a></li>
+<li class="leaf menu-23586"><a href="/thespace">The Space</a></li>
+<li class="leaf menu-24061"><a href="/tags/who%E2%80%99s-who">Who&#039;s Who</a></li>
+<li class="leaf menu-23596"><a href="/ksa_today">KSA Today</a></li>
+<li class="last leaf menu-31776"><a href="https://www.arabnews.com/GreenAndBlue">Green &amp; Blue</a></li>
+</ul></div></li>
+<li class="leaf middle-east-theme-bg-hover menu-501"><a href="/middleeast">Middle East</a></li>
+<li class="leaf world-theme-bg-hover menu-506"><a href="/world">World</a></li>
+<li class="expanded economy-theme-bg-hover menu-498"><a href="/economy">Business</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-29656"><a href="/insight">Insight</a></li>
+<li class="leaf menu-1688"><a href="/category/main-category/economy/corporate-news">Corporate News</a></li>
+<li class="last leaf menu-31846"><a href="/EyeOnAI">Eye On AI</a></li>
+</ul></div></li>
+<li class="expanded menu-16276"><a href="/main-category/media">Media</a><div class="submenu"><ul class="submenu-list"><li class="first last leaf menu-29551"><a href="/media-list">MEDIA POWER LISTS</a></li>
+</ul></div></li>
+<li class="expanded lifestyle-theme-bg-hover menu-500"><a href="/lifestyle">Lifestyle</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-1690"><a href="/lifestyle/art-culture">Art &amp; Culture</a></li>
+<li class="leaf menu-1691"><a href="/lifestyle/fashion">fashion</a></li>
+<li class="leaf menu-1692"><a href="/lifestyle/offbeat">Offbeat</a></li>
+<li class="leaf menu-1700"><a href="/category/main-category/lifestyle/travel">Travel</a></li>
+<li class="leaf menu-1699"><a href="/main-category/entertainment">Entertainment</a></li>
+<li class="leaf menu-1697"><a href="/category/main-category/lifestyle/food-health">Food &amp; Health</a></li>
+<li class="leaf menu-15896"><a href="/thesix">The Six</a></li>
+<li class="last leaf menu-16861"><a href="/main-category/books">Books &amp; Gaming</a></li>
+</ul></div></li>
+<li class="expanded menu-502"><a href="/opinion">Opinion</a><div class="submenu"><ul class="submenu-list"><li class="first last leaf menu-1693"><a href="/category/main-category/opinion/editorial">Editorial</a></li>
+</ul></div></li>
+<li class="expanded sports-theme-bg-hover menu-504"><a href="/sport">Sport</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-30451"><a href="/SaudiFootball">Saudi Football</a></li>
+<li class="leaf menu-30436"><a href="/main-category/football">Football</a></li>
+<li class="leaf menu-30446"><a href="/main-category/motorsport">Motorsport</a></li>
+<li class="leaf menu-30456"><a href="/main-category/tennis">Tennis</a></li>
+<li class="leaf menu-30426"><a href="/Cricket">Cricket</a></li>
+<li class="leaf menu-30441"><a href="/main-category/golf">Golf</a></li>
+<li class="leaf menu-30431"><a href="/main-category/e-sport">E-sport</a></li>
+<li class="last leaf menu-30461"><a href="/podcast/sport">Podcast</a></li>
+</ul></div></li>
+<li class="expanded menu-27456"><a href="/research">Research &amp; Studies</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-28416"><a href="/research-papers">Research Papers</a></li>
+<li class="leaf menu-27466"><a href="/yougov">YouGov</a></li>
+<li class="leaf menu-27461"><a href="/deepdive">Deep Dive </a></li>
+<li class="last leaf menu-27471"><a href="https://www.preachersofhate.com/">Preachers of Hate</a></li>
+</ul></div></li>
+<li class="last leaf menu-2052"><a href="/podcast">Podcast</a></li>
+</ul> </nav>
+</div>
+</div>
+</div>
+</div>
+<div id="area-to-stick">
+<div class="grid-x gutters-1x align-justify align-middle">
+<div class="cell shrink hide-for-large">
+<button class="toggle-nav-panel" type="button" aria-label="Menu" aria-controls="navigation"><i class="icomoon-icon icon-hamburger"></i></button>
+</div>
+<div class="cell shrink">
+<div class="logo">
+<a href="/"><img src="/sites/all/themes/narabnews/assets/img/45-logo-mobile-new.png?21sssa12" alt="Logo" title="Arabnews"></a>
+</div>
+</div>
+<div class="cell auto show-for-large">
+<nav class="nav-container">
+<ul class="menu align-center show-for-medium"><li class="first expanded saudi-arabia-theme-bg-hover menu-503"><a href="/saudiarabia">Saudi Arabia</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-24056"><a href="/saudiarabia">News</a></li>
+<li class="leaf menu-23576"><a href="/tags/theplace">The Place</a></li>
+<li class="leaf menu-23586"><a href="/thespace">The Space</a></li>
+<li class="leaf menu-24061"><a href="/tags/who%E2%80%99s-who">Who&#039;s Who</a></li>
+<li class="leaf menu-23596"><a href="/ksa_today">KSA Today</a></li>
+<li class="last leaf menu-31776"><a href="https://www.arabnews.com/GreenAndBlue">Green &amp; Blue</a></li>
+</ul></div></li>
+<li class="leaf middle-east-theme-bg-hover menu-501"><a href="/middleeast">Middle East</a></li>
+<li class="leaf world-theme-bg-hover menu-506"><a href="/world">World</a></li>
+<li class="expanded economy-theme-bg-hover menu-498"><a href="/economy">Business</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-29656"><a href="/insight">Insight</a></li>
+<li class="leaf menu-1688"><a href="/category/main-category/economy/corporate-news">Corporate News</a></li>
+<li class="last leaf menu-31846"><a href="/EyeOnAI">Eye On AI</a></li>
+</ul></div></li>
+<li class="expanded menu-16276"><a href="/main-category/media">Media</a><div class="submenu"><ul class="submenu-list"><li class="first last leaf menu-29551"><a href="/media-list">MEDIA POWER LISTS</a></li>
+</ul></div></li>
+<li class="expanded lifestyle-theme-bg-hover menu-500"><a href="/lifestyle">Lifestyle</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-1690"><a href="/lifestyle/art-culture">Art &amp; Culture</a></li>
+<li class="leaf menu-1691"><a href="/lifestyle/fashion">fashion</a></li>
+<li class="leaf menu-1692"><a href="/lifestyle/offbeat">Offbeat</a></li>
+<li class="leaf menu-1700"><a href="/category/main-category/lifestyle/travel">Travel</a></li>
+<li class="leaf menu-1699"><a href="/main-category/entertainment">Entertainment</a></li>
+<li class="leaf menu-1697"><a href="/category/main-category/lifestyle/food-health">Food &amp; Health</a></li>
+<li class="leaf menu-15896"><a href="/thesix">The Six</a></li>
+<li class="last leaf menu-16861"><a href="/main-category/books">Books &amp; Gaming</a></li>
+</ul></div></li>
+<li class="expanded menu-502"><a href="/opinion">Opinion</a><div class="submenu"><ul class="submenu-list"><li class="first last leaf menu-1693"><a href="/category/main-category/opinion/editorial">Editorial</a></li>
+</ul></div></li>
+<li class="expanded sports-theme-bg-hover menu-504"><a href="/sport">Sport</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-30451"><a href="/SaudiFootball">Saudi Football</a></li>
+<li class="leaf menu-30436"><a href="/main-category/football">Football</a></li>
+<li class="leaf menu-30446"><a href="/main-category/motorsport">Motorsport</a></li>
+<li class="leaf menu-30456"><a href="/main-category/tennis">Tennis</a></li>
+<li class="leaf menu-30426"><a href="/Cricket">Cricket</a></li>
+<li class="leaf menu-30441"><a href="/main-category/golf">Golf</a></li>
+<li class="leaf menu-30431"><a href="/main-category/e-sport">E-sport</a></li>
+<li class="last leaf menu-30461"><a href="/podcast/sport">Podcast</a></li>
+</ul></div></li>
+<li class="expanded menu-27456"><a href="/research">Research &amp; Studies</a><div class="submenu"><ul class="submenu-list"><li class="first leaf menu-28416"><a href="/research-papers">Research Papers</a></li>
+<li class="leaf menu-27466"><a href="/yougov">YouGov</a></li>
+<li class="leaf menu-27461"><a href="/deepdive">Deep Dive </a></li>
+<li class="last leaf menu-27471"><a href="https://www.preachersofhate.com/">Preachers of Hate</a></li>
+</ul></div></li>
+<li class="last leaf menu-2052"><a href="/podcast">Podcast</a></li>
+</ul> </nav>
+</div>
+<div class="cell shrink">
+<div class="subheader-block text-right">
+<div class="holder-area">
+<div class="search-area">
+<form class="searchbox" action="/" method="post" id="search-block-form--2" accept-charset="UTF-8"><div><div class="container-inline">
+<h2 class="element-invisible">Search form</h2>
+<div class="form-item form-type-textfield form-item-search-block-form">
+<label class="element-invisible" for="edit-search-block-form--4">Search </label>
+<input title="Enter the terms you wish to search for." placeholder="Search here ..." class="searchbox-input form-text" onkeyup="buttonUp();" type="text" id="edit-search-block-form--4" name="search_block_form" value size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input class="searchbox-submit form-submit" type="submit" id="edit-submit--2" name="op" value="" /><span class="searchbox-icon"><i class="icomoon-icon icon-search"></i></span></div><input type="hidden" name="form_build_id" value="form-WQp0j5325_uqkgjvMrbAp0PVvjR92EO2w2SzKqX6e68" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form> </div>
+</div>
+<div class="socials-area show-for-medium">
+<div class="socials-btns">
+<a href="https://www.facebook.com/pages/Arab-News/10250877124" class="social-btn facebook-btn-hover" target="_blank"><i class="icomoon-icon icon-facebook"></i></a>
+<a href="https://twitter.com/arabnews" class="social-btn twitter-btn-hover" target="_blank"><i class="icomoon-icon icon-twitter"></i></a>
+<a href="https://www.linkedin.com/company/arabnews/?viewAsMember=true" class="social-btn linkedin-btn-hover" target="_blank"><i class="icomoon-icon icon-linkedin"></i></a>
+<a href="https://www.instagram.com/arabnews" class="social-btn instagram-btn-hover" target="_blank"><i class="icomoon-icon icon-instagram"></i></a>
+
+<a href="/rss" class="social-btn" target="_blank"><i class="icomoon-icon icon-rss"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="break-news-header show-for-small-only">
+</div>
+
+<div class="ad-block ad-block-header block-wrapper hide-for-large" id="leaderboardSm" data-duration="2">
+<div class="block-wrapper__content">
+<div class="ad-block__holder small text-center">
+<div id="div-gpt-ad-1670223784362-0">
+<div id="google_ads_iframe">
+<script>
+if (isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-2'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-2'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<script>
+window._io_config = window._io_config || {};
+window._io_config["0.2.0"] = window._io_config["0.2.0"] || [];
+window._io_config["0.2.0"].push({
+    page_url: "https://arabnews.com/",
+    page_url_canonical: "https://arabnews.com/",
+    page_title: "Arab News - Worldwide Latest Breaking News & Updates",
+    page_type: "main",
+    page_language: "en"
+});
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+event: 'custom_page_view',
+page_type: "home"
+});
+</script>
+<main>
+<div class="news-ticker-area hide-for-small-only">
+<div class="grid-container">
+<div class="grid-x grid-margin-x">
+<div class="cell">
+<div class="view view-ticker view-id-ticker view-display-id-block view-dom-id-b4e21e0b5aaf884db858ec15e4ddb0f8">
+<div class="view-content">
+<div id="news-ticker" style="height: 30px; overflow: hidden;">
+<ul data-vr-zone="Ticker">
+<li data-vr-contentbox="position 1" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/5'>Sport</a>" data-color="d85229"><a href="/node/2501366/sport">Saudi Arabia, Kazakhstan added to FIBA 3x3 World Tour</a></li> <li data-vr-contentbox="position 2" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/4'>Business &amp; Economy</a>" data-color="d85229"><a href="/node/2501346/business-economy">Islamic finance industry projected to grow in 2024-2025</a></li> <li data-vr-contentbox="position 3" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/2'>Middle-East</a>" data-color="d85229"><a href="/node/2501341/middle-east">Only two states for Israel and Palestine can prevent all-out regional conflict: Egypt PM</a></li> <li data-vr-contentbox="position 4" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/2'>Middle-East</a>" data-color="d85229"><a href="/node/2501261/middle-east">Blinken ‘hopeful’ of Gaza ceasefire deal</a></li> <li data-vr-contentbox="position 5" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/481726'>Saudi Sport</a>" data-color="d85229"><a href="/node/2501331/saudi-sport">China to host 2025 Saudi Super Cup, attracting global football stars</a></li> <li data-vr-contentbox="position 6" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/2'>Middle-East</a>" data-color="d85229"><a href="/node/2501326/middle-east">Egypt ‘hopeful’ of new Israel-Hamas truce: foreign minister</a></li> <li data-vr-contentbox="position 7" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/4'>Business &amp; Economy</a>" data-color="d85229"><a href="/node/2501316/business-economy">Saudi Aramco is looking at investment in new energies outside of the Kingdom, CEO says </a></li> <li data-vr-contentbox="position 8" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/4'>Business &amp; Economy</a>" data-color="d85229"><a href="/node/2501311/business-economy">Malaysia targeting Gulf trade and tech ties at WEF, minister says</a></li> <li data-vr-contentbox="position 9" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/8'>Lifestyle</a>" data-color="d85229"><a href="/node/2501306/lifestyle">Nadine Labaki joins Cannes Film Festival jury</a></li> <li data-vr-contentbox="position 10" data-category="Latest News" data-subcategory="<a href='/taxonomy/term/2'>Middle-East</a>" data-color="d85229"><a href="/node/2501301/middle-east">Israel concerned over possible ICC arrest warrants related to Gaza war</a></li> </ul>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="breadcrumbs-wrapper hide-for-small-only">
+<div class="grid-container">
+<div class="grid-x">
+<div class="cell">
+</div>
+</div>
+</div>
+</div>
+<div class="grid-container small-grid-collapse">
+<div data-vr-zone="First Article">
+<div class="view view-blocks-nodequeue view-id-blocks_nodequeue view-display-id-block_1 view-dom-id-1fc654ac18802b1ed2aaca9fd2b0a335">
+<div class="view-content">
+<div class="grid-x grid-margin-x">
+<div class="cell">
+<div class="hero-area" data-nid="2501151" data-vr-contentbox="position 1">
+<div class="article-item">
+<div class="article-item-img">
+<span class="views-count abs-el views-count-placeholder nid-2501151"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_1080_637/public/main-image/2024/04/29/4339641-528295570.jpg?itok=u4hhjiUJ" width="1080" height="637" alt="Blinken arrives in Saudi Arabia to discuss post-war Gaza " title="Blinken arrives in Saudi Arabia to discuss post-war Gaza " /> </div>
+<div class="article-item-overbox grid-x align-bottom">
+<a href="/node/2501151"></a>
+<div class="article-item-overbox-inner cell">
+<div class="article-item-title bottom-spacer--s">
+<h1 class="font-bold" data-vr-headline>
+<a href="/node/2501151">
+Blinken arrives in Saudi Arabia to discuss post-war Gaza  </a>
+</h1>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>In Riyadh, Blinken is expected to meet with senior Saudi leaders and hold a wider meeting with counterparts from five Arab states</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News - Reuters
+</span>
+&middot;
+<time>29 April 2024</time>
+</div>
+</div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div> </div>
+</div> </div>
+<div class="grid-x grid-margin-x align-center">
+<div class="cell large-auto">
+<div class="content-wrap">
+<div data-vr-zone="Four Top Article">
+<div class="view view-blocks-nodequeue view-id-blocks_nodequeue view-display-id-block view-dom-id-f9da0061ddb196fa58a389421793af8d">
+<div class="view-content">
+<div class="article-item" data-nid="2501076" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2501076">
+<span class="views-count abs-el views-count-placeholder nid-2501076"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4339456-89207826.jpg?itok=X9WeTak-" alt="Israel kills at least 30 Palestinians in Rafah, new Gaza ceasefire talks expected in Cairo" title="Israel kills at least 30 Palestinians in Rafah, new Gaza ceasefire talks expected in Cairo" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2><a href="/node/2501076">Israel kills at least 30 Palestinians in Rafah, new Gaza ceasefire talks expected in Cairo</a></h2>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>The strikes on Rafah took place hours before Egypt was expected to host leaders of the Islamist group Hamas to discuss prospects for a ceasefire agreement with Isra</li>
+<li>Hamas arrived in Cairo for a new round of talks with Egyptian and Qatari mediators</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Reuters
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="article-item" data-nid="2500636" data-vr-contentbox="position 2">
+<div class="article-item-img">
+<a href="/node/2500636">
+<span class="views-count abs-el views-count-placeholder nid-2500636"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/28/4338216-498858095.jpeg?itok=740H2YUC" alt="Conflict is greatest threat to global economy, Saudi finance minister warns" title="Conflict is greatest threat to global economy, Saudi finance minister warns" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2><a href="/node/2500636">Conflict is greatest threat to global economy, Saudi finance minister warns</a></h2>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>Mohammed Al-Jadaan: Wars in Gaza, Ukraine ‘put a lot of pressure on economic emotion’</li>
+<li>Saudi Arabia’s ‘specific objective’ is to deescalate regional tensions, he tells World Economic Forum panel</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+<a href="/taxonomy/term/232041">ROMMER M. BALABA</a> - Sara Al-Shurafa
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2"> <div class="cell" data-nid="2501206" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501206">
+<span class="views-count abs-el views-count-placeholder nid-2501206"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4339756-2093434206.jpg?itok=N7scyqPL" width="360" height="212" alt="Gates Foundation partners with KSRelief to eradicate polio, strengthen primary healthcare" title="Gates Foundation partners with KSRelief to eradicate polio, strengthen primary healthcare" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501206">Gates Foundation partners with KSRelief to eradicate polio, strengthen primary healthcare</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Nada Alturki
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2500731" data-vr-contentbox="position 4">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2500731">
+<span class="views-count abs-el views-count-placeholder nid-2500731"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/28/4338441-1032028703.jpg?itok=E_xWQbOz" width="360" height="212" alt="Saudi Arabia committed to green technologies, energy minister says" title="Saudi Arabia committed to green technologies, energy minister says" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2500731">Saudi Arabia committed to green technologies, energy minister says</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Nadia Alfaour
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div> </div>
+</div> </div>
+<div class="ad-block ad-block-header block-wrapper">
+<div class="block-wrapper__content">
+<div class="ad-block__holder small text-center">
+<script>
+if (isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-3'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-3'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+<div class="section-wrapper white-smoke-opacity-bg has-padding hide-for-large">
+<div class="block-title text-center first-letter-style">
+<h3><a href="/opinion">Opinion</a></h3>
+</div>
+<div class="block-content" data-vr-zone="Opinion Mobile">
+<div class="view view-article-list view-id-article_list view-display-id-block_25 view-dom-id-bf4195063c91b4e5272847ce2643a4cb">
+<div class="view-content">
+<div class="objects-list has-separator">
+<div class="object-item increased-space" data-vr-contentbox="position 1">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/568771">Borge Brende</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2500306">Leading from the middle</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/568771">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/authors/4337226-whatsappimage2024-04-27at171931.png?itok=w6N7wqCa" width="65" height="85" alt="Author" title="Borge Brende" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="object-item increased-space" data-vr-contentbox="position 2">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/4071">Baria Alamuddin</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2500961">The fight for justice ignites elite university campuses</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/4071">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/2019/03/17/1481886-1552828704-623726.png?itok=_fgQ35zS" width="65" height="85" alt="Author" title="Baria Alamuddin" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="object-item increased-space" data-vr-contentbox="position 3">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/541091">Ghassan Charbel</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2501381">Kissinger’s shadow chases Blinken</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/541091">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/authors/4043321-ghassancharbel.png?itok=QZpbqEFf" width="65" height="85" alt="Author" title="Ghassan Charbel" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="object-item increased-space" data-vr-contentbox="position 4">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/370896">Dalia Al-Aqidi</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2501371">Rule of law faces stern test as Trump trial unfolds</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/370896">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/authors/2355456-daliaal-aqidi.png?itok=ogP8BAPt" width="65" height="85" alt="Author" title="Dalia Al-Aqidi" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="object-item increased-space" data-vr-contentbox="position 5">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/430606">Dr. Amal Mudallali</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2500861">Biden should take a firmer stand on protesters’ rights</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/430606">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/authors/3791251-dramalmudallali.png?itok=H5TsyN5Y" width="65" height="85" alt="Author" title="Dr. Amal Mudallali" /> </a>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div> <div class="btns-area text-center uppercase">
+<a href="/opinion" class="button hollow small gray no-spacer">More in Opinion</a>
+</div>
+</div>
+</div>
+<div class="block-wrapper hide-for-large">
+<div class="block-title text-center first-letter-style">
+<h3><span>Print Edition</span></h3>
+</div>
+<div class="block-content" data-vr-zone="Print Edition">
+<div class="print-edition text-center">
+<div class="view view-newspaper view-id-newspaper view-display-id-block view-dom-id-27282ad8731ec1225ced6f2e43f4d1eb">
+<div class="view-content">
+<div class="print-edition-cover">
+<div data-vr-contentbox="position 1">
+<a href="/pdfissues/index.php" target="_blank"><img src="https://www.arabnews.com/sites/default/files/styles/scale_340/public/newspaper/2024/Apr/29/ann_p01_29042024_ed1_000001.jpg?itok=baVC3Fyu" title="Newspaper" width="340" height="541" alt="Newspaper" /></a> </div> </div> </div>
+</div> <div class="print-edition-footer">
+<a href="/pdfissues/index.php">Read pdf version</a>
+<hr>
+<span><a href="/issuepdf">Archive</a></span>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="https://arabnews.us12.list-manage.com/subscribe/post?u=e8a07b26a0f9770e78d447653&id=daf6913c32" target="_blank" class="button hollow small gray no-spacer">Subscribe Now</a>
+</div>
+</div>
+</div>
+<div class="ad-block ad-block-header block-wrapper">
+<div class="block-wrapper__content">
+<div class="ad-block__holder small text-center">
+<script>
+if (isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-4'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-4'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+<div class="section-wrapper">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/taxonomy/term/1">Saudi Arabia</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Saudi Arabia">
+<div class="view view-sections-blocks view-id-sections_blocks view-display-id-block view-dom-id-5e67e4e819912021f99c908bf5f1072f">
+<div class="view-content">
+<div class="article-item" data-nid="2501226" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2501226">
+<span class="views-count abs-el views-count-placeholder nid-2501226"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4339856-1444514798.jpg?itok=z1MnaDH5" alt="WEF meeting in Riyadh vital to build ‘trust’ in global systems, institutions" title="WEF meeting in Riyadh vital to build ‘trust’ in global systems, institutions" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2 data-vr-headline><a href="/node/2501226">WEF meeting in Riyadh vital to build ‘trust’ in global systems, institutions</a></h2>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>Financial crises need attention, says the WEF’s Mirek Dusek</li>
+<li>Saudi Arabia has critical role to play in the region and globally</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+TAREK ALI AHMAD
+</span>
+&middot;
+<time>29 April 2024</time>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+<div class="cell" data-nid="2501206" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501206">
+<span class="views-count abs-el views-count-placeholder nid-2501206"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4339756-2093434206.jpg?itok=N7scyqPL" width="360" height="212" alt="Gates Foundation partners with KSRelief to eradicate polio, strengthen primary healthcare" title="Gates Foundation partners with KSRelief to eradicate polio, strengthen primary healthcare" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501206">Gates Foundation partners with KSRelief to eradicate polio, strengthen primary healthcare</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Nada Alturki
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2501151" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501151">
+<span class="views-count abs-el views-count-placeholder nid-2501151"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4339641-528295570.jpg?itok=7eK3aayx" width="360" height="212" alt="Blinken arrives in Saudi Arabia to discuss post-war Gaza " title="Blinken arrives in Saudi Arabia to discuss post-war Gaza " /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501151">Blinken arrives in Saudi Arabia to discuss post-war Gaza </a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News - Reuters
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/1" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+
+
+<div class="ad-block ad-block-header block-wrapper">
+<div class="block-wrapper__content">
+<div class="ad-block__holder small text-center">
+<script>
+if (isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-5'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-5'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+<div class="section-wrapper">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/taxonomy/term/2">Middle East</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Middle East">
+<div class="view view-sections-blocks view-id-sections_blocks view-display-id-block view-dom-id-2deef8667cf094780e99ce277fbfd2e4">
+<div class="view-content">
+<div class="article-item" data-nid="2501341" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2501341">
+<span class="views-count abs-el views-count-placeholder nid-2501341"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4340146-1875509103.jpg?itok=RzR02TBN" alt="Only two states for Israel and Palestine can prevent all-out regional conflict: Egypt PM" title="Only two states for Israel and Palestine can prevent all-out regional conflict: Egypt PM" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2 data-vr-headline><a href="/node/2501341">Only two states for Israel and Palestine can prevent all-out regional conflict: Egypt PM</a></h2>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>Israel risking its future, says Egypt official at World Economic Forum</li>
+<li>Jordan’s PM also accuses Tel Aviv of not wanting ‘a political solution’</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Sara Al-Shurafa
+</span>
+&middot;
+<time>
+59 min 34 sec ago
+</time>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+<div class="cell" data-nid="2501261" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<span class="label abs-el uppercase update">
+Update </span>
+<a href="/node/2501261">
+<span class="views-count abs-el views-count-placeholder nid-2501261"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340171-860171460.jpg?itok=REIdycjX" width="360" height="212" alt="Blinken ‘hopeful’ of Gaza ceasefire deal" title="Blinken ‘hopeful’ of Gaza ceasefire deal" /> <span class="media-label abs-el"><i class="icomoon-icon icon-video"></i>video</span> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501261">Blinken ‘hopeful’ of Gaza ceasefire deal</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+<a href="/taxonomy/term/232041">ROMMER M. BALABA</a>
+</span>
+&middot;
+<time>
+57 min 14 sec ago
+</time>
+</div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2501326" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501326">
+<span class="views-count abs-el views-count-placeholder nid-2501326"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340106-1353602069.jpg?itok=7dWL_Xi7" width="360" height="212" alt="Egypt ‘hopeful’ of new Israel-Hamas truce: foreign minister" title="Egypt ‘hopeful’ of new Israel-Hamas truce: foreign minister" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501326">Egypt ‘hopeful’ of new Israel-Hamas truce: foreign minister</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+AFP
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/2" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+<div class="section-wrapper">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/taxonomy/term/3">World</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="World">
+<div class="view view-sections-blocks view-id-sections_blocks view-display-id-block view-dom-id-75d9bee5e592afac400e71ededc7c19c">
+<div class="view-content">
+<div class="article-item" data-nid="2501361" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2501361">
+<span class="views-count abs-el views-count-placeholder nid-2501361"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4340211-1524127906.jpg?itok=q85-c-Zt" alt="Ukraine’s Zelensky urges US to speed up weapons deliveries" title="Ukraine’s Zelensky urges US to speed up weapons deliveries" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2 data-vr-headline><a href="/node/2501361">Ukraine’s Zelensky urges US to speed up weapons deliveries</a></h2>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Reuters
+</span>
+&middot;
+<time>29 April 2024</time>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+<div class="cell" data-nid="2501296" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501296">
+<span class="views-count abs-el views-count-placeholder nid-2501296"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340041-64034718.jpg?itok=yGoIc6D9" width="360" height="212" alt="Iran slams crackdown on US student protesters" title="Iran slams crackdown on US student protesters" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501296">Iran slams crackdown on US student protesters</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+AFP
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2501286" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501286">
+<span class="views-count abs-el views-count-placeholder nid-2501286"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340001-1526609920.jpg?itok=Yn5lEBiQ" width="360" height="212" alt="Pedro Sanchez stays on as Spain’s prime minister after weighing exit" title="Pedro Sanchez stays on as Spain’s prime minister after weighing exit" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501286">Pedro Sanchez stays on as Spain’s prime minister after weighing exit</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Reuters
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/3" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+<div class="section-wrapper">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/taxonomy/term/4">Business</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Business">
+<div class="view view-sections-blocks view-id-sections_blocks view-display-id-block view-dom-id-75ed6c4e765f1a3f0a569769c80a7455">
+<div class="view-content">
+<div class="article-item" data-nid="2501346" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2501346">
+<span class="views-count abs-el views-count-placeholder nid-2501346"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4340161-2145634911.jpg?itok=tHU6aIkl" alt="Islamic finance industry projected to grow in 2024-2025" title="Islamic finance industry projected to grow in 2024-2025" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2 data-vr-headline><a href="/node/2501346">Islamic finance industry projected to grow in 2024-2025</a></h2>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News
+</span>
+&middot;
+<time>
+58 min 14 sec ago
+</time>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+<div class="cell" data-nid="2501316" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501316">
+<span class="views-count abs-el views-count-placeholder nid-2501316"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340081-358639334.jpg?itok=LTBZ71RE" width="360" height="212" alt="Saudi Aramco is looking at investment in new energies outside of the Kingdom, CEO says " title="Saudi Aramco is looking at investment in new energies outside of the Kingdom, CEO says " /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501316">Saudi Aramco is looking at investment in new energies outside of the Kingdom, CEO says </a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+REUTERS 
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2501311" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501311">
+<span class="views-count abs-el views-count-placeholder nid-2501311"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340061-208864849.jpg?itok=82VB1bMw" width="360" height="212" alt="Malaysia targeting Gulf trade and tech ties at WEF, minister says" title="Malaysia targeting Gulf trade and tech ties at WEF, minister says" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501311">Malaysia targeting Gulf trade and tech ties at WEF, minister says</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/4" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+<div class="section-wrapper show-for-small-only">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/taxonomy/term/2096">Media</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Media">
+<div class="view view-sections-blocks view-id-sections_blocks view-display-id-block view-dom-id-af2bfb168a7025f5a94acffea1356fba">
+<div class="view-content">
+<div class="article-item" data-nid="2500696" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2500696">
+<span class="views-count abs-el views-count-placeholder nid-2500696"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/28/4338356-398443425.png?itok=qVQGffHe" alt="Humanity at a turning point, Saudi minister tells WEF meeting in Riyadh" title="Humanity at a turning point, Saudi minister tells WEF meeting in Riyadh" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2 data-vr-headline><a href="/node/2500696">Humanity at a turning point, Saudi minister tells WEF meeting in Riyadh</a></h2>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>Saudi Arabia wants to lead ‘intelligence revolution,’ Abdullah Al-Swaha, communications and information technology minister, says</li>
+<li>Industry leaders ‘must master AI within years or face irrelevance’</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Sara Al-Shurafa
+</span>
+&middot;
+<time>28 April 2024</time>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+<div class="cell" data-nid="2500671" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2500671">
+<span class="views-count abs-el views-count-placeholder nid-2500671"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/28/4338301-1683672096.jpg?itok=YKcXC6g0" width="360" height="212" alt="‘Saudi Arabia at forefront of AI,’ says business leader at World Economic Forum " title="‘Saudi Arabia at forefront of AI,’ says business leader at World Economic Forum " /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2500671">‘Saudi Arabia at forefront of AI,’ says business leader at World Economic Forum </a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Nada Al-Turki
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2500571" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2500571">
+<span class="views-count abs-el views-count-placeholder nid-2500571"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/28/4338016-2100678023.jpg?itok=cAs9KCoS" width="360" height="212" alt="Two Russian journalists jailed on ‘extremism’ charges for alleged work for Navalny group" title="Two Russian journalists jailed on ‘extremism’ charges for alleged work for Navalny group" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2500571">Two Russian journalists jailed on ‘extremism’ charges for alleged work for Navalny group</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+AP
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/2096" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+<div class="cell large-shrink">
+<div class="sidebar-wrap">
+<div class="block-wrapper no-spacer">
+<div class="block-content">
+<div class="ad-holder text-center">
+<div class="hide-for-small-only">
+<div class="block-wrapper__content">
+<div class="ad-block__holder small text-center">
+<script>
+if (!isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-3'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-3'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block-wrapper">
+<div class="block-content">
+<div class=" text-center">
+
+
+</div>
+</div>
+</div>
+<div class="block-wrapper white-smoke-opacity-bg has-padding show-for-large">
+<div class="block-title text-center first-letter-style">
+<h3><a href="/opinion">Opinion</a></h3>
+</div>
+<div class="block-content" data-vr-zone="Opinion">
+<div class="view view-article-list view-id-article_list view-display-id-block_25 view-dom-id-362375da3996c973bc3f12f721301f7a">
+<div class="view-content">
+<div class="objects-list has-separator">
+<div class="object-item increased-space" data-vr-contentbox="position 1">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/568771">Borge Brende</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2500306">Leading from the middle</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/568771">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/authors/4337226-whatsappimage2024-04-27at171931.png?itok=w6N7wqCa" width="65" height="85" alt="Author" title="Borge Brende" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="object-item increased-space" data-vr-contentbox="position 2">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/4071">Baria Alamuddin</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2500961">The fight for justice ignites elite university campuses</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/4071">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/2019/03/17/1481886-1552828704-623726.png?itok=_fgQ35zS" width="65" height="85" alt="Author" title="Baria Alamuddin" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="object-item increased-space" data-vr-contentbox="position 3">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/541091">Ghassan Charbel</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2501381">Kissinger’s shadow chases Blinken</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/541091">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/authors/4043321-ghassancharbel.png?itok=QZpbqEFf" width="65" height="85" alt="Author" title="Ghassan Charbel" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="object-item increased-space" data-vr-contentbox="position 4">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/370896">Dalia Al-Aqidi</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2501371">Rule of law faces stern test as Trump trial unfolds</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/370896">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/authors/2355456-daliaal-aqidi.png?itok=ogP8BAPt" width="65" height="85" alt="Author" title="Dalia Al-Aqidi" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="object-item increased-space" data-vr-contentbox="position 5">
+<div class="media-object align-justify">
+<div class="media-object-section">
+<div class="author-name"><a href="/taxonomy/term/430606">Dr. Amal Mudallali</a></div>
+<h5 class="font-bold ft-sz-18 emperor-font-color" data-vr-headline>
+<a href="/node/2500861">Biden should take a firmer stand on protesters’ rights</a>
+</h5>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/taxonomy/term/430606">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_65_85/public/authors/3791251-dramalmudallali.png?itok=H5TsyN5Y" width="65" height="85" alt="Author" title="Dr. Amal Mudallali" /> </a>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div> <div class="btns-area text-center uppercase">
+<a href="/opinion" class="button hollow small gray no-spacer">More in Opinion</a>
+</div>
+</div>
+</div>
+<div class="block-wrapper show-for-large">
+<div class="block-content">
+<div class="ad-holder text-center">
+<script>
+document.write("<div id='div-gpt-ad-3341368-4'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-4'); });
+    </script>
+</div>
+</div>
+</div>
+
+<div class="block-wrapper">
+<div class="block-content">
+<div class="text-center">
+<div class="region region-top-right">
+<div id="block-block-136" class="block block-block contextual-links-region">
+<div class="content">
+<p>
+<a href="https://www.arabnews.com/WEFRiyadh"><img alt height="250" src="https://www.arabnews.com/sites/default/files/pictures/April/2369956/2024/thumbnail_mpu_wef15.jpg" width="300" /></a></p>
+<p>
+<a href="https://www.arabnews.com/node/2484561/battleground-jerusalem"><img alt height="250" src="https://www.arabnews.com/sites/default/files/pictures/March/2369956/2024/mpu_an_dd_battleground-jerusalem-digiassets_0.jpg" width="300" /></a></p>
+<p>
+<a href="https://www.arabnews.com/SecondNakba"><img alt height="250" src="https://www.arabnews.com/sites/default/files/pictures/March/2369956/2024/gaza_mpu.jpg" width="300" /></a></p>
+<p>
+ </p>
+
+<p>
+ </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="block-wrapper show-for-large">
+<div class="block-title text-center first-letter-style">
+<h3><span>Print Edition</span></h3>
+</div>
+<div class="block-content" data-vr-zone="Print Edition">
+<div class="print-edition text-center">
+<div class="view view-newspaper view-id-newspaper view-display-id-block view-dom-id-dfeb485d0fe3596560df54f668f52875">
+<div class="view-content">
+<div class="print-edition-cover">
+<div data-vr-contentbox="position 1">
+<a href="/pdfissues/index.php" target="_blank"><img src="https://www.arabnews.com/sites/default/files/styles/scale_340/public/newspaper/2024/Apr/29/ann_p01_29042024_ed1_000001.jpg?itok=baVC3Fyu" title="Newspaper" width="340" height="541" alt="Newspaper" /></a> </div> </div> </div>
+</div> <div class="print-edition-footer">
+<a href="/pdfissues/index.php">Read pdf version</a>
+<hr>
+<span><a href="/issuepdf">Archive</a></span>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="https://arabnews.us12.list-manage.com/subscribe/post?u=e8a07b26a0f9770e78d447653&id=daf6913c32" target="_blank" class="button hollow small gray no-spacer">Subscribe Now</a>
+</div>
+</div>
+</div>
+<div class="block-wrapper">
+<div class="block-content">
+<div class=" text-center">
+<a href="https://jobs.arabnews.com/" target="_blank" alt="Arabnews job"><img src="/sites/all/themes/narabnews/assets/img/ads/job4.jpg"></a>
+</div>
+</div>
+</div>
+<div class="block-wrapper white-smoke-opacity-bg has-padding">
+<div class="block-title text-center first-letter-style">
+<h3>Most Popular</h3>
+</div>
+<div class="block-content">
+<div class="nested-tabs-wrapper">
+<div class="head-tabs">
+<ul class="tabs" data-tabs id="nested-tabs">
+<li class="tabs-title is-active"><a href="#read-panel" aria-selected="true">Read</a></li>
+<li class="tabs-title"><a href="#shared-panel">Shared</a></li>
+</ul>
+</div>
+<div class="tabs-content" data-tabs-content="nested-tabs">
+<div class="tabs-panel is-active" id="read-panel">
+
+<ul class="tabs" data-tabs id="read-panel-tabs">
+<li class="tabs-title is-active"><a href="#read-panel-daily" aria-selected="true">Day</a></li>
+<li class="tabs-title"><a href="#read-panel-weekly">Week</a></li>
+<li class="tabs-title"><a href="#read-panel-monthly">Month</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="read-panel-tabs">
+<div class="tabs-panel is-active" id="read-panel-daily">
+<script type="text/javascript">
+                                                    window.most_read_article('Daily', 'www.arabnews.com');
+                                                    
+                                                    </script>
+</div>
+<div class="tabs-panel" id="read-panel-weekly">
+<script type="text/javascript">
+                                                    window.most_read_article('Weekly', 'www.arabnews.com');
+                                                    
+                                                    </script>
+</div>
+<div class="tabs-panel" id="read-panel-monthly">
+<script type="text/javascript">
+                                                    window.most_read_article('Monthly', 'www.arabnews.com');
+                                                    
+                                                    </script>
+</div>
+</div>
+</div>
+<div class="tabs-panel" id="shared-panel">
+<ul class="tabs" data-tabs id="shared-panel-tabs">
+<li class="tabs-title is-active"><a href="#shared-panel-day" aria-selected="true">Day</a></li>
+<li class="tabs-title"><a href="#shared-panel-week">Week</a></li>
+<li class="tabs-title"><a href="#shared-panel-month">Month</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="shared-panel-tabs">
+<div class="tabs-panel is-active" id="shared-panel-day">
+<div id="share_mostshared_today" class="object-list">
+<script type="text/javascript">window.most_article('today', 'mostshared');</script>
+</div>
+</div>
+<div class="tabs-panel" id="shared-panel-week">
+<div id="share_mostshared_week" class="object-list">
+<script type="text/javascript">
+                                                    window.most_article('week', 'mostshared');
+                                                    
+                                                    </script>
+</div>
+</div>
+<div class="tabs-panel" id="shared-panel-month">
+<div id="share_mostshared_month" class="object-list">
+<script type="text/javascript">
+                                                    window.most_article('month', 'mostshared');
+                                                    </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="block-wrapper block-custom-bg has-padding show-for-large">
+<div class="block-title text-center separator-center-above style-v2">
+<h3><span class="chars-style">Info</span>graphic</h3>
+</div>
+<div class="block-content" data-vr-zone="Infographic">
+<div class="view view-infographic view-id-infographic view-display-id-block view-dom-id-1c0c0ef86ae9ad5e462c9e9ff856faf7">
+<div class="view-content">
+<div class="item-area text-center">
+<div class="item-area text-center">
+<div class="item-area-img" id="lightgallery-single">
+<a href="https://www.arabnews.com/sites/default/files/styles/ph3_1000_auto/public/info/2024/04/28/4337866-1149212634.jpg?itok=AUm6WS1Z" data-facebook-share-url="https://www.arabnews.com/node/2500521">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_250_250/public/info/2024/04/28/4337866-1149212634.jpg?itok=KG-JeXfq" width="250" height="155" alt="Saudi Vision 2030 is already well ahead of schedule" /> </a>
+</div>
+<h2 class="item-area-title">Saudi Vision 2030 is already well ahead of schedule</h2>
+<p>
+<p>
+<strong><a href="https://www.arabnews.com/node/2498896/business-economy" target="_blank">READ ARTICLE</a></strong></p>
+<p>
+ </p>
+</p>
+</div>
+<div class="reveal text-center" id="infographic-modal" data-reveal>
+<img src="https://www.arabnews.com/sites/default/files/styles/ph3_1000_auto/public/info/2024/04/28/4337866-1149212634.jpg?itok=AUm6WS1Z" alt="Saudi Vision 2030 is already well ahead of schedule">
+<button class="close-button" data-close aria-label="Close modal" type="button">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+<div class="block-wrapper white-smoke-opacity-bg has-padding" data-vr-zone="Decoders">
+<div class="block-title text-center separator-center-above style-v2">
+<h3><span class="chars-style">De</span>coders</h3>
+</div>
+<div class="view view-paragraph view-id-paragraph view-display-id-block view-dom-id-49d635595329f5aab17b4512265e0fa6">
+<div class="view-content">
+<div class="block-content">
+<div class="item-area text-center bottom-spacer--xl">
+<h4 class="item-area-title">Madarik Program</h4>
+<p>
+Launched on March 27 by Saudi Arabia’s Communications, Space and Technology Commission, the Madarik program aims to develop a cadre of citizens with the necessary skills and knowledge to take part in the growth of nation’s space industry. The program offers three career paths: Space Business. Space Software and Data, and Space Engineering. </p>
+<div class="link-holder text-center uppercase">
+<a href="/node/2483466/saudi-arabia">Read article</a>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div> <div class="item-area text-center bottom-spacer--xl">
+<h4 class="item-area-title">What is Gargee’an?</h4>
+<p>
+It is a celebration that is held twice in an Islamic year, on 15th day of the months of Sha’ban and Ramadan, primarily in Gulf countries or the eastern part of the Arabian Peninsula, specifically Kuwait, Bahrain, Iraq, the UAE, and Saudi Arabia. During these festive days, children wear traditional attire and go knocking door to door to receive sweets and snacks. </p>
+<div class="link-holder text-center uppercase">
+<a href="/node/2483161/saudi-arabia">Read article</a>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div> </div> </div>
+</div>
+</div>
+<div class="block-wrapper">
+<div class="block-title text-center style-v3 uppercase">
+<h6><span>Social media</span></h6>
+</div>
+<div class="block-content">
+<div class="socials-area">
+<div class="socials-btns text-center">
+<a href="https://www.facebook.com/pages/Arab-News/10250877124" class="social-btn facebook-btn-hover" target="_blank"><i class="icomoon-icon icon-facebook"></i></a>
+<a href="https://twitter.com/arabnews" class="social-btn twitter-btn-hover" target="_blank"><i class="icomoon-icon icon-twitter"></i></a>
+<a href="https://www.instagram.com/arabnews" class="social-btn instagram-btn-hover" target="_blank"><i class="icomoon-icon icon-instagram"></i></a>
+<a href="/rss" class="social-btn" target="_blank"><i class="icomoon-icon icon-rss"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="block-wrapper">
+<div class="block-content">
+<div class="text-center">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="grid-x grid-margin-x align-center">
+<div class="cell large-auto">
+<div class="content-wrap">
+<div class="section-wrapper hide-for-small-only">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/taxonomy/term/2096">Media</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Media">
+<div class="view view-sections-blocks view-id-sections_blocks view-display-id-block view-dom-id-ab214fe03a78a4e391047a221159ee0f">
+<div class="view-content">
+<div class="article-item" data-nid="2500696" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2500696">
+<span class="views-count abs-el views-count-placeholder nid-2500696"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/28/4338356-398443425.png?itok=qVQGffHe" alt="Humanity at a turning point, Saudi minister tells WEF meeting in Riyadh" title="Humanity at a turning point, Saudi minister tells WEF meeting in Riyadh" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2 data-vr-headline><a href="/node/2500696">Humanity at a turning point, Saudi minister tells WEF meeting in Riyadh</a></h2>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>Saudi Arabia wants to lead ‘intelligence revolution,’ Abdullah Al-Swaha, communications and information technology minister, says</li>
+<li>Industry leaders ‘must master AI within years or face irrelevance’</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Sara Al-Shurafa
+</span>
+&middot;
+<time>28 April 2024</time>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+<div class="cell" data-nid="2500671" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2500671">
+<span class="views-count abs-el views-count-placeholder nid-2500671"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/28/4338301-1683672096.jpg?itok=YKcXC6g0" width="360" height="212" alt="‘Saudi Arabia at forefront of AI,’ says business leader at World Economic Forum " title="‘Saudi Arabia at forefront of AI,’ says business leader at World Economic Forum " /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2500671">‘Saudi Arabia at forefront of AI,’ says business leader at World Economic Forum </a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Nada Al-Turki
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2500571" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2500571">
+<span class="views-count abs-el views-count-placeholder nid-2500571"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/28/4338016-2100678023.jpg?itok=cAs9KCoS" width="360" height="212" alt="Two Russian journalists jailed on ‘extremism’ charges for alleged work for Navalny group" title="Two Russian journalists jailed on ‘extremism’ charges for alleged work for Navalny group" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2500571">Two Russian journalists jailed on ‘extremism’ charges for alleged work for Navalny group</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+AP
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/2096" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell large-shrink">
+<div class="sidebar-wrap">
+<div data-vr-zone="Spotlight Vertical">
+<div class="view view-spotlight view-id-spotlight view-display-id-block_3 view-dom-id-a6ef6e0c6c9c583a8165e0629203ed49">
+<div class="view-content">
+<div class="block-wrapper block-custom-bg has-padding">
+<div class="block-title text-center first-letter-style style-v4">
+<h3><span>In-Focus</span></h3>
+</div>
+<div class="block-content">
+<h5 class="text-center uppercase font-secondary bottom-spacer--s"><a href="/taxonomy/term/443341"><span class="field-content">Russia-Ukraine Conflict</span></a></h5>
+<div class="view view-spotlight view-id-spotlight view-display-id-block_2 view-dom-id-e1bbffb8a95e1b38aae31711b5ca4708">
+<div class="view-content">
+<div class="article-item" data-nid="2500906" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2500906">
+<span class="views-count abs-el views-count-placeholder nid-2500906"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/28/4339046-100018508.jpeg?itok=TeK-6AAH" width="360" height="212" alt="Ukraine warns front ‘worsened’ as Russia claims fresh gains" title="Ukraine warns front ‘worsened’ as Russia claims fresh gains" /> </a>
+</div>
+<div class="article-item-info padding-horizontal-1">
+<div class="article-item-title">
+<h5 class="font-bold" data-vr-headline><a href="/node/2500906">Ukraine warns front ‘worsened’ as Russia claims fresh gains</a></h5>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>Russia’s troops are advancing in the eastern Donetsk region</li>
+<li>The US finally approved a $61 billion package of financial aid</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+AFP
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+</div>
+<div class="objects-list">
+<div class="object-item" data-nid="2500276" data-vr-contentbox="position 2">
+<div class="media-object">
+<div class="media-object-section">
+<h6 data-vr-headline><a href="/node/2500276">Russia says it struck Ukrainian energy plants in response to Kyiv targeting its own energy sector</a></h6>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/node/2500276">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_100_59/public/main-image/2024/04/27/4337136-2096335262.jpg?itok=7qlgyDdF" width="100" height="59" alt="Russia says it struck Ukrainian energy plants in response to Kyiv targeting its own energy sector" title="Russia says it struck Ukrainian energy plants in response to Kyiv targeting its own energy sector" /> </a>
+</div>
+<div class="meta-area"><span class="views-count views-count-placeholder nid-2500276"><i class="icomoon-icon icon-views"></i> <span></span></span></div>
+</div>
+</div>
+</div>
+<div class="object-item" data-nid="2499811" data-vr-contentbox="position 3">
+<div class="media-object">
+<div class="media-object-section">
+<h6 data-vr-headline><a href="/node/2499811">Ukraine’s Zelensky calls for air defense systems as allies meet</a></h6>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/node/2499811">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_100_59/public/main-image/2024/04/26/4335931-674822106.jpg?itok=IydaNkmU" width="100" height="59" alt="Ukraine’s Zelensky calls for air defense systems as allies meet" title="Ukraine’s Zelensky calls for air defense systems as allies meet" /> </a>
+</div>
+<div class="meta-area"><span class="views-count views-count-placeholder nid-2499811"><i class="icomoon-icon icon-views"></i> <span></span></span></div>
+</div>
+</div>
+</div>
+</div> </div>
+</div> <div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/443341" class="button hollow small gray no-spacer">Read more</a>
+</div>
+</div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="ad-block ad-block-header block-wrapper">
+<div class="block-wrapper__content">
+<div class="ad-block__holder small text-center">
+<script>
+if (!isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-5'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-5'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+<div data-vr-zone="Spotlight Horizontal">
+<div class="view view-spotlight view-id-spotlight view-display-id-block_1 view-dom-id-f13d02580fc06f2ea75de270dc076462">
+<div class="view-content">
+<div class="grid-x grid-margin-x">
+<div class="cell">
+<div class="section-wrapper block-custom-bg has-padding">
+<div class="section-title text-center first-letter-style style-v4">
+<h3><span>In-Focus</span></h3>
+</div>
+<div class="section-content">
+<h5 class="font-secondary-bold limed-spruce-font-color uppercase bottom-spacer text-center"><a href="/taxonomy/term/567006"><span class="field-content">WEF Riyadh</span></a></h5>
+<div class="view view-spotlight view-id-spotlight view-display-id-block view-dom-id-59f489c93f2bfe65d550cfb99418ea86">
+<div class="view-content">
+<div class="grid-items gutters-1x grid-x align-justify small-up-1 medium-up-2 large-up-4">
+<div class="cell" data-nid="2501341">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501341/middle-east">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340146-1875509103.jpg?itok=roGyyBK5" title="Only two states for Israel and Palestine can prevent all-out regional conflict: Egypt PM" width="360" height="212" alt="Only two states for Israel and Palestine can prevent all-out regional conflict: Egypt PM" /> <span class="views-count abs-el views-count-placeholder nid-2501341"><i class="icomoon-icon icon-views"></i> <span></span></span>
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h5 class="ft-sz-18"><a href="/node/2501341/middle-east">Only two states for Israel and Palestine can prevent all-out regional conflict: Egypt PM</a></h5>
+</div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div> <div class="cell" data-nid="2501261">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501261/middle-east">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340171-860171460.jpg?itok=REIdycjX" title="Blinken ‘hopeful’ of Gaza ceasefire deal" width="360" height="212" alt="Blinken ‘hopeful’ of Gaza ceasefire deal" /> <span class="views-count abs-el views-count-placeholder nid-2501261"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<span class="media-label abs-el"><i class="icomoon-icon icon-video"></i>video</span> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h5 class="ft-sz-18"><a href="/node/2501261/middle-east">Blinken ‘hopeful’ of Gaza ceasefire deal</a></h5>
+</div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div> <div class="cell" data-nid="2501311">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501311/business-economy">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340061-208864849.jpg?itok=82VB1bMw" title="Malaysia targeting Gulf trade and tech ties at WEF, minister says" width="360" height="212" alt="Malaysia targeting Gulf trade and tech ties at WEF, minister says" /> <span class="views-count abs-el views-count-placeholder nid-2501311"><i class="icomoon-icon icon-views"></i> <span></span></span>
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h5 class="ft-sz-18"><a href="/node/2501311/business-economy">Malaysia targeting Gulf trade and tech ties at WEF, minister says</a></h5>
+</div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div> <div class="cell" data-nid="2501281">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501281/middle-east">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4339986-649089317.jpg?itok=84lV_KfL" title="Nations must find ways to unite on ‘issues that affect planet’: UAE adviser" width="360" height="212" alt="Nations must find ways to unite on ‘issues that affect planet’: UAE adviser" /> <span class="views-count abs-el views-count-placeholder nid-2501281"><i class="icomoon-icon icon-views"></i> <span></span></span>
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h5 class="ft-sz-18"><a href="/node/2501281/middle-east">Nations must find ways to unite on ‘issues that affect planet’: UAE adviser</a></h5>
+</div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div> </div> </div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/567006" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+</div> </div> </div>
+</div> </div>
+<div class="ad-block ad-block-header block-wrapper" id="leaderboard" data-duration="3">
+<div class="block-wrapper__content">
+<div class="ad-block__holder small text-center">
+<script>
+if (!isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-4'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-4'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+<div class="grid-x grid-margin-x align-center">
+<div class="cell large-auto">
+<div class="content-wrap">
+<div class="section-wrapper">
+<div class="section-title style-v3 first-letter-style sticky-section-title">
+<h2><span><a href="/taxonomy/term/8">Lifestyle</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Arts">
+<div class="view view-section-block view-id-section_block view-display-id-block_2 view-dom-id-4bf068f16a66b2fc22d538ff81f4a15b">
+<div class="view-content">
+<div class="article-item-holder bottom-spacer--l" data-nid="2501306" data-vr-contentbox="position 1">
+<div class="article-item no-spacer">
+<div class="article-item-img no-spacer">
+<span class="views-count abs-el views-count-placeholder nid-2501306"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4340006-945751248.jpg?itok=d0eekZq6" alt="Nadine Labaki joins Cannes Film Festival jury" title="Nadine Labaki joins Cannes Film Festival jury" /> </div>
+<div class="article-item-overbox grid-x align-bottom">
+<a href="/node/2501306"></a>
+<div class="article-item-overbox-inner cell">
+<div class="article-item-title">
+<h4 data-vr-headline><a href="/node/2501306">Nadine Labaki joins Cannes Film Festival jury</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="article-item-footer">
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2"> <div class="cell" data-nid="2501186" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501186">
+<span class="views-count abs-el views-count-placeholder nid-2501186"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4339726-787147460.jpg?itok=A3_tiqN1" width="360" height="212" alt="Ryan Reynolds named Abu Dhabi’s Yas Island ambassador" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501186">Ryan Reynolds named Abu Dhabi’s Yas Island ambassador</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2500701" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2500701">
+<span class="views-count abs-el views-count-placeholder nid-2500701"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/28/4338366-815662228.jpg?itok=Kx2BoeJR" width="360" height="212" alt="Fantasia Barrino-Taylor flaunts Monot in New York" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2500701">Fantasia Barrino-Taylor flaunts Monot in New York</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div> <div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/8" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+<div class="section-wrapper">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/taxonomy/term/50">Off Beat</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Off Beat">
+<div class="view view-section-block view-id-section_block view-display-id-block_3 view-dom-id-8f71ca3d18edba02f07edc1b6e35ad5b">
+<div class="view-content">
+<div class="grid-x align-stretch bottom-spacer--l" data-vr-contentbox="position 1">
+<div class="cell medium-6">
+<div class="article-item-img no-bottom-spacer">
+<a href="/node/2501051">
+<span class="views-count abs-el views-count-placeholder nid-2501051"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4339326-1442097528.jpg?itok=E3FGKSop" alt="Basim Khandaqji’s book was chosen from 133 works submitted to the competition. (Photo/Social media)" title="Basim Khandaqji’s book was chosen from 133 works submitted to the competition. (Photo/Social media)" /> </a>
+</div>
+</div>
+<div class="cell medium-6">
+<div class="info-holder grid-x align-middle">
+<div class="cell">
+<div class="article-item-title">
+<h4 data-vr-headline><a href="/node/2501051">Palestinian prisoner in Israel wins top fiction prize</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+AFP
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+<div class="cell" data-nid="2500551" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2500551">
+<span class="views-count abs-el views-count-placeholder nid-2500551"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/28/4337966-1601218012.jpg?itok=pTJzjDll" width="360" height="212" alt="Mexican doctor claims victory in $28 Cartier earrings battle" title="Mexican doctor claims victory in $28 Cartier earrings battle" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4 data-vr-headline><a href="/node/2500551">Mexican doctor claims victory in $28 Cartier earrings battle</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+AFP
+</span>
+&middot;
+<time>28 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2499831" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2499831">
+<span class="views-count abs-el views-count-placeholder nid-2499831"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/26/4335981-994302027.jpg?itok=cGlxUAhR" width="360" height="212" alt="French barber still trimming at 90" title="French barber still trimming at 90" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4 data-vr-headline><a href="/node/2499831">French barber still trimming at 90</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+AFP
+</span>
+&middot;
+<time>26 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/50" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+<div class="section-wrapper">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/taxonomy/term/5">Sport</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Sport">
+<div class="view view-sections-blocks view-id-sections_blocks view-display-id-block view-dom-id-6ee7a5203280634beae490fc0812c07e">
+<div class="view-content">
+<div class="article-item" data-nid="2501366" data-vr-contentbox="position 1">
+<div class="article-item-img">
+<a href="/node/2501366">
+<span class="views-count abs-el views-count-placeholder nid-2501366"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4340216-1644702675.jpg?itok=2UBQeeu0" alt="Saudi Arabia, Kazakhstan added to FIBA 3x3 World Tour" title="Saudi Arabia, Kazakhstan added to FIBA 3x3 World Tour" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h2 data-vr-headline><a href="/node/2501366">Saudi Arabia, Kazakhstan added to FIBA 3x3 World Tour</a></h2>
+</div>
+<div class="article-item-highlight">
+<ul>
+<li>13th edition of the FIBA 3x3 World Tour — the top competition on the 3x3 pro circuit — will take place in 18 cities around the world</li>
+<li>3x3 will be part of the NEOM Beach Games, a major international sports event in the heart of the city</li>
+</ul>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News
+</span>
+&middot;
+<time>
+28 min 31 sec ago
+</time>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="grid-items grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+<div class="cell" data-nid="2501331" data-vr-contentbox="position 2">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501331">
+<span class="views-count abs-el views-count-placeholder nid-2501331"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4340126-1179827398.jpeg?itok=0JZ5rRD9" width="360" height="212" alt="Al Hilal&#039;s Salem Al Dawsari lifts the trophy with teammates after winning the Saudi Super Cup final in Abu Dhabi. Reuters" title="Al Hilal&#039;s Salem Al Dawsari lifts the trophy with teammates after winning the Saudi Super Cup final in Abu Dhabi. Reuters" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501331">China to host 2025 Saudi Super Cup, attracting global football stars</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Arab News
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+<div class="cell" data-nid="2501246" data-vr-contentbox="position 3">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501246">
+<span class="views-count abs-el views-count-placeholder nid-2501246"><i class="icomoon-icon icon-views"></i> <span></span></span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/29/4339886-1006471253.jpg?itok=w42fXX49" width="360" height="212" alt="Moroccan World Cup star Amallah enjoying La Liga life with Valencia" title="Moroccan World Cup star Amallah enjoying La Liga life with Valencia" /> </a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h4><a href="/node/2501246">Moroccan World Cup star Amallah enjoying La Liga life with Valencia</a></h4>
+</div>
+<div class="article-item-meta">
+<span class="meta-author">By
+Ali Khaled
+</span>
+&middot;
+<time>29 April 2024</time> </div>
+</div>
+</div>
+<div class="padding-horizontal-for-small show-for-small-only"><hr></div>
+</div>
+</div>
+</div>
+</div>
+<div class="btns-area text-center uppercase">
+<a href="/taxonomy/term/5" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell large-shrink">
+<div class="sidebar-wrap">
+
+<div class="block-wrapper no-spacer  mpu-block" data-duration="3">
+<div class="block-content">
+<div class="ad-holder text-center">
+</div>
+</div>
+</div>
+<div class="block-wrapper white-smoke-opacity-bg has-padding">
+<div class="block-title text-center first-letter-style">
+<h3>Recommended</h3>
+</div>
+<div class="block-content" data-vr-zone="Recommended">
+<div class="view view-article-list view-id-article_list view-display-id-block_3 view-dom-id-455f9aa30d7ba7cfebc22c35d23c7fee">
+<div class="view-content">
+<div class="objects-list has-separator">
+<div class="object-item" data-nid="2501016">
+<div class="category-field uppercase"><a href="/middleeast">Middle-East</a></div>
+<div class="media-object align-justify">
+<div class="media-object-section">
+<h6 class="font-bold"><a href="/node/2501016/middle-east">Displacement of Palestinians from embattled Gaza confronts Egypt with array of challenges </a></h6>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/node/2501016/middle-east"><img src="https://www.arabnews.com/sites/default/files/styles/n_100_59/public/main-image/2024/04/28/4339281-794669547.jpg?itok=9E_6kpaj" title="Displacement of Palestinians from embattled Gaza confronts Egypt with array of challenges " width="100" height="59" alt="Displacement of Palestinians from embattled Gaza confronts Egypt with array of challenges " /></a> </div>
+<div class="meta-area"><span class="views-count views-count-placeholder nid-2501016"><i class="icomoon-icon icon-views"></i> <span></span></span></div>
+</div>
+</div>
+</div> <div class="object-item" data-nid="2500471">
+<div class="category-field uppercase"><a href="/middleeast">Middle-East</a></div>
+<div class="media-object align-justify">
+<div class="media-object-section">
+<h6 class="font-bold"><a href="/node/2500471/middle-east">‘World has never seen such a rapid increase in hunger,’ WFP regional director Corinne Fleischer tells Arab News</a></h6>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/node/2500471/middle-east"><img src="https://www.arabnews.com/sites/default/files/styles/n_100_59/public/main-image/2024/04/27/4337671-40436002.jpg?itok=gxexSjMk" title="‘World has never seen such a rapid increase in hunger,’ WFP regional director Corinne Fleischer tells Arab News" width="100" height="59" alt="‘World has never seen such a rapid increase in hunger,’ WFP regional director Corinne Fleischer tells Arab News" /></a> </div>
+<div class="meta-area"><span class="views-count views-count-placeholder nid-2500471"><i class="icomoon-icon icon-views"></i> <span></span></span></div>
+</div>
+</div>
+</div> <div class="object-item" data-nid="2500021">
+<div class="category-field uppercase"><a href="/saudiarabia">Saudi Arabia</a></div>
+<div class="media-object align-justify">
+<div class="media-object-section">
+<h6 class="font-bold"><a href="/node/2500021/saudi-arabia">How the hospitality industry in Saudi Arabia is embracing environmental sustainability</a></h6>
+</div>
+<div class="media-object-section">
+<div class="media-object-img">
+<a href="/node/2500021/saudi-arabia"><img src="https://www.arabnews.com/sites/default/files/styles/n_100_59/public/main-image/2024/04/26/4336441-787748481.jpg?itok=Czl8EMgn" title="How the hospitality industry in Saudi Arabia is embracing environmental sustainability" width="100" height="59" alt="How the hospitality industry in Saudi Arabia is embracing environmental sustainability" /></a> </div>
+<div class="meta-area"><span class="views-count views-count-placeholder nid-2500021"><i class="icomoon-icon icon-views"></i> <span></span></span></div>
+</div>
+</div>
+</div> </div> </div>
+</div> </div>
+</div>
+<div class="block-wrapper no-spacer">
+<div class="block-content">
+<div class="ad-holder text-center">
+<script>
+if (!isMobileDevice()) {
+document.write("<div id='div-gpt-ad-3341368-4'></div>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3341368-4'); });
+		}
+			
+    </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid-x grid-margin-x">
+<div class="cell">
+<div class="section-wrapper">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/gallery">Photos</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Photos">
+<div class="view view-gallery view-id-gallery view-display-id-block view-dom-id-44ff4d72fd48338215cf05bb4ded03cb">
+<div class="view-content">
+<div class="grid-x grid-margin-x align-center">
+<div class="cell large-auto" data-nid="2498791">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2498791">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/gallery/main-image/2024/04/24/4333111-377969597.jpg?itok=PsQycVU6" alt="The makers of a documentary on Saudi wildlife were honored at a special screening of the film “Horizon.”" title="EU Embassy, Arab News honor makers of Saudi ‘Horizon’ documentary" /> <span class="media-label abs-el"><i class="icomoon-icon icon-camera"></i> Photos</span>
+
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h3><a href="/node/2498791">EU Embassy, Arab News honor makers of Saudi ‘Horizon’ documentary</a></h3>
+</div>
+<div class="article-item-meta">
+<time>24 April 2024
+</div>
+</div>
+</div>
+</div>
+<div class="cell large-shrink">
+<div class="sidebar-wrap">
+<div class="grid-items grid-x grid-margin-x media-object-for-small small-up-1 medium-up-2 large-up-1">
+<div class="cell" data-nid="2485426">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2485426">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/gallery/main-image/2024/03/30/4297591-1997505711.jpg?itok=tjMvnCGU" width="360" height="212" alt="Photos of the Week: March 24 to 30" title="Photos of the Week: March 24 to 30" /> <span class="media-label abs-el"><i class="icomoon-icon icon-camera"></i> Photos</span>
+
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h5 class="font-bold"><a href="/node/2485426">Photos of the Week: March 24 to 30</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="cell" data-nid="2475221">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2475221">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/gallery/main-image/2024/03/12/4269996-1753645940.jpg?itok=DiosfC4E" width="360" height="212" alt="Thousands flock to Saudi Arabia’s 2 Holy Mosques to break fast on first day of Ramadan" title="Thousands flock to Saudi Arabia’s 2 Holy Mosques to break fast on first day of Ramadan" /> <span class="media-label abs-el"><i class="icomoon-icon icon-camera"></i> Photos</span>
+
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h5 class="font-bold"><a href="/node/2475221">Thousands flock to Saudi Arabia’s 2 Holy Mosques to break fast on first day of Ramadan</a></h5>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+</div>
+</div> <div class="btns-area text-center uppercase">
+<a href="/gallery" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+
+<div class="section-wrapper">
+<div class="section-title first-letter-style style-v3 sticky-section-title">
+<h2><span><a href="/videos">Video</a></span></h2>
+</div>
+<div class="section-content" data-vr-zone="Video">
+<div class="view view-video view-id-video view-display-id-block view-dom-id-edd1f3fc5e574a70e260d1a22e966de6">
+<div class="view-content">
+<div class="grid-x grid-margin-x align-center">
+<div class="cell large-auto" data-nid="2501261">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2501261">
+<span class="label abs-el uppercase update">
+Update </span>
+<img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2024/04/29/4340171-860171460.jpg?itok=Hg9Vi95y" alt="Blinken ‘hopeful’ of Gaza ceasefire deal" title="Blinken ‘hopeful’ of Gaza ceasefire deal" /> <span class="media-label abs-el"><i class="icomoon-icon icon-play"></i> Video</span>
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h3><a href="/node/2501261">Blinken ‘hopeful’ of Gaza ceasefire deal</a></h3>
+</div>
+<div class="article-item-meta">
+<time>
+57 min 24 sec ago
+</time>
+</div>
+</div>
+</div>
+</div>
+<div class="cell large-shrink">
+<div class="sidebar-wrap">
+<div class="grid-items grid-x grid-margin-x media-object-for-small small-up-1 medium-up-2 large-up-1">
+<div class="cell" data-nid="2500266">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2500266">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/27/4337286-2005272532.png?itok=VbbAuq7p" width="360" height="212" alt="Riyadh prepares for WEF meeting on collaboration, growth and energy" title="Riyadh prepares for WEF meeting on collaboration, growth and energy" /> <span class="media-label abs-el"><i class="icomoon-icon icon-play"></i> Video</span>
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h5 class="font-bold"><a href="/node/2500266">Riyadh prepares for WEF meeting on collaboration, growth and energy</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="cell" data-nid="2499386">
+<div class="article-item">
+<div class="article-item-img">
+<a href="/node/2499386">
+<img src="https://www.arabnews.com/sites/default/files/styles/n_360_212/public/main-image/2024/04/25/4334706-1863876856.jpg?itok=81GbrTPV" width="360" height="212" alt="‘Let’s help Yemen regain ability to chart its own future,’ US envoy Tim Lenderking tells Arab News" title="‘Let’s help Yemen regain ability to chart its own future,’ US envoy Tim Lenderking tells Arab News" /> <span class="media-label abs-el"><i class="icomoon-icon icon-play"></i> Video</span>
+</a>
+</div>
+<div class="article-item-info">
+<div class="article-item-title">
+<h5 class="font-bold"><a href="/node/2499386">‘Let’s help Yemen regain ability to chart its own future,’ US envoy Tim Lenderking tells Arab News</a></h5>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+</div>
+</div> <div class="btns-area text-center uppercase">
+<a href="/videos" class="button hollow small gray">Read more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer id="main-footer">
+<div class="main-footer-content">
+<div class="grid-container">
+<div class="grid-x grid-margin-x">
+<div class="cell small-12 large-8 small-order-2 large-order-1">
+<div class="main-footer-before">
+<div class="grid-x align-middle">
+<div class="cell small-12 medium-8">
+<div class="logo-footer text-center medium-text-left">
+<a href="/"><img src="/sites/all/themes/narabnews/assets/img/45-logo-mobile-new.png?21ssa12ss" alt="Logo" title="Arabnews"></a>
+</div>
+</div>
+<div class="cell small-12 medium-4">
+<div class="socials-area text-center medium-text-left show-for-medium">
+<div class="socials-btns">
+<a href="https://www.facebook.com/pages/Arab-News/10250877124" class="social-btn facebook-btn-hover" target="_blank"><i class="icomoon-icon icon-facebook"></i></a>
+<a href="https://twitter.com/arabnews" class="social-btn twitter-btn-hover" target="_blank"><i class="icomoon-icon icon-twitter"></i></a>
+<a href="https://www.linkedin.com/company/arabnews/?viewAsMember=true" class="social-btn linkedin-btn-hover" target="_blank"><i class="icomoon-icon icon-linkedin"></i></a>
+<a href="https://www.instagram.com/arabnews" class="social-btn instagram-btn-hover" target="_blank"><i class="icomoon-icon icon-instagram"></i></a>
+
+<a href="/rss" class="social-btn" target="_blank"><i class="icomoon-icon icon-rss"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-footer-inner">
+<div class="footer-menu">
+<div class="grid-x">
+<div class="cell small-6 medium-4">
+<ul class="menu vertical">
+<li><a href="/saudiarabia">Saudi Arabia</a></li>
+<li><a href="/middleeast">Middle East</a></li>
+<li><a href="/world">World</a></li>
+<li><a href="/taxonomy/term/4">Business</a></li>
+<li><a href="/taxonomy/term/5">Sport</a></li>
+</ul>
+</div>
+<div class="cell small-6 medium-4">
+<ul class="menu vertical">
+<li><a href="/taxonomy/term/8">lifestyle</a></li>
+<li><a href="/opinion">Opinion</a></li>
+<li><a href="/taxonomy/term/2096">Media</a></li>
+
+<li><a href="https://jobs.arabnews.com" target="_blank">Jobs</a></li>
+</ul>
+</div>
+<div class="cell hide-for-medium">
+<div class="socials-area bottom-spacer text-center medium-text-left">
+<div class="socials-btns">
+<a href="https://www.facebook.com/pages/Arab-News/10250877124" class="social-btn facebook-btn-hover" target="_blank"><i class="icomoon-icon icon-facebook"></i></a>
+<a href="https://twitter.com/arabnews" class="social-btn twitter-btn-hover" target="_blank"><i class="icomoon-icon icon-twitter"></i></a>
+<a href="https://www.linkedin.com/company/arabnews/?viewAsMember=true" class="social-btn linkedin-btn-hover" target="_blank"><i class="icomoon-icon icon-linkedin"></i></a>
+<a href="https://www.instagram.com/arabnews" class="social-btn instagram-btn-hover" target="_blank"><i class="icomoon-icon icon-instagram"></i></a>
+
+<a href="/rss" class="social-btn" target="_blank"><i class="icomoon-icon icon-rss"></i></a>
+</div>
+</div>
+</div>
+<div class="cell small-12 medium-4">
+<ul class="menu vertical extra-links">
+<li><a href="/node/1813431">Editorial Management</a></li>
+<li><a href="/greatesthits">Awards & Recognition</a></li>
+<li><a href="https://www.arabnews.com/ANU" target="_blank">Arab News University </a></li>
+<li><a href="/taxonomy/term/38">Corporate PR</a></li>
+
+<li><a href="/node/211071">Contact Us</a></li>
+<li><a href="/contact-us">Advertise</a></li>
+<li><a href="/cdn-cgi/l/email-protection#b8caddceddd6cdddf8cbcad5df96dbd7d5">Advertise with us</a></li>
+<li><a href="/node/51204">Privacy & Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="main-footer-after">
+<div class="copyright text-center text-left">
+&copy; 2024 SAUDI RESEARCH & PUBLISHING COMPANY, All Rights Reserved And subject to Terms of Use Agreement.
+</div>
+</div>
+</div>
+<div class="cell small-12 large-4 small-order-1 large-order-2">
+
+<div class="mc_embed_signup newsletter-area">
+<div class="newsletter-intro">
+<h5>EMAIL ALERTS</h5>
+<h6>Stay on top of the issues that matter to you the most.</h6>
+</div>
+<form action="https://arabnews.us12.list-manage.com/subscribe/post?u=e8a07b26a0f9770e78d447653&amp;id=daf6913c32" method="post" id="footer-mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="footer-mc_embed_signup_scroll" class="newsletter-input-group">
+<input type="email" value name="EMAIL" class="email input-field" id="footer-mce-EMAIL" placeholder="Email address" required>
+
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bba8c5e5b576b1912240a8e75_8e833aa672" tabindex="-1" value></div>
+<input type="submit" value="Subscribe Now" name="subscribe" id="footer-mc-embedded-subscribe" class="button expanded">
+</div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</footer> </div>
+</div>
+<div class="canvas-panel custom-fluid-width custom-duration-400" off-canvas="nav-panel left overlay">
+<div class="subpanel-search">
+<form action="/" method="post" id="search-block-form--5" accept-charset="UTF-8"><div><div class="container-inline">
+<h2 class="element-invisible">Search form</h2>
+<div class="form-item form-type-textfield form-item-search-block-form">
+<label class="element-invisible" for="edit-search-block-form--10">Search </label>
+<input title="Enter the terms you wish to search for." class="radius form-text" placeholder=" Search" type="text" id="edit-search-block-form--10" name="search_block_form" value size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--5"><input class="hide form-submit" type="submit" id="edit-submit--5" name="op" value="Search" /></div><input type="hidden" name="form_build_id" value="form-tAd8JKzjJpvNq15rVKm8sPsz9mrgeLR12wjKwYQwrXk" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form> 
+</div>
+<div class="menu-list-dropdown-wrapper select_domain hide-for-large">
+<button class="button hollow expanded dropdown select_panel_dropdown" type="button" data-toggle="menu-list-dropdown">Arab News </button>
+<div class="dropdown-pane expanded" id="menu-list-dropdown" data-dropdown>
+<ul class="menu vertical">
+<li><a href="https://www.arabnews.pk/">Arab News PK</a></li>
+<li><a href="https://www.arabnews.jp/">Arab News JP</a></li>
+<li><a href="https://www.arabnews.fr/">Arab News FR</a></li>
+</ul>
+</div>
+</div>
+<div class="print-edition-area">
+<h6>Print Edition</h6>
+<span><a href="/pdfissues/index.php" target="_blank">Read pdf version</a></span>
+ <a href="https://arabnews.us12.list-manage.com/subscribe/post?u=e8a07b26a0f9770e78d447653&id=daf6913c32" target="_blank">Subscribe now</a>
+</div>
+<ul class="menu vertical menu-panel" data-accordion-menu data-multi-open="false"><li class="first leaf menu-16851 active"><a href="#">&nbsp;</a><span><a href="/" class="active">Home</a></span></li>
+<li class="expanded saudi-arabia-theme-bg-hover menu-14066"><a href="#">&nbsp;</a><span><a href="/saudiarabia">Saudi Arabia</a></span><ul class="menu vertical nested"><li class="first leaf menu-24091"><a href="/saudiarabia">News</a></li>
+<li class="leaf menu-23581"><a href="/tags/theplace">The Place</a></li>
+<li class="leaf menu-23591"><a href="/thespace">The Space</a></li>
+<li class="leaf menu-24086"><a href="/tags/who%E2%80%99s-who">Who&#039;s Who</a></li>
+<li class="leaf menu-23601"><a href="/ksa_today">KSA Today</a></li>
+<li class="last leaf menu-31781"><a href="https://www.arabnews.com/GreenAndBlue">Green &amp; Blue</a></li>
+</ul></li>
+<li class="leaf middle-east-theme-bg-hover menu-14071"><a href="#">&nbsp;</a><span><a href="/middleeast">Middle East</a></span></li>
+<li class="leaf world-theme-bg-hover menu-14076"><a href="#">&nbsp;</a><span><a href="/world">World</a></span></li>
+<li class="expanded economy-theme-bg-hover menu-14081"><a href="#">&nbsp;</a><span><a href="/economy">Business &amp; Economy</a></span><ul class="menu vertical nested"><li class="first leaf menu-16036"><a href="/economy">Business &amp; Economy</a></li>
+<li class="leaf menu-29661"><a href="/insight">Insight</a></li>
+<li class="leaf menu-14096"><a href="/category/main-category/economy/corporate-news">Corporate News</a></li>
+<li class="last leaf menu-31851"><a href="/EyeOnAI">Eye On AI</a></li>
+</ul></li>
+<li class="expanded sports-theme-bg-hover menu-14106"><a href="#">&nbsp;</a><span><a href="/sport">Sport</a></span><ul class="menu vertical nested"><li class="first leaf menu-30466"><a href="/SaudiFootball">Saudi Football</a></li>
+<li class="leaf menu-30471"><a href="/main-category/football">Football</a></li>
+<li class="leaf menu-30501"><a href="/main-category/motorsport">Motorsport</a></li>
+<li class="leaf menu-30496"><a href="/main-category/tennis">Tennis</a></li>
+<li class="leaf menu-30491"><a href="/Cricket"> Cricket</a></li>
+<li class="leaf menu-30486"><a href="/main-category/golf">Golf</a></li>
+<li class="leaf menu-30481"><a href="/main-category/e-sport">E-sport</a></li>
+<li class="last leaf menu-30476"><a href="/podcast/sport">Podcast</a></li>
+</ul></li>
+<li class="collapsed lifestyle-theme-bg-hover menu-14111"><a href="#">&nbsp;</a><span><a href="/lifestyle">Lifestyle</a></span></li>
+<li class="expanded menu-14146"><a href="#">&nbsp;</a><span><a href="/opinion">Opinion</a></span><ul class="menu vertical nested"><li class="first leaf menu-14151"><a href="/category/main-category/opinion/editorial">Editorial</a></li>
+<li class="last leaf menu-14161"><a href="/category/main-category/opinion/letters">Letters</a></li>
+</ul></li>
+<li class="expanded menu-16281"><a href="#">&nbsp;</a><span><a href="/main-category/media">Media</a></span><ul class="menu vertical nested"><li class="first last leaf menu-29556"><a href="/media-list">MEDIA POWER LISTS</a></li>
+</ul></li>
+<li class="expanded menu-27476"><a href="#">&nbsp;</a><span><a href="/research">Research &amp; Studies</a></span><ul class="menu vertical nested"><li class="first leaf menu-28421"><a href="/research-papers">Research Papers</a></li>
+<li class="leaf menu-27486"><a href="/yougov">YouGov</a></li>
+<li class="leaf menu-27481"><a href="/deepdive">Deep Dive</a></li>
+<li class="last leaf menu-27491"><a href="https://www.preachersofhate">Preachers of Hate</a></li>
+</ul></li>
+<li class="leaf menu-29206"><a href="#">&nbsp;</a><span><a href="/franklyspeaking">Frankly Speaking</a></span></li>
+<li class="leaf menu-29211"><a href="#">&nbsp;</a><span><a href="/node/1834651">RAY RADIO SHOW</a></span></li>
+<li class="leaf menu-29216"><a href="#">&nbsp;</a><span><a href="/podcast">Podcast</a></span></li>
+<li class="last leaf menu-29051"><a href="#">&nbsp;</a><span><a href="/greatesthits">Awards &amp; Recognition</a></span></li>
+</ul> <div class="socials-area">
+<div class="socials-btns">
+<a href="https://www.facebook.com/pages/Arab-News/10250877124" class="social-btn facebook-btn-hover" target="_blank"><i class="icomoon-icon icon-facebook"></i></a>
+<a href="https://twitter.com/arabnews" class="social-btn twitter-btn-hover" target="_blank"><i class="icomoon-icon icon-twitter"></i></a>
+<a href="https://www.linkedin.com/company/arabnews/?viewAsMember=true" class="social-btn linkedin-btn-hover" target="_blank"><i class="icomoon-icon icon-linkedin"></i></a>
+<a href="https://www.instagram.com/arabnews" class="social-btn instagram-btn-hover" target="_blank"><i class="icomoon-icon icon-instagram"></i></a>
+
+<a href="/rss" class="social-btn" target="_blank"><i class="icomoon-icon icon-rss"></i></a>
+</div>
+</div>
+<ul class="menu vertical extra-links">
+<li><a href="/node/1813431">Editorial Management</a></li>
+<li><a href="/greatesthits">Awards & Recognition</a></li>
+<li><a href="/taxonomy/term/38">Corporate PR</a></li>
+<li><a href="/node/211071">Contact Us</a></li>
+<li><a href="/contact-us">Advertise</a></li>
+<li><a href="/cdn-cgi/l/email-protection#1f6d7a697a716a7a5f6c6d7278317c7072">Advertise with us</a></li>
+<li><a href="/node/51204">Privacy & Terms of Service</a></li>
+</ul>
+<div class="copyright text-center">
+&copy; 2024 SAUDI RESEARCH & PUBLISHING COMPANY, All Rights Reserved And subject to Terms of Use Agreement.
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+  // view counter
+      (function ($) {
+         Drupal.behaviors.viewsCountBehavior = {
+            attach: function (context, settings) {
+                $('.view-id-taxonomy_term').ajaxSuccess(function(){
+                  var newItems = $(this).find('[data-nid]');
+                  pageViewsCount(newItems)
+                });
+            }
+        };
+
+      pageViewsCount();
+
+        /**
+         * Returns an array with arrays of the given size.
+         *
+         * @param myArray {Array} array to split
+         * @param chunk_size {Integer} Size of every group
+         */
+        
+        function chunkArray(myArray, chunk_size){
+            var index = 0;
+            var arrayLength = myArray.length;
+            var tempArray = [];
+
+            for (index = 0; index < arrayLength; index += chunk_size) {
+                myChunk = myArray.slice(index, index+chunk_size);
+                // Do something if you want with the group
+                tempArray.push(myChunk);
+            }
+
+            return tempArray;
+        }
+        function pageViewsCount(items) {
+            var items = items || $('[data-nid]');
+            //console.log("nids",items);
+            var nIDs = [];
+            var stringifynIDs;
+            var obj = new Pageviews();
+            items.each(function () {
+                nIDs.push($(this).data('nid'));
+            });
+            // stringifynIDs = nIDs.join().trim();
+            var arrayChunks = chunkArray(nIDs, 30);
+            $.each(arrayChunks, function( index, value ) {
+                obj.getViews(value.join('|'), function(data) {
+                  //console.log("data",data);
+                  $.map(data, function (value, key) {
+                        $('[data-nid]').each(function () {
+                            //console.log("value",value);
+
+                            if(value.totalPageViews && value.totalPageViews > 0){
+                               $(this).find('.views-count-placeholder.nid-' + value.articleId).addClass("showviews").find('span').text(value.totalPageViews)
+                            } 
+                        })
+                    });
+                });
+            });
+        }
+
+        // function chunkArray(myArray, chunk_size){
+        //     var index = 0;
+        //     var arrayLength = myArray.length;
+        //     var tempArray = [];
+
+        //     for (index = 0; index < arrayLength; index += chunk_size) {
+        //         myChunk = myArray.slice(index, index+chunk_size);
+        //         // Do something if you want with the group
+        //         tempArray.push(myChunk);
+        //     }
+
+        //     return tempArray;
+        // }
+        // function viewsCount(items) {
+        //     var items = items || $('[data-nid]');
+        //     var nIDs = [];
+        //     var stringifynIDs;
+        //     items.each(function () {
+        //         nIDs.push($(this).data('nid'));
+        //     });
+        //     // stringifynIDs = nIDs.join().trim();
+        //     var arrayChunks = chunkArray(nIDs, 30);
+        //     $.each(arrayChunks, function( index, value ) {
+        //         $.ajax({
+        //             context:this,
+        //             url: "https://stats.arabnews.com/api/node/" + value,
+        //             method: "GET",
+        //             cache: false,
+        //             success: function (response) {
+        //                 $.map(response, function (value, key) {
+        //                     $('[data-nid]').each(function () {
+        //                         $(this).find('.views-count-placeholder.nid-' + value.nid).find('span').text(value.count)
+        //                     })
+        //                 });
+        //             }
+        //         });
+        //     });
+        // }
+      })(jQuery);
+
+
+    </script>
+<script src="/sites/all/themes/narabnews/assets/js/app.js?242a122123aq1w"></script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<script>
+    var operatingSystem, userAgentString = navigator.userAgent;
+    var link = $("#store");
+
+    console.log(navigator.userAgent);
+
+    if (userAgentString.indexOf("iPhone") > -1 || userAgentString.indexOf("iPod") > -1 || userAgentString.indexOf("iPad") > -1) {
+        operatingSystem = "iOS";
+        link.attr("href", "https://itunes.apple.com/lb/app/hajj-app-by-arab-news/id1271217604?mt=8");
+    } else if (/Android/.test(userAgentString)) {
+        operatingSystem = "Android";
+        link.attr("href", "https://goo.gl/MoE6Xj");
+    }
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"754f84eaad","applicationID":"1574102493","transactionName":"MgYAMRAHC0IABUUKWwtMNxcLSQxfBQNJTUQNEw==","queueTime":4,"applicationTime":18,"atts":"HkEDR1gdGEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

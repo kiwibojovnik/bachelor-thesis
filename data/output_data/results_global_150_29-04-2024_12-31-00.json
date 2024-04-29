@@ -1,0 +1,1397 @@
+{
+    "https://ooni.org": {
+        "Time": 4.25,
+        "URL": "https://ooni.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "75.2.60.5"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "75.2.60.5",
+        "PING Status": "OK",
+        "PING IP": "75.2.60.5",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 11005,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Age": "67897",
+            "Cache-Control": "public,max-age=0,must-revalidate",
+            "Cache-Status": "\"Netlify Edge\"; hit",
+            "Content-Encoding": "gzip",
+            "Content-Length": "3328",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Date": "Mon, 29 Apr 2024 10:20:55 GMT",
+            "Etag": "\"f7654f0692727c1512194b3ee1724958-ssl-df\"",
+            "Permissions-Policy": "interest-cohort=()",
+            "Server": "Netlify",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "Accept-Encoding",
+            "X-Nf-Request-Id": "01HWMNYC4Y3JJ2XZ5YZJQ69F84"
+        },
+        "HTML Content": "ooni.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "labs.ooni.io"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0356A6D1A588B8952416FCEB0C990D23E2CD",
+            "notBefore": "Mar  8 03:20:31 2024 GMT",
+            "notAfter": "Jun  6 03:20:30 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "labs.ooni.io"
+                ],
+                [
+                    "DNS",
+                    "msg.ooni.io"
+                ],
+                [
+                    "DNS",
+                    "ooni.io"
+                ],
+                [
+                    "DNS",
+                    "ooni.org"
+                ],
+                [
+                    "DNS",
+                    "ooni.torproject.org"
+                ],
+                [
+                    "DNS",
+                    "www.ooni.io"
+                ],
+                [
+                    "DNS",
+                    "www.ooni.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:20:59"
+    },
+    "https://opennet.net": {
+        "Time": 28.08,
+        "URL": "https://opennet.net",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "128.103.64.74"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "128.103.64.74",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.4",
+                0.005588054656982422
+            ],
+            [
+                "147.251.243.86",
+                0.018573760986328125
+            ],
+            [
+                "147.251.242.195",
+                0.0020558834075927734
+            ],
+            [
+                "147.251.242.195",
+                0.002724170684814453
+            ],
+            [
+                "147.251.241.129",
+                0.018414020538330078
+            ],
+            [
+                "195.178.87.1",
+                0.0030541419982910156
+            ],
+            [
+                "62.40.124.29",
+                0.03704190254211426
+            ],
+            [
+                "62.40.98.20",
+                0.040103912353515625
+            ],
+            [
+                "62.40.98.20",
+                0.022118806838989258
+            ],
+            [
+                "62.40.124.45",
+                0.1264488697052002
+            ],
+            [
+                "62.40.124.45",
+                0.2663140296936035
+            ],
+            [
+                "163.253.1.117",
+                0.11687994003295898
+            ],
+            [
+                "163.253.1.117",
+                0.1333141326904297
+            ],
+            [
+                "163.253.1.228",
+                0.27109766006469727
+            ],
+            [
+                "128.103.0.1",
+                0.15727782249450684
+            ],
+            [
+                "140.247.3.62",
+                0.11488103866577148
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 20011,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:21:48 GMT",
+            "Server": "Apache",
+            "X-Content-Type-Options": "nosniff, nosniff",
+            "Etag": "\"1694293113-1\"",
+            "Content-Language": "en",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Cache-Control": "public, max-age=31536000",
+            "Last-Modified": "Sat, 09 Sep 2023 20:58:33 GMT",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "Vary": "Cookie,Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Length": "5922",
+            "Content-Type": "text/html; charset=utf-8",
+            "Via": "1.1 opennet.net",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Powered-By": "Mythical Beasts",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive"
+        },
+        "HTML Content": "opennet.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "adam.law.harvard.edu"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03C397FEF55EA5CACAE7827E4105326EE7D6",
+            "notBefore": "Feb 29 03:52:51 2024 GMT",
+            "notAfter": "May 29 03:52:50 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "adam.law.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "berkman.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "blogs.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "blogs.law.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "brk.mn"
+                ],
+                [
+                    "DNS",
+                    "cyber.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "cyber.law.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "dev.herdict.org"
+                ],
+                [
+                    "DNS",
+                    "herdict.org"
+                ],
+                [
+                    "DNS",
+                    "nymity.berkman.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "nymity.cyber.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "opennet.net"
+                ],
+                [
+                    "DNS",
+                    "stats.berkman.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "tagteam.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "www.berkman.harvard.edu"
+                ],
+                [
+                    "DNS",
+                    "www.citmedialaw.org"
+                ],
+                [
+                    "DNS",
+                    "www.dmlp.org"
+                ],
+                [
+                    "DNS",
+                    "www.herdict.org"
+                ],
+                [
+                    "DNS",
+                    "www.omln.org"
+                ],
+                [
+                    "DNS",
+                    "www.opennet.net"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:21:58"
+    },
+    "https://openvpn.net": {
+        "Time": 5.79,
+        "URL": "https://openvpn.net",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.19.190.106",
+            "104.19.191.106"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.19.190.106",
+        "PING Status": "OK",
+        "PING IP": "104.19.190.106",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 262372,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:22:34 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "x-frame-options": "SAMEORIGIN",
+            "link": "<https://openvpn.net/wp-json/>; rel=\"https://api.w.org/\", <https://openvpn.net/wp-json/wp/v2/pages/5>; rel=\"alternate\"; type=\"application/json\", <https://openvpn.net/>; rel=shortlink",
+            "Content-Encoding": "gzip",
+            "Last-Modified": "Mon, 29 Apr 2024 08:40:22 GMT",
+            "CF-Cache-Status": "HIT",
+            "Age": "3276",
+            "Expires": "Mon, 29 Apr 2024 15:22:34 GMT",
+            "Cache-Control": "public, max-age=18000",
+            "Vary": "Accept-Encoding",
+            "Server": "cloudflare",
+            "CF-RAY": "87be925a284e6e98-PRG"
+        },
+        "HTML Content": "openvpn.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.openvpn.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "587C46A186D701C8",
+            "notBefore": "Feb  5 21:17:59 2024 GMT",
+            "notAfter": "Feb  5 16:13:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.openvpn.net"
+                ],
+                [
+                    "DNS",
+                    "openvpn.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-16685.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:22:40"
+    },
+    "http://opportunity.org": {
+        "Time": 8.35,
+        "URL": "http://opportunity.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.26.6.111",
+            "104.26.7.111",
+            "172.67.74.38"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.26.7.111",
+        "PING Status": "OK",
+        "PING IP": "104.26.7.111",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://opportunity.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.26.6.111",
+                "104.26.7.111",
+                "172.67.74.38"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 3530,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:23:22 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "pragma": "no-cache",
+            "mc": "jN1vZ7L/YO1beXvqWrj8e/3WmyO8EpumV6AwFe0J8xo31fRMDlbfy41RusBViL6p",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=29D2hyOsE1L4sfWQ%2BePkO5jG2QVSm9ZEX5ZIbB7kE6euwyHxd2EYR0fhffYuNUsYQ7looabP8Yqt4pa8o7Wzj%2BanV9MGJ3fT3ouTSqqsD7nt7YppswMl1jVquW0vvX9NlQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87be93857cb927b8-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "opportunity.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "opportunity.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "042180A198762F741B9F03BB9FE8C70857A0",
+            "notBefore": "Apr 28 23:25:00 2024 GMT",
+            "notAfter": "Jul 27 23:24:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.opportunity.org"
+                ],
+                [
+                    "DNS",
+                    "opportunity.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:23:29"
+    },
+    "https://otr.cypherpunks.ca": {
+        "Time": 6.48,
+        "URL": "https://otr.cypherpunks.ca",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "198.96.155.5"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "198.96.155.5",
+        "PING Status": "OK",
+        "PING IP": "198.96.155.5",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 15658,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:24:40 GMT",
+            "Server": "Apache/2.4.52 (Ubuntu)",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Length": "5820",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html; charset=utf-8"
+        },
+        "HTML Content": "otr.cypherpunks.ca_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "cypherpunks.ca"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "039B41BCF8BD723BAE75A76CA1E08FC41DFD",
+            "notBefore": "Apr  7 09:47:10 2024 GMT",
+            "notAfter": "Jul  6 09:47:09 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "cypherpunks.ca"
+                ],
+                [
+                    "DNS",
+                    "lists.cypherpunks.ca"
+                ],
+                [
+                    "DNS",
+                    "otr-help.cypherpunks.ca"
+                ],
+                [
+                    "DNS",
+                    "otr.cypherpunks.ca"
+                ],
+                [
+                    "DNS",
+                    "www.cypherpunks.ca"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:24:46"
+    },
+    "https://outlook.live.com": {
+        "Time": 6.51,
+        "URL": "https://outlook.live.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "40.99.220.2",
+            "40.101.70.2",
+            "40.101.70.178",
+            "52.97.160.2"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "40.101.70.2",
+        "PING Status": "OK",
+        "PING IP": "40.101.70.2",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://outlook.live.com/owa/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "40.99.220.2",
+                "40.101.70.2",
+                "40.101.70.178",
+                "52.97.160.2"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 201253,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Content-Type": "text/html",
+            "ETag": "\"85de642e1467807f64f7e10807df3869:1711562737.176211\"",
+            "Last-Modified": "Tue, 26 Mar 2024 18:16:43 GMT",
+            "Server": "AkamaiNetStorage",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Date": "Mon, 29 Apr 2024 10:25:40 GMT",
+            "Content-Length": "12623",
+            "Connection": "keep-alive"
+        },
+        "HTML Content": "outlook.live.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Washington"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Redmond"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "outlook.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert Cloud Services CA-1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "01A850C3C037D758B901DF7B77357065",
+            "notBefore": "Jan 22 00:00:00 2024 GMT",
+            "notAfter": "Jan 21 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.clo.footprintdns.com"
+                ],
+                [
+                    "DNS",
+                    "*.hotmail.com"
+                ],
+                [
+                    "DNS",
+                    "*.internal.outlook.com"
+                ],
+                [
+                    "DNS",
+                    "*.live.com"
+                ],
+                [
+                    "DNS",
+                    "*.nrb.footprintdns.com"
+                ],
+                [
+                    "DNS",
+                    "*.office.com"
+                ],
+                [
+                    "DNS",
+                    "*.office365.com"
+                ],
+                [
+                    "DNS",
+                    "*.outlook.com"
+                ],
+                [
+                    "DNS",
+                    "*.outlook.office365.com"
+                ],
+                [
+                    "DNS",
+                    "attachment.outlook.live.net"
+                ],
+                [
+                    "DNS",
+                    "attachment.outlook.office.net"
+                ],
+                [
+                    "DNS",
+                    "attachment.outlook.officeppe.net"
+                ],
+                [
+                    "DNS",
+                    "attachments.office.net"
+                ],
+                [
+                    "DNS",
+                    "attachments-sdf.office.net"
+                ],
+                [
+                    "DNS",
+                    "ccs.login.microsoftonline.com"
+                ],
+                [
+                    "DNS",
+                    "ccs-sdf.login.microsoftonline.com"
+                ],
+                [
+                    "DNS",
+                    "hotmail.com"
+                ],
+                [
+                    "DNS",
+                    "mail.services.live.com"
+                ],
+                [
+                    "DNS",
+                    "office365.com"
+                ],
+                [
+                    "DNS",
+                    "outlook.com"
+                ],
+                [
+                    "DNS",
+                    "outlook.office.com"
+                ],
+                [
+                    "DNS",
+                    "substrate.office.com"
+                ],
+                [
+                    "DNS",
+                    "substrate-sdf.office.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocspx.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertCloudServicesCA-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertCloudServicesCA-1-g1.crl",
+                "http://crl4.digicert.com/DigiCertCloudServicesCA-1-g1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:25:46"
+    },
+    "https://packetstormsecurity.com": {
+        "Time": 24.51,
+        "URL": "https://packetstormsecurity.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "198.84.60.198"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "198.84.60.198",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.1",
+                0.0058901309967041016
+            ],
+            [
+                "147.251.243.86",
+                0.03153061866760254
+            ],
+            [
+                "147.251.242.195",
+                0.005869865417480469
+            ],
+            [
+                "147.251.242.194",
+                0.029189109802246094
+            ],
+            [
+                "83.97.88.41",
+                0.0057451725006103516
+            ],
+            [
+                "62.40.98.20",
+                0.018639087677001953
+            ],
+            [
+                "50.115.90.218",
+                0.021363258361816406
+            ],
+            [
+                "50.115.91.103",
+                0.024871826171875
+            ],
+            [
+                "50.115.91.103",
+                0.024829864501953125
+            ],
+            [
+                "50.115.91.109",
+                0.03415203094482422
+            ],
+            [
+                "50.115.86.48",
+                0.11226916313171387
+            ],
+            [
+                "198.232.115.158",
+                0.1129159927368164
+            ],
+            [
+                "198.232.115.158",
+                0.12973690032958984
+            ],
+            [
+                "216.52.127.18",
+                0.11188316345214844
+            ],
+            [
+                "198.84.60.26",
+                0.11506390571594238
+            ],
+            [
+                "198.84.60.26",
+                0.11063313484191895
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 69633,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 10:21:29 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Expires": "0",
+            "Cache-Control": "no-cache, no-store, private, must-revalidate, proxy-revalidate",
+            "Set-Cookie": "P=0; expires=Fri, 5-May-1999 05:05:05 GMT; domain=.packetstormsecurity.com; path=/; HttpOnly; secure, TZ=UTC; domain=.packetstormsecurity.com; path=/; expires=Mon, 5-May-2025 05:05:05 GMT, M=dl.packetstormsecurity.net; domain=.packetstormsecurity.com; path=/; expires=Mon, 5-May-2025 05:05:05 GMT",
+            "Vary": "Accept-Encoding",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "Strict-Transport-Security": "max-age=3600"
+        },
+        "HTML Content": "packetstormsecurity.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "packetstormsecurity.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0317FEE7FABBB91681E1193FD88F251EFB35",
+            "notBefore": "Feb 28 10:08:49 2024 GMT",
+            "notAfter": "May 28 10:08:48 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "api.packetstormsecurity.com"
+                ],
+                [
+                    "DNS",
+                    "blitzdial.info"
+                ],
+                [
+                    "DNS",
+                    "dl.packetstorm.news"
+                ],
+                [
+                    "DNS",
+                    "dl.packetstormsecurity.net"
+                ],
+                [
+                    "DNS",
+                    "packetstatic.com"
+                ],
+                [
+                    "DNS",
+                    "packetstorm.news"
+                ],
+                [
+                    "DNS",
+                    "packetstormsecurity.com"
+                ],
+                [
+                    "DNS",
+                    "raveflyers.net"
+                ],
+                [
+                    "DNS",
+                    "rss.packetstormsecurity.com"
+                ],
+                [
+                    "DNS",
+                    "www.packetstorm.news"
+                ],
+                [
+                    "DNS",
+                    "www.packetstormsecurity.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:27:21"
+    },
+    "https://panties.com": {
+        "Time": 6.75,
+        "URL": "https://panties.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.227.38.32"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.227.38.32",
+        "PING Status": "OK",
+        "PING IP": "23.227.38.32",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 121177,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:28:23 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Sorting-Hat-PodId": "258",
+            "X-Sorting-Hat-ShopId": "8456099",
+            "X-Storefront-Renderer-Rendered": "1",
+            "etag": "W/\"cacheable:4a57b8c71c7a1b4dc48c2f60135d4f6c\"",
+            "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin",
+            "set-cookie": "secure_customer_sig=; path=/; expires=Tue, 29 Apr 2025 10:28:23 GMT; secure; HttpOnly; SameSite=Lax, localization=US; path=/; expires=Tue, 29 Apr 2025 10:28:23 GMT, cart_currency=USD; path=/; expires=Mon, 13 May 2024 10:28:23 GMT, _cmp_a=%7B%22purposes%22%3A%7B%22p%22%3Atrue%2C%22a%22%3Atrue%2C%22m%22%3Atrue%2C%22t%22%3Atrue%7D%2C%22display_banner%22%3Afalse%2C%22sale_of_data_region%22%3Afalse%7D; domain=panties.com; path=/; expires=Tue, 30 Apr 2024 10:28:23 GMT; SameSite=Lax, _tracking_consent=%7B%22con%22%3A%7B%22CMP%22%3A%7B%22p%22%3A%22%22%2C%22m%22%3A%22%22%2C%22a%22%3A%22%22%2C%22s%22%3A%22%22%7D%7D%2C%22region%22%3A%22CZ64%22%2C%22v%22%3A%222.1%22%2C%22reg%22%3A%22GDPR%22%7D; Expires=Tue, 29-Apr-25 10:28:23 GMT; Domain=panties.com; Path=/; SameSite=Lax, _shopify_y=daeeb01e-acea-4803-a97e-1e19f9f663d7; Expires=Tue, 29-Apr-25 10:28:23 GMT; Domain=panties.com; Path=/; SameSite=Lax, _shopify_s=f6276098-0969-44af-b160-55f7e37e954e; Expires=Mon, 29-Apr-24 10:58:23 GMT; Domain=panties.com; Path=/; SameSite=Lax, _orig_referrer=; Expires=Mon, 13-May-24 10:28:23 GMT; Domain=panties.com; Path=/; HttpOnly; SameSite=Lax, _landing_page=%2F; Expires=Mon, 13-May-24 10:28:23 GMT; Domain=panties.com; Path=/; HttpOnly; SameSite=Lax",
+            "x-cache": "hit, server",
+            "x-frame-options": "DENY",
+            "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+            "strict-transport-security": "max-age=7889238",
+            "x-shopid": "8456099",
+            "x-shardid": "258",
+            "vary": "Accept",
+            "content-language": "en",
+            "powered-by": "Shopify",
+            "server-timing": "processing;dur=11, db;dur=3, asn;desc=\"2852\", edge;desc=\"PRG\", country;desc=\"CZ\", theme;desc=\"135636156675\", pageType;desc=\"index\", servedBy;desc=\"nkxq\", requestID;desc=\"32cac46e-c6c3-4a69-8f99-f205ba260d92-1714386503\", cfRequestDuration;dur=90.999842",
+            "x-dc": "gcp-europe-west9,gcp-europe-west1,gcp-europe-west1",
+            "x-request-id": "32cac46e-c6c3-4a69-8f99-f205ba260d92-1714386503",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=cJc08BBu%2BoZUpNZtWdlCcPVDYPnThpZhCa4b7Z0D5ThUWIQp4dRXbdmLX86FWXfYxRpo8cdIQc3bxePaV6qhlso6OeV7nc6PYm3Pdx9A7qPwAzUVfkWt8We9KJ1E\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "X-Permitted-Cross-Domain-Policies": "none",
+            "X-Download-Options": "noopen",
+            "Server": "cloudflare",
+            "CF-RAY": "87be9adc58ddb35d-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "panties.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "panties.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04E4A4E4F97A3D60A25D6F68B80003C04F78",
+            "notBefore": "Mar 31 19:30:03 2024 GMT",
+            "notAfter": "Jun 29 19:30:02 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "panties.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:28:27"
+    },
+    "https://www.peta.org": {
+        "Time": 5.56,
+        "URL": "https://www.peta.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.18.197.48",
+            "104.18.198.48"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.18.198.48",
+        "PING Status": "OK",
+        "PING IP": "104.18.198.48",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.peta.org/international/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.18.197.48",
+                "104.18.198.48"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 112486,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:29:18 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87be9c360c7d412c-PRG",
+            "CF-Cache-Status": "HIT",
+            "Access-Control-Allow-Origin": "*",
+            "Age": "23",
+            "Cache-Control": "public, max-age=7200",
+            "Expires": "Mon, 29 Apr 2024 12:29:18 GMT",
+            "Last-Modified": "Mon, 29 Apr 2024 06:32:44 GMT",
+            "Link": "<https://www.peta.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.peta.org/wp-json/wp/v2/pages/863>; rel=\"alternate\"; type=\"application/json\", <https://www.peta.org/?p=863>; rel=shortlink",
+            "Strict-Transport-Security": "max-age=2592000",
+            "Vary": "Accept-Encoding",
+            "Content-Security-Policy": "default-src 'unsafe-inline' 'unsafe-eval' 'self' data: *; frame-ancestors 'self' https://*.peta.org https://*.petalatino.com https://*.peta2.com; frame-src blob: *",
+            "Edge-Cache-Control": "max-age=7200",
+            "Permissions-Policy": "midi=(),accelerometer=(), gyroscope=(), magnetometer=(), fullscreen=*",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "X-Cache": "EXPIRED, EXPIRED",
+            "X-Content-Type-Options": "nosniff",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.peta.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "peta.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "039D031B7A3C8C622A8BA54C629FCA9B4810",
+            "notBefore": "Apr 10 03:11:47 2024 GMT",
+            "notAfter": "Jul  9 03:11:46 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.peta.org"
+                ],
+                [
+                    "DNS",
+                    "peta.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 12:29:23"
+    },
+    "http://phrack.org": {
+        "Time": 33.2,
+        "URL": "http://phrack.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "194.150.169.131"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "194.150.169.131",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.4",
+                0.02030777931213379
+            ],
+            [
+                "147.251.243.86",
+                0.015311956405639648
+            ],
+            [
+                "147.251.242.195",
+                0.006010770797729492
+            ],
+            [
+                "147.251.242.194",
+                0.0276339054107666
+            ],
+            [
+                "147.251.241.129",
+                0.021564006805419922
+            ],
+            [
+                "147.251.241.129",
+                0.019414901733398438
+            ],
+            [
+                "195.178.87.1",
+                0.003805875778198242
+            ],
+            [
+                "94.103.180.36",
+                0.014338016510009766
+            ],
+            [
+                "94.103.180.2",
+                0.012656211853027344
+            ],
+            [
+                "45.153.82.11",
+                0.02768993377685547
+            ],
+            [
+                "45.153.82.11",
+                0.011983156204223633
+            ],
+            [
+                "109.68.226.23",
+                0.16917872428894043
+            ],
+            [
+                "109.68.226.23",
+                0.02876591682434082
+            ],
+            [
+                "195.85.254.134",
+                0.0263369083404541
+            ],
+            [
+                "195.85.254.126",
+                0.02728867530822754
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 16662,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:49:57 GMT",
+            "Server": "Apache",
+            "Last-Modified": "Tue, 05 Mar 2024 18:06:46 GMT",
+            "ETag": "\"a9b32ab7803b9e3aba6b387267625bf10e79a910\"",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "16662",
+            "Keep-Alive": "timeout=8, max=100",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html"
+        },
+        "HTML Content": "phrack.org_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 12:31:00"
+    }
+}

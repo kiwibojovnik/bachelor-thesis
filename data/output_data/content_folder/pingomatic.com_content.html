@@ -1,0 +1,97 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ping-o-Matic!</title>
+<link href="/p.css" rel="stylesheet" type="text/css" />
+<script src="/j.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5NLSPRW');</script>
+</head>
+<body>
+	<div id="rap">
+		<div id="header">
+			<h1><a href="/">Ping-O-Matic</a></h1>
+			<ul id="menu">
+				<li class="sel"><a href="/">Home</a></li>
+				<li class="divider">|</li>
+				<li><a href="https://blog.pingomatic.com/" target='_blank'>Blog <span class='externalicon'></span></a></li>
+			</ul>
+			<span class="clear"></span>
+		</div>
+		<div id="content">
+<script type="text/javascript">
+<!--
+function focusit(){document.getElementById('title').focus();}window.onload = focusit;
+//-->
+</script>
+<script type="text/javascript">
+var moreinfo;
+var moreinfolink;
+var show = '';
+var hide = '';
+function showhide(show,hide) {
+	var showdivid = show;
+	var hidedivid = hide;
+	showdiv(showdivid);
+	hidediv(hidedivid);
+	//alert('show: ' + show + ' hide: ' + ' showdivid: ' + showdivid);
+	}
+function showdiv(showdivid) {
+	document.getElementById(showdivid).style.display = 'block';
+	}
+function hidediv(hidedivid) {
+	document.getElementById(hidedivid).style.display = 'none';
+	}
+</script>
+	<div class="column-left">
+		<img src="/images/pinging-search-engines.png" alt="Pinging search engines, so you don't have to!" width="121" height="66" />
+	</div>
+	<div class="column-main">
+		<h2>What is this?</h2>
+		<p style="margin-top: 0;">Ping-O-Matic is a service to update different search engines that your blog has updated.</p>
+		<p style="margin-bottom: 0;"><a href="javascript:showhide('moreinfo','moreinfolink');" id="moreinfolink" class="expand-arrow">Learn more...</a></p>
+		<div id="moreinfo" style="display: none;">
+			<p>We regularly check downstream services to make sure that they're legit and still work. So while it may appear like we have fewer services, they're the most important ones.</p>
+			<p style="margin-bottom: 0;">Make sure to only ping specialized services if they're relevant to your blog, otherwise you'll cause an undue burden on them.</p>
+		</div>
+	</div>
+	<span class="clear"></span>
+</div><!--/ content -->
+<div class="generator">
+	<span class="dot"></span>
+	<form id="pingform" method="get" action="/ping/">
+	<h3>Blog Details</h3>
+	<fieldset>
+	<p><label for="title" class="biglabel">Blog Name:</label> <input class="text" name="title" type="text" id="title" value="" /></p>
+	<p><label for="blogurl" class="biglabel">Blog Home Page</label> <input class="text" id="blogurl" name="blogurl" type="text" value="http://" /></p>
+	<p><label for="rssurl" class="biglabel">RSS URL (optional):</label> <input class="text" id="rssurl" name="rssurl" type="text" value="http://" /></p>
+	</fieldset>
+	<h3>Services to Ping</h3>
+	<fieldset id="servicestoping">
+	
+	<div id="common">
+		<h4>Common Services (<a href="javascript:check_common();" id="checkall">Check All</a>)</h4>
+		<p><label for='chk_blogs'><input id='chk_blogs' name='chk_blogs' class='common' type='checkbox' /> Blo.gs</label> <a href='http://blo.gs/' class='externalicon' title='Check out Blo.gs' target='_blank'><span>[link]</span></a></p>
+<p><label for='chk_feedburner'><input id='chk_feedburner' name='chk_feedburner' class='common' type='checkbox' /> Feed Burner</label> <a href='http://feedburner.com/' class='externalicon' title='Check out Feed Burner' target='_blank'><span>[link]</span></a></p>
+<p><label for='chk_tailrank'><input id='chk_tailrank' name='chk_tailrank' class='common' type='checkbox' /> Spinn3r</label> <a href='http://spinn3r.com/' class='externalicon' title='Check out Spinn3r' target='_blank'><span>[link]</span></a></p>
+<p><label for='chk_superfeedr'><input id='chk_superfeedr' name='chk_superfeedr' class='common' type='checkbox' /> Superfeedr</label> <a href='http://superfeedr.com/' class='externalicon' title='Check out Superfeedr' target='_blank'><span>[link]</span></a></p>
+	</div>
+
+	</fieldset>
+	<p><a href="javascript:document.getElementById('pingform').submit()" class="bigbutton"><span>Send Pings &#187;</span></a></p>
+	<!--<p class="submit"><input type="submit" value="Send Pings &raquo;" /></p>-->
+
+	</form>
+</div><!--/ generator -->
+		<div id="footer">
+			<span class="automattic-joint" style='text-decoration: none'>A <a href='https://wordpressfoundation.org'>WordPress Foundation</a> Experiment</span>
+			&copy; 2024 WordPress Foundation
+		</div>
+</div>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NLSPRW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+</body>
+</html>

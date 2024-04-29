@@ -1,0 +1,989 @@
+{
+    "http://beyondexgay.com": {
+        "Time": 6.81,
+        "URL": "http://beyondexgay.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "154.41.249.207"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "154.41.249.207",
+        "PING Status": "OK",
+        "PING IP": "154.41.249.207",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://beyondexgay.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "154.41.249.207"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 7778,
+        "Headers": {
+            "Server": "hcdn",
+            "Date": "Mon, 29 Apr 2024 08:04:41 GMT",
+            "Content-Type": "text/html",
+            "Content-Length": "2465",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "last-modified": "Sun, 20 Dec 2020 19:19:32 GMT",
+            "etag": "\"1e62-5fdfa3c4-43eb4986fc863218;gz\"",
+            "content-encoding": "gzip",
+            "platform": "hostinger",
+            "content-security-policy": "upgrade-insecure-requests",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-hcdn-request-id": "f9bc2525c18bb196eb3824de01e32004-srv-edge4",
+            "x-hcdn-cache-status": "DYNAMIC",
+            "x-hcdn-upstream-rt": "0.427",
+            "Accept-Ranges": "bytes"
+        },
+        "HTML Content": "beyondexgay.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "beyondexgay.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04EA382CB70C9A876F6A9A4D2A55C723BADA",
+            "notBefore": "Apr  5 12:35:34 2024 GMT",
+            "notAfter": "Jul  4 12:35:33 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "beyondexgay.com"
+                ],
+                [
+                    "DNS",
+                    "www.beyondexgay.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:04:46"
+    },
+    "https://bi.org": {
+        "Time": 6.43,
+        "URL": "https://bi.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.66.40.91",
+            "172.66.43.165"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.66.43.165",
+        "PING Status": "OK",
+        "PING IP": "172.66.43.165",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://bi.org/en",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "172.66.40.91",
+                "172.66.43.165"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 39146,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:05:17 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "no-cache, private",
+            "Set-Cookie": "XSRF-TOKEN=eyJpdiI6IkVzMjFrUjlDQWgwYWtZOXo2d05CSkE9PSIsInZhbHVlIjoib0JJYWNEdW1NOG9iNXlISHhBQWxxdkRQRE9GREQ5TnV4RHpobHB6RS9FOUE1dkRoVmVETVpkcmY4K0pJSkZ2WTlWbWlYYWlyS2swS3pNb3lzaHEwQm52NUFZZHJkd2J4OUFUaG9rS1J6L1ZTYkJQcHpIQVZzQUtvZS9iSTd1YXAiLCJtYWMiOiJmNWI2MTU5NGVhYmI0N2FhMmViN2YyMGU4MGUzZjhjOTdkYzQ2NjAxY2MyNTNhMmY0MGQwOWJmMWVhN2ZiMTM0IiwidGFnIjoiIn0%3D; expires=Thu, 17-Feb-2028 05:25:17 GMT; Max-Age=120000000; path=/; samesite=lax, biorg_session=eyJpdiI6Ii9Eb0J2QlNVNnhsR0FQY2NiN0t2WXc9PSIsInZhbHVlIjoieDhCMU11TG9pbXlvMUZNcVRBTHM4Z2FzdUp1dXhXT2creTRFbFRaN3d2Z3p3YXhKcXFxT0lGK0xFc3RVL2RaZHVNYlFiZDdpRlVRajY4Tk9OL2hhbm94cDUxRFQxZUdEeFdqMUk5eE9oL1FsR2RGS2Zuam9GQmlhc3QzVDFnOEsiLCJtYWMiOiI4YmY1ZTRhMThmMzY4YjYzNGIyMTQ5OGRmNGNmNzRjYjJiNzhiOGU4YzcxM2M5ZWI3YmE1MmYyZDkyNWQxMGMzIiwidGFnIjoiIn0%3D; expires=Thu, 17-Feb-2028 05:25:17 GMT; Max-Age=120000000; path=/; httponly; samesite=lax",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Iz2be3kecRCm2a4h88fdWd9%2BcwfyWJBUSJcpedK1igi0wJthIGOOmzaa%2BoiblJLvM931oxVcj0z8Gr6TXOiqe7ZOl%2FxMPigC%2FgkeqIinUrgJ2ptfORc501I%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87bdc9408d086e9a-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "bi.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "bi.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0329182672E0107309C503932BB5CA24BEDD",
+            "notBefore": "Mar 30 14:06:48 2024 GMT",
+            "notAfter": "Jun 28 14:06:47 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.bi.org"
+                ],
+                [
+                    "DNS",
+                    "bi.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:05:23"
+    },
+    "https://bitcoin.org": {
+        "Time": 7.59,
+        "URL": "https://bitcoin.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.22.68.176",
+            "104.22.69.176",
+            "172.67.40.154"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.40.154",
+        "PING Status": "OK",
+        "PING IP": "172.67.40.154",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://bitcoin.org/en/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.22.68.176",
+                "104.22.69.176",
+                "172.67.40.154"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 23834,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:06:12 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Last-Modified": "Tue, 09 Apr 2024 11:17:16 GMT",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "Content-Security-Policy": "script-src 'self' www.google-analytics.com blockchain.info static.moonpay.com 'unsafe-inline'",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87bdca94ebad4108-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "bitcoin.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "bitcoin.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "5C8B91F4528675730D291480E244B0F0",
+            "notBefore": "Apr 16 04:37:03 2024 GMT",
+            "notAfter": "Jul 15 04:37:02 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "bitcoin.org"
+                ],
+                [
+                    "DNS",
+                    "*.bitcoin.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/MQNRy2NRcAM"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/aFc1AiTzyJc.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:06:18"
+    },
+    "https://bitcoin.sipa.be": {
+        "Time": 7.24,
+        "URL": "https://bitcoin.sipa.be",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "144.217.240.89"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "144.217.240.89",
+        "PING Status": "OK",
+        "PING IP": "144.217.240.89",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 2352,
+        "Headers": {
+            "Content-Type": "text/html",
+            "ETag": "\"3313601739\"",
+            "Last-Modified": "Mon, 29 Apr 2024 07:53:31 GMT",
+            "Content-Length": "2352",
+            "Accept-Ranges": "bytes",
+            "Date": "Mon, 29 Apr 2024 08:07:26 GMT",
+            "Server": "lighttpd/1.4.63"
+        },
+        "HTML Content": "bitcoin.sipa.be_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.wuille.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03420483AEAC7F0F1FF1270832063ABE9D6A",
+            "notBefore": "Feb 21 16:41:00 2024 GMT",
+            "notAfter": "May 21 16:40:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.wuille.net"
+                ],
+                [
+                    "DNS",
+                    "bitcoin.sipa.be"
+                ],
+                [
+                    "DNS",
+                    "wuille.net"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:07:33"
+    },
+    "http://www.bittornado.com": {
+        "Time": 7.38,
+        "URL": "http://www.bittornado.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.237.152.122"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.237.152.122",
+        "PING Status": "OK",
+        "PING IP": "23.237.152.122",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 13930,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:08:43 GMT",
+            "Server": "Apache/2.4.6 (CentOS) PHP/5.4.16",
+            "Last-Modified": "Tue, 19 Feb 2013 02:20:13 GMT",
+            "ETag": "\"366a-4d60a7b455140\"",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "13930",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.bittornado.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:08:49"
+    },
+    "https://www.blackberry.com": {
+        "Time": 4.57,
+        "URL": "https://www.blackberry.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "65.9.95.30",
+            "65.9.95.31",
+            "65.9.95.67",
+            "65.9.95.80"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "65.9.95.31",
+        "PING Status": "OK",
+        "PING IP": "65.9.95.31",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://web.blackberry.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.64.165.222"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 91675,
+        "Headers": {
+            "Content-Type": "text/html;charset=utf-8",
+            "Content-Length": "18302",
+            "Connection": "keep-alive",
+            "Date": "Sun, 28 Apr 2024 22:27:47 GMT",
+            "Set-Cookie": "AWSALB=SDcw7WFrQCtJidBWXtHFx5sBvr4vhbqQa3voB3pU4mEFwGu9pzUomOz62K/1/lh4zRclB8c2ZU69cZPAYizVE+Qi/pC2+0cAfhSkXcSWn2f+2Hw42IpCQbCKRM/R; Expires=Sun, 05 May 2024 22:27:47 GMT; Path=/, AWSALBCORS=SDcw7WFrQCtJidBWXtHFx5sBvr4vhbqQa3voB3pU4mEFwGu9pzUomOz62K/1/lh4zRclB8c2ZU69cZPAYizVE+Qi/pC2+0cAfhSkXcSWn2f+2Hw42IpCQbCKRM/R; Expires=Sun, 05 May 2024 22:27:47 GMT; Path=/; SameSite=None; Secure",
+            "Server": "Apache",
+            "X-Dispatcher": "dispatcher3uswest2",
+            "X-Vhost": "publish",
+            "Strict-Transport-Security": "max-age=63072000; includeSubdomains;",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Last-Modified": "Fri, 26 Apr 2024 21:24:15 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Encoding": "gzip",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Content-Security-Policy": "frame-ancestors 'self'; base-uri 'self';upgrade-insecure-requests;",
+            "ETag": "\"1661b-617068696650c-gzip\"",
+            "Vary": "Accept-Encoding",
+            "X-Cache": "Hit from cloudfront",
+            "Via": "1.1 cb11ca2ff3db5adbe7df4bca70e51594.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "PRG50-C1",
+            "X-Amz-Cf-Id": "ba_IUM47U_kZ0SiXYZtz9b0v_G0IitvzIquSnRJBlj2aPBMzfp_FpQ==",
+            "Age": "34907"
+        },
+        "HTML Content": "www.blackberry.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "CA"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Ontario"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Waterloo"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "BlackBerry Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.blackberry.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0B10433C921BC0241C9E382E36118DC3",
+            "notBefore": "Jul 10 00:00:00 2023 GMT",
+            "notAfter": "Aug  9 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.blackberry.com"
+                ],
+                [
+                    "DNS",
+                    "blackberry.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:09:38"
+    },
+    "http://blogmarks.net": {
+        "Time": 8.0,
+        "URL": "http://blogmarks.net",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.41.81",
+            "172.67.163.64"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.163.64",
+        "PING Status": "OK",
+        "PING IP": "172.67.163.64",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 41329,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:10:33 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=6DRg0hgZBo3z2X4JBtWIfD55cKUi44vebSaRVBjI9LTkoJ7PXQU58dBJxxSTxCrtte896ahaw36JPTWOGy4MZaKNTCr5%2BdBwtOOu2RJHthfLbXgIU5COd7DXCxRmuGh6\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87bdd0f5c859b380-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "blogmarks.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "blogmarks.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "E35A7511B19116CA0EE97AA260897628",
+            "notBefore": "Mar 29 22:15:45 2024 GMT",
+            "notAfter": "Jun 27 22:15:44 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "blogmarks.net"
+                ],
+                [
+                    "DNS",
+                    "*.blogmarks.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/FEk5POC-jkk"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/f-vI3N-Drik.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 10:10:39"
+    },
+    "https://www.blogger.com": {
+        "Time": 8.56,
+        "URL": "https://www.blogger.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.251.36.105"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.251.36.105",
+        "PING Status": "OK",
+        "PING IP": "142.251.36.105",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://accounts.google.com/ServiceLogin?passive=true&go=true&service=blogger&continue=https://www.blogger.com/?bpli%3D1",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "142.250.27.84"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 168884,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html",
+            "Content-Security-Policy": "default-src 'self' https://*.google-analytics.com https://*.googleusercontent.com https://*.gstatic.com; script-src 'self' 'unsafe-inline' https://*.google-analytics.com https://*.googleapis.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com",
+            "Cross-Origin-Resource-Policy": "cross-origin",
+            "Cross-Origin-Opener-Policy-Report-Only": "same-origin; report-to=\"blogger-tech\"",
+            "Report-To": "{\"group\":\"blogger-tech\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/blogger-tech\"}]}",
+            "Date": "Mon, 29 Apr 2024 08:11:25 GMT",
+            "Expires": "Mon, 29 Apr 2024 08:11:25 GMT",
+            "Cache-Control": "private, max-age=0",
+            "Last-Modified": "Thu, 02 Nov 2023 22:48:00 GMT",
+            "X-Content-Type-Options": "nosniff",
+            "Server": "sffe",
+            "X-XSS-Protection": "0",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "www.blogger.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.blogger.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "5E04C1A051F633DC099019935E65C21F",
+            "notBefore": "Apr  8 06:31:59 2024 GMT",
+            "notAfter": "Jul  1 06:31:58 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.blogger.com"
+                ],
+                [
+                    "DNS",
+                    "blogger.com"
+                ],
+                [
+                    "DNS",
+                    "blogblog.com"
+                ],
+                [
+                    "DNS",
+                    "*.blogblog.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/moVDfISia2k.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:11:33"
+    },
+    "https://www.blueskyswimwear.com": {
+        "Time": 4.91,
+        "URL": "https://www.blueskyswimwear.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "198.49.23.144",
+            "198.49.23.145",
+            "198.185.159.144",
+            "198.185.159.145"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "198.49.23.144",
+        "PING Status": "OK",
+        "PING IP": "198.49.23.144",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 197756,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Age": "134162",
+            "Content-Encoding": "gzip",
+            "Content-Length": "30703",
+            "Content-Type": "text/html;charset=utf-8",
+            "Date": "Sat, 27 Apr 2024 18:50:57 GMT",
+            "Etag": "W/\"1d4f5ce41ae4b03eb93836b1d7e4a13b\"",
+            "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+            "Server": "Squarespace",
+            "Set-Cookie": "crumb=BZx0ixwp0ZCCYmI5YjIwNmQxMzRkMjBjZjcyMWY2MGZhNDE1YzJl;Secure;Path=/",
+            "Strict-Transport-Security": "max-age=0",
+            "Vary": "Accept-Encoding",
+            "X-Content-Type-Options": "nosniff",
+            "X-Contextid": "WLu918iZ/uo6WOdo6"
+        },
+        "HTML Content": "www.blueskyswimwear.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.blueskyswimwear.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0331079170715D8C4B1DB9A1F843D7F2DE8B",
+            "notBefore": "Apr 22 10:34:37 2024 GMT",
+            "notAfter": "Jul 21 10:34:36 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.blueskyswimwear.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:12:20"
+    },
+    "https://www.bnaibrith.org": {
+        "Time": 5.79,
+        "URL": "https://www.bnaibrith.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "162.159.134.42"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "162.159.134.42",
+        "PING Status": "OK",
+        "PING IP": "162.159.134.42",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 919554,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 08:13:12 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87bdd4d46df6b357-PRG",
+            "CF-Cache-Status": "DYNAMIC",
+            "Link": "<https://www.bnaibrith.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.bnaibrith.org/wp-json/wp/v2/pages/2188>; rel=\"alternate\"; type=\"application/json\", <https://www.bnaibrith.org/>; rel=shortlink",
+            "Vary": "Accept-Encoding",
+            "ki-cache-type": "None",
+            "Ki-CF-Cache-Status": "BYPASS",
+            "ki-edge": "v=20.2.7;mv=3.0.6",
+            "ki-origin": "g1p",
+            "p3p": "CP=\"ALL DSP NID CURa ADMa DEVa HISa OTPa OUR NOR NAV DEM\"",
+            "X-Content-Type-Options": "nosniff",
+            "X-Edge-Location-Klb": "1",
+            "x-kinsta-cache": "HIT",
+            "x-tec-api-origin": "https://www.bnaibrith.org",
+            "x-tec-api-root": "https://www.bnaibrith.org/wp-json/tribe/events/v1/",
+            "x-tec-api-version": "v1",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ydL6rhrQpeXziZU7Ntre2COeOrLgos2fIUp%2FNWaGHT5x22fWBfddd7LUied1EMMgwNGBDMmTlt4ZBi13jd%2Bb6FIOsxwvytYs0X4CbM2X5mgB3P%2FLcKbqCO40kIqArbmLS0MQ\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.bnaibrith.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "bnaibrith.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "C947B268715C4520117A40812B8B10D3",
+            "notBefore": "Apr 21 16:32:00 2024 GMT",
+            "notAfter": "Jul 20 16:31:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "bnaibrith.org"
+                ],
+                [
+                    "DNS",
+                    "*.bnaibrith.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/qY-ngPbDSzo"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/oE9rr3G5TqE.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 10:13:16"
+    }
+}
