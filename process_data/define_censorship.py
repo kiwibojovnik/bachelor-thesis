@@ -101,15 +101,7 @@ def determine_censorship(differences):
 
 
 def add_censorship_type_to_differences(differences):
-    differences_return = []
-    for url, diff in list(differences.items()):
-        print("URL", url)
-        differences_test = diff
-        differences_return.append(determine_censorship(differences_test))
-        print(differences_return)
+    for url, diff in differences.items():
+        censorship_type = determine_censorship(diff)
 
-        # diff['CENSORSHIP TYPE'] = censorship_type
-
-        # print(diff)
-
-    return differences_return
+    return differences

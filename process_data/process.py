@@ -44,10 +44,10 @@ def process_two_files(folder1, folder2):
                     fail_address_records = compare.count_keys_with_no_results(json_data1, json_data2)
 
                     # Find differences
-                    diffs, different_keys_count, same_keys_count = compare.compare_files(json_data1, json_data2)
+                    diff_single, different_keys_count, same_keys_count = compare.compare_files(json_data1, json_data2)
 
                 # Add differences to diffs dictionary
-                diffs[file1] = diffs
+                diffs[file1] = diff_single
                 different_keys_count_total += different_keys_count
                 same_keys_count_total += same_keys_count
                 fail_address_records_total += fail_address_records
@@ -58,15 +58,17 @@ def process_two_files(folder1, folder2):
 def process(folder1, folder2):
     # Ze seznamu dostanu všechny rozdilny testy
     print("Finding differences in each test.")
-    diffs, different_keys_count_total, same_keys_count_total, fail_address_records_total = process_two_files(folder1, folder2)
+    diffs, different_keys_count_total, same_keys_count_total, fail_address_records_total = process_two_files(folder1,
+                                                                                                             folder2)
 
     print("\nDefinition of censorship type.")
     # Definovat typ cenzury na základě selhání testů - přidám tam označení
-    differences = define_censorship.add_censorship_type_to_differences(diffs)
+    diffs = define_censorship.add_censorship_type_to_differences(diffs)
 
     print("Adding geolocation information to traceroute data.")
     # Get GPS location for specific IP addresses in traceroute data, possibly only for those from Belarus
-    differences_to_save = geolocation.add_geolocation(differences)
+    print(diffs)
+    differences_to_save = geolocation.add_geolocation(diffs)
 
     print("Printing statistics about censorship: ")
 

@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn.shortpixel.ai/spai/q_glossy+ret_img+to_auto/www.article19.org/apple-touch-icon.png" data-spai-egr="1">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.shortpixel.ai/spai/q_glossy+ret_img+to_auto/www.article19.org/favicon-32x32.png" data-spai-egr="1">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.shortpixel.ai/spai/q_glossy+ret_img+to_auto/www.article19.org/favicon-16x16.png" data-spai-egr="1">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="https://cdn.shortpixel.ai/spai/ret_img/www.article19.org/safari-pinned-tab.svg" data-spai-egr="1" color="#da291c">
+<meta name="theme-color" content="#da291c">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<script>
+    /*! modernizr 3.5.0 (Custom Build) | MIT *
+     * https://modernizr.com/download/?-flexbox-objectfit-srcset-svg-touchevents-printshiv-setclasses !*/
+    !function(e,t,n){function r(e,t){return typeof e===t}function o(){var e,t,n,o,i,a,s;for(var l in S)if(S.hasOwnProperty(l)){if(e=[],t=S[l],t.name&&(e.push(t.name.toLowerCase()),t.options&&t.options.aliases&&t.options.aliases.length))for(n=0;n<t.options.aliases.length;n++)e.push(t.options.aliases[n].toLowerCase());for(o=r(t.fn,"function")?t.fn():t.fn,i=0;i<e.length;i++)a=e[i],s=a.split("."),1===s.length?Modernizr[s[0]]=o:(!Modernizr[s[0]]||Modernizr[s[0]]instanceof Boolean||(Modernizr[s[0]]=new Boolean(Modernizr[s[0]])),Modernizr[s[0]][s[1]]=o),E.push((o?"":"no-")+s.join("-"))}}function i(e){var t=C.className,n=Modernizr._config.classPrefix||"";if(x&&(t=t.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+n+"no-js(\\s|$)");t=t.replace(r,"$1"+n+"js$2")}Modernizr._config.enableClasses&&(t+=" "+n+e.join(" "+n),x?C.className.baseVal=t:C.className=t)}function a(){return"function"!=typeof t.createElement?t.createElement(arguments[0]):x?t.createElementNS.call(t,"http://www.w3.org/2000/svg",arguments[0]):t.createElement.apply(t,arguments)}function s(e){return e.replace(/([a-z])-([a-z])/g,function(e,t,n){return t+n.toUpperCase()}).replace(/^-/,"")}function l(){var e=t.body;return e||(e=a(x?"svg":"body"),e.fake=!0),e}function u(e,n,r,o){var i,s,u,c,f="modernizr",d=a("div"),p=l();if(parseInt(r,10))for(;r--;)u=a("div"),u.id=o?o[r]:f+(r+1),d.appendChild(u);return i=a("style"),i.type="text/css",i.id="s"+f,(p.fake?p:d).appendChild(i),p.appendChild(d),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(t.createTextNode(e)),d.id=f,p.fake&&(p.style.background="",p.style.overflow="hidden",c=C.style.overflow,C.style.overflow="hidden",C.appendChild(p)),s=n(d,e),p.fake?(p.parentNode.removeChild(p),C.style.overflow=c,C.offsetHeight):d.parentNode.removeChild(d),!!s}function c(e,t){return!!~(""+e).indexOf(t)}function f(e,t){return function(){return e.apply(t,arguments)}}function d(e,t,n){var o;for(var i in e)if(e[i]in t)return n===!1?e[i]:(o=t[e[i]],r(o,"function")?f(o,n||t):o);return!1}function p(e){return e.replace(/([A-Z])/g,function(e,t){return"-"+t.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(t,n,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,t,n);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var a=i.error?"error":"log";i[a].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!n&&t.currentStyle&&t.currentStyle[r];return o}function h(t,r){var o=t.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(t[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(t[o])+":"+r+")");return i=i.join(" or "),u("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==m(e,null,"position")})}return n}function v(e,t,o,i){function l(){f&&(delete k.style,delete k.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=h(e,o);if(!r(u,"undefined"))return u}for(var f,d,p,m,v,g=["modernizr","tspan","samp"];!k.style&&g.length;)f=!0,k.modElem=a(g.shift()),k.style=k.modElem.style;for(p=e.length,d=0;p>d;d++)if(m=e[d],v=k.style[m],c(m,"-")&&(m=s(m)),k.style[m]!==n){if(i||r(o,"undefined"))return l(),"pfx"==t?m:!0;try{k.style[m]=o}catch(y){}if(k.style[m]!=v)return l(),"pfx"==t?m:!0}return l(),!1}function g(e,t,n,o,i){var a=e.charAt(0).toUpperCase()+e.slice(1),s=(e+" "+N.join(a+" ")+a).split(" ");return r(t,"string")||r(t,"undefined")?v(s,t,o,i):(s=(e+" "+z.join(a+" ")+a).split(" "),d(s,t,n))}function y(e,t,r){return g(e,n,n,t,r)}var E=[],S=[],b={_version:"3.5.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var n=this;setTimeout(function(){t(n[e])},0)},addTest:function(e,t,n){S.push({name:e,fn:t,options:n})},addAsyncTest:function(e){S.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=b,Modernizr=new Modernizr,Modernizr.addTest("svg",!!t.createElementNS&&!!t.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect);var C=t.documentElement,x="svg"===C.nodeName.toLowerCase();x||!function(e,t){function n(e,t){var n=e.createElement("p"),r=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",r.insertBefore(n.lastChild,r.firstChild)}function r(){var e=w.elements;return"string"==typeof e?e.split(" "):e}function o(e,t){var n=w.elements;"string"!=typeof n&&(n=n.join(" ")),"string"!=typeof e&&(e=e.join(" ")),w.elements=n+" "+e,u(t)}function i(e){var t=x[e[b]];return t||(t={},C++,e[b]=C,x[C]=t),t}function a(e,n,r){if(n||(n=t),v)return n.createElement(e);r||(r=i(n));var o;return o=r.cache[e]?r.cache[e].cloneNode():S.test(e)?(r.cache[e]=r.createElem(e)).cloneNode():r.createElem(e),!o.canHaveChildren||E.test(e)||o.tagUrn?o:r.frag.appendChild(o)}function s(e,n){if(e||(e=t),v)return e.createDocumentFragment();n=n||i(e);for(var o=n.frag.cloneNode(),a=0,s=r(),l=s.length;l>a;a++)o.createElement(s[a]);return o}function l(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return w.shivMethods?a(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+r().join().replace(/[\w\-:]+/g,function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'})+");return n}")(w,t.frag)}function u(e){e||(e=t);var r=i(e);return!w.shivCSS||h||r.hasCSS||(r.hasCSS=!!n(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),v||l(e,r),e}function c(e){for(var t,n=e.getElementsByTagName("*"),o=n.length,i=RegExp("^(?:"+r().join("|")+")$","i"),a=[];o--;)t=n[o],i.test(t.nodeName)&&a.push(t.applyElement(f(t)));return a}function f(e){for(var t,n=e.attributes,r=n.length,o=e.ownerDocument.createElement(_+":"+e.nodeName);r--;)t=n[r],t.specified&&o.setAttribute(t.nodeName,t.nodeValue);return o.style.cssText=e.style.cssText,o}function d(e){for(var t,n=e.split("{"),o=n.length,i=RegExp("(^|[\\s,>+~])("+r().join("|")+")(?=[[\\s,>+~#.:]|$)","gi"),a="$1"+_+"\\:$2";o--;)t=n[o]=n[o].split("}"),t[t.length-1]=t[t.length-1].replace(i,a),n[o]=t.join("}");return n.join("{")}function p(e){for(var t=e.length;t--;)e[t].removeNode()}function m(e){function t(){clearTimeout(a._removeSheetTimer),r&&r.removeNode(!0),r=null}var r,o,a=i(e),s=e.namespaces,l=e.parentWindow;return!N||e.printShived?e:("undefined"==typeof s[_]&&s.add(_),l.attachEvent("onbeforeprint",function(){t();for(var i,a,s,l=e.styleSheets,u=[],f=l.length,p=Array(f);f--;)p[f]=l[f];for(;s=p.pop();)if(!s.disabled&&T.test(s.media)){try{i=s.imports,a=i.length}catch(m){a=0}for(f=0;a>f;f++)p.push(i[f]);try{u.push(s.cssText)}catch(m){}}u=d(u.reverse().join("")),o=c(e),r=n(e,u)}),l.attachEvent("onafterprint",function(){p(o),clearTimeout(a._removeSheetTimer),a._removeSheetTimer=setTimeout(t,500)}),e.printShived=!0,e)}var h,v,g="3.7.3",y=e.html5||{},E=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,S=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,b="_html5shiv",C=0,x={};!function(){try{var e=t.createElement("a");e.innerHTML="<xyz></xyz>",h="hidden"in e,v=1==e.childNodes.length||function(){t.createElement("a");var e=t.createDocumentFragment();return"undefined"==typeof e.cloneNode||"undefined"==typeof e.createDocumentFragment||"undefined"==typeof e.createElement}()}catch(n){h=!0,v=!0}}();var w={elements:y.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:g,shivCSS:y.shivCSS!==!1,supportsUnknownElements:v,shivMethods:y.shivMethods!==!1,type:"default",shivDocument:u,createElement:a,createDocumentFragment:s,addElements:o};e.html5=w,u(t);var T=/^$|\b(?:all|print)\b/,_="html5shiv",N=!v&&function(){var n=t.documentElement;return!("undefined"==typeof t.namespaces||"undefined"==typeof t.parentWindow||"undefined"==typeof n.applyElement||"undefined"==typeof n.removeNode||"undefined"==typeof e.attachEvent)}();w.type+=" print",w.shivPrint=m,m(t),"object"==typeof module&&module.exports&&(module.exports=w)}("undefined"!=typeof e?e:this,t);var w=b._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];b._prefixes=w,Modernizr.addTest("srcset","srcset"in a("img"));var T=b.testStyles=u;Modernizr.addTest("touchevents",function(){var n;if("ontouchstart"in e||e.DocumentTouch&&t instanceof DocumentTouch)n=!0;else{var r=["@media (",w.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");T(r,function(e){n=9===e.offsetTop})}return n});var _="Moz O ms Webkit",N=b._config.usePrefixes?_.split(" "):[];b._cssomPrefixes=N;var j=function(t){var r,o=w.length,i=e.CSSRule;if("undefined"==typeof i)return n;if(!t)return!1;if(t=t.replace(/^@/,""),r=t.replace(/-/g,"_").toUpperCase()+"_RULE",r in i)return"@"+t;for(var a=0;o>a;a++){var s=w[a],l=s.toUpperCase()+"_"+r;if(l in i)return"@-"+s.toLowerCase()+"-"+t}return!1};b.atRule=j;var z=b._config.usePrefixes?_.toLowerCase().split(" "):[];b._domPrefixes=z;var P={elem:a("modernizr")};Modernizr._q.push(function(){delete P.elem});var k={style:P.elem.style};Modernizr._q.unshift(function(){delete k.style}),b.testAllProps=g,b.testAllProps=y,Modernizr.addTest("flexbox",y("flexBasis","1px",!0));var F=b.prefixed=function(e,t,n){return 0===e.indexOf("@")?j(e):(-1!=e.indexOf("-")&&(e=s(e)),t?g(e,t,n):g(e,"pfx"))};Modernizr.addTest("objectfit",!!F("objectFit"),{aliases:["object-fit"]}),o(),i(E),delete b.addTest,delete b.addAsyncTest;for(var D=0;D<Modernizr._q.length;D++)Modernizr._q[D]();e.Modernizr=Modernizr}(window,document);
+</script>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<link rel="alternate" hreflang="en-us" href="https://www.article19.org/" />
+<link rel="alternate" hreflang="x-default" href="https://www.article19.org/" />
+
+<title>ARTICLE 19 - Defending freedom of expression and information.</title>
+<meta name="description" content="ARTICLE 19 works for a world where all people everywhere can freely express themselves and actively engage in public life without fear of discrimination." />
+<link rel="canonical" href="https://www.article19.org/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ARTICLE 19 - Defending freedom of expression and information." />
+<meta property="og:description" content="ARTICLE 19 works for a world where all people everywhere can freely express themselves and actively engage in public life without fear of discrimination." />
+<meta property="og:url" content="https://www.article19.org/" />
+<meta property="og:site_name" content="ARTICLE 19" />
+<meta property="article:modified_time" content="2024-04-29T11:03:13+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@article19org" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.article19.org/","url":"https://www.article19.org/","name":"ARTICLE 19 - Defending freedom of expression and information.","isPartOf":{"@id":"https://www.article19.org/#website"},"datePublished":"2017-09-25T15:24:22+00:00","dateModified":"2024-04-29T11:03:13+00:00","description":"ARTICLE 19 works for a world where all people everywhere can freely express themselves and actively engage in public life without fear of discrimination.","breadcrumb":{"@id":"https://www.article19.org/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.article19.org/"]}]},{"@type":"BreadcrumbList","@id":"https://www.article19.org/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.article19.org/#website","url":"https://www.article19.org/","name":"ARTICLE 19","description":"","inLanguage":"en-US"}]}</script>
+
+<meta property="og:image" content="https://www.article19.org/wp-content/themes/article19/assets/images/og-image.jpg" /><link data-minify="1" rel="stylesheet" id="wp-block-library-css" href="https://www.article19.org/wp-content/cache/min/1/wp-includes/css/dist/block-library/style.css?ver=1712240653" type="text/css" media="all" />
+<link data-minify="1" rel="stylesheet" id="ugb-style-css-v2-css" href="https://www.article19.org/wp-content/cache/min/1/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/deprecated/frontend_blocks_deprecated_v2.css?ver=1712240653" type="text/css" media="all" />
+<style id="ugb-style-css-v2-inline-css" type="text/css">
+:root {--stk-block-width-default-detected: 640px;}
+:root {
+			--content-width: 640px;
+		}
+</style>
+<link data-minify="1" rel="stylesheet" id="ugb-style-css-premium-v2-css" href="https://www.article19.org/wp-content/cache/min/1/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/deprecated/frontend_blocks_deprecated_v2__premium_only.css?ver=1712240653" type="text/css" media="all" />
+<style id="safe-svg-svg-icon-style-inline-css" type="text/css">
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<style id="classic-theme-styles-inline-css" type="text/css">
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--grey: #777;--wp--preset--color--lightgreybg: #ededed;--wp--preset--color--red: #da291c;--wp--preset--color--darkred: #b22117;--wp--preset--color--yellow: #f2a900;--wp--preset--color--orange: #ed8b00;--wp--preset--color--green: #01956F;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel="stylesheet" id="wpml-blocks-css" href="https://www.article19.org/wp-content/cache/min/1/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=1712240653" type="text/css" media="all" />
+<link data-minify="1" rel="stylesheet" id="dashicons-css" href="https://www.article19.org/wp-content/cache/min/1/wp-includes/css/dashicons.css?ver=1712240653" type="text/css" media="all" />
+<link data-minify="1" rel="stylesheet" id="to-top-css" href="https://www.article19.org/wp-content/cache/min/1/wp-content/plugins/to-top/public/css/to-top-public.css?ver=1712240653" type="text/css" media="all" />
+<link rel="stylesheet" id="wpml-menu-item-0-css" href="https://www.article19.org/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css?ver=1" type="text/css" media="all" />
+<link rel="stylesheet" id="theme-css" href="https://www.article19.org/wp-content/themes/article19/assets/css/style.min.css?ver=1703137566" type="text/css" media="all" />
+<link rel="stylesheet" id="pojo-a11y-css" href="https://www.article19.org/wp-content/plugins/pojo-accessibility/assets/css/style.min.css?ver=1.0.0" type="text/css" media="all" />
+<link data-minify="1" rel="stylesheet" id="algolia-autocomplete-css" href="https://www.article19.org/wp-content/cache/min/1/wp-content/plugins/wp-search-with-algolia/css/algolia-autocomplete.css?ver=1712240653" type="text/css" media="all" />
+<link data-minify="1" rel="stylesheet" id="popup-maker-site-css" href="https://www.article19.org/wp-content/cache/min/1/wp-content/plugins/popup-maker/assets/css/pum-site.css?ver=1712240658" type="text/css" media="all" />
+<style id="popup-maker-site-inline-css" type="text/css">
+/* Popup Google Fonts */
+@import url('//fonts.googleapis.com/css?family=Montserrat:100');
+
+/* Popup Theme 59542: Content Only - For use with page builders or block editor */
+.pum-theme-59542, .pum-theme-content-only-2 { background-color: rgba( 0, 0, 0, 0.70 ) } 
+.pum-theme-59542 .pum-container, .pum-theme-content-only-2 .pum-container { padding: 0px; border-radius: 0px; border: 1px none #000000; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ) } 
+.pum-theme-59542 .pum-title, .pum-theme-content-only-2 .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
+.pum-theme-59542 .pum-content, .pum-theme-content-only-2 .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400 } 
+.pum-theme-59542 .pum-content + .pum-close, .pum-theme-content-only-2 .pum-content + .pum-close { position: absolute; height: 18px; width: 18px; left: auto; right: 7px; bottom: auto; top: 7px; padding: 0px; color: #000000; font-family: inherit; font-weight: 700; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 15px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.00 ); background-color: rgba( 255, 255, 255, 0.00 ) } 
+
+/* Popup Theme 59541: Content Only - For use with page builders or block editor */
+.pum-theme-59541, .pum-theme-content-only { background-color: rgba( 0, 0, 0, 0.70 ) } 
+.pum-theme-59541 .pum-container, .pum-theme-content-only .pum-container { padding: 0px; border-radius: 0px; border: 1px none #000000; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ) } 
+.pum-theme-59541 .pum-title, .pum-theme-content-only .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
+.pum-theme-59541 .pum-content, .pum-theme-content-only .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400 } 
+.pum-theme-59541 .pum-content + .pum-close, .pum-theme-content-only .pum-content + .pum-close { position: absolute; height: 18px; width: 18px; left: auto; right: 7px; bottom: auto; top: 7px; padding: 0px; color: #000000; font-family: inherit; font-weight: 700; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 15px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.00 ); background-color: rgba( 255, 255, 255, 0.00 ) } 
+
+/* Popup Theme 43004: Light Box */
+.pum-theme-43004, .pum-theme-lightbox { background-color: rgba( 0, 0, 0, 0.00 ) } 
+.pum-theme-43004 .pum-container, .pum-theme-lightbox .pum-container { padding: 23px; border-radius: 3px; border: 8px solid #000000; box-shadow: 0px 0px 30px 0px rgba( 2, 2, 2, 1.00 ); background-color: rgba( 0, 0, 0, 1.00 ) } 
+.pum-theme-43004 .pum-title, .pum-theme-lightbox .pum-title { color: #ffffff; text-align: center; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 100; font-size: 32px; line-height: 36px } 
+.pum-theme-43004 .pum-content, .pum-theme-lightbox .pum-content { color: #ffffff; font-family: inherit; font-weight: 100 } 
+.pum-theme-43004 .pum-content + .pum-close, .pum-theme-lightbox .pum-content + .pum-close { position: absolute; height: 26px; width: 26px; left: auto; right: -13px; bottom: auto; top: -13px; padding: 0px; color: #ffffff; font-family: Arial; font-weight: 100; font-size: 24px; line-height: 24px; border: 2px solid #ffffff; border-radius: 26px; box-shadow: 0px 0px 15px 1px rgba( 2, 2, 2, 0.75 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 0, 0, 1.00 ) } 
+
+/* Popup Theme 51064: Floating Bar - Soft Blue */
+.pum-theme-51064, .pum-theme-floating-bar { background-color: rgba( 255, 255, 255, 0.00 ) } 
+.pum-theme-51064 .pum-container, .pum-theme-floating-bar .pum-container { padding: 8px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 238, 246, 252, 1.00 ) } 
+.pum-theme-51064 .pum-title, .pum-theme-floating-bar .pum-title { color: #505050; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
+.pum-theme-51064 .pum-content, .pum-theme-floating-bar .pum-content { color: #505050; font-family: inherit; font-weight: 400 } 
+.pum-theme-51064 .pum-content + .pum-close, .pum-theme-floating-bar .pum-content + .pum-close { position: absolute; height: 18px; width: 18px; left: auto; right: 5px; bottom: auto; top: 50%; padding: 0px; color: #505050; font-family: Sans-Serif; font-weight: 700; font-size: 15px; line-height: 18px; border: 1px solid #505050; border-radius: 15px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.00 ); background-color: rgba( 255, 255, 255, 0.00 ); transform: translate(0, -50%) } 
+
+/* Popup Theme 43008: Framed Border */
+.pum-theme-43008, .pum-theme-framed-border { background-color: rgba( 255, 255, 255, 0.50 ) } 
+.pum-theme-43008 .pum-container, .pum-theme-framed-border .pum-container { padding: 24px; border-radius: 18px; border: 20px outset #ef8900; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.97 ) inset; background-color: rgba( 255, 251, 239, 1.00 ) } 
+.pum-theme-43008 .pum-title, .pum-theme-framed-border .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 100; font-size: 32px; line-height: 36px } 
+.pum-theme-43008 .pum-content, .pum-theme-framed-border .pum-content { color: #2d2d2d; font-family: inherit; font-weight: 100 } 
+.pum-theme-43008 .pum-content + .pum-close, .pum-theme-framed-border .pum-content + .pum-close { position: absolute; height: 20px; width: 20px; left: auto; right: -20px; bottom: auto; top: -20px; padding: 0px; color: #ffffff; font-family: Tahoma; font-weight: 700; font-size: 16px; line-height: 18px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 0, 0, 0.55 ) } 
+
+/* Popup Theme 43104:  */
+.pum-theme-43104, .pum-theme-43104 { background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-43104 .pum-container, .pum-theme-43104 .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1.00 ) } 
+.pum-theme-43104 .pum-title, .pum-theme-43104 .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
+.pum-theme-43104 .pum-content, .pum-theme-43104 .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400 } 
+.pum-theme-43104 .pum-content + .pum-close, .pum-theme-43104 .pum-content + .pum-close { position: absolute; height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: 400; font-size: 12px; line-height: 36px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1.00 ) } 
+
+/* Popup Theme 43005: Enterprise Blue */
+.pum-theme-43005, .pum-theme-enterprise-blue { background-color: rgba( 0, 0, 0, 0.70 ) } 
+.pum-theme-43005 .pum-container, .pum-theme-enterprise-blue .pum-container { padding: 28px; border-radius: 5px; border: 1px none #000000; box-shadow: 0px 10px 25px 4px rgba( 2, 2, 2, 0.50 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-43005 .pum-title, .pum-theme-enterprise-blue .pum-title { color: #315b7c; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 100; font-size: 34px; line-height: 36px } 
+.pum-theme-43005 .pum-content, .pum-theme-enterprise-blue .pum-content { color: #2d2d2d; font-family: inherit; font-weight: 100 } 
+.pum-theme-43005 .pum-content + .pum-close, .pum-theme-enterprise-blue .pum-content + .pum-close { position: absolute; height: 28px; width: 28px; left: auto; right: 8px; bottom: auto; top: 8px; padding: 4px; color: #ffffff; font-family: Times New Roman; font-weight: 100; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 42px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 49, 91, 124, 1.00 ) } 
+
+/* Popup Theme 43006: Hello Box */
+.pum-theme-43006, .pum-theme-hello-box { background-color: rgba( 0, 0, 0, 0.75 ) } 
+.pum-theme-43006 .pum-container, .pum-theme-hello-box .pum-container { padding: 30px; border-radius: 80px; border: 14px solid #81d742; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-43006 .pum-title, .pum-theme-hello-box .pum-title { color: #2d2d2d; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: Montserrat; font-weight: 100; font-size: 32px; line-height: 36px } 
+.pum-theme-43006 .pum-content, .pum-theme-hello-box .pum-content { color: #2d2d2d; font-family: inherit; font-weight: 100 } 
+.pum-theme-43006 .pum-content + .pum-close, .pum-theme-hello-box .pum-content + .pum-close { position: absolute; height: auto; width: auto; left: auto; right: -30px; bottom: auto; top: -30px; padding: 0px; color: #2d2d2d; font-family: Times New Roman; font-weight: 100; font-size: 32px; line-height: 28px; border: 1px none #ffffff; border-radius: 28px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+
+/* Popup Theme 43007: Cutting Edge */
+.pum-theme-43007, .pum-theme-cutting-edge { background-color: rgba( 0, 0, 0, 0.50 ) } 
+.pum-theme-43007 .pum-container, .pum-theme-cutting-edge .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 0px 10px 25px 0px rgba( 2, 2, 2, 0.50 ); background-color: rgba( 30, 115, 190, 1.00 ) } 
+.pum-theme-43007 .pum-title, .pum-theme-cutting-edge .pum-title { color: #ffffff; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: Sans-Serif; font-weight: 100; font-size: 26px; line-height: 28px } 
+.pum-theme-43007 .pum-content, .pum-theme-cutting-edge .pum-content { color: #ffffff; font-family: inherit; font-weight: 100 } 
+.pum-theme-43007 .pum-content + .pum-close, .pum-theme-cutting-edge .pum-content + .pum-close { position: absolute; height: 24px; width: 24px; left: auto; right: 0px; bottom: auto; top: 0px; padding: 0px; color: #1e73be; font-family: Times New Roman; font-weight: 100; font-size: 32px; line-height: 24px; border: 1px none #ffffff; border-radius: 0px; box-shadow: -1px 1px 1px 0px rgba( 2, 2, 2, 0.10 ); text-shadow: -1px 1px 1px rgba( 0, 0, 0, 0.10 ); background-color: rgba( 238, 238, 34, 1.00 ) } 
+
+/* Popup Theme 43003: Default Theme */
+.pum-theme-43003, .pum-theme-default-theme { background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-43003 .pum-container, .pum-theme-default-theme .pum-container { padding: 18px; border-radius: px; border: 1px none #000000; box-shadow: 1px 1px 3px px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1.00 ) } 
+.pum-theme-43003 .pum-title, .pum-theme-default-theme .pum-title { color: #000000; text-align: left; text-shadow: px px px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-43003 .pum-content, .pum-theme-default-theme .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400; font-style: inherit } 
+.pum-theme-43003 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close { position: absolute; height: auto; width: auto; left: auto; right: px; bottom: auto; top: px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: 400; font-size: 12px; font-style: inherit; line-height: 36px; border: 1px none #ffffff; border-radius: px; box-shadow: 1px 1px 3px px rgba( 2, 2, 2, 0.23 ); text-shadow: px px px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1.00 ) } 
+
+#pum-264972 {z-index: 1999999999}
+#pum-305716 {z-index: 1999999999}
+#pum-264108 {z-index: 1999999999}
+
+</style>
+<script type="text/javascript" id="wpml-cookie-js-extra">
+/* <![CDATA[ */
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4.6.9" id="wpml-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="ugb-block-frontend-js-v2-js-extra">
+/* <![CDATA[ */
+var stackable = {"restUrl":"https:\/\/www.article19.org\/wp-json\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/deprecated/frontend_blocks_deprecated_v2.js?ver=3.12.13" id="ugb-block-frontend-js-v2-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/deprecated/frontend_blocks_deprecated_v2__premium_only.js?ver=3.12.13" id="ugb-block-frontend-js-premium-v2-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-includes/js/jquery/jquery.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" id="to-top-js-extra">
+/* <![CDATA[ */
+var to_top_options = {"scroll_offset":"100","icon_opacity":"50","style":"icon","icon_type":"dashicons-arrow-up-alt2","icon_color":"#ffffff","icon_bg_color":"#dd3333","icon_size":"32","border_radius":"5","image":"https:\/\/www.article19.org\/wp-content\/plugins\/to-top\/admin\/images\/default.png","image_width":"65","image_alt":"","location":"bottom-right","margin_x":"20","margin_y":"20","show_on_admin":"0","enable_autohide":"0","autohide_time":"2","enable_hide_small_device":"0","small_device_max_width":"640","reset":"0"};
+/* ]]> */
+</script>
+<script async type="text/javascript" src="https://www.article19.org/wp-content/plugins/to-top/public/js/to-top-public.js?ver=2.5.3" id="to-top-js"></script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/wp-image-zoooom/assets/js/jquery.image_zoom.min.js?ver=1.56" id="image_zoooom-js" defer></script>
+<script type="text/javascript" id="image_zoooom-init-js-extra">
+/* <![CDATA[ */
+var IZ = {"with_woocommerce":"0","exchange_thumbnails":"1","woo_categories":"0","enable_mobile":"","options":{"lensShape":"round","zoomType":"lens","lensSize":400,"borderSize":1,"borderColour":"#ffffff","cursor":"default","lensFadeIn":0.5,"lensFadeOut":0.5,"tint":"true","tintColour":"#ffffff","tintOpacity":0.1},"woo_slider":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/wp-image-zoooom/assets/js/image_zoom-init.js?ver=1.56" id="image_zoooom-init-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.article19.org/wp-json/" /><link rel="alternate" type="application/json" href="https://www.article19.org/wp-json/wp/v2/pages/212" /><link rel="alternate" type="application/json+oembed" href="https://www.article19.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.article19.org%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.article19.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.article19.org%2F&#038;format=xml" />
+
+<script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WQDP2F9');
+    </script>
+
+<style type="text/css">
+#pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a{ background-color: #da291c;	color: #ffffff;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay, #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items.pojo-a11y-links{ border-color: #da291c;}
+body.pojo-a11y-focusable a:focus{ outline-style: initial !important;	outline-width: 1px !important;	outline-color: #FF0000 !important;}
+#pojo-a11y-toolbar{ top: 0px !important;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay{ background-color: #ffffff;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a, #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title{ color: #333333;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a.active{ background-color: #4054b2;	color: #ffffff;}
+@media (max-width: 767px) { #pojo-a11y-toolbar { top: 50px !important; } }</style> <style>
+			.algolia-search-highlight {
+				background-color: #fffbcc;
+				border-radius: 2px;
+				font-style: normal;
+			}
+		</style>
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><style type="text/css">img.zoooom,.zoooom img{padding:0!important;}</style> <style type="text/css" id="wp-custom-css">
+			.publications-template-default .entry-title {
+    font-size: 1.75em;
+		}
+.page-id-64298 .flexible__block 
+.campaign-video {
+    padding: 60px 0;
+    color: #fff;
+    background: #E19132;
+}
+
+.wp-container-63 {
+		margin-top: 2rem;
+}		</style>
+<style type="text/css">#to_top_scrollup {background-color: #dd3333;}</style>
+<link data-minify="1" href="https://www.article19.org/wp-content/cache/min/1/wp-content/themes/article19/assets/fonts/fonts.css?ver=1712240653" rel="stylesheet">
+<script src="https://www.jonthornton.com/jquery-timepicker/jquery.timepicker.js" defer></script>
+<script defer data-domain="article19.org" src="https://plausible.io/js/plausible.js"></script>
+
+<script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
+.split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
+:function(){return o.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],
+j=d.createElement(s);j.async=!0;j.src='https://cdn.fundraiseup.com/widget/'+a;
+t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];
+for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
+})(window,document,'script','FundraiseUp','AZEPDYHJ');</script>
+
+<link href="https://cdn.shortpixel.ai" rel="preconnect" crossorigin></head>
+<body class="home page-template page-template-page-templates page-template-flexible-content page-template-page-templatesflexible-content-php page page-id-212 wp-embed-responsive">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQDP2F9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="page" class="site default-font">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div class="cookies-notice" id="site-cookies-notice" aria-hidden="true">
+<div class="cookies-notice__banner has-dark-grey-background-color">
+<h2 class="cookies-notice__heading">
+Cookies from Article 19 </h2>
+<div class="cookies-notice__message">
+<p>To make our website work, we save some essential small files (cookies) on your computer. With your permission, we would also like to save some extra cookies that help us improve how people find out about Article 19.</p>
+<p>Read more about the cookies we use in our Cookie Policy.</p>
+</div>
+<form class="cookies-notice__preferences cookies-preferences" id="cookies-1" data-feedback-text="{&quot;savedPreferences&quot;:&quot;Cookies consent preferences saved.&quot;}">
+<fieldset id="cookies-1-consent-groups" class="cookies-preferences__consent-groups" aria-hidden="true">
+<legend class="screen-reader-text">Select cookie consent by type</legend>
+<div class="cookies-preferences__consent-group">
+
+<label for="cookies-1-consent-type-analytics_storage" class="toggle-field">
+<input id="cookies-1-consent-type-analytics_storage" type="checkbox" name="gtm_consent_type_analytics_storage" value="granted" />
+<span class="toggle-field__indicator" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 52" role="img" aria-hidden="true" focusable="false" width="0" height="0"><g fill="#FFF" fill-rule="evenodd"><path d="M55.97.544l8.486 8.485-42.427 42.427-8.485-8.485z"></path><path d="M30.456 42.97l-8.485 8.486L.757 30.243l8.486-8.486z"></path></g></svg>
+</span>
+<div class="toggle-field__label"><span>Visitor Statistics<span class="screen-reader-text">; </span></span><span>These help us make our website better.</span></div>
+</label>
+</div>
+<div class="cookies-preferences__consent-group">
+
+<label for="cookies-1-consent-type-ad_storage" class="toggle-field">
+<input id="cookies-1-consent-type-ad_storage" type="checkbox" name="gtm_consent_type_ad_storage" value="granted" />
+<span class="toggle-field__indicator" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 52" role="img" aria-hidden="true" focusable="false" width="0" height="0"><g fill="#FFF" fill-rule="evenodd"><path d="M55.97.544l8.486 8.485-42.427 42.427-8.485-8.485z"></path><path d="M30.456 42.97l-8.485 8.486L.757 30.243l8.486-8.486z"></path></g></svg>
+</span>
+<div class="toggle-field__label"><span>Marketing<span class="screen-reader-text">; </span></span><span>These let us make our marketing more relevant to potential customers.</span></div>
+</label>
+</div>
+</fieldset>
+<ul class="cookies-preferences__action-list button-list">
+<li class="cookies-preferences__action">
+<button class="button button--white cookies-preferences__save-consent js-cookies-consent-selected">
+Allow selected <span class="screen-reader-text">
+extra cookies </span>
+</button>
+</li>
+<li class="cookies-preferences__action">
+<button class="button button--white cookies-preferences__accept js-cookies-consent-all">
+Allow all <span class="screen-reader-text">
+extra cookies </span>
+</button>
+</li>
+<li class="cookies-preferences__action" aria-hidden="true">
+<button class="button button--white cookies-preferences__reject js-cookies-reject-all">
+Reject all <span class="screen-reader-text">
+extra cookies </span>
+</button>
+</li>
+<li class="cookies-preferences__action">
+<button type="button" class="button button--white button button--white--blend cookies-preferences__consent-groups-toggler expander" aria-expanded="false" aria-controls="cookies-1-consent-groups">
+Manage preferences <span class="screen-reader-text">
+related to cookie consent in more detail </span>
+</button>
+</li>
+</ul>
+</form>
+</div>
+</div>
+<header id="masthead" class="site-header headroom">
+<div class="site-header__inner">
+<button class="site-header__burger menu-btn" aria-label="Open menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="header-desktop">
+<div class="header-desktop__inner">
+<a href="https://www.article19.org" title="ARTICLE 19" class="header-desktop__logo">
+<img width="155" height="80" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTUgODAiIHdpZHRoPSIxNTUiIGhlaWdodD0iODAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ3d3cuYXJ0aWNsZTE5Lm9yZyUyRndwLWNvbnRlbnQlMkZ0aGVtZXMlMkZhcnRpY2xlMTklMkZhc3NldHMlMkZpbWFnZXMlMkZsb2dvLnN2ZyIgZGF0YS13PSIxNTUiIGRhdGEtaD0iODAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="ARTICLE 19" class="logo">
+</a>
+<nav id="site-navigation" class="header-desktop__nav main-navigation"><div class="menu-header-container"><ul id="primary-menu" class="menu"><li id="menu-item-1360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1360"><a href="https://www.article19.org/what-we-do/">What we do</a></li>
+<li id="menu-item-1361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1361"><a href="https://www.article19.org/where-we-work/">Where we work</a></li>
+<li id="menu-item-31542" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31542"><a href="/campaigns/">Campaigns</a></li>
+<li id="menu-item-39657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39657"><a href="https://www.article19.org/law-and-policy/">Law and policy</a></li>
+<li id="menu-item-1358" class="explore-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1358"><a href="https://www.article19.org/explore/">Latest News</a></li>
+<li id="menu-item-299500" class="menu-item menu-item-type-custom menu-item-object-custom menu-search menu-item-299500"><a href="#0">Search</a><div class="menu-search__inner"><form role="search" method="get" class="search-form" action="https://www.article19.org/">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value name="s" />
+</label>
+<input type="submit" class="search-submit" value="Search" />
+</form><button class="menu-search__close" aria-label="Close search"></button></div></li>
+<li id="menu-item-314921" class="menu-item menu-item-type-custom menu-item-object-custom menu-style menu-style--button-red menu-item-314921"><a href="https://www.article19.org/donate/">Donate</a></li>
+<li id="menu-item-39504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39504"><a href="https://www.article19.org/about-us/">About us</a>
+<ul class="sub-menu">
+<li id="menu-item-277998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277998"><a href="https://www.article19.org/what-is-freedom-of-expression/">What is freedom of expression?</a></li>
+<li id="menu-item-309408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-309408"><a href="https://www.globalexpressionreport.org/">Global Expression Report 2023</a></li>
+<li id="menu-item-280682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-280682"><a href="https://www.article19.org/our-trustees/">International Board of Trustees</a></li>
+<li id="menu-item-287593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-287593"><a target="_blank" rel="noopener" href="https://stories.article19.org/article-19-defending-expression-since-1987/index.html">The ARTICLE 19 story</a></li>
+<li id="menu-item-285300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285300"><a href="https://www.article19.org/our-strategy-the-power-of-our-voices/">Our strategy: The Power of Our Voices</a></li>
+<li id="menu-item-48626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48626"><a href="https://www.article19.org/financials/">Governance and funding</a></li>
+<li id="menu-item-39505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39505"><a href="https://www.article19.org/about-us/team/">Meet our teams</a></li>
+<li id="menu-item-39506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39506"><a href="https://www.article19.org/about-us/annual-report/">Annual reports and accounts</a></li>
+<li id="menu-item-242979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-242979"><a href="https://www.article19.org/frequently-asked-questions/">Frequently asked questions</a></li>
+<li id="menu-item-248967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248967"><a href="https://www.article19.org/accessibility/">Accessibility</a></li>
+</ul>
+</li>
+</ul></div></nav>
+</div>
+</div>
+</div>
+</header>
+<nav class="menu--responsive menu--responsive-right">
+<div class="menu--responsive-content">
+<div class="menu--responsive-form">
+<form action="https://www.article19.org" method="get" class="heading--search">
+<input type="text" id="algolia-search-box" name="s" class="input-field" value autocomplete="off" placeholder="Search..." required>
+<button class="button--small button--squared heading--search-button" aria-label="Search...">Submit</button>
+</form>
+</div>
+<div class="menu-header-responsive-container"><ul id="responsive-menu" class="menu"><li id="menu-item-36655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36655"><a href="https://www.article19.org/what-we-do/">What we do</a></li>
+<li id="menu-item-36654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36654"><a href="https://www.article19.org/where-we-work/">Where we work</a></li>
+<li id="menu-item-36653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36653"><a href="/campaigns/">Campaigns</a></li>
+<li id="menu-item-36656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36656"><a href="https://www.article19.org/law-and-policy/">Law and policy</a></li>
+<li id="menu-item-36657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36657"><a href="https://www.article19.org/explore/">Latest News</a></li>
+<li id="menu-item-1371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1371"><a href="https://www.article19.org/about-us/">About us</a>
+<ul class="sub-menu">
+<li id="menu-item-330964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330964"><a href="https://www.article19.org/what-is-freedom-of-expression/">What is freedom of expression?</a></li>
+</ul>
+</li>
+<li id="menu-item-270417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270417"><a href="https://www.article19.org/financials/">Governance and funding</a></li>
+<li id="menu-item-270424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270424"><a href="https://www.article19.org/about-us/global-management-team/">Global Management Team</a></li>
+<li id="menu-item-270425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270425"><a href="https://www.article19.org/about-us/team/">Meet our teams</a></li>
+<li id="menu-item-270427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270427"><a href="https://www.article19.org/about-us/annual-report/">Annual reports and accounts</a></li>
+</ul></div>
+<button class="menu-btn" aria-label="Open menu">
+X
+</button>
+</div>
+</nav>
+<div class="site-overlay"></div>
+<div id="primary" class="content-area">
+<main id="main" class="site-main">
+<div class="flexible__wrapper">
+<div class="overlay overlay--vertical-middle overlay--horizontal-left">
+<div class="row">
+<div class="columns">
+<div class="overlay__content">
+<h1 class="overlay__heading">
+<span>
+China: The rise of digital repression in the Indo-Pacific </span>
+</h1>
+<div class="overlay__buttons">
+<span>
+<a class="button" href="https://www.article19.org/resources/china-the-rise-of-digital-repression-in-the-indo-pacific/">
+Find out more </a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay__background img-fit">
+<img width="1500" height="750" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNDAwIDEyMDAiIHdpZHRoPSIyNDAwIiBoZWlnaHQ9IjEyMDAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ3d3cuYXJ0aWNsZTE5Lm9yZyUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjA0JTJGRGlnaXRhbC1TaWxrLVJvYWQtQVJUSUNMRS0xOS1iYW5uZXIuanBnIiBkYXRhLXc9IjI0MDAiIGRhdGEtaD0iMTIwMCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" class="attachment-super size-super" alt decoding="async" fetchpriority="high" srcset=" " sizes="(max-width: 1500px) 100vw, 1500px" /> </div>
+</div>
+<div class="grid-wrapper row">
+<div class="columns">
+<div class="grid">
+<div class="grid__header">
+<h2 class="grid__heading">
+Latest </h2>
+<a class="grid__link" href="https://www.article19.org/explore/">
+Explore all stories </a>
+</div>
+<div class="grid__grid">
+<div class="grid__col grid__col--left">
+<article class="grid__item grid-item">
+<div class="grid-item__content">
+<h3 class="grid-item__heading">
+<a href="https://www.article19.org/resources/italy-petition-against-attacks-on-domani-newspaper/">
+Italy: Petition against attacks on Domani newspaper </a>
+</h3>
+<p class="grid-item__meta">
+<span>23.04.2024</span><span class="icon-clock">5 min read</span> </p>
+</div>
+<div class="grid-item__media">
+<img width="640" height="480" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIwIDE0NDAiIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjE0NDAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ3d3cuYXJ0aWNsZTE5Lm9yZyUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjA0JTJGRG9tYW5pLW5ld3NwYXBlci5qcGVnIiBkYXRhLXc9IjE5MjAiIGRhdGEtaD0iMTQ0MCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" class="attachment-large size-large" alt="Domani newspaper" decoding="async" srcset=" " sizes="(max-width: 640px) 100vw, 640px" /> </div>
+</article>
+<article class="grid__item grid-item">
+<div class="grid-item__content">
+<h3 class="grid-item__heading">
+<a href="https://www.article19.org/resources/eu-next-commission-must-strive-for-an-open-information-environment/">
+EU: Next Commission must strive for an open information environment </a>
+</h3>
+<p class="grid-item__meta">
+<span>23.04.2024</span><span class="icon-clock">2 min read</span> </p>
+</div>
+<div class="grid-item__media">
+</div>
+</article>
+<article class="grid__item grid-item">
+<div class="grid-item__content">
+<h3 class="grid-item__heading">
+<a href="https://www.article19.org/resources/togo-muzzling-of-foreign-media-ahead-of-election-raises-serious-concern/">
+Togo: Muzzling of foreign media ahead of election raises serious concern </a>
+</h3>
+<p class="grid-item__meta">
+<span>19.04.2024</span><span class="icon-clock">6 min read</span> </p>
+</div>
+<div class="grid-item__media">
+</div>
+</article>
+</div>
+<div class="grid__col grid__col--right">
+<article class="grid__item grid-item">
+<div class="grid-item__content">
+<h3 class="grid-item__heading">
+<a href="https://www.article19.org/resources/un-building-the-pact-for-the-future/">
+UN: Building the Pact for the Future </a>
+</h3>
+<p class="grid-item__meta">
+<span>18.04.2024</span><span class="icon-clock">2 min read</span> </p>
+</div>
+<div class="grid-item__media">
+</div>
+</article>
+<article class="grid__item grid-item">
+<div class="grid-item__content">
+<h3 class="grid-item__heading">
+<a href="https://www.article19.org/resources/reframing-the-tiktok-debate-the-need-for-a-human-rights-approach/">
+Blog: Reframing the TikTok debate – the need for a human rights approach </a>
+</h3>
+<p class="grid-item__meta">
+<span>16.04.2024</span><span class="icon-clock">20 min read</span> </p>
+</div>
+<div class="grid-item__media">
+</div>
+</article>
+<article class="grid__item grid-item">
+<div class="grid-item__content">
+<h3 class="grid-item__heading">
+<a href="https://www.article19.org/resources/the-power-of-our-voices-international-impact-report-2023/">
+The Power of Our Voices: International Impact Report 2023 </a>
+</h3>
+<p class="grid-item__meta">
+<span>16.04.2024</span><span class="icon-clock">1 min read</span> </p>
+</div>
+<div class="grid-item__media">
+<img width="640" height="361" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTIzIDg1OCIgd2lkdGg9IjE1MjMiIGhlaWdodD0iODU4IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGd3d3LmFydGljbGUxOS5vcmclMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjQlMkYwNCUyRkNPVkVSX0F0LXRoZS1SaW8tZGUtSmFuZWlyby1DYXJuaXZhbC1pbi1GZWJydWFyeS0yMDIzLXNhbWJhLXNjaG9vbHMtZGVkaWNhdGVkLXRoZWlyLXBhcmFkZS10by1kZWZlbmRpbmctZnJlZWRvbS1vZi1leHByZXNzaW9uLi1QaG90b18tTWlkaWEtTklOSkEtdmlhLUNDLUJZLU5DLTIuMC1yZXNvdXJjZS5qcGciIGRhdGEtdz0iMTUyMyIgZGF0YS1oPSI4NTgiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-large size-large" alt="At the Rio de Janeiro Carnival in February 2023, samba schools dedicated their parade to defending freedom of expression. (Photo_ Mídia NINJA via CC BY-NC 2.0)" decoding="async" srcset=" " sizes="(max-width: 640px) 100vw, 640px" /> </div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block flexible__block2colb flexible__block--content--area block-with-bg bg--black">
+<div class="row">
+<div class="small-12 medium-6 large-6 flexible__block--image-col  columns">
+<div class="flexible__block--content--image">
+<img alt="Home" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzAgMzgwIiB3aWR0aD0iNTcwIiBoZWlnaHQ9IjM4MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnd3dy5hcnRpY2xlMTkub3JnJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDI0JTJGMDElMkZHYXphLURlY2VtYmVyLTIwMjMtNTcweDM4MC5qcGciIGRhdGEtdz0iNTcwIiBkYXRhLWg9IjM4MCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" style="width: 570px;">
+</div>
+</div>
+<div class="small-12 medium-6 large-6 flexible__block--text-col  columns">
+<div class="flexible__block--content--content">
+<h2>Conflict in Israel and Occupied Palestinian Territories</h2> <div class="flexible__block--content--text"><p>ARTICLE 19 stands with the communities affected by the armed conflict in the occupied Gaza strip and Israel. We join partners and advocates around the world working to secure an immediate ceasefire between the parties.</p>
+<p><a class="button button--red button--medium button--squared" href="https://www.article19.org/crisis-in-gaza-and-israel/">Go to page</a></p>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="block flexible__block2colb flexible__block--content--area">
+<div class="row">
+<div class="small-12 medium-6 large-6 flexible__block--image-col  columns">
+<div class="flexible__block--content--image">
+<img alt="Home" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzAgMzU0IiB3aWR0aD0iNTcwIiBoZWlnaHQ9IjM1NCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnd3dy5hcnRpY2xlMTkub3JnJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDI0JTJGMDMlMkZDaGVja2l0Rmlyc3QtQmFsa2Fucy1pbWFnZS01NzB4MzU0LmpwZyIgZGF0YS13PSI1NzAiIGRhdGEtaD0iMzU0IiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" style="width: 570px;">
+</div>
+</div>
+<div class="small-12 medium-6 large-6 flexible__block--text-col  columns">
+<div class="flexible__block--content--content">
+<h2>#CheckitFirst: Verifying news in the Western Balkans</h2> <div class="flexible__block--content--text"><p>ARTICLE19’s campaign to promote ethical journalism and prevent the spread of fake news in Bosnia &amp; Herzegovina, Kosovo, Montenegro and Serbia. Through this campaign, we are working alongside journalists and media professionals to improve the accuracy of news reporting and boost media literacy among the public in the region.</p>
+<div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-016d17a" data-v="4" data-block-id="016d17a">
+<div class="stk-column-wrapper stk-block-column__content stk-container stk-016d17a-container stk--no-background stk--no-padding">
+<div class="stk-block-content stk-inner-blocks stk-016d17a-inner-blocks">
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group__inner-container">
+<p><strong>Join us by nominating a news story for our Ethical Journalism Awards.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><a class="button button--red button--medium button--squared" href="https://www.article19.org/checkitfirst/">Go to page</a></p>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="cards cards--themed cards--yellow">
+<div class="row">
+<div class="columns">
+<div class="cards__header">
+<h2 class="cards__heading">
+Stand up for Freedom of Expression </h2>
+<a class="grid__link" href="https://www.article19.org/conflict-in-israel-and-opt/">
+</a>
+</div>
+<div class="cards__row">
+<div class="cards__col">
+<article class="card">
+<div class="card__inner">
+<h3 class="card__heading">
+<a href="https://www.article19.org/article-19-learning-platform/">
+ARTICLE 19: Learning platform </a>
+</h3>
+<div class="card__button">
+<p><a class="button" href="https://www.article19.org/article-19-learning-platform/">Read full story</a></p>
+</div>
+</div>
+<div class="card__media">
+<div class="card__media-inner"> <img width="640" height="320" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDQwIDcyMCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzIwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGd3d3LmFydGljbGUxOS5vcmclMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjMlMkYxMSUyRmxlYXJuaW5nLXF1aXp6ZXMtYmFubmVyLS5qcGciIGRhdGEtdz0iMTQ0MCIgZGF0YS1oPSI3MjAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-large size-large" alt decoding="async" srcset=" " sizes="(max-width: 640px) 100vw, 640px" /> </div>
+</div>
+</article>
+</div>
+<div class="cards__col">
+<article class="card">
+<div class="card__inner">
+<h3 class="card__heading">
+<a href="https://www.article19.org/podcasts/">
+Podcasts </a>
+</h3>
+<div class="card__button">
+<p><a class="button" href="https://www.article19.org/podcasts/">Read full story</a></p>
+</div>
+</div>
+<div class="card__media">
+<div class="card__media-inner"> <img width="640" height="394" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzAwIDgwMCIgd2lkdGg9IjEzMDAiIGhlaWdodD0iODAwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGd3d3LmFydGljbGUxOS5vcmclMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjElMkYwMyUyRnRoYWlsYW5kLXByb3Rlc3RvcnMxLW1pbi5qcGciIGRhdGEtdz0iMTMwMCIgZGF0YS1oPSI4MDAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-large size-large" alt="Pro democracy protestors demonstrating in Thailand" decoding="async" srcset=" " sizes="(max-width: 640px) 100vw, 640px" /> </div>
+</div>
+</article>
+</div>
+<div class="cards__col">
+<article class="card">
+<div class="card__inner">
+<h3 class="card__heading">
+<a href="https://www.article19.org/ie-sign-up/">
+Join the ARTICLE 19 Community </a>
+</h3>
+<div class="card__button">
+<p><a class="button" href="https://www.article19.org/ie-sign-up/">Read full story</a></p>
+</div>
+</div>
+<div class="card__media">
+<div class="card__media-inner"> <img width="640" height="426" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTMzIDc1NSIgd2lkdGg9IjExMzMiIGhlaWdodD0iNzU1IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGd3d3LmFydGljbGUxOS5vcmclMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjMlMkYwNiUyRlZhbmRlcmxlY2lhLU9ydGVnYS1kb3MtU2FudG9zLVZhbmRhUkVVVEVSU0JydW5vLUtlbGx5LWhvbWVwYWdlLS5qcGciIGRhdGEtdz0iMTEzMyIgZGF0YS1oPSI3NTUiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-large size-large" alt decoding="async" srcset=" " sizes="(max-width: 640px) 100vw, 640px" /> </div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block flexible__block2colb flexible__block--content--area">
+<div class="row">
+<div class="small-12 medium-6 large-6 flexible__block--image-col  columns">
+<div class="flexible__block--content--image">
+<img alt="Home" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzAgMzIxIiB3aWR0aD0iNTcwIiBoZWlnaHQ9IjMyMSIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnd3dy5hcnRpY2xlMTkub3JnJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDI0JTJGMDElMkZBMTktVGhvdXNhbmRzLWdhdGhlci10by1jZWxlYnJhdGUtTmVsc29uLU1hbmRlbGFzLXJlbGVhc2UtMTItRmVicnVhcnktMTk5MC1Tb3dldG8tU291dGgtQWZyaWNhLVBob3RvLVBoaWxpcC1MaXR0bGV0b25BRlAtdmlhLUdldHR5LTU3MHgzMjEuanBnIiBkYXRhLXc9IjU3MCIgZGF0YS1oPSIzMjEiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" style="width: 570px;">
+</div>
+</div>
+<div class="small-12 medium-6 large-6 flexible__block--text-col  columns">
+<div class="flexible__block--content--content">
+<h2>Invest in Freedom of Expression</h2> <div class="flexible__block--content--text"><p><span style="font-weight: 400;">Your support funds our mission for a world where all people everywhere can freely express themselves and actively engage in public life without fear of discrimination.</span></p>
+<p><a class=" button--red button--medium button--squared" href="https://www.article19.org/donate/">Support this vital work</a></p>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="cards cards--themed cards--grey">
+<div class="row">
+<div class="columns">
+<div class="cards__header">
+<h2 class="cards__heading">
+Featured </h2>
+<a class="grid__link" href="https://www.article19.org/explore/">
+</a>
+</div>
+<div class="cards__row">
+<div class="cards__col">
+<article class="card">
+<div class="card__inner">
+<h3 class="card__heading">
+<a href="https://www.article19.org/resources/the-power-of-our-voices-international-impact-report-2023/">
+The Power of Our Voices: International Impact Report 2023 </a>
+</h3>
+<p class="card__meta">
+<span class="card__meta-inner">
+<span>16.04.2024</span><span class="icon-clock">1 min read</span> </span>
+</p>
+<div class="card__button">
+<p><a class="button" href="https://www.article19.org/resources/the-power-of-our-voices-international-impact-report-2023/">Read full story</a></p>
+</div>
+</div>
+<div class="card__media">
+<div class="card__media-inner"> <img width="640" height="361" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTIzIDg1OCIgd2lkdGg9IjE1MjMiIGhlaWdodD0iODU4IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGd3d3LmFydGljbGUxOS5vcmclMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjQlMkYwNCUyRkNPVkVSX0F0LXRoZS1SaW8tZGUtSmFuZWlyby1DYXJuaXZhbC1pbi1GZWJydWFyeS0yMDIzLXNhbWJhLXNjaG9vbHMtZGVkaWNhdGVkLXRoZWlyLXBhcmFkZS10by1kZWZlbmRpbmctZnJlZWRvbS1vZi1leHByZXNzaW9uLi1QaG90b18tTWlkaWEtTklOSkEtdmlhLUNDLUJZLU5DLTIuMC1yZXNvdXJjZS5qcGciIGRhdGEtdz0iMTUyMyIgZGF0YS1oPSI4NTgiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-large size-large" alt="At the Rio de Janeiro Carnival in February 2023, samba schools dedicated their parade to defending freedom of expression. (Photo_ Mídia NINJA via CC BY-NC 2.0)" decoding="async" srcset=" " sizes="(max-width: 640px) 100vw, 640px" /> </div>
+</div>
+</article>
+</div>
+<div class="cards__col">
+<article class="card">
+<div class="card__inner">
+<h3 class="card__heading">
+<a href="https://www.article19.org/sustainable-development/">
+Freedom of expression: How informed voice ensures we leave no one behind </a>
+</h3>
+<div class="card__button">
+<p><a class="button" href="https://www.article19.org/sustainable-development/">Read full story</a></p>
+</div>
+</div>
+<div class="card__media">
+<div class="card__media-inner"> <img width="640" height="360" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIwIDEwODAiIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ3d3cuYXJ0aWNsZTE5Lm9yZyUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMyUyRjA5JTJGQTE5X0ZvRS1hbmQtU3VzLURldl9XZWItYmFubmVyLmpwZyIgZGF0YS13PSIxOTIwIiBkYXRhLWg9IjEwODAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-large size-large" alt decoding="async" srcset=" " sizes="(max-width: 640px) 100vw, 640px" /> </div>
+</div>
+</article>
+</div>
+<div class="cards__col">
+<article class="card">
+<div class="card__inner">
+<h3 class="card__heading">
+<a href="https://www.article19.org/equally-safe/">
+Equally Safe: Towards a feminist approach to the safety of journalists </a>
+</h3>
+<div class="card__button">
+<p><a class="button" href="https://www.article19.org/equally-safe/">Read full story</a></p>
+</div>
+</div>
+<div class="card__media">
+<div class="card__media-inner"> <img width="640" height="320" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIwIDk2MCIgd2lkdGg9IjE5MjAiIGhlaWdodD0iOTYwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGd3d3LmFydGljbGUxOS5vcmclMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjIlMkYwNCUyRmVxdWFsbHktc2FmZS1oZXJvLmpwZyIgZGF0YS13PSIxOTIwIiBkYXRhLWg9Ijk2MCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" class="attachment-large size-large" alt decoding="async" srcset=" " sizes="(max-width: 640px) 100vw, 640px" /> </div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block flexible__block2colb flexible__block--content--area block-with-bg bg--orange">
+<div class="row">
+<div class="small-12 medium-6 large-6 flexible__block--image-col  columns">
+<div class="flexible__block--content--image">
+<img alt="Home" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzAgMzIxIiB3aWR0aD0iNTcwIiBoZWlnaHQ9IjMyMSIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnd3dy5hcnRpY2xlMTkub3JnJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIzJTJGMDklMkZHWFItaW1hZ2UtQXJ0aWNsZTE5LUZyZWVkb20tb2YtRXhwcmVzc2lvbi01NzB4MzIxLmpwZyIgZGF0YS13PSI1NzAiIGRhdGEtaD0iMzIxIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" style="width: 570px;">
+</div>
+</div>
+<div class="small-12 medium-6 large-6 flexible__block--text-col  columns">
+<div class="flexible__block--content--content">
+<h2>Global Expression Report</h2> <div class="flexible__block--content--text"><p>Around the globe, 80% of us – that’s more than 6 billion people – are living with less freedom of expression than we had a decade ago. Explore the findings, compare country rankings, and use our data to make the case for positive change.</p>
+<p><a class=" button--red button--medium button--squared" href="https://www.globalexpressionreport.org/" target="_blank" rel="noopener">Read more</a></p>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="block flexible__block2colb flexible__block--content--area is-themed" style="background-color:#ededed;color:#000000">
+<div class="row">
+<div class="small-12 medium-6 large-6 flexible__block--image-col  columns">
+<div class="flexible__block--content--image">
+<img alt="Home" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzAgNDA3IiB3aWR0aD0iNTcwIiBoZWlnaHQ9IjQwNyIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnd3dy5hcnRpY2xlMTkub3JnJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIyJTJGMTAlMkZFVS1hZHZvY2FjeS1mZWF1cmVkLTU3MHg0MDcuanBnIiBkYXRhLXc9IjU3MCIgZGF0YS1oPSI0MDciIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" style="width: 570px;">
+</div>
+</div>
+<div class="small-12 medium-6 large-6 flexible__block--text-col  columns">
+<div class="flexible__block--content--content">
+<h2>Our work in the European Union</h2> <div class="flexible__block--content--text"><p>ARTICLE 19 works to ensure that European Union&#8217;s rules and frameworks uphold the commitments to human rights, particularly the right to free expression and the right to information.</p>
+<p><a class=" button--red button--medium button--squared" href="https://www.article19.org/our-work-in-the-european-union/" target="_self">Go to our European Union page</a></p>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div> <footer id="site-footer" class="site-footer">
+<div class="footer-inner">
+<div class="row">
+<div class="small-12 large-2 columns footer__logo-wrapper">
+<a href="https://www.article19.org" title="ARTICLE 19">
+<img width="145" height="75" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTUgODAiIHdpZHRoPSIxNTUiIGhlaWdodD0iODAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ3d3cuYXJ0aWNsZTE5Lm9yZyUyRndwLWNvbnRlbnQlMkZ0aGVtZXMlMkZhcnRpY2xlMTklMkZhc3NldHMlMkZpbWFnZXMlMkZsb2dvLnN2ZyIgZGF0YS13PSIxNTUiIGRhdGEtaD0iODAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="ARTICLE 19" class="logo">
+</a>
+</div>
+<div class="small-12 large-6 columns">
+<nav class="footer-menu">
+<div class="menu-footer-container"><ul id="footer-menu" class="menu"><li id="menu-item-239536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-239536"><a href="https://www.article19.org/press-and-media/">Press and Media</a>
+<ul class="sub-menu">
+<li id="menu-item-37519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37519"><a href="https://www.article19.org/financials/">Governance</a></li>
+<li id="menu-item-37520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37520"><a href="https://www.article19.org/careers/">Work with us</a></li>
+</ul>
+</li>
+<li id="menu-item-79190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-79190"><a href="https://www.article19.org/article-19-privacy-notice/">Privacy Notice</a>
+<ul class="sub-menu">
+<li id="menu-item-37521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37521"><a href="https://www.article19.org/privacy-policy/">About this site</a></li>
+<li id="menu-item-37522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37522"><a href="https://www.article19.org/raising-a-concern-or-complaint-with-article-19/">Raising a concern</a></li>
+<li id="menu-item-40061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40061"><a href="https://www.article19.org/wp-content/uploads/2019/06/Safeguarding-Policy-May-2019.pdf">Safeguarding</a></li>
+</ul>
+</li>
+<li id="menu-item-40060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-40060"><a href="https://www.article19.org/contact-us/">Contact us</a>
+<ul class="sub-menu">
+<li id="menu-item-280598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-280598"><a href="https://www.article19.org/accessibility/">Accessibility</a></li>
+</ul>
+</li>
+</ul></div> </nav>
+</div>
+<div class="small-12 large-3 columns">
+<div class="site-footer__socials">
+<p><a class="button" href="https://www.article19.org/ie-sign-up/">Join our email list</a></p>
+<ul class="social-icons">
+<li>
+<a class="social-icons__icon social-icons__icon--fb" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/article19org/">
+<span class="screen-reader-text">Visit us on Facebook</span>
+</a>
+</li>
+<li>
+<a class="social-icons__icon social-icons__icon--twitter" target="_blank" rel="noreferrer noopener" href="https://twitter.com/intent/follow?screen_name=article19org">
+<span class="screen-reader-text">Visit us on Twitter</span>
+</a>
+</li>
+<li>
+<a class="social-icons__icon social-icons__icon--linkedin" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/company/article19">
+<span class="screen-reader-text">Visit us on LinkedIn</span>
+</a>
+</li>
+<li>
+<a class="social-icons__icon social-icons__icon--youtube" target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/channel/UCDB6E_x0xRSfF62b872n9YQ">
+<span class="screen-reader-text">Visit us on Youtube</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="small-12 large-10 large-offset-2 columns">
+<div class="footer-copyright">
+Registered charity number 327421 | A company limited by guarantee, registered in England and Wales no. 2097222<br/>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<span aria-hidden="true" id="to_top_scrollup" class="dashicons dashicons-arrow-up-alt2"><span class="screen-reader-text">Scroll Up</span></span><div id="pum-264972" class="pum pum-overlay pum-theme-43004 pum-theme-lightbox popmake-overlay pum-overlay-disabled auto_open click_open" data-popmake="{&quot;id&quot;:264972,&quot;slug&quot;:&quot;newsletter-version-2&quot;,&quot;theme_id&quot;:43004,&quot;cookies&quot;:[{&quot;event&quot;:&quot;on_popup_close&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;pum-264972&quot;,&quot;key&quot;:&quot;&quot;,&quot;session&quot;:false,&quot;path&quot;:&quot;1&quot;,&quot;time&quot;:&quot;1 month&quot;}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:[&quot;pum-264972&quot;],&quot;delay&quot;:&quot;8000&quot;}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:&quot;1&quot;,&quot;overlay_disabled&quot;:&quot;1&quot;,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;custom&quot;,&quot;responsive_min_width&quot;:&quot;0px&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100px&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;300px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:&quot;1&quot;,&quot;location&quot;:&quot;left bottom&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;10&quot;,&quot;position_right&quot;:&quot;10&quot;,&quot;position_fixed&quot;:&quot;1&quot;,&quot;animation_type&quot;:&quot;slide&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;bottom&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" role="dialog" aria-modal="false">
+<div id="popmake-264972" class="pum-container popmake theme-43004 size-custom pum-position-fixed">
+<div class="pum-content popmake-content" tabindex="0">
+<p><a class="button button--red button--medium button--squared" href="https://www.article19.org/ie-sign-up/">Subscribe to our Newsletter </a></p>
+</div>
+<button type="button" class="pum-close popmake-close" aria-label="Close">
+× </button>
+</div>
+</div>
+<script type="text/javascript">var algolia = {"debug":true,"application_id":"7T2JPDE6PM","search_api_key":"2cd1c59dbf0444020cbd9f22acdfd5e1","powered_by_enabled":true,"query":"","autocomplete":{"sources":[{"index_id":"posts_page","index_name":"a19_prod_posts_page","label":"Pages","admin_name":"Pages","position":0,"max_suggestions":5,"tmpl_suggestion":"autocomplete-post-suggestion","enabled":true},{"index_id":"posts_resources","index_name":"a19_prod_posts_resources","label":"Resources","admin_name":"Resources","position":1,"max_suggestions":5,"tmpl_suggestion":"autocomplete-post-suggestion","enabled":true},{"index_id":"posts_campaign","index_name":"a19_prod_posts_campaign","label":"Campaigns","admin_name":"Campaigns","position":2,"max_suggestions":5,"tmpl_suggestion":"autocomplete-post-suggestion","enabled":true},{"index_id":"posts_vacancies","index_name":"a19_prod_posts_vacancies","label":"Vacancies","admin_name":"Vacancies","position":3,"max_suggestions":5,"tmpl_suggestion":"autocomplete-post-suggestion","enabled":true}],"input_selector":"input[name='s']:not(.no-autocomplete):not(#adminbar-search)"},"indices":{"searchable_posts":{"name":"a19_prod_searchable_posts","id":"searchable_posts","enabled":true,"replicas":[]},"posts_page":{"name":"a19_prod_posts_page","id":"posts_page","enabled":true,"replicas":[]},"posts_resources":{"name":"a19_prod_posts_resources","id":"posts_resources","enabled":true,"replicas":[]},"posts_vacancies":{"name":"a19_prod_posts_vacancies","id":"posts_vacancies","enabled":true,"replicas":[]},"posts_campaign":{"name":"a19_prod_posts_campaign","id":"posts_campaign","enabled":true,"replicas":[]}}};</script>
+<script type="text/html" id="tmpl-autocomplete-header">
+	<div class="autocomplete-header">
+		<div class="autocomplete-header-title">{{{ data.label }}}</div>
+		<div class="clear"></div>
+	</div>
+</script>
+<script type="text/html" id="tmpl-autocomplete-post-suggestion">
+	<a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.post_title }}">
+		<# if ( data.images.thumbnail ) { #>
+			<img class="suggestion-post-thumbnail" src="{{ data.images.thumbnail.url }}" alt="{{ data.post_title }}">
+		<# } #>
+		<div class="suggestion-post-attributes">
+			<span class="suggestion-post-title">{{{ data._highlightResult.post_title.value }}}</span>
+			<# if ( data._snippetResult['content'] ) { #>
+				<span class="suggestion-post-content">{{{ data._snippetResult['content'].value }}}</span>
+			<# } #>
+		</div>
+	</a>
+</script>
+<script type="text/html" id="tmpl-autocomplete-term-suggestion">
+	<a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.name }}">
+		<svg viewBox="0 0 21 21" width="21" height="21">
+			<svg width="21" height="21" viewBox="0 0 21 21">
+				<path
+					d="M4.662 8.72l-1.23 1.23c-.682.682-.68 1.792.004 2.477l5.135 5.135c.7.693 1.8.688 2.48.005l1.23-1.23 5.35-5.346c.31-.31.54-.92.51-1.36l-.32-4.29c-.09-1.09-1.05-2.06-2.15-2.14l-4.3-.33c-.43-.03-1.05.2-1.36.51l-.79.8-2.27 2.28-2.28 2.27zm9.826-.98c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25z"
+					fill-rule="evenodd"></path>
+			</svg>
+		</svg>
+		<span class="suggestion-post-title">{{{ data._highlightResult.name.value }}}</span>
+	</a>
+</script>
+<script type="text/html" id="tmpl-autocomplete-user-suggestion">
+	<a class="suggestion-link user-suggestion-link" href="{{ data.posts_url }}" title="{{ data.display_name }}">
+		<# if ( data.avatar_url ) { #>
+			<img class="suggestion-user-thumbnail" src="{{ data.avatar_url }}" alt="{{ data.display_name }}">
+		<# } #>
+		<span class="suggestion-post-title">{{{ data._highlightResult.display_name.value }}}</span>
+	</a>
+</script>
+<script type="text/html" id="tmpl-autocomplete-footer">
+	<div class="autocomplete-footer">
+		<a class="js-header-search-submit algolia-submit-button" href="https://www.article19.org/search/">Go to search results</a>
+	</div>
+</script>
+<script type="text/html" id="tmpl-autocomplete-empty">
+	<div class="autocomplete-empty">
+		No results matched your query 		<span class="empty-query">"{{ data.query }}"</span>
+	</div>
+</script>
+<style id="core-block-supports-inline-css" type="text/css">
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script type="text/javascript" id="spai-scripts-js-extra">
+/* <![CDATA[ */
+var spai_settings = {"api_domain":"cdn.shortpixel.ai","api_url":"https:\/\/cdn.shortpixel.ai\/spai\/w_%WIDTH%+q_glossy+ret_img","api_short_url":"https:\/\/cdn.shortpixel.ai\/spai\/ret_img","method":"src","crop":"","size_breakpoints":{"on":false,"base":50,"rate":10},"lqip":"","lazy_threshold":"500","hover_handling":"","native_lazy":"","serve_svg":"1","debug":"","site_url":"https:\/\/www.article19.org","plugin_url":"https:\/\/www.article19.org\/wp-content\/plugins\/shortpixel-adaptive-images","version":"3.8.2","excluded_selectors":[],"eager_selectors":[".overlay__background img"],"noresize_selectors":[],"alter2wh":"","use_first_sizes":[],"lazy_bg_style":"","active_integrations":{"nextgen":false,"modula":false,"elementor":false,"elementor-addons":false,"viba-portfolio":false,"envira":false,"everest":false,"wp-bakery":false,"woocommerce":false,"wpc-variations":false,"foo":false,"global-gallery":false,"essential-grid":false,"oxygen":false,"slider-revolution":false,"custom-facebook-feed":false,"smart-slider":false,"real3d-flipbook":false,"wp-grid-builder":false,"beaver-builder":false,"the-grid":false,"social-pug":false,"instagram-feed":false,"insta-gallery":false,"content-views":false,"featherlight":false,"lightbox-photoswipe":false,"acf":true,"soliloquy":false,"jetpack":false,"wp-rocket":{"lazyload":false,"css-filter":true,"minify-css":true,"defer-all-js":false,"video-placeholder":false},"perfmatters":false,"swift-performance":false,"imagify":{"active":false},"wp-fastest-cache":false,"litespeed-cache":false,"w3-total-cache":false,"wp-super-cache":false,"wp-optimize":{"active":false,"enable_css":false,"enable_merging_of_css":false},"breeze":false,"smart-cookie-kit":false,"wpzoom-theme":false,"avia-gallery-module":false,"theme":"article19"},"parse_css_files":"","backgrounds_max_width":"1920","sep":"+","webp":"1","avif":"1","webp_detect":"","extensions_to_nextgenimg":{"png":true,"jpg":true,"gif":true},"sniper":"https:\/\/www.article19.org\/wp-content\/plugins\/shortpixel-adaptive-images\/assets\/img\/target.cur","affected_tags":"{\"figure\":2,\"img\":1,\"link\":1}","ajax_url":"https:\/\/www.article19.org\/wp-admin\/admin-ajax.php","excluded_paths":["cmVnZXg6L1wvXC8oW15cL10qXC58KWdyYXZhdGFyLmNvbVwvLw=="]};
+/* ]]> */
+</script>
+<script data-cfasync="false" type="text/javascript" src="https://www.article19.org/wp-content/plugins/shortpixel-adaptive-images/assets/js/ai-2.0.min.js" id="spai-scripts-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/themes/article19/assets/js/vendors.min.js?ver=1644405064" id="a19-vendors-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/themes/article19/assets/js/main.js?ver=1697675939" id="main-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/themes/article19/assets/js/search/autocomplete.js?ver=1678314397" id="autocomplete-js" defer></script>
+<script type="text/javascript" id="pojo-a11y-js-extra">
+/* <![CDATA[ */
+var PojoA11yOptions = {"focusable":"1","remove_link_target":"","add_role_links":"1","enable_save":"1","save_expiration":"12"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/pojo-accessibility/assets/js/app.min.js?ver=1.0.0" id="pojo-a11y-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js" defer></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.article19.org/wp-includes/js/wp-util.js?ver=6.4.4" id="wp-util-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/wp-search-with-algolia/js/algoliasearch/dist/algoliasearch-lite.umd.js?ver=2.8.0" id="algolia-search-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/wp-search-with-algolia/js/autocomplete.js/dist/autocomplete.js?ver=2.8.0" id="algolia-autocomplete-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/wp-search-with-algolia/js/autocomplete-noconflict.js?ver=2.8.0" id="algolia-autocomplete-noconflict-js" defer></script>
+<script type="text/javascript" src="https://www.article19.org/wp-includes/js/jquery/ui/core.js?ver=1.13.2" id="jquery-ui-core-js" defer></script>
+<script type="text/javascript" id="popup-maker-site-js-extra">
+/* <![CDATA[ */
+var pum_vars = {"version":"1.18.5","pm_dir_url":"https:\/\/www.article19.org\/wp-content\/plugins\/popup-maker\/","ajaxurl":"https:\/\/www.article19.org\/wp-admin\/admin-ajax.php","restapi":"https:\/\/www.article19.org\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"43003","debug_mode":"","disable_tracking":"","home_url":"\/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","analytics_route":"analytics","analytics_api":"https:\/\/www.article19.org\/wp-json\/pum\/v1"};
+var pum_sub_vars = {"ajaxurl":"https:\/\/www.article19.org\/wp-admin\/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-264972":{"triggers":[{"type":"auto_open","settings":{"cookie_name":["pum-264972"],"delay":"8000"}}],"cookies":[{"event":"on_popup_close","settings":{"name":"pum-264972","key":"","session":false,"path":"1","time":"1 month"}}],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"43004","size":"custom","responsive_min_width":"0px","responsive_max_width":"100px","custom_width":"300px","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"slide","animation_speed":"350","animation_origin":"bottom","open_sound":"none","custom_sound":"","location":"left bottom","position_top":"100","position_bottom":"10","position_left":"0","position_right":"10","position_from_trigger":false,"position_fixed":true,"overlay_disabled":true,"stackable":true,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"lightbox","id":264972,"slug":"newsletter-version-2"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.article19.org/wp-content/plugins/popup-maker/assets/js/site.js?defer&amp;ver=1.18.5" id="popup-maker-site-js" defer></script>
+<nav id="pojo-a11y-toolbar" class="pojo-a11y-toolbar-left pojo-a11y-visible-desktop" role="navigation">
+<div class="pojo-a11y-toolbar-toggle">
+<a class="pojo-a11y-toolbar-link pojo-a11y-toolbar-toggle-link" href="javascript:void(0);" title="Accessibility Tools" role="button">
+<span class="pojo-sr-only sr-only">Open toolbar</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor" width="1em">
+<title>Accessibility Tools</title>
+<path d="M50 8.1c23.2 0 41.9 18.8 41.9 41.9 0 23.2-18.8 41.9-41.9 41.9C26.8 91.9 8.1 73.2 8.1 50S26.8 8.1 50 8.1M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm0 11.3c-21.4 0-38.7 17.3-38.7 38.7S28.6 88.7 50 88.7 88.7 71.4 88.7 50 71.4 11.3 50 11.3zm0 8.9c4 0 7.3 3.2 7.3 7.3S54 34.7 50 34.7s-7.3-3.2-7.3-7.3 3.3-7.2 7.3-7.2zm23.7 19.7c-5.8 1.4-11.2 2.6-16.6 3.2.2 20.4 2.5 24.8 5 31.4.7 1.9-.2 4-2.1 4.7-1.9.7-4-.2-4.7-2.1-1.8-4.5-3.4-8.2-4.5-15.8h-2c-1 7.6-2.7 11.3-4.5 15.8-.7 1.9-2.8 2.8-4.7 2.1-1.9-.7-2.8-2.8-2.1-4.7 2.6-6.6 4.9-11 5-31.4-5.4-.6-10.8-1.8-16.6-3.2-1.7-.4-2.8-2.1-2.4-3.9.4-1.7 2.1-2.8 3.9-2.4 19.5 4.6 25.1 4.6 44.5 0 1.7-.4 3.5.7 3.9 2.4.7 1.8-.3 3.5-2.1 3.9z" /> </svg>
+</a>
+</div>
+<div class="pojo-a11y-toolbar-overlay">
+<div class="pojo-a11y-toolbar-inner">
+<p class="pojo-a11y-toolbar-title">Accessibility Tools</p>
+<ul class="pojo-a11y-toolbar-items pojo-a11y-tools">
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-resize-font pojo-a11y-btn-resize-plus" data-action="resize-plus" data-action-group="resize" tabindex="-1" role="button">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Increase Text</title><path fill="currentColor" d="M256 200v16c0 4.25-3.75 8-8 8h-56v56c0 4.25-3.75 8-8 8h-16c-4.25 0-8-3.75-8-8v-56h-56c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h56v-56c0-4.25 3.75-8 8-8h16c4.25 0 8 3.75 8 8v56h56c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z"></path></svg></span><span class="pojo-a11y-toolbar-text">Increase Text</span> </a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-resize-font pojo-a11y-btn-resize-minus" data-action="resize-minus" data-action-group="resize" tabindex="-1" role="button">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Decrease Text</title><path fill="currentColor" d="M256 200v16c0 4.25-3.75 8-8 8h-144c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h144c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z"></path></svg></span><span class="pojo-a11y-toolbar-text">Decrease Text</span> </a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-grayscale" data-action="grayscale" data-action-group="schema" tabindex="-1" role="button">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Grayscale</title><path fill="currentColor" d="M15.75 384h-15.75v-352h15.75v352zM31.5 383.75h-8v-351.75h8v351.75zM55 383.75h-7.75v-351.75h7.75v351.75zM94.25 383.75h-7.75v-351.75h7.75v351.75zM133.5 383.75h-15.5v-351.75h15.5v351.75zM165 383.75h-7.75v-351.75h7.75v351.75zM180.75 383.75h-7.75v-351.75h7.75v351.75zM196.5 383.75h-7.75v-351.75h7.75v351.75zM235.75 383.75h-15.75v-351.75h15.75v351.75zM275 383.75h-15.75v-351.75h15.75v351.75zM306.5 383.75h-15.75v-351.75h15.75v351.75zM338 383.75h-15.75v-351.75h15.75v351.75zM361.5 383.75h-15.75v-351.75h15.75v351.75zM408.75 383.75h-23.5v-351.75h23.5v351.75zM424.5 383.75h-8v-351.75h8v351.75zM448 384h-15.75v-352h15.75v352z"></path></svg></span><span class="pojo-a11y-toolbar-text">Grayscale</span> </a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-high-contrast" data-action="high-contrast" data-action-group="schema" tabindex="-1" role="button">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>High Contrast</title><path fill="currentColor" d="M192 360v-272c-75 0-136 61-136 136s61 136 136 136zM384 224c0 106-86 192-192 192s-192-86-192-192 86-192 192-192 192 86 192 192z"></path></svg></span><span class="pojo-a11y-toolbar-text">High Contrast</span> </a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-negative-contrast" data-action="negative-contrast" data-action-group="schema" tabindex="-1" role="button">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Negative Contrast</title><path fill="currentColor" d="M416 240c-23.75-36.75-56.25-68.25-95.25-88.25 10 17 15.25 36.5 15.25 56.25 0 61.75-50.25 112-112 112s-112-50.25-112-112c0-19.75 5.25-39.25 15.25-56.25-39 20-71.5 51.5-95.25 88.25 42.75 66 111.75 112 192 112s149.25-46 192-112zM236 144c0-6.5-5.5-12-12-12-41.75 0-76 34.25-76 76 0 6.5 5.5 12 12 12s12-5.5 12-12c0-28.5 23.5-52 52-52 6.5 0 12-5.5 12-12zM448 240c0 6.25-2 12-5 17.25-46 75.75-130.25 126.75-219 126.75s-173-51.25-219-126.75c-3-5.25-5-11-5-17.25s2-12 5-17.25c46-75.5 130.25-126.75 219-126.75s173 51.25 219 126.75c3 5.25 5 11 5 17.25z"></path></svg></span><span class="pojo-a11y-toolbar-text">Negative Contrast</span> </a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-links-underline" data-action="links-underline" data-action-group="toggle" tabindex="-1" role="button">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Links Underline</title><path fill="currentColor" d="M364 304c0-6.5-2.5-12.5-7-17l-52-52c-4.5-4.5-10.75-7-17-7-7.25 0-13 2.75-18 8 8.25 8.25 18 15.25 18 28 0 13.25-10.75 24-24 24-12.75 0-19.75-9.75-28-18-5.25 5-8.25 10.75-8.25 18.25 0 6.25 2.5 12.5 7 17l51.5 51.75c4.5 4.5 10.75 6.75 17 6.75s12.5-2.25 17-6.5l36.75-36.5c4.5-4.5 7-10.5 7-16.75zM188.25 127.75c0-6.25-2.5-12.5-7-17l-51.5-51.75c-4.5-4.5-10.75-7-17-7s-12.5 2.5-17 6.75l-36.75 36.5c-4.5 4.5-7 10.5-7 16.75 0 6.5 2.5 12.5 7 17l52 52c4.5 4.5 10.75 6.75 17 6.75 7.25 0 13-2.5 18-7.75-8.25-8.25-18-15.25-18-28 0-13.25 10.75-24 24-24 12.75 0 19.75 9.75 28 18 5.25-5 8.25-10.75 8.25-18.25zM412 304c0 19-7.75 37.5-21.25 50.75l-36.75 36.5c-13.5 13.5-31.75 20.75-50.75 20.75-19.25 0-37.5-7.5-51-21.25l-51.5-51.75c-13.5-13.5-20.75-31.75-20.75-50.75 0-19.75 8-38.5 22-52.25l-22-22c-13.75 14-32.25 22-52 22-19 0-37.5-7.5-51-21l-52-52c-13.75-13.75-21-31.75-21-51 0-19 7.75-37.5 21.25-50.75l36.75-36.5c13.5-13.5 31.75-20.75 50.75-20.75 19.25 0 37.5 7.5 51 21.25l51.5 51.75c13.5 13.5 20.75 31.75 20.75 50.75 0 19.75-8 38.5-22 52.25l22 22c13.75-14 32.25-22 52-22 19 0 37.5 7.5 51 21l52 52c13.75 13.75 21 31.75 21 51z"></path></svg></span><span class="pojo-a11y-toolbar-text">Links Underline</span> </a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-reset" data-action="reset" tabindex="-1" role="button">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Reset</title><path fill="currentColor" d="M384 224c0 105.75-86.25 192-192 192-57.25 0-111.25-25.25-147.75-69.25-2.5-3.25-2.25-8 0.5-10.75l34.25-34.5c1.75-1.5 4-2.25 6.25-2.25 2.25 0.25 4.5 1.25 5.75 3 24.5 31.75 61.25 49.75 101 49.75 70.5 0 128-57.5 128-128s-57.5-128-128-128c-32.75 0-63.75 12.5-87 34.25l34.25 34.5c4.75 4.5 6 11.5 3.5 17.25-2.5 6-8.25 10-14.75 10h-112c-8.75 0-16-7.25-16-16v-112c0-6.5 4-12.25 10-14.75 5.75-2.5 12.75-1.25 17.25 3.5l32.5 32.25c35.25-33.25 83-53 132.25-53 105.75 0 192 86.25 192 192z"></path></svg></span>
+<span class="pojo-a11y-toolbar-text">Reset</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</body>
+</html>
