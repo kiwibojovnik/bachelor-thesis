@@ -2,7 +2,8 @@ import os
 import json
 import re
 
-from process_data import compare, define_censorship, geolocation
+from process_data import compare, define_censorship, geolocation, statistics
+
 
 
 def match_filename(filename1, filename2):
@@ -21,7 +22,6 @@ def match_filename(filename1, filename2):
 
         # Check if both the country and number match
         if country1 == country2 and number1 == number2:
-            print(country1, number1, country2, number2)
             return True
     return False
 
@@ -66,9 +66,10 @@ def process(folder1, folder2):
     diffs = define_censorship.add_censorship_type_to_differences(diffs)
 
     print("Adding geolocation information to traceroute data.")
-    # Get GPS location for specific IP addresses in traceroute data, possibly only for those from Belarus
-    print(diffs)
-    differences_to_save = geolocation.add_geolocation(diffs)
+    # TODO: dodělat: Get GPS location for specific IP addresses in traceroute data, possibly only for those from Belarus
+    #differences_to_save = geolocation.add_geolocation(diffs)
+
+    stats = statistics.count_censorship_types(diffs)
 
     print("Printing statistics about censorship: ")
 
@@ -76,7 +77,10 @@ def process(folder1, folder2):
     print("The number of identical results for addresses: ", same_keys_count_total)
     print("The number of failed addresses (not working in CZ): ", fail_address_records_total)
 
+    for censorship_type, count in stats.items():
+        print(f"- {censorship_type}: {count} occurrences")
+
     print("Saving results of each test with additional information to file.")
     # Save differences to a file
     with open('try2.json', 'w') as diff_file:
-        json.dump(differences_to_save, diff_file, ensure_ascii=False, indent=4)
+        json.dump(diffs, diff_file, ensure_ascii=False, indent=4)

@@ -84,7 +84,6 @@ def determine_censorship(differences):
                 for country, condition in condition_values.items():
                     value = differences[key].get(condition_name, {}).get(country)
                     if value is not None and condition(value):
-                        print(f"Pravidlo '{rule_name}' shodné pro {country} s hodnotou: {value}")
                         rule_matched = True
                         differences[key]['CENSORSHIP TYPE'] = rule_name
                         break  # Přerušíme vnitřní cyklus, pokud bylo pravidlo shodné
@@ -94,7 +93,6 @@ def determine_censorship(differences):
                 break  # Přerušíme nejvnější cyklus, pokud bylo pravidlo shodné
 
         if not rule_matched:
-            print("NECENZURA")
             differences[key]['CENSORSHIP TYPE'] = 'No censorship found'
 
     return differences
@@ -102,6 +100,6 @@ def determine_censorship(differences):
 
 def add_censorship_type_to_differences(differences):
     for url, diff in differences.items():
-        censorship_type = determine_censorship(diff)
+        determine_censorship(diff)
 
     return differences

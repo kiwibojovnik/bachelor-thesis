@@ -24,14 +24,31 @@ def get_info(ip_address):
 
 
 def add_geolocation(diffs):
-    for url, diff in diffs.items():
-        if 'Trace hop IP' in diff:
-            for file, hops in diff['Trace hop IP'].items():
-                for hop in hops:
-                    ip_address = hop[0]
-                    geolocation_info = get_info(ip_address)
+    for url, diff in diffs.items():     # url je nazev souboru
+        #print(url)
+      #  keys = list(diff.keys())
+        for key, value in diff.items():        #key je webova adresa
+            print(key)
 
-                    if geolocation_info:
-                        hop.extend(geolocation_info.values())
+            if 'Trace hop IP' in value:
+                print("TRACE HOP")
+                for file, hops in value.items():
+                    #print(file)
+                    #print(hops)
+                    if 'Trace hop IP' in file:
+                        for hop in hops.items():
+                           # print(hop)
+                            ip_address = hop[1]
+                           #TODO: EDIT
+                            for ip in hop.items():
+                                print(ip)
+                                print("IP", ip_address)
+                                geolocation_info = get_info(ip_address)
+
+                                if geolocation_info:
+                                    hop.extend(geolocation_info.values())
 
     return diffs
+
+
+
