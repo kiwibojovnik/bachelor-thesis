@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+ 
+<html lang="en">
+ 
+
+
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>F-Droid - Free and Open Source Android App Repository</title>
+  <meta property="og:title" content="F-Droid - Free and Open Source Android App Repository">
+
+  
+
+  <meta name="description" content="F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform. The client makes it easy to browse, install, and keep track of updates on your device.">
+  <meta property="og:description" content="F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform. The client makes it easy to browse, install, and keep track of updates on your device.">
+
+  
+    <meta property="og:image" content="https://f-droid.org/assets/fdroid-logo_bfHl7nsLHOUQxzdU8-rGIhn4bAgl6z7k2mA3fWoCyT4=.png">
+  
+
+  <link rel="preload" href="/assets/roboto_ln5c7Pv79kCZw8EjInNILddDbwVxQmaVPE0sjunCivU=.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" as="style" href="/css/main.css"/>
+  <link rel="dns-prefetch" href="https://search.f-droid.org"/>
+  <link rel="stylesheet" href="/css/main.css"/>
+  
+  <link rel="canonical" href='https://f-droid.org/'/>
+  
+  <link rel="alternate" type="application/rss+xml" title="F-Droid - Free and Open Source Android App Repository" href="/feed.xml"/>
+
+  <link href="/en/osd.xml" rel="search" title="F-Droid" type="application/opensearchdescription+xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon_ypJwtCrcixeH_qV6LdcMYk1anFIR9o-_ufR__1wNdJY=.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon_AfYQ36xPEzFjJiCTyBFVmfWkajkehilUd2geASywhxM=.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32_Dk3aeG3k_A20gYe5zAlPSBx_CEcpJaCI89K2X2z6CFY=.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16_7yyppfDSTAVyGb3ycHY84PYjHUwP96NKICAibLRpnXw=.png">
+  <link rel="manifest" href="/assets/site_J9OLInBmO2hLlutzRFC4mdstNJjL44B6NzBbT0ecmA0=.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab_jVj0QIYK2TEAcXlrhjrienjgRnccBVzvX22tYumPb9Q=.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicon_yJPr4UNteJc-cseeq16P0Hvl1kDbJjTVYcj-KA6-_Fs=.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/browserconfig_sI0d7L-NQ2rondQpLn2DRSqXxvj7iPI0-WPzXn-uLZA=.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="alternate" hreflang="ar" href='https://f-droid.org/ar/'>
+  
+  <link rel="alternate" hreflang="bo" href='https://f-droid.org/bo/'>
+  
+  <link rel="alternate" hreflang="en" href='https://f-droid.org/en/'>
+  
+  <link rel="alternate" hreflang="de" href='https://f-droid.org/de/'>
+  
+  <link rel="alternate" hreflang="es" href='https://f-droid.org/es/'>
+  
+  <link rel="alternate" hreflang="fa" href='https://f-droid.org/fa/'>
+  
+  <link rel="alternate" hreflang="fr" href='https://f-droid.org/fr/'>
+  
+  <link rel="alternate" hreflang="he" href='https://f-droid.org/he/'>
+  
+  <link rel="alternate" hreflang="hu" href='https://f-droid.org/hu/'>
+  
+  <link rel="alternate" hreflang="id" href='https://f-droid.org/id/'>
+  
+  <link rel="alternate" hreflang="is" href='https://f-droid.org/is/'>
+  
+  <link rel="alternate" hreflang="it" href='https://f-droid.org/it/'>
+  
+  <link rel="alternate" hreflang="ja" href='https://f-droid.org/ja/'>
+  
+  <link rel="alternate" hreflang="ko" href='https://f-droid.org/ko/'>
+  
+  <link rel="alternate" hreflang="pl" href='https://f-droid.org/pl/'>
+  
+  <link rel="alternate" hreflang="pt" href='https://f-droid.org/pt/'>
+  
+  <link rel="alternate" hreflang="pt-BR" href='https://f-droid.org/pt_BR/'>
+  
+  <link rel="alternate" hreflang="ro" href='https://f-droid.org/ro/'>
+  
+  <link rel="alternate" hreflang="ru" href='https://f-droid.org/ru/'>
+  
+  <link rel="alternate" hreflang="sq" href='https://f-droid.org/sq/'>
+  
+  <link rel="alternate" hreflang="tr" href='https://f-droid.org/tr/'>
+  
+  <link rel="alternate" hreflang="uk" href='https://f-droid.org/uk/'>
+  
+  <link rel="alternate" hreflang="zh-Hans" href='https://f-droid.org/zh_Hans/'>
+  
+  <link rel="alternate" hreflang="zh-Hant" href='https://f-droid.org/zh_Hant/'>
+  
+  <link rel="alternate" hreflang="x-default" href='https://f-droid.org/'>
+  </head>
+
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <header class="site-header">
+
+  <a class="site-title" href="/en/">
+    <img src="/assets/fdroid-logo-text_S0MUfk_FsnAYL7n2MQye-34IoSNm6QM6xYjDnMqkufo=.svg" alt="F-Droid" />
+  </a>
+
+  <nav class="site-nav">
+    
+      
+        
+        
+          <a class="page-link " href="/en/packages/">Apps</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link" href="https://forum.f-droid.org">Forum</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/docs/">Docs</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/news/">News</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/issues/">Issues</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/contribute/">Contribute</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/about/">About</a>
+        
+      
+    
+  </nav>
+
+</header>
+
+
+      <div class="main-content with-sidebar">
+
+        <div class="article-area">
+          
+<h2>What is F-Droid?</h2>
+
+<p>F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform. The client makes it easy to browse, install, and keep track of updates on your device.</p>
+
+<div class="download-and-screenshot">
+    <div class="download">
+        <div class="button">
+            <a id="fdroid-download" data-donate-link="/donate" class="material-button" href="https://f-droid.org/F-Droid.apk">Download F-Droid</a>
+        </div>
+        <div class="qr">
+            <img src="/assets/download-fdroid-qr_GxE-SXA6lmH3iEpOmU-lh1S4bQZis4xoQ2M_LzTWQF8=.png" />
+        </div>
+        <div class="pgp-verification">
+          <a href="docs/Verifying_Downloaded_APK">Instructions to verify the download</a>
+        </div>
+    </div>
+    <div class="screenshot">
+        <img src="/assets/phone-frame_CugdRqiuBcm9I48ZeNjWjha41afLF4ISL2R9QoRbCzo=.png" alt="F-Droid Android app screenshot" style="background: url('/assets/fdroid-screenshot-en.png') center center no-repeat; background-size: 78% auto" />
+    </div>
+</div>
+
+<script src="/assets/donate_JH0mCNwawhPK42f7esD5bhYNybwPzSBMKoUvyTlH-Gw=.js" async=""></script>
+
+
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-widget language">
+            
+
+
+
+<form action="/" method="get">
+
+  <select id="language-chooser-select" name="lang" autocomplete="off">
+    
+      <option value="ar" >
+        Ø§ÙØ¹Ø±Ø¨ÙØ©
+      </option>
+    
+      <option value="bo" >
+        à½à½¼à½à¼à½¦à¾à½à¼
+      </option>
+    
+      <option value="en" selected="selected">
+        English
+      </option>
+    
+      <option value="de" >
+        Deutsch
+      </option>
+    
+      <option value="es" >
+        espaÃ±ol
+      </option>
+    
+      <option value="fa" >
+        ÙØ§Ø±Ø³Û
+      </option>
+    
+      <option value="fr" >
+        franÃ§ais
+      </option>
+    
+      <option value="he" >
+        ×¢××¨××ª
+      </option>
+    
+      <option value="hu" >
+        magyar
+      </option>
+    
+      <option value="id" >
+        Bahasa Indonesia
+      </option>
+    
+      <option value="is" >
+        Ã­slenska
+      </option>
+    
+      <option value="it" >
+        italiano
+      </option>
+    
+      <option value="ja" >
+        æ¥æ¬èª
+      </option>
+    
+      <option value="ko" >
+        íêµ­ì´
+      </option>
+    
+      <option value="pl" >
+        polski
+      </option>
+    
+      <option value="pt" >
+        portuguÃªs
+      </option>
+    
+      <option value="pt_BR" >
+        portuguÃªs do Brasil
+      </option>
+    
+      <option value="ro" >
+        romÃ¢nÄ
+      </option>
+    
+      <option value="ru" >
+        ÑÑÑÑÐºÐ¸Ð¹
+      </option>
+    
+      <option value="sq" >
+        shqip
+      </option>
+    
+      <option value="tr" >
+        TÃ¼rkÃ§e
+      </option>
+    
+      <option value="uk" >
+        ÑÐºÑÐ°ÑÐ½ÑÑÐºÐ°
+      </option>
+    
+      <option value="zh_Hans" >
+        ç®ä½ä¸­æ
+      </option>
+    
+      <option value="zh_Hant" >
+        ç¹é«ä¸­æ
+      </option>
+    
+  </select>
+
+  <script src="/assets/sidebar-lang_j4kvB8VghKUiWGs4HpqMvN0Ucx0tTmJ_lRfuoUmiaqc=.js" async></script>
+
+  <noscript>
+    <input id="language-chooser-submit" type="submit" value="Change" />
+  </noscript>
+
+</form>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <!--
+Disabled until fixed: https://gitlab.com/fdroid/fdroid-website/-/issues/775
+<h3>Find Apps</h3>
+-->
+
+<div>
+  <form method="get" class="search-form" action="https://search.f-droid.org/">
+    <div class="search-input-wrp">
+      <input type="search" class="search-input" name="q">
+    </div>
+    <input type="hidden" name="lang" value="en">
+    <input type="submit" value="Search" class="material-button" />
+  </form>
+</div>
+
+          </div>
+
+          <div class="sidebar-widget">
+            
+            
+<h3 id="donate">Donate</h3>
+
+<p>F-Droid is powered by your donations!</p>
+
+<ul class="donate-options">
+  <li class="donate-option opencollective"><a href="https://opencollective.com/f-droid"><img src="/assets/opencollective_button_iIGF0Hixdj0EaYR3Sd7FRigTVcl7QPGu6kaoBmXHjZI=.png" alt="Donate to our Collective" /></a></li>
+  <li class="donate-option liberapay"><a href="https://liberapay.com/F-Droid-Data/donate"><img src="/assets/liberapay_donate_button_GHdOOfmFJNeSXjfjnA-98XtIuEfvE6cNJjHgHOhjdv0=.svg" alt="Donate via Liberapay" /></a></li>
+  <li class="donate-option more"><a href="/en/donate">More Options</a></li>
+</ul>
+
+          </div>
+
+          <div class="sidebar-widget sidebar-hidden">
+            <h3> Connect </h3>
+
+<a class="connect-item" rel="me" href="https://floss.social/@fdroidorg">
+    <img class="connect-icon" src="/assets/mastodon_-c62Zo613I00cO-RavNTybrSJhBC3vZToN5u4zSoMdM=.svg" alt="mastodon" />
+    <div class="connect-label">@fdroidorg@floss.social</div>
+</a>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>News</h3>
+
+<ul class="post-list" dir="auto">
+  
+    <li>
+      <a class="post-link" href="/en/2024/04/29/board-appointments-2024.html">F-Droid Board of Directors appointments 2024</a>
+
+      <span class="post-meta">Apr 29, 2024</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2024/04/25/twif.html">Safety in typing, no cloud needed</a>
+
+      <span class="post-meta">Apr 25, 2024</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2024/04/18/twif.html">Maintaining ownership</a>
+
+      <span class="post-meta">Apr 18, 2024</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2024/04/11/twif.html">Good weather for a new keyboard</a>
+
+      <span class="post-meta">Apr 11, 2024</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2024/04/04/twif.html">Favor your repository</a>
+
+      <span class="post-meta">Apr 04, 2024</span>
+    </li>
+  
+</ul>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Last Updated</h3>
+
+
+
+
+
+<a class="package-header" href="/en/packages/se.arctosoft.vault/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/se.arctosoft.vault/en-US/icon_O-U3JRoNgZ4gL272ZdZJ---yZfQ32Lwn4ZoOxhl_Lz0=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Valv
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">An encrypted gallery vault for Android devices</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/org.totschnig.myexpenses/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/org.totschnig.myexpenses/en-US/icon_zWawBtP0U6S03MdPDF6m-Zh9Tbt6MmuSM-w68Ug-58o=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			My Expenses
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Easy to use personal finance manager: rich functionality and Open Source</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/org.privacymatters.safespace/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/org.privacymatters.safespace/en-US/icon_PE26zYSBlKPklqpmkuQdvBI0veNcd7WxFYKOP3b3Os8=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Safe Space
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A safe space for your digital valuables.</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+<!-- no nice ones found, failing back to any -->
+
+
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Latest Apps</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/spam.blocker/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/spam.blocker/en-US/icon_xp0inm_PK2j31oXZnfJLJORrQmRTWGGX0Pwic9oHnW0=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			SpamBlocker (Call &amp; SMS)
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Spam Call/SMS blocker</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/rocks.poopjournal.metadataremover/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/rocks.poopjournal.metadataremover/en/icon_Yyr2wKOd-DpQ5hBqLIcwZOEdwvmwHrNe6wwnF7t4b7c=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Metadata Remover
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Protect your privacy by removing metadata from your photos!</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/org.fossify.notes/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/org.fossify.notes/en-US/icon_kEEs7KNI8HGTavwTVK1l2bC02mkgB5LAdWTi54Z6Psc=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Fossify Notes
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">To do list widget with a notebook organizer, checklist, simple shopping list</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+<!-- no nice ones found, failing back to any -->
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="site-description">
+      <p>Â© 2010-2024 F-Droid Contributors
+	<span class="edit-this-page-area">
+	  <a href="https://fdroidstatus.org/" target="_blank">
+	    Status
+	  </a>
+	  &#124;<a href="https://gitlab.com/fdroid/fdroid-website/edit/master/" target="_blank">
+	    Edit on GitLab
+	  </a></span>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+    </div>
+
+  </body>
+
+</html>

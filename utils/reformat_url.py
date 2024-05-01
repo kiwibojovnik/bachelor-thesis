@@ -1,60 +1,12 @@
-import re
-import requests
-from urllib.parse import urlparse
+# Name: reformat_url.py
+# Author: Dalibor Kyjovský (xkyjov03)
+# Date: April 11, 2024
+# Description: Necessary functions for refomrating input URLs and extracting domains.
+# Python Version: 3.12.3
 
 
-# Utility functions for URL validation and formatting
-
-def is_url(url):
-    """
-    Checks if the string is a valid URL.
-
-    Args:
-        url (str): The string to check.
-
-    Returns:
-        bool: True if the string is a valid URL, False otherwise.
-    """
-    url_pattern = re.compile(
-        r'^(?:http|ftp)s?://'  # http:// or https://
-        r'(?:(?:A-Z0-9?\.)+'  # domain...
-        r'(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'  # ...including TLD
-        r'localhost|'  # localhost...
-        r'(?::\d+)?'  # optional port
-        r')(?:/?|[/?]\S+)$', re.IGNORECASE)  # rest of the URL
-    return re.match(url_pattern, url) is not None
-
-
-def is_domain(url):
-    """
-    Checks if the string is a valid domain.
-
-    Args:
-        url (str): The string to check.
-
-    Returns:
-        bool: True if the string is a valid domain, False otherwise.
-    """
-    domain_pattern = re.compile(
-        r'^(?:a-zA-Z0-9?\.)+'  # subdomain...
-        r'(?:[a-zA-Z]{2,}\.?)$', re.IGNORECASE)  # ...including TLD
-    return re.match(domain_pattern, url) is not None
-
-
-def is_ip(url):
-    """
-    Checks if the string is a valid IP address.
-
-    Args:
-        url (str): The string to check.
-
-    Returns:
-        bool: True if the string is a valid IP address, False otherwise.
-    """
-    ip_pattern = re.compile(
-        r'^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}'  # first three octets...
-        r'(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$')  # ...and the last one
-    return re.match(ip_pattern, url) is not None
+# Import necessary libraries
+from urllib.parse import urlparse  # Import urlparse function from urllib.parse module
 
 
 def add_http(url):
@@ -70,23 +22,6 @@ def add_http(url):
     if not url.startswith("http"):
         url = "http://" + url
     return url
-
-def remove_www(url):
-    """
-    Removes the 'www.' prefix from a URL if it's present.
-
-    Args:
-        url (str): The URL to format.
-
-    Returns:
-        str: The formatted URL without the 'www.' prefix.
-    """
-    # Remove 'www.' prefix if present
-    if url.startswith("www."):
-        url = url.replace("www.", "")
-
-    return url
-
 
 
 def extract_domain(url):
@@ -120,7 +55,7 @@ def get_keyword(domain):
     For example, from 'www.golos3524.cz' it would extract 'golos3524'.
 
     Args:
-        url (str): The URL to extract the keyword from.
+        domain (str): The domain to extract the keyword from.
 
     Returns:
         str: The extracted keyword.
@@ -132,10 +67,8 @@ def get_keyword(domain):
     # This is because the last element is typically the TLD (e.g., 'com', 'cz')
     parts = domain.split('.')
     if len(parts) >= 2:
-        keyword = parts[-2]  # This is typically the part just before the TLD
+        keyword = parts[-2]
     else:
         keyword = domain  # In case the URL is something like 'localhost'
 
-    # Return the keyword
     return keyword
-

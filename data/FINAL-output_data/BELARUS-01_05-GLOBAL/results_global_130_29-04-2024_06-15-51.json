@@ -1,0 +1,989 @@
+{
+    "https://metasploit.com": {
+        "Time": 4.51,
+        "URL": "https://metasploit.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "18.244.102.105",
+            "18.244.102.77",
+            "18.244.102.69",
+            "18.244.102.54"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.244.102.105",
+        "PING Status": "OK",
+        "PING IP": "18.244.102.105",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 44519,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "44519",
+            "Connection": "keep-alive",
+            "Content-Security-Policy": "default-src 'self' https://www.youtube.com/ https://geoip-js.maxmind.com/;style-src 'self' https://fonts.googleapis.com/;img-src 'self' data: https://avatars0.githubusercontent.com https://avatars.githubusercontent.com https://avatars1.githubusercontent.com https://avatars2.githubusercontent.com https://avatars3.githubusercontent.com https://avatars4.githubusercontent.com https://avatars5.githubusercontent.com https://avatars6.githubusercontent.com https://avatars7.githubusercontent.com https://avatars8.githubusercontent.com https://www.google-analytics.com;script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://js.maxmind.com 'unsafe-inline';font-src 'self' https://fonts.gstatic.com;base-uri 'self';form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Origin-Agent-Cluster": "?1",
+            "Referrer-Policy": "no-referrer",
+            "Server": "nginx",
+            "Strict-Transport-Security": "max-age=15552000; includeSubDomains",
+            "X-Content-Type-Options": "nosniff",
+            "X-DNS-Prefetch-Control": "off",
+            "X-Download-Options": "noopen",
+            "X-Frame-Options": "ALLOW-FROM https://www.rapid7.com, SAMEORIGIN",
+            "X-Permitted-Cross-Domain-Policies": "none",
+            "X-XSS-Protection": "0",
+            "Date": "Mon, 29 Apr 2024 10:05:44 GMT",
+            "ETag": "W/\"ade7-/mHD2mBDnUKZuIVr2NkdwE9L8lA\"",
+            "X-Cache": "Hit from cloudfront",
+            "Via": "1.1 851e38aedb5b3b86127fd1094bcebf70.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "WAW51-P3",
+            "X-Amz-Cf-Id": "imldAZxhLQxhJyBAVEwJ0La8PL7t4CFV_ZoS316sZv000i7Kv49YGQ=="
+        },
+        "HTML Content": "metasploit.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.metasploit.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M01"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "01917B0371D9AFC23D3A68E032329B57",
+            "notBefore": "Jul 16 00:00:00 2023 GMT",
+            "notAfter": "Aug 13 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.metasploit.com"
+                ],
+                [
+                    "DNS",
+                    "metasploit.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m01.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m01.amazontrust.com/r2m01.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m01.amazontrust.com/r2m01.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 06:05:48"
+    },
+    "https://minorityrights.org": {
+        "Time": 5.57,
+        "URL": "https://minorityrights.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.11.115",
+            "172.67.165.244"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.11.115",
+        "PING Status": "OK",
+        "PING IP": "104.21.11.115",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 116407,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:06:54 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "DYNAMIC",
+            "Age": "2206",
+            "Cache-Control": "public, max-age=0, s-maxage=2592000",
+            "Last-Modified": "Mon, 29 Apr 2024 09:24:42 GMT",
+            "Vary": "Accept-Encoding",
+            "ki-Cache-Tag": "ac2f67d3-749d-4e48-8b22-eec66dab6f22,8849e64a0a202c5d356c5bd8d5858f3cc10de1b9855d2e59969e11f81dee75bc",
+            "ki-cache-type": "Edge",
+            "Ki-CF-Cache-Status": "HIT",
+            "ki-edge": "v=20.2.7;mv=3.0.6",
+            "Ki-Edge-o2o": "yes",
+            "ki-origin": "g1p",
+            "X-Content-Type-Options": "nosniff",
+            "X-Edge-Location-Klb": "1",
+            "x-kinsta-cache": "HIT",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Dd0dYQBKykIBfqG0oU1ySqeOoVPuLHlxzLQdjNOeTXZVKO9ZodYuCJXIyNiU46CUVddsjk1RX1wzj9lCObVSxqqTJNCfAd%2BlYluElSTbbvDhnCuPYeCjWpcLyGjMWSqu0k%2FnlA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87be7b64abb734f7-WAW",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "minorityrights.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "minorityrights.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "FFC039A7685616D40DEFFA136CD95A0B",
+            "notBefore": "Mar 22 13:36:51 2024 GMT",
+            "notAfter": "Jun 20 13:36:50 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "minorityrights.org"
+                ],
+                [
+                    "DNS",
+                    "*.minorityrights.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/0_kSvYOsdcs"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/wH6uKcfZ7VQ.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 06:06:58"
+    },
+    "https://movabletype.com": {
+        "Time": 33.97,
+        "URL": "https://movabletype.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "210.239.64.251"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "210.239.64.251",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.001779794692993164
+            ],
+            [
+                "212.98.161.17",
+                0.0012233257293701172
+            ],
+            [
+                "185.11.76.45",
+                0.0012958049774169922
+            ],
+            [
+                "185.11.76.30",
+                0.001901388168334961
+            ],
+            [
+                "213.242.112.49",
+                0.023833513259887695
+            ],
+            [
+                "171.75.9.125",
+                0.042088985443115234
+            ],
+            [
+                "210.130.133.37",
+                0.05355048179626465
+            ],
+            [
+                "58.138.83.182",
+                0.18520021438598633
+            ],
+            [
+                "58.138.114.249",
+                0.3273770809173584
+            ],
+            [
+                "58.138.114.254",
+                0.3351426124572754
+            ],
+            [
+                "210.173.175.202",
+                0.2659900188446045
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 26156,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 10:07:58 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "movabletype.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "movabletype.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03FA527ED0214C6B5774046D27E0939D2CBD",
+            "notBefore": "Apr 17 00:09:06 2024 GMT",
+            "notAfter": "Jul 16 00:09:05 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "movabletype.com"
+                ],
+                [
+                    "DNS",
+                    "www.movabletype.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 06:08:08"
+    },
+    "https://www.mp3.com": {
+        "URL": "https://www.mp3.com"
+    },
+    "https://multiproxy.org": {
+        "Time": 14.74,
+        "URL": "https://multiproxy.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.32.230",
+            "172.67.156.84"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.32.230",
+        "PING Status": "OK",
+        "PING IP": "104.21.32.230",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 5378,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:09:45 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding,User-Agent",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Y2cRrsLJjwIWvTa4ggCY9Tc%2FMpbE3r8g1LZPD01cdp8vXUGuSsLqvTWcGU1r4eX1hZo50clfH1t7KDXd%2B16vTpFD7HhiqyrEomdGa82F%2BncFxwPXuYNH8t%2FpRDQfgjBd6Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87be7f8f6ce59306-CPH",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "multiproxy.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "multiproxy.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04B3BC34416E23A6B71652399AADD0C9C071",
+            "notBefore": "Apr 21 01:38:43 2024 GMT",
+            "notAfter": "Jul 20 01:38:42 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.multiproxy.org"
+                ],
+                [
+                    "DNS",
+                    "multiproxy.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 06:09:58"
+    },
+    "https://mymemory.translated.net": {
+        "Time": 35.57,
+        "URL": "https://mymemory.translated.net",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "3.66.61.202",
+            "18.193.176.45",
+            "52.57.119.153"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.193.176.45",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0014905929565429688
+            ],
+            [
+                "212.98.161.17",
+                0.0009970664978027344
+            ],
+            [
+                "185.11.76.45",
+                0.0011053085327148438
+            ],
+            [
+                "185.11.76.30",
+                0.0017185211181640625
+            ],
+            [
+                "188.254.103.221",
+                0.014833927154541016
+            ],
+            [
+                "171.75.8.29",
+                0.01973867416381836
+            ],
+            [
+                "163.171.135.24",
+                0.40047788619995117
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 91189,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:11:09 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "9758",
+            "Connection": "keep-alive",
+            "Server": "Apache/2.4.29 (Ubuntu)",
+            "Set-Cookie": "score=0; expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; path=/, PHPSESSID=53f5fb52051b6c973788cad0c24b9414; path=/",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "Pragma": "no-cache",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Security-Policy": "frame-ancestors 'self';",
+            "X-FRAME-OPTIONS": "SAMEORIGIN"
+        },
+        "HTML Content": "mymemory.translated.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mymemory.translated.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M02"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "088DBFE67F5852DFDA8CCE4FFFD37AA8",
+            "notBefore": "Oct  7 00:00:00 2023 GMT",
+            "notAfter": "Nov  3 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "mymemory.translated.net"
+                ],
+                [
+                    "DNS",
+                    "*.mymemory.translated.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m02.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m02.amazontrust.com/r2m02.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m02.amazontrust.com/r2m02.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 06:11:19"
+    },
+    "https://myspace.com": {
+        "Time": 6.2,
+        "URL": "https://myspace.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "34.111.176.156"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "34.111.176.156",
+        "PING Status": "OK",
+        "PING IP": "34.111.176.156",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 241218,
+        "Headers": {
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "persistent_id=pid%3D539f84c2-58fb-45f2-94db-0ecc149fbdb4%26llid%3D%26lprid%3D%26lltime%3D; domain=.myspace.com; path=/; expires=Sun, 24 Apr 2044 10:45:16 GMT; httpOnly, visit_id=addd5094-ecf8-4ff1-882f-a39410a67d7d; domain=.myspace.com; path=/; expires=Mon, 29 Apr 2024 11:15:16 GMT; httpOnly, beacons_enabled=true; domain=.myspace.com; path=/; expires=Mon, 29 Apr 2024 11:15:16 GMT, player=sequenceId%3D-1%26paused%3Dtrue%26currentTime%3D0%26volume%3D0.5%26mute%3Dfalse%26shuffled%3Dfalse%26repeat%3Doff%26mode%3Dqueue%26pinned%3Dfalse%26streamStartDateTime%3D%26at%3D360%26incognito%3Dfalse%26allowSkips%3Dtrue%26ccOn%3Dfalse; domain=.myspace.com; path=/; expires=Wed, 29 May 2024 10:45:16 GMT",
+            "X-Handling-Host": "ash2-app205",
+            "X-Trackingid": "874af494-89d9-41a5-9e0a-e47b3297c671",
+            "Cache-Control": "no-cache",
+            "Strict-Transport-Security": "max-age=31536000",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Content-Security-Policy": "frame-ancestors 'self'",
+            "Content-Type": "text/html; charset=utf-8",
+            "X-Response-Time": "57ms",
+            "Content-Encoding": "gzip",
+            "Date": "Mon, 29 Apr 2024 10:45:16 GMT",
+            "Via": "1.1 google, 1.1 google",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "myspace.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.myspace.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "F1D151DD9742FA8D",
+            "notBefore": "Aug  2 14:20:28 2023 GMT",
+            "notAfter": "Sep  2 14:20:28 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.myspace.com"
+                ],
+                [
+                    "DNS",
+                    "myspace.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-7740.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 06:12:24"
+    },
+    "https://ncac.org": {
+        "Time": 15.77,
+        "URL": "https://ncac.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.99.224",
+            "188.114.98.224"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.98.224",
+        "PING Status": "OK",
+        "PING IP": "188.114.98.224",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 952120,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:13:27 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87be84fd5a5ec284-VIE",
+            "CF-Cache-Status": "HIT",
+            "Age": "232939",
+            "Cache-Control": "max-age=7200",
+            "Last-Modified": "Fri, 26 Apr 2024 16:44:36 GMT",
+            "Link": "<https://ncac.org/wp-json/>; rel=\"https://api.w.org/\", <https://ncac.org/wp-json/wp/v2/pages/63107>; rel=\"alternate\"; type=\"application/json\", <https://ncac.org/>; rel=shortlink",
+            "Vary": "Accept-Encoding",
+            "cf-apo-via": "tcache",
+            "cf-edge-cache": "cache,platform=wordpress",
+            "x-powered-by": "PHP/7.4.33",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "ncac.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "ncac.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0315888009C1A4464E42117F5022736FC9CE",
+            "notBefore": "Mar 12 12:33:14 2024 GMT",
+            "notAfter": "Jun 10 12:33:13 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.ncac.org"
+                ],
+                [
+                    "DNS",
+                    "ncac.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 06:13:42"
+    },
+    "https://news.google.com": {
+        "Time": 8.89,
+        "URL": "https://news.google.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.250.185.206"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.250.185.206",
+        "PING Status": "OK",
+        "PING IP": "142.250.185.206",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "142.250.185.206"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 1374400,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site",
+            "x-ua-compatible": "IE=edge",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+            "Date": "Mon, 29 Apr 2024 10:14:36 GMT",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Cross-Origin-Resource-Policy": "same-site",
+            "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+            "Content-Security-Policy": "require-trusted-types-for 'script';report-uri /_/DotsSplashUi/cspreport, script-src 'report-sample' 'nonce-lddPFww_CRXq6egCBh3pMA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DotsSplashUi/cspreport;worker-src 'self', script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com https://youtube.com https://www.youtube.com https://youtube.googleapis.com https://*.ytimg.com https://ajax.googleapis.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /_/DotsSplashUi/cspreport/allowlist",
+            "Accept-CH": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+            "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*",
+            "reporting-endpoints": "default=\"/_/DotsSplashUi/web-reports?context=eJzjstDikmII1pBiSHr5mEni60smNSB2Sp_BGgDEPvUzWKOA-NOOGaytN8-xTgbipH_nWQuAWIiHo-fZ3o1sAhfOPN_LDADUwB5Y\"",
+            "Content-Encoding": "gzip",
+            "Server": "ESF",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Type-Options": "nosniff",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "news.google.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.news.google.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "2341C4703860C07B123A5FE2D90EA653",
+            "notBefore": "Apr  8 07:32:40 2024 GMT",
+            "notAfter": "Jul  1 07:32:39 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.news.google.com"
+                ],
+                [
+                    "DNS",
+                    "news.google.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/zdATt0Ex_Fk.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 06:14:45"
+    },
+    "https://www.nifty.org": {
+        "Time": 7.4,
+        "URL": "https://www.nifty.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "67.205.61.97"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "67.205.61.97",
+        "PING Status": "OK",
+        "PING IP": "67.205.61.97",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 985,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 10:15:45 GMT",
+            "Server": "Apache",
+            "Upgrade": "h2",
+            "Connection": "Upgrade, Keep-Alive",
+            "Last-Modified": "Sun, 04 Feb 2024 02:17:12 GMT",
+            "ETag": "\"3d9-61084f1730f2e-gzip\"",
+            "Accept-Ranges": "bytes",
+            "Cache-Control": "max-age=600",
+            "Expires": "Mon, 29 Apr 2024 10:25:45 GMT",
+            "Vary": "Accept-Encoding,User-Agent",
+            "Content-Encoding": "gzip",
+            "Content-Length": "590",
+            "Keep-Alive": "timeout=5, max=100",
+            "Content-Type": "text/html"
+        },
+        "HTML Content": "www.nifty.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "nifty.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03DF8713948F8A1DDEADD78D9AC6FC307A3E",
+            "notBefore": "Apr  3 21:02:01 2024 GMT",
+            "notAfter": "Jul  2 21:02:00 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "nifty.org"
+                ],
+                [
+                    "DNS",
+                    "www.nifty.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 06:15:51"
+    }
+}

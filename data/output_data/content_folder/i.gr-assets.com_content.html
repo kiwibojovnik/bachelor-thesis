@@ -1,0 +1,13 @@
+User-agent: Baiduspider
+Disallow: /images/G/01/imdb/css/
+User-agent: Googlebot-Image
+Disallow: /*_BO1$
+Disallow: /*_SR38$
+Disallow: /*_CR$
+Disallow: /*_SR116$
+Disallow: /*_UF1000$
+Disallow: /*_AC_UF894$
+User-agent: GPTBot
+Disallow: /
+User-agent: CCBot
+Disallow: /

@@ -1,0 +1,1116 @@
+{
+    "https://www.weforum.org": {
+        "Time": 4.71,
+        "URL": "https://www.weforum.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "88.221.62.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "88.221.62.60",
+        "PING Status": "OK",
+        "PING IP": "88.221.62.60",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 403,
+        "Content Length": 367,
+        "Headers": {
+            "Server": "AkamaiGHost",
+            "Mime-Version": "1.0",
+            "Content-Type": "text/html",
+            "Content-Length": "367",
+            "Expires": "Tue, 30 Apr 2024 06:49:48 GMT",
+            "Date": "Tue, 30 Apr 2024 06:49:48 GMT",
+            "Connection": "close"
+        },
+        "HTML Content": "www.weforum.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "CH"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Gen\u00e8ve"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Cologny"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "WORLD ECONOMIC FORUM"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.weforum.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0768E3EEC9C0F72CF27691D7D3B17B0F",
+            "notBefore": "Jun 26 00:00:00 2023 GMT",
+            "notAfter": "Jun 26 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.weforum.org"
+                ],
+                [
+                    "DNS",
+                    "weforum.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 02:49:52"
+    },
+    "http://www.well.com": {
+        "Time": 7.13,
+        "URL": "http://www.well.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.196.16.50"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.196.16.50",
+        "PING Status": "OK",
+        "PING IP": "104.196.16.50",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 276113,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Tue, 30 Apr 2024 06:50:46 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Keep-Alive": "timeout=20",
+            "Vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "Link": "<https://www.well.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.well.com/wp-json/wp/v2/pages/2551>; rel=\"alternate\"; type=\"application/json\", <https://wp.me/P9kYMv-F9>; rel=shortlink",
+            "X-Powered-By": "WP Engine",
+            "X-Cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "X-Cache": "HIT: 6",
+            "X-Cache-Group": "normal",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.well.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.well.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04CC82F35F5BFB68DC5AD5DA683A9F425E75",
+            "notBefore": "Mar 19 10:22:22 2024 GMT",
+            "notAfter": "Jun 17 10:22:21 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.well.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 02:50:52"
+    },
+    "http://www.well.com/user/queerjhd": {
+        "Time": 9.33,
+        "URL": "http://www.well.com/user/queerjhd",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.196.16.50"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.196.16.50",
+        "PING Status": "OK",
+        "PING IP": "104.196.16.50",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://people.well.com/user/queerjhd",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "52.4.162.117"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 4689,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 06:51:29 GMT",
+            "Server": "Apache",
+            "Last-Modified": "Sun, 07 Aug 2005 21:52:53 GMT",
+            "ETag": "\"71fbd8b-1251-3fdc5f3ee5740\"",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "4689",
+            "Keep-Alive": "timeout=12",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html"
+        },
+        "HTML Content": "www.well.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.well.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04CC82F35F5BFB68DC5AD5DA683A9F425E75",
+            "notBefore": "Mar 19 10:22:22 2024 GMT",
+            "notAfter": "Jun 17 10:22:21 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.well.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 02:51:36"
+    },
+    "http://www.wetplace.com": {
+        "URL": "http://www.wetplace.com",
+        "Error": "'Timed Out'"
+    },
+    "http://www.wftucentral.org": {
+        "Time": 13.17,
+        "URL": "http://www.wftucentral.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.96.3",
+            "188.114.97.3"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.97.3",
+        "PING Status": "OK",
+        "PING IP": "188.114.97.3",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.wftucentral.org/wp-content/cache/all/index.html",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.97.3",
+                "188.114.96.3"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 82146,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 06:54:26 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "last-modified": "Mon, 29 Apr 2024 16:17:14 GMT",
+            "access-control-allow-origin": "*",
+            "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate",
+            "pragma": "no-cache",
+            "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=3sXFDGUBvqRv80fKZ65qRyN753R5tNTM9g9TabQkhGsbgQI%2Fta9RtBf5Iq%2Fd2vSyVh6j6TNthzAjKvQ9KnjiWfrdaxMZ4pfmPA0YyxE%2F2%2FaVxzmJXQzSG2bbFULqQ1EbQ9SkbB%2Bv\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c59ed37c0c2d68-ARN",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.wftucentral.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "wftucentral.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "91C6602748A0EB940D417E229D8A22AB",
+            "notBefore": "Apr 26 16:53:00 2024 GMT",
+            "notAfter": "Jul 25 16:52:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "wftucentral.org"
+                ],
+                [
+                    "DNS",
+                    "*.wftucentral.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/6L9hAN2owIs"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/V2yfc5CRMiw.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 02:54:37"
+    },
+    "https://www.whatsapp.com": {
+        "Time": 6.25,
+        "URL": "https://www.whatsapp.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "157.240.0.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "157.240.0.60",
+        "PING Status": "OK",
+        "PING IP": "157.240.0.60",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 400,
+        "Content Length": 6244,
+        "Headers": {
+            "Content-Encoding": "gzip",
+            "reporting-endpoints": "coop_report=\"https://www.facebook.com/browser_reporting/coop/?minimize=0\", coep_report=\"https://www.facebook.com/browser_reporting/coep/?minimize=0\"",
+            "report-to": "{\"max_age\":2592000,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coop\\/?minimize=0\"}],\"group\":\"coop_report\",\"include_subdomains\":true}, {\"max_age\":86400,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coep\\/?minimize=0\"}],\"group\":\"coep_report\"}",
+            "cross-origin-embedder-policy-report-only": "require-corp;report-to=\"coep_report\"",
+            "cross-origin-opener-policy": "same-origin-allow-popups;report-to=\"coop_report\"",
+            "Vary": "Sec-Fetch-Site, Sec-Fetch-Mode, Accept-Encoding",
+            "Strict-Transport-Security": "max-age=31536000; preload; includeSubDomains",
+            "Content-Type": "text/html; charset=\"utf-8\"",
+            "X-FB-Debug": "3noOdUReiph2HKyCNZ99N/HsIyo/Y5hKDsPRb+bUtTTDTECZUZRUHwSxpDRfAkDagp5TY4rZbdSbNC+z271sGQ==",
+            "Proxy-Status": "http_request_error; e_fb_configversion=\"AcI83OVORl5zBM3_qIDZ0jR_h_k4SFXebjagPL1gIbk1cQBJh_m10wOU2rkFGQ\"; e_clientaddr=\"AcLzxsIERX0nWCztzYUZ4JSEvhLhyLr9lH1Sn7CTnfBXvjG1cad0JevwxMjIrVvaKGQqVknBnVOq6VQNEiH6hDHb9eHGyEf_pFdP1ru2GXCyQreJhA\"; e_fb_vipport=\"AcIwyvKbWY4fBEhXPp1tTHusvYUn3ecCeYVpSaKnJv7aJdiFZ6nnwJ-DZuXl\"; e_upip=\"AcKdNCdE072s5q3B8HT055wghiZ6rCeSw3xJWVqThMvgeLdIJuk7nal_oOHChIT5P4ZG0Nd7okm0ONsDZIn1F-C0ggUqhkTggJI\"; e_fb_requestsequencenumber=\"AcI_5HTzmumXwJW21JFXWJnKi06XollO92RAKfvKuxn_7gdM7Vg3BdPa7dM\"; e_fb_hostheader=\"AcInc_lVTmjcbqFs28qxxefzEhnryS0MbXZQXEmSlMxHQvVim9fX-egeTJegGgdT6irUl59h2_CPXQ\"; e_fb_vipaddr=\"AcK2oUUVKG6HuKnLAzhn6gv0INvOWth3mQWIO-s6TsMHjAcGl2ZlubmtYOdoLHncigYPSVy8496fo1SNaVIQg2Mi8I0E2yO4_Q\"; e_fb_requesthandler=\"AcJh0r-ZaS5IUNMIdW8DLVd4HcyZAgrDHLO8DO-MuHyGn68adjdj_Fct7ZgpjrgiQ-jzco6zeSA\"; e_fb_requesttime=\"AcJu7iflv4UKe7241fAXxQSfolhp4GzVIuhDDvqLD7ajHjQK98t6_FJCNeSVVzvzSl8Kb4jwDA\"; e_fb_builduser=\"AcJI9gn_FlCmw_iOSiEYn8YmrdOtbhhLTEotNuZGpTe4isIRI3ZGspPGakeJuRn2rmg\"; e_fb_httpversion=\"AcL54cgtdZRLO221fiF4BqDtdSM9qFyczhiV_y__A-F8LAJCPUWwvoOG4ufw\"; e_fb_binaryversion=\"AcJyT2QgmdqM_yiZ_FQykiwnyhqtpSt16KAfaEyYLfHI-65yoF4ei12yP5XPG_sY0cqlm1x1TfbiNZYRM81Kq0ifrIzuPRE2nVU\"; e_proxy=\"AcIuL-PHIOY47Crp7gtNVdm-NRzraBiVXx8Z7hde_EzSTdeeoJ-iGIcBQN6UL7f5FhB42r87MuyaXkZWj3Lp\", http_request_error; e_fb_configversion=\"AcIomXV0kwvewLr9dKnHwbqyaljwxHMxGt1v4EJi01wXBv-lTomrhJDE7cfvuw\"; e_clientaddr=\"AcIOfAw7qarykigUeeLlOmNQaA5xzhlW3HzxffddwLlffJ41sQTeLtmtIuCdqriGgVfrD0KPbrkimBTzor0\"; e_fb_vipport=\"AcKSKje90a8Izzq5TbCRPT_EFCq2gCPrEsilQuCokbQGmoUH0OeJIlHp47wq\"; e_upip=\"AcIrmF2EIsYyqqlSgSPFoSTD5pB5V2efFmCD9dZIHmTi0h6H06WJGsXVRwbytCD7dDFod3vsrRalwW1BftLzTWpJMYTx_-hU3A\"; e_fb_requestsequencenumber=\"AcIqwk5qIhj0O0dgqz3sRN_9QhCe7nqKGX7ZVozaA22KDP80pKhgYfiTPQ\"; e_fb_hostheader=\"AcId7V3sAxY0efTqlHiYJRfI2C0LsY27YipP4PpACZpY8JNW9q4CKWljwIjyHeRXi8VPyYfmXb1AKw\"; e_fb_vipaddr=\"AcIUBX_K4mlJgnPlKZeyp3ZOFgsAjyptSP4rdKj1-Kx_ZX0yRoGtn8-SsEwfT_tW-AGTOsk0\"; e_fb_requesthandler=\"AcKBoEih8MQraoAv1amGoJELmkC5yRhKBtQkkancM5WptA2fTJi-2uDtJ6hgbDp-U88QlVxGaORHplMI\"; e_fb_requesttime=\"AcLcvOZTVwe0vuw-Y7-er8EtXUzUket-gZ8Yb9j_o2j9Q76iAXHybB4_L5V7R4eWSlbwR8gljg\"; e_fb_builduser=\"AcIR4ixdEbnF5IMibiKtxCBLEHWuWgZstZozANKXjybRvryIyWHE2zE9wI6yu16YaRc\"; e_fb_httpversion=\"AcIXVxaa-bjE7FZYU8zYPSBP219Xm950EDLkWqNeXl9T7-Siwv0oXhuxuqiA\"; e_fb_binaryversion=\"AcItKmb9lLB2k0MccU3Uis844eFphhe9Q4RuP7UpBbWdbWuAfYEmfvVayQMDegfXYaAJ1aVsbSwCGXYfsJKU7zOsQ07CGaLblPY\"; e_proxy=\"AcKOwoNSQYZwf4kEVI4avpYiZCpGoNOJ4fvvTmW5daeIWipU3hA-MBa3-t-Ziuq0owbPtG2YG66VV5Y\"",
+            "Date": "Tue, 30 Apr 2024 06:55:20 GMT",
+            "X-FB-Connection-Quality": "EXCELLENT; q=0.9, rtt=23, rtx=0, c=14, mss=1380, tbw=3170, tp=-1, tpl=-1, uplat=102, ullat=1",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "Connection": "keep-alive",
+            "Content-Length": "2621"
+        },
+        "HTML Content": "www.whatsapp.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Menlo Park"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Meta Platforms, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.whatsapp.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 High Assurance Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07E652A8896BE84B50633AF22D40887B",
+            "notBefore": "Feb  7 00:00:00 2024 GMT",
+            "notAfter": "May  7 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.cdn.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.snr.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "wa.me"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ha-server-g6.crl",
+                "http://crl4.digicert.com/sha2-ha-server-g6.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 02:55:25"
+    },
+    "https://mmg.whatsapp.net/robots.txt": {
+        "Time": 4.4,
+        "URL": "https://mmg.whatsapp.net/robots.txt",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "157.240.0.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "157.240.0.60",
+        "PING Status": "OK",
+        "PING IP": "157.240.0.60",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 400,
+        "Content Length": 101,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Access-Control-Allow-Origin": "*",
+            "Proxy-Status": "proxy_internal_response; e_fb_configversion=\"AcJQouH8vwmd1Bmfx5nSS_fYRG2l46ZuxljhPjPk-_GVhq52yryUuVQT9SJtww\"; e_isproxyerr=\"AcJ2jYeMTHCtb4aBOEhuDjPi_pvn6mD8GXMIWu7lbY8UimBCMDTpkojd0NhnSg\"; e_clientaddr=\"AcJJdjRBCYM1pEZiq3WFvSE9PcavFLcLVP94f9o3l2JN3v-xFXAevuFpzHQZA5tK9idXANfBWybhRaWWJ98\"; e_fb_vipport=\"AcK9dUIdnt-Es2LNvs4tSBRJ7xTXnBC33cvql9UfIshx8gMQIK2tPzreS-oq\"; e_fb_requestsequencenumber=\"AcIJbjRY9AcjO5xs9h1E0SRidhb4P3OnIKJVO7S9mVR0MqQehkyUhE_7gA\"; e_fb_hostheader=\"AcJGUFQkvfAbnUVR_EgzT5ARRZTkCXMQkMYjeTj3oeTZ-bNwZEmsgG95DxFOon5CQZUxwNPYOYAKWw\"; e_fb_vipaddr=\"AcKBZuxz2Ucgx12iWPI4ypBs49KRoMAr7kKKXb7pGjBfVYBqeAqRaZp8DLZpfQgzk8zBakyQ\"; e_fb_requesthandler=\"AcKmuBersjTieZGoIqLI5dF6k4neVtw9Z_NK4A7ID2wsyilRJUB8xniDfBgzgprc4WnbwsKhtpqW3LHj63fMULbkaMVl\"; e_fb_requesttime=\"AcKsVHjcw0WHOvGCtT0v7tevJPzoW2wyXpSxcawIKQtN_1ig0q81BPvnYvcNuisMQMSvfyxozg\"; e_fb_builduser=\"AcJ2SUOU6SAEuNFhpTvk3neD2UBsZP9LI3tuaFVplZkxEvh3LhiLAbtE-phLEFxjAds\"; e_fb_httpversion=\"AcK6TCJTGbgmV6Ng4m3BlBybkVr706MX3oSWL0vtNjMZfmXJXpzFrKp0lQgw\"; e_fb_binaryversion=\"AcKtMo58BgcoHicXgB6Qq5GZHJoJcr-isQx0zjL8dI4SfTSu72PvtBfxMuia60tO08Qsf1G8WdkDEQ10XlyudCoLK-4JNs3aQTQ\"; e_proxy=\"AcKSIYVTNCpz7fw5cIwsPKwNld0YQX21ADJa6mOPQa9xPAaqHBNu2XNX6o6YZt9rhMZkDBqn5oeqeu4\"",
+            "Date": "Tue, 30 Apr 2024 06:55:52 GMT",
+            "Connection": "close",
+            "Content-Length": "101"
+        },
+        "HTML Content": "mmg.whatsapp.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Menlo Park"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Meta Platforms, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.whatsapp.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 High Assurance Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07E652A8896BE84B50633AF22D40887B",
+            "notBefore": "Feb  7 00:00:00 2024 GMT",
+            "notAfter": "May  7 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.cdn.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.snr.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "wa.me"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ha-server-g6.crl",
+                "http://crl4.digicert.com/sha2-ha-server-g6.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 02:55:56"
+    },
+    "https://pps.whatsapp.net/robots.txt": {
+        "Time": 4.41,
+        "URL": "https://pps.whatsapp.net/robots.txt",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "157.240.0.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "157.240.0.60",
+        "PING Status": "OK",
+        "PING IP": "157.240.0.60",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 400,
+        "Content Length": 101,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Access-Control-Allow-Origin": "*",
+            "Proxy-Status": "proxy_internal_response; e_fb_configversion=\"AcLxGPbbE7ZX03TTcgsfL3bp3YcPBjWypdUIMh-yJsDwtrMiKD2M11TLEN743w\"; e_isproxyerr=\"AcK6f-0vXsBZTQQcnvhPPYumUtw4ebZMOQm_SVkRgoTklpCQHpNBOATWujkscQ\"; e_clientaddr=\"AcJUwSVl_-M5bkhKDm7KH-k801ohFB8EEdEaYemAn77KC5G8k8MePDbJaflGr2e8QGIXNCf3W21Gsd2Huso\"; e_fb_vipport=\"AcL8U7efHtZmKNniQMHCz2QPp8TE0DwtifFHJJT9Lcztw9-rOy0O7RkrINu4\"; e_fb_vipaddr=\"AcKj9RKe3_8zPMPhFqRwtz_XMC9YpixJHwpBbGxKDW4R4plfIxnkdAnRTUxYcT6fsyiaaipR\"; e_fb_requestsequencenumber=\"AcLVwWBx4ZTuNhsXeGMIOt64bXS0sjO8N1CUHxXRPUU4I3CrdiGDx914GA\"; e_fb_hostheader=\"AcJ9OvbUPFA7ZfXOWKrPAXdCjlqwoJ2c08Olvs7QHMs8lgSt4yCoRWCu0voJA_9mWqu49gZhyREt3A\"; e_fb_requesttime=\"AcL6p_vQqnP9xq2jzM2pCTRld3399VfDAIhy-n2GBuHfkQz9E16_s-J9QD7XlJlSYieaQGIUsg\"; e_fb_builduser=\"AcLIumJu8luaSzABvCs7cSyBvUeSeRv1-w3AIUbvdOJyUfgzTBPxNyyW0i3pUPi3bg4\"; e_fb_httpversion=\"AcLyYgNRrRG0q1pF7S0TrB9h-n_n44NLe9psoy8BJILxZTiKBIESVSU56Xuo\"; e_fb_binaryversion=\"AcIrrdWr3PAiNxyRn1zqRYuAC0zF9R9AcGyHFX1xiu-jIIZ659hUKhjtyFObkJCcJP6Xhlc2a-1yQDgGOK5g0CgiNMDNq61vimQ\"; e_proxy=\"AcJlA2ZEf5YKNFv5YDuor78uwyrn09IdfQuAJ_cGTIwQMC0mE4HirltVPav_77J22XBDVYOZ9Wc-VHQ\"",
+            "Date": "Tue, 30 Apr 2024 06:57:06 GMT",
+            "Connection": "close",
+            "Content-Length": "101"
+        },
+        "HTML Content": "pps.whatsapp.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Menlo Park"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Meta Platforms, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.whatsapp.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 High Assurance Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07E652A8896BE84B50633AF22D40887B",
+            "notBefore": "Feb  7 00:00:00 2024 GMT",
+            "notAfter": "May  7 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.cdn.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.snr.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "wa.me"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ha-server-g6.crl",
+                "http://crl4.digicert.com/sha2-ha-server-g6.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 02:57:10"
+    },
+    "https://dit.whatsapp.net/robots.txt": {
+        "Time": 4.6,
+        "URL": "https://dit.whatsapp.net/robots.txt",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "157.240.0.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "157.240.0.60",
+        "PING Status": "OK",
+        "PING IP": "157.240.0.60",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 25,
+        "Headers": {
+            "Expires": "Wed, 01 May 2024 06:57:51 +0000",
+            "Content-Type": "text/plain; charset=utf-8",
+            "X-FB-Debug": "Rm847q+itUbgV/znK4SehKPNXmg6qMly7yjeE9cO0GjLrfHj/SJKhfBkFRm0BE8doOTuYl6/kCgdf4n2gG3BNQ==",
+            "Date": "Tue, 30 Apr 2024 06:57:51 GMT",
+            "Connection": "keep-alive",
+            "Content-Length": "25"
+        },
+        "HTML Content": "dit.whatsapp.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Menlo Park"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Meta Platforms, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.whatsapp.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 High Assurance Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07E652A8896BE84B50633AF22D40887B",
+            "notBefore": "Feb  7 00:00:00 2024 GMT",
+            "notAfter": "May  7 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.cdn.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.snr.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "wa.me"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ha-server-g6.crl",
+                "http://crl4.digicert.com/sha2-ha-server-g6.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 02:57:55"
+    },
+    "https://media-arn2-1.cdn.whatsapp.net/robots.txt": {
+        "Time": 4.71,
+        "URL": "https://media-arn2-1.cdn.whatsapp.net/robots.txt",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "31.13.72.52"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "31.13.72.52",
+        "PING Status": "OK",
+        "PING IP": "31.13.72.52",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 400,
+        "Content Length": 101,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Access-Control-Allow-Origin": "*",
+            "Proxy-Status": "proxy_internal_response; e_fb_configversion=\"AcKZOQ_0iZlBZL4eR52fY7VkDq6yNoabkPmE__tJkiEO4FwxsG2Jl7c9wQ1Qbg\"; e_isproxyerr=\"AcLl_8fM3HpPQr2_QzwLrhRfMw1kUczVsSsz97VXGlUFhOvROoJBoDCUfXZXcg\"; e_clientaddr=\"AcJR2syefTX3xYVZDiKsaC9cnzU6rgzQ4b7QcVGBqcYCIffUUDmV10aZmxQrrG-B_XyLwFl-d7Ox8ELhOys\"; e_fb_vipport=\"AcJLflNCu2hIOaFL5e7Zga3CiLZEHDWgA0tG_fbBVP79ik0TVbJo2T65R7ht\"; e_fb_requestsequencenumber=\"AcLRn0ay11OYAtzBi5MdZHHydI4FMV7NYoa9jT1mdDPGw3qYtK3CRS11qA\"; e_fb_hostheader=\"AcKkZQlrju2bO9_vivaJA7W5to1OT19VTcqQ6m8aldJ9-Le_-hRf9TCub6G5af-5Tg-anzsxGNbcBlI62asjlp7atlO8aqU\"; e_fb_vipaddr=\"AcIC-BDL3isGstTjVAfbmCScZqgkPARgVnV2ArWkEY28A7c7N0tKPJaR5z6LFtv9vbbE_Hs\"; e_fb_requesthandler=\"AcJBhtvmLBxqhg8gKUW2g-8101tFdZqTzfOFDSIbSuReYODVJb5-4qJQgSn_DdT2UFWOcla9RybdacJBCW2pOu906V2z\"; e_fb_requesttime=\"AcJO4HelDw-bAHIDcU8XEf2B2744aWzzv3r8mzPdI_Wc40KScO3JPkjc6xVU0Y-0VjDFPaLtHg\"; e_fb_builduser=\"AcL-QhaN3k0Sn-tO-KzZDuurNz89O3aWf4_vvp6aSBHAwiCa8vhH0DC7A0fubkhVg0Q\"; e_fb_httpversion=\"AcIuIvhrS16Sh_ovnCUq6JbT2qA8vzXwk_h0xD9Mo__mhqSrLMIqnNaZ5uLu\"; e_fb_binaryversion=\"AcI3pHSQl1Do7ERschrWyJ_YzU4QMQv0rRtBlSxk2Idbz5PbKXB3WU_1WYoY8wvSAUjoQ7tdHTrGFTC3ZbMXL2teF2nAvm9-V1c\"; e_proxy=\"AcL86cJxmb2AH5K7HEUeFKHAofeBEnaJIBfmTSClraOCYZnAZVGnr498s_BonyY7VjylLvFsbwGJ-sM\"",
+            "Date": "Tue, 30 Apr 2024 06:59:00 GMT",
+            "Connection": "close",
+            "Content-Length": "101"
+        },
+        "HTML Content": "media-arn2-1.cdn.whatsapp.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Menlo Park"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Meta Platforms, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.whatsapp.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 High Assurance Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07E652A8896BE84B50633AF22D40887B",
+            "notBefore": "Feb  7 00:00:00 2024 GMT",
+            "notAfter": "May  7 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.cdn.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.snr.whatsapp.net"
+                ],
+                [
+                    "DNS",
+                    "*.whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "wa.me"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.com"
+                ],
+                [
+                    "DNS",
+                    "whatsapp.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ha-server-g6.crl",
+                "http://crl4.digicert.com/sha2-ha-server-g6.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 02:59:04"
+    }
+}

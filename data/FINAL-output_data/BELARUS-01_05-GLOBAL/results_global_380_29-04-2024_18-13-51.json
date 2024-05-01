@@ -1,0 +1,1100 @@
+{
+    "https://www.darpa.mil": {
+        "URL": "https://www.darpa.mil"
+    },
+    "http://www.date.com": {
+        "Time": 32.37,
+        "URL": "http://www.date.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "44.194.88.78"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "44.194.88.78",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0009570121765136719
+            ],
+            [
+                "212.98.161.17",
+                0.0007736682891845703
+            ],
+            [
+                "185.11.76.45",
+                0.0011496543884277344
+            ],
+            [
+                "185.11.76.30",
+                0.001931905746459961
+            ],
+            [
+                "223.119.65.185",
+                0.02390599250793457
+            ],
+            [
+                "223.120.10.93",
+                0.02542901039123535
+            ],
+            [
+                "223.120.14.134",
+                0.10328388214111328
+            ],
+            [
+                "223.120.6.82",
+                0.10419011116027832
+            ],
+            [
+                "99.83.91.180",
+                0.10815572738647461
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.date.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "44.194.88.78"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 39078,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 22:06:27 GMT",
+            "Server": "Apache/2.4.41 (Ubuntu)",
+            "Link": "<https://date.com/wp-json/>; rel=\"https://api.w.org/\", <https://date.com/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\", <https://date.com/>; rel=shortlink",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Length": "9155",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.date.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "date.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03AA7F8B16C2152E1E19AFB34B707825D829",
+            "notBefore": "Apr  9 09:27:11 2024 GMT",
+            "notAfter": "Jul  8 09:27:10 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "date.com"
+                ],
+                [
+                    "DNS",
+                    "www.date.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 18:06:35"
+    },
+    "https://www.dating.com": {
+        "Time": 5.21,
+        "URL": "https://www.dating.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.17.161.60",
+            "104.17.160.60"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.17.160.60",
+        "PING Status": "OK",
+        "PING IP": "104.17.160.60",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 403,
+        "Content Length": 4516,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 22:07:40 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Referrer-Policy": "same-origin",
+            "Cache-Control": "max-age=15",
+            "Expires": "Mon, 29 Apr 2024 22:07:55 GMT",
+            "Vary": "Accept-Encoding",
+            "Server": "cloudflare",
+            "CF-RAY": "87c29b353cae3494-WAW",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.dating.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "dating.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03D1F640DB6529C14BFF3834CEDA722414E5",
+            "notBefore": "Mar 23 01:44:55 2024 GMT",
+            "notAfter": "Jun 21 01:44:54 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.dating.com"
+                ],
+                [
+                    "DNS",
+                    "dating.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 18:07:44"
+    },
+    "https://uk.match.com": {
+        "Time": 5.12,
+        "URL": "https://uk.match.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "62.23.30.26"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "62.23.30.26",
+        "PING Status": "OK",
+        "PING IP": "62.23.30.26",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 181130,
+        "Headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Keep-Alive": "timeout=60",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "no-cache, private",
+            "Date": "Mon, 29 Apr 2024 22:08:29 GMT",
+            "Set-Cookie": "meetic_cmk=080004; expires=Wed, 29-May-2024 22:08:29 GMT; Max-Age=2592000; path=/; secure; httponly; samesite=lax, ab_test_stickiness=%7B%22test_id%22%3A7651%2C%22page_id%22%3A9723%7D; expires=Wed, 29-May-2024 22:08:29 GMT; Max-Age=2592000; path=/; secure; httponly; samesite=lax, XFrontLTM=!f+ZieC80rCZUnp8D9E1tt2PQdxArbMMzi/B0SYfzVTiy3IQPqtbgSql/04O5TomqmWnzyMebzFPx5Q==; expires=Tue, 30-Apr-2024 00:38:29 GMT; path=/; Httponly; Secure",
+            "Content-Encoding": "gzip",
+            "Strict-Transport-Security": "max-age=31536000",
+            "X-Content-Type-Options": "nosniff"
+        },
+        "HTML Content": "uk.match.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "uk.match.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04127FE9D4B0708E10E281C08C3B07FF34A1",
+            "notBefore": "Apr 22 18:13:17 2024 GMT",
+            "notAfter": "Jul 21 18:13:16 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "uk.match.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 18:08:32"
+    },
+    "https://www.datpiff.com": {
+        "Time": 4.96,
+        "URL": "https://www.datpiff.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "13.224.132.73",
+            "13.224.132.54",
+            "13.224.132.87",
+            "13.224.132.35"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "13.224.132.73",
+        "PING Status": "OK",
+        "PING IP": "13.224.132.73",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 2827,
+        "Headers": {
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Last-Modified": "Tue, 25 Apr 2023 00:19:38 GMT",
+            "x-amz-version-id": "AnpWAosN74GqdlT1EOwGmOZOh6FEZrNg",
+            "Server": "AmazonS3",
+            "Content-Encoding": "gzip",
+            "Date": "Mon, 29 Apr 2024 16:10:21 GMT",
+            "ETag": "W/\"8324df592e313d3d7889ec49bccf031f\"",
+            "Vary": "Accept-Encoding",
+            "X-Cache": "Hit from cloudfront",
+            "Via": "1.1 1a4e563a6e42bff0fa38a09a453befac.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "LHR3-C2",
+            "X-Amz-Cf-Id": "qAwYNGJSODGHSzNZQaOqP-krlFbZWT8kbvjq5FKyx1eBcU4RHkPiUw==",
+            "Age": "68195"
+        },
+        "HTML Content": "www.datpiff.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.datpiff.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M01"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "08AE6DAC34CCBE8359A120C3A69456D8",
+            "notBefore": "Apr 25 00:00:00 2023 GMT",
+            "notAfter": "May 23 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.datpiff.com"
+                ],
+                [
+                    "DNS",
+                    "datpiff.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m01.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m01.amazontrust.com/r2m01.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m01.amazontrust.com/r2m01.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 18:09:18"
+    },
+    "https://www.dd-rd.ca": {
+        "Time": 9.51,
+        "URL": "https://www.dd-rd.ca",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.142.208",
+            "104.21.39.27"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.39.27",
+        "PING Status": "OK",
+        "PING IP": "104.21.39.27",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 503,
+        "Content Length": 20,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 22:09:51 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Powered-By": "PHP/8.0.25",
+            "Set-Cookie": "PHPSESSID=8df2lgv65rriue6o03ijls4p0u; path=/",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "Pragma": "no-cache",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=OFUX8da8jyTPPyDFeXZ7vVx54PFDuTHRBT4aZZUxUWVEWCoQal%2B03nxVKZTRC1qm96NzgewPQLrMTt7cAVNfHKQ044cXPvPLR3Uf9Sh1bX9betmJoQCThxflF2w8EjM%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c29e653a6c5ab5-VIE",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.dd-rd.ca_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "dd-rd.ca"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "85A89FDEA37E05C9135F47DCB357D414",
+            "notBefore": "Apr 14 02:40:17 2024 GMT",
+            "notAfter": "Jul 13 02:40:16 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "dd-rd.ca"
+                ],
+                [
+                    "DNS",
+                    "*.dd-rd.ca"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/ydAMKT_sBC0"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/fXbrD094iyQ.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 18:09:59"
+    },
+    "https://www.dea.gov": {
+        "Time": 3.91,
+        "URL": "https://www.dea.gov",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.64.225.185"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.64.225.185",
+        "PING Status": "OK",
+        "PING IP": "23.64.225.185",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 115251,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Access-Control-Allow-Origin": "*",
+            "Content-Encoding": "gzip",
+            "Content-Language": "en",
+            "Content-Type": "text/html; charset=UTF-8",
+            "ETag": "\"1714426494\"",
+            "Last-Modified": "Mon, 29 Apr 2024 21:34:54 GMT",
+            "Server": "nginx",
+            "X-Age": "163",
+            "X-AH-Environment": "prod",
+            "X-Cache-Hits": "5",
+            "X-Content-Type-Options": "nosniff",
+            "X-Drupal-Cache": "MISS",
+            "X-Drupal-Dynamic-Cache": "UNCACHEABLE",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Generator": "Drupal 10 (https://www.drupal.org)",
+            "X-Request-ID": "v-51699598-0670-11ef-bc34-9341dc4775e1",
+            "Content-Length": "15554",
+            "Cache-Control": "public, max-age=262",
+            "Expires": "Mon, 29 Apr 2024 22:14:54 GMT",
+            "Date": "Mon, 29 Apr 2024 22:10:32 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+        },
+        "HTML Content": "www.dea.gov_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Virginia"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Springfield"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Drug Enforcement Administration"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.dea.gov"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "080F900FC57BA8D9BD2F5D577D8CB1D1",
+            "notBefore": "Feb 11 00:00:00 2024 GMT",
+            "notAfter": "Feb 11 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "admin-stage.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "admin.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "campusdrugprevention.gov"
+                ],
+                [
+                    "DNS",
+                    "dea.gov"
+                ],
+                [
+                    "DNS",
+                    "deagovdev.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "deagovstage.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "deagovtest.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "deamuseum.org"
+                ],
+                [
+                    "DNS",
+                    "deatakeback.com"
+                ],
+                [
+                    "DNS",
+                    "getsmartaboutdrugs.com"
+                ],
+                [
+                    "DNS",
+                    "getsmartaboutdrugs.gov"
+                ],
+                [
+                    "DNS",
+                    "justthinktwice.com"
+                ],
+                [
+                    "DNS",
+                    "justthinktwice.gov"
+                ],
+                [
+                    "DNS",
+                    "operationengage.com"
+                ],
+                [
+                    "DNS",
+                    "takebackday.com"
+                ],
+                [
+                    "DNS",
+                    "takebackday.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "wakeup-bmore.com"
+                ],
+                [
+                    "DNS",
+                    "wakeup-centralohio.com"
+                ],
+                [
+                    "DNS",
+                    "wakeup-cleveland.com"
+                ],
+                [
+                    "DNS",
+                    "wakeup-knoxville.com"
+                ],
+                [
+                    "DNS",
+                    "wakeup-maine.com"
+                ],
+                [
+                    "DNS",
+                    "wakeup-newark.com"
+                ],
+                [
+                    "DNS",
+                    "wakeup-utah.com"
+                ],
+                [
+                    "DNS",
+                    "wakeupcentralohio.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "wakeupportlandme.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "wakeupvegas.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "withyoustl.com"
+                ],
+                [
+                    "DNS",
+                    "withyoustl.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "www-stage.dea.gov"
+                ],
+                [
+                    "DNS",
+                    "www.campusdrugprevention.gov"
+                ],
+                [
+                    "DNS",
+                    "www.deamuseum.org"
+                ],
+                [
+                    "DNS",
+                    "www.deatakeback.com"
+                ],
+                [
+                    "DNS",
+                    "www.getsmartaboutdrugs.com"
+                ],
+                [
+                    "DNS",
+                    "www.getsmartaboutdrugs.gov"
+                ],
+                [
+                    "DNS",
+                    "www.justthinktwice.com"
+                ],
+                [
+                    "DNS",
+                    "www.justthinktwice.gov"
+                ],
+                [
+                    "DNS",
+                    "www.operationengage.com"
+                ],
+                [
+                    "DNS",
+                    "www.takebackday.com"
+                ],
+                [
+                    "DNS",
+                    "www.wakeup-bmore.com"
+                ],
+                [
+                    "DNS",
+                    "www.wakeup-centralohio.com"
+                ],
+                [
+                    "DNS",
+                    "www.wakeup-cleveland.com"
+                ],
+                [
+                    "DNS",
+                    "www.wakeup-knoxville.com"
+                ],
+                [
+                    "DNS",
+                    "www.wakeup-maine.com"
+                ],
+                [
+                    "DNS",
+                    "www.wakeup-newark.com"
+                ],
+                [
+                    "DNS",
+                    "www.wakeup-utah.com"
+                ],
+                [
+                    "DNS",
+                    "www.withyoustl.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 18:10:36"
+    },
+    "https://www.deathmetal.org": {
+        "Time": 10.45,
+        "URL": "https://www.deathmetal.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "173.236.202.231"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "173.236.202.231",
+        "PING Status": "OK",
+        "PING IP": "173.236.202.231",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 31313,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 22:11:07 GMT",
+            "Server": "Apache",
+            "Link": "<https://www.deathmetal.org/wp-json/>; rel=\"https://api.w.org/\"",
+            "Upgrade": "h2",
+            "Connection": "Upgrade, Keep-Alive",
+            "Cache-Control": "max-age=600",
+            "Expires": "Mon, 29 Apr 2024 22:21:07 GMT",
+            "Vary": "Accept-Encoding,User-Agent",
+            "Content-Encoding": "gzip",
+            "Content-Length": "6713",
+            "Keep-Alive": "timeout=5, max=100",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.deathmetal.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "deathmetal.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "036E458D199C055F17AAF89F7A14F653BD79",
+            "notBefore": "Apr 11 01:03:04 2024 GMT",
+            "notAfter": "Jul 10 01:03:03 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "deathmetal.org"
+                ],
+                [
+                    "DNS",
+                    "www.deathmetal.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 18:11:16"
+    },
+    "https://www.defense.gov": {
+        "Time": 8.49,
+        "URL": "https://www.defense.gov",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.91.118.165"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.91.118.165",
+        "PING Status": "OK",
+        "PING IP": "104.91.118.165",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 253754,
+        "Headers": {
+            "Cache-Control": "no-cache,private",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html; charset=utf-8",
+            "Expires": "-1",
+            "X-AspNetMvc-Version": "",
+            "X-UA-Compatible": "IE=edge",
+            "pw_value": "3ce3af822980b849665e8c5400e1b45b",
+            "Access-Control-Allow-Origin": "*",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Powered-By": "",
+            "Server": "",
+            "X-ASPNET-VERSION": "",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Content-Length": "50548",
+            "Date": "Mon, 29 Apr 2024 22:12:18 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=31536000"
+        },
+        "HTML Content": "www.defense.gov_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Maryland"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Fort Meade"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Defense Media Activity"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "stats.defense.gov"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0154E06B3FCB8B368BABA54A37854232",
+            "notBefore": "Jul 30 00:00:00 2023 GMT",
+            "notAfter": "Jul 30 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "stats.defense.gov"
+                ],
+                [
+                    "DNS",
+                    "media.defense.gov"
+                ],
+                [
+                    "DNS",
+                    "static.defense.gov"
+                ],
+                [
+                    "DNS",
+                    "www.defense.gov"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 18:12:25"
+    },
+    "http://www.delicates.co.uk": {
+        "Time": 25.52,
+        "URL": "http://www.delicates.co.uk",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "162.255.119.211"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "162.255.119.211",
+        "PING Status": "OK",
+        "PING IP": "162.255.119.211",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://lingerie.co.uk/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "87.76.20.144"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 49298,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 22:13:29 GMT",
+            "Server": "Apache",
+            "Set-Cookie": "frontend=m28l166v74a7gg36te65u4te42; expires=Mon, 29-Apr-2024 23:13:29 GMT; Max-Age=3600; path=/; domain=www.lingerie.co.uk; HttpOnly",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.delicates.co.uk_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 18:13:51"
+    }
+}

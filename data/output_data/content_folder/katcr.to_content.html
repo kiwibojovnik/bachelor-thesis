@@ -1,0 +1,2053 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="auto">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KickassTorrents - Download torrent from Kickass Torrents</title>
+<meta name="keywords" content="kickasstorrents, kickass, kickass torrents, kickasstorrent, kickass torrent, torrents, download, movies, games, tv shows">
+<meta name="description" content="KickassTorrents - Download torrent from KickassTorrents. Search and download Kickass torrent, tv shows, movies, music and games from Kickass Torrents">
+<link rel="stylesheet" type="text/css" href="/static/all.css" charset="utf-8" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
+<!--[if IE 7]>
+    <link href="/static/css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+    <link href="/static/css/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="/static/js/html5.min.js" type="text/javascript">
+    </script>
+<![endif]-->
+<!--[if gte IE 9]>
+    <link href="/static/css/ie9.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src="/static/js/all.js" type="text/javascript">
+</script>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<style>
+    .feedbackButton,.spareBlock{display:none} header a#logo{background: url(/static/images/logo.png)}
+</style>
+<script type="application/javascript">
+    var ad_idzone = "4674",
+    ad_popup_fallback = false,
+    ad_popup_force = true,
+    ad_chrome_enabled = true,
+    ad_new_tab = true,
+    ad_frequency_period = 30,
+    ad_frequency_count = 2,
+    ad_trigger_method = 3,
+    ad_t_venor = false;
+</script>
+</head>
+<body class="mainBody">
+<div id="wrapper">
+<div id="wrapperInner">
+<header>
+<nav id="menu">
+<a href="/" title="kickass" id="logo">
+</a>
+<a href="#" id="showHideSearch">
+<i class="ka ka-zoom">
+</i>
+</a>
+<div id="torrentSearch">
+<form action="/search.php" method="get" id="searchform" accept-charset="utf-8" onsubmit="return doSearch(this.q.value);">
+<input id="contentSearch" class="input-big" type="text" name="q" value autocomplete="off" placeholder="Search query" />
+<div id="searchTool">
+<button title="search" type="submit" value onfocus="this.blur();" onclick="this.blur();">
+<i class="ka ka-search">
+</i>
+</button>
+</div>
+</form>
+</div>
+<ul id="navigation">
+<li>
+<a href="/browse/">
+<i class="ka ka-torrent">
+</i>
+<span class="menuItem">
+browse
+</span>
+</a>
+<ul class="dropdown dp-middle dropdown-msg upper">
+<li class="topMsg">
+<a href="/new/">
+<i class="ka ka16 ka-torrent">
+</i>
+latest
+</a>
+</li>
+<li class="topMsg">
+<a href="/movies/">
+<i class="ka ka16 ka-movie lower">
+</i>
+Movies
+</a>
+</li>
+<li class="topMsg">
+<a href="/tv/">
+<i class="ka ka16 ka-movie lower">
+</i>
+TV
+</a>
+</li>
+<li class="topMsg">
+<a href="/music/">
+<i class="ka ka16 ka-music-note lower">
+</i>
+Music
+</a>
+</li>
+<li class="topMsg">
+<a href="/games/">
+<i class="ka ka16 ka-settings lower">
+</i>
+Games
+</a>
+</li>
+<li class="topMsg">
+<a href="/documentaries/">
+<i class="ka ka16 ka-bookmark">
+</i>
+Doc
+</a>
+</li>
+<li class="topMsg">
+<a href="/apps/">
+<i class="ka ka16 ka-settings lower">
+</i>
+Apps
+</a>
+</li>
+<li class="topMsg">
+<a href="/anime/">
+<i class="ka ka16 ka-movie lower">
+</i>
+Anime
+</a>
+</li>
+<li class="topMsg">
+<a href="/other/">
+<i class="ka ka16 ka-torrent">
+</i>
+Other
+</a>
+</li>
+<li class="topMsg">
+<a href="/xxx/">
+<i class="ka ka16 ka-delete">
+</i>
+XXX
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a data-nop href="#"> <i class="ka ka-community"></i><span class="menuItem">POPULAR</span></a>
+<ul class="dropdown dp-middle dropdown-msg upper">
+<li class="topMsg">
+<a href="/popular">
+<i class="ka ka16 ka-torrent">
+</i>
+all
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-movies">
+<i class="ka ka16 ka-movie lower">
+</i>
+Movies
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-tv">
+<i class="ka ka16 ka-movie lower">
+</i>
+TV
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-music">
+<i class="ka ka16 ka-music-note lower">
+</i>
+Music
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-games">
+<i class="ka ka16 ka-settings lower">
+</i>
+Games
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-documentaries">
+<i class="ka ka16 ka-bookmark">
+</i>
+Doc
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-apps">
+<i class="ka ka16 ka-settings lower">
+</i>
+Apps
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-anime">
+<i class="ka ka16 ka-movie lower">
+</i>
+Anime
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-other">
+<i class="ka ka16 ka-torrent">
+</i>
+Other
+</a>
+</li>
+<li class="topMsg">
+<a href="/popular-xxx">
+<i class="ka ka16 ka-delete">
+</i>
+XXX
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a data-nop href="#"><i class="ka ka-rss lower"></i><span class="menuItem">TOP</span></a>
+<ul class="dropdown dp-middle dropdown-msg upper">
+<li class="topMsg">
+<a href="/top-100">
+<i class="ka ka16 ka-torrent">
+</i>
+all
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-movies">
+<i class="ka ka16 ka-movie lower">
+</i>
+Movies
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-television">
+<i class="ka ka16 ka-movie lower">
+</i>
+TV
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-music">
+<i class="ka ka16 ka-music-note lower">
+</i>
+Music
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-games">
+<i class="ka ka16 ka-settings lower">
+</i>
+Games
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-documentaries">
+<i class="ka ka16 ka-bookmark">
+</i>
+Doc
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-applications">
+<i class="ka ka16 ka-settings lower">
+</i>
+Apps
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-anime">
+<i class="ka ka16 ka-movie lower">
+</i>
+Anime
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-other">
+<i class="ka ka16 ka-torrent">
+</i>
+Other
+</a>
+</li>
+<li class="topMsg">
+<a href="/top-100-xxx">
+<i class="ka ka16 ka-delete">
+</i>
+XXX
+</a>
+</li>
+</ul>
+</li>
+<li><a data-nop href="/register/" class="ajaxLink1"><i class="ka ka-user"></i><span class="menuItem">Register</span></a></li>
+</ul>
+</nav>
+</header>
+<div class="pusher">
+</div>
+<div id="tagcloud" class="tagcloud">
+<a href="/search/1080p/" class="tag3">1080p</a>
+<a href="/search/2015/" class="tag1">2015</a>
+<a href="/search/2016/" class="tag4">2016</a>
+<a href="/search/3d/" class="tag2">3d</a>
+<a href="/search/720p%201080p/" class="tag3">720p 1080p </a>
+<a href="/search/bajskorv/" class="tag2">bajskorv </a>
+<a href="/search/batv/" class="tag1">batv </a>
+<a href="/search/crimson/" class="tag2">crimson </a>
+<a href="/search/dhd/" class="tag2">dhd </a>
+<a href="/search/discography/" class="tag1">discography</a>
+<a href="/search/doom/" class="tag1">doom</a>
+<a href="/search/dual%20audio%20hindi/" class="tag2">dual audio hindi</a>
+<a href="/search/family%20guy/" class="tag1">family guy</a>
+<a href="/search/fear%20the%20walking%20dead/" class="tag5">fear the walking dead</a>
+<a href="/search/fear%20the%20walking%20dead%20s02e06/" class="tag3">fear the walking dead s02e06</a>
+<a href="/search/french/" class="tag1">french</a>
+<a href="/search/game%20of%20thrones/" class="tag10">game of thrones</a>
+<a href="/search/game%20of%20thrones%20s06/" class="tag3">game of thrones s06</a>
+<a href="/search/game%20of%20thrones%20s06e03/" class="tag2">game of thrones s06e03</a>
+<a href="/search/game%20of%20thrones%20s08e06/" class="tag10">game of thrones s08e06</a>
+<a href="/search/game%20of%20thrones%20season%206/" class="tag2">game of thrones season 6</a>
+<a href="/search/hindi/" class="tag5">hindi</a>
+<a href="/search/hindi%202016/" class="tag1">hindi 2016</a>
+<a href="/search/house%20of%20cards%20s04/" class="tag6">house of cards s04</a>
+<a href="/search//" class="tag9"></a>
+<a href="/search/malayalam/" class="tag2">malayalam</a>
+<a href="/search/nezu/" class="tag8">nezu</a>
+<a href="/search/once%20upon%20a%20time/" class="tag2">once upon a time</a>
+<a href="/search/penny%20dreadful/" class="tag2">penny dreadful</a>
+<a href="/search/penny%20dreadful%20s03e03/" class="tag2">penny dreadful s03e03</a>
+<a href="/search/quantico/" class="tag2">quantico</a>
+<a href="/search/river/" class="tag1">river </a>
+<a href="/search/silicon%20valley/" class="tag2">silicon valley</a>
+<a href="/search/silicon%20valley%20s03e04/" class="tag2">silicon valley s03e04</a>
+<a href="/search/tamil/" class="tag2">tamil</a>
+<a href="/search/telugu/" class="tag2">telugu</a>
+<a href="/search/the%20walking%20dead/" class="tag2">the walking dead</a>
+<a href="/search/tla/" class="tag2">tla </a>
+<a href="/search/x264%202hd/" class="tag2">x264 2hd </a>
+<a href="/search/x264%20720p%20hdtv/" class="tag3">x264 720p hdtv </a>
+<a href="/search/x264%20720p/" class="tag3">x264 720p </a>
+<a href="/search/x264%20dimension/" class="tag3">x264 dimension </a>
+<a href="/search/x264%20hdtv/" class="tag4">x264 hdtv </a>
+<a href="/search/x264/" class="tag10">x264 </a>
+<a href="/search/x264%20killers/" class="tag3">x264 killers </a>
+<a href="/search/x264%20lol/" class="tag4">x264 lol </a>
+<a href="/search/yify/" class="tag4">yify</a>
+<a href="/search/yify%20720p/" class="tag1">yify 720p</a>
+</div>
+<a class="line50perc showmore botmarg0" onclick="toggleTags(this);" title="hide tagcloud"><span class="font80perc">▲</span></a>
+<div class="mainpart">
+<table width="100%" cellspacing="0" cellpadding="0" class="doublecelltable">
+<tbody>
+<tr>
+<td width="100%">
+<h2>
+<a class="plain" href="/movies/">
+Movies Torrents
+</a>
+</h2>
+<div>
+<table cellpadding="0" cellspacing="0" class="data frontPageWidget" style="width: 100%">
+<tbody>
+<tr class="firstr">
+<th class="width100perc nopad">
+<a class="fpw-sort">
+torrent name
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+size
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+uploader
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+age
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+seed
+</a>
+</th>
+<th class="lasttd nobr center">
+<a class="fpw-sort">
+leech
+</a>
+</th>
+</tr>
+<tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/justice-league-crisis-on-infinite-earths-part-two-2024-1080p-bluray-1400mb-dd5-1-x264-galaxyrg-t6075575.html" class="cellMainLink">Justice League Crisis on Infinite Earths Part Two 2024 1080p BluRay 1400MB DD5 1 x264-GalaxyRG</a>
+</div>
+</td>
+<td class="nobr center" data-size="1572864.0">
+1.5 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714017922">5<br/>days</span></td>
+<td class="green center">1509</td>
+<td class="red lasttd center">520</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/cash-out-2024-720p-amzn-webrip-800mb-x264-galaxyrg-t6077355.html" class="cellMainLink">Cash Out 2024 720p AMZN WEBRip 800MB x264-GalaxyRG</a>
+</div>
+</td>
+<td class="nobr center" data-size="815616.0">
+796.5 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714108259">4<br/>days</span></td>
+<td class="green center">1565</td>
+<td class="red lasttd center">672</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/love-lies-bleeding-2024-720p-webrip-800mb-x264-galaxyrg-t6076173.html" class="cellMainLink">Love Lies Bleeding 2024 720p WEBRip 800MB x264-GalaxyRG</a>
+</div>
+</td>
+<td class="nobr center" data-size="816230.4">
+797.1 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714054117">5<br/>days</span></td>
+<td class="green center">288</td>
+<td class="red lasttd center">392</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/love-lies-bleeding-2024-1080p-web-h264-ethel-tgx-t6076141.html" class="cellMainLink">Love Lies Bleeding 2024 1080p WEB h264-ETHEL TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="5662310.4">
+5.4 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714054111">5<br/>days</span></td>
+<td class="green center">713</td>
+<td class="red lasttd center">813</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/justice-league-crisis-on-infinite-earths-part-two-2024-720p-bluray-800mb-x264-galaxyrg-t6075561.html" class="cellMainLink">Justice League Crisis on Infinite Earths Part Two 2024 720p BluRay 800MB x264-GalaxyRG</a>
+</div>
+</td>
+<td class="nobr center" data-size="900300.8">
+879.2 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714017917">5<br/>days</span></td>
+<td class="green center">564</td>
+<td class="red lasttd center">361</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/love-lies-bleeding-2024-1080p-webrip-1400mb-dd5-1-x264-galaxyrg-t6076224.html" class="cellMainLink">Love Lies Bleeding 2024 1080p WEBRip 1400MB DD5 1 x264-GalaxyRG</a>
+</div>
+</td>
+<td class="nobr center" data-size="1468006.4">
+1.4 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714057732">5<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/girls-on-film-2023-720p-esub-explicit-webdl-x264-qrips-t6081036.html" class="cellMainLink">Girls on Film (2023) - 720p - Esub - Explicit - WEBDL - x264 - QRips</a>
+</div>
+</td>
+<td class="nobr center" data-size="912793.6">
+891.4 MB </td>
+<td class="center">mazemaze16</td>
+<td class="center"><span class="timeago" data-time="1714367055">1<br/>day</span></td>
+<td class="green center">262</td>
+<td class="red lasttd center">137</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/cash-out-2024-1080p-amzn-webrip-1400mb-dd5-1-x264-galaxyrg-t6077358.html" class="cellMainLink">Cash Out 2024 1080p AMZN WEBRip 1400MB DD5 1 x264-GalaxyRG</a>
+</div>
+</td>
+<td class="nobr center" data-size="1468006.4">
+1.4 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714108259">4<br/>days</span></td>
+<td class="green center">960</td>
+<td class="red lasttd center">286</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/lady-guard-2024-explicit-1080p-webdl-x264-aac-qrips-t6081077.html" class="cellMainLink">Lady Guard (2024) Explicit 1080p WEBDL x264 AAC - QRips</a>
+</div>
+</td>
+<td class="nobr center" data-size="930611.2">
+908.8 MB </td>
+<td class="center">mazemaze16</td>
+<td class="center"><span class="timeago" data-time="1714370670">1<br/>day</span></td>
+<td class="green center">251</td>
+<td class="red lasttd center">113</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/humane-2024-720p-webrip-800mb-x264-galaxyrg-t6077310.html" class="cellMainLink">Humane 2024 720p WEBRip 800MB x264-GalaxyRG</a>
+</div>
+</td>
+<td class="nobr center" data-size="816025.6">
+796.9 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714104648">4<br/>days</span></td>
+<td class="green center">934</td>
+<td class="red lasttd center">325</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-fall-guy-2024-1080p-early-hdcam-no-ads-aac-1-5g-b-xdark-t6079083.html" class="cellMainLink">The Fall Guy 2024 1080p EARLY HDCAM NO-ADS AAC 1 5G​B-​xDark</a>
+</div>
+</td>
+<td class="nobr center" data-size="1677721.6">
+1.6 GB </td>
+<td class="center">Xelectron</td>
+<td class="center"><span class="timeago" data-time="1714216748">3<br/>days</span></td>
+<td class="green center">57</td>
+<td class="red lasttd center">25</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/humane-2024-1080p-webrip-1400mb-dd5-1-x264-galaxyrg-t6077322.html" class="cellMainLink">Humane 2024 1080p WEBRip 1400MB DD5 1 x264-GalaxyRG</a>
+</div>
+</td>
+<td class="nobr center" data-size="1468006.4">
+1.4 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714104653">4<br/>days</span></td>
+<td class="green center">746</td>
+<td class="red lasttd center">219</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/late-night-with-the-devil-2024-1080p-amzn-web-dl-x265-hevc-10bit-eac3-5-1-ghost-qxr-t6074493.html" class="cellMainLink">Late Night with the Devil (2024) (1080p AMZN WEB-DL x265 HEVC 10bit EAC3 5 1 Ghost) QxR </a>
+</div>
+</td>
+<td class="nobr center" data-size="3355443.2">
+3.2 GB </td>
+<td class="center">QxR</td>
+<td class="center"><span class="timeago" data-time="1713928022">6<br/>days</span></td>
+<td class="green center">230</td>
+<td class="red lasttd center">66</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/civil-war-2024-1080p-hdts-x264-aac-t6080658.html" class="cellMainLink">Civil War 2024 1080p HDTS x264 AAC</a>
+</div>
+</td>
+<td class="nobr center" data-size="1887436.8">
+1.8 GB </td>
+<td class="center">mazemaze16</td>
+<td class="center"><span class="timeago" data-time="1714330919">1<br/>day</span></td>
+<td class="green center">436</td>
+<td class="red lasttd center">195</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/city-hunter-2024-1080p-dual-web-dl-hevc-x265-5-1-bone-t6076814.html" class="cellMainLink">City Hunter 2024 1080p (DUAL) WEB-DL HEVC x265 5 1 BONE</a>
+</div>
+</td>
+<td class="nobr center" data-size="1468006.4">
+1.4 GB </td>
+<td class="center">bone111</td>
+<td class="center"><span class="timeago" data-time="1714090098">4<br/>days</span></td>
+<td class="green center">354</td>
+<td class="red lasttd center">179</td>
+</tr> </tbody>
+</table>
+</div>
+<h2>
+<a class="plain" href="/tv/">
+TV Shows Torrents
+</a>
+</h2>
+<div>
+<table cellpadding="0" cellspacing="0" class="data frontPageWidget" style="width: 100%">
+<tbody>
+<tr class="firstr">
+<th class="width100perc nopad">
+<a class="fpw-sort">
+torrent name
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+size
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+uploader
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+age
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+seed
+</a>
+</th>
+<th class="lasttd nobr center">
+<a class="fpw-sort">
+leech
+</a>
+</th>
+</tr>
+<tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/wwe-monday-night-raw-2024-04-29-hdtv-h264-star-tgx-t6082050.html" class="cellMainLink">WWE Monday Night Raw 2024 04 29 HDTV h264-Star TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="1992294.4">
+1.9 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714447052">15<br/>hours</span></td>
+<td class="green center">1030</td>
+<td class="red lasttd center">453</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-veil-2024-s01e01-web-x264-phoenix-t6082157.html" class="cellMainLink">The Veil 2024 S01E01 WEB x264-PHOENiX</a>
+</div>
+</td>
+<td class="nobr center" data-size="245862.4">
+240.1 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714454277">13<br/>hours</span></td>
+<td class="green center">1072</td>
+<td class="red lasttd center">179</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-veil-2024-s01e02-web-x264-phoenix-t6082175.html" class="cellMainLink">The Veil 2024 S01E02 WEB x264-PHOENiX</a>
+</div>
+</td>
+<td class="nobr center" data-size="256102.4">
+250.1 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714454282">13<br/>hours</span></td>
+<td class="green center">533</td>
+<td class="red lasttd center">126</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/ncis-hawaii-s03e09-hdtv-x264-phoenix-t6081945.html" class="cellMainLink">NCIS Hawaii S03E09 HDTV x264-PHOENiX</a>
+</div>
+</td>
+<td class="nobr center" data-size="237875.2">
+232.3 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714436211">18<br/>hours</span></td>
+<td class="green center">796</td>
+<td class="red lasttd center">107</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/ncis-s21e09-hdtv-x264-phoenix-t6082001.html" class="cellMainLink">NCIS S21E09 HDTV x264-PHOENiX</a>
+</div>
+</td>
+<td class="nobr center" data-size="292864.0">
+286 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714443427">16<br/>hours</span></td>
+<td class="green center">901</td>
+<td class="red lasttd center">107</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-veil-2024-s01e01-1080p-web-h264-successfulcrab-tgx-t6082142.html" class="cellMainLink">The Veil 2024 S01E01 1080p WEB H264-SuccessfulCrab TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="1887436.8">
+1.8 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714454272">13<br/>hours</span></td>
+<td class="green center">425</td>
+<td class="red lasttd center">91</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-neighborhood-s06e09-hdtv-x264-phoenix-t6081965.html" class="cellMainLink">The Neighborhood S06E09 HDTV x264-PHOENiX</a>
+</div>
+</td>
+<td class="nobr center" data-size="168857.6">
+164.9 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714436216">18<br/>hours</span></td>
+<td class="green center">400</td>
+<td class="red lasttd center">35</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/wwe-monday-night-raw-2024-04-29-hdtv-h264-star-tjet-t6082098.html" class="cellMainLink">WWE Monday Night Raw 2024 04 29 HDTV h264-Star TJET </a>
+</div>
+</td>
+<td class="nobr center" data-size="1992294.4">
+1.9 GB </td>
+<td class="center">EZZT</td>
+<td class="center"><span class="timeago" data-time="1714450662">14<br/>hours</span></td>
+<td class="green center">164</td>
+<td class="red lasttd center">63</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-veil-2024-s01e02-1080p-web-h264-successfulcrab-tgx-t6082139.html" class="cellMainLink">The Veil 2024 S01E02 1080p WEB H264-SuccessfulCrab TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="1677721.6">
+1.6 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714450672">14<br/>hours</span></td>
+<td class="green center">250</td>
+<td class="red lasttd center">60</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-veil-2024-s01e02-720p-web-x265-minx-tgx-t6082150.html" class="cellMainLink">The Veil 2024 S01E02 720p WEB x265-MiNX TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="206540.8">
+201.7 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714454277">13<br/>hours</span></td>
+<td class="green center">246</td>
+<td class="red lasttd center">36</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/jules-vernes-mysterious-island-tv-mini-series-2005-720p-web-dl-hevc-x265-bone-t6081813.html" class="cellMainLink">Jules Vernes Mysterious Island (TV Mini Series 2005) 720p WEB-DL HEVC x265 BONE</a>
+</div>
+</td>
+<td class="nobr center" data-size="1363148.8">
+1.3 GB </td>
+<td class="center">bone111</td>
+<td class="center"><span class="timeago" data-time="1714421768">22<br/>hours</span></td>
+<td class="green center">200</td>
+<td class="red lasttd center">51</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-veil-2024-s01e01-720p-web-x265-minx-tgx-t6082153.html" class="cellMainLink">The Veil 2024 S01E01 720p WEB x265-MiNX TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="179200.0">
+175 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714454277">13<br/>hours</span></td>
+<td class="green center">297</td>
+<td class="red lasttd center">53</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/ncis-hawaii-s03e09-720p-hdtv-x265-minx-tgx-t6081939.html" class="cellMainLink">NCIS Hawaii S03E09 720p HDTV x265-MiNX TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="173260.8">
+169.2 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714436211">18<br/>hours</span></td>
+<td class="green center">542</td>
+<td class="red lasttd center">58</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/wwe-monday-night-raw-2024-04-29-1080p-hdtv-h264-star-tgx-t6082211.html" class="cellMainLink">WWE Monday Night Raw 2024 04 29 1080p HDTV h264-Star TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="7340032.0">
+7 GB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714454292">13<br/>hours</span></td>
+<td class="green center">255</td>
+<td class="red lasttd center">238</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-veil-2024-s01e01-1080p-hevc-x265-megusta-tgx-t6082140.html" class="cellMainLink">The Veil 2024 S01E01 1080p HEVC x265-MeGusta TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="297062.4">
+290.1 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714450672">14<br/>hours</span></td>
+<td class="green center">306</td>
+<td class="red lasttd center">44</td>
+</tr> </tbody>
+</table>
+</div>
+<h2>
+<a class="plain" href="/music/">
+Music Torrents
+</a>
+</h2>
+<div>
+<table cellpadding="0" cellspacing="0" class="data frontPageWidget" style="width: 100%">
+<tbody>
+<tr class="firstr">
+<th class="width100perc nopad">
+<a class="fpw-sort">
+torrent name
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+size
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+uploader
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+age
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+seed
+</a>
+</th>
+<th class="lasttd nobr center">
+<a class="fpw-sort">
+leech
+</a>
+</th>
+</tr>
+<tr class="odd">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/pet-shop-boys-nonetheless-deluxe-edition-2cd-2024-mp3-320kbps-pmedia-t6078388.html" class="cellMainLink">Pet Shop Boys - Nonetheless (Deluxe Edition) (2CD) (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="151552.0">
+148 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714173337">3<br/>days</span></td>
+<td class="green center">160</td>
+<td class="red lasttd center">24</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/pet-shop-boys-nonetheless-2024-24bit-44-1khz-flac-pmedia-t6077272.html" class="cellMainLink">Pet Shop Boys - Nonetheless (2024) 24Bit-44 1kHz FLAC PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="542412.8">
+529.7 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714104636">4<br/>days</span></td>
+<td class="green center">317</td>
+<td class="red lasttd center">49</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/st-vincent-all-born-screaming-2024-mp3-320kbps-pmedia-t6076307.html" class="cellMainLink">St Vincent - All Born Screaming (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="97894.4">
+95.6 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714057753">5<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/various-artists-now-that-s-what-i-call-rock-anthems-4cd-2024-mp3-320kbps-pmedia-t6081636.html" class="cellMainLink">Various Artists - NOW That’s What I Call Rock Anthems (4CD) (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="899379.2">
+878.3 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714410063">1<br/>day</span></td>
+<td class="green center">303</td>
+<td class="red lasttd center">60</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/neil-young-fu-in-up-2024-mp3-320kbps-pmedia-t6076311.html" class="cellMainLink">Neil Young - Fu##in' Up (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="163942.4">
+160.1 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714057753">5<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/various-artists-the-best-80s-movies-album-in-the-world-ever-2024-mp3-320kbps-pmedia-t6081637.html" class="cellMainLink">Various Artists - The Best 80s Movies Album in the World EVER! (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="659456.0">
+644 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714410063">1<br/>day</span></td>
+<td class="green center">272</td>
+<td class="red lasttd center">69</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/no-doubt-the-set-list-2024-mp3-320kbps-pmedia-t6078334.html" class="cellMainLink">No Doubt - The Set List (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="163123.2">
+159.3 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714173311">3<br/>days</span></td>
+<td class="green center">78</td>
+<td class="red lasttd center">15</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/eric-clapton-to-save-a-child-2024-mp3-320kbps-pmedia-t6076304.html" class="cellMainLink">Eric Clapton - To Save a Child (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="159539.2">
+155.8 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714057753">5<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/def-leppard-pyromania-super-deluxe-2024-mp3-320kbps-pmedia-t6078375.html" class="cellMainLink">Def Leppard - Pyromania (Super Deluxe) (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="513126.4">
+501.1 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714173336">3<br/>days</span></td>
+<td class="green center">87</td>
+<td class="red lasttd center">25</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/tina-turner-what-s-love-got-to-do-with-it-30th-anniversary-deluxe-edition-2024-mp3-320kbps-pmedia-t6076309.html" class="cellMainLink">Tina Turner - What's Love Got to Do with It (30th Anniversary Deluxe Edition) (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="597913.6">
+583.9 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714057753">5<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/def-leppard-pyromania-super-deluxe-2024-16bit-44-1khz-flac-pmedia-t6077264.html" class="cellMainLink">Def Leppard - Pyromania (Super Deluxe) (2024) 16Bit-44 1kHz FLAC PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="1572864.0">
+1.5 GB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714104636">4<br/>days</span></td>
+<td class="green center">177</td>
+<td class="red lasttd center">69</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/va-new-music-releases-week-16-of-2024-mp3-320kbps-songs-pmedia-t6074452.html" class="cellMainLink">VA - New Music Releases Week 16 of 2024 (Mp3 320kbps Songs) PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="4194304.0">
+4 GB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1713924412">6<br/>days</span></td>
+<td class="green center">93</td>
+<td class="red lasttd center">59</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/john-lennon-mind-games-ep-2024-24bit-192khz-flac-pmedia-t6078382.html" class="cellMainLink">John Lennon - Mind Games EP (2024) 24Bit-192kHz FLAC PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="856576.0">
+836.5 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714173336">3<br/>days</span></td>
+<td class="green center">191</td>
+<td class="red lasttd center">24</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/various-artists-bbq-classics_-best-of-70s-80s-90s-2024-mp3-320kbps-pmedia-t6081631.html" class="cellMainLink">Various Artists - BBQ Classics Best of 70s 80s 90s (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="1572864.0">
+1.5 GB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714410063">1<br/>day</span></td>
+<td class="green center">189</td>
+<td class="red lasttd center">76</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType musicType">
+<a href="/accept-humanoid-2024-mp3-320kbps-pmedia-t6076303.html" class="cellMainLink">Accept - Humanoid (2024) Mp3 320kbps PMEDIA ⭐️</a>
+</div>
+</td>
+<td class="nobr center" data-size="113254.4">
+110.6 MB </td>
+<td class="center">PMEDIA</td>
+<td class="center"><span class="timeago" data-time="1714057753">5<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr> </tbody>
+</table>
+</div>
+<h2>
+<a class="plain" href="/games/">
+Games Torrents
+</a>
+</h2>
+<div>
+<table cellpadding="0" cellspacing="0" class="data frontPageWidget" style="width: 100%">
+<tbody>
+<tr class="firstr">
+<th class="width100perc nopad">
+<a class="fpw-sort">
+torrent name
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+size
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+uploader
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+age
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+seed
+</a>
+</th>
+<th class="lasttd nobr center">
+<a class="fpw-sort">
+leech
+</a>
+</th>
+</tr>
+<tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/manor-lords-v0-7-955-t6078245.html" class="cellMainLink">Manor Lords v0 7 955</a>
+</div>
+</td>
+<td class="nobr center" data-size="6710886.4">
+6.4 GB </td>
+<td class="center">IGGGAMESCOM</td>
+<td class="center"><span class="timeago" data-time="1714169689">3<br/>days</span></td>
+<td class="green center">1609</td>
+<td class="red lasttd center">388</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/fallout-4-game-of-the-year-edition-v1-10-980-0-6-dlcs-161-cc-mods-creation-kit-v1-10-943-1-bonus-content-multi9-t6079690.html" class="cellMainLink">Fallout 4: Game of the Year Edition (v1 10 980 0 + 6 DLCs + 161 CC Mods + Creation Kit v1 10 943 1 + Bonus Content, MULTi9) FitGirl Repack, Selective Download - from 23 9 GB </a>
+</div>
+</td>
+<td class="nobr center" data-size="43201331.2">
+41.2 GB </td>
+<td class="center">FitGirl</td>
+<td class="center"><span class="timeago" data-time="1714267067">2<br/>days</span></td>
+<td class="green center">761</td>
+<td class="red lasttd center">3314</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/fallout-4-game-of-the-year-edition-v1-10-980-0-6-dlcs-161-cc-mods-creation-kit-v1-10-943-1-bonus-content-multi9-fallout-4-game-of-the-year-edition-v1-10-980-0-next-gen-update-all-dlcs-high-resolution-texture-pack-multi10-from-21-9-gb-t6077990.html" class="cellMainLink">Fallout 4: Game of the Year Edition (v1 10 980 0 - Next-Gen Update + All DLCs + High Resolution Texture Pack + MULTi10) (From 21 9 GB) DODI Repack </a>
+</div>
+</td>
+<td class="nobr center" data-size="83676364.8">
+79.8 GB </td>
+<td class="center">DODI</td>
+<td class="center"><span class="timeago" data-time="1714151610">4<br/>days</span></td>
+<td class="green center">196</td>
+<td class="red lasttd center">1666</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/fallout-4-game-of-the-year-edition-v1-10-980-0-rune-t6076605.html" class="cellMainLink">Fallout 4 Game of the Year Edition v1 10 980 0-RUNE</a>
+</div>
+</td>
+<td class="nobr center" data-size="91960115.2">
+87.7 GB </td>
+<td class="center">IGGGAMESCOM</td>
+<td class="center"><span class="timeago" data-time="1714068436">5<br/>days</span></td>
+<td class="green center">116</td>
+<td class="red lasttd center">592</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/bellwright-early-access-t6074430.html" class="cellMainLink">Bellwright (Early Access)</a>
+</div>
+</td>
+<td class="nobr center" data-size="20552089.6">
+19.6 GB </td>
+<td class="center">IGGGAMESCOM</td>
+<td class="center"><span class="timeago" data-time="1713924407">6<br/>days</span></td>
+<td class="green center">98</td>
+<td class="red lasttd center">96</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/sand-land-flt-t6076835.html" class="cellMainLink">SAND LAND-FLT</a>
+</div>
+</td>
+<td class="nobr center" data-size="15414067.2">
+14.7 GB </td>
+<td class="center">IGGGAMESCOM</td>
+<td class="center"><span class="timeago" data-time="1714090103">4<br/>days</span></td>
+<td class="green center">227</td>
+<td class="red lasttd center">205</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/sand-land-deluxe-edition-v1-0-3-all-dlcs-multi12-from-9-4-gb-dodi-repack-t6078410.html" class="cellMainLink">Sand Land: Deluxe Edition (v1 0 3 + All DLCs + MULTi12) (From 9 4 GB) DODI Repack </a>
+</div>
+</td>
+<td class="nobr center" data-size="10800332.8">
+10.3 GB </td>
+<td class="center">DODI</td>
+<td class="center"><span class="timeago" data-time="1714176942">3<br/>days</span></td>
+<td class="green center">248</td>
+<td class="red lasttd center">205</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/sand-land-deluxe-edition-v1-0-3-5-dlcs-windows-7-fix-multi12-fitgirl-repack-selective-download-from-9-3-gb-t6080755.html" class="cellMainLink">SAND LAND: Deluxe Edition (v1 0 3 + 5 DLCs + Windows 7 Fix, MULTi12) FitGirl Repack, Selective Download - from 9 3 GB </a>
+</div>
+</td>
+<td class="nobr center" data-size="10695475.2">
+10.2 GB </td>
+<td class="center">FitGirl</td>
+<td class="center"><span class="timeago" data-time="1714341765">1<br/>day</span></td>
+<td class="green center">616</td>
+<td class="red lasttd center">493</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/fallout-4-high-resolution-texture-pack-for-v1-10-980-0-fitgirl-repack-t6081241.html" class="cellMainLink">Fallout 4: High Resolution Texture Pack (for v1 10 980 0+) FitGirl Repack </a>
+</div>
+</td>
+<td class="nobr center" data-size="34707865.6">
+33.1 GB </td>
+<td class="center">FitGirl</td>
+<td class="center"><span class="timeago" data-time="1714381534">1<br/>day</span></td>
+<td class="green center">225</td>
+<td class="red lasttd center">700</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/remnant-ii-ultimate-edition-v417-127-6-dlcs-multiplayer-multi10-fitgirl-repack-t6079396.html" class="cellMainLink">Remnant II: Ultimate Edition (v417 127 + 6 DLCs + Multiplayer, MULTi10) FitGirl Repack </a>
+</div>
+</td>
+<td class="nobr center" data-size="66165145.6">
+63.1 GB </td>
+<td class="center">FitGirl</td>
+<td class="center"><span class="timeago" data-time="1714237265">3<br/>days</span></td>
+<td class="green center">325</td>
+<td class="red lasttd center">966</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/might-magic-heroes-vii-v2-2-1-40632-all-dlcs-bonus-soundtrack-multi13-fitgirl-repack-selective-download-from-9-6-gb-t6077726.html" class="cellMainLink">Might & Magic: Heroes VII (v2 2 1-40632 + All DLCs & Bonus Soundtrack, MULTi13) FitGirl Repack, Selective Download - from 9 6 GB </a>
+</div>
+</td>
+<td class="nobr center" data-size="11848908.8">
+11.3 GB </td>
+<td class="center">FitGirl</td>
+<td class="center"><span class="timeago" data-time="1714129990">4<br/>days</span></td>
+<td class="green center">185</td>
+<td class="red lasttd center">399</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/phantom-fury-v17276-bonus-artbook-multi10-fitgirl-repack-t6076042.html" class="cellMainLink">Phantom Fury (v17276 + Bonus ArtBook, MULTi10) FitGirl Repack </a>
+</div>
+</td>
+<td class="nobr center" data-size="3984588.8">
+3.8 GB </td>
+<td class="center">FitGirl</td>
+<td class="center"><span class="timeago" data-time="1714043274">5<br/>days</span></td>
+<td class="green center">231</td>
+<td class="red lasttd center">162</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/horizon-forbidden-west-complete-edition-update-v1-3-57-0-t6078267.html" class="cellMainLink">Horizon Forbidden West Complete Edition Update v1 3 57 0</a>
+</div>
+</td>
+<td class="nobr center" data-size="466432.0">
+455.5 MB </td>
+<td class="center">IGGGAMESCOM</td>
+<td class="center"><span class="timeago" data-time="1714173294">3<br/>days</span></td>
+<td class="green center">83</td>
+<td class="red lasttd center">5</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/remnant-2-ultimate-edition-v417-127-all-dlcs-online-multiplayer-co-op-multi10-dodi-repack-t6075635.html" class="cellMainLink">Remnant 2: Ultimate Edition (v417 127 + All DLCs + Online Multiplayer / Co-op + MULTi10) DODI Repack </a>
+</div>
+</td>
+<td class="nobr center" data-size="67633152.0">
+64.5 GB </td>
+<td class="center">DODI</td>
+<td class="center"><span class="timeago" data-time="1714021541">5<br/>days</span></td>
+<td class="green center">58</td>
+<td class="red lasttd center">324</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-build-14138606-multi6-fitgirl-repack-t6076790.html" class="cellMainLink">Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants (Build 14138606, MULTi6) FitGirl Repack </a>
+</div>
+</td>
+<td class="nobr center" data-size="1468006.4">
+1.4 GB </td>
+<td class="center">FitGirl</td>
+<td class="center"><span class="timeago" data-time="1714086492">4<br/>days</span></td>
+<td class="green center">221</td>
+<td class="red lasttd center">56</td>
+</tr> </tbody>
+</table>
+</div>
+<h2>
+<a class="plain" href="/apps/">
+Applications Torrents
+</a>
+</h2>
+<div>
+<table cellpadding="0" cellspacing="0" class="data frontPageWidget" style="width: 100%">
+<tbody>
+<tr class="firstr">
+<th class="width100perc nopad">
+<a class="fpw-sort">
+torrent name
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+size
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+uploader
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+age
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+seed
+</a>
+</th>
+<th class="lasttd nobr center">
+<a class="fpw-sort">
+leech
+</a>
+</th>
+</tr>
+<tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/internet-download-manager-idm-6-42-build-9-registered-final-fix-appdoze-t6075544.html" class="cellMainLink">Internet Download Manager IDM 6 42 Build 9 Registered FINAL + Fix AppDoze </a>
+</div>
+</td>
+<td class="nobr center" data-size="11878.4">
+11.6 MB </td>
+<td class="center">appdoze</td>
+<td class="center"><span class="timeago" data-time="1714017912">5<br/>days</span></td>
+<td class="green center">77</td>
+<td class="red lasttd center">11</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/internet-download-manager-idm-v6-42-build-9-patch-lifetime-activation-haxnode-t6079111.html" class="cellMainLink">Internet Download Manager (IDM) v6 42 Build 9 + Patch (Lifetime Activation) - haxNode </a>
+</div>
+</td>
+<td class="nobr center" data-size="11878.4">
+11.6 MB </td>
+<td class="center">haxNode</td>
+<td class="center"><span class="timeago" data-time="1714220353">3<br/>days</span></td>
+<td class="green center">40</td>
+<td class="red lasttd center">5</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/adobe-photoshop-2024-v25-7-0-504-x64-pre-activated-haxnode-t6079118.html" class="cellMainLink">Adobe Photoshop 2024 v25 7 0 504 (x64) Pre-Activated - haxNode </a>
+</div>
+</td>
+<td class="nobr center" data-size="4613734.4">
+4.4 GB </td>
+<td class="center">haxNode</td>
+<td class="center"><span class="timeago" data-time="1714220358">3<br/>days</span></td>
+<td class="green center">41</td>
+<td class="red lasttd center">53</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/bull-originals-v13-0-adult-content-premium-mod-apk-crackshash-t6078196.html" class="cellMainLink">Bull Originals v13 0 (Adult Content) Premium Mod Apk {CracksHash}</a>
+</div>
+</td>
+<td class="nobr center" data-size="29900.8">
+29.2 MB </td>
+<td class="center">crackshash</td>
+<td class="center"><span class="timeago" data-time="1714162479">3<br/>days</span></td>
+<td class="green center">49</td>
+<td class="red lasttd center">7</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/adobe-photoshop-2024-v25-7-cracked-czsofts-t6075745.html" class="cellMainLink">Adobe Photoshop 2024 v25 7 Cracked - CZsofts </a>
+</div>
+</td>
+<td class="nobr center" data-size="4613734.4">
+4.4 GB </td>
+<td class="center">crackzsoft</td>
+<td class="center"><span class="timeago" data-time="1714025177">5<br/>days</span></td>
+<td class="green center">143</td>
+<td class="red lasttd center">27</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/poweriso-8-8-full-serial-key-appdoze-t6077842.html" class="cellMainLink">PowerISO 8 8 FULL + Serial Key AppDoze </a>
+</div>
+</td>
+<td class="nobr center" data-size="9932.8">
+9.7 MB </td>
+<td class="center">appdoze</td>
+<td class="center"><span class="timeago" data-time="1714140831">4<br/>days</span></td>
+<td class="green center">22</td>
+<td class="red lasttd center">8</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/iobit-driver-booster-pro-v11-4-0-60-crack-haxnode-t6076344.html" class="cellMainLink">IObit Driver Booster Pro v11 4 0 60 + Crack - haxNode </a>
+</div>
+</td>
+<td class="nobr center" data-size="34406.4">
+33.6 MB </td>
+<td class="center">haxNode</td>
+<td class="center"><span class="timeago" data-time="1714061373">5<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/truecaller-identify-caller-id-v14-0-5-premium-mod-apk-crackshash-t6076690.html" class="cellMainLink">Truecaller Identify Caller ID v14 0 5 Premium Mod Apk {CracksHash}</a>
+</div>
+</td>
+<td class="nobr center" data-size="74342.4">
+72.6 MB </td>
+<td class="center">crackshash</td>
+<td class="center"><span class="timeago" data-time="1714075657">4<br/>days</span></td>
+<td class="green center">52</td>
+<td class="red lasttd center">7</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/pikashow-live-tv-movie-show-v10-0-3-premium-mod-apk-crackshash-t6076698.html" class="cellMainLink">Pikashow Live TV, Movie & Show v10 0 3 Premium Mod Apk {CracksHash}</a>
+</div>
+</td>
+<td class="nobr center" data-size="24780.8">
+24.2 MB </td>
+<td class="center">crackshash</td>
+<td class="center"><span class="timeago" data-time="1714075657">4<br/>days</span></td>
+<td class="green center">17</td>
+<td class="red lasttd center">3</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/wintohdd-v6-5-all-editions-fix-crackshash-t6075232.html" class="cellMainLink">WinToHDD v6 5 (All Editions) + Fix {CracksHash}</a>
+</div>
+</td>
+<td class="nobr center" data-size="9625.6">
+9.4 MB </td>
+<td class="center">crackshash</td>
+<td class="center"><span class="timeago" data-time="1713989003">5<br/>days</span></td>
+<td class="green center">53</td>
+<td class="red lasttd center">2</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/topaz-photo-ai-v3-0-1-x64-fix-crackshash-t6074252.html" class="cellMainLink">Topaz Photo AI v3 0 1 (x64) + Fix {CracksHash}</a>
+</div>
+</td>
+<td class="nobr center" data-size="969113.6">
+946.4 MB </td>
+<td class="center">crackshash</td>
+<td class="center"><span class="timeago" data-time="1713906352">6<br/>days</span></td>
+<td class="green center">41</td>
+<td class="red lasttd center">6</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/windows-11-pro-x64-22h2-22621-1105-superlite-no-tpm-preactivated-multilingual-_madtia_-t6080699.html" class="cellMainLink">Windows 11 Pro x64 22H2 22621 1105 Superlite No TPM Preactivated Multilingual MaDTiA </a>
+</div>
+</td>
+<td class="nobr center" data-size="2411724.8">
+2.3 GB </td>
+<td class="center">MaDTiA</td>
+<td class="center"><span class="timeago" data-time="1714334539">1<br/>day</span></td>
+<td class="green center">23</td>
+<td class="red lasttd center">7</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/utorrent-pro-3-6-0-build-47062-ads-free-version-with-patch-t6080717.html" class="cellMainLink">uTorrent Pro 3 6 0 Build 47062 (Ads Free Version) with Patch</a>
+</div>
+</td>
+<td class="nobr center" data-size="46694.4">
+45.6 MB </td>
+<td class="center">virtualernie</td>
+<td class="center"><span class="timeago" data-time="1714334540">1<br/>day</span></td>
+<td class="green center">25</td>
+<td class="red lasttd center">8</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/utorrent-pro-torrent-app-v8-2-5-cracked-apk-appdoze-t6077834.html" class="cellMainLink">uTorrent Pro - Torrent App v8 2 5 Cracked APK AppDoze </a>
+</div>
+</td>
+<td class="nobr center" data-size="20377.6">
+19.9 MB </td>
+<td class="center">appdoze</td>
+<td class="center"><span class="timeago" data-time="1714140826">4<br/>days</span></td>
+<td class="green center">15</td>
+<td class="red lasttd center">4</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType exeType">
+<a href="/topaz-gigapixel-ai-7-1-3-final-crack-appdoze-t6078503.html" class="cellMainLink">Topaz Gigapixel AI 7 1 3 FINAL + Crack AppDoze </a>
+</div>
+</td>
+<td class="nobr center" data-size="260505.6">
+254.4 MB </td>
+<td class="center">appdoze</td>
+<td class="center"><span class="timeago" data-time="1714191368">3<br/>days</span></td>
+<td class="green center">42</td>
+<td class="red lasttd center">5</td>
+</tr> </tbody>
+</table>
+</div>
+<h2>
+<a class="plain" href="/anime/">
+Anime Torrents
+</a>
+</h2>
+<div>
+<table cellpadding="0" cellspacing="0" class="data frontPageWidget" style="width: 100%">
+<tbody>
+<tr class="firstr">
+<th class="width100perc nopad">
+<a class="fpw-sort">
+torrent name
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+size
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+uploader
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+age
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+seed
+</a>
+</th>
+<th class="lasttd nobr center">
+<a class="fpw-sort">
+leech
+</a>
+</th>
+</tr>
+<tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/one-piece-1102-720p-738d2b7e-erai-raws-tgx-t6079695.html" class="cellMainLink">One Piece - 1102 (720p)(738D2B7E)-Erai-raws TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="731852.8">
+714.7 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714270676">2<br/>days</span></td>
+<td class="green center">230</td>
+<td class="red lasttd center">35</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/attack-on-titan-season-1-to-4-ova-hybrid-bd-1080p-hevc-ac-3-opus-dual-audio-engsubs-complete-series-batch-t6074990.html" class="cellMainLink">Attack On Titan Season 1 to 4 + OVA Hybrid BD 1080p HEVC AC-3 OPUS Dual Audio-EngSubs Complete Series (Batch)</a>
+</div>
+</td>
+<td class="nobr center" data-size="55679385.6">
+53.1 GB </td>
+<td class="center">DiabloTriple</td>
+<td class="center"><span class="timeago" data-time="1713967776">6<br/>days</span></td>
+<td class="green center">50</td>
+<td class="red lasttd center">125</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/aoi-sekai-no-chuushin-de-world-war-blue-season-1-hybrid-bd-1080p-hevc-opus-dual-audio-engsubs-batch-t6080171.html" class="cellMainLink">Aoi Sekai no Chuushin de (World War Blue) Season 1 Hybrid BD 1080p HEVC OPUS Dual Audio-EngSubs (Batch)</a>
+</div>
+</td>
+<td class="nobr center" data-size="1468006.4">
+1.4 GB </td>
+<td class="center">DiabloTriple</td>
+<td class="center"><span class="timeago" data-time="1714299633">2<br/>days</span></td>
+<td class="green center">64</td>
+<td class="red lasttd center">58</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/cleo-shangri-la-frontier-kusoge-hunter-kamige-ni-idoman-to-su-shangri-la-frontier-dual-audio-10bit-1080p-hevc-x265-t6079427.html" class="cellMainLink"> Cleo Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su | Shangri-La Frontier Dual Audio 10bit 1080p HEVC-x265 </a>
+</div>
+</td>
+<td class="nobr center" data-size="11744051.2">
+11.2 GB </td>
+<td class="center">VCleo</td>
+<td class="center"><span class="timeago" data-time="1714238145">3<br/>days</span></td>
+<td class="green center">62</td>
+<td class="red lasttd center">46</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/mars-red-season-1-specials-usbd-1080p-hevc-ac-3-opus-dual-audio-engsubs-batch-t6077367.html" class="cellMainLink">Mars Red Season 1 + Specials USBD 1080p HEVC AC-3 OPUS Dual Audio-EngSubs (Batch)</a>
+</div>
+</td>
+<td class="nobr center" data-size="4508876.8">
+4.3 GB </td>
+<td class="center">DiabloTriple</td>
+<td class="center"><span class="timeago" data-time="1714108264">4<br/>days</span></td>
+<td class="green center">73</td>
+<td class="red lasttd center">86</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/don-t-hurt-me-my-healer-season-1-bd-1080p-hevc-aac-opus-dual-audio-engsubs-batch-t6079162.html" class="cellMainLink">Don't Hurt Me, My Healer Season 1 BD 1080p HEVC AAC OPUS Dual Audio-EngSubs (Batch)</a>
+</div>
+</td>
+<td class="nobr center" data-size="5976883.2">
+5.7 GB </td>
+<td class="center">DiabloTriple</td>
+<td class="center"><span class="timeago" data-time="1714223979">3<br/>days</span></td>
+<td class="green center">28</td>
+<td class="red lasttd center">88</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/kaijuu-8-gou-03-720p-multiple-subtitle-1676fdfb-erai-raws-tgx-t6079237.html" class="cellMainLink">Kaijuu 8 Gou - 03 (720p)(Multiple Subtitle)(1676FDFB)-Erai-raws TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="725811.2">
+708.8 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714227601">3<br/>days</span></td>
+<td class="green center">40</td>
+<td class="red lasttd center">135</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/my-tiny-senpai-season-1-bd-1080p-hevc-aac-opus-dual-audio-engsubs-batch-t6080159.html" class="cellMainLink">My Tiny Senpai Season 1 BD 1080p HEVC AAC OPUS Dual Audio-EngSubs (Batch)</a>
+</div>
+</td>
+<td class="nobr center" data-size="4299161.6">
+4.1 GB </td>
+<td class="center">DiabloTriple</td>
+<td class="center"><span class="timeago" data-time="1714299629">2<br/>days</span></td>
+<td class="green center">31</td>
+<td class="red lasttd center">29</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/db-fumetsu-no-anata-e-to-your-eternity-10bit-bd1080p-hevc-x265-t6076737.html" class="cellMainLink"> DB Fumetsu no Anata e | To Your Eternity 10bit BD1080p HEVC-x265 </a>
+</div>
+</td>
+<td class="nobr center" data-size="7654604.8">
+7.3 GB </td>
+<td class="center">VCleo</td>
+<td class="center"><span class="timeago" data-time="1714082867">4<br/>days</span></td>
+<td class="green center">26</td>
+<td class="red lasttd center">16</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/walkure-romanze-season-1-bd-1080p-hevc-opus-engsubs-complete-series-batch-t6079150.html" class="cellMainLink">Walkure Romanze Season 1 BD 1080p HEVC OPUS EngSubs Complete Series (Batch)</a>
+</div>
+</td>
+<td class="nobr center" data-size="12268339.2">
+11.7 GB </td>
+<td class="center">DiabloTriple</td>
+<td class="center"><span class="timeago" data-time="1714223964">3<br/>days</span></td>
+<td class="green center">25</td>
+<td class="red lasttd center">66</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/devil-hunter-yohko-high-quality-tri-audio-1080p-blu-ray-rip-t6076800.html" class="cellMainLink">Devil Hunter Yohko (High Quality)(Tri Audio) 1080p Blu-Ray Rip</a>
+</div>
+</td>
+<td class="nobr center" data-size="35022438.4">
+33.4 GB </td>
+<td class="center">darkdream787</td>
+<td class="center"><span class="timeago" data-time="1714090093">4<br/>days</span></td>
+<td class="green center">33</td>
+<td class="red lasttd center">41</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/isekai-quartet-season-1-2-movie-hybrid-bd-1080p-hevc-ac-3-opus-dual-audio-engsubs-batch-t6077317.html" class="cellMainLink">Isekai Quartet Season 1 + 2 + Movie Hybrid BD 1080p HEVC AC-3 OPUS Dual Audio-EngSubs (Batch)</a>
+</div>
+</td>
+<td class="nobr center" data-size="11429478.4">
+10.9 GB </td>
+<td class="center">DiabloTriple</td>
+<td class="center"><span class="timeago" data-time="1714104648">4<br/>days</span></td>
+<td class="green center">34</td>
+<td class="red lasttd center">24</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/one-piece-1102-480p-abcd86c7-erai-raws-tgx-t6079697.html" class="cellMainLink">One Piece - 1102 (480p)(ABCD86C7)-Erai-raws TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="383385.6">
+374.4 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714270676">2<br/>days</span></td>
+<td class="green center">31</td>
+<td class="red lasttd center">8</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/the-first-slam-dunk-2022-full-hd-1080p-e-ac3-ac3-ita-ac3-jap-sub-lfi-mkv-t6074344.html" class="cellMainLink">The First Slam Dunk 2022 Full HD 1080p E-AC3 AC3 ITA AC3 JAP SUB-LFi mkv</a>
+</div>
+</td>
+<td class="nobr center" data-size="15414067.2">
+14.7 GB </td>
+<td class="center">eXpOrTeRICV</td>
+<td class="center"><span class="timeago" data-time="1713920787">6<br/>days</span></td>
+<td class="green center">16</td>
+<td class="red lasttd center">9</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType filmType">
+<a href="/mushoku-tensei-ii-isekai-ittara-honki-dasu-part-2-04-720p-multiple-subtitle-bcce5ce7-erai-raws-tgx-t6080485.html" class="cellMainLink">Mushoku Tensei II - Isekai Ittara Honki Dasu Part 2 - 04 (720p)(Multiple Subtitle)(BCCE5CE7)-Erai-raws TGx </a>
+</div>
+</td>
+<td class="nobr center" data-size="728473.6">
+711.4 MB </td>
+<td class="center">TGxGoodies</td>
+<td class="center"><span class="timeago" data-time="1714317741">2<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr> </tbody>
+</table>
+</div>
+<h2>
+<a class="plain" href="/other/">
+Other Torrents
+</a>
+</h2>
+<div>
+<table cellpadding="0" cellspacing="0" class="data frontPageWidget" style="width: 100%">
+<tbody>
+<tr class="firstr">
+<th class="width100perc nopad">
+<a class="fpw-sort">
+torrent name
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+size
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+uploader
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+age
+</a>
+</th>
+<th class="center">
+<a class="fpw-sort">
+seed
+</a>
+</th>
+<th class="lasttd nobr center">
+<a class="fpw-sort">
+leech
+</a>
+</th>
+</tr>
+<tr class="odd">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/marvel-week-04-24-2024-t6075354.html" class="cellMainLink">Marvel Week+ (04-24-2024)</a>
+</div>
+</td>
+<td class="nobr center" data-size="1258291.2">
+1.2 GB </td>
+<td class="center">kileko</td>
+<td class="center"><span class="timeago" data-time="1714003445">5<br/>days</span></td>
+<td class="green center">69</td>
+<td class="red lasttd center">32</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/dc-week-04-25-2024-t6075355.html" class="cellMainLink">DC Week+ (04-25-2024)</a>
+</div>
+</td>
+<td class="nobr center" data-size="568729.6">
+555.4 MB </td>
+<td class="center">kileko</td>
+<td class="center"><span class="timeago" data-time="1714003449">5<br/>days</span></td>
+<td class="green center">57</td>
+<td class="red lasttd center">25</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/coursera-python-for-everybody-specialization-5-course-series-t6075244.html" class="cellMainLink"> Coursera Python for Everybody Specialization - 5 course series</a>
+</div>
+</td>
+<td class="nobr center" data-size="8074035.2">
+7.7 GB </td>
+<td class="center">SunRiseZone</td>
+<td class="center"><span class="timeago" data-time="1713992607">5<br/>days</span></td>
+<td class="green center">89</td>
+<td class="red lasttd center">72</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/korean-barbecue-at-home-50-traditional-recipes-to-entertain-family-and-friends-by-sara-upshaw-epub-t6079289.html" class="cellMainLink">Korean Barbecue at Home: 50 Traditional Recipes to Entertain Family and Friends by Sara Upshaw EPUB</a>
+</div>
+</td>
+<td class="nobr center" data-size="52531.2">
+51.3 MB </td>
+<td class="center">zakareya</td>
+<td class="center"><span class="timeago" data-time="1714231213">3<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/complete-cajun-cookbook-100-home-cooked-bayou-classics-by-ryan-boudreaux-pdf-t6080251.html" class="cellMainLink">Complete Cajun Cookbook: 100 Home-Cooked Bayou Classics by Ryan Boudreaux PDF</a>
+</div>
+</td>
+<td class="nobr center" data-size="10342.4">
+10.1 MB </td>
+<td class="center">zakareya</td>
+<td class="center"><span class="timeago" data-time="1714303265">2<br/>days</span></td>
+<td class="green center">47</td>
+<td class="red lasttd center">9</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/udemy-100-days-of-code-the-complete-python-pro-bootcamp-giga-course-t6080519.html" class="cellMainLink">Udemy - 100 Days of Code: The Complete Python Pro Bootcamp (Giga Course)</a>
+</div>
+</td>
+<td class="nobr center" data-size="26633830.4">
+25.4 GB </td>
+<td class="center">CourseClub</td>
+<td class="center"><span class="timeago" data-time="1714323663">2<br/>days</span></td>
+<td class="green center">64</td>
+<td class="red lasttd center">163</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/the-essential-middle-eastern-cookbook-classic-recipes-made-easy-by-michelle-anderson-pdf-t6080250.html" class="cellMainLink">The Essential Middle Eastern Cookbook: Classic Recipes Made Easy by Michelle Anderson PDF</a>
+</div>
+</td>
+<td class="nobr center" data-size="69734.4">
+68.1 MB </td>
+<td class="center">zakareya</td>
+<td class="center"><span class="timeago" data-time="1714303261">2<br/>days</span></td>
+<td class="green center">33</td>
+<td class="red lasttd center">10</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/start-these-passive-income-businesses-t6076945.html" class="cellMainLink">Start These Passive Income Businesses</a>
+</div>
+</td>
+<td class="nobr center" data-size="1572864.0">
+1.5 GB </td>
+<td class="center">freecoursewb</td>
+<td class="center"><span class="timeago" data-time="1714100933">4<br/>days</span></td>
+<td class="green center">1</td>
+<td class="red lasttd center">118</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/udemy-chatgpt-learning-was-never-this-easy-t6076965.html" class="cellMainLink">Udemy - Chatgpt Learning Was Never This Easy</a>
+</div>
+</td>
+<td class="nobr center" data-size="642150.4">
+627.1 MB </td>
+<td class="center">freecoursewb</td>
+<td class="center"><span class="timeago" data-time="1714100938">4<br/>days</span></td>
+<td class="green center">48</td>
+<td class="red lasttd center">11</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/coursera-modern-robotics-mechanics-planning-and-control-specialization-t6075052.html" class="cellMainLink"> Coursera Modern Robotics: Mechanics, Planning, and Control Specialization</a>
+</div>
+</td>
+<td class="nobr center" data-size="348569.6">
+340.4 MB </td>
+<td class="center">SunRiseZone</td>
+<td class="center"><span class="timeago" data-time="1713971391">6<br/>days</span></td>
+<td class="green center">0</td>
+<td class="red lasttd center">0</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/printed-circuits-handbook-seventh-edition-by-happy-holden-epub-t6080454.html" class="cellMainLink">Printed Circuits Handbook, Seventh Edition by Happy Holden EPUB</a>
+</div>
+</td>
+<td class="nobr center" data-size="44953.6">
+43.9 MB </td>
+<td class="center">zakareya</td>
+<td class="center"><span class="timeago" data-time="1714314133">2<br/>days</span></td>
+<td class="green center">22</td>
+<td class="red lasttd center">11</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/udemy-a-beginners-guide-to-generative-ai-images-video-music-t6078082.html" class="cellMainLink">Udemy - A Beginners Guide To Generative Ai - Images, Video, Music</a>
+</div>
+</td>
+<td class="nobr center" data-size="3250585.6">
+3.1 GB </td>
+<td class="center">freecoursewb</td>
+<td class="center"><span class="timeago" data-time="1714155236">4<br/>days</span></td>
+<td class="green center">47</td>
+<td class="red lasttd center">31</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/the-magic-of-nmap-master-network-scanning-and-hacking-t6076946.html" class="cellMainLink">The Magic of Nmap - Master Network Scanning and Hacking</a>
+</div>
+</td>
+<td class="nobr center" data-size="1887436.8">
+1.8 GB </td>
+<td class="center">freecoursewb</td>
+<td class="center"><span class="timeago" data-time="1714100933">4<br/>days</span></td>
+<td class="green center">45</td>
+<td class="red lasttd center">26</td>
+</tr><tr class="even">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/udemy-machine-learning-data-science-and-generative-ai-with-python-giga-course-t6079248.html" class="cellMainLink">Udemy - Machine Learning, Data Science and Generative AI with Python (Giga Course)</a>
+</div>
+</td>
+<td class="nobr center" data-size="7549747.2">
+7.2 GB </td>
+<td class="center">CourseClub</td>
+<td class="center"><span class="timeago" data-time="1714227601">3<br/>days</span></td>
+<td class="green center">16</td>
+<td class="red lasttd center">24</td>
+</tr><tr class="odd">
+<td>
+<div class="markeredBlock torType Type">
+<a href="/udemy-create-python-programs-with-ai-chatgpt-t6076968.html" class="cellMainLink">Udemy - Create Python Programs with AI (ChatGPT)</a>
+</div>
+</td>
+<td class="nobr center" data-size="1782579.2">
+1.7 GB </td>
+<td class="center">freecoursewb</td>
+<td class="center"><span class="timeago" data-time="1714100938">4<br/>days</span></td>
+<td class="green center">29</td>
+<td class="red lasttd center">46</td>
+</tr> </tbody>
+</table>
+</div>
+</td>
+<td class="sidebarCell">
+<div id="sidebar">
+<div class="sliderbox">
+<h3>
+Latest Searches
+<i class="sliderBoxToggle ka ka16 ka-arrow2-up foldClose">
+</i>
+</h3>
+<ul id="latestSearches" rel="latestSearches" class="showBlockJS">
+</ul>
+</div>
+<div class="sliderbox">
+<h3>
+Friends Links
+<i class="sliderBoxToggle ka ka16 ka-arrow2-up foldClose">
+</i>
+</h3>
+<ul id="friendsLinks" rel="friendsLinks" class="showBlockJS">
+<li>
+<a data-nop href="https://www.1337x.tw" target="_blank" rel="external">1337x </a>
+</li><li>
+<a data-nop href="https://yts.do" target="_blank" rel="external">YTS </a>
+</li><li>
+<a data-nop href="https://thepiratebays.com" target="_blank" rel="external">ThePirateBay </a>
+</li><li>
+<a data-nop href="https://limetorrents.so" target="_blank" rel="external">LimeTorrents </a>
+</li><li>
+<a data-nop href="https://www2.123moviesto.to" target="_blank" rel="external">123Movies </a>
+</li><li>
+<a data-nop href="https://www.hdfull.it" target="_blank" rel="external">HDfull </a>
+</li><li>
+<a data-nop href="https://www.altadefinizione.so" target="_blank" rel="external">Altadefinizione</a>
+</li> </ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<footer class="lightgrey">
+<ul>
+<li><a href="/dmca/">dmca</a></li>
+<li><a target="_blank" href="https://katcr.to">Kickass Torrents</a></li>
+</ul>
+</footer>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56da7f47c93eeed7"></script>
+<script type="text/javascript">
+        if ($.cookie('kat_settings[fpw_column]') != null && $.cookie('kat_settings[fpw_order]')) {
+            var colIndex = $.cookie('kat_settings[fpw_column]');
+            var ascend = $.cookie('kat_settings[fpw_order]');
+            $('.frontPageWidget').each(function() {
+                $(this).find('.firstr th .fpw-sort:eq(' + colIndex + ')').addClass((ascend ? 'sortedAsc': 'sortedDesc'));
+            });
+            sortTables(colIndex, ascend);
+        }
+
+        $('.frontPageWidget .firstr th .fpw-sort').click(function() {
+            var colIndex = $(this).parent().index();
+            var ascend = !$(this).hasClass('sortedAsc') ? 1 : 0;
+            $('.fpw-sort').removeClass('sortedAsc sortedDesc');
+            $('.frontPageWidget').each(function() {
+                $(this).find('.firstr th .fpw-sort:eq(' + colIndex + ')').addClass((ascend ? 'sortedAsc': 'sortedDesc'));
+            });
+            updateFPWsettings(colIndex, ascend);
+            sortTables(colIndex, ascend);
+        });
+        function sortTables(colIndex, ascend) {
+            $('.frontPageWidget').each(function() {
+                var data = [];
+                $('tr:not(.firstr)', $(this)).each(function() {
+                    var name = $('td:first .cellMainLink', $(this)).text();
+                    var id = $('td:first .cellMainLink', $(this)).attr('href').match(/.*-t(\d+)\.html/)[1];
+                    var fileSize = $('td:eq(1)', $(this)).attr('data-size');
+                    var time = $('td:eq(3)', $(this)).attr('data-time');
+                    data.push({
+                        'col0': name,
+                        'col1': padNum(fileSize),
+                        'col2': padNum($('td:eq(2)', $(this)).text()),
+                        'col3': padNum(time),
+                        'col4': padNum($('td:eq(4)', $(this)).text()),
+                        'col5': padNum($('td:eq(5)', $(this)).text()),
+                        'html': $(this).html()
+                    });
+                });
+                data.sort(function(a, b) {
+                    var x = a['col' + colIndex].toLowerCase();
+                    var y = b['col' + colIndex].toLowerCase();
+                    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+                });
+                if (!ascend || ascend == '0') data.reverse();
+                $(this).find('tr:not(.firstr)').remove();
+                for (var i = 0; i < data.length; i++) {
+                    $(this).append('<tr class="' + ((i + 1) % 2 == 0 ? 'even': 'odd') + '">' + data[i].html + '</tr>');
+                }
+            });
+        }
+        function padNum(val) {
+            val = '0000000000000000' + val;
+            return val.substring(val.length - 15);
+        }
+        function updateFPWsettings(t, o) {
+            $.cookie('kat_settings[fpw_column]', t, {
+                expires: 365,
+                path: '/'
+            });
+            $.cookie('kat_settings[fpw_order]', o, {
+                expires: 365,
+                path: '/'
+            });
+        }
+    </script>
+<div style="display:none"><div id="histats_counter"></div>
+
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,3335702,4,511,95,18,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?3335702&101" alt="best counter" border="0"></a></noscript>
+</div>
+<script type="text/javascript" src="//accountantpacketassail.com/dc/3e/b8/dc3eb8bc0fddf104c54bc49364933dd6.js"></script>
+<script type="text/javascript" src="//accountantpacketassail.com/89/79/ff/8979ff2b10c4aafed4e8081a0b4f89b7.js"></script></body>
+</html>

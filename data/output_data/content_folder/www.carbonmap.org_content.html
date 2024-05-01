@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The carbon map</title>
+		<link href='style.css?v=201906031843' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+		<meta property="og:image" content="carbonmap.png">
+		<script type="text/javascript" src="modernizr.js"></script>
+		<script type="text/javascript">
+			if (!Modernizr.hashchange || !Modernizr.svg || typeof document.getElementsByClassName === "undefined") {
+				document.location.href="fail.html";
+			}
+		</script>
+
+		<link href='shading.css?v=201409230944' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript">//<![CDATA[
+			var carbonmap_data_unit = {
+				// Maps
+				"Area": "{{unit_sqkm}}",
+				"Population": "{{unit_people}}",
+				"GDP": "$",
+
+				"Extraction": "{{unit_mT}}",
+				"Emissions": "{{unit_mT}}",
+				"PetersEmissions": "{{unit_mT}}",
+				"Consumption": "{{unit_mT}}",
+				"Historical": "{{unit_mT}}",
+				"Reserves": "{{unit_mT}}",
+
+				"PeopleAtRisk": "{{unit_people}}",
+				"SeaLevel": "{{unit_people}}",
+				"Poverty": "{{unit_people}}",
+
+				// Shading
+				"EmissionsChange": "%",
+				"CO2perCapita": "{{unit_T}}",
+				"GDPperCapita": "$",
+				"PopulationGrowth": "%"
+			};
+		//]]>
+		</script>
+		<script type="text/javascript" src="carbonmap.js?v=202009021747"></script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30249221-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</head>
+	<body class="lang-any">
+
+		<!--Facebook button script-->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=703862873033616&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div id="wrapper">
+			<div id="masthead">
+				<div id="header-title"><a href="/"><span class="text" data-id="title"></span></a></div>
+				<div id="credit-and-langs">
+					<a href="https://kiln.digital" target="_top"><span id="credit" class="text" data-id="credit"></span></a> 
+					<div id="lang-menu">
+						<div><a><span id="current-language"></span> <i class="fa fa-chevron-down"></i></a></div>
+						<div id="menu-container">
+							<div class="language" data-target="en">English</div>
+							<div class="language" data-target="es">EspaÃ±ol</div>
+							<div class="language" data-target="de">Deutsch</div>
+							<div class="language" data-target="fr">FranÃ§ais</div>
+							<div class="language" data-target="fa">ÙØ§Ø±Ø³Û</div>
+							<div class="language" data-target="pt">PortuguÃªs</div>
+							<div class="language" data-target="sk">SlovenÄina</div>
+						</div>
+					</div>
+				</div>
+				<div id="shares">
+					<div id="facebookshare">
+						<div class="fb-share-button" data-href="http://www.carbonmap.org" data-layout="button_count" data-width="200px"></div>
+					</div>
+					<div id="twittershare">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.carbonmap.org">Tweet</a>
+					</div>
+				</div>
+			</div>
+			<div id="mainarea">
+				<div id="navigation">
+					<div class="navitems navitemsselected" id="nav-_raw">
+						<a href="#"><div id="navglobe"><i class="fa fa-refresh"></i></div></a>
+					</div>
+					<div id="reference" class="navblock">
+						<div class="navtitle"><div class="text" data-id="navtitle_reference"></div></div>
+						<div class="navitemscontainer">
+							<div class="navitems red" id="nav-Area"><a href="#Area" class="text" data-id="map_Area"></a>
+							</div><div class="navitems green" id="nav-Population"><a href="#Population"class="text" data-id="map_Population"></a>
+							</div><div class="navitems pink" id="nav-GDP"><a href="#GDP"class="text" data-id="map_GDP"></a></div>
+						</div>
+					</div>
+					<div id="responsibility" class="navblock">
+						<div class="navtitle"><div class="text" data-id="navtitle_responsibility"></div></div>
+						<div class="navitemscontainer">
+							<div class="navitems orange" id="nav-Extraction"><a href="#Extraction"class="text" data-id="map_Extraction"></a>
+							</div><div class="navitems cyan" id="nav-Emissions"><a href="#Emissions" class="text" data-id="map_Emissions"></a>
+							</div><div class="navitems purple" id="nav-Consumption"><a href="#Consumption" class="text" data-id="map_Consumption"></a>
+							</div><div class="navitems red" id="nav-Historical"><a href="#Historical" class="text" data-id="map_Historical"></a>
+							</div><div class="navitems green" id="nav-Reserves"><a href="#Reserves" class="text" data-id="map_Reserves"></a></div>
+						</div>
+					</div>
+					<div id="vulnerability" class="navblock">
+						<div class="navtitle"><div class="text" data-id="navtitle_vulnerability"></div></div>
+						<div class="navitemscontainer">
+							<div class="navitems pink" id="nav-PeopleAtRisk"><a href="#PeopleAtRisk" class="text" data-id="map_PeopleAtRisk"></a>
+							</div><div class="navitems orange" id="nav-SeaLevel"><a href="#SeaLevel" class="text" data-id="map_SeaLevel"></a>
+							</div><div class="navitems cyan" id="nav-Poverty"><a href="#Poverty" class="text" data-id="map_Poverty"></a></div>
+						</div>
+					</div>
+				</div>
+				<div id="maparea" class="shading-Continents">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="map" viewBox="915 -140 2153 1880">
+						<path id="bounds" d="M 0 0 L 3280 0 3280 1800 0 1800 Z"/>
+					</svg>
+					<div id="map-placeholder"></div>
+					<div id="loading">
+						<img src="black-002-loading.gif">
+						<div class="text" data-id="loading"></div>
+					</div>
+
+				</div>
+				<div id="play-intro">
+					<div id="play-intro-inner">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+							<circle id="talkie-player-outer" cx="50" cy="50" r="50" fill="rgba(0,0,0,0.5)"></circle>
+							<path id="talkie-player-segment" transform="translate(50,50) rotate(180)" fill="white"></path>
+							<circle id="talkie-player-inner" cx="50" cy="50" r="37" fill="rgba(40,40,40,1)"></circle>
+							<polygon id="play-icon" pointer-events="none" class="play-pause" transform="translate(4,6)" points="67.304,45.832 34.619,67.329 32.47,65.498 32.47,22.258 35.23,20.67 67.304,43.878"></polygon>
+							<path id="pause-icon" pointer-events="none" class="play-pause" transform="translate(4,6)" d="M36.499,63.559H29.98L26.72,60.3V27.701l3.26-3.26h6.519l3.157,3.26V60.3L36.499,63.559z M62.475,63.559h-6.519L52.695,60.3V27.701l3.261-3.26h6.519l3.157,3.26V60.3L62.475,63.559z"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="info-and-shade">
+				<div id="shade" class="panel">
+					<div id="shade-head" class="text" data-id="shade_by"></div>
+					<form id="shade-form">
+						<select id="shadedropdown">
+							<option value="Continents" selected="selected" class="text" data-id="shading_Continents"></option>
+							<option value="EmissionsChange" class="text" data-id="shading_EmissionsChange"></option>
+							<option value="CO2perCapita" class="text" data-id="shading_CO2perCapita"></option>
+							<option value="GDPperCapita" class="text" data-id="shading_GDPperCapita"></option>
+							<option value="PopulationGrowth" class="text" data-id="shading_PopulationGrowth"></option>
+						</select>
+					</form>
+					<div id="legendbox"></div>
+				</div>
+				<div id="infoarea" class="panel">
+					<i class="fa fa-info-circle" style="float: left; margin: 12px 5px 0 0; font-size: 20px"></i>
+					<div id="infoareaunselected">
+						<div class="infoarea-heading text" data-id="infobox_heading"></div>
+						<div id="about"></div>
+					</div>
+					<div id="selectedcountryinfo">
+						<div id="selectedcountrydataarea1" class="data-area">
+							<div id="selectedcountryname" class="infoarea-heading"></div>
+						</div>
+						<div id="selectedcountrydataarea2" class="data-area">
+							<div id="selectedcountrydatadescription2" class="data-label"></div>
+							<div id="selectedcountrydataresult2" class="data-result"></div>
+							<div id="selectedcountryrank2" class="data-rank"></div>
+						</div>
+						<div id="selectedcountrydataarea3" class="data-area">
+							<div id="selectedcountrydatadescription3" class="data-label"></div>
+							<div id="selectedcountrydataresult3" class="data-result"></div>
+							<div id="selectedcountryrank3" class="data-rank"></div>
+						</div>
+					</div>
+				</div>
+				<div id="footer">
+					<div class="footerlink"><a target="_top" href="http://www.carbonmap.org/about.html" class="text" data-id="link_about"></a></div>
+					<div class="footerlink" id="sources-link"><a target="_top" href="http://www.carbonmap.org/sources.html" class="text" data-id="link_sources"></a></div>
+				</div>
+			</div>
+		</div>
+		<script src="//interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js"></script>
+		<script>
+			iframeMessenger.enableAutoResize();
+			iframeMessenger.getLocation(function(parent_url_obj) {
+				var hash = parent_url_obj.hash;
+				if (hash != "") window.location.hash = hash;
+			});
+		</script>
+	</body>
+</html>

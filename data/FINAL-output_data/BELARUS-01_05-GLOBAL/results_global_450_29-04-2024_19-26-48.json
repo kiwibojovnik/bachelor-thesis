@@ -1,0 +1,1409 @@
+{
+    "https://www.fotki.com": {
+        "Time": 8.33,
+        "URL": "https://www.fotki.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.12.236.31"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.12.236.31",
+        "PING Status": "OK",
+        "PING IP": "185.12.236.31",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 73949,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 23:18:45 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "11999",
+            "Connection": "keep-alive",
+            "Cache-control": "no-cache,no-store,private",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.fotki.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "fotki.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04FBBC895677E09EFA7361055ADC63839A2C",
+            "notBefore": "Mar 13 09:16:20 2024 GMT",
+            "notAfter": "Jun 11 09:16:19 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.fotki.com"
+                ],
+                [
+                    "DNS",
+                    "fotki.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 19:18:52"
+    },
+    "http://www.fotolog.com": {
+        "Time": 9.47,
+        "URL": "http://www.fotolog.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.85.104",
+            "172.67.204.156"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.85.104",
+        "PING Status": "OK",
+        "PING IP": "104.21.85.104",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.fotolog.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.21.85.104",
+                "172.67.204.156"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 227493,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 23:19:28 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding,User-Agent",
+            "Last-Modified": "Mon, 29 Apr 2024 07:36:40 GMT",
+            "Cache-Control": "max-age=0",
+            "Expires": "Mon, 29 Apr 2024 23:19:28 GMT",
+            "X-Powered-By": "PleskLin",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=vRHS2ovjhadBuRkQpXKNQ07SWpEbVmzEhodVoR4%2BSiM9EKrA%2BJ1sI%2BQXutpKif1e7hDVGES%2FWaweio0KetBAHMnytV9XZ7FGI4rn2a20uRBSpF3qP9sOwbfMrLr0LWfRalSP\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c304652d4219a0-FRA",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.fotolog.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "fotolog.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "045B1101AD380AB901372992AB62EE59ABEE",
+            "notBefore": "Apr  4 03:15:50 2024 GMT",
+            "notAfter": "Jul  3 03:15:49 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.fotolog.com"
+                ],
+                [
+                    "DNS",
+                    "fotolog.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 19:19:37"
+    },
+    "https://www.foxnews.com": {
+        "Time": 4.47,
+        "URL": "https://www.foxnews.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "139.45.207.67",
+            "139.45.207.27"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "139.45.207.67",
+        "PING Status": "OK",
+        "PING IP": "139.45.207.67",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 641600,
+        "Headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "ETag": "\"4d203ececcd3664c11e80e4bcee2a6b5\"",
+            "x-amz-server-side-encryption": "AES256",
+            "Last-Modified": "Mon, 29 Apr 2024 23:16:12 GMT",
+            "X-Debug-Backend": "prod_fn_hp_foxnews",
+            "X-Debug-Url": "/index.html",
+            "Accept-Ranges": "bytes",
+            "Accept-CH": "Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA, Sec-CH-UA-Arch, Sec-CH-UA-Bitness",
+            "Permissions-Policy": "ch-ua-model=*,ch-ua-platform-version=*,ch-ua=*,ch-ua-mobile=*,ch-ua-platform=*,ch-ua-full-version-list=*,ch-ua-arch=*,ch-ua-bitness=*,ch-ua-model=*",
+            "X-Served-By": "cache-iad-kiad7000161-IAD, cache-iad-kiad7000167-IAD, cache-ams21032-AMS",
+            "X-Cache-Hits": "0, 6, 1",
+            "X-Timer": "S1714432585.974454,VS0,VE2",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Expires": "Mon, 29 Apr 2024 23:20:08 GMT",
+            "Pragma": "no-cache",
+            "Date": "Mon, 29 Apr 2024 23:20:08 GMT",
+            "Content-Length": "61979",
+            "Connection": "keep-alive",
+            "Access-Control-Allow-Credentials": "false",
+            "Access-Control-Max-Age": "86400",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS",
+            "Access-Control-Allow-Origin": "*",
+            "Strict-Transport-Security": "max-age=7884000 ; preload",
+            "Surrogate-Control": "max-age=1200",
+            "Cache-Control": "max-age=60, public"
+        },
+        "HTML Content": "www.foxnews.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Los Angeles"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Fox Media LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.foxnews.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0D3CA29257697E21B68357E99B3E7F5B",
+            "notBefore": "Aug 28 00:00:00 2023 GMT",
+            "notAfter": "Aug 27 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.foxnews.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 19:20:12"
+    },
+    "https://www.frc.org": {
+        "Time": 28.78,
+        "URL": "https://www.frc.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "64.196.237.41"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "64.196.237.41",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0007481575012207031
+            ],
+            [
+                "212.98.161.17",
+                0.0013148784637451172
+            ],
+            [
+                "185.11.76.22",
+                0.0012204647064208984
+            ],
+            [
+                "185.11.76.28",
+                0.0014040470123291016
+            ],
+            [
+                "87.245.242.102",
+                0.005409717559814453
+            ],
+            [
+                "87.245.232.252",
+                0.04718971252441406
+            ],
+            [
+                "4.68.74.110",
+                0.031211376190185547
+            ],
+            [
+                "64.125.29.94",
+                0.12461090087890625
+            ],
+            [
+                "64.125.29.84",
+                0.11444091796875
+            ],
+            [
+                "80.91.254.91",
+                0.16806936264038086
+            ],
+            [
+                "62.115.56.65",
+                0.11779165267944336
+            ],
+            [
+                "74.124.244.97",
+                0.16971158981323242
+            ],
+            [
+                "24.247.247.8",
+                0.14519643783569336
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 38115,
+        "Headers": {
+            "date": "Mon, 29 Apr 2024 23:21:03 GMT",
+            "server": "Apache",
+            "set-cookie": "CFID=234920415; Expires=Wed, 22-Apr-2054 23:21:03 GMT; Path=/; Secure; HttpOnly, CFTOKEN=42e7f2c5fd0d41d2-B99E39CA-C4CD-8A2B-499450A2B1888525; Expires=Wed, 22-Apr-2054 23:21:03 GMT; Path=/; Secure; HttpOnly, FRCUID=\"\"; Path=/, CFGLOBALS=urltoken%3DCFID%23%3D234920415%26CFTOKEN%23%3D42e7f2c5fd0d41d2%2DB99E39CA%2DC4CD%2D8A2B%2D499450A2B1888525%23lastvisit%3D%7Bts%20%272024%2D04%2D29%2019%3A21%3A03%27%7D%23hitcount%3D2%23timecreated%3D%7Bts%20%272024%2D04%2D29%2019%3A21%3A03%27%7D%23cftoken%3D42e7f2c5fd0d41d2%2DB99E39CA%2DC4CD%2D8A2B%2D499450A2B1888525%23cfid%3D234920415%23; Expires=Wed, 22-Apr-2054 23:21:03 GMT; Path=/; Secure; HttpOnly",
+            "transfer-encoding": "chunked",
+            "content-type": "text/html;charset=UTF-8",
+            "x-haproxy-version": "new"
+        },
+        "HTML Content": "www.frc.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "frc.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "032482E2D3E8B9E7F0D8101F4A7606454BBA",
+            "notBefore": "Mar 25 21:39:33 2024 GMT",
+            "notAfter": "Jun 23 21:39:32 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "frc.org"
+                ],
+                [
+                    "DNS",
+                    "www.frc.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 19:21:11"
+    },
+    "http://www.freedominfo.org": {
+        "Time": 33.08,
+        "URL": "http://www.freedominfo.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "45.60.23.207"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "45.60.23.207",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.001004934310913086
+            ],
+            [
+                "212.98.161.17",
+                0.0008842945098876953
+            ],
+            [
+                "185.11.76.22",
+                0.0010006427764892578
+            ],
+            [
+                "185.11.76.30",
+                0.001337289810180664
+            ],
+            [
+                "80.81.193.87",
+                0.028189897537231445
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 212,
+        "Headers": {
+            "Content-Type": "text/html",
+            "Cache-Control": "no-cache, no-store",
+            "Connection": "close",
+            "Content-Length": "212",
+            "X-Iinfo": "13-37395528-0 0NNN RT(1714432963545 0) q(0 -1 -1 0) r(0 -1) B10(4,314,0) U18",
+            "Set-Cookie": "visid_incap_459299=bJC+dLXQSJm8SxW1tWQcucMrMGYAAAAAQUIPAAAAAAAktqNd7bshXrnOXYWmD6/L; expires=Tue, 29 Apr 2025 22:43:47 GMT; HttpOnly; path=/; Domain=.freedominfo.org, incap_ses_877_459299=9bVRcQg9OBw1R7V/4borDMMrMGYAAAAAFoeC1F96DFFa2tIBY69jsg==; path=/; Domain=.freedominfo.org"
+        },
+        "HTML Content": "www.freedominfo.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "imperva.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Atlas R3 DV TLS CA 2024 Q2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "01490CD639EE0C38D6D75504E77B2463",
+            "notBefore": "Apr 29 22:22:49 2024 GMT",
+            "notAfter": "Oct 26 22:22:49 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "ffaphotography.com"
+                ],
+                [
+                    "DNS",
+                    "packardparts.org"
+                ],
+                [
+                    "DNS",
+                    "www.delawareblack.com"
+                ],
+                [
+                    "DNS",
+                    "metropolisphysicaltherapy.com"
+                ],
+                [
+                    "DNS",
+                    "mmsales.biz"
+                ],
+                [
+                    "DNS",
+                    "breakthroughhealthllc.com"
+                ],
+                [
+                    "DNS",
+                    "colnuck.com"
+                ],
+                [
+                    "DNS",
+                    "www.metropolisphysicaltherapy.com"
+                ],
+                [
+                    "DNS",
+                    "www.servicioshvac.com"
+                ],
+                [
+                    "DNS",
+                    "www.elementaltext.com"
+                ],
+                [
+                    "DNS",
+                    "www.hospitalsantamaria.com.ec"
+                ],
+                [
+                    "DNS",
+                    "daylightdonuts.com"
+                ],
+                [
+                    "DNS",
+                    "fbcwv.org"
+                ],
+                [
+                    "DNS",
+                    "lolpettreats.com"
+                ],
+                [
+                    "DNS",
+                    "www.druganddeviceregister.com"
+                ],
+                [
+                    "DNS",
+                    "www.e-registrations.com"
+                ],
+                [
+                    "DNS",
+                    "www.cbarcservices.com"
+                ],
+                [
+                    "DNS",
+                    "executorsgroup.com"
+                ],
+                [
+                    "DNS",
+                    "fgclalumni.org"
+                ],
+                [
+                    "DNS",
+                    "www.mindconnectionsnyc.com"
+                ],
+                [
+                    "DNS",
+                    "www.desmotravel.com"
+                ],
+                [
+                    "DNS",
+                    "freedominfo.org"
+                ],
+                [
+                    "DNS",
+                    "buyblackroses.com"
+                ],
+                [
+                    "DNS",
+                    "www.emilyeadrian.com"
+                ],
+                [
+                    "DNS",
+                    "www.fotoproart.com"
+                ],
+                [
+                    "DNS",
+                    "castlechalet.com"
+                ],
+                [
+                    "DNS",
+                    "techworkers.com"
+                ],
+                [
+                    "DNS",
+                    "advantageprogress.com"
+                ],
+                [
+                    "DNS",
+                    "www.cdstudies.com"
+                ],
+                [
+                    "DNS",
+                    "doncrosby.net"
+                ],
+                [
+                    "DNS",
+                    "www.mmsales.biz"
+                ],
+                [
+                    "DNS",
+                    "www.johnnyhuntington.com"
+                ],
+                [
+                    "DNS",
+                    "www.doncrosby.net"
+                ],
+                [
+                    "DNS",
+                    "zionbenefits.org"
+                ],
+                [
+                    "DNS",
+                    "www.wilmingtonlibrary.org"
+                ],
+                [
+                    "DNS",
+                    "laxsmog.com"
+                ],
+                [
+                    "DNS",
+                    "www.lafar.net"
+                ],
+                [
+                    "DNS",
+                    "portofalbany.us"
+                ],
+                [
+                    "DNS",
+                    "www.jmsinteriors.net"
+                ],
+                [
+                    "DNS",
+                    "www.ceip.us"
+                ],
+                [
+                    "DNS",
+                    "www.jlsfrc.org"
+                ],
+                [
+                    "DNS",
+                    "www.staycastle.ca"
+                ],
+                [
+                    "DNS",
+                    "christinecoughlin.com"
+                ],
+                [
+                    "DNS",
+                    "www.breakthroughhealthllc.com"
+                ],
+                [
+                    "DNS",
+                    "imperva.com"
+                ],
+                [
+                    "DNS",
+                    "www.georgiaheadstart.org"
+                ],
+                [
+                    "DNS",
+                    "www.techworkers.com"
+                ],
+                [
+                    "DNS",
+                    "elementaltext.com"
+                ],
+                [
+                    "DNS",
+                    "www.creativesanctuary.com"
+                ],
+                [
+                    "DNS",
+                    "druganddeviceregister.com"
+                ],
+                [
+                    "DNS",
+                    "www.nabateanrestaurant.com"
+                ],
+                [
+                    "DNS",
+                    "brandywinevethospital.com"
+                ],
+                [
+                    "DNS",
+                    "aeian.org"
+                ],
+                [
+                    "DNS",
+                    "www.castlechalet.com"
+                ],
+                [
+                    "DNS",
+                    "altapier.com"
+                ],
+                [
+                    "DNS",
+                    "fotoproart.com"
+                ],
+                [
+                    "DNS",
+                    "www.zionbenefits.org"
+                ],
+                [
+                    "DNS",
+                    "www.christinecoughlin.com"
+                ],
+                [
+                    "DNS",
+                    "www.fbcwv.org"
+                ],
+                [
+                    "DNS",
+                    "creativesanctuary.com"
+                ],
+                [
+                    "DNS",
+                    "www.goodsamautoministries.org"
+                ],
+                [
+                    "DNS",
+                    "cbarcservices.com"
+                ],
+                [
+                    "DNS",
+                    "www.allstardriving.org"
+                ],
+                [
+                    "DNS",
+                    "desmotravel.com"
+                ],
+                [
+                    "DNS",
+                    "theshedguybuildings.com"
+                ],
+                [
+                    "DNS",
+                    "www.executorsgroup.com"
+                ],
+                [
+                    "DNS",
+                    "e-registrations.com"
+                ],
+                [
+                    "DNS",
+                    "www.freedominfo.org"
+                ],
+                [
+                    "DNS",
+                    "www.bonaventurepress.com"
+                ],
+                [
+                    "DNS",
+                    "nabateanrestaurant.com"
+                ],
+                [
+                    "DNS",
+                    "homescaner.com"
+                ],
+                [
+                    "DNS",
+                    "www.ffaphotography.com"
+                ],
+                [
+                    "DNS",
+                    "www.portofalbany.us"
+                ],
+                [
+                    "DNS",
+                    "hospitalsantamaria.com.ec"
+                ],
+                [
+                    "DNS",
+                    "www.laxsmog.com"
+                ],
+                [
+                    "DNS",
+                    "cdstudies.com"
+                ],
+                [
+                    "DNS",
+                    "wilmingtonlibrary.org"
+                ],
+                [
+                    "DNS",
+                    "www.theshedguybuildings.com"
+                ],
+                [
+                    "DNS",
+                    "jlsfrc.org"
+                ],
+                [
+                    "DNS",
+                    "www.aeian.org"
+                ],
+                [
+                    "DNS",
+                    "www.packardparts.org"
+                ],
+                [
+                    "DNS",
+                    "www.advantageprogress.com"
+                ],
+                [
+                    "DNS",
+                    "www.altapier.com"
+                ],
+                [
+                    "DNS",
+                    "www.thermsource.com"
+                ],
+                [
+                    "DNS",
+                    "bayareaacting.com"
+                ],
+                [
+                    "DNS",
+                    "johnnyhuntington.com"
+                ],
+                [
+                    "DNS",
+                    "staycastle.ca"
+                ],
+                [
+                    "DNS",
+                    "www.colnuck.com"
+                ],
+                [
+                    "DNS",
+                    "delawareblack.com"
+                ],
+                [
+                    "DNS",
+                    "leashnwellness.com"
+                ],
+                [
+                    "DNS",
+                    "goodsamautoministries.org"
+                ],
+                [
+                    "DNS",
+                    "jmsinteriors.net"
+                ],
+                [
+                    "DNS",
+                    "www.homescaner.com"
+                ],
+                [
+                    "DNS",
+                    "www.lolpettreats.com"
+                ],
+                [
+                    "DNS",
+                    "emilyeadrian.com"
+                ],
+                [
+                    "DNS",
+                    "servicioshvac.com"
+                ],
+                [
+                    "DNS",
+                    "www.fgclalumni.org"
+                ],
+                [
+                    "DNS",
+                    "www.bayareaacting.com"
+                ],
+                [
+                    "DNS",
+                    "www.brandywinevethospital.com"
+                ],
+                [
+                    "DNS",
+                    "www.leashnwellness.com"
+                ],
+                [
+                    "DNS",
+                    "www.daylightdonuts.com"
+                ],
+                [
+                    "DNS",
+                    "mindconnectionsnyc.com"
+                ],
+                [
+                    "DNS",
+                    "www.buyblackroses.com"
+                ],
+                [
+                    "DNS",
+                    "thermsource.com"
+                ],
+                [
+                    "DNS",
+                    "georgiaheadstart.org"
+                ],
+                [
+                    "DNS",
+                    "allstardriving.org"
+                ],
+                [
+                    "DNS",
+                    "ceip.us"
+                ],
+                [
+                    "DNS",
+                    "lafar.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/ca/gsatlasr3dvtlsca2024q2"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsatlasr3dvtlsca2024q2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/ca/gsatlasr3dvtlsca2024q2.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 19:22:50"
+    },
+    "http://www.freehomepage.com": {
+        "Time": 11.43,
+        "URL": "http://www.freehomepage.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "208.97.180.242"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "208.97.180.242",
+        "PING Status": "OK",
+        "PING IP": "208.97.180.242",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 63301,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 23:23:25 GMT",
+            "Server": "Apache",
+            "Vary": "accept,content-type,Accept-Encoding,User-Agent",
+            "Link": "<http://www.freehomepage.com/wp-json/>; rel=\"https://api.w.org/\", <http://www.freehomepage.com/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\", <https://wp.me/PadgA1-6>; rel=shortlink",
+            "Upgrade": "h2",
+            "Connection": "Upgrade, Keep-Alive",
+            "Cache-Control": "max-age=600",
+            "Expires": "Mon, 29 Apr 2024 23:33:25 GMT",
+            "Content-Encoding": "gzip",
+            "Keep-Alive": "timeout=5, max=100",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.freehomepage.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 19:23:33"
+    },
+    "http://www.freeservers.com": {
+        "Time": 10.61,
+        "URL": "http://www.freeservers.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "64.136.20.36"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "64.136.20.36",
+        "PING Status": "OK",
+        "PING IP": "64.136.20.36",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 19014,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 23:24:04 GMT",
+            "Server": ".V16 Apache",
+            "Content-length": "19014",
+            "Keep-Alive": "timeout=5, max=999994",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html"
+        },
+        "HTML Content": "www.freeservers.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 19:24:13"
+    },
+    "https://www.freespeech.com": {
+        "Time": 21.26,
+        "URL": "https://www.freespeech.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.98.224",
+            "188.114.99.224"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.99.224",
+        "PING Status": "OK",
+        "PING IP": "188.114.99.224",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://freespeech.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "172.67.73.106",
+                "104.26.4.73",
+                "104.26.5.73"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 98997,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 23:25:08 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "link": "<https://freespeech.com/wp-json/>; rel=\"https://api.w.org/\", <https://wp.me/kuGN>; rel=shortlink",
+            "vary": "Accept-Encoding,User-Agent",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=WPsoJplM%2FG4C9Tzbx1TeEDf0BIE73utlU%2BtEg8NgLRTUyVLno1AWMJALPkr%2BTcZLY3J9g4hA1xJoYOECUIuAqtqR2XLjRKRA2T%2FCNxDWdjWfSLhqc9L3HGblIQABbhJQ\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c30ca5bab39176-FRA",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.freespeech.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "freespeech.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "A0DC753CAF8CEF950E7230E87222D59F",
+            "notBefore": "Mar  9 17:29:39 2024 GMT",
+            "notAfter": "Jun  7 17:29:38 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "freespeech.com"
+                ],
+                [
+                    "DNS",
+                    "*.freespeech.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/pyK2LNWJbW4"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/r9rfs6UGIs0.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 19:25:22"
+    },
+    "https://freespeech.org": {
+        "Time": 7.68,
+        "URL": "https://freespeech.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "141.193.213.20",
+            "141.193.213.21"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "141.193.213.20",
+        "PING Status": "OK",
+        "PING IP": "141.193.213.20",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 148636,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 23:26:09 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "x-powered-by": "WP Engine",
+            "Link": "<https://freespeech.org/wp-json/>; rel=\"https://api.w.org/\", <https://freespeech.org/wp-json/wp/v2/pages/12>; rel=\"alternate\"; type=\"application/json\", <https://freespeech.org/p/12>; rel=shortlink",
+            "X-Cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "X-Cache": "MISS",
+            "X-Cache-Group": "normal",
+            "Content-Security-Policy": "upgrade-insecure-requests, upgrade-insecure-requests",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Type-Options": "nosniff",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "Permissions-Policy": "geolocation=(self https://example.com); microphone=()",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload, max-age=63072000; includeSubDomains; preload",
+            "CF-Cache-Status": "DYNAMIC",
+            "Set-Cookie": "__cf_bm=AMlhcvga4JrwrLxm7Rm23lhgA0SvmsmhFo7lcn6Gnu0-1714433169-1.0.1.1-kSewxkHaevc3_9YzNHJsYZLmAvG5Ya2yV9tM.crEGN7mNGt7jWl_OJMPDm4B6NE_Q4tUOeGSzRzPYc9PEyOSZw; path=/; expires=Mon, 29-Apr-24 23:56:09 GMT; domain=.freespeech.org; HttpOnly; Secure; SameSite=None",
+            "Server": "cloudflare",
+            "CF-RAY": "87c30e227a92380d-FRA",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "freespeech.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "freespeech.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0CA4DCF55A3F51B149FE8331C4862C0B",
+            "notBefore": "Jun 20 00:00:00 2023 GMT",
+            "notAfter": "Jun 18 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "freespeech.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 19:26:14"
+    },
+    "https://www.freespeechcoalition.com": {
+        "Time": 5.91,
+        "URL": "https://www.freespeechcoalition.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.66.160",
+            "172.67.205.109"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.66.160",
+        "PING Status": "OK",
+        "PING IP": "104.21.66.160",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 168692,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 23:26:43 GMT",
+            "Content-Type": "text/html;charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Age": "14927",
+            "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+            "set-cookie": "crumb=Be29pQmoBxGSNWY4NjBkY2MzMThhODdlZGI5YzRmZGJiNGQ1OTUx;Secure;Path=/",
+            "strict-transport-security": "max-age=0",
+            "vary": "Accept-Encoding",
+            "x-content-type-options": "nosniff",
+            "x-contextid": "7wiITOV6/D9SYYxZp",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=UQn6F6X7zIDAMga9whPU9Pz9s%2FW3npeEgr76FyufdEdKN5a5gGJwZa7ibBfBFAmHIszkrwEAUsadkGqdxWBocgZRLXx2slYDaBr24YwAelCwGp757hIyf3YJgUZX9ThNsLemn%2BRtBGyY7PoCj0k%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c30f002ef334e0-WAW",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.freespeechcoalition.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "freespeechcoalition.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "043B0F9D06CFB2A42176D75D840C52C9ABA8",
+            "notBefore": "Mar 22 19:05:38 2024 GMT",
+            "notAfter": "Jun 20 19:05:37 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.freespeechcoalition.com"
+                ],
+                [
+                    "DNS",
+                    "freespeechcoalition.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 19:26:48"
+    }
+}

@@ -1,0 +1,946 @@
+{
+    "https://matrix.org": {
+        "Time": 4.5,
+        "URL": "https://matrix.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.2.63",
+            "104.20.76.252",
+            "104.20.77.252"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.20.76.252",
+        "PING Status": "OK",
+        "PING IP": "104.20.76.252",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 9046,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 09:46:05 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "cache-control": "public, max-age=14400, must-revalidate",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "SAMEORIGIN",
+            "x-xss-protection": "1; mode=block",
+            "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=fHoY2hcgZKwyScWVUOylcQ%2BaekAgdtvUPxsg8sRFJZLu6bqF%2F6%2FLQJl5SDlsxLp4OaqrFgHfFzGQ9y1u0AKLRJgLLL65CPjfkOWTnCho0yJS%2FNQfE3zj1P5pxxRtZX2LtCIC8FdN7aD%2FCQobDMGxUH59pgJA6W8%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "vary": "Accept-Encoding",
+            "permissions-policy": "interest-cohort=()",
+            "CF-Cache-Status": "HIT",
+            "Age": "220",
+            "Server": "cloudflare",
+            "CF-RAY": "87ced7a54f3a30e8-FRA",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "matrix.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "matrix.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0445E0890D0CCAD2E5A90F125ED98CD2BFFD",
+            "notBefore": "Apr  2 01:46:44 2024 GMT",
+            "notAfter": "Jul  1 01:46:43 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.matrix.org"
+                ],
+                [
+                    "DNS",
+                    "matrix.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 11:46:09"
+    },
+    "https://element.io": {
+        "Time": 4.82,
+        "URL": "https://element.io",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.22.49.198",
+            "172.67.12.112",
+            "104.22.48.198"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.48.198",
+        "PING Status": "OK",
+        "PING IP": "104.22.48.198",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 127610,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 09:46:49 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "cache-control": "max-age=1800",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "content-security-policy": "default-src 'self'; form-action 'self' https://*.hsforms.com; object-src 'self'; connect-src 'self' https://api.github.com https://*.hsforms.com https://element.io https://*.hs-banner.com https://forms-eu1.hscollectedforms.net https://api-eu1.hubapi.com; media-src 'self' https://element.io; style-src 'self' 'unsafe-inline' https://element.io https://*.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://element.io data: https://fonts.gstatic.com; img-src 'self' https://element.io data: https://matomo.riot.im/matomo.php https://*.hsforms.com https://*.hubspot.com https://px.ads.linkedin.com/; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://element.io https://cdnjs.cloudflare.com https://*.cloudfront.net https://ajax.googleapis.com https://matomo.riot.im/matomo.js https://*.hsforms.net https://*.hsforms.com https://*.hs-scripts.com https://*.hs-analytics.net https://*.hs-banner.com https://js-eu1.hsadspixel.net/fb.js https://js-eu1.hscollectedforms.net/collectedforms.js  https://snap.licdn.com/li.lms-analytics/insight.min.js https://snap.licdn.com/li.lms-analytics/insight.old.min.js; child-src 'self' https://*.hsforms.com; frame-src youtube.com www.youtube-nocookie.com https://*.hsforms.com;",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "sameorigin",
+            "x-xss-protection": "1; mode=block",
+            "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=SMV4FFBe3ec6X4UO9RR%2B76lrSS9RkNLWV2BoJwCtMZ74tcq6CWZpLnO%2BtZSpEecRZ6Kj5hfr5PayM5BphHSoNiO6T4xVgj78HU4klMLt0bxlKplfRICQQsAys9VGd3fNyvKyiy2uewY9mOxHKe32Cgmkly4o2f5hxgwD\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "vary": "Accept-Encoding",
+            "permissions-policy": "interest-cohort=()",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87ced8bb9ca430e4-FRA",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "element.io_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "element.io"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "77C6D24607B9E16711445338FB7C6FEE",
+            "notBefore": "Apr 10 12:15:16 2024 GMT",
+            "notAfter": "Jul  9 12:15:15 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "element.io"
+                ],
+                [
+                    "DNS",
+                    "*.element.io"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/pFggkmhIrpI"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/htAIIEEtXcY.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 11:46:53"
+    },
+    "https://app.element.io": {
+        "Time": 4.87,
+        "URL": "https://app.element.io",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.22.49.198",
+            "172.67.12.112",
+            "104.22.48.198"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.49.198",
+        "PING Status": "OK",
+        "PING IP": "104.22.49.198",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 7818,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 09:47:59 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "last-modified": "Tue, 23 Apr 2024 13:07:23 GMT",
+            "vary": "Accept-Encoding",
+            "x-xss-protection": "1; mode=block",
+            "x-content-type-options": "nosniff",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "x-frame-options": "sameorigin",
+            "cache-control": "no-cache",
+            "permissions-policy": "interest-cohort=()",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87ceda6f6f521c60-FRA",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "app.element.io_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "element.io"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "77C6D24607B9E16711445338FB7C6FEE",
+            "notBefore": "Apr 10 12:15:16 2024 GMT",
+            "notAfter": "Jul  9 12:15:15 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "element.io"
+                ],
+                [
+                    "DNS",
+                    "*.element.io"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/pFggkmhIrpI"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/htAIIEEtXcY.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 11:48:03"
+    },
+    "https://mobile.element.io": {
+        "Time": 5.54,
+        "URL": "https://mobile.element.io",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.12.112",
+            "104.22.48.198",
+            "104.22.49.198"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.12.112",
+        "PING Status": "OK",
+        "PING IP": "172.67.12.112",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 59585,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 09:49:11 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "last-modified": "Mon, 25 Sep 2023 14:08:52 GMT",
+            "vary": "Accept-Encoding",
+            "x-xss-protection": "1; mode=block",
+            "x-content-type-options": "nosniff",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "x-frame-options": "sameorigin",
+            "permissions-policy": "interest-cohort=()",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87cedc311fb31c09-FRA",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "mobile.element.io_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "element.io"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "77C6D24607B9E16711445338FB7C6FEE",
+            "notBefore": "Apr 10 12:15:16 2024 GMT",
+            "notAfter": "Jul  9 12:15:15 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "element.io"
+                ],
+                [
+                    "DNS",
+                    "*.element.io"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/pFggkmhIrpI"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/htAIIEEtXcY.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 11:49:16"
+    },
+    "https://matrix-client.matrix.org/_matrix/client/versions": {
+        "Time": 6.09,
+        "URL": "https://matrix-client.matrix.org/_matrix/client/versions",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.20.77.252",
+            "172.67.2.63",
+            "104.20.76.252"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.2.63",
+        "PING Status": "OK",
+        "PING IP": "172.67.2.63",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 958,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 09:50:06 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "synapse-trace-id": "cb1e1ff0b7229a4b",
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, HEAD, POST, PUT, DELETE, OPTIONS",
+            "access-control-allow-headers": "X-Requested-With, Content-Type, Authorization, Date",
+            "access-control-expose-headers": "Synapse-Trace-Id, Server",
+            "permissions-policy": "interest-cohort=()",
+            "vary": "Accept-Encoding",
+            "content-encoding": "gzip",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87cedd7f0a0db380-PRG"
+        },
+        "HTML Content": "matrix-client.matrix.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "matrix.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0445E0890D0CCAD2E5A90F125ED98CD2BFFD",
+            "notBefore": "Apr  2 01:46:44 2024 GMT",
+            "notAfter": "Jul  1 01:46:43 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.matrix.org"
+                ],
+                [
+                    "DNS",
+                    "matrix.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 11:50:10"
+    },
+    "https://vector.im/_matrix/identity/api/v1": {
+        "Time": 4.31,
+        "URL": "https://vector.im/_matrix/identity/api/v1",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.28.52",
+            "172.67.144.66"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.144.66",
+        "PING Status": "OK",
+        "PING IP": "172.67.144.66",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 2,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 09:50:45 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+            "access-control-allow-headers": "*",
+            "permissions-policy": "interest-cohort=()",
+            "content-encoding": "gzip",
+            "vary": "Accept-Encoding",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=iKWfuna%2B%2Fq17zm9yMsQmgmaaYoBs%2Fa16qNuH6MRpggjR%2BTMZdvcXTRIls4EgMdsc3DvPtLvRNmwwBWJa6te%2Fxlfa6RQJKaYTBnFFtJfW%2FNiX68FagcSIP3e0doQ%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87cede80ada11c79-FRA",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "vector.im_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "vector.im"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03C2728217594EA198E882E2DD1356610F0B",
+            "notBefore": "Apr 29 23:26:44 2024 GMT",
+            "notAfter": "Jul 28 23:26:43 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.vector.im"
+                ],
+                [
+                    "DNS",
+                    "vector.im"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 11:50:49"
+    },
+    "https://www.icij.org": {
+        "Time": 4.22,
+        "URL": "https://www.icij.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "65.9.95.51",
+            "65.9.95.116",
+            "65.9.95.25",
+            "65.9.95.43"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "65.9.95.51",
+        "PING Status": "OK",
+        "PING IP": "65.9.95.51",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 106780,
+        "Headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Date": "Wed, 01 May 2024 09:32:29 GMT",
+            "Set-Cookie": "AWSALB=Ap2D2sTaXgm59IwstLa4LK/oJ0Ifs7KMbBEuWxSA+y2OpaMW2rmDlsq+TT5QcTE6+CuaS3feCZX0MAJcCzfyZIKv5PkdWD750mRfEGxCS0/ypzJnZkA3xgzZya2f; Expires=Wed, 08 May 2024 09:32:27 GMT; Path=/; Secure, AWSALBCORS=Ap2D2sTaXgm59IwstLa4LK/oJ0Ifs7KMbBEuWxSA+y2OpaMW2rmDlsq+TT5QcTE6+CuaS3feCZX0MAJcCzfyZIKv5PkdWD750mRfEGxCS0/ypzJnZkA3xgzZya2f; Expires=Wed, 08 May 2024 09:32:27 GMT; Path=/; SameSite=None; Secure",
+            "Cache-Control": "max-age=15, s-maxage=600",
+            "Link": "<https://www.icij.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.icij.org/wp-json/wp/v2/pages/15>; rel=\"alternate\"; type=\"application/json\", <https://www.icij.org/>; rel=shortlink",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "X-UA-Compatible": "IE=Edge",
+            "Content-Security-Policy": "frame-ancestors 'self'",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Content-Encoding": "gzip",
+            "X-Request-Id": "40FC57F5_2042_AC14809C_01BB_66320C2B_BBD4_50389",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "Accept-Encoding",
+            "X-Cache": "Hit from cloudfront",
+            "Via": "1.1 b031f43146c9801101822eabdc464390.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "PRG50-C1",
+            "X-Amz-Cf-Id": "9mHWxwTuvSilIgvjaqem9JYO_ReTi_KYJzHPrsR6C84mlg_A3c-FaQ==",
+            "Age": "1170"
+        },
+        "HTML Content": "www.icij.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.icij.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M03"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0C939F3D584220B4E49CE6FC094CAB69",
+            "notBefore": "Apr 12 00:00:00 2024 GMT",
+            "notAfter": "May 11 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.icij.org"
+                ],
+                [
+                    "DNS",
+                    "icij.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m03.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m03.amazontrust.com/r2m03.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m03.amazontrust.com/r2m03.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 11:52:02"
+    },
+    "https://mask.icloud.com": {
+        "Time": 3.58,
+        "URL": "https://mask.icloud.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.224.37.198",
+            "172.224.37.135",
+            "172.224.37.134",
+            "172.224.37.200",
+            "172.224.37.199",
+            "172.224.37.197",
+            "172.224.37.195",
+            "172.224.37.136"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.224.37.197",
+        "PING Status": "OK",
+        "PING IP": "172.224.37.197",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='mask.icloud.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_ILLEGAL_PARAMETER] ssl/tls alert illegal parameter (_ssl.c:1000)')))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "mask.icloud.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 11:52:40"
+    },
+    "https://mask-h2.icloud.com": {
+        "Time": 4.59,
+        "URL": "https://mask-h2.icloud.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.71",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.224.37.198",
+            "172.224.37.133",
+            "172.224.37.196",
+            "172.224.37.134",
+            "172.224.37.132",
+            "172.224.37.135",
+            "172.224.37.200",
+            "172.224.37.136"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.224.37.200",
+        "PING Status": "OK",
+        "PING IP": "172.224.37.200",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='mask-h2.icloud.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_ILLEGAL_PARAMETER] ssl/tls alert illegal parameter (_ssl.c:1000)')))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "mask-h2.icloud.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 11:53:34"
+    },
+    "https://mask-api.icloud.com": {
+        "Time": 26.11,
+        "URL": "https://mask-api.icloud.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.75",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "17.248.213.69",
+            "17.248.213.70",
+            "17.248.213.71",
+            "17.248.213.64",
+            "17.248.213.65",
+            "17.248.213.66",
+            "17.248.213.67",
+            "17.248.213.68"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "17.248.213.66",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.011975288391113281
+            ],
+            [
+                "90.181.198.158",
+                0.0036661624908447266
+            ],
+            [
+                "90.181.197.157",
+                0.008332014083862305
+            ],
+            [
+                "194.228.21.250",
+                0.008494138717651367
+            ],
+            [
+                "62.115.58.198",
+                0.010937929153442383
+            ],
+            [
+                "213.248.93.178",
+                0.01935291290283203
+            ],
+            [
+                "17.1.3.1",
+                0.03058314323425293
+            ],
+            [
+                "17.0.12.119",
+                0.03155517578125
+            ],
+            [
+                "17.1.3.74",
+                0.029893159866333008
+            ],
+            [
+                "17.0.99.71",
+                0.02756500244140625
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 400,
+        "Content Length": 0,
+        "Headers": {
+            "Server": "AppleHttpServer/b866cf47a603",
+            "Date": "Wed, 01 May 2024 09:54:56 GMT",
+            "Content-Length": "0",
+            "Connection": "keep-alive",
+            "X-B3-TraceId": "cf1607470cd60b87",
+            "Strict-Transport-Security": "max-age=31536000",
+            "via": "7fa8e51321f2d5535ac8ea4121c5a4ba:8ce409f7121feb1a7604cb896991a2eb:us-east-1e,631194250daa17e24277dea86cf30319:649947b8134a18942fd5ddede037038c:deber3",
+            "X-Apple-Request-UUID": "87a46d6e-a70f-41d9-9d62-7b1d57e5a026",
+            "access-control-expose-headers": "X-Apple-Request-UUID,Via",
+            "X-Apple-Edge-Response-Time": "106"
+        },
+        "HTML Content": "mask-api.icloud.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Apple Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "mask-api.icloud.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "commonName",
+                        "Apple IST CA 2 - G1"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "Certification Authority"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Apple Inc."
+                    ]
+                ],
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "10411F2A448042691FEE49DA037BE513",
+            "notBefore": "Oct 23 11:41:46 2023 GMT",
+            "notAfter": "Nov 21 11:41:45 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "mask-api.icloud.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.apple.com/ocsp03-appleistca2g129"
+            ],
+            "caIssuers": [
+                "http://certs.apple.com/appleistca2g1_bc.cer",
+                "http://certs.apple.com/appleistca2g1.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.apple.com/appleistca2g1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 11:55:01"
+    }
+}

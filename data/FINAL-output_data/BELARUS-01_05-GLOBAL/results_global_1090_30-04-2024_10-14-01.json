@@ -1,0 +1,1012 @@
+{
+    "https://getlantern.org": {
+        "Time": 11.12,
+        "URL": "https://getlantern.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "76.76.21.21"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "76.76.21.21",
+        "PING Status": "OK",
+        "PING IP": "76.76.21.21",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://lantern.io/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "76.76.21.21"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 97871,
+        "Headers": {
+            "Access-Control-Allow-Origin": "*",
+            "Age": "41535",
+            "Cache-Control": "public, max-age=0, must-revalidate",
+            "Connection": "keep-alive",
+            "Content-Disposition": "inline",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Tue, 30 Apr 2024 14:05:18 GMT",
+            "Etag": "W/\"9a75756b429eecbd1de927aa895abb23\"",
+            "Server": "Vercel",
+            "Strict-Transport-Security": "max-age=63072000",
+            "X-Matched-Path": "/en",
+            "X-Vercel-Cache": "HIT",
+            "X-Vercel-Id": "arn1::dqbs8-1714485918047-dc456738f246",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "getlantern.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "getlantern.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "033EB03A41AD534D8BFF247683E32799C90D",
+            "notBefore": "Apr 23 12:53:14 2024 GMT",
+            "notAfter": "Jul 22 12:53:13 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "getlantern.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 10:05:28"
+    },
+    "https://massbrowser.cs.umass.edu": {
+        "Time": 27.71,
+        "URL": "https://massbrowser.cs.umass.edu",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "54.85.60.193"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "54.85.60.193",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0015091896057128906
+            ],
+            [
+                "212.98.161.17",
+                0.0021409988403320312
+            ],
+            [
+                "185.11.76.45",
+                0.0015642642974853516
+            ],
+            [
+                "185.11.76.30",
+                0.0019910335540771484
+            ],
+            [
+                "223.119.65.185",
+                0.024927139282226562
+            ],
+            [
+                "223.118.18.46",
+                0.026065587997436523
+            ],
+            [
+                "206.82.104.99",
+                0.11702871322631836
+            ],
+            [
+                "52.93.51.45",
+                0.11603927612304688
+            ],
+            [
+                "52.93.1.40",
+                0.11501383781433105
+            ]
+        ],
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='massbrowser.cs.umass.edu', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:877)'),))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "massbrowser.cs.umass.edu_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 10:06:54"
+    },
+    "https://joinmastodon.org": {
+        "Time": 7.25,
+        "URL": "https://joinmastodon.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.1.91",
+            "151.101.65.91",
+            "151.101.129.91",
+            "151.101.193.91"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.65.91",
+        "PING Status": "OK",
+        "PING IP": "151.101.65.91",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 139671,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "15267",
+            "Cache-Control": "s-maxage=300, stale-while-revalidate",
+            "Content-Encoding": "gzip",
+            "Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; img-src 'self' proxy.joinmastodon.org blob: data:; style-src 'self' 'unsafe-inline'; script-src 'self' ; connect-src 'self' api.joinmastodon.org; block-all-mixed-content",
+            "Content-Type": "text/html; charset=utf-8",
+            "Etag": "\"sm2h7ik14a2zno\"",
+            "Permissions-Policy": "camera=(), microphone=(), geolocation=(), browsing-topics=()",
+            "Referrer-Policy": "origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Nextjs-Cache": "HIT",
+            "Via": "1.1 varnish, 1.1 varnish",
+            "Accept-Ranges": "bytes",
+            "Date": "Tue, 30 Apr 2024 14:07:46 GMT",
+            "Age": "80",
+            "X-Served-By": "cache-fra-etou8220060-FRA, cache-ams21055-AMS",
+            "X-Cache": "HIT, HIT",
+            "X-Cache-Hits": "13, 1",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
+        },
+        "HTML Content": "joinmastodon.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "joinmastodon.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0495103C5905E8BFE180956FA4E132A70270",
+            "notBefore": "Mar  8 03:17:20 2024 GMT",
+            "notAfter": "Jun  6 03:17:19 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "api.joinmastodon.org"
+                ],
+                [
+                    "DNS",
+                    "joinmastodon.org"
+                ],
+                [
+                    "DNS",
+                    "proxy.joinmastodon.org"
+                ],
+                [
+                    "DNS",
+                    "www.joinmastodon.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 10:07:53"
+    },
+    "https://mastodon.cloud": {
+        "Time": 7.55,
+        "URL": "https://mastodon.cloud",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.96.3",
+            "188.114.97.3"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.96.3",
+        "PING Status": "OK",
+        "PING IP": "188.114.96.3",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://media.mastodon.cloud/cloud-093img.html",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "18.165.183.115",
+                "18.165.183.97",
+                "18.165.183.86",
+                "18.165.183.15"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 22880,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 14:08:46 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding, Accept",
+            "x-frame-options": "DENY",
+            "x-content-type-options": "nosniff",
+            "x-xss-protection": "0",
+            "permissions-policy": "interest-cohort=()",
+            "referrer-policy": "same-origin",
+            "Cache-Control": "max-age=0, public",
+            "content-security-policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://mastodon.cloud; img-src 'self' https: data: blob: https://mastodon.cloud; style-src 'self' https://mastodon.cloud 'nonce-bgj1vNX4cWV+B9Iz1vRFDw=='; media-src 'self' https: data: https://mastodon.cloud; frame-src 'self' https:; manifest-src 'self' https://mastodon.cloud; form-action 'self'; connect-src 'self' data: blob: https://mastodon.cloud https://media.mastodon.cloud wss://mastodon.cloud; script-src 'self' https://mastodon.cloud 'wasm-unsafe-eval'; child-src 'self' blob: https://mastodon.cloud; worker-src 'self' blob: https://mastodon.cloud",
+            "set-cookie": "_mastodon_session=BY1tEHWSc%2F%2BPuFUE3tW2QQfJSR2PbsaxEO%2FyTlOVzX6VFSUUhzKXXKXLQPqjC%2F%2F1C%2F7m9dvMHHC0oWYcz2Gl37lLJqvmWoZ8lVIXRF7DXXQHziJtfBODWdYt6ArWcL45JvSc32atC9Lvw4LUFvEjHGHgcGN8wti%2B1nXOtNwCkppCSb0TvkOTnpbjxE5%2B5nA0DbP4th1ZtmNP0wHjIrqRbO49wXojZSMp2cdYV52GZUH79iO%2F7iEGUA0ekrdWlVLkrqnXJl8hALMPT%2FfKyHOCuFOxjOV3OaWfYM6zO9Snel5JgUxF8RVvCSK2j%2F9GOo1BMNwTA9I%3D--LPYJhcbs88xJkPnn--1v1xK2DxuT5y%2FV%2BZnsjXww%3D%3D; path=/; HttpOnly; SameSite=Lax; secure",
+            "x-request-id": "93a94d70-792c-49fb-8785-037fc157d6ba",
+            "x-runtime": "0.038814",
+            "strict-transport-security": "max-age=63072000; includeSubDomains",
+            "x-cached": "MISS",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=DpXDiAnvduoTbtFFRGomAeBcQAC4uTtNerHJG2qpl3sZtHwWMCn0%2FpKSqR%2FmECDYoDvs%2BHcvjfjx741rTkg2qVLy1tAjsH%2B9LtK%2FtmKyYJ2Y1i9E1kidAxz%2FJnF1N3YWBQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c81b112e979751-FRA",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "mastodon.cloud_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mastodon.cloud"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "B8ACB6E7904F678513A0D58DF8A52351",
+            "notBefore": "Mar 29 11:18:47 2024 GMT",
+            "notAfter": "Jun 27 11:18:46 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "mastodon.cloud"
+                ],
+                [
+                    "DNS",
+                    "*.mastodon.cloud"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/wjOJTqTxEYk"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/_fiMabITZ0g.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 10:08:52"
+    },
+    "https://mastodon.sdf.org": {
+        "Time": 9.63,
+        "URL": "https://mastodon.sdf.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "205.166.94.38",
+            "66.148.120.149",
+            "66.148.120.148"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "205.166.94.38",
+        "PING Status": "OK",
+        "PING IP": "205.166.94.38",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 22881,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 14:09:35 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Accept",
+            "Server": "Mastodon",
+            "X-Frame-Options": "DENY",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "0",
+            "Permissions-Policy": "interest-cohort=()",
+            "Referrer-Policy": "same-origin",
+            "Cache-Control": "max-age=0, public",
+            "ETag": "W/\"06fe792ce1f1398d43a97de88c4676e8\"",
+            "Content-Security-Policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://mastodon.sdf.org; img-src 'self' https: data: blob: https://mastodon.sdf.org; style-src 'self' https://mastodon.sdf.org 'nonce-pum6/IUp9+GEpE8r5ftsXw=='; media-src 'self' https: data: https://mastodon.sdf.org; frame-src 'self' https:; manifest-src 'self' https://mastodon.sdf.org; form-action 'self'; connect-src 'self' data: blob: https://mastodon.sdf.org https://mastodon.sdf.org wss://mastodon.sdf.org; script-src 'self' https://mastodon.sdf.org 'wasm-unsafe-eval'; child-src 'self' blob: https://mastodon.sdf.org; worker-src 'self' blob: https://mastodon.sdf.org",
+            "Set-Cookie": "_mastodon_session=pMUJmkCPUCGEs4uB%2FJOspg5W29%2BdcMDMwMQOwUjPOqT32KSSvI%2FNtbLS%2BxNQ8He7B8qBD2%2FL5xvz9q%2FFCucNTt9k9PE1UIYyP49c9ASJtyq%2Bqe44YLNgfKfRI4e7EGMeIeoX6ZB1jTp6npIPhr3l0VgENdHjOAcs0KTCUupA%2Ffbm9yT7w7JkRhTsXKaaWDE6HynDPmgL5ZGoQ5nSIAqF%2Bcemxi4T1xzgRgZ5p8oykN6lR93jYSi0aTFLMN06fAYV000Rg7%2FQDejM4B%2FnBcxmfVMSRgatDb7lg30fRrS36xGbhp7QQu86e8zjj27SNm6eeuzdf7M%3D--AioXB0yV9hD3ayxS--r5ZlFOZP3wPcvTvXzEtBKg%3D%3D; path=/; HttpOnly; SameSite=Lax; secure",
+            "X-Request-Id": "96480688-c4a3-4ce6-9c48-4256c457fc9c",
+            "X-Runtime": "0.017571",
+            "Strict-Transport-Security": "max-age=63072000; includeSubDomains, max-age=31536000",
+            "X-Cached": "MISS",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "mastodon.sdf.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mastodon.sdf.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0317860719AD578399FC98B8F4E2CEF8F286",
+            "notBefore": "Mar  4 02:50:50 2024 GMT",
+            "notAfter": "Jun  2 02:50:49 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "mastodon.sdf.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 10:09:42"
+    },
+    "https://mastodon.social": {
+        "Time": 5.28,
+        "URL": "https://mastodon.social",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.65.91",
+            "151.101.1.91",
+            "151.101.129.91",
+            "151.101.193.91"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.65.91",
+        "PING Status": "OK",
+        "PING IP": "151.101.65.91",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 23591,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "11210",
+            "x-runtime": "0.020600",
+            "content-security-policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://mastodon.social; img-src 'self' data: blob: https://mastodon.social https://files.mastodon.social; style-src 'self' https://mastodon.social 'nonce-NyRDtbAyK7BP9HKmZvKCVw=='; media-src 'self' data: https://mastodon.social https://files.mastodon.social; frame-src 'self' https:; manifest-src 'self' https://mastodon.social; form-action 'self'; child-src 'self' blob: https://mastodon.social; worker-src 'self' blob: https://mastodon.social; connect-src 'self' data: blob: https://mastodon.social https://files.mastodon.social wss://streaming.mastodon.social; script-src 'self' https://mastodon.social 'wasm-unsafe-eval'",
+            "x-xss-protection": "0",
+            "x-content-type-options": "nosniff",
+            "cache-control": "max-age=15, public, stale-while-revalidate=30, stale-if-error=86400",
+            "via": "1.1 varnish, 1.1 varnish",
+            "etag": "W/\"6a40173bf53115016e399d6ee34a6a87\"",
+            "referrer-policy": "same-origin",
+            "x-frame-options": "DENY",
+            "link": "</packs/js/locale/en-json-dd6550850f5fd7bc3ff3.chunk.js>; rel=preload; as=script; type=text/javascript; integrity=sha256-BZmJLhPdicByZ6wV0c8wtgzbqYpu2JAptuGh1lRrgp4=",
+            "content-type": "text/html; charset=utf-8",
+            "x-request-id": "2d70be3498f6b8ca0f897b9a8a21fa92",
+            "Content-Encoding": "gzip",
+            "Accept-Ranges": "bytes",
+            "Date": "Tue, 30 Apr 2024 14:10:23 GMT",
+            "Age": "0",
+            "X-Served-By": "cache-fra-etou8220101-FRA, cache-fra-eddf8230153-FRA",
+            "X-Cache": "MISS, HIT",
+            "X-Cache-Hits": "0, 1",
+            "X-Timer": "S1714486224.635718,VS0,VE1",
+            "Vary": "Accept, Accept-Language, Cookie, Accept-Encoding",
+            "Strict-Transport-Security": "max-age=31557600",
+            "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
+        },
+        "HTML Content": "mastodon.social_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mastodon.social"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "041E9972402C7EF78CC7E51C90D476195C31",
+            "notBefore": "Mar 29 01:27:23 2024 GMT",
+            "notAfter": "Jun 27 01:27:22 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "files.mastodon.social"
+                ],
+                [
+                    "DNS",
+                    "mastodon.social"
+                ],
+                [
+                    "DNS",
+                    "www.mastodon.social"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 10:10:27"
+    },
+    "https://mastodon.xyz": {
+        "Time": 9.72,
+        "URL": "https://mastodon.xyz",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.3",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.88.64.96"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.88.64.96",
+        "PING Status": "OK",
+        "PING IP": "23.88.64.96",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 22742,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 14:11:38 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Accept, Accept-Language, Cookie",
+            "Server": "Mastodon",
+            "X-Frame-Options": "DENY",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "0",
+            "Referrer-Policy": "same-origin",
+            "Link": "</packs/js/locale/en-json-f5510c22fd7d55be6ad5.chunk.js>; rel=preload; as=script; type=text/javascript; integrity=sha256-SplOegOXiFZpzYhklmglSpSNDKjU9dqJdQ2hIA2uWks=",
+            "Cache-Control": "max-age=15, public, stale-while-revalidate=30, stale-if-error=86400",
+            "ETag": "W/\"76af23f6758640590feefe5a8857ad5b\"",
+            "Content-Security-Policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://mastodon.xyz; img-src 'self' https: data: blob: https://mastodon.xyz; style-src 'self' https://mastodon.xyz 'nonce-+ps9NlqOlE/5R+ZbtOBAPA=='; media-src 'self' https: data: https://mastodon.xyz; frame-src 'self' https:; manifest-src 'self' https://mastodon.xyz; form-action 'self'; child-src 'self' blob: https://mastodon.xyz; worker-src 'self' blob: https://mastodon.xyz; connect-src 'self' data: blob: https://mastodon.xyz https://6-28.mastodon.xyz wss://mastodon.xyz; script-src 'self' https://mastodon.xyz 'wasm-unsafe-eval'",
+            "X-Request-Id": "46adf837-b304-4a7e-ac06-3cb30704cf0c",
+            "X-Runtime": "0.007593",
+            "Strict-Transport-Security": "max-age=31536000; includeSubdomains; preload",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "mastodon.xyz_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mastodon.xyz"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0432BECAD3A181316EA7FC76716D523FA40C",
+            "notBefore": "Apr  9 07:13:32 2024 GMT",
+            "notAfter": "Jul  8 07:13:31 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "mastodon.xyz"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 10:11:42"
+    },
+    "https://mstdn.io": {
+        "Time": 5.58,
+        "URL": "https://mstdn.io",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.235.191",
+            "104.21.235.192"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.235.192",
+        "PING Status": "OK",
+        "PING IP": "104.21.235.192",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 22785,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 14:12:44 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "Cache-Control": "max-age=15, public, stale-while-revalidate=30, stale-if-error=86400",
+            "content-security-policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://mstdn.io; img-src 'self' https: data: blob: https://mstdn.io; style-src 'self' https://mstdn.io 'nonce-xySCSmBEEVnuJ2NWZNOhOg=='; media-src 'self' https: data: https://mstdn.io; frame-src 'self' https:; manifest-src 'self' https://mstdn.io; form-action 'self'; child-src 'self' blob: https://mstdn.io; worker-src 'self' blob: https://mstdn.io; connect-src 'self' data: blob: https://mstdn.io https://media.mstdn.io wss://mstdn.io; script-src 'self' https://mstdn.io 'wasm-unsafe-eval'",
+            "link": "</packs/js/locale/en-json-f5510c22fd7d55be6ad5.chunk.js>; rel=preload; as=script; type=text/javascript; integrity=sha256-SplOegOXiFZpzYhklmglSpSNDKjU9dqJdQ2hIA2uWks=",
+            "referrer-policy": "same-origin",
+            "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+            "vary": "Accept, Accept-Language, Cookie, Accept-Encoding",
+            "x-cached": "HIT",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "x-request-id": "718ea06f-fb58-4c63-b308-78bb8984864b",
+            "x-runtime": "0.029458",
+            "x-xss-protection": "0",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=viEX8PfFYLivJtrDkwjegiu0GmKaJB%2BlAABDAoQ%2FyfwdwWMXzxWnkcsDNA8jToTxjFwG050qOiN9IciH1qtNndGZ06enpnhyfhM0wtti4GU%2F8QPhMWKTYPj5ug%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c820e26e121ac5-FRA",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "mstdn.io_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mstdn.io"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "040E5D45CB7481663E48B74B3192AB0A5F2F",
+            "notBefore": "Apr 24 16:48:35 2024 GMT",
+            "notAfter": "Jul 23 16:48:34 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.mstdn.io"
+                ],
+                [
+                    "DNS",
+                    "mstdn.io"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 10:12:49"
+    },
+    "https://mstdn.jp": {
+        "Time": 8.99,
+        "URL": "https://mstdn.jp",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.153.131",
+            "104.21.3.103"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.153.131",
+        "PING Status": "OK",
+        "PING IP": "172.67.153.131",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://media.mstdn.jp/jp-093img.html",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "13.224.103.9",
+                "13.224.103.106",
+                "13.224.103.111",
+                "13.224.103.82"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 22780,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 14:13:15 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding, Accept",
+            "x-frame-options": "DENY",
+            "x-content-type-options": "nosniff",
+            "x-xss-protection": "0",
+            "permissions-policy": "interest-cohort=()",
+            "referrer-policy": "same-origin",
+            "Cache-Control": "max-age=0, public",
+            "content-security-policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://mstdn.jp; img-src 'self' https: data: blob: https://mstdn.jp; style-src 'self' https://mstdn.jp 'nonce-iodp671kuQbtvVn57qSOXg=='; media-src 'self' https: data: https://mstdn.jp; frame-src 'self' https:; manifest-src 'self' https://mstdn.jp; form-action 'self'; connect-src 'self' data: blob: https://mstdn.jp https://media.mstdn.jp wss://mstdn.jp; script-src 'self' https://mstdn.jp 'wasm-unsafe-eval'; child-src 'self' blob: https://mstdn.jp; worker-src 'self' blob: https://mstdn.jp",
+            "set-cookie": "_mastodon_session=rNRtII6Rd5tGq88kgaOza89ZXKIFQ1Mwlq5CQifgdQ8oXaFcMm9NBnUKuhsVDJx3rcbh4KROAAV7ENwr3jJ42TC%2FRL1luLk09iB2ZLTIwIjtIcpw843eMSCubl68s5giP7y4qwes9wF9saE%2FZ8i8LRgrCUP26MMTIqJGvQBCuruo%2BC43b%2FguGCsIF20elYGBktA%2F97Oa%2FRYbjVX%2Fcp%2FkhHtGkeLy0WhOaUXsFfrqeFSVlG3%2FTQwceS3FNVcHt8lHCKwhjUq8y5ufTBCFHwO%2F68rgjx%2B2XpgwgFidIvdZDSHA9zxdgI8c3cMkY%2FKA3%2Fh%2BetoTCK0%3D--ns%2FcmSecOyN6iKL9--7VQaftF7KlSy77J1aWI1Dw%3D%3D; path=/; HttpOnly; SameSite=Lax; secure",
+            "x-request-id": "41d6c6c0-e6bb-4efd-93c1-db9983aa25a9",
+            "x-runtime": "0.026009",
+            "strict-transport-security": "max-age=63072000; includeSubDomains, max-age=31536000",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=VDdx0G1s1QsYg30uN18L%2BIEac2oYcm0rGe74a5F5F00UfM1zT8Dkar4dmwdFI1j9FNyi52n%2FHHc%2Bp8OaVWJf2%2BTxP047JSK7zRiNYhMv3fx1NdFD92uOphUwkQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c821a0c88b7b67-DME",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "mstdn.jp_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mstdn.jp"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "044EB9781CE8518A3F9024F9EB85C223E9A2",
+            "notBefore": "Mar 29 15:32:17 2024 GMT",
+            "notAfter": "Jun 27 15:32:16 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.mstdn.jp"
+                ],
+                [
+                    "DNS",
+                    "mstdn.jp"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 10:13:23"
+    },
+    "https://pixelfed.social": {
+        "Time": 7.3,
+        "URL": "https://pixelfed.social",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.69.185",
+            "104.26.14.176",
+            "104.26.15.176"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.26.14.176",
+        "PING Status": "OK",
+        "PING IP": "104.26.14.176",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 6134,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 14:13:56 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "Cache-Control": "no-cache, private",
+            "x-frame-options": "SAMEORIGIN",
+            "set-cookie": "XSRF-TOKEN=eyJpdiI6ImUrUEk1NEJkQU9vQ0lueXdINTB6Wmc9PSIsInZhbHVlIjoiM3E2MjY3TEozczBudm9TMU0rcnlqYzVHd3ZQQXBFVkZyaE9uVlpDVERhejZrQWp5UFFibEN6ci9FakRGaHVLYkxuakxOQWJvRlI0UE5IMXNIa3JhaEtuS3owT0ErcUNVUTduLzRuTkZCN0FCaUVGeUhNc1JxZzgySll6aUJHRU4iLCJtYWMiOiJkMTQ5Mzk4MmVkMDA2MmQyYmUwY2U4N2VhZjE2ODljZDdiNDIyY2E1ZWJkMWE2OGY4MTViYmMyZTQ5ODk2NDU4IiwidGFnIjoiIn0%3D; expires=Tue, 07 May 2024 14:13:56 GMT; Max-Age=604800; path=/; domain=.pixelfed.social; secure; samesite=lax, pxfs=eyJpdiI6IlBHeUprMEZob0FPTGdVMk9aWGhVQWc9PSIsInZhbHVlIjoiNStJY3BwazdiNUV1bllyak9FaEtCME14MUlUSDRxd3lvS3gwbW9Wai9ibXVDVmNuRDEwdVN6Ynh3aXQ4WFdsenlRSkRpNHZtVFRCa3F0ampLckJVTjUzaGZLa3E1REF6MllMYVpHZ3pDNEdQMUozMmZibjdJZUhSK1lkaS8waG8iLCJtYWMiOiI1Yzc1MWNjMGZiYzg3OGJkMGMzMzQ5MzNhOTUwOTAzNzdjYzkxM2JlY2FlNGJhMWE1YzE5MDkxN2VkZGFkYjEyIiwidGFnIjoiIn0%3D; expires=Tue, 07 May 2024 14:13:56 GMT; Max-Age=604800; path=/; domain=.pixelfed.social; secure; httponly; samesite=lax",
+            "x-xss-protection": "1; mode=block",
+            "x-content-type-options": "nosniff",
+            "Content-Encoding": "gzip",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ws61JZODNHAs1wSG%2BD%2FN02Zby%2FGhbQ%2B8WTdu2M1HxX20Ws6o%2BF7z6ujaalhtMnFnhDvRPfbse4ZJqXGFyQMZ0IqbyEhAhZd2ccskfobbci6aPKoE8EvvnLl2ECvPlha6Tw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c8229dfddc35cf-WAW"
+        },
+        "HTML Content": "pixelfed.social_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "pixelfed.social"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0470909B9FA11B0E69AE2CF5D1E7F200B57E",
+            "notBefore": "Mar  8 03:11:29 2024 GMT",
+            "notAfter": "Jun  6 03:11:28 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.pixelfed.social"
+                ],
+                [
+                    "DNS",
+                    "pixelfed.social"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 10:14:01"
+    }
+}

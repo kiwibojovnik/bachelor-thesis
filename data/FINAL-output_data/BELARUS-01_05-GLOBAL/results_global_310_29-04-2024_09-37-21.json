@@ -1,0 +1,1281 @@
+{
+    "http://www.barnesandnoble.com": {
+        "Time": 3.64,
+        "URL": "http://www.barnesandnoble.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.81.102.150"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.81.102.150",
+        "PING Status": "OK",
+        "PING IP": "104.81.102.150",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 403,
+        "Content Length": 376,
+        "Headers": {
+            "Server": "AkamaiGHost",
+            "Mime-Version": "1.0",
+            "Content-Type": "text/html",
+            "Content-Length": "376",
+            "Expires": "Mon, 29 Apr 2024 13:27:33 GMT",
+            "Cache-Control": "max-age=0, no-cache, no-store",
+            "Pragma": "no-cache",
+            "Date": "Mon, 29 Apr 2024 13:27:33 GMT",
+            "Connection": "close",
+            "Set-Cookie": "DeviceType=Desktop; path=/; domain=.barnesandnoble.com, client-profile=_; path=/; domain=.barnesandnoble.com, showSiteAs=Desktop; path=/; domain=.barnesandnoble.com"
+        },
+        "HTML Content": "www.barnesandnoble.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Nook digital, LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.barnesandnoble.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0D73ACE3E25582D0306BE25B5FED64D1",
+            "notBefore": "Jun  6 00:00:00 2023 GMT",
+            "notAfter": "Jun  6 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.barnesandnoble.com"
+                ],
+                [
+                    "DNS",
+                    "barnesandnoble.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:27:37"
+    },
+    "https://www.bat.com": {
+        "Time": 32.54,
+        "URL": "https://www.bat.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "45.223.59.75"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "45.223.59.75",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.04207277297973633
+            ],
+            [
+                "212.98.161.17",
+                0.04306626319885254
+            ],
+            [
+                "185.11.76.76",
+                0.011326789855957031
+            ],
+            [
+                "80.81.193.87",
+                0.038568735122680664
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 178761,
+        "Headers": {
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "x-amz-id-2": "iS47lhNqwFd00L7t8TRefP2bWu8wQTIM5rJMJ+NNHY3cmaqjfM2QVFXyz4FE5rqkiZ0Ja/HpleOMhct+1ERHU31goETt/d5H/Nnd/WLrGFo=",
+            "x-amz-request-id": "V5PYEM7C3RV9J1PX",
+            "Last-Modified": "Thu, 25 Apr 2024 10:52:02 GMT",
+            "x-amz-server-side-encryption": "AES256",
+            "x-amz-version-id": "U5AO8qgK6c5AXqQYsolp7NskiBw8WI5G",
+            "Server": "AmazonS3",
+            "Content-Encoding": "gzip",
+            "Date": "Mon, 29 Apr 2024 13:28:41 GMT",
+            "ETag": "W/\"bd07faea67d0e54a911e38fc336a901c\"",
+            "Vary": "Accept-Encoding",
+            "X-Cache": "RefreshHit from cloudfront",
+            "Via": "1.1 b912dc97777020eb19579888add26978.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "FRA50-C1",
+            "X-Amz-Cf-Id": "YmyY9L-LSlUOlFIvPhznk0H4ZKgOuQ3n4UBUP_N4ActVUP0AqFdbug==",
+            "Set-Cookie": "visid_incap_3049850=oRRVQjwXQu+65s4EpIu8FIegL2YAAAAAQUIPAAAAAABrgSmFtkg0gg+EVMviBtjq; expires=Mon, 28 Apr 2025 22:43:05 GMT; HttpOnly; path=/; Domain=.bat.com, nlbi_3049850=wmmxAw14NUMVa6l75h2USgAAAACXk0hFXCb0nvepHIxRpjF9; path=/; Domain=.bat.com, incap_ses_878_3049850=A/+RbzWoK01f6Y8hYEgvDIegL2YAAAAA/JYhYP3EwsFw8JKCvfcKmw==; path=/; Domain=.bat.com",
+            "X-CDN": "Imperva",
+            "X-Iinfo": "10-16838480-16838495 NNNN CT(2 5 0) RT(1714397319518 102) q(0 0 0 0) r(0 0) U24"
+        },
+        "HTML Content": "www.bat.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "London"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "British American Tobacco (Brands) Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.bat.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Thawte TLS RSA CA G1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0203E80C3868F9AA6660DA12DF8618CB",
+            "notBefore": "Sep 28 00:00:00 2023 GMT",
+            "notAfter": "Sep 28 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.bat.com"
+                ],
+                [
+                    "DNS",
+                    "bat.com"
+                ]
+            ],
+            "OCSP": [
+                "http://status.thawte.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.thawte.com/ThawteTLSRSACAG1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://cdp.thawte.com/ThawteTLSRSACAG1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:28:44"
+    },
+    "http://www.beer.com": {
+        "Time": 46.08,
+        "URL": "http://www.beer.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.21.234.173",
+            "23.21.157.88"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.21.157.88",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.030043601989746094
+            ],
+            [
+                "212.98.161.17",
+                0.027536869049072266
+            ],
+            [
+                "185.11.76.45",
+                0.029320240020751953
+            ],
+            [
+                "185.11.76.76",
+                0.028252601623535156
+            ],
+            [
+                "223.119.65.185",
+                0.0435788631439209
+            ],
+            [
+                "83.169.204.124",
+                0.05050945281982422
+            ],
+            [
+                "223.120.14.134",
+                0.1080465316772461
+            ],
+            [
+                "52.93.51.45",
+                0.14598941802978516
+            ],
+            [
+                "99.83.91.180",
+                0.11689519882202148
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.beer.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.21.234.173",
+                "23.21.157.88"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 66713,
+        "Headers": {
+            "date": "Mon, 29 Apr 2024 13:29:50 GMT",
+            "server": "Apache",
+            "last-modified": "Sun, 24 Mar 2024 20:24:27 GMT",
+            "etag": "\"10499-6146dd7f32d48-gzip\"",
+            "accept-ranges": "bytes",
+            "cache-control": "max-age=0",
+            "expires": "Mon, 29 Apr 2024 13:29:50 GMT",
+            "vary": "Accept-Encoding",
+            "content-encoding": "gzip",
+            "content-length": "17651",
+            "content-type": "text/html"
+        },
+        "HTML Content": "www.beer.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "beer.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0486F830C49FFAF7498A92624900F173CBE8",
+            "notBefore": "Mar 17 16:06:36 2024 GMT",
+            "notAfter": "Jun 15 16:06:35 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "beer.com"
+                ],
+                [
+                    "DNS",
+                    "www.beer.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 09:30:00"
+    },
+    "https://www.beerinfo.com": {
+        "Time": 14.84,
+        "URL": "https://www.beerinfo.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.155.191.84"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.155.191.84",
+        "PING Status": "OK",
+        "PING IP": "104.155.191.84",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://beerinfo.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.155.191.84"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 162174,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 13:30:53 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Keep-Alive": "timeout=20",
+            "Vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "x-powered-by": "WP Engine",
+            "Link": "<https://beerinfo.com/wp-json/>; rel=\"https://api.w.org/\"",
+            "X-Cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "X-Cache": "HIT: 2",
+            "X-Cache-Group": "normal",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.beerinfo.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.beerinfo.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0461DFF990F11D43889BB4368675DD650833",
+            "notBefore": "Mar 11 16:27:42 2024 GMT",
+            "notAfter": "Jun  9 16:27:41 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.beerinfo.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 09:31:05"
+    },
+    "https://www.benedelman.org": {
+        "Time": 13.8,
+        "URL": "https://www.benedelman.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "208.94.116.17"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "208.94.116.17",
+        "PING Status": "OK",
+        "PING IP": "208.94.116.17",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 102714,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 13:31:51 GMT",
+            "Server": "Apache",
+            "Cache-Control": "public, max-age=0, no-cache, no-transform",
+            "X-Hyper-Cache": "hit - plain-https",
+            "Last-Modified": "Mon, 29 Apr 2024 03:56:57 GMT",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Via": "e14s",
+            "Content-Length": "29418",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html;charset=UTF-8"
+        },
+        "HTML Content": "www.benedelman.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.benedelman.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "030FFC116659D93611CE79EB1925E93A9AFF",
+            "notBefore": "Mar 31 05:02:13 2024 GMT",
+            "notAfter": "Jun 29 05:02:12 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.benedelman.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:32:01"
+    },
+    "http://www.betfair.com": {
+        "Time": 5.51,
+        "URL": "http://www.betfair.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.19.153.16",
+            "104.19.154.16"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.19.154.16",
+        "PING Status": "OK",
+        "PING IP": "104.19.154.16",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.betfair.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.19.153.16",
+                "104.19.154.16"
+            ]
+        ],
+        "HTTP Status": 403,
+        "Content Length": 15649,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 13:32:53 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "close",
+            "Accept-CH": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+            "Cross-Origin-Embedder-Policy": "require-corp",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Permissions-Policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+            "Referrer-Policy": "same-origin",
+            "cf-mitigated": "challenge",
+            "cf-chl-out": "oErijWH3p/c/MMfCuMUKDVb+H3eh1gmosnfn6fxSEkPbV/8eEuTdG8AndhuJqtGZRwRABviUe4MA8Ha5l0tYwhOClM1hwSfNcS3+AZOMm9MdVfQY5JP/e2N0LSLZ7QowZk9AftYib4uhR+cZ1+dXSg==$maWy2KN5Kpej0oGSBokc7g==",
+            "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=R2rGy1QbDhd3mB%2BLxEP3yVSRic7ZyRnhbTIgknxD5LFfh7SLGmMaXT1yt%2FlKxjjm%2FlWtRJs%2BrtguWYJK2%2Ba6FMtA4xQkmhP8V2VY085fsUaqpYT1p45BTS3sSBfwNE9wXw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "X-Content-Type-Options": "nosniff",
+            "Origin-Agent-Cluster": "?0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Server": "cloudflare",
+            "CF-RAY": "87bfa921580a8f41-FRA",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.betfair.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "betfair.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "C62000882DE7F827113F258533879B9E",
+            "notBefore": "Mar 10 11:23:37 2024 GMT",
+            "notAfter": "Jun  8 12:22:26 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "betfair.com"
+                ],
+                [
+                    "DNS",
+                    "*.betfair.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/gR3uAWlTTbo"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/kxjz1VjDdFA.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 09:32:58"
+    },
+    "http://www.bglad.com": {
+        "Time": 36.99,
+        "URL": "http://www.bglad.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "204.8.234.161"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "204.8.234.161",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0014719963073730469
+            ],
+            [
+                "212.98.161.17",
+                0.0009517669677734375
+            ],
+            [
+                "185.11.76.45",
+                0.0012993812561035156
+            ],
+            [
+                "185.11.76.28",
+                0.0018939971923828125
+            ],
+            [
+                "185.31.108.13",
+                0.01837754249572754
+            ],
+            [
+                "188.128.126.95",
+                0.0317835807800293
+            ],
+            [
+                "129.250.3.133",
+                0.0348052978515625
+            ],
+            [
+                "62.115.142.176",
+                0.020148038864135742
+            ],
+            [
+                "62.115.139.173",
+                0.038382530212402344
+            ],
+            [
+                "80.91.254.91",
+                0.17229485511779785
+            ],
+            [
+                "80.91.254.91",
+                0.1726377010345459
+            ],
+            [
+                "62.115.136.201",
+                0.17060279846191406
+            ],
+            [
+                "62.115.137.39",
+                0.17210865020751953
+            ],
+            [
+                "129.250.3.219",
+                0.1725757122039795
+            ],
+            [
+                "129.250.2.114",
+                0.29895806312561035
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.bglad.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "204.8.234.161"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 18,
+        "Headers": {
+            "date": "Mon, 29 Apr 2024 13:34:28 GMT",
+            "content-type": "text/html; charset=UTF-8",
+            "transfer-encoding": "chunked",
+            "set-cookie": "PHPSESSID=1ke5cj9t2er63h90tgg4a5e9ca; path=/; SameSite=None; domain=bglad.com; secure; HttpOnly, has_visited=1; expires=Wed, 01-May-2024 13:34:28 GMT; Max-Age=172800; path=/; domain=.bglad.com",
+            "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "cache-control": "no-store, no-cache, must-revalidate",
+            "pragma": "no-cache",
+            "strict-transport-security": "max-age=31536000; preload;",
+            "vary": "Accept-Encoding",
+            "content-encoding": "gzip"
+        },
+        "HTML Content": "www.bglad.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "bglad.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "049644EFB7F10931E3302C985225F04FE1B1",
+            "notBefore": "Apr 24 03:17:00 2024 GMT",
+            "notAfter": "Jul 23 03:16:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "bglad.com"
+                ],
+                [
+                    "DNS",
+                    "www.bglad.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 09:34:41"
+    },
+    "https://www.binance.com": {
+        "Time": 5.68,
+        "URL": "https://www.binance.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "52.84.150.48",
+            "52.84.150.52",
+            "52.84.150.65",
+            "52.84.150.36"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "52.84.150.36",
+        "PING Status": "OK",
+        "PING IP": "52.84.150.36",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.binance.com/en",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "52.84.150.52",
+                "52.84.150.65",
+                "52.84.150.36",
+                "52.84.150.48"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 3488890,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "544016",
+            "Connection": "keep-alive",
+            "Date": "Mon, 29 Apr 2024 13:35:20 GMT",
+            "Server": "Tengine",
+            "Cache-Control": "max-age=0, must-revalidate",
+            "Content-Encoding": "gzip",
+            "Content-Security-Policy": "style-src 'self' 'unsafe-inline' blob: https://*.saasexch.cc https://*.saasexch.co https://*.saasexch.com https://accounts.google.com https://api.smartling.com https://bin.bnbstatic.com https://fast.wistia.com https://fonts.googleapis.com https://optimize.google.com https://public-1306379396.file.myqcloud.com https://public.bnbstatic.com https://static-file-1306379396.file.myqcloud.com; object-src 'none'; connect-src 'self' *.google.ad *.google.ae *.google.al *.google.am *.google.as *.google.at *.google.az *.google.ba *.google.be *.google.bf *.google.bg *.google.bi *.google.bj *.google.bs *.google.bt *.google.by *.google.ca *.google.cat *.google.cd *.google.cf *.google.cg *.google.ch *.google.ci *.google.cl *.google.cm *.google.cn *.google.co.ao *.google.co.bw *.google.co.ck *.google.co.cr *.google.co.id *.google.co.il *.google.co.in *.google.co.jp *.google.co.ke *.google.co.kr *.google.co.ls *.google.co.ma *.google.co.mz *.google.co.nz *.google.co.th *.google.co.tz *.google.co.ug *.google.co.uk *.google.co.uz *.google.co.ve *.google.co.vi *.google.co.za *.google.co.zm *.google.co.zw *.google.com *.google.com.af *.google.com.ag *.google.com.ar *.google.com.au *.google.com.bd *.google.com.bh *.google.com.bn *.google.com.bo *.google.com.br *.google.com.bz *.google.com.co *.google.com.cu *.google.com.cy *.google.com.do *.google.com.ec *.google.com.eg *.google.com.et *.google.com.fj *.google.com.gh *.google.com.gi *.google.com.gt *.google.com.hk *.google.com.jm *.google.com.kh *.google.com.kw *.google.com.lb *.google.com.ly *.google.com.mm *.google.com.mt *.google.com.mx *.google.com.my *.google.com.na *.google.com.ng *.google.com.ni *.google.com.np *.google.com.om *.google.com.pa *.google.com.pe *.google.com.pg *.google.com.ph *.google.com.pk *.google.com.pr *.google.com.py *.google.com.qa *.google.com.sa *.google.com.sb *.google.com.sg *.google.com.sl *.google.com.sv *.google.com.tj *.google.com.tr *.google.com.tw *.google.com.ua *.google.com.uy *.google.com.vc *.google.com.vn *.google.cv *.google.cz *.google.de *.google.dj *.google.dk *.google.dm *.google.dz *.google.ee *.google.es *.google.fi *.google.fm *.google.fr *.google.ga *.google.ge *.google.gg *.google.gl *.google.gm *.google.gr *.google.gy *.google.hn *.google.hr *.google.ht *.google.hu *.google.ie *.google.im *.google.iq *.google.is *.google.it *.google.je *.google.jo *.google.kg *.google.ki *.google.kz *.google.la *.google.li *.google.lk *.google.lt *.google.lu *.google.lv *.google.md *.google.me *.google.mg *.google.mk *.google.ml *.google.mn *.google.mu *.google.mv *.google.mw *.google.ne *.google.nl *.google.no *.google.nr *.google.nu *.google.pl *.google.pn *.google.ps *.google.pt *.google.ro *.google.rs *.google.ru *.google.rw *.google.sc *.google.se *.google.sh *.google.si *.google.sk *.google.sm *.google.sn *.google.so *.google.sr *.google.st *.google.td *.google.tg *.google.tl *.google.tm *.google.tn *.google.to *.google.tt *.google.vu *.google.ws https://*.agora.io:* https://*.binance.com https://*.edge.agora.io:* https://*.edge.sd-rtn.com:* https://*.litix.io https://*.s3-accelerate.amazonaws.com https://*.saasexch.cc https://*.saasexch.co https://*.saasexch.com https://*.sd-rtn.com:* https://*.sentry.io https://*.wistia.com https://accounts.google.com https://analytics.google.com https://api.saasexch.com https://api.saasexch.com/bapi/themis/api/ https://api.smartling.com https://bat.bing.com https://bin.bnbstatic.com https://cdn.cookielaw.org https://data-collect.toolsfdg.net https://embedwistia-a.akamaihd.net https://fcmregistrations.googleapis.com https://firebaseinstallations.googleapis.com https://frontend-m.binance.cloud https://geolocation.onetrust.com https://googleads.g.doubleclick.net https://log.bntrace.com https://logan-log.binance.gg https://obseu.segreencolumn.com https://privacyportal-bn.my.onetrust.com https://public-1306379396.file.myqcloud.com https://public.bnbstatic.com https://report.binance.gg https://sensors.binance.cloud https://static-file-1306379396.file.myqcloud.com https://stats.g.doubleclick.net https://upload-bnbstatic-com.s3.ap-northeast-1.amazonaws.com https://www.google-analytics.com https://www.google.com https://www.googletagmanager.com wss://*.agora.io:* wss://*.binance.com wss://*.edge.agora.io:* wss://*.edge.sd-rtn.com:* wss://*.sd-rtn.com:* wss://*.yshyqxx.com wss://bstream.binance.com:9443 wss://bstream.yshyqxx.com:443 wss://chat-wss.yshyqxx.com wss://haodesk.binance.im wss://margin-stream.binance.com:443 wss://margin-stream.yshyqxx.com:443 wss://nbstream.binance.com wss://nbstream.yshyqxx.com wss://nbstream.yshyqxx.com:443 wss://stream.binance.com wss://stream.yshyqxx.com:443; img-src 'self' blob: data: https://*.saasexch.cc https://*.saasexch.co https://*.saasexch.com https://*.wistia.com https://*.wistia.net https://accounts.google.com https://analytics.twitter.com https://api.smartling.com https://bat.bing.com https://bin.bnbstatic.com https://cdn.cookielaw.org https://embedwistia-a.akamaihd.net https://geolocation.onetrust.com https://googleads.g.doubleclick.net https://obseu.segreencolumn.com https://optimize.google.com https://privacyportal-bn.my.onetrust.com https://public-1259603563.file.myqcloud.com https://public-1306379396.file.myqcloud.com https://public.bnbstatic.com https://public.nftstatic.com https://sensors.binance.cloud https://static-file-1259603563.file.myqcloud.com https://static-file-1306379396.file.myqcloud.com https://static.devfdg.net https://t.co https://upload-bnbstatic-com.s3.ap-northeast-1.amazonaws.com https://www.facebook.com https://www.google-analytics.com https://www.google.com https://www.googletagmanager.com; default-src 'self' https://*.saasexch.cc https://*.saasexch.co https://*.saasexch.com https://*.wistia.com https://*.wistia.net https://bin.bnbstatic.com https://public-1306379396.file.myqcloud.com https://public.bnbstatic.com https://static-file-1306379396.file.myqcloud.com; font-src 'self' data: https://*.saasexch.cc https://*.saasexch.co https://*.saasexch.com https://*.wistia.com https://accounts.google.com https://api.smartling.com https://at.alicdn.com https://bin.bnbstatic.com https://fonts.gstatic.com https://public-1306379396.file.myqcloud.com https://public.bnbstatic.com https://static-file-1306379396.file.myqcloud.com; media-src 'self' blob: https://*.saasexch.cc https://*.saasexch.co https://*.saasexch.com https://*.wistia.com https://*.wistia.net https://accounts.google.com https://api.smartling.com https://bin.bnbstatic.com https://binance.com https://embedwistia-a.akamaihd.net https://fast.wistia.net https://public-1306379396.file.myqcloud.com https://public.bnbstatic.com https://static-file-1306379396.file.myqcloud.com https://upload-bnbstatic-com.s3.ap-northeast-1.amazonaws.com; base-uri 'self'; script-src 'nonce-8b5c0104-c59b-4076-b7d7-1c2b3066b393' 'self' 'unsafe-inline' blob: bnc: data: https://*.saasexch.cc https://*.saasexch.co https://*.saasexch.com https://*.wistia.com https://*.wistia.net https://accounts.binance.com https://accounts.google.com https://accounts.google.com/gsi/client https://api.smartling.com https://apis.google.com/js/api:client.js https://appleid.cdn-apple.com https://bat.bing.com https://bin.bnbstatic.com https://cdn.cookielaw.org https://euob.segreencolumn.com https://geolocation.onetrust.com https://googleads.g.doubleclick.net https://log.bntrace.com https://maps.googleapis.com https://obseu.segreencolumn.com https://optimize.google.com https://privacyportal-bn.my.onetrust.com https://public-1306379396.file.myqcloud.com https://public.bnbstatic.com https://src.litix.io https://static-file-1306379396.file.myqcloud.com https://www.google-analytics.com https://www.google.com https://www.googleadservices.com https://www.googleanalytics.com https://www.googleoptimize.com https://www.googletagmanager.com https://www.gstatic.com; frame-src 'self' bnc: https://*.saasexch.cc https://*.saasexch.co https://*.saasexch.com https://accounts.google.com https://accounts.google.com/ https://api.smartling.com https://bid.g.doubleclick.net https://fast.wistia.com https://fast.wistia.net https://optimize.google.com https://www.google.com",
+            "ETag": "\"353c7a-0C0YZV9C+73NXEJ2/LwzbdqN3FM\"",
+            "Expect-Ct": "max-age=0",
+            "Set-Cookie": "theme=dark; Path=/; Domain=binance.com",
+            "Strict-Transport-Security": "max-age=15552000; includeSubDomains, max-age=31536000; includeSubdomains",
+            "X-Cache-Proxy": "hit",
+            "X-Cache-Proxy-Key": "cpv2_gzip_33449d27ca3f820efcf46e1ea884b280",
+            "X-Cache-Proxy-Rule": "www-template-ui",
+            "X-Cluster-Info": "fe-com",
+            "X-Debug": "x-debug-10",
+            "X-Dns-Prefetch-Control": "off",
+            "X-Download-Options": "noopen",
+            "X-Envoy-Decorator-Operation": "cache-proxy.cache-proxy.svc.cluster.local:80/*",
+            "X-Envoy-Upstream-Service-Time": "12",
+            "X-Gateway": "traefik",
+            "X-Permitted-Cross-Domain-Policies": "none",
+            "X-Service-Name": "template-ui",
+            "X-Trace-Id": "c1d20d0cf26c4fae8d80a0618862c95f",
+            "X-Traefik-Duration": "2.00",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Xss-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Referrer-Policy": "origin-when-cross-origin",
+            "X-Cache": "Miss from cloudfront",
+            "Via": "1.1 d954dd318e06aa0e69375f36dcd819de.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "FRA60-P1",
+            "X-Amz-Cf-Id": "gPoS6ZCSD1PZhpUxfgjDNncDBpgfwvZwNwrHRVwd_BFCLOBB19FLng=="
+        },
+        "HTML Content": "www.binance.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "KY"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "GEORGE TOWN"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Binance Holdings Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.binance.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GeoTrust TLS RSA CA G1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "034A5CD3BDA552871B713BCF65C8659D",
+            "notBefore": "Jan 11 00:00:00 2024 GMT",
+            "notAfter": "Feb 10 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.binance.com"
+                ],
+                [
+                    "DNS",
+                    "binance.com"
+                ]
+            ],
+            "OCSP": [
+                "http://status.geotrust.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.geotrust.com/GeoTrustTLSRSACAG1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://cdp.geotrust.com/GeoTrustTLSRSACAG1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:35:24"
+    },
+    "https://www.bing.com": {
+        "Time": 4.34,
+        "URL": "https://www.bing.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "139.45.207.25",
+            "139.45.207.40",
+            "139.45.207.96",
+            "139.45.207.11",
+            "139.45.207.97",
+            "139.45.207.18",
+            "139.45.207.17",
+            "139.45.207.33",
+            "139.45.207.89"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "139.45.207.25",
+        "PING Status": "OK",
+        "PING IP": "139.45.207.25",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 140639,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Cache-Control": "private",
+            "Content-Encoding": "gzip",
+            "Vary": "Accept-Encoding",
+            "X-EventID": "662fa25b0b104763b9fda79df7a9b83f",
+            "UserAgentReductionOptOut": "A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "Content-Security-Policy-Report-Only": "script-src https: 'strict-dynamic' 'report-sample' 'nonce-O7jPMJljOPnAuOIZw4X8gt21yDX2ENCYzsFSYxXTLwg='; base-uri 'self';report-to csp-endpoint",
+            "Report-To": "{\"group\":\"csp-endpoint\",\"max_age\":86400,\"endpoints\":[{\"url\":\"https://aefd.nelreports.net/api/report?cat=bingcsp\"}]}, {\"group\":\"network-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://aefd.nelreports.net/api/report?cat=binghp&ndcParam=QWthbWFp\"}]}, {\"group\":\"crossorigin-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://aefd.nelreports.net/api/report?cat=binghp\"}]}",
+            "P3P": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
+            "nel": "{\"report_to\":\"network-errors\",\"max_age\":604800,\"success_fraction\":0.01,\"failure_fraction\":1.0,\"include_subdomains\":true}",
+            "cross-origin-embedder-policy-report-only": "'same-origin; report-to=\\\"crossorigin-errors\\\"'",
+            "cross-origin-opener-policy-report-only": "'require-corp; report-to=\\\"crossorigin-errors\\\"'",
+            "Date": "Mon, 29 Apr 2024 13:36:27 GMT",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive, Transfer-Encoding",
+            "Set-Cookie": "MUID=10E7F19905AA6DBF12B5E5E9043A6C79; domain=.bing.com; expires=Sat, 24-May-2025 13:36:27 GMT; path=/; secure; SameSite=None, MUIDB=10E7F19905AA6DBF12B5E5E9043A6C79; expires=Sat, 24-May-2025 13:36:27 GMT; path=/; HttpOnly, _EDGE_S=F=1&SID=18DC4B0D4BEA6BD534A75F7D4A7A6AAB; domain=.bing.com; path=/; HttpOnly, _EDGE_V=1; domain=.bing.com; expires=Sat, 24-May-2025 13:36:27 GMT; path=/; HttpOnly, SRCHD=AF=NOFORM; domain=.bing.com; expires=Wed, 29-Apr-2026 13:36:27 GMT; path=/; secure; SameSite=None, SRCHUID=V=2&GUID=9577203FE3874DDAAC7EBC244A782C50&dmnchg=1; domain=.bing.com; expires=Wed, 29-Apr-2026 13:36:27 GMT; path=/; secure; SameSite=None, SRCHUSR=DOB=20240429; domain=.bing.com; expires=Wed, 29-Apr-2026 13:36:27 GMT; path=/; secure; SameSite=None, SRCHHPGUSR=SRCHLANG=ru&IG=C350E3D492124F1997F922CC4F926284; domain=.bing.com; expires=Wed, 29-Apr-2026 13:36:27 GMT; path=/; secure; SameSite=None, _SS=SID=18DC4B0D4BEA6BD534A75F7D4A7A6AAB; domain=.bing.com; path=/; secure; SameSite=None, ULC=; domain=.bing.com; expires=Sun, 28-Apr-2024 13:36:27 GMT; path=/; secure; SameSite=None, _HPVN=CS=eyJQbiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiUCJ9LCJTYyI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiSCJ9LCJReiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiVCJ9LCJBcCI6dHJ1ZSwiTXV0ZSI6dHJ1ZSwiTGFkIjoiMjAyNC0wNC0yOVQwMDowMDowMFoiLCJJb3RkIjowLCJHd2IiOjAsIlRucyI6MCwiRGZ0IjpudWxsLCJNdnMiOjAsIkZsdCI6MCwiSW1wIjoxLCJUb2JuIjowfQ==; domain=.bing.com; expires=Wed, 29-Apr-2026 13:36:27 GMT; path=/; secure; SameSite=None",
+            "Alt-Svc": "h3=\":443\"; ma=93600",
+            "X-CDN-TraceID": "0.1dcf2d8b.1714397787.f26c00d"
+        },
+        "HTML Content": "www.bing.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "WA"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Redmond"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "r.bing.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Microsoft Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Microsoft Azure ECC TLS Issuing CA 05"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "330000342EC50FC6579F4D89D300000000342E",
+            "notBefore": "Oct 18 20:32:40 2023 GMT",
+            "notAfter": "Jun 27 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.bing.com"
+                ],
+                [
+                    "DNS",
+                    "*.bingstatic.com"
+                ],
+                [
+                    "DNS",
+                    "*.explicit.bing.net"
+                ],
+                [
+                    "DNS",
+                    "*.mm.bing.net"
+                ],
+                [
+                    "DNS",
+                    "akam.bing.com"
+                ],
+                [
+                    "DNS",
+                    "r.bing.com"
+                ],
+                [
+                    "DNS",
+                    "r.msftstatic.com"
+                ],
+                [
+                    "DNS",
+                    "raka.bing.com"
+                ],
+                [
+                    "DNS",
+                    "raka.msftstatic.com"
+                ],
+                [
+                    "DNS",
+                    "th.bing.com"
+                ],
+                [
+                    "DNS",
+                    "th.msftstatic.com"
+                ],
+                [
+                    "DNS",
+                    "thaka.bing.com"
+                ],
+                [
+                    "DNS",
+                    "thaka.msftstatic.com"
+                ]
+            ],
+            "OCSP": [
+                "http://oneocsp.microsoft.com/ocsp"
+            ],
+            "caIssuers": [
+                "http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20ECC%20TLS%20Issuing%20CA%2005%20-%20xsign.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://www.microsoft.com/pkiops/crl/Microsoft%20Azure%20ECC%20TLS%20Issuing%20CA%2005.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 09:36:31"
+    },
+    "https://www.birthcontrol.com": {
+        "Time": 14.82,
+        "URL": "https://www.birthcontrol.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "35.209.64.99"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "35.209.64.99",
+        "PING Status": "OK",
+        "PING IP": "35.209.64.99",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://birthcontrol.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "35.209.64.99"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 175147,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 13:37:10 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Cache-Enabled": "False",
+            "Link": "<https://birthcontrol.com/wp-json/>; rel=\"https://api.w.org/\", <https://birthcontrol.com/wp-json/wp/v2/pages/2701>; rel=\"alternate\"; type=\"application/json\", <https://birthcontrol.com/>; rel=shortlink",
+            "X-Httpd-Modphp": "1",
+            "Host-Header": "6b7412fb82ca5edfd0917e3957f05d89",
+            "X-Proxy-Cache": "MISS",
+            "X-Proxy-Cache-Info": "W NC:000000 UP:",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.birthcontrol.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "birthcontrol.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0372614B1D4CB7ACC87E7FF1AA7AE44307D6",
+            "notBefore": "Apr 13 04:13:41 2024 GMT",
+            "notAfter": "Jul 12 04:13:40 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "birthcontrol.com"
+                ],
+                [
+                    "DNS",
+                    "www.birthcontrol.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 09:37:21"
+    }
+}

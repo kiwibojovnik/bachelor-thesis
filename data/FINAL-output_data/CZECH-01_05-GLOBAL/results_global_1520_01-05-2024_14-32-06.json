@@ -1,0 +1,916 @@
+{
+    "http://www.freeexpression.org": {
+        "URL": "http://www.freeexpression.org",
+        "Error": "'Timed Out'"
+    },
+    "http://www.gay.com": {
+        "Time": 17.2,
+        "URL": "http://www.gay.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.96.9",
+            "188.114.97.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.97.9",
+        "PING Status": "OK",
+        "PING IP": "188.114.97.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://lalgbtcenter.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.185.0.3"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 236869,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Cache-Control": "public, max-age=600",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Link": "<https://lalgbtcenter.org/wp-json/>; rel=\"https://api.w.org/\", <https://lalgbtcenter.org/wp-json/wp/v2/pages/13786>; rel=\"alternate\"; type=\"application/json\", <https://lalgbtcenter.org/>; rel=shortlink",
+            "Server": "nginx",
+            "Set-Cookie": "STYXKEY_visited=1714566234; expires=Tue, 22-Apr-2025 12:23:54 GMT; Max-Age=30758400; path=/",
+            "Strict-Transport-Security": "max-age=300",
+            "X-Pantheon-Styx-Hostname": "styx-fe3-b-856bdb75d-nzgwc",
+            "X-Styx-Req-Id": "aceb5c6f-07b5-11ef-8375-3ae7c734c879",
+            "Age": "0",
+            "Accept-Ranges": "bytes",
+            "Via": "1.1 varnish, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+            "Date": "Wed, 01 May 2024 12:23:55 GMT",
+            "X-Served-By": "cache-chi-kigq8000172-CHI, cache-vie6328-VIE, cache-vie6377-VIE, cache-vie6377-VIE",
+            "X-Cache": "MISS, MISS, MISS, MISS",
+            "X-Cache-Hits": "0, 0, 0, 0",
+            "X-Timer": "S1714566234.262464,VS0,VE1362",
+            "Vary": "Accept-Encoding, Cookie, Cookie",
+            "transfer-encoding": "chunked"
+        },
+        "HTML Content": "www.gay.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "gay.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "89C1678CE421438911CACFEA7B6D0AA1",
+            "notBefore": "Mar 29 20:36:30 2024 GMT",
+            "notAfter": "Jun 27 20:36:29 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "gay.com"
+                ],
+                [
+                    "DNS",
+                    "*.gay.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/VSvbeSzCadk"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/6xrg4Pu_Q3E.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 14:24:10"
+    },
+    "http://www.google.com/search?q=gay": {
+        "Time": 11.63,
+        "URL": "http://www.google.com/search?q=gay",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.251.36.132"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.251.36.132",
+        "PING Status": "OK",
+        "PING IP": "142.251.36.132",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 695638,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 12:25:11 GMT",
+            "Expires": "-1",
+            "Cache-Control": "private, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy": "object-src 'none';base-uri 'self';script-src 'nonce-rlL733x2ycPhjZ8axvJcAA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/cdt1",
+            "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"gws\"",
+            "Report-To": "{\"group\":\"gws\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gws/cdt1\"}]}",
+            "Accept-CH": "Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Arch, Sec-CH-UA-Model, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64",
+            "Permissions-Policy": "unload=()",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "Content-Encoding": "gzip",
+            "Server": "gws",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Set-Cookie": "__Secure-ENID=19.SE=FdBnM3GUYg853-TJmj_kWwZ6kzHh4I6URRHgvgGKMpiM-4HYVU-X786rayiH2jgsCZQqX1YXULVuE-6kWWVtYh0syb_anAD4vAb4g-HpezotQIGEtBmG33eWuMU9n5ZbFUtWwiSJ6ltr315dV9kJKPIyVE-BCFO6z4MA6Kgzo9juCtlY9LaJ3YQruQ; expires=Sun, 01-Jun-2025 04:43:29 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "www.google.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.google.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "E8B7ECE521C2BBFF0AF9A77AC8F3E379",
+            "notBefore": "Apr  8 07:33:48 2024 GMT",
+            "notAfter": "Jul  1 07:33:47 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.google.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/moVDfISia2k.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 14:25:21"
+    },
+    "http://www.google.com/search?q=lesbian": {
+        "Time": 13.26,
+        "URL": "http://www.google.com/search?q=lesbian",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.251.36.132"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.251.36.132",
+        "PING Status": "OK",
+        "PING IP": "142.251.36.132",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 505292,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 12:26:06 GMT",
+            "Expires": "-1",
+            "Cache-Control": "private, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy": "object-src 'none';base-uri 'self';script-src 'nonce--S4nafsiIC0yzVBuMK2YWw' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/cdt1",
+            "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"gws\"",
+            "Report-To": "{\"group\":\"gws\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gws/cdt1\"}]}",
+            "Accept-CH": "Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Arch, Sec-CH-UA-Model, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64",
+            "Permissions-Policy": "unload=()",
+            "Origin-Trial": "Ap+qNlnLzJDKSmEHjzM5ilaa908GuehlLqGb6ezME5lkhelj20qVzfv06zPmQ3LodoeujZuphAolrnhnPA8w4AIAAABfeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJQZXJtaXNzaW9uc1BvbGljeVVubG9hZCIsImV4cGlyeSI6MTY4NTY2Mzk5OX0=, AvudrjMZqL7335p1KLV2lHo1kxdMeIN0dUI15d0CPz9dovVLCcXk8OAqjho1DX4s6NbHbA/AGobuGvcZv0drGgQAAAB9eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJCYWNrRm9yd2FyZENhY2hlTm90UmVzdG9yZWRSZWFzb25zIiwiZXhwaXJ5IjoxNjkxNTM5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "Content-Encoding": "gzip",
+            "Server": "gws",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Set-Cookie": "__Secure-ENID=19.SE=QSjCrApSKl2QSl6iPo2BkddR5PCx0Y-ox9QfKtJhptHaiZHpIibcI2GPjsMSAbUWRPzi3mu99PG95WHkqa1r_uvdYkZWxcAVwPPdIQRDHjdelNgdf41CNsL6gBcAdidbIzq9OpRfmV9uIF8tsSuIUklzQMPtPoHPY5210pmqbL6Fjn4ot2Nd_JY4; expires=Sun, 01-Jun-2025 04:44:24 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "www.google.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.google.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "E8B7ECE521C2BBFF0AF9A77AC8F3E379",
+            "notBefore": "Apr  8 07:33:48 2024 GMT",
+            "notAfter": "Jul  1 07:33:47 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.google.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/moVDfISia2k.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 14:26:15"
+    },
+    "http://www.google.com/search?q=transsexual": {
+        "Time": 10.41,
+        "URL": "http://www.google.com/search?q=transsexual",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.251.36.68"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.251.36.68",
+        "PING Status": "OK",
+        "PING IP": "142.251.36.68",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 416150,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 12:26:54 GMT",
+            "Expires": "-1",
+            "Cache-Control": "private, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy": "object-src 'none';base-uri 'self';script-src 'nonce-zkBZjPmsAkdShbytCBhXDQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/cdt1",
+            "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"gws\"",
+            "Report-To": "{\"group\":\"gws\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gws/cdt1\"}]}",
+            "Accept-CH": "Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Arch, Sec-CH-UA-Model, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64",
+            "Permissions-Policy": "unload=()",
+            "Origin-Trial": "Ap+qNlnLzJDKSmEHjzM5ilaa908GuehlLqGb6ezME5lkhelj20qVzfv06zPmQ3LodoeujZuphAolrnhnPA8w4AIAAABfeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJQZXJtaXNzaW9uc1BvbGljeVVubG9hZCIsImV4cGlyeSI6MTY4NTY2Mzk5OX0=, AvudrjMZqL7335p1KLV2lHo1kxdMeIN0dUI15d0CPz9dovVLCcXk8OAqjho1DX4s6NbHbA/AGobuGvcZv0drGgQAAAB9eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJCYWNrRm9yd2FyZENhY2hlTm90UmVzdG9yZWRSZWFzb25zIiwiZXhwaXJ5IjoxNjkxNTM5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "Content-Encoding": "gzip",
+            "Server": "gws",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Set-Cookie": "__Secure-ENID=19.SE=kNNpqKK0qdVYEKNcnRx-67ge7T-DYbqzyBetYhBvPq_wM6-wPpNhqsIZxWjbE9efaiRNfuZ2rbUtDIBdQW74VNiL3JBDqjRCyLLG33i53Wb_YES9lbqG9rAlGPUEaTeHX-RHL9Nmww0Hzs9cWMROOTCOrBCb8aRBB5GLkHjl0y6cYHW5ZX8rtTsldw; expires=Sun, 01-Jun-2025 04:45:12 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "www.google.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.google.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "E8B7ECE521C2BBFF0AF9A77AC8F3E379",
+            "notBefore": "Apr  8 07:33:48 2024 GMT",
+            "notAfter": "Jul  1 07:33:47 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.google.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/moVDfISia2k.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 14:27:03"
+    },
+    "https://z-lib.org": {
+        "Time": 30.09,
+        "URL": "https://z-lib.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.201.135.114"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.201.135.114",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.006175994873046875
+            ],
+            [
+                "90.181.198.158",
+                0.003565073013305664
+            ],
+            [
+                "90.181.197.157",
+                0.009166955947875977
+            ],
+            [
+                "194.228.21.250",
+                0.008465051651000977
+            ],
+            [
+                "62.115.124.28",
+                0.015323877334594727
+            ],
+            [
+                "62.115.122.159",
+                0.10826992988586426
+            ],
+            [
+                "100.41.223.241",
+                0.11571192741394043
+            ]
+        ],
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='z-lib.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "z-lib.org_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 14:28:18"
+    },
+    "https://rargb.to": {
+        "Time": 5.53,
+        "URL": "https://rargb.to",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.45.102",
+            "172.67.213.35"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.213.35",
+        "PING Status": "OK",
+        "PING IP": "172.67.213.35",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 47821,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 12:28:53 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "PHP/5.6.40",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=duwBnSTsRkGUO5SBaXlSMjKh0TlgSzSIF87UG6EJFJnKsqGZpqjIDeL2JWQfmzSBCbapgumkrsyYUpNJP7Pi1wvXE17Wpf7eo92IsEdL%2F7g3%2FBqMunocTrpqbA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87cfc61f5a1ab9d7-OTP",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "rargb.to_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "rargb.to"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "2540698316E3DA7D0DF0E93094F3ECD5",
+            "notBefore": "Apr  4 05:13:10 2024 GMT",
+            "notAfter": "Jul  3 05:13:09 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "rargb.to"
+                ],
+                [
+                    "DNS",
+                    "*.rargb.to"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/59rV_e8eRcU"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/OaOP8Hm-Oq8.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 14:28:58"
+    },
+    "https://yts.mx": {
+        "Time": 16.8,
+        "URL": "https://yts.mx",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.31.16.120",
+            "104.31.16.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.31.16.9",
+        "PING Status": "OK",
+        "PING IP": "104.31.16.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 50556,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 12:30:02 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "PHPSESSID=n58usolghu3loirs3gupk4142k; path=/",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "Pragma": "no-cache",
+            "X-Varnish": "4771911",
+            "Age": "0",
+            "Via": "1.1 varnish (Varnish/5.2)",
+            "Strict-Transport-Security": "max-age=0; includeSubDomains; preload",
+            "Access-Control-Allow-Origin": "*",
+            "X-Frame-Options": "DENY",
+            "X-Content-Type-Options": "nosniff",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=6rqNtkCWv0i1iofSafsf6a%2FPBq4%2BwPtbHHZ7z4meWLEPwXWZZAJeq%2FIiPCTVxjdgcXSgDd9fUNtPkfR9s81NcioD6h1vC%2B9%2Fc7L3qcDSoeOn9dpBHIKJfQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87cfc7d278576e99-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "yts.mx_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "yts.mx"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03970605A3D4DAC856C8CE0297021148ADD0",
+            "notBefore": "Mar 11 02:44:38 2024 GMT",
+            "notAfter": "Jun  9 02:44:37 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.yts.mx"
+                ],
+                [
+                    "DNS",
+                    "yts.mx"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 14:30:18"
+    },
+    "https://yts.lt": {
+        "Time": 6.8,
+        "URL": "https://yts.lt",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.31.16.120",
+            "104.31.16.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.31.16.9",
+        "PING Status": "OK",
+        "PING IP": "104.31.16.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://yts.mx/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.31.16.120",
+                "104.31.16.9"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 50565,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 12:31:17 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "PHPSESSID=rkqhej471tle0j49jo0hrmnmfi; path=/",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "Pragma": "no-cache",
+            "X-Varnish": "6580649",
+            "Age": "0",
+            "Via": "1.1 varnish (Varnish/5.2)",
+            "Strict-Transport-Security": "max-age=0; includeSubDomains; preload",
+            "Access-Control-Allow-Origin": "*",
+            "X-Frame-Options": "DENY",
+            "X-Content-Type-Options": "nosniff",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=uoDYw9xUVJmkyufce1ClJP2Pg9twoZoKsLH9eTyHt3agIh%2B%2FgwoIAn0GjNj0yZ0VrQBCKWG2%2FBHwKCollYJP5X6h8o632CviD3ThZhDjUXJo7lCh5msz8Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87cfc9a4c8bab32f-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "yts.lt_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.yts.lt"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0B2E140C93B358CB02CE7559DD7F2140",
+            "notBefore": "Mar 10 00:00:00 2024 GMT",
+            "notAfter": "Dec 31 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.yts.lt"
+                ],
+                [
+                    "DNS",
+                    "yts.lt"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 14:31:23"
+    },
+    "https://eztv.re": {
+        "Time": 5.7,
+        "URL": "https://eztv.re",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.31.16.120",
+            "104.31.16.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.31.16.120",
+        "PING Status": "OK",
+        "PING IP": "104.31.16.120",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://eztvx.to/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.31.16.121",
+                "104.31.16.8"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 171580,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 12:32:01 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "set-cookie": "PHPSESSID=hqboqnkqb0g7gv9anjrujfih0f; path=/",
+            "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "pragma": "no-cache",
+            "strict-transport-security": "max-age=63072000; preload, max-age=15638400",
+            "access-control-allow-origin": "*",
+            "x-frame-options": "DENY",
+            "x-content-type-options": "nosniff",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=a3XuBsG1DE0PV0E9PCgkc2L8%2BSNge%2Fy3iMb4KuMbYFz6VxUJ6RQ1YFPS%2BpY9UVbLetohLL%2F%2Fxkf2oFNTtjLV5nLpIYSnshgXIpHofghn2tnnfPTW8cdDIYufHA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87cfcab6af126e99-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "eztv.re_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "eztv.re"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "FB91E2B51F9FC91F0ECB19929E955FD3",
+            "notBefore": "Mar 29 19:33:49 2024 GMT",
+            "notAfter": "Jun 27 19:33:48 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "eztv.re"
+                ],
+                [
+                    "DNS",
+                    "*.eztv.re"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/0B0zor-kN5s"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/XKyfgl3pkrg.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 14:32:06"
+    }
+}

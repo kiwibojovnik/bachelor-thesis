@@ -1,0 +1,893 @@
+{
+    "http://networkcheck.kde.org": {
+        "Time": 3.99,
+        "URL": "http://networkcheck.kde.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "85.10.198.55"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "85.10.198.55",
+        "PING Status": "OK",
+        "PING IP": "85.10.198.55",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 3,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 08:16:53 GMT",
+            "Server": "Apache/2.4.52 (Ubuntu)",
+            "Upgrade": "h2,h2c",
+            "Connection": "Upgrade, Keep-Alive",
+            "Last-Modified": "Sat, 31 Aug 2019 09:38:19 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "3",
+            "Cache-Control": "max-age=0",
+            "Expires": "Wed, 01 May 2024 08:16:53 GMT",
+            "Strict-Transport-Security": "max-age=15768000",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "sameorigin",
+            "Permissions-Policy": "interest-cohort=()",
+            "X-NetworkManager-Status": "online",
+            "Keep-Alive": "timeout=5, max=100",
+            "Content-Type": "text/html"
+        },
+        "HTML Content": "networkcheck.kde.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.kde.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Domain Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "1DFCDA3BBB70BC8695AC2E568FB9585E",
+            "notBefore": "Sep 25 00:00:00 2023 GMT",
+            "notAfter": "Oct 19 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.kde.org"
+                ],
+                [
+                    "DNS",
+                    "kde.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 04:16:56"
+    },
+    "http://start.ubuntu.com/connectivity-check.html": {
+        "Time": 64.27,
+        "URL": "http://start.ubuntu.com/connectivity-check.html",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.125.190.29",
+            "185.125.190.21",
+            "185.125.190.20"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.125.190.21",
+        "PING Status": "OK",
+        "PING IP": "185.125.190.21",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 576,
+        "Headers": {
+            "server": "nginx/1.14.0 (Ubuntu)",
+            "date": "Wed, 01 May 2024 08:18:38 GMT",
+            "content-type": "text/html",
+            "content-length": "380",
+            "last-modified": "Tue, 16 Aug 2022 09:34:18 GMT",
+            "etag": "\"240-5e65873d034a4-gzip\"",
+            "vary": "Accept-Encoding",
+            "content-encoding": "gzip",
+            "x-cache-status": "STALE from content-cache-il3/2",
+            "accept-ranges": "bytes"
+        },
+        "HTML Content": "start.ubuntu.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "start.ubuntu.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "039382272D84748C72A4382F3534C58E5ADF",
+            "notBefore": "Apr 20 20:28:56 2024 GMT",
+            "notAfter": "Jul 19 20:28:55 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "start.ubuntu.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 04:18:41"
+    },
+    "http://ping.archlinux.org": {
+        "Time": 4.15,
+        "URL": "http://ping.archlinux.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "95.216.195.133"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "95.216.195.133",
+        "PING Status": "OK",
+        "PING IP": "95.216.195.133",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 74,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Wed, 01 May 2024 08:19:07 GMT",
+            "Content-Type": "text/plain",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "ping.archlinux.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "ping.archlinux.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04B7EE71B1D38FC10DFB024E9F4D0F56ED96",
+            "notBefore": "Apr 21 19:14:46 2024 GMT",
+            "notAfter": "Jul 20 19:14:45 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "ping.archlinux.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 04:19:10"
+    },
+    "http://www.msftncsi.com/ncsi.txt": {
+        "Time": 3.69,
+        "URL": "http://www.msftncsi.com/ncsi.txt",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "87.245.216.19",
+            "87.245.216.11"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "87.245.216.19",
+        "PING Status": "OK",
+        "PING IP": "87.245.216.19",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 14,
+        "Headers": {
+            "Content-Length": "14",
+            "Date": "Wed, 01 May 2024 08:19:58 GMT",
+            "Connection": "keep-alive",
+            "Content-Type": "text/plain",
+            "Cache-Control": "max-age=30, must-revalidate"
+        },
+        "HTML Content": "www.msftncsi.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 04:20:01"
+    },
+    "http://www.msftconnecttest.com/connecttest.txt": {
+        "Time": 3.74,
+        "URL": "http://www.msftconnecttest.com/connecttest.txt",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "87.245.216.19",
+            "87.245.216.11"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "87.245.216.11",
+        "PING Status": "OK",
+        "PING IP": "87.245.216.11",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 22,
+        "Headers": {
+            "Content-Length": "22",
+            "Date": "Wed, 01 May 2024 08:20:48 GMT",
+            "Connection": "keep-alive",
+            "Content-Type": "text/plain",
+            "Cache-Control": "max-age=30, must-revalidate"
+        },
+        "HTML Content": "www.msftconnecttest.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 04:20:51"
+    },
+    "http://canna.to": {
+        "Time": 9.95,
+        "URL": "http://canna.to",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "46.148.26.194"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "46.148.26.194",
+        "PING Status": "OK",
+        "PING IP": "46.148.26.194",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://canna.to/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "46.148.26.194"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 384632,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 08:21:49 GMT",
+            "Content-Type": "text/html; charset=ISO-8859-1",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Set-Cookie": "PHPSESSID=vpk43tnmsg4bo4j3ikb80k5n70; path=/, PHPSESSID=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0",
+            "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+            "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Pragma": "no-cache",
+            "Vary": "Accept-Encoding",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ae41CwNKXD%2FFVE1IZfmIXurr2hJ9b0BCYrXqCyXrYQv1vJsQJRtePkRAM2RvUKbyJeGSFdKVedI74MF6d7zM4h492kNLH4KmP1gGcfdYmd6S8Iq%2BqYsmEVn70dyUCmqk%2Bg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87ce5c35e9d719af-FRA",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "canna.to_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "board.canna.tf"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03E3475A2215A633E13DBFDEE75997569EEA",
+            "notBefore": "Apr  2 19:12:46 2024 GMT",
+            "notAfter": "Jul  1 19:12:45 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "board.canna.tf"
+                ],
+                [
+                    "DNS",
+                    "board.canna.to"
+                ],
+                [
+                    "DNS",
+                    "canna.tf"
+                ],
+                [
+                    "DNS",
+                    "canna.to"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 04:21:57"
+    },
+    "https://nsw2u.com": {
+        "Time": 5.08,
+        "URL": "https://nsw2u.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.88.34",
+            "172.67.150.79"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.150.79",
+        "PING Status": "OK",
+        "PING IP": "172.67.150.79",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 403,
+        "Content Length": 15464,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 08:22:50 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "close",
+            "Accept-CH": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+            "Cross-Origin-Embedder-Policy": "require-corp",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Origin-Agent-Cluster": "?1",
+            "Permissions-Policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+            "Referrer-Policy": "same-origin",
+            "X-Frame-Options": "SAMEORIGIN",
+            "cf-mitigated": "challenge",
+            "cf-chl-out": "5w95zMYPRYc3e9rm65XyyoxrJ0XFfBFzKpN90p9mYbsw/Or/QFmuYoyvDW6xkLrDTeV/pZ4yUvzrJBiHwlc7SGkna0/TF8/dOW+tk0Gn2LETzPz6ke7N5vmNHxlU1tMf$VrYO9le9QHSef0MV1xxw+Q==",
+            "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=bQVuubCe4nUQAqDRPXAhREfWGkSbICMhoT0Gj9vb2pIFrMBrbnJ6P4FDKmCk35rB2b5Qzr9To%2FcxV3tQs%2BxQQfB9WI9yadr%2FeQcnVDq39DeC8Dh1kJ88zM3J5Tc%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Vary": "Accept-Encoding",
+            "Server": "cloudflare",
+            "CF-RAY": "87ce5db4eaae92c4-CPH",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "nsw2u.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "nsw2u.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04FAF8768EFD2E11883A523F94FF45D58BF7",
+            "notBefore": "Apr  2 00:43:08 2024 GMT",
+            "notAfter": "Jul  1 00:43:07 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.nsw2u.com"
+                ],
+                [
+                    "DNS",
+                    "nsw2u.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 04:22:54"
+    },
+    "https://newalbumreleases.net": {
+        "Time": 4.92,
+        "URL": "https://newalbumreleases.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.31.16.119",
+            "104.31.16.10"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.31.16.10",
+        "PING Status": "OK",
+        "PING IP": "104.31.16.10",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 42874,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 08:23:27 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Powered-By": "PHP/7.1.28",
+            "Link": "<https://newalbumreleases.net/wp-json/>; rel=\"https://api.w.org/\"",
+            "Vary": "Accept-Encoding",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "Strict-Transport-Security": "max-age=31536000;",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=UkkH9JUmS1ni1y6g7JotZJ3K3z2OlGWWSyAxGFurELuSJzLp1WDsYcJq6%2FtOWtXRWgVYW7oiiKgbNLExlcZfeL0URAHnJeX67PT%2Fn5oaFmnpwlSaTn52TKApPS26xnGiBQ38qPD%2FCQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87ce5e9a88367b8b-DME",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "newalbumreleases.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "newalbumreleases.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "AA706371FD2AC3BF1394B436C8F7CEF2",
+            "notBefore": "Apr 13 20:43:07 2024 GMT",
+            "notAfter": "Jul 12 20:43:06 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "newalbumreleases.net"
+                ],
+                [
+                    "DNS",
+                    "*.newalbumreleases.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/F3Ym5enXkoE"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/RBokR26WdXw.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 04:23:31"
+    },
+    "http://www.qhtyzx.com": {
+        "Time": 38.65,
+        "URL": "http://www.qhtyzx.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "211.138.64.68"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "211.138.64.68",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0027010440826416016
+            ],
+            [
+                "212.98.161.17",
+                0.004436492919921875
+            ],
+            [
+                "185.11.76.45",
+                0.002350330352783203
+            ],
+            [
+                "185.11.76.28",
+                0.0029304027557373047
+            ],
+            [
+                "87.245.242.102",
+                0.0052912235260009766
+            ],
+            [
+                "87.245.232.244",
+                0.026614904403686523
+            ],
+            [
+                "4.68.110.26",
+                0.028594017028808594
+            ],
+            [
+                "223.120.10.41",
+                0.030709028244018555
+            ],
+            [
+                "223.120.11.70",
+                0.17348575592041016
+            ],
+            [
+                "223.120.22.37",
+                0.3352830410003662
+            ],
+            [
+                "221.183.89.33",
+                0.17632365226745605
+            ],
+            [
+                "221.183.89.50",
+                0.34647274017333984
+            ],
+            [
+                "221.183.171.94",
+                0.20937633514404297
+            ],
+            [
+                "111.12.147.153",
+                0.2385246753692627
+            ],
+            [
+                "211.138.64.175",
+                0.38559460639953613
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 100761,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Wed, 01 May 2024 08:24:40 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "\u00e2\u0080\u009cHttpOnly\u00e2\u0080\u009d, \u00e2\u0080\u009cSecure\u00e2\u0080\u009d",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.qhtyzx.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 04:24:58"
+    },
+    "http://www.qhnews.com": {
+        "Time": 36.07,
+        "URL": "http://www.qhnews.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "211.138.64.68"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "211.138.64.68",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0009801387786865234
+            ],
+            [
+                "212.98.161.17",
+                0.0009770393371582031
+            ],
+            [
+                "185.11.76.45",
+                0.0010724067687988281
+            ],
+            [
+                "185.11.76.26",
+                0.0012242794036865234
+            ],
+            [
+                "85.26.163.180",
+                0.01499485969543457
+            ],
+            [
+                "87.245.232.244",
+                0.025976896286010742
+            ],
+            [
+                "87.245.214.65",
+                0.027439355850219727
+            ],
+            [
+                "80.81.195.121",
+                0.03773665428161621
+            ],
+            [
+                "223.120.22.37",
+                0.3417544364929199
+            ],
+            [
+                "221.183.89.14",
+                0.18415498733520508
+            ],
+            [
+                "221.183.73.21",
+                0.2147064208984375
+            ],
+            [
+                "54.80.171.163",
+                0.30902767181396484
+            ],
+            [
+                "35.175.188.20",
+                0.12129974365234375
+            ],
+            [
+                "44.222.80.57",
+                0.026105880737304688
+            ],
+            [
+                "3.235.193.142",
+                0.026337146759033203
+            ],
+            [
+                "3.86.225.162",
+                0.03455853462219238
+            ],
+            [
+                "3.251.240.164",
+                0.09530234336853027
+            ],
+            [
+                "111.12.147.153",
+                0.08547282218933105
+            ],
+            [
+                "34.245.20.229",
+                0.06653285026550293
+            ],
+            [
+                "54.217.31.195",
+                0.12818050384521484
+            ],
+            [
+                "54.175.63.18",
+                0.6332340240478516
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 128661,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Wed, 01 May 2024 08:26:17 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Access-Control-Allow-Origin": "*",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.qhnews.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 04:26:36"
+    }
+}

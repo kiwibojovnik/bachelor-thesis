@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 lte9 lte8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 lte9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="@site.locale" class="notie no-js"> <!--<![endif]-->
+
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Jami</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicon/apple-touch-icon-57x57.png?v=f6b27db947" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicon/apple-touch-icon-114x114.png?v=f6b27db947" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicon/apple-touch-icon-72x72.png?v=f6b27db947" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicon/apple-touch-icon-144x144.png?v=f6b27db947" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicon/apple-touch-icon-60x60.png?v=f6b27db947" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicon/apple-touch-icon-120x120.png?v=f6b27db947" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicon/apple-touch-icon-76x76.png?v=f6b27db947" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicon/apple-touch-icon-152x152.png?v=f6b27db947" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-196x196.png?v=f6b27db947" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png?v=f6b27db947" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png?v=f6b27db947" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png?v=f6b27db947" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-128.png?v=f6b27db947" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/assets/images/favicon/mstile-144x144.png?v=f6b27db947" />
+    <meta name="msapplication-square70x70logo" content="/assets/images/favicon/mstile-70x70.png?v=f6b27db947" />
+    <meta name="msapplication-square150x150logo" content="/assets/images/favicon/mstile-150x150.png?v=f6b27db947" />
+    <meta name="msapplication-wide310x150logo" content="/assets/images/favicon/mstile-310x150.png?v=f6b27db947" />
+    <meta name="msapplication-square310x310logo" content="/assets/images/favicon/mstile-310x310.png?v=f6b27db947" />
+
+    <!--Insert OG Markup -->
+    <meta property="og:type" content="Jami" />
+    <meta property="og:title" content="Jami" />
+    <meta property="og:description" content="Jami facilitates share, freely and privately." />
+    <meta property="og:image" content="https://jami.net/assets/images/logo-jami.jpg" />
+    <meta property="og:url" content="" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/fonts.css?v=f6b27db947">
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=f6b27db947" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/bootstrap.min.css?v=f6b27db947" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/style.css?v=f6b27db947" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/lightbox.css?v=f6b27db947" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <meta name="description" content="Jami - the distributed and open source communication platform" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://jami.net/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="next" href="https://jami.net/page/2/" />
+    
+    <meta property="og:site_name" content="Jami" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jami" />
+    <meta property="og:description" content="Jami - the distributed and open source communication platform" />
+    <meta property="og:url" content="https://jami.net/" />
+    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jami" />
+    <meta name="twitter:description" content="Jami - the distributed and open source communication platform" />
+    <meta name="twitter:url" content="https://jami.net/" />
+    <meta name="twitter:site" content="@jami_social" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Jami",
+        "url": "https://jami.net/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://jami.net/content/images/2018/12/logo-jami.svg"
+        }
+    },
+    "url": "https://jami.net/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://jami.net/"
+    },
+    "description": "Jami - the distributed and open source communication platform"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.48" />
+    <link rel="alternate" type="application/rss+xml" title="Jami" href="https://jami.net/rss/" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.22.0/umd/portal.min.js" data-ghost="https://jami.net/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="/public/cards.min.js?v=f6b27db947"></script><style>:root {--ghost-accent-color: #15171A;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=f6b27db947">
+
+    <script type="text/javascript">
+        window.liveSettings = {
+            api_key:"89f477e7f0f04508bc8eba5e43a78cb1",
+            detectlang: true
+        };
+    </script>
+
+    <script type="text/javascript" src="https://cdn.transifex.com/live.js"></script>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//piwik.savoirfairelinux.net/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '8']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+    </script>
+    <noscript><p><img src="https://piwik.savoirfairelinux.net/piwik.php?idsite=8&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+</head>
+
+    <body class="home-template ">
+
+        <div class="panel-unknow">
+    <div class="container">
+        <div>Sorry, Jami Website is not available in your language at the moment, but we are working on it! We offer the English language, by default.</div>
+        <a class="btn btn-primary" id="btn-cancel-popup-unknow-lang" href="#">Ok, thank you</a>
+        <a class="btn btn-primary" href="https://www.transifex.com/savoirfairelinux/jami-website/dashboard/" target="_blank">I want to help with the translation</a>
+    </div>
+</div>
+
+<header id="jami-header" class="jami-header top-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-sm-6 col-md-3 col-lg-3">
+                <div class="wrapper-site-logo">
+                    <a class="site-logo_link" href="/" aria-label="Navigate to home page">
+                        <div class="site-logo_img"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-8 col-sm-6 col-md-9 col-lg-9">
+                <div class="jami-site-nav">
+    <div class="donation-element">
+    <button data-id="modal-donate" class="open-modal btn-donate btn-donate-mobile">
+        <img src="/assets/images/heart-white.svg?v=f6b27db947" alt="heart">
+    </button>
+</div>    <nav class="stellarnav">
+        <ul>
+            <!-- Loop through the navigation items -->
+                <li class="nav-download">
+                    <a href="/download/">Download</a>
+                </li>
+                <li class="nav-extensions">
+                    <a href="/extensions/">Extensions</a>
+                </li>
+                <li class="nav-contribute">
+                    <a href="/contribute/">Contribute</a>
+                </li>
+                <li class="nav-services">
+                    <a href="https://jami.biz/">Services</a>
+                </li>
+                <li class="nav-blog">
+                    <a href="/tag/articles/">Blog</a>
+                </li>
+                <li class="nav-wiki">
+                    <a href="https://docs.jami.net/user/index.html">Wiki</a>
+                </li>
+                <li class="nav-forum">
+                    <a href="https://forum.jami.net/">Forum</a>
+                </li>
+                <li class="nav-why-donate">
+                    <a href="/whydonate/">Why donate</a>
+                </li>
+            <li class="donate-btn">
+                <div class="donation-element">
+    <button data-id="modal-donate" class="open-modal btn-donate">
+        <img class="heart-img" src="/assets/images/heart-white.svg?v=f6b27db947" alt="heart">
+        <span name="text-donate">Donate</span>
+        <div class="donate-btn-animation">
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+        </div>
+    </button>
+</div>            </li>
+        </ul>
+    </nav>
+</div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="site-wrapper">
+
+            
+            <div class="wrapper_post-image_container">
+                <div class="post-image_container home-page">
+                    <img class="deco-courbe mobile" src="/assets/images/bg-courbe-white-mobile.svg?v=f6b27db947" alt="" />
+                    <img class="deco-courbe desktop" src="/assets/images/bg-courbe-white-desktop.svg?v=f6b27db947" alt="" />
+                    <div class="title-mobile"></div>
+                    <div class="wrapper-slogan">
+                      <div class="container">
+                        <h1 class="slogan">Share, freely and privately</h1>
+                        <div class="jami-description">Jami is a free/libre, end-to-end encrypted, and private communication software.</div>
+                          <a class="btn btn-jami-primary btn-download btn-auto-download" href="/download">
+    <i class="ic-auto-download"></i>    <span class="page-content-text">Download Jami</span>
+</a>                        <div class="other-devices">
+                          <div class="other-devices__text-before">Available on all platforms:</div>
+                          <div class="home-page__device-list clearfix">
+                              <span><a class="icon-device-link" href="/download-jami-windows" aria-label="Download Jami for Windows"><i class="ic-window"></i></a></span>
+                              <span><a class="icon-device-link" href="/download-jami-linux" aria-label="Download Jami for Linux"><i class="ic-linux"></i></a></span>
+                              <span><a class="icon-device-link" href="/download-jami-macos" aria-label="Download Jami for macOS"><i class="ic-apple"></i></a></span>
+                              <span><a class="icon-device-link" href="/download-jami-ios" aria-label="Download Jami for iOS"><i class="ic-ios"></i></a></span>
+                              <span><a class="icon-device-link" href="/download-jami-android" aria-label="Download Jami for Android"><i class="ic-android"></i></a></span>
+                              <span><a class="icon-device-link" href="/download-jami-android-tv" aria-label="Download Jami for Android TV"><i class="ic-androidtv"></i></a></span>
+                          </div>
+                          <div class="other-devices__text-after">Multiple devices can be linked to a Jami account, and no personal information is required to create an account.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-image"></div>
+                </div>
+            </div>
+
+            <section class="jami-container section-jami-features">
+                <div class="container">
+                  <div class="jami-features__wrapper">
+                    <div class="jami-features">
+                      <div class="jami-features__container">
+                        <div class="jami-features__title">What features does Jami include?</div>
+                         <div class="jami-features__point-group">
+                            <div class="jami-features__point">
+                              <img class="jami-features__img" src="/assets/images/message.svg?v=f6b27db947" alt="message">
+                              <span>Instant messaging</span>
+                            </div>
+                            <div class="jami-features__point">
+                              <img class="jami-features__img" src="/assets/images/audio-video.svg?v=f6b27db947" alt="microphone and camera">
+                              <span>Audio and video calls</span>
+                            </div>
+                            <div class="jami-features__point">
+                              <img class="jami-features__img" src="/assets/images/swarms.svg?v=f6b27db947" alt="swarms">
+                              <span>Swarms (group chats)</span>
+                            </div>
+                            <div class="jami-features__point">
+                              <img class="jami-features__img" src="/assets/images/conference.svg?v=f6b27db947" alt="conference">
+                              <span>Video-conferences and Rendezvous points with no third-party hosting</span>
+                            </div>
+                            <div class="jami-features__point">
+                              <img class="jami-features__img" src="/assets/images/record.svg?v=f6b27db947" alt="Audio">
+                              <span>Audio and video message recording</span>
+                            </div>
+                            <div class="jami-features__point">
+                              <img class="jami-features__img" src="/assets/images/sharing.svg?v=f6b27db947" alt="Screen sharing">
+                              <span>Screen sharing and media streaming</span>
+                            </div>
+                            <div class="jami-features__point">
+                              <img class="jami-features__img" src="/assets/images/extension.svg?v=f6b27db947" alt="extension">
+                              <span>Built-in extension platform for new features and experiences</span>
+                            </div>
+                            <div class="jami-features__point">
+                              <img class="jami-features__img" src="/assets/images/SIP.svg?v=f6b27db947" alt="Dial pad">
+                              <span>Jami can also function as a SIP client</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section class="jami-container center section-latest-news">
+              <div class="container">
+                <h2 class="title-section">Keep up with Jami’s latest updates</h2>
+                  <div class="section-latest-news__card-list">
+                          <a href="dev-update-5" class="section-latest-news__card">
+                            <div>
+                                <div class="section-latest-news__img-wrapper">
+                                  <img class="section-latest-news__img" src="https://jami.net/content/images/2024/04/8dff3093-33ae-496d-9c33-276405267856---resized.jpg" alt="news-image"/>     
+                                    <div class="post-card-tag dev-updates">
+                                        <span class="emoji dev-updates"></span>
+                                        Dev updates
+                                    </div>
+                                </div>        
+                              <div class="section-latest-news__title page-content-text-large">
+                                  Dev update #5
+                              </div>
+                              <div class="section-latest-news__pub page-content-text">
+                                  April 05, 2024
+                              </div>
+                            </div>
+                          </a>
+                          <a href="how-to-install-jami-beta" class="section-latest-news__card">
+                            <div>
+                                <div class="section-latest-news__img-wrapper">
+                                  <img class="section-latest-news__img" src="https://jami.net/content/images/2024/03/resizedca72979c-f71c-46da-bfd9-89627118d835.jpg" alt="news-image"/>     
+                                    <div class="post-card-tag tutorials">
+                                        <span class="emoji tutorials"></span>
+                                        Tutorial
+                                    </div>
+                                </div>        
+                              <div class="section-latest-news__title page-content-text-large">
+                                  How to install Jami Beta
+                              </div>
+                              <div class="section-latest-news__pub page-content-text">
+                                  March 26, 2024
+                              </div>
+                            </div>
+                          </a>
+                          <a href="dev-update-4" class="section-latest-news__card">
+                            <div>
+                                <div class="section-latest-news__img-wrapper">
+                                  <img class="section-latest-news__img" src="https://jami.net/content/images/2024/03/5b5d7222-35a9-4acc-a78c-d277f2eb8f8c-2.jpg" alt="news-image"/>     
+                                    <div class="post-card-tag dev-updates">
+                                        <span class="emoji dev-updates"></span>
+                                        Dev updates
+                                    </div>
+                                </div>        
+                              <div class="section-latest-news__title page-content-text-large">
+                                  Dev update #4
+                              </div>
+                              <div class="section-latest-news__pub page-content-text">
+                                  March 19, 2024
+                              </div>
+                            </div>
+                          </a>
+                  </div>
+                  <div class="newsletter-container">
+                    <div class="newsletter">
+    <div class="newsletter-image">
+        <img src="/assets/images/envelopes.svg?v=f6b27db947" class="arrow-right">
+    </div>
+    <div class="newsletter__title-wrapper">
+        <div class="newsletter-title">
+            Subscribe to our <span class="bold-donation">newsletter</span> 
+            <span class="hide-donation">
+                <b>to be the first to know</b> about the latest Jami updates!
+            </span>
+        </div>
+    </div>
+    <div class="newsletter__form">
+    <div id="mc_embed_shell">
+        <div id="mc_embed_signup">
+            <form
+                action="https://savoirfairelinux.us10.list-manage.com/subscribe/post?u=379b8acaa84e6cb328d9b7489&amp;id=348268e72b&amp;f_id=00f0f7e5f0"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                oninput="mailchimpFormChanged(event)" target="_self" novalidate="">
+                <div id="mc_embed_signup_scroll">
+                    <div class="email-input-wrapper">
+                        <input type="email" name="EMAIL" class="email-input required email" id="mce-EMAIL" required=""
+                            value="" placeholder="Email">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text"
+                            name="b_379b8acaa84e6cb328d9b7489_348268e72b" tabindex="-1" value=""></div>
+                    <div id="newsletter-checkbox" class="newsletter__checkbox-wrapper">
+                        <label class="checkbox-container page-content-text">
+                            <input type="checkbox" id="email-authorization" required>
+                            <span class="checkmark"></span>
+                            I have read and agree to the
+                            <a onclick="event.preventDefault(); window.open('/newsletter-privacy-policy');">
+                                Privacy policy
+                            </a>
+                        </label>
+                    </div>
+                    <div class="newsletter__confirm-wrapper">
+                        <input class="btn btn-jami-primary confirm-btn" type="submit" name="subscribe"
+                            id="mc-embedded-subscribe" value="" disabled>
+                        <span class="checkmark">
+                            <div class="checkmark_stem"></div>
+                            <div class="checkmark_kick"></div>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div></div>                    <a href="/tag/articles" class="btn btn-jami-primary btn-see-all-articles">
+                      <div class="page-content-text">
+                        See all articles
+                      </div>
+                    </a>
+                  </div>
+              </div>
+            </section>
+
+            <section class="jami-container center home-container section-jami-for-all section-diference section-jami-unique circle-container">
+                <div class="inner-jami-for-all">
+                    <div class="container">
+                        <h2 class="title-section">What makes Jami unique</h2>
+                        <div class="section-jami-unique__card-list">
+                            <div class="item-circle section-jami-unique__card">
+                                <div class="flip-container">
+                                	<div class="flipper">
+                                		<div class="front">
+                                      <div class="front-icon"><img src="/assets/images/distributed-2.svg?v=f6b27db947" alt="Distributed" width="98" height="80" />
+</div>
+                                      <div class="front-text">Distributed</div>
+                                		</div>
+                                		<div class="back">
+                                      <div class="back-texte">
+                                        Jami is completely peer-to-peer and doesn't require a server for relaying data between users.
+                                      </div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                            <div class="item-circle section-jami-unique__card">
+                                <div class="flip-container">
+                                	<div class="flipper">
+                                		<div class="front">
+                                      <div class="front-icon"><img src="/assets/images/gnu-2.svg?v=f6b27db947" alt="FOSS" width="98" height="80" />
+</div>
+                                      <div class="front-text">Free/Libre</div>
+                                		</div>
+                                		<div class="back">
+                                      <div class="back-texte">
+                                        Jami is a GNU project backed by the Free Software Foundation and licensed under GNU GPLv3 or later.
+                                      </div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                            <div class="item-circle section-jami-unique__card">
+                                <div class="flip-container">
+                                	<div class="flipper">
+                                		<div class="front">
+                                      <div class="front-icon"><img src="/assets/images/secure-2.svg?v=f6b27db947" alt="Secure" width="98" height="80" />
+</div>
+                                      <div class="front-text">Secure</div>
+                                		</div>
+                                		<div class="back">
+                                      <div class="back-texte">
+                                        We use state of the art end-to-end encryption with perfect forward secrecy for all communications and comply with the X.509 standard.
+                                      </div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="jami-container center home-container section-advantages circle-container">
+                <div class="inner-jami-for-all">
+                    <h2 class="title-section">Advantages</h2>
+                    <div class="container section-advantages__container">
+                          <div class="section-advantages__subsection order-1">
+                            <div class="section-advantages__img-wrapper">
+                              <img src="/assets/images/advantages-img-01.jpg?v=f6b27db947" alt="hand-together">
+                            </div>
+                          </div>
+                          <div class="section-advantages__subsection-non-image order-2">
+                            <div class="section-advantages__advantage">
+
+                              <div class="section-advantages__icon"><img alt="free" src="/assets/images/star.png?v=f6b27db947"/></div>
+                              <div class="section-advantages__title">Free</div>
+                              <div class="section-advantages__text">
+                                  As in free beer AND as in freedom.
+                              </div>
+                            </div>
+                            <div class="section-advantages__advantage">
+
+                              <div class="section-advantages__icon"><img alt="unlimited" src="/assets/images/infinite.png?v=f6b27db947"/></div>
+                              <div class="section-advantages__title">Unlimited</div>
+                              <div class="section-advantages__text">
+                                  Without restriction on file size, speed, bandwidth,
+          features, number of accounts, storage or anything else.
+                              </div>
+                            </div>
+                            <div class="section-advantages__advantage">
+
+                              <div class="section-advantages__icon"><img alt="private" src="/assets/images/eye-blocked.png?v=f6b27db947"/></div>
+                              <div class="section-advantages__title">Private</div>
+                              <div class="section-advantages__text">
+                                  All communications are peer-to-peer and end-to-end encrypted.
+                              </div>
+                            </div>
+                            <div class="section-advantages__advantage">
+
+                              <div class="section-advantages__icon"><img alt="ad-free" src="/assets/images/ad-free.png?v=f6b27db947"/></div>
+                              <div class="section-advantages__title">Ad Free</div>
+                              <div class="section-advantages__text">
+                                  There will never be advertising on Jami.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="section-advantages__subsection-non-image order-3">
+
+                            <div class="section-advantages__advantage">
+
+                              <div class="section-advantages__icon"><img alt="compatible" src="/assets/images/multidevice.png?v=f6b27db947"/></div>
+                              <div class="section-advantages__title">Compatible</div>
+                              <div class="section-advantages__text">
+                                  Available on Linux, Android, AndroidTV, Windows, macOS and iOS.
+                              </div>
+                            </div>
+                            <div class="section-advantages__advantage">
+
+                              <div class="section-advantages__icon"><img alt="fast" src="/assets/images/rocket.png?v=f6b27db947"/></div>
+                              <div class="section-advantages__title">Fast</div>
+                              <div class="section-advantages__text">
+                                  Latency is reduced and transfer speeds are greatly increased thanks to the direct peer-to-peer connection.
+                              </div>
+                            </div>
+                            <div class="section-advantages__advantage">
+
+                              <div class="section-advantages__icon"><img alt="autonomous" src="/assets/images/autonomous.png?v=f6b27db947"/></div>
+                              <div class="section-advantages__title">Autonomous</div>
+                              <div class="section-advantages__text">
+                                  Users who are on the same local network can
+          communicate with Jami even if they are
+          disconnected from the internet.
+                              </div>
+                            </div>
+                            <div class="section-advantages__advantage">
+
+                              <div class="section-advantages__icon"><img alt="anonymous" src="/assets/images/anonymous.png?v=f6b27db947"/></div>
+                              <div class="section-advantages__title">Anonymous</div>
+                              <div class="section-advantages__text">
+                                  No personal information needs to be provided
+          when creating an account.
+                              </div>
+                            </div>
+                          </div>
+                         <div class="section-advantages__subsection order-4">
+                            <div class="section-advantages__img-wrapper">
+                              <img src="/assets/images/advantages-img-02.jpg?v=f6b27db947" alt="child">
+                            </div>
+                          </div>
+                          
+                    </div>
+                </div>
+            </section>
+
+            <section class="jami-container center home-container section-mentioned-in">
+              <h2 class="mentioned-in__title-section title-section">Mentioned In</h2>
+<div class="container">
+    <div class="banner banner-fsf">
+        <div class="banner__wrapper">
+            <div class="banner__content">
+                <div class="medal-icon">
+                    <img src="/assets/images/medal.svg?v=f6b27db947" alt="medal">
+                </div>
+                <a target="_blank"
+                    href="https://www.fsf.org/news/free-software-awards-winners-announced-eli-zaretskii-tad-skewedzeppelin-gnu-jami"
+                    class="page-content-text"><strong>Social Benefit Award</strong> - FSF Free Software Awards - LIBRE
+                    PLANET 2023
+                </a>
+            </div>
+        </div>
+    </div>
+</div><section class="mentioned-in container">
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://itsfoss.com/jami/">
+            <img class="show-on-hover" src="/assets/images/logo-ext/its-foss.webp?v=f6b27db947" alt="Jami mentioned in It's Foss" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/its-foss-NB.webp?v=f6b27db947" alt="Jami mentioned in It's Foss" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://www.fsf.org/news/free-software-awards-winners-announced-eli-zaretskii-tad-skewedzeppelin-gnu-jami">
+            <img class="show-on-hover" src="/assets/images/logo-ext/free-software.jpg?v=f6b27db947" alt="Jami mentioned in Free Software" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/free-software-NB.png?v=f6b27db947" alt="Jami mentioned in Free Software" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://www.websiteplanet.com/blog/jami-interview/">
+            <img class="show-on-hover" src="/assets/images/logo-ext/website_planet.png?v=f6b27db947" alt="Jami mentioned in Web Site Planet" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/website_planet-NB.png?v=f6b27db947" alt="Jami mentioned in Web Site Planet" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://www.forbesindia.com/article/take-one-big-story-of-the-day/whatsalt-the-messenger-alternatives/65909/1">
+            <img class="show-on-hover" src="/assets/images/logo-ext/forbesindia.png?v=f6b27db947" alt="Jami mentioned in Forbes India" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/forbesindia-NB.png?v=f6b27db947" alt="Jami mentioned in Forbes India" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank"
+            href="https://cursus.edu/technologies/42756/jami-application-de-communication-libre-et-securisee-pour-tous-gratuite#.XL9S9ScpBQJ">
+            <img class="show-on-hover" src="/assets/images/logo-ext/thot.png?v=f6b27db947" alt="Jami mentioned in thot cursus" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/thot-NB.png?v=f6b27db947" alt="Jami mentioned in thot cursus" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank"
+            href="http://journalmetro.com/opinions/vie-numerique/2084726/jami-une-messagerie-quebecoise-contre-les-gafam/">
+            <img class="show-on-hover" src="/assets/images/logo-ext/metro.png?v=f6b27db947" alt="Jami mentioned in journal metro" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/metro-NB.png?v=f6b27db947" alt="Jami mentioned in journal metro" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://www.techradar.com/news/best-alternatives-to-skype">
+            <img class="show-on-hover" src="/assets/images/logo-ext/techradar.png?v=f6b27db947" alt="Jami mentioned in techradar" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/techradar-NB.png?v=f6b27db947" alt="Jami mentioned in techradar" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank"
+            href="http://plus.lapresse.ca/screens/47fcbd51-9ac8-4883-8c47-1728fb34f25f__7C___0.html?utm_medium=Gmail&utm_campaign=Internal%2BShare&utm_content=Screen">
+            <img class="show-on-hover" src="/assets/images/logo-ext/lapresse.png?v=f6b27db947" alt="Jami mentioned in La Presse" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/lapresse-NB.png?v=f6b27db947" alt="Jami mentioned in La Presse" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://teambuilding.com/blog/virtual-meeting-software">
+            <img class="show-on-hover" src="/assets/images/logo-ext/teambuilding-logo.png?v=f6b27db947" alt="Jami mentioned in Teambuilding" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/teambuilding-logo-NB.png?v=f6b27db947" alt="Jami mentioned in Teambuilding" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank"
+            href="https://www.grenier.qc.ca/nouvelles/17502/savoir-faire-linux-lance-jami-une-application-de-communication-universelle">
+            <img class="show-on-hover" src="/assets/images/logo-ext/grenier.png?v=f6b27db947" alt="Jami mentioned in grenier aux nouvelles" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/grenier-NB.png?v=f6b27db947" alt="Jami mentioned in grenier aux nouvelles" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank"
+            href="http://www.lesaffaires.com/blogues/alain-mckenna/huit-technologies-du-quebec-qui-rayonnent-au-ces-2019/607426/4">
+            <img class="show-on-hover" src="/assets/images/logo-ext/lesaffaires.png?v=f6b27db947" alt="Jami mentioned in Les Affaires" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/lesaffaires-NB.png?v=f6b27db947" alt="Jami mentioned in Les Affaires" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://www.hostingadvice.com/blog/decentralized-communication-with-jami/">
+            <img class="show-on-hover" src="/assets/images/logo-ext/ha.png?v=f6b27db947" alt="Jami mentioned in hostingadvice" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/ha-NB.png?v=f6b27db947" alt="Jami mentioned in hostingadvice" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank"
+            href="https://www.datingnews.com/industry-trends/jami-helps-daters-video-chat-privately-and-securely/">
+            <img class="show-on-hover" src="/assets/images/logo-ext/datingnews.png?v=f6b27db947" alt="Jami mentioned in DatingNews" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/datingnews-NB.png?v=f6b27db947" alt="Jami mentioned in DatingNews" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank"
+            href="https://www.goodfirms.co/software/jami">
+            <img class="show-on-hover" src="/assets/images/logo-ext/goodfirms.png?v=f6b27db947" alt="Jami mentioned in goodfirms" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/goodfirms-NB.png?v=f6b27db947" alt="Jami mentioned in goodfirms" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://www.clubic.com/telecharger-fiche435072-jami.html">
+            <img class="show-on-hover" src="/assets/images/logo-ext/clubic.png?v=f6b27db947" alt="Jami mentioned in clubic" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/clubic-NB.png?v=f6b27db947" alt="Jami mentioned in clubic" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://ethical.net/resources/?resource-category=team-collaboration-software">
+            <img class="show-on-hover" src="/assets/images/logo-ext/ethical.png?v=f6b27db947" alt="Jami mentioned in ethical.net" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/ethical-NB.png?v=f6b27db947" alt="Jami mentioned in ethical.net" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://medevel.com/10-os-video-conferencing/">
+            <img class="show-on-hover" src="/assets/images/logo-ext/medevel.png?v=f6b27db947" alt="Jami mentioned in medevel" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/medevel-NB.png?v=f6b27db947" alt="Jami mentioned in medevel" />
+        </a>
+    </div>
+    <div class="mentioned-in__item">
+        <a target="_blank" href="https://www.cardrates.com/news/jami-is-a-secure-platform-to-discuss-credit-finance/">
+            <img class="show-on-hover" src="/assets/images/logo-ext/cardrates.png?v=f6b27db947" alt="Jami mentioned in Cardrates" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/cardrates-NB.png?v=f6b27db947" alt="Jami mentioned in Cardrates" />
+        </a>
+    </div>
+     <div class="mentioned-in__item">
+        <a target="_blank" href="https://www.badcredit.org/news/jami-network-protects-against-credit-card-fraud/">
+            <img class="show-on-hover" src="/assets/images/logo-ext/badcredit.jpg?v=f6b27db947" alt="Jami mentioned in Badcredit Org" />
+            <img class="hide-on-hover" src="/assets/images/logo-ext/badcredit-NB.png?v=f6b27db947" alt="Jami mentioned in Badcredit Org" />
+        </a>
+    </div>
+</section>            </section>
+
+            <div id="modal-donate" class="modal-window">
+    <div class="modal-donate__overlay">
+        <div>
+            <div class="modal-donate__wrapper">
+                <a class="modal-donate__close-btn modal-close">
+                    <div class="close-btn-background">
+                        <img src="/assets/images/close.svg?v=f6b27db947" alt="close-button"/>
+                    </div>
+                </a>
+                <div class="modal-donate__main">
+                    <div class="modal-donate__content-wrapper-left">
+                        <div class="modal-donate__image">
+                            <img src="/assets/images/donate-modal.png?v=f6b27db947" class="donate-image" alt="donate-image">
+                            <img src="/assets/images/heart-ribbon.png?v=f6b27db947" class="heart-ribbon" alt="heart-ribbon">
+                            <div class="modal-donate__img-content">
+                                <div class="modal-donate_logo-white"></div>
+                                <div class="modal-donate__main-text page-content-text">
+                                    <div class="donate-title">
+                                        Jami needs your support!
+                                    </div>
+                                    <div class="donate-paragraph">
+                                        Our mission is to provide all human beings with a free, secure communications software 
+                                        that respects their privacy and values.
+                                    </div>
+                                    <div class="donate-paragraph">
+                                        Your donation will help us carry on with this mission by enabling this project
+                                        to progress, thrive, and reach more people every day.
+                                    </div>
+                                    <div class="donate-footer">
+                                        Could you lend us a hand?
+                                    </div>
+                                </div>
+                                <div class="modal-donate__subtext-links-list">
+                                    <span class="modal-donate__subtext-link"><a class="modal-close-link" href="/whydonate/#donation-faq">Donation FAQ</a></span>
+                                    <span>·</span>
+                                    <span class="modal-donate__subtext-link"><a href="mailto:contact@jami.net">Contact us</a></span>
+                                    <span>·</span>
+                                    <span class="modal-donate__subtext-link"><a href="/privacy-policy">Privacy Policy</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-donate__content-wrapper-right" id="modal-donate__donation-component">
+                        <div class="donation-container">
+    <div class="amount-selector" id="donation-form-step-1">
+        <div class="amount-header">
+            <img src="/assets/images/transparent-heart.svg?v=f6b27db947" alt="heart"/>
+            <div class="page-content-title">Donate to Jami</div>
+        </div>
+        <div class="amount-selector__currency-select-wrapper button-text">
+            <div class="amount-selector__currency-select">
+                <div id="currency-select-label"></div>
+                <img src="/assets/images/arrow-down.svg?v=f6b27db947" alt="mail">
+                <select id="currency-select" name="currency"></select>
+            </div>
+        </div>
+        <div class="amount-selector__donation-type-toggle-wrapper subscription-element">
+            <div class="switch-field">
+                <input type="radio" id="radio-once" name="switch-one" value="once" class="checked"/>
+                <label class="button-text" for="radio-once">
+                    <span class="checkmark">
+                        <div class="checkmark_stem"></div>
+                        <div class="checkmark_kick"></div>
+                    </span>
+                    <div class="button-text">
+                        Once
+                    </div>
+                </label>
+                <input type="radio" id="radio-monthly" class="toggle-option" name="switch-one" value="monthly" />
+                <label class="button-text" for="radio-monthly">
+                    <span class="checkmark">
+                        <div class="checkmark_stem"></div>
+                        <div class="checkmark_kick"></div>
+                    </span>
+                    <div class="button-text">
+                        Monthly
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="amount-options-container" id="amount-options-container">
+            <div class="amount-options-wrapper">
+                    <div class="amount-option option-top-left">
+                        <input type="radio" id="option-top-left" class="amount-option-radio" name="amount-Options"/>
+                        <label for="option-top-left" class="amount-option-label" aria-hidden="true">
+                            <span class="button-text amount-value-label"></span>
+                            <div id="option-top-left-animation" class="amount-option-animation">
+                                <div class="emoji7-1"></div>
+                                <div class="emoji7-2"></div>
+                                <div class="emoji7-3"></div>
+                                <div class="emoji7-4"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="amount-option option-top-center">
+                        <input type="radio" id="option-top-center" class="amount-option-radio" name="amount-Options"/>
+                        <label for="option-top-center" class="amount-option-label" aria-hidden="true">
+                            <span class="button-text amount-value-label"></span>
+                            <div id="option-top-center-animation" class="amount-option-animation">
+                                <div class="emoji15-1"></div>
+                                <div class="emoji15-2"></div>
+                                <div class="emoji15-3"></div>
+                                <div class="emoji15-4"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="amount-option option-top-right">
+                        <input type="radio" id="option-top-right" class="amount-option-radio" name="amount-Options"/>
+                        <label for="option-top-right" class="amount-option-label" aria-hidden="true">
+                            <span class="button-text amount-value-label"></span>
+                            <div id="option-top-right-animation" class="amount-option-animation">
+                                <div class="emoji30-1"></div>
+                                <div class="emoji30-2"></div>
+                                <div class="emoji30-3"></div>
+                                <div class="emoji30-4"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="amount-option option-bottom-left">
+                        <input type="radio" id="option-bottom-left" class="amount-option-radio" name="amount-Options"/>
+                        <label for="option-bottom-left" class="amount-option-label" aria-hidden="true">
+                            <span class="button-text amount-value-label"></span>
+                            <div id="option-bottom-left-animation" class="amount-option-animation">
+                                <div class="emoji40-1"></div>
+                                <div class="emoji40-2"></div>
+                                <div class="emoji40-3"></div>
+                                <div class="emoji40-4"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="amount-option option-bottom-center">
+                        <input type="radio" id="option-bottom-center" class="amount-option-radio" name="amount-Options"/>
+                        <label for="option-bottom-center" class="amount-option-label" aria-hidden="true">
+                            <span class="button-text amount-value-label"></span>
+                            <div id="option-bottom-center-animation" class="amount-option-animation">
+                                <div class="emoji70-1"></div>
+                                <div class="emoji70-2"></div>
+                                <div class="emoji70-3"></div>
+                                <div class="emoji70-4"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="amount-option option-bottom-right">
+                        <input type="radio" id="option-bottom-right" class="amount-option-radio" name="amount-Options" value="140" />
+                        <label for="option-bottom-right" class="amount-option-label" aria-hidden="true">
+                            <span class="button-text amount-value-label"></span>
+                            <div id="option-bottom-right-animation" class="amount-option-animation">
+                                <div class="emoji140-1"></div>
+                                <div class="emoji140-2"></div>
+                                <div class="emoji140-3"></div>
+                                <div class="emoji140-4"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="group-amount-control-wrapper">
+                        <div class="group-amount-control">
+                            <div class="currency-symbol" aria-hidden="true" id="currency-input-symbol"></div>
+                            <input type="text" id="amount-control" class="amount-control" autocomplete="off" inputmode="numeric" placeholder="Choose a personalized amount"/>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="amount-footer subscription-element">
+            <button class="button-submit" onclick="setStepElement(this, 2)">
+                <img src="/assets/images/heart-white.svg?v=f6b27db947" alt="heart"/>
+                Donate
+            </button>
+        </div>
+    </div>
+    <div class="payment-selector" id="donation-form-step-2">
+        <div class="payment-wrapper subscription-element">
+            <button class="back-button" onclick="setStepElement(this, 1)">
+                <img src="/assets/images/arrow-left.svg?v=f6b27db947" alt="backButton"/>
+            </button>
+            <div class="payment-content-wrapper">
+                <div class="page-content-text-large">
+                    Make a donation of <span id="amount-value"></span> to Jami
+                </div>
+                <div id="spinner-btn-group" class="spinner" id="spinner"></div>
+                <div class="payment-btn-group hidden">
+                    <div id="payment-request-button">
+                        <!-- A Stripe Element will be inserted here. -->
+                    </div>
+                    <button class="paypal-button payment-method-button" id="paypal-payment-btn">
+                        <span class="paypal-img-wrapper">
+                            <img src="/assets/images/paypal-logo.svg?v=f6b27db947" alt="card-payment"/>
+                        </span>
+                    </button>
+                    <button class="card-button payment-method-button" onclick="setStepElement(this, 3)">
+                        <span class="card-wrapper">
+                            <img src="/assets/images/credit-card.svg?v=f6b27db947" alt="card-payment"/>
+                        </span>
+                        <span class="card-text">
+                            Credit card
+                        </span>
+                    </button>
+                </div>
+                <div class="footer-text page-content-text subscription-element">
+                    <div class="paypal-monthly-text">
+                        To make a recurring donation, use Paypal as a payment method.<br>
+                    </div>
+                    Other method to <a class="modal-close-link" href="/whydonate/#payment-check">donate</a>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="payment-selector" id="donation-form-step-3">
+        <div class="payment-wrapper">
+            <button class="back-button" onclick="setStepElement(this, 2)">
+                <img src="/assets/images/arrow-left.svg?v=f6b27db947" alt="backButton"/>
+            </button>
+            <form id="payment-form">
+                <div class="page-content-text-large">
+                    Credit card
+                </div>
+                <div class="form-input-wrapper">
+                    <label class="input-label" for="name-element">Full name</label>
+                    <input type="text" id="name-element" class="text-input" placeholder="First and last name" name="name" autocomplete="name"/>
+                    <div id="name-error" class="error-message"></div>
+                </div>
+                <div class="form-input-wrapper">
+                    <label class="input-label" for="email-element">Email</label>
+                    <input type="text" id="email-element" class="text-input" placeholder="Email address" inputmode="email" name="email" autocomplete="email"/>
+                    <div id="email-error" class="error-message"></div>
+                </div>
+                <div class="form-input-wrapper">
+                    <label class="input-label" for="card-element">Credit card</label>
+                    <div id="card-element">
+                        <!--Stripe.js injects the Payment Element-->
+                    </div>
+                    <div id="card-error" class="error-message"></div>
+                </div>
+                <button type="submit" id="submit-payment">
+                    <div class="spinner hidden" id="spinner"></div>
+                    <span id="button-text">Donate now</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="donation-message" id="donation-form-step-4">
+        <div class="donation-message__wrapper">
+            <button class="back-button" onclick="setStepElement(this, 1)">
+                <img src="/assets/images/arrow-left.svg?v=f6b27db947" alt="backButton" />
+            </button>
+            <div class="donation-message__text-wrapper">
+                <div class="thanks-animation">
+                    <div class="emoji-1"></div>
+                    <div class="emoji-2"></div>
+                    <div class="emoji-3"></div>
+                    <div class="emoji-4"></div>
+                </div>
+                <div class="donation-message__title page-content-text-large">Thank you for supporting Jami!</div>
+                <div class="donation-message__text page-content-text">
+                    Your donation means a lot! With your help, we can continue to 
+                    provide a free, secure, and private communication software for all.<br>
+                    <br>
+                    Your generosity fuels our mission to keep communication private and accessible.
+                </div>
+                <div class="newsletter-donation">
+                    <div class="newsletter">
+    <div class="newsletter-image">
+        <img src="/assets/images/envelopes.svg?v=f6b27db947" class="arrow-right">
+    </div>
+    <div class="newsletter__title-wrapper">
+        <div class="newsletter-title">
+            Subscribe to our <span class="bold-donation">newsletter</span> 
+            <span class="hide-donation">
+                <b>to be the first to know</b> about the latest Jami updates!
+            </span>
+        </div>
+    </div>
+    <div class="newsletter__form">
+    <div id="mc_embed_shell">
+        <div id="mc_embed_signup">
+            <form
+                action="https://savoirfairelinux.us10.list-manage.com/subscribe/post?u=379b8acaa84e6cb328d9b7489&amp;id=348268e72b&amp;f_id=00f0f7e5f0"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                oninput="mailchimpFormChanged(event)" target="_self" novalidate="">
+                <div id="mc_embed_signup_scroll">
+                    <div class="email-input-wrapper">
+                        <input type="email" name="EMAIL" class="email-input required email" id="mce-EMAIL" required=""
+                            value="" placeholder="Email">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text"
+                            name="b_379b8acaa84e6cb328d9b7489_348268e72b" tabindex="-1" value=""></div>
+                    <div id="newsletter-checkbox" class="newsletter__checkbox-wrapper">
+                        <label class="checkbox-container page-content-text">
+                            <input type="checkbox" id="email-authorization" required>
+                            <span class="checkmark"></span>
+                            I have read and agree to the
+                            <a onclick="event.preventDefault(); window.open('/newsletter-privacy-policy');">
+                                Privacy policy
+                            </a>
+                        </label>
+                    </div>
+                    <div class="newsletter__confirm-wrapper">
+                        <input class="btn btn-jami-primary confirm-btn" type="submit" name="subscribe"
+                            id="mc-embedded-subscribe" value="" disabled>
+                        <span class="checkmark">
+                            <div class="checkmark_stem"></div>
+                            <div class="checkmark_kick"></div>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div></div>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="donation-message fail-message" id="donation-form-step-5">
+        <div class="donation-message__wrapper">
+            <button class="back-button" onclick="setStepElement(this, 1)">
+                <img src="/assets/images/arrow-left.svg?v=f6b27db947" alt="backButton" />
+            </button>
+            <div class="donation-message__text-wrapper">
+                <div class="crying-emoji">&#128557;</div>
+                <div class="donation-message__title page-content-text-large">Donation failed</div>
+                <div class="donation-message__text page-content-text">
+                    We're sorry, it appears that your payment couldn't be processed.<br>
+                    <br>
+                    Please contact your bank or try <a class="modal-close-link" href="/whydonate/#payment-check">another payment method</a>.<br>
+                    <br>
+                    Your contribution means a lot to us, thank you for your support and understanding.
+                </div>
+                <button id="try-again-btn" onclick="setStepElement(this, 1)">
+                    Try again
+                </button>
+            </div>
+        </div>
+    </div>
+</div>                    </div>
+                </div>
+            </div>
+            <div class="modal-donate__tooltip subscription-element">
+                <div class="modal-donate__tooltip-text">
+                    <span class="modal-donate__tooltip-title">Can I cancel my recurring donation?</span>
+                    <div class="modal-donate__tooltip-content-wrapper">
+                        <div class="modal-donate__tooltip-content">
+                            You can visit our <a id="donation-faq-link">donation FAQ</a> page to find the appropriate response according to your payment method or 
+                            reach out to us at <a href="mailto:contact@jami.net">contact@jami.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="sticky">
+    <div class="sticky-wrapper">
+        <div class="donation-campaign-element">
+            <div class="donate-sticky__wrapper" id="donate-sticky-wrapper">
+                <div class="donate-sticky__popover" id="donate-sticky-popover">
+                    <div class="page-content-text">
+                        Free and private sharing. <a data-id="modal-donate" class="open-modal">Donate</a> to expand it.
+                    </div>
+                </div>
+                <div class="donate-sticky__button" id="donate-sticky-button">
+                    <img src="/assets/images/donate-sticky.svg?v=f6b27db947" alt="donate-sticky">
+                    <span class="donate-sticky__tooltip">Donate</span>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-sticky__wrapper" id="newsletter-sticky-wrapper">
+            <div class="newsletter-sticky__button" id="newsletter-sticky-button">
+                <img src="/assets/images/newsletter-sticky.svg?v=f6b27db947" alt="newsletter-sticky">
+            </div>
+            <div class="newsletter-sticky__popover" id="newsletter-sticky-popover">
+                <div class="newsletter-sticky__hover-content page-content-text">
+                    <u>Subscribe</u> to our newsletter
+                </div>
+                <div class="newsletter__form">
+    <div id="mc_embed_shell">
+        <div id="mc_embed_signup">
+            <form
+                action="https://savoirfairelinux.us10.list-manage.com/subscribe/post?u=379b8acaa84e6cb328d9b7489&amp;id=348268e72b&amp;f_id=00f0f7e5f0"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                oninput="mailchimpFormChanged(event)" target="_self" novalidate="">
+                <div id="mc_embed_signup_scroll">
+                    <div class="email-input-wrapper">
+                        <input type="email" name="EMAIL" class="email-input required email" id="mce-EMAIL" required=""
+                            value="" placeholder="Email">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text"
+                            name="b_379b8acaa84e6cb328d9b7489_348268e72b" tabindex="-1" value=""></div>
+                    <div id="newsletter-checkbox" class="newsletter__checkbox-wrapper">
+                        <label class="checkbox-container page-content-text">
+                            <input type="checkbox" id="email-authorization" required>
+                            <span class="checkmark"></span>
+                            I have read and agree to the
+                            <a onclick="event.preventDefault(); window.open('/newsletter-privacy-policy');">
+                                Privacy policy
+                            </a>
+                        </label>
+                    </div>
+                    <div class="newsletter__confirm-wrapper">
+                        <input class="btn btn-jami-primary confirm-btn" type="submit" name="subscribe"
+                            id="mc-embedded-subscribe" value="" disabled>
+                        <span class="checkmark">
+                            <div class="checkmark_stem"></div>
+                            <div class="checkmark_kick"></div>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+    </div>
+</div><div class="jami-footer-available-platforms">
+    <div class="container jami-footer-available-platforms__container">
+        <div class="jami-footer-available-platforms__text">Jami is available on all platforms</div>
+        <div class="platform-list">
+            <span><a class="icon-device-link" href="/download-jami-windows" aria-label="Download Jami for Windows"><i class="ic-window"></i></a></span>
+            <span><a class="icon-device-link" href="/download-jami-linux" aria-label="Download Jami for Linux"><i class="ic-linux"></i></a></span>
+            <span><a class="icon-device-link" href="/download-jami-macos" aria-label="Download Jami for macOS"><i class="ic-apple"></i></a></span>
+            <span><a class="icon-device-link" href="/download-jami-ios" aria-label="Download Jami for iOS"><i class="ic-ios"></i></a></span>
+            <span><a class="icon-device-link" href="/download-jami-android" aria-label="Download Jami for Android"><i class="ic-android"></i></a></span>
+            <span><a class="icon-device-link" href="/download-jami-android-tv" aria-label="Download Jami for Android TV"><i class="ic-androidtv"></i></a></span>
+        </div>
+        <a class="btn btn-jami-primary btn-download btn-auto-download" href="/download">
+    <i class="ic-auto-download"></i>    <span class="page-content-text">Download Jami</span>
+</a>    </div>
+</div>
+<footer class="jami-footer outer">
+    <div class="container jami-footer__container">
+        <div class="jami-footer__section">
+            <div class="jami-logo-wrapper">
+                <img src="/assets/images/logo-jami.svg?v=f6b27db947" alt="logo-jami">
+            </div>
+            <div class="jami-footer__donate-btn">
+                <div class="donation-element">
+    <button data-id="modal-donate" class="open-modal btn-donate">
+        <img class="heart-img" src="/assets/images/heart-white.svg?v=f6b27db947" alt="heart">
+        <span name="text-donate">Donate</span>
+        <div class="donate-btn-animation">
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+        </div>
+    </button>
+</div>            </div>
+        </div>
+        <div class="jami-footer__section">
+            <ul class="footer-list">
+                <li class="list-item first">Jami</li>
+                <li class="list-item"><a class="btn-auto-download" href="/download">Download</a></li> 
+                <li class="list-item"><a href="/extensions">Extensions</a></li>
+                <li class="list-item"><a href="/tag/articles">Blog</a></li>
+                <li class="list-item"><a href="/contribute">Contribute</a></li>
+                <li class="list-item"><a href="/media">Media</a></li>
+                <li class="list-item"><a href="mailto:contact@jami.net">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="jami-footer__section">
+            <ul class="footer-list">
+                <li class="list-item first">Professionals</li>
+                <li class="list-item"><a href="https://jami.biz" target="_blank">Services</a></li>
+                <li class="list-item"><a href="mailto:sales@jami.biz">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="jami-footer__section">
+            <ul class="footer-list">
+                <li class="list-item first">Help</li>
+                <li class="list-item"><a href="/help">FAQ</a></li>
+                <li class="list-item"><a href="https://forum.jami.net/" target="_blank">Forum</a></li>
+                <li class="list-item"><a href="https://git.jami.net/savoirfairelinux/ring-project"
+                        target="_blank">Questions & Support</a></li>
+                <li class="list-item"><a href="/privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="jami-footer__section">
+            <ul class="footer-list social-media">
+                <div class="donation-element">
+                    <li class="list-item first">Donate</li>
+                    <li class="list-item"><a href="/whydonate">Why donate</a></li>
+                </div>
+                <ul class="social-media-icons">
+                    <li class="list-item social-media-icon">
+                        <a href="https://mstdn.io/@Jami" target="_blank" rel="me">
+                            <img src="/assets/images/logo-mastodon-black.svg?v=f6b27db947" alt="logo-mastodon">
+                        </a>
+                    </li>
+                    <li class="list-item social-media-icon">
+                        <a href="https://www.linkedin.com/company/jami-social/" target="_blank" rel="noopener">
+                            <img src="/assets/images/logo-linkedin.svg?v=f6b27db947" alt="logo-linkedin">
+                        </a>
+                    </li>
+                    <li class="list-item social-media-icon">
+                        <a href="https://www.instagram.com/jami_social/" target="_blank" rel="noopener">
+                            <img src="/assets/images/logo-instagram.svg?v=f6b27db947" alt="logo-instagram">
+                        </a>
+                    </li>
+                    <li class="list-item social-media-icon">
+                        <a href="https://www.facebook.com/JamiCommunication" target="_blank" rel="noopener">
+                            <img src="/assets/images/logo-facebook.svg?v=f6b27db947" alt="logo-facebook">
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+            <div class="donate-btn-langselector">
+                <div class="nav_transifex-lang page-content-text"><!-- Transifex -->
+<div id="transifex-language"></div>
+<i class="ic-arrowright"></i></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="jami-footer__copyright-section container">
+            <div class="copyright">
+                <div class="copyright__content-wrapper">
+                    <a target="_blank" href="https://savoirfairelinux.com/en">
+                        Savoir-faire Linux &copy; 2024
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+
+        <script type="text/javascript" src="/assets/js/jquery.min.js?v=f6b27db947"></script>
+
+<script type="text/javascript" src="/assets/js/bootstrap.min.js?v=f6b27db947"></script>
+
+<script id="stellarnav-script" type="text/javascript" src="/assets/js/stellarnav.min.js?v=f6b27db947"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        jQuery('.stellarnav').stellarNav({
+            menuLabel: 'Toggle menu',
+            position: 'right',
+            breakpoint: 1460,
+        });
+    });
+</script>
+
+<script type="text/javascript" src="/assets/js/pre-mobile-detect.js?v=f6b27db947"></script>
+
+<script type="text/javascript" src="/assets/js/mobile-detect.min.js?v=f6b27db947"></script>
+
+<script type="text/javascript" src="/assets/js/js-cookie.min.js?v=f6b27db947"></script>
+
+<script type="text/javascript" src="/assets/js/slick.min.js?v=f6b27db947"></script>
+
+<script type="text/javascript" src="/assets/js/data/lowercase-languages.js?v=f6b27db947"></script>
+
+<script type="text/javascript" src="/assets/built/commun.js?v=f6b27db947"></script>
+
+<script type="text/javascript" src="/assets/built/lightbox.js?v=f6b27db947"></script>
+
+<script>
+    var paypalUrl = 'https://www.paypalobjects.com/donate/sdk/donate-sdk.js';
+    var stripeUrl = 'https://js.stripe.com/v3/';
+    var currencyUrl = "/assets/js/data/currency.js?v=f6b27db947";
+    var donationComponentUrl = "/assets/js/donation-component.js?v=f6b27db947";
+    var modalDonateUrl = "/assets/js/modal-donate.js?v=f6b27db947";
+</script>
+
+<script type="text/javascript" src="/assets/js/donation-campaign.js?v=f6b27db947"></script>
+
+<script type="text/javascript" src="/assets/js/modal.js?v=f6b27db947"></script>
+        
+
+        
+
+    </body>
+</html>

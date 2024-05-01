@@ -1,0 +1,1092 @@
+{
+    "https://atlasofsurveillance.org": {
+        "Time": 12.23,
+        "URL": "https://atlasofsurveillance.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.70",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "198.199.100.146"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "198.199.100.146",
+        "PING Status": "OK",
+        "PING IP": "198.199.100.146",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 12313,
+        "Headers": {
+            "Server": "nginx/1.14.0 (Ubuntu)",
+            "Date": "Wed, 01 May 2024 11:10:00 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "X-Download-Options": "noopen",
+            "X-Permitted-Cross-Domain-Policies": "none",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "ETag": "W/\"b145977bbd751c8554a6f6d40a4ac322\"",
+            "Cache-Control": "max-age=0, private, must-revalidate",
+            "Set-Cookie": "_report_back_session=mwuLRkso%2FDdfQMEPRaT2AvUbXowkhOqHfoYtT115Nj5NediLnUXOWm7En9S1VkEA1NmLo7TQbFpJDAvKwQF0gqgMxvgIXxu%2FHfVGkreYi836hIWnUw0t2BiVKsYejASdKf%2BckEfv9Dt9ZuO7VTg%3D--0yCBGXKsB%2Fyf3UsS--R4V07sRnwTewqwDpbSSE0g%3D%3D; path=/; HttpOnly",
+            "X-Request-Id": "db415cbb-0941-4ed0-8b99-7a079677c97e",
+            "X-Runtime": "0.024976",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "atlasofsurveillance.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "atlasofsurveillance.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "040E86947329685DB86FFA3C62A2E2BB71DA",
+            "notBefore": "Mar  9 20:34:12 2024 GMT",
+            "notAfter": "Jun  7 20:34:11 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "atlasofsurveillance.org"
+                ],
+                [
+                    "DNS",
+                    "kiosk.atlasofsurveillance.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 13:10:09"
+    },
+    "https://presearch.com": {
+        "Time": 34.08,
+        "URL": "https://presearch.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.72",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "18.185.22.79",
+            "52.57.160.121",
+            "18.184.239.227"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.184.239.227",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "10.1.32.1",
+                0.008120059967041016
+            ],
+            [
+                "90.181.198.158",
+                0.0038347244262695312
+            ],
+            [
+                "90.181.197.157",
+                0.013447999954223633
+            ],
+            [
+                "194.228.21.248",
+                0.008234024047851562
+            ],
+            [
+                "52.95.216.62",
+                0.008532047271728516
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 159882,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 11:11:33 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Set-Cookie": "AWSALB=O9GDWbJXo0tulhbDeMuyfpirzVg9MAGC9MwOwPYCN6MVg4ZzC0z1EN6n7VJY8aZEU/5yFdqfLYSydsX0B00IoGlMs9QZcFJF4IA0XF2Ed98WO1GMa3SNmG/a7wd6; Expires=Wed, 08 May 2024 11:11:32 GMT; Path=/, AWSALBCORS=O9GDWbJXo0tulhbDeMuyfpirzVg9MAGC9MwOwPYCN6MVg4ZzC0z1EN6n7VJY8aZEU/5yFdqfLYSydsX0B00IoGlMs9QZcFJF4IA0XF2Ed98WO1GMa3SNmG/a7wd6; Expires=Wed, 08 May 2024 11:11:32 GMT; Path=/; SameSite=None; Secure, homepage_background_id=9be2cec0-b783-48ff-8637-fb141eb0e76d; Path=/; HttpOnly; Secure",
+            "X-Powered-By": "Express",
+            "X-Frame-Options": "SAMEORIGIN",
+            "ETag": "W/\"2708a-yhatm43iqZ9RXDx0p8dQ2ZZ1Kso\"",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "presearch.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "presearch.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M03"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "08C5CD20EAF50F584B4647AB4AF8A745",
+            "notBefore": "Apr  9 00:00:00 2024 GMT",
+            "notAfter": "May  9 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "presearch.com"
+                ],
+                [
+                    "DNS",
+                    "eu-de-1.presearch.com"
+                ],
+                [
+                    "DNS",
+                    "engine.presearch.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m03.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m03.amazontrust.com/r2m03.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m03.amazontrust.com/r2m03.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.25,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 13:11:39"
+    },
+    "https://presearch.org": {
+        "Time": 6.71,
+        "URL": "https://presearch.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.75",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "65.9.95.79",
+            "65.9.95.7",
+            "65.9.95.14",
+            "65.9.95.64"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "65.9.95.7",
+        "PING Status": "OK",
+        "PING IP": "65.9.95.7",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://presearch.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "18.185.22.79",
+                "52.57.160.121",
+                "18.184.239.227"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 159882,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 11:12:50 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Set-Cookie": "AWSALB=Q6Ivce28VdJ87eTheKPTFBvD60GvWyv4pBP1Bw/SQJbtQ8q2jHmM9ybKZXzc8a+Ypl5QMLk8hl572JJLQ3eT6ytvGRhsxINkJw7lcpl6nDDu3JtTWdpMlcV01kOm; Expires=Wed, 08 May 2024 11:12:50 GMT; Path=/, AWSALBCORS=Q6Ivce28VdJ87eTheKPTFBvD60GvWyv4pBP1Bw/SQJbtQ8q2jHmM9ybKZXzc8a+Ypl5QMLk8hl572JJLQ3eT6ytvGRhsxINkJw7lcpl6nDDu3JtTWdpMlcV01kOm; Expires=Wed, 08 May 2024 11:12:50 GMT; Path=/; SameSite=None; Secure, homepage_background_id=9be2cec0-b783-48ff-8637-fb141eb0e76d; Path=/; HttpOnly; Secure",
+            "X-Powered-By": "Express",
+            "X-Frame-Options": "SAMEORIGIN",
+            "ETag": "W/\"2708a-qJG5mWRB1w3tP0/jT3J8f7DPnRo\"",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "presearch.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "presearch.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M03"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "011E349211B1F9BDCF681ACA9F241A80",
+            "notBefore": "Oct 22 00:00:00 2023 GMT",
+            "notAfter": "Nov 19 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "presearch.org"
+                ],
+                [
+                    "DNS",
+                    "engine.presearch.org"
+                ],
+                [
+                    "DNS",
+                    "presearch.com"
+                ],
+                [
+                    "DNS",
+                    "*.presearch.com"
+                ],
+                [
+                    "DNS",
+                    "*.presearch.org"
+                ],
+                [
+                    "DNS",
+                    "engine.presearch.com"
+                ],
+                [
+                    "DNS",
+                    "*.engine.presearch.com"
+                ],
+                [
+                    "DNS",
+                    "*.engine.presearch.org"
+                ],
+                [
+                    "DNS",
+                    "*.presearch.io"
+                ],
+                [
+                    "DNS",
+                    "presearch.io"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m03.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m03.amazontrust.com/r2m03.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m03.amazontrust.com/r2m03.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 13:12:55"
+    },
+    "https://archive.ph": {
+        "Time": 7.77,
+        "URL": "https://archive.ph",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.137.248.133"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.137.248.133",
+        "PING Status": "OK",
+        "PING IP": "23.137.248.133",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 19271,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Wed, 01 May 2024 11:13:45 GMT",
+            "Content-Type": "text/html;charset=utf-8",
+            "Content-Length": "8529",
+            "Connection": "keep-alive",
+            "X-Frame-Options": "Deny",
+            "Cache-Control": "maxage=300",
+            "Expires": "Wed, 01 May 2024 11:18:45 GMT",
+            "Content-Encoding": "gzip",
+            "Vary": "Accept-Language",
+            "Accept-Ranges": "bytes"
+        },
+        "HTML Content": "archive.ph_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "archive.ph"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03EBE767E435993480E6814D34DDFB0BA4B8",
+            "notBefore": "Apr  7 22:13:42 2024 GMT",
+            "notAfter": "Jul  6 22:13:41 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "archive.ph"
+                ],
+                [
+                    "DNS",
+                    "blog.archive.ph"
+                ],
+                [
+                    "DNS",
+                    "www.archive.ph"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 13:13:50"
+    },
+    "https://ij.org": {
+        "Time": 4.1,
+        "URL": "https://ij.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.23.170",
+            "104.22.44.140",
+            "104.22.45.140"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.44.140",
+        "PING Status": "OK",
+        "PING IP": "104.22.44.140",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 403,
+        "Content Length": 16055,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 11:14:59 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "close",
+            "Accept-CH": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+            "Cross-Origin-Embedder-Policy": "require-corp",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Origin-Agent-Cluster": "?1",
+            "Permissions-Policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+            "Referrer-Policy": "same-origin",
+            "X-Frame-Options": "SAMEORIGIN",
+            "cf-mitigated": "challenge",
+            "cf-chl-out": "fOVttxNsY5qYMjYmdyzfPfxkuLZ1rGr7z0dLxOXVHqa8NYBYUwPN7kIy+eKkeP0y5mrFx06NKWGOajGDe2bu2gOXbq6GY+tAeQ3BDT3pBv53lpu4MwE63+5gSECD06XdfQs1MeKmTnVH7cSOj5Kxdw==$QjMVRaRV28Amwq4B1WtCbQ==",
+            "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+            "Set-Cookie": "__cf_bm=QsI3yjnjAXtEThnlLOdqkPgeNG77nh39MEyxVCWzqDE-1714562099-1.0.1.1-5ZpSyrEmLNrlkXxC9Dc9vzrWPrlB49lumIV08t32AovxytmrcnBZSg65vJ5tmJAVsjQApIVlpePg3HRsaPQWrA; path=/; expires=Wed, 01-May-24 11:44:59 GMT; domain=.ij.org; HttpOnly; Secure; SameSite=None",
+            "Vary": "Accept-Encoding",
+            "Server": "cloudflare",
+            "CF-RAY": "87cf59deda141c1c-FRA",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "ij.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "ij.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "6370C63C2270B2210E66FA9B5D45A319",
+            "notBefore": "Mar 20 12:13:53 2024 GMT",
+            "notAfter": "Jun 18 12:13:52 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "ij.org"
+                ],
+                [
+                    "DNS",
+                    "*.ij.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/WRjevvawQe8"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/_fiMabITZ0g.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 13:15:02"
+    },
+    "https://brothersroad.org": {
+        "Time": 8.83,
+        "URL": "https://brothersroad.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "160.153.0.78"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "160.153.0.78",
+        "PING Status": "OK",
+        "PING IP": "160.153.0.78",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 292650,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 11:15:30 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Age": "640427",
+            "content-security-policy": "upgrade-insecure-requests",
+            "strict-transport-security": "max-age=300, max-age=31536000; includeSubDomains",
+            "vary": "Accept-Encoding, User-Agent",
+            "x-cache": "cached",
+            "x-cache-hit": "HIT",
+            "x-cacheable": "YES:Forced",
+            "x-cacheproxy-retries": "0/2",
+            "x-content-type-options": "nosniff",
+            "x-fawn-proc-count": "2,13,24",
+            "x-php-version": "8.0",
+            "x-tec-api-origin": "https://brothersroad.org",
+            "x-tec-api-root": "https://brothersroad.org/wp-json/tribe/events/v1/",
+            "x-tec-api-version": "v1",
+            "x-xss-protection": "1; mode=block",
+            "x-backend": "varnish_ssl",
+            "CF-Cache-Status": "HIT",
+            "Last-Modified": "Wed, 24 Apr 2024 01:21:43 GMT",
+            "Expires": "Sat, 01 Jun 2024 11:15:30 GMT",
+            "Cache-Control": "public, max-age=2678400",
+            "Server": "cloudflare",
+            "CF-RAY": "87cf5aa67c722790-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "brothersroad.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "brothersroad.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07180A64C369812DBA108A42109E27BA",
+            "notBefore": "Nov 14 00:00:00 2023 GMT",
+            "notAfter": "Nov 13 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "brothersroad.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 13:15:39"
+    },
+    "https://censored.tv": {
+        "Time": 8.4,
+        "URL": "https://censored.tv",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "216.239.38.21",
+            "216.239.32.21",
+            "216.239.34.21",
+            "216.239.36.21"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "216.239.32.21",
+        "PING Status": "OK",
+        "PING IP": "216.239.32.21",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 221007,
+        "Headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "Vary": "Accept-Encoding",
+            "X-CLOUD-TRACE-CONTEXT": "a206a9a975a4d5c9487f3dd64168a9c4/11351004000741463675;o=1",
+            "Cache-Control": "no-cache, private",
+            "Set-Cookie": "XSRF-TOKEN=eyJpdiI6InFOUFRlaWVrR2d6SGY4TEZ6N2FYU3c9PSIsInZhbHVlIjoiNDJZZXNOcGJVOWtUUVA1RlJYZTVhbFF4N1BmWWlwUUx4cFBqNjBlS2NtdE8yWFV6L08rQ2xGTFBlZWkrcUJnKzRZSkcrdjlDbFprdFVEL21RQzZkTjNaUGhTZ2xIempTTlZhL0hWS3B1cjFxN0paR0JTRmlCSW5xd3F5TWpDM0siLCJtYWMiOiIxMDY1NzgyMTcwMjJjN2FhOGEzZmZkNjhmNDg3YWVhNzUwYzk0OWUyNDMyMmQ3MTliZWI2ZTFhMjU0MTA2YTY5In0%3D; expires=Wed, 01-May-2024 15:16:19 GMT; Max-Age=14400; path=/, censoredtv_session=eyJpdiI6IksrdkFLbGJoOC9VcFNBVmJJYll3dkE9PSIsInZhbHVlIjoia3VuUlVHaTZMZ0ZqVHVmVEwwdm1qUnZJL3FWNG5VZVBYaEdRL1N6VzJVbm5SWEZodVNDeTd5UG1QQXdibEc0R0trWEpjOENPYklJaEhXQkp0UVI4QnRObnRFRVJWd1FsRzdKeDhJSVgyd21neTJSWHdDRFJUMHBINUZNcjZ2TFUiLCJtYWMiOiJjZWU2NDg0NjYxMDAwYzViZWRjZDA0NzhjYWI2MjIwOTAzZTU1NzM4MDgyMGNjNmM0YzNlYWI3MmNkM2ZmYjdhIn0%3D; expires=Wed, 01-May-2024 15:16:19 GMT; Max-Age=14400; path=/; httponly",
+            "Content-Encoding": "gzip",
+            "Date": "Wed, 01 May 2024 11:16:19 GMT",
+            "Server": "Google Frontend",
+            "Expires": "Wed, 01 May 2024 11:16:19 GMT",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "censored.tv_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "censored.tv"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1D4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "8C10B12E55518D8712D50B6754B2E731",
+            "notBefore": "Apr 13 15:44:13 2024 GMT",
+            "notAfter": "Jul 12 16:32:24 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "censored.tv"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1d4/MvM8OrsZot8"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1d4.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1d4/QGgqyDM4ZFk.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 13:16:24"
+    },
+    "https://www.ewg.org": {
+        "Time": 9.51,
+        "URL": "https://www.ewg.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.22.46.85",
+            "104.22.47.85",
+            "172.67.39.47"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.39.47",
+        "PING Status": "OK",
+        "PING IP": "172.67.39.47",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 70944,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 11:17:27 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87cf5d7d1cb8b348-PRG",
+            "CF-Cache-Status": "DYNAMIC",
+            "Age": "24",
+            "Cache-Control": "max-age=300, public",
+            "Content-Language": "en",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "Last-Modified": "Wed, 01 May 2024 02:33:29 GMT",
+            "Vary": "Accept-Encoding",
+            "x-cache": "HIT",
+            "x-cache-hits": "6",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "SAMEORIGIN",
+            "x-powered-by": "Puppy with Googly Eyes",
+            "x-ua-compatible": "IE=edge",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.ewg.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "ewg.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "041B2735D3B7C4F308403EC6EBE196057F68",
+            "notBefore": "Mar 31 23:24:10 2024 GMT",
+            "notAfter": "Jun 29 23:24:09 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.ewg.org"
+                ],
+                [
+                    "DNS",
+                    "ewg.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 13:17:36"
+    },
+    "https://www.minds.com": {
+        "Time": 7.4,
+        "URL": "https://www.minds.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.18.32.26",
+            "172.64.155.230"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.64.155.230",
+        "PING Status": "OK",
+        "PING IP": "172.64.155.230",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 277799,
+        "Headers": {
+            "Date": "Wed, 01 May 2024 11:18:09 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+            "vary": "Accept-Encoding",
+            "x-powered-by": "Express",
+            "CF-Cache-Status": "DYNAMIC",
+            "Set-Cookie": "__cf_bm=DTMzU6g8aqtYxCCDliLrEIlmvoUg4nr6t.JRg2zUey8-1714562289-1.0.1.1-ojmqQaOoTKo8Wxv4BflGJzMcDUvHruDZsJYX3eb3mq.XRS_YJWuDMLQjDoL1nyaKH3k0r_mGh7aUASDYJV1NIA; path=/; expires=Wed, 01-May-24 11:48:09 GMT; domain=.minds.com; HttpOnly; Secure; SameSite=None",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Server": "cloudflare",
+            "CF-RAY": "87cf5e7fad49b345-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.minds.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "minds.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04DB39661E2E3884EA15E9009A4BF2E3E646",
+            "notBefore": "Mar  6 02:25:53 2024 GMT",
+            "notAfter": "Jun  4 02:25:52 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.minds.com"
+                ],
+                [
+                    "DNS",
+                    "minds.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-05-01 13:18:14"
+    },
+    "https://www.proton.me": {
+        "Time": 4.36,
+        "URL": "https://www.proton.me",
+        "Resolver Status": "OK",
+        "Resolver IP": "146.112.129.73",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.70.42.45"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.70.42.45",
+        "PING Status": "OK",
+        "PING IP": "185.70.42.45",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://proton.me/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "185.70.42.45"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 171645,
+        "Headers": {
+            "date": "Wed, 01 May 2024 11:18:52 GMT",
+            "last-modified": "Fri, 26 Apr 2024 16:19:31 GMT",
+            "etag": "\"29e7d-6170244beeac0-gzip\"",
+            "accept-ranges": "bytes",
+            "vary": "Accept-Encoding",
+            "content-encoding": "gzip",
+            "cache-control": "public, max-age=1, s-maxage=5, must-revalidate",
+            "content-length": "23139",
+            "content-type": "text/html; charset=utf-8",
+            "age": "2",
+            "content-security-policy-report-only": "default-src 'self'; media-src https://static.zdassets.com; connect-src 'self' wss: https://protonmail.zendesk.com https://ekr.zdassets.com blob: https://account.proton.me https://reports.proton.me https://*.algolia.net https://*.algolianet.com https://go.getproton.me; script-src 'self' blob: 'unsafe-eval' 'unsafe-inline'  https://static.zdassets.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; object-src 'self' data: blob:; frame-src 'self' data: blob: https://www.youtube-nocookie.com; child-src 'self' data: blob:; report-uri https://reports.proton.me/reports/csp; frame-ancestors 'self';",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "public-key-pins-report-only": "pin-sha256=\"CT56BhOTmj5ZIPgb/xD5mH8rY3BLo/MlhP7oPyJUEDo=\"; pin-sha256=\"35Dx28/uzN3LeltkCBQ8RHK0tlNSa2kCpCRGNp34Gxc=\"; report-uri=\"https://reports.proton.me/reports/tls\"",
+            "x-frame-options": "sameorigin",
+            "x-content-type-options": "nosniff",
+            "x-xss-protection": "0",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-permitted-cross-domain-policies": "none",
+            "onion-location": "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"
+        },
+        "HTML Content": "www.proton.me_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "proton.me"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "040F01F82FF6ADF9F70B0AB4AD32457141F1",
+            "notBefore": "Mar 27 13:14:51 2024 GMT",
+            "notAfter": "Jun 25 13:14:50 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.pr.tn"
+                ],
+                [
+                    "DNS",
+                    "*.proton.me"
+                ],
+                [
+                    "DNS",
+                    "*.storage.proton.me"
+                ],
+                [
+                    "DNS",
+                    "pr.tn"
+                ],
+                [
+                    "DNS",
+                    "proton.me"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-05-01 13:18:58"
+    }
+}

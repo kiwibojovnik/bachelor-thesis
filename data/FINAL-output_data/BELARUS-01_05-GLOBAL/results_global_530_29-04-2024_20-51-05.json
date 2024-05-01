@@ -1,0 +1,1076 @@
+{
+    "http://www.hustler.com": {
+        "Time": 9.2,
+        "URL": "http://www.hustler.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "208.97.136.33"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "208.97.136.33",
+        "PING Status": "OK",
+        "PING IP": "208.97.136.33",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://hustler.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "208.97.136.33"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 167459,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 00:42:05 GMT",
+            "Server": "Apache",
+            "Link": "<https://hustler.com/>; rel=shortlink",
+            "Upgrade": "h2",
+            "Connection": "Upgrade, Keep-Alive",
+            "Cache-Control": "max-age=600",
+            "Expires": "Tue, 30 Apr 2024 00:52:05 GMT",
+            "Vary": "Accept-Encoding,User-Agent",
+            "Content-Encoding": "gzip",
+            "Keep-Alive": "timeout=2, max=100",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.hustler.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "hustler.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03E3FC40E4D2DA2A988D6670CD54FFD007EF",
+            "notBefore": "Mar 24 00:31:06 2024 GMT",
+            "notAfter": "Jun 22 00:31:05 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "hustler.com"
+                ],
+                [
+                    "DNS",
+                    "www.hustler.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 20:42:12"
+    },
+    "http://www.iaffe.org": {
+        "Time": 11.89,
+        "URL": "http://www.iaffe.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.17.141.104",
+            "104.17.140.104",
+            "104.17.138.104",
+            "104.17.139.104",
+            "104.17.137.104"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.17.141.104",
+        "PING Status": "OK",
+        "PING IP": "104.17.141.104",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.iaffe.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.17.137.104",
+                "104.17.141.104",
+                "104.17.140.104",
+                "104.17.138.104",
+                "104.17.139.104"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 91587,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 00:42:48 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "referrer-policy": "no-referrer-when-downgrade",
+            "set-cookie": "serviceID=20119; expires=Tue, 30-Apr-2024 01:42:48 GMT; Max-Age=3600; path=/; secure; httponly, serviceID=20119; expires=Tue, 30-Apr-2024 01:42:48 GMT; Max-Age=3600; path=/; secure; httponly, 0012f0e1bd8c627a4a486a1336b31aa5=7th7dlum5ubmej2rehjq7s7920; path=/; secure; HttpOnly, Login=1; secure; httponly",
+            "p3p": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+            "expires": "Mon, 1 Jan 2001 00:00:00 GMT",
+            "last-modified": "Tue, 30 Apr 2024 00:42:48 GMT",
+            "Cache-Control": "post-check=0, pre-check=0",
+            "pragma": "no-cache",
+            "vary": "Accept-Encoding",
+            "x-frame-options": "sameorigin",
+            "CF-Cache-Status": "DYNAMIC",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "Server": "cloudflare",
+            "CF-RAY": "87c37e710c7f1945-FRA",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.iaffe.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.iaffe.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0494620DF82361D1348486DB204CBDE82CCF",
+            "notBefore": "Mar 24 15:59:40 2024 GMT",
+            "notAfter": "Jun 22 15:59:39 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.iaffe.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 20:42:58"
+    },
+    "http://www.iavi.org": {
+        "Time": 4.39,
+        "URL": "http://www.iavi.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.185.0.2"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.185.0.2",
+        "PING Status": "OK",
+        "PING IP": "23.185.0.2",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.iavi.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.185.0.2"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 274159,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "81806",
+            "Cache-Control": "public, max-age=600",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Link": "<https://www.iavi.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.iavi.org/wp-json/wp/v2/pages/101>; rel=\"alternate\"; type=\"application/json\", <https://www.iavi.org/>; rel=shortlink",
+            "Server": "nginx",
+            "Strict-Transport-Security": "max-age=300",
+            "X-Pantheon-Styx-Hostname": "styx-fe2-b-54549df966-hp5v5",
+            "X-Styx-Req-Id": "5a691a80-068a-11ef-a3da-3a3246d715c2",
+            "Date": "Tue, 30 Apr 2024 00:44:06 GMT",
+            "X-Served-By": "cache-chi-kigq8000108-CHI, cache-mxp6938-MXP",
+            "X-Cache": "HIT, MISS",
+            "X-Cache-Hits": "2, 0",
+            "X-Timer": "S1714437846.450161,VS0,VE118",
+            "Vary": "Accept-Encoding, Cookie, Cookie",
+            "Age": "170",
+            "Accept-Ranges": "bytes",
+            "Via": "1.1 varnish, 1.1 varnish"
+        },
+        "HTML Content": "www.iavi.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "iavi.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04725C097D038ADB491F000C0C965CEAB458",
+            "notBefore": "Apr 18 13:23:55 2024 GMT",
+            "notAfter": "Jul 17 13:23:54 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "iavi.org"
+                ],
+                [
+                    "DNS",
+                    "www.iavi.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 20:44:10"
+    },
+    "https://www.icc-cpi.int": {
+        "Time": 5.01,
+        "URL": "https://www.icc-cpi.int",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.99.224",
+            "188.114.98.224"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.98.224",
+        "PING Status": "OK",
+        "PING IP": "188.114.98.224",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 220034,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 00:44:55 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=900, public",
+            "x-drupal-dynamic-cache": "HIT",
+            "content-language": "en",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "SAMEORIGIN",
+            "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "vary": "Cookie,Accept-Encoding",
+            "x-generator": "Drupal 10 (https://www.drupal.org)",
+            "content-security-policy-report-only": "default-src 'self'; connect-src 'self' https://*.analytics.google.com https://*.dacast.com/ https://*.google-analytics.com https://*.googletagmanager.com https://dacastmmd.mmdlive.lldns.net/ https://kinesis.us-east-1.amazonaws.com/ https://license.theoplayer.com/ https://www.cloudflare.com/; font-src 'self' data: https://cdnjs.cloudflare.com/ https://fonts.gstatic.com; frame-src 'self' https://*.dacast.com/ https://www.youtube.com/ https://www.youtube-nocookie.com https://widgets.ebscohost.com/ https://www.google.com/recaptcha/; img-src 'self' data: https://*.dacast.com/ https://*.google-analytics.com https://*.googletagmanager.com https://license.theoplayer.com/ https://*.ytimg.com; media-src 'self' blob: data: https://dacastmmd.mmdlive.lldns.net/; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://*.dacast.com/ https://*.google-analytics.com https://*.googletagmanager.com https://cdn.jsdelivr.net/ https://cdnjs.cloudflare.com/ https://static.cloudflareinsights.com/ https://unpkg.com/ https://www.gstatic.com/ https://cdn.jsdelivr.net https://player.dacast.com https://www.google.com platform.twitter.com; style-src 'self' 'unsafe-inline' https://prod-nplayer.dacast.com/ https://*.dacast.com/ https://cdnjs.cloudflare.com/ https://unpkg.com/ https://cdnjs.cloudflare.com; frame-ancestors 'self'; report-uri https://www.icc-cpi.int/report-uri/reportOnly",
+            "content-security-policy": "default-src 'self'; connect-src 'self' https://*.analytics.google.com https://*.dacast.com/ https://*.google-analytics.com https://*.googletagmanager.com https://dacastmmd.mmdlive.lldns.net/ https://kinesis.us-east-1.amazonaws.com/ https://license.theoplayer.com/ https://www.cloudflare.com/; font-src 'self' data: https://cdnjs.cloudflare.com/ https://fonts.gstatic.com; frame-src 'self' https://*.dacast.com/ https://www.youtube.com/ https://www.youtube-nocookie.com https://widgets.ebscohost.com/ https://www.google.com/recaptcha/; img-src 'self' data: https://*.dacast.com/ https://*.google-analytics.com https://*.googletagmanager.com https://license.theoplayer.com/ https://*.ytimg.com; media-src 'self' blob: data: https://dacastmmd.mmdlive.lldns.net/; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://*.dacast.com/ https://*.google-analytics.com https://*.googletagmanager.com https://cdn.jsdelivr.net/ https://cdnjs.cloudflare.com/ https://static.cloudflareinsights.com/ https://unpkg.com/ https://www.gstatic.com/ https://cdn.jsdelivr.net https://player.dacast.com https://www.google.com platform.twitter.com; style-src 'self' 'unsafe-inline' https://prod-nplayer.dacast.com/ https://*.dacast.com/ https://cdnjs.cloudflare.com/ https://unpkg.com/ https://cdnjs.cloudflare.com; frame-ancestors 'self'; report-uri https://www.icc-cpi.int/report-uri/enforce",
+            "x-drupal-cache": "MISS",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "permissions-policy": "geolocation=(), midi=(), notifications=(), push=(), sync-xhr=(), accelerometer=(), gyroscope=(), magnetometer=(), camera=(), microphone=(), usb=(), xr=(), speaker=(self), vibrate=(), fullscreen=(self)",
+            "last-modified": "Mon, 29 Apr 2024 18:04:15 GMT",
+            "CF-Cache-Status": "HIT",
+            "Server": "cloudflare",
+            "CF-RAY": "87c3818c9ca85a59-VIE",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.icc-cpi.int_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.icc-cpi.int"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03E7A30251EBE3D26C5C0E2C493119C919D3",
+            "notBefore": "Mar  6 17:12:15 2024 GMT",
+            "notAfter": "Jun  4 17:12:14 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.www.icc-cpi.int"
+                ],
+                [
+                    "DNS",
+                    "www.icc-cpi.int"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 20:44:59"
+    },
+    "https://www.icj.org": {
+        "Time": 11.84,
+        "URL": "https://www.icj.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "35.197.255.184"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "35.197.255.184",
+        "PING Status": "OK",
+        "PING IP": "35.197.255.184",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 1773240,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Tue, 30 Apr 2024 00:46:05 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Keep-Alive": "timeout=20",
+            "Vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding",
+            "x-powered-by": "WP Engine",
+            "Link": "<https://www.icj.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.icj.org/wp-json/wp/v2/pages/10849>; rel=\"alternate\"; type=\"application/json\", <https://www.icj.org/>; rel=shortlink",
+            "X-Pass-Why": "custom-path",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.icj.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.icj.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03E01D7AE63342D0EE18A8F111A8C3B94B8C",
+            "notBefore": "Feb 11 22:42:35 2024 GMT",
+            "notAfter": "May 11 22:42:34 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.icj.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 20:46:14"
+    },
+    "https://www.iconnecthere.com": {
+        "Time": 7.85,
+        "URL": "https://www.iconnecthere.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.140.82",
+            "104.21.94.213"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.94.213",
+        "PING Status": "OK",
+        "PING IP": "104.21.94.213",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://iconnecthere.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "172.67.140.82",
+                "104.21.94.213"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 12422,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 00:47:03 GMT",
+            "Content-Type": "text/html; charset=iso-8859-1",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "strict-transport-security": "max-age=31536000;",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=c14mcVdTD7oEZmm4w3QSmbHePIVZCD32drFlYiNQdijPBNhHtN2ySISJuYX0AggNLuDDQv1ia5tjTfjbfCjb7YhkiVlifjA89xsgvBVCMQvEqFedmsWaii5P6%2FDQbJ%2Bj947L\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c384ae7b605aad-VIE",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.iconnecthere.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "iconnecthere.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03775595A53E20E338105DF11D41D71ECF8D",
+            "notBefore": "Mar 25 14:46:09 2024 GMT",
+            "notAfter": "Jun 23 14:46:08 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.iconnecthere.com"
+                ],
+                [
+                    "DNS",
+                    "iconnecthere.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 20:47:10"
+    },
+    "https://www.icrc.org": {
+        "Time": 6.1,
+        "URL": "https://www.icrc.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "51.103.133.178"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "51.103.133.178",
+        "PING Status": "OK",
+        "PING IP": "51.103.133.178",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 75645,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 00:48:17 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Set-Cookie": "ICRCAppGwAffinityCORS=a1d09764a05c45e4f6c1968a400f8ea6; Path=/; SameSite=None; Secure, ICRCAppGwAffinity=a1d09764a05c45e4f6c1968a400f8ea6; Path=/, userVisitedBefore=1; expires=Wed, 30 Apr 2025 00:48:16 GMT; Max-Age=31536000; path=/; secure; HttpOnly",
+            "server": "ICRC PRD App Secured Gateway",
+            "X-Powered-By": "PHP/8.2.15",
+            "X-Drupal-Cache": "MISS",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "Cache-Control": "no-cache, must-revalidate",
+            "X-XSS-Protection": "1; mode=block",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "Referrer-Policy": "no-referrer",
+            "Permissions-Policy": "autoplay=(), camera=(), geolocation=(), microphone=(), xr-spatial-tracking=()",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Security-Policy": "frame-ancestors 'self' icrc.org *.icrc.org",
+            "Content-Security-Policy": "frame-ancestors 'self' icrc.org *.icrc.org; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://googleads.g.doubleclick.net/  https://js.hsleadflows.net/  https://js.usemessages.com/ https://js.hsadspixel.net/  https://js.hs-banner.com/  https://js.hs-analytics.net/ https://js.hs-scripts.com/ https://js.hsforms.net/ https://www.google.com/ https://*.google-analytics.com/ https://www.google-analytics.com/analytics.js https://www.gstatic.com/ https://www.googleoptimize.com/ https://*.googletagmanager.com/ https://*.recaptcha.net/ https://*.mapbox.com/  https://unpkg.com/ https://js.usemessages.com/  https://js.hsleadflows.net/ https://maps.googleapis.com/ https://*.twitter.com/ https://*.instagram.com/ https://connect.facebook.net/ https://secure.adnxs.com/ https://*.ads-twitter.com/ https://www.googleadservices.com/ https://*.adnxs.com/ https://bat.bing.com/ https://*.vimeocdn.com/ https://js-na1.hs-scripts.com/ https://www.youtube.com/ https://*.vimeo.com https://*.hotjar.com https://www.icrcnewsroom.org https://*.cloudflare.com/ https://*.zencdn.net/ https://web-chat.global.assistant.watson.appdomain.cloud https://*.yandex.ru https://*.ext.icrc.org  https://*.test.icrc.org/ https://*.getblue.io; object-src 'self';",
+            "Content-Language": "en",
+            "X-Content-Type-Options": "nosniff",
+            "Link": "<https://www.icrc.org/en>; rel=\"canonical\""
+        },
+        "HTML Content": "www.icrc.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "jurisdictionCountryName",
+                        "CH"
+                    ]
+                ],
+                [
+                    [
+                        "businessCategory",
+                        "Non\u2010Commercial Entity"
+                    ]
+                ],
+                [
+                    [
+                        "serialNumber",
+                        "1993-03-19"
+                    ]
+                ],
+                [
+                    [
+                        "countryName",
+                        "CH"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Gen\u00e8ve"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "International Committee of the Red Cross"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.icrc.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert EV RSA CA G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "02F5B04126B3FE82CD75D5C413DBB8C1",
+            "notBefore": "Oct 18 00:00:00 2023 GMT",
+            "notAfter": "Oct 23 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.icrc.org"
+                ],
+                [
+                    "DNS",
+                    "icrc.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertEVRSACAG2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertEVRSACAG2.crl",
+                "http://crl4.digicert.com/DigiCertEVRSACAG2.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 20:48:22"
+    },
+    "http://www.icrw.org": {
+        "Time": 7.51,
+        "URL": "http://www.icrw.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.97.11",
+            "188.114.96.11"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.97.11",
+        "PING Status": "OK",
+        "PING IP": "188.114.97.11",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.icrw.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.97.11",
+                "188.114.96.11"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 62553,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 00:49:28 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=3600, must-revalidate",
+            "cf-edge-cache": "cache, platform=WordPress",
+            "link": "<https://www.icrw.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.icrw.org/wp-json/wp/v2/pages/72>; rel=\"alternate\"; type=\"application/json\", <https://www.icrw.org/>; rel=shortlink",
+            "hummingbird-cache": "Served",
+            "vary": "Accept-Encoding",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-turbo-charged-by": "LiteSpeed",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=KyIk7fVLF8oEWokEgkaqkooc0GVdCeNoZhkNPH1Hg1RAuIG6Vz7gh81dycbI0xuV0tTKQ71Q4YPp3AMrlqfbXLw14gFRpnozHUzFYPWHczgblrHo3N3TRKOvVmNq60k%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c38835ba475bb3-VIE",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.icrw.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "icrw.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "94340C46A85F36280D747171ED77CC1C",
+            "notBefore": "Apr 23 03:47:12 2024 GMT",
+            "notAfter": "Jul 22 03:47:11 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "icrw.org"
+                ],
+                [
+                    "DNS",
+                    "*.icrw.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/HTHpNak88g8"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/SXudXWKHu8M.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 20:49:34"
+    },
+    "https://www.ictj.org": {
+        "Time": 4.58,
+        "URL": "https://www.ictj.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.185.0.2"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.185.0.2",
+        "PING Status": "OK",
+        "PING IP": "23.185.0.2",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 89443,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "16595",
+            "Cache-Control": "max-age=900, public",
+            "Content-Encoding": "gzip",
+            "Content-Language": "en",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Etag": "W/\"1714437493\"",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "Last-Modified": "Tue, 30 Apr 2024 00:38:13 GMT",
+            "Server": "nginx",
+            "Strict-Transport-Security": "max-age=300",
+            "X-Content-Type-Options": "nosniff",
+            "X-Drupal-Cache": "HIT",
+            "X-Drupal-Dynamic-Cache": "UNCACHEABLE",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Generator": "Drupal 10 (https://www.drupal.org)",
+            "X-Pantheon-Styx-Hostname": "styx-fe2-a-6b9b845978-lqsks",
+            "X-Styx-Req-Id": "3b6bd0b3-068a-11ef-b446-9e6369ff2ad0",
+            "Date": "Tue, 30 Apr 2024 00:50:06 GMT",
+            "X-Served-By": "cache-chi-kigq8000023-CHI, cache-fra-eddf8230050-FRA",
+            "X-Cache": "HIT, MISS",
+            "X-Cache-Hits": "7, 0",
+            "X-Timer": "S1714438206.432712,VS0,VE109",
+            "Vary": "Accept-Encoding, Cookie, Cookie, Cookie",
+            "Age": "582",
+            "Accept-Ranges": "bytes",
+            "Via": "1.1 varnish, 1.1 varnish"
+        },
+        "HTML Content": "www.ictj.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "ictj.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04F444EB938BC0F2ACC3DDCFA1FF2CD86BEB",
+            "notBefore": "Mar  4 08:21:46 2024 GMT",
+            "notAfter": "Jun  2 08:21:45 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "ictj.org"
+                ],
+                [
+                    "DNS",
+                    "www.ictj.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 20:50:10"
+    },
+    "http://www.idea.int": {
+        "Time": 7.9,
+        "URL": "http://www.idea.int",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "13.224.103.107",
+            "13.224.103.125",
+            "13.224.103.111",
+            "13.224.103.7"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "13.224.103.7",
+        "PING Status": "OK",
+        "PING IP": "13.224.103.7",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.idea.int/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "13.224.103.111",
+                "13.224.103.7",
+                "13.224.103.107",
+                "13.224.103.125"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 247695,
+        "Headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Date": "Tue, 30 Apr 2024 00:50:59 GMT",
+            "Server": "Apache/2.4.57 (Debian)",
+            "X-Powered-By": "PHP/8.1.23",
+            "Cache-Control": "must-revalidate, no-cache, private",
+            "X-Drupal-Dynamic-Cache": "MISS",
+            "X-UA-Compatible": "IE=edge",
+            "Content-Language": "en",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Drupal-Cache-Tags": "block_content:2 block_view config:block.block.annualreportsthemeextrablockdemocracyassessment config:block.block.breadcrumbs config:block.block.constitutionbuildingnewslettercta config:block.block.constitutionnetlogothemesidebarconstitutionbuilding config:block.block.constitutionnetthemesidebarconstitutionbuilding config:block.block.contactinfofooter config:block.block.democracynotesblogthemesextrablockdemocracyassessment config:block.block.democracytracker_democracyassessment config:block.block.electionfactsheetsthemesextrablockdemocracyassessment config:block.block.expertadvisorygroupthemeblockclimatechange config:block.block.exploremenu config:block.block.filterbytype config:block.block.followusthemesidebarconstitutionbuilding config:block.block.fromourdatabasesthemesidebarclimatechange config:block.block.fromourdatabasesthemesidebarelectoralprocesses config:block.block.fromourdatabasesthemesidebargenderandinclusion config:block.block.fromourdatabasesthemesidebarmoneyinpolitics config:block.block.fromourdatabasesthemesidebarppandr config:block.block.fromthedemocracytrackerthemesidebardemocracyassessment config:block.block.mainnavigation config:block.block.newsarticlesmultimediareportmoneyinpolitics config:block.block.ourworkthemesidebardemocracyassessment config:block.block.relatedprojectsthemeextrablockconstitutionbuilding config:block.block.tema_account_menu config:block.block.tema_branding config:block.block.tema_breadcrumbs config:block.block.tema_content config:block.block.tema_footer config:block.block.tema_help config:block.block.tema_local_actions config:block.block.tema_local_tasks config:block.block.tema_messages config:block.block.tema_page_title config:block.block.tema_powered config:block.block.tema_tools config:block.block.timelinestoriesofdemocracy config:block_list config:google_tag_container_list config:system.menu.explore config:system.menu.footer config:system.menu.main config:system.site config:user.role.anonymous http_response local_task node:149611 node:150500 node:150823 node:1712 node:1714 node:2 node:563 node:564 node:565 node:566 node:567 node:6122 node:6184 node:6186 node:74 node:78 node:8032 node:8840 node:8844 node:8846 node:8850 node:8851 node:8853 node:8855 node:8857 node:8859 node:8861 node:8871 node:9089 node:9092 node:9094 node:9496 node_view rendered user:0 user:1",
+            "X-Drupal-Cache-Contexts": "languages:language_content languages:language_interface layout_builder_is_active:node route theme timezone url.path url.query_args url.site user.node_grants:view user.permissions user.roles",
+            "X-Drupal-Cache-Max-Age": "0 (Uncacheable)",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "X-Generator": "Drupal 9 (https://www.drupal.org)",
+            "X-Drupal-Cache": "MISS",
+            "Content-Encoding": "gzip",
+            "Vary": "Accept-Encoding",
+            "X-Cache": "Miss from cloudfront",
+            "Via": "1.1 a4f3f56409fe4e0b42683dc15dd52ef8.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "ZRH50-C1",
+            "X-Amz-Cf-Id": "vpI5s3OhOhWx8YblGHaTp-_YwxY-EYKMnbvV2VSvvGudwWEXCLbcqw==",
+            "X-XSS-Protection": "1; mode=block",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "Strict-Transport-Security": "max-age=31536000"
+        },
+        "HTML Content": "www.idea.int_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.idea.int"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M02"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0E92C6E8BBAA038B41CE78549013C332",
+            "notBefore": "Apr 17 00:00:00 2024 GMT",
+            "notAfter": "May 17 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.idea.int"
+                ],
+                [
+                    "DNS",
+                    "idea.int"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m02.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m02.amazontrust.com/r2m02.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m02.amazontrust.com/r2m02.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 20:51:05"
+    }
+}

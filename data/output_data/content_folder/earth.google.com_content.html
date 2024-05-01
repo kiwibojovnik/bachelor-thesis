@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><link rel="icon" href="https://www.gstatic.com/earth/00-favicon.ico"></head><body style="background-color: #000" id="v-" data-version="10.52.0.0" data-flutterenabled="1" data-fragment=""><script nonce="xFI6YEkIyhSVx9Paej6M7Q">'use strict';/*
+
+ SPDX-License-Identifier: Apache-2.0
+*/
+var a=function(c){this.g=c};a.prototype.toString=function(){return this.g};var b=new a("about:invalid#zClosurez");var d=function(c){this.h=c};function e(c){return new d(function(B){return B.substr(0,c.length+1).toLowerCase()===c+":"})}var f=[e("data"),e("http"),e("https"),e("mailto"),e("ftp"),new d(function(c){return/^[^:]*([/?#]|$)/.test(c)})],g=/^\s*(?!javascript:)(?:[\w+.-]+:|[^:/?#]*(?:[/?#]|$))/i;var h=new URLSearchParams(window.location.search),k=document.getElementById("v-"),l;
+if(k.getAttribute("data-flutterenabled")){var m=k.getAttribute("data-version"),n;k.getAttribute("data-singlethreaded")?n="single-threaded/versions/"+m:(n="multi-threaded/versions/"+m,window.location.hostname.includes("earth-nightly.corp.google.com")&&k.getAttribute("data-webgpu")&&(n="webgpu/versions/"+m));h.delete("st");h.delete("mt");h.delete("fdl");var p=k.getAttribute("data-authuser");p&&h.append("authuser",p);l=["/static",n,"index.html"].join("/")}else{var q=k.getAttribute("data-version");/^\d+[\.\d-]*$/.test(q)||
+(q="current");k.getAttribute("data-singlethreaded")&&(q="wasm/"+q);h.delete("wasm");h.delete("wasmt");h.delete("fdl");var r=k.getAttribute("data-authuser");r&&h.append("authuser",r);l=["/static",q,"app_min.html"].join("/")}var t=l,u=k.getAttribute("data-fragment"),v=window.location,w,x=t+"?"+h.toString()+u,y;y=void 0===y?f:y;var z;a:{var A=y;A=void 0===A?f:A;if(x instanceof a)z=x;else{for(var C=0;C<A.length;++C){var D=A[C];if(D instanceof d&&D.h(x)){z=new a(x);break a}}z=void 0}}
+w=z||b;var E,F;if(w instanceof a)if(w instanceof a)F=w.g;else throw Error("");else F=g.test(w)?w:void 0;E=F;void 0!==E&&v.replace(E);
+</script></body></html>
