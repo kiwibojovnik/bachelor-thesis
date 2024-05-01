@@ -1,0 +1,1048 @@
+{
+    "https://www.omct.org": {
+        "Time": 9.54,
+        "URL": "https://www.omct.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "84.16.78.100"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "84.16.78.100",
+        "PING Status": "OK",
+        "PING IP": "84.16.78.100",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 199687,
+        "Headers": {
+            "date": "Tue, 30 Apr 2024 10:00:29 GMT",
+            "server": "Apache",
+            "set-cookie": "ccc-counter=1; expires=Wed, 01-May-2024 10:00:29 GMT; Max-Age=86400; path=/",
+            "cache-control": "public, s-maxage=31536000, max-age=0",
+            "x-powered-by": "Craft CMS,Blitz",
+            "content-encoding": "gzip",
+            "strict-transport-security": "max-age=16000000",
+            "upgrade": "h2",
+            "connection": "Upgrade",
+            "transfer-encoding": "chunked",
+            "content-type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.omct.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "omct.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Domain Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "E6940462CDCBF11C97CD21454B58389C",
+            "notBefore": "Jan 12 00:00:00 2024 GMT",
+            "notAfter": "Jan 21 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "omct.org"
+                ],
+                [
+                    "DNS",
+                    "www.omct.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 12:00:37"
+    },
+    "http://www.worldcoalition.org": {
+        "Time": 9.67,
+        "URL": "http://www.worldcoalition.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "46.105.204.6"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "46.105.204.6",
+        "PING Status": "OK",
+        "PING IP": "46.105.204.6",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://worldcoalition.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "46.105.204.6"
+            ]
+        ],
+        "HTTP Status": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "www.worldcoalition.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "worldcoalition.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03186CD891F4DBBE6BFDF04D4DA9A49DF8BA",
+            "notBefore": "Apr  7 10:49:24 2024 GMT",
+            "notAfter": "Jul  6 10:49:23 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "dev.worldcoalition.org"
+                ],
+                [
+                    "DNS",
+                    "e-learning.worldcoalition.org"
+                ],
+                [
+                    "DNS",
+                    "worldcoalition.org"
+                ],
+                [
+                    "DNS",
+                    "www.dev.worldcoalition.org"
+                ],
+                [
+                    "DNS",
+                    "www.e-learning.worldcoalition.org"
+                ],
+                [
+                    "DNS",
+                    "www.worldcoalition.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 12:01:37"
+    },
+    "http://www.globalr2p.org": {
+        "Time": 4.51,
+        "URL": "http://www.globalr2p.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "141.193.213.10",
+            "141.193.213.11"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "141.193.213.11",
+        "PING Status": "OK",
+        "PING IP": "141.193.213.11",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 162209,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 10:02:30 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "Link": "<https://www.globalr2p.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.globalr2p.org/wp-json/wp/v2/pages/21>; rel=\"alternate\"; type=\"application/json\", <https://www.globalr2p.org/>; rel=shortlink",
+            "X-Powered-By": "WP Engine",
+            "X-Cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "X-Cache": "HIT: 17",
+            "X-Cache-Group": "normal",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87c6b251b8552788-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.globalr2p.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.globalr2p.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0337AEB7AE65A8167D841E2AD719C909D729",
+            "notBefore": "Mar 25 05:10:42 2024 GMT",
+            "notAfter": "Jun 23 05:10:41 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.globalr2p.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 12:02:34"
+    },
+    "https://digital.globalclimatestrike.net": {
+        "Time": 8.03,
+        "URL": "https://digital.globalclimatestrike.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.16.5",
+            "172.67.165.162"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.16.5",
+        "PING Status": "OK",
+        "PING IP": "104.21.16.5",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 148282,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 10:03:01 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "x-powered-by": "WP Engine",
+            "link": "<https://digital.globalclimatestrike.net/wp-json/>; rel=\"https://api.w.org/\"",
+            "x-cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "x-cache": "HIT: 1",
+            "x-cache-group": "normal",
+            "content-security-policy": "upgrade-insecure-requests, upgrade-insecure-requests",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Y8i6Ie3pRhFNMvJdWB8hDua7zqJN%2FxwlitM%2FZU8NsmLhV4Pf7R0mSgBFQ1eOvhYoMLK7I7PBNefV7d4zZ%2F1D9UGqUAoIgyQSxBuqwUQs1Tqfh5Uwn4Aihka9eyeDEnlx2AnD%2B32o%2B84Z8dxL%2FYkC66raNdZZ4YPGrzZqMokc\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c6b314b8f04125-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "digital.globalclimatestrike.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "globalclimatestrike.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "31A8E12CEBEF8A0811C4EA6C3E0B8A6C",
+            "notBefore": "Mar 31 09:00:25 2024 GMT",
+            "notAfter": "Jun 29 09:00:24 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "globalclimatestrike.net"
+                ],
+                [
+                    "DNS",
+                    "*.globalclimatestrike.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/-IeC1r002y8"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/Jpm9AsZrdX4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 12:03:08"
+    },
+    "https://allout.org": {
+        "Time": 5.85,
+        "URL": "https://allout.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.30.145",
+            "104.22.1.137",
+            "104.22.0.137"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.0.137",
+        "PING Status": "OK",
+        "PING IP": "104.22.0.137",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://allout.org/en",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "172.67.30.145",
+                "104.22.1.137",
+                "104.22.0.137"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 42055,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 10:03:35 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87c6b3e93986b35d-PRG",
+            "CF-Cache-Status": "DYNAMIC",
+            "Cache-Control": "max-age=3600, public",
+            "Content-Language": "en",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "Last-Modified": "Sun, 28 Apr 2024 17:52:34 GMT",
+            "Link": "<https://allout.org/en>; rel=\"shortlink\", <https://allout.org/en>; rel=\"canonical\", <https://allout.org/de/startseite>; rel=\"alternate\"; hreflang=\"de\", <https://allout.org/en/home>; rel=\"alternate\"; hreflang=\"en\", <https://allout.org/es/inicio>; rel=\"alternate\"; hreflang=\"es\", <https://allout.org/fr/accueil>; rel=\"alternate\"; hreflang=\"fr\", <https://allout.org/it/homepage>; rel=\"alternate\"; hreflang=\"it\", <https://allout.org/pt/inicio>; rel=\"alternate\"; hreflang=\"pt-pt\", <https://allout.org/en/home>; rel=\"revision\"",
+            "Vary": "Cookie,Accept-Encoding",
+            "x-content-type-options": "nosniff, nosniff",
+            "x-drupal-cache": "HIT",
+            "x-drupal-dynamic-cache": "HIT",
+            "x-frame-options": "SAMEORIGIN",
+            "x-generator": "Drupal 8 (https://www.drupal.org)",
+            "x-ua-compatible": "IE=edge",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "allout.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "allout.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0433420208CFC1E92DABD62F97972366345E",
+            "notBefore": "Apr 13 02:57:16 2024 GMT",
+            "notAfter": "Jul 12 02:57:15 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.allout.org"
+                ],
+                [
+                    "DNS",
+                    "allout.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 12:03:39"
+    },
+    "https://www.worldpulse.com": {
+        "Time": 5.34,
+        "URL": "https://www.worldpulse.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.73.235",
+            "104.26.0.67",
+            "104.26.1.67"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.73.235",
+        "PING Status": "OK",
+        "PING IP": "172.67.73.235",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 74349,
+        "Headers": {
+            "Access-Control-Allow-Origin": "*",
+            "Age": "933738",
+            "Cache-Control": "public, max-age=0, must-revalidate",
+            "Connection": "keep-alive",
+            "Content-Disposition": "inline",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Tue, 30 Apr 2024 10:04:17 GMT",
+            "Etag": "W/\"dfac03ba4e3d549e56b5fdd2cbb0addc\"",
+            "Server": "Vercel",
+            "Strict-Transport-Security": "max-age=63072000",
+            "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url",
+            "X-Matched-Path": "/en",
+            "X-Vercel-Cache": "HIT",
+            "X-Vercel-Id": "fra1::2w6wl-1714471457485-b5f8667bdc70",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "www.worldpulse.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "worldpulse.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "2F4DFB1BBD4E253D0DFFF654964AF165",
+            "notBefore": "Apr 12 00:04:50 2024 GMT",
+            "notAfter": "Jul 11 00:04:49 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "worldpulse.com"
+                ],
+                [
+                    "DNS",
+                    "*.worldpulse.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/V68Ww5klUao"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/G6xhm51JigU.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 12:04:22"
+    },
+    "https://globalpressjournal.com": {
+        "Time": 10.12,
+        "URL": "https://globalpressjournal.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.162",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.21.85.93",
+            "172.67.204.63"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.21.85.93",
+        "PING Status": "OK",
+        "PING IP": "104.21.85.93",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 245496,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 10:05:15 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "link": "<https://globalpressjournal.com/wp-json/>; rel=\"https://api.w.org/\", <https://globalpressjournal.com/wp-json/wp/v2/pages/10059327>; rel=\"alternate\"; type=\"application/json\", <https://globalpressjournal.com/>; rel=shortlink",
+            "x-powered-by": "WP Engine",
+            "x-cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "x-cache": "HIT: 11",
+            "x-cache-group": "normal",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=jTqEtFWfPqIZAcQOxTwU7ub2hAEz7W96v9ahryzlz3xv3Yf51HfmH%2BrK%2F%2FfsCKA5leQOWW7bOm5vkFjIIm1YrcM11A9NslIBXksVYy1eA7kc3Ar4zIphkGkN9wsp4ZtxX6KiwdXgje2JUxC9Muz07h5SZzgw\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c6b656aa78411a-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "globalpressjournal.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "globalpressjournal.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "84288CD445CA55C21175B0D29732B23E",
+            "notBefore": "Mar 10 16:27:36 2024 GMT",
+            "notAfter": "Jun  8 16:27:35 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "globalpressjournal.com"
+                ],
+                [
+                    "DNS",
+                    "*.globalpressjournal.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/sI1dNJJ2YaQ"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/ihFiAY-64YY.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 12:05:23"
+    },
+    "https://archive.is": {
+        "Time": 4.78,
+        "URL": "https://archive.is",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.162",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "31.133.0.113"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "31.133.0.113",
+        "PING Status": "OK",
+        "PING IP": "31.133.0.113",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 19269,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Tue, 30 Apr 2024 10:05:58 GMT",
+            "Content-Type": "text/html;charset=utf-8",
+            "Content-Length": "8525",
+            "Connection": "keep-alive",
+            "X-Frame-Options": "Deny",
+            "Cache-Control": "maxage=300",
+            "Expires": "Tue, 30 Apr 2024 10:10:58 GMT",
+            "Content-Encoding": "gzip",
+            "Vary": "Accept-Language",
+            "Accept-Ranges": "bytes"
+        },
+        "HTML Content": "archive.is_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "archive.is"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0333D7FDD2828680A8B1907A114C926A4F07",
+            "notBefore": "Apr  7 22:22:17 2024 GMT",
+            "notAfter": "Jul  6 22:22:16 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "archive.is"
+                ],
+                [
+                    "DNS",
+                    "blog.archive.is"
+                ],
+                [
+                    "DNS",
+                    "www.archive.is"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 12:06:02"
+    },
+    "https://www.wfp.org": {
+        "Time": 29.38,
+        "URL": "https://www.wfp.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.162",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "52.205.137.21",
+            "18.235.141.198"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "52.205.137.21",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "192.168.1.1",
+                0.003155946731567383
+            ],
+            [
+                "80.70.60.254",
+                0.006623983383178711
+            ],
+            [
+                "90.183.197.126",
+                0.015892982482910156
+            ],
+            [
+                "194.228.115.71",
+                0.01520991325378418
+            ],
+            [
+                "90.182.78.226",
+                0.02046489715576172
+            ],
+            [
+                "194.228.115.67",
+                0.01689600944519043
+            ],
+            [
+                "194.228.115.64",
+                0.017041921615600586
+            ],
+            [
+                "62.115.124.28",
+                0.02469801902770996
+            ],
+            [
+                "62.115.122.159",
+                0.10896897315979004
+            ],
+            [
+                "62.115.138.190",
+                0.10937619209289551
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 140661,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 10:06:56 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Length": "140661",
+            "Connection": "keep-alive",
+            "Server": "Apache",
+            "Cache-Control": "must-revalidate, no-cache, private",
+            "X-Drupal-Dynamic-Cache": "UNCACHEABLE",
+            "Link": "<https://www.wfp.org/>; rel=\"alternate\"; hreflang=\"en\", <https://ar.wfp.org/>; rel=\"alternate\"; hreflang=\"ar\", <https://fr.wfp.org/>; rel=\"alternate\"; hreflang=\"fr\", <https://es.wfp.org/>; rel=\"alternate\"; hreflang=\"es\", <https://zh.wfp.org/>; rel=\"alternate\"; hreflang=\"zh-hans\", <https://da.wfp.org/>; rel=\"alternate\"; hreflang=\"da\", <https://fa.wfp.org/>; rel=\"alternate\"; hreflang=\"fa\", <https://fi.wfp.org/>; rel=\"alternate\"; hreflang=\"fi\", <https://de.wfp.org/>; rel=\"alternate\"; hreflang=\"de\", <https://it.wfp.org/>; rel=\"alternate\"; hreflang=\"it\", <https://ja.wfp.org/>; rel=\"alternate\"; hreflang=\"ja\", <https://ko.wfp.org/>; rel=\"alternate\"; hreflang=\"ko\", <https://no.wfp.org/>; rel=\"alternate\"; hreflang=\"nb\", <https://ru.wfp.org/>; rel=\"alternate\"; hreflang=\"ru\", <https://sv.wfp.org/>; rel=\"alternate\"; hreflang=\"sv\"",
+            "Content-language": "en",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "Content-Security-Policy": "default-src 'self'; script-src 'self' analytics.tiktok.com wcs.naver.net *.spring.wfp.org cdn.wfp.org *.jwplatform.com www.google.com *.googletagmanager.com tagmanager.google.com *.google-analytics.com survey.g.doubleclick.net *.doubleclick.net *.adalyser.com *.jwpcdn.com www.gstatic.com adservice.google.com connect.facebook.net www.facebook.com squizlabs.github.io cdnjs.cloudflare.com unpkg.com cdn.sparkcentral.com *.smooch.io *.user1st.info www.googleadservices.com bat.bing.com sixeleven.involve.me assets.juicer.io *.typekit.net *.hotjar.com *.hotjar.io platform.twitter.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' 'unsafe-eval' *.spring.wfp.org cdn.wfp.org tagmanager.google.com fonts.googleapis.com *.bootstrapcdn.com squizlabs.github.io cdn.sparkcentral.com *.user1st.info assets.juicer.io *.typekit.net; img-src 'self' blob: https: data:; media-src 'self' content.jwplatform.com *.jwpsrv.com cdn.jwplayer.com cdn.sparkcentral.com *.user1st.info blob:; frame-src 'self' *.jwpsrv.com www.google.com survey.g.doubleclick.net *.doubleclick.net cdn.knightlab.com forms.office.com content.jwplatform.com *.user1st.info www.youtube-nocookie.com sixeleven.involve.me saveful.com *.hotjar.com *.hotjar.io datawrapper.dwcdn.net platform.twitter.com; child-src 'self' blob:; font-src 'self' cdn.wfp.org *.jwpcdn.com fonts.gstatic.com *.bootstrapcdn.com cdn.sparkcentral.com *.user1st.info static.juicer.io *.typekit.net *.hotjar.com *.hotjar.io data:; connect-src 'self' data: analytics.tiktok.com wcs.naver.com tiles.arcgis.com spring.wfp.org *.spring.wfp.org cdn.wfp.org geonode.wfp.org *.google-analytics.com *.analytics.google.com *.googletagmanager.com analytics.google.com api.mapbox.com geoip.nekudo.com api.ipify.org api.ip2country.info mycountry.picktek.org content.jwplatform.com *.jwpsrv.com cdn.jwplayer.com acr.api.spring.wfp.org cdn.sparkcentral.com *.smooch.io *.user1st.info stats.g.doubleclick.net fh.mg.wfp.org geoip.maxmind.com www.juicer.io juicer.io graph.facebook.com *.typekit.net *.sentry.io bat.bing.com *.hotjar.com *.hotjar.io *.jwpltx.com 'self' ws: https://o274918.ingest.sentry.io/api/5249464/store/ https://o274918.ingest.sentry.io/api/5249464/envelope/; upgrade-insecure-requests",
+            "X-XSS-Protection": "1; mode=block",
+            "Strict-Transport-Security": "max-age=2592000",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "X-Permitted-Cross-Domain-Policies": "none",
+            "Access-Control-Expose-Headers": "*",
+            "X-Drupal-Cache": "HIT"
+        },
+        "HTML Content": "www.wfp.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.wfp.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M02"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03371E6E5C1EF0599B49ACEF63A984EB",
+            "notBefore": "Oct 23 00:00:00 2023 GMT",
+            "notAfter": "Nov 20 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.wfp.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m02.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m02.amazontrust.com/r2m02.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m02.amazontrust.com/r2m02.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 12:07:03"
+    },
+    "https://www.persecution.org": {
+        "Time": 15.17,
+        "URL": "https://www.persecution.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.186",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.26.11.41",
+            "104.26.10.41",
+            "172.67.69.69"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.26.10.41",
+        "PING Status": "OK",
+        "PING IP": "104.26.10.41",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 503714,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 10:07:39 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding, User-Agent,Accept-Encoding",
+            "Cache-Control": "max-age=0, public",
+            "expires": "Tue, 30 Apr 2024 10:07:39 GMT",
+            "x-httpd-modphp": "1",
+            "x-powered-by": "WP Rocket/3.15.10",
+            "host-header": "6b7412fb82ca5edfd0917e3957f05d89",
+            "x-proxy-cache": "MISS",
+            "x-proxy-cache-info": "0 NC:000000 UP:",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=kr4GPcgiTiXJxG%2F%2FafJe%2BrUcdj2xlJh3Yd8Daw5FSMT%2Bln6R0XklUFl5mvdVY%2FSB110dAHF2v0Pz4eTy3dS8Az%2Bcbtc%2FSX6R7%2BbReUgQl1wHw7vD%2FGhqhIWfESCYINKNglTE3F%2BjQGOorMid5yE8UWo%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c6b9e0cae8b341-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.persecution.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "persecution.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04353DFAA479359EA475D26168410406B881",
+            "notBefore": "Mar  5 15:58:16 2024 GMT",
+            "notAfter": "Jun  3 15:58:15 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.persecution.org"
+                ],
+                [
+                    "DNS",
+                    "persecution.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 12:07:53"
+    }
+}

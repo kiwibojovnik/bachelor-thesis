@@ -46,7 +46,7 @@ def compare_files(data1, data2, ignore_keys=None, ignore_header_items=None):
     if ignore_keys is None:
         ignore_keys = ['Time', 'Timestamp', 'HTML Content']
     if ignore_header_items is None:
-        ignore_header_items = ['Date', 'expires', 'Server']
+        ignore_header_items = []
 
     differences = {}
     url_in_data = 0

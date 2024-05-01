@@ -1,0 +1,1106 @@
+<html>
+<head>
+<link rel="canonical" href="https://store.magicjack.com/account/mjLandingpages.do?page=index" />
+<meta name="msvalidate.01" content="73A6294896674FFCF5BE7F423B84644D" />
+<title>VoIP Phone Service | Internet Home Phone Service Provider | magicJack</title>
+<meta name="description" content="Enjoy uncompromised VoIP calling and say goodbye to phone bills with magicJack. Get free unlimited calling to the US & Canada and keep your same number!" />
+<meta property="keywords" content="VoIP phone service, VoIP phone, magicJack" />
+<meta property="og:title" content="VoIP Phone Service | Internet Home Phone Service Provider | magicJack" />
+<meta property="og:description" content="Enjoy uncompromised VoIP calling and say goodbye to phone bills with magicJack. Get free unlimited calling to the US & Canada and keep your same number!" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://store.magicjack.com/account/mjLandingpages.do?page=index" />
+<meta property="og:image" content="https://store.magicjack.com/mj/common/img/go-new/go_device.jpg" />
+<meta property="og:site_name" content="magicJack" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@magicjack" />
+<meta property="og:locale" content="en_US"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta charset="utf-8">
+
+<link rel="shortcut icon" href="/mj/common/images/webicon.ico"/>
+ 
+<script src="/mj/common/js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/mj/common/css/bootstrap.css"/>
+<script src="/mj/common/js/bootstrap.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/mj/common/font/fonts.css">
+
+
+<link rel="stylesheet" type="text/css" href="/mj/common/css/owl.carousel.css">
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/wp-nav.css">  --> 
+<link rel="stylesheet" type="text/css" href="/mj/common/css/layout.css?v=41676"> 
+<link rel="stylesheet" type="text/css" href="/mj/common/css/odometer.css">
+<link rel="stylesheet" type="text/css" href="/mj/common/css/animations.css">
+<link rel="stylesheet" type="text/css" href="/mj/common/css/style.compiled.css?v=2414"/> 
+
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/magicApp-main.css"> --> 
+<!--  <link rel="stylesheet" type="text/css" href="/mj/common/css/styleIE7.less"> -->
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/styleIE8.compiled.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/styleIE8.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/styleIE8.less"> --> 
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/import.less"> -->
+<!--  <link rel="stylesheet" type="text/css" href="/mj/common/css/style.css">   --> 
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/styleIE7.compiled.css"> --> 
+<!--  <link rel="stylesheet" type="text/css" href="/mj/common/css/css-main.css">  -->
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/faq.css">  -->
+<!--  <link rel="stylesheet" type="text/css" href="/mj/common/css/ie6.css">   --> 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/> -->
+
+
+<script src="/mj/common/js/magicJack.js" type="text/javascript"></script>
+<script src="/mj/account/js/custom.js"></script>
+
+<script>
+
+function abortLoading() {
+  $(window.top.document).find('body').find('.my-loader, .my-loader-mask').remove();
+}
+
+function loading(p_strTxt, p_nWidth, p_nHeight, p_nTop, p_bNoCancel)
+{ 
+  var l_objTopBody = $(window.top.document).find('body');
+
+  if(!p_strTxt)
+    p_strTxt = typeof g_vecLoadingPrompt !== 'undefined' && g_vecLoadingPrompt[0] ? g_vecLoadingPrompt[0] : "Loading";
+  if(p_strTxt == "Loading")
+    p_nWidth = 200;
+  if(!p_nWidth)
+    p_nWidth = 300;
+  l_objTopBody.find('.my-loader, .my-loader-mask').remove();
+  l_objTopBody.append(["<div class=\"my-loader-mask\" style=\"z-index:10000;display:none;position:fixed;top:0;width:100%;height:100%;background:#222;opacity:0.45;filter:alpha(opacity=45);\"></div><div class=\"my-loader\" style=\"z-index:10000;display:none;position:fixed;top:120px;left:50%;top:50%\"><div style=\"position:relative;width:", p_nWidth, "px;height:80px;border-radius:3px;background-color:#FFF;box-shadow:0px 1px 3px 0px rgba(69,69,69,1);margin-left:-50%;margin-top:-40px;text-align:center;vertical-align:middle;padding:20px;box-sizing:border-box;font-size:24px;font-weight:300;color:#555\">", p_strTxt, " <img src=\"/mj/common/img/loaders/loader-BlueOnWhite.gif\" border=\"0\" style=\"width:33px;margin-left:15px\" /></div></div>"].join(''));
+  l_objTopBody.find('.my-loader, .my-loader-mask').show();
+  l_objTopBody.find('#ifContent').on('load', function() { l_objTopBody.find('.my-loader, .my-loader-mask').remove() });
+  if(p_bNoCancel)
+    setTimeout(abortLoading, 10000);
+  else
+    l_objTopBody.find('#ifContent').on('load', function() { l_objTopBody.find('.my-loader, .my-loader-mask').remove() });
+  $(document).ready();
+  return true;
+}
+
+function onSubmit(p_bNoCancel)
+{
+  return loading(null, null, null, null, p_bNoCancel);
+}
+
+</script>
+
+<script src="/mj/common/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/mj/common/js/jquery.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="/mj/common/css/go-new.css">
+<link rel="stylesheet" type="text/css" href="/mj/common/css/hero-new.css?v=30363">
+<style>
+.renewal-plan .years{ font-weight: 500;font-size: 42px; }
+.renewal-plan .renewal-plan-text{ font-weight: 100; padding: 13px 5px 0 0;font-size: 16px;line-height: 100%;}
+.renewal-plan .price{ font-size: 2.6em;line-height: 100%;}
+.renewal-plan hr {margin: 0 auto; width:80%;}
+.new-plan .price{display: block; margin-top: 7%;}
+@media (max-width: 990px) and (min-width: 768px){
+	.hero-now #hero-home {
+       background-size: 104%;
+    }
+}
+@media (max-width: 480px) and (min-width: 376px){
+	.hero-promo-home {
+	    height: 66%;
+	}
+	.hero-promo-home.hero-promo-april21 {
+    	height: 56%;
+    }
+}
+@media (max-width: 375px){
+	.hero-promo-home.hero-promo-april21 {
+    	height: 62%;
+    }
+}
+@media (max-width: 360px){
+	.hero-promo-home.hero-promo-april21 {
+    	height: 72%;
+    }
+}
+#calling .buckets .dollarSign {
+    background-position: 0px -12px;
+    background-size: 98%;
+}
+</style>
+
+</head>
+
+<body>
+	<link rel="shortcut icon" href="/mj/common/images/webicon.ico" />
+<link rel="stylesheet" type="text/css" href="/mj/account/css/header.css?v=36801"/>
+<script src="/mj/common/js/main.js?v=58653" type="text/javascript"></script> 
+<script src="/mj/common/js/bootstrap.min.js" type="text/javascript"></script> 
+<link rel="stylesheet" type="text/css" href="/mj/common/css/layout.css?v=41676">
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/css/style.compiled.css"/> -->
+<!-- <link rel="stylesheet" type="text/css" href="/mj/common/font/fonts.css"> -->
+<header>
+<nav class="device-fixed-height">
+            <div class='container'>
+               <div class='row align-items-end'>
+                    <div class='col-lg-12'>
+                        <div id="divBrand"><a href='https://store.magicjack.com/account/mjLandingpages.do?page=index' class='pull-left'><img src="/mj/common/img/mj-logo.jpg" id="brand" alt="magicJack" width="160px" height="46px"></a></div>
+                      <a href='#' class='menu-toggle pull-right'><span class="nav-icon"></span></a>
+                              <ul id='navigation-list' class='nav-list pull-left list-unstyled'>
+                            <li>
+                                <a href='https://store.magicjack.com/account/mjLandingpages.do?page=how-it-works'>OVERVIEW</a>
+<!--                                 <ul class='wp-learn-dropdown wp-mobile-hide'> -->
+<!--                                 </ul> -->
+                            </li>
+                            <li class='wp-dropdown-top'>
+                                <a href='https://store.magicjack.com/account/mjLandingpages.do?page=products' data-expander="li.wp-dropdown-top">PRODUCTS</a>
+                                <ul class="wp-products-dropdown wp-mobile-hide">
+	                                <li class="show-mobile">
+	                                            <a href='https://store.magicjack.com/account/mjLandingpages.do?page=products' class='mj-btn clear-white' style="text-transform:none;">Products</a>
+	                                </li>
+                                    <li class="hover wp-active">
+                                        <a href='https://store.magicjack.com/account/mjLandingpages.do?page=magicJackHOME' class="wp-dropdown-link">
+                                        	magicJack</a>
+                                        <div class='wp-dropdown-panel mjgo'>
+                                            <a href='https://store.magicjack.com/account/mjLandingpages.do?page=magicJackHOME' class='mj-btn clear-white'>INFO</a>
+                                            <a href='https://account.magicjack.com/account/mjNewRegistration.do?_flowId=mj-web-registration-flow&type=device' class='mj-btn blue-white mj-purchase'>BUY</a>
+                                            <a href='https://store.magicjack.com/account/mjLandingpages.do?page=magicJackHOME' class='imageLink'><img src='/mj/common/img/spacer.gif' border='0' /></a>
+                                        </div>
+                                    </li> 
+<!--                                       <li class="hover wp-active"> -->
+<!--                                         <a href='/magicJackGO.html' class="wp-dropdown-link">magicJackGO</a> -->
+<!--                                         <div class='wp-dropdown-panel mjgo'> -->
+<!--                                             <a href='/magicJackGO.html' class='mj-btn clear-white'>Info</a> -->
+<!--                                             <a href='</buylink?op=ADD&type=MJGO&sourceID=magicJack.com%2FPageHeader&language=' class='mj-btn blue-white mj-purchase'>Try</a> -->
+<!--                                             <p>With 1 year of Unlimited Local &amp; Long Distance Calling!</p> -->
+<!--                                             <a href='/magicJackGO.html' class='imageLink'><img src='/mj/common/images/spacer.gif' border='0' /></a> -->
+<!--                                         </div> -->
+<!--                                     </li> -->
+                           
+                                    <li class="hover">
+                                        <a href='https://store.magicjack.com/account/mjLandingpages.do?page=magicApp' class='wp-dropdown-link'>magicApp</a>
+                                        <div class='wp-dropdown-panel mjapp'>
+                                            <a href="https://play.google.com/store/apps/details?id=com.magicjack&amp;hl=en" target="_blank" class="ir gui store-button store-button-google store-button-google-dark">Google Play</a>
+                                            <a href="https://itunes.apple.com/us/app/free-calls-with-magicjack/id463926997?mt=8" target="_blank" class="ir gui store-button store-button-apple store-button-apple-dark">App Store</a>
+                                            <p>FREE download in the Android &amp; iTunes App Stores!</p>
+                                            <a href='https://store.magicjack.com/account/mjLandingpages.do?page=magicApp' class='imageLink'><img src='/mj/common/img/spacer.gif' border='0' /></a>
+                                        </div>
+                                    </li>
+                                    <!-- <li class="hover">
+                                         <a href='/powerbank.html' class="wp-dropdown-link">Power Bank</a>
+                                         <div class='wp-dropdown-panel mjpowerbank'>
+                                             <a href='/powerbank.html' class='mj-btn clear-white'>Info</a>
+                                             <a href='</buylink?op=ADD&type=PWRBANK&sourceID=magicJack.com%2FPageHeader&language=' class='mj-btn blue-white mj-purchase'>Buy</a>
+                                             <p>Large capacity to extend the battery life of your Smartphone.</p>
+                                             <a href='/powerbank.html' class='imageLink'><img src='/mj/common/images/spacer.gif' border='0' /></a>
+                                         </div>
+                                     </li> -->
+                                   
+                                </ul>
+                            </li>
+                            <li><a href='https://store.magicjack.com/account/mjLandingpages.do?page=plans'>plans</a></li>
+                            
+                            <li><a href='https://store.magicjack.com/account/mjLandingpages.do?page=ipp' aria-label="International">INT'L</a></li>
+                            <li><a href='https://help.magicjack.com'>HELP</a></li>
+                            
+                            <li><a href='https://account.magicjack.com/account/mj/detectDevice.do?language='>ACTIVATE</a></li>
+							
+							<li class="wp-mobile-hide" style="margin-top: -17px;"><a href='https://account.magicjack.com/account/acmg/mj/additionalYears.do' class='mj-btn purple-white' onclick='return myLink(this);'>RENEW SERVICE</a></li>
+							
+							<li class="show-mobile"><a href='https://account.magicjack.com/account/acmg/mj/additionalYears.do' onclick='return myLink(this);'>RENEW SERVICE</a></li>
+                        </ul>
+                       <ul id="support-list" class="nav-list list-unstyled">
+                       <!-- Hiding cart button in store pages -->
+                        <!--  -->
+                            <!-- <li class="wp-mobile-hide" style="margin-top: -3px;"><a href='#' id="offers" class='mj-btn green' >OFFERS</a></li> -->
+                            <!-- <li class="show-mobile" style="margin-top: -3px;"><a href='#' id="offers" class='mj-btn green' >OFFERS</a></li>  -->
+						  <!-- -->
+						  
+						<li class="hasButton wp-mobile-hide" id="list-item-acc-dropdown">
+							<div class="dropdown" id="account-dropdown-parent" >
+								<a class="clear-white" style="position: relative;" 
+										target="_top" data-hash="A-ACCOUNT"
+										data-expander="#account-dropdown-parent" href="https://my.magicjack.com/account/acmg/mj/login.do">LOGIN</a>
+				
+								</div></li>
+							<li class="mobile-only" style="color: #FFF"><a href="https://my.magicjack.com/account/acmg/mj/login.do">LOGIN</a></li>
+															
+								</ul>
+					<ul id='support-list-links' class='nav-list list-unstyled'>
+						<li class='wp-mobile-hide' style="padding-top: 5px"><a
+							class='wp-support-link wp-chat-link' href="https://help.magicjack.com/faq/support/contactus/">Call Us at 800-magicJack&nbsp;(800-624-4252)</a></li>
+						<li class='newblog'><a href='https://blog.magicjack.com/'
+							target="_blank" title="Blog">BLOG</a></li>
+						<li class='facebook social wp-mobile-hide'><a href='https://www.facebook.com/magicjackApp'
+							target="_blank" title="Facebook">Facebook</a></li>
+						<li class='twitter social wp-mobile-hide'><a href='https://twitter.com/magicjack' target="_blank"
+							title="Twitter">Twitter</a></li>
+
+						</ul>
+				</div>
+                      </div> 
+                </div>
+        </nav>
+         <div class='greenBar-spacer mobile-only'>Call Us at </div>
+        <a href="https://help.magicjack.com/faq/support/contactus/" class='greenBar mobile-only'>Call Us at 800-magicJack (800-624-4252)</a>
+</header>
+<script>
+function readCookie() {
+    var nameEQ = "org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=";
+    var val = 'null';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1,c.length);
+        }
+        if (c.indexOf(nameEQ) == 0) {
+            val = c.substring(nameEQ.length,c.length);
+            return val;
+        }
+    }
+    return val;
+}
+   var str = window.location.href;
+   var cookieVal = readCookie();
+   var langParam = "";
+   var urlParamExists = false;
+   if(str.search("lang=")!==-1)
+	   {
+	   str = str.slice(0,str.search("lang=")-1);
+	   }
+    for (var i = 0; i<str.length; i++){
+	    var strChar = str.charAt(i);
+	    if(strChar=='=')
+	    	{
+	    	urlParamExists = true;
+	    	break;
+	    	}
+    }
+   
+   if(urlParamExists) 
+	   {
+	   
+	   if(cookieVal=='null')
+		   {
+		   langParam = "&lang=es";
+		   }
+	   else if(cookieVal=='en')
+		   {
+		   langParam = "&lang=es";
+		   }
+	   else if(cookieVal=='es')
+		   {
+		   langParam = "&lang=en";
+		   }
+	   else
+		   {
+		   langParam = "&lang=es";
+		   }
+	   }
+  else{
+	 
+	   if(cookieVal=='null')
+	   {
+		   langParam = "?lang=es";
+	   }
+   else if(cookieVal=='en')
+	   {
+	   langParam = "?lang=es";
+	   }
+   else if(cookieVal=='es')
+	   {
+	  
+	   langParam = "?lang=en";
+	   }
+   else
+	   {
+	   langParam = "?lang=es";
+	   } 
+   }
+    $('#offers').on('click', function(e) {
+		 $('#myModal').modal('show');
+		}); 
+    $(document).ready(function(){
+    	$("#navigation-list a").click(function(e){
+    		abortLoading();
+    		var expander= $(this).attr("data-expander");
+    		var listEle = $(this).parent();
+    		if(expander != undefined && navigator.userAgent.toLowerCase().includes("mobi")){
+    			if(screen.width > 767 ) {
+    				if($(this).parent().hasClass('wp-products-expanded')) {
+    					$(this).parent().toggleClass("wp-products-expanded");
+    				} else {
+    					$(this).parent().toggleClass("wp-products-expanded");
+    					e.preventDefault();
+    				}
+    				return;
+    			}
+    			var test = $(this).parent().parent();
+    			test.children().each(function() {
+    				if(this !== listEle.get(0)){
+    			  		$(this).removeClass("wp-expanded");
+    				}
+    			});
+	    		$(this).parent().toggleClass("wp-expanded");
+	    		e.preventDefault();
+    		}
+    	});
+    });
+
+    $(".wp-products-dropdown .hover").hover(function(){
+    	$(this).addClass("wp-active");
+    	if($(this).index() == 2 || $(this).index() == 3){
+   		   $('.wp-products-dropdown li:nth-child(2)').removeClass('wp-active');
+   	 	}
+     },function(){
+     	$(this).toggleClass("wp-active");
+    	 
+    	var hasActive = false;
+    	$(".wp-products-dropdown li").each(function() {
+    	   if ($(this).hasClass('wp-active')){
+    	   hasActive = true;}
+    	});
+    	if(hasActive == false){
+    		$('.wp-products-dropdown li:nth-child(2)').addClass('wp-active');
+    	}
+    });
+    
+</script>
+<section id="hero-home"
+	class="promo-default-apr-jun-24 promo-section hero-clarify-outer">
+	<div class="herohome-wrapper herohome-wrapper-default-apr-jun-24">
+		<div class="hero-promo-default-apr-jun-24 hero-promo-home promo-div hero-clarify" style="height: auto; padding-bottom: 1em;border: none;">
+			<h1 style="font-weight:600; color:#532c6c;text-align:center;text-transform: none;line-height:1.2;">Connect Anywhere Anytime!</h1>
+			<div class="default-apr-jun-24-price-img">
+				<span class="hero-discount hero-discount-default-apr-jun-24"><span class="device-price-default-apr-jun-24" style="color:#009844">$49.99</span><br><span
+				class="tax-fees tax-fees-default-apr-jun-24" style="font-weight:400;color:#009844;position: absolute;"><i> USD+ taxes &amp; fees</i></span></span> 				
+				<img src="/mj/common/img/hero/magicjack-logo-blue.png" width="300"
+				alt="magicJackHOME"> <br>
+				<a id="btn" class="mj-btn green mj-purchase mj-btn-default-apr-jun-24"
+				style="font-weight: 500; text-align:center; border-radius:0px;"
+				href="https://account.magicjack.com/account/mjNewRegistration.do?_flowId=mj-web-registration-flow&type=device">
+				BUY NOW</a><br>
+			</div>
+
+			 <div id="default-apr-jun-24-ul">
+				<p style="color:#532c6c;" class="mj-why-default-apr-jun-24">Why magicJack?</p>
+				<ul class="default-apr-jun-24-ul-bullet">
+					<li>DEVICE includes initial
+						subscription*</li>
+					<li>FREE companion mobile app</li>
+					<li>FREE magicJack to magicJack dialing anywhere
+					    in the world</li>
+					<li>KEEP your existing number</li>
+					<li>INCLUDED features: voicemail, call
+						forwarding, call blocking, and much more!</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<img src="/mj/common/img/promos/new-default-apr-jun-24-image.png" width="300"
+		alt="promo image" id="new-default-apr-jun-24-image">
+</section>
+<section id="promos">
+	<div class="promo-header2">
+		<div class="promo-header-text2">
+    		<span class="afterjuly">*Above price include: 12 months of service when <span style="color: purple;">magicIN</span><sup>TM</sup> and <span style="color: purple;">magicOUT</span>
+			<sup>TM</sup> are selected OR 15 months of service when either <span style="color: purple;">magicIN</span> or <span style="color: purple;">magicOUT</span> one-way service is selected.
+			<span style="color: purple;">magicIN</span> (receives incoming calls) & <span style="color: purple;">magicOUT</span> (make outbound calls), you can choose the service that best fits your needs</span>
+		</div>
+	</div>
+	
+	<!-- promos -->
+	<style type="text/css">.port-response h3 {font-size:14px !important}</style>
+	
+	<!-- New customer promos -->
+	<div id="divPromoNewCust">
+
+		<!--  ipp promo starts here -->
+		 <div class="promo">
+		  	 <h2>International Prepaid Credits</h2>
+             <span class="promo-subhead">Connect with friends & family outside of the U.S.</span><br>
+             <p class="port-response">Lowest cost rates to popular destinations.<br>
+				<a href="https://store.magicjack.com/account/mjLandingpages.do?page=ipp"><img src="/mj/common/img/home-ipp.png" alt="Get international prepaid credits." style="padding:10px 0 8px"></a>
+	   		 </p>
+	   		<a class="mj-btn green" href="https://store.magicjack.com/account/mjLandingpages.do?page=ipp">LEARN MORE</a>
+		 </div>
+		 <!--  ipp promo ends here -->
+ 
+ 		<!--  rapid renew starts here -->
+		  <div class="promo">
+		    
+		    <div class="rapidrenew-hdr">
+		    	Ready to&#32;<strong>RENEW</strong>&#32;your&#32;magicJack?
+		    </div>
+		    <span class="promo-rapidrenew-subhead">Don&rsquo;t risk losing your service.</span>
+		    <div class="rapid-form">
+		      <div class="rapid-form-text">Start by entering your magicJack&nbsp;phone number to lookup your account.</div>
+		      <div class="form-horizontal" style="margin-left: 9px; margin-right: 9px;">
+		         <form name="frmRenew" id="frmRenew" action="/account/mjRapidRenewSendEmail.do?" method="post" onsubmit="return phnNumValidate(this);">
+		          <input type="hidden" name="_flowId" value="mj-rapid-renew-flow" />
+		          <input type="hidden" name="frompage" value="index" />
+		          <div class="form-group">
+		            <div>
+		              <input name="inpPhone" id="inpPhone" type="phone" value="" class="form-control" placeholder='magicJack&nbsp;Phone Number'
+		              		onblur="this.value = this.value.replace(/[^0-9]/g, '');"  />
+		            </div>
+		          </div>
+		          <div class="form-group">
+		            <div>
+		              <input name="btnRenew" id="btnRenew" value="Submit" type="submit" class="form-button-next purple" />
+            			</div>
+		          </div>
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		  <!--  rapid renew ends here -->
+  
+  		  <!--  port existing number promo starts here -->
+		  <div class="promo num-search select-faq mj-home" data-sdomain="https://www.magicjack.com">
+		    <h2>Keep Your Number</h2>
+		    <span class="promo-subhead">Great news!</span><br>
+		    <p id="pNumSearch" class="port-response">Now you can bring your phone number to&nbsp;magicJack.
+		    	<br>
+			    		Porting option available after device activation.
+			    </p>
+			<img class="loader-img" src="/mj/common/img/loaders/loader-GreenOnWhite.gif" style="display:none;width:26px;" alt="loading">
+		    <div class="port-form form-inline justify-content-center">
+		      <label class="sr-only">Phone Number:</label>
+		      
+		        <div class="input-group" style="margin: 28 auto 0;">
+		          <form id="frmNewCustPort" method="POST" onsubmit="return validateAll(this);">
+		            <input type="hidden" name="act" value="CANPORT">
+		            <input type="search" name="number_1" placeholder="XXX" style="width:55px; margin:0; border-radius:4px 0px 0px 4px; display:inline-block" 
+		            	maxlength="3" class="search-field form-control port-inputs" onblur="this.value = this.value.replace(/\D/g, '');">&nbsp;-
+		            <input type="search" name="number_2" placeholder="XXX" style="width:55px; margin:0; border-radius:0px; display:inline-block" 
+		            	maxlength="3"  class="search-field form-control port-inputs" onblur="this.value = this.value.replace(/\D/g, '');">&nbsp;-
+		            <input type="search" name="number_3" placeholder="XXXX" style="width:69px; margin:0; border-radius:0px 4px 4px 0px; display:inline-block" 
+		            	maxlength="4" class="search-field form-control port-inputs" onblur="this.value = this.value.replace(/\D/g, '');">
+					<input name="green" type="hidden" value="#45b941">
+		            <div class="input-group-btn" style="padding-top:28px; left: 5.5px;">
+		              <button class="search-submit mj-btn green" id="btnPortSearch" style="padding: 12px 15px 10px 15px" >CHECK IF MY NUMBER IS<br>
+		              ELIGIBLE TO PORT</button>
+		            </div>
+		          </form>
+		        </div>
+		    </div>
+		  </div>
+		  <!--  port existing number promo ends here -->
+
+	</div>
+	
+	<!-- Existing customer promos -->
+	<div id="divPromoExistingCust">
+	
+		<div class="promo nortonPromo">
+						<h2>New! Norton&trade;360 for magicJack</h2>
+						<div class="row" style="margin: 20px 10px;">
+							<div class="col-xs-1">&nbsp;</div>
+							<div class="col-xs-4">
+								<img src="/mj/common/img/norton/norton360-logo.png"
+									style="width: 90%;">
+							</div>
+							<div class="col-xs-7"
+								style="font-weight: bold; font-size: 18px; color: #646469; text-align: left; padding-top: 10px;">
+								Help protect your devices, connections and more with Norton 360.</div>
+						</div>
+						<a class="mj-btn green"
+							href="https://account.magicjack.com/account/acmg/mj/nortonLifeLock.do"
+							style="margin: 27px 0 0 0;">LEARN MORE</a>
+					</div>
+			<!--  port existing number promo starts here -->
+		<div class="promo num-search select-faq mj-home" data-sdomain="https://www.magicjack.com">
+			<h2>Keep Your Number</h2>
+		 	<span class="promo-subhead">Great news!</span><br>
+		 	<p id="pNumSearch" class="port-response">Now you can bring your phone number to&nbsp;magicJack.
+		 		<br>
+			    		Porting option available after device activation.
+			    </p>
+			<img class="loader-img" src="/mj/common/img/loaders/loader-GreenOnWhite.gif" style="display:none;width:26px;" alt="loading">
+			 <div class="port-form form-inline justify-content-center">
+			     <label class="sr-only">Phone Number:</label>
+			     <div class="input-group" style="margin: 28 auto 0;">
+			       <form id="frmExistingCustPort" method="POST" onsubmit="return validateAll(this);">
+			         <input type="hidden" name="act" value="CANPORT">
+			         <input type="search" name="number_1" placeholder="XXX" style="width:55px; margin:0; border-radius:4px 0px 0px 4px;"
+			         	maxlength="3" class="search-field form-control port-inputs" onblur="this.value = this.value.replace(/\D/g, '');">&nbsp;-
+			         <input type="search" name="number_2" placeholder="XXX" style="width:55px; margin:0; border-radius:0px;" 
+			         	maxlength="3" class="search-field form-control port-inputs" onblur="this.value = this.value.replace(/\D/g, '');">&nbsp;-
+			         <input type="search" name="number_3" placeholder="XXXX" style="width:69px; margin:0; border-radius:0px 4px 4px 0px;" 
+			         	maxlength="4" class="search-field form-control port-inputs" onblur="this.value = this.value.replace(/\D/g, '');">
+					 <input name="green" type="hidden" value="#45b941">
+			         <div class="input-group-btn" style="padding-top:26px; left: 5.5px;">
+			         <button class="search-submit mj-btn green" id="btnPortSearch" style="padding: 12px 15px 10px 15px">CHECK IF MY NUMBER IS<br>
+			         ELIGIBLE TO PORT</button>
+			         </div>
+			       </form>
+		         </div>
+		     </div>
+		</div>
+		<!--  port existing number promo ends here -->
+		
+		
+		
+		
+		<!--  renewal plans promo starts here -->
+		<div class="promo">
+			<h2>NEW! 3&#32;
+				Year Plan</h2>
+				<span class="promo-subhead new-plan">Get a 3-Year plan for only $109.</span><br>
+				<p style="margin-bottom: 14px;">
+					Save $20 Today!
+				</p>
+			<a href="https://store.magicjack.com/account/mjLandingpages.do?page=plans" style="text-decoration: none;">
+				<div class="renewal-plan new-plan" style="background: #00b2f4;width: 90px;margin: 0 auto;border-radius: 5px;height: 102px;color:white;">
+					<div>
+			<div style="padding-top: 10px;">
+						<span style="font-size: 10px;"> 
+							3&nbsp;YEAR&nbsp;PLAN</span>
+					</div>
+		             <div clase="price-div" style="transform: translate(0%,promo-header-text2 10%);">
+		            	<hr style="border-top: 2px solid white;">
+		                <b class="price">
+		                	<sup class="price-sign" style="font-size: large;font-weight: 600;">$</sup>109</b>
+		                <span class="best-value" style="font-size:0.8em;"><b>BEST VALUE!</b></span>
+						</div>	
+	         </div>
+              </div>
+				</a>
+				<a class="mj-btn green"
+				href="https://account.magicjack.com/account/acmg/mj/additionalYears.do" style="margin: 27px 0 0 0;">
+				CLICK TO RENEW</a>
+		
+		</div>
+		
+		<!--  renewal plans promo ends here -->
+
+  </div>
+  </section>
+	
+	<div id="divBuyFloat" style="width: 960px;">
+  <div class="addtocart slideLeft"><a href="https://help.magicjack.com" target=_blank><img src="/mj/common/img/go-new/home_chat.png" width="62" height="280" alt="Questions? Chat with a Customer Care Agent now." /></a></div>
+  <div class="addtocart-mobile"><a href="https://help.magicjack.com" target=_blank><img src="/mj/common/img/go-new/home_chat_icon.png" width="105" height="88" alt="Questions? Chat with a Customer Care Agent now." /></a></div>
+</div>
+<section id='calling' data-bottom-top="background-position: 50% -313px"
+		data-top-bottom="background-position: 50% 87px">
+		<div class='container'>
+			<div class='row'>
+				<div class='col-lg-12 text-center'>
+					<h3>
+						
+							Why switch to magicJack?
+						</h3>
+				</div>
+			</div>
+			<div class='row buckets'>
+				<div class='col-lg-3 col-md-3'>
+				
+					<span class="icon dollarSign"></span>
+						<h2>Affordable and Reliable<br /></h2>
+						<p>magicJack offers great features at a low cost. Experience consistent voice quality and stability. 
+							Cut the cord and switch today!</p>
+					</div>
+				<div class='col-lg-3 col-md-3'>
+					<span class="icon phone-2-phone"></span>
+					<h2>
+					Keep Your<br />Current Number</h2>
+					<p>
+						Port your existing phone number and avoid the hassle of notifying all of your contacts.  Option to port your number is available after device activation.</p>
+				</div>
+				<div class='col-lg-3 col-md-3'>
+					<span class="icon globe"></span>
+					<h2>
+						Take Your magicJack<br />Anywhere</h2>
+					<p>Travel with your magicJack device so that you never miss a call from family, friends, or work.</p>
+				</div>
+				<div class='col-lg-3 col-md-3'>
+					<span class="icon phone"></span>
+					<h2>
+						Connect Any Way<br />You Want</h2>
+					<p>
+					
+							Use your high-speed internet to connect your magicJack device. Set
+						up is easy and only takes minutes! Unlimited calling on your
+						landline, computer, or mobile phone.
+						</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="info-rates">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h4 id='intl-hello'>Hello.</h4>
+					<h3>magicJack International Calling.</h3>
+				</div>
+			</div>
+			<div class="row free-info">
+				<div
+					class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6">
+					<div class='bucket us-canada'>
+						<h4>Free</h4>
+						<span id='INTL1' class='match-height match-height-master'>Calling to the US &amp; Canada from Anywhere in the World.</span>
+						<p id='INTL2' class='match-height match-height-master'>Travel with magicJack and make Unlimited Local &amp; Long Distance Calls Back to the U.S. and Canada.</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-6">
+					<div class='bucket'>
+						<h4>Free</h4>
+						<span class='match-height match-height--INTL1'>magicJack to magicJack International Calling.</span>
+						<p class='match-height match-height--INTL2'>Buy magicJack for a friend and enjoy Unlimited international calling between magicJack devices.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row rates-txt">
+				<div class='col-lg-12 text-center'>
+					<h3>Low International Rates.</h3>
+					 <div class='row'><span class="lw-txt col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 adjust">Call family and friends outside the U.S. and Canada for less using magicJack. Enjoy low international rates from:</span></div>
+					<ul class="rate-chart">
+						<li>
+							<h4>
+								Mexico<br /> <span>from</span>
+							</h4>
+							<p>
+								2.8&nbsp;<label>&cent;</label>
+							</p> <span class="min">/min.</span>
+						</li>
+						<li>
+							<h4>
+								India<br /> <span>from</span>
+							</h4>
+							<p>
+								2.5&nbsp;<label>&cent;</label>
+							</p> <span class="min">/min.</span>
+						</li>
+						<li>
+							<h4 style="margin-top: -4px; padding-top: 8px;">
+								Dominican Republic<br /> <span>from</span>
+							</h4>
+							<p style="margin-top: -4px;">
+								3.2&nbsp;<label>&cent;</label>
+							</p> <span class="min">/min.</span>
+						</li>
+						<li class="last">
+							<h4>
+								UK<br /> <span>from</span>
+							</h4>
+							<p>
+								2.2&nbsp;<label>&cent;</label>
+							</p> <span class="min">/min.</span>
+						</li>
+					</ul>
+					<a href="https://store.magicjack.com/account/mjLandingpages.do?page=internationalRates" class="mj-btn green">Find Rates By Country</a>
+				</div>
+			</div>
+		</div>
+	</section> <footer class="mj-accountsite-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 footer-links">
+                <div class="row">
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <li><span class="top-label">PRODUCTS</span></li>
+                        <li><a href="https://store.magicjack.com/account/mjLandingpages.do?page=magicJackHOME">
+                            magicJack</a></li>
+                        <li><a href="https://store.magicjack.com/account/mjLandingpages.do?page=magicApp">magicApp</a></li>
+						</ul>
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <li><span class="top-label">HELP</span></li>
+                        <li><a href="https://help.magicjack.com/faq/">Customer Care</a></li>
+                        <li><a href="https://store.magicjack.com/account/mjLandingpages.do?page=how-it-works">How&nbsp;magicJack &nbsp;Works</a></li>
+                        <li><a href="https://help.magicjack.com/faq/saps">Subscriber Agreement</a></li>
+                        <li><a href="https://help.magicjack.com/faq/canadian-saps/">Canada</a></li>
+                        <li><a href="https://store.magicjack.com/account/mjLandingpages.do?page=sitemap">Sitemap</a></li>
+                    </ul>
+                    <ul class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <li><span class="top-label">Follow&nbsp;Us</span></li>
+                        <li><a href="https://facebook.com/magicjackApp" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/magicjack" target="_blank">Twitter</a></li>
+                        <!-- <li><a href="https://www.magicjack.com/GooglePlus" target="_blank">Google+</a><a href="https://plus.google.com/109313968174292907016" rel="publisher"></a></li> -->
+                        <li><a href="https://www.youtube.com/user/magicjackapp?feature=watch" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.pinterest.com/magicjackphone/" target="_blank">Pinterest</a></li>
+                        <li><a href="https://www.linkedin.com/company/2082854?trk=tyah&amp%3btrkInfo=tasAmagicjackCidxA1-1-1" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://blog.magicjack.com/" target="_blank">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 email-social">
+                <span class="offers">Exclusive Announcements and offers.</span>
+<div id="emailSocialForm">
+                <form id="frmEnrollNation" name="frmEnrollNation" method="post" class="email-reg-form clearfix">
+                    <input name="emailAddr" type="text" placeholder='Enter Email Address'><img class="loader-img" src="/mj/common/images/loading.gif" border="0" style="margin-left:18px;height:22px;display:none">
+                    <button type="submit" class="btn-default submit-button">Submit</button>
+                </form>
+              </div>
+                <div class="fb-like">
+                    <div class="fb-like" data-href="https://www.magicjack.com/Facebook" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="true"></div>
+                </div>
+                <a href="https://twitter.com/magicjack" target="_blank" class="soc-icn clearfix"><img src="/mj/common/img/twitter-icn.png"></a>
+				<a href="https://www.facebook.com/magicjackApp" target="_blank" class="soc-icn clearfix"><img src="/mj/common/img/facebook-icn.png"></a>
+            </div>
+        </div>
+        <div class="row legal">
+            
+            <div class="col-lg-12"><small><p>THE APP DOES NOT PROVIDE ANY EMERGENCY CALLING OR TEXTING CAPABILITY. You are responsible for obtaining or accessing third party products and services required to use the Services (such as a compatible smart phone or tablet and high-speed internet access) and for paying any fees for such third-party products and services.</p>
+
+				<p><strong>Calling and Texting Restrictions.&nbsp;</strong>
+				Calling to numbers within the United States and Canada, and texting and other services provided by magicJack&reg;, are based on normal, non-excessive use. If we become aware of unreasonably excessive use of the Services, including but not limited to, usage that is extraordinarily greater than the average customer usage, or calling more than 50 different telephone numbers per day, or forwarding calls from your App for longer than a two week consecutive period, or systematic or intentional misuse, we reserve the right, in our sole discretion, to terminate your use of the App and Service immediately, and you will not be entitled to get a refund of Fees you may have paid to us. Calling does not include calls to Alaska or the Yukon and Northwest Territories of Canada or calls to non-8YY calling card, platform, conference or chat lines, for which additional fees will apply. Porting an existing phone number is subject to an additional fee, and may not be available for all numbers. Annual and monthly fees quoted do not include initial purchase of magicjack device or devices (which includes 1 year of service)  or shipping, administration and regulatory fees and taxes as applicable. magicJack is not a substitute for traditional landline service. Subject to our applicable terms and conditions, laws and regulations, located here:&nbsp;<a style="color:#ffffff;" href="https://help.magicjack.com/faq/saps" target="_blank">help.magicjack.com/faq/saps</a>.</p>
+				<p><strong>Money Back Guarantee.</strong>
+				The magicJack 30-Day Money Back Guarantee ensures your complete satisfaction. If, for any reason, you wish to cancel service within 30 days of the date you order your Device, we will refund your money if the terms of our Money Back Guarantee are satisfied, including without limitation your completion of an RMA and payment of return shipping costs. Terms of the Money Back Guarantee are available at &nbsp;<a style="color:#ffffff;" href="https://help.magicjack.com/faq/support/billing-payment/returns-exchanges-replacements/index.html#post_id=306" target="_blank">help.magicjack.com/faq/support/billing-payment/returns-exchanges-replacements/</a>.
+				This magicJack 30-Day Money Back Guarantee is for magicJack Devices purchased directly from magicJack.com. If you purchased your magicJack at a retailer, we recommend that you adhere to the retailer&rsquo;s return policy and return the device to the retailer with your original packaging and receipt. Subject to our applicable terms and conditions, laws and regulations, located here:  
+				&nbsp;<a style="color:#ffffff;" href="https://help.magicjack.com/faq/saps" target="_blank">help.magicjack.com/faq/saps</a>.</p>
+				<p><strong>*Pricing does not include shipping and handling, taxes or other applicable fees.</strong> Transfer of your existing phone number, where available, requires a one-time processing fee.</p></small></div>
+            <br>
+            <div class="col-lg-12">
+                <small>&copy; <span class="copyYear">2024</span> magicJack. All Rights Reserved</small>
+                <ul class="legal-links">
+                    <li><a href="https://store.magicjack.com/account/mjLandingpages.do?page=privacy" class="privacy-policy">Privacy Policy</a></li>
+                    <li class="last"><a href="https://help.magicjack.com/faq/saps" class="legal-link">Legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+  $('form[name=frmEnrollNation]').submit(
+		function(e) {
+			setformElem(e.target);
+			$($(getformEle()).next()).remove();
+			var emailAddr = $(getformEle()).find("input[name=emailAddr]").val();
+			var data={"emailAddr":emailAddr};
+			loading();
+			callAjax("/account/mjNationSubscribe.do", "POST", data,
+					emailRegisterMessage);
+			return false;
+
+		});
+  var temp = null;
+  function setformElem(e){
+  	temp = e;
+  }
+  function getformEle(){
+  	return temp;
+  }
+  function emailRegisterMessage(response){	 
+		 abortLoading();
+		 var response = JSON.parse(response);
+		 $($(getformEle()).next()).remove();
+		 if(response.success == "true"){
+		
+			 $("<div name='alert' id='alert'><div class='notify-mask' style='position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(51, 51, 51); opacity: 0.4; z-index: 10001; display: block;'></div><div class='notify-frame' style='position: fixed; display: block; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 10002;'><table style='width:100%;height:100%;margin:0;padding:0;border:none;border-collapse:collapse'><tbody><tr><td style='vertical-align:middle;text-align:center;padding:100px 10px 10px'><div class='notify-dialog' style='position:relative;border:1px solid #a5a5a5;background:#fff;border-radius:5px;padding:10px;box-sizing:border-box;text-align:center;box-shadow:1px 1px 5px #888;width:280px;margin:0 auto'><p style='word-wrap: break-word;color: #333;padding:5px 5px 10px 5px;font-size:18px;text-align:left;border-bottom:1px solid #EEE'><strong style='font-weight:500;font-size:24px'>Congratulations!</strong><br>You are now signed up to receive notifications about exclusive announcements and offers</p><button class='notify-close'  onclick='closeEmailAlert()' style='display:block;float:right;border:0px solid transparent;background:none;color:#1fa8e3;font-size:16px'>Close</button><div style='clear:both'></div></div></td></tr></tbody></table></div></div>").insertAfter(getformEle());		
+			 }
+		 else
+		 {		 
+			 $("<div name='alert' id='alert'><div class='notify-mask' style='position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(51, 51, 51); opacity: 0.4; z-index: 10001; display: block;'></div><div class='notify-frame' style='position: fixed; display: block; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 10002;'><table style='width:100%;height:100%;margin:0;padding:0;border:none;border-collapse:collapse'><tbody><tr><td style='vertical-align:middle;text-align:center;padding:100px 10px 10px'><div class='notify-dialog' style='position:relative;border:1px solid #a5a5a5;background:#fff;border-radius:5px;padding:10px;box-sizing:border-box;text-align:center;box-shadow:1px 1px 5px #888;width:280px;margin:0 auto'><p style='word-wrap: break-word;color: #333;padding:5px 5px 10px 5px;font-size:18px;text-align:left;border-bottom:1px solid #EEE'>Invalid Email Address</p><button class='notify-close' onclick='closeEmailAlert()' style='display:block;float:right;border:0px solid transparent;background:none;color:#1fa8e3;font-size:16px'>Close</button><div style='clear:both'></div></div></td></tr></tbody></table></div></div>").insertAfter(getformEle()); 
+	   
+		 }
+	}
+  
+
+  function deviceID(p_strID) {
+    var l_objPieces = p_strID.split('.');
+
+    if(!l_objPieces || l_objPieces.length < 2)
+      return 0;
+    return parseInt(l_objPieces[1], 10);
+  }
+
+  function DeviceToggle(p_objItem, p_bOpen) {
+    var l_nDevice = deviceID(p_objItem.attr('id')),
+        l_strClsR, l_strClsA, l_strInd;
+
+    if(p_bOpen) {
+      l_strClsR = "closed";
+      l_strClsA = "opened";
+      l_strInd  = "&#x25BC;";
+    } else {
+      l_strClsR = "opened";
+      l_strClsA = "closed";
+      l_strInd  = "&#x25B6;";
+    }
+    $('.cart-device, .device-item').each(function DeviceItemToggle(p_nIdx) {
+      var l_objThis    = $(this),
+          l_nItmDevice = deviceID(l_objThis.attr('id'));
+
+      if(l_nDevice == l_nItmDevice) {
+        l_objThis.removeClass(l_strClsR).addClass(l_strClsA);
+        if(l_objThis.hasClass("cart-device"))
+          l_objThis.find('.item-status').html(l_strInd);
+      }
+    });
+  }
+
+  function deleteItemAndUpdateKart(p_objEvent) {
+  	  var l_objThis   = $(this),
+  	      l_objItem   = l_objThis.closest('li.cart-item'),
+  	      orderTypeId = l_objItem.find('input[name="orderTypeId"]').val(),
+  		  memberServiceId = l_objItem.find('input[name="memberServiceId"]').val(),
+  	      rSubscriberId = l_objItem.find('input[name="rSubscriberId"]').val();
+  	
+  	 
+  	$('.cart-count, .cart-icon, #spnItemCount').hide().addClass('hide-item');
+    $('.cart-loader, .mobile-cart-loader, #imgItemCountStatus').show().removeClass('hide-item');
+    
+    var data={"oTypeId":orderTypeId,"sId":memberServiceId,"action":"deleteFromKart"};
+  	callAjax("/account/acmg/mj/kart.do","POST",data,showMessage);
+  	 
+  	 function showMessage(response){
+  		var response = JSON.parse(response);
+		if(response.respCode == "200"){
+			if(rSubscriberId == ""){
+				document.getElementById("liDevItm."+memberServiceId).remove();
+			} else{
+				document.getElementById("liDev."+rSubscriberId).remove();
+				document.getElementById('liDevItm.'+rSubscriberId).remove();
+			}
+			
+			var cartSubTotal = 0.00;
+			if($('#cart-dropdown .cart-item .item-price').length > 0){
+			    $('#cart-dropdown .cart-item .item-price').each(function(){
+			        var price = parseFloat($(this).text().replace('$', ''));
+			        cartSubTotal = cartSubTotal + price;
+			        $('.subtotal-value').html('$' + cartSubTotal.toFixed(2));
+				});
+			} else {
+				$('#cart-dropdown').html('<li class="empty-info" style="height: 76px;"><div class="row"><div class="col-md-12" style="padding-bottom:16px;"><h4>Check out our&#32;<a href="https://store.magicjack.com/account/mjLandingpages.do?page=products" target="_top">Products</a> section for the latest offers.</h4></div><div class="col-md-12 text-center"><a href="https://store.magicjack.com/account/mjLandingpages.do?page=products" class="mj-btn green" target="_top">CONTINUE SHOPPING</a></div></div></li>');
+				$('#cart-dropdown-parent').removeClass('full');
+				$("#cart-btn").removeAttr("href");
+			}
+			  
+			var updatedCartCount = $('.cart-count').html() - 1;
+			$('.cart-count').html(updatedCartCount);
+		}
+		$('.cart-loader, .mobile-cart-loader, #imgItemCountStatus').hide().addClass('hide-item');
+		$('.cart-count, .cart-icon, #spnItemCount').show().removeClass('hide-item');
+		$(".cart-count").removeAttr("style");
+		
+  	 }
+    }
+
+
+  function registerCartEvents(p_objResp) {
+	$('.delete-item').click(deleteItemAndUpdateKart);
+    $('.cart-device').click(function ClickDeviceToggle(p_objEvent) {
+      var l_objThis = $(this);
+
+      DeviceToggle(l_objThis, l_objThis.hasClass("closed"));
+      p_objEvent.preventDefault();
+      p_objEvent.stopImmediatePropagation();
+    });
+  }
+
+  registerCartEvents();
+
+  $(document).ready(function() {
+	  var isMjUserLoggedIn="false";
+	  var isStoreView = "true";
+	  var isNowTurnedOn = "true";
+	  var browserName = "Chrome";
+	  if(isMjUserLoggedIn == "true"){
+	  	$("body").addClass("mj-existing");
+	  }else{
+	  	$("body").addClass("mj-new");
+	  }
+	  if(isStoreView == "true"){
+		  $("body").addClass("mj-store");
+	  }
+	  if(isNowTurnedOn == "true"){
+		  $("body").addClass("mj-clarify");
+	  }
+	  if(browserName == "MSIE"){
+		  $("body").addClass("msie");
+	  }
+  });
+</script>
+
+
+<script>
+$(".menu-toggle").click(function(e){
+    e.preventDefault();
+    $("e.delegateTarget").toggleClass("toggled");
+});
+
+
+//pass this value as a variable to enable header promo
+if(false){
+setTimeout(function(){
+ $("nav").removeClass("device-fixed-height");
+ $("nav").css({
+	 'position':'relative',
+	 'top':'auto'
+ });
+ $("#header_promo").show();
+ $('body,html').animate({marginTop: $('#header_promo').height()/2},'slow'); 
+ },1000 );
+}
+$("#promoClose").click(function(){
+	$("#header_promo").hide();
+	$('body,html').animate({marginTop: "0px"},'slow');
+	$("nav").css("position","fixed");
+});
+
+$(function() {
+    $(".port-inputs").keyup(function () {
+    	if (this.value.length == this.maxLength) {
+	          $(this).next('.port-inputs').focus();
+        }
+    });
+});
+
+function validateAll(form) {
+    var valid = true;
+    var portInputs = form.getElementsByClassName('port-inputs');
+    var portNumber = "";
+    for (var i = 0; i < portInputs.length; i++) {
+    	var input = portInputs.item(i);
+    	if (input.value.length != input.maxLength) {
+	          $(input).focus();
+	          valid = false;
+	          event.preventDefault();
+	          return;
+        }
+    	portNumber = portNumber + input.value;
+    }
+	var numberPattern = new RegExp("^[1-9]\\d{9}$");
+	if(!numberPattern.test(portNumber)){
+		alert("Please enter a valid 10-digit phone number.");
+		return false;
+	}
+	if(valid){
+		loading();
+		$.ajax({
+			url:"/account/acmg/mj/checkPort.do",
+			type:"POST",
+			data:{"portNumber":portNumber},
+			dataType:'html',
+			success : function(response) {
+				 abortLoading();
+				 var response = JSON.parse(response);
+				 if(response.success == "true"){
+					 window.location = response.redirectUrl;
+				 } else{
+					 alert(response.error);
+				 }
+			},
+			error : function(xhr, status, error) {
+				abortLoading();
+				alert("Sorry! We are unable to check at this time.");
+			}
+		});
+	}
+	return false;
+}
+function phnNumValidate(form){
+	 form.inpPhone.value = $.trim(form.inpPhone.value);
+	 var inpPhone = form.inpPhone.value;
+	 $(".marker").remove();
+	 $(".error").remove();
+	 var numberPattern = new RegExp("^[0-9\-\\s*()]+$");
+	 if(numberPattern.test(inpPhone)){
+		 var magicNumPattern = new RegExp("^[*][0-9]{10}[*]$");
+		 if(inpPhone.length == 14 && inpPhone.charAt(0) == '(' && inpPhone.charAt(1) != '0' && inpPhone.charAt(4) == ')' 
+				&& inpPhone.charAt(5) == ' ' && inpPhone.charAt(9) == '-' ){
+			inpPhone = inpPhone.substr(1,3)+ inpPhone.substr(6,3)+ inpPhone.substr(10,4);
+			$('#inpPhone').val(inpPhone);
+		}
+		if(magicNumPattern.test(inpPhone)){
+			inpPhone = inpPhone.substr(1,inpPhone.length-2);
+			$('#inpPhone').val(inpPhone);
+		}
+	 }
+	 var digits = new RegExp("^[0-9]+$");
+	 if(inpPhone.length != 10 || !digits.test(inpPhone)) {
+			$("#inpPhone").before('<label for="inpNumber"><span class="error">Invalid Phone number</span></label><span class="error marker"></span>');
+			return false;
+	 }
+	 return true;
+}
+</script>
+
+<div id="trackPix" style="display:none"></div>
+<script>
+window.trkEvent = function(eventType,pagename,notes){
+	/* event tracking */
+	if(!notes) notes='';
+
+	var jsession = unescape(document.cookie).match(/tid=[^;]+/); /* some cases don't have a jsession, avoid triggering an error by testing after match */
+		if(jsession) jsession = jsession.toString().replace(/tid=/,'');
+
+	if(!pagename) pagename = window.pagename;
+	var url = ''+location.protocol+'//'+'www.magicjack.com'
+		+'/account/mjEvent.do'
+		+'?jsessionidVal='+jsession
+		+'&refcd='+window.myRefcd
+		+'&pagename='+escape(pagename)
+		+'&event='+(eventType?eventType:'pageview')
+		+'&brand='+'MJ'
+		+'&memberId='+window.memberId
+		+'&requestParams='+escape(location.href) /* params2Str */
+		+'&referrer='+escape(document.referrer)
+		+'&notes='+notes
+		+'&random='+Math.random()*1000;
+
+	var el=document.createElement('img');
+	el.src=url; el.width = '1'; el.height='1'; el.style.display='none';
+	var obj = document.getElementById('trackPix');
+	if(obj && obj.appendChild) obj.appendChild(el); /* work around msie dom issue */
+}
+
+
+	var orderSuccess = "";
+	var pName = location.pathname;
+	if ('') {
+		orderSuccess = true;
+	}
+
+	dataLayer = [ {
+		"pageSite" : "www.magicjack.com",
+		"pageName" : "store_index",
+		"pageServer" : "www.magicjack.com",
+		"pageType" : "dynamic",
+		"pageTrial" : "true",
+		"pageDevelop" : "false",
+		"CampaignID" : 1,
+		"version" : 1
+	} ];
+	
+	if(orderSuccess && pName.indexOf("mjSignupLandingPages") != -1){
+		 var temp = {};
+		 var t=0;
+		 var price="";
+		 var emailId="";
+		 var transactionId = "|";
+		 if(transactionId == "" || transactionId == 'undefined' || transactionId == null){
+			 transactionId = "UOLORDER";
+		 }
+		 if(price != ""){
+			 t= parseInt(price);
+		 }
+		  temp["transactionId"]=transactionId;
+		  temp["emailId"]=emailId;
+		  temp["event"]="transactionPlaced";
+		  temp["transactionTotal"]=t;
+		  dataLayer.push(temp); 
+	}if("store_index".localeCompare("billing") == 0){
+		var temp = {};
+		  temp["event"]="trackEvent";
+		  dataLayer.push(temp); 
+	}
+	
+</script>
+<script>window.trkEvent("pageview", 'store_index', "");</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N5XCBHH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+  {'gtm.start': new Date().getTime(),event:'gtm.js'}
+  );var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N5XCBHH');</script>
+<!-- New Google Analytics tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXCNEKXGCV"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-MXCNEKXGCV'); </script>
+</body>
+</html>

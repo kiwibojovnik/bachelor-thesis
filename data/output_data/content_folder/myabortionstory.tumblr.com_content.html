@@ -1,0 +1,2280 @@
+<!DOCTYPE html><script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="https://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=b9f848c06fcba7eaf305d4a7cb7a1b98"></script><!DOCTYPE html>
+
+<!--
+
+Observer Theme
+By Zack Sultan
+Released January 2013
+Revised June 25, 2017
+
+-->
+
+<html>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+        <title>my abortion story</title>
+        <style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style><link rel="stylesheet" media="screen" href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=f085dde138e244526309d4673db67b4c"><link rel="shortcut icon" href="https://64.media.tumblr.com/avatar_a2527a6f3e2d_128.pnj">
+        <link rel="alternate" type="application/rss+xml" href="https://myabortionstory.tumblr.com/rss">
+        
+            <meta name="description" content="My abortion story is a campaign started by Anis - Institute of Bioethics and by Think Olga to listen to women&#039;s abortion stories. Listening and storytelling is a way of caring for women. We ask you..." />
+        
+        <link rel="shortcut icon" href="https://64.media.tumblr.com/avatar_a2527a6f3e2d_128.pnj">
+        <link rel="alternate" type="application/rss+xml" href="https://myabortionstory.tumblr.com/rss">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no" />
+
+
+
+<!-- Options -->
+
+
+        <meta name="if:Show Navigation" content="1"/>
+        <meta name="if:Alternate Header Layout" content="0"/>
+        <meta name="if:Show Description" content="0"/>
+        <meta name="if:Show Archive Navigation Link" content="1"/>
+        <meta name="if:Wide Images" content="1"/>
+        <meta name="if:Photoset Layout" content="0"/>
+        <meta name="if:Show Post Tags" content="1"/>
+        <meta name="if:Show Post Notes" content="1"/>
+        <meta name="if:Show Copyright" content="0"/>
+
+        <meta name="Title font" content="Gibson">
+        <meta name="Title font weight" content="bold" title="Bold">
+        <meta name="Title font weight" content="normal" title="Normal">
+        <meta name="font:Body font" content="Calluna"/>
+
+        <meta name="Background color" content="#fff">
+        <meta name="Title color" content="#444444">
+        <meta name="Link color" content="#5f79a4">
+
+        <meta name="color:Body text" content="#333333"/>
+		<meta name="color:Secondary text" content="#888888"/>
+        <meta name="image:Logo" content=""/>
+        <meta name="text:TypeKit ID" content=""/>
+        <meta name="text:Title Font" content=""/>
+        <meta name="text:Body Font" content=""/>
+        <meta name="text:Post Headline Font" content=""/>
+        <!--<meta name="text:Secondary Font" content=""/>-->
+
+        <meta name='text:Disqus Shortname' content='' />
+        <meta name='text:Google Analytics' content='' />
+
+<!-- Scripts -->
+
+    <script src="https://static.tumblr.com/4kpnlef/Pttmhz2ap/jquery-1.9.1.min.js"></script>
+
+    
+
+    <!-- Media resizing -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Make desktop tumblr video stretch to 100%
+            $('.tumblr_video_container').css({ 'width' : '100%', 'height' : '100%' });
+            // Resize tumblr video on mobile
+            $('.iphone-video a').css({ 'width' : '100%', 'height' : '200px' });
+		});
+
+        //Make Spotify the right size and responsive
+	    $(document).ready(function(){
+	        $('.mobile-spotify iframe').css('height', '80px');
+            $('.mobile-spotify iframe').css('width', '290px');
+            $('iframe[src*="embed.spotify.com"]').each( function() {
+                $(this).css('width',$(this).parent(1).css('width'));
+                $(this).css('height', '82');
+                $(this).attr('src',$(this).attr('src'));
+            });
+        });
+        $(window).resize(function() {
+            $('iframe[src*="embed.spotify.com"]').each( function() {
+                $(this).css('width',$(this).parent(1).css('width'));
+                $(this).css('height', '82');
+                $(this).attr('src',$(this).attr('src'));
+            });
+        });
+
+        // Fix Flickr images treated as videos.
+        $(document).ready(function(){
+          // Grab the videoWrappers that are already here.
+          var videoWrappers = document.querySelectorAll('.videoWrapper');
+          for(var i = 0, len = videoWrappers.length; i < len; i++) {
+              fixFlickr(videoWrappers[i]);
+          }
+
+          // Also process any new nodes that are added to the page.
+          var observer,
+          observerConfig = {
+          	childList: true,
+          	subtree: true
+          };
+
+          observer = new MutationObserver(function (mutations) {
+          	for (var i = 0, len = mutations.length; i < len; i++) {
+          		// If there were new nodes added, we check that they are valid flickr embeds
+          		if (mutations[i].addedNodes.length && mutations[i].addedNodes[0].querySelector) {
+          		    var newVideoWrapper = mutations[i].addedNodes[0].querySelector('.videoWrapper');
+          			if (newVideoWrapper !== null) {
+          				fixFlickr(newVideoWrapper);
+          			}
+          		}
+          	}
+          });
+
+          observer.observe(document.getElementById('content'), observerConfig);
+        });
+
+        function fixFlickr(videoWrapper){
+          var potentialEmbed = videoWrapper.firstElementChild;
+          if(potentialEmbed.hasAttribute('data-flickr-embed')) {
+              videoWrapper.style.paddingBottom = 0;
+              videoWrapper.style.height = 'auto';
+          }
+        }
+
+        //disable safari active states
+        document.addEventListener("touchstart", function() {},false);
+
+	</script>
+
+
+
+
+<!-- Style Sheet -->
+
+<style type="text/css">
+
+.regular p {
+	font-weight: bold;
+	color:aqua;
+}
+
+.regular .bottom-nav {
+	display: none;
+}
+
+::selection {
+    background: #529ECC; /* Safari */
+	color: #5a5858;
+	}
+
+::-moz-selection {
+	background: #529ECC; /* Firefox */
+	color: #5a5858;
+}
+
+body {
+	margin: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+    font-size:18px;
+	-webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+
+p, li, blockquote {
+	line-height: 28px;
+	margin: 0;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.ir {
+	text-indent: -99999em;
+}
+
+.center {
+	text-align: center;
+}
+
+/* Global colors
+********************************/
+
+body {
+	color: #5a5858;
+	background-color: #ffffff;
+}
+
+.blog-description {
+	color: #888888;
+}
+
+a {
+	color: #5a5858;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(136, 136, 136, 0.3);
+}
+
+#header h1 a {
+	color: #444444;
+	border-bottom: none;
+}
+
+a:hover {
+}
+
+a:active {
+	position: relative;
+	outline: none;
+	top: 1px;
+}
+
+
+.metadata a, #footer-links a, #footer p.promo a, .links a {
+	color: #888888;
+	border-bottom: none;
+}
+
+.metadata a:hover, #footer-links a:hover, #footer p.promo a:hover, .links a:hover, .more a:hover, a.mobile-player:hover {
+
+}
+
+.post {
+	border-bottom: 1px solid rgba(136, 136, 136, 0.2);
+}
+
+.colophon p {
+	color: #888888;
+}
+
+
+/* Global fonts
+********************************/
+
+body {
+	font-family:  Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif, georgia, serif;
+	font-weight: normal;
+}
+
+.title h1, .link-title h1, .chat-title h1, .q h1, .a h1, .album-info h2, #footer h2 {
+	font-family:  Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif, georgia, serif;
+	font-weight: normal;
+}
+
+.blog-title h1 {
+	font-family:  Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif, futura, helvetica, arial, sans-serif;
+	font-weight: normal;
+	font-size: 96px;
+	line-height: 1em;
+}
+
+.metadata a {
+	font-family:  , helvetica, arial, sans-serif;
+	font-weight: normal;
+}
+
+
+/* Page
+********************************/
+
+
+#page {
+	border: 0px solid;
+	max-width: 900px;
+	padding-left:  50px;
+	padding-right: 50px;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+/* Header Centered
+********************************/
+
+#header {
+	margin-top: 20px;
+	margin-bottom: 80px;
+	display: block;
+	overflow: visible;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+.blog-title {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.blog-title a {
+	border-bottom: none;
+}
+
+.blog-title img {
+	max-width: 100%;
+}
+
+.blog-description {
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+
+.links {
+	margin-top: 0px;
+	text-align: center;
+	float: none;
+	border-bottom: 1px solid rgba(136, 136, 136, 0.2);
+}
+
+.links ul {
+	margin-top: 10px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	float: none;
+}
+
+.links li {
+	display: inline;
+	margin-left: 10px;
+	text-transform: none;
+}
+
+.links li:first-child {
+	margin-left: 0px;
+}
+
+
+
+/* Post wrappers
+********************************/
+
+#content {
+	width: 100%;
+	overflow-x: hidden;
+	clear: both;
+}
+
+.post {
+	margin-bottom: 45px;
+	padding-bottom: 40px;
+	width: 100%;
+}
+
+.narrow {
+	max-width: 640px;
+	margin: auto;
+}
+
+
+/* Headings
+********************************/
+
+.title h1, .link-title h1, .chat-title h1 {
+	text-align: center;
+	margin: auto;
+	margin-bottom: 25px;
+	font-size: 42px;
+	line-height: 50px;
+}
+
+.link-title a {
+	text-decoration: none;
+	position: relative;
+	border: none;
+	color: #529ECC;
+}
+
+span.link-arrow {
+	position: relative;
+	font-size: 20px;
+	bottom: 3px;
+}
+
+.quote-short {
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 25px;
+}
+
+.photo img, .album-art img, .videoWrapper {
+  max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	border-radius: 2px;
+}
+
+.photo img, .album-art img, .videoWrapper img {
+	min-width: 640px;
+}
+
+.photoset-layout {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.tumblr_audio_player {
+	height: 250px;
+}
+
+.audio iframe {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe, .videoWrapper object {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.videoWrapper iframe.flickr-embed-frame, .videoWrapper img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Post body styles
+********************************/
+
+.caption p {
+	margin-bottom: 15px;
+}
+
+.caption h1 {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.caption h2 {
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 24px;
+}
+
+.caption blockquote {
+	margin-bottom: 10px;
+	border-left: 3px solid rgba(136, 136, 136, 0.2);
+	margin-left: 5px;
+	padding-left: 15px;
+	line-height: 26px;
+}
+
+.caption pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	background-color: rgba(136, 136, 136, 0.2);
+	border-radius: 2px;
+	padding: 10px 15px 10px 15px;
+	font-size: 15px;
+	line-height: 24px;
+	margin: 15px 0 25px 0;
+}
+
+.caption ul, ol {
+	margin-top: 0;
+	margin-bottom: 25px;
+	padding-left: 40px;
+}
+
+.caption img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto 30px auto;
+    border-radius: 2px;
+}
+
+.quote-short {
+	line-height: 40px;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.quote-medium, .quote-long {
+	line-height: 32px;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+ul.chat {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.chat li {
+	border-bottom: 1px solid rgba(136, 136, 136, 0.3);
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.chat li:last-child {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+span.odd, span.even  {
+	font-weight: bold;
+}
+
+.more a {
+	display: block;
+	width: 99%;
+	height: 30px;
+	border: 1px solid rgba(136, 136, 136, 0.3);
+	text-align: center;
+	text-decoration: none;
+	border-radius: 2px;
+	padding-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+.more a:active {
+    background: rgba(136, 136, 136, 0.08);
+    box-shadow: inset 0px 1px 4px rgba(136, 136, 136, 0.2);
+    top: 0px;
+}
+
+.audio-module {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+a.mobile-player {
+	border: 1px solid rgba(136, 136, 136, 0.2);
+	background: rgba(136, 136, 136, 0.1);
+	width: 99%;
+	padding: 30px 0 30px 0;
+	margin-bottom: 25px;
+	border-radius: 2px;
+	display: none;
+}
+
+a.mobile-player:active {
+    top: 0px;
+    box-shadow: inset 0px 1px 4px rgba(136, 136, 136, 0.2);
+    background: rgba(136, 136, 136, 0.18);
+    border: 1px solid rgba(136, 136, 136, 0.3);
+}
+
+.play-triangle {
+	margin-left: 20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 6.5px 0 6.5px 10px;
+	border-color: transparent transparent transparent rgba(136, 136, 136, 0.8);
+}
+
+.album-info {
+	display: block;
+	float: left;
+	width: 63%;
+}
+
+.player {
+	display: block;
+	background-color: #ffffff;
+	float: right;
+	padding-top: 5px;
+	padding-right: 2px;
+	border: 1px solid rgba(136, 136, 136, 0.3);
+}
+
+.desktop-spotify {
+	display: block;
+
+}
+
+.mobile-spotify {
+	display: none;
+	width: 290px;
+	margin: auto;
+}
+
+.iphone-video object {
+    display: block;
+    margin: 0px auto 20px;
+}
+
+.asker-block, .answer-text {
+	display: block;
+	overflow: auto;
+}
+
+p.question {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+p.album, p.question {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+h1.qa-letter {
+	display: block;
+	float: left;
+	width: 45px;
+	position: relative;
+	bottom: 3px;
+	font-size: 30px;
+}
+
+.q {
+	margin-bottom: 20px;
+}
+
+img.asker {
+	float:left;
+	margin-right: 8px;
+	border-radius: 2px;
+	position: relative;
+	top: 2px;
+}
+
+p.asker {
+	font-style: italic;
+}
+
+p.question {
+	clear: both;
+}
+
+
+/* Metadata
+********************************/
+
+.metadata {
+	border: 0px solid gray;
+	overflow: auto;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.metadata a {
+	text-decoration: none;
+}
+
+.date, .tags, .notes-count {
+	display: block;
+	float: left;
+	margin-right: 15px;
+}
+
+.tags a, .notes-count a, .date a {
+	margin-right: 5px;
+}
+
+
+/* Footer
+********************************/
+
+#footer {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#footer a {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+a.back-next {
+    margin: 0px 10px 0px 10px;
+}
+
+#footer h2 {
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+#footer-links ul {
+	margin-bottom: 0px;
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+
+#footer-links li {
+	display: inline;
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+#footer-links li:first-child {
+	margin-left: 0px;
+}
+
+#footer .colophon p {
+	font-size: 14px;
+	font-style: italic;
+}
+
+#footer p.promo {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+
+/* Notes and comments
+********************************/
+
+#permalink-content {
+	margin-top: 40px;
+}
+
+.avatar_frame {
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+
+.comments {
+	margin-bottom: 35px;
+}
+
+.comments h3, .permalink-notes h3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.permalink-notes ol {
+	padding-left: 0;
+}
+
+.permalink-notes li {
+	list-style: none;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-top: 1px solid rgba(136, 136, 136, 0.3);
+	font-size: 13px;
+}
+
+.permalink-notes blockquote {
+	margin: 5px 0px 5px 0px;
+	border-left: 3px solid rgba(136, 136, 136, 0.2);
+	margin-left: 20px;
+	padding-left: 15px;
+    line-height: 24px;
+}
+
+.notes a {
+	border-bottom: none;
+	text-decoration: underline;
+}
+
+
+.post iframe, .post object {
+max-width: 100%;
+}
+
+
+/* Browser size break-points
+********************************/
+
+
+@media screen and (max-width: 800px) {
+
+#header {
+	margin-top: 20px;
+	display: block;
+	overflow: visible;
+	padding-bottom: 0px;
+}
+
+.blog-title {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	float: none;
+	width: 100%;
+    margin-bottom: 50px;
+}
+
+.blog-title h1 {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+.blog-description {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.links {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	float: none;
+	border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+}
+
+.links ul {
+	margin-top: 10px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	float: none;
+}
+
+.links li {
+	display: inline;
+	margin-left: 16px;
+	font-size: 17px;
+	text-transform: none;
+}
+
+
+.metadata {
+	font-size: 16px;
+	}
+
+.player {
+	display: none;
+}
+
+a.mobile-player {
+	display: block;
+}
+
+.album-info {
+	width: 100%
+}
+
+.title h1, .link-title h1, .chat-title h1 {
+text-align: center;
+font-size: 36px;
+line-height: 42px;
+}
+
+}
+
+@media screen and (max-width: 740px) {
+
+#page {
+	padding-left:  1em;
+	padding-right: 1em;
+}
+
+#header {
+	margin-bottom: 50px;
+}
+
+/* WRANGLE TUMBLR VIDEO PLAYER */
+
+
+.iphone-video img {
+	width: 90%;
+}
+
+.iphone-video a {
+	margin-bottom: 20px;
+}
+
+/* IMAGES */
+
+.photo img, .album-art img, .videoWrapper img {
+	min-width: 100%;
+}
+
+.link-title a {
+	line-height: 50px;
+}
+
+.desktop-spotify {
+	display: none;
+}
+
+.mobile-spotify {
+	display: block;
+}
+
+}
+
+
+
+</style>
+
+<!-- End header -->
+
+    <link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=myabortionstory" /><link rel="alternate" href="ios-app://305343404/tumblr/x-callback-url/blog?blogName=myabortionstory" /><script
+    defer
+    type="application/javascript"
+    id="bilmur"
+    data-provider="tumblr.com"
+    data-service="blognetwork"
+    data-customproperties='{"theme": ""}'
+    nonce="6YocwgIfDJAFBy9SWHgGuzIQJk4"
+    src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202418"
+  ></script><script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="Tumblr" /><meta property="og:title" content="my abortion story" /><meta property="og:url" content="https://myabortionstory.tumblr.com/?og=1" /><meta property="og:description" content="My abortion story is a campaign started by Anis - Institute of Bioethics and by Think Olga to listen..." /><meta property="og:type" content="profile" /><meta property="og:image" content="https://64.media.tumblr.com/avatar_a2527a6f3e2d_128.pnj" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=myabortionstory" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=myabortionstory" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="My abortion story is a campaign started by Anis - Institute of Bioethics and by Think Olga to listen..." /><meta name="twitter:title" content="my abortion story" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=myabortionstory&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=myabortionstory&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=myabortionstory&amp;referrer=twitter-cards" /><!-- GOOGLE CAROUSEL --><script type="application/ld+json">
+	{"@type":"ItemList","url":"https:\/\/myabortionstory.tumblr.com","itemListElement":[{"@type":"ListItem","position":1,"url":"https:\/\/myabortionstory.tumblr.com\/post\/631437689278840832\/story-52"},{"@type":"ListItem","position":2,"url":"https:\/\/myabortionstory.tumblr.com\/post\/630718737505501184\/story-51"},{"@type":"ListItem","position":3,"url":"https:\/\/myabortionstory.tumblr.com\/post\/626887475311312896\/story-50"},{"@type":"ListItem","position":4,"url":"https:\/\/myabortionstory.tumblr.com\/post\/625809724599877632\/story-49"},{"@type":"ListItem","position":5,"url":"https:\/\/myabortionstory.tumblr.com\/post\/625176021168226304\/story-48"},{"@type":"ListItem","position":6,"url":"https:\/\/myabortionstory.tumblr.com\/post\/624534865628561408\/story-47"},{"@type":"ListItem","position":7,"url":"https:\/\/myabortionstory.tumblr.com\/post\/623907339403198464\/story-46"},{"@type":"ListItem","position":8,"url":"https:\/\/myabortionstory.tumblr.com\/post\/623276489642819584\/story-45"},{"@type":"ListItem","position":9,"url":"https:\/\/myabortionstory.tumblr.com\/post\/622641498707673088\/story-44"},{"@type":"ListItem","position":10,"url":"https:\/\/myabortionstory.tumblr.com\/post\/622018627667984386\/story-43"}],"@context":"http:\/\/schema.org"}</script><link rel="canonical" href="https://myabortionstory.tumblr.com" /></head>
+
+	<body>
+
+		<div id="page">
+
+			<div id="header">
+
+                
+				<div class="links">
+					<ul>
+						<li><a href="/">Home</a></li>
+                        
+                        
+                        
+                        
+                        <li><a href="/archive">Archive</a></li>
+                        
+                        <li><a href="http://unahistoriaunaborto.tumblr.com">Español</a></li>
+                        <li><a href="https://eu-vou-contar.tumblr.com/">Português</a></li>
+					</ul>
+				</div>
+				
+
+
+
+				<div class="blog-title">
+
+                    
+                    <a href="/"><img src="https://static.tumblr.com/dfa15f1d41aaec541ac06957f99fb5c0/tautxw0/7DKowwzog/tumblr_static_egj8h0p2qqok0k80s84gk4cgc.jpg" alt="my abortion story"/></a>
+                    
+
+                    
+
+                    
+					<p class="blog-description">My abortion story is a campaign started by <a href="http://www.anis.org.br"><b>Anis - Institute of Bioethics</b></a> and by <a href="http://www.thinkolga.com"><b>Think Olga</b></a> to listen to women's abortion stories. Listening and storytelling is a way of caring for women. We ask you not to focus on whether you are against or in favor of abortion, but instead just give a little bit of your time to stop to get to know these real stories. Would you listen?</p>
+                    
+				</div>
+
+
+
+			</div> <!-- header end -->
+
+			<div id="content">
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 52</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>I would like to ask you not to write
+my story down. In fact, I will not record it, this is what I can tell you. I am
+a writer, I wrote my story and would like you to read it. Read just as I wrote
+it, please.</p><p>It was 12 pm and she was still
+sleeping, maybe dreaming. She dresses up to go out and look for a job. The
+smell of coffee wakes her up. She stretches her arms, her back, and she yawns.
+The bed still invites her to stay, her body has been strange for days now, she
+gets out of bed to pee, to take a shower, to go to college; it was not just
+another day, she felt her body was someone else&rsquo;s.</p><p>On the bus, she felt like everyone
+was watching. In the classroom, someone talked about bodies and she had to
+leave. She did not understand why or what for, but she had to, and she did.
+Once she got back home, she wrote a text on her phone, but did not have the
+courage to press &ldquo;send&rdquo; at that moment, so she decided to go to sleep, woke up
+an hour later and sent the message: &ldquo;Go to the drugstore, please.&rdquo; As if he did
+not understand, but at the same time did, he answered: &ldquo;Ok, the drugstore?&rdquo; She
+could not say anything else, but he went to the drugstore and he bought what
+had to be bought.</p><p>It happened, it was happening. No,
+we were always so careful, it was not possible, no! She knew it, her body knew
+it, no! As the days went by, she felt like everybody owned her body except for
+her. It hurt. She felt the pain, her breasts hurt, feeling it was painful, the
+pain hurt. Her body was not hers anymore, she had to get it back.</p><p>Looks and talks mixed up with the
+guilt and the pain, saturating that body that she was rejecting. She was
+resisting. There was a cost to get her life back; listening to the pastor of
+the local church on Sunday made her mad, it fed the guilt that she was avoiding.</p><p>A suitcase and lots of fear.
+Courage. They traveled. In her country, she found the warmth of women, the
+warmth that she needed, women and sisters she did not know in an embrace of
+bellies, wombs, pussies, fallopian tubes, ovaries, souls who had experienced
+what she felt. To reach a certain calmness. To listen to her own language made
+her feel safer, but she was not home. She felt like calling her mother, like
+hearing her father&rsquo;s voice, like hugging her sisters.</p><p>She decided to write her father a
+message while she was at the drugstore: &ldquo;I miss you, daddy. I have a question
+to get out of my chest: is there anything that could make you stop loving me if
+I did it?&rdquo;. She knew she would probably have to wait for his answer because he
+worked a lot and usually took a long time to text her back, but this time he
+answered immediately. &ldquo;Noooo! My love, you are the love of my life, remember
+your dad&rsquo;s hugs now. Is the young lady doing well?&rdquo;. She sighed, crying,
+feeling something between anxiety and relief. She needed those words from her
+father.</p><p>He was paying for the pills while
+telling her that they should buy fruit and water before going to the hotel. A
+tight hug on a sidewalk of San Telmo warmed up the cold autumn and released the
+next step. Only the two of them, together as accomplices, overcoming fate, clandestinely.
+They paid for the best hotel they could afford and made love.</p><p>The procedure had been studied,
+hospitals, addresses; people they could trust were aware; the moment arrived.
+While her memories came up like a movie, the pain got to her whole body. Calls
+and words embraced her. The coldness of her country invited her to stay between
+blankets while she was feeling pain, pain unknown to her so far. Pain not only
+in the body. Pain from the guilt, from the clandestinity, from fear in all its
+forms. Fears she had never felt before. All kinds of images and colors were
+invading her mind and stealing her indetermined and complex will.</p><p>It happened. It was happening. It
+was intense. As the hours passed by, she felt her body coming back to her, she
+was slowly recovering it. Along with her intuition, she felt happiness. I made
+it, we made it! Intense. If she had felt as if her life wasn&rsquo;t hers, now she
+felt changed, affected, and like she owned it. She had some barbecue and dulce
+de leche, they went out to see a tango show. Dance, movement, life.</p><p>Listening to her body and giving it
+life was what she did, as she grew with that experience. Untamed intuition
+guided her. An intense experience that marks us, makes us stop, take our life
+in our hands, resist, move forward. Plane and inspiration. Going back to the
+place where she had chosen to live during a cycle of her life. That same place
+where she was almost locked up while they were looking for the drugstore to buy
+the pills; she felt inspired to talk about the unbearable. Inspiration that
+came from that experience that pushed her to produce thoughts about it. It was
+her present in action.</p><p>It was Thursday and she had class. Self-writing.
+To live and to write. She is not worried about writing a book or a dissertation.
+She is busy with the writing. She feels that she has to do it. She needs to
+write. She feels that her experience does not stop inviting her to write. She
+reads a book before she goes to sleep and sees this: &ldquo;We don&rsquo;t know anything
+about a body until we know what it can do.&rdquo; Reflective, but very sleepy, she
+falls asleep smiling and not knowing exactly why. She was never the same.</p><p>New life, new day. It was 12 pm and
+she was still sleeping.</p><p><br /></p><figure class="tmblr-full" data-orig-height="1080" data-orig-width="1920"><img src="https://64.media.tumblr.com/e65ef7ce8743ccb6b97f117105be235f/b03ebb725ae907d7-02/s500x750/bffb406ee29e29a6bb4fae7eadfdc4adcf53521e.jpg" data-orig-height="1080" data-orig-width="1920" width="500" height="281" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/631437689278840832/story-52">Oct. 8 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            <div class="notes-count">
+								<a href="https://myabortionstory.tumblr.com/post/631437689278840832/story-52">1 note</a>
+							</div>
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 51</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>&nbsp;I had a child when I was 15, and the
+one who raised him was my dad. I used to live with him. He had a very troubled
+relationship with my mom. I was raped by my stepfather when I was 5, then I
+went through almost 3 years of violence. I had no one to talk to, there was no
+way to tell anyone about it. So, when I was turning 18 years old, I was trying
+to rebuild my life after having had the baby whom my father was raising for me.
+I met a guy at a party who became my boyfriend. He was older. I thought that
+maybe an older man would understand my whole story.</p><p>When I found out that I was pregnant,
+I ended up telling this boyfriend. I had an ultrasound and found out that I was
+already a bit more than 3 months pregnant at that point. That was when I lost
+it. Considering the time, it wasn&rsquo;t his baby, it was probably from some casual
+thing I had before. How was I supposed to tell my parents that I was pregnant
+again? And that it wasn&rsquo;t my boyfriend&rsquo;s baby, and I probably got pregnant from
+a casual thing? My boyfriend, he told his mother, so I decided to tell them
+both that, you know, the baby was probably not his child. He said he would
+support me, but that he wouldn&rsquo;t raise a kid that wasn&rsquo;t his.</p><p>His mother came to me. She said I
+should have an abortion, that I was going to be ok, that this child would be a
+burden in my life, and I wouldn&rsquo;t be able to keep studying if I had the baby.
+She said that I should think of my dad, of all the disappointment I had caused
+him, and that I should not cause him any more disappointment. She even said it
+wasn&rsquo;t illegal, that it was my choice. She spent an hour talking to me. I had
+the abortion and ended up in a hospital, bleeding. At the hospital, I couldn&rsquo;t hide
+it any longer, so I told the truth. I guess they didn&rsquo;t write it down in my
+chart. Maybe, if they had mentioned it, I would have been arrested, because I
+was told that the doctor had to report the woman to the police if he found out
+the truth.</p><p>I was at there for a week. I was
+surrounded by women with their newborns, it was horrible. My boyfriend went there
+to visit and told me how careless I was for not having noticed I was 3 months
+pregnant, a bit more than 3 months. I didn&rsquo;t feel anything. I didn&rsquo;t feel sick,
+I felt nothing at all. What I&rsquo;ll never forget is the moment when they sent me
+out. The moment when the abortion was really done. When the contractions
+started, I was there at the maternity area of the hospital. I was walking down
+the halls when everything came out. All the blood came out. I just stood there
+staring at the floor in the middle of the hospital. People took a while to help
+me out. Everyone saw it; it wasn&rsquo;t just me there. Even if I wanted to, I
+couldn&rsquo;t stop staring at what was on the floor, between my feet.</p><figure class="tmblr-full" data-orig-height="2244" data-orig-width="4016"><img src="https://64.media.tumblr.com/8eb311b6105fcef758dd45fb719307d3/bcbd94eef0cc318e-4b/s500x750/b72f91e7d84a1f720fc753e3be010e733ff09c6c.jpg" data-orig-height="2244" data-orig-width="4016" width="500" height="279" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/630718737505501184/story-51">Sep. 30 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            <div class="notes-count">
+								<a href="https://myabortionstory.tumblr.com/post/630718737505501184/story-51">1 note</a>
+							</div>
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 50</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>I remember that day very clearly. A
+boyfriend of mine got me pregnant about a month after he had broken up with me.
+He realized he still loved his ex-girlfriend and left me. Actually, he was
+seeing both of us for a while, and I was in love with him. If I told him I was
+pregnant, he would say I had done it on purpose just to make him stay. He would
+say it was someone else&rsquo;s baby, because we were not dating anymore. He would
+say it in my face: &ldquo;Whose baby is it? Because it can&rsquo;t be mine&rdquo;. I asked a
+friend to go talk to him, and that is what he told her: &ldquo;I don&rsquo;t even know if it&rsquo;s
+mine.&rdquo;</p><p>So, I was alone, wasn&rsquo;t I? With two
+kids, an ex-husband, a boyfriend who was also an ex-boyfriend, and pregnant. A
+friend knew a guy who sold cytotec. He worked at a drugstore. I waited for my
+paycheck and bought four pills. I took two and put two. At the time, they cost
+me R$ 300, almost my whole salary. I don&rsquo;t know how much that would be today. I
+wouldn&rsquo;t have any more money in case it all went wrong, and it did. The pills
+were fake. I had to go to the drugstore, face the guy, threaten him that I
+would tell the owner if he didn&rsquo;t give me new pills. He gave me new ones and they
+didn&rsquo;t work either. </p><p>A week later it started to come out.
+A smelly liquid came out, and I had a high fever. I will never forget that
+moment. I was at the bank, waiting in line, and a friend saw me sitting on the
+floor, almost fainting and bleeding a lot. I couldn&rsquo;t go to a hospital and say
+what I had done, so she sent me to a nurse who was a trusted friend of hers and
+who said that he would finish what had to be done.</p><p>I went to a moneylender to pay this
+guy. And it was in some backyard, you know. I did the curettage without
+anesthesia. He told me that the infection was already in such a serious
+condition that my life was at risk. The fetus had been dead for some time, when
+I was trying with the drugs in the previous weeks. He gave me antibiotics and I
+decided not to take it; I don&rsquo;t even know if I wanted to end up dying at that
+moment, with all the suffering I was going through. I don&rsquo;t even know what hurt
+the most, if it was the curettage in the backyard, the days I spent without
+being able to say anything, or if it was all this fear of the law and the sin
+around me.</p><figure class="tmblr-full" data-orig-height="1080" data-orig-width="1920"><img src="https://64.media.tumblr.com/5ec7cf0db67189c43b5fe376cc587b00/e0c672c2ffee317a-83/s500x750/edf7ff3439fb811a1b90d7a54ded7973a709ff04.jpg" data-orig-height="1080" data-orig-width="1920" width="500" height="281" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/626887475311312896/story-50">Aug. 19 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 49</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>I am curious about the stories that
+people have been telling you. Sometimes, I wonder if they are just like mine,
+especially if they are stories about young teenagers. I know that we are all
+different somehow, and each person will bring out different details. But I
+imagine that most of them are stories more or less of the same kind. About
+young teenagers. Yes, I was 15 and I had just begun my sex life. It was my
+second day doing it with him. He refused to use wear a
+condom and said that he could &lsquo;control&rsquo; himself. I
+wasn&rsquo;t on the pill; I couldn&rsquo;t, because I was 15 and lived with my mother. If I
+came home with anything, she would know. If I came home with birth control
+pills, she would find out very soon.</p><p>Well, but he didn&rsquo;t do as he had
+promised. He didn&rsquo;t pull out. At that moment, he even laughed and said nothing
+would happen, telling me to go shower and to put vinegar in my vagina. And that
+was what I did. I put vinegar in my vagina, tried to put it even near the womb,
+I
+don&rsquo;t know, but I did it, didn&rsquo;t I?at least I guess I did.
+AMe, at
+that moment, I started to freak out. In less than 15 days, I took some money
+from my parents at home. I went out to buy a pregnancy test from the drugstore.
+It came out positive. I couldn&rsquo;t even keep it at home, couldn&rsquo;t throw it out in
+the trash at home if I didn&rsquo;t want my mother to know, right? Just for
+you to have an idea, I couldn&rsquo;t do it any differentlyI don&rsquo;t
+think I could do it any differently. All I
+knew was that I wouldn&rsquo;t have that child.</p><p>My parents are very catholic. They
+used to go to church every Sunday. My mother was one of those people who could
+go to another church, in another neighborhood, far away, just to hear a
+specific priest or a specific church choir. They used to say I had an uncle who
+was a priest. One of my sisters used to say she wanted to be a nun. At my
+house, what they used to say about couples who would live together without
+getting married, &nbsp;(they called it &ldquo;to get friendly&rdquo;,)
+was that they were people who lived like prostitutes. They said that women who
+had sex before marriage were &lsquo;lost&rsquo;, wasted.</p><p>So, I didn&rsquo;t want to be any of that.
+Not lost, notor a
+prostitute, or someone who &ldquo;got friendly&rdquo; with someone else, as they used to
+talk about it in my house. I mean, if my boyfriend wanted to be with me. This
+was another thing that they used to talk about in my house. I talked to my
+boyfriend first, and his reaction was to doubt it was true. He said that I was
+a virgin before I met him and so I wouldn&rsquo;t get pregnant so fast. He said that
+girls who had just lost their virginity did not get pregnant with a few sexual
+relations. I have to say, that it was
+horrible to hear all this. It was horrible to hear this in addition to
+everything I was going through. I was very lonely, I felt very embarrassed. I
+didn&rsquo;t know who to talk to, who I was going to talk to at school. I thought
+that I was the only one who was going through something like that. And I kept
+thinking that everyone would end up talking to my parents, they would end up
+telling them.</p><p>I had a math teacher whom I liked a
+lot, you know. I built up the courage and went to talk to her. I know it was
+very risky, but she welcomed me. She told me to go to her house, so we didn&rsquo;t
+have to talk about it there, at school. I was very good at math, I participated
+went to somein
+competitions, so I could tell my mother that I was going to study mathematics
+at the teacher&rsquo;s house. When I got there, we talked a lot. Her husband was a
+doctor. , Tthey
+were the ones who helped me. Nobody ever knew, I never brought up this subject
+with this math teacher again. It all went very, very smooth. Today, I am
+mature, and I am a math researcher. Every year, I bring flowers to the
+cemetery, to remind myself of the teacher who helped me to be who I am today.</p><figure class="tmblr-full" data-orig-height="2244" data-orig-width="4016"><img src="https://64.media.tumblr.com/3be16847babda009d5a9a2ed926106c3/23d1e6cf9d330931-f7/s500x750/5c65cf246d68ec591221618699b44ded699d2363.jpg" data-orig-height="2244" data-orig-width="4016" width="500" height="279" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/625809724599877632/story-49">Aug. 7 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 48</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>I was still just a teenager when I
+became a mother. The father was a music teacher from my school. He was much
+older than me. He already had kids; after me, he kept doing the same thing over
+and over, getting other students pregnant. He&rsquo;s still a musician now, and it
+seems like none of it stained his career as a teacher.</p><p>I had just started college. My son
+wasn&rsquo;t even 1 year old yet, and I had to struggle with everything I had to do:
+studying, cleaning up the house, taking care of him, and looking for a job. I
+lived with my mother at the time, who always provided and made sure we had
+everything we needed. But she never changed my son&rsquo;s diapers, never tried to
+help me, you know? I&rsquo;m grateful to her, but that was the reality in my life. I
+had to do everything by myself. I was feeling my youth passing me by, both during
+pregnancy and my son&rsquo;s first year of life. His dad never visited and never
+provided any support. Years later, I even had to file a lawsuit. And I had to
+come to terms with it all, you know? Keeping in mind that child support was my
+son&rsquo;s right. </p><p>I met a new guy. He was very nice
+and went to college with me. We were studying the same thing, and he liked my
+son. He used to spend hours talking to him, telling him stories, you know, doing
+everything that was so important for me. The role of someone that is always there,
+so we can share things and think about his education together. Slowly, he
+started to show me another side. He started to show a violent side; he changed
+whenever he drank. I never liked drinking and didn&rsquo;t want that for me. I tried
+to slowly distance myself from him. I could notice that a sudden break up would
+not end well. But his violence got worse and worse as he felt we had no future
+together.</p><p>Then, he started to stalk me and
+threaten me. He went to pick up my son from school without my permission and
+spent two days with him. I had to go to the police, and I had to revoke his permission
+to take my son with him from school. And what I heard from the police and the
+school were questions like, isn&rsquo;t he your boyfriend, someone <i>you</i> brought
+home? Things were getting worse. And I have to say this: we didn&rsquo;t have the Maria
+da Penha Act at the time, did we? We just had to go to a normal police station.</p><p>Once, I was arriving home from work,
+and he was waiting for me with a gun. He tried to kill me. He shot me in the
+lung. I went to the hospital and had to have surgery. All I could think of was
+my son, all by himself. The bullet wasn&rsquo;t inside my body, it went through me. At
+the hospital, when I got there, the doctors and the nurses at the emergency
+room asked me: &ldquo;He caught you with another man, didn&rsquo;t he? That&rsquo;s why he did
+it.&rdquo; No. I have to tell them and you what I didn&rsquo;t answer at the time: no, I
+didn&rsquo;t have anyone else. All I wanted was to get away from that man.</p><p>To make my situation even worse, I
+found out I was pregnant. I&rsquo;ve always dreamed about having another kid. I have
+to be honest, I used to dream about having a daughter. But not at that time,
+with that man. Not after all I had gone through, after being shot. I needed an
+abortion soon. Without risking my life and without him knowing about it. I
+heard about a clinic in another city. I took a plane, which cost me a fortune,
+and took my son with me. I don&rsquo;t have many memories of that trip or of the
+procedure. I have no marks on my body; this is not a story I have to tell. I
+just remember that, when I left there, I was feeling sure that my life would be
+just me and my son.</p><figure class="tmblr-full" data-orig-height="2244" data-orig-width="4016"><img src="https://64.media.tumblr.com/3be16847babda009d5a9a2ed926106c3/a541ae1927b55009-50/s500x750/d6e89aa156e949c9418b089f4e88132421be5a26.jpg" data-orig-height="2244" data-orig-width="4016" width="500" height="279" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/625176021168226304/story-48">Jul. 31 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 47</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>This story happened about 15 years
+ago. I was 13, my boyfriend was a little bit older than me. I think he was
+around 18, I&rsquo;m not sure; he was my first boyfriend. I had irregular periods, maybe
+because I was still young. I had just become a grown girl, right? As soon as I
+found out I was pregnant, he got me the medicine. It was Cytotec. He gave it to
+me and told me how to use it. And I did everything as he told me to. Not long
+after I took it, that same night, I started feeling sick. Very, very sick. I&rsquo;m
+not exaggerating. I was throwing up and bleeding non-stop. I was going to the
+bathroom all the time. I was, you know, almost losing consciousness. I didn&rsquo;t
+really know what was going on. </p><p>He went to see me the next morning,
+and I was even worse. It never crossed our minds that it was time or that it
+would be good to go to a hospital. He went to school, I stayed home. I stayed
+home by myself, because my mother used to work as a housekeeper and left very
+early in the morning. I kept getting worse during the day. In the afternoon, I
+walked to his school. I was alone. Just left my house and walked there. I
+needed help. I needed someone to go to the hospital with me. When I got there, I
+talked to him. I don&rsquo;t remember why anymore, but he couldn&rsquo;t come with me. I
+had to go by myself. I went from his school to the emergency room &mdash; walking,
+stopping, sitting on the curb, almost passing out. I was bleeding too much
+already. That&rsquo;s how I got to the emergency room. </p><p>At the hospital, people said right
+away that it was an abortion, that they knew everything, that it was all my
+fault, and that they didn&rsquo;t like women who had abortions. Remember this: I was
+13. They didn&rsquo;t like women who had abortions, I had it coming, it was my fault,
+and they couldn&rsquo;t do anything to help me. They didn&rsquo;t even give me anything for
+pain and sent me back home. I walked back home bleeding, dropping the remains
+that were still inside me, you know? Really having an abortion. I thought I was
+going to die, because I was bleeding and bleeding, and I had never been to a
+doctor before. I didn&rsquo;t know how it was. I had never been to a gynecologist in
+my life. In fact, I was already 20 years old the first time I went to a
+gynecologist. It was when I got pregnant with my first daughter.</p><figure class="tmblr-full" data-orig-height="1080" data-orig-width="1920"><img src="https://64.media.tumblr.com/b2cf5e9dda06637258b5271466263fbe/57d861c7198b3d5d-05/s500x750/7392f180d3f2bb772d63857b46de6987e70ce874.jpg" data-orig-height="1080" data-orig-width="1920" width="500" height="281" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/624534865628561408/story-47">Jul. 24 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 46</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>I have two abortion stories. I can
+imagine some people will hear this and say &ldquo;two!&rdquo;. I don&rsquo;t know if any other
+woman has told you more than one story, or if I am the only one to tell two
+different stories here. Yes, two stories. I will talk to you about only one of
+them today, and I will tell you why. I am from a middle-class family, I had
+access to information, to contraception. I knew everything a young woman could
+know about protection, about sexuality.</p><p>I was beginning my sex life, only
+starting to have sexual relationships. This was not the first one, though. He
+used to wear condoms, you know? And it broke, but he didn&rsquo;t tell me right away.
+As soon as I knew I was pregnant, as soon as I took the test and found out, I
+looked for a group in town that offered teenagers some information about
+sexuality. It was a very nice group. I went there with my boyfriend and told
+the truth. They advised me and told me an abortion would be illegal. But they
+also said I could have options and told me where I could talk to a doctor about
+an abortion.</p><p>I went to this doctor. He was a very
+rude man, and he was very hard on me. I don&rsquo;t remember my gestational age at
+the time, but he was emphatic when he said: &ldquo;if you don&rsquo;t come back tomorrow, I
+won&rsquo;t do it anymore&rdquo;. I left feeling very scared, and decided to tell my
+mother. She used to work, so I went to her clinic with my boyfriend and we told
+her everything. My family didn&rsquo;t really approve of my relationship, so she said
+she would talk to me later at home. She hugged me, supported me, and told me to
+calm down. When she got home, she said that, ok, it was my decision and she
+would be there anyway, but first she wanted me to go to the family
+gynecologist, the one she trusted. And he was a very conservative man, you know?
+Just imagine how it was at that time. He was very conservative. But he
+surprised me, because he said: &ldquo;look, I don&rsquo;t do it, but I know where you can
+get the medicine and I can guide you over the phone&rdquo;. </p><p>My boyfriend went to where he said
+we could buy the medicine. It was a street fair. He bought it, I took some and
+put some inside, following the doctor&rsquo;s instructions over the phone. A few days
+later, nothing happened. My family had planned a short trip with. During the
+trip, in the car, I started losing blood. There were huge blood clots all over
+the car seat. My family took me to our family doctor, who prescribed me some
+tea. They talked to him in a corner. I don&rsquo;t remember, and I didn&rsquo;t really hear
+them talking, but they told me to go see the other doctor the next day, the
+doctor who was helping me. I went there. He did an ultrasound and saw that my
+uterus was clean, I didn&rsquo;t even need curettage.</p><p>It didn&rsquo;t take long for me to end
+this relationship. It was a teenager thing. I had his support, that I can say,
+and also my mother&rsquo;s. It was only after everything had passed that my mother
+told me she wanted to talk. She said she was against abortion, and she would
+never decide to have one. But she also told me that she would support me, as my
+mother, support me in whatever decision I thought was best for me. I kept
+thinking about it. About how it is to be a mother, a mother able to support her
+daughter and her decisions, even if her daughter was just a teenager&hellip; decisions
+that are different from what she believes. And she didn&rsquo;t judge at the time, did
+she? She didn&rsquo;t impose on me what she thought. That&rsquo;s why I decided that I was
+going to solve it all on my own when I went through the second experience of
+abortion. And that&rsquo;s what I did. I never told her, because I wasn&rsquo;t going to
+impose my decision on her once again.</p><figure class="tmblr-full" data-orig-height="1080" data-orig-width="1920"><img src="https://64.media.tumblr.com/4cdc2933c63b15b3338edd825f5f3731/251e2fa9c3c17c13-4a/s500x750/50141edde11fde47671cd8f6612ea368e1e3d576.jpg" data-orig-height="1080" data-orig-width="1920" width="500" height="281" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/623907339403198464/story-46">Jul. 17 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 45</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>I was young and had been dating this
+guy for a while. I got pregnant, and we ended up having a fight. So the best
+decision was to have an abortion. I talked to him, and not only he pushed me
+away, he even disappeared when I went to have the abortion. He didn&rsquo;t run away
+because he didn&rsquo;t want me to do it; he ran away just because he didn&rsquo;t want to
+be there, not even at that moment. The problem was all mine. I was in London at
+the time. I was 35, it was 1992. </p><p>It has been a long time, so it might
+be different now. But at that time, when I got to the health center, I had to see
+many psychologists. I had to make appointments. I also had to be admitted to
+the hospital one night before the procedure, because I had asthma and needed special
+care. At the night of the abortion, I stayed at the hospital. They left me in a
+room with two beds, mine right next to the other, which was empty. Maybe it was
+meant for a guest, for someone to be there with me. At the back of my bedroom, almost
+out in the hallway, I saw a little crib.</p><p>When I saw that crib and the empty
+bedroom, I started crying. There was another woman in the hospital for the same
+procedure. She heard me crying and saw the crib. She probably imagined I was
+crying because of it and came to calm me down. Actually, not only did she come
+to calm me down, she made a scene. Psychologists, nurses, and doctors arrived
+immediately. They took the crib away and came in to apologize. It took me a
+while to explain that I was crying because I had just ended a relationship and
+was alone there with a bed beside me. It wasn&rsquo;t the crib that was making me
+suffer so much.</p><p>Well, I explained it. But they calmed
+me down anyway. If I was already being well taken care of up to that moment, it
+only got better. After the abortion, I woke up in a yellow room with some
+flowers, a very peaceful environment. I woke up with the nurse holding my hand
+and asking me how I was. The whole environment was very welcoming. It even looked
+like a house more than a hospital, you know.</p><p>I know my story is very simple, isn&rsquo;t
+it? You must have heard some other stories that are very different from mine.
+Stories of women who have abortions in clinics, using medicine, women who have
+to do it in secret in Brazil, women who are younger than me. I just wanted to
+tell you my story to show that it is possible to have the whole procedure with security,
+with care, with dignity, just like I did. And being cared for makes everything
+much easier, doesn&rsquo;t it?</p><figure class="tmblr-full" data-orig-height="1080" data-orig-width="1920"><img src="https://64.media.tumblr.com/f7d4da311e8272ef1f3442a30cac6e40/a6bbcec84f0469f7-44/s500x750/4bac257da95061800f32e74c887ce53ff5ce7eb9.jpg" data-orig-height="1080" data-orig-width="1920" width="500" height="281" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/623276489642819584/story-45">Jul. 10 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 44</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>I think I will talk to you the way I talk to my
+friends, to women in my family. I don&rsquo;t know if that is how people are talking
+to you, is it? I have told this story before. I have told my story to women who
+had told me theirs, to women who needed to know how to do it, and to help other
+women in my family. This is not the first time. I just never did it like this,
+on WhatsApp. But here we go.<br /></p><p>I already had two kids. Financially,
+it was tight, as it still is. My youngest daughter had just turned 1 year old. I
+had two young kids at home and got pregnant again &mdash; I panicked. My husband was
+a flirt, he was a player and was always partying. He had children outside of
+our marriage, and I knew it. He couldn&rsquo;t care less about me. He would leave me
+with our two kids. He didn&rsquo;t care about them either. He only wanted to party
+and seemed to forget that he was a married man. </p><p>It was all totally normal for him.
+He used to tell me, &ldquo;if we can raise one, we can raise two or five.&rdquo; But I was
+the one doing it, wasn&rsquo;t I? It didn&rsquo;t matter if I was sick, I still had to wake
+up at night to feed them, because he was out. The boys had school in the
+morning, and I&rsquo;d be the one who was up all night feeding my daughter while he
+was partying. It shouldn&rsquo;t be like that, or should it? Some weekends, he would
+go out to party and not come back for two or three days. When he finally did
+come back, he would be acting aggressively. He was not calm when he arrived, he
+was drunk. So, I decided to have the abortion. You have no idea how much he
+said he was against it. He just kept repeating, &ldquo;if we can feed one, we can
+feed two or five.&rdquo; I kept saying, &ldquo;I don&rsquo;t want to.&rdquo; I had already made up my
+mind. I asked him for help, and he answered, &ldquo;I&rsquo;d rather see you die than see
+you have an abortion.&rdquo; </p><p>He told his whole family, and they
+all turned against me. I kept thinking, &ldquo;Why would I have another child with
+this man?&rdquo;. I had two children and was already suffering so much. So, I started
+to act: from that day on, every day, when he came home, I got a little bit of
+money. I was saving it all, but the weeks were going by. My sister had arrived
+from the city and I asked her for Cytotec. I put two. I did it while he was
+out, partying for the whole weekend. At the time, it was a lot of money. I&rsquo;ll
+repeat this: I had to save money little by little until I could afford it. </p><p>You know, nowadays, my husband is a
+bit better. He got calmer as he got older. But he was terrible to women,
+terrible. So terrible that I knew I could wait for him to go party so I could
+have an abortion by myself. And everyone, even his family, who turned against
+me, everyone kept telling me, &ldquo;leave that man, leave him, you have no future with
+him.&rdquo;</p><p>Well, I put two with a straw and
+took two more. At 2 am, I started bleeding. Can you believe that my daughter
+started crying for her baby bottle? He was out having fun, I was bleeding and
+feeding our daughter. The next day, I took our son to school. I was still
+bleeding. I kept bleeding like that for 10 days. And it was thick blood, you
+know? As time went by, it started to smell different. </p><p>After almost 15 days of waiting and
+bleeding, I didn&rsquo;t know what else to do. I started taking shots of
+contraceptive injections to stop bleeding. I had a fever, and he kept telling
+me that I should die. After 15 days, after contraceptive injections, with a
+fever and bleeding&hellip; I was bleeding more and more, so I went to the hospital. There
+I found out I had generalized infection. Only then, at that time, he got closer
+and took care of me, but he kept calling me names. My whole family went to the
+hospital, and there were people who even called me a murderer. I was wrong, I
+won&rsquo;t deny it. But who hasn&rsquo;t been wrong before?</p><p>Well, then I needed curettage. No
+one mistreated me at the hospital, because I was almost dying, I think. But
+they asked me if I had provoked the abortion. I&rsquo;m not dumb, am I? I said no. And
+they told me, &ldquo;we refuse to treat women who decide to have an abortion&rdquo;. Can
+you believe it? I had to hear this: &ldquo;we refuse to treat women who decide to
+have an abortion.&rdquo;</p><p>I didn&rsquo;t regret a thing, that I can
+assure you. Actually, there is something I regret: having taken so long. That&rsquo;s
+why I spent 10, 15 days bleeding, because I took too long. I should have done
+it earlier. And I shouldn&rsquo;t have told him. If I think about what I regret, what
+I did wrong, I regret both of these things. For a long time, he would come home
+drunk and throw it in my face: &ldquo;look what you&rsquo;ve done.&rdquo; You know what I say to
+him and to everyone else when I tell this story? I say that I didn&rsquo;t forget and
+won&rsquo;t forget, and only God can judge me.</p><p><br /></p><figure class="tmblr-full" data-orig-height="1080" data-orig-width="1920"><img src="https://64.media.tumblr.com/6a4accd42cb6e6899c199c2b0abdce7a/a473956bd729c000-df/s500x750/43d32c2b6dd1c716bcc95e4dde12e182fae41890.jpg" data-orig-height="1080" data-orig-width="1920" width="500" height="281" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/622641498707673088/story-44">Jul. 3 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+
+                
+                <!-- TEXT POST
+				///////////////////////////////////////////////////////-->
+
+				<div class="post text">
+
+					<div class="narrow">
+
+                        
+						<div class="title">
+							<h1>Story 43</h1>
+						</div>
+                        
+
+						<div class="caption">
+
+						<p>&ldquo;I work with babies&rdquo;</p><p><br /></p><p>I am 32, I&rsquo;m a physiotherapist and I work with babies. I think there
+is a bit of cosmic irony in that, but I don&rsquo;t know if there is such a thing as
+fate or if it is just about our actions, right? I don&rsquo;t know if the story is
+the same for each of us. My son is at home now, so I wanted to tell you that I
+will speak, and I&rsquo;ll be back. But I have to speak with you while I&rsquo;m not with
+him. I got pregnant with my son at 13, from a boy who was 16. We had been
+dating for some time. I know this was all very premature, and you might think
+it&rsquo;s all strange from the very beginning. How does a 13-year-old have a sexual
+life? It&rsquo;s true. I stopped from 14 to 21 years old and then got pregnant again
+from the same boyfriend, who was already my husband. We had almost 10 years of
+relationship and no maturity at all &mdash; as you can imagine of a relationship that
+started when I was 13.</p><p>I already knew what his reaction would be when I told him. I knew
+that he was going to say no. I had no support from the person I trusted the
+most in case I wanted that pregnancy, and I did want it. I had to take care of
+it by myself. I asked a neighbor for help. As strange as it sounds, she had
+told me that she had an abortion once, when we were talking in the elevator. She
+knew a doctor. I asked my husband to make the appointment and I went there. I
+didn&rsquo;t want an ultrasound. I wouldn&rsquo;t stand listening to the heartbeat. I
+didn&rsquo;t want the abortion, and I suffered so much. I have to be honest with you:
+I had dreams of that baby calling for my help. It all grieved me and killed me.
+</p><p>At the day of the procedure, we didn&rsquo;t have anyone to take care of
+our son, who was seven years old. You won&rsquo;t believe it, but we had to take him
+with us. The clinic was in a fancy building in my town. The doctor charged us a
+lot of money, a lot; today, I&rsquo;d say something like five thousand. I don&rsquo;t even
+know how my husband got that money. The truth is that it was the most painful
+day of my life. I have no doubt about it when I say it. It was the worst, most
+painful day in my entire life. I had so much pain I lost consciousness. I threw
+up during the procedure. They had to carry me out of there. All I could think
+of was that I was going to die. I kept thinking: &ldquo;I am dying, and my son will
+be an orphan&rdquo;.</p><p>It was the worst feeling, physically and emotionally, I have ever
+experienced. It took me a long time to recover, it wasn&rsquo;t easy. I felt guilty
+for not being able to face my husband. I felt guilty for not having the baby,
+for not making a different decision. For many years, <a>I </a>carried this guilt. The only person who
+once heard me talk about it was a friend of mine. I went to her house and we
+had a couple of drinks. I wasn&rsquo;t drunk, but I put everything out of me, all at
+once. I was crying so much; she could not help me. Until today, she was the
+only person I had told. And now you are the second one.</p><p>I can tell you now that I carry on with my life. I take care of all
+the children in the world. It&rsquo;s my job. And they are children the world doesn&rsquo;t
+want, or sometimes it seems like the mothers don&rsquo;t want them. I am a child
+development specialist. I take care of children with disabilities. And you know
+what is the biggest fear I have? It&rsquo;s that my family will find out. I still
+live with my husband, the man I started dating at 13. We didn&rsquo;t have more
+children. We don&rsquo;t talk about it and my biggest fear is that my family will
+know everything.</p><figure class="tmblr-full" data-orig-height="1080" data-orig-width="1920"><img src="https://64.media.tumblr.com/532d7c74c1227a5be596f9b825796736/d392baeda3b83f9a-cc/s500x750/56f475794ea27c3995413eebb9d27af87eaf00de.jpg" data-orig-height="1080" data-orig-width="1920" width="500" height="281" alt="image" /></figure>
+
+						</div> <!-- End caption -->
+
+                        
+
+						<div class="metadata">
+
+                            
+        					<div class="date">
+								<a href="https://myabortionstory.tumblr.com/post/622018627667984386/story-43">Jun. 26 2020</a>
+							</div>
+                            
+
+                            
+
+                            
+							
+						    
+
+                            
+                            
+                            
+
+						</div> <!-- metadata end -->
+
+					</div> <!-- text end -->
+
+				</div> <!-- post end -->
+                
+
+				
+
+
+                
+
+
+				
+
+
+				
+
+
+                
+
+
+
+				
+
+
+
+		        
+
+
+
+				
+
+            
+
+            
+
+			</div> <!-- content end -->
+
+			<div id="footer">
+
+
+                
+
+                <h2>
+                
+
+                
+                <a class="back-next" href="/page/2">Next</a>
+                
+                </h2>
+
+                
+
+
+				<div id="footer-links">
+
+						<ul>
+							<li><a href="/">Home</a></li>
+                            
+                            
+                            
+                            <li><a href="/archive">Archive</a></li>
+					</ul>
+				</div>
+
+				<div class="colophon">
+
+                    
+
+					<p class="promo"><a href="http://zacksultan.com">Observer theme by Zack Sultan</a></p>
+
+				</div>
+
+			</div><!-- content end -->
+
+		</div> <!-- page end -->
+
+
+<iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://assets.tumblr.com/analytics.html?_v=9f5febfd57a8a649c598d888f2d9e062#" +
+                              "https://myabortionstory.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/?route=%2F'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script type="text/javascript" nonce="6YocwgIfDJAFBy9SWHgGuzIQJk4">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1714470998&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL215YWJvcnRpb25zdG9yeS50dW1ibHIuY29tLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiLyJ9&U=AKNCEHGOMH&K=091c8b82949070ce35fb3dfe684b55c4440ad5afd4e19367fa19ec48f963f922&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1714470998&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL215YWJvcnRpb25zdG9yeS50dW1ibHIuY29tLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiLyIsIm5vc2NyaXB0IjoxfQ==&U=AKNCEHGOMH&K=5d44ef276d04f81bae513e68109e7aa22a969e62f450c2f6b1eccb9d79b030f2&R="></noscript><script type="text/javascript" nonce="6YocwgIfDJAFBy9SWHgGuzIQJk4">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1714470998&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9teWFib3J0aW9uc3RvcnkudHVtYmxyLmNvbS8iLCJyZXF0eXBlIjowLCJyb3V0ZSI6Ii8iLCJwb3N0cyI6W3sicG9zdGlkIjoiNjMxNDM3Njg5Mjc4ODQwODMyIiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjMwNzE4NzM3NTA1NTAxMTg0IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjI2ODg3NDc1MzExMzEyODk2IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjI1ODA5NzI0NTk5ODc3NjMyIiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjI1MTc2MDIxMTY4MjI2MzA0IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjI0NTM0ODY1NjI4NTYxNDA4IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjIzOTA3MzM5NDAzMTk4NDY0IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjIzMjc2NDg5NjQyODE5NTg0IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjIyNjQxNDk4NzA3NjczMDg4IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjIyMDE4NjI3NjY3OTg0Mzg2IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9XX0=&U=IFNAKFLPDO&K=2684ddaa343c7dc6597951be7a31cb67f0ab16d98d4e0560589892da5c8902f9&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1714470998&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9teWFib3J0aW9uc3RvcnkudHVtYmxyLmNvbS8iLCJyZXF0eXBlIjowLCJyb3V0ZSI6Ii8iLCJwb3N0cyI6W3sicG9zdGlkIjoiNjMxNDM3Njg5Mjc4ODQwODMyIiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjMwNzE4NzM3NTA1NTAxMTg0IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjI2ODg3NDc1MzExMzEyODk2IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjI1ODA5NzI0NTk5ODc3NjMyIiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjI1MTc2MDIxMTY4MjI2MzA0IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjI0NTM0ODY1NjI4NTYxNDA4IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjIzOTA3MzM5NDAzMTk4NDY0IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjIzMjc2NDg5NjQyODE5NTg0IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjIyNjQxNDk4NzA3NjczMDg4IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjIyMDE4NjI3NjY3OTg0Mzg2IiwiYmxvZ2lkIjozNjc3MjM3NTEsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=IFNAKFLPDO&K=fb9251cd26da8054352ce7a411decf7cb284c29913d2ac821eb4e3178ce31ff1&R="></noscript><noscript id="bootloader" data-bootstrap="{&quot;Components&quot;:{&quot;PostActivity&quot;:[],&quot;NotificationPoller&quot;:{&quot;messaging_keys&quot;:[],&quot;token&quot;:&quot;&quot;,&quot;inbox_unread&quot;:0},&quot;DesktopDashboardLogo&quot;:{&quot;animations&quot;:[[&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1.png?_v=161861acded461bb6e995593a3bae835&quot;,&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1@2x.png?_v=496a774637302a598c851381d00009b0&quot;]]},&quot;TumblelogIframe&quot;:{&quot;unified&quot;:true,&quot;variant&quot;:null,&quot;isCompact&quot;:true,&quot;tumblelogBundleSrc&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/standalone\/tumblelog\/index.build.js?_v=67fbead607764bb56fdea64cc12b80d7&quot;,&quot;tumblelogName&quot;:&quot;myabortionstory&quot;,&quot;isLoggedIn&quot;:false,&quot;isFriend&quot;:false,&quot;formKey&quot;:&quot;&quot;,&quot;canSubscribe&quot;:false,&quot;isSubscribed&quot;:false,&quot;tumblelogTitle&quot;:&quot;my abortion story&quot;,&quot;tumblelogAvatar&quot;:&quot;https:\/\/64.media.tumblr.com\/avatar_a2527a6f3e2d_64.pnj&quot;,&quot;tumblelogAvatar128&quot;:&quot;https:\/\/64.media.tumblr.com\/avatar_a2527a6f3e2d_128.pnj&quot;,&quot;tumblelogHost&quot;:&quot;https:\/\/myabortionstory.tumblr.com&quot;,&quot;hasCustomDomain&quot;:false,&quot;isOptica&quot;:false,&quot;isCustomTheme&quot;:true,&quot;themeHeaderImage&quot;:&quot;https:\/\/static.tumblr.com\/dfa15f1d41aaec541ac06957f99fb5c0\/tautxw0\/pq8owmybw\/tumblr_static_tumblr_static_aehu0jc2g3k00c0k08kg4kw48_focused_v3.jpg&quot;,&quot;themeBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;themeTitleColor&quot;:&quot;#444444&quot;,&quot;themeAccentColor&quot;:&quot;#529ECC&quot;,&quot;brag&quot;:true,&quot;canShowAd&quot;:true,&quot;isPremium&quot;:false,&quot;showLrecAds&quot;:false,&quot;showStickyLrecBackfill&quot;:false,&quot;showGeminiAds&quot;:false,&quot;geminiSectionCodeDesktop&quot;:&quot;a10bca9c-0c5d-4a02-ab13-14ab8513d81d&quot;,&quot;geminiSectionCodeMobile&quot;:&quot;ced63809-b609-4aca-96a0-abc099acba6b&quot;,&quot;currentPageType&quot;:&quot;blog&quot;,&quot;currentPage&quot;:1,&quot;searchQuery&quot;:&quot;&quot;,&quot;tag&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;chrono&quot;:false,&quot;postId&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/myabortionstory.tumblr.com\/&quot;,&quot;postUrl&quot;:&quot;&quot;,&quot;openInPeeprUrl&quot;:&quot;https:\/\/www.tumblr.com\/myabortionstory&quot;,&quot;isBlocked&quot;:null,&quot;isAdmin&quot;:false,&quot;lookupButtonUrl&quot;:&quot;&quot;,&quot;showSpamButton&quot;:false,&quot;showRootPostButton&quot;:false,&quot;rootPostUrl&quot;:&quot;&quot;,&quot;showRadarPostButton&quot;:false,&quot;radarKeys&quot;:&quot;&quot;,&quot;isUniblocked&quot;:false,&quot;isNsfw&quot;:false,&quot;isAdult&quot;:false,&quot;isSpam&quot;:false,&quot;isPrimaryBlog&quot;:false,&quot;canEdit&quot;:false,&quot;canReblogSelf&quot;:false,&quot;showLikeButton&quot;:false,&quot;showReblogButton&quot;:false,&quot;reblogUrl&quot;:&quot;&quot;,&quot;showMessagingButton&quot;:false,&quot;loginCheckIframeSrc&quot;:&quot;https:\/\/assets.tumblr.com\/assets\/html\/iframe\/login_check.html?_v=3de94a184d600617102ddd5b48fb36e9&quot;,&quot;appInstallUrls&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_continue_or_install_cta&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_continue_or_install_cta\u0026mt=8&quot;},&quot;appOpenReferrer&quot;:&quot;bn_header_open_btn&quot;,&quot;isShowSearch&quot;:true,&quot;supplyLogging&quot;:[],&quot;secondsSinceLastActivity&quot;:-1,&quot;installUrlOpenFailed&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_header_app_open_failed&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_header_app_open_failed\u0026mt=8&quot;},&quot;loginWallVariant&quot;:&quot;small_center&quot;},&quot;CommunityLabels&quot;:{&quot;has_community_label&quot;:false,&quot;is_single&quot;:false,&quot;redirect_target&quot;:null}},&quot;Flags&quot;:{&quot;features&quot;:&quot;eyJmaWx0ZXJfbnNmdyI6dHJ1ZSwibW9iaWxlX3dlYl9nYXRlIjp0cnVlLCJzYWZlX21vZGUiOnRydWUsInNhZmVfbW9kZV9lbmFibGVkIjp0cnVlLCJrZXljb21tYW5kX2F1dG9fcGFnaW5hdGUiOnRydWUsImxvZ2dlZF9vdXRfc2VhcmNoIjp0cnVlLCJrcmFrZW5fd2ViX2xvZ2dpbmdfbGlicmFyeSI6dHJ1ZSwibGl2ZXBob3Rvc193ZWIiOnRydWUsInVzZXJfdGFnX2ZpbHRlcmluZyI6dHJ1ZSwic2FmZV9tb2RlX293bl9wb3N0Ijp0cnVlLCJwcm9qZWN0X3hfYXBwZWFsIjp0cnVlLCJtb2JpbGVfd2ViX3Bob3Rvc2V0cyI6dHJ1ZSwiaGlkZV9kZWZhdWx0X2hlYWRlcnNfYmxvZ19jYXJkcyI6dHJ1ZSwibm90aWZpY2F0aW9uX3JlcGx5X2xpbmtfdG9fbm90ZXMiOnRydWUsInR5cGluZ19pbmRpY2F0b3Jfd3JpdGUiOnRydWUsInR1bWJscl92aWRlb19zcG9uc29yZWRfZGF5Ijp0cnVlLCJjYXB0Y2hhOnVzZV9yZWNhcHRjaGEyIjp0cnVlLCJsaXR0bGVfc2lzdGVyIjp0cnVlLCJlbmFibGVfanNfZXJyb3JzX2xvZyI6dHJ1ZSwibG9nX2xhZHkiOnRydWUsInJlZHBvcF9wb3N0X2Zvcm1fbW9iaWxlX2NyZWF0ZSI6dHJ1ZSwibGVnYWN5X3Bvc3RfZm9ybV9idXR0b25zX2xpbmtfdG9fcmVkcG9wIjp0cnVlLCJzaG93X3RzcF9jbGlja190aHJvdWdoX3RvZ2dsZSI6dHJ1ZSwiZGFybGFfYWRfZmVlZGJhY2siOnRydWUsInN0YXR1c19pbmRpY2F0b3IiOnRydWUsImNvbnZlcnNhdGlvbmFsX25vdGlmaWNhdGlvbnMiOnRydWUsImRpc2FibGVfeWFob29fYl9jb29raWUiOnRydWUsImxpdmVwaG90b3MiOnRydWUsImNvbW11bml0eV9sYWJlbHMiOnRydWV9&quot;},&quot;Context&quot;:{&quot;name&quot;:&quot;default&quot;,&quot;time&quot;:1714470998000,&quot;userinfo&quot;:{&quot;primary&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;channels&quot;:[]},&quot;hosts&quot;:{&quot;assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;secure_assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;secure_www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;embed_host&quot;:&quot;https:\/\/embed.tumblr.com&quot;,&quot;safe_host&quot;:&quot;https:\/\/safe.txmblr.com&quot;,&quot;platform_host&quot;:&quot;https:\/\/platform.tumblr.com&quot;},&quot;language&quot;:&quot;en_US&quot;,&quot;language_simple&quot;:&quot;en&quot;,&quot;assets&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/&quot;},&quot;Translations&quot;:{&quot;%1$sReport %2$s&#039;s post?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;,&quot;%1$sReport %2$s&#039;s reply?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;,&quot;%1$sDelete your tip??%2$s&quot;:&quot;%1$sDelete your tip?%2$s&quot;,&quot;Deleting your tip&quot;:&quot;Deleting your tip will only remove it from the replies tab and notes. %1$sYou won&#039;t receive a refund of your tip.%2$s For further help contact %3$sTumblr Support%4$s.&quot;}}"></noscript><script src="https://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=67fbead607764bb56fdea64cc12b80d7"></script></body>
+
+</html>

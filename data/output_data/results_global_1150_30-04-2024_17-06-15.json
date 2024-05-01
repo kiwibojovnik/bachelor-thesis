@@ -1,0 +1,1142 @@
+{
+    "https://shadowsocks.org": {
+        "Time": 7.53,
+        "URL": "https://shadowsocks.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.96.9",
+            "188.114.97.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.97.9",
+        "PING Status": "OK",
+        "PING IP": "188.114.97.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 18306,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 14:57:48 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Last-Modified": "Thu, 07 Sep 2023 00:35:35 GMT",
+            "Vary": "Accept-Encoding",
+            "Access-Control-Allow-Origin": "*",
+            "expires": "Tue, 30 Apr 2024 15:07:20 GMT",
+            "Cache-Control": "max-age=600",
+            "x-proxy-cache": "HIT",
+            "X-GitHub-Request-Id": "3922:2A2292:3E058:48474:663106EC",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=25AfeFl3eaP2adfFwooj5Ce4HvIjo953GceWj1WVRgYz683ZlzFP2JpWHpLCzd1sZ%2FjGhGKBYmn6RfOvgc%2Fx0PXiM8sCew4rq0PX9Sclb4E9AFF9jd3RZuKqsNHcyGAGY2o%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Strict-Transport-Security": "max-age=15552000; includeSubDomains; preload",
+            "X-Content-Type-Options": "nosniff",
+            "Server": "cloudflare",
+            "CF-RAY": "87c862e3bf2d0535-OTP",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "shadowsocks.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "shadowsocks.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "73A833E704C39A2D0E1B974E4605117B",
+            "notBefore": "Mar 29 15:03:45 2024 GMT",
+            "notAfter": "Jun 27 15:03:44 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "shadowsocks.org"
+                ],
+                [
+                    "DNS",
+                    "*.shadowsocks.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/ePh4LAm2AFU"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/wwr0ZEZLzmA.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 16:57:54"
+    },
+    "https://www.health.com": {
+        "Time": 59.31,
+        "URL": "https://www.health.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "199.232.18.137"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "199.232.18.137",
+        "PING Status": "OK",
+        "PING IP": "199.232.18.137",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 405,
+        "Content Length": 23,
+        "Headers": {
+            "Connection": "close",
+            "Content-Length": "23",
+            "Server": "Varnish",
+            "Retry-After": "0",
+            "Accept-Ranges": "bytes",
+            "Date": "Tue, 30 Apr 2024 14:58:43 GMT",
+            "Via": "1.1 varnish",
+            "X-Served-By": "cache-vie6364-VIE",
+            "X-Cache": "MISS",
+            "X-Cache-Hits": "0",
+            "NEL": "{\"report_to\":\"network-errors\",\"max_age\":2592000,\"success_fraction\":0,\"failure_fraction\":1.0, \"include_subdomains\": true}",
+            "Report-To": "{\"group\":\"network-errors\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://r.3gl.net/hawklogserver/7818/re.p\"}]}"
+        },
+        "HTML Content": "www.health.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "health.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03762E94D839B2CCCA13E8E399923F9F0BF4",
+            "notBefore": "Apr 10 08:02:23 2024 GMT",
+            "notAfter": "Jul  9 08:02:22 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.health.com"
+                ],
+                [
+                    "DNS",
+                    "health.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 16:59:25"
+    },
+    "https://www.musixmatch.com": {
+        "Time": 4.54,
+        "URL": "https://www.musixmatch.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "199.232.18.49"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "199.232.18.49",
+        "PING Status": "OK",
+        "PING IP": "199.232.18.49",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 76632,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "16667",
+            "Cache-Control": ", no-cache=\"set-cookie\"",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html; charset=utf-8",
+            "ETag": "\"3qtm4h971v1n4h\"",
+            "X-Powered-By": "Next.js",
+            "Via": "1.1 varnish, 1.1 varnish",
+            "Accept-Ranges": "bytes",
+            "Date": "Tue, 30 Apr 2024 15:00:17 GMT",
+            "Age": "260",
+            "GEOIP_CITY_COUNTRY_CODE": "CZ",
+            "GEOIP_CITY_COUNTRY_NAME": "czech republic",
+            "GEOIP_CITY": "brno",
+            "GEOIP_LATITUDE": "49.190",
+            "GEOIP_LONGITUDE": "16.580",
+            "GEOIP_REGION": "64",
+            "x-mxm-restarts": "0",
+            "Set-Cookie": "mxm_bab=BB; Expires=Fri, 28 Apr 2034 15:00:17 GMT; Path=/",
+            "X-Served-By": "cache-iad-kjyo7100137-IAD, cache-vie6360-VIE",
+            "X-Cache": "HIT, HIT",
+            "X-Cache-Hits": "73, 2",
+            "X-Timer": "S1714489217.474086,VS0,VE0",
+            "Vary": "Accept-Encoding, X-User-Agent, X-User-Agent"
+        },
+        "HTML Content": "www.musixmatch.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.musixmatch.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Atlas R3 DV TLS CA 2024 Q1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "010DF8DEE2BF1E33432B5E470DB35AFB",
+            "notBefore": "Feb 19 15:50:11 2024 GMT",
+            "notAfter": "Mar 22 15:50:10 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.musixmatch.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/ca/gsatlasr3dvtlsca2024q1"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsatlasr3dvtlsca2024q1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/ca/gsatlasr3dvtlsca2024q1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 17:00:21"
+    },
+    "https://www.genymotion.com": {
+        "Time": 4.71,
+        "URL": "https://www.genymotion.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.16.58.17",
+            "104.16.59.17"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.16.58.17",
+        "PING Status": "OK",
+        "PING IP": "104.16.58.17",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 329159,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 15:01:05 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "link": "<https://www.genymotion.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.genymotion.com/wp-json/wp/v2/pages/18446>; rel=\"alternate\"; type=\"application/json\", <https://www.genymotion.com/>; rel=shortlink",
+            "strict-transport-security": "max-age=31536000",
+            "x-xss-protection": "0",
+            "x-content-type-options": "nosniff",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "x-frame-options": "SAMEORIGIN",
+            "permissions-policy": "",
+            "x-lsadc-cache": "hit",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87c867b2aa7eb33b-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.genymotion.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "genymotion.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04DF2FB75D0B1915CAB528E067DF1B859D25",
+            "notBefore": "Apr 10 01:47:53 2024 GMT",
+            "notAfter": "Jul  9 01:47:52 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.genymotion.com"
+                ],
+                [
+                    "DNS",
+                    "genymotion.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 17:01:09"
+    },
+    "https://www.tawk.to": {
+        "Time": 11.98,
+        "URL": "https://www.tawk.to",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.22.24.131",
+            "104.22.25.131",
+            "172.67.38.66"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.24.131",
+        "PING Status": "OK",
+        "PING IP": "104.22.24.131",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 225180,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 15:01:41 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Cookie",
+            "Cache-Control": "max-age=3, must-revalidate",
+            "CF-Cache-Status": "DYNAMIC",
+            "Strict-Transport-Security": "max-age=0; includeSubDomains; preload",
+            "X-Content-Type-Options": "nosniff",
+            "Server": "cloudflare",
+            "CF-RAY": "87c8688f7f47b366-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.tawk.to_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "tawk.to"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "A2DCA9981BDE4D730E13804F6BDB6449",
+            "notBefore": "Mar 28 00:13:59 2024 GMT",
+            "notAfter": "Jun 26 00:13:58 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "tawk.to"
+                ],
+                [
+                    "DNS",
+                    "*.tawk.to"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/tObRkf52dsE"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/_7T6Mrwy7MI.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 17:01:51"
+    },
+    "https://9gag.com": {
+        "Time": 4.46,
+        "URL": "https://9gag.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.16.103.144",
+            "104.16.104.144",
+            "104.16.105.144",
+            "104.16.106.144",
+            "104.16.107.144"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.16.103.144",
+        "PING Status": "OK",
+        "PING IP": "104.16.103.144",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 148121,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 15:02:24 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87c869a0cdf1b34e-PRG",
+            "CF-Cache-Status": "HIT",
+            "Age": "23",
+            "Cache-Control": "public, max-age=300, s-maxage=60",
+            "Content-Encoding": "gzip",
+            "Last-Modified": "Tue, 30 Apr 2024 15:02:01 GMT",
+            "Set-Cookie": "____ri=5645; Max-Age=3153600; Secure; Path=/; Domain=.9gag.com, ____lo=CZ; Max-Age=3153600; Secure; Path=/; Domain=.9gag.com",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "Vary": "Accept-Encoding",
+            "Via": "1.1 a1098f0eeab192209962e3a9d76d0338.cloudfront.net (CloudFront)",
+            "x-amz-cf-id": "8XzI2ks4rS-0rFqFhoqAtHVv5rNrd9hTH7m6aQmcKwE9nZpsYyMudQ==",
+            "x-amz-cf-pop": "FRA50-C1",
+            "x-cache": "Miss from cloudfront",
+            "x-frame-options": "SAMEORIGIN",
+            "Server": "cloudflare"
+        },
+        "HTML Content": "9gag.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "9gag.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "044B61DF118F7E084BBAF1CFBCB524158B9B",
+            "notBefore": "Apr  1 02:16:37 2024 GMT",
+            "notAfter": "Jun 30 02:16:36 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "9gag.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 17:02:27"
+    },
+    "https://www.overdrive.com": {
+        "Time": 8.86,
+        "URL": "https://www.overdrive.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "52.224.33.14"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "52.224.33.14",
+        "PING Status": "OK",
+        "PING IP": "52.224.33.14",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 39399,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 15:03:22 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "39399",
+            "Connection": "keep-alive",
+            "Cache-Control": "private",
+            "Region": "US - East",
+            "X-Frame-Options": "deny",
+            "X-UA-Compatible": "IE=edge",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+            "X-Content-Type-Options": "nosniff",
+            "Referrer-Policy": "no-referrer",
+            "Permissions-Policy": "vr=(), midi=()"
+        },
+        "HTML Content": "www.overdrive.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.overdrive.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0488800295F094415EF831FADC83BE9EEC4A",
+            "notBefore": "Apr 15 18:24:35 2024 GMT",
+            "notAfter": "Jul 14 18:24:34 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.overdrive.com"
+                ],
+                [
+                    "DNS",
+                    "overdrive.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 17:03:29"
+    },
+    "https://www.bbm.com": {
+        "Time": 29.64,
+        "URL": "https://www.bbm.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "74.82.70.131"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "74.82.70.131",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "100.73.0.4",
+                0.0023670196533203125
+            ],
+            [
+                "147.251.243.80",
+                0.020732879638671875
+            ],
+            [
+                "147.251.242.195",
+                0.008612871170043945
+            ],
+            [
+                "147.251.242.195",
+                0.002370119094848633
+            ],
+            [
+                "147.251.242.194",
+                0.015991926193237305
+            ],
+            [
+                "147.251.241.129",
+                0.024171113967895508
+            ],
+            [
+                "62.40.98.158",
+                0.025688886642456055
+            ],
+            [
+                "62.40.98.158",
+                0.025742053985595703
+            ],
+            [
+                "62.40.98.20",
+                0.025190114974975586
+            ],
+            [
+                "64.125.23.117",
+                0.10251688957214355
+            ],
+            [
+                "66.46.193.234",
+                0.10225415229797363
+            ],
+            [
+                "66.46.193.234",
+                0.10117983818054199
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.blackberry.com/bbme",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "65.9.95.30",
+                "65.9.95.31",
+                "65.9.95.67",
+                "65.9.95.80"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 175165,
+        "Headers": {
+            "Content-Type": "text/html;charset=utf-8",
+            "Content-Length": "48336",
+            "Connection": "keep-alive",
+            "Date": "Tue, 30 Apr 2024 13:22:36 GMT",
+            "Set-Cookie": "AWSALB=5CB8ag/3foqN8KgLIc1Fey/jfUflEdNdbx1rPUPPayh3nuGjA9nK8bSkO++eP6dvT3gk+ufJJr14sW6zspztNAsa5+CerBngas6mtPn+BeInmpxxPcAIW2JBlKU6; Expires=Tue, 07 May 2024 13:22:36 GMT; Path=/, AWSALBCORS=5CB8ag/3foqN8KgLIc1Fey/jfUflEdNdbx1rPUPPayh3nuGjA9nK8bSkO++eP6dvT3gk+ufJJr14sW6zspztNAsa5+CerBngas6mtPn+BeInmpxxPcAIW2JBlKU6; Expires=Tue, 07 May 2024 13:22:36 GMT; Path=/; SameSite=None; Secure",
+            "Server": "Apache",
+            "X-Dispatcher": "dispatcher2uswest2",
+            "X-Vhost": "publish",
+            "Strict-Transport-Security": "max-age=63072000; includeSubdomains;",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Last-Modified": "Tue, 30 Apr 2024 13:09:43 GMT",
+            "ETag": "\"2ac3d-617501556edfc-gzip\"",
+            "Accept-Ranges": "bytes",
+            "Content-Encoding": "gzip",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Content-Security-Policy": "frame-ancestors 'self'; base-uri 'self';upgrade-insecure-requests;",
+            "Vary": "Accept-Encoding",
+            "X-Cache": "Hit from cloudfront",
+            "Via": "1.1 2a5c925255bb252ff0ed65977311f74e.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "PRG50-C1",
+            "X-Amz-Cf-Id": "2tzp76GGR9wSYap1ra3Zov6no20PKrle_gkTmVQBDbhEwY56jZFOsw==",
+            "Age": "6099"
+        },
+        "HTML Content": "www.bbm.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "CA"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Ontario"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Waterloo"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "BlackBerry Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.bbm.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "041F24EF694694B03A5FD468BB331F66",
+            "notBefore": "Jan  8 00:00:00 2024 GMT",
+            "notAfter": "Jan 14 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.bbm.com"
+                ],
+                [
+                    "DNS",
+                    "bbm.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 17:04:24"
+    },
+    "https://medium.com": {
+        "Time": 4.01,
+        "URL": "https://medium.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "162.159.152.4",
+            "162.159.153.4"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "162.159.153.4",
+        "PING Status": "OK",
+        "PING IP": "162.159.153.4",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 141571,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 15:04:59 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87c86d6c8a9cb342-PRG",
+            "CF-Cache-Status": "HIT",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Encoding": "gzip",
+            "ETag": "W/\"228c4-FCZ4E4IN3h/FR+e3zxfES2+qztE\"",
+            "Expires": "Tue, 30 Apr 2024 17:04:59 GMT",
+            "Link": "<https://glyph.medium.com/css/unbound.css>; as=\"style\"; rel=\"preload\"",
+            "Set-Cookie": "uid=lo_26afd09497a3; Domain=medium.com; Path=/; Expires=Wed, 30 Apr 2025 15:04:59 GMT; HttpOnly; Secure; SameSite=None",
+            "Strict-Transport-Security": "max-age=15552000; includeSubDomains; preload",
+            "Vary": "Accept-Encoding",
+            "content-security-policy": "frame-ancestors 'self' https://medium.com",
+            "medium-fulfilled-by": "edgy/8.7.1, valencia/main-20240426-135602-78e7a4989d, lite/main-20240430-091527-65b33d76c9, rito/main-20240430-133330-7713b4a87e, tutu/main-20240430-122243-866a18df63",
+            "medium-missing-time": "166",
+            "worker-cache-key": "medium.com/?li=false&gate-enable_recommended_tags_query=true&exp-enable_mobile_lohp_short_hero=experiment",
+            "worker-cache-middleware": "true",
+            "worker-missing-cookies": "1",
+            "X-Content-Type-Options": "nosniff",
+            "x-envoy-upstream-service-time": "396",
+            "x-request-received-at": "1714488743513",
+            "Server": "cloudflare",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "medium.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "medium.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0FA30F1D85175484CD8CD04286BC3DA7",
+            "notBefore": "Feb 16 00:00:00 2024 GMT",
+            "notAfter": "Dec 31 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.medium.com"
+                ],
+                [
+                    "DNS",
+                    "medium.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 17:05:03"
+    },
+    "https://www.chess.com": {
+        "Time": 5.68,
+        "URL": "https://www.chess.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.18.137.67",
+            "104.18.138.67",
+            "104.18.139.67",
+            "104.18.140.67",
+            "104.18.141.67"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.18.140.67",
+        "PING Status": "OK",
+        "PING IP": "104.18.140.67",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 62182,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 15:06:10 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "set-cookie": "ATTRIBUTION_V1=%7B%22initialAttribution%22%3A%7B%22source%22%3A%22unknown%22%2C%22medium%22%3A%22unknown%22%2C%22campaign%22%3Anull%2C%22term%22%3Anull%2C%22content%22%3Anull%2C%22route%22%3A%22%5C%2F%22%2C%22referer%22%3A%22unknown%22%2C%22version%22%3A%221.0.0%22%2C%22createDateTime%22%3A%221714489570%22%7D%2C%22lastAttribution%22%3Anull%7D; expires=Thu, 30 May 2024 15:06:10 GMT; Max-Age=2592000; path=/; domain=chess.com, PHPSESSID=5a87d6323fb3f0eb2d945f766d5290ea; path=/; domain=.chess.com; secure; HttpOnly; SameSite=lax, asset_push=20240430053252%3B54805; expires=Fri, 10-May-2024 15:06:10 GMT; Max-Age=864000; path=/; domain=www.chess.com; httponly; samesite=lax, visitorid=%3A3211%3Affff%3A147.251.13.180; expires=Wed, 30-Apr-2025 15:06:10 GMT; Max-Age=31536000; path=/; httponly; samesite=lax, me=%7B%22deviceId%22%3A%222d6df0b0-0703-11ef-97b6-d74eb39552e3%22%7D; expires=Wed, 30-Apr-2025 15:06:10 GMT; Max-Age=31536000; path=/; domain=chess.com; samesite=strict, __cf_bm=q.Hva8AwDAEYtKz58CYo5FRAaM1x3407U9cxWXN33OU-1714489570-1.0.1.1-U0XCASE1tpOEJro.uB9tZ7dLzila4WlmVpfNVCxREeq9YpqEVhg7DTsaLExo5NreddQHrukKSrHOrn_cLVTf4yExTYHPaRNFY4It90bLja8; path=/; expires=Tue, 30-Apr-24 15:36:10 GMT; domain=.chess.com; HttpOnly; Secure; SameSite=None",
+            "Cache-Control": "no-cache, private",
+            "x-content-type-options": "nosniff",
+            "x-chesscom-version": "20240430053252",
+            "x-chesscom-matched": "web_index",
+            "x-chesscom-request-id-lb": "15f2ce2c34b16e8b2380c2969f8d204d",
+            "x-chesscom-request-id-cdn": "87c86f23dc7fb365-IAD",
+            "x-frame-options": "SAMEORIGIN",
+            "content-security-policy": "frame-ancestors 'self'",
+            "link": "</bundles/app/css/main.client.69816d79.css>; rel=\"preload\"; as=\"style\",</bundles/app/css/sprites.client.9c0efdbe.css>; rel=\"preload\"; as=\"style\",</bundles/app/css/alerts.client.92ebf452.css>; rel=\"preload\"; as=\"style\",</bundles/app/css/navigation.client.1a3d8a00.css>; rel=\"preload\"; as=\"style\",</bundles/app/css/navigation-footer.client.5f7c9f75.css>; rel=\"preload\"; as=\"style\",</bundles/app/css/cookie-consent-manager.client.2fd61426.css>; rel=\"preload\"; as=\"style\",</bundles/app/css/content.client.8c714abb.css>; rel=\"preload\"; as=\"style\",</bundles/app/css/layout.client.3a501b84.css>; rel=\"preload\"; as=\"style\",</bundles/app/css/index.client.162b92e0.css>; rel=\"preload\"; as=\"style\"",
+            "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+            "Content-Encoding": "gzip",
+            "Last-Modified": "Tue, 30 Apr 2024 15:06:10 GMT",
+            "CF-Cache-Status": "MISS",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=rWQ%2FGp30MWAeCqmK4dNqBZYos54MgS5muckcqkRKPAETFB286yVj6iDa7sG%2BHxc8niyrJBiF4tY9IJVxyu%2BxMMKWlJ7bWU%2FIU7F97B18YLu3Bh3LaVYCrCDYG8W7aV4%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":1,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c86f23dc7fb365-PRG",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.chess.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.chess.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "099CCBD851F2348FF90E73603522D188",
+            "notBefore": "Oct 16 00:00:00 2023 GMT",
+            "notAfter": "Oct 14 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.chess.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 17:06:14"
+    }
+}

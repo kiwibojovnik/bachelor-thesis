@@ -1,0 +1,976 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<title>Sexy Lingerie ~ Find Luxury Lingerie &amp; Womens Underwear at Lingerie.co.uk</title>
+<meta name="description" content="Lingerie.co.uk is a great online lingerie store, where women can find a wide range of sexy underwear and lace lingerie, as well as suspender belts, plus size lingerie and accessories like garter and gloves." />
+<meta name="keywords" content="sexy lingerie, luxury lingerie, online lingerie store, lingerie store, sexy underwear, lace lingerie" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="https://www.lingerie.co.uk/media/favicon/stores/1/favicon_s.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://www.lingerie.co.uk/media/favicon/stores/1/favicon_s.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'https://www.lingerie.co.uk/media/blank.html';
+    var BLANK_IMG = 'https://www.lingerie.co.uk/media/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://www.lingerie.co.uk/media/css_secure/b3ed8c0328464d9d3726d1b5b7611bc1.css" />
+<link rel="stylesheet" type="text/css" href="https://www.lingerie.co.uk/media/css_secure/1a955f172d169c2d337588ac199f73b7.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.lingerie.co.uk/media/css_secure/c4a1c6ec600a9f0820053fac2b33e5b4.css" media="print" />
+<script type="text/javascript" src="https://www.lingerie.co.uk/media/js/28b7b8f9b3d97a2b0fa0df4676a19ccd.js"></script>
+<link href="https://www.lingerie.co.uk/rss/catalog/new/store_id/1/" title="New Products" rel="alternate" type="application/rss+xml" />
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="https://www.lingerie.co.uk/media/css_secure/ef724acfecd997110bc8b66e74a89701.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="https://www.lingerie.co.uk/media/js/8b9d0ffa634b16424a32cce2a8648aa3.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://www.lingerie.co.uk/media/js/f009c963a340ad89e21eabdd4de391fc.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.lingerie.co.uk';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+Calendar._DN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; // full day names
+Calendar._SDN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]; // short day names
+Calendar._FD = 1; // First day of the week. "0" means display Sunday first, "1" means display Monday first, etc.
+Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; // full month names
+Calendar._SMN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; // short month names
+Calendar._am = "AM"; // am/pm
+Calendar._pm = "PM";
+
+// tooltips
+Calendar._TT = {};
+Calendar._TT["INFO"] = "About the calendar";
+
+Calendar._TT["ABOUT"] =
+"DHTML Date/Time Selector\n" +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL. See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Date selection:\n" +
+"- Use the \xab, \xbb buttons to select year\n" +
+"- Use the " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " buttons to select month\n" +
+"- Hold mouse button on any of the above buttons for faster selection.";
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Time selection:\n" +
+"- Click on any of the time parts to increase it\n" +
+"- or Shift-click to decrease it\n" +
+"- or click and drag for faster selection.";
+
+Calendar._TT["PREV_YEAR"] = "Prev. year (hold for menu)";
+Calendar._TT["PREV_MONTH"] = "Prev. month (hold for menu)";
+Calendar._TT["GO_TODAY"] = "Go Today";
+Calendar._TT["NEXT_MONTH"] = "Next month (hold for menu)";
+Calendar._TT["NEXT_YEAR"] = "Next year (hold for menu)";
+Calendar._TT["SEL_DATE"] = "Select date";
+Calendar._TT["DRAG_TO_MOVE"] = "Drag to move";
+Calendar._TT["PART_TODAY"] = ' (' + "Today" + ')';
+
+// the following is to inform that "%s" is to be the first day of week
+Calendar._TT["DAY_FIRST"] = "Display %s first";
+
+// This may be locale-dependent. It specifies the week-end days, as an array
+// of comma-separated numbers. The numbers are from 0 to 6: 0 means Sunday, 1
+// means Monday, etc.
+Calendar._TT["WEEKEND"] = "0,6";
+
+Calendar._TT["CLOSE"] = "Close";
+Calendar._TT["TODAY"] = "Today";
+Calendar._TT["TIME_PART"] = "(Shift-)Click or drag to change value";
+
+// date formats
+Calendar._TT["DEF_DATE_FORMAT"] = "%e %b %Y";
+Calendar._TT["TT_DATE_FORMAT"] = "%e %B %Y";
+
+Calendar._TT["WK"] = "Week";
+Calendar._TT["TIME"] = "Time:";
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><link href='//fonts.googleapis.com/css?family=Abel:300,400,700' rel='stylesheet' type='text/css'>
+<style>
+/**** GOOGLE webfont ****/
+button.button span span, button.invert span span, .std h1, .std h2, .std h3, .std h4, .page-title h1, .page-title h2,
+.cart-top-container .details ol li.subtotal, .connect-newsletter-block .footer-connect h4, .connect-newsletter-block .footer-subscribe .title,
+footer .f-block h4, #olegnaxNav>li>a, #olegnaxNav li.menu-category-description strong, #nav>li>a, .slideshow li .slide-text,
+.banners a div, .slider-container h3, .category-description h1, .category-description strong, .products-grid h3, .products-list .product-name a,
+#shopping-cart-totals-table strong, .cart .cart-collaterals .col2-set h2, .related h2, #product-customer-reviews .review-title,
+.add-review h3.title, #customer-reviews dt a, #customer-reviews .form-add h2, .opc .step-title, .opc h3, .block .block-title strong,
+.block-poll .question, .block-layered-nav dt, .product-tabs a, .product-view h1, .product-view h2, .product-view .qty-container label,
+.product-view .box-tags h3, .product-view .product-additional h3, .about-container h3, #nav li.custom-block ul li strong,
+#olegnaxNav li.custom-block div.sub-wrapper strong
+{ font-family: 'Abel', sans-serif; }
+/**** THEME color ****/
+button.button span, .block .block-content .actions button.button:hover span, .data-table tfoot button.button:hover span, button.invert:hover span ,
+header .header-dropdown, .connect-newsletter-block .footer-connect a:hover,
+.menu-container, .slide-timeline, .slider-container .jcarousel-list .add-to-links a, .pager .pages li a.next span, .pager .pages li a.previous span,
+.products-grid .add-to-links a, .products-list .add-to-links a, .related .jcarousel-list .add-to-links a, .product-view .add-to-links li span.icon,
+.product-view .add-to-links li.email-friend span.icon, .product-view .product-additional ul li:hover span.arrow, .about-container .features ul li:hover span.arrow,
+.product-next:hover, .product-prev:hover, #olegnaxNav ul li.active > a, #olegnaxNav ul li.over > a, #olegnaxNav ul li a:hover,
+#nav ul li.active > a, #nav ul li.over > a, #nav ul li a:hover, .jcarousel-next-horizontal:hover, .jcarousel-prev-horizontal:hover
+{ background-color:#392420; }
+h1, h2, h3, .std h1, .std h2, .std h3, .std h4, .cart-top-container .details ol li.subtotal, .cart-top-container .details ol li.item strong,
+.cart-top-container .details ol li.item .price, .cart-top-container .cart-promotion, .connect-newsletter-block .footer-connect h4,
+.connect-newsletter-block .footer-subscribe .title, footer a, .search-autocomplete ul li, .price-box .price, .slideshow li .slide-text,
+.banners a div, .slider-container h3, .category-description h1, .category-description strong, .products-grid h3, .products-list .product-name a,
+#shopping-cart-totals-table strong, .cart .cart-collaterals .col2-set h2, .data-table td a, .related h2, #product-customer-reviews .review-title,
+.block .block-title, .block-poll .question, .block-layered-nav dt, .product-tabs a, .product-view h1, .product-view h2, .product-view .qty-container label,
+.product-view .product-additional h3, .about-container h3, footer .f-block h4, .page-title h1, .page-title h2, #nav li.custom-block ul li strong,
+#olegnaxNav li.custom-block div.sub-wrapper strong
+{ color:#392420; }
+button.button:hover span span, button.invert span span, #olegnaxNav>li>a:hover, #olegnaxNav>li.over>a, #olegnaxNav>li.active>a, #nav>li>a:hover, #nav>li.over>a, #nav>li.active>a
+{ color:#666666 }
+.cart-top > a {color:#666666}
+a.product-image:after {-moz-box-shadow:inset 0 0 6px rgba(57,36,32,0.18); -webkit-box-shadow:inset 0 0 6px rgba(57,36,32,0.18); box-shadow:inset 0 0 6px rgba(57,36,32,0.18); }
+.product-image em {border:1px solid rgba(57,36,32,0.08);}
+.slideshow-nav a {background:rgba(57,36,32,0.12); }
+.slideshow-nav a:hover, .slideshow-nav a.activeSlide {background:rgba(57,36,32,1);}
+.pager .pages li a.next:hover span span, .pager .pages li a.previous:hover span span { color:rgba(57,36,32,0.8) }
+.sorter .view-mode a:hover, .sorter .view-mode strong.grid, .sorter .view-mode strong.list { background-color:rgba(57,36,32,0.1);  }
+.sorter .sort-by a:hover { background-color:rgba(57,36,32,0.1); }
+.product-view .product-img-box .product-image a:after { -moz-box-shadow:inset 0 0 6px rgba(57,36,32,0.18); -webkit-box-shadow:inset 0 0 6px rgba(57,36,32,0.18); box-shadow:inset 0 0 6px rgba(57,36,32,0.18);}
+.product-view .product-img-box .product-image a em { border:1px solid rgba(57,36,32,0.08);}
+.block .block-content .actions button.button span, .data-table tfoot button.button span, button.invert span {background:#f3f3f3;}
+.block .block-content .actions button.button:hover span span,.data-table tfoot button.button:hover span span,button.invert:hover span span { border:1px solid rgba(255,255,255,0.11); color:rgba(255,255,255,0.80); }
+/**** HEADER BG color ****/
+.header-container { background-color:#f9f9f9; }
+/**** HEADER color ****/
+.header-info-container { color:#666666; }
+/**** HEADER pattern ****/
+.header-container {background-image:url('https://www.lingerie.co.uk/media/olegnax/chocolat/patterns/04.png');}
+/**** HEADER border ****/
+.bottom-border-bg {background-image:url('https://www.lingerie.co.uk/media/olegnax/chocolat/borders/01.png');}
+/**** toolbar_bg ****/
+.top-switch-bg {background-color:#ffffff}
+/**** toolbar_color ****/
+header .links li a, header .header-switch span.current {color:#1d1c1b}
+/**** footer BG color ****/
+.footer-wrapper { background-color:transparent; }
+/**** footer color ****/
+.footer-container, footer .f-block ul.twitterList li span.time-ago { color:#888888; }
+/**** footer border ****/
+.footer-wrapper {background-image:url('https://www.lingerie.co.uk/media/olegnax/chocolat/borders/f01.png');}
+/**** price font ****/
+.price-box { font-family: 'Abel', sans-serif; }
+
+</style></head>
+<body class="  cms-index-index cms-home">
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+<!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<script type="text/javascript" >
+//<![CDATA[
+    var _gaq = _gaq || [];
+    
+_gaq.push(['_setAccount', 'UA-684118-2']);
+_gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        
+<!-- HEADER BOF -->
+<div class="header-container">
+    <div class="top-switch-bg"></div>
+    <div class="bottom-border-bg"></div>
+    <header>
+	    <div class="top-switch-container clearfix">
+		    
+<!-- LANGUAGES BOF -->
+<!-- LANGUAGES EOF -->            
+<!-- Currency BOF -->
+<div class="header-switch currency-switch">
+    <span>Currency:</span>
+    <span class="current">GBP</span>
+    <div class="header-dropdown">
+        <span class="title">Currency:</span>
+        <ul><li><a href="https://www.lingerie.co.uk/directory/currency/switch/currency/GBP/uenc/aHR0cHM6Ly93d3cubGluZ2VyaWUuY28udWsv/"  class="selected"><span>British Pound Sterling - GBP</span></a></li><li><a href="https://www.lingerie.co.uk/directory/currency/switch/currency/EUR/uenc/aHR0cHM6Ly93d3cubGluZ2VyaWUuY28udWsv/" ><span>Euro - EUR</span></a></li><li><a href="https://www.lingerie.co.uk/directory/currency/switch/currency/USD/uenc/aHR0cHM6Ly93d3cubGluZ2VyaWUuY28udWsv/" ><span>US Dollar - USD</span></a></li></ul>
+    </div>
+</div>
+<!-- Currency EOF -->            <ul class="links">
+	        <li><a href="https://www.lingerie.co.uk/about-us/" title="About Us">About Us |</a></li>
+		<li class="separator"></li>
+                            <li ><a href="https://www.lingerie.co.uk/customer/account/" title="My Account" >My Account</a></li>
+						<li class="separator"></li>
+			                                <li ><a href="https://www.lingerie.co.uk/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+						<li class="separator"></li>
+			                                <li ><a href="https://www.lingerie.co.uk/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+						<li class="separator"></li>
+			                                <li ><a href="https://www.lingerie.co.uk/customer/account/login/" title="Log In" >Log In</a></li>
+			                        <li class="separator"></li>
+        <li><a href="https://www.lingerie.co.uk/customer/account/create/">Sign Up</a></li>
+    </ul>
+	    </div>
+	    <div class="clearfix logo-container">
+		                <h1 class="logo"><strong>Lingerie UK</strong><a href="https://www.lingerie.co.uk/" title="Lingerie UK" class="logo"><p><img src="https://www.lingerie.co.uk/media/olegnax/chocolat/logo.png" alt="Lingerie UK" width="229" height="80" /></p></a></h1>
+                        <!-- cart BOF -->
+<div class="cart-top-container">
+    <div class="cart-top">
+        <a class="summary" href="https://www.lingerie.co.uk/checkout/cart/">
+                            Shopping cart <span class="price">£0.00</span> (0)
+                    </a>
+    </div>
+    <div class="details">
+        
+                        <p class="a-center">You have no items in your shopping cart.</p>
+            </div>
+</div>
+<!-- cart EOF -->                            <div class="header-info-container"><p><a href="https://www.lingerie.co.uk/shipping" target="_self">We offer worldwide shipping</a> - Need some help? E-mail us &nbsp;<a href="mailto:orders@lingerie.co.uk" rel="nofollow" target="_blank"><span>orders@lingerie.co.uk</span></a></p></div>
+            		</div>
+            </header>
+	<div class="menu-container clearfix">
+        <!-- navigation BOF -->
+<nav class="olegnax">
+    <ul id="olegnaxNav">
+	             <li class="level0 level-top">
+         	<a href="https://www.lingerie.co.uk/"><span>Home</span></a>
+         </li>
+             <li class="level0 nav-1 level-top first parent">
+<a href="https://www.lingerie.co.uk/lingerie" class="level-top">
+<span>Shop by Category</span>
+</a>
+<div class="sub-wrapper">
+<ul class="level0">
+<li ><ol><li class="level1 nav-1-1 first parent">
+<a href="https://www.lingerie.co.uk/lingerie-accessories">
+<span>Accessories</span>
+</a>
+<div class="sub-wrapper">
+<ul class="level1">
+<li class="level2 nav-1-1-1 first">
+<a href="https://www.lingerie.co.uk/jewellery">
+<span>Jewellery</span>
+</a>
+</li><li class="level2 nav-1-1-2">
+<a href="https://www.lingerie.co.uk/gloves">
+<span>Gloves</span>
+</a>
+</li><li class="level2 nav-1-1-3">
+<a href="https://www.lingerie.co.uk/garters">
+<span>Garters</span>
+</a>
+</li><li class="level2 nav-1-1-4">
+<a href="https://www.lingerie.co.uk/fun-and-games">
+<span>Fun and Games</span>
+</a>
+</li><li class="level2 nav-1-1-5 last">
+<a href="https://www.lingerie.co.uk/masks">
+<span>Masks</span>
+</a>
+</li>
+</ul>
+</div>
+</li><li class="level1 nav-1-2">
+<a href="https://www.lingerie.co.uk/babydolls">
+<span>Babydolls</span>
+</a>
+</li><li class="level1 nav-1-3">
+<a href="https://www.lingerie.co.uk/bodies">
+<span>Bodies</span>
+</a>
+</li><li class="level1 nav-1-4">
+<a href="https://www.lingerie.co.uk/body-stockings">
+<span>Body Stockings</span>
+</a>
+</li><li class="level1 nav-1-5">
+<a href="https://www.lingerie.co.uk/bras">
+<span>Bras</span>
+</a>
+</li><li class="level1 nav-1-6 last">
+<a href="https://www.lingerie.co.uk/bridal-lingerie">
+<span>Bridal Lingerie</span>
+</a>
+</li></ol></li><li ><ol><li class="level1 nav-1-7">
+<a href="https://www.lingerie.co.uk/bustiers">
+<span>Bustiers</span>
+</a>
+</li><li class="level1 nav-1-8">
+<a href="https://www.lingerie.co.uk/camisoles">
+<span>Camisoles</span>
+</a>
+</li><li class="level1 nav-1-9">
+<a href="https://www.lingerie.co.uk/chemise">
+<span>Chemise</span>
+</a>
+</li><li class="level1 nav-1-10">
+<a href="https://www.lingerie.co.uk/corsets">
+<span>Corsets</span>
+</a>
+</li><li class="level1 nav-1-11">
+<a href="https://www.lingerie.co.uk/sexy-fancy-dress">
+<span>Fancy Dress</span>
+</a>
+</li><li class="level1 nav-1-12 last">
+<a href="https://www.lingerie.co.uk/french-lingerie">
+<span>French Lingerie</span>
+</a>
+</li></ol></li><li ><ol><li class="level1 nav-1-13 parent">
+<a href="https://www.lingerie.co.uk/g-strings-panties">
+<span>G-Strings/Panties</span>
+</a>
+<div class="sub-wrapper">
+<ul class="level1">
+<li class="level2 nav-1-13-6 first">
+<a href="https://www.lingerie.co.uk/naughty-open-thongs">
+<span>Naughty Open Thongs</span>
+</a>
+</li><li class="level2 nav-1-13-7">
+<a href="https://www.lingerie.co.uk/sexy-thongs">
+<span>Sexy Thongs</span>
+</a>
+</li><li class="level2 nav-1-13-8">
+<a href="https://www.lingerie.co.uk/briefs">
+<span>Briefs</span>
+</a>
+</li><li class="level2 nav-1-13-9">
+<a href="https://www.lingerie.co.uk/boy-shorts">
+<span>Boy Shorts</span>
+</a>
+</li><li class="level2 nav-1-13-10">
+<a href="https://www.lingerie.co.uk/pearl-strings">
+<span>Pearl</span>
+</a>
+</li><li class="level2 nav-1-13-11 last">
+<a href="https://www.lingerie.co.uk/silk-knickers">
+<span>Silk Knickers</span>
+</a>
+</li>
+</ul>
+</div>
+</li><li class="level1 nav-1-14">
+<a href="https://www.lingerie.co.uk/gowns-robes-etc">
+<span>Gowns, Robes etc</span>
+</a>
+</li><li class="level1 nav-1-15">
+<a href="https://www.lingerie.co.uk/sexy-lingerie-sets">
+<span>Sexy Lingerie Sets</span>
+</a>
+</li><li class="level1 nav-1-16">
+<a href="https://www.lingerie.co.uk/for-him">
+<span>Men's</span>
+</a>
+</li><li class="level1 nav-1-17">
+<a href="https://www.lingerie.co.uk/nightdresses-pyjamas">
+<span>Nightdresses / Pyjamas</span>
+</a>
+</li><li class="level1 nav-1-18 last">
+<a href="https://www.lingerie.co.uk/plus-size-lingerie">
+<span>Plus Size Lingerie</span>
+</a>
+</li></ol></li><li class="last"><ol><li class="level1 nav-1-19">
+<a href="https://www.lingerie.co.uk/silk-lingerie">
+<span>Silk Lingerie</span>
+</a>
+</li><li class="level1 nav-1-20">
+<a href="https://www.lingerie.co.uk/stockings-tights">
+<span>Stockings &amp; Tights</span>
+</a>
+</li><li class="level1 nav-1-21">
+<a href="https://www.lingerie.co.uk/suspender-belts">
+<span>Suspender Belts</span>
+</a>
+</li><li class="level1 nav-1-22">
+<a href="https://www.lingerie.co.uk/swimwear">
+<span>Swimwear</span>
+</a>
+</li><li class="level1 nav-1-23">
+<a href="https://www.lingerie.co.uk/teddies">
+<span>Teddies</span>
+</a>
+</li><li class="level1 nav-1-24 last">
+<a href="https://www.lingerie.co.uk/erotic-bondage">
+<span>Erotic/Bondage</span>
+</a>
+</li></ol></li>
+</ul>
+</div>
+</li><li class="level0 nav-2 active level-top parent">
+<a href="https://www.lingerie.co.uk/lingerie-brands" class="level-top">
+<span>Shop by Designer</span>
+</a>
+<div class="sub-wrapper">
+<ul class="level0">
+<li ><ol><li class="level1 nav-2-1 first">
+<a href="https://www.lingerie.co.uk/beauty-night">
+<span>Beauty Night</span>
+</a>
+</li><li class="level1 nav-2-2">
+<a href="https://www.lingerie.co.uk/bracli-pearl-thong-lingerie">
+<span>Bracli Pearl Thong Lingerie</span>
+</a>
+</li><li class="level1 nav-2-3">
+<a href="https://www.lingerie.co.uk/cervin-hosiery">
+<span>Cervin Hosiery</span>
+</a>
+</li><li class="level1 nav-2-4">
+<a href="https://www.lingerie.co.uk/coquette">
+<span>Coquette</span>
+</a>
+</li><li class="level1 nav-2-5">
+<a href="https://www.lingerie.co.uk/diki-lingerie">
+<span>Diki Lingerie</span>
+</a>
+</li><li class="level1 nav-2-6">
+<a href="https://www.lingerie.co.uk/fearless-fun-lingerie">
+<span>Fearless &amp; Fun Lingerie</span>
+</a>
+</li><li class="level1 nav-2-7 last">
+<a href="https://www.lingerie.co.uk/g-world-lingerie">
+<span>G World Lingerie</span>
+</a>
+</li></ol></li><li ><ol><li class="level1 nav-2-8">
+<a href="https://www.lingerie.co.uk/gracya">
+<span>Gracya</span>
+</a>
+</li><li class="level1 nav-2-9">
+<a href="https://www.lingerie.co.uk/hustler-lingerie">
+<span>Hustler Lingerie</span>
+</a>
+</li><li class="level1 nav-2-10">
+<a href="https://www.lingerie.co.uk/jane-woolrich-lingerie">
+<span>Jane Woolrich Lingerie</span>
+</a>
+</li><li class="level1 nav-2-11">
+<a href="https://www.lingerie.co.uk/le-bourget-hosiery">
+<span>Le Bourget Hosiery</span>
+</a>
+</li><li class="level1 nav-2-12">
+<a href="https://www.lingerie.co.uk/leg-avenue-hosiery">
+<span>Leg Avenue Hosiery</span>
+</a>
+</li><li class="level1 nav-2-13">
+<a href="https://www.lingerie.co.uk/levee-hosiery">
+<span>Levee Hosiery</span>
+</a>
+</li><li class="level1 nav-2-14 last">
+<a href="https://www.lingerie.co.uk/liliana-casanova-paris">
+<span>Liliana Casanova Paris</span>
+</a>
+</li></ol></li><li ><ol><li class="level1 nav-2-15">
+<a href="https://www.lingerie.co.uk/lise-charmel">
+<span>Lise Charmel</span>
+</a>
+</li><li class="level1 nav-2-16">
+<a href="https://www.lingerie.co.uk/lola-luna-strings">
+<span>Lola Luna Strings</span>
+</a>
+</li><li class="level1 nav-2-17">
+<a href="https://www.lingerie.co.uk/luxxa-lingerie">
+<span>Luxxa Lingerie</span>
+</a>
+</li><li class="level1 nav-2-18">
+<a href="https://www.lingerie.co.uk/provocative-lingerie">
+<span>Provocative Lingerie</span>
+</a>
+</li><li class="level1 nav-2-19">
+<a href="https://www.lingerie.co.uk/rene-rofe-lingerie">
+<span>Rene Rofe Lingerie</span>
+</a>
+</li><li class="level1 nav-2-20 last">
+<a href="https://www.lingerie.co.uk/roza-lingerie">
+<span>Roza Lingerie</span>
+</a>
+</li></ol></li><li class="last"><ol><li class="level1 nav-2-21">
+<a href="https://www.lingerie.co.uk/sensualle">
+<span>Sensualle</span>
+</a>
+</li><li class="level1 nav-2-22">
+<a href="https://www.lingerie.co.uk/seven-til-midnight">
+<span>Seven 'til Midnight</span>
+</a>
+</li><li class="level1 nav-2-23">
+<a href="https://www.lingerie.co.uk/shirley-of-hollywood">
+<span>Shirley of Hollywood</span>
+</a>
+</li><li class="level1 nav-2-24">
+<a href="https://www.lingerie.co.uk/the-lingerie-collection">
+<span>The Lingerie Collection</span>
+</a>
+</li><li class="level1 nav-2-25">
+<a href="https://www.lingerie.co.uk/wolbar-thongs">
+<span>Wolbar Thongs</span>
+</a>
+</li><li class="level1 nav-2-26 last">
+<a href="https://www.lingerie.co.uk/fever">
+<span>Fever</span>
+</a>
+</li></ol></li>
+</ul>
+</div>
+</li><li class="level0 nav-3 level-top last">
+<a href="https://www.lingerie.co.uk/lingerie-sale" class="level-top">
+<span>Sale</span>
+</a>
+</li>
+            <li class="level0 level-top parent custom-block">
+                <a href="#" class="level-top">
+                    <span>More Info / Contact</span>
+                </a>
+                <div class="sub-wrapper"><table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="210"><img src="https://www.lingerie.co.uk/media/homepage/dita.jpg" alt="lingerie blog" width="150" height="229" />&nbsp;
+<p><strong></strong>&nbsp;</p>
+<p><strong>Our Lingerie Blog</strong></p>
+<p>Did you know we have a great blog with weekly posts about celebrity gossip, fashion news and&nbsp;the latest fashion must-haves?&nbsp;Check it out!</p>
+<p>&nbsp;</p>
+<p><a href="https://blog.lingerie.co.uk" target="_blank">Lingerie Blog</a></p>
+</td>
+<td width="20">&nbsp;</td>
+<td width="210"><img src="https://www.lingerie.co.uk/media/homepage/gift-box-2.jpg" alt="lingerie gifts" width="104" height="110" />&nbsp;
+<p><strong></strong>&nbsp;</p>
+<p><strong>Gift Vouchers&nbsp;</strong></p>
+<p>Not sure what to buy? Why not treat your lady to gorgeous lingerie and give her a gift voucher?</p>
+<p>&nbsp;</p>
+<p><a href="https://www.lingerie.co.uk/gift-vouchers">Learn more</a></p>
+<p>&nbsp;</p>
+<p><strong>Gift Wrapping</strong></p>
+<p>We offer a gift wrapping service during checkout. Your parcel with arrive with a beautiful gift wrapped present inside, to add to the excitement!</p>
+<p>&nbsp;</p>
+<p><a href="https://www.lingerie.co.uk/gift-wrapping">Learn more</a><strong></strong></p>
+</td>
+<td width="20">&nbsp;</td>
+<td width="210"><img src="https://www.lingerie.co.uk/media/homepage/help.jpg" alt="lingerie help" width="145" height="97" />&nbsp;
+<p><strong></strong>&nbsp;</p>
+<p><strong>Need Help? </strong></p>
+<p>We try to include&nbsp;all the help you want in our Customer FAQs:</p>
+<p>&nbsp;</p>
+<span style="color: #ed087f;"><strong><a href="https://www.lingerie.co.uk/customer-service">Customer Service FAQs</a></strong></span>
+<p>&nbsp;</p>
+<p>If you still have questions and need help, Please send us over an email at: orders@lingerie.co.uk</p>
+</td>
+<td width="20">&nbsp;</td>
+<td width="210">
+<p><strong>What we offer our customers:</strong></p>
+<p>&nbsp;</p>
+<ul>
+<li>First class customer service</li>
+<li>Thousands of in-stock items to choose from</li>
+<li>Next-day delivery if ordered before 3pm (weekdays)</li>
+<li>Gorgeous made-to-order luxury items to choose from</li>
+<li>Beautiful quality, genuine&nbsp;items</li>
+<li>Gift wrapping service</li>
+<li><a href="http://www.lingerie.co.uk/contacts">Contact us if you have questions </a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="7"><hr />..</td>
+</tr>
+</tbody>
+</table></div>
+            </li>    </ul>
+</nav>
+<!-- navigation EOF --><form id="search_mini_form" action="https://www.lingerie.co.uk/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <input id="search" type="text" name="q" value="" class="input-text" />
+        <button type="submit" title="Search" ></button>
+    </div>
+	<div id="search_autocomplete" class="search-autocomplete"></div>
+    <script type="text/javascript">
+	//<![CDATA[
+	    var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search entire store here...');
+	   // searchForm.initAutocomplete('https://www.lingerie.co.uk/catalogsearch/ajax/suggest/', 'search_autocomplete');
+	//]]>
+	</script>
+</form>	</div>
+</div>
+<!-- HEADER EOF -->
+        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <div class="std"><div class="slideshow-banners-container clearfix" style="position:relative;min-height:442px">
+<div style="position:absolute;top:0;left:0">
+<div class="slideshow-home"><!-- SLIDESHOW BOF -->
+<div class="slideshow-container" id="slideshow-container1714428133" >
+    <div class="slide-timeline" id="slide-timeline1714428133"></div>
+	<ul class="slideshow" id="slideshow1714428133">
+            <li>
+            	        <div class="slide-text"><div style="width:270px"><h3>Lise Charmel</h3><b>Luxury lingerie</b><p>Delicate silk and lace designer lingerie.</p><button class="button" onclick="window.location='//www.lingerie.co.uk/lise-charmel'"><span><span>shop now</span></span></button></div></div>
+	        	        	        <a href="http://www.lingerie.co.uk/lise-charmel" title="">
+	                    <img  src="https://www.lingerie.co.uk/media/olegnax/chocolat/slideshow/lingerie-online-2.jpg" alt="gorgeous lingerie" />
+	                    </a>
+                    </li>
+            <li>
+            	        <div class="slide-text"><div style="width:270px"><h3>Liliana Casanova</h3><b>Sleep in luxury</b><p>A sensual luxurious range of silk night dresses and gowns</p><button class="button" onclick="window.location='//www.lingerie.co.uk/liliana-casanova-paris'"><span><span>shop now</span></span></button></div></div>
+	        	        	        <a href="http://www.lingerie.co.uk/liliana-casanova-paris" title="">
+	                    <img  src="https://www.lingerie.co.uk/media/olegnax/chocolat/slideshow/lingerie-online-1.jpg" alt="gorgeous lingerie" />
+	                    </a>
+                    </li>
+            <li>
+            	        <div class="slide-text"><div style="width:250px;margin-left:300px; z-index: 5; "><h3>Luxxa</h3><b>Sexy French Lingerie</b><p>Try our sensual, sexy range of naughty underwear to delight and please your lover</p><button class="button" onclick="window.location='http://www.lingerie.co.uk/luxxa-lingerie'"><span><span>shop now</span></span></button></div></div>
+	        	        	        <a href="http://www.lingerie.co.uk/luxxa-lingerie" title="">
+	                    <img  src="https://www.lingerie.co.uk/media/olegnax/chocolat/slideshow/luxxa-lingerie.jpg" alt="gorgeous lingerie" />
+	                    </a>
+                    </li>
+            <li>
+            	        <div class="slide-text"><div style="width:270px;margin-left:-50px"><h3>Beauty Night</h3><b>Naughty Lingerie</b><p>Made to make you feel sensual</p><button class="button" onclick="window.location='http://www.lingerie.co.uk/beauty-night'"><span><span>shop now</span></span></button></div></div>
+	        	        	        <a href="http://www.lingerie.co.uk/beauty-night" title="">
+	                    <img  src="https://www.lingerie.co.uk/media/olegnax/chocolat/slideshow/beauty-nights-babydoll.jpg" alt="gorgeous lingerie" />
+	                    </a>
+                    </li>
+        </ul>
+    <div class="slideshow-nav" id="slideshow-nav1714428133"></div>
+</div>
+<script>
+jQuery(window).load(function(){
+    var $ = jQuery;
+	var slideshowPause = false;
+	var config = {
+		width: $('#slideshow1714428133').width(),
+		height: $('#slideshow1714428133').height(),
+		interval: 6000,
+		speed: 1000,
+		effect: 'fade'
+	};
+
+	runTimeline = function( interval ) {
+		if ( slideshowPause || interval == 0 ) return;
+		$('#slide-timeline1714428133')
+	        .show()
+	        .animate(
+		        {width: config.width + 'px'},
+				interval,
+		        'linear',
+		        function(){
+			        $(this).hide().width(0);
+			        $('#slideshow1714428133').cycle('next');
+		        }
+	        );
+	}
+
+    $('#slideshow1714428133').cycle({
+	    timeout : 0,
+        speed: config.speed,
+        fx: config.effect,
+        pager: '#slideshow-nav1714428133',
+        onPagerEvent: function(){
+            $('#slide-timeline1714428133').hide().width(0);
+        },
+        after: function(currSlideElement, nextSlideElement){
+            runTimeline(config.interval);
+        }
+    });
+
+	$("#slideshow-container1714428133").hover(
+		function(){
+			slideshowPause = true;
+			$('#slide-timeline1714428133').stop(true);
+		},
+		function(){
+			slideshowPause = false;
+			var interval = (config.width - $('#slide-timeline1714428133').width() ) / ( config.width / config.interval );
+			runTimeline(interval);
+		}
+	);
+});
+</script>
+<!-- SLIDESHOW EOF --></div>
+                    <div class="banners">
+
+                        <a href="https://www.lingerie.co.uk/sexy-lingerie-sets"><img src="/media/homepage/chocolate/chocolatBanner01.jpg" width="316" height="146" alt="Sexy Lingerie Sets" />
+                            <div>Lingerie<br/> Sets <br/>
+                                <button class="button" onclick="window.location='//www.lingerie.co.uk/sexy-lingerie-sets"><span><span>shop now</span></span></button>
+                            </div>
+                        </a>
+
+                        <a href="https://www.lingerie.co.uk/lingerie-sale" class="text-right"><img src="/media/homepage/chocolate/chocolatBanner02.jpg" width="316" height="146" alt="Lingerie Sale" />
+                            <div>SALE<br/> Up to 70% Off <br/>
+                                <button class="button" onclick="window.location='//www.lingerie.co.uk/lingerie-sale'"><span><span>shop now</span></span></button>
+                            </div>
+                        </a>
+
+                        <a href="https://www.lingerie.co.uk/bras" class="text-left"><img src="/media/homepage/chocolate/chocolatBanner03.jpg" width="316" height="146" alt="Lingerie Bras" />
+                            <div><br/><br/>
+                                <button class="button invert" onclick="window.location='//www.lingerie.co.uk/bras'"><span><span>shop now</span></span></button>
+                            </div>
+                        </a>
+</div>
+
+                    </div>
+                </div>
+<h3 style="text-align:center: font-size: 140%; padding: 0px 0px 20px;">Best Selling Lingerie</h3>
+                <!-- SLIDER BOF -->
+<div class="slider-container" style="padding-bottom:10px;">
+<div class="piece"></div>
+<div class="clearfix">
+	<a href="#" class="jcarousel-prev-horizontal" id="chocolat_carousel_prev1714428133"></a>
+	<a href="#" class="jcarousel-next-horizontal" id="chocolat_carousel_next1714428133"></a>
+</div>
+<ul id="chocolat_carousel1714428133" class="jcarousel-skin-tango clearfix">
+    <li class="clearfix">
+	    <a href="https://www.lingerie.co.uk/madam-cullotte-sexy-set" title="'Madam' Cullotte Sexy" class="product-image">
+		    		    <img src="https://www.lingerie.co.uk/media/catalog/product/cache/1/small_image/180x230/9df78eab33525d08d6e5fb8d27136e95/p/r/product3_18.jpg" width="180" height="230" alt="'Madam' Cullotte Sexy" />
+        </a>
+        <ul class="add-to-links">
+                        <li><a href="https://www.lingerie.co.uk/wishlist/index/add/product/62555/" class="link-wishlist">Add to Wishlist</a></li>
+                                </ul>
+                        <a class="product-name" href="https://www.lingerie.co.uk/madam-cullotte-sexy-set" title="'Madam' Cullotte Sexy">'Madam' Cullotte Sexy</a>
+        
+
+                <div class="price-box">
+            <p class="minimal-price">
+                <span class="price-label">Starting at:</span>
+                                                    <span class="price" id="product-minimal-price-62555">
+                    £15.00                </span>
+                            </p>
+        </div>
+        </li>
+    <li class="clearfix">
+	    <a href="https://www.lingerie.co.uk/bracli-your-night-pearl-body" title="Bracli Your Night Pearl Body" class="product-image">
+		    		    <img src="https://www.lingerie.co.uk/media/catalog/product/cache/1/small_image/180x230/9df78eab33525d08d6e5fb8d27136e95/b/o/body_your_night_from_the_side16.jpg" width="180" height="230" alt="Bracli Your Night Pearl Body" />
+        </a>
+        <ul class="add-to-links">
+                        <li><a href="https://www.lingerie.co.uk/wishlist/index/add/product/69067/" class="link-wishlist">Add to Wishlist</a></li>
+                                </ul>
+                        <a class="product-name" href="https://www.lingerie.co.uk/bracli-your-night-pearl-body" title="Bracli Your Night Pearl Body">Bracli Your Night Pearl Body</a>
+        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-69067">
+                                            <span class="price">£81.99</span>                                    </span>
+                        
+        </div>
+
+    </li>
+    <li class="clearfix">
+	    <a href="https://www.lingerie.co.uk/glam-night-plus-size-robe-by-gworld-d1504p" title="Ivory Glam Night Plus Size Robe By Gworld - D1504P" class="product-image">
+		    		    <img src="https://www.lingerie.co.uk/media/catalog/product/cache/1/small_image/180x230/9df78eab33525d08d6e5fb8d27136e95/d/1/d1504pivory_13106.jpg" width="180" height="230" alt="Ivory Glam Night Plus Size Robe By Gworld - D1504P" />
+        </a>
+        <ul class="add-to-links">
+                        <li><a href="https://www.lingerie.co.uk/wishlist/index/add/product/87565/" class="link-wishlist">Add to Wishlist</a></li>
+                                </ul>
+                        <a class="product-name" href="https://www.lingerie.co.uk/glam-night-plus-size-robe-by-gworld-d1504p" title="Ivory Glam Night Plus Size Robe By Gworld - D1504P">Ivory Glam Night Plus Size Robe By Gworld - D1504P</a>
+        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-87565">
+                                            <span class="price">£37.99</span>                                    </span>
+                        
+        </div>
+
+    </li>
+    <li class="clearfix">
+	    <a href="https://www.lingerie.co.uk/luxxa-poisson-open-lingerie-set" title="Luxxa Poisson Open Lingerie Set" class="product-image">
+		    		    <img src="https://www.lingerie.co.uk/media/catalog/product/cache/1/small_image/180x230/9df78eab33525d08d6e5fb8d27136e95/p/o/poisson_3.jpg" width="180" height="230" alt="Luxxa Poisson Open Lingerie Set" />
+        </a>
+        <ul class="add-to-links">
+                        <li><a href="https://www.lingerie.co.uk/wishlist/index/add/product/99737/" class="link-wishlist">Add to Wishlist</a></li>
+                                </ul>
+                        <a class="product-name" href="https://www.lingerie.co.uk/luxxa-poisson-open-lingerie-set" title="Luxxa Poisson Open Lingerie Set">Luxxa Poisson Open Lingerie Set</a>
+        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-99737">
+                                            <span class="price">£120.00</span>                                    </span>
+                        
+        </div>
+
+    </li>
+    <li class="clearfix">
+	    <a href="https://www.lingerie.co.uk/red-provocative-lace-indulgence-chemise" title="Red Provocative Lace indulgence Chemise" class="product-image">
+		    		    <img src="https://www.lingerie.co.uk/media/catalog/product/cache/1/small_image/180x230/9df78eab33525d08d6e5fb8d27136e95/p/r/prov_indulgence_1.jpg" width="180" height="230" alt="Red Provocative Lace indulgence Chemise" />
+        </a>
+        <ul class="add-to-links">
+                        <li><a href="https://www.lingerie.co.uk/wishlist/index/add/product/70703/" class="link-wishlist">Add to Wishlist</a></li>
+                                </ul>
+                        <a class="product-name" href="https://www.lingerie.co.uk/red-provocative-lace-indulgence-chemise" title="Red Provocative Lace indulgence Chemise">Red Provocative Lace indulgence Chemise</a>
+        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-70703">
+                                            <span class="price">£33.99</span>                                    </span>
+                        
+        </div>
+
+    </li>
+</ul>
+<div class="clear"></div>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+	function mycarousel_initCallback(carousel) {
+	    $('#chocolat_carousel_next1714428133').bind('click', function() {
+	        carousel.next();
+	        return false;
+	    });
+	    $('#chocolat_carousel_prev1714428133').bind('click', function() {
+	        carousel.prev();
+	        return false;
+	    });
+	};
+
+    $('#chocolat_carousel1714428133').jcarousel({
+	    scroll: 1,
+    	initCallback: mycarousel_initCallback,
+	    buttonNextHTML: null,
+	    buttonPrevHTML: null
+    });
+});
+</script>
+<!-- SLIDER EOF -->
+
+</div>
+
+
+<div style="">
+
+<h2>Fabulous Womens Underwear at Lingerie.co.uk</h2>
+<p>
+Why is lingerie so important to a woman? The answer is simple. What we wear next to our skin defines who we are. The right underwear gives us confidence, but there&acute;s much more to the magic of <a href="/sexy-lingerie">sexy lingerie</a> than just a quick boost to our self-esteem. And it&acute;s not just about wearing pretty things to entice the person we spend our nights with, although that can be important too!
+<strong>Lingerie</strong> helps us explore ourselves and discover the facets of our own personalities. That could mean wearing a designer bra and briefs to give us &acute;secret power&acute; on the day we have to make a presentation at work. Alternatively, we might choose the hidden joy of a pretty bustier concealed a boring uniform. Sometimes we have to appear to be &acute;all business&acute;, but that doesn&acute;t mean we have to deny our feminine spirit - we can bring our personality to every minute of our everyday lives through our lingerie choices.
+<br />
+Pretty floral underwear lifts the mood, bringing a springtime aura to even the coldest day or the toughest work assignment, while a lacy bra and panty set offers the chance to explore the nostalgic, vintage part of our character, delivering a little romance to our daily experience. 
+We can discover new aspects of ourselves through lingerie too. Unusual underwear, such as a silky grey camisole or a glowing plum-coloured basque, can reveal hidden facets of our nature and new ideas about ourselves. 
+<br />
+Lingerie is not just daytime clothing - starting our morning in a stunning silk gown or wrapped in a sexy robe can help us feel like a goddess as we move through our day, and beautiful swimwear allows us to enjoy our time at the beach or pool, confident that we&acute;re looking our best.
+<br />
+And then there&acute;s the underwear we want to be seen, and this is where beautiful, well-fitting sexy lingerie can be a life-changer. Some women are as confident as a vintage style diva and show it by wearing   beautiful <a href="/corsets">corsets</a> with pencil skirts, while others choose the subtle language of allure, selecting elegant stockings and a suspender belt to hint at their concealed passions. While one woman loves jewelled colours, bold designs and a splash of designer audacity, another may channel her personality into pastel shades, feminine ruffles and delicate lace. 
+</p>
+<h3>Shop Sexy Lingerie Online</h3>
+<p>
+No matter how we desire to look, the right lingerie enhances our self-image and gives us confidence in our appearance. So, whatever the approach we take, the image we want to create and the extent to which we want to be &acute;out there&acute; in revealing our preferences, there will be gorgeous lingerie that meets our needs, fulfils our dreams and gives us the chance to revel in our own unique beauty.
+At lingerie.co.uk we bring you a delightful selection of womens underwear to choose from - <strong>buy your lingerie online</strong> today and we&acute;ll dispatch same day if ordered before 2pm workdays.
+</p>
+</div></div>                </div>
+            	<!-- footer BOF -->
+<div class="footer-container">
+        <div class="connect-newsletter-block clearfix">
+        <div class="piece"></div>
+        <div class="footer-connect">
+			<h4>Connect with Us</h4>
+<ul>
+<li><a class="twitter" href="https://twitter.com/Lingerie_co_uk" target="_blank"><span>Twitter</span></a></li>
+<li><a class="facebook" href="https://www.facebook.com/pages/Lingeriecouk/122469901113290" target="_blank"><span>Facebook</span></a></li>
+<li><a class="email" href="mailto:orders@lingerie.co.uk" target="_blank"><span>Email</span></a></li>
+</ul>		
+		</div>
+		<!-- start newsletter signup -->
+	<div class="news-title" style="padding-top:30px">
+	<h4>Newsletter</h4>
+	</div>
+	<div class="block-content">
+	<div class="subscribe-input">
+			
+<script language="Javascript" type="text/javascript">
+<!--
+function trim(str){str = str.replace(/^\s*$/, '');return str;}
+function $Npro(field){var element =  document.getElementById(field);return element;return false;}
+function emailvalidation(field, errorMessage) {
+	var goodEmail = field.value.match(/[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?/);
+	apos=field.value.indexOf("@");dotpos=field.value.lastIndexOf(".");lastpos=field.value.length-1;tldLen = lastpos-dotpos;dmLen=dotpos-apos-1;var badEmail= (tldLen<2 || dmLen<2 || apos<1);
+	if (!goodEmail || badEmail) {$Npro("Error").innerHTML=errorMessage;$Npro("Error").style.display="inline";field.focus();field.select();return false;}
+	else {return true;}
+}
+function emptyvalidation(entered, errorMessage) {
+	$Npro("Error").innerHTML="";
+	with (entered) {
+	if (trim(value)==null || trim(value)=="") {/*alert(errorMessage);*/$Npro("Error").innerHTML=errorMessage;$Npro("Error").style.display="inline";return false;}
+	else {return true;}}//with
+}//emptyvalidation
+function formvalidation(thisform) {
+with (thisform) {
+if (emailvalidation(email,"Please enter your valid email address")==false) {email.focus(); return false;};
+
+}
+}
+//-->
+</script>
+<div>
+<form name="subform" onsubmit="return formvalidation(this)" action="https://www.thelingeriecollection.co.uk/enews/subscriber/optIn.php" method="post" target="_blank" autocomplete="off">
+<input name="idGroup" type="hidden" value="1">
+<input type="hidden" name="customredirect" value="http://www.lingerie.co.uk/newsletter-confirmation" />
+<input style="height: 22px; min-height: 22px;" name="email" onchange="emailvalidation(this,'Invalid Email');" type="text" value="">
+<input name="idlist[]" type="hidden" value="10">
+<span id="Error" style="color: red; display: none;"></span>
+<input style="height: 22px; min-height: 22px;" type="submit" value="Subscribe">
+
+</form>
+</div>
+			
+			
+	</div>
+	</div>
+	<!-- end newsletter signup -->
+			
+    </div>
+        <div class="footer-wrapper">
+        <footer>
+            <div class="copyright clearfix">
+                <p style="top: 0px; right: 0px; text-align: center;"><a title="About Us" href="/about-us">About Us</a> | <a title="Dispatch &amp; Shipping" href="/shipping">Dispatch &amp; Shipping</a> | <a href="http://www.lingerie.co.uk/customer-service">Customer FAQs</a> | <a href="/lingerie-affiliate-program">Our Affiliate Program</a> | <a title="Terms &amp; Conditions" href="/terms-and-conditions"> Terms &amp; Conditions</a> | <a title="Contact Us" href="/contacts">Contact Us</a></p>
+
+<div style="padding-top:70px">
+<img align="right" src="https://www.lingerie.co.uk/media/homepage/payment-icons.jpg" alt="buy underwear" width="300" height="29" />&copy; 2014 The Lingerie Collection Ltd. All Rights Reserved. <br />Registered in England and Wales. <br />Company registration number 08022967. 
+</div>                <address> </address>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- footer EOF -->
+            </div>
+	        
+        </div>
+            </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-684118-2', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>

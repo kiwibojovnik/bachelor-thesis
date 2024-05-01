@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <title>
+      COVID-19 Live Displays  </title>
+<meta name="pinterest" content="nopin" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="slack-app-id" content="AE47XFDFT">
+
+
+<!-- ICONS -->
+<!--[if IE]><link rel="shortcut icon" href="../../../favicon.ico"><![endif]-->
+<meta name="msapplication-TileColor" content="#D83434">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=1.0" />
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="noindex">
+<!-- <link rel="apple-touch-icon" href="/resources/images/ct_apple_icon.png"> -->
+<link rel="icon" href="/resources/images/favicon.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<!-- OPEN GRAPH TAGS -->
+<meta property="og:site_name" content="CrowdTangle">
+<meta property="og:url" content="https://apps.crowdtangle.com/public-hub/covid19">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="COVID-19 Live Displays">
+<meta property="og:description" content="The easiest way to keep track of what’s happening on social media.">
+<meta property="og:image" content="https://apps.crowdtangle.com/resources/images/covid-opengraph.jpg">
+<meta property="og:image:secure_url" content="https://apps.crowdtangle.com/resources/images/covid-opengraph.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="fb:app_id" content="527443567316408">
+<meta name="twitter:account_id" content="369109851">
+<meta name="twitter:site" content="@CrowdTangle" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="COVID-19 Live Displays" />
+<meta name="twitter:image" content="https://apps.crowdtangle.com/resources/images/covid-opengraph.jpg">
+<meta name="twitter:description" content="The easiest way to keep track of what’s happening on social media." />
+
+
+<!-- CSS -->
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+<link rel="preconnect" href="https://cdn.crowdtangle.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="//d2wy8f7a9ursnm.cloudfront.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.crowdtangle.com/static/css/all.css">
+<link rel="stylesheet" href="https://cdn.crowdtangle.com/static/css/v4-shims.css">
+<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+<link rel="stylesheet" href="https://cdn.crowdtangle.com/static/css/vendor.css" type="text/css" media="screen,print" />
+<link rel="stylesheet" href="https://cdn.crowdtangle.com/build/css/main-e09b1d65a6.css" type="text/css" media="screen,print" />
+<link rel="stylesheet" href="https://cdn.crowdtangle.com/build/css/app-92ad6055b5.css" type="text/css" media="screen,print" />
+  <link rel="stylesheet" href="https://cdn.crowdtangle.com/build/main.240dc247572768d1b681.css" type="text/css" media="screen,print" />
+
+
+<!-- JS -->
+<script>
+  window.initialState = JSON.parse("null")
+</script>
+<script>
+  window.flashMessage = "";
+</script>
+<script async src="https://kit.fontawesome.com/39f3f6cf29.js" crossorigin="anonymous"></script>
+
+
+<script>
+  window.authViewType = "0";
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.min.js"></script>
+<script type="text/javascript" src="https://cdn.crowdtangle.com/static/vendor-build.js"></script>
+<script async type="text/javascript" src="https://cdn.crowdtangle.com/static/chosen/chosen.jquery.min.js"></script>
+<script>
+  $.widget.bridge('uitooltip', $.ui.tooltip);
+</script> <!-- Solves conflict between Jquery UI and Bootstrap on tooltips -->
+<script type="text/javascript" src="https://cdn.crowdtangle.com/build/scripts-851d6d7426.js"></script>
+<script type="text/javascript" src="https://cdn.crowdtangle.com/build/runtime.240dc247572768d1b681.js"></script>
+<script type="text/javascript" src="https://cdn.crowdtangle.com/build/vendor.240dc247572768d1b681.js"></script>
+
+
+      <link rel="stylesheet" href="https://cdn.crowdtangle.com/build/main.240dc247572768d1b681.css" type="text/css" media="screen,print" />
+    <script type="text/javascript" src="https://cdn.crowdtangle.com/build/main.240dc247572768d1b681.js"></script>
+
+<script defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Global variables and facebook init -->
+<script>
+  window.baseUrl = "https://apps.crowdtangle.com/";
+  window.apiUrl = "https://api.crowdtangle.com";
+  window.ctDomain = "https://apps.crowdtangle.com/";
+  window.errorUrl = "https://apps.crowdtangle.com//util/send_error_report";
+  window.csrf = {
+    csrf_token: 'vb9i5QuydLvwxNIKI9Ec9tBtkRBpXFBGOp0KQcxrb6g='
+  };
+
+      $.ajaxSetup({
+      data: window.csrf
+    });
+
+    $(function() {
+      $(document).ajaxComplete(function(event, xhr, settings) {
+        try {
+          var result = JSON.parse(xhr.responseText);
+          if (result.new_csrf_token) {
+            window.csrf.csrf_token = result.new_csrf_token;
+            $.ajaxSetup({
+              data: window.csrf
+            });
+          }
+        } catch (err) {} // this isn't JSON -- it's HTML likely, ignore
+      });
+    });
+
+  
+  window.twitterRemovalContext = {
+    surface: "",
+    surfaceId: parseInt(""),
+    accountId: parseInt("")
+  }
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '',
+      xfbml: true,
+      version: 'v2.6'
+    });
+    window.fbLoaded.resolve();
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    // js.src = "//connect.facebook.net/en_US/sdsdfk.js";
+
+    fjs.parentNode.insertBefore(js, fjs);
+
+    js.onerror = function(err) {
+      console.error("error loading facebook script", err);
+      // wait for everything to load then rekect
+      $(function() {
+        window.fbLoaded.reject(err);
+      });
+
+    }
+  }(document, 'script', 'facebook-jssdk'));
+
+  window.fbLoaded = $.Deferred();
+
+  
+    window.kickoffBugsnag = function() {
+      window.bugsnagClient = bugsnag({
+        apiKey: '466eafcdd8afb3f4cb16ca128d1fb702',
+        appVersion: '3.0.572'
+      })
+
+      bugsnagClient.user = {
+        id: "0",
+        name: " ",
+        email: "",
+      }
+
+          }
+  
+  try {
+
+                  ! function() {
+        var analytics = window.analytics = window.analytics || [];
+        if (!analytics.initialize)
+          if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"];
+            analytics.factory = function(e) {
+              return function() {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics
+              }
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key)
+            }
+            analytics.load = function(key, e) {
+              var t = document.createElement("script");
+              t.type = "text/javascript";
+              t.async = !0;
+              t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";
+              var n = document.getElementsByTagName("script")[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e
+            };
+            analytics._writeKey = "p9fh259tcq";
+            analytics.SNIPPET_VERSION = "4.13.2";
+            analytics.load("p9fh259tcq");
+            analytics.page();
+          }
+      }();
+
+      } catch (err) {
+    console.log(err);
+  }
+</script>
+  <script async onload="kickoffBugsnag()" type="text/javascript" src="//d2wy8f7a9ursnm.cloudfront.net/v5/bugsnag.min.js"></script>
+</head>
+
+<body class="standard-background">
+  
+  <div class="tease-app-container">
+    <div id="react-live-display-hub"></div>
+
+<script>
+  CT.Initializer.liveDisplayHub();
+</script>
+  </div>
+  <div id="tooltip-root"></div>
+</body>
+
+</html>

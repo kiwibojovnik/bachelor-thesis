@@ -1,0 +1,622 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript">
+	var referrer = "n/a";
+	var visitID;
+
+	document.addEventListener("tracked", function (event) {
+		visitID = event.detail.data.visitId;
+
+		if (dataLayer[0] != null) {
+			//console.log("DataLayer is not null");
+			if (dataLayer[0].visitGUID == null) {
+				//console.log("visitGUID is null. Setting visitGUID");
+				dataLayer[0].visitGUID = visitID;
+			}
+		}
+	});
+
+	var dataLayer = [{
+		"rememberMe": undefined,
+		"referrer": "n/a",
+		"regltd": "",
+		"correlationId": "82EB844B-C9C4-2058-B5DE-21FEEF25B135",
+		"mediaBannerId": "typeintraffic",
+		"affiliateId": "typeintraffic",
+		"brandShortCode": "RBC",
+		"campaignId": "typeintraffic",
+		"containerType": "brand",
+		"brandName": "riverbellecasino",
+		"productName": "casino",
+		"language": "en",
+		"visitGUID": visitID,
+		"PromoId": "25048",
+		"countryIsoCode": "cz"
+	}];
+
+	function gtag() { dataLayer.push(arguments); }
+
+	gtag('consent', 'default', {
+		'ad_storage': 'denied',
+		'ad_user_data': 'denied',
+		'ad_personalization': 'denied',
+		'analytics_storage': 'denied'
+	});
+</script>
+<script>(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push(
+			{ 'gtm.start': new Date().getTime(), event: 'gtm.js' }
+		); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-KT5RNX');</script>
+
+<!-- CrUX Step 1 :  Default settings & Page Timing elements -->
+<script src="https://www.riverbellecasino.com/rbc/js/first-input-delay.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	//Try Catch Helper function
+	var callCatchMe = function (error, ref) {
+		//console.error(error);
+		dataLayer.push({ "event": "CrUXEventTrigger.gtm_performance_error", "eventCategory": "Performance Metric Error", "eventAction": "Notification", "eventLabel": ref, "gtm_value": error, "nonInteraction": true });
+	}
+	if (document.addEventListener) {
+		document.addEventListener("DOMContentLoaded", function (event) {
+			if ("performance" in window) {
+				var dclTime = Math.round(performance.now());
+				//if (console) {console.log("* DOM fully loaded and parsed ", dclTime);}
+				dataLayer.push({ "event": "CrUXTrigger.gtm_performance_metrics", "eventCategory": "Performance Metric", "eventAction": "navigation", "eventLabel": "dom-content-loaded-event", "eventValue": dclTime, "gtm_value": '', "nonInteraction": true });
+			}
+		});
+	} else { callCatchMe('document.addEventListener not available', 'DOMContentLoaded'); }
+	if (window.addEventListener) {
+		window.addEventListener("load", function (event) {
+			if ("performance" in window) {
+				var dlTime = Math.round(performance.now());
+				//if (console) {console.log("* All resources finished loading!", dlTime);}
+				dataLayer.push({ "event": "CrUXTrigger.gtm_performance_metrics", "eventCategory": "Performance Metric", "eventAction": "navigation", "eventLabel": "onload-event", "eventValue": dlTime, "gtm_value": '', "nonInteraction": true });
+			}
+			//Disconnect Longtask performace observer			
+			if (typeof observer != "undefined") { observer.disconnect(); }
+		});
+	} else { callCatchMe('window.addEventListener not available', 'load'); }
+
+	if ("PerformanceObserver" in window) {
+		var observer = new PerformanceObserver(function (list) {
+			var perfEntries = list.getEntries();
+			for (var i = 0; i < perfEntries.length; i++) {
+				var entry = perfEntries[i];
+				var metricType = entry.entryType;
+				var metricName = ((entry.name == 'unknown') ? metricType + ' (unknown)' : entry.name);
+				var time = Math.round(entry.startTime + entry.duration);
+				var attribution = '';
+				//if (console) { console.log('GTM -  Name:', metricName, '- Type:', metricType, '-- Start time:', entry.startTime, '- Duration:', entry.duration, '- Time:', time); }
+				if (entry.entryType == 'longtask') {
+					attribution = JSON.stringify(entry.attribution)
+					//if (console) {console.log('GTM -  Attribution: ', attribution);}
+				}
+				dataLayer.push({ "event": "CrUXTrigger.gtm_performance_metrics", "eventCategory": "Performance Metric", "eventAction": metricType, "eventLabel": metricName, "eventValue": time, "gtm_value": attribution, "nonInteraction": true });
+			}
+		});
+		observer.observe({ entryTypes: ['paint', 'longtask'] });
+	} else { callCatchMe('PerformanceObserver not available', 'PerformanceObserver'); }
+
+	var loadScript = function (src, callbackfn) {
+		try {
+			var newScript = document.createElement("script");
+			newScript.type = "text/javascript";
+			newScript.setAttribute("async", "true");
+			newScript.setAttribute("src", src);
+			if (newScript.readyState) {
+				newScript.onreadystatechange = function () {
+					if (/loaded|complete/.test(newScript.readyState)) callbackfn();
+				}
+			} else { newScript.addEventListener("load", callbackfn, false); }
+			document.getElementsByTagName('head')[0].appendChild(newScript);
+		} catch (error) { callCatchMe(error, 'tti'); }
+	}
+
+	loadScript("https://www.riverbellecasino.com/rbc/js/tti-polyfill.js", function () {
+		ttiPolyfill.getFirstConsistentlyInteractive()
+			.then(function (tti) {
+				time = Math.round(tti);
+				//if (console) { console.log('GTM -  TTI: ', time); }
+				return dataLayer.push({ "event": "CrUXTrigger.gtm_performance_metrics", "eventCategory": "Performance Metric", "eventAction": "TTI", "eventLabel": "time-to-interactive", "eventValue": time, "gtm_value": '', "nonInteraction": true });
+			});
+	});
+
+</script>
+<!-- CrUX Step 1 :  Default settings & Page Timing elements END-->    
+    <title>
+        Discover River Belle Online Casino & Play For Real Wins!    </title>
+    <meta name="description" content="River Belle is the best online casino that you are likely to ever find! Enjoy top quality casino games, play with big bonuses and stand to win a jackpot!" />
+    <link rel="canonical" href="https://www.riverbellecasino.com/" />
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic,greek" rel="stylesheet">
+    <link href="https://www.riverbellecasino.com/rbc/css/style.min.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+    <link rel="apple-touch-icon" href="https://www.riverbellecasino.com/rbc/images/rbc.png">
+    <link rel="manifest" href="https://www.riverbellecasino.com/manifest.json?v=wAvwKewdXG">
+    <meta name="theme-color" content="#230a02">
+    <!-- test ––--></head>
+
+<body class="home target-en" ng-app="rbcApp" onload="gtmTagging()">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT5RNX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header class="clearfix">
+                <div class="container">
+            <div class="clearfix">
+                <div class="logo"><a href="https://www.riverbellecasino.com/"><img
+                            src="https://www.riverbellecasino.com/rbc/images/RBC-logo.png" data-gtmid='101:1'
+                            data-info='Logo' /><img class="since-1997"
+                            src="https://www.riverbellecasino.com/rbc/images/since-1997.png" /></a></div>
+                <div class="siteNavigation">
+                    <div class="language_menu siteNavBtns mobileHide" data-gtmid='104:2' data-info='Language'
+                        data-ctx='Language Pop' data-auto="HeaderLanguageLink">
+                        Language                    </div>
+                                            <div class="siteNavBtns mobileHide"><a href="javascript:void(0)"
+                                onclick="window.open('http://smrouter.com/divert/sitemaxtraffic/RBC/en/','name','width=490,height=600,top=111,left=111,scrollbars=no,resizable=no','replace=true')" data-gtmid='103:5' data-info='Support'
+                                data-ctx='Menu' data-auto="HeaderSupportLink">
+                                24/7 Support                            </a></div>
+                                                                <div class="register_btn siteNavBtns mobileHide"><a class="reg_btn" href="https://auth.riverbellecasino.com/en/registration/?ul=en"
+                                rel="nofollow" data-gtmid='103:6' data-info='Register' data-ctx='Menu'
+                                data-auto="HeaderSignUpLink">
+                                Register                            </a></div>
+                        <div class="desktop_login siteNavBtns" data-gtmid='103:7' data-info='Login' data-ctx='Menu'><a
+                                class="log_btn" href="https://auth.riverbellecasino.com/en/login/?ul=en" rel="nofollow" data-gtmid='103:7'
+                                data-info='Login' data-ctx='Menu' data-auto="HeaderLoginLink">
+                                Login                            </a></div>
+                                        <div class="siteNavBtns burgerMenu" data-auto="HeaderBurgerMenuLink"><img
+                            src="https://www.riverbellecasino.com/rbc/images/burger-menu-icon.png"
+                            alt="Menu" data-gtmid='900:8' data-info='Burger Menu'
+                            data-ctx='Menu' /></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav" data-auto="HeaderSidebarNav">
+        <a href="javascript:void(0)" class="closebtn" data-auto="HeaderBurgerMenuClose"><img
+                src="https://www.riverbellecasino.com/rbc/images/close-icon.png" data-gtmid='903:9' data-info='Close Icon' /></a>
+        <a href="/" class="burgerlogo"><img src="https://www.riverbellecasino.com/rbc/images/RBC-logo.png" data-gtmid='903:9'
+                data-info='Close Icon' /></a>
+                    <a href="https://auth.riverbellecasino.com/en/registration/?ul=en" class="register_btn mobileShow" data-gtmid='901:11' data-info='Register'>
+                Register            </a>
+            <a href="https://auth.riverbellecasino.com/en/login/?ul=en" class="desktop_login mobileShow" data-gtmid='901:12' data-info='Login'>
+                Login            </a>
+                            <a href="http://smrouter.com/divert/sitemaxtraffic/RBC/en/" class="mobileShow" rel="nofollow" target="_blank" data-gtmid='901:13'
+                data-info='24/7 Support'>
+                24/7 Support            </a>
+                <a href="javascript:void(0)" class="language_menu mobileShow" data-gtmid='901:14' data-info='Language'>
+            Language        </a>
+        <h4 data-gtmid="901:15" data-info="Get Started" data-auto=HeaderGetStarted>Get Started</h4><ul><li><a href="https://www.riverbellecasino.com/casino-promotions/" data-gtmid="901:16"  data-info="How do I claim my casino bonus?" data-auto=HeaderClaimPromotionsLink>How do I claim my casino bonus?</a></li><li><a href="https://www.riverbellecasino.com/mobile-casino/" data-gtmid="901:16"  data-info="Mobile Casino" data-auto=HeaderMobileCasino>Mobile Casino</a></li><li><a href="https://www.riverbellecasino.com/contact/" data-gtmid="901:16"  data-info="Contact Us" data-auto=HeaderContactUsLink>Contact Us</a></li></ul><h4 data-gtmid="901:15" data-info="Deposits and Withdrawals" data-auto=HeaderDepositWithdrawals>Deposits and Withdrawals</h4><ul><li><a href="https://www.riverbellecasino.com/banking/" data-gtmid="901:16"  data-info="Banking" data-auto=HeaderBankingLink>Banking</a></li></ul><h4 data-gtmid="901:15" data-info="Promotions" data-auto=HeaderPromotions>Promotions</h4><ul><li><a href="https://www.riverbellecasino.com/casino-promotions/" data-gtmid="901:16"  data-info="Promotions" data-auto=HeaderPromotionsLink>Promotions</a></li><li><a href="https://www.riverbellecasino.com/casino-promotions/rules/" data-gtmid="901:16"  data-info="Promotion Terms" data-auto=HeaderPromotionsTermsLink>Promotion Terms</a></li><li><a href="https://www.riverbellecasino.com/casino-promotions/loyalty/" data-gtmid="901:16"  data-info="Rewards" data-auto=HeaderLoyaltyRewardsLink>Rewards</a></li></ul><h4 data-gtmid="901:15" data-info="Casino Games" data-auto=HeaderCasinoGames>Casino Games</h4><ul><li><a href="https://www.riverbellecasino.com/casino-games/" data-gtmid="901:16"  data-info="Casino Games" data-auto=HeaderCasinoGamesLink>Casino Games</a></li><li><a href="https://www.riverbellecasino.com/online-slots/" data-gtmid="901:16"  data-info="Online Slots" data-auto=HeaderSlotsLink>Online Slots</a></li><li><a href="https://www.riverbellecasino.com/online-video-poker/" data-gtmid="901:16"  data-info="Video Poker" data-auto=HeaderVideoPokerLink>Video Poker</a></li></ul><h4 data-gtmid="901:15" data-info="Table Games" data-auto=HeaderTableGames>Table Games</h4><ul><li><a href="https://www.riverbellecasino.com/live-dealer/" data-gtmid="901:16"  data-info="Live Dealer" data-auto=HeaderLiveDealerLink>Live Dealer</a></li><li><a href="https://www.riverbellecasino.com/online-roulette/" data-gtmid="901:16"  data-info="Online Roulette" data-auto=HeaderRouletteLink>Online Roulette</a></li><li><a href="https://www.riverbellecasino.com/online-blackjack/" data-gtmid="901:16"  data-info="Online Blackjack" data-auto=HeaderBlackjackLink>Online Blackjack</a></li><li><a href="https://www.riverbellecasino.com/online-baccarat/" data-gtmid="901:16"  data-info="Baccarat" data-auto=HeaderBaccaratLink>Baccarat</a></li></ul><h4 data-gtmid="901:15" data-info="Tournaments" data-auto=HeaderTournaments>Tournaments</h4><ul><li><a href="https://www.riverbellecasino.com/blackjack-tournaments/" data-gtmid="901:16"  data-info="Blackjack Tournaments" data-auto=HeaderBlackjackTournamentsLink>Blackjack Tournaments</a></li><li><a href="https://www.riverbellecasino.com/slots-tournaments/" data-gtmid="901:16"  data-info="Slots Tournaments" data-auto=HeaderSlotsTournamentsLink>Slots Tournaments</a></li></ul><h4 data-gtmid="901:15" data-info="Other Games" data-auto=HeaderOtherGames>Other Games</h4><ul><li><a href="https://www.riverbellecasino.com/online-scratch-card/" data-gtmid="901:16"  data-info="Scratchcards" data-auto=HeaderScratchcardsLink>Scratchcards</a></li></ul><h4 data-gtmid="901:15" data-info="About Us" data-auto=HeaderAboutUs>About Us</h4><ul><li><a href="https://www.riverbellecasino.com/about-us/" data-gtmid="901:16"  data-info="About Us" data-auto=HeaderAboutUsLink>About Us</a></li><li><a href="https://www.riverbellecasino.com/security-and-privacy/" data-gtmid="901:16"  data-info="Privacy Policy" data-auto=HeaderPrivacyPolicyLink>Privacy Policy</a></li></ul>
+            </div>
+
+                    <div class="hero" data-gtmid='116:75' data-info='Main Offer Image' data-more-info='Main Offer'
+            data-ctx='Top Offer Block'>
+            <div class="container" data-gtmid='116:75' data-info='Main Offer Image' data-more-info='Main Offer'
+                data-ctx='Top Offer Block'>
+                <div class="offer" data-gtmid='116:75' data-info='Main Offer Image' data-more-info='Main Offer'
+                    data-ctx='Top Offer Block'>
+                    <div class="offerSmallTxt" data-gtmid="108:47" data-info="Offer Text" data-ctx="Top Offer Block"
+                        data-auto="OfferContainerContent">
+                        €800 BONUS                    </div>
+                    <div class="terms-breakdown" data-auto="HeaderOfferSignificantConditionsText">
+                        1st Deposit - Match Bonus up to €200 • 2nd / 3rd  Deposit - Match Bonus up to €300 • 10 daily spins to win a Million • New customers only •  Min deposit €10 • Wagering & Terms apply                    </div>
+                    <div class="cta hero"><a class="reg_btn" href="https://auth.riverbellecasino.com/en/registration/?ul=en" data-auto="HeaderOfferSignUpButton" rel="nofollow" data-gtmid="110:48" data-info="Play Now" data-ctx="Top Offer Block">Sign up</a></div>                    <div class="find-out-more"><a href="https://www.riverbellecasino.com/casino-promotions/"
+                            data-auto="OfferFindOutMore" data-gtmid='114:49' data-info='Find Out More'
+                            data-ctx='Top Offer Block'>
+                            Find out more |
+                        </a> <a href="https://www.riverbellecasino.com/casino-promotions/rules/"
+                            data-auto="OfferPromoTermsLink">
+                            Promotion Terms                        </a></div>
+                </div>
+            </div>
+        </div>
+                <div class="section content">
+					<div class="container">
+						<div class="row clearfix">
+							<div class="col-7"><h1>River Belle Online Casino</h1><p>River Belle is among the oldest and most established <a href="https://www.riverbellecasino.com/casino-games/">online casino</a>s in the world, having first gone live in 1997. Our sophisticated look, games, service and standards have been honed and polished over the years, to create the ultimate casino experience. Welcome to a lifetime of wonderful game play, huge bonuses and big jackpot wins!</p>
+
+<h2>High Standards in Every Way</h2>
+
+<p>We take every aspect of playing online seriously at River Belle Casino. Our Microgaming software not only delivers the best games to you, it also ensures a smooth and easily navigable lobby so that you can find what you&rsquo;re looking for and get to playing as soon as possible.</p>
+
+<p>To make managing your casino account and experiences as painless as possible, we also offer an extensive range of trusted banking options, including:</p>
+
+<ul class="mylist">
+	<li>Fast Bank Transfer</li>
+	<li>MasterCard</li>
+	<li>Maestro</li>
+	<li>Visa Debit</li>
+	<li>Visa Electron</li>
+	<li>Neteller</li>
+	<li>Entropay</li>
+	<li>Direct Bank Transfer</li>
+	<li>SwedbankGiropay</li>
+	<li>Neosurf</li>
+	<li>UseMyFunds</li>
+</ul>
+
+<p>The other feature you need to keep your playing experiences as uninterrupted as possible is reliable customer service. The support agents at River Belle are available via email or live chat, so you should be able to resolve any issues that arise and get back to enjoying yourself in no time at all.</p>
+</div>
+							<div class="col-5">
+								<img src="https://www.riverbellecasino.com/rbc/images/photos-right1.jpg" />
+							</div>
+							<div class="col-12"><div class="cta"><a class="reg_btn" href="https://auth.riverbellecasino.com/en/registration/?ul=en" data-auto="FooterCTABarSignUpText" rel="nofollow" data-gtmid="700:62" data-info="Play Now">Sign up</a></div></div>
+						</div>
+					</div>
+				</div><div class="section content-trust">
+					<div class="container text-center">
+						<div class="row clearfix">
+							<div class="col-12"><h2>Trusted Online Casino Software</h2>
+
+<p>In keeping with bringing our players nothing but the best, we knew we needed to choose world-class software to power River Belle. That&rsquo;s why we chose Microgaming, and we&rsquo;ve haven&rsquo;t looked back since.</p>
+
+<p>Microgaming has been going since 1994, so the team is even more experienced than we are, and like us they&rsquo;ve spent the years building and maintaining a solid reputation. Every game that they develop and produce boasts incredible graphics and sounds, as well as immersive design that will entertain you from the first time you play, and every time after that. Our beautifully functional and easily navigable lobby also runs so well because of Microgaming.</p>
+
+<h2>Play the Way You Want To</h2>
+
+<p>Microgaming&rsquo;s cutting edge casino software also means that River Belle will work in any situation, so whatever works best for you is easily accommodated. You can play on your desktop, smartphone or tablet, in a mobile download or instant-play format, without compromising on any quality at all.</p>
+
+<p>If you&rsquo;re interested in <a href="https://www.riverbellecasino.com/mobile-casino/">mobile play</a>, you&rsquo;ll be glad to know that River Belle is perfectly compatible with every device and handset on the market. Whether you prefer Windows, iOS, <a href="https://www.riverbellecasino.com/mobile-casino/android/">Android</a>, Blackberry or any other option, you can get the best games on the go.</p>
+
+<p>Being able to play as you carry on with the rest of the day is very convenient, of course, and means you never need to miss out on a paying opportunity again. To make things even better for our busy players, we&rsquo;ve made it possible to access the same River Belle Casino account across any device you might use.</p>
+
+<p>You can start playing on your desktop at home, continue on your smartphone as you travel to work and finish on your tablet as you wait for a meeting to start!</p>
+<div class="cta ctaCentered"><a class="reg_btn" href="https://auth.riverbellecasino.com/en/registration/?ul=en" data-auto="FooterCTABarSignUpText" rel="nofollow" data-gtmid="700:62" data-info="Play Now">Sign up</a></div></div>
+						</div>
+					</div>
+				</div><div class="section content">
+					<div class="container">
+						<div class="row clearfix">
+							<div class="col-7"><h2>Play Your Favourite Casino Games</h2>
+
+<p>The superb range of casino games that we offer at River Belle means that in addition to deciding how to play based on your own preferences and circumstances, you can also decide what to play no matter what sort of game you&rsquo;re in the mood for.</p>
+
+<p>Microgaming is especially famous for producing incredible Slots games, and you can choose from the full range at River Belle. Classic Slots&nbsp;sit comfortably alongside Tomb Raider, Avalon II, Ladies Nite and other popular Video Slots, and for an extra layer of excitement you can play Progressive Jackpot and Megaspin games including Mega Moolah and Break da Bank Again.</p>
+
+<p>For a change of pace, check out <a href="https://www.riverbellecasino.com/online-blackjack/">Blackjack</a>, Roulette,&nbsp;Baccarat, Video Poker and&nbsp;Scratchcards. We also run Slots and Blackjack tournaments, which can help you shake up your playing routine. Go head to head with other players in a Slots tournament and stand to win a huge payout for a relatively small buy-in, or play Blackjack against fellow enthusiasts for an enjoyably social experience. Our Blackjack tournaments are the perfect way to try out new tactics and to build up your confidence before risking any money.</p>
+
+<p>Whatever casino games you enjoy, you&rsquo;re sure to find them at River Belle, and with over 500 titles to choose from, there&rsquo;s something for everyone!</p>
+
+<h2>The Best Casino Bonuses Online</h2>
+
+<p>The only thing better than playing top-quality casino games online is enjoying payouts and bonuses to match, and that&rsquo;s definitely the case at River Belle. Our Welcome Bonus is especially generous, but once you&rsquo;ve finally used it up there are plenty of other promotions to keep your player account topped up. Our generous Loyalty Programme will do the same, rewarding you for every real money bet that you place. The rewards at River Belle Casino round off what we have to offer perfectly. Sign up at River Belle Casino and indulge in world class gaming and so much more!</p>
+</div>
+							<div class="col-5">
+								<img src="https://www.riverbellecasino.com/rbc/images/photos-right2.jpg" />
+							</div>
+							<div class="col-12"><div class="cta"><a class="reg_btn" href="https://auth.riverbellecasino.com/en/registration/?ul=en" data-auto="FooterCTABarSignUpText" rel="nofollow" data-gtmid="700:62" data-info="Play Now">Sign up</a></div></div>
+						</div>
+					</div> 
+				</div><footer class="section">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-3 footer-logo">
+                <div><a href="https://www.riverbellecasino.com/"><img src="https://www.riverbellecasino.com/rbc/images/footer-logo.png"
+                            data-gtmid='600:63' data-info='Logo' /></a></div>
+                <div data-auto='FooterLicenseText'>
+                    <p data-gtmid='601:74' data-info='License'>
+                        Baytree (Alderney) Limited (No.2012) is an Alderney registered company registered at La Corvee House , La Corvee , Alderney Channel Islands, GYP 3TQ. Baytree (Alderney) Limited is licensed under the Alderney Gambling Control Commission, eGaming license number 155 C1 (Issued on the 15 December 2020)                    </p>
+                    <p data-gtmid='601:74' data-info='License'>&copy;
+                        2024 Riverbelle Casino
+                    </p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="icons">
+                                        <ul>
+                        <li>
+                                                            <a href="https://www.riverbellecasino.com/mobile-casino/">
+                                    <img src="https://www.riverbellecasino.com/rbc/images/systems.png" alt="Our Casino Platforms"
+                                        data-gtmid="600:64" data-info="Operating Systems" data-pos="1"
+                                        data-ctx="Operating Systems" />
+                                </a>
+                                                    </li>
+                        <li ><a target="_blank" href="https://www.gamblingcontrol.org/" rel="nofollow" data-gtmid="600:65" data-info="Alderney"  data-pos="2" data-ctx="TrustQ" data-auto="FooterAlderneyLogoLink"><img src="https://www.riverbellecasino.com/rbc/images/logo_alderney.svg" data-gtmid="600:69" data-info="Alderney"  data-pos="4" data-ctx="TrustQ" width="287" height="70" data-auto="FooterAlderneyLogoImage" /></a></li>                        <li><img src="https://www.riverbellecasino.com/rbc/images/devices.png" alt="Mobile" data-gtmid="600:65"
+                                data-info="Device Compatibility" data-pos="2" data-ctx="Operating Systems" /></li>
+                        <li><a href="https://secure.ecogra.org/certification/4e9b3049-cbff-44f1-a19d-8bde373aa380" target="_blank" rel="nofollow"
+                                data-auto="FooterEcograLogoLink"><img
+                                    src="https://www.riverbellecasino.com/rbc/images/ecogra.png" data-gtmid="600:66"
+                                    data-info="eCogra" data-pos="1" data-ctx="TrustQ"
+                                    data-auto="FooterEcograLogoImage" /></a></li>
+                                                    <li><a href="https://www.riverbellecasino.com/banking/" data-auto="FooterVisaLogoLink"><img
+                                        src="https://www.riverbellecasino.com/rbc/images/visa.png" data-gtmid="600:67"
+                                        data-info="Visa & Mastercard" data-pos="2" data-ctx="TrustQ"
+                                        data-auto="FooterVisaLogoImage" /></a></li>
+                                                <li><a href="https://www.riverbellecasino.com/responsible-gaming/"
+                                data-auto="FooterResponsibleGamingLogoLink"><img
+                                    src="https://www.riverbellecasino.com/rbc/images/eighteenplus/icon-18up-en.png"
+                                    data-gtmid="600:68" data-info="18+" data-pos="3" data-ctx="TrustQ"
+                                    data-auto="FooterResponsibleGamingLogoImage" /></a></li>
+                        <li><a href="https://www.begambleaware.org/" target="_blank" rel="nofollow"
+                                data-auto="FooterGambleAwareLogoLink"><img class="gambleaware"
+                                    src="https://www.riverbellecasino.com/rbc/images/gambleaware.png" data-gtmid="600:70"
+                                    data-info="begambleaware.org" data-pos="5" data-ctx="TrustQ"
+                                    data-auto="FooterGambleAwareLogoImage" /></a></li>
+                                                    <li class="microgaming"><a href="https://www.microgaming.co.uk/" target="_blank" rel="nofollow"
+                                    data-auto="FooterMicrogamingLogoLink"><img
+                                        src="https://www.riverbellecasino.com/rbc/images/microgaming.png" data-gtmid="600:71"
+                                        data-info="Microgaming" data-pos="6" data-ctx="TrustQ"
+                                        data-auto="FooterMicrogamingLogoImage" /></a>
+                            </li>
+                        
+                                            </ul>
+                </div>
+            </div>
+            <div class="col-2" data-auto="CasLinksGroup">
+                <h3 data-auto="caslinks">
+                    Casino Links                </h3>
+                <ul>
+                    <li><a href="https://www.riverbellecasino.com/"  data-gtmid="603:73" data-info="Home" data-more-info="More links" data-pos="1" data-ctx="Footer Nav" data-auto="FooterHomeLink">Home</a></li><li><a href="https://www.riverbellecasino.com/casino-games/"  data-gtmid="603:73" data-info="Casino Games" data-more-info="More links" data-pos="2" data-ctx="Footer Nav" data-auto="FooterCasinoGamesLink">Casino Games</a></li><li><a href="https://www.riverbellecasino.com/mobile-casino/"  data-gtmid="603:73" data-info="Mobile Casino" data-more-info="More links" data-pos="3" data-ctx="Footer Nav" data-auto="FooterMobileCasinoLink">Mobile Casino</a></li><li><a href="https://www.riverbellecasino.com/online-slots/"  data-gtmid="603:73" data-info="Online Slots" data-more-info="More links" data-pos="4" data-ctx="Footer Nav" data-auto="FooterSlotsLink">Online Slots</a></li><li><a href="https://www.riverbellecasino.com/online-blackjack/"  data-gtmid="603:73" data-info="Online Blackjack" data-more-info="More links" data-pos="5" data-ctx="Footer Nav" data-auto="FooterBlackjackLink">Online Blackjack</a></li><li><a href="https://www.riverbellecasino.com/online-baccarat/"  data-gtmid="603:73" data-info="Baccarat" data-more-info="More links" data-pos="6" data-ctx="Footer Nav" data-auto="FooterBaccaratLink">Baccarat</a></li><li><a href="https://www.riverbellecasino.com/online-roulette/"  data-gtmid="603:73" data-info="Online Roulette" data-more-info="More links" data-pos="7" data-ctx="Footer Nav" data-auto="FooterRouletteLink">Online Roulette</a></li><li><a href="https://www.riverbellecasino.com/live-dealer/"  data-gtmid="603:73" data-info="Live Dealer" data-more-info="More links" data-pos="8" data-ctx="Footer Nav" data-auto="FooterLiveDealerLink">Live Dealer</a></li>                </ul>
+            </div>
+            <div class="col-2" data-auto="QuickLinksGroup">
+                <h3 data-auto="quicklinks">
+                    Quick Links                </h3>
+                <ul>
+                    <li><a href="https://www.riverbellecasino.com/about-us/"  data-gtmid="603:73" data-info="About Us" data-more-info="Quick links" data-pos="9" data-ctx="Footer Nav" data-auto="FooterAboutUsLink">About Us</a></li><li><a href="https://www.riverbellecasino.com/banking/"  data-gtmid="603:73" data-info="Banking" data-more-info="Quick links" data-pos="10" data-ctx="Footer Nav" data-auto="FooterBankingLink">Banking</a></li><li><a href="https://www.riverbellecasino.com/casino-promotions/"  data-gtmid="603:73" data-info="Promotions" data-more-info="Quick links" data-pos="11" data-ctx="Footer Nav" data-auto="FooterPromotionsLink">Promotions</a></li><li><a href="https://www.riverbellecasino.com/casino-promotions/rules/"  data-gtmid="603:73" data-info="Promotion Terms" data-more-info="Quick links" data-pos="12" data-ctx="Footer Nav" data-auto="FooterPromotionTermsLink">Promotion Terms</a></li><li><a href="https://www.riverbellecasino.com/casino-promotions/loyalty/"  data-gtmid="603:73" data-info="Rewards" data-more-info="Quick links" data-pos="13" data-ctx="Footer Nav" data-auto="FooterLoyaltyRewardsLink">Rewards</a></li><li><a href="https://www.riverbellecasino.com/contact/"  data-gtmid="603:73" data-info="Contact Us" data-more-info="Quick links" data-pos="14" data-ctx="Footer Nav" data-auto="FooterContactUsLink">Contact Us</a></li><li><a href="https://www.riverbellecasino.com/sitemap/"  data-gtmid="603:73" data-info="Sitemap" data-more-info="Quick links" data-pos="15" data-ctx="Footer Nav" data-auto="FooterSitemapLink">Sitemap</a></li>                </ul>
+            </div>
+            <div class="col-2" data-auto="KnowFactsGroup">
+                <h3 data-auto="knowfacts">
+                    Know the facts                </h3>
+                <ul>
+                    <li><a href="https://www.riverbellecasino.com/terms-and-conditions/"  data-gtmid="603:73" data-info="Terms and Conditions" data-more-info="Casino links" data-pos="16" data-ctx="Footer Nav" data-auto="FooterTermsAndConditionsLink">Terms and Conditions</a></li><li><a href="https://www.buffalopartners.com/" rel="nofollow" target="_blank" data-gtmid="603:73" data-info="Affiliates" data-more-info="Casino links" data-pos="17" data-ctx="Footer Nav" data-auto="FooterAffiliatesLinks">Affiliates</a></li><li><a href="https://www.riverbellecasino.com/security-and-privacy/"  data-gtmid="603:73" data-info="Privacy Policy" data-more-info="Casino links" data-pos="18" data-ctx="Footer Nav" data-auto="FooterPrivacyPolicyLink">Privacy Policy</a></li><li><a href="https://www.riverbellecasino.com/disclaimer/"  data-gtmid="603:73" data-info="Disclaimer" data-more-info="Casino links" data-pos="19" data-ctx="Footer Nav" data-auto="FooterDisclaimerLink">Disclaimer</a></li><li><a href="https://www.riverbellecasino.com/copyright/"  data-gtmid="603:73" data-info="Copyright" data-more-info="Casino links" data-pos="20" data-ctx="Footer Nav" data-auto="FooterCopyrightLink">Copyright</a></li><li><a href="https://www.riverbellecasino.com/responsible-gaming/"  data-gtmid="603:73" data-info="Responsible Gaming" data-more-info="Casino links" data-pos="21" data-ctx="Footer Nav" data-auto="FooterResponsibleGamingLink">Responsible Gaming</a></li>                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="overlay"></div>
+<div class="language_pop">
+    <div class="languagePop popWrapper">
+        <div class="languagePopWrap row clearfix" data-auto="HeaderLanguageList">
+            <div class="triggerClose closebtn" data-auto="HeaderLanguageClose"><img
+                    src="https://www.riverbellecasino.com/rbc/images/close-icon.png" data-gtmid='113:4' data-info='Close Icon'
+                    data-ctx='Language Pop' /></div>
+            <div class="col-12">
+                Select your language            </div>
+            <div class="col-3"><a href="https://www.riverbellecasino.com/" data-gtmid="105:3" data-info="English" data-pos="1" data-ctx="Language Pop" >English</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/de/" data-gtmid="105:3" data-info="German" data-pos="2" data-ctx="Language Pop" >Deutsch</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/cy/" data-gtmid="105:3" data-info="Greek (CY)" data-pos="3" data-ctx="Language Pop" >Ελληνικά (CY)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/bm/" data-gtmid="105:3" data-info="Bermuda (EN)" data-pos="4" data-ctx="Language Pop" >Bermuda (EN)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/ca/" data-gtmid="105:3" data-info="Canada (EN)" data-pos="5" data-ctx="Language Pop" >Canada (EN)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/ie/" data-gtmid="105:3" data-info="Ireland (EN)" data-pos="6" data-ctx="Language Pop" >Ireland (EN)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/nz/" data-gtmid="105:3" data-info="New Zealand (EN)" data-pos="7" data-ctx="Language Pop" >New Zealand (EN)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/tt/" data-gtmid="105:3" data-info="Trinidad (EN)" data-pos="8" data-ctx="Language Pop" >Trinidad (EN)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/es/" data-gtmid="105:3" data-info="Spanish" data-pos="9" data-ctx="Language Pop" >Español</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/es/mx/" data-gtmid="105:3" data-info="Spanish (MX)" data-pos="10" data-ctx="Language Pop" >Español (MX)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/es/uy/" data-gtmid="105:3" data-info="Spanish (UY)" data-pos="11" data-ctx="Language Pop" >Español (UY)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/ca/fr/" data-gtmid="105:3" data-info="French (CA)" data-pos="12" data-ctx="Language Pop" >Français (CA)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/it/" data-gtmid="105:3" data-info="Italy" data-pos="13" data-ctx="Language Pop" >Italiano</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/no/" data-gtmid="105:3" data-info="Norwegian" data-pos="14" data-ctx="Language Pop" >Norsk</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/br/" data-gtmid="105:3" data-info="Portugal (BR)" data-pos="15" data-ctx="Language Pop" >Brasil (PT)</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/ru/" data-gtmid="105:3" data-info="Russian" data-pos="16" data-ctx="Language Pop" >Русский</a></div>
+ <div class="col-3"><a href="https://www.riverbellecasino.com/th/" data-gtmid="105:3" data-info="Thai" data-pos="17" data-ctx="Language Pop" >ไทย</a></div>
+         </div>
+    </div>
+</div>
+<div class="back_to_top">
+    <picture>
+        <source media="(min-width:3840px)" width="115" height="115" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:2560px)" width="77" height="77" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:1920px)" width="58" height="58" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:1600px)" width="96" height="96" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:1366px)" width="82" height="82" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:1280px)" width="77" height="77" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:1024px)" width="61" height="61" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:768px)" width="92" height="92" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:600px)" width="72" height="72" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:412px)" width="49" height="49" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:375px)" width="45" height="45" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <source media="(min-width:360px)" width="43" height="43" srcset="https://www.riverbellecasino.com/rbc/images/back_to_top.webp">
+        <img alt="Back To Top" src="https://www.riverbellecasino.com/rbc/images/back_to_top.webp" width="38" height="38">
+    </picture>
+</div>
+
+
+<script src="https://www.riverbellecasino.com/rbc/js/jquery.matchHeight.min.js" type="text/javascript"></script>
+<script src="https://www.riverbellecasino.com/rbc/js/general.min.js"></script>
+    <!--[if gt IE 9 | !IE]><!-->
+    <script src="https://www.riverbellecasino.com/rbc/js/angular.min.js"></script>
+    <script src="https://www.riverbellecasino.com/rbc/js/app.min.js"></script>
+    <script type="text/javascript">
+        var domain = 'https://www.riverbellecasino.com/';
+    </script>
+    <script src="https://www.riverbellecasino.com/rbc/js/web.js"></script>
+    <script src="https://www.riverbellecasino.com/rbc/js/games.min.js"></script>
+    <script>
+        var temp_vist_id = '';
+        var encrypted = 'VUNRb0RxKysvZ25OZW04ZmxlKzhCN21zZ2tvc3Y5YWE0SmIzbERxc1BheXR4Q2d4OVFIc290NHI2RlY2aHMvTQ==';
+        var state = 'live';
+        var api_url = 'https://az2.digitrk.net/';
+        var template = "https://www.riverbellecasino.com/rbc/";
+        var ismobile = "true";
+        var res = {
+            data: null        };
+    </script>
+    <script src="https://www.riverbellecasino.com/rbc/js/controllers/gamesController.min.js"></script>
+    <!--<![endif]-->
+
+
+<script id="tracking_script" src="https://media.src-play.com/plugins/analytics/vtrk-min.js" async defer></script>
+
+<script>
+  document.getElementById("tracking_script").addEventListener("load", function (event) {
+    window.vtrk.process({
+      debug: false,
+      code: "AC10FD02-6B01-42E4-BA51-0E31CFE4A6D2",
+      environment: "production",
+      queryString: {
+        format: window.vtrk.QueryStringFormats.Default,
+        autoInjector: {
+          enabled: true,
+          domains: [
+            'auth.riverbellecasino.com'
+          ]
+        }
+      },
+      cookieFallbacks: {
+        enabled: true,
+        values: [
+          {
+            variableName: "promoid",
+            cookieName: "promo_id"
+          },
+          {
+            variableName: "a",
+            cookieName: "campaign_id"
+          },
+          {
+            variableName: "s",
+            cookieName: "affiliate_id"
+          },
+          {
+            variableName: "b",
+            cookieName: "media_banner_id"
+          }
+        ]
+      }
+    });
+  });
+</script>
+<style>
+    .brand-content {
+        opacity: 1;
+    }
+</style>
+
+<e-privacy data-lang="en" data-env="production"></e-privacy>
+<script defer src=https://media.src-play.com/plugins/eprivacy/eprivacy-custom.js></script>
+<script>
+    try {
+        var placeholders = [
+            {
+                key: "cookiePolicy",
+                value: "https://www.riverbellecasino.com/cookie-policy/"
+            },
+            {
+                key: "privacyPolicy",
+                value: "https://www.riverbellecasino.com/security-and-privacy/"
+            }
+        ];
+
+        var theme = {
+            brand: {
+                primary: "#501e00",
+                background: "#FFFFFF",
+            },
+            button: {
+                primary: "#501e00",
+                secondary: "#FFFFFF",
+            },
+            toggle: {
+                active: "#501e00",
+                inactive: "#5a5a5a",
+                containerInactive: "#EFEFEF",
+            },
+            text: {
+                primary: "#000000",
+                secondary: "rgba(0,0,0,1)",
+                tertiary: "#000000",
+                anchor: "#501e00",
+            }
+        };
+
+        var linkedUrls = [
+            "auth.riverbellecasino.com"
+        ];
+    } catch (error) {
+        console.log("Unable to set theme property", error)
+    }
+
+    var ePrivacyEl = document.querySelector('e-privacy');
+    ePrivacyEl.setAttribute('data-theme', JSON.stringify(theme));
+    ePrivacyEl.setAttribute('data-placeholder', JSON.stringify(placeholders));
+    ePrivacyEl.setAttribute('data-linked-urls', JSON.stringify(linkedUrls));
+
+    var manageCookies = document.getElementsByClassName('manage-cookies');
+    for (let i = 0; i < manageCookies.length; i++) {
+        manageCookies[i].addEventListener("click", function () {
+            try {
+                event.preventDefault();
+                if (ePrivacyEl && ePrivacyEl.hasAttribute('data-show')) {
+                    ePrivacyEl.removeAttribute('data-show');
+                }
+                ePrivacyEl.setAttribute('data-show', "true");
+            } catch (err) {
+
+            }
+        });
+    }
+
+    function changePrivacySettings() {
+        try {
+            // Show modal After settings have been closed
+            var ePrivacyEl = document.querySelector('e-privacy');
+            if (ePrivacyEl && ePrivacyEl.hasAttribute('data-show')) {
+                ePrivacyEl.removeAttribute('data-show');
+            }
+            ePrivacyEl.setAttribute('data-show', "true");
+        } catch (err) {
+            console.log("Caughted an errrr", err);
+        }
+    }
+</script>
+<!-- CrUX 2. Network Connection Type & FID -->
+<script>
+    if (typeof navigator.connection !== 'undefined' && navigator.connection.addEventListener) {
+        navigator.connection.addEventListener('change', logNetworkInfo);
+    } else {
+        callCatchMe('navigator.connection.addEventListener not available', 'navigator.connection');
+    }
+
+    function logNetworkInfo() {
+        try {
+            dataLayer.push({
+                "event": "CrUXEventTrigger.gtm_network_event",
+                "eventCategory": "Performance Metric",
+                "eventAction": "navigator-connection",
+                "eventLabel": "effective-type",
+                "gtm_value": navigator.connection.effectiveType,
+                "effectiveType": "downlink: " + navigator.connection.downlink + "Mb/s, rtt: " + navigator.connection
+                    .rtt + "ms",
+                "nonInteraction": true
+            });
+        } catch (error) {
+            callCatchMe(error, 'logNetworkInfo');
+        }
+    }
+    logNetworkInfo();
+
+    if (typeof perfMetrics != "undefined") {
+        perfMetrics.onFirstInputDelay(function (delay, evt) {
+            var ms_delay = Math.round(delay * 1000);
+
+            dataLayer.push({
+                "event": "CrUXTrigger.gtm_performance_metrics",
+                "eventCategory": "Performance Metric",
+                "eventAction": "FID",
+                "eventLabel": "first-input-delay",
+                "eventValue": ms_delay,
+                "gtm_value": evt,
+                "nonInteraction": true
+            });
+        });
+    } else {
+        callCatchMe('perfMetrics not available', 'first-input-delay');
+    }
+</script>
+<!-- CrUX Step 2. Network Connection Type & FID END -->
+</body>
+
+</html>

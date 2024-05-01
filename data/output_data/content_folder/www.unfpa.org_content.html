@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-8ef5284fb645d52553b",applicationID:"1077361645"};;/*! For license information please see nr-loader-rum-1.257.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,OP:()=>S,lF:()=>N,Yu:()=>_,Dg:()=>m,CX:()=>c,GE:()=>w,sU:()=>k});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const _=(0,n.mF)().o;var E=r(385),x=r(6818);const D={buildEnv:x.Re,customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0,harvestCount:0,timeKeeper:void 0},R={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function k(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,D);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.257.0",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(Date.now()-performance.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occurred while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{LP:()=>l,RP:()=>c,o5:()=>u});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){d(e),s[e].get(t)&&s[e].delete(t),s[e].size&&f(e)}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=[...s[e]];t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),g(e,r)})))}function g(e,t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)p(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}r.isolatedBacklog||delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=h(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=m()[s[e]];p&&p.push([f,e,r,a]);return a},get:v,listeners:h,context:g,buffer:function(e,t){const r=m();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!m()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(f,t)}function m(){return f.backlog}}(void 0,"globalEE"),d=(0,n.fP)();d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>u,K4:()=>i,oD:()=>o,uT:()=>c,wO:()=>s});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>c,T:()=>s});var n=r(8325),i=r(385);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i._A.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},7872:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{D:()=>n,Z:()=>i})},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(385),i=r(7894);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n._A.NREUM||(n._A.NREUM={}),void 0===n._A.newrelic&&(n._A.newrelic=n._A.NREUM),n._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:n._A.setTimeout,SI:n._A.setImmediate,CT:n._A.clearTimeout,XHR:n._A.XMLHttpRequest,REQ:n._A.Request,EV:n._A.Event,PR:n._A.Promise,MO:n._A.MutationObserver,FETCH:n._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{Ef:()=>i});var n=r(7056);r(3325).D.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"};n.IK.ERROR,n.IK.FULL,n.IK.OFF},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2758:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(8e3),c=r(3960),u=r(385),d=r(50),l=r(3081),f=r(8632),g=r(7144);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay",g.Ef.RECORD,g.Ef.PAUSE],h=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(7894),m=r(7056);function b(){const e=(0,f.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}const y={};var A=r(2825);const w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let _=!1;function E(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,E=arguments.length>3?arguments[3]:void 0,{init:x,info:D,loader_config:R,runtime:S={loaderType:p},exposed:k=!0}=t;const N=(0,f.gG)();D||(x=N.init,D=N.info,R=N.loader_config),(0,i.Dg)(e.agentIdentifier,x||{}),(0,i.GE)(e.agentIdentifier,R||{}),D.jsAttributes??={},u.v6&&(D.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,D);const P=(0,i.P_)(e.agentIdentifier),j=[D.beacon,D.errorBeacon];_||(P.proxy.assets&&(w(P.proxy.assets),j.push(P.proxy.assets)),P.proxy.beacon&&j.push(P.proxy.beacon),b(),(0,f.EZ)("activatedFeatures",A.T),e.runSoftNavOverSpa&&=!0===P.soft_navigations.enabled&&P.feature_flags.includes("soft_nav")),S.denyList=[...P.ajax.deny_list||[],...P.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,S),void 0===e.api&&(e.api=function(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.RP)(e,"api");const p={};var b=a.ee.get(e),A=b.get("tracer");y[e]=m.IK.OFF,b.on(g.Ef.REPLAY_RUNNING,(t=>{y[e]=t}));var w="api-",_=w+"ixn-";function E(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),R(w,n,!0,o||null===r?"session":void 0)(t,r)}function x(){}h.forEach((e=>{p[e]=R(w,e,!0,"api")})),p.addPageAction=R(w,"addPageAction",!0,n.D.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,R(w,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return E(e,t,"setCustomAttribute",r);(0,d.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,d.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setUserId=function(e){if("string"==typeof e||null===e)return E("enduser.id",e,"setUserId",!0);(0,d.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return E("application.version",e,"setApplicationVersion",!1);(0,d.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},p.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(l.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,b);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,d.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{b.emit("".concat(e,"-opt-in"))}))}catch(e){(0,d.Z)("An unexpected issue occurred",e)}},p[g.Ef.RECORD]=function(){(0,o.p)(l.xS,["API/recordReplay/called"],void 0,n.D.metrics,b),(0,o.p)(g.Ef.RECORD,[],void 0,n.D.sessionReplay,b)},p[g.Ef.PAUSE]=function(){(0,o.p)(l.xS,["API/pauseReplay/called"],void 0,n.D.metrics,b),(0,o.p)(g.Ef.PAUSE,[],void 0,n.D.sessionReplay,b)},p.interaction=function(e){return(new x).get("object"==typeof e?e:{})};const D=x.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(l.xS,["API/createTracer/called"],void 0,n.D.metrics,b),f||(0,o.p)(_+"tracer",[(0,v.z)(),e,r],i,n.D.spa,b),function(){if(A.emit((a?"":"no-")+"fn-start",[(0,v.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw A.emit("fn-err",[arguments,this,e],r),e}finally{A.emit("fn-end",[(0,v.z)()],r)}}}};function R(e,t,r,i){return function(){return(0,o.p)(l.xS,["API/"+t+"/called"],void 0,n.D.metrics,b),i&&(0,o.p)(e+t,[(0,v.z)(),...arguments],r?null:this,i,b),r?void 0:this}}function S(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,s.LP)(e,"api")})).catch((()=>{(0,d.Z)("Downloading runtime APIs failed..."),b.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{D[e]=R(_,e,void 0,f?n.D.softNav:n.D.spa)})),p.setCurrentRouteName=f?R(_,"routeName",void 0,n.D.softNav):R(w,"routeName",!0,n.D.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(l.xS,["API/noticeError/called"],void 0,n.D.metrics,b),(0,o.p)("err",[t,(0,v.z)(),!1,r,!!y[e]],void 0,n.D.jserrors,b)},u.il?(0,c.b2)((()=>S()),!0):S(),p}(e.agentIdentifier,E,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=k),_=!0}},8993:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.softNav]:9,[n.sessionReplay]:10}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.257.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.257.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-OiQHqGyF6PVYPjCHd8YlPkY+foWAb5sHWiuQeDd1Zne2fqGqvw2rXLKPRixlHrzSCXnR5SX25SeH9Z2ZKpwhiQ=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.257.0.PROD"]=self["webpackChunk:NRBA-1.257.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8993);var e=i(50),t=i(7144),r=i(4402);class n{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.ky)(16);this.agentIdentifier=e}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.Ef.RECORD)}pauseReplay(){return this.#e(t.Ef.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var o=i(3325),a=i(234);const s=Object.values(o.D);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(2758);var d=i(8e3),l=i(5938),f=i(3960),g=i(385);function p(e){return g.il&&!0===(0,a.Mt)(e,"privacy.cookies_enabled")}function h(e){return!!a.Yu.MO&&p(e)&&!0===(0,a.Mt)(e,"session_trace.enabled")}var v=i(7872);class m extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.RP)(e,r):this.ee.on("".concat(this.featureName,"-opt-in"),(0,v.Z)((()=>{(0,d.RP)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if(p(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3108));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t),this.featureName===o.D.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.LP)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),r),this.abortHandler?.(),(0,d.LP)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};g.il?(0,f.b2)((()=>n()),!0):n()}#t(e,t){return e!==o.D.sessionReplay||(r=this.agentIdentifier,n=t,!(!h(r)||!n?.isNew&&!n?.state.sessionReplayMode));var r,n}}var b=i(7633);class y extends m{static featureName=b.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,b.t,r),this.importAggregator()}}var A=i(1117),w=i(1284);class _ extends A.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,w.D)(e,(function(e,r){t[e]=E(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,w.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=E(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=x(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=E(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function E(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=x(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function x(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var D=i(8632),R=i(4351);var S=i(5546),k=i(7956),N=i(3239),P=i(9251),j=i(7894);class I extends m{static featureName=P.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,r),g.il&&((0,k.N)((()=>(0,S.p)("docHidden",[(0,j.z)()],void 0,P.t,this.ee)),!0),(0,N.bP)("pagehide",(()=>(0,S.p)("winPagehide",[(0,j.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var T=i(3081);class O extends m{static featureName=T.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,T.t9,r),this.importAggregator()}}new class extends n{constructor(t,r){super(r),g._A?(this.sharedAggregator=new _({agentIdentifier:this.agentIdentifier}),this.features={},(0,D.h5)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(y),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.D.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initialize the agent. Could not determine the runtime environment.")}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.p[e.featureName]-o.p[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.D.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.D.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.D.softNav)return;const n=function(e){switch(e){case o.D.ajax:return[o.D.jserrors];case o.D.sessionTrace:return[o.D.ajax,o.D.pageViewEvent];case o.D.sessionReplay:return[o.D.sessionTrace];case o.D.pageViewTiming:return[o.D.pageViewEvent];default:return[]}}(r.featureName);n.every((e=>e in this.features))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has not been initialized (").concat((0,R.P)(n),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,D.fP)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[y,I,O],loaderType:"lite"})})()})();</script>
+<link rel="canonical" href="https://www.unfpa.org/swp2024" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Interwoven Lives, Threads of Hope" />
+<meta property="og:site_name" content="United Nations Population Fund" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:updated_time" content="1714457337" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.unfpa.org/swp2024" />
+<meta property="og:title" content="Interwoven Lives, Threads of Hope" />
+<meta property="og:description" content="UNFPA State of World Population 2024" />
+<meta property="og:image" content="https://www.unfpa.org/modules/custom/unfpa_global_swop24/sharecards/main.jpg" />
+<meta property="og:image:url" content="https://www.unfpa.org/modules/custom/unfpa_global_swop24/sharecards/main.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+<meta property="fb:app_id" content="2280985865254142" />
+<meta name="twitter:site" content="@UNFPA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.unfpa.org/swp2024" />
+<meta name="twitter:title" content="Interwoven Lives, Threads of Hope" />
+<meta name="twitter:description" content="UNFPA State of World Population 2024" />
+<meta name="twitter:image" content="https://www.unfpa.org/modules/custom/unfpa_global_swop24/sharecards/main.jpg" />
+<link rel="alternate" hreflang="x-default" href="https://www.unfpa.org/swp2024" />
+<link rel="alternate" hreflang="en" href="https://www.unfpa.org/swp2024" />
+<link rel="alternate" hreflang="es" href="https://www.unfpa.org/es/swp2024" />
+<link rel="alternate" hreflang="fr" href="https://www.unfpa.org/fr/swp2024" />
+<link rel="icon" href="/themes/custom/unfpa_global/favicon.ico" type="image/vnd.microsoft.icon" />
+<script>(function(w,d,s,l,i){
+  w[l]=w[l]||[];
+  w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0];
+  var j=d.createElement(s);
+  var dl=l!='dataLayer'?'&l='+l:'';
+  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';
+  j.async=true;
+  f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TPTZGRJ');</script>
+
+        <title>State of the World Population report 2024 | Interwoven lives, threads of hope</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_VF2Ubl-vR-WMJnnK8VPdNXVzRp2pwczOTDiWSJdp9eY.css?delta=0&amp;language=en&amp;theme=unfpa_global&amp;include=eJx1kWFuwyAMRi9EglTtPsgQJ0MFjGwnXW4_ukhbmegvpPdsPoz3slZwWyIPyQWie0Sx-wDOomdCs4BCghPZevyEIxKLkVMUs_UgaF5brSdSUYY6peh7dR1PzsDt-s66DQtyq4Ilx-IqbOiCiAnEaGNR5AJp3suCLE9mfoNspUoH8gtRoqSx9vErBGwl96nGL0zm38A5U7HtaRPDOnQ_oSPR_iCGoTkiPiqxvs3C1lq2XsuD6u3DDlg_znXNdK2oD9hFKdsBm4US_y3gGwOTzNY" />
+<link rel="stylesheet" media="all" href="https://use.typekit.net/prw2bnc.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_97eikcJ95HtNYWt_0R2LpwxJAMQ1HSXtYwYsK1YxgRE.css?delta=2&amp;language=en&amp;theme=unfpa_global&amp;include=eJx1kWFuwyAMRi9EglTtPsgQJ0MFjGwnXW4_ukhbmegvpPdsPoz3slZwWyIPyQWie0Sx-wDOomdCs4BCghPZevyEIxKLkVMUs_UgaF5brSdSUYY6peh7dR1PzsDt-s66DQtyq4Ilx-IqbOiCiAnEaGNR5AJp3suCLE9mfoNspUoH8gtRoqSx9vErBGwl96nGL0zm38A5U7HtaRPDOnQ_oSPR_iCGoTkiPiqxvs3C1lq2XsuD6u3DDlg_znXNdK2oD9hFKdsBm4US_y3gGwOTzNY" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_MR7J6O8jy135MijfiQn_w6ZkAb2VRYYHpSnTG4CnZfU.css?delta=3&amp;language=en&amp;theme=unfpa_global&amp;include=eJx1kWFuwyAMRi9EglTtPsgQJ0MFjGwnXW4_ukhbmegvpPdsPoz3slZwWyIPyQWie0Sx-wDOomdCs4BCghPZevyEIxKLkVMUs_UgaF5brSdSUYY6peh7dR1PzsDt-s66DQtyq4Ilx-IqbOiCiAnEaGNR5AJp3suCLE9mfoNspUoH8gtRoqSx9vErBGwl96nGL0zm38A5U7HtaRPDOnQ_oSPR_iCGoTkiPiqxvs3C1lq2XsuD6u3DDlg_znXNdK2oD9hFKdsBm4US_y3gGwOTzNY" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"swp2024","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"cookiesData":24181,"dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":-10},"es":{"id":"es","name":"Spanish","direction":"ltr","weight":-9},"fr":{"id":"fr","name":"French","direction":"ltr","weight":-8},"zh-hans":{"id":"zh-hans","name":"Chinese, Simplified","direction":"ltr","weight":-7},"ar":{"id":"ar","name":"Arabic","direction":"rtl","weight":-6},"ha":{"id":"ha","name":"Hausa","direction":"ltr","weight":-5},"pcm":{"id":"pcm","name":"Pidgin","direction":"ltr","weight":-4},"ru":{"id":"ru","name":"Russian","direction":"ltr","weight":-3},"de":{"id":"de","name":"German","direction":"ltr","weight":-2}}},"bootstrap":{"forms_has_error_value_toggle":1,"popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"lang":"en","unfpa_global_swop24":{"lang":"en"},"ajaxTrustedUrl":{"\/search\/content":true},"user":{"uid":0,"permissionsHash":"5efc99d08211378e7df4c0f9768e01041f1123ee352a911020be45ad504be3f3"}}</script>
+<script src="/sites/default/files/js/js_ikWkoSzsN4IiiTBVvF7OnyM2EJ71lBHYd8aHLQZuECQ.js?scope=header&amp;delta=0&amp;language=en&amp;theme=unfpa_global&amp;include=eJx1kWFuwyAMRi9EglTtPsgQJ0MFjGwnXW4_ukhbmegvpPdsPoz3slZwWyIPyQWie0Sx-wDOomdCs4BCghPZevyEIxKLkVMUs_UgaF5brSdSUYY6peh7dR1PzsDt-s66DQtyq4Ilx-IqbOiCiAnEaGNR5AJp3suCLE9mfoNspUoH8gtRoqSx9vErBGwl96nGL0zm38A5U7HtaRPDOnQ_oSPR_iCGoTkiPiqxvs3C1lq2XsuD6u3DDlg_znXNdK2oD9hFKdsBm4US_y3gGwOTzNY"></script>
+
+    <link rel="icon" href="/themes/custom/unfpa_global/favicon.ico" type="image/vnd.microsoft.icon" />
+    <!-- Fundraise Up: world-class checkout experience for serious online fundraising -->
+    <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'.split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o:function(){returno.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=!0;j.src='https://cdn.fundraiseup.com/widget/'+a;t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}})(window,document,'script','FundraiseUp','ACSRWCJP');</script>
+    <!-- End Fundraise Up -->
+  </head>
+  <body class="lang-en path-swp2024 has-glyphicons">
+      <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPTZGRJ"
+ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <!-- Content Section starts -->
+  <!-- //Top Header -->
+<header class="header">
+  <div class="header__wrapper">
+          <div class="header__wrapper--brand">
+          <div class="region region-header">
+                            <a href="/" title="Home">
+      <span class="logo-img" style="background-image: url(/themes/custom/unfpa_global/images/logo.svg);"></span>
+              <span class="logo-name ">United Nations Population Fund</span>
+          </a>
+      
+  </div>
+
+      </div>
+        <div class="nav-btn">
+      <div id="toggle-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- //Main navigation -->
+<nav class="main-nav">
+      <div class="site-language">
+        <div class="region region-language-switcher">
+    <section class="language-switcher-language-url block block-language block-language-blocklanguage-interface clearfix" id="block-languageswitcher" role="navigation">
+  
+    
+
+      <a href="/swp2024" class="language-link is-active" hreflang="en" data-drupal-link-system-path="swp2024">EN</a><a href="/es/swp2024" class="language-link" hreflang="es" data-drupal-link-system-path="swp2024">ES</a><a href="/fr/swp2024" class="language-link" hreflang="fr" data-drupal-link-system-path="swp2024">FR</a><a href="/ar/swp2024" class="language-link" hreflang="ar" data-drupal-link-system-path="swp2024">AR</a>
+  </section>
+
+
+  </div>
+
+    </div>
+    <div class="search-field-wrapper">
+    <div class="search-button center-position">
+      <div class="search-icon"></div>
+    </div>
+  </div>
+
+  <div class="search-display">
+    <div class="closeouter">
+      <div class="inner">
+        <label>Back</label>
+      </div>
+    </div>
+    <div class="search-form-wrapper">
+      <div action="" autocomplete="on" class="search-form">
+        <section class="views-exposed-form block block-views block-views-exposed-filter-blocksearch-api-solr-page-1 clearfix" data-drupal-selector="views-exposed-form-search-api-solr-page-1" id="block-exposedformsearch-api-solrpage-1">
+  
+    
+
+      <form action="/search/content" method="get" id="views-exposed-form-search-api-solr-page-1" accept-charset="UTF-8">
+  <div class="form--inline form-inline clearfix">
+  
+      
+    <label for="edit-search-api-fulltext" class="control-label">Search</label>
+  
+
+
+<input placeholder="Search" data-drupal-selector="edit-search-api-fulltext" class="form-text form-control" type="text" id="edit-search-api-fulltext" name="search_api_fulltext" value="" size="30" maxlength="128" />
+
+
+
+
+<div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit-search-api-solr" class="button js-form-submit form-submit btn-primary" type="submit" id="edit-submit-search-api-solr" value="Search"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+Search</button></div>
+
+</div>
+
+</form>
+
+  </section>
+
+
+      </div>
+    </div>
+  </div>
+
+        <div class="region region-main-navigation">
+    <nav role="navigation" aria-labelledby="block-unfpa-global-main-menu-menu" id="block-unfpa-global-main-menu">
+            <h2 class="sr-only" id="block-unfpa-global-main-menu-menu">Main navigation</h2>
+
+      
+                    <ul class="navigation">
+                          <li class="first">
+                                                          <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                      </li>
+                      <li class="expanded dropdown">
+                                                                                                  <div>
+                          <a href="/about-us" class="dropdown-toggle" data-drupal-link-system-path="node/61">Who we are</a>
+                          <span class="arrow"></span>
+          </div>
+                              <ul class="child-menu">
+                          <li class="first">
+                                                          <a href="/about-us" data-drupal-link-system-path="node/61">About us</a>
+                      </li>
+                      <li>
+                                                          <a href="/worldwide" data-drupal-link-system-path="node/9033">Where we work</a>
+                      </li>
+                      <li class="expanded dropdown">
+                                                <div>
+                                      <a href="/how-we-work" data-drupal-link-system-path="/how-we-work">How we work</a>
+                                    <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/human-rights-based-approach" data-drupal-link-system-path="node/8495">Human rights-based approaches</a>
+                      </li>
+                      <li>
+                                                          <a href="/culturally-sensitive-approaches" data-drupal-link-system-path="node/8493">Culturally sensitive approaches</a>
+                      </li>
+                      <li>
+                                                          <a href="/results-based-management-unfpa" data-drupal-link-system-path="node/25165">Results Based Management approach</a>
+                      </li>
+                      <li>
+                                                          <a href="/icpd" data-drupal-link-system-path="node/41594">ICPD</a>
+                      </li>
+                      <li>
+                                                          <a href="/innovation" data-drupal-link-system-path="node/25296">Innovation</a>
+                      </li>
+                      <li>
+                                                          <a href="/advocacy" data-drupal-link-system-path="node/8496">Advocacy</a>
+                      </li>
+                      <li>
+                                                          <a href="/diversity-equity-inclusion" data-drupal-link-system-path="diversity-equity-inclusion">Diversity, Equity and Inclusion</a>
+                      </li>
+                      <li>
+                                                          <a href="/centre-excellence-civil-registration-and-vital-statistics-systems" data-drupal-link-system-path="node/45319">Centre of Excellence on Civil Registration and Vital Statistics Systems</a>
+                      </li>
+                      <li>
+                                                          <a href="/south-south-and-triangular-cooperation" data-drupal-link-system-path="node/26484">South-South and Triangular Cooperation</a>
+                      </li>
+                      <li>
+                                                          <a href="/bodily-autonomy-coalition" data-drupal-link-system-path="node/26621">Generation Equality Forum: Action Coalition on Bodily Autonomy and SRHR</a>
+                      </li>
+                      <li>
+                                                          <a href="/strategic-plan-2022" title="Our bold and ambitious plan of action" data-drupal-link-system-path="strategic-plan-2022">Strategic plan 2022 – 2025</a>
+                      </li>
+                      <li>
+                                                          <a href="/unfpa-un-system" data-drupal-link-system-path="node/8542">UNFPA in the UN system</a>
+                      </li>
+                      <li>
+                                                          <a href="/unfpa-hq-optimization" data-drupal-link-system-path="node/46101">UNFPA HQ Optimization</a>
+                      </li>
+                      <li class="expanded dropdown">
+                                                <div>
+                          <a href="/strategic-partnerships" class="hide-third-level" data-drupal-link-system-path="strategic-partnerships">Strategic partnerships</a>
+                          <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/parliamentarians" data-drupal-link-system-path="node/8500">Parliamentarians</a>
+                      </li>
+                      <li>
+                                                          <a href="/private-sector-spotlight" data-drupal-link-system-path="private-sector-spotlight">Private Sector Spotlight</a>
+                      </li>
+                      <li>
+                                                          <a href="/Sports-Partnerships">Sports Partnerships</a>
+                      </li>
+                      <li>
+                                                          <a href="/unfpa-launches-university-networktransformu" class="hide-third-level" data-drupal-link-system-path="node/19802">TransformU - University Network</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/womens-health-and-empowerment-workplace" data-drupal-link-system-path="node/23968">Women&#039;s Health in the Workplace</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                <div>
+                          <a href="/transparency" class="hide-third-level" data-drupal-link-system-path="node/9425">Transparency</a>
+                          <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/data/transparency-portal" data-drupal-link-system-path="data/transparency-portal">Programme Expenses</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/data-quality-and-usability" data-drupal-link-system-path="node/10542">Data Quality and Usability</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li>
+                                                          <a href="/internal-audit-and-investigation" data-drupal-link-system-path="node/10589">Internal Audit and Investigation</a>
+                      </li>
+                      <li>
+                                                          <a href="/fraud-alert" data-drupal-link-system-path="node/15038">Fraud Alert</a>
+                      </li>
+                      <li class="expanded dropdown">
+                                                <div>
+                          <a href="/policies-procedures-manual" class="hide-third-level" data-drupal-link-system-path="node/10570">Policies &amp; Procedures Manual</a>
+                          <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/policies-procedures-manual" data-drupal-link-system-path="node/10570">Policies &amp; Procedures Manual</a>
+                      </li>
+                      <li>
+                                                          <a href="/communication-policies" data-drupal-link-system-path="node/10571">Communication Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/ethics-policies" data-drupal-link-system-path="node/10581">Ethics Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/evaluation-policies" data-drupal-link-system-path="node/10583">Evaluation Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/facilities-and-administrative-services-policies" data-drupal-link-system-path="node/10584">Facilities and Administrative Services Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/finance-and-budget-policies" data-drupal-link-system-path="node/10585">Finance and Budget Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/human-resources-policies" data-drupal-link-system-path="node/10586">Human Resources Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/issuance-policies" data-drupal-link-system-path="node/16140">Issuance Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/information-and-communications-technology-policies" data-drupal-link-system-path="node/10588">Information and Communications Technology Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/procurement-policies" data-drupal-link-system-path="node/10590">Procurement Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/ip-protocol-psea-interagency-resources" data-drupal-link-system-path="node/43653">IP Protocol for PSEA Interagency Resources</a>
+                      </li>
+                      <li>
+                                                          <a href="/programme-policies" data-drupal-link-system-path="node/10591">Programme Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/interagency-ip-protocol-resources">Interagency IP Protocol Resources</a>
+                      </li>
+                      <li>
+                                                          <a href="/resource-mobilization-policies" data-drupal-link-system-path="node/10592">Resource Mobilization Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/safety-and-security-policies" data-drupal-link-system-path="node/10593">Safety and Security Policies</a>
+                      </li>
+                      <li>
+                                                          <a href="/technical-assistance-policies" data-drupal-link-system-path="node/10594">Technical Assistance Policies</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/oversight-and-internal-audit-and-investigation-policies" data-drupal-link-system-path="node/10759">Oversight and Internal Audit and Investigation Policies</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                <div>
+                          <a href="/corporate-environmental-responsibility-unfpa" class="hide-third-level" data-drupal-link-system-path="node/15482">Corporate Environmental Responsibility in UNFPA</a>
+                          <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/external-partners" data-drupal-link-system-path="node/15892">External Partners</a>
+                      </li>
+                      <li>
+                                                          <a href="/corporate-environmental-responsibility-unfpa" data-drupal-link-system-path="node/15482">Key Facts</a>
+                      </li>
+                      <li>
+                                                          <a href="/projects" data-drupal-link-system-path="node/15890">Projects</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/sustainable-procurement-unfpa" data-drupal-link-system-path="node/15891">Sustainable Procurement in UNFPA</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li>
+                                                          <a href="/protection-sexual-exploitation-sexual-abuse-and-sexual-harassment" data-drupal-link-system-path="node/17819">Protection from Sexual Exploitation, Sexual Abuse and Sexual Harassment</a>
+                      </li>
+                      <li>
+                                                          <a href="/disabilities-inclusion" data-drupal-link-system-path="node/40613">Disability Inclusion</a>
+                      </li>
+                      <li>
+                                                          <a href="/disabilities-and-SRHR">Disability Inclusion</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/we-decide">We Decide: Including and empowering persons with disabilities</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li>
+                                                          <a href="/about/dr-natalia-kanem" data-drupal-link-system-path="node/15215">Executive Leadership</a>
+                      </li>
+                      <li>
+                                                          <a href="/resources-and-funding" data-drupal-link-system-path="node/8899">Resources and Funding</a>
+                      </li>
+                      <li>
+                                                          <a href="/jobs" data-drupal-link-system-path="jobs">Jobs</a>
+                      </li>
+                      <li>
+                                                          <a href="/supplychain" data-drupal-link-system-path="node/41772">Supply Chain</a>
+                      </li>
+                      <li>
+                                                          <a href="/audit-and-investigation" data-drupal-link-system-path="node/8859">Audit and Investigation</a>
+                      </li>
+                      <li>
+                                                          <a href="/evaluation" data-drupal-link-system-path="evaluation">Evaluation</a>
+                      </li>
+                      <li>
+                                                          <a href="/executive-board" data-drupal-link-system-path="executive-board">Executive Board</a>
+                      </li>
+                      <li>
+                                                          <a href="/goodwill-ambassadors" data-drupal-link-system-path="node/9277">Goodwill Ambassadors</a>
+                      </li>
+                      <li>
+                                                          <a href="/united-nations-population-award" data-drupal-link-system-path="node/9287">UN Population Award</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/frequently-asked-questions" data-drupal-link-system-path="node/8497">Frequently asked questions</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                                                                  <div>
+                          <a href="" class="dropdown-toggle" data-toggle="dropdown">What we do</a>
+                          <span class="arrow"></span>
+          </div>
+                              <ul class="child-menu">
+                          <li class="expanded dropdown first">
+                                                <div>
+                                      <span class="nav-title">Sexual &amp; reproductive health</span>
+                                    <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/family-planning" data-drupal-link-system-path="node/356">Family planning</a>
+                      </li>
+                      <li>
+                                                          <a href="/hiv-aids" data-drupal-link-system-path="node/359">HIV &amp; AIDS</a>
+                      </li>
+                      <li>
+                                                          <a href="/maternal-health" data-drupal-link-system-path="node/140">Maternal health</a>
+                      </li>
+                      <li>
+                                                          <a href="/midwifery" data-drupal-link-system-path="node/358">Midwifery</a>
+                      </li>
+                      <li>
+                                                          <a href="/obstetric-fistula" data-drupal-link-system-path="node/357">Obstetric fistula</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/sexual-reproductive-health" data-drupal-link-system-path="node/139">Sexual &amp; reproductive health</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                <div>
+                                      <span class="nav-title">Young people</span>
+                                    <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/adolescent-pregnancy" data-drupal-link-system-path="node/361">Adolescent pregnancy</a>
+                      </li>
+                      <li>
+                                                          <a href="/child-marriage" data-drupal-link-system-path="node/362">Child marriage</a>
+                      </li>
+                      <li>
+                                                          <a href="/comprehensive-sexuality-education" data-drupal-link-system-path="node/363">Comprehensive sexuality education</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/youth-participation-leadership" data-drupal-link-system-path="node/360">Youth leadership &amp; participation</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                <div>
+                                      <span class="nav-title">Human rights &amp; gender equality</span>
+                                    <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/engaging-men-boys" data-drupal-link-system-path="node/366">Engaging men &amp; boys</a>
+                      </li>
+                      <li>
+                                                          <a href="/female-genital-mutilation" data-drupal-link-system-path="node/365">Female genital mutilation</a>
+                      </li>
+                      <li>
+                                                          <a href="/gender-based-violence" data-drupal-link-system-path="node/364">Gender-based violence</a>
+                      </li>
+                      <li>
+                                                          <a href="/gender-equality" data-drupal-link-system-path="node/368">Gender equality</a>
+                      </li>
+                      <li>
+                                                          <a href="/human-rights" data-drupal-link-system-path="node/370">Human rights</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/son-preference" data-drupal-link-system-path="node/45375">Son preference</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown last">
+                                                <div>
+                                      <span class="nav-title">Population matters</span>
+                                    <span class="arrow"></span>
+          </div>
+                            <ul>
+                          <li class="first">
+                                                          <a href="/ageing" data-drupal-link-system-path="node/372">Ageing</a>
+                      </li>
+                      <li>
+                                                          <a href="/census" data-drupal-link-system-path="node/371">Census</a>
+                      </li>
+                      <li>
+                                                          <a href="/climate-change" data-drupal-link-system-path="node/137">Climate change</a>
+                      </li>
+                      <li>
+                                                          <a href="/demographic-dividend" data-drupal-link-system-path="node/8685">Demographic dividend</a>
+                      </li>
+                      <li>
+                                                          <a href="/migration" data-drupal-link-system-path="node/374">Migration</a>
+                      </li>
+                      <li>
+                                                          <a href="/urbanization" data-drupal-link-system-path="node/373">Urbanization</a>
+                      </li>
+                      <li>
+                                                          <a href="/civil-registration-and-vital-statistics" data-drupal-link-system-path="node/45143">Civil registration and vital statistics</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/world-population-trends" data-drupal-link-system-path="node/8684">Population trends</a>
+                      </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                                                                  <div>
+                          <a href="/emergencies" class="dropdown-toggle" data-drupal-link-system-path="node/355">Humanitarian</a>
+                          <span class="arrow"></span>
+          </div>
+                              <ul class="child-menu">
+                          <li class="first">
+                                                          <a href="/afghanistan" data-drupal-link-system-path="node/41695">Afghanistan</a>
+                      </li>
+                      <li>
+                                                          <a href="/armenia" data-drupal-link-system-path="node/45569">Armenia</a>
+                      </li>
+                      <li>
+                                                          <a href="/coxs-bazar-bangladesh" data-drupal-link-system-path="node/41968">Cox&#039;s Bazar, Bangladesh</a>
+                      </li>
+                      <li>
+                                                          <a href="/democratic-republic-congo" data-drupal-link-system-path="node/45223">Democratic Republic of the Congo</a>
+                      </li>
+                      <li>
+                                                          <a href="/ethiopia" data-drupal-link-system-path="node/41698">Ethiopia</a>
+                      </li>
+                      <li>
+                                                          <a href="/occupied-palestinian-territory" data-drupal-link-system-path="node/45428">Occupied Palestinian territory</a>
+                      </li>
+                      <li>
+                                                          <a href="/haiti" data-drupal-link-system-path="node/41693">Haiti</a>
+                      </li>
+                      <li>
+                                                          <a href="/horn-africa" data-drupal-link-system-path="node/43991">Horn of Africa</a>
+                      </li>
+                      <li>
+                                                          <a href="/sudan" data-drupal-link-system-path="node/44814">Sudan</a>
+                      </li>
+                      <li>
+                                                          <a href="/syria" data-drupal-link-system-path="node/41969">Syria</a>
+                      </li>
+                      <li>
+                                                          <a href="/t%C3%BCrkiye-and-syria-earthquakes" data-drupal-link-system-path="node/44447">Türkiye and Syria</a>
+                      </li>
+                      <li>
+                                                          <a href="/ukraine-0" data-drupal-link-system-path="node/42878">Ukraine</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/yemen" data-drupal-link-system-path="node/41940">Yemen</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                                                                  <div>
+                          <a href="/latest" class="hide-third-level dropdown-toggle" data-drupal-link-system-path="latest">Latest</a>
+                          <span class="arrow"></span>
+          </div>
+                              <ul class="child-menu">
+                          <li class="first">
+                                                          <a href="/media-contacts" class="hide-third-level" data-drupal-link-system-path="node/8581">Media centre</a>
+                      </li>
+                      <li>
+                                                          <a href="/news" data-drupal-link-system-path="node/59">News Stories</a>
+                      </li>
+                      <li>
+                                                          <a href="/campaign" data-drupal-link-system-path="campaign">Campaigns &amp; Interactive</a>
+                      </li>
+                      <li>
+                                                          <a href="/publications" data-drupal-link-system-path="node/60">Publications</a>
+                      </li>
+                      <li>
+                                                          <a href="/multimedia" data-drupal-link-system-path="multimedia">Multimedia</a>
+                      </li>
+                      <li>
+                                                          <a href="/press/statement" data-drupal-link-system-path="press/statement">Statements and speeches</a>
+                      </li>
+                      <li class="last">
+                                                          <a href="/events" data-drupal-link-system-path="events">Events</a>
+                      </li>
+        </ul>
+  
+              </li>
+                      <li class="last">
+                                                          <a href="/data" data-drupal-link-system-path="data">Data</a>
+                      </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+    <div class="top-btns">
+    <a href="/icpd" class="btn-icpd">
+      <span class="icpdlogo"><img src="/themes/custom/unfpa_global/images/icpd-30-logoinverted-en.png" alt="ICPD"></span>
+    </a>
+
+    <a href="/donate?element=XGGQEKZH&form=FUNBJGUDYZC" class="donate">
+      <span>Donate</span>
+      <span class="icon"><img src="/themes/custom/unfpa_global/images/icon_donate.svg" alt=""></span>
+    </a>
+  </div>
+</nav><!-- Main navigation end -->
+    <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+  <div class="container-fluid page">
+      <div class="region region-content">
+      
+<div class="swop24 swop24-en swop24-peach">
+  <script src="/modules/custom/unfpa_global_swop24/elements/loading/swop24-loading.js"></script>
+
+  
+<div class="swop24-grid" style="">
+  <div class="swop24-grid-inner">
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+          <div class="swop24-grid-item">
+        <div class="swop24-grid-item-bg"></div>
+      </div>
+      </div>
+</div>
+
+<nav class="swop24-nav robc-font">
+
+  <div class="swop24-navbar clearfix">
+    <a href="/" class="swop24-navbar-logo">
+      <img src="/modules/custom/unfpa_global_swop24/elements/nav/images/logo.svg" alt="UNFPA" />
+    </a>
+
+    <ul class="swop24-navbar-items">
+
+      <li class="swop24-navbar-item swop24-navbar-item-icon">
+        <a href="/swp2024" class="swop24-nav-home" title="Back to the SWP 2024 Homepage">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path fill="#f18a00" d="M29.3,30H17.5V19.5h-5V30H0.7V14.4L15,0l14.3,14.4V30z M19.5,28h7.8V15.3L15,2.8L2.7,15.3V28h7.8V17.5h9V28z"/></svg>
+        </a>
+      </li>
+
+      <li class="swop24-navbar-item swop24-navbar-item-dropdown">
+        <span>Report</span>
+        <ul class="swop24-navbar-subitems">
+                      <li class="swop24-navbar-subitem">
+              <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-english-240327-web.pdf" target="_blank">English</a>
+            </li>
+                      <li class="swop24-navbar-subitem">
+              <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-spanish-240405-web.pdf" target="_blank">Español</a>
+            </li>
+                      <li class="swop24-navbar-subitem">
+              <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-french-v240405-web.pdf" target="_blank">Francais</a>
+            </li>
+                      <li class="swop24-navbar-subitem">
+              <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-arabic-240416.pdf" target="_blank">عربي</a>
+            </li>
+                      <li class="swop24-navbar-subitem">
+              <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-Russian-240416.pdf" target="_blank">русский</a>
+            </li>
+                  </ul>
+      </li>
+
+      <li class="swop24-navbar-item swop24-navbar-item-text">
+        <a href="/swp2024/stories">Stories</a>
+      </li>
+
+      <li class="swop24-navbar-item swop24-navbar-item-text">
+        <a href="/data/world-population-dashboard">Data</a>
+      </li>
+
+      <li class="swop24-navbar-item swop24-navbar-item-icon swop24-navbar-item-small-margin">
+        
+<div class="swop24-sharelink" data-share-id="main">
+  <a href="javascript:" data-url-fb="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.unfpa.org%2Fswp2024" data-url-tw="https://twitter.com/share?url=https%3A%2F%2Fwww.unfpa.org%2Fswp2024&amp;text=A+more+equitable+future+for+all+is+possible.+See+the+%23ThreadsOfHope+and+let+%40UNFPA+explain+why+we+must+end+inequalities+in+sexual+and+reproductive+health+and+rights%3A" data-img="https://www.unfpa.org/modules/custom/unfpa_global_swop24/sharecards/main.jpg">
+
+    <svg viewBox="0 0 25 27" xmlns="http://www.w3.org/2000/svg">
+      <path stroke="none" fill="#f18a00" d="M20.1,8.6c-1.5,0-2.9,0.7-3.8,1.8L9.9,6.2c0.1-0.4,0.2-0.8,0.2-1.3c0-2.7-2.2-4.9-5-4.9s-5,2.2-5,4.9 s2.2,4.9,5,4.9c1.4,0,2.7-0.6,3.6-1.5l6.5,4.3c-0.1,0.3-0.1,0.6-0.1,1c0,0.3,0,0.6,0.1,0.8l-6.6,4.2c-0.9-0.9-2.2-1.5-3.6-1.5 c-2.8,0-5,2.2-5,4.9s2.2,5,5,5s5-2.2,5-4.9c0-0.4-0.1-0.9-0.2-1.3l6.3-4.1c0.9,1.1,2.3,1.9,3.9,1.9c2.8,0,5-2.2,5-4.9 S22.8,8.6,20.1,8.6z M5.1,7.4c-1.4,0-2.6-1.1-2.6-2.5S3.6,2.5,5,2.5S7.5,3.6,7.5,5S6.5,7.4,5.1,7.4z M5.1,24.5 c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5C7.6,23.5,6.5,24.5,5.1,24.5z M20.1,16c-1.4,0-2.5-1.1-2.5-2.5 s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5S21.5,16,20.1,16z"/>
+    </svg>
+
+    <div class="swop24-sharelink-description hidden">
+      Interwoven Lives, Threads of Hope
+    </div>
+
+  </a>
+</div>
+
+      </li>
+
+      <li class="swop24-navbar-item swop24-navbar-item-icon">
+        <button class="swop24-nav-expand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><path fill="#f18a00" d="M0 2h30V0H0zM0 11h30V9H0zM0 20h30v-2H0z"/></svg>
+        </button>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="swop24-menu">
+    <div class="swop24-menu-inner swop24-side-padd">
+      <div class="swop24-menu-inner-2">
+
+        <div class="swop24-menu-main">
+
+          <ul class="swop24-menu-links">
+            <li class="swop24-menu-title robcb-font">
+              <a href="/swp2024">
+                State of World Population
+                <span class="swop24-menu-title-faded">2024</span>
+              </a>
+            </li>
+                          <li>
+                <a href="/swp2024/celebrating-progress">Celebrating 30 years of progress</a>
+              </li>
+                          <li>
+                <a href="/swp2024/left-out">Who has been left out?</a>
+              </li>
+                          <li>
+                <a href="/swp2024/path-forward">Weaving a path forward</a>
+              </li>
+                          <li>
+                <a href="/swp2024/stories">Feature stories</a>
+              </li>
+                      </ul>
+
+          <ul class="swop24-menu-supplement-links">
+                          <li>
+                <a href="/data/world-population-dashboard">Data</a>
+              </li>
+                      </ul>
+
+          <div class="swop24-menu-downloads">
+            <p>Download report</p>
+            <ul class="robcb-font clearfix">
+                              <li>
+                  <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-english-240327-web.pdf" target="_blank">EN</a>
+                </li>
+                              <li>
+                  <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-spanish-240405-web.pdf" target="_blank">ES</a>
+                </li>
+                              <li>
+                  <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-french-v240405-web.pdf" target="_blank">FR</a>
+                </li>
+                              <li>
+                  <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-arabic-240416.pdf" target="_blank">AR</a>
+                </li>
+                              <li>
+                  <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-Russian-240416.pdf" target="_blank">RU</a>
+                </li>
+                          </ul>
+          </div>
+
+        </div>
+
+        <ul class="swop24-menu-langs clearfix">
+                      <li>
+              <a href="/es/swp2024" class="" hreflang="es"><span class="lang-link-full">Español</span><span class="lang-link-short">es</span></a>
+            </li>
+                      <li>
+              <a href="/fr/swp2024" class="" hreflang="fr"><span class="lang-link-full">Français</span><span class="lang-link-short">fr</span></a>
+            </li>
+                  </ul>
+
+        <button class="swop24-menu-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path fill="#000" d="M30 2l-2-2-13 13L2 0 0 2l13 13L0 28l2 2 13-13 13 13 2-2-13-13z"/></svg></button>
+
+      </div>
+    </div>
+  </div>
+
+    <img src="/modules/custom/unfpa_global_swop24/elements/nav/images/icon-close.svg" class="visually-hidden" aria-hidden="true" alt="Icon" />
+  <img src="/modules/custom/unfpa_global_swop24/elements/nav/images/icon-expand.svg" class="visually-hidden" aria-hidden="true" alt="Icon" />
+  <img src="/modules/custom/unfpa_global_swop24/elements/nav/images/icon-home.svg" class="visually-hidden" aria-hidden="true" alt="Icon" />
+  <img src="/modules/custom/unfpa_global_swop24/elements/nav/images/logo.svg" class="visually-hidden" aria-hidden="true" alt="Icon" />
+
+</nav>
+
+
+  <article>
+    
+<div class="swop24-cover">
+
+  <div class="swop24-cover-texts">
+    <div class="swop24-width-wrap swop24-side-padd">
+      <div class="swop24-cover-texts-inner">
+
+        <p class="swop24-cover-download tb-font">
+          <span class="swop24-cover-download-label">
+            Download the report:
+          </span>
+          <span class="swop24-cover-download-links">
+                          <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-english-240327-web.pdf" target="_blank">EN</a>
+                          <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-spanish-240405-web.pdf" target="_blank">ES</a>
+                          <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-french-v240405-web.pdf" target="_blank">FR</a>
+                          <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-arabic-240416.pdf" target="_blank">AR</a>
+                          <a href="https://www.unfpa.org/sites/default/files/pub-pdf/swp2024-Russian-240416.pdf" target="_blank">RU</a>
+                      </span>
+        </p>
+
+        <h1 class="swop24-cover-title">
+          <span class="p22-font">Interwoven lives,</span>
+          <span class="swop24-cover-title-part p22-font">Threads of hope
+        </h1>
+        <p class="swop24-cover-subtitle bsb-scd-font">Ending inequalities in sexual and reproductive health and rights</p>
+
+        <div class="swop24-cover-pages br-cd-font animate-inviewport">
+                      <a href="/swp2024/celebrating-progress">
+              Celebrating 30 years of progress
+              <span class="swop24-cover-line-link">
+                <span class="swop24-line-dash-blue animated-line animated-line-horiz animate-inviewport-target"></span>
+              </span>
+            </a>
+                      <a href="/swp2024/left-out">
+              Who has been left out?
+              <span class="swop24-cover-line-link">
+                <span class="swop24-line-dash-blue animated-line animated-line-horiz animate-inviewport-target"></span>
+              </span>
+            </a>
+                      <a href="/swp2024/path-forward">
+              Weaving a path forward
+              <span class="swop24-cover-line-link">
+                <span class="swop24-line-dash-blue animated-line animated-line-horiz animate-inviewport-target"></span>
+              </span>
+            </a>
+                    <span class="swop24-cover-line-top">
+            <span class="swop24-cover-line-top swop24-line-dash-blue animated-line animated-line-horiz animate-inviewport-target"></span>
+          </span>
+          <span class="swop24-cover-line-left">
+            <span class="swop24-line-dash-blue animated-line animated-line-vertic animate-inviewport-target"></span>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="swop24-cover-image">
+    <div class="swop24-cover-image-inner">
+      <div class="swop24-img-holder">
+        <img src="/modules/custom/unfpa_global_swop24/elements/cover/images/art-mobile.gif" class="swop24-cover-img-mobile" alt="SWP Report 2024">
+        <img src="/modules/custom/unfpa_global_swop24/elements/cover/images/art-desktop.gif" class="swop24-cover-img-desktop" alt="SWP Report 2024">
+      </div>
+    </div>
+  </div>
+
+  <img src="/modules/custom/unfpa_global_swop24/elements/cover/images/button.png" alt="Icon" class="visually-hidden" aria-hidden="true">
+  <img src="/modules/custom/unfpa_global_swop24/elements/cover/images/button-2.png" alt="Icon" class="visually-hidden" aria-hidden="true">
+  <img src="/modules/custom/unfpa_global_swop24/elements/cover/images/cover-bg.png" alt="Icon" class="visually-hidden" aria-hidden="true">
+
+</div>
+
+  </article>
+
+  
+<div class="swop24-sharemodal b-font">
+  <div class="swop24-sharemodal-bg"></div>
+
+  <div class="swop24-sharemodal-window">
+
+    <div class="swop24-sharemodal-close">
+      <button class="clearfix">
+        <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 2C10.507 2 2 10.509 2 21c0 10.494 8.507 19 19 19s19-8.506 19-19c0-10.492-8.507-19-19-19zm0-2c11.598 0 21 9.403 21 21 0 11.599-9.402 21-21 21S0 32.6 0 21C0 9.404 9.402 0 21 0z" fill="#000"></path>
+          <path d="M22.753 30l-6.947-6.894H34v-4.207H15.806L22.753 12h-5.837L8 21.01 16.916 30h5.837z"></path>
+        </svg>
+        <span class="tsb-font">Back to report</span>
+      </button>
+    </div>
+
+    <div class="swop24-sharemodal-content">
+      <div class="swop24-sharemodal-image">
+        <img src="" alt="Photo" />
+      </div>
+
+      <p class="swop24-sharemodal-description"></p>
+
+      <div class="swop24-sharemodal-actions">
+        <a class="swop24-sharemodal-button facebook" href="#">
+          <span class="tsb-font">Share on Facebook</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+            <path d="M39.8,20.1C39.8,9.1,30.9,0.3,20,0.3S0.2,9.1,0.2,20.1c0,9.3,6.4,17.1,15,19.2V26.1h-4.1v-6h4.1 v-2.6c0-6.7,3-9.9,9.7-9.9c1.3,0,3.4,0.2,4.3,0.5v5.5c-0.5,0-1.3-0.1-2.3-0.1c-3.2,0-4.5,1.2-4.5,4.4v2.1h6.5l-1.1,6h-5.4v13.6 C32.2,38.5,39.8,30.2,39.8,20.1z"/>
+          </svg>
+        </a>
+        <a class="swop24-sharemodal-button twitter" href="#">
+          <span class="tsb-font">Share on X</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+            <path d="M18.3,20.6l1,1.4l7,9.4h3.5l-8.6-11.5l-1-1.4l-6.6-8.9h-3.5L18.3,20.6z M32.2,8l-9.7,10.6L33,33h-7.7l-7.1-9.7 L9.3,33H7l10.2-11.1L7,8h7.7l6.7,9.2L29.9,8H32.2z M20,40c11,0,20-9,20-20S31,0,20,0S0,9,0,20S9,40,20,40z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+  </div>
+
+  </div>
+  <!-- //Footer Starts -->
+<footer class="footer-pad">
+  <div class="container">
+    <div class="row wrap">
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="logo-wrapper">
+                                <a href="https://www.unfpa.org/" class="logo"><img src="/themes/custom/unfpa_global/images/logo-white-emblem.svg" alt="UNFPA" title="UNFPA"></a>
+          
+          <a href="/sdg" class="logo-sdg"><img src="/themes/custom/unfpa_global/images/E_SDG_logo_UN_emblem_square_trans_WEB.png" alt="UNFPA" title="UNFPA"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-8">
+                                <div class="region region-footer">
+    <nav role="navigation" aria-labelledby="block-unfpa-global-footer-menu" id="block-unfpa-global-footer">
+            
+  <h2 class="visually-hidden" id="block-unfpa-global-footer-menu">Footer menu</h2>
+  
+
+        
+      <ul class="footerlinks">
+                              <li class="first">
+                                                  <a href="/data/transparency-portal" data-drupal-link-system-path="data/transparency-portal">Transparency Portal</a>
+                  </li>
+                              <li>
+                                                  <a href="http://web2.unfpa.org/help/hotline.cfm">Report wrongdoing</a>
+                  </li>
+                              <li>
+                                                  <a href="/sitemap" data-drupal-link-system-path="sitemap">Sitemap</a>
+                  </li>
+                              <li>
+                                                  <a href="/terms-use" data-drupal-link-system-path="node/9390">Terms of Use</a>
+                  </li>
+                              <li>
+                                                  <a href="/unfpa-privacy-policy" data-drupal-link-system-path="node/24181">UNFPA Privacy Policy</a>
+                  </li>
+                              <li>
+                                                  <a href="/transparency" data-drupal-link-system-path="node/9425">Transparency</a>
+                  </li>
+                              <li>
+                                                  <a href="/worldwide" data-drupal-link-system-path="node/9033">UNFPA worldwide</a>
+                  </li>
+                              <li class="last">
+                                                  <a href="/contact" data-drupal-link-system-path="contact">Contact</a>
+                  </li>
+          </ul>
+  
+
+  </nav>
+
+  </div>
+
+                        </div>
+
+      <div class="col-md-3 col-sm-4">
+        <a href="/donate?element=XGGQEKZH&form=FUNBJGUDYZC" class="btn primary donate"><span>Donate</span><span class="icon"><img src="/themes/custom/unfpa_global/images/icon_donate_orange.svg" alt=""></span></a>
+      </div>
+    </div>
+
+    <div class="row copyright-social">
+      <div class="col-md-3 col-sm-12"><p>&copy; All rights reserved 2024.</p></div>
+      <div class="col-md-6 col-sm-6">
+        <div class="social-follow">
+          <span>Follow us</span>
+          <a href="https://twitter.com/unfpa" target="_blank"><img src="/themes/custom/unfpa_global/images/icon_twiiter_white.svg" alt="Twitter" title="Twitter"></a>
+          <a href="https://www.facebook.com/UNFPA" target="_blank"><img src="/themes/custom/unfpa_global/images/icon_fb_white.svg" alt="Facebook" title="Facebook"></a>
+          <a href="https://www.youtube.com/user/unfpa" target="_blank"><img src="/themes/custom/unfpa_global/images/icon_youtube_white.svg" alt="YouTube" title="YouTube"></a>
+          <a href="https://www.instagram.com/unfpa/" target="_blank"><img src="/themes/custom/unfpa_global/images/icon-instagram.svg" alt="Instagram" title="Instagram"></a>
+          <a href="https://www.linkedin.com/company/unfpa/" target="_blank"><img src="/themes/custom/unfpa_global/images/icon-linkedin.svg" alt="Linkedin" title="Linkedin"></a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-5">
+        <p>Join our mailing list</p>
+        <div class="mailing-box">
+          <a class="btn default btn-subscribe" href="https://www.unfpa.org//sign-up" target="_blank">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- //Footer end -->
+  <!-- ontent Section end -->
+
+  </div>
+
+    <script>window.dataLayer = window.dataLayer || []; window.dataLayer.push([]);</script>
+
+    <script src="/sites/default/files/js/js_3QRPdWysvXX3ohCza-5YSDFLqPrQbgt2aQLSyZoLcrc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=unfpa_global&amp;include=eJx1kWFuwyAMRi9EglTtPsgQJ0MFjGwnXW4_ukhbmegvpPdsPoz3slZwWyIPyQWie0Sx-wDOomdCs4BCghPZevyEIxKLkVMUs_UgaF5brSdSUYY6peh7dR1PzsDt-s66DQtyq4Ilx-IqbOiCiAnEaGNR5AJp3suCLE9mfoNspUoH8gtRoqSx9vErBGwl96nGL0zm38A5U7HtaRPDOnQ_oSPR_iCGoTkiPiqxvs3C1lq2XsuD6u3DDlg_znXNdK2oD9hFKdsBm4US_y3gGwOTzNY"></script>
+
+    <section class="block block-unfpa-global-cookies block-cookies-block clearfix">
+  
+    
+
+      <div id="cookies-popup"  class="clear-both sliding-popup-bottom">
+  <div class="cookies-content info">
+    <div class="cookies-text">
+      <p> We use cookies and other identifiers to help improve your online experience. By using our website you agree to this, see our <span><a href="/unfpa-privacy-policy" target="_blank">cookie policy</a></span></p>
+    </div>
+    <button class="btn cookie-btn" type="button" id="btn-accept-cookies">Accept</button>
+    <div id="cookies-buttons">
+      <a tabindex="0" class="cls-btn">X</a>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-8ef5284fb645d52553b","applicationID":"1077361645","transactionName":"MlVaZkpXCEsEWkBQVgsfeVFMXwlWSklVXlw6U1lRUFM=","queueTime":0,"applicationTime":44,"atts":"HhJZEAJNG0U=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

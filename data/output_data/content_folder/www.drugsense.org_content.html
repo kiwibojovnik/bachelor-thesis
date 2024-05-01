@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>DrugSense</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="DrugSense RSS" href="http://www.drugsense.org/cms/rss.xml" />
+
+<link rel="shortcut icon" href="/cms/files/basic_favicon.ico" type="image/x-icon" />
+  <style type="text/css" media="all">@import "/cms/files/css/1d97588bfeaf501a1699ec4a6e051300.css";</style>
+<style type="text/css" media="print">@import "/cms/files/css/8ad93a218d6c86b2f59aeee53a9f119a.css";</style>
+  <!--[if lte IE 6]>
+  <style type="text/css" media="all">
+    @import "/cms/themes/basic/css/ie6.css";
+  </style>
+  <![endif]-->
+  <!--[if IE 7]>
+  <style type="text/css" media="all">
+    @import "/cms/themes/basic/css/ie7.css";
+  </style>
+  <![endif]-->
+  <script type="text/javascript">
+<!--
+// DrugSense Drug War Clock
+// webmaster@drugsense.org
+// http://www.drugsense.org/myclock.htm
+var timerID = null;
+var timerRunning = false;
+var tbusts = 1663582; // Arrests
+var tcbusts = 858408; // Cannabis Arrests
+var tfspent = 15069100000; // Federal spent
+var tsspent = 25684407000; // State and local spent
+var ttspent = tfspent+tsspent
+var tprison = 10816; // Incarcerated
+var total = 0;
+function stopclock(){
+ if(timerRunning) {
+  clearTimeout(timerID);
+  timerRunning = false;
+ }
+}
+function startclock(){
+ // Make sure the clock is stopped
+ stopclock();
+ showtime();
+}
+function separate(input) {
+ var output = ""; // initialise output string
+  for (var i=0; i < input.length; i++) {
+   if (i != 0 && (input.length - i) % 3 == 0) output += ",";
+   output += input.charAt(i);
+  }
+ return output;
+}
+function calc(total,month,day,hours,minutes,seconds) {
+ var num = 0;
+ num = month * (total/12);
+ num = num + (day * (total/365));
+ num = num + (hours * (total/365/24));
+ num = num + (minutes * (total/365/24/60));
+ num = "" + Math.ceil(num + (seconds * total/365/24/60/60));
+ return num;
+}
+function showtime(){
+ var now = new Date();
+ var today = now;
+ var month = now.getMonth();
+ var day = now.getDate();
+ var hours = now.getHours();
+ var minutes = now.getMinutes();
+ var seconds = now.getSeconds();
+ var timeValue = "" + ((hours > 12) ? hours - 12 : hours);
+ timeValue  += ((minutes < 10) ? ":0" : ":") + minutes;
+ timeValue  += ((seconds < 10) ? ":0" : ":") + seconds;
+ timeValue  += (hours >= 12) ? " P.M." : " A.M.";
+ var fspent = calc(tfspent,month,day,hours,minutes,seconds);
+ fspent = separate(fspent);
+ fspent = "$" + fspent;
+ var sspent = calc(tsspent,month,day,hours,minutes,seconds);
+ sspent = separate(sspent);
+ sspent = "$" + sspent;
+ var tspent = calc(ttspent,month,day,hours,minutes,seconds);
+ tspent = separate(tspent);
+ tspent = "$" + tspent;
+ var busts = calc(tbusts,month,day,hours,minutes,seconds);
+ busts = separate(busts);
+ var cbusts = calc(tcbusts,month,day,hours,minutes,seconds);
+ cbusts = separate(cbusts);
+ var prison = calc(tprison,month,day,hours,minutes,seconds);
+ prison = separate(prison);
+ document.clock.face.value = timeValue;
+ document.clock.fspent.value = fspent;
+ document.clock.sspent.value = sspent;
+ document.clock.tspent.value = tspent;
+ document.clock.busts.value = busts;
+ timerID = setTimeout("showtime()",1000)
+ timerRunning = true
+}
+//-->
+</script>
+</head>
+
+<body class="front not-logged-in with-navigation one-sidebar sidebar-right">
+  <div id="skip-nav"><a href="#content">Skip to Content</a></div>
+	<div id="page">
+		<!-- ______________________ HEADER _______________________ -->
+		<div id="header">
+					  	<div id="logo-title">
+		  	  		  	    <a href="/cms/" title="Home" rel="home" id="logo">
+		  	      <img src="/cms/files/basic_logo.png" alt="Home" />
+		  	    </a>
+		  	   	        		  	</div> <!-- /logo-title -->
+
+		  		
+	     </div> <!-- /header -->
+
+					<!-- ______________________ MAIN _______________________ -->
+
+		    	<div id="main" class="clearfix">
+
+		  	  		<div id="content">
+								<div id="content-inner" class="inner column center">
+
+		  	  		  
+  		        	  
+				        	<div id="content-area"> <!-- CONTENT AREA -->
+				        	  <div class="sticky node-teaser node-type-page" id="node-1">
+	<div class="node-inner">
+
+    	    <h2 class="title node-title">
+				<a href="/cms/node/1">Welcome to DrugSense</a>
+			</h2>
+    
+    
+  	    <!--
+  	    -->
+    <div class="content">
+      <div style="text-align: justify; padding-right: 20px;">
+This is a web portal for DrugSense - <a href="http://mapinc.org" target="_blank">Media Awareness Project </a>(MAP)  - <a href="http://drugpolicycentral.com/" target="_blank">Drug Policy Central</a> (DPC)
+<br /><br />
+<a href="/cms/donate"><img src="/pix/donate_now.png" alt="Donate Now!" width="170" height="150" border="0" align="left" hspace="20" /></a>DrugSense is an award winning (501)(c)(3) non-profit organization incorporated in 1995 to inform citizens and encourage involvement in drug policy reform.
+<br /><br />
+ It has developed a number of projects and services that have become a foundation for drug policy reform. The <a href="http://drugnews.org/">Media Awareness Project (MAP) Drug News Archive</a> encourages unbiased media coverage,  online media activism and a drug policy research tool.
+
+ <a href="http://www.drugpolicycentral.com/">Drug Policy Central's Web-based services</a> provides subsidized technical services for drug policy organizations organization to empower their members to organize and share information and resources.
+&nbsp;&nbsp;<a href="/cms/about">Read more</a>
+<br /><br />
+</div>
+<div class="middle"">
+<h4 align="center"><a title="See More" href="/cms/wodclock">Drug War Clock</a></h4>
+<form name="clock" action="" onsubmit="0">
+<table id="wodclock" width="100%" cellpadding="3" cellspacing="0" border="0">
+<tr><td>Time</td><td>&nbsp;</td><td><input class="wodclock_form" type="text" name="face" size="15" /></td></tr>
+<tr><td>Federal</td><td>&nbsp;</td><td><input class="wodclock_form" type="text" name="fspent" size="15" /></td></tr>
+<tr><td>State</td><td>&nbsp;</td><td><input type="text" class="wodclock_form" name="sspent" size="15" /></td></tr>
+<tr><td>Total</td><td>&nbsp;</td><td><input class="wodclock_form" type="text" name="tspent" size="15" /></td></tr>
+<tr><td>Arrests</td><td>&nbsp;</td><td><input class="wodclock_form" type="text" name="busts" size="15" /></td></tr>
+</table>
+</form>
+<script type="text/javascript">
+<!--
+startclock();
+//-->
+</script>
+</div>    </div>
+
+    
+	</div> <!-- /node-inner -->
+</div> <!-- /node -->
+<div class="node-teaser node-type-story" id="node-530">
+	<div class="node-inner">
+
+    	    <h2 class="title node-title">
+				<a href="/cms/support_request">Request for Support for DrugSense and MAP Inc.</a>
+			</h2>
+    
+    
+  	  	  <!-- <div class="submitted">Submitted by Mark Greer on Tue, 08/20/2019 - 12:14.</div> -->
+  	    <!--
+  	      <div class="taxonomy"><ul class="links inline"><li  class="first last taxonomy_term_37"><a href="/cms/taxonomy/term/37" rel="tag" title="Pages and stories on becoming involved" class="taxonomy_term_37">Involved</a></li>
+</ul></div>
+  	    -->
+    <div class="content">
+      <strong>Dear Drug Policy Reform Supporter,</strong>
+<br/><br/>
+As has been the case for many years, continued support of DrugSense/MAP Inc. has been a vital factor in what we consider to be one of the best investments in the drug policy reform effort that we are aware of. On a relatively small budget, we continue to provide an impressive array of features and support for a wide ranging group of organizations and individuals that are active throughout the drug policy reform arena.
+<br/><br/>
+Hopefully this report will provide something of an overview of what DrugSense/MAP inc.  has been doing for the reform community for more than 25 Years!
+<br/><br/>
+Over the years, we have evolved into a very multifaceted organization.  This makes it difficult to concisely enumerate all of the many and varied services we provide the drug policy reform community but, hopefully, I can provide a pretty convincing overview without taking too much of your time.
+<br/><br/>
+    </div>
+
+    	    <div class="links"><ul class="links inline"><li  class="first last node_read_more"><a href="/cms/support_request" title="Read the rest of this posting." class="node_read_more">Read more</a></li>
+</ul></div>
+	  
+	</div> <!-- /node-inner -->
+</div> <!-- /node -->
+				        	</div>
+
+		  	  		  	
+		  	  		  				              <div id="content-bottom">
+			                <br/><div class="block block-block region-even even region-count-8 count-8 clearfix" id="block-block-23">
+  <div class="block-inner">
+
+    
+    <div class="content">
+      <div align="center">
+<a href="/cms/informed"><img src="/cms/files/informed.png" width="210" height="75" alt="Get Informed" border="0" hspace="10" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/cms/involved"><img src="/cms/files/involved.png" width="210" height="75" alt="Get Involved" border="0" hspace="10" /></a>
+</div>    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+<br/><div class="block block-block region-odd odd region-count-9 count-9 clearfix" id="block-block-14">
+  <div class="block-inner">
+
+    
+    <div class="content">
+      <div style="float: left; width: 50%;">
+<h4>News</h4>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v21/n004/a02.html">US WA: Ganja Glut? With Excess Weed, Growers Seek Interstate Sales</a></span><br/>
+<blockquote class="map_excerpt">&quot;Liquidation sale,&quot; it said. Attached was a spreadsheet of items up for grabs: LED grow lights for $500 apiece. Rotary evaporators for hash oil, $10,000. </blockquote>
+<h4>Opinions</h4>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v21/n004/a02.html">US WA: Ganja Glut? With Excess Weed, Growers Seek Interstate Sales</a></span><br/>
+<blockquote class="map_excerpt">&quot;Liquidation sale,&quot; it said. Attached was a spreadsheet of items up for grabs: LED grow lights for $500 apiece. Rotary evaporators for hash oil, $10,000. </blockquote>
+</div>
+<div style="float: right; width: 50%;">
+<h4>Letters</h4>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v21/n004/a01.html">CN BC: Just Say No Education Doesn't Work</a></span><br/>
+<blockquote class="map_excerpt">Letter writer Cristina Adam asserted that abstinence-based drug education is the best, adding that &quot;in no uncertain terms there is NO way to take drugs safely.&quot; (&quot;Letter: Say no to drugs the best message,&quot; May 3) </blockquote>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v20/n000/a028.html">US OR: Let's See What Happens</a></span><br/>
+<blockquote class="map_excerpt">Mr. Fallon's letter highlights one of the unappreciated strengths of our federal republic when compared with most other countries: </blockquote>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v20/n000/a027.html">US OR: Oregon Abandons Its Youth With New Law</a></span><br/>
+<blockquote class="map_excerpt">It's disingenuous of Seamus R. Fallon (&quot;Oregon Drug Law Change Can Help Families,&quot; Letters, Nov. 24) to insist that two grams of cocaine is one-third the amount a drug dealer would typically carry. What is the source for such a statement? Based on my experience as a high-school teacher, few of the drug users in their teen years are &quot;drug dealers.&quot; They are constant consumers, many on a daily basis, of stimulants of any kind. Two grams of cocaine is easily quartered for four classmates to afford a half-gram each, plenty to get amped up, behind some brewskis, especially for diminutive teen girls. None of the group is &quot;a dealer&quot; in the sense Mr. Fallon proffers his straw man; they are end-users for the dealers. </blockquote>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v20/n000/a020.html">US: Oregon Drug Law Change Can Help Families</a></span><br/>
+<blockquote class="map_excerpt">Naomi Schaefer Riley and John Walters state that Oregon decriminalized &quot;small amounts of harder drugs, including cocaine, heroin and methamphetamine&quot; (&quot;Legal Drugs Are Fashionable-and Treacherous for Children,&quot; op-ed, Nov. 19) and that the passage of Measure 110 in Oregon &quot;lower[s] the risk and cost of doing business for drug dealers.&quot; It's an erroneous claim. Measure 110 says that possession of less than one gram of heroin, various low amounts of amphetamines and less than two grams of cocaine is decriminalized. No drug dealer would carry anything less than three times the amounts in the measure. </blockquote>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v21/n001/a01.html">US GA: Drug War Puts Brave Police Officers In Dangerous Spot</a></span><br/>
+<blockquote class="map_excerpt">The drug war needs to end. If the AJC investigated, it would likely find most of the violence is drug war-related. The police are doing the job they were given. You may not like the way they do it, but do not blame them for doing their highly dangerous job. Either make drugs legal, or let the government compete with the drug lords by taking confiscated drugs and giving them free to drug addicts in a special recovery program. If drugs are free or legal, there is no reason for drug lords to exist. They cannot compete with free. This is the way to end most of the violence and social injustice. Not all of it, I am sorry to say, but it would be a start. </blockquote>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v20/n000/a018.html">US: Black Parents Can't Indulge</a></span><br/>
+<blockquote class="map_excerpt">Re &quot;Parents' Little Helpers&quot; (Sunday Styles, Oct. 4): To be a Black mother is to be in a constant state of alertness when it comes to protecting your family from the government. As a Black woman, mother and lawyer, I am no different in that regard. </blockquote>
+<span class="map_headline"><a target="_blank" title="Read more" href="http://www.mapinc.org/drugnews/v20/n007/a03.html">CN AB: Harm Reduction Still An Effective Strategy</a></span><br/>
+<blockquote class="map_excerpt">Like myself, I suspect many citizens of Lethbridge were alarmed by the finding of misappropriated funds within ARCHES, and the subsequent withdrawal of provincial funding to their supervised consumption site (SCS). As an RN who has worked for a number of years in harm reduction, I am reeling for our clients and their families in terms of how this will impact them. </blockquote>
+</div>
+<br /><br />
+    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+			              </div>
+			            
+		  	  			</div>
+							</div> <!-- /content-inner /content -->
+
+				      <div id="navigation" class="menu withprimary ">
+
+				        				          <div id="primary" class="clear-block">
+				            <ul class="links primary-links"><li  class="first menu-1-1-2-active"><a href="/cms/node" title="DrugSense Homepage" class="menu-1-1-2-active active">Home</a></li>
+<li  class="menu-1-2-2"><a href="/cms/about" title="Mission, goals and history" class="menu-1-2-2">About</a></li>
+<li  class="menu-1-3-2"><a href="http://druglawreform.com/" title="DrugSense Blog" class="menu-1-3-2">Blog</a></li>
+<li  class="menu-1-4-2"><a href="/cms/informed" title="Drug and drug policy facts and information" class="menu-1-4-2">Get Informed</a></li>
+<li  class="menu-1-5-2"><a href="/cms/involved" title="Become active in drug policy reform" class="menu-1-5-2">Get Involved</a></li>
+<li  class="menu-1-6-2"><a href="/cms/donate" title="Support DrugSense" class="menu-1-6-2">Donate</a></li>
+<li  class="last menu-1-7-2"><a href="/cms/contact" title="Contact DrugSense" class="menu-1-7-2">Contact</a></li>
+</ul>				          </div>
+				        
+				        
+				      </div> <!-- /navigation -->
+
+
+		  	  		 <!-- /sidebar-left -->
+
+
+		  	  		 <!-- SIDEBAR RIGHT -->
+                <div id="sidebar-second" class="column sidebar second">
+                  <div id="sidebar-second-inner" class="inner">
+									  <br/><div class="block block-block region-odd odd region-count-1 count-1 clearfix" id="block-block-10">
+  <div class="block-inner">
+
+    		  <h4 class="title block-title">Search</h4>
+		
+    <div class="content">
+      <form method="get" target="google" name="google" action="http://www.google.com/search">
+<input name="hl" type="hidden" value="en" />
+<input name="ie" type="hidden"value="ISO-8859-1" /> 
+<input name="as_qdr" type="hidden" value="all" />
+<input name="as_sitesearch" type="hidden" value="www.drugsense.org" />
+<!--<a href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_25wht.gif" width="75" height="32" border="0" alt="Google" /></a> -->
+<input name="q" type="text" size="20" />&nbsp;<input type="submit" value="Go" />
+</form>         
+    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+<br/><div class="block block-block region-even even region-count-2 count-2 clearfix" id="block-block-22">
+  <div class="block-inner">
+
+    		  <h4 class="title block-title">Get Local</h4>
+		
+    <div class="content">
+      <div style="background-image: url(/cms/files/worldmap.png); background-repeat: no-repeat; height: 100px; padding: 28px 0 0 10px;" >
+<form name="geoview" method="post" action="/cms/geoview.php">
+<select name="area" onchange="document.geoview.submit()">
+<option value="">Select Area</option>
+<option value="e-uk">United Kingdom</option>
+<option value="n">North America</option>
+<option value="n-cn">Canada</option>
+<option value="n-cn-ab">Alberta</option>
+<option value="n-cn-bc">British Columbia</option>
+<option value="n-cn-mb">Manitoba</option>
+<option value="n-cn-nf">Newfoundland</option>
+<option value="n-cn-nk">New Brunswick</option>
+<option value="n-cn-ns">Nova Scotia</option>
+<option value="n-cn-nt">Northwest Territories</option>
+<option value="n-cn-nu">Nunavut</option>
+<option value="n-cn-on">Ontario</option>
+<option value="n-cn-pi">Prince Edward Island</option>
+<option value="n-cn-qu">Quebec</option>
+<option value="n-cn-sn">Saskatchewan</option>
+<option value="n-cn-yk">Yukon Territory</option>
+<option value="n-gl">Greenland</option>
+<option value="n-mx">Mexico</option>
+<option value="n-us">United States</option>
+<option value="n-us-ak">Alaska</option>
+<option value="n-us-al">Alabama</option>
+<option value="n-us-ar">Arkansas</option>
+<option value="n-us-az">Arizona</option>
+<option value="n-us-ca">California</option>
+<option value="n-us-co">Colorado</option>
+<option value="n-us-ct">Connecticut</option>
+<option value="n-us-dc">District of Columbia</option>
+<option value="n-us-de">Delaware</option>
+<option value="n-us-fl">Florida</option>
+<option value="n-us-ga">Georgia</option>
+<option value="n-us-hi">Hawaii</option>
+<option value="n-us-ia">Iowa</option>
+<option value="n-us-id">Idaho</option>
+<option value="n-us-il">Illinois</option>
+<option value="n-us-in">Indiana</option>
+<option value="n-us-ks">Kansas</option>
+<option value="n-us-ky">Kentucky</option>
+<option value="n-us-la">Louisiana</option>
+<option value="n-us-ma">Massachusetts</option>
+<option value="n-us-md">Maryland</option>
+<option value="n-us-me">Maine</option>
+<option value="n-us-mi">Michigan</option>
+<option value="n-us-mn">Minnesota</option>
+<option value="n-us-mo">Missouri</option>
+<option value="n-us-ms">Mississippi</option>
+<option value="n-us-mt">Montana</option>
+<option value="n-us-nb">Nebraska</option>
+<option value="n-us-nc">North Carolina</option>
+<option value="n-us-nd">North Dakota</option>
+<option value="n-us-nh">New Hampshire</option>
+<option value="n-us-nj">New Jersey</option>
+<option value="n-us-nm">New Mexico</option>
+<option value="n-us-nv">Nevada</option>
+<option value="n-us-ny">New York</option>
+<option value="n-us-oh">Ohio</option>
+<option value="n-us-ok">Oklahoma</option>
+<option value="n-us-or">Oregon</option>
+<option value="n-us-pa">Pennsylvania</option>
+<option value="n-us-ri">Rhode Island</option>
+<option value="n-us-sc">South Carolina</option>
+<option value="n-us-sd">South Dakota</option>
+<option value="n-us-tn">Tennessee</option>
+<option value="n-us-tx">Texas</option>
+<option value="n-us-ut">Utah</option>
+<option value="n-us-va">Virginia</option>
+<option value="n-us-vt">Vermont</option>
+<option value="n-us-wa">Washington</option>
+<option value="n-us-wi">Wisconsin</option>
+<option value="n-us-wv">West Virginia</option>
+<option value="n-us-wy">Wyoming</option>
+<option value="u-at">Australia</option>
+<option value="u-nz">New Zealand</option>
+</select>&nbsp;<input type="submit" value="Go" />
+</form>
+</div>    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+<br/><div class="block block-menu region-odd odd region-count-3 count-3 clearfix" id="block-menu-151">
+  <div class="block-inner">
+
+    		  <h4 class="title block-title">Our Sites</h4>
+		
+    <div class="content">
+      
+<ul class="menu">
+
+<li class="leaf" id="menu-drug-news-archive"><a href="http://drugnews.org/" title="MAP archive of drug-related news, opinions and letters">Drug News Archive</a></li>
+
+
+<li class="leaf" id="menu-drug-news-bot"><a href="http://drugnewsbot.org/" title="The  latest  breaking drug news">Drug News Bot</a></li>
+
+
+<li class="leaf" id="menu-media-awareness-project"><a href="http://www.mapinc.org/" title="Drug policy news archive and e-mail subscription services">Media Awareness Project</a></li>
+
+
+</ul>
+    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+<br/><div class="block block-block region-even even region-count-4 count-4 clearfix" id="block-block-8">
+  <div class="block-inner">
+
+    
+    <div class="content">
+      <div align="center">
+<p><a target="_blank" href="https://www.securitymetrics.com/index.adp"><img src="/cms/images/ccsafe.gif" width="100" height="39" alt="Credit Card Safe" border="0" /></a></p>
+<p><a href="https://www.paypal.com/donate?hosted_button_id=NELQZPSUPDSUA"><img src="/pix/paypal.gif" width="111" height="46" alt="Paypal" border="0"></a></p>
+</div>
+    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+<br/><div class="block block-block region-odd odd region-count-5 count-5 clearfix" id="block-block-2">
+  <div class="block-inner">
+
+    
+    <div class="content">
+      <div align="center">
+<a href="http://www.myspace.com/DrugSense" target="_blank" title="http://www.myspace.com/DrugSense"><img src="/cms/images/sn/myspace.png" width="180" height="40" style="border:0;" alt="myspace.com/DrugSense" /></a><br />
+<a href="http://www.twitter.com/DrugSense" target="_blank" title="http://www.twitter.com/DrugSense"><img src="./images/sn/twitter.png" width="180" height="60" style="border:0;" alt="twitter.com/DrugSense" /></a><br />
+<a href="http://www.YouTube.com/DrugSense" target="_blank" title="http://www.YouTube.com/DrugSense"><img src="./images/sn/youtube.png" width="180" height="70" style="border:0;" alt="YouTube.com/DrugSense" /></a><br />
+<a href="http://www.facebook.com/group.php?gid=6459101163" target="_blank" title="DrugSense Facebook Group"><img src="./images/sn/facebook.png" width="180" height="70" style="border:0;" alt="DrugSense Facebook Group" /></a>
+</div>
+    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+<br/><div class="block block-views region-even even region-count-6 count-6 clearfix" id="block-views-plug">
+  <div class="block-inner">
+
+    
+    <div class="content">
+      <div class='view view-plug'><div class='view-content view-content-plug'><div align="center"><a target="_blank" href="http://www.drugwarfacts.org/"><img src="/cms/files/dwf2x2draft2.jpg" alt="Drug War Facts" width="144" height="144" border="0"/></a></div>
+</div></div>
+    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+<br/><div class="block block-block region-odd odd region-count-7 count-7 clearfix" id="block-block-7">
+  <div class="block-inner">
+
+    
+    <div class="content">
+      <div align="center">
+<a title="Hosted by DPC" href="http://www.dpchosting.org/" target="_blank"><img src="/cms/images/hosted.png" width="180" height="200" alt="Hosted by DPC" border="0" /></a>
+</div>
+    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+									</div>
+		  	  		  </div>
+		  	  		 <!-- /sidebar-right -->
+
+		  	</div> <!-- /main -->
+
+
+				<!-- ______________________ FOOTER _______________________ -->
+
+
+      	  <div id="footer">
+	      
+	      <br/><div class="block block-block region-even even region-count-10 count-10 clearfix" id="block-block-18">
+  <div class="block-inner">
+
+    
+    <div class="content">
+      <ul class="links">
+<li><a href="/cms/copyright">Copyright Policy</a></li>
+<li><a href="/cms/privacy">Privacy Policy</a></li>
+<li><a href="/cms/terms_of_use">Terms of Use</a></li>
+<li><a title="Documentation and walk-throughs" href="/cms/tutorials">Tutorials</a></li>
+</ul>
+    </div>
+
+	  
+  </div> <!-- /block-inner -->
+ </div> <!-- /block -->
+  	  </div> <!-- /footer -->
+		
+  	  </div> <!-- /page -->
+
+</body>
+</html>

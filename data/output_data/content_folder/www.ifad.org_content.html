@@ -1,0 +1,4060 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			<!DOCTYPE html>
+<html class="ltr" dir="ltr" lang="en-US">
+<head>
+<title>International Fund for Agricultural Development</title>
+<script>
+        window.dataLayer = window.dataLayer || [];
+
+        dataLayer.push({
+            'visitorType': 'external'
+        });
+
+
+            function getGTAGConsentObj(cookieJson) {
+                let cconsent = JSON.parse(cookieJson)
+
+                let analytics_storage = 'denied';
+                let social_storage = 'denied';
+
+                if (cconsent.categories.analytics.wanted === true)
+                    analytics_storage = 'granted'
+
+                if (cconsent.categories.social.wanted === true)
+                    social_storage = 'granted'
+
+                return {
+                    'analytics_storage': analytics_storage,
+                    'social_storage': social_storage,
+                    'ad_storage': 'denied'
+                }
+            }
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('consent', 'default', {
+                'analytics_storage': 'denied',
+                'social_storage': 'denied',
+                // I don't know what's that, but it's part of the default GA configuration in GTM
+                // so let's block it by default
+                'ad_storage': 'denied'
+            });
+    </script>
+<script>
+            const getConsentCookieValue = () =>
+                document.cookie.split(";").find(elem => /cconsent/.test(elem))?.split("=")[1]
+
+            let cconsentCookieValue = getConsentCookieValue()
+
+            if (cconsentCookieValue !== undefined) {
+                gtag('consent', 'update',
+                    getGTAGConsentObj(cconsentCookieValue));
+            } else {
+                const intervalId = setInterval(() => {
+                    cconsentCookieValue = getConsentCookieValue()
+
+                    if (cconsentCookieValue !== undefined) {
+                        gtag('consent', 'update',
+                            getGTAGConsentObj(cconsentCookieValue));
+
+                        clearInterval(intervalId);
+
+                        location.reload(); // Workaround, otherwise the tags are not automatically fired by GTM
+                    }
+                }, 1000);
+            }
+        </script>
+<script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N3N78KF');</script>
+<meta property="fb:app_id" content="207030213391070" /><meta property="og:site_name" content="IFAD" /><meta property="og:type" content="website" /><meta name="twitter:site" content="@IFAD"><meta name="twitter:creator" content="@IFAD"><meta name="twitter:domain" content="ifad.org" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="google-site-verification" content="x6ItbnGk3apOiNZOKDf9pNBw03_Of4veOhzdJ-kDdiA" />
+<link type="application/rss+xml" rel="alternate" title="People. Food. Planet." href="https://ifadhq.libsyn.com/rss" />
+<link rel="canonical" href="https://www.ifad.org/en/" />
+<link rel="alternate" hreflang="x-default" href="https://www.ifad.org/en/" />
+<link rel="alternate" hreflang="ar" href="https://www.ifad.org/ar/" />
+<link rel="alternate" hreflang="en" href="https://www.ifad.org/en/" />
+<link rel="alternate" hreflang="es" href="https://www.ifad.org/es/" />
+<link rel="alternate" hreflang="fr" href="https://www.ifad.org/fr/" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="The International Fund for Agricultural Development (IFAD) is an international financial institution and a specialized agency of the United Nations dedicated to eradicating poverty and hunger in rural areas of developing countries." lang="en-US" name="description" /><meta content="rural poverty, agricultural development, poverty, agriculture, food security, poverty alleviation, poverty eradication, food insecurity, rural development, global remittances, climate change, nutrition, gender, youth" lang="en-US" name="keywords" />
+<script type="importmap">{"imports":{"react-dom":"/o/frontend-js-react-web/__liferay__/exports/react-dom.js","@clayui/breadcrumb":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$breadcrumb.js","@clayui/form":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$form.js","@clayui/popover":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$popover.js","@clayui/charts":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$charts.js","@clayui/shared":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$shared.js","@clayui/localized-input":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$localized-input.js","@clayui/modal":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$modal.js","@clayui/empty-state":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$empty-state.js","react":"/o/frontend-js-react-web/__liferay__/exports/react.js","@clayui/color-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$color-picker.js","@clayui/navigation-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$navigation-bar.js","@clayui/pagination":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$pagination.js","@clayui/icon":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$icon.js","@clayui/table":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$table.js","@clayui/autocomplete":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$autocomplete.js","@clayui/slider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$slider.js","@clayui/management-toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$management-toolbar.js","@clayui/multi-select":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-select.js","@clayui/nav":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$nav.js","@clayui/time-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$time-picker.js","@clayui/provider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js","@clayui/upper-toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$upper-toolbar.js","@clayui/loading-indicator":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$loading-indicator.js","@clayui/panel":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$panel.js","@clayui/drop-down":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$drop-down.js","@clayui/list":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$list.js","@clayui/date-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$date-picker.js","@clayui/label":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$label.js","@clayui/data-provider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$data-provider.js","@liferay/frontend-js-api/data-set":"/o/frontend-js-dependencies-web/__liferay__/exports/@liferay$js-api$data-set.js","@clayui/core":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$core.js","@clayui/pagination-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$pagination-bar.js","@clayui/layout":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$layout.js","@clayui/multi-step-nav":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-step-nav.js","@liferay/frontend-js-api":"/o/frontend-js-dependencies-web/__liferay__/exports/@liferay$js-api.js","@clayui/css":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$css.js","@clayui/toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$toolbar.js","@clayui/alert":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$alert.js","@clayui/badge":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$badge.js","@clayui/link":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$link.js","@clayui/card":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$card.js","@clayui/progress-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$progress-bar.js","@clayui/tooltip":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js","@clayui/button":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$button.js","@clayui/tabs":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$tabs.js","@clayui/sticker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$sticker.js"},"scopes":{}}</script><script data-senna-track="temporary">var Liferay = window.Liferay || {};Liferay.Icons = Liferay.Icons || {};Liferay.Icons.controlPanelSpritemap = 'https://www.ifad.org/o/admin-theme/images/clay/icons.svg';Liferay.Icons.spritemap = 'https://www.ifad.org/o/ifad-global-theme/images/clay/icons.svg';</script>
+<script data-senna-track="permanent" src="/combo?browserId=chrome&minifierType=js&languageId=en_US&t=1714424052931&/o/frontend-js-jquery-web/jquery/jquery.min.js&/o/frontend-js-jquery-web/jquery/init.js&/o/frontend-js-jquery-web/jquery/ajax.js&/o/frontend-js-jquery-web/jquery/bootstrap.bundle.min.js&/o/frontend-js-jquery-web/jquery/collapsible_search.js&/o/frontend-js-jquery-web/jquery/fm.js&/o/frontend-js-jquery-web/jquery/form.js&/o/frontend-js-jquery-web/jquery/popper.min.js&/o/frontend-js-jquery-web/jquery/side_navigation.js" type="text/javascript"></script>
+<link data-senna-track="permanent" href="/o/frontend-theme-font-awesome-web/css/main.css?&mac=KWb8CY3oOhD728SI0G+NfXJbH/E=&browserId=chrome&languageId=en_US&minifierType=css&themeId=ifadglobal_WAR_ifadglobaltheme" rel="stylesheet" type="text/css" />
+<script data-senna-track="permanent" type="text/javascript">window.Liferay = window.Liferay || {}; window.Liferay.CSP = {nonce: ''};</script>
+<link data-senna-track="temporary" href="https://www.ifad.org/en/" rel="canonical" />
+<link data-senna-track="temporary" href="https://www.ifad.org/zh/" hreflang="zh-CN" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/es/" hreflang="es-ES" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/sv/" hreflang="sv-SE" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/ja/" hreflang="ja-JP" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/nl/" hreflang="nl-NL" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/ru/" hreflang="ru-RU" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/zh-TW/" hreflang="zh-TW" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/ar/" hreflang="ar-SA" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/pt-BR/" hreflang="pt-BR" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/de/" hreflang="de-DE" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/hi/" hreflang="hi-IN" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/it/" hreflang="it-IT" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/pt/" hreflang="pt-PT" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/fr/" hreflang="fr-FR" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/en/" hreflang="en-US" rel="alternate" />
+<link data-senna-track="temporary" href="https://www.ifad.org/en/" hreflang="x-default" rel="alternate" />
+<meta property="og:description" content="The International Fund for Agricultural Development (IFAD) is an international financial institution and a specialized agency of the United Nations dedicated to eradicating poverty and hunger in rural areas of developing countries.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:site_name" content="preprod">
+<meta property="og:title" content="International Fund for Agricultural Development">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ifad.org/en/">
+<meta property="og:image" content="https://www.ifad.org/documents/38711624/43133480/Homepage.jpg/db5e7451-4852-e34e-dff1-4422ed888f20?version=1.0&amp;t=1622018886819&amp;imagePreview=1">
+<meta property="og:image:secure_url" content="https://www.ifad.org/documents/38711624/43133480/Homepage.jpg/db5e7451-4852-e34e-dff1-4422ed888f20?version=1.0&amp;t=1622018886819&amp;imagePreview=1">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:url" content="https://www.ifad.org/documents/38711624/43133480/Homepage.jpg/db5e7451-4852-e34e-dff1-4422ed888f20?version=1.0&amp;t=1622018886819&amp;imagePreview=1">
+<link href="https://www.ifad.org/o/ifad-global-theme/images/favicon.ico" rel="apple-touch-icon" />
+<link href="https://www.ifad.org/o/ifad-global-theme/images/favicon.ico" rel="icon" />
+<link class="lfr-css-file" data-senna-track="temporary" href="https://www.ifad.org/o/ifad-global-theme/css/clay.css?browserId=chrome&amp;themeId=ifadglobal_WAR_ifadglobaltheme&amp;minifierType=css&amp;languageId=en_US&amp;t=1714424118000" id="liferayAUICSS" rel="stylesheet" type="text/css" />
+<link href="/combo?browserId=chrome&amp;minifierType=css&amp;themeId=ifadglobal_WAR_ifadglobaltheme&amp;languageId=en_US&amp;com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet:%2Fo%2Fasset-publisher-web%2Fcss%2Fmain.css&amp;com_liferay_document_library_web_portlet_DLPortlet:%2Fo%2Fdocument-library-web%2Fdocument_library%2Fcss%2Fmain.css&amp;com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_icqz:%2Fo%2Fjournal-content-web%2Fcss%2Fmain.css&amp;com_liferay_journal_web_portlet_JournalPortlet:%2Fo%2Fjournal-web%2Fcss%2Fmain.css&amp;com_liferay_portal_search_web_portlet_SearchPortlet:%2Fo%2Fportal-search-web%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fo%2Fproduct-navigation-product-menu-web%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet:%2Fo%2Fproduct-navigation-user-personal-bar-web%2Fcss%2Fmain.css&amp;com_liferay_segments_experiment_web_internal_portlet_SegmentsExperimentPortlet:%2Fo%2Fsegments-experiment-web%2Fcss%2Fmain.css&amp;com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet:%2Fo%2Fsite-navigation-menu-web%2Fcss%2Fmain.css&amp;org_ifad_events_web_IfadEventsWebPortlet:%2Fo%2Forg.ifad.events.web%2Fcss%2Fmain.css&amp;org_ifad_hr_portlet_ERecruitmentPortlet_INSTANCE_ifaderecruitmentportlet:%2Fo%2Forg.ifad.erecruitment.portlet%2Fcss%2Fmain.css&amp;t=1714424118000" rel="stylesheet" type="text/css" data-senna-track="temporary" id="de4e35de" />
+<script type="text/javascript" data-senna-track="temporary">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+
+		Liferay.Browser = {
+			acceptsGzip: function() {
+				return true;
+			},
+
+			
+
+			getMajorVersion: function() {
+				return 97.0;
+			},
+
+			getRevision: function() {
+				return '537.36';
+			},
+			getVersion: function() {
+				return '97.0';
+			},
+
+			
+
+			isAir: function() {
+				return false;
+			},
+			isChrome: function() {
+				return true;
+			},
+			isEdge: function() {
+				return false;
+			},
+			isFirefox: function() {
+				return false;
+			},
+			isGecko: function() {
+				return true;
+			},
+			isIe: function() {
+				return false;
+			},
+			isIphone: function() {
+				return false;
+			},
+			isLinux: function() {
+				return false;
+			},
+			isMac: function() {
+				return false;
+			},
+			isMobile: function() {
+				return false;
+			},
+			isMozilla: function() {
+				return false;
+			},
+			isOpera: function() {
+				return false;
+			},
+			isRtf: function() {
+				return true;
+			},
+			isSafari: function() {
+				return true;
+			},
+			isSun: function() {
+				return false;
+			},
+			isWebKit: function() {
+				return true;
+			},
+			isWindows: function() {
+				return true;
+			}
+		};
+
+		Liferay.Data = Liferay.Data || {};
+
+		Liferay.Data.ICONS_INLINE_SVG = true;
+
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+
+		Liferay.Data.isCustomizationView = function() {
+			return false;
+		};
+
+		Liferay.Data.notices = [
+			
+		];
+
+		(function () {
+			var available = {};
+
+			var direction = {};
+
+			
+
+				available['en_US'] = 'English\x20\x28United\x20States\x29';
+				direction['en_US'] = 'ltr';
+
+			
+
+				available['ar_SA'] = 'Arabic\x20\x28Saudi\x20Arabia\x29';
+				direction['ar_SA'] = 'rtl';
+
+			
+
+				available['zh_CN'] = 'Chinese\x20\x28China\x29';
+				direction['zh_CN'] = 'ltr';
+
+			
+
+				available['zh_TW'] = 'Chinese\x20\x28Taiwan\x29';
+				direction['zh_TW'] = 'ltr';
+
+			
+
+				available['nl_NL'] = 'Dutch\x20\x28Netherlands\x29';
+				direction['nl_NL'] = 'ltr';
+
+			
+
+				available['fr_FR'] = 'French\x20\x28France\x29';
+				direction['fr_FR'] = 'ltr';
+
+			
+
+				available['de_DE'] = 'German\x20\x28Germany\x29';
+				direction['de_DE'] = 'ltr';
+
+			
+
+				available['hi_IN'] = 'Hindi\x20\x28India\x29';
+				direction['hi_IN'] = 'ltr';
+
+			
+
+				available['it_IT'] = 'Italian\x20\x28Italy\x29';
+				direction['it_IT'] = 'ltr';
+
+			
+
+				available['ja_JP'] = 'Japanese\x20\x28Japan\x29';
+				direction['ja_JP'] = 'ltr';
+
+			
+
+				available['pt_PT'] = 'Portuguese\x20\x28Portugal\x29';
+				direction['pt_PT'] = 'ltr';
+
+			
+
+				available['ru_RU'] = 'Russian\x20\x28Russia\x29';
+				direction['ru_RU'] = 'ltr';
+
+			
+
+				available['es_ES'] = 'Spanish\x20\x28Spain\x29';
+				direction['es_ES'] = 'ltr';
+
+			
+
+				available['pt_BR'] = 'Portuguese\x20\x28Brazil\x29';
+				direction['pt_BR'] = 'ltr';
+
+			
+
+				available['sv_SE'] = 'Swedish\x20\x28Sweden\x29';
+				direction['sv_SE'] = 'ltr';
+
+			
+
+			Liferay.Language = {
+				available,
+				direction,
+				get: function(key) {
+					return key;
+				}
+			};
+		})();
+
+		var featureFlags = {"LPD-11018":false,"LPS-193884":false,"LPS-178642":false,"LPS-193005":false,"LPS-187284":false,"LPS-187285":false,"LPS-114786":false,"LPS-192957":false,"COMMERCE-8087":false,"LRAC-10757":false,"LPS-180090":false,"LPS-170809":false,"LPS-178052":false,"LPS-189856":false,"LPS-187436":false,"LPS-182184":false,"LPS-185892":false,"LPS-186620":false,"COMMERCE-12754":false,"LPS-184404":false,"LPS-180328":false,"LPS-198183":false,"LPS-171364":false,"LPS-153714":false,"LPS-96845":false,"LPS-170670":false,"LPS-141392":false,"LPS-169981":false,"LPD-15804":false,"LPS-153839":false,"LPS-200135":false,"LPS-187793":false,"LPS-177027":false,"LPD-10793":false,"COMMERCE-12192":false,"LPD-11003":false,"LPS-196768":false,"LPS-196724":false,"LPS-196847":false,"LPS-163118":false,"LPS-114700":false,"LPS-135430":false,"LPS-134060":false,"LPS-164563":false,"LPS-122920":false,"LPS-203351":false,"LPS-194395":false,"LPD-6368":false,"LPD-10701":false,"LPS-202104":false,"COMMERCE-9599":false,"LPS-187142":false,"LPD-15596":false,"LPS-198959":false,"LPS-196935":true,"LPS-187854":false,"LPS-176691":false,"LPS-197909":false,"LPS-202534":false,"COMMERCE-8949":false,"COMMERCE-11922":false,"LPS-194362":false,"LPS-165481":false,"LPS-153813":false,"LPS-174455":false,"LPD-10735":false,"COMMERCE-13024":false,"LPS-194763":false,"LPS-165482":false,"LPS-193551":false,"LPS-197477":false,"LPS-174816":false,"LPS-186360":false,"LPS-153332":false,"COMMERCE-12170":false,"LPS-179669":false,"LPS-174417":false,"LPS-183882":false,"LPS-155284":false,"LRAC-15017":false,"LPS-200108":false,"LPS-159643":false,"LPS-161033":false,"LPS-164948":false,"LPS-186870":false,"LPS-186871":false,"LPS-188058":false,"LPS-129412":false,"LPS-166126":false,"LPS-169837":false};
+
+		Liferay.FeatureFlags = Object.keys(featureFlags).reduce(
+			(acc, key) => ({
+				...acc, [key]: featureFlags[key] === 'true' || featureFlags[key] === true
+			}), {}
+		);
+
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 8000000000
+		};
+
+		Liferay.ThemeDisplay = {
+
+			
+
+			
+				getLayoutId: function() {
+					return '508';
+				},
+
+				
+
+				getLayoutRelativeControlPanelURL: function() {
+					return '/en/group/guest/~/control_panel/manage';
+				},
+
+				getLayoutRelativeURL: function() {
+					return '/en/home';
+				},
+				getLayoutURL: function() {
+					return 'https://www.ifad.org/en/home';
+				},
+				getParentLayoutId: function() {
+					return '0';
+				},
+				isControlPanel: function() {
+					return false;
+				},
+				isPrivateLayout: function() {
+					return 'false';
+				},
+				isVirtualLayout: function() {
+					return false;
+				},
+			
+
+			getBCP47LanguageId: function() {
+				return 'en-US';
+			},
+			getCanonicalURL: function() {
+
+				
+
+				return 'https\x3a\x2f\x2fwww\x2eifad\x2eorg\x2fen\x2f';
+			},
+			getCDNBaseURL: function() {
+				return 'https://www.ifad.org';
+			},
+			getCDNDynamicResourcesHost: function() {
+				return '';
+			},
+			getCDNHost: function() {
+				return '';
+			},
+			getCompanyGroupId: function() {
+				return '10192';
+			},
+			getCompanyId: function() {
+				return '10154';
+			},
+			getDefaultLanguageId: function() {
+				return 'en_US';
+			},
+			getDoAsUserIdEncoded: function() {
+				return '';
+			},
+			getLanguageId: function() {
+				return 'en_US';
+			},
+			getParentGroupId: function() {
+				return '38711624';
+			},
+			getPathContext: function() {
+				return '';
+			},
+			getPathImage: function() {
+				return '/image';
+			},
+			getPathJavaScript: function() {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function() {
+				return '/en/c';
+			},
+			getPathThemeImages: function() {
+				return 'https://www.ifad.org/o/ifad-global-theme/images';
+			},
+			getPathThemeRoot: function() {
+				return '/o/ifad-global-theme';
+			},
+			getPlid: function() {
+				return '42472819';
+			},
+			getPortalURL: function() {
+				return 'https://www.ifad.org';
+			},
+			getRealUserId: function() {
+				return '10158';
+			},
+			getRemoteAddr: function() {
+				return '172.68.213.20';
+			},
+			getRemoteHost: function() {
+				return '172.68.213.20';
+			},
+			getScopeGroupId: function() {
+				return '38711624';
+			},
+			getScopeGroupIdOrLiveGroupId: function() {
+				return '38711624';
+			},
+			getSessionId: function() {
+				return '';
+			},
+			getSiteAdminURL: function() {
+				return 'https://www.ifad.org/group/guest/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function() {
+				return '38711624';
+			},
+			getURLControlPanel: function() {
+				return '/en/group/control_panel?refererPlid=42472819';
+			},
+			getURLHome: function() {
+				return 'https\x3a\x2f\x2fwww\x2eifad\x2eorg\x2fweb\x2fguest';
+			},
+			getUserEmailAddress: function() {
+				return '';
+			},
+			getUserId: function() {
+				return '10158';
+			},
+			getUserName: function() {
+				return '';
+			},
+			isAddSessionIdToURL: function() {
+				return false;
+			},
+			isImpersonated: function() {
+				return false;
+			},
+			isSignedIn: function() {
+				return false;
+			},
+
+			isStagedPortlet: function() {
+				
+					
+						return false;
+					
+				
+			},
+
+			isStateExclusive: function() {
+				return false;
+			},
+			isStateMaximized: function() {
+				return false;
+			},
+			isStatePopUp: function() {
+				return false;
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		Liferay.AUI = {
+
+			
+
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=chrome&minifierType=&languageId=en_US&t=1714424003685&';
+			},
+			getDateFormat: function() {
+				return '%m/%d/%Y';
+			},
+			getEditorCKEditorPath: function() {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function() {
+				var filter = 'raw';
+
+				
+					
+						filter = 'min';
+					
+					
+
+				return filter;
+			},
+			getFilterConfig: function() {
+				var instance = this;
+
+				var filterConfig = null;
+
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function() {
+				return '/o/frontend-js-web';
+			},
+			getPortletRootPath: function() {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function() {
+				return '?browserId=chrome&minifierType=&languageId=en_US&t=1714424003685';
+			}
+		};
+
+		Liferay.authToken = 'TglIgG7t';
+
+		
+
+		Liferay.currentURL = '\x2fen\x2f';
+		Liferay.currentURLEncoded = '\x252Fen\x252F';
+	// ]]>
+</script>
+<script data-senna-track="temporary" type="text/javascript">window.__CONFIG__= {basePath: '',combine: true, defaultURLParams: null, explainResolutions: false, exposeGlobal: false, logLevel: 'warn', moduleType: 'module', namespace:'Liferay', nonce: '', reportMismatchedAnonymousModules: 'warn', resolvePath: '/o/js_resolve_modules', url: '/combo/?browserId=chrome&minifierType=js&languageId=en_US&t=1714424003685&', waitTimeout: 60000};</script><script data-senna-track="permanent" src="/o/frontend-js-loader-modules-extender/loader.js?&mac=9WaMmhziBCkScHZwrrVcOR7VZF4=&browserId=chrome&languageId=en_US&minifierType=js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="/combo?browserId=chrome&minifierType=js&languageId=en_US&t=1714424003685&/o/frontend-js-aui-web/aui/aui/aui-min.js&/o/frontend-js-aui-web/liferay/modules.js&/o/frontend-js-aui-web/liferay/aui_sandbox.js&/o/frontend-js-aui-web/aui/attribute-base/attribute-base-min.js&/o/frontend-js-aui-web/aui/attribute-complex/attribute-complex-min.js&/o/frontend-js-aui-web/aui/attribute-core/attribute-core-min.js&/o/frontend-js-aui-web/aui/attribute-observable/attribute-observable-min.js&/o/frontend-js-aui-web/aui/attribute-extras/attribute-extras-min.js&/o/frontend-js-aui-web/aui/event-custom-base/event-custom-base-min.js&/o/frontend-js-aui-web/aui/event-custom-complex/event-custom-complex-min.js&/o/frontend-js-aui-web/aui/oop/oop-min.js&/o/frontend-js-aui-web/aui/aui-base-lang/aui-base-lang-min.js&/o/frontend-js-aui-web/liferay/dependency.js&/o/frontend-js-aui-web/liferay/util.js&/o/oauth2-provider-web/js/liferay.js&/o/frontend-js-web/liferay/dom_task_runner.js&/o/frontend-js-web/liferay/events.js&/o/frontend-js-web/liferay/lazy_load.js&/o/frontend-js-web/liferay/liferay.js&/o/frontend-js-web/liferay/global.bundle.js&/o/frontend-js-web/liferay/portlet.js&/o/frontend-js-web/liferay/workflow.js" type="text/javascript"></script>
+<script data-senna-track="temporary" type="text/javascript">window.Liferay = Liferay || {}; window.Liferay.OAuth2 = {getAuthorizeURL: function() {return 'https://www.ifad.org/o/oauth2/authorize';}, getBuiltInRedirectURL: function() {return 'https://www.ifad.org/o/oauth2/redirect';}, getIntrospectURL: function() { return 'https://www.ifad.org/o/oauth2/introspect';}, getTokenURL: function() {return 'https://www.ifad.org/o/oauth2/token';}, getUserAgentApplication: function(externalReferenceCode) {return Liferay.OAuth2._userAgentApplications[externalReferenceCode];}, _userAgentApplications: {}}</script><script data-senna-track="temporary" type="text/javascript">try {var MODULE_MAIN='@liferay/document-library-web@6.0.177/document_library/js/index';var MODULE_PATH='/o/document-library-web';AUI().applyConfig({groups:{dl:{base:MODULE_PATH+"/document_library/js/legacy/",combine:Liferay.AUI.getCombine(),filter:Liferay.AUI.getFilterConfig(),modules:{"document-library-upload-component":{path:"DocumentLibraryUpload.js",requires:["aui-component","aui-data-set-deprecated","aui-overlay-manager-deprecated","aui-overlay-mask-deprecated","aui-parse-content","aui-progressbar","aui-template-deprecated","liferay-search-container","querystring-parse-simple","uploader"]}},root:MODULE_PATH+"/document_library/js/legacy/"}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='exportimport-web@5.0.83/index';var MODULE_PATH='/o/exportimport-web';AUI().applyConfig({groups:{exportimportweb:{base:MODULE_PATH+"/",combine:Liferay.AUI.getCombine(),filter:Liferay.AUI.getFilterConfig(),modules:{"liferay-export-import-export-import":{path:"js/main.js",requires:["aui-datatype","aui-dialog-iframe-deprecated","aui-modal","aui-parse-content","aui-toggler","liferay-portlet-base","liferay-util-window"]}},root:MODULE_PATH+"/"}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='portal-search-web@6.0.127/index';var MODULE_PATH='/o/portal-search-web';AUI().applyConfig({groups:{search:{base:MODULE_PATH+"/js/",combine:Liferay.AUI.getCombine(),filter:Liferay.AUI.getFilterConfig(),modules:{"liferay-search-custom-filter":{path:"custom_filter.js",requires:[]},"liferay-search-date-facet":{path:"date_facet.js",requires:["aui-form-validator","liferay-search-facet-util"]},"liferay-search-facet-util":{path:"facet_util.js",requires:[]},"liferay-search-modified-facet":{path:"modified_facet.js",requires:["aui-form-validator","liferay-search-facet-util"]},"liferay-search-sort-configuration":{path:"sort_configuration.js",requires:["aui-node"]},"liferay-search-sort-util":{path:"sort_util.js",requires:[]}},root:MODULE_PATH+"/js/"}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='contacts-web@5.0.57/index';var MODULE_PATH='/o/contacts-web';AUI().applyConfig({groups:{contactscenter:{base:MODULE_PATH+"/js/",combine:Liferay.AUI.getCombine(),filter:Liferay.AUI.getFilterConfig(),modules:{"liferay-contacts-center":{path:"main.js",requires:["aui-io-plugin-deprecated","aui-toolbar","autocomplete-base","datasource-io","json-parse","liferay-portlet-base","liferay-util-window"]}},root:MODULE_PATH+"/js/"}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='frontend-js-components-web@2.0.63/index';var MODULE_PATH='/o/frontend-js-components-web';AUI().applyConfig({groups:{components:{mainModule:MODULE_MAIN}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='dynamic-data-mapping-web@5.0.100/index';var MODULE_PATH='/o/dynamic-data-mapping-web';!function(){const a=Liferay.AUI;AUI().applyConfig({groups:{ddm:{base:MODULE_PATH+"/js/",combine:Liferay.AUI.getCombine(),filter:a.getFilterConfig(),modules:{"liferay-ddm-form":{path:"ddm_form.js",requires:["aui-base","aui-datatable","aui-datatype","aui-image-viewer","aui-parse-content","aui-set","aui-sortable-list","json","liferay-form","liferay-map-base","liferay-translation-manager","liferay-util-window"]},"liferay-portlet-dynamic-data-mapping":{condition:{trigger:"liferay-document-library"},path:"main.js",requires:["arraysort","aui-form-builder-deprecated","aui-form-validator","aui-map","aui-text-unicode","json","liferay-menu","liferay-translation-manager","liferay-util-window","text"]},"liferay-portlet-dynamic-data-mapping-custom-fields":{condition:{trigger:"liferay-document-library"},path:"custom_fields.js",requires:["liferay-portlet-dynamic-data-mapping"]}},root:MODULE_PATH+"/js/"}}})}();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='calendar-web@5.0.89/index';var MODULE_PATH='/o/calendar-web';AUI().applyConfig({groups:{calendar:{base:MODULE_PATH+"/js/",combine:Liferay.AUI.getCombine(),filter:Liferay.AUI.getFilterConfig(),modules:{"liferay-calendar-a11y":{path:"calendar_a11y.js",requires:["calendar"]},"liferay-calendar-container":{path:"calendar_container.js",requires:["aui-alert","aui-base","aui-component","liferay-portlet-base"]},"liferay-calendar-date-picker-sanitizer":{path:"date_picker_sanitizer.js",requires:["aui-base"]},"liferay-calendar-interval-selector":{path:"interval_selector.js",requires:["aui-base","liferay-portlet-base"]},"liferay-calendar-interval-selector-scheduler-event-link":{path:"interval_selector_scheduler_event_link.js",requires:["aui-base","liferay-portlet-base"]},"liferay-calendar-list":{path:"calendar_list.js",requires:["aui-template-deprecated","liferay-scheduler"]},"liferay-calendar-message-util":{path:"message_util.js",requires:["liferay-util-window"]},"liferay-calendar-recurrence-converter":{path:"recurrence_converter.js",requires:[]},"liferay-calendar-recurrence-dialog":{path:"recurrence.js",requires:["aui-base","liferay-calendar-recurrence-util"]},"liferay-calendar-recurrence-util":{path:"recurrence_util.js",requires:["aui-base","liferay-util-window"]},"liferay-calendar-reminders":{path:"calendar_reminders.js",requires:["aui-base"]},"liferay-calendar-remote-services":{path:"remote_services.js",requires:["aui-base","aui-component","liferay-calendar-util","liferay-portlet-base"]},"liferay-calendar-session-listener":{path:"session_listener.js",requires:["aui-base","liferay-scheduler"]},"liferay-calendar-simple-color-picker":{path:"simple_color_picker.js",requires:["aui-base","aui-template-deprecated"]},"liferay-calendar-simple-menu":{path:"simple_menu.js",requires:["aui-base","aui-template-deprecated","event-outside","event-touch","widget-modality","widget-position","widget-position-align","widget-position-constrain","widget-stack","widget-stdmod"]},"liferay-calendar-util":{path:"calendar_util.js",requires:["aui-datatype","aui-io","aui-scheduler","aui-toolbar","autocomplete","autocomplete-highlighters"]},"liferay-scheduler":{path:"scheduler.js",requires:["async-queue","aui-datatype","aui-scheduler","dd-plugin","liferay-calendar-a11y","liferay-calendar-message-util","liferay-calendar-recurrence-converter","liferay-calendar-recurrence-util","liferay-calendar-util","liferay-scheduler-event-recorder","liferay-scheduler-models","promise","resize-plugin"]},"liferay-scheduler-event-recorder":{path:"scheduler_event_recorder.js",requires:["dd-plugin","liferay-calendar-util","resize-plugin"]},"liferay-scheduler-models":{path:"scheduler_models.js",requires:["aui-datatype","dd-plugin","liferay-calendar-util"]}},root:MODULE_PATH+"/js/"}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='staging-processes-web@5.0.55/index';var MODULE_PATH='/o/staging-processes-web';AUI().applyConfig({groups:{stagingprocessesweb:{base:MODULE_PATH+"/",combine:Liferay.AUI.getCombine(),filter:Liferay.AUI.getFilterConfig(),modules:{"liferay-staging-processes-export-import":{path:"js/main.js",requires:["aui-datatype","aui-dialog-iframe-deprecated","aui-modal","aui-parse-content","aui-toggler","liferay-portlet-base","liferay-util-window"]}},root:MODULE_PATH+"/"}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/frontend-js-react-web@5.0.37/index';var MODULE_PATH='/o/frontend-js-react-web';AUI().applyConfig({groups:{react:{mainModule:MODULE_MAIN}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/frontend-js-state-web@1.0.20/index';var MODULE_PATH='/o/frontend-js-state-web';AUI().applyConfig({groups:{state:{mainModule:MODULE_MAIN}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='frontend-editor-alloyeditor-web@5.0.46/index';var MODULE_PATH='/o/frontend-editor-alloyeditor-web';AUI().applyConfig({groups:{alloyeditor:{base:MODULE_PATH+"/js/",combine:Liferay.AUI.getCombine(),filter:Liferay.AUI.getFilterConfig(),modules:{"liferay-alloy-editor":{path:"alloyeditor.js",requires:["aui-component","liferay-portlet-base","timers"]},"liferay-alloy-editor-source":{path:"alloyeditor_source.js",requires:["aui-debounce","liferay-fullscreen-source-editor","liferay-source-editor","plugin"]}},root:MODULE_PATH+"/js/"}}});
+} catch(error) {console.error(error);}try {var MODULE_MAIN='portal-workflow-kaleo-designer-web@5.0.125/index';var MODULE_PATH='/o/portal-workflow-kaleo-designer-web';AUI().applyConfig({groups:{"kaleo-designer":{base:MODULE_PATH+"/designer/js/legacy/",combine:Liferay.AUI.getCombine(),filter:Liferay.AUI.getFilterConfig(),modules:{"liferay-kaleo-designer-autocomplete-util":{path:"autocomplete_util.js",requires:["autocomplete","autocomplete-highlighters"]},"liferay-kaleo-designer-definition-diagram-controller":{path:"definition_diagram_controller.js",requires:["liferay-kaleo-designer-field-normalizer","liferay-kaleo-designer-utils"]},"liferay-kaleo-designer-dialogs":{path:"dialogs.js",requires:["liferay-util-window"]},"liferay-kaleo-designer-editors":{path:"editors.js",requires:["aui-ace-editor","aui-ace-editor-mode-xml","aui-base","aui-datatype","aui-node","liferay-kaleo-designer-autocomplete-util","liferay-kaleo-designer-utils"]},"liferay-kaleo-designer-field-normalizer":{path:"field_normalizer.js",requires:["liferay-kaleo-designer-remote-services"]},"liferay-kaleo-designer-nodes":{path:"nodes.js",requires:["aui-datatable","aui-datatype","aui-diagram-builder","liferay-kaleo-designer-editors","liferay-kaleo-designer-utils"]},"liferay-kaleo-designer-remote-services":{path:"remote_services.js",requires:["aui-io"]},"liferay-kaleo-designer-templates":{path:"templates.js",requires:["aui-tpl-snippets-deprecated"]},"liferay-kaleo-designer-utils":{path:"utils.js",requires:[]},"liferay-kaleo-designer-xml-definition":{path:"xml_definition.js",requires:["aui-base","aui-component","dataschema-xml","datatype-xml"]},"liferay-kaleo-designer-xml-definition-serializer":{path:"xml_definition_serializer.js",requires:["escape","liferay-kaleo-designer-xml-util"]},"liferay-kaleo-designer-xml-util":{path:"xml_util.js",requires:["aui-base"]},"liferay-portlet-kaleo-designer":{path:"main.js",requires:["aui-ace-editor","aui-ace-editor-mode-xml","aui-tpl-snippets-deprecated","dataschema-xml","datasource","datatype-xml","event-valuechange","io-form","liferay-kaleo-designer-autocomplete-util","liferay-kaleo-designer-editors","liferay-kaleo-designer-nodes","liferay-kaleo-designer-remote-services","liferay-kaleo-designer-utils","liferay-kaleo-designer-xml-util","liferay-util-window"]}},root:MODULE_PATH+"/designer/js/legacy/"}}});
+} catch(error) {console.error(error);}</script>
+<script type="text/javascript" data-senna-track="temporary">
+	// <![CDATA[
+		
+			
+				
+		
+
+		
+	// ]]>
+</script>
+<script id="googleAnalyticsScript" type="text/javascript" data-senna-track="permanent">
+					(function(i, s, o, g, r, a, m) {
+						i['GoogleAnalyticsObject'] = r;
+
+						i[r] = i[r] || function() {
+							var arrayValue = i[r].q || [];
+
+							i[r].q = arrayValue;
+
+							(i[r].q).push(arguments);
+						};
+
+						i[r].l = 1 * new Date();
+
+						a = s.createElement(o);
+						m = s.getElementsByTagName(o)[0];
+						a.async = 1;
+						a.src = g;
+						m.parentNode.insertBefore(a, m);
+					})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+					
+
+					
+						
+							ga('create', 'UA-1743250-10', 'auto');
+						
+					
+
+					
+
+					
+
+					ga('send', 'pageview');
+
+					
+						Liferay.on(
+							'endNavigate',
+							function(event) {
+								ga('set', 'page', Liferay.ThemeDisplay.getLayoutRelativeURL());
+								ga('send', 'pageview');
+							}
+						);
+					
+				</script>
+<link class="lfr-css-file" data-senna-track="temporary" href="https://www.ifad.org/o/ifad-global-theme/css/main.css?browserId=chrome&amp;themeId=ifadglobal_WAR_ifadglobaltheme&amp;minifierType=css&amp;languageId=en_US&amp;t=1714424118000" id="liferayThemeCSS" rel="stylesheet" type="text/css" />
+<style data-senna-track="temporary" type="text/css">
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_5EeXv63bHMFB_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_OZdbo4eyGkWD_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #f59400
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PdpycQtmdOsL_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+margin: 0px
+}
+@media only screen and (min-width: 1366px) and (max-width: 1439px){
+#wrapper #dmyCaroSlider-otr div.slider-img {
+    background-size: cover !important;
+}
+}
+
+.footer-big .footer-item-title a:hover {
+	color: #003870;
+}
+
+.ifad-frontpage-footer {
+	max-width: 1200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+.aui #navigation .nav li:nth-child(2) a span {
+	color: #003870;
+}
+
+.aui #navigation {
+	max-width: 1440px;
+}
+
+.rtl #dmyCaroSlider-otr .slides .txtSec .innerTxt1Sec {direction:rtl}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_SSY3wubWe2LS_ .portlet-content {
+
+}
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .vocabulary-color{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .abstract-box-content{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ a.read-more{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .abstract-box-content-wrapper{
+height:30px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_bjdg_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_bkxt_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #11b5d5
+}
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .adt-view-more {
+    margin-top: 0;
+    position: relative;
+    width: 200px;
+    margin: 0 auto !important;
+    z-index: 10;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ h3 {
+font-size: 28px;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-img {
+width: 100%;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-content {
+height: 160px;
+padding-top: 40px;
+line-height: 40px;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-content-wrapper {
+padding: 55px 30px 0 30px;
+}
+@media ( max-width : 640px) {
+	#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-img { 
+    	width: 100%;
+    	height: 220px;
+	}
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_cxqv_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #003870
+}
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .generic-container {
+    padding: 0 0 75px 0;
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .abstract-box-img {
+	    	width: 100%;
+	    	height: 300px;	    			
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .read-more{
+   display:none;
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+	html[lang="ar-SA"] #p_p_id_101_INSTANCE_wSesdUd3XYoc_ .span6{
+		margin-right:0px !important;
+        }
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_edvx_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+margin: 0px
+}
+@media only screen and (min-width: 1366px) and (max-width: 1439px){
+#wrapper #dmyCaroSlider-otr div.slider-img {
+    background-size: cover !important;
+}
+}
+
+.footer-big .footer-item-title a:hover {
+	color: #003870;
+}
+
+.ifad-frontpage-footer {
+	max-width: 1200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+.aui #navigation .nav li:nth-child(2) a span {
+	color: #003870;
+}
+
+.aui #navigation {
+	max-width: 1440px;
+}
+
+.rtl #dmyCaroSlider-otr .slides .txtSec .innerTxt1Sec {direction:rtl}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_iyys_ .portlet-content {
+
+}
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .vocabulary-color{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .abstract-box-content{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ a.read-more{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .abstract-box-content-wrapper{
+height:30px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_mtrj_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #11b5d5
+}
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .adt-view-more {
+    margin-top: 0;
+    position: relative;
+    width: 200px;
+    margin: 0 auto !important;
+    z-index: 10;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ h3 {
+font-size: 28px;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-img {
+width: 100%;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-content {
+height: 160px;
+padding-top: 40px;
+line-height: 40px;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-content-wrapper {
+padding: 55px 30px 0 30px;
+}
+@media ( max-width : 640px) {
+	#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-img { 
+    	width: 100%;
+    	height: 220px;
+	}
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_mujs_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+margin: 0px
+}
+@media only screen and (min-width: 1366px) and (max-width: 1439px){
+#wrapper #dmyCaroSlider-otr div.slider-img {
+    background-size: cover !important;
+}
+}
+
+.footer-big .footer-item-title a:hover {
+	color: #003870;
+}
+
+.ifad-frontpage-footer {
+	max-width: 1200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+.aui #navigation .nav li:nth-child(2) a span {
+	color: #003870;
+}
+
+.aui #navigation {
+	max-width: 1440px;
+}
+
+.rtl #dmyCaroSlider-otr .slides .txtSec .innerTxt1Sec {direction:rtl}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_oeep_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #003870
+}
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .generic-container {
+    padding: 0 0 75px 0;
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .abstract-box-img {
+	    	width: 100%;
+	    	height: 300px;	    			
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .read-more{
+   display:none;
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+	html[lang="ar-SA"] #p_p_id_101_INSTANCE_wSesdUd3XYoc_ .span6{
+		margin-right:0px !important;
+        }
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ogls_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ourf_ .portlet-content {
+
+}
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .vocabulary-color{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .abstract-box-content{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ a.read-more{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .abstract-box-content-wrapper{
+height:30px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqfe_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ramm_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+margin: 0px
+}
+@media only screen and (min-width: 1366px) and (max-width: 1439px){
+#wrapper #dmyCaroSlider-otr div.slider-img {
+    background-size: cover !important;
+}
+}
+
+.footer-big .footer-item-title a:hover {
+	color: #003870;
+}
+
+.ifad-frontpage-footer {
+	max-width: 1200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+.aui #navigation .nav li:nth-child(2) a span {
+	color: #003870;
+}
+
+.aui #navigation {
+	max-width: 1440px;
+}
+
+.rtl #dmyCaroSlider-otr .slides .txtSec .innerTxt1Sec {direction:rtl}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_tdwf_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #11b5d5
+}
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .adt-view-more {
+    margin-top: 0;
+    position: relative;
+    width: 200px;
+    margin: 0 auto !important;
+    z-index: 10;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ h3 {
+font-size: 28px;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-img {
+width: 100%;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-content {
+height: 160px;
+padding-top: 40px;
+line-height: 40px;
+}
+
+#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-content-wrapper {
+padding: 55px 30px 0 30px;
+}
+@media ( max-width : 640px) {
+	#p_p_id_101_INSTANCE_5u9sOOdZh4z1_ .abstract-article-1-column-img { 
+    	width: 100%;
+    	height: 220px;
+	}
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_viob_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #003870
+}
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .generic-container {
+    padding: 0 0 75px 0;
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .abstract-box-img {
+	    	width: 100%;
+	    	height: 300px;	    			
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .read-more{
+   display:none;
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+	html[lang="ar-SA"] #p_p_id_101_INSTANCE_wSesdUd3XYoc_ .span6{
+		margin-right:0px !important;
+        }
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vvft_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #f59400
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vwak_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #f59400
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_wSesdUd3XYoc_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #003870
+}
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .generic-container {
+    padding: 0 0 75px 0;
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .abstract-box-img {
+	    	width: 100%;
+	    	height: 300px;	    			
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .read-more{
+   display:none;
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+	html[lang="ar-SA"] #p_p_id_101_INSTANCE_wSesdUd3XYoc_ .span6{
+		margin-right:0px !important;
+        }
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xnmr_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #f59400
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ypby_ .portlet-content {
+
+}
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .vocabulary-color{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .abstract-box-content{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ a.read-more{
+	display:none;
+}
+
+#p_p_id_101_INSTANCE_SSY3wubWe2LS_ .abstract-box-content-wrapper{
+height:30px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_zfuf_ .portlet-content {
+border-width: 0px;
+border-style: hidden;
+color: #003870
+}
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .generic-container {
+    padding: 0 0 75px 0;
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .abstract-box-img {
+	    	width: 100%;
+	    	height: 300px;	    			
+}
+
+#p_p_id_101_INSTANCE_wSesdUd3XYoc_ .read-more{
+   display:none;
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+	html[lang="ar-SA"] #p_p_id_101_INSTANCE_wSesdUd3XYoc_ .span6{
+		margin-right:0px !important;
+        }
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_icqz_ .portlet-content {
+border-width: 0px;
+border-style: hidden
+}
+#p_p_id_56_INSTANCE_szafhhrJKgIf_  .generic-container {
+	padding: 0;
+}
+
+#p_p_id_56_INSTANCE_szafhhrJKgIf_ .main-content ul {
+	padding: 3px 10px 18px 10px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_szafhhrJKgIf_ .portlet-content {
+border-width: 0px;
+border-style: hidden
+}
+#p_p_id_56_INSTANCE_szafhhrJKgIf_  .generic-container {
+	padding: 0;
+}
+
+#p_p_id_56_INSTANCE_szafhhrJKgIf_ .main-content ul {
+	padding: 3px 10px 18px 10px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tofs_ .portlet-content {
+border-width: 0px;
+border-style: hidden
+}
+#p_p_id_56_INSTANCE_szafhhrJKgIf_  .generic-container {
+	padding: 0;
+}
+
+#p_p_id_56_INSTANCE_szafhhrJKgIf_ .main-content ul {
+	padding: 3px 10px 18px 10px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_xdzb_ .portlet-content {
+border-width: 0px;
+border-style: hidden
+}
+#p_p_id_56_INSTANCE_szafhhrJKgIf_  .generic-container {
+	padding: 0;
+}
+
+#p_p_id_56_INSTANCE_szafhhrJKgIf_ .main-content ul {
+	padding: 3px 10px 18px 10px;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_org_ifad_events_web_IfadEventsWebPortlet_ .portlet-content {
+border-width: 0px;
+border-style: hidden
+}
+.generic-btn a:hover,
+.generic-btn a:active,
+.generic-btn a::selection,
+.generic-btn a:visited {
+	color: white;
+}
+    @media ( max-width : 640px) {
+	#p_p_id_ifadevents_WAR_ifadeventsportlet_ .generic-container {
+    		padding: 30px 0 30px 0;
+	}
+
+	.event-circle {
+    		padding-top: 0px;
+	}
+}
+
+#p_p_id_ifadevents_WAR_ifadeventsportlet_  .publication-row h3.publication-row-title{
+	margin-bottom:30px;
+}
+
+#p_p_id_ifadevents_WAR_ifadeventsportlet_  .event-circle{
+	padding-top:0px;
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_ifvq_ .portlet-content {
+border-width: 0px;
+border-style: hidden
+}
+.generic-btn a:hover,
+.generic-btn a:active,
+.generic-btn a::selection,
+.generic-btn a:visited {
+	color: white;
+}
+    @media ( max-width : 640px) {
+	#p_p_id_ifadevents_WAR_ifadeventsportlet_ .generic-container {
+    		padding: 30px 0 30px 0;
+	}
+
+	.event-circle {
+    		padding-top: 0px;
+	}
+}
+
+#p_p_id_ifadevents_WAR_ifadeventsportlet_  .publication-row h3.publication-row-title{
+	margin-bottom:30px;
+}
+
+#p_p_id_ifadevents_WAR_ifadeventsportlet_  .event-circle{
+	padding-top:0px;
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_kadi_ .portlet-content {
+border-width: 0px;
+border-style: hidden
+}
+.generic-btn a:hover,
+.generic-btn a:active,
+.generic-btn a::selection,
+.generic-btn a:visited {
+	color: white;
+}
+    @media ( max-width : 640px) {
+	#p_p_id_ifadevents_WAR_ifadeventsportlet_ .generic-container {
+    		padding: 30px 0 30px 0;
+	}
+
+	.event-circle {
+    		padding-top: 0px;
+	}
+}
+
+#p_p_id_ifadevents_WAR_ifadeventsportlet_  .publication-row h3.publication-row-title{
+	margin-bottom:30px;
+}
+
+#p_p_id_ifadevents_WAR_ifadeventsportlet_  .event-circle{
+	padding-top:0px;
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_uyyb_ .portlet-content {
+border-width: 0px;
+border-style: hidden
+}
+.generic-btn a:hover,
+.generic-btn a:active,
+.generic-btn a::selection,
+.generic-btn a:visited {
+	color: white;
+}
+    @media ( max-width : 640px) {
+	#p_p_id_ifadevents_WAR_ifadeventsportlet_ .generic-container {
+    		padding: 30px 0 30px 0;
+	}
+
+	.event-circle {
+    		padding-top: 0px;
+	}
+}
+
+#p_p_id_ifadevents_WAR_ifadeventsportlet_  .publication-row h3.publication-row-title{
+	margin-bottom:30px;
+}
+
+#p_p_id_ifadevents_WAR_ifadeventsportlet_  .event-circle{
+	padding-top:0px;
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+	</style>
+<script data-senna-track="temporary">var Liferay = window.Liferay || {}; Liferay.CommerceContext = {"commerceAccountGroupIds":[],"accountEntryAllowedTypes":["person"],"commerceChannelId":"0","showUnselectableOptions":false,"currency":{"currencyId":"48227469","currencyCode":"USD"},"showSeparateOrderItems":false,"commerceSiteType":0};</script><link href="/o/commerce-frontend-js/styles/main.css" rel="stylesheet" type="text/css" />
+<style data-senna-track="temporary" type="text/css">
+</style>
+<script type="module">
+import {default as init} from '/o/frontend-js-spa-web/__liferay__/index.js';
+{
+init({"navigationExceptionSelectors":":not([target=\"_blank\"]):not([data-senna-off]):not([data-resource-href]):not([data-cke-saved-href]):not([data-cke-saved-href])","cacheExpirationTime":-1,"clearScreensCache":true,"portletsBlacklist":["org_ifad_ioe_SearchBarPortlet","org_ifad_dsf_dashboard_web_IfadDsfDashboardWebPortlet","com_liferay_nested_portlets_web_portlet_NestedPortletsPortlet","com_liferay_site_navigation_directory_web_portlet_SitesDirectoryPortlet","com_liferay_questions_web_internal_portlet_QuestionsPortlet","com_liferay_account_admin_web_internal_portlet_AccountUsersRegistrationPortlet","com_liferay_portal_language_override_web_internal_portlet_PLOPortlet","org_ifad_ioe_CountryProgramPortlet","com_liferay_login_web_portlet_LoginPortlet","org_ifad_ioe_media_center_slider_IfadIoeMediaCenterSliderPortlet","org_ifad_operations_dashboard_portlet_ProjectFinancingApprovedAmtPortlet","com_liferay_login_web_portlet_FastLoginPortlet"],"excludedTargetPortlets":["com_liferay_users_admin_web_portlet_UsersAdminPortlet","com_liferay_server_admin_web_portlet_ServerAdminPortlet"],"validStatusCodes":[221,490,494,499,491,492,493,495,220],"debugEnabled":false,"loginRedirect":"","excludedPaths":["/c/document_library","/documents","/image"],"userNotification":{"message":"It looks like this is taking longer than expected.","title":"Oops","timeout":30000},"requestTimeout":0});
+}
+
+</script><link data-senna-track="temporary" href="/o/layout-common-styles/main.css?plid=42472819&segmentsExperienceId=48221842&t=1714402545505" rel="stylesheet" type="text/css"><script type="text/javascript">
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title:event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+</script><script>
+
+</script>
+<script type="text/javascript" data-senna-track="temporary">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+</head>
+<body class="chrome controls-visible  yui3-skin-sam signed-out public-page site dockbar-split">
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3N78KF"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<nav aria-label="Quick Links" class="bg-dark cadmin quick-access-nav text-center text-white" id="uhiu_quickAccessNav">
+<a class="d-block p-2 sr-only sr-only-focusable text-reset" href="#main-content">
+Skip to Main Content
+</a>
+</nav>
+<div id="wrapper-parent">
+<div id="wrapper">
+<header id="banner">
+<div class="menu-container">
+<nav class="sort-pages modify-pages" id="navigation">
+<div class="navbar-header">
+<a class="navbar-brand desktop" style="background-image: url('https://www.ifad.org/o/ifad-global-theme/images/ifad_logo/logo-en.svg'); background-repeat: no-repeat; background-size: cover; min-width: 240px;" aria-label="IFAD: International Fund for Agricultural Development" href="/"></a>
+<a class="navbar-brand tablet phone" aria-label="IFAD: International Fund for Agricultural Development" href="/"></a>
+<div class="lang-bar">
+<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_  portlet-static portlet-static-end portlet-borderless portlet-language " id="p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_">
+<span id="p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet"></span>
+<section class="portlet" id="portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">Language Selector</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+<style>
+    .ifad-language-entry-text {
+        display: inline-block;
+        padding: 0 0.5em;
+    }
+</style>
+<a href="/en/c/portal/update_language?p_l_id=42472819&amp;redirect=%2Fen%2F&amp;languageId=ar_SA" class="ifad-language-entry-text mobile" lang="ar-SA">ar</a><a href="/en/c/portal/update_language?p_l_id=42472819&amp;redirect=%2Fen%2F&amp;languageId=ar_SA" class="ifad-language-entry-text desktop" lang="ar-SA">العربية</a><span class="ifad-language-entry-text mobile" lang="en-US">en</span><span class="ifad-language-entry-text desktop" lang="en-US">english</span><a href="/en/c/portal/update_language?p_l_id=42472819&amp;redirect=%2Fen%2F&amp;languageId=es_ES" class="ifad-language-entry-text mobile" lang="es-ES">es</a><a href="/en/c/portal/update_language?p_l_id=42472819&amp;redirect=%2Fen%2F&amp;languageId=es_ES" class="ifad-language-entry-text desktop" lang="es-ES">español</a><a href="/en/c/portal/update_language?p_l_id=42472819&amp;redirect=%2Fen%2F&amp;languageId=fr_FR" class="ifad-language-entry-text mobile" lang="fr-FR">fr</a><a href="/en/c/portal/update_language?p_l_id=42472819&amp;redirect=%2Fen%2F&amp;languageId=fr_FR" class="ifad-language-entry-text desktop" lang="fr-FR">français</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<button type="button" class="menu-toggle">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+</nav>
+<div class="menu-general">
+<div id="mobile-search">
+<div class="navbar-form" role="search">
+<form action="/search" method="get" name="search">
+<div class="input-field">
+<input id="search" type="search" placeholder="Search ifad.org" name="q" size="40">
+<label class="label-icon" for="search">
+<i class="fa fa-search" aria-hidden="true"></i>
+</label>
+</div>
+</form>
+</div>
+</div>
+<ul class="main-navigation">
+<li layout-id="2">
+<a class="top-link " href="https://www.ifad.org/en/investing-in-rural-people">Why rural people?</a>
+<a class="menuarrow" href="#" role="button"><span class="menu-caret"></span></a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/people">Meet the people</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/issues">The issues</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/approach">Our approach</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/food-systems">Food Systems</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/project-design-and-management">Project design and management</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/grants-design-and-management">Grants design and management</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/cosop">Country strategic opportunities programme</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/ifad-and-the-sdgs">IFAD and the SDGs</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/innovation">Innovation at IFAD</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/sstc">South-South and Triangular Cooperation (SSTC)</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/policy-engagement">Policy engagement</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/scaling-up-results">Scaling-up results</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/targeting">Targeting</a>
+</li>
+<li>
+<a href="https://www.ifad.org/secap">IFAD&#39;s Social, Environmental and Climate Assessment Procedures (SECAP)</a>
+</li>
+</ul>
+</li>
+</ul>
+<li layout-id="3">
+<a class="top-link " href="https://www.ifad.org/en/topics">Topics</a>
+<a class="menuarrow" href="#" role="button"><span class="menu-caret"></span></a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/persons-with-disabilities">Persons with disabilities</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/crops">Crops</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/climate-and-environment">Climate and environment</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/nutrition">Nutrition</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/gender">Gender</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/indigenous-peoples">Indigenous peoples</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/land">Land</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/livestock-and-rangeland">Livestock and rangeland</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/market-access">Market Access and Value Chains</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/rural-finance">Rural finance</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/institutions-and-organizations">Institutions and organizations</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/water">Water</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/youth">Youth</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/fisheries">Fisheries and aquaculture</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/farmer-organizations">Farmers’ Organizations</a>
+<ul>
+</ul>
+</li>
+</ul>
+<li layout-id="4">
+<a class="top-link " href="https://www.ifad.org/en/countries">Countries</a>
+<a class="menuarrow" href="#" role="button"><span class="menu-caret"></span></a>
+<ul class="menu-size-2 magic-country-menu" role="menu">
+<li>
+<div class="country-title ">Countries</div>
+</li>
+<li class="lfr-nav-item" id="layout_4_search" role="presentation">
+<div class="country-autocomplete">
+<select data-placeholder="Choose a country" class="select" id="country-search" tabindex="-1">
+<option value label></option>
+</select>
+</div>
+</li>
+<li>
+<div class="regions-title">Regions</div>
+</li>
+<li class="lfr-nav-item " id="layout_26" role="presentation">
+<a aria-labelledby="layout_26" href="https://www.ifad.org/en/asia-and-the-pacific" role="menuitem">Asia and the Pacific</a>
+</li>
+<li class="lfr-nav-item " id="layout_27" role="presentation">
+<a aria-labelledby="layout_27" href="https://www.ifad.org/en/east-and-southern-africa" role="menuitem">East and Southern Africa</a>
+</li>
+<li class="lfr-nav-item " id="layout_28" role="presentation">
+<a aria-labelledby="layout_28" href="https://www.ifad.org/en/latin-america-and-the-caribbean" role="menuitem">Latin America and the Caribbean</a>
+</li>
+<li class="lfr-nav-item " id="layout_29" role="presentation">
+<a aria-labelledby="layout_29" href="https://www.ifad.org/en/near-east-north-africa-and-europe" role="menuitem">Near East, North Africa, Europe and Central Asia</a>
+</li>
+<li class="lfr-nav-item " id="layout_30" role="presentation">
+<a aria-labelledby="layout_30" href="https://www.ifad.org/en/west-and-central-africa" role="menuitem">West and Central Africa</a>
+</li>
+</ul>
+<li layout-id="5">
+<a class="top-link " href="https://www.ifad.org/en/impact">Impact</a>
+<a class="menuarrow" href="#" role="button"><span class="menu-caret"></span></a>
+<ul>
+<li>
+<a href="https://www.ifad.org/web/operations/projects-and-programmes">Projects and programmes</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/operations/grants">Grants</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/development-effectiveness">Development effectiveness</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/impact-assessment">Impact assessment</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/rmf-dashboard" data-senna-off="true">Results Management Framework Dashboard</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/prisma-dashboard">Prisma Dashboard</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/initiatives">Initiatives and facilities</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/asap">Adaptation for Smallholder Agriculture Programme</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/abcfund">Agri-Business Capital (ABC) Fund</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/agricultural-research-for-development">Agricultural research for development</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/sstcf">China-IFAD South-South and Triangular Cooperation Facility</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/rpsf">Rural Poor Stimulus Facility</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/cachet">Climate and Commodity Hedging to Enable Transformation</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/farms">Facility for Refugees, Migrants, Forced Displacement and Rural Stability</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/ffr">Financing Facility for Remittances</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/ipaf">Indigenous Peoples Assistance Facility</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/insured">Insurance for Rural Resilience and Economic Development</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/iati">International Aid Transparency Initiative</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/ndapp">National Designated Authorities partnership platform</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/ilc">International Land Coalition</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/parm">Platform for Agricultural Risk Management</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/rural-resilience-programme">Rural Resilience Programme</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/safin">Smallholder and Agri-SME Finance and Investment Network</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/jprwee">Joint Programme on Accelerating Progress towards the Economic Empowerment of Rural Women</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/psfp">Private Sector Financing Programme</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/gender-transformative-mechanism">Gender Transformative Mechanism in the Context of Climate Adaptation</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/gender_transformative_approaches">Global gender transformative approaches initiative for women’s land rights</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/npeisa">Nourishing people and the Earth through inclusive and sustainable agriculture</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/crisis-response-initiative">Crisis Response Initiative</a>
+</li>
+</ul>
+</li>
+</ul>
+<li layout-id="346">
+<a class="top-link " href="https://www.ifad.org/en/evaluation">Evaluation</a>
+<a class="menuarrow" href="#" role="button"><span class="menu-caret"></span></a>
+<ul>
+<li>
+<a href="https://ioe.ifad.org/" data-senna-off="true">Independent office of evaluation</a>
+<ul>
+</ul>
+</li>
+</ul>
+<li layout-id="6">
+<a class="top-link " href="https://www.ifad.org/en/knowledge">Knowledge</a>
+<a class="menuarrow" href="#" role="button"><span class="menu-caret"></span></a>
+<ul>
+<li>
+<a href="https://www.ifad.org/web/knowledge/annual-reports">Annual reports</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/knowledge//books-and-reports">Books</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/knowledge/communities">Communities</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/knowledge/e-learning">E-learning</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/knowledge/factsheets">Factsheets</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/knowledge/in-brief">In Brief</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/knowledge/research">Research</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/knowledge/tools">Tools and guidelines</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/ioe/publications">Evaluation publications</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/knowledge/series">Series</a>
+<ul>
+</ul>
+</li>
+</ul>
+<li layout-id="7">
+<a class="top-link " href="https://www.ifad.org/en/latest">Latest</a>
+<a class="menuarrow" href="#" role="button"><span class="menu-caret"></span></a>
+<ul>
+<li>
+<a href="https://www.ifad.org/web/latest/news">News</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/latest/stories">Stories</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/latest/blogs">Blogs</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/latest/events">Events</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/latest/photos">Photo essays</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/latest/videos">Videos</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/latest/speeches">President’s speeches</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/latest/campaigns">Campaigns</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/web/latest/podcasts">Podcasts</a>
+<ul>
+</ul>
+</li>
+</ul>
+<li layout-id="8">
+<a class="top-link " href="https://www.ifad.org/en/about">About</a>
+<a class="menuarrow" href="#" role="button"><span class="menu-caret"></span></a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/vision">Vision</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/history">History</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/strategic-framework">Strategic Framework</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/governance">Governance</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/member-states">Member States</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/governing-council">Governing Council</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/executive-board">Executive Board</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/audit-committee">Audit Committee</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/evaluation-committee">Evaluation Committee</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/replenishment">Replenishment</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/wgpbas">Working group on the Performance-based Allocation System</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/groups-and-committees">Groups and committees</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/leadership">Leadership</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/president">President</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/experts">Experts</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/finance">Finance</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/corporate-finance">Corporate finance</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/financial-management">Project financial management</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/financial-products-and-terms">Financial products and terms</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/financial-indicators-and-trends">Financial indicators and trends</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/debt-sustainability">Debt Sustainability</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/corporate-documents">Corporate documents</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/governing-body-documents">Governing body documents</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/transparency-and-accountability">Transparency and accountability</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/ethics">Ethics</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/anticorruption">Anticorruption</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/corporate-procurement">Corporate procurement</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/project-procurement">Project procurement</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/operational-reporting">Operational reporting</a>
+</li>
+<li>
+<a href="https://www.ifad.org/web/operations/operations-dashboard">Operations Dashboard</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/partners">Partners</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/ambassadors-and-advocates">Ambassadors and Advocates</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/companies">Companies</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/foundations">Foundations</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/investors">Investors</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/governments">Governments</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/multilateral-organizations">Multilateral organizations</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/ngo">Non-governmental organizations</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/producer-organizations">Producer organizations</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/research-and-academic-institutions">Research and academic institutions</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/united-nations-agencies">United Nations agencies</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/careers">Careers</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/professional-and-general-service">Professional and general service</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/consultancies">Consultancies</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/jpo-programme">JPO programme</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/internship-programme">Internship programme</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/faqs">FAQs</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/careers/compensation-and-benefits">Compensation and benefits</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/ifad-core-values">Core values</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/forums">Forums</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/farmers-forum">Farmers Forum</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/indigenous-peoples-forum">Indigenous Peoples&#39; Forum</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/global-forum-on-remittances">Global Forum on Remittances, Investment and Development (GFRID)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.ifad.org/en/contact-us">Contact us</a>
+<ul>
+<li>
+<a href="https://www.ifad.org/en/stay-connected">Stay connected</a>
+</li>
+<li>
+<a href="https://www.ifad.org/en/ifad-logo">IFAD Logo Request</a>
+</li>
+</ul>
+</li>
+</ul>
+<li id="desktop-search" class>
+<a href="#" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+<div class="container" id="searchbar-item">
+<div class="row">
+<div class="col-md">
+<div class="control-group " id="fields">
+<div class="controls" id="profs">
+<div class="autofit-col autofit-col-expand">
+<div class="justify-content-md-end mr-4 navbar-form" role="search">
+<form action="/search" method="get" name="search">
+<input placeholder="Search ifad.org" id="search-menu-field" name="q" size="40" title="Search" type="text" value>
+<button id="search-menu-button" title="Search" type="submit">Search
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+</li>
+</ul>
+</div>
+</div>
+<div id="video_pop">
+<div id="video-close">
+<div id="close-container">
+<div id="closeIcon" class="ifad-white">
+X
+</div>
+</div>
+<iframe id="the_Video" src></iframe>
+</div>
+</div>
+</header>
+<section id="content">
+<h2 class="hide-accessible sr-only" role="heading" aria-level="1">International Fund for Agricultural Development</h2>
+<div class="layout-content portlet-layout" id="main-content" role="main">
+<div class="lfr-layout-structure-item-7ee96cb7-4812-b72a-e77a-a4da540769d4 lfr-layout-structure-item-container " style>
+<div class="lfr-layout-structure-item-83e8d9e9-74bc-8e49-cb17-c38b417eb296 lfr-layout-structure-item-row " style>
+<div class="row align-items-lg-start align-items-sm-start align-items-start align-items-md-start flex-lg-row flex-sm-row flex-row flex-md-row">
+<div class="col col-lg-12 col-sm-12 col-12 col-md-12">
+<div class="lfr-layout-structure-item-com-liferay-asset-publisher-web-portlet-assetpublisherportlet lfr-layout-structure-item-918730f0-fd7d-8410-108c-85ca7f2f5408 " style>
+<div id="fragment-10bbbbde-47be-833f-3187-d1173e377004">
+<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-barebone portlet-asset-publisher " id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PdpycQtmdOsL_"><span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PdpycQtmdOsL"></span>
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PdpycQtmdOsL">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">Asset Publisher</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+<div class="banner banner-homepage"><a href="https://www.ifad.org/en/web/latest/-/after-cyclone-freddy-investment-brings-hope-to-rural-malawi">
+<div class="banner-image"><picture data-fileentryid="48406530">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/48406530/Thumbnail-128x128/malawi1.jpg?t=1713949822658">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/48406530/Preview-1000x0/malawi1.jpg?t=1713949822658">
+<img src="https://www.ifad.org/documents/38714174/48406472/malawi1.jpg/dc06f6f8-aa9a-26a4-e52e-66e5f4f1802c?t=1713949822658" alt="After Cyclone Freddy, investment brings hope to rural Malawi">
+</picture>
+</div> </a>
+<div class="banner-text">
+<h1 class="banner-image-header">After Cyclone Freddy, investment brings hope to rural Malawi</h1>
+<div><button onclick="window.location.assign(&quot;https://www.ifad.org/en/web/latest/-/after-cyclone-freddy-investment-brings-hope-to-rural-malawi&quot;); return false;"> <span class="adt-uppercase">Learn More</span> </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="lfr-layout-structure-item-com-liferay-journal-content-web-portlet-journalcontentportlet lfr-layout-structure-item-7f2569e9-dc9d-2790-dfa9-38c69db50d68 " style>
+<div id="fragment-0c0090ed-5bbb-9038-4894-cf06affde7c0">
+<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-barebone portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_szafhhrJKgIf_"><span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_szafhhrJKgIf"></span>
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_szafhhrJKgIf">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">Web Content Display (Global)</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+<div class="visible-interaction">
+</div>
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+<div class data-fragments-editor-item-id="10108-39223777" data-fragments-editor-item-type="fragments-editor-mapped-item">
+<div class="journal-content-article " data-analytics-asset-id="39223775" data-analytics-asset-title="Information for" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="39223777">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 offset-lg-1 col-md-12">
+<div class="info_for">
+<ul>
+<li style="color:#003870;">Information for</li>
+<li><a href="/web/guest/knowledge">Researchers</a></li>
+<li><a href="/web/guest/countries">Development professionals</a></li>
+<li><a href="https://webapps.ifad.org/members">Governments</a></li>
+<li><a href="/web/guest/partners">Partners</a></li>
+<li><a href="/investors">Investors</a></li>
+<li><a href="/web/latest/news">Journalists</a></li>
+<li><a href="/web/guest/careers">Job Seekers</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="lfr-layout-structure-item-com-liferay-asset-publisher-web-portlet-assetpublisherportlet lfr-layout-structure-item-f2d9c835-6812-f8df-dadc-53ff73d7efab " style>
+<div id="fragment-32b4fc93-5c72-0df8-6a0a-d47e6af38f93">
+<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-barebone portlet-asset-publisher " id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_5EeXv63bHMFB_"><span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_5EeXv63bHMFB"></span>
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_5EeXv63bHMFB">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">Latest</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="lfr-layout-structure-item-ifad-heading lfr-layout-structure-item-42ee1c0c-46e0-2609-750a-af32dff8c835 " style>
+<div id="fragment-711f04ec-6c58-77b6-3936-1fe3f0354a6d">
+<div class="ifad-caption portlet-caption">
+<div class="portlet-header">
+<h2 class="content-title title-underline" data-lfr-editable-id="01-header" data-lfr-editable-type="text" id data-external-url>Latest</h2>
+<div class="artcl-smallLine small-line">
+</div>
+</div>
+</div>
+</div>
+<style>div.ifad-caption.portlet-caption .portlet-header h2.portlet-title-text{
+  display: block !important;
+}
+
+.ifad-caption .small-line{
+  background-color: var(--btn-primary-background-color);
+}</style>
+</div>
+<div class="lfr-layout-structure-item-com-liferay-asset-publisher-web-portlet-assetpublisherportlet lfr-layout-structure-item-d52fc42d-011f-9244-b090-0b0923d1980d " style>
+<div id="fragment-fcda4375-33e2-4290-67da-969c8e7d0805">
+<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-barebone portlet-asset-publisher " id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_wSesdUd3XYoc_"><span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_wSesdUd3XYoc"></span>
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_wSesdUd3XYoc">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">Asset Publisher</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="lfr-layout-structure-item-com-liferay-asset-publisher-web-portlet-assetpublisherportlet lfr-layout-structure-item-69f2c8b6-1998-c0e6-700a-c5b2c62974cc " style>
+<div id="fragment-17107aa5-df28-c069-fb63-f6caa3c10c71">
+<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-barebone portlet-asset-publisher " id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_yexn_"><span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_yexn"></span>
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_yexn">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">Asset Publisher</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+<div class="container abstract-spotlight-homepage">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<div class="row abstract-box-homepage">
+<div class="col-lg-6 "><picture data-fileentryid="48403841">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/48403841/Thumbnail-128x128/podcast-episode58.jpg?t=1713776530705">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/48403841/Preview-1000x0/podcast-episode58.jpg?t=1713776530705">
+<img src="https://www.ifad.org/documents/38714174/48403838/podcast-episode58.jpg/093eddcf-e8d4-8d14-24da-88ca0bcdb823?t=1713776530705" class="img-responsive w-100 cover">
+</picture> <a class="btn-generic btn-podcast" href="/web/latest/podcasts"> Podcast </a>
+</div>
+<div class="col-lg-6 p-4 border">
+<div class="visible-interaction">
+</div> <a href="https://www.ifad.org/en/web/latest/-/regenerative-agriculture-from-soil-to-sustainability-episode-58"> <h3 class="abstract-title-text">Regenerative agriculture: from soil to sustainability – Episode 58</h3> </a>
+<p class="abstract-content-text ellipsis-text">Hear from global leaders in regenerative agriculture – and learn how IFAD is leveraging their techniques to combat climate change in rural communities.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="lfr-layout-structure-item-com-liferay-asset-publisher-web-portlet-assetpublisherportlet lfr-layout-structure-item-b0aa9e82-e753-893d-86a8-0dc0bac9204d " style>
+<div id="fragment-0050516d-11f0-0fc8-c06b-a8629609440a">
+<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-barebone portlet-asset-publisher " id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_oeep_"><span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_oeep"></span>
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_oeep">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">Asset Publisher</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+<div class="abstract-box-2-column-adt generic-container">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<div class="row">
+<div class="abstract-box-2-column-node col-md-6 mb-4">
+<div class="border abstract-box">
+<div class="position-relative"><a onclick="javascript:window.location.assign('https://www.ifad.org/en/web/latest/-/4-ways-ifad-is-using-ai-to-transform-rural-development');return false">
+<picture data-fileentryid="48398024">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/48398024/Thumbnail-128x128/ifad-ai.jpg?t=1713362167830">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/48398024/Preview-1000x0/ifad-ai.jpg?t=1713362167830">
+<img src="https://www.ifad.org/documents/38714174/48113625/ifad-ai.jpg/6dcd60b8-463f-2022-7ba1-f4379e52fc78?t=1713362167830" alt="test" class="img-responsive w-100 abstract-box-img">
+</picture> </a> <a class="vocabulary-color btn-blog abstract-box-vocabulary-color-blog bottom-right" href="/web/latest/blogs"> Blog </a>
+</div>
+<div class="p-4 abstract-box-content-wrapper">
+<div class="visible-interaction">
+</div> <a href="https://www.ifad.org/en/web/latest/-/4-ways-ifad-is-using-ai-to-transform-rural-development"> <h3 class="abstract-title-text">4 ways IFAD is using AI to transform rural development</h3> </a>
+<p class="abstract-content-text ellipsis-text">Artificial Intelligence is not just a buzzword for IFAD – it is a powerful new technology that delivers better development results and increases impact.</p>
+</div>
+</div>
+</div>
+<div class="abstract-box-2-column-node col-md-6 mb-4">
+<div class="border abstract-box">
+<div class="position-relative"><a onclick="javascript:window.location.assign('https://www.ifad.org/en/web/latest/-/meet-the-women-closing-the-digital-divide-in-rural-china');return false">
+<picture data-fileentryid="48390986">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/48390986/Thumbnail-128x128/china-digital-divide-0.jpg?t=1713188461587">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/48390986/Preview-1000x0/china-digital-divide-0.jpg?t=1713188461587">
+<img src="https://www.ifad.org/documents/38714174/48390887/china-digital-divide-0.jpg/55c0bf81-acb9-1613-fa2c-69d869f56c3a?t=1713188461587" alt="test" class="img-responsive w-100 abstract-box-img">
+</picture> </a> <a class="vocabulary-color btn-story abstract-box-vocabulary-color-story bottom-right" href="/web/latest/stories"> Story </a>
+</div>
+<div class="p-4 abstract-box-content-wrapper">
+<div class="visible-interaction">
+</div> <a href="https://www.ifad.org/en/web/latest/-/meet-the-women-closing-the-digital-divide-in-rural-china"> <h3 class="abstract-title-text">Meet the women closing the digital divide in rural China</h3> </a>
+<p class="abstract-content-text ellipsis-text">Investing in women's digital empowerment can foster prosperity not just for them, but for entire communities. These three remarkable rural women revitalizing their villages in rural China are living proof of this.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="lfr-layout-structure-item-com-liferay-asset-publisher-web-portlet-assetpublisherportlet lfr-layout-structure-item-06bbe062-58f0-b5a1-5a0c-c05cc4b5db31 " style>
+<div id="fragment-a4c0ab49-ddcd-3c53-640c-ef70c1ad9c13">
+<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-barebone portlet-asset-publisher abstract-box-minimal" id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_SSY3wubWe2LS_"><span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_SSY3wubWe2LS"></span>
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_SSY3wubWe2LS">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">Highlights</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+<div class="abstract-box-2-column-adt generic-container">
+<div class="adt-title">
+<div class="row">
+<div class="col-12" style="text-align: center">
+<h2 class="title-underline anchorable-title mb-5">Highlights</h2>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<div class="row">
+<div class="abstract-box-2-column-node col-md-6 mb-4">
+<div class="border abstract-box">
+<div class="position-relative"><a onclick="javascript:window.location.assign('https://www.ifad.org/en/ifad13/');return false">
+<picture data-fileentryid="47265915">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/47265915/Thumbnail-128x128/ifad13-tagline.jpg?t=1676462128400">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/47265915/Preview-1000x0/ifad13-tagline.jpg?t=1676462128400">
+<img src="https://www.ifad.org/documents/38714174/0/ifad13-tagline.jpg/322ba70c-1880-c54d-49b3-323ef418b013?t=1676462128400" alt="test" class="img-responsive w-100 abstract-box-img">
+</picture> </a>
+</div>
+<div class="p-4 abstract-box-content-wrapper">
+<div class="visible-interaction">
+</div> <a href="https://www.ifad.org/en/ifad13/" data-senna-off="true"> <h3 class="abstract-title-text">IFAD13: A new day is possible</h3> </a>
+<p class="abstract-content-text ellipsis-text">IFAD13: A new day is possible. Now is the time to invest in a resilient future.</p>
+</div>
+</div>
+</div>
+<div class="abstract-box-2-column-node col-md-6 mb-4">
+<div class="border abstract-box">
+<div class="position-relative"><a onclick="javascript:window.location.assign('/ukraine-response');return false">
+<picture data-fileentryid="45478396">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/45478396/Thumbnail-128x128/ukraine-landing.jpg?t=1709635788660">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/45478396/Preview-1000x0/ukraine-landing.jpg?t=1709635788660">
+<img src="https://www.ifad.org/documents/38711624/45478393/ukraine-landing.jpg/82f68c85-bfb6-1d4f-1814-505654339b80?t=1709635788660" alt="test" class="img-responsive w-100 abstract-box-img">
+</picture> </a>
+</div>
+<div class="p-4 abstract-box-content-wrapper">
+<div class="visible-interaction">
+</div> <a href="/ukraine-response" data-senna-off="true"> <h3 class="abstract-title-text">IFAD’s response to the war in Ukraine</h3> </a>
+<p class="abstract-content-text ellipsis-text">Conflict and food insecurity go hand-in-hand. As a major food and commodities exporting region, the war in Ukraine has caused not only a humanitarian crisis, but is also increasing food and fuel prices, which in turn are impacting the world’s most vulnerable people.</p>
+</div>
+</div>
+</div>
+<div class="abstract-box-2-column-node col-md-6 mb-4">
+<div class="border abstract-box">
+<div class="position-relative"><a onclick="javascript:window.location.assign('/web/guest/climate-and-environment');return false">
+<picture data-fileentryid="39083966">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/39083966/Thumbnail-128x128/climate.jpg?t=1493378455000">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/39083966/Preview-1000x0/climate.jpg?t=1493378455000">
+<img src="https://www.ifad.org/documents/38711624/39083903/climate.jpg/4a463c88-6e3a-4bc1-8f39-7ac23f06b29f?t=1493378455000" alt="test" class="img-responsive w-100 abstract-box-img">
+</picture> </a>
+</div>
+<div class="p-4 abstract-box-content-wrapper">
+<div class="visible-interaction">
+</div> <a href="/web/guest/climate-and-environment" data-senna-off="true"> <h3 class="abstract-title-text">Climate and environment</h3> </a>
+<p class="abstract-content-text ellipsis-text">Smallholder farmers and poor rural people bear the brunt of climate change and the degradation of natural resources. Extreme weather events, such as droughts, storms and floods, are putting pressure on the ecosystems that farmers depend on.</p>
+</div>
+</div>
+</div>
+<div class="abstract-box-2-column-node col-md-6 mb-4">
+<div class="border abstract-box">
+<div class="position-relative"><a onclick="javascript:window.location.assign('/web/guest/ifad-and-the-sdgs');return false">
+<picture data-fileentryid="40238368">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/40238368/Thumbnail-128x128/global_goals.jpg?t=1617781360801">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/40238368/Preview-1000x0/global_goals.jpg?t=1617781360801">
+<img src="https://www.ifad.org/documents/38711624/40921192/global_goals.jpg/a8270104-d392-4f8b-a4ea-12e30e902a9e?t=1617781360801" alt="test" class="img-responsive w-100 abstract-box-img">
+</picture> </a>
+</div>
+<div class="p-4 abstract-box-content-wrapper">
+<div class="visible-interaction">
+</div> <a href="/web/guest/ifad-and-the-sdgs" data-senna-off="true"> <h3 class="abstract-title-text">IFAD and the SDGs</h3> </a>
+<p class="abstract-content-text ellipsis-text">The 2030 Agenda is a commitment to “leave no one behind”. It applies to all countries and spans social, environmental and economic issues. This commitment is most salient in rural areas as shocks, such as climate change and the COVID crisis, disproportionately affect rural communities.</p>
+</div>
+</div>
+</div>
+<div class="abstract-box-2-column-node col-md-6 mb-4">
+<div class="border abstract-box">
+<div class="position-relative"><a onclick="javascript:window.location.assign('/web/guest/covid19');return false">
+<picture data-fileentryid="41847971">
+<source media="(max-width:128px)" srcset="/o/adaptive-media/image/41847971/Thumbnail-128x128/covid19_banner_new_half.jpg?t=1606822259000">
+<source media="(max-width:1000px) and (min-width:128px)" srcset="/o/adaptive-media/image/41847971/Preview-1000x0/covid19_banner_new_half.jpg?t=1606822259000">
+<img src="https://www.ifad.org/documents/38711624/41847926/covid19_banner_new_half.jpg/d35c4385-6aa5-c535-a263-6a8128b73b44?t=1606822259000" alt="test" class="img-responsive w-100 abstract-box-img">
+</picture> </a>
+</div>
+<div class="p-4 abstract-box-content-wrapper">
+<div class="visible-interaction">
+</div> <a href="/web/guest/covid19" data-senna-off="true"> <h3 class="abstract-title-text">COVID-19 response</h3> </a>
+<p class="abstract-content-text ellipsis-text">The outbreak of COVID-19 has rapidly spread across the world, profoundly disrupting the fundamental activities that bring the global community together, including agriculture – and endangering all those who depend on it as their livelihood.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="lfr-layout-structure-item-org-ifad-events-web-ifadeventswebportlet lfr-layout-structure-item-24890f16-cc0f-e64a-16b2-4f1f156ad07b " style>
+<div id="fragment-07eea119-d4e9-0b60-09e9-687710074178">
+<div class="portlet-boundary portlet-boundary_org_ifad_events_web_IfadEventsWebPortlet_  portlet-static portlet-static-end portlet-barebone  " id="p_p_id_org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_CfsPsdcuOy2O_"><span id="p_org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_CfsPsdcuOy2O"></span>
+<section class="portlet" id="portlet_org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_CfsPsdcuOy2O">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">IFAD Event Portlet</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+<div class="container generic-container events-web-portlet">
+<div class="row">
+<div class="col-12">
+<h2>Events</h2>
+</div>
+</div>
+<div class="row events-list-row">
+<div class="col-lg-4">
+<div class="event-node-outer">
+<div class="event-node row">
+<div class="col-xs-2 date-circle">
+<div>
+<svg class="lexicon-icon lexicon-icon-calendar" focusable="false" role="presentation"><use xlink:href="https://www.ifad.org/o/ifad-global-theme/images/clay/icons.svg#calendar" />
+</svg>
+</div>
+</div>
+<div class="col-xs-10 event-disclaimer"><a href="https://www.ifad.org/en/web/latest/-/integrating-gender-transformative-approaches-in-women-s-resource-rights?fromhp"> <h3 class="event-title">Integrating Gender Transformative Approaches in Women’s Resource Rights</h3> </a>
+<p class="event-desc">02 May 2024</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="event-node-outer">
+<div class="event-node row">
+<div class="col-xs-2 date-circle">
+<div>
+<svg class="lexicon-icon lexicon-icon-calendar" focusable="false" role="presentation"><use xlink:href="https://www.ifad.org/o/ifad-global-theme/images/clay/icons.svg#calendar" />
+</svg>
+</div>
+</div>
+<div class="col-xs-10 event-disclaimer"><a href="https://www.ifad.org/en/web/latest/-/ifad-at-the-africa-fertilizer-and-soil-health-summit?fromhp"> <h3 class="event-title">IFAD at the Africa Fertilizer and Soil Health Summit</h3> </a>
+<p class="event-desc">07 - 09 May 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="generic-btn" style="text-align: center"><a href="/web/latest/events"> <button class="button view-more">View More</button> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="lfr-layout-structure-item-org-ifad-events-web-ifadeventswebportlet lfr-layout-structure-item-48484b59-8b20-81be-cd63-be93146769bb " style>
+<div id="fragment-eed38d13-f97b-f895-63c7-d1fc691dbe14"></div>
+</div>
+<div class="lfr-layout-structure-item-com-liferay-asset-publisher-web-portlet-assetpublisherportlet lfr-layout-structure-item-c4313754-2e60-4dbf-d0b9-f032c0848ba1 " style>
+<div id="fragment-0a03c65c-5551-4d4f-5154-58819972597f">
+<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-barebone portlet-asset-publisher no-line" id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_OZdbo4eyGkWD_"><span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_OZdbo4eyGkWD"></span>
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_OZdbo4eyGkWD">
+<div class="portlet-content">
+<div class="autofit-float autofit-row portlet-header">
+<div class="autofit-col autofit-col-expand">
+<h2 class="portlet-title-text">About us</h2>
+</div>
+<div class="autofit-col autofit-col-end">
+<div class="autofit-section">
+</div>
+</div>
+</div>
+<div class=" portlet-content-container">
+<div class="portlet-body">
+<div class="asset-full-content clearfix mb-5  no-title " data-fragments-editor-item-id="10108-39227028" data-fragments-editor-item-type="fragments-editor-mapped-item"><span class="asset-anchor lfr-asset-anchor" id="39227043"></span>
+<div class="asset-content mb-3">
+<div class="journal-content-article " data-analytics-asset-id="39227026" data-analytics-asset-title="About Us" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="39227028">
+<div class="container generic-container generic_template">
+<div class="row">
+<div class="col-lg-10 offset-lg-1 col-md-12">
+<div id="homepage-aboutus">
+<h2>About us</h2>
+<p>The International Fund for Agricultural Development (IFAD) is an international financial institution and a specialized agency of the United Nations dedicated to eradicating poverty and hunger in rural areas of developing countries.&nbsp;</p>
+<p>Receive the latest IFAD news and updates direct to your inbox.</p> 
+<div id="mc_embed_signup">
+<form action="//ifad.us12.list-manage.com/subscribe/post?u=e2b764c5d0e9a72da24d69265&amp;id=111c3c698c" class="validate" id="mc-embedded-subscribe-form" method="post" name="mcembeddedsubscribeform" novalidate target="_blank">
+<div id="mc_embed_signup_scroll">
+<div class="mc-field-group">
+<input class="required email" id="mce-EMAIL" name="EMAIL" placeholder="your@email.com" type="email" value>
+<div class="clear">
+&nbsp;
+</div>
+<div class="clear">
+&nbsp;
+</div>
+<div class="clear">
+&nbsp;
+</div>
+<div class="clear">
+<input class="button" id="mc-embedded-subscribe" name="subscribe" type="submit" value="SIGN UP">
+</div>
+</div>
+<div class="clear" id="mce-responses">
+<div class="response" id="mce-error-response" style="display: none">
+&nbsp;
+</div>
+<div class="response" id="mce-success-response" style="display: none">
+&nbsp;
+</div>
+</div> 
+<div aria-hidden="true" style="position: absolute; left: -5000px;display:none">
+<input name="b_e2b764c5d0e9a72da24d69265_111c3c698c" tabindex="-1" type="text" value>
+</div>
+</div>
+</form>
+</div>
+<div id="shareButtons">
+&nbsp;
+</div>
+<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script>
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[3] = 'MMERGE3';
+            ftypes[3] = 'address';
+            fnames[4] = 'MMERGE4';
+            ftypes[4] = 'address';
+            fnames[5] = 'MMERGE5';
+            ftypes[5] = 'text';
+            fnames[6] = 'MMERGE6';
+            ftypes[6] = 'text';
+            fnames[7] = 'MMERGE7';
+            ftypes[7] = 'text';
+            fnames[8] = 'MMERGE8';
+            ftypes[8] = 'text';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<form action="#" aria-hidden="true" class="hide" id="hrefFm" method="post" name="hrefFm"><span></span><button hidden type="submit">Hidden</button></form>
+<div class="journal-content-article " data-analytics-asset-id="39086999" data-analytics-asset-title="Footer Big" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="39087001">
+<footer class="container">
+<div class="row">
+<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+<h5></h5>
+<ul class="list-unstyled text-small">
+<li><strong>Who we are</strong></li>
+<li>
+<a class="text-muted" href="/web/guest/about">About</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/vision">Vision</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/governance">Governance</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/leadership">Leadership</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/experts">Experts</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/finance">Finance</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/corporate-documents">Documents</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/transparency-and-accountability">Transparency and accountability</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/ethics">Report misconduct</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/anti-corruption">Anti-corruption</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/partners">Partners</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/forums">Forums</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+<h5></h5>
+<ul class="list-unstyled text-small">
+<li><strong>What we do</strong></li>
+<li>
+<a class="text-muted" href="/web/guest/approach">Approach</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/issues">Issues</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/topics">Topics</a>
+</li>
+<li>
+<a class="text-muted" href="/web/operations/projects-and-programmes">Projects and programmes</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/grants">Grants</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/initiatives">Initiatives and facilities</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/impact">Impact</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/development-effectiveness">Development effectiveness</a>
+</li>
+<li>
+<a class="text-muted" href="/web/guest/policy-engagement">Policy engagement</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+<h5></h5>
+<ul class="list-unstyled text-small">
+<li><strong>Where we work</strong></li>
+<li>
+<a class="text-muted" href="/web/operations/regions/apr">Asia & Pacific</a>
+</li>
+<li>
+<a class="text-muted" href="/web/operations/regions/esa">East & Southern Africa</a>
+</li>
+<li>
+<a class="text-muted" href="/web/operations/regions/lac">Latin America & Caribbean</a>
+</li>
+<li>
+<a class="text-muted" href="/web/operations/regions/nen">Near East, North Africa, Europe and Central Asia</a>
+</li>
+<li>
+<a class="text-muted" href="/web/operations/regions/wca">West & Central Africa</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+<h5></h5>
+<ul class="list-unstyled text-small">
+<li><strong>News & stories</strong></li>
+<li>
+<a class="text-muted" href="/web/latest/news">News</a>
+</li>
+<li>
+<a class="text-muted" href="/web/latest/stories">Stories</a>
+</li>
+<li>
+<a class="text-muted" href="/web/latest/blogs">Blogs</a>
+</li>
+<li>
+<a class="text-muted" href="/web/latest/events">Events</a>
+</li>
+<li>
+<a class="text-muted" href="/web/latest/photos">Photo essays</a>
+</li>
+<li>
+<a class="text-muted" href="/web/latest/videos">Videos</a>
+</li>
+<li>
+<a class="text-muted" href="/web/latest/speeches">President’s speeches</a>
+</li>
+<li>
+<a class="text-muted" href="https://photos.ifad.org/asset-bank/action/viewHome">Image Bank</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+<h5></h5>
+<ul class="list-unstyled text-small">
+<li><strong>Careers</strong></li>
+<li>
+<a class="text-muted" href="/web/guest/careers">Work with us</a>
+</li>
+<li>
+<a class="text-muted" href="https://job.ifad.org/">Current opportunities</a>
+</li>
+</ul>
+<ul class="list-unstyled text-small">
+<li><strong>Resources</strong></li>
+<li>
+<a class="text-muted" href="/web/guest/knowledge">Latest publications</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+<ul class="list-unstyled text-small">
+<li><strong>Member States</strong></li>
+<li>
+Browse the Member States interactive platform.
+</li>
+<li>
+<a class="btn btn-primary text-white" href="https://webapps.ifad.org/members" target="_blank">Enter now</a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+</div>
+<div class="journal-content-article " data-analytics-asset-id="38746364" data-analytics-asset-title="Footer - small" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="38746366">
+<footer id="footer" class="ifad-frontpage-footer container">
+<div class="ifad-footer-container row">
+<ul class="footer-links col-lg-8 col-md-12 row">
+<li class="footer-link logo col-md-12 col-lg-auto">
+<img src="/o/ifad-global-theme/images/footer-ifad.svg" alt="IFAD Footer Logo" />
+</li>
+<li class="footer-link col-md-12 col-lg-auto">
+<a href="/web/guest/legal">Legal</a>
+</li>
+<li class="footer-link col-md-12 col-lg-auto">
+<a href="/privacy">Privacy notice</a>
+</li>
+<li class="footer-link col-md-12 col-lg-auto">
+<a href="/careers/fraudolent-job-offers">Fraudulent job offers</a>
+</li>
+<li class="footer-link col-md-12 col-lg-auto">
+<a href="/web/guest/contact-us">Contact us</a>
+</li>
+<li class="footer-link col-md-12 col-lg-auto">
+<a href="/web/guest/stay-connected">Connect with us</a>
+</li>
+<li class="footer-link col-md-12 col-lg-auto">
+<a href="/c/portal/login" rel="nofollow">
+Sign In </a>
+</li>
+</ul>
+<div id="ifad-social" class="footer-section social-icons ifad-icon-circle col-lg-4 col-md-12">
+<a href="https://www.facebook.com/IFAD/">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/ifad_org/">
+<i class="fa fa-instagram"></i>
+</a>
+<a href="https://www.linkedin.com/company/ifad">
+<i class="fa fa-linkedin"></i>
+</a>
+<a href="https://twitter.com/ifad">
+<i class="fa fa-twitter"></i>
+</a>
+<a href="https://www.youtube.com/user/IFADTV">
+<i class="fa fa-youtube"></i>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript">
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+</script><script>
+
+</script>
+<script type="text/javascript">
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_szafhhrJKgIf');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_szafhhrJKgIf_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_szafhhrJKgIf',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_szafhhrJKgIf\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId =
+		'';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_SSY3wubWe2LS');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_SSY3wubWe2LS_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_SSY3wubWe2LS',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_SSY3wubWe2LS\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function (event) {
+		if (window.Analytics) {
+			let title = event.contentTitle;
+
+			if (!title) {
+				const dmNode = document.querySelector(
+					'[data-analytics-file-entry-id="' + event.classPK + '"]'
+				);
+
+				if (dmNode) {
+					title = dmNode.dataset.analyticsFileEntryTitle;
+				}
+			}
+
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score,
+				title,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+
+	function getValueByAttribute(node, attr) {
+		return (
+			node.dataset[attr] ||
+			(node.parentElement && node.parentElement.dataset[attr])
+		);
+	}
+
+	function sendDocumentDownloadedAnalyticsEvent(anchor) {
+		var fileEntryId = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryId'
+		);
+		var title = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryTitle'
+		);
+		var version = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryVersion'
+		);
+
+		if (fileEntryId) {
+			Analytics.send('documentDownloaded', 'Document', {
+				groupId: themeDisplay.getScopeGroupId(),
+				fileEntryId,
+				preview: !!window._com_liferay_document_library_analytics_isViewFileEntry,
+				title,
+				version,
+			});
+		}
+	}
+
+	function handleDownloadClick(event) {
+		if (window.Analytics) {
+			if (event.target.nodeName.toLowerCase() === 'a') {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target
+				);
+			}
+			else if (
+				event.target.parentNode &&
+				event.target.parentNode.nodeName.toLowerCase() === 'a'
+			) {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target.parentNode
+				);
+			}
+			else {
+				var target = event.target;
+				var matchTextContent =
+					target.textContent &&
+					target.textContent.toLowerCase() ===
+						'download';
+				var matchTitle =
+					target.title && target.title.toLowerCase() === 'download';
+				var matchAction = target.action === 'download';
+				var matchLexiconIcon = !!target.querySelector(
+					'.lexicon-icon-download'
+				);
+				var matchLexiconClassName = target.classList.contains(
+					'lexicon-icon-download'
+				);
+				var matchParentTitle =
+					target.parentNode &&
+					target.parentNode.title &&
+					target.parentNode.title.toLowerCase() === 'download';
+				var matchParentLexiconClassName =
+					target.parentNode &&
+					target.parentNode.classList.contains('lexicon-icon-download');
+
+				if (
+					matchTextContent ||
+					matchTitle ||
+					matchParentTitle ||
+					matchAction ||
+					matchLexiconIcon ||
+					matchLexiconClassName ||
+					matchParentLexiconClassName
+				) {
+					var selectedFiles = document.querySelectorAll(
+						'.form .custom-control-input:checked'
+					);
+
+					selectedFiles.forEach(({value}) => {
+						var selectedFile = document.querySelector(
+							'[data-analytics-file-entry-id="' + value + '"]'
+						);
+
+						sendDocumentDownloadedAnalyticsEvent(
+							selectedFile
+						);
+					});
+				}
+			}
+		}
+	}
+
+	Liferay.once('destroyPortlet', () => {
+		document.body.removeEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+	Liferay.once('portletReady', () => {
+		document.body.addEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function () {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function (event) {
+		if (window.Analytics) {
+			const eventProperties = {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text,
+			};
+
+			const blogNode = document.querySelector(
+				'[data-analytics-asset-id="' + event.classPK + '"]'
+			);
+
+			const dmNode = document.querySelector(
+				'[data-analytics-file-entry-id="' + event.classPK + '"]'
+			);
+
+			if (blogNode) {
+				eventProperties.title = blogNode.dataset.analyticsAssetTitle;
+			}
+			else if (dmNode) {
+				eventProperties.title = dmNode.dataset.analyticsFileEntryTitle;
+			}
+
+			Analytics.send('posted', 'Comment', eventProperties);
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function (data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+
+	if (window.svg4everybody && Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				polyfill: true,
+				validate: function (src, svg, use) {
+					return !src || !src.startsWith('#');
+				}
+			}
+		);
+	}
+
+
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2fen\x2f';
+		Liferay.currentURLEncoded = '\x252Fen\x252F';
+
+	// ]]>
+
+
+		// <![CDATA[
+			
+				
+
+				
+
+				
+			
+		// ]]>
+	
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId =
+		'';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_oeep');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_oeep_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_oeep',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_oeep\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId =
+		'';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_yexn');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_yexn_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_yexn',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_yexn\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId =
+		'';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_OZdbo4eyGkWD');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_OZdbo4eyGkWD_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_OZdbo4eyGkWD',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_OZdbo4eyGkWD\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_CfsPsdcuOy2O');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_CfsPsdcuOy2O_',
+			portletId: 'org_ifad_events_web_IfadEventsWebPortlet_INSTANCE_CfsPsdcuOy2O',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dorg_ifad_events_web_IfadEventsWebPortlet_INSTANCE_CfsPsdcuOy2O\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_',
+			portletId: 'com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId =
+		'';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_5EeXv63bHMFB');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_5EeXv63bHMFB_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_5EeXv63bHMFB',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_5EeXv63bHMFB\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId =
+		'';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PdpycQtmdOsL');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PdpycQtmdOsL_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PdpycQtmdOsL',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PdpycQtmdOsL\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId =
+		'';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_wSesdUd3XYoc');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_wSesdUd3XYoc_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_wSesdUd3XYoc',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d42472819\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_wSesdUd3XYoc\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252F',
+			refreshURLData: {}
+		}
+	);
+
+
+</script><script type="module">
+import {InfoItemActionHandler as ComponentModule} from '/o/layout-taglib/__liferay__/index.js';
+Liferay.Loader.require(
+'frontend-js-web/index',
+function(frontendJsWeb) {
+try {
+AUI().use(
+  'liferay-menu',
+function(A) {
+{
+Liferay.component('infoItemActionComponent', new ComponentModule({"executeInfoItemActionURL":"https:\/\/www.ifad.org\/en\/c\/portal\/execute_info_item_action?p_l_mode=view&plid=42472819","namespace":"","spritemap":"https:\/\/www.ifad.org\/o\/ifad-global-theme\/images\/clay\/icons.svg"}), { destroyOnNavigate: true, portletId: ''});
+}
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	var {delegate} = frontendJsWeb;
+
+	delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.add('open');
+		}
+	);
+
+	delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.remove('open');
+		}
+	);
+})();
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 0; i < liferayNotices.length; i++) {
+		Liferay.Util.openToast(liferayNotices[i]);
+	}
+
+})();
+(function() {
+var $ = AUI.$;var _ = AUI._;
+		var {openToast} = frontendJsWeb;
+
+		AUI().use(
+			'liferay-session',
+			function() {
+				Liferay.Session = new Liferay.SessionBase(
+					{
+						autoExtend: true,
+						redirectOnExpire: false,
+						redirectUrl: 'https\x3a\x2f\x2fwww\x2eifad\x2eorg\x2fweb\x2fguest',
+						sessionLength: 900,
+						sessionTimeoutOffset: 70,
+						warningLength: 60
+					}
+				);
+
+				
+			}
+		);
+	
+})();
+});
+} catch (err) {
+	console.error(err);
+}
+});
+
+</script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/main.js?browserId=chrome&amp;minifierType=js&amp;languageId=en_US&amp;t=1714424118000" type="text/javascript"></script>
+<script type="module">
+import {default as main} from '/o/frontend-js-alert-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {default as main} from '/o/frontend-js-tooltip-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {default as main} from '/o/frontend-js-collapse-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {runThirdPartyCookiesInterval} from '/o/cookies-banner-web/__liferay__/index.js';
+{
+runThirdPartyCookiesInterval();
+}
+
+</script><script type="module">
+import {default as main} from '/o/frontend-js-dropdown-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {default as main} from '/o/frontend-js-tabs-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="text/javascript">
+Liferay.CustomDialogs = {enabled: false};
+
+</script><script>
+
+</script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/jquery.flexslider.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/jquery.truncate.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/owl.carousel.js?t=1714424118000p" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/typeahead.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/jquery.jcarousel.min.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/videos.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/social/jssocials.min.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/menu/mobile-menu.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/moment.min.js?browserId=chrome&amp;minifierType=js&amp;languageId=en_US&amp;t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/moment-timezone-with-data.min.js?browserId=chrome&amp;minifierType=js&amp;languageId=en_US&amp;t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/chosen.jquery.min.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/countries_autocomplete.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/breadcrumbs.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/page-anchors.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/jssor.slider-21.1.6.mini.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/jquery.dotdotdot.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/modules/cookieconsent.min.js?t=1714424118000" type="text/javascript"></script>
+<script src="https://www.ifad.org/o/ifad-global-theme/js/cookieconsent_initializer.js?t=1714424118000" type="text/javascript"></script>
+<script>
+    function strip(html) {
+        var tmp = document.createElement("DIV");
+        tmp.innerHTML = html;
+        return tmp.textContent || tmp.innerText || "";
+    }
+
+    function changeNavLink(el) {
+        jQuery.each($(el), function (i, el) {
+            var localizedHref = el.href;
+            var unlocalizedHref = localizedHref.replace(/\/[a-z]{2}_[A-Z]{2}\//, '/');
+            el.href = unlocalizedHref;
+        });
+    }
+
+    $(document).ready(function () {
+
+        function windowReload(url) {
+            alert('reloading');
+            window.location = url;
+            window.location.reload(true)
+        }
+    });
+</script>
+<script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'87c38f495b81b357',t:'MTcxNDQzODQ1Ny45ODAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+            <link rel="apple-touch-icon" sizes="180x180" href="/tobacco/apple-touch-icon.png">
+    <link rel="manifest" href="/tobacco/site.webmanifest">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="/tobacco/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/tobacco/favicon-16x16.png">
+        <link rel='icon' href='/tobacco/favicon.ico' type='image/x-icon' />
+
+            
+    <title>Tobacco News Admin</title>
+
+    <link rel="stylesheet" href="/build/app.css?695ace672824fde53fce">
+
+    <style>
+        .tag-country {
+
+        color: #000000;
+        background: #f7ef02;
+        border-radius: 3px 0 0 3px;
+    }
+        .tag-state {
+
+        color: #ffffff;
+        background: #253fc1;
+        border-radius: 3px 0 0 3px;
+    }
+        .tag-topic {
+
+        color: #ffffff;
+        background: #14c271;
+        border-radius: 3px 0 0 3px;
+    }
+        .tag-organization {
+
+        color: #ea0b0b;
+        background: #e8f962;
+        border-radius: 3px 0 0 3px;
+    }
+        .tag-lawsuit {
+
+        color: #cde184;
+        background: #e50606;
+        border-radius: 3px 0 0 3px;
+    }
+    </style>
+
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31213636-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-31213636-1');
+    </script>
+    
+
+</head>
+
+<body data-debug="" data-project-code="tobacco">
+
+<div class="container-fluid">
+
+
+        
+        <nav class="navbar  navbar-expand-sm" >
+
+            <code></code>
+
+            <a class="navbar-brand" href="/">
+                                                        <span class="brand">
+                        <img class="float-left" alt="tobacco" height="16" width="16"  src="/tobacco/favicon-16x16.png" />&nbsp;
+                        Tobacco News
+                                </span>
+            </a>
+
+                                <ul class="nav navbar-nav">
+                
+        
+    
+        
+        
+        
+        
+        
+        <li class="nav-item first">
+                                                            
+    <a href="/contact/" class=" nav-link">
+                Contact
+    </a>
+                    </li>
+    
+        
+        
+    
+        
+        
+        
+        
+        
+        <li class="nav-item">
+                                                            
+    <a href="/subscribe/" class=" nav-link">
+                Subscribe
+    </a>
+                    </li>
+    
+        
+        
+    
+        
+        
+        
+        
+        
+        <li class="nav-item last">
+                                                            
+    <a href="/login" class=" nav-link">
+                Login
+    </a>
+                    </li>
+    
+
+    </ul>
+
+
+            
+        </nav>
+    
+
+<!-- render knp_menu_render -->
+<!-- end of menu render -->
+
+<!-- jQuery -->
+
+
+
+
+
+
+<div id="page-wrapper">
+
+
+    
+    
+    <span id="js-errors"></span>
+    <span id="data"
+          data-beta="1"
+          data-project-code="tobacco"
+    >
+    </span>
+
+    <span id="message">
+    </span>
+
+        <div class="row">
+
+        <div class="col-md-10">
+        <ul class="nav nav-tabs">
+
+                                            <li>
+                    <a class="nav-link" data-group-type="date" data-tab-code="postedDate" href="#postedDate" role="tab" data-toggle="tab">
+                        <i class="fad fa-calendar"></i>
+                        Discovered
+                    </a>
+                </li>
+                            <li>
+                    <a class="nav-link" data-group-type="date" data-tab-code="sourceDate" href="#sourceDate" role="tab" data-toggle="tab">
+                        <i class="fad fa-calendar"></i>
+                        Published
+                    </a>
+                </li>
+            
+                                            <li>
+                    <a class="nav-link" data-group-type="tags" data-tab-code="country" href="#country" role="tab" data-toggle="tab">
+                        <i class="fad fa-tag"></i>
+                        Country
+                    </a>
+                </li>
+                            <li>
+                    <a class="nav-link" data-group-type="tags" data-tab-code="state" href="#state" role="tab" data-toggle="tab">
+                        <i class="fad fa-tag"></i>
+                        State
+                    </a>
+                </li>
+                            <li>
+                    <a class="nav-link" data-group-type="tags" data-tab-code="topic" href="#topic" role="tab" data-toggle="tab">
+                        <i class="fad fa-tag"></i>
+                        Topic
+                    </a>
+                </li>
+                            <li>
+                    <a class="nav-link" data-group-type="tags" data-tab-code="organization" href="#organization" role="tab" data-toggle="tab">
+                        <i class="fad fa-tag"></i>
+                        Organization
+                    </a>
+                </li>
+                            <li>
+                    <a class="nav-link" data-group-type="tags" data-tab-code="lawsuit" href="#lawsuit" role="tab" data-toggle="tab">
+                        <i class="fad fa-tag"></i>
+                        Lawsuit
+                    </a>
+                </li>
+            
+                    </ul>
+            <div class="tab-content">
+                <div id="about" class="tab-pane fade in active">
+                    Current list of articles, sorted by most recent
+                </div>
+
+                                    
+                        <div class="tab-pane fade in" id="postedDate">
+                            <div id="postedDate_toc" class="toc">
+                                postedDate Table of Contents...
+                            </div>
+
+                            <div id="postedDate_headlines">
+                                <h3>Loading Discovered  Headlines </h3>
+
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    
+                        <div class="tab-pane fade in" id="sourceDate">
+                            <div id="sourceDate_toc" class="toc">
+                                sourceDate Table of Contents...
+                            </div>
+
+                            <div id="sourceDate_headlines">
+                                <h3>Loading Published  Headlines </h3>
+
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                                                        
+                        <div class="tab-pane fade in" id="country">
+                            <div id="country_toc" class="toc">
+                                country Table of Contents...
+                            </div>
+
+                            <div id="country_headlines">
+                                <h3>Loading Country  Headlines </h3>
+
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    
+                        <div class="tab-pane fade in" id="state">
+                            <div id="state_toc" class="toc">
+                                state Table of Contents...
+                            </div>
+
+                            <div id="state_headlines">
+                                <h3>Loading State  Headlines </h3>
+
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    
+                        <div class="tab-pane fade in" id="topic">
+                            <div id="topic_toc" class="toc">
+                                topic Table of Contents...
+                            </div>
+
+                            <div id="topic_headlines">
+                                <h3>Loading Topic  Headlines </h3>
+
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    
+                        <div class="tab-pane fade in" id="organization">
+                            <div id="organization_toc" class="toc">
+                                organization Table of Contents...
+                            </div>
+
+                            <div id="organization_headlines">
+                                <h3>Loading Organization  Headlines </h3>
+
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    
+                        <div class="tab-pane fade in" id="lawsuit">
+                            <div id="lawsuit_toc" class="toc">
+                                lawsuit Table of Contents...
+                            </div>
+
+                            <div id="lawsuit_headlines">
+                                <h3>Loading Lawsuit  Headlines </h3>
+
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                                    
+            </div>
+
+
+        </div>
+
+        <div class="col-md-2" style="background-color: lightyellow">
+            <h3>Browse</h3>
+                <form name="searchForm" method="post" id="searchForm" class="xxform-inline">
+
+    <div class="row XXform-inline">
+        <div class="col-md-12">
+            <div class="form-group"><label class="required" for="max">Show up to</label><select id="max" name="max" aria-describedby="max_help" class="form-control"><option value="25">25</option><option value="50">50</option><option value="100" selected="selected">100</option><option value="250">250</option><option value="500">500</option><option value="1000">1000</option></select><small id="max_help" class="form-text text-muted">Maximum headlines to view</small></div>
+            <div class="form-group"><label class="required" for="dayCount">headlines for</label><select id="dayCount" name="dayCount" class="form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="7" selected="selected">7</option><option value="14">14</option><option value="30">30</option><option value="60">60</option><option value="90">90</option><option value="180">180</option><option value="365">365</option></select></div>
+            <div class="form-group"><label for="untilDate">day(s) on or before</label><input type="date" id="untilDate" name="untilDate" min="1998-01-01" max="2024-04-30" class="form-control" value="2024-04-30" /></div>
+            <div class="form-group"><select id="groupBy" name="groupBy" class="d-none form-control"><option value="postedDate" selected="selected">Posted Date</option><option value="editionDate">By Edition</option><option value="sourceDate">Source Date</option><option value="media">By Media (Source)</option><optgroup label="Category">
+                <option value="country">Country</option><option value="state">State</option><option value="topic">Topic</option><option value="organization">Organization</option><option value="lawsuit">Lawsuit</option></optgroup></select></div>
+            <div class="form-group row"><div class="col-sm-2"></div><div class="col-sm-10"><div class="custom-control custom-switch">        <input type="checkbox" id="topOnly" name="topOnly" required="required" class="custom-control-input" value="1" />
+        <label class="switch-custom custom-control-label required" for="topOnly">Top Only</label></div></div></div>
+        </div>
+    </div>
+        
+        
+        
+            </form>
+
+        
+
+
+
+        <div>
+
+            <a id="permalink" href="">
+                <input type="submit" value="Permalink" class="btn btn-sm" />
+            </a>
+
+            
+        </div>
+
+
+        <a id="articles_url" data-url="/article-search" target="_blank" href="/article-search">
+            </a>
+
+        </div>
+    </div>    <!-- Tab panes -->
+
+
+    <div id="js-errors" class="text-danger" data-project-code="tobacco"></div>
+
+</div>
+<!-- /#page-wrapper -->
+
+        <script type="text/template" id="title_template">
+    <%= count %> (of <%= totalCount %>) Headlines by <%= search.groupBy %>.
+</script>
+
+<script type="text/template" id="expanded_article">
+    <%= article.headline %>
+</script>
+
+<script type="text/template" id="test_template">
+    <%= s %>
+</script>
+
+<script type="text/template" id="header_template">
+    <h5 class="group-header" ><a name="group_<%= code %>"><i class="fa <%= icon %>"></i>  <%= title %></a>
+        <a class="float-right" href="#headline_toc"><i class="fad fa-arrow-up"></i></a>
+        <span class="badge badge-success float-right"><%= count %></span>
+    </h5>
+</script>
+
+<script type="text/template" id="toc_template">
+
+
+    <div class="card " xstyle="background-color: #333; border-color: #333;">
+        <div class="card-block">
+            <div class="card-title">
+                <h4>
+                    <a id="headline_toc"><%= articleCount %> Headlines, grouped by <%= tagCategoryTitle %> <%= groupedBy %></a>
+                </h4>
+            </div>
+            <div class="columns card-text">
+                <ul>
+                    <% _.each(toc, function(t){ %>
+                    <li><a href="#group_<%= t.code %>"><b><%= t.title %></b> <span class="text-secondary"><small><%= t.count %></small></span> </a></li>
+                    <% }); %>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <span id="message">
+                    <%= searchData.json %>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</script>
+
+
+<script type="text/template" id="article_template">
+    <div class="article-row">
+        
+        <div class="article-head">
+
+            
+                        <%
+            tagHelper.getTagCategories().filter (tc => ['state', 'country'].includes(tc.slug)).forEach( function (tc, index) {
+            %>
+
+            <% article.tagIds.filter(value => tc.tagIds.includes(value)).forEach(function (tagId, index)  { %>
+            <% let t = tagHelper.tag(tagId); %>
+
+
+                    <% if (t.isoCode2) { %>
+
+                    <% if (tc.slug === 'country') { %>
+                        <span title="<%= t.name %>" class="flag-icon flag-icon-<%= t.isoCode2 %>"></span>
+                    <% } %>
+
+                <% if (tc.slug == 'state') { %>
+                <span class="badge badge-warning" title="<%= t.name %>"><%= t.isoCode2 %></span>
+                <% } %>
+
+            <% } %>
+
+            <% }); %>
+
+            <% }); %>
+
+
+            
+
+
+
+
+
+            
+
+            
+
+            <a data-toggle="collapse"
+               class="article-<%= article.marking %>"
+               href="#article-<%= article.id %>"
+               data-target="#article-<%= article.id %>"
+            ><%= article.headlineText %>
+            </a>
+            <br />&nbsp;
+            
+            <a target="_blank" class="float-right" href="<%= article.finalUrl %>">
+
+                <% if (article.sourceDate) { %>
+                <time class="timeago article-date" datetime="<%= article.sourceDate %>"><%= article.sourceDate %></time>
+                <% } %>
+
+                <% if (media) { %>
+                <span class="article-source"> on <%= media.name %>:</span>
+                <% } %>
+
+                <i class="fas fa-external-link"></i>
+            </a>
+        </div>
+
+        <div class="article-details">
+
+            <div class="collapse" id="article-<%= article.id %>">
+                <% if (site) { %>
+                <span class="article-site">Discovered on <%= site.name %></span>
+                <% } %>
+
+                
+                <% if (article.subhead) { %>
+                <div class="article-subhead"><%= article.subhead %></div>
+                <% } %>
+
+                <% if (article.summary && (article.summary !== article.subhead) ) { %>
+                <span class="article-summary">
+                    <%= article.summary %>
+                    <br />
+                    </span>
+                <% } %>
+
+
+                <%
+                tagHelper.getTagCategories().forEach(function (tc, index) {
+                %>
+
+                <% article.tagIds.filter(value => tc.tagIds.includes(value)).forEach(function (tagId, index)  { %>
+                <% let t = tagHelper.tag(tagId); %>
+                            <span title="<%= t.id %>" data-tag-id="<%= tagId %>" class="tag tag-<%= tc.slug %>" >
+                                <%= t.name %>
+                            </span>
+                <% }); %>
+
+                                                                
+                <% }); %>
+
+
+
+                
+                            </div>
+        </div>
+    </div><!--/.article-row-->
+</script>
+
+                    <script src="/build/runtime.js?d94b3b43f65207d398b0"></script><script src="/build/app.js?2f2716b431dc7b7e1143"></script>
+
+    
+
+    <!-- headlines js -->
+    <script src="/build/js/headlines.js?a63c39be8bab08dc1952"></script>
+
+
+        <script src="/build/js/article-search.js?16226aa889f87f193bd1"></script>
+        <script src="/build/js/select2Entity.js?e150f5edae57d95d6fdb"></script>
+    
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
+                    &copy; Survos 1996-2024
+            </span>
+        </div>
+    </footer>
+
+
+
+<div class="row">
+    <div class="col-lg-6 col-lg-offset-3 text-center">
+
+    </div>
+</div>
+
+
+</div> <!-- container -->
+</body>
+
+</html>

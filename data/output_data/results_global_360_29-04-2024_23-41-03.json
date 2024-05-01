@@ -1,0 +1,1422 @@
+{
+    "http://www.cirp.org": {
+        "Time": 4.89,
+        "URL": "http://www.cirp.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.162",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "109.71.25.114"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "109.71.25.114",
+        "PING Status": "OK",
+        "PING IP": "109.71.25.114",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.cirp.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "109.71.25.114"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 15959,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 21:32:50 GMT",
+            "Server": "Apache/2.4.41 (Ubuntu)",
+            "Strict-Transport-Security": "max-age=0",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Length": "4443",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.cirp.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "cirp.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "048D4DF13E74A85B0F3DA4EACF96019D1FC9",
+            "notBefore": "Apr 12 23:02:14 2024 GMT",
+            "notAfter": "Jul 11 23:02:13 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "cirp.org"
+                ],
+                [
+                    "DNS",
+                    "www.cirp.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 23:32:54"
+    },
+    "https://www.cis.minsk.by": {
+        "Time": 12.94,
+        "URL": "https://www.cis.minsk.by",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.162",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "195.222.71.116"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "195.222.71.116",
+        "PING Status": "OK",
+        "PING IP": "195.222.71.116",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://cis.minsk.by/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "195.222.71.116"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 79956,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 21:33:33 GMT",
+            "Server": "Apache",
+            "X-Powered-By": "PHP/5.6.26",
+            "Set-Cookie": "_csrf=f50ac3541b74275b2632d546188773872abca89c7b8bb01cf6aede17a79a35a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AhLbMuNifTqQ9RkdbHokkphoDQBCpaky%22%3B%7D; path=/; httponly",
+            "Vary": "Accept-Encoding,User-Agent",
+            "Content-Encoding": "gzip",
+            "Content-Length": "19738",
+            "Keep-Alive": "timeout=5, max=100",
+            "Connection": "Keep-Alive",
+            "Content-Type": "text/html; charset=UTF-8"
+        },
+        "HTML Content": "www.cis.minsk.by_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.cis.minsk.by"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "AlphaSSL CA - SHA256 - G4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "3AF92C51A2A66C56CE69FD66",
+            "notBefore": "Nov 30 10:37:29 2023 GMT",
+            "notAfter": "Dec 31 10:37:28 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.cis.minsk.by"
+                ],
+                [
+                    "DNS",
+                    "cis.minsk.by"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/alphasslcasha256g4"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/alphasslcasha256g4.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/alphasslcasha256g4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 23:33:43"
+    },
+    "https://www.clintonfoundation.org": {
+        "Time": 4.25,
+        "URL": "https://www.clintonfoundation.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.162",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.16.216",
+            "104.20.58.105",
+            "104.20.47.105"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.20.58.105",
+        "PING Status": "OK",
+        "PING IP": "104.20.58.105",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 121551,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 21:34:24 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "public, max-age=14400",
+            "cf-edge-cache": "cache,platform=wordpress",
+            "link": "<https://www.clintonfoundation.org/wp-json/>; rel=\"https://api.w.org/\", <https://www.clintonfoundation.org/wp-json/wp/v2/pages/7>; rel=\"alternate\"; type=\"application/json\", <https://www.clintonfoundation.org/>; rel=shortlink",
+            "strict-transport-security": "max-age=31536001; includeSubDomains; preload",
+            "x-pantheon-styx-hostname": "styx-fe4-a-5669f89d84-qqghr",
+            "x-styx-req-id": "9e802f2d-065f-11ef-8d45-ce23f976d9cb",
+            "x-served-by": "cache-chi-kigq8000103-CHI, cache-ams21069-AMS",
+            "x-cache": "MISS, MISS",
+            "x-cache-hits": "0, 0",
+            "x-timer": "S1714419322.201638,VS0,VE3380",
+            "vary": "Accept-Encoding, Cookie, Cookie",
+            "via": "1.1 varnish, 1.1 varnish",
+            "Last-Modified": "Mon, 29 Apr 2024 19:35:25 GMT",
+            "CF-Cache-Status": "HIT",
+            "Set-Cookie": "__cf_bm=z32DQxkW7c4CmiBUXbQ8wxwEW9gMIBHrQdGib2lC9PI-1714426464-1.0.1.1-h4NQE58k1PPFbNvB4uSiHA1WP0n8J_.vLeNYExhYJQ_XX.U7xIZjQAWUWv6_9Jq6y8Y_zb447sBaGBCrAKseXQ; path=/; expires=Mon, 29-Apr-24 22:04:24 GMT; domain=.clintonfoundation.org; HttpOnly; Secure; SameSite=None",
+            "Server": "cloudflare",
+            "CF-RAY": "87c26a785920b33c-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.clintonfoundation.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "clintonfoundation.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "042639B13EFCDA855ECAD3D63885B14D4B6E",
+            "notBefore": "Mar 28 00:44:24 2024 GMT",
+            "notAfter": "Jun 26 00:44:23 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.clintonfoundation.org"
+                ],
+                [
+                    "DNS",
+                    "clintonfoundation.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 23:34:27"
+    },
+    "https://edition.cnn.com": {
+        "Time": 4.35,
+        "URL": "https://edition.cnn.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.182",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.195.5",
+            "151.101.3.5",
+            "151.101.67.5",
+            "151.101.131.5"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.67.5",
+        "PING Status": "OK",
+        "PING IP": "151.101.67.5",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 2786771,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "528459",
+            "x-content-hub": "build-env=prod; unique-deployment-key=rn0429cq; build-version=v5.7.5-0-gb89c04bf3; build-commit-hash=b89c04bf31a880797283e0a96f98862c12c81e2f",
+            "content-encoding": "gzip",
+            "x-content-type-options": "nosniff",
+            "access-control-allow-origin": "*",
+            "content-type": "text/html; charset=utf-8",
+            "via": "1.1 varnish, 1.1 varnish, 1.1 varnish",
+            "content-security-policy": "default-src 'self' blob: https://*.cnn.com:* http://*.cnn.com:* *.cnn.io:* *.cnn.net:* *.turner.com:* *.turner.io:* *.ugdturner.com:* courageousstudio.com *.vgtf.net:*; script-src 'unsafe-eval' 'unsafe-inline' 'self' *; style-src 'unsafe-inline' 'self' blob: *; child-src 'self' blob: *; frame-src 'self' *; object-src 'self' *; img-src 'self' data: blob: *; media-src 'self' data: blob: *; font-src 'self' data: *; connect-src 'self' data: *; frame-ancestors 'self' https://*.cnn.com:* http://*.cnn.com https://*.cnn.io:* http://*.cnn.io:* *.turner.com:* courageousstudio.com;",
+            "x-xss-protection": "1; mode=block",
+            "x-last-modified": "Mon, 29 Apr 2024 21:34:14 GMT",
+            "cache-control": "max-age=60",
+            "Accept-Ranges": "bytes",
+            "Date": "Mon, 29 Apr 2024 21:35:20 GMT",
+            "Age": "17",
+            "set-cookie": "SecGpc=0; Domain=.cnn.com; Path=/; SameSite=None; Secure, countryCode=CZ; Domain=.cnn.com; Path=/; SameSite=None; Secure, stateCode=64; Domain=.cnn.com; Path=/; SameSite=None; Secure, geoData=brno|64|628 00|CZ|EU|200|broadband|49.200|16.680|-1; Domain=.cnn.com; Path=/; SameSite=None; Secure, FastAB=0=0555,1=7208,2=7236,3=4728,4=1446,5=3606,6=4161,7=2844,8=0714,9=1243,10=3303,11=0284,12=4746,13=4822,14=5390,15=5733,16=1934,17=8685,18=7673,19=3340; Domain=.cnn.com; Path=/; Expires=Tue, 29 Apr 2025 21:35:20 GMT; SameSite=Lax, wbdFch=a5609da1d3b26b4ac3d2ff5655d465e4bcf74d72; Domain=edition.cnn.com; Path=/; Max-Age=30; SameSite=None; Secure",
+            "X-Served-By": "cache-iad-kcgs7200174-IAD, cache-iad-kcgs7200174-IAD, cache-vie6368-VIE",
+            "X-Cache": "MISS, HIT, HIT",
+            "X-Cache-Hits": "0, 6, 1",
+            "X-Timer": "S1714426520.397573,VS0,VE3",
+            "Vary": "Accept-Encoding, Accept-Language,Origin",
+            "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
+        },
+        "HTML Content": "edition.cnn.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "cnn.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Atlas R3 DV TLS CA 2023 Q3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "019DDD09350554D71A6784CCFE6E8315",
+            "notBefore": "Sep 12 19:38:05 2023 GMT",
+            "notAfter": "Oct 13 19:38:04 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.api.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.api.cnn.io"
+                ],
+                [
+                    "DNS",
+                    "*.api.electiontracker.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.api.platform.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.arabic.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.artemis.turner.com"
+                ],
+                [
+                    "DNS",
+                    "*.blogs.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.client.appletv.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.cnn.io"
+                ],
+                [
+                    "DNS",
+                    "*.cnnarabic.com"
+                ],
+                [
+                    "DNS",
+                    "*.cnnmoney.com"
+                ],
+                [
+                    "DNS",
+                    "*.cnnpolitics.com"
+                ],
+                [
+                    "DNS",
+                    "*.config.outturner.com"
+                ],
+                [
+                    "DNS",
+                    "*.data.api.cnn.io"
+                ],
+                [
+                    "DNS",
+                    "*.edition.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.edition.i.cdn.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.edition.stage.next.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.edition.stage2.next.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.edition.stage3.next.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.elections.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.electiontracker.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.go.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.i.cdn.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.markets.money.cnn.io"
+                ],
+                [
+                    "DNS",
+                    "*.money.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.next.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.odm.platform.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.outturner.com"
+                ],
+                [
+                    "DNS",
+                    "*.platform.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.section-content.money.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.stage.next.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.stage2.next.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.stage3.next.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.stellar.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.terra.next.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.travel.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "*.www.i.cdn.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "api.etp.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "client.appletv.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "cnnarabic.com"
+                ],
+                [
+                    "DNS",
+                    "cnnmoney.com"
+                ],
+                [
+                    "DNS",
+                    "cnnpolitics.com"
+                ],
+                [
+                    "DNS",
+                    "dcfandome.com"
+                ],
+                [
+                    "DNS",
+                    "graphql.verticals.api.cnn.io"
+                ],
+                [
+                    "DNS",
+                    "i.cdn.travel.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "preview.dev.money.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "preview.qa.money.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "preview.ref.money.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "preview.train.money.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "preview2.ref.money.cnn.com"
+                ],
+                [
+                    "DNS",
+                    "underscored.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/ca/gsatlasr3dvtlsca2023q3"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsatlasr3dvtlsca2023q3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/ca/gsatlasr3dvtlsca2023q3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 23:35:24"
+    },
+    "https://www.coinbase.com": {
+        "Time": 5.19,
+        "URL": "https://www.coinbase.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.194",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.64.152.241",
+            "104.18.35.15"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.64.152.241",
+        "PING Status": "OK",
+        "PING IP": "172.64.152.241",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 276917,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 21:36:07 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0, no-store, no-cache, must-revalidate, proxy-revalidate",
+            "content-security-policy": "default-src 'self' https://login.coinbase.com https://www.coinbase.com; child-src 'self' https://www.coinbase.com https://static-assets.coinbase.com https://paywithmybank.com/start/ https://cdn1.paywithmybank.com/frontend/build/index.html https://fast.wistia.net https://ui.solaris-p.finleap.cloud https://fts-payment-initiation-wizard.solarisbank.de/ https://payment.truelayer.com https://*.online-metrix.net https://tm-eps.neutrino.nu https://*.sardine.ai https://*.wpstn.com https://netverify.com https://platform.twitter.com https://www.google.com/recaptcha/ https://recaptcha.net/ https://cdn.plaid.com/link/ https://*.doubleclick.net/ blob: https://www.youtube.com https://player.vimeo.com/video/ https://widget.coinbase.com https://datawrapper.dwcdn.net/ https://widgets.marqeta.com https://*.paypal.com https://pay.google.com/ https://accounts.google.com/ https://transact.atomicfi.com/ https://cb-monorail-legal-agreements-prod.s3.us-east-1.amazonaws.com https://alchemy.veriff.com https://price-table-widget.coinbase.com https://magic.veriff.me https://centinelapi.cardinalcommerce.com/V1/Cruise/Collect https://p2a.co/ https://docs.google.com/forms/ https://a.sprig.com/SmJKcmh5cDRYZX5zaWQ6YWE3ZDJhZjYtMjYxYS00NjkwLWE3ZWMtMGRjMGQyMGY2ZDk5; connect-src 'self' https://www.coinbase.com https://api.coinbase.com https://api.custody.coinbase.com https://prime.coinbase.com https://accounts.coinbase.com https://international.coinbase.com https://exchange.coinbase.com https://cloud.coinbase.com https://www.tradingview.com/snapshot/ https://player.vimeo.com/api/player.js https://vimeo.com/api/oembed.json  https://s.adroll.com https://d.adroll.com https://cdn.segment.com https://api.segment.io https://login.coinbase.com https://*.online-metrix.net https://tm-eps.neutrino.nu https://api.cloudinary.com https://ott9.wpstn.com/live https://api.amplitude.com/ https://d3907m2cqladbn.cloudfront.net/ https://exceptions.coinbase.com https://assets.coinbase.com/ https://sessions.coinbase.com/ https://assets.coinbase.com/ https://static-assets.coinbase.com/ https://dynamic-assets.coinbase.com/ https://analytics.google.com https://*.google-analytics.com https://maps.googleapis.com https://translation.googleapis.com https://www.googletagmanager.com/gtag/js https://www.googletagmanager.com/gtm.js https://www.googleadservices.com https://googleads.g.doubleclick.net https://people.googleapis.com https://dynamic-assets.coinbase.com https://published-assets.coinbase.com https://translations.coinbase.com https://translations.coinbase.com https://static.coinbase.com https://events-service.coinbase.com/amp https://events-service.coinbase.com/track-exposures https://events-service.coinbase.com/bugsnag https://events-service.coinbase.com/metrics https://as.coinbase.com/metrics https://as.coinbase.com/amp https://as.coinbase.com/bugsnag https://as.coinbase.com/track-exposures https://dp.coinbase.com/metrics https://dp.coinbase.com/amp https://dp.coinbase.com/bugsnag https://dp.coinbase.com/track-exposures https://*.braintree-api.com https://api.braintreegateway.com https://vq0hrc01qb.execute-api.us-east-1.amazonaws.com/api wss://ws.coinbase.com wss://ws.coinbase.com:443 https://www.coinbase.com/api https://cdn.contentful.com/ https://preview.contentful.com/ https://contentful.coinbase.com/ https://api.userleap.com/ https://api.sprig.com/ https://widgets.marqeta.com/client/api/v1/ https://assets.ctfassets.net/ https://images.ctfassets.net/ https://pay.google.com/ https://google.com/pay https://accounts.google.com/ https://api.kickofflabs.com/ https://c.tvpixel.com/ https://p.tvpixel.com/ https://*.salesforce.com https://rs.fullstory.com https://api.wallet.coinbase.com wss://relay.walletconnect.com wss://relay.walletconnect.org https://explorer-api.walletconnect.com wss://www.walletlink.org https://api.onfido.com wss://sync.onfido.com https://rba-authed-278491357830-production.s3.us-east-1.amazonaws.com/ https://go.wallet.coinbase.com/; font-src 'self' https://www.coinbase.com https://assets.coinbase.com/ https://card.coinbase.com/ https://static.coinbase.com https://static-assets.coinbase.com https://assets.ctfassets.net/; img-src 'self' data: https://www.coinbase.com https://images.coinbase.com https://www.tradingview.com https://bat.bing.com/ https://i.vimeocdn.com/video/ https://d.adroll.com https://d3907m2cqladbn.cloudfront.net/ https://d392zik6ho62y0.cloudfront.net/ https://d1dwhf283nul1c.cloudfront.net/ https://static-assets.coinbase.com/ https://dynamic-assets.coinbase.com/ https://dynamic-assets.coinbase.com https://published-assets.coinbase.com https://exceptions.coinbase.com https://go.wallet.coinbase.com/ https://coinbase-uploads.s3.amazonaws.com https://asset-metadata-service-production.s3.amazonaws.com https://s3.amazonaws.com/app-public/ https://maps.gstatic.com https://ssl.google-analytics.com https://www.google.com https://maps.googleapis.com https://csi.gstatic.com https://www.google-analytics.com https://res.cloudinary.com https://secure.gravatar.com https://i2.wp.com https://*.online-metrix.net https://tm-eps.neutrino.nu https://assets.coinbase.com/ https://ctf-images-01.coinbasecdn.net/ https://hexagon-analytics.com https://cb-brand.s3.amazonaws.com https://googleads.g.doubleclick.net https://stats.g.doubleclick.net/r/collect https://card.coinbase.com/ blob: https://static.coinbase.com https://www.facebook.com/tr/ https://images.ctfassets.net/ https://i.ytimg.com/vi/ https://*.paypal.com https://px.ads.linkedin.com https://www.linkedin.com/px https://p.adsymptotic.com/d/px https://atomicfi-public-production.s3.amazonaws.com https://cdn-public.atomicfi.com https://api.custody.coinbase.com/ https://help.coinbase.com/ https://truelayer-provider-assets.s3.amazonaws.com https://explorer-api.walletconnect.com; media-src 'self' https://www.coinbase.com https://d392zik6ho62y0.cloudfront.net/ blob:; object-src 'self' data: blob: https://www.coinbase.com https://cdn.siftscience.com https://*.online-metrix.net https://tm-eps.neutrino.nu https://www.gstatic.com https://www.google.com/recaptcha/api/ https://recaptcha.net/; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.coinbase.com https://cdn.segment.com https://*.sardine.ai https://bat.bing.com/ https://player.vimeo.com/api/player.js https://s.adroll.com https://d.adroll.com https://www.youtube.com/iframe_api https://www.youtube.com/s/player/ https://fast.wistia.com/assets/external/E-v1.js https://cdn.siftscience.com https://*.google-analytics.com https://www.google.com https://www.gstatic.com https://*.online-metrix.net https://tm-eps.neutrino.nu https://code.jquery.com https://chart.googleapis.com https://maps.googleapis.com https://maps.gstatic.com https://netverify.com https://ajax.cloudflare.com https://cdn.plaid.com/link/ https://www.googletagmanager.com/gtag/js https://www.googletagmanager.com/gtm.js https://static-assets.coinbase.com/international/trustly/ca/js/prod/paywithmybank.js https://www.googleadservices.com https://googleads.g.doubleclick.net https://assets.coinbase.com/ https://card.coinbase.com/ https://static.coinbase.com https://widget.coinbase.com https://connect.facebook.net/en_US/fbevents.js https://connect.facebook.net/signals/config/ https://static-assets.coinbase.com/js/ https://static-assets.coinbase.com/trading-view/ https://*.paypal.com https://recaptcha.net/ https://www.gstatic.cn/ https://images.ctfassets.net/ https://pay.google.com/ https://accounts.google.com/ https://appleid.cdn-apple.com/ https://cdn.atomicfi.com/transact.js https://c.tvpixel.com/ https://p.tvpixel.com/ https://rs.fullstory.com https://price-table-widget.coinbase.com; style-src 'self' 'unsafe-inline' https://assets.coinbase.com https://www.coinbase.com https://s.adroll.com https://assets.coinbase.com/ https://static-assets.coinbase.com/trading-view/ https://card.coinbase.com/ https://static.coinbase.com https://go.wallet.coinbase.com; report-uri /csp-logging",
+            "etag": "W/\"439b5-po7M9k12A+SX3sjkrU2EsVc5WSY\"",
+            "expect-ct": "enforce, max-age=86400, report-uri=\"https://coinbase.report-uri.io/r/default/ct/reportOnly\"",
+            "expires": "0, 0",
+            "pragma": "no-cache",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "set-cookie": "cb_dm=68f79a35-1428-4dc9-aafc-960a032c1acb; Path=/; Domain=coinbase.com; Expires=Sat, 29 Apr 2034 21:36:07 GMT; HttpOnly; Secure, coinbase_currency=CZK; Path=/, coinbase_locale=en; Path=/, cb_logged_out_locale=en; Path=/, coinbase_device_id=aa1f0404-0d4a-4861-8e1a-709b2ee7cc75; domain=.coinbase.com; expires=Thu, 27 Apr 2034 21:36:07 GMT; SameSite=Lax; path=/; secure;, __cf_bm=IM1hzLYYOS0ExXomJgTXHi.4HzwmIBNuK1XQzaCsL4k-1714426567-1.0.1.1-gQ2YRtP9k_mo6doqg363DPegyLYG1KxAYwqNbtlxvwB83uXf_8JV0YWPif0u5sGNIaiG1kR_K_4B80Qvp_eo9A; path=/; expires=Mon, 29-Apr-24 22:06:07 GMT; domain=.coinbase.com; HttpOnly; Secure; SameSite=None",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "surrogate-control": "no-store",
+            "trace-id": "7922516031837895009",
+            "x-content-type-options": "nosniff",
+            "x-dns-prefetch-control": "off",
+            "x-download-options": "noopen",
+            "x-frame-options": "SAMEORIGIN",
+            "x-xss-protection": "1; mode=block",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87c26cff886db327-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.coinbase.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "coinbase.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0574C08BC0067E67AE4656615B0C7DB6",
+            "notBefore": "Feb  5 00:00:00 2024 GMT",
+            "notAfter": "Dec 31 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "coinbase.com"
+                ],
+                [
+                    "DNS",
+                    "*.coinbase.com"
+                ],
+                [
+                    "DNS",
+                    "*.cloud.coinbase.com"
+                ],
+                [
+                    "DNS",
+                    "*.developer.coinbase.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 23:36:12"
+    },
+    "http://www.collegehumor.com": {
+        "Time": 17.61,
+        "URL": "http://www.collegehumor.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "3.33.139.32"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "3.33.139.32",
+        "PING Status": "OK",
+        "PING IP": "3.33.139.32",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://signup.dropout.tv/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "76.76.21.21"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 99790,
+        "Headers": {
+            "Age": "0",
+            "Cache-Control": "public, max-age=0, must-revalidate",
+            "Connection": "keep-alive",
+            "Content-Encoding": "gzip",
+            "Content-Type": "text/html",
+            "Date": "Mon, 29 Apr 2024 21:36:51 GMT",
+            "Etag": "W/\"1johqe3\"",
+            "Link": "<./_app/immutable/assets/0.eac68085.css>; rel=\"preload\";as=\"style\"; nopush, <./_app/immutable/assets/ModuleOutput.5f5887a3.css>; rel=\"preload\";as=\"style\"; nopush, <./_app/immutable/entry/start.f698ed4e.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/chunks/scheduler.93643968.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/chunks/singletons.8d1cf6ee.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/chunks/paths.2e9f1012.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/entry/app.86bb0b03.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/chunks/index.7e277725.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/nodes/0.7bfa5f57.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/chunks/index.af2269ca.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/chunks/LogoBug.6e98d7a1.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/nodes/2.c34f465b.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/chunks/ModuleOutput.af8ba96a.js>; rel=\"modulepreload\"; nopush, <./_app/immutable/chunks/Metadata.537acb7d.js>; rel=\"modulepreload\"; nopush",
+            "Server": "Vercel",
+            "Strict-Transport-Security": "max-age=63072000",
+            "X-Sveltekit-Page": "true",
+            "X-Vercel-Cache": "MISS",
+            "X-Vercel-Execution-Region": "iad1",
+            "X-Vercel-Id": "fra1::iad1::7n789-1714426611582-a45a2f6e777f",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "www.collegehumor.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 23:37:08"
+    },
+    "https://www.concern.net": {
+        "Time": 4.9,
+        "URL": "https://www.concern.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.194",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.22.0.74",
+            "172.67.10.57",
+            "104.22.1.74"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.1.74",
+        "PING Status": "OK",
+        "PING IP": "104.22.1.74",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 390114,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 21:37:51 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "public, max-age=60, s-maxage=7200, stale-if-error=10800, stale-while-revalidate=60",
+            "Content-Encoding": "gzip",
+            "ETag": "\"mucu38pxsy8cw2\"",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "Strict-Transport-Security": "max-age=31536000; preload",
+            "Vary": "Accept-Encoding",
+            "X-Content-Type-Options": "nosniff",
+            "X-CW-Settings-Cache": "HIT",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "CF-Cache-Status": "HIT",
+            "Age": "2900",
+            "Server": "cloudflare",
+            "CF-RAY": "87c26f890f174132-PRG"
+        },
+        "HTML Content": "www.concern.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "concern.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04E3B477027A36DFAAF54EBAF9B53DF2837C",
+            "notBefore": "Mar  4 03:32:45 2024 GMT",
+            "notAfter": "Jun  2 03:32:44 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.api.concern.net"
+                ],
+                [
+                    "DNS",
+                    "*.api.gifts.concern.net"
+                ],
+                [
+                    "DNS",
+                    "*.concern.net"
+                ],
+                [
+                    "DNS",
+                    "*.gifts.concern.net"
+                ],
+                [
+                    "DNS",
+                    "*.yourconcern.concern.net"
+                ],
+                [
+                    "DNS",
+                    "concern.net"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 23:37:55"
+    },
+    "https://www.copticchurch.net": {
+        "Time": 6.85,
+        "URL": "https://www.copticchurch.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.194",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.97.9",
+            "188.114.96.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.96.9",
+        "PING Status": "OK",
+        "PING IP": "188.114.96.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 28859,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 21:39:01 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Powered-By": "PHP/7.4.6",
+            "Cache-Control": "no-cache, private",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=lFbSZTTJgMm7LItsTzKnCJaqQwx7TEDQdwSDLChC%2BpYPsjBG75CvQabqlFOt2F7sDNFCGUBGvR4nSYX1WAnAU%2FfjYs5Bk8%2B0h3EckAmSgarS04jMnWjWO9i2BD8fHv0D%2BwbFn5XHdSEQjzc8u4qJvurFlw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c27139bb5bb35f-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.copticchurch.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "copticchurch.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "980C04FADDE8F7890ECF4CADF4B73D55",
+            "notBefore": "Mar 21 04:33:10 2024 GMT",
+            "notAfter": "Jun 19 04:33:09 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "copticchurch.net"
+                ],
+                [
+                    "DNS",
+                    "*.copticchurch.net"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/O_TveuZ8Rsk"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/xH0HoPixRrY.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-29 23:39:06"
+    },
+    "http://www.coquette.com": {
+        "Time": 4.74,
+        "URL": "http://www.coquette.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.194",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "23.227.38.74"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "23.227.38.74",
+        "PING Status": "OK",
+        "PING IP": "23.227.38.74",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://coquette.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "23.227.38.65"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 109647,
+        "Headers": {
+            "Date": "Mon, 29 Apr 2024 21:39:52 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Sorting-Hat-PodId": "247",
+            "X-Sorting-Hat-ShopId": "63150489848",
+            "X-Storefront-Renderer-Rendered": "1",
+            "set-cookie": "secure_customer_sig=; path=/; expires=Tue, 29 Apr 2025 21:39:52 GMT; secure; HttpOnly; SameSite=Lax, localization=CA; path=/; expires=Tue, 29 Apr 2025 21:39:52 GMT; SameSite=Lax, _cmp_a=%7B%22purposes%22%3A%7B%22p%22%3Afalse%2C%22a%22%3Afalse%2C%22m%22%3Afalse%2C%22t%22%3Atrue%7D%2C%22display_banner%22%3Atrue%2C%22sale_of_data_region%22%3Afalse%7D; domain=coquette.com; path=/; expires=Tue, 30 Apr 2024 21:39:52 GMT; SameSite=Lax, _tracking_consent=%7B%22v%22%3A%222.1%22%2C%22region%22%3A%22CZ64%22%2C%22reg%22%3A%22GDPR%22%2C%22con%22%3A%7B%22CMP%22%3A%7B%22m%22%3A%22%22%2C%22a%22%3A%22%22%2C%22p%22%3A%22%22%2C%22s%22%3A%22%22%7D%7D%7D; Expires=Tue, 29-Apr-25 21:39:52 GMT; Domain=coquette.com; Path=/; SameSite=Lax",
+            "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin",
+            "etag": "W/\"cacheable:1668541ba7f8053df5aebcab1c268ffd\"",
+            "x-cache": "miss",
+            "x-frame-options": "DENY",
+            "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+            "strict-transport-security": "max-age=7889238",
+            "x-shopid": "63150489848",
+            "x-shardid": "247",
+            "vary": "Accept",
+            "content-language": "en",
+            "powered-by": "Shopify",
+            "server-timing": "processing;dur=163;desc=\"gc:37\", db;dur=36, render;dur=53, wasm, asn;desc=\"5610\", edge;desc=\"PRG\", country;desc=\"CZ\", theme;desc=\"132953669880\", pageType;desc=\"index\", servedBy;desc=\"wx6g\", requestID;desc=\"dec26c47-5e35-4fa9-be40-c37bd6397eec-1714426792\", cfRequestDuration;dur=202.999830",
+            "x-dc": "gcp-europe-west3,gcp-europe-west1,gcp-europe-west1",
+            "x-request-id": "dec26c47-5e35-4fa9-be40-c37bd6397eec-1714426792",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=DPdpdpkd7hTmaa%2F7h8%2FRQvCi9VVU%2B8cN%2B0WbFNWR66V2k%2FRWn5Zxs5%2BwPKWzKiWXiyeAe%2FnTet8SVc6%2B9rUi7vjkL5o3WR7skkdqes6TT%2BqqU%2FngE8XOvvW%2FEEHkUg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "X-Permitted-Cross-Domain-Policies": "none",
+            "X-Download-Options": "noopen",
+            "Server": "cloudflare",
+            "CF-RAY": "87c2727c6a92b354-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.coquette.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.coquette.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "038BAC031CE850B6AB57A28C61FD07202B14",
+            "notBefore": "Apr 12 19:00:21 2024 GMT",
+            "notAfter": "Jul 11 19:00:20 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.coquette.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 23:39:56"
+    },
+    "https://blog.counter-strike.net": {
+        "Time": 7.2,
+        "URL": "https://blog.counter-strike.net",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.162",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "192.0.78.231",
+            "192.0.78.179"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "192.0.78.231",
+        "PING Status": "OK",
+        "PING IP": "192.0.78.231",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 57684,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Mon, 29 Apr 2024 21:40:57 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "Accept-Encoding, Cookie",
+            "Last-Modified": "Mon, 29 Apr 2024 21:40:14 GMT",
+            "Cache-Control": "max-age=257, must-revalidate",
+            "X-nananana": "Batcache-Hit",
+            "X-hacker": "Want root?  Visit join.a8c.com and mention this header.",
+            "Host-Header": "WordPress.com",
+            "Link": "<https://blog.counter-strike.net/index.php/wp-json/>; rel=\"https://api.w.org/\", <https://wp.me/auAWm>; rel=shortlink",
+            "Content-Encoding": "gzip",
+            "X-ac": "2.hhn _atomic_ams HIT",
+            "Alt-Svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "blog.counter-strike.net_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "tls.automattic.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04946337E16EBE8A262159B4C5B78879395F",
+            "notBefore": "Mar 24 10:36:13 2024 GMT",
+            "notAfter": "Jun 22 10:36:12 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "back2thearth.blog"
+                ],
+                [
+                    "DNS",
+                    "bartbecker.com"
+                ],
+                [
+                    "DNS",
+                    "benjonesdecorating.co.uk"
+                ],
+                [
+                    "DNS",
+                    "blog.counter-strike.net"
+                ],
+                [
+                    "DNS",
+                    "carabahagia.car.blog"
+                ],
+                [
+                    "DNS",
+                    "carladoriamedina.com"
+                ],
+                [
+                    "DNS",
+                    "catanfan.com"
+                ],
+                [
+                    "DNS",
+                    "denverdraftleague.net"
+                ],
+                [
+                    "DNS",
+                    "dynamicproperty.solutions"
+                ],
+                [
+                    "DNS",
+                    "elaine-daily.com"
+                ],
+                [
+                    "DNS",
+                    "elevendegreeslatitude.co.uk"
+                ],
+                [
+                    "DNS",
+                    "enthusiastics.co.uk"
+                ],
+                [
+                    "DNS",
+                    "flexiblepacktest.com"
+                ],
+                [
+                    "DNS",
+                    "grits.blog"
+                ],
+                [
+                    "DNS",
+                    "gwisklowen.co.uk"
+                ],
+                [
+                    "DNS",
+                    "in-sphere.com"
+                ],
+                [
+                    "DNS",
+                    "khald.code.blog"
+                ],
+                [
+                    "DNS",
+                    "kygotflavors.blog"
+                ],
+                [
+                    "DNS",
+                    "leonardocozzubbophotographer.com"
+                ],
+                [
+                    "DNS",
+                    "mhmconline.org"
+                ],
+                [
+                    "DNS",
+                    "mll5bbfreeskin.sport.blog"
+                ],
+                [
+                    "DNS",
+                    "nateeraskye.com"
+                ],
+                [
+                    "DNS",
+                    "newsongs6.music.blog"
+                ],
+                [
+                    "DNS",
+                    "prophetic-living.com"
+                ],
+                [
+                    "DNS",
+                    "stewartbaillieartphotography.co.uk"
+                ],
+                [
+                    "DNS",
+                    "tls.automattic.com"
+                ],
+                [
+                    "DNS",
+                    "www.adnan.music.blog"
+                ],
+                [
+                    "DNS",
+                    "www.allincycling.sport.blog"
+                ],
+                [
+                    "DNS",
+                    "www.back2thearth.blog"
+                ],
+                [
+                    "DNS",
+                    "www.bartbecker.com"
+                ],
+                [
+                    "DNS",
+                    "www.carabahagia.car.blog"
+                ],
+                [
+                    "DNS",
+                    "www.denverdraftleague.net"
+                ],
+                [
+                    "DNS",
+                    "www.dynamicproperty.solutions"
+                ],
+                [
+                    "DNS",
+                    "www.elaine-daily.com"
+                ],
+                [
+                    "DNS",
+                    "www.elevendegreeslatitude.co.uk"
+                ],
+                [
+                    "DNS",
+                    "www.empresariaesha.music.blog"
+                ],
+                [
+                    "DNS",
+                    "www.enthusiastics.co.uk"
+                ],
+                [
+                    "DNS",
+                    "www.flexiblepacktest.com"
+                ],
+                [
+                    "DNS",
+                    "www.grits.blog"
+                ],
+                [
+                    "DNS",
+                    "www.gwisklowen.co.uk"
+                ],
+                [
+                    "DNS",
+                    "www.in-sphere.com"
+                ],
+                [
+                    "DNS",
+                    "www.khald.code.blog"
+                ],
+                [
+                    "DNS",
+                    "www.leonardocozzubbophotographer.com"
+                ],
+                [
+                    "DNS",
+                    "www.mhmconline.org"
+                ],
+                [
+                    "DNS",
+                    "www.mll5bbfreeskin.sport.blog"
+                ],
+                [
+                    "DNS",
+                    "www.musicathilde.music.blog"
+                ],
+                [
+                    "DNS",
+                    "www.nateeraskye.com"
+                ],
+                [
+                    "DNS",
+                    "www.prophetic-living.com"
+                ],
+                [
+                    "DNS",
+                    "www.stewartbaillieartphotography.co.uk"
+                ],
+                [
+                    "DNS",
+                    "www.travel-sustain-ably-9.com"
+                ],
+                [
+                    "DNS",
+                    "www.treasurechestgaming.blog"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-29 23:41:03"
+    }
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Write.as &mdash; A place for focused writing.</title>
+		
+		<link rel="stylesheet" type="text/css" href="https://cdn.writeas.net/css/write.8fac221726b68760e79b7.css" />
+		<link rel="shortcut icon" href="https://cdn.writeas.net/favicon.ico?pre" />
+		<link rel="canonical" href="https://write.as">
+		<link rel="icon" type="image/png" href="https://cdn.writeas.net/img/favicon-chrome.png" sizes="192x192">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="alternate" type="application/rss+xml" title="read.write.as" href="https://read.write.as/feed/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#888888" />
+		<link rel="alternate" type="application/rss+xml" title="Write.as Blog" href="https://write.as/blog/feed/">
+
+		<meta name="apple-mobile-web-app-title" content="Write.as">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.writeas.net/img/touch-icon-152.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="https://cdn.writeas.net/img/touch-icon-167.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.writeas.net/img/touch-icon-180.png">
+		<meta name="description" content="Type words, put them on the internet. Reach friends and family no matter where they live online.">
+		<meta name="application-name" content="Write.as">
+		<meta name="application-url" content="https://write.as">
+		<meta name="apple-itunes-app" content="app-id=1000755153">
+		<meta itemprop="name" content="Write.as">
+		<meta itemprop="description" content="Type words, put them on the internet. Reach friends and family no matter where they live online.">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@writeas__">
+		<meta name="twitter:image" content="https://cdn.writeas.net/img/wa_og.6297d16.png">
+		<meta name="twitter:title" content="Write.as">
+		<meta name="twitter:description" content="Type words, put them on the internet. Reach friends and family no matter where they live online.">
+		<meta name="twitter:app:name:googleplay" content="Write.as">
+		<meta name="twitter:app:id:googleplay" content="com.abunchtell.writeas">
+		<meta name="twitter:app:name:iphone" content="Write.as">
+		<meta name="twitter:app:id:iphone" content="1000755153">
+		<meta name="twitter:app:name:ipad" content="Write.as">
+		<meta name="twitter:app:id:ipad" content="1000755153">
+		<meta property="og:title" content="Write.as" />
+		<meta property="og:image" content="https://cdn.writeas.net/img/wa_og.6297d16.png" />
+		<meta property="og:site_name" content="Write.as" />
+		<meta property="og:type" content="object" />
+		<meta property="og:url" content="https://write.as/" />
+		<meta property="og:description" content="Type words, put them on the internet. Reach friends and family no matter where they live online." />
+		<meta property="al:android:app_name" content="Write.as">
+		<meta property="al:android:package" content="com.abunchtell.writeas">
+		<meta property="al:ios:app_store_id" content="1000755153" />
+		<meta property="al:ios:app_name" content="Write.as" />
+
+		<style>
+		body {
+			font-size: 110%;
+		}
+		input {
+			font-size: 1.1em;
+			line-height: 1.5em;
+		}
+		input[type=email] {
+			border: 1px solid #ddd;
+		}
+		div.blurbs .half {
+			font-size: 1em;
+		}
+		div.blurbs h3 {
+			margin-top: 0;
+		}
+		div.blurbs .half p {
+			color: #333;
+		}
+		.contain-me h2+p {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.half-col a img, .half-col a.dim {
+			opacity: 0.6;
+			transition: 0.2s;
+		}
+		.half-col a:hover img, .half-col a.dim:hover {
+			opacity: 0.8;
+		}
+		body#promo .half-col a.channel {
+			margin-left: 2em;
+			margin-right: 2em;
+			opacity: 0.8;
+		}
+		a.channel img {
+			height: 64px;
+			opacity: 0.8;
+		}
+		p {
+			line-height: 1.4;
+			font-family: 'Open Sans', 'Segoe UI', Tahoma, Arial, sans-serif;
+		}
+		div.blurbs .third p {
+			margin-bottom: 0;
+		}
+		.survey {
+			font-weight: bold;
+			font-style: italic;
+			color: #000;
+		}
+		#viewposts, #nav-posts {
+			display: none;
+		}
+		#official-writing h2, #official-writing h3 {
+			color: black;
+		}
+		.products.links {
+			margin-bottom: 1.25em;
+		}
+		.products .btn {
+			margin: 0 0.5em;
+			white-space: nowrap;
+		}
+		.for h3 {
+			font-weight: 700 !important;
+			color: #000;
+			font-size: 1.6em;
+			flex: 1;
+		}
+			.writing h2 {
+				margin-top: 2em;
+			}
+			.testimonial blockquote {
+				font-size: 1.2em;
+			}
+			.testimonial {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0;
+				height: 100%;
+				box-sizing: border-box;
+				opacity: 0;
+				z-index: 1;
+			}
+			.showing {
+				opacity: 1;
+				z-index: 2;
+			}
+			figcaption {
+				margin: 1em 2em;
+			}
+
+		#official-writing ul.features {
+			list-style: none;
+			flex: 2;
+			margin: 1em auto 2em;
+			padding: 0 2em 0 1em;
+		}
+		#official-writing ul.features li:before {
+			content: '\2713';
+			color: #71D571;
+			position: absolute;
+			margin-left: -1em;
+			margin-right: 0.5em;
+		}
+		#official-writing ul.features li, #pricing-lists .price + p {
+			font-size: 0.86em;
+		}
+		#official-writing ul.features li {
+			margin: 0.5em 0;
+			line-height: 1.8;
+		}
+		#pricing-lists {
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+		#pricing-lists h3 {
+			font-size: 1.5em;
+			margin-bottom: 0.25em;
+		}
+		#pricing-lists h3 + p {
+			margin-top: 0;
+			font-size: 0.86em;
+			color: #666;
+		}
+		.price strong {
+			font-size: 1.4em;
+			color: #000;
+		}
+		#pricing-lists p.btn-desc {
+			font-size: 0.75em !important;
+		}
+		#pricing-lists hr {
+			height: 3px;
+			margin: 0.5em 0;
+		}
+		p.bull {
+			margin: 0.25rem 0;
+			font-size: 0.95em;
+		}
+		.alert.promo + .alert.promo {
+			margin-top: 5em;
+		}
+		@media all and (min-width: 30em) {
+			#pricing-lists > div {
+				min-width: 15em;
+			}
+		}
+		@media all and (min-width: 650px) {
+			#pricing-lists > div {
+				margin: 0 0.5em;
+			}
+		}
+		</style>
+
+	</head>
+	<body id="promo">
+		<header style="margin:1rem">
+		<nav id="full-nav" class="solutionize" style="margin:0;font-size:91%;">
+			<div class="left-side">
+				<a href="/" class="dim"><img alt="Write.as - home" src="https://cdn.writeas.net/img/w-sq.svg"/></a>
+			</div>
+			<nav id="user-nav">
+				<nav class="tabs" aria-label="Main Navigation">
+					
+	<a href="/about">About</a>
+	<a href="/pricing">Pricing</a>
+	<a href="https://read.write.as">Read</a>
+    
+<nav class="dropdown-nav">
+	<ul>
+		<li class="has-submenu">
+			<a href="#" aria-haspopup="true" aria-expanded="false">Studio</a> <img class="ic-18dp" src="https://cdn.writeas.net/img/ic_down_arrow_dark@2x.png" />
+			<ul>
+				<li><a href="https://write.as">
+						<strong>Write.as</strong>
+						<p>Start a minimal blog. Keep your privacy.</p>
+					</a></li>
+				<li><a href="https://snap.as">
+						<strong>Snap.as</strong>
+						<p>Share beautifully simple photos and galleries.</p>
+					</a></li>
+				<li><a href="https://submit.as">
+						<strong>Submit.as</strong>
+						<p>Accept writing submissions, no signup required.</p>
+					</a></li>
+				<li><a href="https://remark.as">
+						<strong>Remark.as</strong>
+						<p>Start a conversation around your blog.</p>
+					</a></li>
+				<li class="foot">The <a href="https://musing.studio">Musing Studio</a> suite</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+
+				</nav>
+			</nav>
+			<div class="right-side tabs">
+				<a href="/start">Start a blog</a>
+				<a class="simple-btn" href="/login">Log in</a>
+			</div>
+		</nav>
+		</header>
+		
+		<div id="official-writing">
+			
+			
+			<div class="heading" style="text-align: center">
+				<h1><img src="https://cdn.writeas.net/img/writeas-logo.svg" alt="write.as" style="width: 400px; max-width: 100%;" /></h1>
+			
+				<div style="text-align: center;">
+					<p style="font-size: 2em;max-width:18em;margin: 0 auto;">Type words, put them on the internet.</p>
+
+					<div style="margin-top: 3em; font-size: 1.2em;">
+						<a class="btn cta" style="text-decoration: none;" href="/new">Start writing</a>
+						<p style="font-size: 0.86em; color: #444;margin-top: 2rem;font-style: italic">Write an essay without signing up,<br /> or <a href="/start">sign up</a> now.</p>
+						<p id="viewposts"><a class="simple-cta" href="/pad/posts" style="font-size: 0.8em">View your posts</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-container marketing-section snug clean">
+				<hr />
+
+				<h2>Welcome back to the internet</h2>
+				<p>The internet is for connecting with people. Write.as helps you reach them no matter where they live online.</p>
+				<p>Friends and family can read your words without creating yet another account online. They can read in their browser, via email or RSS, on their e-reader, and on federated platforms like Mastodon.</p>
+				<p class="bull" style="font-style: italic">Read more:</p>
+				<p class="bull"><a href="/letters" target="letters">Starting a newsletter &rarr;</a></p>
+				<p class="bull"><a href="/extend/ebook-preview" target="ebook">Enabling eBook downloads &rarr;</a></p>
+				<p class="bull"><a href="https://howto.write.as/enabling-federation" target="fedi">Joining the fediverse &rarr;</a></p>
+
+				<p style="margin-bottom: 0"><a href="/matt/" target="matt"><img src="https://i.snap.as/D1yn3zC.png" style="max-width:100%" alt="A preview of a Write.as blog." /></a></p>
+				<p style="text-align: right; font-size: 0.75em; margin: -1em 3em 3rem 0;"><a href="/matt/">Read this blog &rarr;</a></p>
+
+				<h2>Focus on your words</h2>
+				<p>Write.as is a pared-down blogging platform &mdash; a distraction-free place for you to write, and a clean space for your audience to read.</p>
+				<p>Instead of content management, we focus on writing. You'll see our editor screen first, every time you open the app. You can write in Markdown or switch to our friendly Rich Text editor. Your work is automatically saved to your browser as you write.</p>
+
+				<p style="margin-bottom: 0"><a href="/new" target="matt"><img src="https://i.snap.as/G9IGd8v.png" style="max-width:100%" alt="The Write.as plain text editor screen." /></a></p>
+				<p style="text-align: right; font-size: 0.75em; margin: -1em 3em 2rem 0;"><a href="/new">Try it out &rarr;</a></p>
+
+				<div class="clearfix blurbs">
+					<div class="third big">
+						<h3>Made for writing</h3>
+						<p>Not complex websites, not e-commerce, not content man&shy;age&shy;ment. Just writing.</p>
+					</div>
+
+					<div class="third big">
+						<h3>Easy publishing</h3>
+						<p>Press "Pub&shy;lish" to send your words to the web, social me&shy;dia, and sub&shy;scri&shy;bers.</p>
+					</div>
+
+					<div class="third big">
+						<h3>Ad-free</h3>
+						<p>You'll never see ads while you're focused on your work, and neither will your readers.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="features" class="content-container snug writing clean">
+
+				<h2>Stay independent</h2>
+				<p>Build a home for your writing, outside of walled gardens and locked-down platforms.</p>
+				<p>Add your domain name to keep control of your web presence. Make it your own with a custom theme. Then, know you're never stuck here &mdash; you can always export your work, or self-host your site with <a href="https://writefreely.org" title="Write.as is powered by WriteFreely">WriteFreely</a>, the open source software that powers Write.as.</p>
+
+				<h2>Free your thoughts</h2>
+				<p>Built entirely around <a href="/privacy">privacy</a>, we don't track you or gather excessive data, so you can write exactly what you feel.</p>
+				<p>Create a professional blog next to one written under a pen name. Publicize your work, or keep it quiet. <a href="/new">Write anonymously</a>, or create as many <a href="https://write.as/blog/identities">identities</a> as you like. On Write.as, you have full control over who knows what about you.</p>
+
+				<hr />
+			</div>
+
+			<div class="content-container writing clean" style="margin-bottom: 0">
+				<h2>Build a home for your writing</h2>
+				<p style="line-height: 1.8">Write.as helps you create a blog, journal, or news&shy;letter that readers will love to read. Create a home for your words, then fill it with writing &mdash; by yourself or with others.</p>
+			</div>
+			<div class="content-container writing clean">
+				<div class="row" id="pricing-lists">
+					<div class="half">
+						<div class="price">
+							<h3>Pro</h3>
+							<p><strong>$6</strong> per month, billed yearly</p>
+						</div>
+						<p>For prolific writers. Cus&shy;tomize, build a read&shy;er&shy;ship, and publish however you like.</p>
+						<hr />
+						<ul class="features">
+							<li>Up to three blogs on write.as or your own domain</li>
+							<li>RSS feed</li>
+							<li>ActivityPub integration</li>
+							<li>Micropayments</li>
+							<li>Unlimited posts</li>
+							<li>Unlimited social cross-posts</li>
+							<li>Password-protected blogs</li>
+							<li>Private blogs</li>
+							<li>Publish to Read Write.as</li>
+							<li>Rich text editing</li>
+							<li>Email subscriptions</li>
+							<li>Photo hosting</li>
+							<li>Pinned pages</li>
+							<li>Full design customization</li>
+							<li>API access</li>
+							<li>Command-line publishing</li>
+							<li>Email publishing</li>
+							<li>Team support</li>
+						</ul>
+						<p><a class="btn cta" href="/start/pro">Start free 14-day trial</a></p>
+						<p class="btn-desc" style="text-align:left;">Subscribe monthly, yearly, or every <a href="/5years">five years</a>.</p>
+					</div>
+
+					<div class="half">
+						<div class="price">
+							<h3>Team</h3>
+							<p><strong>$25</strong> per month, billed yearly</p>
+						</div>
+						<p>For serious publishers. Gather your team and manage content with our op&shy;ti&shy;mized work&shy;flow.</p>
+						<hr />
+						<ul class="features">
+							<li><em>Everything in <strong>Pro</strong></em></li>
+							<li>One shared blog</li>
+							<li>Asynchronous collaborative editing</li>
+							<li>Team blog access</li>
+							<li>Team photo hosting</li>
+							<li>Five team members</li>
+							<li>User roles</li>
+							<li>Post signatures</li>
+							<li>E-book export</li>
+							<li>Priority support</li>
+						</ul>
+						<p><a class="btn cta" href="/start/team">Start free 30-day trial</a></p>
+						<p class="btn-desc" style="text-align:left;">Subscribe monthly or yearly.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-container snug writing clean">
+				<hr />
+
+				<h2>Learn more about us</h2>
+				<p>Write.as is part of <a href="https://musing.studio">Musing Studio</a>, a suite of simple tools for creating and sharing on the open web. You can also gather writing submissions with <a href="https://submit.as">Submit.as</a>, share photos with <a href="https://snap.as">Snap.as</a>, and socialize with <a href="https://remark.as">Remark.as</a>.</p>
+				<p>Read about <a href="/about/company">our company</a> and <a href="/principles">our principles</a>, and subscribe to <a href="/blog/">our blog</a>.</p>
+
+			</div>
+
+		</div>
+
+		<footer class="contain-me" style="font-size:1em">
+			<hr />
+			
+<div class="marketing-section">
+	<div class="clearfix blurbs">
+		<div class="fourth">
+			<h3><a class="home" href="/">write.as</a></h3>
+			<ul>
+				<li><a href="/about">about</a></li>
+				<li><a href="/apps">apps</a></li>
+				<li><a href="/pricing">pricing</a></li>
+				<li><a href="/help">help</a></li>
+				<li><a href="/updates/">updates</a></li>
+				<li><a href="https://developers.write.as/" title="Build on Write.as with our open developer API.">developers</a></li>
+				<li><a href="/guidelines">platform guidelines</a></li>
+				<li><a href="/privacy">privacy</a></li>
+			</ul>
+		</div>
+		<div class="fourth">
+            
+	<h3>studio</h3>
+	<ul>
+		<li><a href="https://write.as">write.as</a></li>
+		<li><a href="https://snap.as">snap.as</a></li>
+		<li><a href="https://submit.as">submit.as</a></li>
+		<li><a href="https://remark.as">remark.as</a></li>
+		<li><a href="https://writefreely.org" title="WriteFreely is the free and open source software behind Write.as.">writefreely</a></li>
+	</ul>
+
+		</div>
+		<div class="fourth">
+			<h3>community</h3>
+			<ul>
+				<li><a href="https://read.write.as" title="Our community of writers and everything they've publicly written.">read write.as</a></li>
+				<li><a href="https://discuss.write.as">community forum</a></li>
+				<li><a href="/themes/" title="Find a theme for your Write.as or WriteFreely blog.">themes</a></li>
+				<li><a href="https://writing.exchange" title="Writing Exchange is our microblogging community, powered by Mastodon.">writing exchange</a></li>
+			</ul>
+		</div>
+		<div class="fourth">
+			<h3>our company</h3>
+			<ul>
+				<li><a href="https://musing.studio">musing studio</a></li>
+				<li><a href="/about/company">about us</a></li>
+				<li><a href="/blog/">blog</a></li>
+				<li><a href="/principles">our principles</a></li>
+				
+				<li><a href="/contact">contact</a></li>
+				<li class="icons">
+					<a href="https://writing.exchange/@write_as" rel="me"><img src="https://cdn.writeas.net/img/mastodon.0ed802a.svg" alt="@write_as on Writing Exchange / Mastodon" /></a>
+					<a href="https://www.instagram.com/write.as/" rel="me"><img src="https://cdn.writeas.net/img/instagram.svg" alt="@write.as on Instagram" /></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<p class="made-in-bk">Founder-owned and operated since 2015. Made in Brooklyn, NY.</p>
+
+		</footer>
+
+<noscript><p><img src="https://analytics.write.as/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<script type="text/javascript" src="https://cdn.writeas.net/js/menu.94518a2.js"></script>
+<script type="text/javascript">
+var posts = localStorage.getItem('posts');
+if (posts != null && posts != '[]') {
+	document.getElementById('viewposts').style.display = 'block';
+	
+}
+
+
+try {
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  _paq.push(['enableHeartBeatTimer']);
+  (function() {
+	var u="https://analytics.write.as/";
+	_paq.push(['setTrackerUrl', u+'piwik.php']);
+	_paq.push(['setSiteId', 1]);
+	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+} catch (e) {}
+
+try {
+  WebFontConfig = {
+    custom: { families: [ 'Lora:400,700:latin' ], urls: [ 'https:\/\/cdn.writeas.net/css/fonts.4ce1882.css' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https:\/\/cdn.writeas.net/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+} catch (e) {}
+</script>
+	</body>
+</html>

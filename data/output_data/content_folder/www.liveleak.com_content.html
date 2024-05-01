@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ItemFix - Social Video Factory</title>
+<link rel="shortcut icon" type="image/png" href="https://u.itemfix.com/images/img_favicon.png" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<base href="https://www.itemfix.com/">
+<meta property="og:title" content="ItemFix - Social Video Factory"/>
+<meta property="og:description" content="Social Video Factory"/>
+<meta property="og:image" content="https://u.itemfix.com/images/img_logo.png"/>
+<meta property="og:url" content="https://www.itemfix.com/"/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://u.itemfix.com/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://u.itemfix.com/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://u.itemfix.com/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://u.itemfix.com/css/media.css">
+<link href="https://u.itemfix.com/js/videojs2/skins/nuevo/videojs.min.css" rel="stylesheet" type="text/css" />
+<link href="https://u.itemfix.com/js/videojs2/skins/nuevo/ima.min.css" rel="stylesheet" type="text/css" />
+<script src="https://u.itemfix.com/js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://u.itemfix.com/js/always_include.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S9T2P87L4C"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+
+      dataLayer.push(arguments);
+
+  }
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-S9T2P87L4C');
+
+  window._pwGA4PageviewId = ''.concat(Date.now());
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-5T0MSTPD0V', { 'send_page_view': false });
+
+  gtag('event', 'ramp_js', {
+
+      send_to: 'G-5T0MSTPD0V',
+
+      pageview_id: window._pwGA4PageviewId
+
+  });
+
+</script>
+<script language="javascript">
+$(document).ready(function() {
+  perform_binding();
+
+  jQuery(".profile-con").click(function(){
+	jQuery(".profile-dropdown-div").slideToggle();
+  });
+
+  jQuery(".categories-con").click(function(){
+	jQuery(".categories-dropdown-con").slideToggle();
+  });
+
+  $('.messages-table-outer table td input:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $(this).parents('tr').addClass("message-focus-color");
+    } else {
+        $(this).parents('tr').removeClass("message-focus-color");
+    }
+  });
+
+
+  $(".header-right-inner form i").click(function(){
+    $(".search-mobile-con").show();
+  });
+  $(".search-mobile-con img").click(function(){
+    $(".search-mobile-con").hide();
+  });
+
+jQuery("button.navbar-toggle").click(function(){
+	jQuery("html").toggleClass("nav-open");
+	jQuery("body").toggleClass("overflow-hidden");
+  });
+
+});  //end $(document).ready(function() {
+
+
+function themeToggle() {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+
+  let theme = localStorage.getItem("theme");
+  if (theme && theme === "dark-mode") {
+    localStorage.setItem("theme", "");
+  } else {
+    localStorage.setItem("theme", "dark-mode");
+  }
+}
+
+</script>
+<script>
+window.ramp = window.ramp || {};
+window.ramp.que = window.ramp.que || [];
+window.ramp.forcePath = 'flex-skin';
+</script>
+<script src="//cdn.intergient.com/1024499/73285/ramp_config.js"></script>
+<style>
+.dark-mode, .dark-mode .content-main-outer-panel *  {
+  color: #EBEBEB;
+}
+.dark-mode
+{
+	 background-color: black;
+}
+.dark-mode header * a
+{
+	 color: #fff !important;
+}
+
+.dark-mode header, .dark-mode footer, .dark-mode .header-outer *, .dark-mode footer .container *
+{
+	 background-color: #626262;
+	 color: #fff;
+}
+.dark-mode .navbar-listing-con *,.dark-mode .alert-danger
+{
+	background-color: #626262 !important;
+}
+
+.dark-mode input,.dark-mode textarea,.dark-mode select,.dark-mode select *,.dark-mode .pagination *
+{
+	background-color: #fff !important;
+	color: #000 !important;
+
+}
+.dark-mode .rate_thing,.dark-mode .btn-warning *
+{
+	color: #000 !important;
+
+}
+
+.fixed-top {
+    position: sticky !important;
+}
+
+.content-main-outer-panel {
+    max-width: 1100px !important;
+    margin: auto !important; 
+}
+
+header, section, footer {
+    float: none !important;
+}
+
+#thing_grid_container, .item-content-left-outer {
+  background-color: white !important;
+  margin:0px !important;
+  padding: 10px !important;
+}
+
+.content-right-outer {
+  background-color: white !important;
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    max-width: 30% !important;
+  } 
+  .col-md-9 {
+    max-width: 70% !important;
+  }
+}
+</style>
+<script src="https://btloader.com/tag?o=5150306120761344&upapi=true" async></script>
+</head>
+<body>
+<script language="javascript">
+	let dark_mode_class = localStorage.getItem("theme") || "";
+	let element = document.body;
+	if(dark_mode_class)element.classList.toggle(dark_mode_class);
+</script>
+<div id="modal1" class="modal fade">
+<div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-above-body"></div>
+            <div class="modal-body">
+                <p>Loading...</p>
+            </div>
+    </div>
+</div>
+</div>
+<div id="modal2" class="modal fade">
+<div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-above-body"></div>
+            <div class="modal-body">
+                <p>Loading...</p>
+            </div>
+    </div>
+</div>
+</div>
+<div id="modal3" class="modal fade">
+<div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-above-body"></div>
+            <div class="modal-body">
+                <p>Loading...</p>
+            </div>
+    </div>
+</div>
+</div>
+<!-- HEADER START-->
+<header class="header-outer fixed-top">
+  <div class="container">
+    <div class="row">
+	  <div class="col-sm-4 col-md-6  pad-none header-left-outer">
+	    <div class="logo-outer">
+          <a href="https://www.itemfix.com/"><img src="https://u.itemfix.com/images/img_logo.png" alt="ItemFix Logo">
+          </a>
+      </div>
+
+
+	  <div class="navigation-list">
+
+		  <button type="button" class="navbar-toggle" style="display:none;">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+		  </button>
+
+			<div class="pushmenu-push">
+			  <ul>
+				 <li><a href="list">Latest</a></li>
+				 <li><a href="javascript://" class="categories-con">Popular channels  <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+
+					<div class="categories-dropdown-con" style="display:none;">
+						<ul>
+						  <li><a href="c/video_to_gif">Video to GIF Tool</a></li>
+						  <li><a href="c/viral">Viral</a></li>
+						  <li><a href="c/memes">Memes</a></li>
+						  <li><a href="c/news">News</a></li>
+						  <li><a href="c/fail">Fail</a></li>
+						  <li><a href="c/wtf">WTF</a></li>
+						  <li><a href="c/crashes">Crashes</a></li>
+						  <li><a href="c/cool">Cool</a></li>
+						</ul>
+					 </div>
+
+			  </ul>
+
+			  <div class="search-mobile-con d-none">
+			  <form action="list" method="get">
+					<input type="text" name="q" placeholder="Search..." value="">
+			  </form>
+			</div>
+
+		  </div>
+
+	  </div>
+	  </div>
+
+      <div class="col-sm-8 col-md-6 pad-none header-right-outer">
+         <div class="header-right-inner">
+			 <form action="list" method="get">
+				<input name="q" type="text" placeholder="Search...">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			  </form>
+
+						<ul class="navbar-listing-con">
+			  <li><a href="javascript://"  onClick="themeToggle()"><i class="fa fa-moon-o" aria-hidden="true" title="Toggle Nigh/Day Mode"></i></a></li>
+			  <li><a href="user?a=login"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+			</ul>
+				     </div>
+	  </div>
+
+
+
+		</div>
+
+      </div>
+
+	  <div class="search-mobile-con" style="display:none;">
+	    <div class="container">
+	        <div class="row">
+				  <form action="list" method="get">
+						<img src="https://u.itemfix.com/images/img_cross_icon.png" alt="cross icon">
+						<input type="text" name="q" placeholder="Search...">
+				  </form>
+			</div>
+	    </div>
+	   </div>
+
+</header>
+<!-- HEADER END-->
+
+<!--CONTENT PART START-->
+<section class="content-main-outer-panel" id="content_section">
+   <div class="container">
+      <div class="row"><div class="alert alert-danger" role="alert"  style="width:100%">
+    Dear Liveleak Visitor - Welcome to ItemFix. Click <a href="ll" style="color: #000 !important"><u>here to find out how you got here</u></a>
+</div>
+        <div class="col-sm-12 col-md-9 pad-none content-left-outer">
+	              <style>
+		  .thing_type_overlay
+{
+	position:absolute;
+	padding:2px 2px 1px;
+	text-align:center;
+	color:#fff;
+	background:rgba(0,0,0,0.6);
+	text-transform:uppercase;
+	top:1px;
+	left:1px;
+}
+
+.duration_overlay
+{
+	position:absolute;
+	padding:2px 2px 1px;
+	text-align:center;
+	color:#fff;
+	background:rgba(0,0,0,0.6);
+	text-transform:uppercase;
+	top:1px;
+	right:1px;
+}
+</style>
+
+<div class="col-sm-12 pad-none staff-video-grid-main-outer">
+			  <div class="row" id="thing_grid_container">
+              <div data-pw-mobi="leaderboard_atf" id="pw_leaderboard_atf"></div>
+                  <script>
+				  window.ramp.que.push(function () { window.ramp.addTag('pw_leaderboard_atf'); });
+</script>
+		  <h1>Featured</h1>
+          
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=5sv747" alt="view 'How to deal with drifters'" id="preview_5sv747" onmouseenter="play_preview_video('preview_5sv747','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fd9bfbbde7_vp.mp4','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fd9bfbbde7_3_thumb.jpg','https://www.itemfix.com/v?t=5sv747');"  onmouseout="load_static_image('preview_5sv747','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fd9bfbbde7_3_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fd9bfbbde7_3_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:10</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[5sv747]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">34</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=5sv747">How to deal with drifters</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 10943</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 34</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:10</span>                   <span>9 hours ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=sfs3i4" alt="view 'Smart Boy'" id="preview_sfs3i4" onmouseenter="play_preview_video('preview_sfs3i4','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fd961bc3a0_vp.mp4','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fd961bc3a0_8_thumb.jpg','https://www.itemfix.com/v?t=sfs3i4');"  onmouseout="load_static_image('preview_sfs3i4','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fd961bc3a0_8_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fd961bc3a0_8_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:12</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[sfs3i4]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">30</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=sfs3i4">Smart Boy</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 8835</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 30</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:12</span>                   <span>9 hours ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=iv959e" alt="view 'Short Circuit'" id="preview_iv959e" onmouseenter="play_preview_video('preview_iv959e','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fda4b410cc_vp.mp4','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fda4b410cc_4_thumb.jpg','https://www.itemfix.com/v?t=iv959e');"  onmouseout="load_static_image('preview_iv959e','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fda4b410cc_4_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fda4b410cc_4_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:18</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[iv959e]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">18</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=iv959e">Short Circuit</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 8402</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 18</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:18</span>                   <span>9 hours ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=jrsqzj" alt="view 'Smartphones and driving don't mix'" id="preview_jrsqzj" onmouseenter="play_preview_video('preview_jrsqzj','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fdb9e602cb_vp.mp4','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fdb9e602cb_5_thumb.jpg','https://www.itemfix.com/v?t=jrsqzj');"  onmouseout="load_static_image('preview_jrsqzj','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fdb9e602cb_5_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662fdb9e602cb_5_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:34</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[jrsqzj]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">29</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=jrsqzj">Smartphones and driving don't mix</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 8742</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 29</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:34</span>                   <span>9 hours ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                          <div data-pw-desk="leaderboard_btf" data-pw-mobi="leaderboard_btf" id="pw_leaderboard_btf"></div> 
+                  <script>
+				  window.ramp.que.push(function () { window.ramp.addTag('pw_leaderboard_btf'); }); 
+</script>               <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=fpsb87" alt="view 'Funeral ceremony did not go according to plan'" id="preview_fpsb87" onmouseenter="play_preview_video('preview_fpsb87','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662f405781934_vp.mp4','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662f405781934_3_thumb.jpg','https://www.itemfix.com/v?t=fpsb87');"  onmouseout="load_static_image('preview_fpsb87','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662f405781934_3_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662f405781934_3_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">1:11</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[fpsb87]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">42</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=fpsb87">Funeral ceremony did not go according to plan</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 16802</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 42</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 1:11</span>                   <span>20 hours ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=s80ixt" alt="view 'Well, hello there'" id="preview_s80ixt" onmouseenter="play_preview_video('preview_s80ixt','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662f40a50c7f8_vp.mp4','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662f40a50c7f8_3_thumb.jpg','https://www.itemfix.com/v?t=s80ixt');"  onmouseout="load_static_image('preview_s80ixt','https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662f40a50c7f8_3_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/29/ItemFix-dot-com-662f40a50c7f8_3_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:17</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[s80ixt]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">40</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=s80ixt">Well, hello there</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 15686</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 40</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:17</span>                   <span>20 hours ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=s9gua3" alt="view 'Dramatic excavator river recue'" id="preview_s9gua3" onmouseenter="play_preview_video('preview_s9gua3','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e1535816e8_vp.mp4','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e1535816e8_5_thumb.jpg','https://www.itemfix.com/v?t=s9gua3');"  onmouseout="load_static_image('preview_s9gua3','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e1535816e8_5_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e1535816e8_5_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">1:34</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[s9gua3]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">76</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=s9gua3">Dramatic excavator river recue</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/SkyBlueJack">SkyBlueJack (29981.00)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 26598</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 76</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 1:34</span>                   <span>one day ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=cg05x6" alt="view 'Two cyclists collide'" id="preview_cg05x6" onmouseenter="play_preview_video('preview_cg05x6','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e7d9431989_vp.mp4','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e7d9431989_5_thumb.jpg','https://www.itemfix.com/v?t=cg05x6');"  onmouseout="load_static_image('preview_cg05x6','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e7d9431989_5_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e7d9431989_5_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:17</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[cg05x6]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">46</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=cg05x6">Two cyclists collide</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 25916</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 46</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:17</span>                   <span>one day ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=tszszg" alt="view 'When circus act goes not as planned'" id="preview_tszszg" onmouseenter="play_preview_video('preview_tszszg','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e7e8f6d9cd_vp.mp4','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e7e8f6d9cd_5_thumb.jpg','https://www.itemfix.com/v?t=tszszg');"  onmouseout="load_static_image('preview_tszszg','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e7e8f6d9cd_5_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e7e8f6d9cd_5_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:20</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[tszszg]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">44</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=tszszg">When circus act goes not as planned</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 29760</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 44</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:20</span>                   <span>one day ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=5i71qu" alt="view 'Hail of abnormal size fell in China'" id="preview_5i71qu" onmouseenter="play_preview_video('preview_5i71qu','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e80f6aaa03_vp.mp4','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e80f6aaa03_7_thumb.jpg','https://www.itemfix.com/v?t=5i71qu');"  onmouseout="load_static_image('preview_5i71qu','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e80f6aaa03_7_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e80f6aaa03_7_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:39</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[5i71qu]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">56</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=5i71qu">Hail of abnormal size fell in China</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/brrrtmn">brrrtmn (149871.91)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 28985</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 56</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:39</span>                   <span>one day ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=n2uf61" alt="view 'Angry Roadside Bear'" id="preview_n2uf61" onmouseenter="play_preview_video('preview_n2uf61','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e960e17c95_vp.mp4','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e960e17c95_10_thumb.jpg','https://www.itemfix.com/v?t=n2uf61');"  onmouseout="load_static_image('preview_n2uf61','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e960e17c95_10_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e960e17c95_10_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:20</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[n2uf61]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">70</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=n2uf61">Angry Roadside Bear</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/SkyBlueJack">SkyBlueJack (29981.00)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 25328</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 70</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:20</span>                   <span>one day ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+                        <div class="col-sm-12 pad-none itemfix-grid-main-inner">
+		      <div class="col-sm-4 pad-none itemfix-categoires-left-pic"><a href="https://www.itemfix.com/v?t=8cigvn" alt="view 'Three guys on a motorcycle'" id="preview_8cigvn" onmouseenter="play_preview_video('preview_8cigvn','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e9689407af_vp.mp4','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e9689407af_4_thumb.jpg','https://www.itemfix.com/v?t=8cigvn');"  onmouseout="load_static_image('preview_8cigvn','https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e9689407af_4_thumb.jpg');"><img src="https://u.itemfix.com/2024/Apr/28/ItemFix-dot-com-662e9689407af_4_thumb.jpg"></a><div class="thing_type_overlay">video item</div><div class="duration_overlay">0:26</div></div>
+		      <div class="col-sm-8 pad-none itemfix-grid-right-con">
+              				<span name="rate_thing_container[8cigvn]" class="hidden-xs; rate_thing uprate" style="cursor:pointer; background:#eda421; border-radius:25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; padding:5px">
+<samp class="arrow_top"><i class="fa fa-arrow-up rate_thing uprate" aria-hidden="true"></i></samp>
+<samp class="text_center_con thing_score rate_thing uprate">41</samp>
+</span>&nbsp;<h3 style="display:inline"><a href="https://www.itemfix.com/v?t=8cigvn">Three guys on a motorcycle</a></h3>				 <div class="itemfix-grids-views-con">
+				   <span><img src="https://u.itemfix.com/images/default_profile_image.png" alt="pic"> <strong>By:</strong> <a href="https://www.itemfix.com/c/SkyBlueJack">SkyBlueJack (29981.00)</a></span>
+				   <span><i class="fa fa-eye" aria-hidden="true"></i> <strong>Views:</strong> 20957</span>
+                   				   <span><i class="fa fa-star" aria-hidden="true"></i> <strong>Score:</strong> 41</span> 
+                    				   <span><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Duration:</strong> 0:26</span>                   <span>one day ago</span>
+				 </div>
+				 <p>..</p>
+			  </div>
+		  </div>
+           
+  
+<!--PAGINATION START--> 
+<div class="col-sm-12 pad-none itemfix-grid-main-inner pagination-main">
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+      <li class="page-item">
+    <a href="javascript://" style="color:#000 !important" class="page-link"><strong>1</strong></a>     <li class="page-item">
+        <a href="list?featured=1&page=2" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+        <a href="list?featured=1&page=3" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+        <a href="list?featured=1&page=4" class="page-link">4</a>
+        </li>
+        <li class="page-item">
+        <a href="list?featured=1&page=5" class="page-link">5</a>
+        </li>
+        <li class="page-item">
+        <a href="list?featured=1&page=6" class="page-link">6</a>
+        </li>
+        <li class="page-item">
+        <a href="list?featured=1&page=7" class="page-link">7</a>
+        </li>
+        <li class="page-item">
+          <a href="list?featured=1&page=2" class="page-link" aria-label="Next">
+     <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+      </a>
+          </li>
+      </ul>
+</nav> 
+</div> <!--col-sm-12 pad-none pagination-main-->
+<!--PAGINATION END-->
+</div> <!--row-->
+</div> <!--class="col-sm-12 pad-none staff-video-grid-main-outer"-->
+        </div> <!--col-sm-12 col-md-9 pad-none content-left-outer-->
+
+		  <div class="col-sm-12 col-md-3 pad-none content-right-outer">
+		                                                
+				                <div class="col-12 pad-none advertise-pic">
+				                <div data-pw-desk="med_rect_atf" data-pw-mobi="med_rect_atf" id="pw_med_rect_atf"></div>
+                                <br /><br />
+                  <script>
+				  window.ramp.que.push(function () { window.ramp.addTag('pw_med_rect_atf'); }); 
+</script> 
+				    			</div> <!--col-12 pad-none advertise-pic-->
+				                            <div class="col-12 pad-none advertise-pic">
+			<div data-pw-desk="sky_atf" id="sky_atf"></div>
+                  <script>
+				  window.ramp.que.push(function () { window.ramp.addTag('sky_atf'); });
+</script>
+			</div>
+						<h2>Popular Fixes</h2>
+
+            			<div class="col-12 pad-none content-latest-post-outer">
+			  <a href="https://www.itemfix.com/v?t=lu9eeq">
+			   <div class="content-latest-post-left"><img src="https://u.itemfix.com/2021/Jun/5/ItemFix-dot-com-60bb3d813bc3c_12_thumb.jpg" alt="pic"></div>
+			   <div class="content-latest-post-right">
+			      <h4>What is ItemFix?</h4>
+				  <p>Let's look at what you can do with ItemFix.</p>
+			   </div>
+			  </a>
+			</div>
+            			<div class="col-12 pad-none content-latest-post-outer">
+			  <a href="https://www.itemfix.com/v?t=m670dy">
+			   <div class="content-latest-post-left"><img src="https://u.itemfix.com/2021/Jul/15/ItemFix-dot-com-60f04edf7386c_15_thumb.jpg" alt="pic"></div>
+			   <div class="content-latest-post-right">
+			      <h4>Tutorial: ItemFix Meme Generator</h4>
+				  <p>A quick look at using our MEME generator here on Itemfix
+You can find the meme generator here: itemfix.com/image_meme_generator</p>
+			   </div>
+			  </a>
+			</div>
+            			<div class="col-12 pad-none content-latest-post-outer">
+			  <a href="https://www.itemfix.com/v?t=ret0dy">
+			   <div class="content-latest-post-left"><img src="https://u.itemfix.com/2021/Jul/15/ItemFix-dot-com-60f04ee6012d1_96_thumb.jpg" alt="pic"></div>
+			   <div class="content-latest-post-right">
+			      <h4>Tutorial: Text to Speech</h4>
+				  <p>Taking a look at the text to speech engine on ItemFix. Let's see what you can do with it!
+
+You can find the text to speech tool here: www.itemfix.com/text_to_speech</p>
+			   </div>
+			  </a>
+			</div>
+            			<div class="col-12 pad-none content-latest-post-outer">
+			  <a href="https://www.itemfix.com/v?t=a5tk1b">
+			   <div class="content-latest-post-left"><img src="https://u.itemfix.com/2021/Jul/1/ItemFix-dot-com-60dd5c34b6658_6_thumb.jpg" alt="pic"></div>
+			   <div class="content-latest-post-right">
+			      <h4>It was at this moment...a meme tutorial</h4>
+				  <p>Learn how to use the &quot;It was at this moment...&quot; template. Perfect for accidents, stupidity, marriage proposals and more!</p>
+			   </div>
+			  </a>
+			</div>
+            			<div class="col-12 pad-none content-latest-post-outer">
+			  <a href="https://www.itemfix.com/v?t=41h6uu">
+			   <div class="content-latest-post-left"><img src="https://u.itemfix.com/2021/Jun/8/ItemFix-dot-com-60befb1bafc45_6_thumb.jpg" alt="pic"></div>
+			   <div class="content-latest-post-right">
+			      <h4>ItemFix Tutorial - Short compilation</h4>
+				  <p>For this tutorial we use two different templates to create a short tutorial using two video clips and some assets.</p>
+			   </div>
+			  </a>
+			</div>
+            			<div class="col-12 pad-none content-latest-post-outer">
+			  <a href="https://www.itemfix.com/v?t=a1ol6p">
+			   <div class="content-latest-post-left"><img src="https://u.itemfix.com/2021/May/20/ItemFix-dot-com-60a5e55e2375d_5_thumb.jpg" alt="pic"></div>
+			   <div class="content-latest-post-right">
+			      <h4>Video to GIF tutorial</h4>
+				  <p>Here we take a look at using the Video to GIF template allowing you to create animated GIFs from video clips to use everywhere.</p>
+			   </div>
+			  </a>
+			</div>
+            			<div class="col-12 pad-none content-latest-post-outer">
+			  <a href="https://www.itemfix.com/v?t=lt91et">
+			   <div class="content-latest-post-left"><img src="https://u.itemfix.com/2021/May/18/ItemFix-dot-com-60a35118e013f_38_thumb.jpg" alt="pic"></div>
+			   <div class="content-latest-post-right">
+			      <h4>Benny Hill Overlay Tutorial</h4>
+				  <p>How to use our &quot;Benny Hill&quot; overlay</p>
+			   </div>
+			  </a>
+			</div>
+            
+			<div class="content-categories-tags-outer">
+			<h2>Popular Tools</h2>
+			 <div class="col-sm-12 pad-none content-categories-tags-con">
+			   <span><a href="image_meme_generator">Image Meme Generator</a></span>
+               <span><a href="text_to_speech">Text to Speech</a></span>
+               			 </div>
+			</div> <!--content-categories-tags-outer-->
+
+
+			<div class="content-categories-tags-outer">
+			<h2>Popular Tags</h2>
+			 <div class="col-sm-12 pad-none content-categories-tags-con">
+			   <span><a href="list?q=fail">#Fail</a></span>
+			   <span><a href="list?q=thug life">#Thug Life</a></span>
+			   <span><a href="list?q=wtf">#WTF</a></span>
+			   <span><a href="list?q=news">#News</a></span>
+			   <span><a href="list?q=politics">#Politics</a></span>
+               <span><a href="list?q=feel good">#Feel Good</a></span>
+			   <span><a href="list?q=meme">#Meme</a></span>
+			 </div>
+			</div> <!--content-categories-tags-outer-->
+            <div class="col-12 pad-none advertise-pic">
+            </div>		  </div> <!--col-sm-12 col-md-3 pad-none content-right-outer-->
+
+
+	  </div> <!--row-->
+   </div> <!--container-->
+</section> <!--content-main-outer-panel-->
+<!--CONTENT PART END-->
+
+<!--FOOTER START-->
+<footer style="padding-bottom:100px">
+   <div class="container">
+       <div class="row">
+	       <div class="col-sm-12 col-md-3 col-lg-3 pad-none footer-logo"><a href=""><img src="https://u.itemfix.com/images/img_logo.png"  alt="logo"></a></div>
+	       <div class="col-sm-12 col-md-6 col-lg-6 pad-none footer-links-con">
+		      <ul>
+                 <li><a href="rss">RSS Feed</a></li>
+			     <li><a href="faq">Rules & FAQ</a></li>
+			     <li><a href="contact_us">Contact Itemfix</a></li>
+			  </ul>
+			  <ul>
+			     <li><a href="tos">Terms & Conditions</a></li>
+			     <li><a href="privacy">Privacy Policy</a></li>
+			     <li><a href="copyright">Copyright / DMCA</a></li>
+			     <li><a href="https://www.commonsensemedia.org/articles/parents-ultimate-guide-to-parental-controls" target="_blank" rel="nofollow">Parental Control - Best Practises</a>
+			  </ul>
+		   </div>
+	       <div class="col-sm-12 col-md-3 col-lg-3 pad-none footer-social-links-con">
+	       				<div class="col-sm-12 pad-none copyright-con">Copyright &copy; 2024  All Rights Reserved.</div>
+		   </div>
+	   </div>
+	</div>
+</footer>
+<!--FOOTER END-->
+<script src="https://u.itemfix.com/js/bootstrap.min.js"></script>
+<script src="//cdn.intergient.com/ramp_core.js"></script>
+   <script src="https://u.itemfix.com/js/videojs2/video.min.js"></script>
+   <script src="https://u.itemfix.com/js/videojs2/nuevo2.js"></script>
+</body>
+</html>

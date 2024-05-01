@@ -7,7 +7,7 @@ from process_data import compare, define_censorship, geolocation, statistics
 
 
 def match_filename(filename1, filename2):
-    pattern = r"results_([a-zA-Z]+_\d+)_.*\.json"
+    pattern = r"results_([a-zA-Z\d]+_\d+)_.*\.json"
 
     match_pattern1 = re.match(pattern, filename1)
     match_pattern2 = re.match(pattern, filename2)
@@ -34,7 +34,9 @@ def process_two_files(folder1, folder2):
 
     for file1 in os.listdir(folder1):
         for file2 in os.listdir(folder2):
+            #print(file2)
             if match_filename(file1, file2):
+                print("MATCH")
                 # Load JSON data from both files
                 with open(os.path.join(folder1, file1), 'r', encoding='utf-8', errors='replace') as f1, \
                         open(os.path.join(folder2, file2), 'r', encoding='utf-8', errors='replace') as f2:
@@ -73,6 +75,7 @@ def process(folder1, folder2):
 
     print("Printing statistics about censorship: ")
 
+    #Vypiš stránky pro ketré dana je cenzura definovana
     print("The number of different tests for website addresses: ", different_keys_count_total)
     print("The number of identical results for addresses: ", same_keys_count_total)
     print("The number of failed addresses (not working in CZ): ", fail_address_records_total)

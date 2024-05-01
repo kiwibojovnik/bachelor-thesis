@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"9d0b4ca990",applicationID:"8164170"};;/*! For license information please see nr-loader-rum-1.257.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,OP:()=>S,lF:()=>N,Yu:()=>_,Dg:()=>m,CX:()=>c,GE:()=>w,sU:()=>k});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const _=(0,n.mF)().o;var E=r(385),x=r(6818);const D={buildEnv:x.Re,customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0,harvestCount:0,timeKeeper:void 0},R={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function k(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,D);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.257.0",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(Date.now()-performance.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occurred while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{LP:()=>l,RP:()=>c,o5:()=>u});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){d(e),s[e].get(t)&&s[e].delete(t),s[e].size&&f(e)}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=[...s[e]];t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),g(e,r)})))}function g(e,t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)p(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}r.isolatedBacklog||delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=h(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=m()[s[e]];p&&p.push([f,e,r,a]);return a},get:v,listeners:h,context:g,buffer:function(e,t){const r=m();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!m()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(f,t)}function m(){return f.backlog}}(void 0,"globalEE"),d=(0,n.fP)();d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>u,K4:()=>i,oD:()=>o,uT:()=>c,wO:()=>s});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>c,T:()=>s});var n=r(8325),i=r(385);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i._A.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},7872:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{D:()=>n,Z:()=>i})},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(385),i=r(7894);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n._A.NREUM||(n._A.NREUM={}),void 0===n._A.newrelic&&(n._A.newrelic=n._A.NREUM),n._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:n._A.setTimeout,SI:n._A.setImmediate,CT:n._A.clearTimeout,XHR:n._A.XMLHttpRequest,REQ:n._A.Request,EV:n._A.Event,PR:n._A.Promise,MO:n._A.MutationObserver,FETCH:n._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{Ef:()=>i});var n=r(7056);r(3325).D.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"};n.IK.ERROR,n.IK.FULL,n.IK.OFF},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2758:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(8e3),c=r(3960),u=r(385),d=r(50),l=r(3081),f=r(8632),g=r(7144);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay",g.Ef.RECORD,g.Ef.PAUSE],h=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(7894),m=r(7056);function b(){const e=(0,f.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}const y={};var A=r(2825);const w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let _=!1;function E(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,E=arguments.length>3?arguments[3]:void 0,{init:x,info:D,loader_config:R,runtime:S={loaderType:p},exposed:k=!0}=t;const N=(0,f.gG)();D||(x=N.init,D=N.info,R=N.loader_config),(0,i.Dg)(e.agentIdentifier,x||{}),(0,i.GE)(e.agentIdentifier,R||{}),D.jsAttributes??={},u.v6&&(D.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,D);const P=(0,i.P_)(e.agentIdentifier),j=[D.beacon,D.errorBeacon];_||(P.proxy.assets&&(w(P.proxy.assets),j.push(P.proxy.assets)),P.proxy.beacon&&j.push(P.proxy.beacon),b(),(0,f.EZ)("activatedFeatures",A.T),e.runSoftNavOverSpa&&=!0===P.soft_navigations.enabled&&P.feature_flags.includes("soft_nav")),S.denyList=[...P.ajax.deny_list||[],...P.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,S),void 0===e.api&&(e.api=function(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.RP)(e,"api");const p={};var b=a.ee.get(e),A=b.get("tracer");y[e]=m.IK.OFF,b.on(g.Ef.REPLAY_RUNNING,(t=>{y[e]=t}));var w="api-",_=w+"ixn-";function E(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),R(w,n,!0,o||null===r?"session":void 0)(t,r)}function x(){}h.forEach((e=>{p[e]=R(w,e,!0,"api")})),p.addPageAction=R(w,"addPageAction",!0,n.D.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,R(w,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return E(e,t,"setCustomAttribute",r);(0,d.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,d.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setUserId=function(e){if("string"==typeof e||null===e)return E("enduser.id",e,"setUserId",!0);(0,d.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return E("application.version",e,"setApplicationVersion",!1);(0,d.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},p.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(l.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,b);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,d.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{b.emit("".concat(e,"-opt-in"))}))}catch(e){(0,d.Z)("An unexpected issue occurred",e)}},p[g.Ef.RECORD]=function(){(0,o.p)(l.xS,["API/recordReplay/called"],void 0,n.D.metrics,b),(0,o.p)(g.Ef.RECORD,[],void 0,n.D.sessionReplay,b)},p[g.Ef.PAUSE]=function(){(0,o.p)(l.xS,["API/pauseReplay/called"],void 0,n.D.metrics,b),(0,o.p)(g.Ef.PAUSE,[],void 0,n.D.sessionReplay,b)},p.interaction=function(e){return(new x).get("object"==typeof e?e:{})};const D=x.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(l.xS,["API/createTracer/called"],void 0,n.D.metrics,b),f||(0,o.p)(_+"tracer",[(0,v.z)(),e,r],i,n.D.spa,b),function(){if(A.emit((a?"":"no-")+"fn-start",[(0,v.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw A.emit("fn-err",[arguments,this,e],r),e}finally{A.emit("fn-end",[(0,v.z)()],r)}}}};function R(e,t,r,i){return function(){return(0,o.p)(l.xS,["API/"+t+"/called"],void 0,n.D.metrics,b),i&&(0,o.p)(e+t,[(0,v.z)(),...arguments],r?null:this,i,b),r?void 0:this}}function S(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,s.LP)(e,"api")})).catch((()=>{(0,d.Z)("Downloading runtime APIs failed..."),b.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{D[e]=R(_,e,void 0,f?n.D.softNav:n.D.spa)})),p.setCurrentRouteName=f?R(_,"routeName",void 0,n.D.softNav):R(w,"routeName",!0,n.D.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(l.xS,["API/noticeError/called"],void 0,n.D.metrics,b),(0,o.p)("err",[t,(0,v.z)(),!1,r,!!y[e]],void 0,n.D.jserrors,b)},u.il?(0,c.b2)((()=>S()),!0):S(),p}(e.agentIdentifier,E,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=k),_=!0}},8993:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.softNav]:9,[n.sessionReplay]:10}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.257.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.257.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-OiQHqGyF6PVYPjCHd8YlPkY+foWAb5sHWiuQeDd1Zne2fqGqvw2rXLKPRixlHrzSCXnR5SX25SeH9Z2ZKpwhiQ=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.257.0.PROD"]=self["webpackChunk:NRBA-1.257.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8993);var e=i(50),t=i(7144),r=i(4402);class n{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.ky)(16);this.agentIdentifier=e}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.Ef.RECORD)}pauseReplay(){return this.#e(t.Ef.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var o=i(3325),a=i(234);const s=Object.values(o.D);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(2758);var d=i(8e3),l=i(5938),f=i(3960),g=i(385);function p(e){return g.il&&!0===(0,a.Mt)(e,"privacy.cookies_enabled")}function h(e){return!!a.Yu.MO&&p(e)&&!0===(0,a.Mt)(e,"session_trace.enabled")}var v=i(7872);class m extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.RP)(e,r):this.ee.on("".concat(this.featureName,"-opt-in"),(0,v.Z)((()=>{(0,d.RP)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if(p(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3108));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t),this.featureName===o.D.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.LP)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),r),this.abortHandler?.(),(0,d.LP)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};g.il?(0,f.b2)((()=>n()),!0):n()}#t(e,t){return e!==o.D.sessionReplay||(r=this.agentIdentifier,n=t,!(!h(r)||!n?.isNew&&!n?.state.sessionReplayMode));var r,n}}var b=i(7633);class y extends m{static featureName=b.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,b.t,r),this.importAggregator()}}var A=i(1117),w=i(1284);class _ extends A.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,w.D)(e,(function(e,r){t[e]=E(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,w.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=E(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=x(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=E(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function E(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=x(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function x(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var D=i(8632),R=i(4351);var S=i(5546),k=i(7956),N=i(3239),P=i(9251),j=i(7894);class I extends m{static featureName=P.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,r),g.il&&((0,k.N)((()=>(0,S.p)("docHidden",[(0,j.z)()],void 0,P.t,this.ee)),!0),(0,N.bP)("pagehide",(()=>(0,S.p)("winPagehide",[(0,j.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var T=i(3081);class O extends m{static featureName=T.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,T.t9,r),this.importAggregator()}}new class extends n{constructor(t,r){super(r),g._A?(this.sharedAggregator=new _({agentIdentifier:this.agentIdentifier}),this.features={},(0,D.h5)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(y),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.D.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initialize the agent. Could not determine the runtime environment.")}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.p[e.featureName]-o.p[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.D.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.D.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.D.softNav)return;const n=function(e){switch(e){case o.D.ajax:return[o.D.jserrors];case o.D.sessionTrace:return[o.D.ajax,o.D.pageViewEvent];case o.D.sessionReplay:return[o.D.sessionTrace];case o.D.pageViewTiming:return[o.D.pageViewEvent];default:return[]}}(r.featureName);n.every((e=>e in this.features))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has not been initialized (").concat((0,R.P)(n),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,D.fP)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[y,I,O],loaderType:"lite"})})()})();</script>
+<script data-cfasync="false" id="vwoCode">window._vwo_code || (function() {
+      var account_id=779869,
+      settings_tolerance=2000,
+      library_tolerance=2500,
+      use_existing_jquery=false,
+      version=2.0,
+      hide_element='body',
+      hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+      /* DO NOT EDIT BELOW THIS LINE */
+      f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=this.getSettings(),n=d.createElement('script'),i=this;if(t){n.textContent=t;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);i.load(e)}}else{n.fetchPriority='high';n.src=e;n.type='text/javascript';n.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(n)}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t=d.currentScript,n=d.createElement('style'),i=this.hide_element(),r=t&&!t.async&&i?i+this.hide_element_style():'',c=d.getElementsByTagName('head')[0];n.setAttribute('id','_vis_opt_path_hides');v&&n.setAttribute('nonce',v.nonce);n.setAttribute('type','text/css');if(n.styleSheet)n.styleSheet.cssText=r;else n.appendChild(d.createTextNode(r));c.appendChild(n);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version)}};w._vwo_code=code;code.init();})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link rel="shortcut icon" href="https://www.crs.org/sites/all/themes/crs/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="Catholic Relief Services eases suffering and provides assistance to people in need in more than 100 countries, without regard to race, religion or nationality." />
+<meta name="robots" content="noodp" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.crs.org/" />
+<link rel="shortlink" href="https://www.crs.org/home" />
+<meta property="og:site_name" content="CRS" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="CRS" />
+<meta property="og:url" content="https://www.crs.org/home" />
+<meta property="og:description" content="Catholic Relief Services eases suffering and provides assistance to people in need in more than 100 countries, without regard to race, religion or nationality." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://www.crs.org/home" />
+<meta name="dcterms.title" content="CRS | Catholic Relief Services - Humanitarian Aid Organization" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="https://www.crs.org/home" />
+    <title>Catholic Relief Services</title>
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" href="/sites/all/themes/crs/images/favicon/favicon.ico">
+  <link rel="icon" href="/sites/all/themes/crs/images/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="/sites/all/themes/crs/images/favicon/touch-icon-192x192.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="cleartype" content="on">
+  <link type="text/css" rel="stylesheet" href="https://www.crs.org/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.crs.org/sites/default/files/css/css_shxvOkw6KS5q3w0kM6s7vrbk5pTY680IUy152U9wy6c.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.crs.org/sites/default/files/css/css_4uIV8FVC2LSlqdxFSZ8SMMMG_FQseCd6SFA9w76AmbM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/1312526c-cd47-4ea8-9d98-3af654b7b5c9.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cloud.typography.com/7240754/770086/css/fonts.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.crs.org/sites/default/files/css/css_FmBDunglPTCl3-z7h4wTWxj_ZeJi2pgYFhJDN02u78k.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.crs.org/sites/default/files/css/css_IXHjFbSgPLA5yHRzHgxh_OiRkjyiX--f9i4p5ChZVO8.css" media="print" />
+  <script src="https://www.crs.org/sites/default/files/js/js_Qt4kIZVKqPxIA3Uq5PbEU8tvCrBVdPFJJd6OyvJ7pak.js"></script>
+<script src="https://www.crs.org/sites/default/files/js/js_Pt6OpwTd6jcHLRIjrE-eSPLWMxWDkcyYrPTIrXDSON0.js"></script>
+<script src="https://www.crs.org/sites/default/files/js/js_onbE0n0cQY6KTDQtHO_E27UBymFC-RuqypZZ6Zxez-o.js"></script>
+<script src="https://www.crs.org/sites/default/files/js/js_o1KdNkpcyK_dxjS_WNFIGS3QEFqNElwFTa3HLZ5GeiM.js"></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-335473-76"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-335473-76", {"groups":"default","anonymize_ip":true});</script>
+<script src="https://www.crs.org/sites/default/files/js/js_x3_j7hO5VNzmLB_Q2OyBp3ysVJEmpIJF1fvyCrLE82s.js"></script>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5696bb5aabd8bf3d"></script>
+<script src="//www.googleoptimize.com/optimize.js?id=OPT-K5D6C72"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://www.crs.org/sites/default/files/js/js_AFDQqA4gxrVWC4_d6W1sJ2bWMWmUI34k7SNJGHFoKa4.js"></script>
+<script src="https://www.crs.org/sites/default/files/js/js_zZFq7NsCZ7-yGi5o3zVUXK1vClrFSjiCZazz0zmbcA0.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"crs","theme_token":"zQ-dsv3NAx9FCTJ7o6RV5Lkx1y8wHX1riIACKrcKBUY","js":{"sites\/all\/modules\/contrib\/wysiwyg_tools_plus\/js\/tab_builder.js":1,"sites\/all\/modules\/contrib\/addthis\/addthis.js":1,"public:\/\/google_tag\/google_tag.script.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.12\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_browser.js":1,"misc\/form-single-submit.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/plain\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/libraries\/jstorage\/jstorage.min.js":1,"sites\/all\/modules\/custom\/crs_donation\/crs_donation.js":1,"sites\/all\/themes\/crs\/js\/jquery.infieldlabel.js":1,"sites\/all\/themes\/crs\/js\/jquery.expander.min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-335473-76":1,"0":1,"sites\/all\/themes\/crs\/js\/layout.engine.min.js":1,"sites\/all\/themes\/crs\/js\/mediaCheck-min.js":1,"\/\/s7.addthis.com\/js\/300\/addthis_widget.js#pubid=ra-5696bb5aabd8bf3d":1,"\/\/www.googleoptimize.com\/optimize.js?id=OPT-K5D6C72":1,"https:\/\/cdn.jsdelivr.net\/gh\/fancyapps\/fancybox@3.5.7\/dist\/jquery.fancybox.min.js":1,"sites\/all\/themes\/crs\/js\/jquery.mmenu.min.all.js":1,"sites\/all\/themes\/crs\/js\/jquery.equalheight.min.js":1,"sites\/all\/themes\/crs\/js\/organictabs.jquery.js":1,"sites\/all\/themes\/crs\/js\/organictabs-crs.js":1,"sites\/all\/themes\/crs\/js\/site.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/contrib\/menu_attach_block\/menu_attach_block.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/wysiwyg_tools_plus\/css\/wysiwyg_tools_plus.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/plain\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/crs\/panels-layouts\/crs-custom\/crs-custom.css":1,"sites\/all\/modules\/contrib\/node_embed\/plugins\/node_embed\/node_embed.css":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/4.3.0\/css\/font-awesome.min.css":1,"\/\/fast.fonts.net\/cssapi\/1312526c-cd47-4ea8-9d98-3af654b7b5c9.css":1,"\/\/cloud.typography.com\/7240754\/770086\/css\/fonts.css":1,"https:\/\/cdn.jsdelivr.net\/gh\/fancyapps\/fancybox@3.5.7\/dist\/jquery.fancybox.min.css":1,"sites\/all\/themes\/crs\/css\/normalize.min.css":1,"sites\/all\/themes\/crs\/vendor\/css\/jquery.mmenu.all.css":1,"sites\/all\/themes\/crs\/css\/styles.min.css":1,"sites\/all\/themes\/crs\/css\/video-tabs.css":1,"sites\/all\/themes\/crs\/css\/print.min.css":1}},"colorbox":{"transition":"elastic","speed":"350","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"returnFocus":true,"maxWidth":"98%","maxHeight":"98%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":false,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"better_exposed_filters":{"views":{"program_areas":{"displays":{"block_5":{"filters":[]}}},"news":{"displays":{"block_1":{"filters":[]},"block_2":{"filters":[]}}},"initiatives":{"displays":{"block_1":{"filters":[]}}},"home_tiles_queue":{"displays":{"block_1":{"filters":[]}}},"megamenu_ways_to_give":{"displays":{"block":{"filters":[]}}},"megamenu_initiatives":{"displays":{"block":{"filters":[]}}},"megamenu_featured_publications":{"displays":{"block":{"filters":[]}}}}},"urlIsAjaxTrusted":{"https:\/\/support.crs.org\/donate\/crs-give-monthly-0":true,"\/solr-search":true},"googleanalytics":{"account":["UA-335473-76"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1}});</script>
+</head>
+<body class="html front not-logged-in no-sidebars page-home hero-landing-panel has-hero page-panels home" >
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      <div class="region region-page-top">
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB27G54" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  </div>
+  
+<div id="page" class="clearfix">
+  <header class="header" id="header" role="banner">
+    <div id="header__wrapper">
+              <div class="header__region region region-header">
+    <div id="block-block-18"
+     class="block block-block first odd">
+
+      
+  <div class="content">
+    <!-- Lightbox code -->  </div>
+</div>
+<div id="block-block-23"
+     class="block block-block even">
+
+      
+  <div class="content">
+    <style>
+  .sticky-signup {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2.25rem 0 1rem;
+    background: #003086;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0);
+    color: #fff;
+    text-align: center;
+    transform: translateY(100%);
+    transition: all .25s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    z-index: 1000;
+    visibility: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .sticky-signup {
+      padding: 2rem 0 1.75rem;
+      text-align: left;
+    }
+  }
+
+  .sticky-signup.is-open {
+    box-shadow: 0 0 12px rgba(0, 0, 0, .5);
+    transform: translate(0);
+    visibility: visible;
+  }
+
+  /* Close Button */
+
+  .sticky-signup .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 0 0 0 6px;
+    color: rgba(255, 255, 255, .7);
+    font-family: "Gotham A", "Gotham B", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: middle;
+    transition: all .15s ease-in-out;
+  }
+
+  .sticky-signup .btn-close:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .sticky-signup .btn-label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .sticky-signup .btn-icon {
+    display: inline-block;
+  }
+
+  /* Container */
+
+  .sticky-signup .container {
+    max-width: 396px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @media (min-width: 480px) {
+    .sticky-signup .container {
+      max-width: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sticky-signup .container {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 990px) {
+    .sticky-signup .container {
+      padding: 0;
+    }
+  }
+
+  /* Message */
+
+  .sticky-signup-message-wrap {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .sticky-signup-message-wrap {
+      margin-bottom: 0;
+    }
+  }
+
+  .sticky-signup-message {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  @media (min-width: 480px) {
+    .sticky-signup-message b {
+      display: block;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .sticky-signup-message {
+      font-size: 22px;
+    }
+  }
+
+  /* Form */
+
+  @media (min-width: 768px) {
+    .sticky-signup-form {
+      flex-shrink: 0;
+    }
+  }
+
+  .sticky-signup .ngp-form {
+    max-width: 100%;
+    min-height: 0;
+  }
+
+  .sticky-signup .at-inner {
+    background: none;
+  }
+
+  /* All elements to hide */
+  .sticky-signup header.at-title,
+  .sticky-signup .at fieldset legend,
+  .sticky-signup .FooterHtml {
+    display: none;
+  }
+
+  @media (min-width: 480px) {
+    .sticky-signup form {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .sticky-signup .at .at-fieldset {
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    .sticky-signup .at .at-fieldset {
+      min-width: auto;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    .sticky-signup .at .at-fieldset.ContactInformation {
+      min-width: calc(100% - 202px);
+      margin-right: 10px;
+    }
+  }
+
+  .sticky-signup .at-row>[class^="at-"] {
+    margin: 0;
+  }
+
+  .sticky-signup .at label {
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+  }
+
+  .sticky-signup .at input[type="email"] {
+    height: 44px;
+    margin: 0 0 15px;
+    border: 0;
+  }
+
+  @media (min-width: 480px) {
+    .sticky-signup .at input[type="email"] {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 780px) {
+    .sticky-signup .at input[type="email"] {
+      width: 200px;
+    }
+  }
+
+  @media (min-width: 894px) {
+    .sticky-signup .at input[type="email"] {
+      width: 290px;
+    }
+  }
+
+  .sticky-signup .at-form-submit {
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    .sticky-signup .at-form-submit {
+      padding: 0 0 0 .5rem;
+    }
+  }
+
+  .sticky-signup .at-form-submit .at-submit {
+    width: 100%;
+    height: 44px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #00c0ea;
+    border-radius: 0;
+    font-family: "Gotham A", "Gotham B", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background .15s ease-in-out;
+  }
+
+  .sticky-signup .at-form-submit .at-submit:hover {
+    background: #00a7cc;
+  }
+
+  @media (min-width: 768px) {
+    .sticky-signup .at-form-submit .at-submit {
+      width: auto;
+    }
+  }
+
+  .sticky-signup .at small.info,
+  .sticky-signup .at small.info a {
+    color: #fff;
+  }
+
+  .sticky-signup .at .error small.error,
+  .sticky-signup .at small.info {
+    margin-top: .5rem;
+  }
+
+  @media (min-width: 768px) {
+    .sticky-signup .at .error small.error,
+    .sticky-signup .at small.info {
+      margin-bottom: 0;
+    }
+  }
+
+  /* Success */
+  .sticky-signup.has-success .sticky-signup-form {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  /* Override the spinner */
+  .ngp-spinner {
+    position: absolute !important;
+  }
+</style>
+
+<div class="sticky-signup">
+  <button type="button" class="btn-close js-close-signup" title="Close Subscription Form">
+    <span class="btn-label">Close</span>
+    <svg class="btn-icon" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z" fill="#FFF" fill-rule="nonzero"/></svg>
+  </button>
+  <div class="container">
+    <div class="sticky-signup-message-wrap">
+      <div class="sticky-signup-message">
+        <i><b>Join our mailing list and learn how</b> you can make a difference.</i>
+      </div>
+    </div>
+    <div class="sticky-signup-form">
+      <!-- <script type="text/javascript" src="https://d3rse9xjbp8270.cloudfront.net/at.js" crossorigin="anonymous"></script> -->
+      <div class="ngp-form"
+        data-form-url="https://secure.everyaction.com/v1/Forms/wIlj85cxlEKr_mKY38VK0g2"
+        data-fastaction-endpoint="https://fastaction.ngpvan.com"
+        data-inline-errors="true"
+        data-fastaction-nologin="true"
+        data-databag-endpoint="https://profile.ngpvan.com"
+        data-databag="everybody"
+        data-mobile-autofocus="false">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function ($) {
+    $(function() {
+
+      // Load jStorage if needed
+      if (typeof $.jStorage === 'undefined') {
+        $('head').append('<script src="https://cdnjs.cloudflare.com/ajax/libs/jStorage/0.4.12/jstorage.min.js"><//script>');
+      }
+
+      // Load EveryAction JS if needed
+      // - Checks to see if a form has been embedded
+      // - Since Sticky Signup doesn't show for 4s we can wait a bit to make sure any forms have loaded
+      setTimeout(function() {
+        if (!$('[id^="NVSignupForm"]').length) {
+          $('.sticky-signup-form').prepend('<script type="text/javascript" src="https://d3rse9xjbp8270.cloudfront.net/at.js" crossorigin="anonymous"><//script>');
+        }
+      }, 3000);
+
+      // Sticky Signup
+      // Specify when Sticky Signup should show/hide (in ms)
+      var stickyShowDelay = 4000;
+      var stickyHideDelay = 10000; // Only occurs after form submission
+
+      // Cookie(s)
+      var stickyCookieName = "sticky-signup";
+      var stickyCookieValue = "sticky-signup-shown";
+
+      var stickyCookieVar = $.jStorage.get(stickyCookieName);
+
+      // Current Page URL
+      // - For event tracking
+      var currentPageURL = window.location.href;
+
+      // Show Sticky Signup
+      // - First check if user has already submitted form
+      if (stickyCookieVar == null) {
+        setTimeout(function() {
+          // Add class to show form through CSS
+          $('.sticky-signup').addClass('is-open');
+
+          // Send event that form was shown
+          dataLayer.push({
+            'event': 'sticky_signup',
+            'event_category': 'Default',
+            'event_action': 'Shown'
+          });
+
+          // Only show signup up to twice a day.
+          $.jStorage.set(stickyCookieName, stickyCookieValue, { TTL: 43200000 }) // in ms (12 hours)
+
+        }, stickyShowDelay); // Time Delayed - Set variable above.
+      }
+
+      // Close Button
+      $('.js-close-signup').on('click', function() {
+        // Remove class and hides through CSS
+        $('.sticky-signup').removeClass('is-open');
+
+        // Send event that form was closed
+        dataLayer.push({
+          'event': 'sticky_signup',
+          'event_category': 'Default',
+          'event_action': 'Closed'
+        });
+
+        // Don't show the sign up again for awhile if users click close button.
+        $.jStorage.set(stickyCookieName, stickyCookieValue, { TTL: 86400000 }); // 24 hours
+      });
+      
+      // Successful Form Submission
+      // - formSubmitted event is specified in EA form confirmation message
+      $('.sticky-signup').on('formSubmitted', function() {
+
+        // Send event that form was submitted
+        dataLayer.push({
+          'event': 'sticky_signup',
+          'event_category': 'Default',
+          'event_action': 'Submitted'
+        });
+
+        // Set cookie up for the same
+        $.jStorage.set(stickyCookieName, stickyCookieValue, { TTL: 31536000000 }); // 365 days
+
+        // Hide Sticky Signup Automatically
+        setTimeout(function() {
+          $('.sticky-signup').removeClass('is-open');
+        }, stickyHideDelay); // Time Delayed - Set variable above
+      });
+
+      // Override EA NVTag Page Scrolling
+      // - Track scroll position to override NVTag's scrolling on submit click/errors
+      var scrollY = 0;
+
+      $(window).scroll(function (event) {
+        scrollY = $(window).scrollTop();
+      });
+
+      // When anything within sticky-signup changes this will ensure the scroll position stays the same.
+      $('.sticky-signup').bind('DOMSubtreeModified', function(){
+        $('html, body').scrollTop(scrollY);
+      });
+
+    });
+  })(jQuery);
+</script>  </div>
+</div>
+<div id="block-block-34"
+     class="block block-block odd">
+
+      
+  <div class="content">
+    <!-- Code goes here. -->  </div>
+</div>
+<div id="block-block-22"
+     class="block block-block even">
+
+      
+  <div class="content">
+    <!-- code goes here -->  </div>
+</div>
+<div id="block-block-17"
+     class="block block-block odd">
+
+      
+  <div class="content">
+    <div><a href="/"><div id="mobile-logo">&nbsp;</div></a></div><!--make sure the a tag is around the mobile logo div, not the other way around-->
+
+
+<style>
+.subscribe__wrapper {
+margin-top: 30px;
+}
+body.front .subscribe__wrapper {
+margin-top: 0px;
+}
+#block-menu-block-1.menu__main .links .menu-attach-block-wrapper .views-field-nothing a span, #block-menu-block-1.menu__main .menu .menu-attach-block-wrapper .views-field-nothing a span {
+width:50%;
+}
+ body.leadership .hero-title-wrap h1 { color: #ffffff;} 
+
+body.crs-regional-offices .view-us-partners-person-list span.person-title {
+	    word-break: break-word;
+}
+</style>  </div>
+</div>
+<div id="block-menu-block-3"
+     class="block block-menu-block menu__secondary even" role="navigation">
+
+      
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-3 menu-name-menu-secondary-top-navigation parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-891 menu-press-room level-1"><a href="/press-room" class="menu__link level-1">Press Room</a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-890 menu-research--publications level-1"><a href="/our-work-overseas/research-publications" title="" class="menu__link level-1">Research & Publications</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2245 menu-our-catholic-values level-1"><a href="/media-center/crs-upholds-catholic-teaching-and-values" class="menu__link level-1">Our Catholic Values</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-893 menu-my-crs-login level-1"><a href="https://my.crs.org/Views/Login/Login.cfm" class="menu__link level-1">My CRS (login)</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-892 menu-crsespañolorg level-1"><a href="https://www.crsespanol.org/" class="menu__link level-1">CRSEspañol.org</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="block-block-7" class="block block-block header__donate odd">
+
+      <div id="mobile-controls" class="clearfix">
+    <span class="mobile-control-search mobile-control"></span>
+    <span class="mobile-control-menu mobile-control"></span>
+  </div>
+  <div class="content">
+    <p><a href="https://support.crs.org/donate/give-where-needed?ms=agicrs2124abt00but00">Donate Now</a></p>
+<script>
+<!--//--><![CDATA[// ><!--
+
+jQuery(document).ready(function() {
+console.log('load this');
+  jQuery('.view.view-prayer-resources.view-display-id-block_3 li:last-of-type a').attr('href', 'https://www.crs.org/sites/default/files/usops-resources/crs-climate_prayer_service-eng_0.pdf');
+  jQuery('.view.view-featured-research-pubs.view-display-id-block_1 .views-row-3 a').attr('href', 'https://www.crs.org/sites/default/files/usops-resources/crs-climate_prayer_service-eng_0.pdf');
+  jQuery('.view.view-featured-research-pubs.view-display-id-block_1 .views-row-4 a').attr('href', 'https://www.crs.org/sites/default/files/rice-bowl-2024-online-calendar-eng.pdf');
+});
+
+//--><!]]>
+</script>
+<style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.view.view-prayer-resources.view-display-id-block_3 li:last-of-type img {
+    height: 100%;
+    max-height: 336px;
+    object-fit: cover;
+    width: 100%;
+}
+.view-featured-research-pubs.view-display-id-block_1.tiles--featured-publication .views-row-3 .field-name-field-usops-type {
+    display: none;
+}
+
+/*--><!]]>*/
+</style>
+  </div>
+</div>
+<div id="block-menu-block-1"
+     class="block block-menu-block menu__main last even" role="navigation">
+
+      
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf is-active first leaf active menu-mlid-218 menu-home level-1 no-attached-block"><a href="/" class="menu__link level-1 active">Home<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded expanded menu-mlid-936 menu-ways-to-give level-1 no-attached-block"><a href="/ways-to-give" class="menu__link level-1">Ways to Give<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-2 no-attached-block"><a href="/ways-to-give" class="menu__link level-2">Ways to Give<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf first leaf menu-mlid-2019 menu-where-its-needed-most level-2 no-attached-block"><a href="https://support.crs.org/donate/help-where-its-needed-most?ms=agicrs021910500nav00" class="menu__link level-2">Where It's Needed Most<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2025 menu-emergency-campaigns level-2 no-attached-block"><a href="/ways-to-give-emergency" class="menu__link level-2">Emergency Campaigns<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2021 menu-monthly-giving level-2 no-attached-block"><a href="https://support.crs.org/donate/crs-give-monthly?ms=agicrs0223fif00nav00" class="menu__link level-2">Monthly Giving<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2427 menu-my-crs-login level-2 no-attached-block"><a href="https://my.crs.org/Views/Login/Login.cfm" class="menu__link level-2">My CRS (login)<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-2026 menu-legacy--planned-gifts level-2 no-attached-block"><a href="/ways-to-give/more-ways-to-give/legacy-and-planned-gifts" class="menu__link level-2">Legacy & Planned Gifts<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3557 menu-donate-to-crs-rice-bowl level-2 no-attached-block"><a href="https://support.crs.org/donate/change-life-lent-0?ms=ORBCRS0219rbl00nav00" class="menu__link level-2">Donate to CRS Rice Bowl<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded expanded menu-mlid-2020 menu-more-ways-to-give level-2 no-attached-block"><a href="/ways-to-give#all-ways-to-give" class="menu__link level-2">More Ways to Give<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/ways-to-give#all-ways-to-give" class="menu__link level-3">More Ways to Give<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf first leaf menu-mlid-2452 menu-make-a-one-time-donation level-3 no-attached-block"><a href="https://support.crs.org/donate/help-where-its-needed-most?ms=agicrs021910500nav00" class="menu__link level-3">Make a One-Time Donation<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1975 menu-fundraise-for-crs level-3 no-attached-block"><a href="http://crs.donordrive.com/index.cfm" class="menu__link level-3">Fundraise for CRS<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2024 menu-gift-catalog level-3 no-attached-block"><a href="http://gifts.crs.org/" class="menu__link level-3">Gift Catalog<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1977 menu-foundation-and-corporate-partnerships level-3 no-attached-block"><a href="/ways-to-give/foundation-and-corporate-partnerships" class="menu__link level-3">Foundation and Corporate Partnerships<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent last leaf has-children menu-mlid-1962 menu-other-ways-to-give level-3 no-attached-block"><a href="/ways-to-give/other-ways-give" class="menu__link level-3">Other Ways to Give<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-2451 menu-donate-by-phone-or-mail level-2 no-attached-block"><a href="http://www.crs.org/ways-to-give#phone-or-mail" class="menu__link level-2">Donate by Phone or Mail<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3602 menu-featured-parent-wtg level-2 with-attached-block"><a href="/ways-to-give" class="menu__link featureblock-parent-hide level-2">featured-parent-wtg<span class="crs-menu-link-helper"></span></a><div class="menu-attach-block-wrapper orientation-vertical">
+	<div id="block-views-megamenu-ways-to-give-block"
+     class="block block-views even">
+
+              <span class="block__title block-title">Featured</span>
+        
+  <div class="content">
+    <div class="view view-megamenu-ways-to-give view-id-megamenu_ways_to_give view-display-id-block view-dom-id-2873b939d54b4a7ea97ec0cf90a4bd6c">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><a href="https://gifts.crs.org/?ms=agicrs0223gic00fdd00" target="_blank"><img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/mega_menu_icon/public/tile-images/car2023090376.jpg?itok=nYGwkn3w" width="60" height="45" alt="" /><span>Shop the Gift of Hope Catalog</span></a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><a href="https://www.crs.org/ways-to-give/more-ways-to-give/legacy-and-planned-gifts/make-an-impact-now/donor-advised-funds" target="_blank"><img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/mega_menu_icon/public/tls201620499.jpg?itok=gofxYskM" width="60" height="40" alt="" /><span>Donor Advised Funds</span></a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+</div>
+</li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-638 menu-get-involved level-1 no-attached-block"><a href="/get-involved" class="menu__link level-1">Get Involved<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-2 no-attached-block"><a href="/get-involved" class="menu__link level-2">Get Involved<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded first expanded menu-mlid-3821 menu-campaigns level-2 no-attached-block"><a href="/get-involved/campaigns" class="menu__link level-2">Campaigns<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/get-involved/campaigns" class="menu__link level-3">Campaigns<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent first leaf has-children menu-mlid-4293 menu-action-center level-3 no-attached-block"><a href="/get-involved/campaigns/action-center" class="menu__link level-3">Action Center<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-4290 menu-climate-change level-3 no-attached-block"><a href="/get-involved/campaigns/climate-change" class="menu__link level-3">Climate Change<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-4291 menu-hunger level-3 no-attached-block"><a href="/get-involved/campaigns/hunger" class="menu__link level-3">Hunger<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-3974 menu-chapters-and-clubs level-2 no-attached-block"><a href="/get-involved/chapters-clubs" class="menu__link level-2">Chapters and Clubs<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3981 menu-crs-church-engagement level-2 no-attached-block"><a href="/get-involved/crs-church-engagement" class="menu__link level-2">CRS Church Engagement<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-1560 menu-resource-center level-2 no-attached-block"><a href="/get-involved/resource-center" class="menu__link level-2">Resource Center<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded expanded menu-mlid-2077 menu-advocate level-2 no-attached-block"><a href="/get-involved/advocate-poor" class="menu__link level-2">Advocate<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/get-involved/advocate-poor" class="menu__link level-3">Advocate<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent first last leaf has-children menu-mlid-2078 menu-public-policy level-3 no-attached-block"><a href="/get-involved/advocate-poor/public-policy" class="menu__link level-3">Public Policy<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-1976 menu-pray level-2 no-attached-block"><a href="/get-involved/prayer-resources" class="menu__link level-2">Pray<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/get-involved/prayer-resources" class="menu__link level-3">Pray<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf first leaf menu-mlid-3035 menu-light-a-virtual-votive- level-3 no-attached-block"><a href="http://prayers.crs.org/" class="menu__link level-3">Light a Virtual Votive <span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2422 menu-download-your-free-catholic-prayers-book level-3 no-attached-block"><a href="https://support.crs.org/form/traditional-catholic-prayers?ms=agicrs0221acq00gen01" class="menu__link level-3">Download Your FREE Catholic Prayers Book<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2926 menu-download-your-free-21-day-prayer-book level-3 no-attached-block"><a href="https://support.crs.org/form/catholic-prayer-book-free-download?ms=AGICRS0219deb00get00" title="Our Current Prayer" class="menu__link level-3">Download Your FREE 21-Day Prayer Book<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-4664 menu-our-current-prayer level-3 no-attached-block"><a href="/stories/our-current-prayer" class="menu__link level-3">Our Current Prayer<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-2088 menu-participate level-2 no-attached-block"><a href="/get-involved/participate" class="menu__link level-2">Participate<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/get-involved/participate" class="menu__link level-3">Participate<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf first leaf menu-mlid-2446 menu-invite-a-speaker level-3 no-attached-block"><a href="/get-involved/participate/crs-clergy-outreach/global-fellows/invite-speaker" class="menu__link level-3">Invite a Speaker<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent last leaf has-children menu-mlid-3641 menu-us-partners level-3 no-attached-block"><a href="/get-involved/participate/us-partners" class="menu__link level-3">U.S. Partners<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3603 menu-featured-parent-gi level-2 with-attached-block"><a href="/get-involved" class="menu__link featureblock-parent-hide level-2">featured-parent-gi<span class="crs-menu-link-helper"></span></a><div class="menu-attach-block-wrapper orientation-vertical">
+	<div id="block-views-megamenu-initiatives-block"
+     class="block block-views odd">
+
+              <span class="block__title block-title">Featured</span>
+        
+  <div class="content">
+    <div class="view view-megamenu-initiatives view-id-megamenu_initiatives view-display-id-block view-dom-id-0af0a5655ab7ad963b74eb8bf14675dc">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><a href="https://www.crs.org/get-involved/campaigns/climate-change" target="_blank"><span>Climate Change</span></a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><a href="https://www.crs.org/get-involved/campaigns/hunger" target="_blank"><span>Hunger</span></a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+</div>
+</li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-639 menu-our-work-overseas level-1 no-attached-block"><a href="/our-work-overseas" class="menu__link level-1">Our Work Overseas<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-2 no-attached-block"><a href="/our-work-overseas" class="menu__link level-2">Our Work Overseas<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded first expanded menu-mlid-2001 menu-programming-areas level-2 no-attached-block"><a href="/our-work-overseas" class="menu__link level-2">Programming Areas<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/our-work-overseas" class="menu__link level-3">Programming Areas<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent first leaf has-children menu-mlid-2003 menu-agriculture level-3 no-attached-block"><a href="/our-work-overseas/program-areas/agriculture" class="menu__link level-3">Agriculture<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-2005 menu-education level-3 no-attached-block"><a href="/our-work-overseas/program-areas/education" class="menu__link level-3">Education<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2002 menu-emergency-response--recovery level-3 no-attached-block"><a href="/our-work-overseas/program-areas/emergency-response-and-recovery" class="menu__link level-3">Emergency Response & Recovery<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-2004 menu-health level-3 no-attached-block"><a href="/our-work-overseas/program-areas/health" class="menu__link level-3">Health<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3941 menu-ict4d level-3 no-attached-block"><a href="/our-work-overseas/program-areas/ict4d" class="menu__link level-3">ICT4D<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-2008 menu-justice--peacebuilding level-3 no-attached-block"><a href="/our-work-overseas/program-areas/justice-and-peacebuilding" class="menu__link level-3">Justice & Peacebuilding<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-2006 menu-microfinance level-3 no-attached-block"><a href="/our-work-overseas/program-areas/microfinance" class="menu__link level-3">Microfinance<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-3735 menu-monitoring-evaluation-accountability-and-learning level-3 no-attached-block"><a href="/our-work-overseas/program-areas/monitoring-evaluation-accountability-and-learning" class="menu__link level-3">Monitoring Evaluation Accountability and Learning<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-2009 menu-partnership--capacity-strengthening level-3 no-attached-block"><a href="/our-work-overseas/program-areas/partnership-and-capacity-strengthening" class="menu__link level-3">Partnership & Capacity Strengthening<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-4319 menu-supply-chain-management level-3 no-attached-block"><a href="/our-work-overseas/program-areas/supply-chain-management" class="menu__link level-3">Supply Chain Management<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-2007 menu-water-security level-3 no-attached-block"><a href="/our-work-overseas/program-areas/water-security" class="menu__link level-3">Water Security<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3585 menu-youth level-3 no-attached-block"><a href="/our-work-overseas/program-areas/youth" class="menu__link level-3">Youth<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-1952 menu-how-we-work level-2 no-attached-block"><a href="/our-work-overseas/how-we-work" class="menu__link level-2">How We Work<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1955 menu-where-we-work level-2 no-attached-block"><a href="/our-work-overseas/where-we-work" class="menu__link level-2">Where We Work<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1559 menu-research--publications level-2 no-attached-block"><a href="/our-work-overseas/research-publications" class="menu__link level-2">Research & Publications<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded expanded menu-mlid-1947 menu-partnering-with-crs level-2 no-attached-block"><a href="/our-work-overseas/partner-crs" class="menu__link level-2">Partnering with CRS<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/our-work-overseas/partner-crs" class="menu__link level-3">Partnering with CRS<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent first leaf has-children menu-mlid-1949 menu-private-donors-and-partnerships level-3 no-attached-block"><a href="/our-work-overseas/partnering-crs/private-donors-and-partnerships" class="menu__link level-3">Private Donors and Partnerships<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1950 menu-local-partners level-3 no-attached-block"><a href="/our-work-overseas/partnering-crs/local-partners" class="menu__link level-3">Local Partners<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1951 menu-university-partners level-3 no-attached-block"><a href="/our-work-overseas/partnering-crs/university-partners" class="menu__link level-3">University Partners<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1948 menu-public-donors level-3 no-attached-block"><a href="/our-work-overseas/partnering-crs/public-donors" class="menu__link level-3">Public Donors<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-1911 menu-stories level-2 no-attached-block"><a href="/stories" class="menu__link level-2">Stories<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3737 menu-podcasts level-2 no-attached-block"><a href="https://impact.crs.org/podcasts/" class="menu__link level-2">Podcasts<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3604 menu-featured-parent-ows level-2 with-attached-block"><a href="/our-work-overseas" class="menu__link featureblock-parent-hide level-2">featured-parent-ows<span class="crs-menu-link-helper"></span></a><div class="menu-attach-block-wrapper orientation-vertical">
+	<div id="block-views-efd4f1f838d712185facea616d13c189"
+     class="block block-views even">
+
+              <span class="block__title block-title">Featured</span>
+        
+  <div class="content">
+    <div class="view view-megamenu-featured-publications view-id-megamenu_featured_publications view-display-id-block view-dom-id-f96f7681b6b312d3962e911f2ed931a7">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><a href="/our-work-overseas/research-publications/engagement-government-case-studies-series"><img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/mega_menu_icon/public/piqa_publications/covers/thumbnail-egg_case_studies.jpg?itok=blTO3CLq" width="60" height="78" alt="" /><span>Engagement Government - Case Studies Series</span></a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><a href="/our-work-overseas/research-publications/engaging-government"><img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/mega_menu_icon/public/piqa_publications/covers/thumbnail_egg.jpg?itok=BayiBIdR" width="60" height="78" alt="" /><span>Engaging Government</span></a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+</div>
+</li>
+<li class="menu__item is-leaf last leaf menu-mlid-3685 menu-capacity-overview level-2 no-attached-block"><a href="/our-work-overseas/capacity-overview" class="menu__link level-2">Capacity Overview<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-expanded last expanded menu-mlid-941 menu-about-us level-1 no-attached-block"><a href="/about" class="menu__link level-1">About Us<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-2 no-attached-block"><a href="/about" class="menu__link level-2">About Us<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf first leaf menu-mlid-1298 menu-mission-statement level-2 no-attached-block"><a href="/about/mission-statement" class="menu__link level-2">Mission Statement<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-768 menu-guiding-principles level-2 no-attached-block"><a href="/about/guiding-principles" class="menu__link level-2">Guiding Principles<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1202 menu-catholic-identity level-2 no-attached-block"><a href="/about/catholic-identity" class="menu__link level-2">Catholic Identity<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1299 menu-crs-history level-2 no-attached-block"><a href="/about/crs-history" class="menu__link level-2">CRS History<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-1919 menu-agency-strategy level-2 no-attached-block"><a href="/about/agency-strategy" class="menu__link level-2">Agency Strategy<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded expanded menu-mlid-3224 menu-leadership level-2 no-attached-block"><a href="/about/leadership" class="menu__link level-2">Leadership<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/about/leadership" class="menu__link level-3">Leadership<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf first leaf menu-mlid-1304 level-3 menu-sean-callahan level-3 no-attached-block"><a href="/about/leadership/sean-callahan" title="President and CEO" class="menu__link level-3">Sean Callahan<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1306 menu-annemarie-reilly level-3 no-attached-block"><a href="/about/leadership/annemarie-reilly" title="Chief of Staff to the President/CEO and Executive Vice President, Strategy and Organizational Development" class="menu__link level-3">Annemarie Reilly<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3701 menu-james-bond level-3 no-attached-block"><a href="/leadership/james-bond" title="Executive Vice President, Chief Financial Officer" class="menu__link level-3">James Bond<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1309 menu-mark-melia level-3 no-attached-block"><a href="/about/leadership/mark-melia" title="Executive Vice President, Charitable Giving" class="menu__link level-3">Mark Melia<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3767 menu-bill-o’keefe level-3 no-attached-block"><a href="/leadership/bill-o%E2%80%99keefe" class="menu__link level-3">Bill O’Keefe<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3948 menu-candace-osunsade level-3 no-attached-block"><a href="/leadership/candace-osunsade" class="menu__link level-3">Candace Osunsade<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3739 menu-shannon-senefeld level-3 no-attached-block"><a href="/about/leadership/shannon-senefeld" title="Senior Vice President, Overseas Operations" class="menu__link level-3">Shannon Senefeld<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1310 menu-schuyler-thorup level-3 no-attached-block"><a href="/about/leadership/schuyler-thorup" title="Executive Vice President, Overseas Operations" class="menu__link level-3">Schuyler Thorup<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3226 menu-board-of-directors level-3 no-attached-block"><a href="/about/leadership/board-directors" class="menu__link level-3">Board of Directors<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2697 menu-crs-foundation-board level-3 no-attached-block"><a href="/about/leadership/crs-foundation-board" class="menu__link level-3">CRS Foundation Board<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-1300 menu-endorsements level-2 no-attached-block"><a href="/about/endorsements" class="menu__link level-2">Endorsements<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded expanded menu-mlid-1779 menu-financial-reports level-2 no-attached-block"><a href="/about/financial-reports" class="menu__link level-2">Financial Reports<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/about/financial-reports" class="menu__link level-3">Financial Reports<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf first leaf menu-mlid-2091 menu-pro-forma-irs-form-990 level-3 no-attached-block"><a href="/about/financial-reports/pro-forma-irs-form-990" class="menu__link level-3">Pro Forma IRS Form 990<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1944 menu-our-pledge-to-donors level-3 no-attached-block"><a href="/about/financial-reports/our-pledge-donors" class="menu__link level-3">Our Pledge to Donors<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1945 menu-accountability level-3 no-attached-block"><a href="/about/financial-reports/accountability" class="menu__link level-3">Accountability<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-3769 menu-risk-management--compliance level-2 no-attached-block"><a href="/about/risk-management-compliance" class="menu__link level-2">Risk Management & Compliance<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-expanded expanded menu-mlid-1883 menu-careers-at-crs level-2 no-attached-block"><a href="/about/careers" class="menu__link level-2">Careers at CRS<span class="crs-menu-link-helper"></span></a><ul class="menu"><li class="menu__item crs-parent-clone level-3 no-attached-block"><a href="/about/careers" class="menu__link level-3">Careers at CRS<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf first leaf menu-mlid-2000 menu-current-openings level-3 no-attached-block"><a href="https://eipn.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1" class="menu__link level-3">Current Openings<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1913 menu-benefits level-3 no-attached-block"><a href="/about/careers/benefits" class="menu__link level-3">Benefits<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2263 menu-volunteer-opportunities level-3 no-attached-block"><a href="/about/careers/volunteer-opportunities" class="menu__link level-3">Volunteer Opportunities<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-3975 menu-aspire-program level-3 no-attached-block"><a href="/about/careers/aspire-program" class="menu__link level-3">Aspire Program<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3937 menu-fellowships level-3 no-attached-block"><a href="/about/careers/fellowships" class="menu__link level-3">Fellowships<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3951 menu-internships level-3 no-attached-block"><a href="/about/careers/internships" class="menu__link level-3">Internships<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf is-parent last leaf has-children menu-mlid-3949 menu-junior-professionals level-3 no-attached-block"><a href="/about/careers/junior-professionals" class="menu__link level-3">Junior Professionals<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-1939 menu-contact-crs level-2 no-attached-block"><a href="/about/contact-crs" class="menu__link level-2">Contact CRS<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2813 menu-adding-crs-to-your-email-address-book level-2 no-attached-block"><a href="/about/adding-crs-your-email-address-book" class="menu__link level-2">Adding CRS to your Email Address Book<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3703 menu-safeguarding level-2 no-attached-block"><a href="/about/safeguarding" class="menu__link level-2">Safeguarding<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3784 menu-bid-opportunities level-2 no-attached-block"><a href="/about/bid-opportunity" class="menu__link level-2">Bid Opportunities<span class="crs-menu-link-helper"></span></a></li>
+<li class="menu__item is-collapsed last collapsed menu-mlid-3982 menu-privacy-policy level-2 no-attached-block"><a href="/privacy-policy" class="menu__link level-2">Privacy Policy<span class="crs-menu-link-helper"></span></a></li>
+</ul></li>
+</ul></div>
+  </div>
+</div>
+  </div>
+      <div id="search-icon-wrap">
+        <div id="search__icon"></div>
+      </div>
+      <a href="#block-menu-block-1" class="header__menu-trigger">Menu</a>
+  </div>
+  </header>
+        <div class="region region-preface">
+    <div id="block-views-exp-sidewide-search-page"
+     class="block block-views sitewide-search-block first last odd">
+
+      
+  <div class="content">
+    <form action="/solr-search" method="get" id="views-exposed-form-sidewide-search-page" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="sitewide-search-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                  <label for="sitewide-search">
+            Search keyword...          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-search">
+ <input type="text" id="sitewide-search" name="search" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <button class="btn form-submit btn btn-bold-blue" type="submit" id="edit-submit-sidewide-search" name="">Search</button>    </div>
+      </div>
+</div>
+</div></form>  </div>
+</div>
+  </div>
+    <div id="main">
+          <div id="content-first" class="l-content-first">
+              </div>
+        <div id="content" role="main" class="l-content">
+                          <a id="main-content"></a>
+                                                
+
+
+<div class="panel-display panel-1col clearfix" >
+
+      <div class="panel-panel content__hero full-width">
+      <div class="panel-pane pane-node l-width-1280 l-panel-hero"  >
+  
+      
+  
+  
+<div id="hero" class="l-hero-wrap node-id-2557 bnr-txt-block-left-top bnr-txt-align-left bnr-btn-style-bright-blue bnr-button-left  bnr-subtitle-normal bnr-text-small bnr-txtblock-wide bnr-bodytxt-wide bnr-stripe-brite-greenbnr-callout-button ">
+
+  <div class="l-hero-wrap-inner hs-full-height">
+
+    <div class="hero-text-wrap">
+      <div class="hero-text-wrap-inner">
+
+        <div class="l-hero-text">
+
+        <span class="hero-title-wrap">
+          
+                          <h1 class="banner-title">Send love this Mother’s Day with gifts of hope</h1>
+            
+                          <h3 class="banner-subtitle">In honor of the mother in your life, send a gift to someone in need.</h3>
+            
+                  </span><!-- // hero-title-wrap -->
+
+                      <span class="hero-body-text">
+              <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+<!--/*--><![CDATA[/* ><!--*/
+@media (min-width: 48em) {
+.bnr-txtblock-wide .l-hero-wrap-inner.hs-full-height .l-hero-text {
+width: 654px;
+}
+}
+
+/*--><!]]]]><![CDATA[>*/
+
+/*--><!]]>*/...</style>
+            </span>
+          
+        </div><!--// l-hero-text -->
+
+                  <span class="callout">
+            <a href="https://gifts.crs.org/mothers-day?ms=agicrs0224gic00her00">Shop Now</a>          </span>
+        
+        
+      </div><!-- // hero-text-wrap-inner-->
+    </div><!-- // hero-text-wrap -->
+
+
+    <div class="l-hero-image">
+              <img src="/sites/default/files/styles/hero/public/landing-page-banners/hero_440_mothersday_els2019063970_21cg-492750_1.jpg?itok=Eh61e2Ee" alt="Hero Image" />
+          </div>
+
+          <div class="image-credit-wrap">
+        <div class="image-credit caption-white">
+          <div class="field field-name-field-image-credit field-type-text field-label-hidden"><div >Photo by Oscar Leiva/Silverlight for CRS</div></div>        </div>
+      </div>
+    
+  </div>
+  <!-- // l-hero-wrap-inner -->
+</div><!-- // hero-wrap-->
+
+
+  
+  </div>
+    </div>
+  
+  
+      <div class="panel-panel full__width full-width--first">
+      <div class="panel-pane pane-custom pane-3 l-site-tagline"  >
+  
+      
+  
+  <p class="taglinetxt">putting our faith into action to help the world’s poorest create lasting change</p>
+
+<p><a class="site-tagline" href="/get-involved/prayer-resources">Join Us in Prayer ›</a></p>
+
+  
+  </div>
+    </div>
+  
+      <div class="panel-panel content__summary__second">
+      <div class="panel-pane pane-views pane-home-tiles-queue"  >
+  
+      
+  
+  <div class="view view-home-tiles-queue view-id-home_tiles_queue view-display-id-block_1 home-featured-tile view-dom-id-8ca5d23f03ba33e4695b6f76d7601d59">
+        
+  
+  
+      <div class="view-content">
+        <div class="home-tiles-row">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><span class="l-featured-text-wrap">
+  <span class="featured-text-inner">
+    <h2>
+      <a href="https://support.crs.org/join/joyful-mysteries-rosary?ms=mamcrs0224m2c00fea19" target="_self">
+        Honor Our Blessed Mother using this free resource 
+      </a>
+    </h2>
+      <span class="tile-body"><div class="field field-name-body field-type-text-with-summary field-label-hidden">Grow closer to Mary and our global family praying the Joyful Mysteries. </div></span>
+    </a>
+  </span>
+</span>
+<span class="l-featured-image-wrap">
+  <div class="field field-name-field-image field-type-image field-label-hidden">
+    <div>
+      <img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/featured_story_tile/public/featured-blocks/joyful_mysteries_1280x440.jpg?itok=mgg6sfP6" width="400" height="222" alt="joyful mysteries" />
+    </div>
+  </div>
+</span></span>  </div>  </div>
+  <div class="home-tiles-row">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><span class="l-featured-text-wrap">
+  <span class="featured-text-inner">
+    <h2>
+      <a href="https://support.crs.org/donate/monthly-only-form?ms=agicrs0224fif00fea01" target="_self">
+        As little as 40¢ can make a difference
+      </a>
+    </h2>
+      <span class="tile-body"><div class="field field-name-body field-type-text-with-summary field-label-hidden">Live out your faith with a monthly gift for families around the world.</div></span>
+    </a>
+  </span>
+</span>
+<span class="l-featured-image-wrap">
+  <div class="field field-name-field-image field-type-image field-label-hidden">
+    <div>
+      <img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/featured_story_tile/public/story-images/pope_francis_waves_facing_camera_vat2014101184_3.jpg?itok=jSO0J6N1" width="400" height="222" alt="Pope Francis waves facing camera" />
+    </div>
+  </div>
+</span></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+    </div>
+  
+  
+  
+      <div class="panel-panel content__featured featured-first">
+      <div class="panel-pane pane-custom-title l-our-work-title"  >
+  
+      
+  
+  <h2 class="pane-title gray-centered"><span>our work overseas</span></h2>
+  
+  </div>
+<div class="panel-pane pane-custom pane-1 l-program-tagline"  >
+  
+      
+  
+  <p>We work with organizations around the world to help poor and vulnerable people overcome emergencies, earn a living through agriculture and access affordable health care</p>
+  
+  </div>
+<div class="panel-pane pane-block pane-views-program-areas-block-5 l-program-areas pane-views"  >
+  
+      
+  
+  <div class="view view-program-areas view-id-program_areas view-display-id-block_5 programs-tile-view view-dom-id-ca07d2486a29f1b2c704521290901c40">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row-odd views-row-first programs-tile-row">
+    
+
+<div class="programs-tag agriculture">
+  <a href="/our-work-overseas/program-areas/agriculture">
+          <img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/program_tile/public/tile-bg/farmer_in_field_in_malawi_maw201725469.jpg?itok=Bt96dwL_" width="328" height="208" alt="" />      <div class="l-title-icon-wrap">
+           <h2 class="programs-title">Agriculture</h2>
+       <span class="programs-icon icon-agriculture"></span>
+          <p class="term-description">We help farmers organize into groups and build sustainable agro-enterprises.</p>      </div>
+
+  </a>
+</div>
+  </div>
+  <div class="views-row-even programs-tile-row">
+    
+
+<div class="programs-tag education">
+  <a href="/our-work-overseas/program-areas/education">
+          <img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/program_tile/public/tile-bg/edu.jpg?itok=TC0_trbL" width="328" height="208" alt="" />      <div class="l-title-icon-wrap">
+           <h2 class="programs-title">Education</h2>
+       <span class="programs-icon icon-education"></span>
+          <p class="term-description">We promote access to high quality education, especially for marginalized kids.</p>      </div>
+
+  </a>
+</div>
+  </div>
+  <div class="views-row-odd views-row-last programs-tile-row">
+    
+
+<div class="programs-tag emergency-response-and-recovery">
+  <a href="/our-work-overseas/program-areas/emergency-response-and-recovery">
+          <img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/program_tile/public/tile-bg/people-q-c-328-212-3.jpg?itok=kWbPzRwp" width="328" height="208" alt="" />      <div class="l-title-icon-wrap">
+           <h2 class="programs-title">Emergency Response and Recovery</h2>
+       <span class="programs-icon icon-emergency-response-and-recovery"></span>
+          <p class="term-description">We use vouchers to help people buy what they need and to boost local economies.</p>      </div>
+
+  </a>
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-custom pane-2 l-program-buttons"  >
+  
+      
+  
+  <a class="programs-btn btn-first btn" href="/our-work-overseas/partnering-crs"><em>Looking to partner with CRS?</em>  <span>Learn how ›</span></a>
+<a class="programs-btn btn-second btn" href="/our-work-overseas">See All Programming Areas ›</a>
+  
+  </div>
+<div class="panel-pane pane-node l-donate-form"  >
+  
+      
+  
+  
+       <div class="l-donation-form-wrap nid-2242" style="background-image: url('https://www.crs.org/sites/default/files/hero_440_footsteps_in_faith_leb2020061347_20mk-290668_v2.jpeg')">
+    
+  <div class="l-donation-inner">
+
+          <h2 class="donation-form-title">
+        Turn Dollars Into Change      </h2>
+    
+          <div class="donation-form-body">
+        <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div  property="content:encoded"><p>Bring lasting change to children and their families. Become a regular donor and for just 80 cents a day, you can make a difference!</p>
+</div></div>      </div>
+    
+    <div class="donation-form-wrap">
+      <form action="https://support.crs.org/donate/crs-give-monthly-0" method="get" id="crs-donation-custom-donation-form" accept-charset="UTF-8"><div><div id="edit-amm" class="form-radios"><div class="form-item form-type-radio form-item-amm">
+ <input type="radio" id="edit-amm-24" name="amm" value="24" checked="checked" class="form-radio" />  <label class="option" for="edit-amm-24">$24 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-amm">
+ <input type="radio" id="edit-amm-35" name="amm" value="35" class="form-radio" />  <label class="option" for="edit-amm-35">$35 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-amm">
+ <input type="radio" id="edit-amm-50" name="amm" value="50" class="form-radio" />  <label class="option" for="edit-amm-50">$50 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-amm">
+ <input type="radio" id="edit-amm-" name="amm" value="" class="form-radio" />  <label class="option" for="edit-amm-">Other Amount </label>
+
+</div>
+</div><input type="hidden" name="ms" value="agicrs0223fif00fic00" />
+<div class="submit-wrap"><button type="submit" id="edit-submit" name="op" class="form-submit btn btn-bold-blue">Give Monthly</button></div><a href="https://support.crs.org/donate/help-where-its-needed-most?ms=agicrs0220gea00cpe00">or give one time</a><input type="hidden" name="form_build_id" value="form--jnLc5ec1eQyoLIG8Up2A7_OmVTmZDEoxEdZtA1IPgs" />
+<input type="hidden" name="form_id" value="crs_donation_custom_donation_form" />
+</div></form>
+    </div>
+
+  </div>
+</div>
+
+  
+  </div>
+    </div>
+  
+  
+  
+  <div class="content__main_wrapper clearfix">
+          <div class="panel-panel content__main">
+        <div class="panel-pane pane-custom-title l-get-involved-title"  >
+  
+      
+  
+  <h2 class="pane-title gray-centered"><span>Ways to get involved</span></h2>
+  
+  </div>
+<div class="panel-pane pane-views pane-initiatives l-initiatives col get-inv-featured-initiative"  >
+  
+      
+  
+  <div class="view view-initiatives view-id-initiatives view-display-id-block_1 view-dom-id-9c0e73ba0951192a8755e6bbb1ee1667">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row-odd views-row-first initiatives-row">
+    
+<div class="l-initiatives-wrap bg-image no-icon icolor-lime_green"
+     style="background-image: url('/sites/default/files/styles/initiatives_tile/public/initiative-background/usa2015101856.jpg?itok=d8tb7JG8');">
+
+    <a href="http://www.crsricebowl.org/">
+    
+    <span class="l-initiatives-inner">
+
+              <h2>CRS Rice Bowl</h2>
+
+      
+      <p>
+                  Pray, fast and give to go deeper with Christ and live in solidarity with the world’s poor.
+              </p>
+
+     <p>
+               LEARN MORE ›
+           </p>
+
+    </span>
+
+      </a>
+
+</div>
+  </div>
+  <div class="views-row-even views-row-last initiatives-row">
+    
+<div class="l-initiatives-wrap bg-image no-icon icolor-peach"
+     style="background-image: url('/sites/default/files/styles/initiatives_tile/public/initiative-background/buf201725541.jpg?itok=GpwS9k24');">
+
+    <a href="https://www.crs.org/get-involved/campaigns">
+    
+    <span class="l-initiatives-inner">
+
+              <h2>Our Campaigns</h2>
+
+      
+      <p>
+                  Join our movement and create meaningful change for those most in need.
+              </p>
+
+     <p>
+               Act Now ›
+           </p>
+
+    </span>
+
+      </a>
+
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+      </div>
+    
+    
+    
+  </div>
+  
+      <div class="panel-panel content__featured featured-add">
+      <div class="panel-pane pane-custom-title l-news-heading l-width-960"  >
+  
+      
+  
+  <h2 class="pane-title gray-centered"><span>Latest News</span></h2>
+  
+  </div>
+<div class="panel-pane pane-views pane-news l-news-featured-wrap l-width-960"  >
+  
+      
+  
+  <div class="view view-news view-id-news view-display-id-block_1 view-dom-id-99bbe6d6e7a8dbf68b0529bcf8b647d5">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="l-featured-news-wrap">
+  <div class="l-news-first">
+
+    <a href="/media-center/news-release/crs-warns-life-threatening-food-shortage-gaza-after-report-reveals-risk">
+
+      <span class="featured-txt">Featured Story</span>
+
+      <span class="l-news-content-wrap">
+        <span class="news-date">
+          December 21          , 2023        </span>
+        <h2>CRS Warns of Life-Threatening Food Shortage in Gaza After Report Reveals Risk of Famine</h2>
+                  <p>Report warns entire population of Gaza - about 2.2 million people - in danger of high levels of hunger</p>
+              </span>
+
+      <span class="l-news-image-wrap"><img typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/styles/featured_news_story/public/news-images/thumbnail_jer2023094215.jpg?itok=g6mp7j_i" width="550" height="316" alt="" /></span>
+
+    </a>
+
+  </div>
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-views pane-news l-news-wrap l-width-960"  >
+  
+      
+  
+  <div class="view view-news view-id-news view-display-id-block_2 view-dom-id-ab9605568b3d99268ed8cb5ffe009740">
+        
+  
+  
+      <div class="view-content">
+      <div class="news-wrap">    <ul class="news-list">          <li class="views-row-odd views-row-first news-row">
+<span class="l-news-tile">
+
+    <a href="/media-center/news-release/crs-applauds-congressional-passage-foreign-aid-bill">
+    <span class="news-date">
+      April 24, 2024    </span>
+
+      <h2>CRS Applauds Congressional Passage of Foreign Aid Bill</h2>
+
+              <p><em>Bill includes more than $9 billion for global humanitarian aid</em></p>
+          </a>
+
+</span></li>
+          <li class="views-row-even news-row">
+<span class="l-news-tile">
+
+    <a href="/media-center/news-release/six-months-crs-expands-humanitarian-operations-gaza-calls-immediate-end">
+    <span class="news-date">
+      April 8, 2024    </span>
+
+      <h2>Six Months On, CRS Expands Humanitarian Operations in Gaza; Calls for Immediate End to Violence</h2>
+
+              <p>Additional CRS distribution sites, offices, warehouses established, but more aid needed</p>
+          </a>
+
+</span></li>
+          <li class="views-row-odd views-row-last news-row">
+<span class="l-news-tile">
+
+    <a href="/media-center/news-release/celebrate-easter-your-global-family-through-lenten-alms">
+    <span class="news-date">
+      March 28, 2024    </span>
+
+      <h2>Celebrate Easter with Your Global Family Through Lenten Alms</h2>
+
+              <p>Turn in your CRS Rice Bowls to reduce hunger and poverty worldwide</p>
+          </a>
+
+</span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <a class="all-news" href="/press-room">See all news</a>    </div>
+  
+  
+</div>
+  
+  </div>
+    </div>
+  
+  
+  
+  
+  
+</div>
+          </div>
+
+    
+    
+  </div>
+
+  <div class="footer-wrap">
+          <div class="subscribe__wrapper">
+              </div>
+        
+          <div class="sub-footer__wrapper">
+          <div class="region region-sub-footer">
+    <div id="block-block-5"
+     class="block block-block sub-footer__donation-callout clearfix first odd">
+
+      
+  <div class="content">
+    <a href="/about/financial-reports/accountability" class="sub-footer__why-give"><h3>Why give to CRS?</h3>Learn about our <strong>Accountability</strong></a>
+<a href="https://support.crs.org/donate/help-where-its-needed-most?ms=agicrs021910500fdt00" class="sub-footer__donate-today">Make a <strong>difference</strong><h3>Donate Today</h3></a>
+  </div>
+</div>
+<div id="block-block-2"
+     class="block block-block sub-footer__chart-callout even">
+
+              <h2 class="block__title block-title">2023 Operating Expenses</h2>
+        
+  <div class="content">
+    <div class="media media-element-container media-default"><img alt="94% Programs, 3% Fundraising, Awareness, Management and General Expenses" class="media-element file-default" data-delta="4" height="138" loading="lazy" src="https://www.crs.org/sites/default/files/crs-files/pie-chart-94-eng.svg" typeof="foaf:Image" width="280" /></div>
+  </div>
+</div>
+<div id="block-block-8"
+     class="block block-block sub-footer__recognition-icons last odd">
+
+              <h2 class="block__title block-title">Recognition</h2>
+        
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.footer-logos {
+    margin-left: 40px;
+  }
+  .footer-logos .tl-heading {
+    margin-bottom: 16px;
+    font-family: 'Gotham A', 'Gotham B', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #475593;
+  }
+  .footer-logos .fl-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  .footer-logos .fl-wrapper .logo.bbb {
+    width: 60px;
+    margin: -4px 5px 0 -2px;
+  }
+  .footer-logos .fl-wrapper .logo.forbes {
+    width: 124px;
+  }
+  .footer-logos .fl-wrapper .logo.cw {
+    width: 80px;
+    margin-right: 12px;
+  }
+
+/*--><!]]>*/
+</style>
+<div class="footer-logos">
+	<p class="tl-heading">Trusted by charity rating agencies:</p>
+
+	<div class="fl-wrapper"><a href="https://give.org/charity-reviews/national/Religious/Catholic-Relief-Services-in-Baltimore-md-475" target="_blank"><img alt="Better Business Bureau Accredited Charity" class="logo bbb" src="https://www.crs.org/sites/default/files/logos/2023-AccreditedSeal-WEB-Vertical-Blue.svg" /></a> <a href="https://www.charitywatch.org/ratings-and-metrics/catholic-relief-services/398" target="_blank"><img alt="Charity Watch Top Rated Charity" class="logo cw" src="https://www.crs.org/sites/default/files/charity-watch-top-rated.svg" /></a> <a href="https://www.forbes.com/companies/catholic-relief-services/?sh=3e3ef4b66875" target="_blank"><img alt="Forbes America's Top 100 Charities" class="logo forbes" src="https://www.crs.org/sites/default/files/logos/forbes-top-charities-2022-black.svg" /></a></div>
+</div>
+  </div>
+</div>
+  </div>
+      </div>
+    
+      <footer id="footer" class="region region-footer clearfix">
+    <div id="block-block-6"
+     class="block block-block footer_far first odd">
+
+      
+  <div class="content">
+    <div class="footer-tagline-wrap">
+  <div class="footer-tagline">
+    <div class="svg svg-logo-crs-tagline">
+      <svg height="14" viewbox="0 0 123 14" width="123" xmlns="http://www.w3.org/2000/svg"><g fill="#fff" transform="translate(.1 .09)"><path d="m115.61 13.39 6.41-13.13h-.67l-6.41 13.13z"></path><path d="m113.72 1.94c0 .28-.1.52-.3.71-.2.2-.44.29-.71.29s-.52-.1-.71-.29c-.2-.2-.3-.43-.3-.71s.1-.52.3-.72.43-.3.71-.3.51.1.71.3.3.44.3.72m-.24 0c0-.21-.08-.4-.23-.56s-.33-.24-.55-.24-.39.08-.54.24-.22.35-.22.56.08.4.22.56c.15.16.33.24.54.24s.39-.08.55-.24c.15-.16.23-.34.23-.56m-.64.53v-.19c0-.08-.01-.14-.04-.2-.03-.05-.07-.08-.12-.08h-.07v.47h-.26v-1.08h.42c.11 0 .2.02.25.07.06.04.08.1.08.17v.09c0 .06-.02.11-.05.15s-.07.06-.12.07c.08.04.13.09.16.16s.04.13.04.19v.18zm.02-.74v-.04s0-.06-.03-.09c-.02-.02-.04-.04-.07-.04h-.15v.29h.15s.06-.01.08-.03.02-.05.02-.1"></path><path d="m-0 .28h4.98v1.31h-3.55v1.39h3.12v1.31h-3.12v2.53h-1.43z"></path><path d="m5.76 5.38v-.02c0-1.09.83-1.6 2.02-1.6.5 0 .87.08 1.22.21v-.08c0-.59-.36-.92-1.07-.92-.54 0-.92.1-1.38.27l-.35-1.08c.55-.24 1.09-.4 1.94-.4.78 0 1.34.21 1.69.56.37.37.54.92.54 1.6v2.9h-1.37v-.54c-.35.38-.82.63-1.51.63-.94 0-1.72-.54-1.72-1.53zm3.26-.33v-.25c-.24-.11-.56-.19-.91-.19-.61 0-.98.24-.98.69v.02c0 .38.32.61.77.61.66 0 1.11-.36 1.11-.88z"></path><path d="m11.71 0h1.49v1.26h-1.49zm.04 1.81h1.42v5h-1.42z"></path><path d="m14.83 5.39v-2.37h-.6v-1.21h.6v-1.28h1.42v1.28h1.18v1.21h-1.18v2.14c0 .33.14.49.46.49.26 0 .49-.07.7-.18v1.14c-.3.18-.64.29-1.12.29-.87 0-1.46-.35-1.46-1.5z"></path><path d="m18.56 0h1.42v2.52c.33-.42.75-.8 1.47-.8 1.07 0 1.7.71 1.7 1.86v3.24h-1.42v-2.79c0-.67-.32-1.02-.86-1.02s-.89.35-.89 1.02v2.79h-1.42z"></path><path d="m27.36 0h1.42v3.63l1.66-1.82h1.7l-1.91 1.97 1.97 3.04h-1.64l-1.28-2.05-.5.53v1.52h-1.42z"></path><path d="m32.98 1.81h1.42v.71c.33-.42.75-.8 1.47-.8 1.07 0 1.7.71 1.7 1.86v3.24h-1.42v-2.79c0-.67-.32-1.02-.86-1.02s-.89.35-.89 1.02v2.79h-1.42z"></path><path d="m38.65 4.34v-.02c0-1.44 1.16-2.61 2.72-2.61s2.7 1.15 2.7 2.59v.02c0 1.44-1.16 2.61-2.72 2.61s-2.7-1.15-2.7-2.59zm4.02 0v-.02c0-.74-.53-1.38-1.32-1.38s-1.3.62-1.3 1.36v.02c0 .74.53 1.38 1.32 1.38s1.3-.62 1.3-1.36z"></path><path d="m44.77 1.81h1.44l.8 3.04.94-3.05h1.22l.95 3.06.82-3.04h1.41l-1.56 5.04h-1.28l-.96-3.07-.98 3.07h-1.27l-1.54-5.04z"></path><path d="m52.92 6.15.61-.93c.54.39 1.11.6 1.58.6.41 0 .6-.15.6-.37v-.02c0-.31-.49-.41-1.04-.58-.7-.21-1.49-.53-1.49-1.5v-.02c0-1.02.82-1.59 1.83-1.59.64 0 1.33.21 1.87.58l-.54.98c-.5-.29-.99-.47-1.35-.47s-.52.15-.52.35v.02c0 .28.48.41 1.02.6.7.23 1.51.57 1.51 1.48v.02c0 1.11-.83 1.62-1.91 1.62-.7 0-1.48-.23-2.15-.76z"></path><path d="m60.98 1.81h1.42v.71c.33-.42.75-.8 1.47-.8 1.07 0 1.7.71 1.7 1.86v3.24h-1.42v-2.79c0-.67-.32-1.02-.86-1.02s-.89.35-.89 1.02v2.79h-1.42z"></path><path d="m66.65 4.34v-.02c0-1.44 1.16-2.61 2.72-2.61s2.7 1.15 2.7 2.59v.02c0 1.44-1.16 2.61-2.72 2.61s-2.7-1.15-2.7-2.59zm4.02 0v-.02c0-.74-.53-1.38-1.32-1.38s-1.3.62-1.3 1.36v.02c0 .74.53 1.38 1.32 1.38s1.3-.62 1.3-1.36z"></path><path d="m77.5 6.16v.65h-1.42v-6.81h1.42v2.53c.35-.47.82-.81 1.56-.81 1.17 0 2.28.92 2.28 2.59v.02c0 1.67-1.09 2.59-2.28 2.59-.76 0-1.22-.35-1.56-.75zm2.42-1.84v-.02c0-.83-.56-1.38-1.22-1.38s-1.21.55-1.21 1.38v.02c0 .83.55 1.38 1.21 1.38s1.22-.54 1.22-1.38z"></path><path d="m82.23 4.34v-.02c0-1.44 1.16-2.61 2.72-2.61s2.7 1.15 2.7 2.59v.02c0 1.44-1.16 2.61-2.72 2.61s-2.7-1.15-2.7-2.59zm4.02 0v-.02c0-.74-.53-1.38-1.32-1.38s-1.3.62-1.3 1.36v.02c0 .74.53 1.38 1.32 1.38s1.3-.62 1.3-1.36z"></path><path d="m88.72 5.05v-3.24h1.42v2.79c0 .67.32 1.02.86 1.02s.89-.35.89-1.02v-2.79h1.42v5h-1.42v-.71c-.33.42-.75.8-1.47.8-1.07 0-1.7-.71-1.7-1.86z"></path><path d="m94.67 1.81h1.42v.71c.33-.42.75-.8 1.47-.8 1.07 0 1.7.71 1.7 1.86v3.24h-1.42v-2.79c0-.67-.32-1.02-.86-1.02s-.89.35-.89 1.02v2.79h-1.42z"></path><path d="m100.35 4.32v-.02c0-1.67 1.09-2.59 2.28-2.59.76 0 1.22.35 1.56.75v-2.46h1.42v6.82h-1.42v-.72c-.35.47-.82.81-1.56.81-1.17 0-2.28-.92-2.28-2.59zm3.86 0v-.02c0-.83-.55-1.38-1.21-1.38s-1.22.54-1.22 1.38v.02c0 .83.56 1.38 1.22 1.38s1.21-.55 1.21-1.38z"></path><path d="m106.58 6.15.61-.93c.54.39 1.11.6 1.58.6.41 0 .6-.15.6-.37v-.02c0-.31-.49-.41-1.04-.58-.7-.21-1.49-.53-1.49-1.5v-.02c0-1.02.82-1.59 1.83-1.59.64 0 1.33.21 1.87.58l-.54.98c-.5-.29-.99-.47-1.35-.47s-.52.15-.52.35v.02c0 .28.48.41 1.02.6.7.23 1.51.57 1.51 1.48v.02c0 1.11-.83 1.62-1.91 1.62-.7 0-1.48-.23-2.15-.76z"></path></g></svg>
+    </div>
+  </div>
+	<div class="footer-tagline-message">
+    <p>Catholic Relief Services carries out the commitment of the Bishops of the United States to assist the poor and vulnerable overseas.</p>
+  </div>
+</div>
+
+<style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+.press-blotter { 
+	overflow: auto;
+	margin: 5px;
+}
+
+.press-thumbnail {
+	float: left;
+  margin: 8px 10px 8px 8px;
+}
+
+.press-thumbnail img {
+	border: 1px solid #999999;
+  max-width: 98px;
+}
+
+.press-pub-date {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.press-blotter-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (max-width: 63.938em) and (min-width: 48em) {
+  .l-hero-75-wrap-inner.hs-full-height img, .l-hero-wrap-inner.hs-full-height img {
+    width: 100% !important;
+  }
+}
+
+/*--><!]]>*/
+</style>  </div>
+</div>
+<div id="block-menu-block-2"
+     class="block block-menu-block menu__footer last even" role="navigation">
+
+      
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-2 menu-name-menu-footer-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-1772 menu-about-us level-1"><a href="/about" title="" class="menu__link level-1">About Us</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1773 menu-our-mission- level-2"><a href="/about/mission-statement" class="menu__link level-2">Our Mission </a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1774 menu-catholic-identity level-2"><a href="/about/catholic-identity" class="menu__link level-2">Catholic Identity</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1775 menu-crs-history level-2"><a href="/about/crs-history" class="menu__link level-2">CRS History</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1778 menu-endorsements level-2"><a href="/about/endorsements" class="menu__link level-2">Endorsements</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1780 menu-financials level-2"><a href="/about/financial-reports" class="menu__link level-2">Financials</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3807 menu-careers level-2"><a href="/about/careers" class="menu__link level-2">Careers</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1782 menu-contact level-2"><a href="/about/contact-crs" class="menu__link level-2">Contact</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3785 menu-bid-opportunities level-2"><a href="https://www.crs.org/about/bid-opportunity" class="menu__link level-2">Bid Opportunities</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1916 menu-leadership level-2"><a href="/about/leadership" title="" class="menu__link level-2">Leadership</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-899 menu-our-work-overseas level-1"><a href="/our-work-overseas" title="" class="menu__link level-1">Our Work Overseas</a><ul class="menu"><li class="menu__item is-leaf is-parent first leaf has-children menu-mlid-922 menu-programming-areas level-2"><a href="/our-work-overseas" class="menu__link level-2">Programming Areas</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-908 menu-how-we-work level-2"><a href="/our-work-overseas/how-we-work" class="menu__link level-2">How We Work</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1953 menu-where-we-work level-2"><a href="/our-work-overseas/where-we-work" class="menu__link level-2">Where We Work</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-923 menu-research--publications level-2"><a href="/our-work-overseas/research-publications" title="" class="menu__link level-2">Research & Publications</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-925 menu-partners level-2"><a href="/our-work-overseas/partnering-crs" class="menu__link level-2">Partners</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-913 menu-stories level-2"><a href="/stories" class="menu__link level-2">Stories</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-900 menu-ways-to-give level-1"><a href="/ways-to-give" title="" class="menu__link level-1">Ways To Give</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-2273 menu-give-monthly level-2"><a href="https://support.crs.org/donate/crs-give-monthly-2?ms=agicrs0223fif00foo00" class="menu__link level-2">Give Monthly</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1771 menu-make-a-one-time-donation level-2"><a href="https://support.crs.org/donate/help-where-its-needed-most?ms=agicrs021910500foo00" class="menu__link level-2">Make a One-Time Donation</a></li>
+<li class="menu__item is-leaf is-parent leaf has-children menu-mlid-1769 menu-more-ways-to-give level-2"><a href="/ways-to-give#all-ways-to-give" class="menu__link level-2">More Ways to Give</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2450 menu-donate-by-phone-or-mail level-2"><a href="http://www.crs.org/ways-to-give#all-ways-to-give" class="menu__link level-2">Donate by Phone or Mail</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-898 menu-get-involved level-1"><a href="/get-involved" title="" class="menu__link level-1">Get Involved</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-4294 menu-campaigns level-2"><a href="/get-involved/campaigns" class="menu__link level-2">Campaigns</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-4295 menu-chapters-and-clubs level-2"><a href="/get-involved/chapters-clubs" class="menu__link level-2">Chapters and Clubs</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-903 menu-advocate level-2"><a href="/get-involved/advocate-poor" target="_blank" class="menu__link level-2">Advocate</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-924 menu-pray level-2"><a href="/get-involved/prayer-resources" class="menu__link level-2">Pray</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-926 menu-participate level-2"><a href="/get-involved/participate" class="menu__link level-2">Participate</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-904 menu-connect level-2"><a href="/get-involved/connect" class="menu__link level-2">Connect</a></li>
+</ul></li>
+<li class="menu__item is-expanded last expanded menu-mlid-901 menu-quick-links level-1"><a href="/about/contact-crs" class="menu__link level-1">Quick Links</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-2449 menu-institute-for-capacity-strengthening level-2"><a href="http://www.ics.crs.org/" class="menu__link level-2">Institute for Capacity Strengthening</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2211 menu-crs-resource-center level-2"><a href="/get-involved/resource-center" class="menu__link level-2">CRS Resource Center</a></li>
+</ul></li>
+</ul></div>
+  </div>
+</div>
+  </footer>
+    <div class="bottom__wrapper">
+        <div class="region region-bottom clearfix">
+    <div id="block-block-9"
+     class="block block-block bottom__tax first odd">
+
+      
+  <div class="content">
+    <p><strong>13-5563422</strong>Federal Tax Exemption ID Number</p>
+
+<p><div id="block-block-13"
+     class="block block-block bottom__email first odd">
+
+      
+  <div class="content">
+    <form method="GET" action="/email-sign-up" id="email-signup" ><label for="cons_email" class="overlabel">Join our mailing list</label>
+	<input type="text" name="em" id="cons_email" value="" size="45" maxlength="255" /><input type="submit" value="Submit Survey" class="Button"/></form>  </div>
+</div>
+ <div id="block-block-12"
+     class="block block-block bottom__social even">
+
+      
+  <div class="content">
+    <ul>
+<li><a href="https://www.facebook.com/CatholicReliefServices" class="facebook">facebook</a></li>
+<li><a href="https://www.youtube.com/user/CatholicRelief" class="youtube">youtube</a></li>
+<li><a href="https://twitter.com/catholicrelief" class="twitter">twitter</a></li>
+<li><a href="https://instagram.com/catholicreliefservices/" class="instagram">instagram</a></li>
+</ul>  </div>
+</div>
+</p>
+  </div>
+</div>
+<div id="block-block-4"
+     class="block block-block bottom__contact even">
+
+      
+  <div class="content">
+    <p><span>©2024 Catholic Relief Services</span><span>228 W. Lexington St. Baltimore, Maryland 21201-3443</span><span>877-435-7277</span><a href="/cdn-cgi/l/email-protection#5831363e37183b2a2b76372a3f"><span class="__cf_email__" data-cfemail="7e171018113e1d0c0d50110c19">[email&#160;protected]</span></a></p>
+
+<div id="block-menu-block-6"
+     class="block block-menu-block menu__secondary-footer odd" role="navigation">
+
+      
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-6 menu-name-menu-secondary-footer-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-2212 menu-terms-of-use level-1"><a href="/terms-use" class="menu__link level-1">Terms of Use</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2213 menu-privacy-policy level-1"><a href="/privacy-policy" class="menu__link level-1">Privacy Policy</a></li>
+</ul></div>
+  </div>
+</div>
+  </div>
+</div>
+<div id="block-block-3"
+     class="block block-block bottom__501c odd">
+
+      
+  <div class="content">
+    Catholic Relief Services is a 501(c)(3) non-profit organization; Donations to CRS are tax-deductible to the full extent allowable under the law.  </div>
+</div>
+<div id="block-block-1"
+     class="block block-block bottom__about-crs last even">
+
+      
+  <div class="content">
+    <div class="about__content">
+	<p>Catholic Relief Services <span style="line-height: 22.3999996185303px;">eases suffering and provides assistance to people in need in more than 100 countries, without regard to race, religion or nationality</span>.</p>
+</div>
+
+<div class="about__content"><a href="http://www.caritas.org/" target="_blank"><div class="media media-element-container media-media_original">
+
+  <img height="67" width="67" style="width: 67px; height: 67px; margin-top:7px; margin-left: 40px; margin-right: 40px;" class="media-image media-element caritas file-media-original" data-delta="1" typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/caritas_0.png" alt="" title="" /></div></a><!--<a href="http://ncdc.org/" target="_blank"><img height="82" width="57" style="width: 57px; height: 82px;" class="media-image media-element ncdc file-media-original" data-delta="2" typeof="foaf:Image" src="https://www.crs.org/sites/default/files/ncdc_0.png" alt="" data-fid="43" data-media-element="1"></a>--><a href="http://www.usccb.org/" target="_blank"><div class="media media-element-container media-media_original">
+
+  <img height="80" width="80" style="width: 80px; height: 80px; margin-left: 10px; margin-right: 10px;" class="media-image media-element usccb file-media-original" data-delta="3" typeof="foaf:Image" loading="lazy" src="https://www.crs.org/sites/default/files/usccb_0.png" alt="" title="" /></div></a></div>
+
+<div class="about__content">
+	<p>We are the official overseas relief and development agency of the <a href="http://www.usccb.org/">United States Conference of Catholic Bishops</a> and a member of <a href="http://www.caritas.org/">Caritas Internationalis</a>.</p>
+</div>
+  </div>
+</div>
+  </div>
+    </div>
+  </div>
+  
+</div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.crs.org/sites/default/files/js/js_A-gg0vuOQ6ZAjP57YB0NjilEM2TjOwZmqLii64Lzy_U.js"></script>
+<script src="https://www.crs.org/sites/default/files/js/js_MLVgtzZ1ORq9krYqkeOsRay6ou_T-0QZytivuM9tTT8.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9d0b4ca990","applicationID":"8164170","transactionName":"YABWNkBWXRYCBxULWVlKYRBbGBwMDQAEGhhHDUQ=","queueTime":0,"applicationTime":7,"atts":"TEdVQAhMThg=","errorBeacon":"bam.nr-data.net","agent":""}</script><script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'87c27a0b0bbeb34d',t:'MTcxNDQyNzEwMS45NzEwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

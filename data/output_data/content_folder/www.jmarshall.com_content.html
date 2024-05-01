@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGIProxy-- HTTP/FTP Proxy in a CGI Script</title>
+</head>
+
+<body bgcolor=white vlink="#008080">
+
+<h1>CGIProxy 2.2.4</h1>
+
+<h2>HTTP/FTP Proxy in a CGI Script</h2>
+
+<p><a href="/">Home</a> &gt;
+   <a href="/tools/">Web Tools</a> &gt;
+   CGIProxy
+<!--   <p><a href="/donations/">Donate</a> -->
+
+<hr>
+<b>CGIProxy Home</b> |
+<a href="news.html">News</a> |
+<a href="install.html">Installation</a> |
+<a href="#usage">Usage</a> |
+<a href="options.html">Options</a> |
+<a href="#limits">Limits</a> |
+<a href="#legal">Disclaimer</a> |
+
+<br>
+<a href="releases/cgiproxy.latest.tar.gz"><b>Latest&nbsp;Download</b></a> |
+<a href="security.html"><font color=red>Security</font></a> |
+<a href="faq.html">FAQ</a> |
+<a href="CHANGES.txt">Changes</a> |
+<a href="translate.html">Translating</a> |
+<a href="http://www.prismnet.com/~jsm/cgiproxy/nph-demo.cgi">Online&nbsp;Demo</a>&nbsp;(login&nbsp;"free/speech")
+
+<p>
+<form action="https://lists.riseup.net/www" method="post">
+    Subscribe to announcement list:
+    <input name="email" size="30" placeholder="Enter email address">
+    <input type="hidden" name="list" value="cgiproxy-announce">
+    <input type="hidden" name="action" value="subrequest">
+    <input type="submit" name="action_subrequest" value="Subscribe">
+</form>
+
+<hr>
+
+
+<a name="news"></a>
+
+<h3> April 21. 2019</h3>
+
+<p>Help guide future development of CGIProxy by taking <a href="survey.html">the new CGIProxy user survey</a>!
+If you have ever used CGIProxy, or have installed it on a server (or tried to install it), please
+tell us how your experience has been.  All questions are optional, but every answer you give us
+is helpful.  We won't keep any personal information, but you can enter your email address if you
+want a response.  Your responses will help us know how to best improve CGIProxy for all users,
+how to make the installation easier, etc.  If you know anyone else that uses CGIProxy, please tell
+them about the survey too.  Thank you so much for your help!
+
+
+<h3>January 26, 2019</h3>
+
+<p>Released CGIProxy 2.2.4 .  Major improvements include:
+<ul>
+    <li>The top form is now in its own HTML page with an <code>&lt;iframe&gt;</code> containing
+	the fetched page, rather than being inserted into the page's HTML, and
+	it behaves <i>much</i> better than before.  Please tell me of any remaining
+	display bugs you find.
+    <li>The starting page is a little more user-friendly, with language names and
+	better button placement.
+    <li>Fixed various bugs, making most websites work again.
+</ul>
+
+<p>Note that as of version 2.2.3, the <a href="install.html">installation</a>
+and <a href="install.html#upgrade">upgrade</a> processes are much
+easier than they used to be, especially for non-technical users.  <b>Please
+<a href="mailto:james@jmarshall.com?subject=CGIProxy+installation">tell me</a>
+about any problems you have, so I can fix them!</b>  The more I hear about any
+problems, the better these features will work in future releases.
+Also, please tell me if anything is confusing or unclear about the installation.
+
+<p>Here's a more <a href="CHANGES.txt">complete list of changes</a>, including
+previous versions.
+
+<p>A list of past announcements is on the <a href="news.html">news page</a>.
+
+<p>For your own safety, please read about <a href="security.html">security with CGIProxy</a>.
+
+<p><b><i>Note that I welcome all bug reports and fix those bugs when I have time,
+so please use the "Report a bug" link in the top form when you see errors.  This is
+especially true of bugs when using any new features.</i></b>
+
+
+<hr>
+<a name="intro"></a>
+<h2>What it is, what it is</h2>
+
+This CGI script (or other) acts as an HTTP, HTTPS, or FTP proxy.  Through it, you can
+retrieve any resource that is accessible from the server it runs on.
+This is useful when your own access is limited, but you can reach a
+server that in turn can reach others that you can't.  In addition,
+the user is kept as anonymous as possible from any servers.  Common
+uses include:  anonymous proxies, other personal uses, VPN-like functionality,
+and others.  It's very simple to install, and very configurable.
+
+<p>When an HTML resource is retrieved, it's modified so that all links in it
+point back through the same proxy, including images, form submissions, and
+everything else.  JavaScript and Flash apps are similarly "proxified".
+Once you're using the proxy, you can browse normally and (almost) forget it's there.
+
+<p>CGIProxy can run in four ways: as a CGI script, as a
+<a href="http://perl.apache.org">mod_perl</a> script, as a
+<a href="http://www.fastcgi.com">FastCGI script</a>, or with its own embedded
+secure HTTP server.  Configurable options include text-only support (to save bandwidth),
+selective cookie and script removal, simple ad filtering, access restriction
+by server, custom encoding of target URLs and cookies, and more-- there are
+more than <a href="options.html">70 options</a> so far.  It requires
+<a href="http://www.perl.com">Perl 5.6.1</a> or later, but works better with
+a more recent version.
+
+<blockquote>
+<b><font size="+1">
+<a href="releases/cgiproxy.2.2.4.tar.gz">Download CGIProxy 2.2.4</a> (<a href="nph-proxy.txt">show source</a>)</font></b>
+</blockquote>
+
+<p>Of course, you must read the <a href="#legal">Legal Disclaimer</a>
+before using this software.
+
+<p>Here's 
+<a href="http://www.prismnet.com/~jsm/cgiproxy/nph-demo.cgi">a demo</a>
+(username "<b>free</b>", password "<b>speech</b>"), that lets you
+browse in the domains
+<a href="http://www.prismnet.com/~jsm/cgiproxy/nph-demo.cgi/en/20/http/jmarshall.com/">jmarshall.com</a>,
+<a href="http://www.prismnet.com/~jsm/cgiproxy/nph-demo.cgi/en/20/http/slashdot.org/">slashdot.org</a>,
+<a href="http://www.prismnet.com/~jsm/cgiproxy/nph-demo.cgi/en/20/http/www.whatismyip.com/">whatismyip.com</a>, and
+<a href="http://www.prismnet.com/~jsm/cgiproxy/nph-demo.cgi/en/20/http/www.prismnet.com/">prismnet.com</a>.
+
+<p>The original seed for this was a program I wrote for Rich Morin's
+<a href="http://cfcl.com/rdm/Pubs/tin/P/199606.shtml">article</a>
+in the June 1996 issue of Unix Review.
+
+<p>Here are <a href="releases/">older versions</a>, but don't use them
+anymore.
+
+
+<p><hr>
+<a name="usage"></a>
+<h2>To Use</h2>
+
+<p>After installing CGIProxy on a server, visit the script's URL to start a
+browsing session.  Once you've gotten a page through the proxy, everything
+it links to will automatically go through the proxy.  You can bookmark pages
+you browse to, and your bookmarks will go through the proxy as they did the
+first time.
+
+
+<p><hr>
+<a name="limits"></a>
+<h2>Limits and Bugs</h2>
+
+<ul>
+
+<p><li>Anonymity <b>MAY NOT BE PERFECT!!</b> In particular, there may be some
+    holes where unproxified JavaScript or Flash content can slip through.
+    (If you find these or any other anonymity holes, please tell me!)  For
+    best anonymity, turn JavaScript and Flash off in your browser.
+<p><li>I didn't follow the spec on HTTP proxies, and there are violations
+    of the protocol.  Actually, this whole concept is a violation of the
+    proxy model, so I'm not too worried.  If any protocol violations cause
+    you problems, please let me know.
+<p><li>Only HTTP/HTTPS and FTP are supported so far.
+</ul>
+
+
+<p><hr>
+<a name="legal"></a>
+<h2>Legal Disclaimer</h2>
+
+<p>Censorship is a controversial subject, and some governments and
+companies have rules about what information you should have access to.
+If you use my software to bypass rules that have been imposed on you,
+you assume all legal risks and responsibilities involved.  I'm
+providing the software as a demonstration and teaching tool, and for
+when legitimate access is needed to non-accessible servers.  I won't
+encourage you to break any rules, because I would get in trouble if I
+did.  I can't prevent you from using this software in illegitimate ways,
+but I believe the value of it as a teaching tool is far too great to let
+a few miscreants ruin it for everybody.
+
+
+
+<p><a href="../">Up to Web Tools page</a>
+
+<p><hr>
+
+<table width="100%">
+<tr><td>&copy; 1998-2019 <a href="mailto:james@jmarshall.com?subject=CGIProxy">James Marshall</a></td>
+    <td align=right><i>https://jmarshall.com/tools/cgiproxy/</i></td></tr>
+<tr><td><i>Last Modified: January 26, 2019</i></td></tr>
+</table>
+
+<p>
+</body>
+</html>
+

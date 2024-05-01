@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+body {text-align:center; font-family:Fixedsys; background:#f3f4f5}
+@media only screen and (min-width : 768px) {
+/*and (min-width : 1224px) {*/
+.small-only{display:none;}
+.rounded-corners {border-radius:5px;}
+.rounded-corners3 {-moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; border-radius: 5px;}
+
+#outer_container {width:1010px; margin:0 auto; text-align:left; border:red groove 0px; position:relative;}
+#handshake {width:8px; height:8px; position:absolute; right:0px;}
+#top_social_bar {float:right; margin:0 20px 0 0; position:relative; top:3px; z-index:999;}
+#top_nav_container {width:1000px; position:relative;  margin-top:7px; z-index:99; text-align:center; border:red groove 0px;}
+#mega_nav {float:left; /*position:relative;  font-size:12px;*/}
+#top_drop_nav {float:left;}
+
+#main_container {clear:both; width:998px; 
+background:#5a76ba; background-position:top; border:#ccc groove 1px;}
+
+#top {width:998px; margin-bottom:10px; -moz-border-radius-topleft:5px 5px; -moz-border-radius-topright:5px 5px; -webkit-border-top-left-radius:5px 5px; -webkit-border-top-right-radius:5px 5px; border-top-left-radius:5px 5px; border-top-right-radius:5px 5px; border:red groove 0px;}
+#logo_container {float:left; border:#ccc groove 0px;}
+#logo_text {padding:10px 10px 5px 20px; margin:20px 0 0 20px; font-size:36px;}
+#logo2_text {font-style:italic; font-size:14px; text-align:center;}
+#banner_link {float:left; width:400px; border:#ccc groove 0px; display:block;}
+#top_right_container {float:right; width:475px; text-align:right; border:#ccc groove 0px;}
+#search_box {clear:right; float:right; width:200px; margin:5px 20px 0 0; border:blue groove 0px;}
+.logout_container {float:right; margin-top:5px;}
+#upper_right_signup {clear:right; float:right; width:250px; font-size:12px; padding:7px 20px 0px 0; color:#333; border:blue groove 0px;}
+#xtra_link{ float:right; font-size:12px; text-decoration:none; margin:0px 20px 0 0;}
+#xtra_fields{ clear:both; display:none; position:relative; left:100px; width:300px; margin:25px 20px 0 20px; padding:10px; font-size:12px; text-align:center; background:#F2EFEF; border-radius:10px; border:#ccc groove 1px; }
+label.error {float:left; width:75px; font-weight:normal; color:red; }
+.hideifbig {display:none;}
+.hideifsmall {}
+.formfont {font-size:10px;}
+.forme {font-size:12px; width:100px;}
+.formp {font-size:12px; width:60px}
+.cart_button_font {font-size:10px; border-radius:5px;}
+
+#header_center_top {float:right; position:relative; left:75px; color:red; text-align:center; z-index:1; border:blue groove 0px;}
+#center_top {font-size:20px; font-weight:bold; padding-top:25px; text-align:center; border:red groove 0px;}
+
+#top_hor_nav {clear:left; width:998px; padding:5px 0; margin-top:10px; font-size:12px; text-align:center; background:#fff; border-top:#ccc solid 1px; border-bottom:#ccc solid 1px;}
+#bottom_hor_nav {display:none; clear:both; width:998px; padding:5px 0; font-size:12px; text-align:center; background:#fff; border-top:#ccc solid 1px; border-bottom:#ccc solid 1px;}
+
+#mobile {display:none;}
+
+#dev_frags_top {position:relative; top:15px; text-align:center;}
+#dev_frags_left {float:left; margin:15px 15px 0 0; background-color:transparent; text-align:center; width:230;}
+#dev_frags_right {float:right; margin:15px 0 0 15px; background-color:transparent; text-align:center; width:; border:red groove 0px;}
+
+#frags_left_container {float:left; margin:0 15px 0 0; background-color:transparent; text-align:center; width:230;}
+#frags_right_container {float:right; margin:0 0 0 15px; background-color:transparent; text-align:center; width:;}
+.frag_l {clear:left; float:left; margin:0 15px 0px 0; width:;}
+.frag_r {clear:right; float:right; margin:0 0 0px 15px; width:;}
+
+.frag {}
+
+#left-nav-wrapper {float:left; width:230px; border:#ccc groove 0px;}
+#left-nav {margin:15px 15px 15px 15px; padding:15px; font-size:12px; border-radius:20px; background:#fafafa; border:#ccc groove 1px;}
+#below-nav {margin:15px; padding:15px 15px 0 15px; font-size:13px; border-radius:20px; ; border:#ccc groove 1px;}
+#page_views {text-align:center; color:#ccc; border:red groove 0px;}
+
+#content_container_wrapper {margin-top:20px; float:left; width:968px; ; border-left:#ccc groove 0px; position:relative; left:15px; }
+#content_container {font-size:14px; line-height:18px; margin:15px 0; padding:15px; border-radius:5px;   background:#fff; }
+
+#sitewide_robot_nav {width:900px; margin:10px auto; padding:10px; font-size:11px; line-height:12px; color:#838383; text-align:justify; border:red groove 0px;}
+
+#prod-h1-container {width:70%; margin:0 auto; line-height:24px; border:red groove 0px;}
+}
+
+
+/*@media only screen and (max-width : 360px) {*/
+@media only screen and (max-device-width : 767px) {
+/*and (max-device-width : 480px) {*/
+
+.big-only{display:none;}
+#outer_container {width:100%; margin:0 auto; text-align:left; border:red groove 0px; position:relative;}
+#handshake { display:none; width:8px; height:8px; background:#333; position:absolute; right:0px;}
+#top_social_bar { display:none; float:right; margin:0 20px 0 0; position:relative; top:3px; z-index:999;}
+#top_nav_container { display:none; width:px; position:relative;  margin-top:7px; z-index:99; text-align:center; border:red groove 0px;}
+#mega_nav {float:left; position:relative;  font-size:12px;}
+#top_drop_nav {float:left;}
+
+#main_container {clear:both; background:#5a76ba; background-position:top;}
+
+#top {text-align:center; margin-bottom:10px; border:red groove 0px;}
+#logo_container {border:#ccc groove 0px;}
+#logo_text {padding:10px 10px 5px 20px; font-size:24px;}
+#logo2_text {font-style:italic; font-size:18px; text-align:center;}
+#banner_link {float:left; width:100%; border:#ccc groove 0px; display:block;}
+
+#top_right_container {/*display:none; float:right; width:475px; text-align:right; border:#ccc groove 0px;*/}
+#search_box { display:none; clear:right; float:right; width:200px; margin:5px 20px 0 0; border:blue groove 0px;}
+.logout_container {float:left; padding:0 0 10px 10px; margin:5px 0px 0 0; border:red solid 0px;}
+#cart_button {font-size:16px; position:relative; top:-5px;}
+#upper_right_signup { display:none; clear:right; float:right; width:250px; font-size:16px; padding:7px 20px 0px 0; color:#333; border:blue groove 0px;}
+#xtra_link{ float:left; font-size:16px; text-decoration:none; padding-bottom:10px; margin:0px 8px;}
+#xtra_fields{ clear:both; display:none; width:100%; margin:20px 0; padding:10px 0; font-size:16px; text-align:center; background:#F2EFEF; border:#ccc groove 1px; }
+label.error {float:left; width:75px; font-weight:normal; color:red; }
+.hideifbig {}
+.hideifsmall {display:none;}
+.formfont {float:right; font-size:16px; margin-right:50px;}
+.forme {font-size:16px; width:150px;}
+.formp {font-size:16px; width:60px}
+.cart_button_font {font-size:16px;}
+
+#header_center_top {color:red; text-align:center; z-index:1; border:blue groove 0px;}
+#center_top {clear:both; font-size:20px; font-weight:bold; text-align:center; border:red groove 0px;}
+
+#top_hor_nav {clear:left; width:-22px; /*padding:5px 20px;*/ padding:20px 0 20px 20px; margin:10px 0; font-size:24px; line-height:35px; text-align:center; background:#fff; border-top:#ccc solid 1px; border-bottom:#ccc solid 1px;}
+#bottom_hor_nav {clear:both; width:-22px; /*padding:5px 20px;*/ padding:20px 0 20px 20px; font-size:24px; line-height:35px; text-align:center; background:#fff; border-top:#ccc solid 1px; border-bottom:#ccc solid 1px;}
+
+#mobile {text-align:center;}
+
+#dev_frags_top {font-size:24px;}
+#left-nav-wrapper { display:none; float:left; width:230px; border:#ccc groove 0px;}
+#left-nav {display:none; margin:15px 15px 15px 15px; padding:15px; font-size:12px; border-radius:20px; background:#fafafa; border:#ccc groove 1px;}
+#below-nav {margin:15px; padding:15px 15px 0 15px; font-size:13px; border-radius:20px; ; border:#ccc groove 1px;}
+#page_views {text-align:center; color:#ccc; border:red groove 0px;}
+
+#content_container_wrapper {float:left; margin-top:-50px; width:100%; overflow:hidden; ; border-left:#ccc groove 0px; }
+#content_container {font-size:16px; line-height:18px; padding:5px 15px 15px 15px; margin:50px 0 15px 0; /*padding:15px; border-radius:20px;*/   background:#fff;}
+
+#content_container img {float:none !important; width:90% !important; height:90% !important;}
+
+#sitewide_robot_nav {margin:10px auto; padding:10px; font-size:11px; line-height:12px; color:#838383; text-align:justify; border:red groove 0px;}
+
+/*h1{position:relative; top:-5px;}*/
+#prod-h1-container {width:50%; margin:0 auto 5px auto; line-height:24px; border:red groove 0px;}
+
+}
+
+
+#content-wrapper {padding:0 15px 5px 15px;}
+
+#rss_container {margin:-10px 20px 0 20px;}
+
+#page_footer {clear:both; margin-top:10px; text-align:center; font-size:12px; line-height:18px; border-radius:10px; padding:1px; border:green groove 0px;}
+#site_footer {clear:both; margin:15px 0; text-align:center; font-size:12px; line-height:18px; border:green groove 0px;}
+
+h1{font-size:20px; padding:10px 0; line-height:24px;}
+h2{font-size:16px; margin:0 0 3px 0;}
+h3{font-size:14px; margin:0 0 5px 0;}
+
+a.logo:link, a.logo:visited {color:#e0e5f1; text-decoration: none;}
+a.logo:hover, a.logo:active {color:#fff;}
+a.hor:link, a.hor:visited {font-family:Arial,Helvetica,sans-serif; color:#3C779F; text-decoration: none;}
+a.hor:hover, a.hor:active {color:red;}
+a.nav:link, a.nav:visited {font-family:Arial,Helvetica,sans-serif; color:#3C779F; text-decoration: none;}
+a.nav:hover, a.nav:active {color:red;}
+
+.indent{margin-left:10px;} .bold{font-weight:bold;} .bold-indent{margin-left:10px; font-weight:bold;} .center{width:100%; text-align:center; border:#red groove 1px;} .bold-center{font-weight:bold; width:100%; text-align:center; border:#red groove 1px;}
+
+.rev-bm{position:relative; top:-30px;}
+.clear {clear:both;}
+
+.px12{font-size:12px;}
+.px10{font-size:10px;}
+
+
+</style>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/ie.css" media="screen" />
+    <![endif]-->
+    <link rel="stylesheet" href="//www.DemocracyCaucus.net/css/style.css?v=1.3" media="all" />
+	<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="//apis.google.com/js/plusone.js"></script>
+	<script src="//www.DemocracyCaucus.net/js/main.js"></script>
+	
+	
+	<script src="//www.DemocracyCaucus.net/js/jquery.slider.js" ></script>
+		<script src="//www.DemocracyCaucus.net/js/validate.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#loginform").validate();
+  });
+  </script>
+
+
+
+<title>Democracy Caucus</title>
+
+
+<meta name="description" content="For a number of years this was the official site for the Campaign for a United Nations Democracy Caucus. Content is from the site's 2004 -2007 archived pages as well as other outside sources." />
+
+<meta name="robots" content="index, follow, noodp, noydir" />
+<link rel="canonical" href="https://www.democracycaucus.net/" />
+		<!-- visitor tracking via ajax -->
+		<script>
+		 $(document).ready(function(){
+				 var querystring = 'c=
+      cookieEl.style.display = 'block'&pid=1&vip=109.81.119.63&vua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F97.0.4692.99+Safari%2F537.36&vref=&lp=%2F';
+				 if( screen.width > 10 && screen.height > 10 ){
+					$.ajax({type:'POST', url: 'https://www.DemocracyCaucus.net/ajax/track.php', data: querystring});
+				 }
+		});
+		</script>
+
+</head>
+<body class="homepage">
+<a name="top"></a>
+<!--outer container-->
+<div id="outer_container">
+
+<div id="handshake"><a href="https://www.DemocracyCaucus.net/index.php?id=1&reveal=yes&view_only=yes" style="width:100%; height:100%; display:block;"></a></div>
+
+<!--main container-->
+<div id="main_container" class="rounded-corners">
+
+<!--top-->
+
+<div id="top"  style="height:216px; background-image:url('https://www.DemocracyCaucus.net/images/site-images/banner-home-page.jpg');">
+
+<!-- logo link home either text or display block link -->
+<div id="logo_container">
+<div id="logo_text"><a href="https://www.DemocracyCaucus.net/" class="logo" title="Home">DemocracyCaucus.net<div id="logo2_text"></div></a>
+</div>
+</div>
+
+<!--center_top container-->
+<div id="header_center_top">
+</div>
+<!--close center_top container-->
+
+<div class="clear"></div></div>
+<!--close top-->
+
+<!--hor nav-->
+<!--close hor nav-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--content-->
+<div id="content_container_wrapper">
+<div id="content_container">
+
+
+
+
+
+
+
+
+
+
+<h1 class="page_title" align="center">Campaign for a United Nations Democracy Caucus<br />Archived Content from 2004 -2007</h1>
+
+<hr />
+<p style="text-align: center;"><br />
+<img alt="" src="/images/faces.jpg" style="width: 720px; height: 56px;" /></p>
+
+<p align="center"><em>For a number of years this was the official site for the Campaign for a United Nations Democracy Caucus.<br />
+Content is from the site&#39;s 2004 -2008 archived pages as well as other outside sources.</em></p>
+
+<p align="center"><img alt="" src="/images/quote.jpg" /></p>
+
+<p>The Campaign for a United Nations Democracy Caucus is dedicated to the promotion and fulfillment of the principles of democracy and human rights embodied in the Universal Declaration of Human Rights and the Warsaw Declaration of the Community of Democracies. Towards that end, the Campaign seeks the permanent establishment of a UN Democracy Caucus as a group of democratic nations committed to strengthening the UN&rsquo;s ability to promote democracy and human rights. The Campaign is particularly focused on the composition and activities of the UN Commission on Human Rights and the Economic and Social Council, as well as decisions made by the UN General Assembly and Security Council.<br />
+&nbsp;<br />
+In June 2000, over 100 governments gathered at the first Community of Democracies meeting in Warsaw and pledged to form caucuses at international and regional institutions to support resolutions and other international activities aimed at the promotion of democratic governance.</p>
+
+<p>In October 2000, the first effort was made at the UN to convene a gathering of states participating in the Community of Democracies (CD) process. Some sixty states sent representatives to the meeting. Later that year, with the active support of those states, the UN General Assembly approved a landmark Resolution on Promoting and Consolidating Democracy (Res A/55/96).</p>
+
+<p>Building on this momentum, a coalition of NGOs convened by the Democracy Coalition Project, Freedom House and Transnational Radical Party began to urge the formal creation of a Democracy Caucus at the United Nations. Through direct appeals to the Community of Democracies Convening Group and other official bodies, as well as outreach to other interested civil society groups, parliamentarians and the media, the Campaign for a UN Democracy Caucus has made significant progress toward its goals. Notably, in September 2004, the first formal meeting of the Democracy Caucus&rsquo;s foreign ministers, chaired by Chile, was held at the UN General Assembly, followed by first-ever meetings at the permanent representative and expert staff levels.</p>
+
+<p>We invite you to join us in this endeavor, in your individual or organizational capacity, as we encourage the UN&rsquo;s democracies to take the lead in revitalizing the world body to fufill the vision of becoming a universal community of democracies.</p>
+
+<p>&nbsp;</p>
+
+<div style="padding:10px; margin:10px 10px 10px 10px; background:#f2f2f3; border-radius:10px; border:#ccc solid 1px;">
+<h2>reation of UN Democracy Caucus Urged</h2>
+
+<p>New York March 15, 2004 | freedomhouse.org/</p>
+
+<p style="text-align: center;"><br />
+<img alt="" src="/images/flags-un.jpg" style="width: 478px; height: 216px;" /></p>
+
+<div>
+<p>The democratic member states of the United Nations should use the just convened session of the UN Commission on Human Rights to create a permanent democracy caucus at the world body, a group of eminent persons from 28 countries urged in a statement released today.</p>
+
+<p>The Commission on Human Rights today began its 60th annual session in Geneva.</p>
+
+<p>In a written appeal to the foreign ministers of the Community of Democracies (COD), the group, composed of legislators and civil society representatives, urged that democracies unite to establish a democracy caucus at the United Nations.</p>
+
+<p>The statement was circulated by a coalition of nongovernmental organizations, including Freedom House, the Democracy Coalition Project and the Transnational Radical Party.</p>
+
+<p>The Community of Democracies, created in June 2000, unites over 100 democratically elected governments. It seeks to enhance cooperation among democratic states, to deepen respect for human rights and democracy, and to support fragile emerging democracies. In September 2003, foreign ministers from the Community of Democracies pledged to work to establish caucuses at regional and international bodies.</p>
+
+<p>&quot;As yet, the group has not established a permanent working presence at the UN,&quot; said Adrian Karatnycky, Freedom House Counselor and a coordinator of the NGO effort to build a democracy caucus at the UN. &quot;As a first step, we urge that a Democracy Caucus should be established in Geneva during the current 60th session of the UN Commission on Human Rights, which convened today for six weeks of deliberations.&quot;</p>
+
+<p>Of the 53 member states of the current UN Commission on Human Rights, 32 are members of the Community of Democracies. This means that countries with shared democratic practices represent a clear majority of states on the Commission.</p>
+
+<p>The appeal calls on the COD to now follow through on its pledges. It was presented by the Campaign for UN Reform, the Council for a Community of Democracies, the Open Society Institute&#39;s Democracy Coalition Project, Freedom House, Human Rights Watch, the International League for Human Rights, and the Transnational Radical Party.</p>
+
+<p>The caucus would be based on the Warsaw Declaration of the Community of Democracies, signed in June 2000, which calls for democracies to &quot;collaborate on democracy-related issues in existing international and regional institutions.&quot; The Community of Democracies reiterated this pledge in Seoul, Korea in 2002 when it charged the Convening Group with &quot;encouraging the formation of coalitions and caucuses to support democracy.&quot;</p>
+</div>
+
+<div>
+<div>
+<p>Freedom House is an independent watchdog organization that supports democratic change, monitors the status of freedom around the world, and advocates for democracy and human rights.</p>
+</div>
+</div>
+
+<p>&nbsp;</p>
+</div>
+
+<p>&nbsp;</p>
+
+<hr />
+<h2><strong>Principles and Activities</strong></h2>
+
+<p>Participation in the Democracy Caucus is open only to countries that are invited to be full participants in the Community of Democracies process. The Community of Democracies maintains rigorous standards of membership and only includes states elected on the basis of competitive multiparty democratic elections and respectful of fundamental human rights.</p>
+
+<h2><strong>We believe:</strong></h2>
+
+<p>1. The broad purpose of the UN Democracy Caucus is to promote the values of democracy and human rights through the UN system.<br />
+2. A related purpose of the UN Democracy Caucus is to strengthen the governance and accountability of the UN on issues of democracy and human rights promoting a democratic consciousness in decision-making on candidacies for key UN bodies.<br />
+3. The UN Democracy Caucus should seek status akin to the Organization of the Islamic Conference, la Francophonie, and other like bodies.<br />
+4. The UNDC should convene to coordinate actions to strengthen international support for member states in deepening democratic governance and reinforcing the protection of human rights and democratic values through the UN system and the UN&rsquo;s related agencies.<br />
+5. The UNDC should focus on building international consensus on issues related to democracy and human rights at the UN and on building consensus among the UN&rsquo;s democracies in effectively utilizing the machinery of the UN system to assist in promoting democratic governance in states where the UN finds that egregious, systemic violations of human rights have frustrated democratization.<br />
+6. The UNDC should promote increased resources for human rights and democracy building initiatives within the UN and within the UN system.</p>
+
+<p style="text-align: center;"><br />
+<img alt="" src="/images/un-assembly-room.jpg" style="width: 541px; height: 360px;" /></p>
+
+<h2><strong>Organization of the UN Democracy Caucus</strong></h2>
+
+<p>The Campaign for a UN Democracy Caucus believes that participation in the Democracy Caucus should be open only to countries that are invited to be full participants in the Community of Democracies process. The Community of Democracies membership includes states which are elected on the basis of competitive multiparty democratic elections and respectful of fundamental human rights. It excludes, according to its own criteria adopted in the Seoul Plan of Action, those states &ldquo;where there is currently a disruption of constitutional rule or severe persistent erosion of or lack of essential elements of democracy.&rdquo;</p>
+
+<p>The UN Democracy Caucus is convened by the current Chair of the Community of Democracies Convening Group - Chile - in cooperation with other members of the current Convening Group - Czech Republic, Republic of Korea, Mexico, Mali, South Africa, United States, Portugal, India, and Poland. The Campaign is in favor of official recognized UN status for the Democracy Caucus, on the same basis as the G-77, the Organization of the Islamic Conference, la Francophonie or the International Union for the Conservation of Nature.</p>
+
+<p>The Democracy Caucus should convene to discuss common approaches on issues directly related to democracy and human rights. It should meet at the UN General Assembly as necessary, but no less than once a year during the annual meeting of the UNGA, including at the Foreign Ministers level. The members of the UNDC should also convene at:</p>
+
+<p>A. ECOSOC and its relevant subcommittees and subsidiary bodies;<br />
+B. Relevant meetings/seminars organized by the UN High Commissioner<br />
+&nbsp;&nbsp;&nbsp; for Refugees;<br />
+C. Meetings/seminars of the UN High Commissioner for Human Rights;<br />
+D. The UN Development Program;<br />
+E. UNESCO.</p>
+
+<p>Members of the UNDC have begun and should continue coordination at the annual meeting of the UN Commission on Human Rights in Geneva. The Permanent Representatives of Convening Group governments (or their designated representatives) should meet as necessary to prepare materials and discuss agenda items related to the above functions.</p>
+
+<p>&nbsp;</p>
+
+<div style="padding:10px; margin:10px 10px 10px 10px; background:#f2f2f3; border-radius:10px; border:#ccc solid 1px;">
+<h2>A caucus of democracies for the UN</h2>
+
+<p>By ADRIAN KARATNYCKY and MATTEO MECACCIJAN. 1, 2005 | ww.nytimes.com</p>
+
+<p style="text-align: center;"><br />
+<img alt="" src="/images/unitednations-exterior.jpg" style="width: 572px; height: 360px;" /></p>
+
+<p><strong>NEW YORK &mdash;&nbsp;</strong>One of the most common accusations against the United Nations is that a coalition of tyrannies stifles decisive action on issues related to basic liberties.</p>
+
+<p>Now things may be changing. Under the leadership of Chile, a group of countries including the United States, South Korea, Poland, Portugal, Mali and India have begun serious efforts to establish a UN Democracy Caucus to promote the values of human rights and democracy.</p>
+
+<p>Free societies now make up nearly half the UN&#39;s membership, but they have rarely worked cohesively. At the UN Human Rights Commission, even the mildest criticisms of massive rights violations are blocked, while independent human rights organizations are often threatened with suspension or expulsion.</p>
+
+<p>In May, the UN elected Sudan to the UN Human Rights Commission even as its government was in the midst of a murderous campaign of genocide. The year before, Libya, then still under one of the world&#39;s most repressive dictatorships, was selected to head the human rights commission. While Israel is subjected to numerous condemnatory resolutions each year, terrorist suicide bombings are rarely condemned, and countries such as China, Vietnam and Saudi Arabia regularly escape criticism or investigations.</p>
+
+<p>This dismal record appears, finally, to be spurring action. On Sept. 22, the UN&#39;s largest gathering of democracies was held under the leadership of Chile&#39;s foreign minister, Maria Soledad Alvaer. Alvaer, who recently stepped down from her government post and is a likely presidential candidate in her country&#39;s next election, has pressed the idea of the Democracy Caucus, backed by energetic support from U.S. leaders, including Secretary of State Colin Powell and the outgoing U.S. ambassador to the UN, John Danforth.</p>
+
+<p>The UN Development Program has also begun to address such formerly taboo issues as the lack of democracy in the developing world, producing a series of hard-hitting reports on the democracy deficit in the Arab world and promoting a model of sustainable economic development that goes hand in hand with democratic reform.</p>
+
+<p>All these are harbingers of a serious effort to reclaim the UN for democratic values and democracy. But serious obstacles remain.</p>
+
+<p>First, the UN&#39;s regional structure means that democracies predominate in several regional bodies (notably, the Western and Other Group and the Latin American Group), but are minorities in others. This is significant because the selection of candidates to key UN bodies is determined by nominations at the regional level.</p>
+
+<p>One way around this regional democracy divide is to encourage more democracies from Asia and Africa to compete for posts in key UN bodies whose mandates include civil society, rights and democracy.</p>
+
+<p>Another problem is the European Union. With the exception of Italy and Portugal, most EU support for the Caucus comes from Central European states like the Czech Republic and Poland. Key countries like France, Britain and Germany will need to be more engaged in urging multilateral cooperation among democratic countries.</p>
+
+<p>Finally, there is a danger that the UN Democracy Caucus will be paralyzed if it operates on the basis of absolute consensus and allows one country or a small handful of countries to block hard-hitting statements and policies.</p>
+
+<p>None of these challenges, however, is insurmountable. With liberal democratic states accounting for 89 percent of global GDP, they have enough clout to press the UN in more constructive directions. If they succeed over time, they will help deepen U.S. support for international cooperation. And they will achieve an ambition that Secretary General Kofi Annan proclaimed before NGO leaders in June 2000: to make the UN itself a community of democracies.</p>
+
+<p>**</p>
+
+<p>Adrian Karatnycky, a counselor and senior scholar at Freedom House, was co-director of a Council on Foreign Relations Task Force on the UN. Matteo Mecacci is UN representative of the Transnational Radical Party, an international human rights group.</p>
+</div>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Campaign for a UN Democracy Caucus urges Community of Democracies to support democracies in next elections to the new Human Rights Council&nbsp;</li>
+</ul>
+
+<ul>
+	<li>Campaign for a UN Democracy Caucus urges Convening Group of the Community of Democracies to lead final stage of negotitations on new Human Rights Council</li>
+</ul>
+
+<ul>
+	<li>Campaign for a UN Democracy Caucus urges Convening Group of the Community of Democracies to lead effort to create a strong and effective Human Rights Council&nbsp;</li>
+</ul>
+
+<ul>
+	<li>Campaign for a UN Democracy Caucus issues letter to UN member states underscoring essential elements to create a new Human Rights Council</li>
+</ul>
+
+<ul>
+	<li>UN voting pattern shows increase in censure of human rights violations, analysis by the Democracy Coalition Project indicates</li>
+</ul>
+
+<ul>
+	<li>Community of Democracies issues statement on Human Rights Council</li>
+</ul>
+
+<ul>
+	<li>UN Secretary General&#39;s Chief of Staff, Mark Malloch Brown, delivered a lecture at event co-sponsored by the Campaign for a UN Democracy Caucus&nbsp;</li>
+</ul>
+
+<ul>
+	<li>NGO Coalition urges CD Ministers of Foreign Affairs to make the new UN Human Rights Council a credible body&nbsp;</li>
+</ul>
+
+<ul>
+	<li>NGO leaders applaud the creation of a UN Democracy Fund and encourage CD governments to contribute</li>
+</ul>
+
+<ul>
+	<li>NGO Coalition members issue press release in advance of Community of Democracies meeting</li>
+</ul>
+
+<ul>
+	<li>European Parliament adopts resolution endorsing criteria for UN Human Rights Commission membership&nbsp;</li>
+</ul>
+
+<ul>
+	<li>UN Democracy Caucus endorses four UNGA resolutions&nbsp;</li>
+</ul>
+
+<ul>
+	<li>Community of Democracies Convening Group launches initiative to create Democracy Caucus at the UN&nbsp;</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+<p>&nbsp;</p>
+
+<p><img alt="" src="/images/un-votingrecords.gif" /></p>
+
+<p>The Campaign for a UN Democracy Caucus monitors the voting records of governments before various bodies within the UN system, with special attention to resolutions before the UN Commission on Human Rights, the Economic and Social Council, the General Assembly and the Security Council. An examination of recent voting records of both democracies and non-democracies demonstrates that on key resolutions in these bodies, non-democracies exhibit much greater solidarity against country specific resolutions than democratic governments. The analysis graphically illustrates the need for a Democracy Caucus as a coalition to coordinate common positions on resolutions and other activities to protect democracy and human rights.</p>
+
+<hr />
+<p><strong>Democracy Coalition Project releases Human Rights Council Report Card: Government Positions on Key Issues 2006-2007</strong></p>
+
+<p>The Democracy Coalition Project has released an independent analysis of government performance during the first year of the new UN Human Rights Council entitled &ldquo;Human Rights Council Report Card: Government Positions on Key Issues 2006-2007.&rdquo; The analysis charts the positions of governments on key proposals related to insititutional reforms and country specific situations of major concern to the human rights community. The conclusions of the report underscore the need to develop cross-regional coalitions in order to build a credible and vigorous UN human rights system. The report is designed to help human rights advocates as they pursue strategies to strengthen the Council&#39;s attention to serious human rights issues; it will also help them evaluate how governments measure up as candidates for election of new Council members. DCP plans to publish these report cards on an ongoing basis.</p>
+
+<p align="center">+++</p>
+
+<p><strong>Democracies Secure UN Censure of Worst Human Rights Violators</strong></p>
+
+<p>The UN General Assembly&#39;s Third Committee adopted four key country resolutions despite efforts by spoiler states to end the practice of naming and shaming the worst violators, according to a new survey by the Democracy Coalition Project. The survey, released on 11th December 2006 to commemorate the 58th Anniversary of the adoption of the UN Declaration on Human Rights, analyzes the voting patterns of UN Member States at the 61st General Assembly of the United Nations. The analysis is based on a scorecard that records the voting on five country resolutions condemning human rights abuses in selected states; it also covers a sixth resolution introduced by Belarus and Uzbekistan which sought to undermine the importance of country-specific resolutions. The study showed that efforts to block UN censure of human rights violators had failed, with members of the UN Democracy Caucus voting overwhelmingly for the four country resolutions that succeeded. The scorecards also showed a poor record by leading members of the Community of Democracies, including members of its Convening Group.</p>
+
+<p>To view an op-ed on Commonweath countries&#39; voting patterns based on DCP&#39;s scorecard, click here. The op-ed ran in printed and online media in Zimbabwe, Jamaica, Maldives, Sierra Leone, Grenada, Sri Lanka and Caribbean states.</p>
+
+<p align="center">+++</p>
+
+<p><strong>Democracy Coalition Project releases Scorecard of Voting Patterns at the 3rd Committee of the 60th General Assembly of the United Nations</strong></p>
+
+<p>The Democracy Coalition Project has carried out a study on the voting patterns of UN Member States at the 60th General Assembly of the United Nations. The analysis is based on a scorecard that records the voting on the seven country resolutions condeming Human Rights abuses in specific states that were presented to the General Assembly&#39;s 3rd Committee in the Fall of 2005. Six of the seven resolutions were approved, a trend that shows an increase in censure of Human Rights violations by the international community.</p>
+
+<p align="center">+++</p>
+
+<p><strong>Democracy Coalition Project releases Scorecard of Voting Patterns at the 2005 UN Commission on Human Rights</strong></p>
+
+<p>Following the 2005 UN Commission on Human Rights the Democracy Coalition Project prepared a scorecard on the voting patterns of Community of Democracies and non-Community of Democracies countries. The scorecard was released with the NGO Coalition&#39;s latest appeal and was sent to the Permanent Representatives to the UN of Community of Democracies countries to further illustrate the need for their support of UN Secretary General Kofi Annan&#39;s proposal to reform the UN Human Rights System.</p>
+
+<p align="center">+++</p>
+
+<p><strong>Analysis Of Voting Patterns Of UNDC Countries Shows Mixed Results At 59th UNGA</strong></p>
+
+<p>On January 10, 2005 the Democracy Coalition Project (DCP) released an analysis and scorecard of the voting patterns of members of the UN Democracy Caucus (UNDC) on key country resolutions at the 59th UN General Assembly. The results of the analysis show that there is little consensus among UNDC members to condemn even some of the worst violators of human rights, as some democratic governments continue to prioritize regional or north/south alliances when casting votes.</p>
+
+<p>DCP&rsquo;s assessment illustrates the inclination among democratic regimes not to vote as a unified bloc for resolutions critical of human rights violations, but instead to continue to vote along regional and sub-regional lines. Non-democratic regimes, on the other hand, remain united against any move to erode the principle of &ldquo;non-intervention in sovereign affairs,&rdquo; regardless of the severity of the documented abuses against innocent civilians.</p>
+
+<p>&nbsp;</p>
+
+<hr />
+<hr />
+<p>&nbsp;</p>
+
+<p><img height="48" src="/images/official-statements.gif" width="488" /></p>
+
+<p>Community of Democracies issues statement on elections to the UN Human Rights Council</p>
+
+<p>On 5th May 2006, the Community of Democracies issued a&nbsp;statement encouraging members of the United Nations to vote for states that have demonstrated a genuine commitment to human rights in the forthcoming elections to the new Human Rights Council. The statement reiterated the Community of Democracies&#39; 2005 Santiago Ministerial Commitment to support &quot;the candidancy of countries contributing effectively to the promotion and protection of democracy and human rights worldwide in bodies which focus on elements of democratic governance.&quot;</p>
+
+<p align="center">+++</p>
+
+<p><strong>Community of Democracies issues statement on Human Rights Council</strong></p>
+
+<p>On 15th November 2005, the Community of Democracies issued a statement encouraging the General Assembly of the United Nations to complete negotiations to determine the mandate, functions, size, composition, membership, working methods, and procedures of the new Human Rights Council. The statement, drafted by Mali as the current chair of the Convening Group of the Community of Democracies, welcomed the outcome of the September 2005 World Summit and reaffirmed the commitment by the Community of Democracies to make the Human Rights Council a strong and credible body.</p>
+
+<p align="center">+++</p>
+
+<p><strong>UN Democracy Caucus Recommends Positive Consideration to Four UNGA Resolutions</strong></p>
+
+<p>At the November 1, 2004 meeting of the UN Democracy Caucus, participating governments agreed to recommend that all members of the Community of Democracies give four resolutions a positive consideration when they are voted on at the UN General Assembly. Read press communiqu&eacute; issued by Chile, Chair of the UN Democracy Caucus.</p>
+
+<p>These four draft resolutions are: &ldquo;Torture and other inhuman or other degrading treatment or punishment&rdquo; submitted by Denmark; &ldquo;Promotion and cooperation among religions,&rdquo; submitted by the Philippines; &ldquo;Enhancing the role of regional and subregional and other organizations and arrangements in promoting and consolidating democracy,&rdquo; submitted by Romania, United States, Peru and Timor-Leste; and &ldquo;Improvement of the status of women in the UN system,&rdquo; submitted by Australia.</p>
+
+<p align="center">+++</p>
+
+<p><strong>Chile Issues Community of Democracies Progress Report at UN Ministerial Meeting</strong></p>
+
+<p>On September 22, 2004 Chile&#39;s Foreign Minister Soledad Alvear chaired a meeting for foreign ministers of the Community of Democracies at the United Nations. FM Alvear released a progress report which included a summary of actions taken toward the creation of a UN Democracy Caucus. The final press communique reaffirms commitments made by CD governments to continue promoting the work of the Democracy Caucus in the United Nations and other multilateral forums.</p>
+
+<p align="center">+++</p>
+
+<p><strong>Foreign Ministers Encourage Creation of UN Democracy Group</strong></p>
+
+<p>On September 26, 2003 the Foreign Ministers of the Community of Democracies Convening Group (Chile, Czech Republic, India, Mali, Mexico, Poland, Portugal, South Africa, South Korea, and the United States) issued a statement encouraging the formation of coalitions and caucuses within the UN and other multilateral fora to support democracy. The members of the Convening Group of the Community of Democracies have decided to strengthen a process of consultation and coordination at the UN in order to encourage and facilitate the Community of Democracies&#39; interested participants&rsquo; actions dedicated to promote and defend democracy, and the human rights and fundamental freedoms protected under democracy.</p>
+
+<p align="center">+++</p>
+
+<p><strong>Foreign Ministers Announce Intention to Organize </strong><br />
+<strong>Democracy Caucus at The UN</strong></p>
+
+<p>In September, 2000 the Foreign Ministers of the Community of Democracies Convening Group issued a statement announcing their intention to convene a Democracy Caucus at the UN With this statement the campaign for a UN Democracy Caucus was born.</p>
+
+<p>&nbsp;</p>
+
+<hr />
+<p>/images/learn-more.gif</p>
+
+<p><strong>European Legislation:</strong><br />
+On February 24th, 2005 the European Parliament adopted a resolution on its priorities for the 61st UN Human Rights Commission. Included in the text of the resolution is an endorsement of establishing criteria for membership to the Human Rights Commission</p>
+
+<p><strong>United States Legislation:</strong><br />
+In November, 2003 Senator Joseph Biden introduced Senate Concurrent Resolution 83: A concurrent resolution promoting the establishment of a&nbsp;<strong>democracy caucus</strong>&nbsp;within the United Nations. This bill urges the President to instruct any U.S. representative to a United Nations (UN) body to use the voice and vote of the United States to seek to establish a&nbsp;<strong>democracy caucus</strong>&nbsp;within the UN.</p>
+
+<p>The bill endorses limiting participation in the&nbsp;<strong>caucus</strong>&nbsp;to countries that are qualified to participate in the&nbsp;<strong>Community of Democracies</strong>&nbsp;and have demonstrated a commitment to specified democratic principles and practices.<br />
+This bill was passed in the Senate unanimously on June 24, 2004.<br />
+In March, 2004 Representatives Tom Lantos (D-CA) and David Dreier (R-CA) introduced HR 4053: International Leadership Act. This bill directs the President, through the Secretary of State, to support creation of a democracy caucus at the United Nations and other UN bodies.<br />
+The bill states that a democracy caucus at an international organization should: (1) forge common positions on matters of concern before the organization and work within and across regional lines to promote agreed positions; (2) work to revise an increasingly outmoded system of regional voting and decision making; and (3) set up a rotational leadership scheme to provide member states an opportunity, for a set period of time, to serve as the designated president of the caucus, responsible for serving as its voice in each organization.<br />
+A compromise version of these two bills was adopted by the House and the Senate as part of the Intelligence Reform and Terrorism Prevention Act signed into law in December 2004. One element of the compromise version is to reform the membership and leadership criteria at UN bodies and other international organizations using the following guidelines:&nbsp;</p>
+
+<p>(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where appropriate, reform the criteria for leadership and, in appropriate cases, for membership, at all United Nations bodies and at other international organizations and multilateral institutions to which the United States is a member so as to exclude countries that violate the principles of the specific organization;<br />
+&nbsp;<br />
+(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make it a policy of the United Nations and other international organizations and multilateral institutions of which the United States is a member that a member country may not stand in nomination for membership or in nomination or in rotation for a significant leadership position in such bodies if the member country is subject to sanctions imposed by the United Nations Security Council; and<br />
+&nbsp;<br />
+(3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; work to ensure that no member country stand in nomination for membership, or in nomination or in rotation for a significant leadership position in such organizations, or for membership on the United Nations Security Council, if the government of the member country has been determined by the Secretary of State to have repeatedly provided support for acts of international terrorism.</p>
+
+<p>&nbsp;</p>
+
+<hr />
+<hr />
+<p><img alt="" src="/images/learn-more.gif" style="width: 488px; height: 61px;" /></p>
+
+<p><strong>DCP holds roundtable in Brussels on the UN Human Rights Council</strong></p>
+
+<p>On 23rd November, 2006, DCP held a roundtable in Brussels analyzing and discussing the challenges and priorities for the new UN Human Rights Council. &quot;The New UN Human Rights Council: Getting it right and why it matters&quot; brought together key representatives from the Council of the European Union, the European Parliament, the Permanent Representations of Finland, Portugal, and Chile as well as NGOs from the Human Rights and Democracy Network. The Roundtable was held just prior to the third session of the Human Rights Council, held in Geneva on 27 November - 8 December, 2006. The debate was preceded by introductory remarks from Morton Halperin, DCP President, and Mr. Michael Matthiessen, Personal Representative of the Secretary General/High Representative for Human Rights, Council of the European Union.</p>
+
+<p align="center">+++</p>
+
+<p>Challenges and priorities facing UN Democracy Caucus debated at roundtable in New York</p>
+
+<p>About 40 governmental and non-governmental representatives of the Community of Democracies debated the workings of the UN Democracy Caucus in a roundtable luncheon, &quot;The UN Democracy Caucus: Challenges and Priorities,&quot; September 18 at the start of the 61st General Assembly in New York. Participants discussed obstacles facing the Caucus, divergent views on democracy promotion, and competing priorities of the grouping of democratic states which have met at the UN since 2003. Speakers at the event were Cheick Sidi Diarra, Permanent Representative of Mali to the UN, Jo&atilde;o Manuel Guerra Salgueiro, Permanent Representative of Portugal to the UN, Gabor Brodi, Permanent Representative of Hungary to the UN, and Matteo Meccaci of the Transnational Radical Party. The event was organized by the Democracy Coalition Project and co-sponsored by the Open Society Institute, the Transnational Radical Party, Freedom House, and the Council for a Community of Democracies. Jeffrey Laurenti of The Century Foundation moderated the off the record discussion.</p>
+
+<p>+++</p>
+
+<p><strong>NGO Coalition Hosts a Panel Discussion on UN Democracy Caucus at 61st Human Rights Commission</strong></p>
+
+<p align="center"><img alt="" src="/images/Bokyi_Abel.jpg" style="width: 263px; height: 175px;" /><br />
+<br />
+Panelists Rudolph Boschwitz, head of the US Delegation to the Human Rights Commission, and Abel Chikomo, Advocay Coordinator of the Zimbabwe NGO Media Monitoring Project, listen as Bo Kyi (far left), Joint Secretary of the Assistance Association for Political Prisoners, discusses his experiences as a political prisoner in Burma.</p>
+
+<p>On March 31, 2005, the Democracy Coalition Project, Transnational Radical Party and Feedom House co-hosted apanel discussion&nbsp;titled &quot;The UN Democracy Caucus: Its Role in Promoting and Protecting Human Rights.&rdquo; Representatives from both civil society and Community of Democracies governments spoke to a crowd of over 150 people on the important role the UN Democracy Caucus can play in the Human Rights Commission.</p>
+
+<p align="center">+++</p>
+
+<p><strong>NGO Coalition Hosts a Luncheon Briefing on UN Democracy Caucus.</strong></p>
+
+<p>On December 16, 2004, the Council for a Community of Democracies and other members of the NGO coalition hosted a luncheon briefing on the UN Democracy Caucus. Chilean Ambassador to the UN, Heraldo Munoz and Hungarian Ambassador to the US, Andras Simonyi were invited to give brief presentations. Ambassador Munoz spoke on the progress to date and future expectations for a UN Democracy Caucus which was formally launched at the UN General Assembly by Foreign Ministers of the Community of Democracies on September 22, 2004. Ambassador Simony spoke about Hungary&rsquo;s plans to create a Democracy Transition Center and its relationship to the UN.</p>
+
+<p align="center">+++</p>
+
+<p><strong>NGO Coalition coordinators host round table luncheon with Chilean UN Permanent Representative on the UN Democracy Caucus</strong></p>
+
+<p>On September 17, 2004 DCP, TRP and Freedom House hosted a meeting to discuss the UN Democracy Caucus with Ambassador Munoz, Chilean Permanent Representative to the UN as well as representatives from 7 other CD countries and representatives from NGOs.&nbsp;</p>
+
+<ul>
+	<li>Ambassador Richard Williamson, Head of the U.S. delegation to the 60th UNCHR</li>
+	<li>Ambassador Krzysztof Jakubowski, Permanent Representative of Poland to the UN</li>
+	<li>Ambassador Gordan Markotic, Permanent Representative of Croatia to the UN/Vice President of 60th UNCHR</li>
+	<li>The Hon. Marco Pannella, Member of the European Parliament and founder of the Transnational Radical Party</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+<hr />
+<p><img alt="" src="/images/unchr.gif" style="width: 488px; height: 61px;" /></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Office of the High Commissioner for Human Rights Issues Action Plan for Human Rights Council</strong></p>
+
+<p>On June 1, 2005 the Office of the High Commissioner Human Rights issued an action plan for the future of Office of the High Commissioner for Human Rights as mandated by UN Secretary General Kofi Annan&#39;s report, In Larger Freedom. The report builds on Annan&#39;s assertion that much more needs to be done by the international community to address today&#39;s threats to human rights and that OHCHR must be considerably better resourced to play its central role in meeting this challenge.</p>
+
+<p>&nbsp;</p>
+
+<p align="center">+++</p>
+
+<p><strong>Chart of Human Rights Commission Members Shows 37% Are Non-Democracies</strong></p>
+
+<p>In advance of the 61st Session of the Commission on Human Rights held March and April 2005, the Democracy Coalition Project prepared a chart showing which members of the Commission were members of the Community of Democracies and which were not. Thirty-seven percent of the Commission&#39;s members are non democracies; of the fourteen African countries on the Commission, only three are part of the Community of Democracies. Also included in the chart is each country&#39;s Freedom House ranking and when their term on the Commission expires.</p>
+
+<p>&nbsp;</p>
+
+<p align="center">+++</p>
+
+<p><strong>Romania Sponsors Resolution Calling on UN to Promote Democratic Values at 60th UN Commission on Human Rights</strong></p>
+
+<p>At the 60th session of the UN Commisson on Human Rights held in spring 2004, Romania and other UNHRC member governments participating in the Community of Democracies sponsored a resolution calling on the UN to work with intergovernmental regional, subregional and other interested organizations on the ways and means of promoting democratic values and principles.</p>
+
+<p>To read the resolution Enhancing the Role of Regional, Subregional and Other Organizations and Arrangements in Promoting and Consolidating Democracy&rdquo; endorsed by the Democracy Caucus click here.</p>
+
+<p style="text-align: center;"><br />
+<img alt="" src="/images/UNLogo2.jpg" style="width: 156px; height: 150px;" /></p>
+
+<hr />
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+<div /*id="page_footer"*/ style="font-size:24px; padding:20px; text-align:center;">DemocracyCaucus.net</div>
+
+<div style="clear:both;"></div></div>
+</div>
+<!--close content-->
+
+
+
+
+
+
+
+
+
+
+<!--hor nav-->
+<!--close hor nav-->
+
+
+
+<!--footer-->
+
+
+
+<!--close footer-->
+
+<div style="clear:left;"></div></div>
+<!--close main container-->
+
+
+
+
+
+
+
+</div>
+<!--outer container-->
+
+
+
+</body>
+</html>

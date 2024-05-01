@@ -1,0 +1,1940 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["gov-bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ac1e88bca1",applicationID:"93306740"};;/*! For license information please see nr-loader-rum-1.257.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,OP:()=>S,lF:()=>N,Yu:()=>_,Dg:()=>m,CX:()=>c,GE:()=>w,sU:()=>k});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const _=(0,n.mF)().o;var E=r(385),x=r(6818);const D={buildEnv:x.Re,customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0,harvestCount:0,timeKeeper:void 0},R={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function k(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,D);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.257.0",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(Date.now()-performance.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occurred while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{LP:()=>l,RP:()=>c,o5:()=>u});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){d(e),s[e].get(t)&&s[e].delete(t),s[e].size&&f(e)}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=[...s[e]];t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),g(e,r)})))}function g(e,t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)p(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}r.isolatedBacklog||delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=h(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=m()[s[e]];p&&p.push([f,e,r,a]);return a},get:v,listeners:h,context:g,buffer:function(e,t){const r=m();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!m()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(f,t)}function m(){return f.backlog}}(void 0,"globalEE"),d=(0,n.fP)();d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>u,K4:()=>i,oD:()=>o,uT:()=>c,wO:()=>s});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>c,T:()=>s});var n=r(8325),i=r(385);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i._A.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},7872:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{D:()=>n,Z:()=>i})},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(385),i=r(7894);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n._A.NREUM||(n._A.NREUM={}),void 0===n._A.newrelic&&(n._A.newrelic=n._A.NREUM),n._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:n._A.setTimeout,SI:n._A.setImmediate,CT:n._A.clearTimeout,XHR:n._A.XMLHttpRequest,REQ:n._A.Request,EV:n._A.Event,PR:n._A.Promise,MO:n._A.MutationObserver,FETCH:n._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{Ef:()=>i});var n=r(7056);r(3325).D.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"};n.IK.ERROR,n.IK.FULL,n.IK.OFF},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2758:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(8e3),c=r(3960),u=r(385),d=r(50),l=r(3081),f=r(8632),g=r(7144);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay",g.Ef.RECORD,g.Ef.PAUSE],h=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(7894),m=r(7056);function b(){const e=(0,f.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}const y={};var A=r(2825);const w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let _=!1;function E(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,E=arguments.length>3?arguments[3]:void 0,{init:x,info:D,loader_config:R,runtime:S={loaderType:p},exposed:k=!0}=t;const N=(0,f.gG)();D||(x=N.init,D=N.info,R=N.loader_config),(0,i.Dg)(e.agentIdentifier,x||{}),(0,i.GE)(e.agentIdentifier,R||{}),D.jsAttributes??={},u.v6&&(D.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,D);const P=(0,i.P_)(e.agentIdentifier),j=[D.beacon,D.errorBeacon];_||(P.proxy.assets&&(w(P.proxy.assets),j.push(P.proxy.assets)),P.proxy.beacon&&j.push(P.proxy.beacon),b(),(0,f.EZ)("activatedFeatures",A.T),e.runSoftNavOverSpa&&=!0===P.soft_navigations.enabled&&P.feature_flags.includes("soft_nav")),S.denyList=[...P.ajax.deny_list||[],...P.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,S),void 0===e.api&&(e.api=function(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.RP)(e,"api");const p={};var b=a.ee.get(e),A=b.get("tracer");y[e]=m.IK.OFF,b.on(g.Ef.REPLAY_RUNNING,(t=>{y[e]=t}));var w="api-",_=w+"ixn-";function E(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),R(w,n,!0,o||null===r?"session":void 0)(t,r)}function x(){}h.forEach((e=>{p[e]=R(w,e,!0,"api")})),p.addPageAction=R(w,"addPageAction",!0,n.D.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,R(w,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return E(e,t,"setCustomAttribute",r);(0,d.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,d.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setUserId=function(e){if("string"==typeof e||null===e)return E("enduser.id",e,"setUserId",!0);(0,d.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return E("application.version",e,"setApplicationVersion",!1);(0,d.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},p.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(l.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,b);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,d.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{b.emit("".concat(e,"-opt-in"))}))}catch(e){(0,d.Z)("An unexpected issue occurred",e)}},p[g.Ef.RECORD]=function(){(0,o.p)(l.xS,["API/recordReplay/called"],void 0,n.D.metrics,b),(0,o.p)(g.Ef.RECORD,[],void 0,n.D.sessionReplay,b)},p[g.Ef.PAUSE]=function(){(0,o.p)(l.xS,["API/pauseReplay/called"],void 0,n.D.metrics,b),(0,o.p)(g.Ef.PAUSE,[],void 0,n.D.sessionReplay,b)},p.interaction=function(e){return(new x).get("object"==typeof e?e:{})};const D=x.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(l.xS,["API/createTracer/called"],void 0,n.D.metrics,b),f||(0,o.p)(_+"tracer",[(0,v.z)(),e,r],i,n.D.spa,b),function(){if(A.emit((a?"":"no-")+"fn-start",[(0,v.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw A.emit("fn-err",[arguments,this,e],r),e}finally{A.emit("fn-end",[(0,v.z)()],r)}}}};function R(e,t,r,i){return function(){return(0,o.p)(l.xS,["API/"+t+"/called"],void 0,n.D.metrics,b),i&&(0,o.p)(e+t,[(0,v.z)(),...arguments],r?null:this,i,b),r?void 0:this}}function S(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,s.LP)(e,"api")})).catch((()=>{(0,d.Z)("Downloading runtime APIs failed..."),b.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{D[e]=R(_,e,void 0,f?n.D.softNav:n.D.spa)})),p.setCurrentRouteName=f?R(_,"routeName",void 0,n.D.softNav):R(w,"routeName",!0,n.D.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(l.xS,["API/noticeError/called"],void 0,n.D.metrics,b),(0,o.p)("err",[t,(0,v.z)(),!1,r,!!y[e]],void 0,n.D.jserrors,b)},u.il?(0,c.b2)((()=>S()),!0):S(),p}(e.agentIdentifier,E,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=k),_=!0}},8993:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.softNav]:9,[n.sessionReplay]:10}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.257.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.257.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-OiQHqGyF6PVYPjCHd8YlPkY+foWAb5sHWiuQeDd1Zne2fqGqvw2rXLKPRixlHrzSCXnR5SX25SeH9Z2ZKpwhiQ=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.257.0.PROD"]=self["webpackChunk:NRBA-1.257.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8993);var e=i(50),t=i(7144),r=i(4402);class n{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.ky)(16);this.agentIdentifier=e}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.Ef.RECORD)}pauseReplay(){return this.#e(t.Ef.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var o=i(3325),a=i(234);const s=Object.values(o.D);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(2758);var d=i(8e3),l=i(5938),f=i(3960),g=i(385);function p(e){return g.il&&!0===(0,a.Mt)(e,"privacy.cookies_enabled")}function h(e){return!!a.Yu.MO&&p(e)&&!0===(0,a.Mt)(e,"session_trace.enabled")}var v=i(7872);class m extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.RP)(e,r):this.ee.on("".concat(this.featureName,"-opt-in"),(0,v.Z)((()=>{(0,d.RP)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if(p(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3108));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t),this.featureName===o.D.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.LP)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),r),this.abortHandler?.(),(0,d.LP)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};g.il?(0,f.b2)((()=>n()),!0):n()}#t(e,t){return e!==o.D.sessionReplay||(r=this.agentIdentifier,n=t,!(!h(r)||!n?.isNew&&!n?.state.sessionReplayMode));var r,n}}var b=i(7633);class y extends m{static featureName=b.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,b.t,r),this.importAggregator()}}var A=i(1117),w=i(1284);class _ extends A.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,w.D)(e,(function(e,r){t[e]=E(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,w.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=E(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=x(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=E(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function E(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=x(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function x(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var D=i(8632),R=i(4351);var S=i(5546),k=i(7956),N=i(3239),P=i(9251),j=i(7894);class I extends m{static featureName=P.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,r),g.il&&((0,k.N)((()=>(0,S.p)("docHidden",[(0,j.z)()],void 0,P.t,this.ee)),!0),(0,N.bP)("pagehide",(()=>(0,S.p)("winPagehide",[(0,j.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var T=i(3081);class O extends m{static featureName=T.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,T.t9,r),this.importAggregator()}}new class extends n{constructor(t,r){super(r),g._A?(this.sharedAggregator=new _({agentIdentifier:this.agentIdentifier}),this.features={},(0,D.h5)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(y),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.D.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initialize the agent. Could not determine the runtime environment.")}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.p[e.featureName]-o.p[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.D.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.D.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.D.softNav)return;const n=function(e){switch(e){case o.D.ajax:return[o.D.jserrors];case o.D.sessionTrace:return[o.D.ajax,o.D.pageViewEvent];case o.D.sessionReplay:return[o.D.sessionTrace];case o.D.pageViewTiming:return[o.D.pageViewEvent];default:return[]}}(r.featureName);n.every((e=>e in this.features))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has not been initialized (").concat((0,R.P)(n),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,D.fP)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[y,I,O],loaderType:"lite"})})()})();</script>
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon"      sizes="57x57"     href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon"      sizes="60x60"     href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon"      sizes="72x72"     href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon"      sizes="76x76"     href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon"      sizes="114x114"   href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon"      sizes="120x120"   href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon"      sizes="144x144"   href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon"      sizes="152x152"   href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon"      sizes="180x180"   href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"   href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"     href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"     href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"     href="/favicon/favicon-16x16.png">
+    <link rel="manifest"                                href="/manifest.json">
+    <meta name="msapplication-TileColor"                content="#ffffff">
+    <meta name="msapplication-config"                   content="/favicon/browserconfig.xml">
+    <meta name="msapplication-TileImage"                content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color"                            content="#ffffff">
+    <link rel="shortcut icon"                           href="/favicon/favicon.ico">
+    <!-- WebFontLoader - see https://github.com/typekit/webfontloader -->
+    <script>
+      WebFontConfig = {
+        // typekit: { id: 'tcx2fnb' },
+        google: { families: ['Open Sans Condensed:300,300italic,700:latin,cyrillic-ext,latin-ext,cyrillic', 'Open Sans:400italic,700italic,400,700:latin,cyrillic-ext,latin-ext,cyrillic', 'Merriweather:900']}
+      };
+      (function(d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" href="https://www.osce.org/" hreflang="en" />
+<link rel="alternate" href="https://www.osce.org/ru" hreflang="ru" />
+<link rel="alternate" href="https://www.osce.org/it" hreflang="it" />
+<link rel="alternate" href="https://www.osce.org/de" hreflang="de" />
+<link rel="alternate" href="https://www.osce.org/es" hreflang="es" />
+<link rel="alternate" href="https://www.osce.org/fr" hreflang="fr" />
+<meta property="og:title" content="Organization for Security and Co-operation in Europe" />
+<meta property="og:image" content="https://www.osce.org/favicon/logo-square.jpg" />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="https://www.osce.org/" />
+<meta property="og:url" content="https://www.osce.org/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@OSCE" />
+    <link type="text/css" rel="stylesheet" media="all" href="https://www.osce.org/files/css/css_0526fb7e37614af0de163b428eb7a1bb.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://www.osce.org/files/css/css_bc6a9efb4a41c793cf91f5ffcd272f02.css" />
+<link type="text/css" rel="stylesheet" media="print" href="https://www.osce.org/files/css/css_a5f544a10e66a5b0c0067acb8f8e82ac.css" />
+        <link href="/sites/default/themes/osce_tao/stylesheets/osce-tao.css?h=812b6ae2c619b1842c6569d09042d0ae" media="all" rel="stylesheet" type="text/css">
+    <link href="/sites/default/themes/osce_tao/stylesheets/osce-tao.print.css?h=812b6ae2c619b1842c6569d09042d0ae" media="print" rel="stylesheet" type="text/css">
+    <meta name="yandex-verification" content="1e978b0ff7fac12a" />
+    <script type="text/javascript" src="https://www.osce.org/files/js/js_169be096e288882269d93bc02847b33e.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"extlink":{"extTarget":"_blank","extClass":0,"extSubdomains":1,"extExclude":"","extInclude":"(admin\\\/osce_help)","extCssExclude":"","extCssExplicit":"#admin-menu","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0},"views":{"ajax_path":["\/views\/ajax","\/views\/ajax","\/views\/ajax","\/views\/ajax","\/views\/ajax","\/views\/ajax","\/views\/ajax"],"ajaxViews":[{"view_name":"node_stories","view_display_id":"panel_pane_2","view_args":"1","view_path":"node\/1","view_base_path":null,"view_dom_id":"c2653caf1c94d5564e4020bc4b135dba","pager_element":0},{"view_name":"node_multimedia","view_display_id":"panel_pane_2","view_args":"1","view_path":"node\/1","view_base_path":null,"view_dom_id":"8cc18736cc8ab78fef96dd6a7e6ecc86","pager_element":0},{"view_name":"taxonomy_news","view_display_id":"embed_4","view_args":"","view_path":"node\/1","view_base_path":null,"view_dom_id":"ad147ffc2ddd2046c4c43a404c8e4ac6","pager_element":0},{"view_name":"node_latest_stories","view_display_id":"attachment_1","view_args":"1","view_path":"node\/1","view_base_path":null,"view_dom_id":"ce361a56f7569872529a6a26a1340872","pager_element":0},{"view_name":"node_latest_stories","view_display_id":"panel_pane_10","view_args":"1","view_path":"node\/1","view_base_path":null,"view_dom_id":"a6a9898c06980e22452eecd3cbc54765","pager_element":0},{"view_name":"node_latest_stories","view_display_id":"panel_pane_11","view_args":"1","view_path":"node\/1","view_base_path":null,"view_dom_id":"2e3962f8ea0ce6b4de87abca378c66df","pager_element":0},{"view_name":"taxonomy_news","view_display_id":"embed_6","view_args":"","view_path":"node\/1","view_base_path":null,"view_dom_id":"5688c0bf58e270a2b6f057d7e912e4f9","pager_element":0}]},"CToolsUrlIsAjaxTrusted":{"\/":true},"gsearch":{"gsearch_id":"016235372030844727130%3Afs_f_dbyv08"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDomainMode":"1"},"osce_click_blocker":{"selectors":".site--top a\r\n.site--header--wrapper a\r\n.site--navigation a\r\n.site--footer--wrapper a\r\nbody.page-manager-active ul.links.primary-tabs a"},"jsInit":{"misc\/jquery.js":true,"misc\/jquery-extend-3.4.0.js":true,"misc\/jquery-html-prefilter-3.5.0-backport.js":true,"misc\/drupal.js":true,"sites\/default\/modules\/contrib\/views_slideshow_ddblock\/js\/views_slideshow_ddblock.admin.js":true,"sites\/default\/modules\/d6lts\/panels\/js\/panels.js":true,"sites\/default\/modules\/d6lts\/views_slideshow\/js\/jquery.cycle.all.min.js":true,"sites\/default\/modules\/d6lts\/views_slideshow\/contrib\/views_slideshow_singleframe\/views_slideshow.js":true,"sites\/default\/modules\/d6lts\/views_slideshow\/contrib\/views_slideshow_thumbnailhover\/views_slideshow.js":true,"sites\/default\/modules\/contrib\/extlink\/extlink.js":true,"sites\/default\/modules\/contrib\/gmap\/js\/gmap_views_ajax.js":true,"sites\/default\/modules\/d6lts\/views\/js\/base.js":true,"sites\/default\/modules\/d6lts\/views\/js\/ajax_view.js":true,"sites\/default\/modules\/custom\/osce_panes\/gsearch.js":true,"sites\/default\/modules\/d6lts\/google_analytics\/googleanalytics.js":true,"sites\/default\/modules\/custom\/osce_click_blocker\/osce_click_blocker.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/jquery-1.10.2.prototype-pollution-patch.min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/jquery-migrate-1.2.1.min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/jquery-ui-1.10.3.custom.min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/jquery.flexslider.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/underscore-min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/media.match.min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/enquire.min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/jquery.matchHeight-min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/jquery.cookie.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/jquery.magnific-popup.min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/jquery.qtip.js":true,"sites\/default\/themes\/osce_tao\/javascript\/osce-tao.js":true,"sites\/default\/themes\/osce_tao\/javascript\/osce-celebration.js":true,"sites\/default\/themes\/osce_tao\/javascript\/libraries\/selectivizr-min.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/osce-collapsible.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/osce-collapsible-box.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/osce-accordion.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/osce-tabs.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/osce-discardable.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/osce-carousel.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/language-switch.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/slideshow.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/osce-news-ticker.js":true,"sites\/default\/themes\/osce_tao\/javascript\/components\/osce-equalize.js":true,"sites\/default\/themes\/tao\/js\/tao.js":true,"sites\/default\/modules\/custom\/osce_slick\/config\/more-stories.js":true,"sites\/default\/modules\/custom\/osce_slick\/slick\/slick.js":true,"sites\/default\/modules\/custom\/osce_slick\/osce_slick.js":true,"sites\/default\/modules\/custom\/osce_slick\/config\/default.js":true,"sites\/default\/modules\/custom\/osce_slick\/config\/frontpage-news.js":true,"sites\/default\/modules\/custom\/osce_slick\/config\/front-cols-nav.js":true,"sites\/default\/modules\/custom\/osce_slick\/config\/front-cols-images.js":true,"sites\/default\/modules\/custom\/osce_slick\/config\/front-cols-text.js":true},"cssInit":{"node.css":true,"defaults.css":true,"system.css":true,"system-menus.css":true,"user.css":true,"content-module.css":true,"ctools.css":true,"date.css":true,"jquery-ui.css":true,"datepicker.css":true,"jquery.timeentry.css":true,"filefield.css":true,"panels.css":true,"views_slideshow.css":true,"extlink.css":true,"fieldgroup.css":true,"views.css":true,"osce_frontpage.layout.css":true,"osce_figure.layout.css":true,"osce_naked.layout.css":true,"osce_site.layout.css":true,"admin.css":true,"block.css":true,"book.css":true,"comment.css":true,"dblog.css":true,"forum.css":true,"help.css":true,"maintenance.css":true,"openid.css":true,"poll.css":true,"profile.css":true,"search.css":true,"taxonomy.css":true,"tracker.css":true,"update.css":true,"magnific-popup.css":true,"jquery.qtip.css":true}});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-2170577-1", {"cookieDomain":".www.osce.org"});ga("set", "dimension1", "Page");ga("set", "dimension2", "Homepage");ga("set", "dimension4", "10");ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.dataLayer = window.dataLayer || [];window.dataLayer.push({"item_content_type":"Page","item_type":"Homepage","item_source":"OSCE Main Website","item_source_id":"10","item_language":"en","item_id":"1"});(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-W9L242');
+//--><!]]>
+</script>
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="/sites/default/themes/osce_tao/stylesheets/osce-tao-legacy.css" />
+    <![endif]-->
+    <title>Organization for Security and Co-operation in Europe | OSCE</title>
+    <script type="text/javascript" src="/sites/default/themes/osce_tao/javascript/libraries/modernizr.js"></script>
+    <!--
+    <script type='text/javascript'>(function () {function loadWebreep() {var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = 'https://api.webreep.com/Feedback/Get/5c613ec6-e3c1-441f-8b98-03a1f2e6957d';var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);}if (window.attachEvent) {window.attachEvent('onload', loadWebreep);} else {window.addEventListener('load', loadWebreep, false);}})();</script>
+    -->
+  </head>
+  <body  class="front not-logged-in page-node node-type-page no-sidebars homepage-slider-column page-manager-active page-manager-main-homepage item-type-homepage i18n-en tao">
+  <a id='skipnav' href='#content'>Skip navigation</a>  <div class="site ">
+      <div class="site--leaderboard">
+      <div class="view view-news-ticker view-id-news_ticker view-display-id-default view-dom-id-news-ticker-default">
+    
+  
+  
+      <div class="view-empty">
+      <div style="display: none"></div>     </div>
+  
+  
+  
+  
+  
+  
+</div>     </div>
+        <div class="site--socialmedia--wrapper">
+      <div class="site--socialmedia">
+        <div class="panel-pane pane-social-media" >
+  
+      <h2 class="pane-title"><span><a href="/osce-social-media" title="List of all official OSCE social media accounts">Follow OSCE</a></span></h2>
+  
+  
+  <div class="pane-content">
+    <ul class="osce-fixed-social-media"><li class="facebook first"><a href="http://www.facebook.com/osce.org" title="Join OSCE on Facebook"><i class="icon-facebook"></i><span>Facebook</span></a></li>
+<li class="twitter"><a href="http://www.twitter.com/osce" title="Follow OSCE on Twitter"><i class="icon-twitter"></i><span>Twitter</span></a></li>
+<li class="youtube"><a href="http://www.youtube.com/osce" title="Watch OSCE on Youtube"><i class="icon-youtube"></i><span>YouTube</span></a></li>
+<li class="linkedin"><a href="http://www.linkedin.com/company/osce" title="Connect OSCE on LinkedIn"><i class="icon-linkedin"></i><span>LinkedIn</span></a></li>
+<li class="soundcloud"><a href="http://www.soundcloud.com/osce" title="Listen to OSCE on SoundCloud"><i class="icon-soundcloud"></i><span>SoundCloud</span></a></li>
+<li class="instagram last"><a href="http://www.instagram.com/osceorg" title="Experience OSCE on Instagram"><i class="icon-instagram"></i><span>Instagram</span></a></li>
+</ul>  </div>
+
+  
+  </div>
+      </div>
+    </div>
+        <div aria-hidden="true" tabindex="-1" role="presentation" class="site--mobile">
+      <div class="site--top">
+                  <div class="site--multilingual-toggle">
+            <a href="#multilingual-mobile" title="Multilingual"><i></i><span>Multilingual</span></a>
+          </div>
+                <div class="site--multilingual-links"><div class="panel-pane pane-block pane-menu-menu-multilingual-links" >
+  
+  
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="leaf first"><a href="//www.osce.org/ru/" class="i18-lang-ru" hreflang="en">Русский</a></li>
+<li class="leaf"><a href="//www.osce.org/it/" class="i18-lang-it" hreflang="en">Italiano</a></li>
+<li class="leaf"><a href="//www.osce.org/fr/" class="i18-lang-fr" hreflang="en">Français</a></li>
+<li class="leaf"><a href="//www.osce.org/es/" class="i18-lang-es" hreflang="en">Español</a></li>
+<li class="leaf"><a href="//www.osce.org/" class="i18-lang-en" hreflang="en">English</a></li>
+<li class="leaf last"><a href="//www.osce.org/de/" class="i18-lang-de" hreflang="en">Deutsch</a></li>
+</ul>  </div>
+
+  
+  </div>
+</div>
+                <div class="site--ticker">
+                  </div>
+      </div>
+      <div id="multilingual-mobile" style="display: none">
+        <div class="panel-pane pane-multilingual" >
+  
+  
+  
+  <div class="pane-content">
+    <div class="osce-multilingual"><div class="osce-multilingual-select" id="multilingual-select"><h2>Quick access to multilingual content</h2><p>In addition to the web pages in the OSCE Official languages, the OSCE website contains a number of sections available in other languages. Please click on a language below to see the OSCE website sections available in that language.</p><div class="item-list"><ul><li class="first"><a href="#multilingual-hbs">Bosanski/Srpski/Hrvatski</a></li>
+<li><a href="#multilingual-kk">Қазақша</a></li>
+<li><a href="#multilingual-ky">Кыргызча</a></li>
+<li><a href="#multilingual-me">Crnogorski</a></li>
+<li><a href="#multilingual-mk">Македонски</a></li>
+<li><a href="#multilingual-ro">Română</a></li>
+<li><a href="#multilingual-sq">Shqip</a></li>
+<li><a href="#multilingual-sr">Srpski</a></li>
+<li><a href="#multilingual-tg">Tajik</a></li>
+<li><a href="#multilingual-tk">Türkmen</a></li>
+<li><a href="#multilingual-uk">Українська</a></li>
+<li class="last"><a href="#multilingual-uz">O'zbek</a></li>
+</ul></div><div class="multilingual-actions"><a href="#" class="multilingual-close"><span>Close this box</span><i></i></a><a href="#" class="multilingual-close-forever"><span>Close and don't open this box next time</span><i>!</i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-hbs" id="multilingual-hbs" style="display: none"><h2><span>Quick access to multilingual content</span>: <em>Bosanski/Srpski/Hrvatski</em></h2><p>Please choose a section to access the content available in the selected language.</p><div class="item-list"><ul><li class="first last"><a href="/hbs/mission-to-bosnia-and-herzegovina">Misija OSCE-a u Bosni i Hercegovini</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Back to available languages</a><a href="#" class="multilingual-close"><span>Close this box</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-kk" id="multilingual-kk" style="display: none"><h2><span>Көп тілді контентке жылдам қатынау</span>: <em>Қазақша</em></h2><p>Таңдалған тілдегі контентке өту үшін тарауды таңдаңыз.</p><div class="item-list"><ul><li class="first last"><a href="/kk/astana">ЕҚЫҰ-ның Астанадағы бағдарламалар Офисі</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Қол жетімді тілдерге қайта оралу</a><a href="#" class="multilingual-close"><span>Терезені жабу</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-ky" id="multilingual-ky" style="display: none"><h2><span>Көп тилдүү тексттерге мазмунга тез кирүү</span>: <em>Кыргызча</em></h2><p>Тандалган тилдеги мазмунга өтүүгө бөлүктү танданыз.</p><div class="item-list"><ul><li class="first last"><a href="/ky/programm-office-in-bishkek">ЕККУнун Бишкектеги Программалык кеңсеси </a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Керектүү тилди тандоого кайтуу</a><a href="#" class="multilingual-close"><span>Жабуу</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-me" id="multilingual-me" style="display: none"><h2><span>Brz pristup višejezičnom sadržaju</span>: <em>Crnogorski</em></h2><p>Molimo Vas da odaberete odjeljak da biste pristupili sadržaju na odabranom jeziku.</p><div class="item-list"><ul><li class="first last"><a href="/me/mission-to-montenegro">Misija OEBS-a u Crnoj Gori</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Nazad na dostupne jezike</a><a href="#" class="multilingual-close"><span>Zatvorite odjeljak</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-mk" id="multilingual-mk" style="display: none"><h2><span>Брз пристап до мултијазична содржина</span>: <em>Македонски</em></h2><p>Ве молиме изберете секција за да пристапите кон содржината достапна на избраниот јазик.</p><div class="item-list"><ul><li class="first last"><a href="/mk/mission-to-skopje">Мисијата на ОБСЕ во Скопје </a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Назад до достапните јазици</a><a href="#" class="multilingual-close"><span>Затвори го ова квадратче</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-ro" id="multilingual-ro" style="display: none"><h2><span>Acces rapid la conținutul disponibil în mai multe limbi</span>: <em>Română</em></h2><p>Selectați o secțiune pentru a accesa conținutul disponibil în limba selectată.</p><div class="item-list"><ul><li class="first last"><a href="/ro/moldova">Misiunea OSCE în Moldova</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Înapoi la limbile disponibile</a><a href="#" class="multilingual-close"><span>Închideți fereastra</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-sq" id="multilingual-sq" style="display: none"><h2><span>Hyrje e shpejtë në përmbajtjen shumëgjuhëshe</span>: <em>Shqip</em></h2><p>Ju lutemi, zgjidhni një seksion për të parë përmbajtjen në gjuhën e përzgjedhur.</p><div class="item-list"><ul><li class="first"><a href="/sq/mission-to-skopje">Misioni i OSBE-së në Shkup </a></li>
+<li><a href="/sq/mission-in-kosovo">Misioni i OSBE-së në Kosovë</a></li>
+<li class="last"><a href="/sq/presence-in-albania">Prezenca e OSBE-së në Shqipëri</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Kthehu në gjuhët e disponueshme</a><a href="#" class="multilingual-close"><span>Mbylle kutinë</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-sr" id="multilingual-sr" style="display: none"><h2><span>Brz pristup višejezičnom sadržaju</span>: <em>Srpski</em></h2><p>Molim Vas odaberite odeljak kako bi pristupili sadržaju na odabranom jeziku.</p><div class="item-list"><ul><li class="first"><a href="/sr/mission-to-serbia">Misija OEBS-a u Srbiji</a></li>
+<li class="last"><a href="/sr/mission-in-kosovo">Misija OEBS-a na Kosovu</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Nazad na dostupne jezike</a><a href="#" class="multilingual-close"><span>Zatvorite odeljak</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-tg" id="multilingual-tg" style="display: none"><h2><span>Дастрасии фаврӣ ба контенти бисёрзабона</span>: <em>Tajik</em></h2><p>Бахши дилхоҳатонро интихоб кунед ва бо забони интихобшуда ба контент дастрасӣ пайдо намоед.</p><div class="item-list"><ul><li class="first last"><a href="/tg/programme-office-in-dushanbe">Дафтари Барномаҳои САҲА дар Душанбе</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Бозгашт ба забонҳои дастрас</a><a href="#" class="multilingual-close"><span>Ин равзанаро бубандед</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-tk" id="multilingual-tk" style="display: none"><h2><span>Köp dilli maglumatlara tiz geçiş</span>: <em>Türkmen</em></h2><p>Saýlanylan dilde elýeterli bolan maglumatlara geçmek üçin bölümi saýlaň.</p><div class="item-list"><ul><li class="first last"><a href="/tk/ashgabat">ÝHHG-niň Aşgabatdaky Merkezi </a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Berilýän diller bölümine dolan</a><a href="#" class="multilingual-close"><span>Bu aýnany ýap</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-uk" id="multilingual-uk" style="display: none"><h2><span>Швидкий доступ до багатомовного контенту</span>: <em>Українська</em></h2><p>Будь ласка, виберіть розділ для доступу до контенту обраною мовою</p><div class="item-list"><ul><li class="first"><a href="/uk/project-coordinator-in-ukraine-closed">Координатор проектів ОБСЄ в Україні</a></li>
+<li><a href="/uk/special-monitoring-mission-to-ukraine-closed">Спеціальна моніторингова місія ОБСЄ в Україні  </a></li>
+<li><a href="/uk/special-monitoring-mission-to-ukraine/subscription">Підписатися на розсилку звітів та новин Спеціальної моніторингової місії ОБСЄ</a></li>
+<li class="last"><a href="/uk/support-programme-for-ukraine">Позабюджетна Програма підтримки ОБСЄ для України</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Назад до вибору мови</a><a href="#" class="multilingual-close"><span>Закрити</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-uz" id="multilingual-uz" style="display: none"><h2><span>Бир неча тилдаги мундарижага тезкор кириш имконияти</span>: <em>O&#039;zbek</em></h2><p>Мавжуд бўлган тиллардаги маьлумотларга кириш учун тегишли бўлимни танланг.</p><div class="item-list"><ul><li class="first last"><a href="/uz/uzbekistan">ЕХҲТнинг Ўзбекистондаги лойиҳалари координатори </a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Мавжуд бўлган тилларга қайтиш</a><a href="#" class="multilingual-close"><span>Саҳифани епинг</span><i></i></a></div></div></div>  </div>
+
+  
+  </div>
+      </div>
+
+      <div class="site--header">
+        <div class="site--logo">
+          <div class="site--name-and-slogan logo--default">
+  <div class="logo media--print">
+    <img src="/sites/default/themes/osce_tao/images/logo%402x.png"/>
+  </div>
+      <p class="site--name media--screen">
+      <a href="/" title="Home" rel="home"><span>OSCE</span></a>
+    </p>
+        <div class="site--slogan">Organization for Security and Co-operation in Europe</div>
+  </div>
+        </div>
+
+        <div class="site--mobile--toggles">
+          <div class="site--navigation-toggle">
+            <a href="#navigation-mobile" title="Navigation"><i></i><span>Navigation</span></a>
+          </div>
+
+          <div class="site--search-toggle">
+            <a href="#search-mobile" title="Search"><i></i><span>Search</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site--overlay">
+        <div id="navigation-mobile">
+          <div class="panel-pane pane-block pane-menu-menu-main-navigation main-menu" >
+  
+      <h2 class="pane-title">Navigation</h2>
+  
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="leaf first active-trail"><a href="/" title="" hreflang="en" class="active">Home</a></li>
+<li class="expanded"><a href="/who-we-are" hreflang="en" class="has-children">Who we are</a><ul class="menu"><li class="leaf first"><a href="/whatistheosce" hreflang="en">What is the OSCE?</a></li>
+<li class="leaf"><a href="/participating-states" hreflang="en">Participating States</a></li>
+<li class="leaf"><a href="/partners-for-cooperation" hreflang="en">Partners for Co-operation</a></li>
+<li class="leaf"><a href="/chairpersonship" hreflang="en">Chairpersonship</a></li>
+<li class="leaf"><a href="/summits" hreflang="en">Summits</a></li>
+<li class="leaf"><a href="/ministerial-councils" hreflang="en">Ministerial Councils</a></li>
+<li class="leaf"><a href="/permanent-council" hreflang="en">Permanent Council</a></li>
+<li class="leaf"><a href="/forum-for-security-cooperation" hreflang="en">Forum for Security Co-operation</a></li>
+<li class="leaf"><a href="/leadership" hreflang="en">Leadership</a></li>
+<li class="leaf"><a href="/related-bodies" hreflang="en">OSCE-related bodies</a></li>
+<li class="leaf"><a href="/funding-and-budget" hreflang="en">Funding and budget</a></li>
+<li class="leaf last"><a href="/history" hreflang="en">History</a></li>
+</ul></li>
+<li class="expanded"><a href="/what-we-do" hreflang="en" class="has-children">What we do</a><ul class="menu"><li class="leaf first"><a href="/arms-control" hreflang="en">Arms control</a></li>
+<li class="leaf"><a href="/border-management" hreflang="en">Border management</a></li>
+<li class="leaf"><a href="/combating-human-trafficking" hreflang="en">Combating trafficking in human beings</a></li>
+<li class="leaf"><a href="/countering-terrorism" hreflang="en">Countering terrorism</a></li>
+<li class="leaf"><a href="/conflict-prevention-and-resolution" hreflang="en">Conflict prevention and resolution</a></li>
+<li class="leaf"><a href="/cyber-ict-security" hreflang="en">Cyber/ICT Security</a></li>
+<li class="leaf"><a href="/democratization" hreflang="en">Democratization</a></li>
+<li class="leaf"><a href="/economic-activities" hreflang="en">Economic activities</a></li>
+<li class="leaf"><a href="/education" hreflang="en">Education</a></li>
+<li class="leaf"><a href="/elections" hreflang="en">Elections</a></li>
+<li class="leaf"><a href="/environmental-activities" hreflang="en">Environmental activities</a></li>
+<li class="leaf"><a href="/gender-equality" hreflang="en">Gender equality</a></li>
+<li class="leaf"><a href="/good-governance" hreflang="en">Good governance</a></li>
+<li class="leaf"><a href="/human-rights" hreflang="en">Human rights</a></li>
+<li class="leaf"><a href="/media-freedom-and-development" hreflang="en">Media freedom and development</a></li>
+<li class="leaf"><a href="/migration" hreflang="en">Migration</a></li>
+<li class="leaf"><a href="/national-minority-issues" hreflang="en">National minority issues</a></li>
+<li class="leaf"><a href="/policing" hreflang="en">Policing</a></li>
+<li class="leaf"><a href="/reform-and-cooperation-in-the-security-sector" hreflang="en">Reform and co-operation in the security sector</a></li>
+<li class="leaf"><a href="/roma-and-sinti" hreflang="en">Roma and Sinti</a></li>
+<li class="leaf"><a href="/rule-of-law" hreflang="en">Rule of law</a></li>
+<li class="leaf"><a href="/tolerance-and-nondiscrimination" hreflang="en">Tolerance and non-discrimination</a></li>
+<li class="leaf"><a href="/youth" hreflang="en">Youth</a></li>
+<li class="leaf last"><a href="/sustainable-development-goals" class="menu-item-multiline" hreflang="en">#GLOBALGOALS - The OSCE and the Sustainable Development Goals</a></li>
+</ul></li>
+<li class="expanded"><a href="/where-we-are" hreflang="en" class="has-children">Where we are</a><ul class="menu"><li class="leaf first"><a href="/presence-in-albania" hreflang="en">Presence in Albania</a></li>
+<li class="leaf"><a href="/mission-to-bosnia-and-herzegovina" hreflang="en">Mission to Bosnia and Herzegovina</a></li>
+<li class="leaf"><a href="/mission-in-kosovo" hreflang="en">Mission in Kosovo</a></li>
+<li class="leaf"><a href="/mission-to-montenegro" hreflang="en">Mission to Montenegro</a></li>
+<li class="leaf"><a href="/mission-to-serbia" hreflang="en">Mission to Serbia</a></li>
+<li class="leaf"><a href="/mission-to-skopje" hreflang="en">Mission to Skopje</a></li>
+<li class="leaf"><a href="/mission-to-moldova" hreflang="en">Mission to Moldova</a></li>
+<li class="leaf"><a href="/centre-in-ashgabat" hreflang="en">Centre in Ashgabat</a></li>
+<li class="leaf"><a href="/programme-office-in-astana" hreflang="en">Programme Office in Astana</a></li>
+<li class="leaf"><a href="/programme-office-in-bishkek" hreflang="en">Programme Office in Bishkek</a></li>
+<li class="leaf"><a href="/programme-office-in-dushanbe" hreflang="en">Programme Office in Dushanbe</a></li>
+<li class="leaf"><a href="/project-coordinator-in-uzbekistan" hreflang="en">Project Co-ordinator in Uzbekistan</a></li>
+<li class="leaf"><a href="/cio/andrzej-kasprzyk" class="menu-item-multiline" hreflang="en">Personal Representative of the Chairperson-in-Office on the conflict dealt with by the OSCE Minsk Conference</a></li>
+<li class="leaf last"><a href="/closed-field-operations" hreflang="en">Closed field operations</a></li>
+</ul></li>
+<li class="expanded"><a href="/institutions-and-structures" hreflang="en" class="has-children">Institutions &amp; structures</a><ul class="menu"><li class="leaf first"><a href="http://www.oscepa.org/" title="" hreflang="en">Parliamentary Assembly</a></li>
+<li class="leaf"><a href="/hcnm" title="" hreflang="en">High Commissioner on National Minorities</a></li>
+<li class="leaf"><a href="/odihr" title="" hreflang="en">Office for Democratic Institutions and Human Rights</a></li>
+<li class="leaf"><a href="/representative-on-freedom-of-media" title="" hreflang="en">Representative on Freedom of the Media</a></li>
+<li class="leaf"><a href="/cca" title="" hreflang="en">Court of Conciliation and Arbitration</a></li>
+<li class="leaf"><a href="/mg" title="" hreflang="en">Minsk Group</a></li>
+<li class="leaf last"><a href="/secretariat" title="" hreflang="en">Secretariat</a></li>
+</ul></li>
+<li class="expanded last"><a href="/resources" hreflang="en" class="has-children">Resources</a><ul class="menu"><li class="leaf first"><a href="/resources/csce-osce-key-documents" hreflang="en">CSCE/OSCE key documents</a></li>
+<li class="leaf"><a href="/resources/documents/decision-making-bodies" hreflang="en">Documents by the OSCE Decision-making bodies</a></li>
+<li class="leaf"><a href="/resources/documents" title="" hreflang="en">Documents library</a></li>
+<li class="leaf"><a href="/resources/publications" title="" hreflang="en">Publications</a></li>
+<li class="leaf"><a href="/press-releases" title="" hreflang="en">Press releases and news archive</a></li>
+<li class="leaf"><a href="/resources/multimedia" title="" hreflang="en">Multimedia</a></li>
+<li class="leaf"><a href="/resources/e-libraries" title="" hreflang="en">E-libraries</a></li>
+<li class="leaf"><a href="/resources/126378" title="" hreflang="en">Quarterly Selections</a></li>
+<li class="leaf last"><a href="/osce-social-media" hreflang="en">Social media</a></li>
+</ul></li>
+</ul>  </div>
+
+  
+  </div>
+          <div class="panel-pane pane-block pane-menu-menu-meta-navigation meta-menu" >
+  
+      <h2 class="pane-title">0Meta Navigation</h2>
+  
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="leaf first"><a href="/press" hreflang="en">Newsroom</a></li>
+<li class="leaf"><a href="/blog" hreflang="en">Blog</a></li>
+<li class="leaf"><a href="/meetings-events" hreflang="en">Events</a></li>
+<li class="leaf"><a href="/partnerships" hreflang="en">Partnerships</a></li>
+<li class="leaf"><a href="/networks" hreflang="en">Networks</a></li>
+<li class="leaf last"><a href="/search/pages" hreflang="en">Search</a></li>
+</ul>  </div>
+
+  
+  </div>
+        </div>
+        <div id="search-mobile" class="site--search">
+          <gcse:searchbox-only></gcse:searchbox-only>        </div>
+      </div>
+    </div>
+  
+  <div class="site--desktop">
+
+    <div class="site--top">
+              <div class="site--multilingual-toggle">
+          <a href="#multilingual" title="more languages"><i></i><span>more languages</span></a>
+        </div>
+            <div class="site--multilingual-links"><div class="panel-pane pane-block pane-menu-menu-multilingual-links" >
+  
+  
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="leaf first"><a href="//www.osce.org/ru/" class="i18-lang-ru" hreflang="en">Русский</a></li>
+<li class="leaf"><a href="//www.osce.org/it/" class="i18-lang-it" hreflang="en">Italiano</a></li>
+<li class="leaf"><a href="//www.osce.org/fr/" class="i18-lang-fr" hreflang="en">Français</a></li>
+<li class="leaf"><a href="//www.osce.org/es/" class="i18-lang-es" hreflang="en">Español</a></li>
+<li class="leaf"><a href="//www.osce.org/" class="i18-lang-en" hreflang="en">English</a></li>
+<li class="leaf last"><a href="//www.osce.org/de/" class="i18-lang-de" hreflang="en">Deutsch</a></li>
+</ul>  </div>
+
+  
+  </div>
+</div>
+            <div class="site--ticker">
+              </div>
+    </div>
+
+        <div class="site--multilingual--wrapper" style="display: none">
+      <div class="site--multilingual" id="multilingual">
+        <div class="panel-pane pane-multilingual" >
+  
+  
+  
+  <div class="pane-content">
+    <div class="osce-multilingual"><div class="osce-multilingual-select" id="multilingual-select"><h2>Quick access to multilingual content</h2><p>In addition to the web pages in the OSCE Official languages, the OSCE website contains a number of sections available in other languages. Please click on a language below to see the OSCE website sections available in that language.</p><div class="item-list"><ul><li class="first"><a href="#multilingual-hbs">Bosanski/Srpski/Hrvatski</a></li>
+<li><a href="#multilingual-kk">Қазақша</a></li>
+<li><a href="#multilingual-ky">Кыргызча</a></li>
+<li><a href="#multilingual-me">Crnogorski</a></li>
+<li><a href="#multilingual-mk">Македонски</a></li>
+<li><a href="#multilingual-ro">Română</a></li>
+<li><a href="#multilingual-sq">Shqip</a></li>
+<li><a href="#multilingual-sr">Srpski</a></li>
+<li><a href="#multilingual-tg">Tajik</a></li>
+<li><a href="#multilingual-tk">Türkmen</a></li>
+<li><a href="#multilingual-uk">Українська</a></li>
+<li class="last"><a href="#multilingual-uz">O'zbek</a></li>
+</ul></div><div class="multilingual-actions"><a href="#" class="multilingual-close"><span>Close this box</span><i></i></a><a href="#" class="multilingual-close-forever"><span>Close and don't open this box next time</span><i>!</i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-hbs" id="multilingual-hbs" style="display: none"><h2><span>Quick access to multilingual content</span>: <em>Bosanski/Srpski/Hrvatski</em></h2><p>Please choose a section to access the content available in the selected language.</p><div class="item-list"><ul><li class="first last"><a href="/hbs/mission-to-bosnia-and-herzegovina">Misija OSCE-a u Bosni i Hercegovini</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Back to available languages</a><a href="#" class="multilingual-close"><span>Close this box</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-kk" id="multilingual-kk" style="display: none"><h2><span>Көп тілді контентке жылдам қатынау</span>: <em>Қазақша</em></h2><p>Таңдалған тілдегі контентке өту үшін тарауды таңдаңыз.</p><div class="item-list"><ul><li class="first last"><a href="/kk/astana">ЕҚЫҰ-ның Астанадағы бағдарламалар Офисі</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Қол жетімді тілдерге қайта оралу</a><a href="#" class="multilingual-close"><span>Терезені жабу</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-ky" id="multilingual-ky" style="display: none"><h2><span>Көп тилдүү тексттерге мазмунга тез кирүү</span>: <em>Кыргызча</em></h2><p>Тандалган тилдеги мазмунга өтүүгө бөлүктү танданыз.</p><div class="item-list"><ul><li class="first last"><a href="/ky/programm-office-in-bishkek">ЕККУнун Бишкектеги Программалык кеңсеси </a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Керектүү тилди тандоого кайтуу</a><a href="#" class="multilingual-close"><span>Жабуу</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-me" id="multilingual-me" style="display: none"><h2><span>Brz pristup višejezičnom sadržaju</span>: <em>Crnogorski</em></h2><p>Molimo Vas da odaberete odjeljak da biste pristupili sadržaju na odabranom jeziku.</p><div class="item-list"><ul><li class="first last"><a href="/me/mission-to-montenegro">Misija OEBS-a u Crnoj Gori</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Nazad na dostupne jezike</a><a href="#" class="multilingual-close"><span>Zatvorite odjeljak</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-mk" id="multilingual-mk" style="display: none"><h2><span>Брз пристап до мултијазична содржина</span>: <em>Македонски</em></h2><p>Ве молиме изберете секција за да пристапите кон содржината достапна на избраниот јазик.</p><div class="item-list"><ul><li class="first last"><a href="/mk/mission-to-skopje">Мисијата на ОБСЕ во Скопје </a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Назад до достапните јазици</a><a href="#" class="multilingual-close"><span>Затвори го ова квадратче</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-ro" id="multilingual-ro" style="display: none"><h2><span>Acces rapid la conținutul disponibil în mai multe limbi</span>: <em>Română</em></h2><p>Selectați o secțiune pentru a accesa conținutul disponibil în limba selectată.</p><div class="item-list"><ul><li class="first last"><a href="/ro/moldova">Misiunea OSCE în Moldova</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Înapoi la limbile disponibile</a><a href="#" class="multilingual-close"><span>Închideți fereastra</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-sq" id="multilingual-sq" style="display: none"><h2><span>Hyrje e shpejtë në përmbajtjen shumëgjuhëshe</span>: <em>Shqip</em></h2><p>Ju lutemi, zgjidhni një seksion për të parë përmbajtjen në gjuhën e përzgjedhur.</p><div class="item-list"><ul><li class="first"><a href="/sq/mission-to-skopje">Misioni i OSBE-së në Shkup </a></li>
+<li><a href="/sq/mission-in-kosovo">Misioni i OSBE-së në Kosovë</a></li>
+<li class="last"><a href="/sq/presence-in-albania">Prezenca e OSBE-së në Shqipëri</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Kthehu në gjuhët e disponueshme</a><a href="#" class="multilingual-close"><span>Mbylle kutinë</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-sr" id="multilingual-sr" style="display: none"><h2><span>Brz pristup višejezičnom sadržaju</span>: <em>Srpski</em></h2><p>Molim Vas odaberite odeljak kako bi pristupili sadržaju na odabranom jeziku.</p><div class="item-list"><ul><li class="first"><a href="/sr/mission-to-serbia">Misija OEBS-a u Srbiji</a></li>
+<li class="last"><a href="/sr/mission-in-kosovo">Misija OEBS-a na Kosovu</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Nazad na dostupne jezike</a><a href="#" class="multilingual-close"><span>Zatvorite odeljak</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-tg" id="multilingual-tg" style="display: none"><h2><span>Дастрасии фаврӣ ба контенти бисёрзабона</span>: <em>Tajik</em></h2><p>Бахши дилхоҳатонро интихоб кунед ва бо забони интихобшуда ба контент дастрасӣ пайдо намоед.</p><div class="item-list"><ul><li class="first last"><a href="/tg/programme-office-in-dushanbe">Дафтари Барномаҳои САҲА дар Душанбе</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Бозгашт ба забонҳои дастрас</a><a href="#" class="multilingual-close"><span>Ин равзанаро бубандед</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-tk" id="multilingual-tk" style="display: none"><h2><span>Köp dilli maglumatlara tiz geçiş</span>: <em>Türkmen</em></h2><p>Saýlanylan dilde elýeterli bolan maglumatlara geçmek üçin bölümi saýlaň.</p><div class="item-list"><ul><li class="first last"><a href="/tk/ashgabat">ÝHHG-niň Aşgabatdaky Merkezi </a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Berilýän diller bölümine dolan</a><a href="#" class="multilingual-close"><span>Bu aýnany ýap</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-uk" id="multilingual-uk" style="display: none"><h2><span>Швидкий доступ до багатомовного контенту</span>: <em>Українська</em></h2><p>Будь ласка, виберіть розділ для доступу до контенту обраною мовою</p><div class="item-list"><ul><li class="first"><a href="/uk/project-coordinator-in-ukraine-closed">Координатор проектів ОБСЄ в Україні</a></li>
+<li><a href="/uk/special-monitoring-mission-to-ukraine-closed">Спеціальна моніторингова місія ОБСЄ в Україні  </a></li>
+<li><a href="/uk/special-monitoring-mission-to-ukraine/subscription">Підписатися на розсилку звітів та новин Спеціальної моніторингової місії ОБСЄ</a></li>
+<li class="last"><a href="/uk/support-programme-for-ukraine">Позабюджетна Програма підтримки ОБСЄ для України</a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Назад до вибору мови</a><a href="#" class="multilingual-close"><span>Закрити</span><i></i></a></div></div><div class="osce-multilingual-list osce-multilingual-list-uz" id="multilingual-uz" style="display: none"><h2><span>Бир неча тилдаги мундарижага тезкор кириш имконияти</span>: <em>O&#039;zbek</em></h2><p>Мавжуд бўлган тиллардаги маьлумотларга кириш учун тегишли бўлимни танланг.</p><div class="item-list"><ul><li class="first last"><a href="/uz/uzbekistan">ЕХҲТнинг Ўзбекистондаги лойиҳалари координатори </a></li>
+</ul></div><div class="multilingual-actions"><a href="#multilingual-select" class="multilingual-back">Мавжуд бўлган тилларга қайтиш</a><a href="#" class="multilingual-close"><span>Саҳифани епинг</span><i></i></a></div></div></div>  </div>
+
+  
+  </div>
+      </div>
+    </div>
+    
+
+    <div class="site--header--wrapper">
+      <div class="site--header">
+        <div class="site--logo">
+          <div class="site--name-and-slogan logo--default">
+  <div class="logo media--print">
+    <img src="/sites/default/themes/osce_tao/images/logo%402x.png"/>
+  </div>
+      <p class="site--name media--screen">
+      <a href="/" title="Home" rel="home"><span>OSCE</span></a>
+    </p>
+        <div class="site--slogan">Organization for Security and Co-operation in Europe</div>
+  </div>
+        </div>
+
+        <div class="site--meta">
+          <div class="panel-pane pane-block pane-menu-menu-meta-navigation meta-menu" >
+  
+      <h2 class="pane-title">0Meta Navigation</h2>
+  
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="leaf first"><a href="/press" hreflang="en">Newsroom</a></li>
+<li class="leaf"><a href="/blog" hreflang="en">Blog</a></li>
+<li class="leaf"><a href="/meetings-events" hreflang="en">Events</a></li>
+<li class="leaf"><a href="/partnerships" hreflang="en">Partnerships</a></li>
+<li class="leaf"><a href="/networks" hreflang="en">Networks</a></li>
+<li class="leaf last"><a href="/search/pages" hreflang="en">Search</a></li>
+</ul>  </div>
+
+  
+  </div>
+        </div>
+
+        <div class="site--search">
+          <gcse:searchbox-only></gcse:searchbox-only>          <a id="site--search-close" href="#">&times; Close search</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="site--navigation--wrapper">
+      <div class="site--navigation">
+        <div class="panel-pane pane-block pane-menu-menu-main-navigation main-menu" >
+  
+      <h2 class="pane-title">Navigation</h2>
+  
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="leaf first active-trail"><a href="/" title="" hreflang="en" class="active">Home</a></li>
+<li class="expanded"><a href="/who-we-are" hreflang="en" class="has-children">Who we are</a><ul class="menu"><li class="leaf first"><a href="/whatistheosce" hreflang="en">What is the OSCE?</a></li>
+<li class="leaf"><a href="/participating-states" hreflang="en">Participating States</a></li>
+<li class="leaf"><a href="/partners-for-cooperation" hreflang="en">Partners for Co-operation</a></li>
+<li class="leaf"><a href="/chairpersonship" hreflang="en">Chairpersonship</a></li>
+<li class="leaf"><a href="/summits" hreflang="en">Summits</a></li>
+<li class="leaf"><a href="/ministerial-councils" hreflang="en">Ministerial Councils</a></li>
+<li class="leaf"><a href="/permanent-council" hreflang="en">Permanent Council</a></li>
+<li class="leaf"><a href="/forum-for-security-cooperation" hreflang="en">Forum for Security Co-operation</a></li>
+<li class="leaf"><a href="/leadership" hreflang="en">Leadership</a></li>
+<li class="leaf"><a href="/related-bodies" hreflang="en">OSCE-related bodies</a></li>
+<li class="leaf"><a href="/funding-and-budget" hreflang="en">Funding and budget</a></li>
+<li class="leaf last"><a href="/history" hreflang="en">History</a></li>
+</ul></li>
+<li class="expanded"><a href="/what-we-do" hreflang="en" class="has-children">What we do</a><ul class="menu"><li class="leaf first"><a href="/arms-control" hreflang="en">Arms control</a></li>
+<li class="leaf"><a href="/border-management" hreflang="en">Border management</a></li>
+<li class="leaf"><a href="/combating-human-trafficking" hreflang="en">Combating trafficking in human beings</a></li>
+<li class="leaf"><a href="/countering-terrorism" hreflang="en">Countering terrorism</a></li>
+<li class="leaf"><a href="/conflict-prevention-and-resolution" hreflang="en">Conflict prevention and resolution</a></li>
+<li class="leaf"><a href="/cyber-ict-security" hreflang="en">Cyber/ICT Security</a></li>
+<li class="leaf"><a href="/democratization" hreflang="en">Democratization</a></li>
+<li class="leaf"><a href="/economic-activities" hreflang="en">Economic activities</a></li>
+<li class="leaf"><a href="/education" hreflang="en">Education</a></li>
+<li class="leaf"><a href="/elections" hreflang="en">Elections</a></li>
+<li class="leaf"><a href="/environmental-activities" hreflang="en">Environmental activities</a></li>
+<li class="leaf"><a href="/gender-equality" hreflang="en">Gender equality</a></li>
+<li class="leaf"><a href="/good-governance" hreflang="en">Good governance</a></li>
+<li class="leaf"><a href="/human-rights" hreflang="en">Human rights</a></li>
+<li class="leaf"><a href="/media-freedom-and-development" hreflang="en">Media freedom and development</a></li>
+<li class="leaf"><a href="/migration" hreflang="en">Migration</a></li>
+<li class="leaf"><a href="/national-minority-issues" hreflang="en">National minority issues</a></li>
+<li class="leaf"><a href="/policing" hreflang="en">Policing</a></li>
+<li class="leaf"><a href="/reform-and-cooperation-in-the-security-sector" hreflang="en">Reform and co-operation in the security sector</a></li>
+<li class="leaf"><a href="/roma-and-sinti" hreflang="en">Roma and Sinti</a></li>
+<li class="leaf"><a href="/rule-of-law" hreflang="en">Rule of law</a></li>
+<li class="leaf"><a href="/tolerance-and-nondiscrimination" hreflang="en">Tolerance and non-discrimination</a></li>
+<li class="leaf"><a href="/youth" hreflang="en">Youth</a></li>
+<li class="leaf last"><a href="/sustainable-development-goals" class="menu-item-multiline" hreflang="en">#GLOBALGOALS - The OSCE and the Sustainable Development Goals</a></li>
+</ul></li>
+<li class="expanded"><a href="/where-we-are" hreflang="en" class="has-children">Where we are</a><ul class="menu"><li class="leaf first"><a href="/presence-in-albania" hreflang="en">Presence in Albania</a></li>
+<li class="leaf"><a href="/mission-to-bosnia-and-herzegovina" hreflang="en">Mission to Bosnia and Herzegovina</a></li>
+<li class="leaf"><a href="/mission-in-kosovo" hreflang="en">Mission in Kosovo</a></li>
+<li class="leaf"><a href="/mission-to-montenegro" hreflang="en">Mission to Montenegro</a></li>
+<li class="leaf"><a href="/mission-to-serbia" hreflang="en">Mission to Serbia</a></li>
+<li class="leaf"><a href="/mission-to-skopje" hreflang="en">Mission to Skopje</a></li>
+<li class="leaf"><a href="/mission-to-moldova" hreflang="en">Mission to Moldova</a></li>
+<li class="leaf"><a href="/centre-in-ashgabat" hreflang="en">Centre in Ashgabat</a></li>
+<li class="leaf"><a href="/programme-office-in-astana" hreflang="en">Programme Office in Astana</a></li>
+<li class="leaf"><a href="/programme-office-in-bishkek" hreflang="en">Programme Office in Bishkek</a></li>
+<li class="leaf"><a href="/programme-office-in-dushanbe" hreflang="en">Programme Office in Dushanbe</a></li>
+<li class="leaf"><a href="/project-coordinator-in-uzbekistan" hreflang="en">Project Co-ordinator in Uzbekistan</a></li>
+<li class="leaf"><a href="/cio/andrzej-kasprzyk" class="menu-item-multiline" hreflang="en">Personal Representative of the Chairperson-in-Office on the conflict dealt with by the OSCE Minsk Conference</a></li>
+<li class="leaf last"><a href="/closed-field-operations" hreflang="en">Closed field operations</a></li>
+</ul></li>
+<li class="expanded"><a href="/institutions-and-structures" hreflang="en" class="has-children">Institutions &amp; structures</a><ul class="menu"><li class="leaf first"><a href="http://www.oscepa.org/" title="" hreflang="en">Parliamentary Assembly</a></li>
+<li class="leaf"><a href="/hcnm" title="" hreflang="en">High Commissioner on National Minorities</a></li>
+<li class="leaf"><a href="/odihr" title="" hreflang="en">Office for Democratic Institutions and Human Rights</a></li>
+<li class="leaf"><a href="/representative-on-freedom-of-media" title="" hreflang="en">Representative on Freedom of the Media</a></li>
+<li class="leaf"><a href="/cca" title="" hreflang="en">Court of Conciliation and Arbitration</a></li>
+<li class="leaf"><a href="/mg" title="" hreflang="en">Minsk Group</a></li>
+<li class="leaf last"><a href="/secretariat" title="" hreflang="en">Secretariat</a></li>
+</ul></li>
+<li class="expanded last"><a href="/resources" hreflang="en" class="has-children">Resources</a><ul class="menu"><li class="leaf first"><a href="/resources/csce-osce-key-documents" hreflang="en">CSCE/OSCE key documents</a></li>
+<li class="leaf"><a href="/resources/documents/decision-making-bodies" hreflang="en">Documents by the OSCE Decision-making bodies</a></li>
+<li class="leaf"><a href="/resources/documents" title="" hreflang="en">Documents library</a></li>
+<li class="leaf"><a href="/resources/publications" title="" hreflang="en">Publications</a></li>
+<li class="leaf"><a href="/press-releases" title="" hreflang="en">Press releases and news archive</a></li>
+<li class="leaf"><a href="/resources/multimedia" title="" hreflang="en">Multimedia</a></li>
+<li class="leaf"><a href="/resources/e-libraries" title="" hreflang="en">E-libraries</a></li>
+<li class="leaf"><a href="/resources/126378" title="" hreflang="en">Quarterly Selections</a></li>
+<li class="leaf last"><a href="/osce-social-media" hreflang="en">Social media</a></li>
+</ul></li>
+</ul>  </div>
+
+  
+  </div>
+      </div>
+    </div>
+
+  </div>
+
+
+      <div class="site--banner--wrapper">
+      <div class="site--banner">
+        <div class="panel-pane pane-panels-mini pane-homepage-banner" >
+  
+  
+  
+  <div class="pane-content">
+    <div class="panel-pane pane-panels-mini pane-homepage-banner-2columns" >
+  
+  
+  
+  <div class="pane-content">
+    <div class="panel-pane pane-panels-mini pane-homepage-slider-4thumbs"  id="banner-wide-variant-slider">
+  
+  
+  
+  <div class="pane-content">
+    <div class="panel-pane pane-views-panes pane-node-latest-stories-panel-pane-10"  id="slider-wide-variant-image">
+  
+  
+  
+  <div class="pane-content">
+    <div class="view view-node-latest-stories view-id-node_latest_stories view-display-id-panel_pane_10 view-dom-id-a6a9898c06980e22452eecd3cbc54765">
+    
+  
+      <div class="attachment attachment-before">
+      <div class="view view-node-latest-stories view-id-node_latest_stories view-display-id-attachment_1 view-dom-id-ce361a56f7569872529a6a26a1340872">
+    
+  
+  
+      <div class="view-content">
+      <div class="">
+  <div
+    class="osce-slick osce-slick-front-cols-nav"
+    data-slick-config="front-cols-nav"
+    id="front-cols-nav"
+    data-slick-navigates="front-cols-images">
+          <div class=" slick-row slick-row-0">  
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/61_frontpage_slider_thumb/f/images/hires/9/4/566797_0.JPG?1713279384" alt="OSCE Secretary General Helga Maria Schmid, OSCE Special Representative and Co-ordinator for Combating Trafficking in Human Beings Dr. Kari Johnstone, Director of the OSCE Office for Democratic Institutions and Human Rights Matteo Meccaci and Deputy Director General of the International Organization for Migration Ugochi Daniels at the opening session of the 24th Conference of the Alliance against Trafficking in Persons in Vienna (OSCE)" title="OSCE Secretary General Helga Maria Schmid, OSCE Special Representative and Co-ordinator for Combating Trafficking in Human Beings Dr. Kari Johnstone, Director of the OSCE Office for Democratic Institutions and Human Rights Matteo Meccaci and Deputy Director General of the International Organization for Migration Ugochi Daniels at the opening session of the 24th Conference of the Alliance against Trafficking in Persons in Vienna (OSCE)" width="136" height="92" class="imagecache imagecache-61_frontpage_slider_thumb"/></div></span>
+  </div>
+</div>
+          <div class=" slick-row slick-row-1">  
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><img src="https://www.osce.org/files/imagecache/61_frontpage_slider_thumb/f/images/content-ref/b/4/566923.png?1713425095" alt="" title="" width="136" height="92" class="imagecache imagecache-61_frontpage_slider_thumb imagecache-default imagecache-61_frontpage_slider_thumb_default"/></span>
+  </div>
+</div>
+          <div class=" slick-row slick-row-2">  
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/61_frontpage_slider_thumb/f/images/hires/6/e/567277.jpg?1714037874" alt="OSCE Secretary General Helga Maria Schmid welcomed mentees of the second edition of the OSCE Women’s Peace Leadership Programme, Vienna, 22 April 2024. (OSCE/Luiza Puiu )" title="OSCE Secretary General Helga Maria Schmid welcomed mentees of the second edition of the OSCE Women’s Peace Leadership Programme, Vienna, 22 April 2024. (OSCE/Luiza Puiu )" width="136" height="92" class="imagecache imagecache-61_frontpage_slider_thumb"/></div></span>
+  </div>
+</div>
+          <div class=" slick-row slick-row-3">  
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/61_frontpage_slider_thumb/f/images/hires/f/2/567376.jpeg?1714124225" alt="An expert on open-source intelligence from Lithuania delivers a training session on search engine operators, Tashkent, 26 April 2024
+  (OSCE/Juraj Nosal)" title="An expert on open-source intelligence from Lithuania delivers a training session on search engine operators, Tashkent, 26 April 2024
+  (OSCE/Juraj Nosal)" width="136" height="92" class="imagecache imagecache-61_frontpage_slider_thumb"/></div></span>
+  </div>
+</div>
+      </div>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>     </div>
+  
+      <div class="view-content">
+      <div class="">
+  <div
+    class="osce-slick osce-slick-front-cols-images"
+    data-slick-config="front-cols-images"
+    id="front-cols-images"
+    data-slick-navigates="front-cols-text">
+          <div class=" slick-row slick-row-0"><div class="osce-figure-wrapper osce-figure-">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-4">
+                <span class="field-content"><a href="/secretariat/566800"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/62_frontpage_slider_variant/f/images/hires/9/4/566797_0.JPG?1713279384" alt="OSCE Secretary General Helga Maria Schmid, OSCE Special Representative and Co-ordinator for Combating Trafficking in Human Beings Dr. Kari Johnstone, Director of the OSCE Office for Democratic Institutions and Human Rights Matteo Meccaci and Deputy Director General of the International Organization for Migration Ugochi Daniels at the opening session of the 24th Conference of the Alliance against Trafficking in Persons in Vienna (OSCE)" title="OSCE Secretary General Helga Maria Schmid, OSCE Special Representative and Co-ordinator for Combating Trafficking in Human Beings Dr. Kari Johnstone, Director of the OSCE Office for Democratic Institutions and Human Rights Matteo Meccaci and Deputy Director General of the International Organization for Migration Ugochi Daniels at the opening session of the 24th Conference of the Alliance against Trafficking in Persons in Vienna (OSCE)" width="710" height="450" class="imagecache imagecache-62_frontpage_slider_variant"/></div></a></span>
+  </div>
+    </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-1"><div class="osce-figure-wrapper osce-figure-">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-4">
+                <span class="field-content"><a href="/chairpersonship/566905"><img src="https://www.osce.org/files/imagecache/62_frontpage_slider_variant/f/images/content-ref/b/4/566923.png?1713425095" alt="" title="" width="710" height="450" class="imagecache imagecache-62_frontpage_slider_variant imagecache-default imagecache-62_frontpage_slider_variant_default"/></a></span>
+  </div>
+    </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-2"><div class="osce-figure-wrapper osce-figure-">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-4">
+                <span class="field-content"><a href="/secretariat/567280"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/62_frontpage_slider_variant/f/images/hires/6/e/567277.jpg?1714037874" alt="OSCE Secretary General Helga Maria Schmid welcomed mentees of the second edition of the OSCE Women’s Peace Leadership Programme, Vienna, 22 April 2024. (OSCE/Luiza Puiu )" title="OSCE Secretary General Helga Maria Schmid welcomed mentees of the second edition of the OSCE Women’s Peace Leadership Programme, Vienna, 22 April 2024. (OSCE/Luiza Puiu )" width="710" height="450" class="imagecache imagecache-62_frontpage_slider_variant"/></div></a></span>
+  </div>
+    </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-3"><div class="osce-figure-wrapper osce-figure-">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-4">
+                <span class="field-content"><a href="/secretariat/567379"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/62_frontpage_slider_variant/f/images/hires/f/2/567376.jpeg?1714124225" alt="An expert on open-source intelligence from Lithuania delivers a training session on search engine operators, Tashkent, 26 April 2024
+  (OSCE/Juraj Nosal)" title="An expert on open-source intelligence from Lithuania delivers a training session on search engine operators, Tashkent, 26 April 2024
+  (OSCE/Juraj Nosal)" width="710" height="450" class="imagecache imagecache-62_frontpage_slider_variant"/></div></a></span>
+  </div>
+    </div>
+      </div>
+</div>
+</div>
+      </div>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+  
+  </div>
+<div class="panel-pane pane-panels-mini pane-home-slider-4thumbs-content"  id="slider-wide-variant-slider-content">
+  
+  
+  
+  <div class="pane-content">
+    <div class="panel-pane pane-banner"  id="slider-wide-variant-banner">
+  
+  
+  
+  <div class="pane-content">
+    Featured  </div>
+
+  
+  </div>
+<div class="panel-pane pane-views-panes pane-node-latest-stories-panel-pane-11"  id="slider-wide-variant-text">
+  
+  
+  
+  <div class="pane-content">
+    <div class="view view-node-latest-stories view-id-node_latest_stories view-display-id-panel_pane_11 view-dom-id-2e3962f8ea0ce6b4de87abca378c66df">
+    
+  
+  
+      <div class="view-content">
+      <div class="">
+  <div
+    class="osce-slick osce-slick-front-cols-text"
+    data-slick-config="front-cols-text"
+    id="front-cols-text"
+    data-slick-navigates="">
+          <div class=" slick-row slick-row-0">  
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/secretariat/566800"><h1>OSCE leaders and anti-trafficking experts underscore need to rethink prevention methods to address evolving trafficking tactics </h1></a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <span class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </span>
+  
+  <span class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/secretariat/566800">Read more</a></span>
+  </span>
+</div>
+          <div class=" slick-row slick-row-1">  
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/chairpersonship/566905"><h1>OSCE Chair-in-Office and Secretary General demand urgent action to release the three OSCE officials held in Donetsk and Luhansk for 2 years </h1></a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <span class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </span>
+  
+  <span class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/chairpersonship/566905">Read more</a></span>
+  </span>
+</div>
+          <div class=" slick-row slick-row-2">  
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/secretariat/567280"><h1>Women peacebuilders from across the OSCE region and Afghanistan gathered in Vienna for the second edition of the Women’s Peace Leadership Programme </h1></a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <span class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </span>
+  
+  <span class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/secretariat/567280">Read more</a></span>
+  </span>
+</div>
+          <div class=" slick-row slick-row-3">  
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/secretariat/567379"><h1>Open-source intelligence and online investigations in focus at OSCE training course for law enforcement in Uzbekistan </h1></a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <span class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </span>
+  
+  <span class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/secretariat/567379">Read more</a></span>
+  </span>
+</div>
+      </div>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+  
+  </div>
+  </div>
+
+  
+  </div>
+  </div>
+
+  
+  </div>
+<aside class="osce-box  osce-box-style-white osce-box-collapse-never osce-box-gridlayout-nogrid osce-box-views osce-box-taxonomy_news osce-borderless" id="banner-wide-variant-news">
+  <header class="osce-box-header">
+              <h2 class="osce-box-title"><span>Latest News</span></h2>
+          </header>
+  <div class="osce-box-content ">
+    <div class="view view-taxonomy-news view-id-taxonomy_news view-display-id-embed_6 view-dom-id-5688c0bf58e270a2b6f057d7e912e4f9">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="/odihr/567517">International observers to Serbia’s local elections to hold press conference on Tuesday</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">BELGRADE</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">29 April 2024</span></span>
+  </span>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="/odihr/elections/567283">North Macedonia’s presidential election competitive and overall well run, but marked by legal gaps and negative rhetoric, international observers say</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">SKOPJE</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">25 April 2024</span></span>
+  </span>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="/odihr/elections/567175">International election observers to North Macedonia’s presidential election to hold press conference on Thursday</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">SKOPJE</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">23 April 2024</span></span>
+  </span>
+  </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="/odihr/567070">Civil society is vital to promote and protect international law during times of crisis, OSCE leaders say</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">VIENNA</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">22 April 2024</span></span>
+  </span>
+  </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <a href="/press">View all news</a>    </div>
+  
+  
+</div>   </div>
+</aside>
+  </div>
+
+  
+  </div>
+  </div>
+
+  
+  </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  <div class="site--content--wrapper">
+    <div class="site--content">
+      <div class="panel-pane pane-page-content" >
+  
+  
+  
+  <div class="pane-content">
+    <div class="layout-frontpage sidebar-top no-sidebar-bottom no-content-top">
+          <div class="content--sidebar-top">
+      <aside class="osce-box frontpage-news osce-box-style-white osce-box-collapse-never osce-box-gridlayout-nogrid osce-box-views osce-box-taxonomy_news osce-borderless">
+  <header class="osce-box-header">
+              <h2 class="osce-box-title"><span>Latest News</span></h2>
+          </header>
+  <div class="osce-box-content ">
+    <div class="view view-taxonomy-news view-id-taxonomy_news view-display-id-embed_4 view-dom-id-ad147ffc2ddd2046c4c43a404c8e4ac6">
+    
+  
+  
+      <div class="view-content">
+      <div class="">
+  <div
+    class="osce-slick osce-slick-frontpage-news"
+    data-slick-config="frontpage-news"
+    id=""
+    data-slick-navigates="">
+          <div class=" slick-row slick-row-0">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="/odihr/elections/567283">North Macedonia’s presidential election competitive and overall well run, but marked by legal gaps and negative rhetoric, international observers say</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">SKOPJE</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">25 April 2024</span></span>
+  </span>
+</div>
+          <div class=" slick-row slick-row-1">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="/odihr/567070">Civil society is vital to promote and protect international law during times of crisis, OSCE leaders say</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">VIENNA</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">22 April 2024</span></span>
+  </span>
+</div>
+          <div class=" slick-row slick-row-2">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="/chairpersonship/567052">Malta will continue strengthening UN-OSCE collaboration, Chair-in-Office Borg tells UN Security Council</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">NEW YORK CITY</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">19 April 2024</span></span>
+  </span>
+</div>
+          <div class=" slick-row slick-row-3">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="/chairpersonship/566932">OSCE Chairperson-in-Office Borg and Secretary General Schmid respond to recent political developments in Bosnia and Herzegovina</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">VALLETTA/VIENNA</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">19 April 2024</span></span>
+  </span>
+</div>
+          <div class=" slick-row slick-row-4">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="/chairpersonship/566905">OSCE Chair-in-Office and Secretary General demand urgent action to release the three OSCE officials held in Donetsk and Luhansk for 2 years</a></span>
+  </div>
+  
+  <span class="views-field-field-location-value">
+                <span class="field-content">VALLETTA/VIENNA</span>
+  </span>
+      <span class="views-field-field-date-location-separator">, </span>  
+  <span class="views-field-field-date-value">
+                <span class="field-content"><span class="date-display-single">18 April 2024</span></span>
+  </span>
+</div>
+      </div>
+</div>    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <a href="/press">View all news</a>    </div>
+  
+  
+</div>   </div>
+</aside>
+    </div>
+    <div class="content--content-bottom">
+    <div class="panel-pane pane-views-panes pane-node-stories-panel-pane-2" >
+  
+      <h2 class="pane-title"><span>Highlights</span></h2>
+  
+  
+  <div class="pane-content">
+    <div class="view view-node-stories view-id-node_stories view-display-id-panel_pane_2 more-stories view-dom-id-c2653caf1c94d5564e4020bc4b135dba">
+    
+  
+  
+      <div class="view-content">
+      <div class="">
+  <div
+    class="osce-slick osce-slick-more-stories"
+    data-slick-config="more-stories"
+    id=""
+    data-slick-navigates="">
+          <div class=" slick-row slick-row-0"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/secretariat/560927"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/b/4/560924.jpeg?1702998887" alt="Participant of the regional workshop discussing the findings of the OSCE assessment report on ‘Understanding the role of women in organized crime’ in the context of Central Asia, Tashkent, 18 December 2023 (OSCE)" title="Participant of the regional workshop discussing the findings of the OSCE assessment report on ‘Understanding the role of women in organized crime’ in the context of Central Asia, Tashkent, 18 December 2023 (OSCE)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/secretariat/560927" 0="s:6:&quot;a:0:{}&quot;;">Role of women in organized crime in focus at OSCE workshop for law enforcement in Central Asia</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-1"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/chairpersonship/558594"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/c/2/558633.png?1700844546" alt="16 days of activism against gender-based violence. (OSCE)" title="16 days of activism against gender-based violence. (OSCE)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/chairpersonship/558594" 0="s:6:&quot;a:0:{}&quot;;">OSCE joins 16 Days of Activism campaign, calls for immediate action to eliminate violence against women and girls </a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-2"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/osce-in-ukraine"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/a/b/548296.jpg?1689063494" alt="OSCE In Ukraine Banner (OSCE)" title="OSCE In Ukraine Banner (OSCE)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/osce-in-ukraine" 0="a:0:{}">The OSCE in Ukraine</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content">Find all of the latest projects, news and reports on the situation in Ukraine</div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-3"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="https://www.osce.org/representative-on-freedom-of-media/554272"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/1/4/554290.jpg?1696432661" alt=" (OSCE/Paloma Madrigal)" title=" (OSCE/Paloma Madrigal)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="https://www.osce.org/representative-on-freedom-of-media/554272" 0="s:6:&quot;a:0:{}&quot;;">OSCE Media Freedom Representative launches new guidelines for monitoring online violence against female journalists</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-4"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/chairpersonship/555279"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/e/4/555276.png?1697545240" alt="Participants attending the OSCE-UNHCR conference on preventing the statelessness and accessing the civil documentation in South-Eastern Europe, Skopje, 17 October 2023. (UNHCR)" title="Participants attending the OSCE-UNHCR conference on preventing the statelessness and accessing the civil documentation in South-Eastern Europe, Skopje, 17 October 2023. (UNHCR)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/chairpersonship/555279" 0="s:6:&quot;a:0:{}&quot;;">OSCE Chairpersonship of North Macedonia, UNHCR, OSCE Mission to Skopje, HCNM and ODIHR join forces to end statelessness in South-Eastern Europe </a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-5"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/blog/549562"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/f/0/549571_0.png?1691513119" alt=" (OSCE)" title=" (OSCE)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/blog/549562" 0="s:6:&quot;a:0:{}&quot;;">Agents of change: Young people as drivers for a safer tomorrow</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-6"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/odihr/541038"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/c/c/540984.jpg?1680774972" alt="Roma human rights activists Lois Brookes-Jones and Linda Greta Zsiga speak at an ODIHR event in Warsaw. 25 September 2019. (OSCE/Piotr Markowski)" title="Roma human rights activists Lois Brookes-Jones and Linda Greta Zsiga speak at an ODIHR event in Warsaw. 25 September 2019. (OSCE/Piotr Markowski)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/odihr/541038" 0="s:6:&quot;a:0:{}&quot;;">Solutions to multiple challenges faced by Roma women urgently needed, OSCE human rights head says</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-7"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/chairmanship/2023whdc"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/0/7/554092.jpg?1696267334" alt="Warsaw Human Dimension Conference, Opening Plenary. 2 October 2023. (OSCE/Piotr Dziubak)" title="Warsaw Human Dimension Conference, Opening Plenary. 2 October 2023. (OSCE/Piotr Dziubak)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/chairmanship/2023whdc" 0="a:0:{}">Warsaw Human Dimension Conference  </a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content">Registration deadline: 8 September</div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-8"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/representative-on-freedom-of-media/543888"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/9/b/543882.jpg?1684320273" alt="OSCE Representative on Freedom of the Media Teresa Ribeiro speaking at the South East Europe Media Conference in Skopje (OSCE/Adis Mustedanagic)" title="OSCE Representative on Freedom of the Media Teresa Ribeiro speaking at the South East Europe Media Conference in Skopje (OSCE/Adis Mustedanagic)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/representative-on-freedom-of-media/543888" 0="s:6:&quot;a:0:{}&quot;;">Urgent collective response needed to safeguard media freedom and protect democracy, concludes Ninth South East Europe Media Conference</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-9"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/chairpersonship/543525"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/8/f/543528.jpg?1684065326" alt="The OSCE Chairman-in-Office, Minister of Foreign Affairs of North Macedonia Bujar Osmani during his visit to Bosnia and Herzegovina (BiH), 13 May 2023. (Ministry of Foreign Affairs of North Macedonia)" title="The OSCE Chairman-in-Office, Minister of Foreign Affairs of North Macedonia Bujar Osmani during his visit to Bosnia and Herzegovina (BiH), 13 May 2023. (Ministry of Foreign Affairs of North Macedonia)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/chairpersonship/543525" 0="s:6:&quot;a:0:{}&quot;;">OSCE Chairman-in-Office Osmani concludes visit to Bosnia and Herzegovina</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-10"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/chairpersonship/536497"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/0/6/536491_0.jpeg?1674662851" alt="The OSCE Chairman-in-Office, Minister of Foreign Affairs of North Macedonia Bujar Osmani meets staff from the OSCE Mission to Skopje, 25 January 2023.  (OSCE/Ministry of Foreign Affairs of North Macedonia )" title="The OSCE Chairman-in-Office, Minister of Foreign Affairs of North Macedonia Bujar Osmani meets staff from the OSCE Mission to Skopje, 25 January 2023.  (OSCE/Ministry of Foreign Affairs of North Macedonia )" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/chairpersonship/536497" 0="s:6:&quot;a:0:{}&quot;;">OSCE Chairman-in-Office Osmani visits OSCE Mission to Skopje</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-11"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/chairpersonship/537119"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/d/4/537122.jpg?1675771892" alt="Speakers at the opening session of the 2023 Skopje Conference on Addressing anti-Semitism in the OSCE Region, Skopje, 6 February 2023. (Ministry of Foreign Affairs of North Macedonia/Aleksandar Milovanovski)" title="Speakers at the opening session of the 2023 Skopje Conference on Addressing anti-Semitism in the OSCE Region, Skopje, 6 February 2023. (Ministry of Foreign Affairs of North Macedonia/Aleksandar Milovanovski)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/chairpersonship/537119" 0="s:6:&quot;a:0:{}&quot;;">Renewed efforts to counter anti-Semitism across the region are essential, say OSCE leaders</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+      </div>
+</div>    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <a href="/press">View all news </a><a href="/stories">View all stories</a>    </div>
+  
+  
+</div>   </div>
+
+  
+  </div>
+<aside class="osce-box  osce-box-style-black osce-box-collapse-mobile osce-box-gridlayout-nogrid osce-box-panels_mini osce-box-homepage_activities osce-box-collapse">
+  <header class="osce-box-header">
+          <div class="osce-box-label">What we do</div>
+              <h2 class="osce-box-title"><span>OSCE Areas of Focus</span></h2>
+          </header>
+  <div class="osce-box-content ">
+    <ul class="menu"><li class="leaf first"><a href="/arms-control" title="Arms control
+" hreflang="en">Arms control</a></li>
+<li class="leaf"><a href="/border-management" title="Border management
+" hreflang="en">Border management</a></li>
+<li class="leaf"><a href="/combating-human-trafficking" title="Combating human trafficking
+" hreflang="en">Combating human trafficking</a></li>
+<li class="leaf"><a href="/countering-terrorism" title="Combating terrorism
+" hreflang="en">Countering terrorism</a></li>
+<li class="leaf"><a href="/conflict-prevention-and-resolution" title="Conflict prevention and resolution
+" hreflang="en">Conflict prevention and resolution</a></li>
+<li class="leaf"><a href="/cyber-ict-security" title="Cyber/ICT Security" hreflang="en">Cyber/ICT Security</a></li>
+<li class="leaf"><a href="/democratization" hreflang="en">Democratization</a></li>
+<li class="leaf"><a href="/economic-activities" title="Economic activities
+" hreflang="en">Economic activities</a></li>
+<li class="leaf"><a href="/education" title="Education
+" hreflang="en">Education</a></li>
+<li class="leaf"><a href="/elections" title="Elections
+" hreflang="en">Elections</a></li>
+<li class="leaf"><a href="/environmental-activities" title="Environmental activities
+" hreflang="en">Environmental activities</a></li>
+<li class="leaf"><a href="/gender-equality" title="Gender equality
+" hreflang="en">Gender equality</a></li>
+<li class="leaf"><a href="/good-governance" title="Good governance
+" hreflang="en">Good governance</a></li>
+<li class="leaf"><a href="/human-rights" title="Human rights
+" hreflang="en">Human rights</a></li>
+<li class="leaf"><a href="/media-freedom-and-development" title="Media freedom and development
+" hreflang="en">Media freedom and development</a></li>
+<li class="leaf"><a href="/migration" title="Migration" hreflang="en">Migration</a></li>
+<li class="leaf"><a href="/national-minority-issues" title="Minority rights
+" hreflang="en">Minority rights</a></li>
+<li class="leaf"><a href="/policing" title="Policing
+" hreflang="en">Policing</a></li>
+<li class="leaf"><a href="/reform-and-cooperation-in-the-security-sector" title="Reform and Cooperation in the Security Sector
+" hreflang="en">Reform and co-operation in the security sector</a></li>
+<li class="leaf"><a href="/roma-and-sinti" title="Roma and Sinti
+" hreflang="en">Roma and Sinti</a></li>
+<li class="leaf"><a href="/rule-of-law" title="Rule of law
+" hreflang="en">Rule of law</a></li>
+<li class="leaf"><a href="/tolerance-and-nondiscrimination" title="Tolerance and non-discrimination
+" hreflang="en">Tolerance and non-discrimination</a></li>
+<li class="leaf"><a href="/youth" title="Youth" hreflang="en">Youth</a></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf"></li>
+<li class="leaf last"></li>
+</ul>  </div>
+</aside>
+<aside class="osce-box frontpage-we-recommend osce-box-style-white osce-box-collapse-never osce-box-gridlayout-nogrid osce-box-views_panes osce-box-frontpage_recommended-panel_pane_1 osce-borderless">
+  <header class="osce-box-header">
+              <h2 class="osce-box-title"><span>Promoted</span></h2>
+          </header>
+  <div class="osce-box-content ">
+    <div class="view view-frontpage-recommended view-id-frontpage_recommended view-display-id-panel_pane_1 view-dom-id-5b8712f703c71d3a4b911ce89abb4ddd">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><a href="/node/133481"><img src="https://www.osce.org/files/imagecache/banner_small/f/images/content-ref/3/5/133481.png?1595341477" alt="" title="" width="300" height="125" class="imagecache imagecache-banner_small imagecache-default imagecache-banner_small_default"/></a></span>
+  </div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><a href="/node/133486"><img src="https://www.osce.org/files/imagecache/banner_small/f/images/content-ref/d/4/133486_5.png?1707236514" alt="" title="" width="300" height="125" class="imagecache imagecache-banner_small imagecache-default imagecache-banner_small_default"/></a></span>
+  </div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><a href="/node/133491"><img src="https://www.osce.org/files/imagecache/banner_small/f/images/content-ref/4/2/133491.png?1517305686" alt="" title="" width="300" height="125" class="imagecache imagecache-banner_small imagecache-default imagecache-banner_small_default"/></a></span>
+  </div>
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><a href="/node/133496"><img src="https://www.osce.org/files/imagecache/banner_small/f/images/content-ref/b/1/133496.png?1517305687" alt="" title="" width="300" height="125" class="imagecache imagecache-banner_small imagecache-default imagecache-banner_small_default"/></a></span>
+  </div>
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><a href="/node/133501"><img src="https://www.osce.org/files/imagecache/banner_small/f/images/content-ref/d/e/133501.png?1517305687" alt="" title="" width="300" height="125" class="imagecache imagecache-banner_small imagecache-default imagecache-banner_small_default"/></a></span>
+  </div>
+  </div>
+  <div class="views-row views-row-6 views-row-even views-row-last">
+      
+  <div class="views-field-field-image-hi-res-fid">
+                <span class="field-content"><a href="/node/133506"><img src="https://www.osce.org/files/imagecache/banner_small/f/images/content-ref/1/5/133506.png?1517305687" alt="" title="" width="300" height="125" class="imagecache imagecache-banner_small imagecache-default imagecache-banner_small_default"/></a></span>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</aside>
+<aside class="osce-box  osce-box-style-white osce-box-collapse-never osce-box-gridlayout-nogrid osce-box-views_panes osce-box-node_multimedia-panel_pane_2 osce-borderless">
+  <header class="osce-box-header">
+              <h2 class="osce-box-title"><span>Video &amp; Photography</span></h2>
+              <div class="osce-box-subtitle">Curated video and photography from our site. <a href="/resources/multimedia">See All</a></div>
+      </header>
+  <div class="osce-box-content ">
+    <div class="view view-node-multimedia view-id-node_multimedia view-display-id-panel_pane_2 view-dom-id-8cc18736cc8ab78fef96dd6a7e6ecc86">
+    
+  
+  
+      <div class="view-content">
+      <div class="">
+  <div
+    class="osce-slick osce-slick-default"
+    data-slick-config="default"
+    id=""
+    data-slick-navigates="">
+          <div class=" slick-row slick-row-0"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/chairpersonship/561920"><img src="https://www.osce.org/files/imagecache/30_small/f/images/content-ref/e/1/561926_0.png?1706180564" alt="" title="" width="300" height="200" class="imagecache imagecache-30_small imagecache-default imagecache-30_small_default"/></a></span>
+  </div>
+  
+  <div class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/chairpersonship/561920" 0="a:0:{}">Permanent Council Opening Address by the 2024 Chair-in-Office, Ian Borg</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <div class="views-field-nothing">
+                <span class="field-content"><i class="multimedia-icon multimedia-type-video multimedia-type-video-Video"></i></span>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-1"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/secretariat/560172"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/d/9/560205.png?1702291756" alt=" (OSCE)" title=" (OSCE)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+  
+  <div class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/secretariat/560172" 0="s:6:&quot;a:0:{}&quot;;">16 Days of Activism against Gender-Based Violence: Video Collection</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <div class="views-field-nothing">
+                <span class="field-content"><i class="multimedia-icon multimedia-type-item_list multimedia-type-item_list-Multimedia Gallery"></i></span>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-2"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/cthb/518169"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/4/a/520280.jpg?1655305318" alt="Since 2003, the Organization for Security and Cooperation in Europe has had a dedicated position to help States combat, prevent, and ultimately end human trafficking." title="Since 2003, the Organization for Security and Cooperation in Europe has had a dedicated position to help States combat, prevent, and ultimately end human trafficking." width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+  
+  <div class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/cthb/518169" 0="s:6:&quot;a:0:{}&quot;;">Our mission, combating human trafficking</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <div class="views-field-nothing">
+                <span class="field-content"><i class="multimedia-icon multimedia-type-video multimedia-type-video-Video"></i></span>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-3"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/project-coordinator-in-ukraine/520157"><img src="https://www.osce.org/files/imagecache/30_small/f/images/content-ref/b/f/520169_1.png?1655223696" alt="" title="" width="300" height="200" class="imagecache imagecache-30_small imagecache-default imagecache-30_small_default"/></a></span>
+  </div>
+  
+  <div class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/project-coordinator-in-ukraine/520157" 0="a:0:{}">Appropriate action after a chemical emergency can save lives</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <div class="views-field-nothing">
+                <span class="field-content"><i class="multimedia-icon multimedia-type-video multimedia-type-video-Video"></i></span>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-4"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="https://www.osce.org/secretary-general/512920"><img src="https://www.osce.org/files/imagecache/30_small/f/images/content-ref/d/9/512929.jpeg?1645705359" alt="" title="" width="300" height="200" class="imagecache imagecache-30_small imagecache-default imagecache-30_small_default"/></a></span>
+  </div>
+  
+  <div class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="https://www.osce.org/secretary-general/512920" 0="s:6:&quot;a:0:{}&quot;;">Address by OSCE Secretary General Helga Maria Schmid at OSCE PA&#039;s Winter Meeting</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content"></div>
+  </div>
+  
+  <div class="views-field-nothing">
+                <span class="field-content"><i class="multimedia-icon multimedia-type-video multimedia-type-video-Video"></i></span>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+          <div class=" slick-row slick-row-5"><div class="osce-figure-wrapper osce-figure- osce-figure-captioned">
+  <div class="osce-figure">
+    <div class="osce-figure-content">
+        
+  <div class="views-field-field-item-source-url-1">
+                <span class="field-content"><a href="/project-coordinator-in-ukraine/504727"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/30_small/f/images/hires/d/6/504724.jpeg?1637253150" alt="thumbnail: Ecological Restoration of the Iahorlyk River (OSCE)" title="thumbnail: Ecological Restoration of the Iahorlyk River (OSCE)" width="300" height="200" class="imagecache imagecache-30_small"/></div></a></span>
+  </div>
+  
+  <div class="views-field-field-item-source-url-2">
+                <span class="field-content"></span>
+  </div>
+    </div>
+          <div class="osce-figure-caption">
+          
+  <div class="views-field-field-item-source-url-3">
+                <span class="field-content"><a href="/project-coordinator-in-ukraine/504727" 0="a:0:{}">Ecological Restoration of the Iahorlyk River, a tributary of the Dniester River</a></span>
+  </div>
+  
+  <div class="views-field-field-description-value">
+                <div class="field-content">The OSCE in co-operation with UNDP and UNECE contributed to ecological restoration of transboundary Iahorlyk river.</div>
+  </div>
+  
+  <div class="views-field-nothing">
+                <span class="field-content"><i class="multimedia-icon multimedia-type-video multimedia-type-video-Video"></i></span>
+  </div>
+      </div>
+      </div>
+</div>
+</div>
+      </div>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</aside>
+<aside class="osce-box slick-recently-published slick-field-default osce-box-style-white osce-box-collapse-never osce-box-gridlayout-nogrid osce-box-content_field osce-box-field_links osce-borderless">
+  <header class="osce-box-header">
+              <h2 class="osce-box-title"><span>Recently published</span></h2>
+              <div class="osce-box-subtitle">Selected recent publications and official documents</div>
+      </header>
+  <div class="osce-box-content ">
+    <div class="field field-type-link field-field-links">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="link-item">
+    <div class="link-item-link">
+    <a href="/chairpersonship/priorities"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/50_thumb/f/images/hires/c/6/561899_0.png?1706171130" alt="Cover image for Malta&#039;s 2024 OSCE Chairpersonship Priorities booklet (OSCE)" title="Cover image for Malta&#039;s 2024 OSCE Chairpersonship Priorities booklet (OSCE)" width="75" height="100" class="imagecache imagecache-50_thumb"/></div></a><a href="/chairpersonship/priorities" title="Cover image for Malta&#039;s 2024 OSCE Chairpersonship Priorities booklet (OSCE)" class="title">Malta's 2024 OSCE Chairpersonship Priorities</a>  </div>
+        <div class="link-item-type">
+    <span>
+      Brochure    </span>
+  </div>
+      <div class="link-translations">
+    <ul class="links"><li class="node_translation_en active first last"><a href="/files/f/documents/7/8/561877.pdf" title="Malta&#039;s 2024 OSCE Chairpersonship Priorities" class="translation-link active" hreflang="en" data-nid="561877" data-tnid="561877" data-title="Malta&#039;s 2024 OSCE Chairpersonship Priorities" data-language="en">English</a></li>
+</ul>  </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                    <div class="link-item">
+    <div class="link-item-link">
+    <a href="/secretariat/560049"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/50_thumb/f/images/hires/0/d/560043.png?1701961848" alt="cover: Understanding the role of women in organized crime (OSCE)" title="cover: Understanding the role of women in organized crime (OSCE)" width="75" height="100" class="imagecache imagecache-50_thumb"/></div></a><a href="/secretariat/560049" title="cover: Understanding the role of women in organized crime (OSCE)" class="title">Understanding the Role of Women in Organized Crime</a>  </div>
+        <div class="link-item-type">
+    <span>
+      Study / report    </span>
+  </div>
+      <div class="link-translations">
+    <ul class="links"><li class="node_translation_en active first last"><a href="/files/f/documents/0/4/560049.pdf" title="Understanding the Role of Women in Organized Crime" class="translation-link active" hreflang="en" data-nid="560049" data-tnid="560049" data-title="Understanding the Role of Women in Organized Crime" data-language="en">English</a></li>
+</ul>  </div>
+  </div>
+        </div>
+              <div class="field-item odd">
+                    <div class="link-item">
+    <div class="link-item-link">
+    <a href="/secretariat/555999"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/50_thumb/f/images/hires/9/a/556014_0.png?1698062790" alt="cover: 10 Years of OSCE Cyber/ICT Security Confidence-Building Measures (OSCE)" title="cover: 10 Years of OSCE Cyber/ICT Security Confidence-Building Measures (OSCE)" width="75" height="100" class="imagecache imagecache-50_thumb"/></div></a><a href="/secretariat/555999" title="cover: 10 Years of OSCE Cyber/ICT Security Confidence-Building Measures (OSCE)" class="title">10 Years of OSCE Cyber/ICT Security Confidence-Building Measures</a>  </div>
+        <div class="link-item-type">
+    <span>
+      Brochure    </span>
+  </div>
+      <div class="link-translations">
+    <ul class="links"><li class="node_translation_en active first last"><a href="/files/f/documents/f/7/555999_1.pdf" title="10 Years of OSCE Cyber/ICT Security Confidence-Building Measures" class="translation-link active" hreflang="en" data-nid="555999" data-tnid="555999" data-title="10 Years of OSCE Cyber/ICT Security Confidence-Building Measures" data-language="en">English</a></li>
+</ul>  </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                    <div class="link-item">
+    <div class="link-item-link">
+    <a href="/court-of-conciliation-and-arbitration/539894"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/50_thumb/f/images/hires/8/5/539891.jpg?1679669817" alt=" (OSCE)" title=" (OSCE)" width="75" height="100" class="imagecache imagecache-50_thumb"/></div></a><a href="/court-of-conciliation-and-arbitration/539894" title=" (OSCE)" class="title">Court of Conciliation and Arbitration Annual Report 2022</a>  </div>
+        <div class="link-item-type">
+    <span>
+      Annual report    </span>
+  </div>
+      <div class="link-translations">
+    <ul class="links"><li class="node_translation_en active first last"><a href="/files/f/documents/e/8/539894.pdf" title="Court of Conciliation and Arbitration Annual Report 2022" class="translation-link active" hreflang="en" data-nid="539894" data-tnid="539894" data-title="Court of Conciliation and Arbitration Annual Report 2022" data-language="en">English</a></li>
+</ul>  </div>
+  </div>
+        </div>
+              <div class="field-item odd">
+                    <div class="link-item">
+    <div class="link-item-link">
+    <a href="/secretariat/539108"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/50_thumb/f/images/hires/6/e/539105.png?1679050960" alt="cover: Emerging Practices in Cybersecurity-Related Public-Private Partnerships and Collaboration in OSCE participating States (OSCE)" title="cover: Emerging Practices in Cybersecurity-Related Public-Private Partnerships and Collaboration in OSCE participating States (OSCE)" width="75" height="100" class="imagecache imagecache-50_thumb"/></div></a><a href="/secretariat/539108" title="cover: Emerging Practices in Cybersecurity-Related Public-Private Partnerships and Collaboration in OSCE participating States (OSCE)" class="title">Emerging Practices in Cybersecurity-Related Public-Private Partnerships and Collaboration in OSCE participating States</a>  </div>
+        <div class="link-item-type">
+    <span>
+      Study / report    </span>
+  </div>
+      <div class="link-translations">
+    <ul class="links"><li class="node_translation_en active first"><a href="/files/f/documents/2/7/539108_0.pdf" title="Emerging Practices in Cybersecurity-Related Public-Private Partnerships and Collaboration in OSCE participating States" class="translation-link active" hreflang="en" data-nid="539108" data-tnid="539108" data-title="Emerging Practices in Cybersecurity-Related Public-Private Partnerships and Collaboration in OSCE participating States" data-language="en">English</a></li>
+<li class="node_translation_ar last"><a href="/files/f/documents/f/b/557043.pdf" title="الممارسات الناشئة في الشراكات والتعاون بين القطاعين العام والخاص المتعلقة بالأمن السيبراني في الدول المشاركة في منظمة الأمن والتعاون في أوروبا" class="translation-link" hreflang="ar" data-nid="557043" data-tnid="539108" data-title="Emerging Practices in Cybersecurity-Related Public-Private Partnerships and Collaboration in OSCE participating States" data-language="ar">العربية</a></li>
+</ul>  </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                    <div class="link-item">
+    <div class="link-item-link">
+    <a href="/odihr/annual-report/2022"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/50_thumb/f/images/hires/2/c/538890.PNG?1678873174" alt=" (OSCE)" title=" (OSCE)" width="75" height="100" class="imagecache imagecache-50_thumb"/></div></a><a href="/odihr/annual-report/2022" title=" (OSCE)" class="title">Democracy and Human Rights in the OSCE: The ODIHR Annual Report 2022</a>  </div>
+        <div class="link-item-type">
+    <span>
+      Annual report    </span>
+  </div>
+      <div class="link-translations">
+    <ul class="links"><li class="node_translation_en active first"><a href="/files/f/documents/d/5/536774_1.pdf" title="Democracy and Human Rights in the OSCE: The ODIHR Annual Report 2022" class="translation-link active" hreflang="en" data-nid="536774" data-tnid="536774" data-title="Democracy and Human Rights in the OSCE: The ODIHR Annual Report 2022" data-language="en">English</a></li>
+<li class="node_translation_ru last"><a href="/files/f/documents/1/4/546112_0.pdf" title="Демократия  и права человека в регионе ОБСE: Годовой отчет БДИПЧ за 2022 год" class="translation-link" hreflang="ru" data-nid="546112" data-tnid="536774" data-title="Democracy and Human Rights in the OSCE: The ODIHR Annual Report 2022" data-language="ru">Русский</a></li>
+</ul>  </div>
+  </div>
+        </div>
+              <div class="field-item odd">
+                    <div class="link-item">
+    <div class="link-item-link">
+    <a href="/cthb/538452"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/50_thumb/f/images/hires/4/0/538449.jpg?1678119703" alt=" (OSCE)" title=" (OSCE)" width="75" height="100" class="imagecache imagecache-50_thumb"/></div></a><a href="/cthb/538452" title=" (OSCE)" class="title">Putting victims first: The ‘social path’  to identification  and assistance</a>  </div>
+        <div class="link-item-type">
+    <span>
+      Study / report    </span>
+  </div>
+      <div class="link-translations">
+    <ul class="links"><li class="node_translation_en active first last"><a href="/files/f/documents/9/c/538452.pdf" title="Putting victims first: The ‘social path’  to identification  and assistance" class="translation-link active" hreflang="en" data-nid="538452" data-tnid="538452" data-title="Putting victims first: The ‘social path’  to identification  and assistance" data-language="en">English</a></li>
+</ul>  </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                    <div class="link-item">
+    <div class="link-item-link">
+    <a href="/secretariat/530293"><div class="osce-figure"><img src="https://www.osce.org/files/imagecache/50_thumb/f/images/hires/a/6/530281_0.jpg?1667566729" alt="Cyber Incident Classification: A Report on Emerging Practices within the OSCE region (OSCE)" title="Cyber Incident Classification: A Report on Emerging Practices within the OSCE region (OSCE)" width="75" height="100" class="imagecache imagecache-50_thumb"/></div></a><a href="/secretariat/530293" title="Cyber Incident Classification: A Report on Emerging Practices within the OSCE region (OSCE)" class="title">Cyber Incident Classification: A Report on Emerging Practices within the OSCE region</a>  </div>
+        <div class="link-item-type">
+    <span>
+      Study / report    </span>
+  </div>
+      <div class="link-translations">
+    <ul class="links"><li class="node_translation_en active first last"><a href="/files/f/documents/6/5/530293_1.pdf" title="Cyber Incident Classification: A Report on Emerging Practices within the OSCE region" class="translation-link active" hreflang="en" data-nid="530293" data-tnid="530293" data-title="Cyber Incident Classification: A Report on Emerging Practices within the OSCE region" data-language="en">English</a></li>
+</ul>  </div>
+  </div>
+        </div>
+        </div>
+</div>
+  </div>
+</aside>
+                                                                  </div>
+        <div class="content--footer">
+      <div class="panel-pane pane-panels-mini pane-3w-blocks" >
+  
+  
+  
+  <div class="pane-content">
+    <aside class="osce-box  osce-box-style-white osce-box-collapse-never osce-box-gridlayout-nogrid osce-box-custom osce-box-custom">
+  <header class="osce-box-header">
+              <h2 class="osce-box-title"><span>Who We Are</span></h2>
+          </header>
+  <div class="osce-box-content ">
+    <p>The OSCE stands for the Organization for Security and Co-operation in Europe. With 57 States from Europe, Central Asia and North America, the OSCE is the world's largest regional security organization.</p>
+
+<a href="/who">Learn more</a>
+  </div>
+</aside>
+<aside class="osce-box  osce-box-style-white osce-box-collapse-never osce-box-gridlayout-nogrid osce-box-custom osce-box-custom">
+  <header class="osce-box-header">
+              <h2 class="osce-box-title"><span>What We Do</span></h2>
+          </header>
+  <div class="osce-box-content ">
+    <p>Our activities cover a wide range of security issues such as conflict prevention to fostering economic development, ensuring the sustainable use of natural resources &amp; promoting the full respect of human rights and fundamental freedoms.</p>
+
+<p><a href="/what">Learn more</a></p>  </div>
+</aside>
+<aside class="osce-box  osce-box-style-white osce-box-collapse-never osce-box-gridlayout-nogrid osce-box-custom osce-box-custom">
+  <header class="osce-box-header">
+              <h2 class="osce-box-title"><span>Where We Are</span></h2>
+          </header>
+  <div class="osce-box-content ">
+    <p>The OSCE has field presences in South-Eastern Europe, Eastern Europe, the South Caucasus and Central Asia.</p>
+
+<p><a href="/where">Learn more</a></p>  </div>
+</aside>
+  </div>
+
+  
+  </div>
+    </div>
+  </div>
+  </div>
+
+  
+  </div>
+    </div>
+  </div>
+
+  <div class="site--footer--wrapper">
+    <div class="site--footer">
+      <div class="panel-pane pane-block pane-menu-menu-footer-navigation footer--navigation" >
+  
+  
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="leaf first active-trail"><a href="/" hreflang="en" class="active">Home</a></li>
+<li class="leaf"><a href="/contacts" hreflang="en">Contacts</a></li>
+<li class="leaf"><a href="/contacts/report-wrongdoing" hreflang="en">Report wrongdoing</a></li>
+<li class="leaf"><a href="/about/sitemap" hreflang="en">Sitemap</a></li>
+<li class="leaf"><a href="https://jobs.osce.org/" hreflang="en">Employment</a></li>
+<li class="leaf"><a href="/osce-social-media" hreflang="en">Social media</a></li>
+<li class="leaf"><a href="/about" hreflang="en">About this website</a></li>
+<li class="leaf"><a href="https://procurement.osce.org" hreflang="en">Procurement</a></li>
+<li class="leaf"><a href="/about/fraud-alert" hreflang="en">⚠️ Fraud Alert</a></li>
+<li class="leaf"><a href="/about/terms-of-use" hreflang="en">Terms of Use</a></li>
+<li class="leaf last"><a href="/contacts/webmaster" hreflang="en">Feedback</a></li>
+</ul>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-subscription footer--signup" >
+  
+      <h2 class="pane-title"><span>Subscribe to OSCE</span></h2>
+  
+  
+  <div class="pane-content">
+    <form action="/"  accept-charset="UTF-8" method="post" id="osce-panes-get-subscription-sign-up-form">
+<div><div  class="form-item form-item-labeled" id="edit-email-wrapper">
+      <label  for="edit-email">E-mail: </label>
+    <input type="text" maxlength="128" name="email" id="edit-email" size="60" value="" class="form-text" />  </div>
+<input type="submit" name="op" id="edit-submit" value="Sign Up"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-YRmhPmHfU7QlxHgBi8uqaSRpsiinm5degdSP0txMuEM" value="form-YRmhPmHfU7QlxHgBi8uqaSRpsiinm5degdSP0txMuEM"  />
+<input type="hidden" name="form_id" id="edit-osce-panes-get-subscription-sign-up-form" value="osce_panes_get_subscription_sign_up_form"  />
+
+</div></form>
+  </div>
+
+  
+  </div>
+<div class="panel-pane pane-custom pane-3 footer--follow-us" >
+  
+      <h2 class="pane-title"><span>Follow Us</span></h2>
+  
+  
+  <div class="pane-content">
+    <ul class="osce-social-media">
+        <li class="facebook first">
+            <a href="http://www.facebook.com/osce.org">
+                <i class="icon-facebook"></i>
+                <span>Join us on Facebook</span>
+            </a>
+        </li>
+        <li class="twitter">
+            <a href="http://www.twitter.com/osce">
+                <i class="icon-twitter"></i>
+                <span>Follow us on Twitter</span>
+            </a>
+         </li>
+        <li class="youtube">
+            <a href="http://www.youtube.com/osce">
+                <i class="icon-youtube"></i>
+                <span>Join us on Youtube</span>
+            </a>
+         </li>
+        <li class="linkedin">
+            <a href="http://www.linkedin.com/company/osce">
+                <i class="icon-linkedin"></i>
+                <span>Join us on LinkedIn</span>
+            </a>
+         </li>
+         <li class="soundcloud">
+             <a href="https://soundcloud.com/osce">
+                 <i class="icon-soundcloud"></i>
+                 <span>Join us on SoundCloud</span>
+             </a>
+         </li>
+         <li class="instagram">
+             <a href="http://instagram.com/osceorg">
+                 <i class="icon-instagram"></i>
+                 <span>Join us on Instagram</span>
+             </a>
+         </li>
+     </ul>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-cio-logo footer--chairmanship" >
+  
+      <h2 class="pane-title">Chairmanship</h2>
+  
+  
+  <div class="pane-content">
+    <a class="chairmanship-footer chairmanship-footer-2024" href="/chairmanship">Chairmanship</a>  </div>
+
+  
+  </div>
+    </div>
+  </div>
+
+</div>    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"gov-bam.nr-data.net","licenseKey":"ac1e88bca1","applicationID":"93306740","transactionName":"MVRWbUFTWhBSAUZcCwgedVpHW1sNHBJTUgE5XFVXUlVREWwMXVEBOUddXEQ=","queueTime":0,"applicationTime":1120,"atts":"HRNBGwlJSU8RAxAPHxtM","errorBeacon":"gov-bam.nr-data.net","agent":""}</script></body>
+</html>

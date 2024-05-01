@@ -1,0 +1,1878 @@
+{
+    "http://www.realbeer.com": {
+        "Time": 27.08,
+        "URL": "http://www.realbeer.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "3.228.246.63"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "3.228.246.63",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "192.168.1.1",
+                0.007681131362915039
+            ],
+            [
+                "80.70.60.254",
+                0.005918025970458984
+            ],
+            [
+                "90.183.197.126",
+                0.02221512794494629
+            ],
+            [
+                "194.228.115.71",
+                0.015156984329223633
+            ],
+            [
+                "90.182.78.194",
+                0.018414974212646484
+            ],
+            [
+                "194.228.115.67",
+                0.01617574691772461
+            ],
+            [
+                "194.228.115.64",
+                0.017010927200317383
+            ],
+            [
+                "62.115.58.198",
+                0.02915501594543457
+            ],
+            [
+                "62.115.122.138",
+                0.0317380428314209
+            ],
+            [
+                "62.115.122.159",
+                0.10991597175598145
+            ],
+            [
+                "62.115.123.123",
+                0.10827112197875977
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 130165,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Tue, 30 Apr 2024 04:32:23 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Powered-By": "PHP/8.0.30, PleskLin",
+            "Vary": "Accept-Encoding,Cookie",
+            "Cache-Control": "max-age=3, must-revalidate",
+            "Content-Encoding": "gzip",
+            "Last-Modified": "Tue, 30 Apr 2024 04:17:23 GMT"
+        },
+        "HTML Content": "www.realbeer.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "realbeer.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0356A0D348975AB62169F966B53623A4AF0D",
+            "notBefore": "Apr 18 17:07:11 2024 GMT",
+            "notAfter": "Jul 17 17:07:10 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "realbeer.com"
+                ],
+                [
+                    "DNS",
+                    "www.realbeer.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 06:32:29"
+    },
+    "https://www.reddit.com": {
+        "Time": 5.9,
+        "URL": "https://www.reddit.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "199.232.17.140"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "199.232.17.140",
+        "PING Status": "OK",
+        "PING IP": "199.232.17.140",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "/?rdt=39484",
+        "Redirected Location IPs": [
+            "N/A",
+            "N/A"
+        ],
+        "HTTP Status": 200,
+        "Content Length": 591365,
+        "Headers": {
+            "Connection": "keep-alive",
+            "cache-control": "private, s-maxage=1, max-age=1, must-revalidate",
+            "content-encoding": "gzip",
+            "content-security-policy": "child-src 'self' blob: accounts.google.com;connect-src 'self' events.redditmedia.com o418887.ingest.sentry.io *.redd.it *.reddit.com www.redditstatic.com vimeo.com alb.reddit.com accounts.google.com/gsi/ w3-reporting.reddit.com reddit-uploaded-media.s3-accelerate.amazonaws.com reddit-uploaded-video.s3-accelerate.amazonaws.com reddit-subreddit-uploaded-media.s3-accelerate.amazonaws.com wss://*.wss.redditmedia.com wss://gql-realtime.reddit.com *.giphy.com js.stripe.com support.reddithelp.com matrix.redditspace.com;default-src 'self';font-src 'self' data:;form-action 'none';frame-ancestors 'self' *.reddit.com *.snooguts.net;frame-src 'self' www.reddit.com www.youtube-nocookie.com player.vimeo.com *.redditmedia.com cdn.embedly.com redgifs.com www.redgifs.com accounts.google.com/gsi/ www.google.com/recaptcha/ recaptcha.google.com/recaptcha/ js.stripe.com hooks.stripe.com;img-src 'self' data: blob: https:;manifest-src 'self' www.redditstatic.com;media-src 'self' blob: data: *.redd.it www.redditstatic.com matrix.redditspace.com;object-src 'none';script-src 'self' 'unsafe-inline' 'unsafe-eval' www.redditstatic.com www.google.com/recaptcha/ js.stripe.com accounts.google.com/gsi/client 'nonce-hwvvGBeq5Cz0h6lyD+q9WQ==';style-src 'self' 'unsafe-inline' www.redditstatic.com *.reddit.com accounts.google.com/gsi/style;style-src-attr 'unsafe-inline';worker-src 'self' blob:;report-to csp;report-uri https://w3-reporting-csp.reddit.com/reports",
+            "content-security-policy-report-only": "object-src 'none';script-src 'nonce-hwvvGBeq5Cz0h6lyD+q9WQ==' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https:;frame-ancestors 'self' *.reddit.com *.snooguts.net;base-uri 'self';report-to csp;report-uri https://w3-reporting-csp.reddit.com/reports",
+            "content-type": "text/html; charset=utf-8",
+            "x-is-wrs": "false",
+            "Accept-Ranges": "bytes",
+            "Date": "Tue, 30 Apr 2024 04:33:26 GMT",
+            "Via": "1.1 varnish",
+            "Vary": "Accept-Encoding,accept-language",
+            "Strict-Transport-Security": "max-age=31536000; includeSubdomains",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "Set-Cookie": "loid=000000000zd3rvl4bv.2.1714451606837.Z0FBQUFBQm1NSFNXa2c3OXdndDloRzRYQktBRnRuZHFpd3NRU3RPYXhCc3FvU0UyTmNtWVF5dERhUEJ2YW1UbzBiY1UzMHZSTWVOaGJ6MllIVnBtaS04MVI0ZEFJMjFaNVBoSDJpUWM0aGIxdUpnVnhnZG1WOEJJRzhNWk1PbjVnV1o0TTRpaVRDRW0; path=/; expires=Thu, 30 Apr 2026 04:33:26 GMT; domain=.reddit.com; samesite=none; secure, session_tracker=cfhnrharbkheoekehn.0.1714451606840.Z0FBQUFBQm1NSFNXRE9ldGVqUVFBaTFaTzBHREZzcVJndlllenRwVVpuYjZrYjJGbGg2ckhsaGRaVkJOc21HTE5VVFVGelMxZmEyTVBhdzlUcUl0QXNFOGZwRU5wOUVqS0pYVmtIMG9ITk5UOTVqZEFvS2JaRkx4bHRza2RxTUlkdEhwVmdQUzdORTE; path=/; domain=.reddit.com; secure; SameSite=None; Secure, csrf_token=a4ff916aeea602adc55057037ca092c3; path=/; domain=.reddit.com; samesite=strict; secure, token_v2=eyJhbGciOiJSUzI1NiIsImtpZCI6IlNIQTI1NjpzS3dsMnlsV0VtMjVmcXhwTU40cWY4MXE2OWFFdWFyMnpLMUdhVGxjdWNZIiwidHlwIjoiSldUIn0.eyJzdWIiOiJsb2lkIiwiZXhwIjoxNzE0NTM4MDA2LjgzNzYzNiwiaWF0IjoxNzE0NDUxNjA2LjgzNzYzNiwianRpIjoiWEVDUlUwc1VUS2J1dUVvZm5GS1pXRUk4YndVM3Z3IiwiY2lkIjoiMFItV0FNaHVvby1NeVEiLCJsaWQiOiJ0Ml96ZDNydmw0YnYiLCJsY2EiOjE3MTQ0NTE2MDY4MzcsInNjcCI6ImVKeGtrZEdPdERBSWhkLWwxejdCX3lwX05odHNjWWFzTFFhb2szbjdEVm9jazcwN2NMNGlIUDhuS0lxRkxFMnVCS0drS1dFRld0T1VOaUx2NTh5OU9aRUZTeUZUUjg0M3l3b2thVXBQVW1ONXB5bFJ3V1prTGxmYXNVS0RCNllwVlM2WjIwS1BTNXZRM0kxRnowNk1xbHhXSHRUWW8zSnBiR01LMnhQanpjWnFReXF1eTZsTVlGa29uOFdMZnZ5Ry10WS1mN2JmaEhZd3JLZ0tEX1RPdUZ4d1lfSERGSGJfbnByMGJGMndxTDNYZzlRLTEtTjI3Yk5tb2RtNV9WelB2emFTY1RtRzVpZll2N3QtQ1IxNDVIbVpVUWN3WWcwX3lyQWo2X0N2T29ES0JRV01KWWhQSTVBcmwyX19KZGl1VGY4YXR5ZC0tR2JFVFdfNHJSbW81eExFb1VfajZ6Y0FBUF9fWERfZTR3IiwiZmxvIjoxfQ.n-PQWOL8dQo2wbPM1WuO0Xj3-4LfTYAcw_KuZw-bujWs_FbUhQsfm3Sk-6ZrlDO8Vu8Y962JQZywOa-f7bcfQXsml_DTrdKnT34Kq_NZjctkXBns2hITDxzh6tjlVjRcgSmY_xyl1SbV0sJZ9HJuDlodSWyiNXx9QNdE-5UNdkJ8HuVMMVR-j0kN1AifgXYwjp3f1EgPMOKnN3ShsdD9gBfE5zCJNIJzJBWIkj1UOqxg1oQ30-sz1X77SeikL4pLzxmEUyNkYINzn9puKyERIME4DOjOVn4fUQV6C3Floyc3Dfq5-D8gWMzxWXFs8M4J3U415hKA67-6KcAEiXVeAw; Path=/; Domain=reddit.com; Expires=Wed, 01 May 2024 04:33:26 GMT; HttpOnly; Secure, theme=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=www.reddit.com; secure, csv=2; Max-Age=63072000; Domain=.reddit.com; Path=/; Secure; SameSite=None",
+            "Server": "snooserv",
+            "Report-To": "{\"group\": \"w3-reporting-nel\", \"max_age\": 14400, \"include_subdomains\": true,  \"endpoints\": [{ \"url\": \"https://w3-reporting-nel.reddit.com/reports\" }]}, {\"group\": \"w3-reporting\", \"max_age\": 14400, \"include_subdomains\": true, \"endpoints\": [{ \"url\": \"https://w3-reporting.reddit.com/reports\" }]}, {\"group\": \"w3-reporting-csp\", \"max_age\": 14400, \"include_subdomains\": true, \"endpoints\": [{ \"url\": \"https://w3-reporting-csp.reddit.com/reports\" }]}",
+            "NEL": "{\"report_to\": \"w3-reporting-nel\", \"max_age\": 14400, \"include_subdomains\": false, \"success_fraction\": 1.0, \"failure_fraction\": 1.0}",
+            "transfer-encoding": "chunked"
+        },
+        "HTML Content": "www.reddit.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "SAN FRANCISCO"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "REDDIT, INC."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.reddit.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "013DB03AF9ACB545CFF5AAF299F924C8",
+            "notBefore": "Jan 15 00:00:00 2024 GMT",
+            "notAfter": "Jul 13 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.reddit.com"
+                ],
+                [
+                    "DNS",
+                    "reddit.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 06:33:32"
+    },
+    "https://www.refugeesinternational.org": {
+        "Time": 6.4,
+        "URL": "https://www.refugeesinternational.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "141.193.213.11",
+            "141.193.213.10"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "141.193.213.11",
+        "PING Status": "OK",
+        "PING IP": "141.193.213.11",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 125984,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 04:34:15 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "x-powered-by": "WP Engine",
+            "Link": "<https://www.refugeesinternational.org/>; rel=shortlink",
+            "X-Cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "X-Cache": "HIT: 10",
+            "X-Cache-Group": "normal",
+            "CF-Cache-Status": "DYNAMIC",
+            "Set-Cookie": "__cf_bm=FzjfLJMKkDoiTHsqYFtHMeHEfJNKAHC40OUQG.F_8Lg-1714451655-1.0.1.1-chvxAReoQlVHL7JoTjIEsAbuxUdUGIq24Drp23m4p98H_yA3HkDNdewI3FeXatCdxOHyKkCCnkyA6O4KQP170g; path=/; expires=Tue, 30-Apr-24 05:04:15 GMT; domain=.www.refugeesinternational.org; HttpOnly; Secure; SameSite=None",
+            "Server": "cloudflare",
+            "CF-RAY": "87c4d17c8f5cb38f-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.refugeesinternational.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.refugeesinternational.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04C3BD54F6426C95D7A91E87B1B61103CDBA",
+            "notBefore": "Mar 24 19:22:22 2024 GMT",
+            "notAfter": "Jun 22 19:22:21 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.refugeesinternational.org"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 06:34:20"
+    },
+    "https://reproductiverights.org": {
+        "Time": 5.25,
+        "URL": "https://reproductiverights.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "141.193.213.21",
+            "141.193.213.20"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "141.193.213.20",
+        "PING Status": "OK",
+        "PING IP": "141.193.213.20",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 207935,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 04:35:03 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "Content-Security-Policy": "upgrade-insecure-requests;",
+            "X-Powered-By": "WP Engine",
+            "X-Cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "X-Cache": "HIT: 19",
+            "X-Cache-Group": "normal",
+            "Strict-Transport-Security": "max-age=63072000",
+            "CF-Cache-Status": "DYNAMIC",
+            "Set-Cookie": "__cf_bm=g2Hu2BFbjDfXouKWHwpw0JfTVbxSXnBL58vlGVkXMVI-1714451703-1.0.1.1-DadX7XLwN587xJxDRG.NirmfO7zxh2.DZQ9uHp9vrfD5z6W7IQysjcB5dH8x7__01hruKstA2.GLrTw300GNwQ; path=/; expires=Tue, 30-Apr-24 05:05:03 GMT; domain=.reproductiverights.org; HttpOnly; Secure; SameSite=None",
+            "Server": "cloudflare",
+            "CF-RAY": "87c4d2a929e6b336-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "reproductiverights.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "reproductiverights.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0A5FAE2588B5D99F3357E40DBFA34F6E",
+            "notBefore": "Jun 16 00:00:00 2023 GMT",
+            "notAfter": "Jun 14 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "reproductiverights.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 06:35:07"
+    },
+    "http://www.repubblica.com": {
+        "Time": 14.86,
+        "URL": "http://www.repubblica.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "213.92.16.101"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "213.92.16.101",
+        "PING Status": "OK",
+        "PING IP": "213.92.16.101",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://www.repubblica.it/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "65.9.95.37",
+                "65.9.95.18",
+                "65.9.95.63",
+                "65.9.95.25"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 668748,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Expires": "Tue, 30 Apr 2024 04:35:13 GMT",
+            "x-goog-generation": "1714450825392132",
+            "x-goog-metageneration": "1",
+            "x-goog-stored-content-encoding": "identity",
+            "x-goog-stored-content-length": "404137",
+            "x-goog-meta-mtime": "2024-04-30T06:20:25.092795948+02:00",
+            "x-goog-hash": "crc32c=sxQ2jg==, md5=J6IoR2JwPjB9D80/PX7xFA==",
+            "x-goog-storage-class": "REGIONAL",
+            "X-GUploader-UploadID": "ABPtcPoyJQJSaJRmfdWikjlQmnHNLgqYiA5WUUgyWY010R2Zyile__5IiWBtLWjpTYO1GpNjYmW3wbVSqw",
+            "X-Cacheable": "YES",
+            "Content-Encoding": "gzip",
+            "referrer-policy": "unsafe-url",
+            "Content-Security-Policy": "upgrade-insecure-requests; default-src https: wss: data: blob: 'unsafe-inline' 'unsafe-eval'",
+            "Content-Security-Policy-Report-Only": "default-src https: wss: data: blob: 'unsafe-inline' 'unsafe-eval'; report-uri https://logger.kataweb.it/csp/",
+            "X-Robots-Tag": "noarchive, max-image-preview:large",
+            "x-kw-date": "Tue, 30 Apr 2024 04:35:13 GMT",
+            "x-kw-expires": "Tue, 30 Apr 2024 04:35:13 GMT",
+            "Cache-Control": "max-age=61, s-maxage=61",
+            "smaxagedone": "yup",
+            "x-kw-cache-control": "max-age=61, s-maxage=61",
+            "Accept-Ranges": "bytes",
+            "Date": "Tue, 30 Apr 2024 04:35:16 GMT",
+            "Via": "1.1 google, 1.1 bb390afd921c223e0fe4921fbc23bbe8.cloudfront.net (CloudFront)",
+            "Vary": "Accept-Encoding,gd-facet-webview",
+            "X-Cache": "Hit from cloudfront",
+            "X-Amz-Cf-Pop": "PRG50-C1",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "X-Amz-Cf-Id": "n8UHKIeAGGyPIfZghgU8s4SBchdI9U_JLq0noGE55Ai-cN_F4avVmw==",
+            "Age": "20"
+        },
+        "HTML Content": "www.repubblica.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 06:35:48"
+    },
+    "https://www.rescue.org": {
+        "Time": 4.39,
+        "URL": "https://www.rescue.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.17.115.108",
+            "104.17.116.108"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.17.115.108",
+        "PING Status": "OK",
+        "PING IP": "104.17.115.108",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 234162,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 04:36:57 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=900, public",
+            "content-language": "en",
+            "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "last-modified": "Tue, 30 Apr 2024 02:55:57 GMT",
+            "x-content-type-options": "nosniff",
+            "x-drupal-cache": "MISS",
+            "x-drupal-dynamic-cache": "MISS",
+            "x-frame-options": "SAMEORIGIN",
+            "x-generator": "Drupal 10 (https://www.drupal.org)",
+            "x-pantheon-styx-hostname": "styx-fe1-a-867f44b44b-5wssg",
+            "x-styx-req-id": "2b45b3e1-069d-11ef-8c85-f2f52e1bfc3f",
+            "x-served-by": "cache-chi-kigq8000154-CHI, cache-fra-eddf8230154-FRA",
+            "x-cache": "HIT, HIT",
+            "x-cache-hits": "9, 1",
+            "x-timer": "S1714451817.227307,VS0,VE4",
+            "vary": "Accept-Encoding, Cookie, Cookie, Cookie",
+            "Age": "642",
+            "via": "1.1 varnish, 1.1 varnish",
+            "CF-Cache-Status": "DYNAMIC",
+            "Strict-Transport-Security": "max-age=15552000; includeSubDomains; preload",
+            "Server": "cloudflare",
+            "CF-RAY": "87c4d5717c1fb336-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.rescue.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "jurisdictionCountryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "jurisdictionStateOrProvinceName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "businessCategory",
+                        "Private Organization"
+                    ]
+                ],
+                [
+                    [
+                        "serialNumber",
+                        "42727"
+                    ]
+                ],
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "International Rescue Committee, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.rescue.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 Extended Validation Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0A83E8D151F16FA0F53DC29D6611EA0E",
+            "notBefore": "Jul  4 00:00:00 2023 GMT",
+            "notAfter": "Aug  3 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.rescue.org"
+                ],
+                [
+                    "DNS",
+                    "rescue.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2ExtendedValidationServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ev-server-g3.crl",
+                "http://crl4.digicert.com/sha2-ev-server-g3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 06:37:01"
+    },
+    "https://www.rfa.org": {
+        "Time": 4.11,
+        "URL": "https://www.rfa.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "2.23.8.87"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "2.23.8.87",
+        "PING Status": "OK",
+        "PING IP": "2.23.8.87",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 403,
+        "Content Length": 365,
+        "Headers": {
+            "Server": "AkamaiGHost",
+            "Mime-Version": "1.0",
+            "Content-Type": "text/html",
+            "Content-Length": "365",
+            "X-Reference-Error": "18.c56ed417.1714451873.28b5e960",
+            "Expires": "Tue, 30 Apr 2024 04:37:53 GMT",
+            "Date": "Tue, 30 Apr 2024 04:37:53 GMT",
+            "Connection": "close",
+            "Strict-Transport-Security": "max-age=31536000"
+        },
+        "HTML Content": "www.rfa.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.rfa.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "030128B8FCBD43BC104E3A3C42FAB6FDC209",
+            "notBefore": "Apr  9 18:26:04 2024 GMT",
+            "notAfter": "Jul  8 18:26:03 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "admin.wainao.me"
+                ],
+                [
+                    "DNS",
+                    "benarnews.org"
+                ],
+                [
+                    "DNS",
+                    "burmese.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "cantonese.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "english.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "khmer.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "korean.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "lao.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "m.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "mandarin.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "podrepo.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "postbox.wainao.me"
+                ],
+                [
+                    "DNS",
+                    "rfa.org"
+                ],
+                [
+                    "DNS",
+                    "rfamobile.org"
+                ],
+                [
+                    "DNS",
+                    "stage-admin.wainao.me"
+                ],
+                [
+                    "DNS",
+                    "stage-east.wainao.me"
+                ],
+                [
+                    "DNS",
+                    "stage-postbox.wainao.me"
+                ],
+                [
+                    "DNS",
+                    "stage-southeast.wainao.me"
+                ],
+                [
+                    "DNS",
+                    "streamer1.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "streamer1.rfaweb.org"
+                ],
+                [
+                    "DNS",
+                    "tealium.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "tibetan.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "uyghur.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "vhpd.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "vietnamese.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "wainao.me"
+                ],
+                [
+                    "DNS",
+                    "www.benarnews.org"
+                ],
+                [
+                    "DNS",
+                    "www.rfa.org"
+                ],
+                [
+                    "DNS",
+                    "www.rfamobile.org"
+                ],
+                [
+                    "DNS",
+                    "www.wainao.me"
+                ],
+                [
+                    "DNS",
+                    "www.womensrights.asia"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 06:37:57"
+    },
+    "https://www.rferl.org": {
+        "Time": 4.12,
+        "URL": "https://www.rferl.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.64.117.156"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.64.117.156",
+        "PING Status": "OK",
+        "PING IP": "104.64.117.156",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 125932,
+        "Headers": {
+            "Pragma": "no-cache",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Language": "en",
+            "X-UA-Compatible": "IE=edge",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Content-Length": "21282",
+            "Cache-Control": "must-revalidate, max-age=86",
+            "Expires": "Tue, 30 Apr 2024 04:40:16 GMT",
+            "Date": "Tue, 30 Apr 2024 04:38:50 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Onion-Location": "https://www.rferlo2zxgv23tct66v45s5mecftol5vod3hf4rqbipfp46fqu2q56ad.onion/",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy-Report-Only": "frame-ancestors 'self' https://www.rferl.org/embed https://www.rferl.org/embed/player https://www.rferl.org/embed/player/0 https://www.rferl.org/embed/player/1 https://www.rferl.org/ext https://www.rferl.org/widget; report-uri https://csp.pangeadigital.io/cspreport"
+        },
+        "HTML Content": "www.rferl.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.rferl.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "047A8E6E72F00B9B664840D1EB6EEDE68A3C",
+            "notBefore": "Mar 18 07:47:02 2024 GMT",
+            "notAfter": "Jun 16 07:47:01 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "about.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "audio.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "config-exception.rferl.mobi"
+                ],
+                [
+                    "DNS",
+                    "da.azadiradio.com"
+                ],
+                [
+                    "DNS",
+                    "da.azadiradio.mobi"
+                ],
+                [
+                    "DNS",
+                    "da.azadiradio.org"
+                ],
+                [
+                    "DNS",
+                    "docs.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "en.radiofarda.com"
+                ],
+                [
+                    "DNS",
+                    "flashvideo.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "gandhara.rferl.mobi"
+                ],
+                [
+                    "DNS",
+                    "gandhara.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "gdb.polygraph.info"
+                ],
+                [
+                    "DNS",
+                    "gdb.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "ktat.krymr.com"
+                ],
+                [
+                    "DNS",
+                    "ktat.krymr.eu"
+                ],
+                [
+                    "DNS",
+                    "ktat.krymr.mobi"
+                ],
+                [
+                    "DNS",
+                    "ktat.krymr.net"
+                ],
+                [
+                    "DNS",
+                    "ktat.krymr.org"
+                ],
+                [
+                    "DNS",
+                    "ktat.krymr.us"
+                ],
+                [
+                    "DNS",
+                    "m.centralasian.org"
+                ],
+                [
+                    "DNS",
+                    "pa.azadiradio.com"
+                ],
+                [
+                    "DNS",
+                    "pa.azadiradio.mobi"
+                ],
+                [
+                    "DNS",
+                    "pa.azadiradio.org"
+                ],
+                [
+                    "DNS",
+                    "pressroom.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "rfe-audio.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "rfe-video-hls.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "rfe-video.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "rfevideo.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "ru.krymr.com"
+                ],
+                [
+                    "DNS",
+                    "ru.krymr.mobi"
+                ],
+                [
+                    "DNS",
+                    "ru.krymr.org"
+                ],
+                [
+                    "DNS",
+                    "ru.radiosvobodakrim.com"
+                ],
+                [
+                    "DNS",
+                    "rus-ozodlik.share.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "rus.azadliq.mobi"
+                ],
+                [
+                    "DNS",
+                    "rus.azathabar.com"
+                ],
+                [
+                    "DNS",
+                    "rus.azattyk.kg"
+                ],
+                [
+                    "DNS",
+                    "rus.azattyk.mobi"
+                ],
+                [
+                    "DNS",
+                    "rus.azattyk.org"
+                ],
+                [
+                    "DNS",
+                    "rus.azattyq.mobi"
+                ],
+                [
+                    "DNS",
+                    "rus.azattyq.org"
+                ],
+                [
+                    "DNS",
+                    "rus.azatutyun.am"
+                ],
+                [
+                    "DNS",
+                    "rus.azatutyun.mobi"
+                ],
+                [
+                    "DNS",
+                    "rus.ozodi.eu"
+                ],
+                [
+                    "DNS",
+                    "rus.ozodi.mobi"
+                ],
+                [
+                    "DNS",
+                    "rus.ozodi.org"
+                ],
+                [
+                    "DNS",
+                    "rus.ozodi.tj"
+                ],
+                [
+                    "DNS",
+                    "rus.ozodlik.mobi"
+                ],
+                [
+                    "DNS",
+                    "rus.ozodlik.org"
+                ],
+                [
+                    "DNS",
+                    "showcase.pangea-cms.com"
+                ],
+                [
+                    "DNS",
+                    "showcase.pangea-cms.mobi"
+                ],
+                [
+                    "DNS",
+                    "showcase.rferl.mobi"
+                ],
+                [
+                    "DNS",
+                    "showcase.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "staging.radiofarda.com"
+                ],
+                [
+                    "DNS",
+                    "staging.radiofarda.mobi"
+                ],
+                [
+                    "DNS",
+                    "staging.rferl.mobi"
+                ],
+                [
+                    "DNS",
+                    "staging.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "staging.svoboda.org"
+                ],
+                [
+                    "DNS",
+                    "state.rferl.mobi"
+                ],
+                [
+                    "DNS",
+                    "state.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "tatar.krymr.com"
+                ],
+                [
+                    "DNS",
+                    "tatar.krymr.mobi"
+                ],
+                [
+                    "DNS",
+                    "tatar.krymr.org"
+                ],
+                [
+                    "DNS",
+                    "tatar.radiosvobodakrim.com"
+                ],
+                [
+                    "DNS",
+                    "test-rtl.rferl.mobi"
+                ],
+                [
+                    "DNS",
+                    "test-rtl.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "test.rferl.mobi"
+                ],
+                [
+                    "DNS",
+                    "test.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "thehub.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "training.rferl.mobi"
+                ],
+                [
+                    "DNS",
+                    "training.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "ua.krymr.com"
+                ],
+                [
+                    "DNS",
+                    "ua.krymr.eu"
+                ],
+                [
+                    "DNS",
+                    "ua.krymr.mobi"
+                ],
+                [
+                    "DNS",
+                    "ua.krymr.net"
+                ],
+                [
+                    "DNS",
+                    "ua.krymr.org"
+                ],
+                [
+                    "DNS",
+                    "ua.krymr.us"
+                ],
+                [
+                    "DNS",
+                    "ua.radiosvobodakrim.com"
+                ],
+                [
+                    "DNS",
+                    "videoreview.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "web.ozodi.tj"
+                ],
+                [
+                    "DNS",
+                    "www.armenialiberty.org"
+                ],
+                [
+                    "DNS",
+                    "www.azadiradio.com"
+                ],
+                [
+                    "DNS",
+                    "www.azadiradio.mobi"
+                ],
+                [
+                    "DNS",
+                    "www.azadiradio.org"
+                ],
+                [
+                    "DNS",
+                    "www.azadliq.mobi"
+                ],
+                [
+                    "DNS",
+                    "www.azadliq.org"
+                ],
+                [
+                    "DNS",
+                    "www.azadses.org"
+                ],
+                [
+                    "DNS",
+                    "www.azathabar.com"
+                ],
+                [
+                    "DNS",
+                    "www.azathabar.mobi"
+                ],
+                [
+                    "DNS",
+                    "www.azathabar.org"
+                ],
+                [
+                    "DNS",
+                    "www.azatliq.mobi"
+                ],
+                [
+                    "DNS",
+                    "www.azatliq.org"
+                ],
+                [
+                    "DNS",
+                    "www.azatlyk.org"
+                ],
+                [
+                    "DNS",
+                    "www.azatradio.org"
+                ],
+                [
+                    "DNS",
+                    "www.makroblog.az"
+                ],
+                [
+                    "DNS",
+                    "www.pangea-cms.com"
+                ],
+                [
+                    "DNS",
+                    "www.radioazadlyg.org"
+                ],
+                [
+                    "DNS",
+                    "www.rferl.org"
+                ],
+                [
+                    "DNS",
+                    "www.ussrfall.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 06:38:54"
+    },
+    "http://www.rfi.fr": {
+        "Time": 6.96,
+        "URL": "http://www.rfi.fr",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.64.164.35"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.64.164.35",
+        "PING Status": "OK",
+        "PING IP": "104.64.164.35",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 404,
+        "Content Length": 23437,
+        "Headers": {
+            "Mime-Version": "1.0",
+            "Content-Length": "9457",
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0, Tue, 30 Apr 2024 04:44:59 GMT",
+            "Content-Type": "text/html",
+            "Content-Encoding": "gzip",
+            "Date": "Tue, 30 Apr 2024 04:39:59 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=15768000"
+        },
+        "HTML Content": "www.rfi.fr_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "FR"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "\u00cele-de-France"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Issy-les-Moulineaux"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "France M\u00e9dias Monde SA"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.rfi.fr"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "070874F2F2A43D286C8655508F5B1FED",
+            "notBefore": "Feb 19 00:00:00 2024 GMT",
+            "notAfter": "Dec 18 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "alexa.voice-api.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "amp.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "api2.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "apis.fle.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "apis.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "articles.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "br.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "cn.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "emailing.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "embed.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "en.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "es.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "fa.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "francaisfacile.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "graphics.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "ha.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "instantarticles.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "km.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.br.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.cn.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.en.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.es.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.fa.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.ha.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.km.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.marfi.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.pt.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.rfi.ro"
+                ],
+                [
+                    "DNS",
+                    "m.ru.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.sw.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.trad.cn.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "m.vi.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "ma.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "marfi.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "musique.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "observers.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "podcast.rfi.ro"
+                ],
+                [
+                    "DNS",
+                    "pt.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "ru.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "s.francaisfacile.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "s.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "savoirs.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.br.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.cn.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.en.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.es.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.fa.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.ha.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.km.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.musique.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.pt.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.ru.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.sw.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "scd.vi.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "social.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "static.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "sw.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "trad.cn.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "vi.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "webdoc.rfi.fr"
+                ],
+                [
+                    "DNS",
+                    "www.rfi.ro"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 06:40:06"
+    },
+    "http://www.riftgame.com": {
+        "Time": 6.32,
+        "URL": "http://www.riftgame.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "2.16.2.72",
+            "2.16.2.73"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "2.16.2.73",
+        "PING Status": "OK",
+        "PING IP": "2.16.2.73",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.riftgame.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "2.16.2.72",
+                "2.16.2.73"
+            ]
+        ],
+        "HTTP Status": 403,
+        "Content Length": 383,
+        "Headers": {
+            "Server": "AkamaiGHost",
+            "Mime-Version": "1.0",
+            "Content-Type": "text/html",
+            "Content-Length": "383",
+            "Cache-Control": "max-age=0",
+            "Date": "Tue, 30 Apr 2024 04:40:39 GMT",
+            "Connection": "close",
+            "Access-Control-Allow-Origin": "*",
+            "Strict-Transport-Security": "max-age=15768000"
+        },
+        "HTML Content": "www.riftgame.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.riftgame.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0310DE122728AD6B6B0C74CF85843664C0A2",
+            "notBefore": "Mar 19 09:35:51 2024 GMT",
+            "notAfter": "Jun 17 09:35:50 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "community.riftgame.com"
+                ],
+                [
+                    "DNS",
+                    "www.prophecyofahnket.com"
+                ],
+                [
+                    "DNS",
+                    "www.riftgame.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 06:40:44"
+    }
+}

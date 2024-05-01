@@ -5,9 +5,9 @@ def determine_censorship(differences):
     # Definujeme pravidla pro určení typu cenzury
     censorship_rules = {
         'Manipulace s DNS': {  # Je pozměněn výsledný content stránky
-            'DNS IPs': {
-                'CZ': lambda x: x is not None,
-                'BY': lambda y: y == "N/A"  # TODO: je to dobře?
+            'DNS Status': {
+                'CZ': lambda x: x == "OK",
+                'BY': lambda y: y == "N/A"
             },
             'DNS manipulation - repeated query': {
                 'CZ': lambda x: x == "No manipulation",
@@ -17,12 +17,7 @@ def determine_censorship(differences):
                 'CZ': lambda x: x == "No manipulation",
                 'BY': lambda y: y == "Manipulate"
             },
-            'DNS status': {
-                'CZ': lambda x: x == "OK",
-                'BY': lambda y: y == "Fail"
-            },
         },
-
         'Manipulace s TCP': {
             'TCP Remote IP': {
                 'CZ': lambda x: x == "Established",
@@ -53,7 +48,7 @@ def determine_censorship(differences):
             'Content Length': {
                 'CZ': lambda x: x,
                 'BY': lambda y: y,
-                'comparison': lambda x, y: abs(x - y) > 100
+                'comparison': lambda x, y: abs(x - y) > 0.9 * max(x, y)
             }
         },
         'Podvržení vyhledávání v Google vyhledávači': {
@@ -76,24 +71,25 @@ def determine_censorship(differences):
 
     keys = list(differences.keys())
 
-    for key in keys:
-        rule_matched = False  # Příznak, zda bylo pravidlo shodné
-        # Pro každé pravidlo zjišťujeme, zda vstupní data splňují podmínky
-        for rule_name, conditions in censorship_rules.items():
-            for condition_name, condition_values in conditions.items():
+    for key, diff in keys.items():
+        for rule_name, conditions in censorship_rules:
+            rule_matched = True
+            for condition_set in conditions:
+                condition_name = condition_set['condition_name']
+                condition_values = condition_set['conditions']
                 for country, condition in condition_values.items():
-                    value = differences[key].get(condition_name, {}).get(country)
-                    if value is not None and condition(value):
-                        rule_matched = True
-                        differences[key]['CENSORSHIP TYPE'] = rule_name
-                        break  # Přerušíme vnitřní cyklus, pokud bylo pravidlo shodné
-                if rule_matched:
-                    break  # Přerušíme vnější cyklus, pokud bylo pravidlo shodné
+                    value = diff.get(condition_name, {}).get(country)
+                    if value is None or not condition(value):
+                        rule_matched = False
+                        break
+                if not rule_matched:
+                    break
             if rule_matched:
-                break  # Přerušíme nejvnější cyklus, pokud bylo pravidlo shodné
+                diff['CENSORSHIP TYPE'] = rule_name
+                break
 
         if not rule_matched:
-            differences[key]['CENSORSHIP TYPE'] = 'No censorship found'
+            diff['CENSORSHIP TYPE'] = 'No censorship found'
 
     return differences
 

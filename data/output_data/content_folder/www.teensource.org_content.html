@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1134251222",accountID:"3639927",trustKey:"66686",xpid:"VwAEWF9RDxAJU1JXAAkFV10=",licenseKey:"NRJS-4a18b969582708f1b01",applicationID:"973578219"};;/*! For license information please see nr-loader-spa-1.257.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>E,OP:()=>N,lF:()=>D,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>w,sU:()=>O});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function E(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const _=(0,n.mF)().o;var x=r(385),R=r(6818);const T={buildEnv:R.Re,customTransaction:void 0,disabled:!1,distMethod:R.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:R.q4,denyList:void 0,harvestCount:0,timeKeeper:void 0},S={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!S[e])throw new Error("Runtime for ".concat(e," was never set"));return S[e]}function O(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");S[e]=(0,i.D)(t,T);const r=(0,n.ek)(e);r&&(r.runtime=S[e])}function D(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.257.0",i="PROD",o="CDN",a="2.0.0-alpha.12"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(Date.now()-performance.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occurred while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{LP:()=>l,RP:()=>c,o5:()=>u});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){d(e),s[e].get(t)&&s[e].delete(t),s[e].size&&f(e)}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return h(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=[...s[e]];t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),h(e,r)})))}function h(e,t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)p(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}r.isolatedBacklog||delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=h(n),c=g(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=v()[s[e]];p&&p.push([f,e,r,a]);return a},get:m,listeners:g,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function p(e,t){n[e]=g(e).concat(t)}function g(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.fP)();d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>u,K4:()=>i,oD:()=>o,uT:()=>c,wO:()=>s});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>c,T:()=>s});var n=r(8325),i=r(385);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i._A.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},7872:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{D:()=>n,Z:()=>i})},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(385),i=r(7894);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n._A.NREUM||(n._A.NREUM={}),void 0===n._A.newrelic&&(n._A.newrelic=n._A.NREUM),n._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:n._A.setTimeout,SI:n._A.setImmediate,CT:n._A.clearTimeout,XHR:n._A.XMLHttpRequest,REQ:n._A.Request,EV:n._A.Event,PR:n._A.Promise,MO:n._A.MutationObserver,FETCH:n._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},7806:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>S,QU:()=>D,_L:()=>j,Gm:()=>M,Lg:()=>L,BV:()=>Z,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var A="fetch-",E=A+"body-",w=["arrayBuffer","blob","json","text","formData"],_=f._A.Request,x=f._A.Response,R="prototype";const T={};function S(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(_&&x&&f._A.fetch))return t;if(T[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return T[t.debugId]=1,w.forEach((e=>{r(_[R],e,E),r(x[R],e,E)})),r(f._A,"fetch",A),t.on(A+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(A+"done",[null,r],n)}else t.emit(A+"done",[e],n)})),t}const N={},O=["pushState","replaceState"];function D(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||N[t.debugId]++||(N[t.debugId]=1,c(t).inPlace(window.history,O,"-")),t}var P=r(3239);const I={},C=["appendChild","insertBefore","replaceChild"];function j(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||I[t.debugId])return t;I[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,C,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,P.m$)(!1)),e.removeEventListener("error",f,(0,P.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,P.m$)(!1)),e.removeEventListener("error",f,(0,P.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,P.m$)(!1)),e.addEventListener("error",f,(0,P.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function M(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const H={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(H[t.debugId])return t;H[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const U={},z="setTimeout",F="setInterval",B="clearTimeout",G="-start",q="-",V=[z,"setImmediate",F,B,"clearImmediate"];function Z(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(U[t.debugId]++)return t;U[t.debugId]=1;var r=c(t);return r.inPlace(f._A,V.slice(0,2),z+q),r.inPlace(f._A,V.slice(2,3),F+q),r.inPlace(f._A,V.slice(3),B+q),t.on(F+G,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(z+G,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var K=r(50);const W={},X=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(W[r.debugId]++)return r;W[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",E)}),(0,P.m$)(!1))}catch(e){(0,K.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",E)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,X,"-xhr-",E),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(A):u?u(A):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function E(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{Ef:()=>o,J0:()=>f,Mi:()=>l,Vb:()=>a,Ye:()=>c,fm:()=>u,i9:()=>s,t9:()=>i,u0:()=>d});var n=r(7056);const i=r(3325).D.sessionReplay,o={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c=1e6,u=64e3,d={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},l={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},f=5e3},3112:(e,t,r)=>{"use strict";r.d(t,{HM:()=>c,ev:()=>o,rU:()=>s,wi:()=>u});var n=r(234),i=r(385);function o(e){return i.il&&!0===(0,n.Mt)(e,"privacy.cookies_enabled")}function a(e){return!!n.Yu.MO&&o(e)&&!0===(0,n.Mt)(e,"session_trace.enabled")}function s(e){return!0===(0,n.Mt)(e,"session_replay.preload")&&a(e)}function c(e,t){return!!a(e)&&(!!t?.isNew||!!t?.state.sessionReplayMode)}function u(e,t){const r=t.correctAbsoluteTimestamp(e);return{originalTimestamp:e,correctedTimestamp:r,timestampDiff:e-r,timeKeeperOriginTime:t.originTime,timeKeeperCorrectedOriginTime:t.correctedOriginTime,timeKeeperDiff:Math.floor(t.originTime-t.correctedOriginTime)}}},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},6216:(e,t,r)=>{"use strict";r.d(t,{K8:()=>s,QZ:()=>c,cS:()=>o,sE:()=>i,t9:()=>a,vh:()=>u});var n=r(3325);const i=["click","keydown","submit"],o="api",a=n.D.softNav,s={INITIAL_PAGE_LOAD:"",ROUTE_CHANGE:1,UNSPECIFIED:2},c={INTERACTION:1,AJAX:2,CUSTOM_END:3,CUSTOM_TRACER:4},u={IP:"in progress",FIN:"finished",CAN:"cancelled"}},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>w,CB_END:()=>_,CB_START:()=>u,END:()=>E,FEATURE_NAME:()=>i,FETCH:()=>R,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>x,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>A,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,A="-start",E="-end",w="-body",_="cb"+E,x="jsTime",R="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2758:(e,t,r)=>{"use strict";r.d(t,{j:()=>_});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(8e3),c=r(3960),u=r(385),d=r(50),l=r(3081),f=r(8632),h=r(7144);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay",h.Ef.RECORD,h.Ef.PAUSE],g=["setErrorHandler","finished","addToTrace","addRelease"];var m=r(7894),v=r(7056);function b(){const e=(0,f.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}const y={};var A=r(2825);const E=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let w=!1;function _(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,_=arguments.length>3?arguments[3]:void 0,{init:x,info:R,loader_config:T,runtime:S={loaderType:p},exposed:N=!0}=t;const O=(0,f.gG)();R||(x=O.init,R=O.info,T=O.loader_config),(0,i.Dg)(e.agentIdentifier,x||{}),(0,i.GE)(e.agentIdentifier,T||{}),R.jsAttributes??={},u.v6&&(R.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,R);const D=(0,i.P_)(e.agentIdentifier),P=[R.beacon,R.errorBeacon];w||(D.proxy.assets&&(E(D.proxy.assets),P.push(D.proxy.assets)),D.proxy.beacon&&P.push(D.proxy.beacon),b(),(0,f.EZ)("activatedFeatures",A.T),e.runSoftNavOverSpa&&=!0===D.soft_navigations.enabled&&D.feature_flags.includes("soft_nav")),S.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?P:[]],(0,i.sU)(e.agentIdentifier,S),void 0===e.api&&(e.api=function(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.RP)(e,"api");const p={};var b=a.ee.get(e),A=b.get("tracer");y[e]=v.IK.OFF,b.on(h.Ef.REPLAY_RUNNING,(t=>{y[e]=t}));var E="api-",w=E+"ixn-";function _(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),T(E,n,!0,o||null===r?"session":void 0)(t,r)}function x(){}g.forEach((e=>{p[e]=T(E,e,!0,"api")})),p.addPageAction=T(E,"addPageAction",!0,n.D.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,T(E,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return _(e,t,"setCustomAttribute",r);(0,d.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,d.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setUserId=function(e){if("string"==typeof e||null===e)return _("enduser.id",e,"setUserId",!0);(0,d.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return _("application.version",e,"setApplicationVersion",!1);(0,d.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},p.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(l.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,b);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,d.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{b.emit("".concat(e,"-opt-in"))}))}catch(e){(0,d.Z)("An unexpected issue occurred",e)}},p[h.Ef.RECORD]=function(){(0,o.p)(l.xS,["API/recordReplay/called"],void 0,n.D.metrics,b),(0,o.p)(h.Ef.RECORD,[],void 0,n.D.sessionReplay,b)},p[h.Ef.PAUSE]=function(){(0,o.p)(l.xS,["API/pauseReplay/called"],void 0,n.D.metrics,b),(0,o.p)(h.Ef.PAUSE,[],void 0,n.D.sessionReplay,b)},p.interaction=function(e){return(new x).get("object"==typeof e?e:{})};const R=x.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(l.xS,["API/createTracer/called"],void 0,n.D.metrics,b),f||(0,o.p)(w+"tracer",[(0,m.z)(),e,r],i,n.D.spa,b),function(){if(A.emit((a?"":"no-")+"fn-start",[(0,m.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw A.emit("fn-err",[arguments,this,e],r),e}finally{A.emit("fn-end",[(0,m.z)()],r)}}}};function T(e,t,r,i){return function(){return(0,o.p)(l.xS,["API/"+t+"/called"],void 0,n.D.metrics,b),i&&(0,o.p)(e+t,[(0,m.z)(),...arguments],r?null:this,i,b),r?void 0:this}}function S(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,s.LP)(e,"api")})).catch((()=>{(0,d.Z)("Downloading runtime APIs failed..."),b.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{R[e]=T(w,e,void 0,f?n.D.softNav:n.D.spa)})),p.setCurrentRouteName=f?T(w,"routeName",void 0,n.D.softNav):T(E,"routeName",!0,n.D.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(l.xS,["API/noticeError/called"],void 0,n.D.metrics,b),(0,o.p)("err",[t,(0,m.z)(),!1,r,!!y[e]],void 0,n.D.jserrors,b)},u.il?(0,c.b2)((()=>S()),!0):S(),p}(e.agentIdentifier,_,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=N),w=!0}},8993:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.softNav]:9,[n.sessionReplay]:10}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.257.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.257.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-ANmGkHR8C/aA941pbKL4FBoXtrR+1TeFfluIxpUQ535UOjSH+R7WSAVxIstTpyEp073k4brvwNNUX2c10rYrIA==",433:"sha512-N8gRlCqzw2lS+m3CL/mMjjNHJfRgBBf1Wfm55jx7Wv931+jmXGDC3pxe1yqoD84+px94W8pRM9DOlwxTTz6YMQ==",164:"sha512-rwz2SW2q0W35zYJMBkNUd4b2uib909wiCPDSMMR/4ecOYSJOwG3RUWWIUW04vVmSYnmQbJHkMibLArUPJBimkw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.257.0.PROD"]=self["webpackChunk:NRBA-1.257.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8993);var e=i(50),t=i(7144),r=i(4402);class n{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.ky)(16);this.agentIdentifier=e}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.Ef.RECORD)}pauseReplay(){return this.#e(t.Ef.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var o=i(3325),a=i(234);const s=Object.values(o.D);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(2758);var d=i(8e3),l=i(5938),f=i(3960),h=i(385),p=i(3112),g=i(7872);class m extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.RP)(e,r):this.ee.on("".concat(this.featureName,"-opt-in"),(0,g.Z)((()=>{(0,d.RP)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if((0,p.ev)(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t),this.featureName===o.D.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.LP)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),r),this.abortHandler?.(),(0,d.LP)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};h.il?(0,f.b2)((()=>n()),!0):n()}#t(e,t){return e!==o.D.sessionReplay||(0,p.HM)(this.agentIdentifier,t)}}var v=i(7633);class b extends m{static featureName=v.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,v.t,r),this.importAggregator()}}var y=i(1117),A=i(1284);class E extends y.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,A.D)(e,(function(e,r){t[e]=w(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,A.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=w(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=_(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=w(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=_(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function _(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var x=i(8632),R=i(4351);var T=i(5546),S=i(7956),N=i(3239),O=i(9251),D=i(7894);class P extends m{static featureName=O.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,O.t,r),h.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,D.z)()],void 0,O.t,this.ee)),!0),(0,N.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,D.z)()],void 0,O.t,this.ee))),this.importAggregator())}}var I=i(3081);class C extends m{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var j=i(6660);class k{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class M extends m{static featureName=j.t;#r=new Set;#n=!1;constructor(e,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,j.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,r)=>{this.abortHandler&&!this.#r.has(r)&&(this.#r.add(r),(0,T.p)("err",[this.#i(r),(0,D.z)()],void 0,o.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#i(e),(0,D.z)(),!0,{},this.#n],void 0,o.D.jserrors,this.ee)})),this.ee.on(t.Ef.REPLAY_RUNNING,(e=>{this.#n=e})),h._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#o(e),(0,D.z)(),!1,{unhandledPromiseRejection:1},this.#n],void 0,o.D.jserrors,this.ee)}),(0,N.m$)(!1,this.removeOnAbort?.signal)),h._A.addEventListener("error",(e=>{this.abortHandler&&(this.#r.has(e.error)?this.#r.delete(e.error):(0,T.p)("err",[this.#a(e),(0,D.z)(),!1,{},this.#n],void 0,o.D.jserrors,this.ee))}),(0,N.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#s,this.importAggregator()}#s(){this.removeOnAbort?.abort(),this.#r.clear(),this.abortHandler=void 0}#i(e){return e instanceof Error?e:void 0!==e?.message?new k(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new k("string"==typeof e?e:(0,R.P)(e))}#o(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new k(t);const r=this.#i(e.reason);return r.message=t+r.message,r}#a(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new k(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new k(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let L=1;const U="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===h._A?0:(0,H.X)(e,U,(function(){return L++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,R.P)(e).length}catch(e){return}}}var B=i(7806),G=i(7243);class q{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,a.DL)(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!i)return null;var s=(0,r.M)(),c=(0,r.Ht)(),u=Date.now(),d={spanId:s,traceId:c,timestamp:u};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(s,c),d.traceContextStateHeader=this.generateTraceContextStateHeader(s,u,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(s,c,u,n,i,o)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof h._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,R.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,a.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,a.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,G.e)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}isDtEnabled(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),Z=["load","error","abort","timeout"],K=Z.length,W=a.Yu.REQ,X=a.Yu.XHR;class Y extends m{static featureName=V.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,r),(0,a.OP)(e).xhrWrappable){this.dt=new q(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};h._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};J(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,o.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,r,n){function i(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=w,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){_(t,e)}),(0,N.m$)(!1)),h.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,N.m$)(!1))}function s(e){this.params={method:e[0]},J(this,e[1]),this.metrics={}}function c(t,r){var i=(0,a.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var o=n.generateTracePayload(this.parsedOrigin);if(o){var s=!1;o.newrelicHeader&&(r.setRequestHeader("newrelic",o.newrelicHeader),s=!0),o.traceContextParentHeader&&(r.setRequestHeader("traceparent",o.traceContextParentHeader),o.traceContextStateHeader&&r.setRequestHeader("tracestate",o.traceContextStateHeader),s=!0),s&&(this.dt=o)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<K;s++)r.addEventListener(Z[s],this.listener,(0,N.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function l(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&h.il&&(t=""+h._A.location.href):e[0]&&e[0].url?t=e[0].url:h._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,G.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=n.generateTracePayload(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,i)&&(this.dt=i);else{var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),s(o.headers,i)&&(this.dt=i),e.length>1?e[1]=o:e.push(o)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:h._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),J(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function E(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var i={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this,o.D.ajax)}function w(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;i<K;i++)e.removeEventListener(Z[i],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):_(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,o.D.ajax))}}function _(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var i=r.getResponseHeader("X-NewRelic-App-Data");i&&((0,T.p)(I.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,o.D.metrics,t),e.params.cat=i.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",i),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",l),t.on("xhr-load-removed",f),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",E)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function J(e,t){var r=(0,G.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Q=i(3614);const{BST_RESOURCE:ee,RESOURCE:te,START:re,END:ne,FEATURE_NAME:ie,FN_END:oe,FN_START:ae,PUSH_STATE:se}=Q;var ce=i(7056);class ue extends m{static featureName=t.t9;constructor(e,r){let n,i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,t.t9,i),this.replayRunning=!1;try{n=JSON.parse(localStorage.getItem("".concat(ce.Bq,"_").concat(ce.K4)))}catch(e){}this.#c(n)?this.#u(n?.sessionReplayMode):this.importAggregator(),this.ee.on("err",(e=>{this.replayRunning&&(this.errorNoticed=!0,(0,T.p)(t.Ef.ERROR_DURING_REPLAY,[e],void 0,this.featureName,this.ee))})),this.ee.on(t.Ef.REPLAY_RUNNING,(e=>{this.replayRunning=e}))}#c(e){return e&&(e.sessionReplayMode===ce.IK.FULL||e.sessionReplayMode===ce.IK.ERROR)||(0,p.rU)(this.agentIdentifier)}async#u(e){const{Recorder:t}=await Promise.all([i.e(111),i.e(433)]).then(i.bind(i,4345));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier,ee:this.ee}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording,this.importAggregator({recorder:this.recorder,errorNoticed:this.errorNoticed})}}var de=i(6216);class le extends m{static featureName=de.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,de.t9,r),!h.il||!a.Yu.MO)return;const n=(0,B.QU)(this.ee),i=(0,B.em)(this.ee),o=()=>(0,T.p)("newURL",[(0,D.z)(),""+window.location],void 0,this.featureName,this.ee);n.on("pushState-end",o),n.on("replaceState-end",o);try{this.removeOnAbort=new AbortController}catch(e){}(0,N.bP)("popstate",(e=>(0,T.p)("newURL",[e.timeStamp,""+window.location],void 0,this.featureName,this.ee)),!0,this.removeOnAbort?.signal);let s=!1;const c=new a.Yu.MO(((e,t)=>{s||(s=!0,requestAnimationFrame((()=>{(0,T.p)("newDom",[(0,D.z)()],void 0,this.featureName,this.ee),s=!1})))})),u=(0,g.D)((e=>{(0,T.p)("newUIEvent",[e],void 0,this.featureName,this.ee),c.observe(document.body,{attributes:!0,childList:!0,subtree:!0,characterData:!0})}),100,{leading:!0});i.on("fn-start",(e=>{let[t]=e;de.sE.includes(t?.type)&&u(t)}));for(let e of de.sE)document.addEventListener(e,(()=>{}));this.abortHandler=function(){this.removeOnAbort?.abort(),c.disconnect(),this.abortHandler=void 0},this.importAggregator({domObserver:c})}}var fe=i(7836);const{FEATURE_NAME:he,START:pe,END:ge,BODY:me,CB_END:ve,JS_TIME:be,FETCH:ye,FN_START:Ae,CB_START:Ee,FN_END:we}=fe;var _e=i(4649);class xe extends m{static featureName=_e.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,_e.t,r),this.importAggregator()}}new class extends n{constructor(t,r){super(r),h._A?(this.sharedAggregator=new E({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(b),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.D.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initialize the agent. Could not determine the runtime environment.")}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.p[e.featureName]-o.p[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.D.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.D.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.D.softNav)return;const n=function(e){switch(e){case o.D.ajax:return[o.D.jserrors];case o.D.sessionTrace:return[o.D.ajax,o.D.pageViewEvent];case o.D.sessionReplay:return[o.D.sessionTrace];case o.D.pageViewTiming:return[o.D.pageViewEvent];default:return[]}}(r.featureName);n.every((e=>e in this.features))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has not been initialized (").concat((0,R.P)(n),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[Y,b,P,class extends m{static featureName=ie;constructor(e,t){if(super(e,t,ie,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!h.il)return;const r=this.ee;let n;(0,B.QU)(r),this.eventsEE=(0,B.em)(r),this.eventsEE.on(ae,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(oe,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,o.D.sessionTrace,r)})),r.on(se+re,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),r.on(se+ne,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,o.D.sessionTrace,r)}));try{n=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(ee,[t],void 0,o.D.sessionTrace,r)})),n.observe({type:te,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:n})}},ue,C,xe,M,le,class extends m{static featureName=he;constructor(e,t){if(super(e,t,he,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!h.il)return;if(!(0,a.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,n=0;const i=this.ee.get("tracer"),o=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),l=(0,B.u5)(this.ee),f=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){f.emit("newURL",[""+window.location,t])}function m(){n++,r=window.location.hash,this[Ae]=(0,D.z)()}function v(){n--,window.location.hash!==r&&g(0,!0);var e=(0,D.z)();this[be]=~~this[be]+e-this[Ae],this[we]=e}function b(e,t){e.on(t,(function(){this[t]=(0,D.z)()}))}this.ee.on(Ae,m),s.on(Ee,m),o.on(Ee,m),this.ee.on(we,v),s.on(ve,v),o.on(ve,v),this.ee.buffer([Ae,we,"xhr-resolved"],this.featureName),d.buffer([Ae],this.featureName),c.buffer(["setTimeout"+ge,"clearTimeout"+pe,Ae],this.featureName),u.buffer([Ae,"new-xhr","send-xhr"+pe],this.featureName),l.buffer([ye+pe,ye+"-done",ye+me+pe,ye+me+ge],this.featureName),f.buffer(["newURL"],this.featureName),p.buffer([Ae],this.featureName),s.buffer(["propagate",Ee,ve,"executor-err","resolve"+pe],this.featureName),i.buffer([Ae,"no-"+Ae],this.featureName),o.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(l,ye+pe),b(l,ye+"-done"),b(o,"new-jsonp"),b(o,"jsonp-end"),b(o,"cb-start"),f.on("pushState-end",g),f.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,N.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,N.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,n>1)}),(0,N.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#s,this.importAggregator()}#s(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+<meta name="description" content="Get information on STD&#039;s, Birth Control and free health clinics and health resources near you. Educate yourself on your health options!" />
+<link rel="shortlink" href="https://www.teensource.org/" />
+<link rel="canonical" href="https://www.teensource.org/" />
+<link rel="image_src" href="/sites/default/files/TeenSource-Share-Image.png" />
+<meta property="og:title" content="Teen Health Resources &amp; Information - TeenSource" />
+<meta property="og:description" content="Get information on STD&#039;s, Birth Control and free health clinics and health resources near you. Educate yourself on your health options!" />
+<meta property="og:image" content="https://www.teensource.org/sites/default/files/TeenSource-Share-Image.png" />
+<meta property="og:image:url" content="https://www.teensource.org/sites/default/files/TeenSource-Share-Image.png" />
+<meta property="og:image:secure_url" content="https://www.teensource.org/sites/default/files/TeenSource-Share-Image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Teen Health Resources &amp; Information - TeenSource" />
+<meta name="twitter:description" content="Get information on STD&#039;s, Birth Control and free health clinics and health resources near you. Educate yourself on your health options!" />
+<meta name="twitter:image" content="https://www.teensource.org/sites/default/files/TeenSource-Share-Image.png" />
+<meta name="google-site-verification" content="zH33A3BkahFaKqFVq2INYDGlZ-qXQmUoV2dREL7l58M" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/sites/default/files/favicon.png" type="image/png" />
+<script src="/sites/default/files/google_tag/gtm_settings/google_tag.script.js?scfdw4" defer></script>
+
+    <title>Teen Health Resources &amp; Information - TeenSource</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_qb2xUL-2ge5wYZRbWE338hKRINdPcuWwHLGDngGKYNI.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_WapFyF2PZhfSed5QmZGOGZgAhNWtujHIr_wawYsq_bw.css" />
+
+    
+  </head>
+  <body class="path-frontpage page-node-type-custom-content">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC7MDT5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <header  class="site-header__header-region site-header__header-region--secondary-navigation">
+    <div class="region region-secondary-navigation">
+    
+
+
+<nav aria-labelledby="block-sociallinks-menu" id="block-sociallinks" class="block block-menu navigation menu--social-links">
+            
+  <h2 id="block-sociallinks-menu" class="visually-hidden">Social Links</h2>
+  
+
+        
+    
+
+    <ul  class="social-menu menu--level-0" >
+                                
+    
+    <a href="https://www.facebook.com/teensource"
+             class="sociallink sociallink--facebook"
+             target='_blank' aria-label='Facebook'>
+                    <span class="icon icon-facebook " aria-hidden='true'></span>
+        </a>
+                          
+    
+    <a href="https://twitter.com/teensource"
+             class="sociallink sociallink--twitter"
+             target='_blank' aria-label='Twitter'>
+                    <span class="icon icon-twitter " aria-hidden='true'></span>
+        </a>
+                          
+    
+    <a href="https://www.youtube.com/user/teensource"
+             class="sociallink sociallink--youtube"
+             target='_blank' aria-label='YouTube'>
+                    <span class="icon icon-youtube " aria-hidden='true'></span>
+        </a>
+                          
+    
+    <a href="https://www.instagram.com/teensourceorg/"
+             class="sociallink sociallink--instagram"
+             target='_blank' aria-label='Instagram'>
+                    <span class="icon icon-instagram " aria-hidden='true'></span>
+        </a>
+          </ul>
+
+
+  </nav>
+<div id="block-inlinesearch" class="block block-radicati-search-block block-inline-search-block">
+      <div  class="block block--radicati-search-block block--inline-search-block">
+  
+    
+      <div  class="inlinesearch">
+  <div  class="inlinesearch__form-wrapper">
+    <form class="inline-search-form" data-drupal-selector="inline-search-form" action="/" method="post" id="inline-search-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-searchterms form-item-searchterms">
+      <label class="sr-only" for="edit-searchterms">Search Terms</label>
+        <input placeholder="Search" data-drupal-selector="edit-searchterms" type="text" id="edit-searchterms" name="searchterms" value="" size="60" maxlength="128" class="form-text" />
+
+        </div>
+<button type="submit" class="search-submit" aria-label="Search" data-drupal-selector="edit-button"><i class="icon icon-search"></i></button>
+<input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="" class="button js-form-submit form-submit" />
+<input autocomplete="off" data-drupal-selector="form-ychaitqral0orawkcajrlfm6p32z1yaneaaeej8l-2s" type="hidden" name="form_build_id" value="form-yChAitQRAl0OrawKCaJRlFM6P32z1YaneAAeeJ8l_2s" />
+<input data-drupal-selector="edit-inline-search-form" type="hidden" name="form_id" value="inline_search_form" />
+
+</form>
+
+  </div>
+</div>
+  </div>
+  </div>
+
+  </div>
+
+</header>
+<header id="site-header"   class="site-header">
+  <div  class="site-header__inner">
+      <div  class="site-header__header-region site-header__header-region--branding-wrapper">
+          <div class="region region-header-branding">
+    <div id="block-radicati-d8-branding" class="block block-system block-system-branding-block">
+    
+
+    <a href="/"
+             class="site-logo"
+             title='TeenSource | Sex + Health + You' aria-label='TeenSource | Sex + Health + You'>
+            <svg width="375" height="54" viewBox="0 0 375 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.9191 36.3036V42.2946H15.0209C13.0295 42.306 11.0568 41.9049 9.22465 41.1161C7.43008 40.352 5.79808 39.2455 4.41797 37.8571C3.04764 36.4695 1.94763 34.834 1.17524 33.0357C0.393543 31.1812 -0.00629878 29.1853 7.50186e-05 27.1696V0H5.92006V18.1518H17.9102V24.1071H5.93773V27.1339C5.9207 28.9433 6.44009 30.7165 7.42902 32.225C8.41796 33.7335 9.83115 34.9084 11.4866 35.5982C12.6066 36.0683 13.8081 36.3081 15.0209 36.3036H17.9191Z" fill="#F05023"/>
+    <path d="M43.4721 31.6518L47.6602 35.8929L45.6103 37.9732C44.2224 39.3923 42.5669 40.5156 40.7418 41.2768C38.9289 42.0343 36.9868 42.4256 35.025 42.4286C33.0595 42.435 31.1127 42.0434 29.2994 41.2768C27.4835 40.5163 25.8347 39.3995 24.4486 37.9911C23.0333 36.5687 21.9286 34.8624 21.2058 32.9822C20.5049 31.1724 20.1423 29.247 20.1367 27.3036C20.1398 25.3686 20.5025 23.4515 21.2058 21.6518C21.9383 19.7802 23.0487 18.0834 24.4663 16.6697C25.8772 15.2282 27.5637 14.092 29.4231 13.3304C33.031 11.8583 37.0633 11.8583 40.6711 13.3304C42.5337 14.0819 44.2216 15.2159 45.628 16.6607L47.6602 18.75L31.1019 35.5C32.7849 36.3507 34.6926 36.6362 36.5473 36.315C38.402 35.9938 40.1067 35.0827 41.4133 33.7143L43.4721 31.6518ZM28.6191 20.8304C27.2736 22.157 26.382 23.8827 26.0737 25.7566C25.7654 27.6305 26.0566 29.5548 26.9049 31.25L29.3348 28.8036C30.4216 27.6964 31.5702 26.5357 32.7984 25.3036C34.0266 24.0714 35.1929 22.8929 36.3327 21.7322C37.4725 20.5714 38.3385 19.7411 38.9835 19.1072C37.3285 18.2611 35.4562 17.9494 33.6201 18.2143C31.7076 18.4875 29.9439 19.41 28.6191 20.8304Z" fill="#F05023"/>
+    <path d="M73.0806 31.625L77.2865 35.8661L75.2189 37.9554C73.8322 39.3695 72.18 40.4896 70.3592 41.25C66.6945 42.7755 62.5816 42.7755 58.9169 41.25C57.0961 40.4896 55.4439 39.3695 54.0572 37.9554C52.6305 36.537 51.5164 34.8301 50.7879 32.9464C50.0855 31.1374 49.7259 29.2111 49.7276 27.2679C49.7213 25.3337 50.0781 23.4159 50.7791 21.6161C51.5115 19.7445 52.6219 18.0477 54.0395 16.6339C55.4504 15.1924 57.1369 14.0563 58.9964 13.2946C60.7833 12.5696 62.6903 12.1939 64.6159 12.1875C66.5415 12.1862 68.4493 12.5591 70.2355 13.2857C72.1001 14.0382 73.7908 15.1721 75.2012 16.6161L77.26 18.75L60.7017 35.4643C62.3862 36.308 64.2922 36.5897 66.1452 36.2688C67.9983 35.9478 69.7027 35.0409 71.0131 33.6786L73.0806 31.625ZM58.2365 20.8125C56.9023 22.1504 56.0206 23.8801 55.7175 25.7547C55.4144 27.6292 55.7054 29.5526 56.5489 31.25L58.9787 28.7946L62.4423 25.3036C63.6528 24.0625 64.8368 22.8929 65.9767 21.7321L68.6274 19.1071C66.9783 18.2528 65.1062 17.9406 63.2729 18.2143C61.3494 18.4728 59.5718 19.3898 58.2365 20.8125Z" fill="#F05023"/>
+    <path d="M80.4055 21.2946C81.9265 17.6766 84.7773 14.7959 88.3577 13.2589C90.1977 12.4867 92.1705 12.0893 94.1628 12.0893C96.1552 12.0893 98.128 12.4867 99.968 13.2589C101.74 14.0247 103.352 15.1212 104.722 16.4911C106.131 17.8737 107.249 19.5301 108.008 21.3606C108.767 23.1912 109.152 25.1581 109.14 27.1428V42.2946H103.22V27.1786C103.235 25.952 102.997 24.7358 102.522 23.6071C101.606 21.4174 99.8724 19.6815 97.6972 18.7768C96.5782 18.3032 95.376 18.0633 94.1628 18.0714C92.9481 18.0556 91.7438 18.299 90.6285 18.7857C89.5601 19.2391 88.5904 19.9005 87.7746 20.7321C86.9686 21.5803 86.3272 22.5736 85.8837 23.6607C85.4116 24.7744 85.1768 25.9761 85.1945 27.1875V42.3661H79.2745V27.1964C79.2501 25.1719 79.635 23.1636 80.4055 21.2946Z" fill="#F05023"/>
+    <path d="M138.024 12.0268V18.0089H119.99C119.593 18.0026 119.2 18.0786 118.834 18.2322C118.467 18.3858 118.136 18.6137 117.86 18.9018C117.572 19.1779 117.345 19.5122 117.193 19.8829C117.04 20.2535 116.967 20.6524 116.977 21.0536C116.971 21.4608 117.046 21.8652 117.198 22.2425C117.349 22.6199 117.575 22.9625 117.86 23.25C118.134 23.5407 118.465 23.7704 118.832 23.9241C119.198 24.0779 119.593 24.1524 119.99 24.1428H131.971C133.171 24.1364 134.359 24.3795 135.461 24.8571C136.524 25.3175 137.495 25.9712 138.324 26.7857C139.173 27.611 139.847 28.603 140.302 29.7009C140.758 30.7987 140.987 31.9791 140.975 33.1696C140.99 34.3953 140.756 35.611 140.286 36.7411C139.829 37.8219 139.176 38.8062 138.359 39.6428C137.539 40.4735 136.567 41.1346 135.497 41.5893C134.394 42.0648 133.206 42.305 132.007 42.2946H113.982V36.25H131.954C132.36 36.265 132.765 36.1951 133.144 36.0447C133.523 35.8943 133.867 35.6667 134.155 35.3759C134.442 35.0852 134.668 34.7376 134.816 34.3549C134.965 33.9723 135.034 33.5627 135.02 33.1518C135.026 32.7524 134.951 32.3559 134.799 31.9872C134.647 31.6184 134.421 31.2854 134.136 31.0089C133.85 30.7149 133.507 30.4838 133.128 30.3302C132.75 30.1765 132.344 30.1036 131.936 30.1161H119.999C118.786 30.13 117.583 29.893 116.464 29.4196C115.404 28.9624 114.443 28.2978 113.637 27.4643C112.833 26.6266 112.189 25.6458 111.737 24.5714C111.265 23.4414 111.025 22.2265 111.03 21C111.03 18.6065 111.963 16.3094 113.628 14.6071C114.445 13.7959 115.404 13.145 116.456 12.6875C117.574 12.2113 118.776 11.9713 119.99 11.9821L138.024 12.0268Z" fill="#F05023"/>
+    <path d="M142.831 27.2232C142.81 25.1993 143.205 23.193 143.988 21.3304C145.495 17.7026 148.35 14.8172 151.941 13.2946C153.779 12.5162 155.752 12.1153 157.746 12.1153C159.739 12.1153 161.712 12.5162 163.551 13.2946C165.323 14.0603 166.938 15.1534 168.313 16.5179C169.686 17.8814 170.784 19.5005 171.547 21.2857C172.314 23.1443 172.709 25.1381 172.709 27.1518C172.709 29.1655 172.314 31.1593 171.547 33.0179C170.789 34.8273 169.691 36.4708 168.313 37.8571C166.948 39.2416 165.335 40.3507 163.56 41.125C160.819 42.296 157.794 42.6114 154.875 42.0307C151.955 41.4499 149.275 39.9994 147.178 37.8661C145.832 36.4732 144.762 34.8338 144.024 33.0357C143.237 31.201 142.831 29.2227 142.831 27.2232ZM148.68 27.2232C148.671 28.4491 148.909 29.6641 149.378 30.7946C149.823 31.8916 150.481 32.8874 151.313 33.7232C153.021 35.4336 155.328 36.3933 157.732 36.3933C160.137 36.3933 162.444 35.4336 164.152 33.7232C164.995 32.8811 165.662 31.876 166.113 30.7679C166.581 29.637 166.819 28.4222 166.811 27.1964C166.821 25.9848 166.584 24.7841 166.113 23.6696C165.663 22.588 165.009 21.6054 164.187 20.7768C163.344 19.9246 162.342 19.2492 161.24 18.7895C160.137 18.3298 158.956 18.0949 157.763 18.0982C156.55 18.084 155.346 18.3242 154.229 18.8036C153.147 19.2596 152.163 19.9237 151.331 20.7589C150.507 21.5859 149.852 22.569 149.405 23.6518C148.919 24.775 148.672 25.9886 148.68 27.2143V27.2232Z" fill="#F05023"/>
+    <path d="M204.637 11.9821V27.0446C204.643 29.0565 204.246 31.0488 203.47 32.9018C201.946 36.5347 199.1 39.4371 195.518 41.0089C193.679 41.784 191.706 42.183 189.713 42.183C187.72 42.183 185.747 41.784 183.908 41.0089C182.124 40.245 180.503 39.1382 179.136 37.75C177.784 36.3521 176.702 34.7108 175.947 32.9107C175.165 31.0625 174.765 29.0724 174.772 27.0625V12.0089H180.692V27.0625C180.695 29.4918 181.648 31.8215 183.342 33.5446C184.172 34.3955 185.161 35.0707 186.252 35.5306C187.343 35.9905 188.513 36.226 189.695 36.2232C190.908 36.2309 192.11 35.9909 193.23 35.5179C194.311 35.0659 195.293 34.4013 196.119 33.5625C196.952 32.7295 197.608 31.7328 198.045 30.6339C198.515 29.5037 198.753 28.2885 198.743 27.0625V11.9911L204.637 11.9821Z" fill="#F05023"/>
+    <path d="M224.332 11.9732V17.9554H221.328C220.146 17.9526 218.975 18.188 217.884 18.648C216.793 19.1079 215.804 19.7831 214.975 20.6339C214.159 21.464 213.505 22.4425 213.049 23.5179C212.578 24.6323 212.34 25.833 212.351 27.0446V42.2232H206.36V27.0357C206.343 25.0113 206.74 23.0051 207.526 21.1429C208.286 19.358 209.382 17.7389 210.751 16.375C212.148 14.9978 213.791 13.901 215.593 13.1429C217.421 12.3509 219.392 11.9496 221.381 11.9643L224.332 11.9732Z" fill="#F05023"/>
+    <path d="M230.455 16.4018C231.864 14.96 233.552 13.8264 235.412 13.0714C239.021 11.5894 243.06 11.5894 246.669 13.0714C248.532 13.823 250.22 14.957 251.626 16.4018L253.685 18.4821L249.558 22.7232L247.402 20.6339C246.552 19.7607 245.532 19.0739 244.407 18.6161C243.326 18.1729 242.172 17.9426 241.005 17.9375C239.842 17.9461 238.691 18.1763 237.612 18.6161C236.488 19.0757 235.469 19.7623 234.617 20.6339C233.744 21.4597 233.065 22.4726 232.629 23.5982C232.188 24.6893 231.963 25.8572 231.966 27.0357C231.972 28.2076 232.197 29.3679 232.629 30.4554C233.312 32.1398 234.474 33.5817 235.968 34.5989C237.463 35.616 239.222 36.1626 241.023 36.1696C242.207 36.1689 243.38 35.9386 244.478 35.4911C245.585 35.038 246.582 34.3498 247.402 33.4732L249.532 31.3839L253.658 35.625L251.599 37.7143C250.205 39.1632 248.529 40.3061 246.678 41.0714C244.893 41.8042 242.985 42.1831 241.058 42.1875C239.131 42.1869 237.223 41.8079 235.439 41.0714C233.578 40.3198 231.891 39.1892 230.482 37.75C229.064 36.3384 227.951 34.645 227.213 32.7768C225.799 29.1228 225.799 25.0647 227.213 21.4107C227.933 19.5293 229.038 17.8225 230.455 16.4018Z" fill="#F05023"/>
+    <path d="M279.45 31.5L283.629 35.7143L281.571 37.8036C280.184 39.2205 278.533 40.3449 276.713 41.1113C274.892 41.8777 272.94 42.2708 270.968 42.2679C268.996 42.2688 267.044 41.8748 265.224 41.1085C263.404 40.3422 261.752 39.2189 260.365 37.8036C258.937 36.3892 257.823 34.6851 257.095 32.8036C256.395 30.9907 256.032 29.0623 256.026 27.1161C256.028 25.1818 256.387 23.2648 257.087 21.4643C257.821 19.5965 258.931 17.903 260.347 16.4911C261.76 15.0474 263.449 13.911 265.313 13.1518C268.921 11.6797 272.953 11.6797 276.561 13.1518C278.421 13.9034 280.108 15.034 281.518 16.4732L283.629 18.5893L267.08 35.3482C268.734 36.1877 270.607 36.4813 272.434 36.1875C274.323 35.8969 276.065 34.9871 277.391 33.5982L279.45 31.5ZM264.606 20.6875C263.258 22.0138 262.361 23.7376 262.044 25.6113C261.726 27.485 262.004 29.4122 262.839 31.1161L265.269 28.6696L268.732 25.1696C269.946 23.9375 271.124 22.747 272.267 21.5982C273.406 20.4821 274.272 19.6071 274.917 18.9732C273.264 18.1227 271.39 17.8108 269.554 18.0804C267.66 18.3593 265.916 19.2783 264.606 20.6875Z" fill="#F05023"/>
+    <path d="M294.311 26.9286C294.289 24.9256 294.68 22.9399 295.46 21.0982C296.964 17.5137 299.791 14.663 303.342 13.1518C305.156 12.3782 307.107 11.9833 309.076 11.9911C311.06 11.9689 313.027 12.361 314.855 13.1428C316.608 13.9073 318.207 14.9907 319.573 16.3393C320.936 17.689 322.023 19.297 322.772 21.0714C323.532 22.9099 323.923 24.8825 323.923 26.875C323.923 28.8675 323.532 30.8401 322.772 32.6786C322.024 34.4798 320.938 36.1173 319.573 37.5C318.22 38.8689 316.622 39.9657 314.864 40.7321C312.152 41.8986 309.156 42.2141 306.264 41.6377C303.373 41.0613 300.72 39.6196 298.65 37.5C297.299 36.1164 296.219 34.4864 295.469 32.6964C294.696 30.8743 294.302 28.911 294.311 26.9286ZM300.117 26.9286C300.096 28.7181 300.608 30.4726 301.587 31.9644C302.565 33.4562 303.965 34.6165 305.604 35.2946C306.707 35.7685 307.895 36.0085 309.094 36C310.866 36.0225 312.604 35.5058 314.082 34.517C315.56 33.5282 316.71 32.113 317.382 30.4553C317.855 29.3259 318.092 28.1102 318.08 26.8839C318.085 25.6805 317.845 24.4889 317.373 23.3839C316.913 22.3188 316.256 21.3521 315.438 20.5357C314.616 19.7053 313.64 19.0469 312.566 18.5982C311.447 18.1268 310.244 17.8898 309.032 17.9018C307.267 17.8792 305.537 18.3911 304.063 19.3713C302.589 20.3516 301.439 21.7553 300.762 23.4018C300.306 24.5162 300.087 25.7144 300.117 26.9196V26.9286Z" fill="#F05023"/>
+    <path d="M343.713 11.8304V17.7589H340.744C339.553 17.7533 338.374 17.9965 337.28 18.4732C336.223 18.9294 335.261 19.5838 334.444 20.4018C333.631 21.2277 332.984 22.2037 332.536 23.2768C332.072 24.3802 331.84 25.5691 331.855 26.7679V41.7679H325.909V26.7857C325.893 24.8188 326.27 22.869 327.017 21.0526C327.764 19.2363 328.865 17.5907 330.256 16.2143C331.63 14.8575 333.242 13.7706 335.01 13.0089C336.822 12.2291 338.774 11.8312 340.744 11.8393L343.713 11.8304Z" fill="#F05023"/>
+    <path d="M360.2 11.8214C362.185 11.8052 364.152 12.2034 365.978 12.9911C367.729 13.7466 369.321 14.8313 370.67 16.1875C372.01 17.5518 373.085 19.1566 373.842 20.9196C374.621 22.7744 375.015 24.771 375 26.7857V38.75C375.022 40.7588 374.631 42.7503 373.851 44.5982C373.093 46.3693 372.021 47.9852 370.688 49.3661C369.346 50.739 367.757 51.8393 366.005 52.6071C364.178 53.3931 362.211 53.7913 360.226 53.7768L0.24707 54V48.0625L360.235 47.8393C362.118 47.8677 363.959 47.2719 365.475 46.1429C366.959 45.0479 368.078 43.5218 368.682 41.7679H360.235C358.262 41.78 356.308 41.3851 354.492 40.6071C352.718 39.8499 351.107 38.7523 349.747 37.375C348.387 35.9965 347.299 34.3694 346.54 32.5804C345.024 28.863 345.024 24.6906 346.54 20.9732C347.293 19.1991 348.379 17.5891 349.738 16.2321C351.114 14.8773 352.726 13.7906 354.492 13.0268C356.294 12.2371 358.236 11.827 360.2 11.8214ZM351.249 26.7857C351.228 28.5743 351.739 30.328 352.716 31.8197C353.692 33.3114 355.09 34.4722 356.727 35.1518C357.833 35.6178 359.02 35.8546 360.217 35.8482H369.195V26.7857C369.201 25.5831 368.963 24.392 368.497 23.2857C368.044 22.2157 367.393 21.2429 366.579 20.4196C364.882 18.7261 362.594 17.7764 360.209 17.7764C357.824 17.7764 355.535 18.7261 353.838 20.4196C353.026 21.2424 352.378 22.2154 351.929 23.2857C351.47 24.3937 351.239 25.5845 351.249 26.7857Z" fill="#F05023"/>
+    <path d="M286.395 41.4464V35.6607H292.085V41.4464H286.395Z" fill="#F05023"/>
+</svg>
+      </a>
+</div>
+
+  </div>
+
+
+        <div class="mobile-nav-toggle">
+            
+
+<button  class="hamburger hamburger--style-1" aria-expanded="false" aria-controls="off-canvas" tabindex="-1">
+      <span></span>
+      <span></span>
+      <span></span>
+    <span class="sr-only">Show Mobile Menu</span>
+</button>
+        </div>
+      </div>
+
+      <div  class="site-header__header-region site-header__header-region--primary-navigation">
+          <div class="region region-primary-navigation">
+    <div id="block-mainmenu" class="block block-superfish block-superfishmain">
+      <div  class="block block--superfish block--superfishmain">
+  
+    
+      
+<ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-none">
+  
+<li id="main-menu-link-contentad091f53-2dc7-4b62-aaa9-ea23ffd14865" class="sf-depth-1 menuparent"><a href="/get-care" title="Get Care" class="sf-depth-1 menuparent">Get Care</a><ul><li id="main-menu-link-contentc72fd21e-2256-4318-a01f-5afcf7d0e546" class="sf-depth-2 sf-no-children"><a href="/find-a-clinic" class="sf-depth-2">Find a Clinic</a></li><li id="main-menu-link-content36120edb-00d8-4d3b-9085-7b54555a69b6" class="sf-depth-2 sf-no-children"><a href="/condoms/free" title="Get Free Condoms" class="sf-depth-2">Get Free Condoms</a></li><li id="main-menu-link-content87ba6a88-48a0-47e4-afc3-b56839a52e23" class="sf-depth-2 sf-no-children"><a href="/teens-telehealth" title="Teleheath resources for teens" class="sf-depth-2">Teens + Telehealth</a></li><li id="main-menu-link-contentbde2b908-cb1f-4b3a-bd67-6432c154bc64" class="sf-depth-2 sf-no-children"><a href="/get-care/take-home-sti-tests" class="sf-depth-2">Home STI Tests</a></li></ul></li><li id="main-menu-link-content1dd1f4ec-8031-4b95-9f33-3adda3a71238" class="sf-depth-1 menuparent"><a href="/sexual-health" title="Sexual Health" class="sf-depth-1 menuparent">Sexual Health</a><ul><li id="main-menu-link-content468a1c79-03a1-46c6-9c48-44b8526f6df4" class="sf-depth-2 sf-no-children"><a href="/birth-control" class="sf-depth-2">Birth Control</a></li><li id="main-menu-link-contentf332a288-8b4c-47a8-b425-e9b35684a8b6" class="sf-depth-2 sf-no-children"><a href="/std" class="sf-depth-2">STI</a></li><li id="main-menu-link-contentb76aa9d8-ed27-428b-89e7-ec6d49293592" class="sf-depth-2 sf-no-children"><a href="https://www.teensource.org/anatomy/anatomy-introduction" class="sf-depth-2 sf-external">Anatomy</a></li><li id="main-menu-link-content800c21d7-936d-47df-a693-2c51ed4b4374" class="sf-depth-2 sf-no-children"><a href="/std/sti-treatment-for-partners" class="sf-depth-2">Partner Treatment</a></li></ul></li><li id="main-menu-link-content525816e3-3c89-4b74-b86f-027d3c01f575" class="sf-depth-1 menuparent"><a href="/lgbtq" class="sf-depth-1 menuparent">LGBTQ+</a><ul><li id="main-menu-link-content48340425-fc91-4574-8b74-03fa2c619aff" class="sf-depth-2 sf-no-children"><a href="/lgbtq/sexual-orientation-gender" class="sf-depth-2">Sexual Orientation and Gender</a></li><li id="main-menu-link-content2845839a-8ceb-4cf4-84f7-d9e73a8a6b27" class="sf-depth-2 sf-no-children"><a href="/lgbtq/safer-sex" class="sf-depth-2">Safer Sex</a></li></ul></li><li id="main-menu-link-content49696b8a-486f-4402-8690-baadde2edfef" class="sf-depth-1 menuparent"><a href="/relationships" class="sf-depth-1 menuparent">Relationships</a><ul><li id="main-menu-link-content7386070f-0acd-4b27-bed7-c6885891faed" class="sf-depth-2 sf-no-children"><a href="/relationships/healthy-relationships" class="sf-depth-2">Healthy Relationships</a></li><li id="main-menu-link-content2499a02b-e230-4807-bb1a-59db7d1c65e3" class="sf-depth-2 sf-no-children"><a href="/relationships/sexuality-gender-identity" class="sf-depth-2">Sexuality + Gender Identity</a></li><li id="main-menu-link-content88964d1a-8f97-449c-8d6f-f87747acb8e4" class="sf-depth-2 sf-no-children"><a href="/relationships/family" class="sf-depth-2">Family</a></li><li id="main-menu-link-content5a480605-e7b1-49c1-a772-f0eabb0f732d" class="sf-depth-2 sf-no-children"><a href="/relationships/peers" class="sf-depth-2">Peers</a></li></ul></li><li id="main-menu-link-content4e228b67-e38a-4a36-8a5a-d02e6c32ca00" class="sf-depth-1 sf-no-children"><a href="/blog" class="sf-depth-1">Blogs</a></li><li id="main-menu-link-contentcfcfa59a-7b49-4b00-a4bc-e444a1953e47" class="sf-depth-1 menuparent"><a href="/know-your-rights" title="Teens have rights too..." class="sf-depth-1 menuparent">Know Your Rights</a><ul><li id="main-menu-link-contentd22a901d-cad4-4b63-b595-92408509a7a4" class="sf-depth-2 sf-no-children"><a href="http://www.teensource.org/know-your-rights/confidentiality" title="Confidentiality" class="sf-depth-2 sf-external">Confidentiality</a></li><li id="main-menu-link-content0d4369aa-62ce-4205-9447-e034f7e10024" class="sf-depth-2 sf-no-children"><a href="http://www.teensource.org/know-your-rights/affordability" title="Affordability" class="sf-depth-2 sf-external">Affordability</a></li><li id="main-menu-link-content331a5c7c-31eb-4ec7-88b4-1815a9b5903d" class="sf-depth-2 sf-no-children"><a href="http://www.teensource.org/know-your-rights/care-during-school-hours" title="Care During School Hours" class="sf-depth-2 sf-external">Care During School Hours</a></li><li id="main-menu-link-contentc08e7396-417f-4f15-bc6d-c623fd296fea" class="sf-depth-2 sf-no-children"><a href="http://www.teensource.org/know-your-rights/abortion" title="Abortion" class="sf-depth-2 sf-external">Abortion</a></li><li id="main-menu-link-content70280b12-836a-4171-9473-eefc271c524c" class="sf-depth-2 sf-no-children"><a href="http://www.teensource.org/know-your-rights/emergency-contraception" title="Emergency Contraception" class="sf-depth-2 sf-external">Emergency Contraception</a></li><li id="main-menu-link-contentc3219fae-1662-474d-a629-2180e00f726a" class="sf-depth-2 sf-no-children"><a href="/know-your-rights/pregnant-parenting-teens" class="sf-depth-2">Pregnant + Parenting Teens</a></li><li id="main-menu-link-content13edaf07-8ca5-4c33-8b69-90cc0dad76eb" class="sf-depth-2 sf-no-children"><a href="/know-your-rights/minor-consent" class="sf-depth-2">Accessing Services as a Minor</a></li><li id="main-menu-link-content54cb552f-7fbb-4bf3-a3ac-ef0d34522f78" class="sf-depth-2 sf-no-children"><a href="/know-your-rights/comprehensive-sex-ed" class="sf-depth-2">Comprehensive Sex Ed</a></li><li id="main-menu-link-content09f3cae3-8f0e-4050-b794-1220cde83c5b" class="sf-depth-2 sf-no-children"><a href="/know-your-rights/consent" class="sf-depth-2">Consent: Yes Means Yes</a></li></ul></li>
+</ul>
+
+  </div>
+  </div>
+
+  </div>
+
+      </div>
+  </div>
+</header>
+
+<div class="layout-container container">
+  <div id="page-content-wrapper">
+    <div id="page-content-inner">
+
+      <div class="row">
+        <div class="col--12">
+          
+        </div>
+      </div>
+
+              <div class="row">
+          <div class="col--12">
+              <div class="region region-system-help">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+          </div>
+        </div>
+      
+      <main>
+        <a id="main-content" tabindex="-1" aria-label="Main Content"></a>
+
+                  <div class="row">
+            <div class="col--12">
+                <div class="region region-pre-content">
+    <div id="block-findaclinicmap" class="block block-clinic-finder-and-map block-clinic-finder-map">
+      <div  class="block block--clinic-finder-and-map block--clinic-finder-map">
+  
+    
+      <div id='clinic-finder-map'></div>
+  </div>
+  </div>
+
+  </div>
+
+            </div>
+          </div>
+        
+
+
+
+                            
+                    
+          
+          <div id="page-content">
+            <div class="row">
+              <div class="col--12 col-md-12 order-md-2">
+                  <div class="region region-content">
+    <div id="block-teensource-system-main" class="block block-system block-system-main-block">
+      <div  class="block block--system block--system-main-block">
+  
+    
+      
+<div data-history-node-id="20216" about="/home">
+  
+<article  class="custom-content">
+    <div class="layout rad-layout--twocol">
+
+    
+<div  class="layout homepage__content homepage__content--first">
+  <div class="row">
+<div  class="layout__region layout__region--layout__region--first col--12 col-md-4 col-lg-4">
+
+
+      <div class="views-element-container block block-views block-views-blockts-what-s-hot-block-1">
+      <div  class="block block--views block--views-blockts-what-s-hot-block-1">
+  
+      <h2>New Blogs</h2>
+    
+      <div><div class="view view-ts-what-s-hot view-id-ts_what_s_hot view-display-id-block_1 js-view-dom-id-5ea874aad54bc2633db705970e5ac0b396960130f229b3445105d4fd08065eb4">
+  
+    
+        
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-title"><h3 class="field-content"><a href="/hookup/your-sti-questions-answered-0" hreflang="en">Your STI Questions Answered!</a></h3></div><div class="views-field views-field-created"><span class="field-content">4/17/24</span></div><div class="views-field views-field-body"><div class="field-content">This week is STI Awareness Week and we thought it would be a great time to answer some common questions about STIs.</div></div></div>
+    <div class="views-row"><div class="views-field views-field-title"><h3 class="field-content"><a href="/hookup/celebrate-denim-day-0" hreflang="en">Celebrate Denim Day</a></h3></div><div class="views-field views-field-created"><span class="field-content">4/24/24</span></div><div class="views-field views-field-body"><div class="field-content">Today marks Denim Day - a visible protest that stands in solidarity with survivors of sexual violence and raises awareness about the misconceptions surrounding sexual assault</div></div></div>
+
+    </div>
+  
+          <div class="more-link"><a href="/blog">Visit Blog</a></div>
+
+      </div>
+</div>
+
+  </div>
+  </div>
+
+    </div>
+
+<div  class="layout__region layout__region--layout__region--second col--12 col-md-8 col-lg-8">
+
+
+      <div class="block block-clinic-finder-and-map block-clinic-finder">
+      <div  class="block block--clinic-finder-and-map block--clinic-finder">
+  
+    
+      <div class="find-clinic-block">
+  <div class="find-clinic-block__inner">
+
+    <form class="find-clinic-block__form" method="get" action="/find-a-clinic">
+      <div class="find-clinic-block__form__zip__wrapper">
+        <input class="find-clinic-block__form__zip" name="search_zip" type="text" placeholder="Enter Your Zip Code" aria-label="Enter your zip code." />
+      </div>
+
+      <div class="find-clinic-block__form__distance__wrapper">
+        <input class="find-clinic-block__form__distance" name="search_distance" type="text" value="5" aria-label="Search distance in miles." />
+        <label for="search_distance" class="find-clinic-block__form__distance__label">Miles</label>
+      </div>
+
+      <button class="find-clinic-block__form__submit button button--black" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+  </div>
+  </div>
+<div class="views-element-container block block-views block-views-blockts-homepage-slider-block-1">
+      <div  class="block block--views block--views-blockts-homepage-slider-block-1">
+  
+    
+      <div><div class="view view-ts-homepage-slider view-id-ts_homepage_slider view-display-id-block_1 js-view-dom-id-044826b56ca4844768d56655224e6d77639b58574dfcfd4b7773536c3a6db10c">
+  
+    
+        
+      <div class="view-content">
+      <div class="slick blazy slick--view slick--view--ts-homepage-slider slick--view--ts-homepage-slider--block-1 slick--view--ts-homepage-slider-block-block-1 slick--optionset--homepage-carousel" data-blazy=""><div id="slick-f83563d24e9" data-slick="{&quot;count&quot;:4,&quot;total&quot;:4,&quot;mobileFirst&quot;:true,&quot;autoplay&quot;:true,&quot;lazyLoad&quot;:&quot;blazy&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;autoplay&quot;:true,&quot;slidesToShow&quot;:2,&quot;swipeToSlide&quot;:true,&quot;waitForAnimate&quot;:false}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;autoplay&quot;:true,&quot;slidesToShow&quot;:3,&quot;swipeToSlide&quot;:true,&quot;waitForAnimate&quot;:false}}]}" class="slick__slider">  <div class="slick__slide slide slide--0">
+<div data-history-node-id="19975" about="/content/best-birth-control">
+  
+
+
+<div  class="card card--slide">
+      <a href='/birth-control'  class="card__link" >
+  
+  <div  class="card__inner">
+          <div  class="card__background-image">
+          
+            <div class="field field--name-field-button-image field--type-image field--label-hidden field__item">    <img srcset="/sites/default/files/styles/image_button_regular/public/home_slide_1.png?h=47758b08&amp;itok=eIQUT_K8 188w, /sites/default/files/styles/image_button_high_res/public/home_slide_1.png?h=47758b08&amp;itok=3s6_iSCC 376w" sizes="(min-width: 1200px) 5vw, (min-width: 982px) 10vw, 50vw" src="/sites/default/files/styles/image_button_regular/public/home_slide_1.png?h=47758b08&amp;itok=eIQUT_K8" typeof="foaf:Image" />
+
+
+</div>
+      
+      </div>
+    
+        
+    
+    
+      </div>
+
+      </a>
+  
+    
+</div>
+
+
+
+
+
+
+</div>
+</div>
+  <div class="slick__slide slide slide--1">
+<div data-history-node-id="19974" about="/content/condoms-good-idea">
+  
+
+
+<div  class="card card--slide">
+      <a href='/condoms/free'  class="card__link" >
+  
+  <div  class="card__inner">
+          <div  class="card__background-image">
+          
+            <div class="field field--name-field-button-image field--type-image field--label-hidden field__item">    <img srcset="/sites/default/files/styles/image_button_regular/public/cap-good-idea-homepage.png?h=efd7e0e0&amp;itok=fPBpsIWb 188w, /sites/default/files/styles/image_button_high_res/public/cap-good-idea-homepage.png?h=efd7e0e0&amp;itok=1EcRekDE 376w" sizes="(min-width: 1200px) 5vw, (min-width: 982px) 10vw, 50vw" src="/sites/default/files/styles/image_button_regular/public/cap-good-idea-homepage.png?h=efd7e0e0&amp;itok=fPBpsIWb" alt="" typeof="foaf:Image" />
+
+
+</div>
+      
+      </div>
+    
+        
+    
+    
+      </div>
+
+      </a>
+  
+    
+</div>
+
+
+
+
+
+
+</div>
+</div>
+  <div class="slick__slide slide slide--2">
+<div data-history-node-id="19973" about="/content/std-get-know">
+  
+
+
+<div  class="card card--slide">
+      <a href='/std'  class="card__link" >
+  
+  <div  class="card__inner">
+          <div  class="card__background-image">
+          
+            <div class="field field--name-field-button-image field--type-image field--label-hidden field__item">    <img srcset="/sites/default/files/styles/image_button_regular/public/home_slide_2.png?h=47758b08&amp;itok=NBgKd3Uz 188w, /sites/default/files/styles/image_button_high_res/public/home_slide_2.png?h=47758b08&amp;itok=jEEQmksi 376w" sizes="(min-width: 1200px) 5vw, (min-width: 982px) 10vw, 50vw" src="/sites/default/files/styles/image_button_regular/public/home_slide_2.png?h=47758b08&amp;itok=NBgKd3Uz" typeof="foaf:Image" />
+
+
+</div>
+      
+      </div>
+    
+        
+    
+    
+      </div>
+
+      </a>
+  
+    
+</div>
+
+
+
+
+
+
+</div>
+</div>
+  <div class="slick__slide slide slide--3">
+<div data-history-node-id="19972" about="/content/get-teensource-tips">
+  
+
+
+<div  class="card card--slide">
+      <a href='/tips'  class="card__link" >
+  
+  <div  class="card__inner">
+          <div  class="card__background-image">
+          
+            <div class="field field--name-field-button-image field--type-image field--label-hidden field__item">    <img srcset="/sites/default/files/styles/image_button_regular/public/teensource-tips-slider-20220125.png?h=efd7e0e0&amp;itok=p6gZ4Lwa 188w, /sites/default/files/styles/image_button_high_res/public/teensource-tips-slider-20220125.png?h=efd7e0e0&amp;itok=GhjGx-wO 376w" sizes="(min-width: 1200px) 5vw, (min-width: 982px) 10vw, 50vw" src="/sites/default/files/styles/image_button_regular/public/teensource-tips-slider-20220125.png?h=efd7e0e0&amp;itok=p6gZ4Lwa" alt="" typeof="foaf:Image" />
+
+
+</div>
+      
+      </div>
+    
+        
+    
+    
+      </div>
+
+      </a>
+  
+    
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+          <nav role="navigation" class="slick__arrow">
+        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button>
+                <button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
+      </nav>
+    </div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="layout rad-layout--onecol">
+
+    
+<div  class="layout homepage__content homepage__content--second">
+	<div class="row">
+		<div  class="layout__region layout__region--layout__region--first col--12">
+
+
+			<div class="block block-block-content block-block-content07bb38f2-3a17-4953-b36e-5bdbfc64687b">
+      <div  class="block block--block-content block--block-content07bb38f2-3a17-4953-b36e-5bdbfc64687b">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2 class="pane-title">Sign Up for TeenSource Tips</h2>
+
+<form action="https://secure.mcommons.com/profiles/join" class="mobilecommons" method="post"><input name="opt_in_path[]" type="hidden" value="OP004472B06DE859B0DBE9E8BC517C32BA" /><input name="redirect_to" type="hidden" value="http://www.teensource.org/hookup/thank-you-signing-hookup" /><div class="field"><label for="phone">Mobile Number</label> <input id="person_phone" name="person[phone]" type="text" /></div>
+
+<div class="field"><label for="birth">Birth Year</label><input id="person_birth_year" name="person[birth_year]" type="text" /></div>
+
+<div class="field"><label for="zip">Zip Code</label> <input class="postal_code" id="person_postal_code" name="person[postal_code]" size="10" type="text" /></div>
+
+<div><input name="submit" type="submit" value="Subscribe" /></div>
+</form>
+
+<div class="description">Get weekly health + relationship text tips and search for clinics near you. Message &amp; data rates may apply. Text STOP to end.<br /><a href="https://www.mobilecommons.com/about/terms-and-conditions/">Terms and Conditions</a> <a href="https://www.mobilecommons.com/about/terms-and-conditions/privacy-policy/">Privacy Policy</a></div>
+</div>
+      
+  </div>
+  </div>
+
+		</div>
+	</div>
+</div>
+
+  </div>
+  <div class="layout rad-layout--twocol">
+
+    
+<div  class="layout homepage__content homepage__content--third">
+  <div class="row">
+<div  class="layout__region layout__region--layout__region--first col--12 col-md-6 col-lg-8">
+
+
+      
+    </div>
+
+<div  class="layout__region layout__region--layout__region--second col--12 col-md-6 col-lg-4">
+
+
+      <div class="block block-layout-builder block-inline-blockbasic">
+      <div  class="block block--layout-builder block--inline-blockbasic">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a class="homepage-insta-link icon icon-instagram" href="https://www.instagram.com/teensourceorg/" target="_blank">Follow us on Insta!</a></p>
+</div>
+      
+  </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+
+</article>
+</div>
+
+  </div>
+  </div>
+
+  </div>
+
+              </div>
+
+              
+                          </div>
+          </div>
+        
+                  <div class="row">
+            <div class="col--12">
+                <div class="region region-post-content">
+    <div class="views-element-container block block-views block-views-blockts-homepage-slider-block-yab" id="block-views-block-ts-homepage-slider-block-yab">
+      <div  class="block block--views block--views-blockts-homepage-slider-block-yab">
+  
+      <h2>Meet the TeenSource Youth Advisory Board</h2>
+    
+      <div region="post_content"><div class="view view-ts-homepage-slider view-id-ts_homepage_slider view-display-id-block_yab js-view-dom-id-41003de8c25193a33ebefdcb7af68110269abcc51771b51042a41aada21cdfd8">
+  
+    
+      <div class="view-header">
+      <p>The TeenSource Youth Advisory Board helps make sure TeenSource content engages, empowers, and educates California youth and supports the health and well-being of California teens. Youth Advisory Board members represent California’s ethnic and geographic diversity and the Youth Advisory Board is inclusive of sexual orientation and gender identities.</p>
+
+    </div>
+        
+      <div class="view-content">
+      <div class="slick blazy slick--view slick--view--ts-homepage-slider slick--view--ts-homepage-slider--block-yab slick--view--ts-homepage-slider-block-block-yab is-b-captioned slick--optionset--homepage-carousel" data-blazy=""><div id="slick-4f9e10d81f2" data-slick="{&quot;count&quot;:12,&quot;total&quot;:12,&quot;mobileFirst&quot;:true,&quot;autoplay&quot;:true,&quot;lazyLoad&quot;:&quot;blazy&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;autoplay&quot;:true,&quot;slidesToShow&quot;:2,&quot;swipeToSlide&quot;:true,&quot;waitForAnimate&quot;:false}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;autoplay&quot;:true,&quot;slidesToShow&quot;:3,&quot;swipeToSlide&quot;:true,&quot;waitForAnimate&quot;:false}}]}" class="slick__slider">  <div class="slick__slide slide slide--0"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Treasure.png" width="398" height="398" alt="Treasure" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Treasure, 17, Oakland</span></div></div>
+  <div class="slick__slide slide slide--1"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Tia.png" width="398" height="398" alt="Tia" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Tia, 15, Vallejo</span></div></div>
+  <div class="slick__slide slide slide--2"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Paige.png" width="398" height="398" alt="Paige" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Paige, 16, Bakersfield</span></div></div>
+  <div class="slick__slide slide slide--3"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Naimat.png" width="398" height="398" alt="Naimat" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Naimat, 17, Canoga Park</span></div></div>
+  <div class="slick__slide slide slide--4"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Michelle.png" width="398" height="398" alt="Michelle" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Michelle, 16, Irvine</span></div></div>
+  <div class="slick__slide slide slide--5"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Marisa.png" width="398" height="398" alt="Marisa" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Marisa, 16, Oakdale</span></div></div>
+  <div class="slick__slide slide slide--6"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Marco.png" width="398" height="398" alt="Marco" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Marco, 15, San Bernadino</span></div></div>
+  <div class="slick__slide slide slide--7"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Kelley.png" width="398" height="398" alt="Kelley" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Kelley, 16, Elk Grove</span></div></div>
+  <div class="slick__slide slide slide--8"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Jov.png" width="398" height="398" alt="Jov" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Jov, 16, Olivehurst</span></div></div>
+  <div class="slick__slide slide slide--9"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Doris.png" width="398" height="398" alt="Doris" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Doris, 17, West Covina</span></div></div>
+  <div class="slick__slide slide slide--10"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Jaiden.png" width="398" height="398" alt="Jaiden" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Jaiden, 17, Santa Ana</span></div></div>
+  <div class="slick__slide slide slide--11"><div class="views-field views-field-field-button-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/2020-12/Chloe.png" width="398" height="398" alt="Chloe" typeof="foaf:Image" />
+
+</div></div><div class="views-field views-field-title"><span class="field-content">Chloe, 16, Fremont</span></div></div>
+</div>
+          <nav role="navigation" class="slick__arrow">
+        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button>
+                <button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
+      </nav>
+    </div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+  </div>
+
+  </div>
+
+            </div>
+          </div>
+              </main>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+<aside id="off-canvas"  class="off-canvas" tabindex="-1" role="region" aria-label="Site Menu" aria-expanded="false">
+  <div  class="offcanvas__header">
+    <button type="button"  class="offcanvas__close" aria-controls="off-canvas" title="Close Off-Canvas Navigation"><span class="close-button"><span></span><span></span></span></button>
+  </div>
+
+  <div  class="offcanvas__content">
+      <div class="region region-off-canvas">
+    
+
+
+<nav aria-labelledby="block-mobilemenu-menu" id="block-mobilemenu" class="block block-menu navigation menu--mobile-menu">
+            
+  <h2 id="block-mobilemenu-menu" class="visually-hidden">Mobile Menu</h2>
+  
+
+        
+
+    
+              
+        
+
+    <ul  class="menu menu--dropdown menu--off-canvas menu--level-0" >
+                        
+
+<li  class="menu__menu-item menu__menu-item--expanded">
+  <a href="/get-care" title="Get Care" data-drupal-link-system-path="node/20484">Get Care</a>
+            <button class="dropdown-toggle level-1">
+        <span class="toggle-text visually-hidden">Show submenu</span>
+        <i class="icon-down-open" aria-hidden="true"></i>
+      </button>
+    
+            
+              
+        
+
+    <ul  class="sub-menu menu--level-1" aria-expanded="false">
+                        
+
+<li  class="sub-menu__menu-item">
+  <a href="/find-a-clinic" data-drupal-link-system-path="find-a-clinic">Find a Clinic</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/condoms/free" title="Get Free Condoms" data-drupal-link-system-path="condoms/free">Get Free Condoms</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/teens-telehealth" title="Teens and Telehealth" data-drupal-link-system-path="node/20453">Teens + Telehealth</a>
+  </li>
+                  </ul>
+  
+  </li>
+                  
+
+<li  class="menu__menu-item menu__menu-item--expanded">
+  <a href="/sexual-health" title="Sexual Health" data-drupal-link-system-path="node/20483">Sexual Health</a>
+            <button class="dropdown-toggle level-1">
+        <span class="toggle-text visually-hidden">Show submenu</span>
+        <i class="icon-down-open" aria-hidden="true"></i>
+      </button>
+    
+            
+              
+        
+
+    <ul  class="sub-menu menu--level-1" aria-expanded="false">
+                        
+
+<li  class="sub-menu__menu-item sub-menu__menu-item--expanded">
+  <a href="/birth-control" data-drupal-link-system-path="node/20212">Birth Control</a>
+            <button class="dropdown-toggle level-2">
+        <span class="toggle-text visually-hidden">Show submenu</span>
+        <i class="icon-down-open" aria-hidden="true"></i>
+      </button>
+    
+            
+              
+        
+
+    <ul  class="sub-menu menu--level-2" aria-expanded="false">
+                        
+
+<li  class="sub-menu__menu-item">
+  <a href="https://www.teensource.org/birth-control/long-acting-reversible-methods">Long-Term Reversible Methods</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/birth-control/barrier-methods" data-drupal-link-system-path="node/20219">Barrier Methods</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/birth-control/hormonal-methods" data-drupal-link-system-path="node/20218">Hormonal Methods</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/birth-control/other-methods" data-drupal-link-system-path="node/20220">Other Methods</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/condoms/free" data-drupal-link-system-path="condoms/free">Get Free Condoms</a>
+  </li>
+                  </ul>
+  
+  </li>
+                  
+
+<li  class="sub-menu__menu-item sub-menu__menu-item--expanded">
+  <a href="/std" data-drupal-link-system-path="node/20213">STI</a>
+            <button class="dropdown-toggle level-2">
+        <span class="toggle-text visually-hidden">Show submenu</span>
+        <i class="icon-down-open" aria-hidden="true"></i>
+      </button>
+    
+            
+              
+        
+
+    <ul  class="sub-menu menu--level-2" aria-expanded="false">
+                        
+
+<li  class="sub-menu__menu-item">
+  <a href="/std/chlamydia" data-drupal-link-system-path="node/43">Chlamydia</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/std/human-papillomavirus-hpv" data-drupal-link-system-path="node/47">Human Papillomavirus (HPV)</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/std/gonorrhea" data-drupal-link-system-path="node/44">Gonorrhea</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/std/hepatitis-b" data-drupal-link-system-path="node/49">Hepatitis B</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/std/herpes" data-drupal-link-system-path="node/48">Herpes</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/std/hiv-aids" data-drupal-link-system-path="node/845">HIV (Aids)</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/std/syphilis" data-drupal-link-system-path="node/45">Syphilis</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/std/trichomoniasis" data-drupal-link-system-path="node/46">Trichomoniasis</a>
+  </li>
+                  </ul>
+  
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="https://www.teensource.org/anatomy/anatomy-introduction">Anatomy</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="https://www.teensource.org/std/sti-treatment-for-partners">Partner Treatment</a>
+  </li>
+                  </ul>
+  
+  </li>
+                  
+
+<li  class="menu__menu-item menu__menu-item--expanded">
+  <a href="/lgbtq" data-drupal-link-system-path="node/20471">LGBTQ+</a>
+            <button class="dropdown-toggle level-1">
+        <span class="toggle-text visually-hidden">Show submenu</span>
+        <i class="icon-down-open" aria-hidden="true"></i>
+      </button>
+    
+            
+              
+        
+
+    <ul  class="sub-menu menu--level-1" aria-expanded="false">
+                        
+
+<li  class="sub-menu__menu-item">
+  <a href="/lgbtq/sexual-orientation-gender" data-drupal-link-system-path="node/20472">Sexual Orientation and Gender</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/lgbtq/safer-sex" data-drupal-link-system-path="node/20473">Safer Sex</a>
+  </li>
+                  </ul>
+  
+  </li>
+                  
+
+<li  class="menu__menu-item menu__menu-item--expanded">
+  <a href="/relationships/relationships">Relationships</a>
+            <button class="dropdown-toggle level-1">
+        <span class="toggle-text visually-hidden">Show submenu</span>
+        <i class="icon-down-open" aria-hidden="true"></i>
+      </button>
+    
+            
+              
+        
+
+    <ul  class="sub-menu menu--level-1" aria-expanded="false">
+                        
+
+<li  class="sub-menu__menu-item">
+  <a href="/relationships/healthy-relationships" data-drupal-link-system-path="node/18648">Healthy Relationships</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/relationships/sexuality-gender-identity" data-drupal-link-system-path="node/19936">Sexuality + Gender Identity</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/relationships/family" data-drupal-link-system-path="node/18647">Family</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/relationships/peers" data-drupal-link-system-path="node/19937">Peers</a>
+  </li>
+                  </ul>
+  
+  </li>
+                  
+
+<li  class="menu__menu-item">
+  <a href="/blog" data-drupal-link-system-path="blog">Blog</a>
+  </li>
+                  
+
+<li  class="menu__menu-item menu__menu-item--expanded">
+  <a href="/know-your-rights" data-drupal-link-system-path="node/34">Know Your Rights</a>
+            <button class="dropdown-toggle level-1">
+        <span class="toggle-text visually-hidden">Show submenu</span>
+        <i class="icon-down-open" aria-hidden="true"></i>
+      </button>
+    
+            
+              
+        
+
+    <ul  class="sub-menu menu--level-1" aria-expanded="false">
+                        
+
+<li  class="sub-menu__menu-item">
+  <a href="/know-your-rights/confidentiality" data-drupal-link-system-path="node/4661">Confidentiality</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/know-your-rights/affordability" data-drupal-link-system-path="node/4662">Affordability</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/know-your-rights/care-during-school-hours" data-drupal-link-system-path="node/4663">Care During School Hours</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="https://www.teensource.org/know-your-rights/abortion">Abortion</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/know-your-rights/emergency-contraception" data-drupal-link-system-path="node/4664">Emergency Contraception</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/know-your-rights/pregnant-parenting-teens" data-drupal-link-system-path="node/19947">Pregnant and Parenting Teens</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/know-your-rights/minor-consent" data-drupal-link-system-path="node/4660">Accessing Services as a Minor</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/know-your-rights/comprehensive-sex-ed" data-drupal-link-system-path="node/19953">Comprehensive Sex Ed</a>
+  </li>
+                  
+
+<li  class="sub-menu__menu-item">
+  <a href="/know-your-rights/consent" data-drupal-link-system-path="node/19945">Consent: Yes Means Yes</a>
+  </li>
+                  </ul>
+  
+  </li>
+                  </ul>
+  
+
+
+  </nav>
+<div id="block-inlinesearch-2" class="block block-radicati-search-block block-inline-search-block">
+      <div  class="block block--radicati-search-block block--inline-search-block">
+  
+    
+      <div  class="inlinesearch">
+  <div  class="inlinesearch__form-wrapper">
+    <form class="inline-search-form" data-drupal-selector="inline-search-form-2" action="/" method="post" id="inline-search-form--2" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-searchterms form-item-searchterms">
+      <label class="sr-only" for="edit-searchterms--2">Search Terms</label>
+        <input placeholder="Search" data-drupal-selector="edit-searchterms" type="text" id="edit-searchterms--2" name="searchterms" value="" size="60" maxlength="128" class="form-text" />
+
+        </div>
+<button type="submit" class="search-submit" aria-label="Search" data-drupal-selector="edit-button"><i class="icon icon-search"></i></button>
+<input data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="" class="button js-form-submit form-submit" />
+<input autocomplete="off" data-drupal-selector="form-6vfu5teku4g6f-sevuwgnc-jaof4hsvknrat3m5iygu" type="hidden" name="form_build_id" value="form-6vFU5TEKu4g6f-sEVUWGNC_JAoF4HsvKnRat3m5IyGU" />
+<input data-drupal-selector="edit-inline-search-form-2" type="hidden" name="form_id" value="inline_search_form" />
+
+</form>
+
+  </div>
+</div>
+  </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  <div  class="offcanvas__footer">
+
+  </div>
+</aside>
+
+  <div class="oc-overlay">
+  </div>
+</div>
+
+
+
+        
+    
+<footer  class="footer">
+  <div  class="footer__menu-column">
+      <div class="region region-footer">
+    
+
+
+<nav aria-labelledby="block-footer-menu" id="block-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 id="block-footer-menu" class="visually-hidden">Footer</h2>
+  
+
+        
+
+    
+              
+        
+
+    <ul  class="menu menu--footer menu--level-0" >
+                        
+
+<li  class="menu__menu-item">
+  <a href="/about-us" data-drupal-link-system-path="node/3177">About</a>
+  </li>
+                  
+
+<li  class="menu__menu-item">
+  <a href="/resources" data-drupal-link-system-path="node/20221">Resources</a>
+  </li>
+                  
+
+<li  class="menu__menu-item">
+  <a href="/privacy-policy" data-drupal-link-system-path="node/3175">Privacy Policy</a>
+  </li>
+                  
+
+<li  class="menu__menu-item">
+  <a href="/terms-of-use" data-drupal-link-system-path="node/3176">Terms of Use</a>
+  </li>
+                  
+
+<li  class="menu__menu-item">
+  <a href="/get-involved-teensource" data-drupal-link-system-path="node/18791">Guest Posting Policy</a>
+  </li>
+                  </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+  </div>
+
+
+  <div  class="footer__copyright-container">
+      <div class="region region-copyright">
+    <div id="block-copyright" class="block block-block-content block-block-contentc67c2a97-b8d5-4e19-9308-f3b7878d6c4d">
+    
+<section  class="copyright" aria-label="Site Copyright Information">
+  
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>© Copyright 2015-2023. All Rights Reserved.<br />
+The images used on this website are for illustrative purposes only.<br />
+Any person depicted in these images is a model.</p>
+</div>
+      
+</section>
+</div>
+
+  </div>
+
+  </div>
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/20216","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50,"validateDelay":25,"loader":true,"unblazy":false,"visibleClass":false},"blazyIo":{"disconnect":false,"rootMargin":"0px","threshold":[0,0.25,0.5,0.75,1]},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"pauseOnHover":true,"pauseOnDotsHover":false,"pauseOnFocus":true,"autoplaySpeed":3000,"arrows":true,"downArrow":false,"downArrowTarget":"","downArrowOffset":0,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mouseWheel":false,"randomize":false,"rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.35,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","cssEaseBezier":"","cssEaseOverride":"","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"superfish":{"superfish-main":{"id":"superfish-main","sf":{"animation":{"opacity":"show"},"speed":"fast","autoArrows":false,"dropShadows":false,"disableHI":true},"plugins":{"smallscreen":{"mode":"window_width","title":"Main menu"}}}},"user":{"uid":0,"permissionsHash":"6d91dc02fba313c1371060d31b078c0148b9901c73596f775374b7de7f0727de"}}</script>
+<script src="/sites/default/files/js/js_78T3VGZFCA0fZ1S9Pqc_UOBDPftlMFNNpHJD4J-e-lQ.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-4a18b969582708f1b01","applicationID":"973578219","transactionName":"YQNSZEZUD0VRUEQKDlhJcVNAXA5YH0NRBARpBVFTXFA=","queueTime":0,"applicationTime":16,"atts":"TURREg5OHEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

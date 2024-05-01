@@ -1,0 +1,2407 @@
+<!DOCTYPE html><html
+class="" lang="en-US" data-site="ijmUs" data-entry-id="2"><head><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimum-scale=1"><meta
+http-equiv="X-UA-Compatible" content="ie=edge"><meta
+name="referrer" content="origin-when-cross-origin" /><link
+rel="shortcut icon" href="/assets/images/favicon.png"><script>/*! modernizr 3.6.0 (Custom Build) | MIT *
+	 	* https://modernizr.com/download/?-webp-setclasses !*/
+!function(e,n,A){function o(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function t(e,n){return typeof e===n}function a(){var e,n,A,o,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(o=t(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=o:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=o),s.push((o?"":"no-")+l.join("-"))}}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var t=e.split("."),a=Modernizr[t[0]];if(2==t.length&&(a=a[t[1]]),"undefined"!=typeof a)return Modernizr;n="function"==typeof n?n():n,1==t.length?Modernizr[t[0]]=n:(!Modernizr[t[0]]||Modernizr[t[0]]instanceof Boolean||(Modernizr[t[0]]=new Boolean(Modernizr[t[0]])),Modernizr[t[0]][t[1]]=n),o([(n&&0!=n?"":"no-")+t.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=t(e,"undefined")||t(e.call,"undefined")?function(e,n){return n in e&&t(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),a(),o(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+/*! Lazy Load background images !*/
+document.addEventListener("DOMContentLoaded",function(){var e;if("IntersectionObserver"in window){e=document.querySelectorAll(".lazy");var n=new IntersectionObserver(function(e,t){e.forEach(function(e){if(e.isIntersecting){var t=e.target;t.classList.remove("lazy"),n.unobserve(t)}})});e.forEach(function(e){n.observe(e)})}else{var t;function o(){t&&clearTimeout(t),t=setTimeout(function(){var n=window.pageYOffset;e.forEach(function(e){e.offsetTop<window.innerHeight+n&&(e.src=e.dataset.src,e.classList.remove("lazy"))}),0==e.length&&(document.removeEventListener("scroll",o),window.removeEventListener("resize",o),window.removeEventListener("orientationChange",o))},20)}e=document.querySelectorAll(".lazy"),document.addEventListener("scroll",o),window.addEventListener("resize",o),window.addEventListener("orientationChange",o)}});</script> <script>var countryCode="CZ";</script> <link
+rel="preconnect" href="https://www.googletagmanager.com"><link
+rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/reader-mediumitalic-webfont.woff2"><link
+rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/reader-italic-webfont.woff2"><link
+rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/reader-webfont.woff2"><link
+rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/reader-medium-webfont.woff2"><link
+rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/reader-bold-webfont.woff2"><link
+rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/reader-black-webfont.woff2"><link
+rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/Feijoa-Bold.woff2"><link
+rel="stylesheet" href="/assets/css/all.css?id=2669c0aad29363fd4a4eeec775a230b7" title="All styles">
+ <script>setTimeout(function(){!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1354006864754705');fbq('track','PageView');},3000);</script> <noscript><img
+height="1" width="1" src="https://www.facebook.com/tr?id=1354006864754705&ev=PageView&noscript=1"/></noscript> <script>setTimeout(function(){!function(f,e,a,t,h,r){if(!f[h]){r=f[h]=function(){r.invoke?r.invoke.apply(r,arguments):r.queue.push(arguments)},r.queue=[],r.loaded=1*new Date,r.version="1.0.0",f.FeathrBoomerang=r;var g=e.createElement(a),h=e.getElementsByTagName("head")[0]||e.getElementsByTagName("script")[0].parentNode;g.async=!0,g.src=t,h.appendChild(g)}}(window,document,"script","https://cdn.feathr.co/js/boomerang.min.js","feathr");feathr("fly","5dc31527e339a0992fa38f4b");feathr("sprinkle","page_view");},3000);</script>  <script type="text/javascript">var dataLayer=window.dataLayer=window.dataLayer||[];dataLayer.push({'fireGTM':'true'});</script>  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MBCTJD');</script> 
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-PK3ZPBNY24"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-PK3ZPBNY24');</script> <title>International Justice Mission | End Modern Slavery for Good</title><meta
+name="description" content="IJM is a global organization that protects people in poverty from human trafficking, modern-day slavery, violence and police abuse of power." /><meta
+property="fb:app_id" content=""><meta
+property="og:url" content="https://www.ijm.org/" /><meta
+property="og:type" content="website" /><meta
+property="og:title" content="International Justice Mission | End Modern Slavery for Good" /><meta
+property="og:image" content="https://ijmstoragelive.blob.core.windows.net/ijmna/images/_1200x630_crop_center-center_none_ns/web2_trafficking_hero.jpg" /><meta
+property="og:image:width" content="1200" /><meta
+property="og:image:height" content="630" /><meta
+property="og:description" content="IJM is a global organization that protects people in poverty from human trafficking, modern-day slavery, violence and police abuse of power." /><meta
+property="og:site_name" content="IJM USA" /><meta
+property="og:locale" content="en_US" /><meta
+property="og:locale:alternate" content="en_CA" /><meta
+property="og:locale:alternate" content="en_US" /><meta
+name="twitter:card" content="summary_large_image" /><meta
+name="twitter:site" content="" /><meta
+name="twitter:url" content="https://www.ijm.org/" /><meta
+name="twitter:title" content="International Justice Mission | End Modern Slavery for Good" /><meta
+name="twitter:description" content="IJM is a global organization that protects people in poverty from human trafficking, modern-day slavery, violence and police abuse of power." /><meta
+name="twitter:image" content="https://ijmstoragelive.blob.core.windows.net/ijmna/images/_1200x600_crop_center-center_none_ns/web2_trafficking_hero.jpg" /><link
+rel="home" href="https://www.ijm.org/" /><link
+rel="canonical" href="https://www.ijm.org/"><style>html[data-entry-id="637147"] #block-906680,html[data-entry-id="637147"] #block-906681,html[data-entry-id="637147"] #block-906682{display:none}</style><script>
+        if ((navigator.doNotTrack != "1" && 0) || !0) {
+            window.addEventListener("load", function(){
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                            "background": "#353439",
+                            "text": "#f3f3f3",
+                            "link": "#ffffff"
+                        },
+                        "button": {
+                            "background":  "classic" === "wire" ? "transparent" :  "#f3bf45",
+                            "text": "classic" === "wire" ? "#f3bf45" : "#353439",
+                            "border":  "classic" === "wire" ? "#f3bf45" : undefined
+                        },
+    		            "highlight": {
+    			            "background":  "classic" === "wire" ? "transparent" :  "#353439",
+                            "text": "classic" === "wire" ? "#353439" : "#f3f3f3",
+                            "border":  "classic" === "wire" ? "#353439" : undefined
+    			        }
+                    },
+                    "position": "bottom" === "toppush" ? "top" : "bottom",
+                    "static": "bottom" === "toppush",
+                    "theme": "classic",
+                    "type": "opt-in",
+                    "content": {
+                        "message": "IJM uses cookies to provide you with a personalized online experience and analyze how our site is used.&nbsp;",
+                        "dismiss": "Accept",
+                        "link": "View our Privacy Policy for more details.",
+                        "href": "/policies",
+    	                "allow":"ACCEPT & CONTINUE",
+    	                "deny":"Decline",
+    	                "target":"_blank"
+                    },
+                    "revokable":0 === 1 ? true : false,
+                    "dismissOnScroll":0 > 0 ? 0 : false,
+                    "dismissOnTimeout":0 > 0 ? (0 * 1000) : false,
+                    "cookie": {
+    	                "expiryDays":365 !== 0 ? 365 : 365,
+    	                "secure":0 === 1 ? true : false
+    	            },
+                    onInitialise: function (status) {
+                        var type = this.options.type;
+                        var didConsent = this.hasConsented();
+                        if (type == "opt-in" && didConsent) {
+                            // enable cookies
+                            if (typeof optInCookiesConsented === "function") {
+                                optInCookiesConsented();
+                                console.log("Opt in cookies consented");
+                            } else {
+    	                        console.log("Opt in function not defined!");
+    	                    }
+                        }
+                        if (type == "opt-out" && !didConsent) {
+                            // disable cookies
+                            if (typeof optOutCookiesNotConsented === "function") {
+                                optOutCookiesNotConsented();
+                                console.log("Opt out cookies not consented");
+                            } else {
+    	                        console.log("Opt out function not defined!");
+    	                    }
+                        }
+                    },
+                    onStatusChange: function(status, chosenBefore) {
+                        var type = this.options.type;
+                        var didConsent = this.hasConsented();
+                        if (type == "opt-in" && didConsent) {
+                            // enable cookies
+                            if (typeof optInCookiesConsented === "function") {
+                                optInCookiesConsented();
+                                console.log("Opt in cookies consented");
+                            } else {
+    	                        console.log("Opt in function not defined!");
+    	                    }
+                        }
+                        if (type == "opt-out" && !didConsent) {
+                            // disable cookies
+                            if (typeof optOutCookiesNotConsented === "function") {
+                                optOutCookiesNotConsented();
+                                console.log("Opt out cookies not consented");
+                            } else {
+    	                        console.log("Opt out function not defined!");
+    	                    }
+                        }
+                    },
+                    onRevokeChoice: function() {
+                        var type = this.options.type;
+                        if (type == "opt-in") {
+                            // disable cookies
+                            if (typeof optInCookiesRevoked === "function") {
+                                optInCookiesRevoked();
+                                console.log("Opt in cookies revoked");
+                            } else {
+    	                        console.log("Opt in revoked function not defined!");
+    	                    }
+                        }
+                        if (type == "opt-out") {
+                            // enable cookies
+                            if (typeof optOutCookiesRevoked === "function") {
+                                optOutCookiesRevoked();
+                                console.log("Opt out cookies revoked");
+                            } else {
+    	                        console.log("Opt out revoked function not defined!");
+    	                    }
+                        }
+                    }
+                });
+            });
+        } else if (0) {
+	        // disable cookies
+            if (typeof optOutCookiesNotConsented === "function") {
+                optOutCookiesNotConsented();
+                console.log("Opt out cookies not consented");
+            } else {
+    	        console.log("Opt out function not defined!");
+    	    }
+	    }
+    </script><link href="https://www.ijm.org/cpresources/2938f78/css/cookieconsent.min.css?v=1711342909" rel="stylesheet">
+<style>	.hero{padding-top: 120px; min-height: calc(100vh - 60px); height: auto;}
+	.hero__bcg{background-position: 100% 50%;}
+	@media (min-width: 1024px){
+		.hero .txt--white, .hero .btn--white-txt .btn__inner{color: white; text-shadow: none;}
+	}
+</style>
+<script src="/assets/js/web-components/donation-form.js?v=1711693760" defer></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadDonationCaptchaCallback&amp;render=explicit" defer></script>
+<script>// Define the object to contain the settings of all the donation forms on the page
+	// Needed so we can reference each setting variable by name, constructed from a string.
+	if (typeof allFormSettings === 'undefined') {
+		var allFormSettings = {
+			site_env: 'production',
+			site_handle: 'ijmUs',
+				stripe_key: 'pk_live_Zt3FQ6ZPBJExB8UZfMX6d6jJ',
+			plaid_env: 'production',
+			plaid_public_token: '045594cd48d6f92d08b43b83e913d1',
+					check_customer_url_env: '/make-gift/customer.php',
+			donate_url_env: '/make-gift/donate.php',
+			do_redirect_env: 1
+		};
+	}
+
+	// For block ID 672133
+	// const template = document.querySelector('#donation-form__672133');
+
+	var ns__sidebar__672133__settings =
+	{
+		// Variables from URL parameters
+		urlParams:
+		{
+			cookie_src: "",
+			cookie_rsp: "",
+			cookie_ver: "",
+			cookie_dlv: "",
+			cookie_cid: "",
+		},
+
+		formContents:
+		[
+			{
+				recurrence: "monthlyOnly",
+				heading: ``,
+				text: ``
+			},{
+				recurrence: "singleOnly",
+				heading: ``,
+				text: ``
+			},		],
+		
+		hiddenFields:
+		[
+			{
+				name: "site_handle",
+				value: "ijmUs",
+			},
+			{
+				name: "campaign_id",
+				value: "7011J000000qg9kQAA"
+			},
+			{
+				name: "redirect_to",
+				value: "https://www.ijm.org/give/thank-you/dw/672133"
+			},
+			{
+				name: "donation_source",
+				value: "donationWidget"
+			},
+			{
+				name: "ajax_request",
+				value: "1"
+			},
+			{
+				name: "non_donation",
+				value: "0"
+			},
+			{
+				name: "receipt_language",
+				value: ``
+			},
+			{
+				name: "hold_receipt",
+				value: "0"
+			},
+			{
+				name: "fmv",
+				value: ""
+			},
+			{
+				name: "source_channel",
+				value: "web"
+			},
+			{
+				name: "response_channel",
+				value: "online"
+			},
+			{
+				name: "version",
+				value: "0"
+			},
+			{
+				name: "donation_level",
+				value: "1"
+			},
+			{
+				name: "payment_intent_id",
+				value: "null"
+			},
+			{
+				name: "client_secret",
+				value: "null"
+			},
+			{
+				name: "subscription_id",
+				value: "null"
+			},
+			{
+				name: "subscription_customer_id",
+				value: "null"
+			},
+			{
+				name: "subscription_amount",
+				value: "null"
+			},
+			{
+				name: "subscription_payment_intent_id",
+				value: "null"
+			},
+			{
+				name: "subscription_client_secret",
+				value: "null"
+			},
+			{
+				name: "customer_id",
+				value: "new"
+			},
+			{
+				name: "customer_email",
+				value: ""
+			},
+			{
+				name: "new_customer",
+				value: 0
+			},
+			{
+				name: "gift_processor",
+				value: "IJM General"
+			}
+		], // hiddenFields
+
+		// Variables from block fields
+				amounts:
+		{
+			suggestedSingleAmounts: [ 50,100,250,500 ],
+			suggestedMonthlyAmounts: [ 20,35,50,100 ],
+			suggestedAnnualAmounts: [  ],
+			defaultAmounts:
+			{
+				single: 50,
+				monthly: 20,
+				annual: "none"
+			}
+		},
+		
+		// Keys
+		keys:
+		{
+						stripe_key: 'pk_live_Zt3FQ6ZPBJExB8UZfMX6d6jJ',
+				plaid_env: 'production',
+				plaid_pub_tok: '045594cd48d6f92d08b43b83e913d1',
+					},
+	}
+
+
+	// Assign the settings for the current donation form
+	// console.log('Assigning settings: ns__sidebar__672133__settings');
+	allFormSettings['ns__sidebar__672133__settings'] = ns__sidebar__672133__settings;</script></head><body
+id="ijm-site">
+<noscript><iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-MBCTJD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<svg
+style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol
+id="icon-menu" viewBox="0 0 30 30">
+<path
+d="M0 4h30v2h-30z M0 14h30v2h-30z M0 24h30v2h-30z"></path>
+</symbol>
+<symbol
+id="icon-shield" viewBox="0 0 28 32"><title>shield</title>
+<path
+d="M28 4.506l-4.123-4.506c0 0-2.493 1.858-5.083 1.858s-4.794-1.858-4.794-1.858c0 0-2.205 1.858-4.794 1.858s-5.083-1.858-5.083-1.858l-4.123 4.506c0 0 2.127 1.115 2.127 3.714s-1.934 3.205-1.934 8.733c-0.002 10.31 13.807 15.047 13.807 15.047s13.809-4.737 13.809-15.047c0-5.526-1.934-6.134-1.934-8.733-0.002-2.6 2.125-3.714 2.125-3.714zM11.389 21.333l-0.002-0.002-0.002 0.002-4.385-4.118 1.782-1.674 2.605 2.447 8.609-8.084 1.782 1.673-10.389 9.755z"></path>
+</symbol>
+<symbol
+id="icon-arrow-simple-alt-top" viewBox="0 0 61 32"><title>arrow-simple-alt-top</title>
+<path
+d="M30.316 4.066l-27.441 27.441-2.382-2.382 28.632-28.632h2.382l28.632 28.632-2.382 2.382z"></path>
+</symbol>
+<symbol
+id="icon-arrow-simple-alt-left" viewBox="0 0 26 32"><title>arrow-simple-alt-left</title>
+<path
+d="M6.347 16l14.722 14.722-1.278 1.278-15.361-15.361v-1.278l15.361-15.361 1.278 1.278z"></path>
+</symbol>
+<symbol
+id="icon-arrow-simple-alt-right" viewBox="0 0 26 32"><title>arrow-simple-alt-right</title>
+<path
+d="M19.153 16l-14.722 14.722 1.278 1.278 15.361-15.361v-1.278l-15.361-15.361-1.278 1.278z"></path>
+</symbol>
+<symbol
+id="icon-arrow-simple-alt-bottom" viewBox="0 0 61 32"><title>arrow-simple-alt-bottom</title>
+<path
+d="M30.316 27.934l-27.441-27.441-2.382 2.382 28.632 28.632h2.382l28.632-28.632-2.382-2.382z"></path>
+</symbol>
+<symbol
+id="icon-facebook" viewBox="0 0 14 32"><title>facebook</title>
+<path
+d="M3.074 6.197v4.406h-3.074v5.387h3.074v16.010h6.315v-16.009h4.238c0 0 0.397-2.583 0.589-5.408h-4.803v-3.683c0-0.55 0.689-1.291 1.369-1.291h3.44v-5.608h-4.678c-6.626-0.001-6.47 5.393-6.47 6.197z"></path>
+</symbol>
+<symbol
+id="icon-youtube" viewBox="0 0 192 192">
+<path
+d="M180.3,53.4c-2-7.6-8-13.6-15.6-15.7C151,34,96,34,96,34s-55,0-68.8,3.7c-7.6,2-13.5,8-15.6,15.7C8,67.2,8,96,8,96s0,28.8,3.7,42.6c2,7.6,8,13.6,15.6,15.7C41,158,96,158,96,158s55,0,68.8-3.7c7.6-2,13.5-8,15.6-15.7C184,124.8,184,96,184,96S184,67.2,180.3,53.4z"></path><polygon
+points="78,122.2 124,96 78,69.8" style="fill:#fff"></polygon>
+</symbol>
+<symbol
+id="icon-instagram" viewBox="0 0 32 32"><title>instagram</title>
+<path
+d="M23.169-0c4.87 0 8.831 3.962 8.831 8.831v14.339c0 4.869-3.962 8.831-8.831 8.831h-14.338c-4.869 0-8.831-3.962-8.831-8.831v-14.339c0-4.869 3.961-8.831 8.831-8.831h14.338zM29.161 23.169h-0v-14.339c0-3.303-2.688-5.991-5.992-5.991h-14.338c-3.304 0-5.991 2.688-5.991 5.991v14.339c0 3.304 2.688 5.992 5.991 5.992h14.339c3.304 0 5.992-2.688 5.992-5.992zM16 7.755c4.547 0 8.246 3.698 8.246 8.245s-3.699 8.245-8.246 8.245-8.246-3.699-8.246-8.245c0-4.547 3.699-8.245 8.246-8.245zM16 21.406c2.981 0 5.407-2.424 5.407-5.406s-2.425-5.407-5.407-5.407c-2.981 0-5.406 2.425-5.406 5.407s2.425 5.406 5.406 5.406zM24.591 5.347c0.549 0 1.086 0.221 1.473 0.61 0.388 0.385 0.609 0.923 0.609 1.473 0 0.546-0.221 1.084-0.609 1.472-0.388 0.386-0.924 0.609-1.473 0.609-0.547 0-1.085-0.223-1.471-0.609-0.388-0.388-0.611-0.926-0.611-1.472 0-0.55 0.223-1.087 0.611-1.473 0.386-0.389 0.924-0.61 1.471-0.61z"></path>
+</symbol>
+<symbol
+id="icon-linkedin" viewBox="0 0 27 32"><title>linkedin</title>
+<path
+d="M3.617 0c1.028 0 1.897 0.386 2.607 1.157s1.064 1.703 1.064 2.794c0 1.091-0.355 2.013-1.064 2.765s-1.578 1.129-2.607 1.129c-1.028 0-1.888-0.376-2.58-1.129s-1.037-1.674-1.037-2.765c0-1.091 0.346-2.022 1.037-2.794s1.552-1.157 2.58-1.157zM15.427 10.159v1.016c1.135-0.602 2.412-0.865 3.83-0.79s2.695 0.414 3.83 1.016c1.206 0.715 2.172 1.75 2.899 3.104s1.091 2.747 1.091 4.176v13.319h-5.852v-13.319c0-0.301-0.106-0.658-0.319-1.072s-0.443-0.658-0.692-0.734c-0.603-0.339-1.188-0.47-1.755-0.395s-1.082 0.226-1.543 0.451c-0.532 0.263-1.028 0.621-1.489 1.072v13.996h-5.958v-21.841h5.958zM0.638 32v-21.841h5.958v21.841h-5.958z"></path>
+</symbol>
+<symbol
+id="icon-medium" viewBox="0 0 39 32"><title>medium</title>
+<path
+d="M4.608 6.528c0.048-0.495-0.134-0.984-0.49-1.317l-3.628-4.534v-0.677h11.265l8.707 19.81 7.655-19.81h10.739v0.677l-3.102 3.085c-0.267 0.211-0.4 0.559-0.345 0.903v22.669c-0.055 0.344 0.077 0.692 0.345 0.903l3.029 3.085v0.677h-15.238v-0.677l3.138-3.16c0.308-0.32 0.308-0.414 0.308-0.903v-18.323l-8.726 22.989h-1.179l-10.159-22.989v15.407c-0.085 0.648 0.123 1.3 0.562 1.768l4.082 5.136v0.677h-11.574v-0.677l4.082-5.136c0.436-0.469 0.632-1.126 0.526-1.768v-17.815z"></path>
+</symbol>
+<symbol
+id="icon-pinterest" viewBox="0 0 32 32"><title>pinterest</title>
+<path
+d="M29.857 7.968c-1.431-2.451-3.372-4.393-5.823-5.823s-5.129-2.147-8.033-2.147c-2.903 0-5.581 0.716-8.032 2.147s-4.393 3.371-5.824 5.823c-1.431 2.452-2.147 5.129-2.147 8.033 0 3.236 0.882 6.175 2.646 8.813 1.764 2.641 4.077 4.592 6.938 5.856-0.056-1.487 0.035-2.716 0.271-3.688l2.063-8.71c-0.347-0.681-0.521-1.528-0.521-2.542 0-1.18 0.298-2.166 0.896-2.959 0.598-0.791 1.327-1.188 2.188-1.188 0.694 0 1.229 0.23 1.604 0.689s0.562 1.035 0.562 1.729c0 0.43-0.080 0.955-0.24 1.573-0.16 0.619-0.368 1.334-0.625 2.147s-0.441 1.462-0.552 1.947c-0.194 0.848-0.035 1.574 0.479 2.178s1.195 0.907 2.042 0.907c1.486 0 2.705-0.827 3.657-2.479 0.952-1.654 1.427-3.661 1.427-6.022 0-1.82-0.587-3.3-1.761-4.439s-2.809-1.708-4.907-1.708c-2.347 0-4.247 0.754-5.698 2.261s-2.177 3.31-2.177 5.407c0 1.251 0.354 2.3 1.063 3.146 0.236 0.279 0.313 0.576 0.229 0.897-0.028 0.083-0.083 0.291-0.167 0.625-0.083 0.333-0.139 0.548-0.166 0.645-0.111 0.445-0.375 0.583-0.792 0.416-1.069-0.443-1.882-1.215-2.438-2.312s-0.834-2.368-0.834-3.813c0-0.931 0.149-1.861 0.448-2.792s0.764-1.831 1.396-2.698c0.632-0.87 1.389-1.636 2.271-2.302 0.882-0.667 1.955-1.202 3.219-1.605s2.625-0.604 4.084-0.604c1.973 0 3.743 0.438 5.313 1.312 1.57 0.876 2.768 2.008 3.595 3.397s1.24 2.875 1.24 4.46c0 2.083-0.361 3.958-1.083 5.626s-1.743 2.976-3.063 3.927c-1.32 0.952-2.82 1.429-4.501 1.429-0.847 0-1.639-0.198-2.375-0.594s-1.243-0.865-1.521-1.406c-0.625 2.458-1 3.924-1.126 4.396-0.264 0.986-0.806 2.125-1.625 3.417 1.486 0.444 3.001 0.667 4.542 0.667 2.903 0 5.581-0.716 8.033-2.147s4.393-3.372 5.823-5.823c1.431-2.453 2.146-5.13 2.146-8.032 0-2.903-0.714-5.582-2.144-8.033z"></path>
+</symbol>
+<symbol
+id="icon-rss" viewBox="0 0 32 32"><title>rss</title>
+<path
+d="M4.242 23.516c1.187 0 2.191 0.41 3.011 1.231s1.231 1.824 1.231 3.011c0 1.187-0.41 2.191-1.231 3.011s-1.824 1.231-3.011 1.231c-1.187 0-2.191-0.41-3.011-1.231s-1.231-1.824-1.231-3.011c0-1.187 0.41-2.191 1.231-3.011s1.824-1.231 3.011-1.231zM0 10.841c2.898 0 5.63 0.559 8.196 1.676s4.81 2.636 6.73 4.556c1.92 1.92 3.439 4.164 4.556 6.73s1.676 5.298 1.676 8.196h-6.232c0-1.99-0.367-3.893-1.1-5.709s-1.816-3.439-3.247-4.871c-1.432-1.432-3.055-2.531-4.871-3.3s-3.719-1.152-5.709-1.152v-6.128zM0 0c4.399 0 8.546 0.838 12.439 2.514s7.289 3.963 10.187 6.861c2.898 2.898 5.185 6.293 6.861 10.187s2.514 8.039 2.514 12.439h-6.128c0-3.561-0.681-6.913-2.043-10.056s-3.212-5.883-5.552-8.223c-2.339-2.339-5.080-4.19-8.223-5.552s-6.494-2.043-10.056-2.043v-6.128z"></path>
+</symbol>
+<symbol
+id="icon-search-alt" viewBox="0 0 32 32"><title>search-alt</title>
+<path
+d="M11.479 22.958c-6.34 0-11.479-5.139-11.479-11.479s5.139-11.479 11.479-11.479c6.34 0 11.479 5.139 11.479 11.479s-5.139 11.479-11.479 11.479zM11.479 21.274c5.41 0 9.795-4.385 9.795-9.795s-4.385-9.795-9.795-9.795c-5.41 0-9.795 4.385-9.795 9.795s4.385 9.795 9.795 9.795z"></path>
+<path
+d="M18.335 19.525l1.181-1.2 11.993 11.803-1.181 1.2z"></path>
+</symbol>
+<symbol
+id="icon-twitter" viewBox="0 0 38 32"><title>twitter</title>
+<path
+d="M37.818 3.816c-1.031 1.562-2.319 2.968-3.866 4.218v0.937c0 2.678-0.483 5.389-1.45 8.134s-2.384 5.222-4.252 7.431c-1.868 2.209-4.166 4.006-6.894 5.389s-5.873 2.075-9.438 2.075c-2.191 0-4.284-0.324-6.282-0.971s-3.876-1.551-5.637-2.711c0.301 0.045 0.601 0.067 0.902 0.067h0.966c3.694 0 6.894-1.138 9.6-3.414-1.718-0.045-3.232-0.591-4.542-1.64s-2.201-2.377-2.674-3.983c0.515 0.134 0.988 0.201 1.417 0.201 0.387 0 0.741-0.022 1.063-0.067s0.655-0.112 0.999-0.201c-1.804-0.402-3.296-1.328-4.478-2.778s-1.772-3.158-1.772-5.121v-0.067c0.515 0.268 1.063 0.491 1.643 0.669s1.235 0.268 1.965 0.268c-1.117-0.714-1.976-1.651-2.577-2.812s-0.902-2.455-0.902-3.883c0-1.428 0.344-2.789 1.031-4.084 1.933 2.499 4.274 4.497 7.022 5.992s5.734 2.31 8.955 2.444c-0.129-0.536-0.193-1.116-0.193-1.741 0-1.116 0.204-2.176 0.612-3.18s0.966-1.874 1.675-2.611c0.709-0.736 1.525-1.317 2.448-1.741s1.922-0.636 2.996-0.636c1.16 0 2.212 0.234 3.157 0.703s1.782 1.082 2.513 1.841c0.859-0.134 1.718-0.379 2.577-0.736s1.654-0.736 2.384-1.138c-0.687 1.875-1.825 3.347-3.415 4.418 0.816-0.089 1.589-0.245 2.319-0.469s1.439-0.491 2.126-0.803z"></path>
+</symbol>
+<symbol
+id="icon-video-play" viewBox="0 0 32 32"><title>video-play</title>
+<path
+d="M16 0c-8.822 0-16 7.178-16 16s7.178 16 16 16c8.822 0 16-7.178 16-16s-7.178-16-16-16zM12.77 23.062v-14.123l9.968 7.062-9.968 7.062z"></path>
+</symbol>
+<symbol
+id="icon-arrow-long-right" viewBox="0 0 55 32"><title>arrow-long-right</title>
+<path
+d="M49.311 16l-13.203 12.024 3.078 3.38 15.059-13.714v-3.38l-15.059-13.714-3.078 3.38z"></path>
+<path
+d="M52.706 13.714h-52.202v4.571h52.202z"></path>
+</symbol>
+<symbol
+id="icon-arrow-long-left" viewBox="0 0 55 32"><title>arrow-long-left</title>
+<path
+d="M5.532 16l13.203 12.024-3.078 3.38-15.059-13.714v-3.38l15.059-13.714 3.078 3.38z"></path>
+<path
+d="M2.138 13.714h52.202v4.571h-52.202z"></path>
+</symbol>
+<symbol
+id="icon-arrow-long-top" viewBox="0 0 19 32"><title>arrow-long-top</title>
+<path
+d="M9.25 2.938l7.16 7.862 2.012-1.833-8.166-8.967h-2.013l-8.166 8.967 2.013 1.833z"></path>
+<path
+d="M7.889 0.916v31.084h2.722v-31.084z"></path>
+</symbol>
+<symbol
+id="icon-arrow-long-bottom" viewBox="0 0 19 32"><title>arrow-long-bottom</title>
+<path
+d="M9.25 29.062l7.16-7.862 2.012 1.833-8.166 8.967h-2.013l-8.166-8.967 2.013-1.833z"></path>
+<path
+d="M7.889 31.084v-31.084h2.722v31.084z"></path>
+</symbol>
+<symbol
+id="icon-logo--graphic" viewBox="0 0 19.73 19.102">
+<g
+id="globe">
+<path
+d="M12.318 7.458l-.064.064a.14.14 0 01-.086.037h-.307a.137.137 0 01-.086-.037l-.067-.064a.141.141 0 00-.087-.036h-.029a.136.136 0 00-.086.036l-.065.064a.14.14 0 01-.086.037h-.034a.142.142 0 01-.087-.037l-.064-.064a.145.145 0 01-.036-.087v-.035a.141.141 0 01.036-.087l.201-.201a.139.139 0 01.086-.036h.035a.136.136 0 01.085.034c.019.019.019.049 0 .068s-.019.049 0 .068c.009.009.022.015.035.015s.026-.005.035-.015l.266-.272a.139.139 0 01.086-.036h.035c.028 0 .039.02.025.044l-.076.135a.088.088 0 00.003.086l.069.102c.019.025.048.04.079.042h.035a.143.143 0 01.086.035l.064.064a.05.05 0 010 .072zm2.501-3.034h-.512a.136.136 0 01-.086-.036l-.064-.064a.139.139 0 00-.086-.036h-.17a.136.136 0 00-.086.036l-.064.064a.144.144 0 01-.086.036h-.396a.22.22 0 00-.094.026l-1.048.628a.207.207 0 01-.094.026h-.17a.08.08 0 01-.069-.047l-.052-.138a.229.229 0 00-.058-.08l-.139-.113c-.021-.017-.016-.033.012-.034h.034c.032 0 .063.011.088.032l.054.049a.193.193 0 00.088.041l.078.011c.033.004.067.006.101.007h.035a.143.143 0 00.086-.035l.064-.064a.145.145 0 00.036-.087v-.034a.092.092 0 00-.045-.074l-.181-.091a1.094 1.094 0 00-.093-.041l-.585-.232a1.542 1.542 0 00-.096-.032l-.42-.112a.236.236 0 00-.099 0l-.188.041a.21.21 0 00-.085.047l-.252.252c-.02.02-.05.053-.069.075l-.257.298a.434.434 0 01-.076.066l-.284.18a.276.276 0 00-.072.064l-.095.145a.19.19 0 00-.027.093v.254c.002.031.017.06.042.08l.116.08a.69.69 0 00.089.048l.042.017c.028.01.06.004.082-.016l.132-.132c.005-.013.019-.02.033-.016s.022.016.021.03l.023.075.03.097.022.068.031.088a.66.66 0 00.032.07.08.08 0 00.066.03h.07a.093.093 0 00.075-.045l.005-.01a.164.164 0 01.065-.063.082.082 0 00.042-.069v-.173a.125.125 0 01.039-.083l.061-.049c.01-.008.017-.021.018-.034s-.003-.026-.012-.036l-.073-.082a.056.056 0 010-.075l.119-.132a.354.354 0 00.054-.084l.045-.107a.313.313 0 01.058-.082l.064-.064a.144.144 0 01.086-.036h.035a.07.07 0 01.064.049v.006a.078.078 0 01-.027.08l-.138.106a.117.117 0 00-.04.082v.171c0 .034.003.068.007.101l.005.035a.075.075 0 00.058.058l.053.01a.335.335 0 00.1 0l.29-.058c.027-.006.039.01.027.035l-.029.058a.11.11 0 01-.074.051l-.194.025a.058.058 0 00-.05.058v.035a.136.136 0 00.034.085c.013.012.019.031.014.048s-.019.031-.036.035a.047.047 0 01-.047-.017l-.064-.064c-.009-.01-.022-.015-.036-.015s-.026.005-.036.015l-.064.064a.145.145 0 00-.036.087v.034a.136.136 0 00.034.085c.009.009.014.022.014.035s-.005.025-.014.035l-.076.066a.14.14 0 01-.087.035h-.573a.144.144 0 01-.086-.036l-.065-.064c-.01-.01-.015-.022-.015-.036s.005-.027.015-.036l.064-.064a.051.051 0 000-.071l-.064-.064a.05.05 0 00-.07 0 .248.248 0 00-.05.082l-.104.312a.077.077 0 01-.067.044h-.035a.136.136 0 00-.086.036l-.336.337a.144.144 0 01-.086.036h-.169a.136.136 0 00-.085.034.05.05 0 000 .07l.201.201a.089.089 0 01.02.084l-.036.108a.074.074 0 01-.067.048l-.321-.003a.108.108 0 00-.079.042l-.09.136a.157.157 0 00-.021.092l.012.092a.115.115 0 01-.027.085.05.05 0 000 .07l.132.132a.139.139 0 00.086.036h.177a.136.136 0 00.086-.036l.2-.2a.145.145 0 00.036-.087v-.035c0-.028.023-.051.051-.051h.035a.122.122 0 00.083-.04l.187-.222a.22.22 0 01.08-.058l.197-.074a.086.086 0 01.083.018l.336.337.122.122a.08.08 0 01.017.088.167.167 0 00-.035.082.052.052 0 00.058.047c.02-.003.064-.047.064-.047.02-.02.054-.05.075-.068l.031-.026a.053.053 0 00.008-.073l-.359-.459c-.008-.01-.012-.023-.01-.036s.01-.024.021-.031l.119-.078a.057.057 0 01.072.013l.297.395c.017.022.015.054-.003.074s-.019.052 0 .072l.143.161a.126.126 0 00.085.038h.035c.028 0 .037-.019.021-.041l-.014-.019a.058.058 0 01.006-.077l.064-.064a.105.105 0 01.085-.026l.165.032a.068.068 0 01.053.051c-.001.028-.011.055-.03.076s-.019.051 0 .071l.132.132a.141.141 0 00.087.036h.442c.013 0 .026.005.035.015s.014.023.014.036v.099a.091.091 0 01-.046.073l-.284.142a.833.833 0 01-.093.039l-.464.154a.089.089 0 01-.084-.02l-.068-.069a.144.144 0 00-.086-.036h-.039a.136.136 0 00-.086.036l-.068.071a.145.145 0 00-.036.087v.039a.05.05 0 01-.05.051h-.179a.25.25 0 01-.096-.023l-.473-.238a.76.76 0 01-.087-.051l-.324-.224a.19.19 0 00-.093-.028h-.332a.143.143 0 00-.086.035l-.068.069a.139.139 0 01-.086.036h-.176a.143.143 0 00-.086.035l-.072.07-.074.073-.489.491a.313.313 0 00-.058.082l-.063.145a.297.297 0 00-.022.098l-.032.924c0 .033.007.066.021.096l.095.19c.016.03.035.057.058.081l.348.348a.144.144 0 00.086.036h.319a.136.136 0 00.086-.036l.069-.069a.144.144 0 01.086-.036h.459a.136.136 0 01.086.036l.068.069a.386.386 0 01.058.081l.232.471c.016.03.035.057.058.081l.209.209a.145.145 0 01.036.087v.46c0 .034.004.067.01.1l.121.602a.678.678 0 01.01.1v.46a.246.246 0 00.023.096l.095.19a.76.76 0 01.039.093l.038.116c.011.031.029.06.052.084l.068.069a.116.116 0 00.086.029l.391-.058a.176.176 0 00.086-.043l.489-.49a.46.46 0 00.058-.081l.243-.451c.013-.024.037-.063.053-.086l.352-.5a.191.191 0 00.029-.092v-.178a.146.146 0 00-.035-.087l-.068-.069a.145.145 0 01-.036-.087v-.32a.141.141 0 01.036-.087l.358-.358a.604.604 0 00.064-.078l.214-.328a.531.531 0 01.064-.078l.209-.209a.139.139 0 00.036-.087v-.039a.051.051 0 00-.05-.051h-.46a.13.13 0 01-.085-.038l-.453-.487a.261.261 0 01-.05-.085l-.31-.929a.065.065 0 01.027-.073c.011-.006.025-.008.038-.004s.023.013.029.024l.325.593c.016.03.034.058.054.086l.374.512a.066.066 0 00.076.021l.383-.174a.593.593 0 00.088-.051l.178-.131a.186.186 0 01.091-.03h.035a.147.147 0 00.087-.036l.336-.337c.01-.009.015-.022.015-.036s-.005-.027-.015-.036l-.064-.064a.139.139 0 00-.086-.036h-.034a.13.13 0 01-.085-.038l-.058-.067a.053.053 0 00-.075-.007l-.058.048a.062.062 0 01-.077 0l-.337-.309c-.01-.009-.015-.022-.015-.035s.005-.026.015-.035l.064-.064a.05.05 0 01.072 0l.201.201a.2.2 0 00.086.046l.293.058c.027.005.072.012.1.014l.594.049a.156.156 0 01.086.04l.337.337a.27.27 0 01.052.084l.104.312.032.096.104.312c.012.031.029.06.052.084l.133.132c.02.02.052.02.071 0l.133-.132a.7.7 0 00.064-.078l.487-.733a.604.604 0 01.064-.078l.064-.064a.137.137 0 01.086-.035h.47c.003-.092.006-.184.006-.276a6.669 6.669 0 00-1.734-4.492zM15.55 10.466l.078-.075a.132.132 0 00.032-.12l-.038-.129c-.002-.016-.014-.03-.03-.034s-.033.002-.042.015l-.174.174c-.014.014-.021.032-.021.051s.008.038.021.051l.068.067a.075.075 0 00.104 0z"/>
+<path
+d="M12.621 12.994l.1-.186a2.58 2.58 0 00.046-.091l.183-.39a.468.468 0 00.031-.096l.016-.086a.11.11 0 00-.024-.084.05.05 0 00-.07 0l-.2.201a.14.14 0 01-.087.035h-.034a.05.05 0 00-.05.051v.171a.147.147 0 01-.036.087l-.064.064a.139.139 0 00-.036.087v.035a.135.135 0 00.037.085l.129.123c.008.008.02.012.031.01s.021-.009.027-.02zM9.987 7.97l.076-.077c.024-.023.016-.042-.017-.042h-.148c-.033 0-.045.023-.027.051l.041.061c.008.013.021.021.036.023s.03-.004.04-.015zM10.984 8.061l.03-.024c.015-.01.024-.026.025-.044s-.006-.035-.019-.047l-.058-.058a.146.146 0 00-.113-.038l-.083.014c-.037.006-.045.032-.019.058l.134.134c.028.026.07.029.1.005zM8.458 6.446l.424-.011c.028 0 .05-.016.05-.035a.119.119 0 01.034-.07l.066-.069a.14.14 0 00.035-.088v-.145c0-.013-.005-.026-.015-.036s-.023-.015-.036-.015h-.032a.05.05 0 01-.05-.051v-.035a.147.147 0 00-.036-.087l-.203-.201a.05.05 0 010-.071l.064-.064a.05.05 0 000-.071l-.133-.133a.05.05 0 00-.072 0l-.132.133a.145.145 0 00-.036.087v.171c0 .028.023.051.05.051h.035a.094.094 0 01.074.045l.09.182a.077.077 0 01-.012.082l-.021.023a.11.11 0 00-.024.087v.005a.156.156 0 010 .068.066.066 0 01-.051.021.054.054 0 00-.045.054.203.203 0 01-.029.093l-.022.035c-.015.024-.005.042.023.041z"/>
+<path
+d="M8.151 6.174h.17a.143.143 0 00.086-.035l.064-.064a.05.05 0 000-.072l-.064-.064c-.009-.008-.014-.021-.012-.033s.009-.023.021-.029l.017-.01c.011-.005.017-.016.017-.027s-.007-.022-.017-.027l-.023-.016a.186.186 0 00-.092-.03h-.031a.086.086 0 00-.071.046l-.005.01a.135.135 0 01-.066.063.076.076 0 00-.045.067v.171c0 .028.023.051.051.051zM5.302 9.653l-.062-.062a.135.135 0 00-.083-.035h-.165a.135.135 0 01-.083-.035l-.062-.062a.13.13 0 00-.083-.035H4.73a.133.133 0 00-.083.035l-.063.065c-.019.019-.013.035.014.035h.165c.031.002.06.014.083.035l.062.062a.138.138 0 00.083.035h.296c.027 0 .034-.016.014-.035zM5.67 9.708h-.028a.116.116 0 00-.069.027c-.007.008-.018.013-.029.013s-.022-.005-.029-.013c-.015-.015-.028-.009-.028.014v.028a.041.041 0 01-.042.041h-.027c-.023 0-.028.013-.012.03l.052.053a.041.041 0 00.058 0c.008-.008.018-.012.029-.012s.021.005.029.012a.087.087 0 00.069.021l.019-.003a.244.244 0 00.074-.027.38.38 0 00.058-.048c.008-.008.012-.018.012-.029s-.005-.021-.012-.029l-.052-.053a.108.108 0 00-.071-.029zM5.125 9.821c-.027 0-.034.018-.014.04l.058.067c.009.01.021.016.034.016s.025-.006.034-.016a.057.057 0 000-.074.125.125 0 00-.081-.038l-.03.005zM8.172 4.738c.015.018.025.04.026.064v.024a.041.041 0 00.039.039h.026c.024.001.046.011.064.026s.041.025.064.026h.128a.104.104 0 00.066-.028l.149-.151a.04.04 0 000-.055l-.093-.095a.101.101 0 00-.066-.028h-.132a.107.107 0 00-.066.026l-.049.048a.042.042 0 01-.058.003 1.265 1.265 0 01-.054-.051l-.044-.056a.04.04 0 00-.027-.012c-.01 0-.02.004-.027.012l-.049.051a.114.114 0 00-.027.066v.026c0 .021.017.039.038.039h.026c.024.001.046.01.064.025zM4.729 5.623a.11.11 0 00-.084.023l-.058.053c-.009.009-.015.021-.015.034s.005.025.015.034l.039.038a.052.052 0 00.069.002l.129-.122c.02-.019.014-.038-.012-.044l-.083-.019z"/>
+<path
+d="M8.07 12.021a.8.8 0 01-.167-.109.703.703 0 00-.239-.102 2.765 2.765 0 00-.246-.052.937.937 0 01-.226-.096 1.93 1.93 0 01-.314-.232c-.087-.081-.213-.145-.28-.143s-.236-.102-.375-.232-.336-.232-.436-.229-.212-.02-.246-.052c-.035-.032-.145-.058-.246-.053a.503.503 0 00-.121.021l-.205-.208a.068.068 0 00-.077-.01l-.058.033a.087.087 0 01-.083 0l-.03-.019a.102.102 0 01-.041-.075v-.097a.116.116 0 00-.037-.08l-.152-.125a.226.226 0 00-.085-.042l-.108-.024c-.027-.006-.032-.026-.013-.045l.062-.062a.138.138 0 00.035-.084v-.165a.05.05 0 00-.049-.049h-.034a.135.135 0 00-.083.035l-.062.063a.13.13 0 01-.083.034H3.855a.267.267 0 01-.049 0h-.032a.136.136 0 01-.083-.036l-.061-.063a.137.137 0 01-.036-.082V9.216a.137.137 0 01.032-.082l.068-.068.132-.13a.138.138 0 01.083-.035h.559c.031.002.06.014.083.035l.062.062a.138.138 0 01.035.084v.033a.138.138 0 00.035.084l.062.062c.019.019.05.019.069 0l.062-.062a.05.05 0 000-.07l-.062-.062a.138.138 0 01-.035-.084v-.165a.143.143 0 01.034-.084l.326-.329a.138.138 0 00.035-.084v-.03a.138.138 0 00-.035-.084l-.062-.062c-.012-.012-.016-.029-.012-.045s.017-.029.033-.033.033 0 .045.012l.062.063a.048.048 0 00.068 0 .131.131 0 00.032-.082v-.033a.14.14 0 01.033-.085l.356-.387a.194.194 0 01.081-.047l.082-.019a.15.15 0 01.091.012l.104.058a.089.089 0 01.043.073v.036a.048.048 0 00.048.048h.042a.132.132 0 00.083-.037l.097-.102c.009-.007.013-.018.01-.029s-.012-.018-.023-.019l-.212-.058a.227.227 0 01-.082-.048l-.062-.063a.09.09 0 01-.021-.082l.003-.013c.004-.012.002-.025-.005-.035s-.018-.018-.03-.019l-.065-.01a.11.11 0 00-.083.027l-.194.194c-.019.018-.049.018-.068 0s-.018-.049 0-.067l.262-.263a.135.135 0 01.083-.035h.336c.011-.002.022.003.027.013s.005.021-.001.03l-.058.112a.068.068 0 00.01.075c.023.02.052.031.082.033h.29c.03.001.059.013.082.033a.047.047 0 00.066 0 .132.132 0 00.033-.082v-.034a.138.138 0 00-.035-.084l-.128-.128c-.009-.009-.014-.021-.013-.034s.007-.024.017-.032l.009-.008a.17.17 0 01.087-.031h.082a.09.09 0 00.072-.044l.022-.041a.07.07 0 00-.012-.078l-.062-.062a.135.135 0 00-.083-.035h-.166a.414.414 0 00-.086.012.053.053 0 01-.058-.028.16.16 0 01-.013-.089.26.26 0 00-.005-.096l-.004-.015a.35.35 0 00-.04-.088l-.209-.314c-.006-.011-.017-.017-.029-.019s-.024.004-.032.013l-.195.196a.086.086 0 01-.081.019l-.103-.039a.25.25 0 01-.079-.049c-.009-.009-.014-.021-.014-.034s.005-.025.014-.034l.065-.058a.049.049 0 000-.069l-.194-.195a.138.138 0 00-.082-.037h-.166a.048.048 0 00-.048.049v.165c0 .027 0 .071-.003.098l-.02.27a.273.273 0 01-.028.092l-.082.149a.34.34 0 01-.061.075l-.19.163a.109.109 0 01-.079.025.102.102 0 01-.063-.052l-.096-.214a.163.163 0 00-.064-.066l-.41-.202c-.024-.012-.035-.041-.024-.066l.085-.189a.9.9 0 01.046-.087l.136-.222a.147.147 0 01.072-.058l.031-.01a.065.065 0 00.043-.064V5.58a.136.136 0 01.021-.079.107.107 0 01.074-.03h.032a.15.15 0 01.084.03c.02.017.049.017.069 0 .009-.008.014-.02.014-.033s-.005-.024-.014-.033l-.128-.128c-.009-.009-.014-.021-.014-.034s.005-.025.014-.034l.066-.063c.02-.019.05-.049.067-.069a.417.417 0 00.054-.078l.068-.127a.607.607 0 01.05-.081l.058-.067a.124.124 0 01.081-.038H5.1a.273.273 0 01.093.021l.179.085a.495.495 0 01.082.052l.079.065a.191.191 0 01.05.063.066.066 0 01-.025.064l-.048.042a.107.107 0 00-.032.081l.027.258c.003.028.026.05.054.052l.43.027a.05.05 0 00.053-.046v-.035a.085.085 0 00-.038-.073l-.122-.07a.049.049 0 01-.022-.063.041.041 0 01.061-.012l.11.072c.023.015.054.01.071-.012l.029-.038a.058.058 0 00-.004-.074l-.203-.211a1.55 1.55 0 01-.066-.073l-.486-.556c-.009-.01-.169-.162-.276-.093a.091.091 0 01-.013.008 6.686 6.686 0 00-1.821 5.61c.04.124.152.21.282.217v-.01h.004c.029.005.058-.004.081-.023s.051-.031.081-.031h.035a.459.459 0 01.096.016l.116.035c.03.011.058.028.081.05l.052.055a.167.167 0 00.083.046l.145.024c.03.007.058.023.081.045l.075.086c.02.024.031.055.032.086v.2c0 .013.005.026.014.035s.022.014.035.014h.037c.031.002.06.014.083.035l.062.062c.019.019.05.019.069 0l.059-.064c.009-.009.021-.014.034-.014s.025.005.034.014l.082.085a.678.678 0 00-.104.301.691.691 0 01-.141.342c-.065.07-.111.258-.103.42.024.202.1.394.22.557.1.134.217.254.348.358.079.052.174.205.204.341a10.737 10.737 0 01.102.471c0 .01.004.021.006.032l.009.036-.005-.005c.024.159.052.371.156.454.387.31.806.577 1.251.794.067-.016.036-.179.014-.267h-.005a.122.122 0 000-.027l-.007-.024a2.885 2.885 0 00-.072-.251.446.446 0 01.016-.315.482.482 0 01.063-.11l.058-.063.147-.159a.425.425 0 00.116-.249.215.215 0 01.235-.254c.067 0 .202-.09.298-.194s.174-.245.174-.312a.425.425 0 01.116-.249.347.347 0 00.093-.256.275.275 0 00-.129-.179zM6.814 3.176a.91.91 0 00.165.023c.076.001.151.007.227.016l.121.062c.021.01.044.016.068.017h.129c.009 0 .018.004.025.011s.01.016.009.026v.021a.115.115 0 01-.027.063l-.043.046-.045.049a.121.121 0 00-.022.058v.031a.09.09 0 00.024.062l.381.384a.23.23 0 00.058.04l.126.058c.02.008.042.004.058-.009l.042-.039a.1.1 0 00.028-.058l.003-.13a.108.108 0 01.026-.062l.039-.041.051-.051.14-.139.051-.051.246-.244a.1.1 0 01.061-.024h.046a.082.082 0 00.058-.028l.069-.093a.338.338 0 01.05-.05l.116-.082a.22.22 0 00.05-.051l.042-.058a.138.138 0 00.02-.066l-.005-.12V2.648a.065.065 0 01.034-.052l.22-.105c.004-.002.008-.004.011-.008a6.384 6.384 0 013.458.758s.111.05.163-.042a.124.124 0 00-.031-.164 6.653 6.653 0 00-6.404.019c.045.052.1.093.162.121zM15.61 11.457h-.025a.1.1 0 00-.064.027l-.2.2a.039.039 0 01-.053 0l-.048-.048a.039.039 0 00-.054 0l-.3.301a.108.108 0 01-.064.027h-.127a.107.107 0 00-.064.026l-.149.15a.111.111 0 00-.027.064v.127a.1.1 0 00.027.064l.048.048a.111.111 0 01.027.064v.33a.1.1 0 00.027.064l.048.048a.039.039 0 00.053 0l.048-.048a.104.104 0 01.064-.026l.165.003a6.412 6.412 0 01-6.375 2.345s-.116-.014-.142.084a.13.13 0 00.08.153 6.669 6.669 0 007.451-3.792l-.274-.2a.194.194 0 00-.071-.017z"/>
+</g>
+<path
+id="wreath" d="M10.835 18.716l-.194.246-.216-.527v-.003l.145-.348.123.29.142.343zm-.536-.345l-.003.006v.003c-.006.015-.037.064-.162.064-.142 0-.13-.07-.13-.07l.282-.672.24-.586.194.247-.14.34-.136.325zm-.512.004s-.015.07-.163.07-.13-.07-.13-.07l.282-.672s.016-.069.163-.069.131.069.131.069l-.282.672zm-.48 0l-.241.586-.194-.246.14-.341.274-.653.006-.013v-.006l.01-.017v-.005a.192.192 0 01.151-.046c.142 0 .13.069.13.069zM8.941 17.699l-.141-.337.194-.247.198.482a.2.2 0 00-.028.049l-.123.296-.1-.244zm10.741-6.387c-.109.023-.214.06-.312.111h-.006a5.56 5.56 0 00-.158.094l-.015.013a2.86 2.86 0 00-.714.725 9.05 9.05 0 00.29-.86.127.127 0 00-.217-.047 8.978 8.978 0 01-.445 1.223c-.02-.382-.255-.854-.522-1.153-.191.538.042 1.111.391 1.434a9.053 9.053 0 01-.884 1.446c.058-.377-.067-.885-.263-1.233-.301.483-.198 1.089.071 1.481a9.027 9.027 0 01-1.172 1.206c.129-.354.111-.861 0-1.233-.392.402-.427 1.006-.256 1.445a8.921 8.921 0 01-1.256.835c.163-.345.234-.726.207-1.107-.449.29-.618.84-.569 1.294a9.017 9.017 0 01-1.729.639c.298-.249.526-.755.588-1.169-.541.197-.835.755-.856 1.233a8.898 8.898 0 01-1.192.186l.052-.123.14-.341a.14.14 0 00-.02-.142l-.194-.246a.146.146 0 00-.111-.055.06.06 0 00-.019 0 .138.138 0 00-.111.086l-.225.541-.011-.016a.28.28 0 00-.227-.086.324.324 0 00-.251.09v-.005a.284.284 0 00-.227-.085.432.432 0 00-.147.024l-.185-.453a.138.138 0 00-.111-.086.067.067 0 00-.02 0 .14.14 0 00-.111.055l-.194.246a.142.142 0 00-.02.142l.136.337.042.101a8.777 8.777 0 01-1.172-.212.299.299 0 00-.093-.171 5.037 5.037 0 01-.57-.607.303.303 0 00-.397-.068.265.265 0 00-.124.24s.004.043.003.045-.066-.116-.087-.16v-.007a5.241 5.241 0 01-.184-.43.292.292 0 00-.528-.044.271.271 0 00-.015.211c.008.027.018.052.027.079V16.748a.917.917 0 01-.202-.109l-.065-.04-.052-.034a.337.337 0 00-.225-.054.278.278 0 00-.094.029 11.399 11.399 0 01-.232-.149.288.288 0 00-.034-.182 5.038 5.038 0 01-.339-.762.3.3 0 00-.353-.194.268.268 0 00-.196.185s-.01.043-.012.045-.023-.132-.029-.181v-.007a5.27 5.27 0 01-.033-.465.294.294 0 00-.277-.287.274.274 0 00-.209.073.263.263 0 00-.084.192v.091l-.004.005a1.027 1.027 0 01-.155-.168l-.048-.058-.037-.049a.334.334 0 00-.194-.125.26.26 0 00-.048-.005 9.737 9.737 0 01-.212-.279.287.287 0 00.027-.166 5.055 5.055 0 01-.03-.834.3.3 0 00-.254-.311.266.266 0 00-.252.099l-.026.037c-.002.002.027-.131.04-.178v-.008c.041-.15.089-.3.143-.445a.29.29 0 00-.148-.37.272.272 0 00-.371.138l-.03.077-.003.007-.005.004a.915.915 0 01-.081-.215l-.023-.073a.807.807 0 00-.016-.058.339.339 0 00-.133-.188.261.261 0 00-.134-.047 9.157 9.157 0 01-.101-.333.128.128 0 00-.121-.041.13.13 0 00-.096.088c.035.124.073.247.112.368a.308.308 0 00-.03.041.338.338 0 00-.03.264c.03.106.063.213.098.32a.21.21 0 01.013.074h-.005l-.079-.051a.27.27 0 00-.228-.038.25.25 0 00-.154.158.408.408 0 00.148.448l.016.01c.119.073.242.141.367.204 0 0 .283.148.283.153s-.058 0-.058 0a.232.232 0 00-.201.163.386.386 0 00.153.423l.028.017c.273.152.558.282.852.389a.267.267 0 00.148.012c.058.078.116.157.174.232a.266.266 0 00-.058.125.344.344 0 00.071.255c.067.087.139.174.211.261.017.019.03.04.04.063h-.005l-.092-.017a.267.267 0 00-.225.051.25.25 0 00-.083.204.402.402 0 00.303.36l.019.003c.139.023.278.04.417.053 0 0 .317.03.319.033l-.058.025a.233.233 0 00-.125.225c.018.165.14.3.302.335.012 0 .023.005.034.006.31.037.622.051.934.041a.28.28 0 00.129-.035c.073.049.147.097.223.144a.248.248 0 000 .094c.018.09.072.168.15.217.091.058.187.119.284.174a.191.191 0 01.058.048l-.005.003-.092.013a.268.268 0 00-.196.123.25.25 0 00-.012.22c.07.159.233.255.406.24h.019c.138-.025.275-.053.41-.088 0 0 .31-.075.314-.073l-.045.04a.231.231 0 00-.043.254c.07.151.23.239.395.218.011 0 .022-.005.033-.006.305-.067.604-.156.896-.268a.275.275 0 00.101-.067c.449.112.906.189 1.366.232l-.094.224-.14.34a.142.142 0 00.02.143l.194.246a.141.141 0 00.111.053h.02a.14.14 0 00.111-.087l.208-.506a.29.29 0 00.219.078c.152 0 .229-.058.267-.11a.078.078 0 00.016.024.28.28 0 00.227.085.393.393 0 00.185-.04l.192.469c.019.047.062.08.111.087h.02c.043 0 .084-.02.111-.053l.194-.246a.145.145 0 00.02-.143l-.14-.339-.093-.223c.397-.037.792-.1 1.181-.189a.574.574 0 00.036.05c.533.437 1.316.576 2.06.135.039-.023.078-.046.116-.073a1.258 1.258 0 00-.285-.174v-.003a1.55 1.55 0 00-.174-.063s-.014 0-.02-.005a2.82 2.82 0 00-.905-.094c.401-.13.793-.286 1.173-.469a.4.4 0 00.109.119c.619.304 1.412.26 2.036-.339.032-.031.065-.062.097-.097a1.216 1.216 0 00-.316-.102l-.004-.003c-.035-.006-.156-.02-.181-.023h-.02a2.86 2.86 0 00-1.014.145l-.18.024a9.205 9.205 0 001.163-.783.335.335 0 00.087.052c.669.163 1.435-.051 1.912-.769.026-.038.051-.075.075-.116a1.228 1.228 0 00-.331-.032h-.005c-.035 0-.158.015-.183.018l-.02.005a2.868 2.868 0 00-.959.362l-.02.006a9.15 9.15 0 00.914-.984.463.463 0 00.08.025c.689.015 1.391-.361 1.705-1.166.017-.042.032-.085.048-.129a1.19 1.19 0 00-.33.041h-.006c-.033.009-.15.048-.174.058l-.019.009a2.882 2.882 0 00-.849.55c.242-.358.459-.733.648-1.121a.355.355 0 00.08.006c.676-.134 1.281-.652 1.414-1.507a1.22 1.22 0 00.018-.137l-.002-.008z"/>
+<g
+id="books">
+<path
+d="M1.365 10.537a.366.366 0 00-.238.08v-.775a.218.218 0 01.206-.13c.105 0 .358.111.522.084.009.162.021.663.021.836-.235 0-.411-.091-.51-.096v.001zm-.458.08a.368.368 0 00-.238-.08c-.099.005-.275.094-.51.096 0-.174.012-.674.021-.836.161.027.414-.087.522-.084a.217.217 0 01.208.13l-.002.775zm1.108-.988c-.379.026-.595-.111-.735-.109a.332.332 0 00-.263.11.326.326 0 00-.262-.11c-.14 0-.356.135-.736.109-.004.1-.019 1.185-.019 1.185l.842-.013c.031.063.051.08.171.08h.01c.121 0 .14-.018.17-.08l.841.012s-.015-1.086-.019-1.185zM19.057 10.537a.366.366 0 00-.238.08v-.775a.217.217 0 01.208-.13c.105 0 .358.111.522.084.01.162.021.663.021.836-.235 0-.411-.091-.51-.096l-.002.001zm-.456.08a.368.368 0 00-.238-.08c-.099.005-.275.094-.51.096 0-.174.012-.674.021-.836.161.027.414-.087.522-.084a.217.217 0 01.208.13l-.002.775zm1.108-.988c-.379.026-.596-.111-.735-.109a.33.33 0 00-.262.11.325.325 0 00-.263-.11c-.14 0-.356.135-.735.109-.004.1-.02 1.185-.02 1.185l.841-.012c.032.063.051.08.174.08h.01c.12 0 .139-.018.17-.08l.841.012s-.015-1.086-.019-1.185z"/>
+</g>
+<g
+id="lettering">
+<path
+d="M.982 8.948c.149.01.278-.023.29-.192s-.112-.22-.261-.229c-.148-.009-.278.022-.29.192s.112.218.261.229zm.421-.39l.077-.187.148.01-.258.53c-.062.141-.206.195-.398.181C.725 9.076.573 8.96.591 8.71s.183-.343.429-.326c.185.013.315.081.364.218zM1.151 8.195l-.492-.084.024-.141.492.083c.094.016.174 0 .198-.15s-.043-.19-.138-.206l-.491-.084.024-.141.491.084c.169.028.284.125.243.369s-.183.297-.351.269zM1.152 7.015l.197.131.058-.226-.236.013-.139.007zm-.276-.032l.043-.161.843-.07-.04.147-.188.013-.082.303.156.107-.04.147-.693-.486zM1.28 5.795l.123.046-.148.393.175.066.132-.348.122.046-.131.348.192.072.155-.411.123.045-.205.544-.735-.276zM1.865 5.352a.096.096 0 00-.045-.15c-.026-.017-.059-.021-.089-.009s-.051.037-.059.067l-.085.174.192.094.085-.177zm.309.367l-.063.127-.704-.344.144-.293c.058-.124.159-.222.332-.138.125.061.15.149.132.239l.375-.03-.072.15-.354.023-.064.131.275.135zM1.806 4.725l.14-.243.681.393-.14.243-.68-.393zM2.854 4.527l-.079.118-.543-.365-.128.192-.109-.073.335-.502.109.073-.127.192zM2.821 3.271l.102.082-.263.328.145.117.233-.29.103.082-.233.29.16.129.275-.342.102.082-.363.453-.612-.494zM3.97 3.198l-.102.1-.551-.56.101-.1zM3.963 2.803l-.322-.38.108-.092.322.38c.061.073.133.11.247.013s.09-.174.028-.247l-.322-.38.108-.092.321.378c.111.131.136.279-.052.44s-.33.11-.44-.021zM4.977 2.198c.136-.092.125-.209.035-.342s-.196-.183-.332-.09l-.116.078.296.433.116-.079zm-.156.267l-.445-.648.232-.16c.198-.136.372-.107.522.116s.119.396-.08.533l-.228.159zM5.682 1.909l-.123.071-.394-.681.123-.071zM6.14 1.536c.096-.046.121-.102.093-.193l.135-.048c.052.143.012.27-.17.359-.219.106-.375 0-.482-.219s-.092-.406.128-.515c.183-.089.307-.041.387.088l-.122.076c-.054-.078-.112-.094-.208-.046-.146.071-.116.202-.054.333s.148.235.294.164zM6.392.692l.261-.104.29.731-.261.103-.29-.731zM6.959 1.004L6.812.527l.135-.042.147.477c.028.091.079.153.223.109s.15-.125.122-.217L7.292.377l.136-.042.146.478c.05.164.016.311-.219.383s-.348-.029-.396-.193zM8.201.967L7.985.608 7.918.495l.042.213.057.296-.137.026-.147-.772.162-.031.24.389.08.135.026-.156.08-.451.162-.031.147.772-.136.027-.056-.295-.039-.213-.02.131-.07.413zM9.13.539a.148.148 0 01-.019-.295.148.148 0 01.019.295zM9.629.572l.144-.015c.01.092.067.126.174.127.079 0 .169-.028.169-.116 0-.069-.041-.098-.174-.112-.145-.013-.286-.052-.286-.22S9.794 0 9.946 0c.207 0 .3.093.313.243l-.144.015c-.01-.093-.063-.125-.17-.127-.054 0-.143.019-.144.108 0 .055.031.077.152.091.193.019.304.058.303.24 0 .174-.154.247-.311.246-.214 0-.303-.087-.318-.244zM10.472.529l.054-.496.137.015-.053.496c-.01.096.013.174.162.189s.187-.055.198-.15l.053-.496.141.015-.053.496c-.019.171-.107.29-.353.266S10.452.7 10.468.53zM11.522.297l-.038.184.183.036c.058.012.1 0 .116-.074s-.019-.098-.076-.11zm.086.552c.046.009.116.018.135-.075s-.04-.116-.09-.125L11.458.61l-.041.202.191.038zm-.355.062l.155-.772.333.067c.098.02.223.081.186.26a.174.174 0 01-.101.138c.058.049.08.127.058.199-.038.188-.165.202-.297.174L11.253.91zM12.353 1.001l.114-.16.267-.371.15.045-.517.681-.134-.041-.053-.853.15.046.016.458zM13.594.799l-.049.121-.388-.158-.071.174.344.14-.049.122-.344-.141-.077.191.406.165-.05.121-.537-.219.296-.729zM13.896 1.371l-.013-.143-.086.167-.158.3-.126-.066.367-.697.116.061.052.486.012.143.087-.167.157-.3.126.067-.366.696-.117-.062zM14.401 2.129l-.119-.076.417-.666.12.075zM14.875 2.454l-.115-.083.385-.532-.187-.134.077-.107.487.354-.077.106-.186-.135zM16.147 2.483l-.086.098-.315-.276-.123.143.279.243-.086.099-.279-.244-.135.156.33.287-.086.099-.436-.381.515-.594zM16.376 3.271c-.112.099-.18.214-.068.341s.232.073.348-.026.18-.213.068-.34-.232-.074-.348.024zm-.095-.108c.185-.164.374-.192.54-.003s.116.372-.071.536-.374.19-.54.003-.116-.372.071-.535zM17.298 3.996l-.099-.138-.185.134.1.138a.1.1 0 00.159.026.1.1 0 00.027-.159zm-.631.247l-.082-.116.637-.461.174.244c.076.106.119.248-.041.363s-.279.034-.357-.075l-.093-.13-.239.175zM17.711 4.631l-.087-.145-.194.116.087.145a.115.115 0 00.194-.116h.001zm-.647.194l-.073-.121.672-.406.155.257c.068.113.099.257-.07.359s-.28.009-.348-.104l-.082-.136-.254.152zM17.908 5.455c.022.045.058.1.147.058s.068-.106.047-.151l-.085-.174-.193.094zm-.48.019l-.063-.128.707-.344.143.294c.058.123.077.261-.097.348-.125.061-.21.027-.27-.043l-.207.315-.073-.15.2-.295-.063-.131zM18.646 6.339l-.123.046-.147-.393-.175.065.13.348-.122.045-.13-.346-.192.071.153.411-.122.047-.203-.544.736-.276zM18.198 6.761l.052.135c-.085.035-.103.098-.075.202.021.076.073.155.156.132.067-.018.083-.066.062-.196-.026-.142-.027-.29.136-.334s.264.064.304.213c.054.2-.01.315-.15.368l-.052-.135c.086-.035.103-.093.075-.199-.015-.051-.058-.132-.141-.109-.053.015-.068.051-.048.174.033.192.028.309-.15.358s-.279-.082-.32-.232c-.055-.207.003-.315.15-.372zM18.404 7.574l.039.139c-.089.027-.112.088-.093.195.013.077.058.161.143.146.068-.011.09-.058.08-.188-.012-.145 0-.29.166-.321s.257.09.283.241c.034.204-.039.312-.184.351l-.039-.139c.09-.027.111-.084.094-.19-.01-.053-.044-.138-.132-.123-.054.01-.071.044-.063.166.016.194 0 .309-.182.341-.174.031-.27-.109-.296-.263-.036-.212.032-.314.184-.356zM18.712 8.541c-.149.01-.273.062-.261.232s.141.201.29.19c.148-.011.273-.058.261-.229s-.141-.202-.29-.192zm-.011-.142c.247-.018.414.075.431.326s-.135.366-.382.383-.413-.075-.43-.325.134-.366.382-.384z"/>
+</g>
+</symbol>
+<symbol
+id="icon-logo--text" viewBox="0 0 4.953 2.55">
+<g
+stroke-width=".265">
+<path
+d="M.854 1.954c-.043 0-.286-.006-.429-.006s-.382.006-.425.006v-.163c.171 0 .234-.037.234-.238V.401C.234.201.171.164 0 .164V0c.043 0 .285.006.428.006S.812 0 .854 0v.162C.683.162.62.2.62.4v1.152c0 .2.063.238.234.238zM4.953 1.954c-.043 0-.285-.006-.428-.006s-.383.006-.426.006v-.163c.171 0 .234-.037.234-.238V.54l-.602 1.413h-.254L2.872.54v1.001c0 .2.086.25.257.25v.162c-.086 0-.229-.006-.371-.006-.143 0-.289.006-.375.006V1.79c.172 0 .272-.049.272-.249V.401c0-.2-.12-.238-.291-.238V0c.042 0 .225.006.368.006S2.977 0 3.062 0L3.7 1.488 4.334 0c.066 0 .152.006.294.006.143 0 .24-.006.326-.006v.162C4.782.162 4.72.2 4.72.4v1.152c0 .2.062.237.234.237zM2.051.163C1.88.163 1.817.2 1.817.4v1.152c0 .312-.046.455-.132.59-.14.222-.476.359-.597.407l-.036-.074c.223-.162.284-.278.33-.407.04-.111.048-.252.048-.515V.401c0-.229-.094-.237-.265-.237V0c.043 0 .3.006.443.006S2.008 0 2.05 0v.162z"/>
+</g>
+</symbol>
+<symbol
+id="icon-arrow-simple-right" viewBox="0 0 32 32"><title>arrow-simple-right</title>
+<path
+d="M20.295 16l-13.714-12.489 3.197-3.511 15.641 14.245v3.511l-15.641 14.245-3.197-3.511z"></path>
+</symbol>
+<symbol
+id="icon-arrow-simple-left" viewBox="0 0 32 32"><title>arrow-simple-left</title>
+<path
+d="M11.705 16l13.714-12.489-3.197-3.511-15.641 14.245v3.511l15.641 14.245 3.197-3.511z"></path>
+</symbol>
+<symbol
+id="icon-arrow-simple-bottom" viewBox="0 0 50 32"><title>arrow-simple-bottom</title>
+<path
+d="M24.889 23.164l18.705-20.538 5.258 4.788-21.333 23.425h-5.258l-21.333-23.425 5.258-4.788z"></path>
+</symbol>
+<symbol
+id="icon-readio" viewBox="0 0 38 32"><title>readio</title>
+<path
+d="M31.526 31.429c-0.306 0.272-0.685 0.403-1.062 0.403-0.442 0-0.88-0.181-1.197-0.533-0.587-0.658-0.528-1.664 0.131-2.248 3.688-3.264 5.802-8.043 5.802-13.117 0-5.107-2.134-9.899-5.856-13.146-0.664-0.581-0.73-1.586-0.146-2.246 0.581-0.661 1.594-0.725 2.258-0.147 4.413 3.853 6.944 9.517 6.944 15.539 0 5.981-2.506 11.629-6.874 15.494zM28.36 24.965c-0.314 0.33-0.736 0.496-1.16 0.496-0.397 0-0.792-0.144-1.101-0.437-0.642-0.606-0.667-1.613-0.059-2.251 1.779-1.866 2.76-4.302 2.76-6.866 0-2.555-0.981-4.994-2.762-6.858-0.606-0.637-0.581-1.645 0.061-2.251 0.638-0.606 1.651-0.579 2.262 0.059 2.346 2.461 3.638 5.675 3.638 9.050 0 3.381-1.293 6.598-3.64 9.058zM19.2 20.882c-2.646 0-4.8-2.142-4.8-4.776 0-2.632 2.154-4.774 4.8-4.774s4.8 2.142 4.8 4.774c0 2.634-2.154 4.776-4.8 4.776zM19.2 14.514c-0.882 0-1.6 0.714-1.6 1.592s0.718 1.592 1.6 1.592c0.882 0 1.6-0.714 1.6-1.592s-0.718-1.592-1.6-1.592zM12.302 25.034c-0.31 0.293-0.706 0.437-1.102 0.437-0.424 0-0.846-0.166-1.162-0.496-2.346-2.461-3.638-5.674-3.638-9.051 0-3.379 1.293-6.597 3.64-9.056 0.608-0.638 1.621-0.664 2.262-0.059 0.64 0.606 0.667 1.613 0.058 2.251-1.779 1.866-2.76 4.302-2.76 6.864 0 2.557 0.981 4.995 2.762 6.859 0.608 0.637 0.581 1.645-0.059 2.251zM3.2 15.898c0 5.107 2.134 9.899 5.856 13.146 0.664 0.581 0.73 1.586 0.146 2.246-0.315 0.358-0.758 0.542-1.203 0.542-0.373 0-0.75-0.131-1.054-0.395-4.413-3.853-6.944-9.517-6.944-15.539 0-5.984 2.506-11.63 6.874-15.494 0.661-0.587 1.672-0.525 2.261 0.131 0.586 0.656 0.526 1.662-0.134 2.246-3.686 3.261-5.8 8.042-5.8 13.117z"></path>
+</symbol>
+<symbol
+id="icon-arrow-simple-top" viewBox="0 0 50 32"><title>arrow-simple-top</title>
+<path
+d="M24.889 8.836l18.705 20.538 5.258-4.788-21.333-23.425h-5.258l-21.333 23.425 5.258 4.788z"></path>
+</symbol>
+<symbol
+id="icon-speaker-down" viewBox="0 0 23 32"><title>speaker-down</title>
+<path
+d="M2.133 11.947v8.107h4.495l6.172 6.171v-20.45l-6.171 6.171h-4.495zM5.745 22.187h-5.745v-12.373h5.745l9.188-9.188v30.75l-9.188-9.188z"></path>
+<path
+d="M17.28 21.333c2.945 0 5.333-2.388 5.333-5.333s-2.388-5.333-5.333-5.333v2.133c1.767 0 3.2 1.433 3.2 3.2s-1.433 3.2-3.2 3.2v2.133z"></path>
+</symbol>
+<symbol
+id="icon-plus" viewBox="0 0 32 32"><title>plus</title>
+<path
+d="M14.222 0v32h3.556v-32z"></path>
+<path
+d="M32 14.222h-32v3.556h32z"></path>
+</symbol>
+<symbol
+id="icon-minus" viewBox="0 0 288 32"><title>minus</title>
+<path
+d="M288 0h-288v32h288z"></path>
+</symbol>
+<symbol
+id="icon-cloud" viewBox="0 0 50 32"><title>cloud</title>
+<path
+d="M25.143 0c-7.825 0-15.531 6.37-17.832 13.914-4.314 0.953-7.311 5.153-7.311 8.944 0 5.834 3.309 9.143 9.143 9.143h23.849v-4.571h-23.849c-3.309 0-4.571-1.262-4.571-4.571 0-1.979 2.074-4.571 4.571-4.571h1.884l0.359-1.85c1.196-6.157 7.628-11.864 13.756-11.864 7.731 0 13.714 4.888 13.714 11.429v2.286h2.286c2.497 0 4.571 2.593 4.571 4.571 0 3.2-1.41 4.571-4.571 4.571h-9.401v4.571h9.401c5.658 0 9.143-3.389 9.143-9.143 0-3.696-2.848-7.78-6.988-8.866-1.088-8.235-8.821-13.991-18.155-13.991z"></path>
+</symbol>
+<symbol
+id="icon-hb" viewBox="0 0 45 32"><title>hb</title>
+<path
+d="M0 3.765h45.176v-3.765h-45.176z"></path>
+<path
+d="M0 17.318h45.176v-3.765h-45.176z"></path>
+<path
+d="M0 30.871h45.176v-3.765h-45.176z"></path>
+</symbol>
+<symbol
+id="icon-pin" viewBox="0 0 23 32"><title>pin</title>
+<path
+d="M10.82 14.757c-2.175 0-3.938-1.763-3.938-3.938s1.763-3.938 3.938-3.938c2.175 0 3.938 1.763 3.938 3.938s-1.763 3.938-3.938 3.938zM10.82 12.387c0.866 0 1.567-0.702 1.567-1.568s-0.702-1.567-1.567-1.567c-0.866 0-1.567 0.702-1.567 1.567s0.702 1.567 1.567 1.567z"></path>
+<path
+d="M21.639 11.152c0.009 2.003-0.643 4.322-1.837 6.915-0.833 1.808-1.912 3.709-3.179 5.663-1.075 1.656-2.224 3.258-3.374 4.746-0.403 0.521-0.777 0.992-1.113 1.404-0.203 0.249-0.35 0.425-0.431 0.52l-0.905 1.060-0.901-1.063c-0.081-0.095-0.227-0.271-0.43-0.521-0.335-0.413-0.708-0.885-1.109-1.408-1.146-1.493-2.291-3.099-3.362-4.759-1.256-1.946-2.326-3.841-3.154-5.643-1.191-2.591-1.845-4.908-1.845-6.909 0-6.153 4.834-11.157 10.82-11.157 5.977 0 10.793 4.993 10.82 11.152zM11.373 27.027c1.112-1.44 2.225-2.99 3.261-4.588 1.21-1.864 2.234-3.67 3.014-5.364 1.062-2.306 1.627-4.315 1.62-5.913-0.021-4.874-3.8-8.792-8.449-8.792-4.658 0-8.449 3.924-8.449 8.786 0 1.601 0.567 3.611 1.628 5.919 0.776 1.689 1.793 3.489 2.992 5.347 1.033 1.601 2.142 3.156 3.251 4.6 0.196 0.256 0.385 0.498 0.566 0.727 0.181-0.228 0.37-0.47 0.567-0.724z"></path>
+</symbol>
+<symbol
+id="icon-camera" viewBox="0 0 44 32"><title>camera</title>
+<path
+d="M43.789 6.52v24.231h-43.789v-24.231h11.958l5.216-6.52h9.442l5.216 6.52h11.958zM30.213 9.888l-5.216-6.52h-6.204l-5.216 6.52h-10.208v17.494h37.053v-17.494h-10.208z"></path>
+<path
+d="M21.895 25.535c-3.811 0-6.9-3.089-6.9-6.9s3.089-6.9 6.9-6.9c3.811 0 6.9 3.089 6.9 6.9s-3.089 6.9-6.9 6.9zM21.895 22.166c1.95 0 3.531-1.581 3.531-3.531s-1.581-3.531-3.531-3.531c-1.95 0-3.531 1.581-3.531 3.531s1.581 3.531 3.531 3.531z"></path>
+<path
+d="M5.216 8.204v20.862h3.368v-20.862z"></path>
+</symbol>
+<symbol
+id="icon-globe" viewBox="0 0 32 32"><title>globe</title>
+<path
+d="M16 2.871c-7.252 0-13.13 5.878-13.129 13.13-0 7.251 5.877 13.129 13.129 13.129 7.251 0.001 13.129-5.877 13.129-13.129s-5.877-13.129-13.129-13.129zM16 0.409c8.611 0 15.591 6.98 15.59 15.591s-6.98 15.592-15.591 15.591c-8.611 0-15.591-6.979-15.59-15.59-0.002-8.611 6.979-15.591 15.591-15.591z"></path>
+<path
+d="M14.769 1.692v28.615h2.462v-28.615z"></path>
+<path
+d="M30.308 14.769h-28.615v2.462h28.615z"></path>
+<path
+d="M14.317 0.725c-0.903 0.71-2.203 2.041-3.494 3.977-2.147 3.22-3.437 7-3.437 11.298s1.291 8.078 3.437 11.298c1.291 1.936 2.591 3.268 3.494 3.977l1.521-1.936c-0.161-0.127-0.475-0.405-0.89-0.83-0.706-0.723-1.415-1.584-2.078-2.578-1.892-2.838-3.024-6.154-3.024-9.933s1.132-7.095 3.024-9.933c0.662-0.994 1.371-1.855 2.078-2.578 0.415-0.425 0.728-0.703 0.89-0.83l-1.521-1.936z"></path>
+<path
+d="M16.163 2.66c0.161 0.127 0.475 0.405 0.89 0.83 0.706 0.723 1.415 1.584 2.078 2.578 1.892 2.838 3.024 6.154 3.024 9.933s-1.132 7.095-3.024 9.933c-0.662 0.994-1.371 1.855-2.078 2.578-0.415 0.425-0.728 0.703-0.89 0.83l1.521 1.936c0.903-0.71 2.203-2.041 3.494-3.977 2.147-3.22 3.437-7 3.437-11.298s-1.291-8.078-3.437-11.298c-1.291-1.936-2.591-3.268-3.494-3.977l-1.521 1.936z"></path>
+<path
+d="M3.822 7.32c0.376 0.753 1.215 1.779 2.652 2.77 2.301 1.587 5.444 2.525 9.526 2.525s7.225-0.938 9.526-2.525c1.438-0.991 2.276-2.018 2.652-2.77l-2.202-1.101c-0.033 0.066-0.145 0.242-0.35 0.493-0.37 0.453-0.864 0.915-1.498 1.352-1.882 1.298-4.536 2.090-8.128 2.090s-6.247-0.792-8.128-2.090c-0.634-0.437-1.128-0.899-1.498-1.352-0.205-0.251-0.317-0.427-0.35-0.493l-2.202 1.101z"></path>
+<path
+d="M6.024 25.781c0.033-0.066 0.145-0.242 0.35-0.493 0.37-0.453 0.864-0.915 1.498-1.352 1.882-1.298 4.536-2.090 8.128-2.090s6.247 0.792 8.128 2.090c0.634 0.437 1.128 0.899 1.498 1.352 0.205 0.251 0.317 0.427 0.35 0.493l2.202-1.101c-0.376-0.753-1.215-1.779-2.652-2.77-2.301-1.587-5.444-2.525-9.526-2.525s-7.225 0.938-9.526 2.525c-1.438 0.991-2.276 2.018-2.652 2.77l2.202 1.101z"></path>
+</symbol>
+<symbol
+id="icon-cart" viewBox="0 0 37 32"><title>cart</title>
+<path
+d="M14.3 31.062c-2.233 0-4.044-1.811-4.044-4.044s1.811-4.044 4.044-4.044c2.233 0 4.044 1.811 4.044 4.044s-1.811 4.044-4.044 4.044zM14.3 28.601c0.874 0 1.582-0.708 1.582-1.582s-0.708-1.582-1.582-1.582c-0.874 0-1.582 0.708-1.582 1.582s0.708 1.582 1.582 1.582z"></path>
+<path
+d="M25.553 31.062c-2.233 0-4.044-1.811-4.044-4.044s1.811-4.044 4.044-4.044c2.233 0 4.044 1.811 4.044 4.044s-1.811 4.044-4.044 4.044zM25.553 28.601c0.874 0 1.582-0.708 1.582-1.582s-0.708-1.582-1.582-1.582c-0.874 0-1.582 0.708-1.582 1.582s0.708 1.582 1.582 1.582z"></path>
+<path
+d="M17.114 28.249h5.626v-2.462h-5.626z"></path>
+<path
+d="M8.467 2.462l1.792 24.646 2.455-0.179-1.958-26.929h-9.9v2.462z"></path>
+<path
+d="M32.911 6.212l-2.723 11.671-19.255 1.343 0.171 2.456 21.068-1.47 3.841-16.461h-25.932v2.462z"></path>
+</symbol>
+<symbol
+id="icon-rotate" viewBox="0 0 23 32"><title>rotate</title>
+<path
+d="M0 16c0 5.861 4.747 11.429 10.286 11.429h4.571v-2.286h-4.571c-4.188 0-8-4.47-8-9.143h-2.286z"></path>
+<path
+d="M10.514 30.171l1.829 1.371 3.429-4.571v-1.371l-3.429-4.571-1.829 1.371 2.914 3.886z"></path>
+<path
+d="M22.857 16c0-5.861-4.747-11.429-10.286-11.429h-4.571v2.286h4.571c4.188 0 8 4.47 8 9.143h2.286z"></path>
+<path
+d="M12.343 1.829l-1.829-1.371-3.429 4.571v1.371l3.429 4.571 1.829-1.371-2.914-3.886z"></path>
+</symbol>
+<symbol
+id="icon-star" viewBox="0 0 34 32"><title>star</title>
+<path
+d="M15.929 23.105c0.513-0.335 1.176-0.33 1.685 0.012l5.628 3.791-1.853-6.692c-0.176-0.634 0.076-1.309 0.623-1.674l4.955-3.304h-5.634c-0.635 0-1.204-0.394-1.427-0.989l-3.092-8.245-2.861 8.211c-0.213 0.612-0.791 1.022-1.439 1.022h-5.958l4.955 3.304c0.559 0.373 0.808 1.068 0.613 1.711l-2.021 6.657 5.825-3.804zM16.749 26.209l-8.487 5.543c-1.191 0.778-2.705-0.357-2.291-1.718l2.909-9.584-8.201-5.468c-1.254-0.836-0.662-2.792 0.845-2.792h9.908l3.891-11.168c0.469-1.346 2.365-1.369 2.866-0.034l4.201 11.202h9.611c1.508 0 2.1 1.955 0.845 2.792l-8.225 5.484 2.659 9.604c0.378 1.364-1.146 2.461-2.32 1.67l-8.21-5.531z"></path>
+</symbol>
+<symbol
+id="icon-edit" viewBox="0 0 32 32"><title>edit</title>
+<path
+d="M2.772 22.009l21.228-21.228 7.219 7.219-21.228 21.228-9.024 1.805 1.805-9.024zM4.366 27.634l4.31-0.862 18.772-18.772-3.448-3.448-18.772 18.772-0.862 4.31z"></path>
+<path
+d="M26.276 11.057l-5.333-5.333-1.886 1.886 5.333 5.333z"></path>
+</symbol>
+<symbol
+id="icon-equalizer" viewBox="0 0 16 16">
+<path
+d="M7 2v-0.25c0-0.413-0.338-0.75-0.75-0.75h-2.5c-0.413 0-0.75 0.337-0.75 0.75v0.25h-3v2h3v0.25c0 0.412 0.337 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h9v-2h-9zM4 4v-2h2v2h-2zM13 6.75c0-0.412-0.338-0.75-0.75-0.75h-2.5c-0.412 0-0.75 0.338-0.75 0.75v0.25h-9v2h9v0.25c0 0.412 0.338 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h3v-2h-3v-0.25zM10 9v-2h2v2h-2zM7 11.75c0-0.412-0.338-0.75-0.75-0.75h-2.5c-0.413 0-0.75 0.338-0.75 0.75v0.25h-3v2h3v0.25c0 0.412 0.337 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h9v-2h-9v-0.25zM4 14v-2h2v2h-2z"></path>
+</symbol>
+<symbol
+id="icon-arrow-top" viewBox="0 0 32 32"><title>arrow-top</title>
+<path
+d="M16 3.278l11.27 11.27 2.185-2.185-12.363-12.363h-2.185l-12.363 12.363 2.185 2.185z"></path>
+<path
+d="M14.455 1.093v30.907h3.091v-30.907z"></path>
+</symbol>
+<symbol
+id="icon-arrow-right" viewBox="0 0 32 32"><title>arrow-right</title>
+<path
+d="M28.722 16l-11.27 11.27 2.185 2.185 12.363-12.363v-2.185l-12.363-12.363-2.185 2.185z"></path>
+<path
+d="M30.907 14.455h-30.907v3.091h30.907z"></path>
+</symbol>
+<symbol
+id="icon-arrow-left" viewBox="0 0 32 32"><title>arrow-left</title>
+<path
+d="M3.278 16l11.27 11.27-2.185 2.185-12.363-12.363v-2.185l12.363-12.363 2.185 2.185z"></path>
+<path
+d="M1.093 14.455h30.907v3.091h-30.907z"></path>
+</symbol>
+<symbol
+id="icon-arrow-bottom" viewBox="0 0 32 32"><title>arrow-bottom</title>
+<path
+d="M16 28.722l11.27-11.27 2.185 2.185-12.363 12.363h-2.185l-12.363-12.363 2.185-2.185z"></path>
+<path
+d="M14.455 30.907v-30.907h3.091v30.907z"></path>
+</symbol>
+<symbol
+id="icon-check" viewBox="0 0 47 32"><title>check</title>
+<path
+d="M17.067 26.85l-13.425-13.425-3.017 3.017 14.933 14.933h3.017l27.733-27.733-3.017-3.017z"></path>
+</symbol>
+<symbol
+id="icon-search" viewBox="0 0 32 32"><title>search</title>
+<path
+d="M11.2 22.4c-6.186 0-11.2-5.014-11.2-11.2s5.014-11.2 11.2-11.2c6.186 0 11.2 5.014 11.2 11.2s-5.014 11.2-11.2 11.2zM11.2 19.2c4.418 0 8-3.582 8-8s-3.582-8-8-8c-4.418 0-8 3.582-8 8s3.582 8 8 8z"></path>
+<path
+d="M16.469 18.731l12.8 12.8 2.263-2.263-12.8-12.8z"></path>
+</symbol>
+<symbol
+id="icon-close" viewBox="0 0 32 32"><title>close</title>
+<path
+d="M31.414 28.586l-28-28-2.828 2.828 28 28z"></path>
+<path
+d="M3.414 31.414l28-28-2.828-2.828-28 28z"></path>
+</symbol>
+<symbol
+id="icon-square" viewBox="0 0 32 32"><title>square</title>
+<path
+d="M2.909 2.909v26.182h26.182v-26.182h-26.182zM32 0v32h-32v-32h32z"></path>
+</symbol>
+<symbol
+id="icon-speaker-up" viewBox="0 0 28 32"><title>speaker-up</title>
+<path
+d="M2.133 11.947v8.107h4.495l6.172 6.171v-20.45l-6.171 6.171h-4.495zM5.745 22.187h-5.745v-12.373h5.745l9.188-9.188v30.75l-9.188-9.188z"></path>
+<path
+d="M17.28 21.333c2.945 0 5.333-2.388 5.333-5.333s-2.388-5.333-5.333-5.333v2.133c1.767 0 3.2 1.433 3.2 3.2s-1.433 3.2-3.2 3.2v2.133z"></path>
+<path
+d="M17.28 8.533c4.124 0 7.467 3.343 7.467 7.467s-3.343 7.467-7.467 7.467v2.133c5.302 0 9.6-4.298 9.6-9.6s-4.298-9.6-9.6-9.6v2.133z"></path>
+</symbol>
+<symbol
+id="icon-speaker-mute" viewBox="0 0 27 32"><title>speaker-mute</title>
+<path
+d="M2.133 11.947v8.107h4.495l6.172 6.171v-20.45l-6.171 6.171h-4.495zM5.745 22.187h-5.745v-12.373h5.745l9.188-9.188v30.75l-9.188-9.188z"></path>
+<path
+d="M16.526 12.914l7.68 7.68 1.509-1.509-7.68-7.68z"></path>
+<path
+d="M18.034 20.594l7.68-7.68-1.509-1.508-7.68 7.68z"></path>
+</symbol>
+<symbol
+id="icon-return" viewBox="0 0 49 32"><title>return</title>
+<path
+d="M45.176 3.765v14.895h-43.294v3.765h47.059v-22.425h-12.685v3.765z"></path>
+<path
+d="M12.052 13.034l-2.662-2.662-8.839 8.839v2.662l8.839 8.839 2.662-2.662-7.508-7.508z"></path>
+</symbol>
+<symbol
+id="icon-play" viewBox="0 0 21 32"><title>play</title>
+<path
+d="M2.667 4.077v23.847l15.175-11.923-15.175-11.923zM2.157 0.285l18.667 14.667v2.097l-18.667 14.667-2.157-1.048v-29.333l2.157-1.048z"></path>
+</symbol>
+<symbol
+id="icon-pause" viewBox="0 0 27 32"><title>pause</title>
+<path
+d="M0 0v32h3.556v-32z"></path>
+<path
+d="M23.111 0v32h3.556v-32z"></path>
+</symbol>
+<symbol
+id="icon-love" viewBox="0 0 35 32"><title>love</title>
+<path
+d="M17.6 4.291c1.72-2.586 4.66-4.291 8-4.291 5.564 0 9.6 4.173 9.6 9.6 0 5.24-3.235 10.201-8.552 14.809-1.812 1.57-3.747 2.989-5.681 4.236-0.678 0.437-1.308 0.821-1.875 1.151-0.345 0.201-0.597 0.34-0.738 0.416l-0.753 0.402-0.753-0.402c-0.142-0.076-0.393-0.215-0.738-0.416-0.568-0.33-1.198-0.714-1.875-1.151-1.935-1.247-3.869-2.666-5.681-4.236-5.317-4.608-8.552-9.569-8.552-14.809 0-5.427 4.036-9.6 9.6-9.6 3.34 0 6.28 1.704 8 4.291zM19.233 25.955c1.815-1.17 3.631-2.501 5.319-3.964 4.683-4.059 7.448-8.298 7.448-12.391 0-3.683-2.627-6.4-6.4-6.4-3.536 0-6.4 2.864-6.4 6.4h-3.2c0-3.536-2.864-6.4-6.4-6.4-3.773 0-6.4 2.717-6.4 6.4 0 4.092 2.765 8.332 7.448 12.391 1.688 1.463 3.503 2.794 5.319 3.964 0.589 0.379 1.137 0.716 1.633 1.006 0.496-0.291 1.045-0.627 1.633-1.006z"></path>
+</symbol>
+<symbol
+id="icon-maple-leaf" viewBox="0 0 310 310">
+<path
+d="m 154.99433,0 -25.06359,46.7528 c -2.844,5.08126 -7.93959,4.60996 -13.03517,1.77192 l -18.14538,-9.39723 13.52402,71.81132 c 2.844,13.11953 -6.28082,13.11953 -10.78395,7.44687 L 69.82305,82.93015 64.68194,100.93531 c -0.59287,2.36446 -3.19957,4.84789 -7.11025,4.25649 l -40.04353,-8.42033 10.51769,38.24325 c 2.25156,8.50956 4.00782,12.03281 -2.27304,14.27716 L 11.5,156.00092 80.43236,211.99997 c 2.72839,2.11737 4.10687,5.92775 3.13555,9.37778 l -6.03305,19.8011 c 23.73443,-2.73623 45.00085,-6.85284 68.74731,-9.38813 2.09632,-0.22382 5.60582,3.23618 5.59142,5.66585 L 148.72882,310 l 11.5398,0 -1.81651,-72.38785 c -0.0145,-2.42967 3.16938,-6.04525 5.26571,-5.82143 23.74645,2.5353 45.0129,6.6519 68.74732,9.38813 l -6.03303,-19.8011 c -0.97132,-3.45003 0.40715,-7.26041 3.13554,-9.37778 L 298.5,156.00092 284.2272,149.29188 c -6.28088,-2.24435 -4.52461,-5.7676 -2.27305,-14.27716 l 10.51772,-38.24325 -40.04357,8.42033 c -3.91067,0.5914 -6.51737,-1.89203 -7.11026,-4.25649 l -5.1411,-18.00516 -31.6672,35.45553 c -4.50314,5.67266 -13.62798,5.67266 -10.78397,-7.44687 l 13.524,-71.81132 -18.14534,9.39723 c -5.09571,2.83804 -10.19117,3.30934 -13.03518,-1.77192"/>
+</symbol>
+<symbol
+id="icon-chevron-down" viewBox="0 0 24 24">
+<path
+d="M7.406 8.578l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z"></path>
+</symbol>
+<symbol
+id="icon-spinner" viewBox="0 0 16 16">
+<path
+d="M8 16c-2.137 0-4.146-0.832-5.657-2.343s-2.343-3.52-2.343-5.657c0-1.513 0.425-2.986 1.228-4.261 0.781-1.239 1.885-2.24 3.193-2.895l0.672 1.341c-1.063 0.533-1.961 1.347-2.596 2.354-0.652 1.034-0.997 2.231-0.997 3.461 0 3.584 2.916 6.5 6.5 6.5s6.5-2.916 6.5-6.5c0-1.23-0.345-2.426-0.997-3.461-0.635-1.008-1.533-1.822-2.596-2.354l0.672-1.341c1.308 0.655 2.412 1.656 3.193 2.895 0.803 1.274 1.228 2.748 1.228 4.261 0 2.137-0.832 4.146-2.343 5.657s-3.52 2.343-5.657 2.343z"></path>
+</symbol>
+</defs>
+</svg><div
+class="a-siteWrapper"><header
+class="o-siteHeader -blurredBg"><div
+class="o-siteHeader__siteWidth"><div
+class="o-siteHeader__contents"><a
+href="https://www.ijm.org/" class="o-siteHeader__logo -blue" title="IJM USA"><figure
+class="m-ijmLogo -landscape " ><div
+class="m-ijmLogo__wrap">
+<svg
+class="m-ijmLogo__graphic" viewBox="0 0 19.73 19.102">
+<use
+xlink:href="#icon-logo--graphic"></use>
+</svg>
+<svg
+class="m-ijmLogo__text" viewBox="0 0 4.953 2.55">
+<use
+xlink:href="#icon-logo--text"></use>
+</svg></div></figure></a><a
+href="#main" class="a-skipLink">Skip to content</a><button
+class="o-siteHeader__menuButton jsMainNavToggle" title="Toggle menu">
+<svg
+class="icon icon--menu" viewBox="0 0 36 26">
+<path
+class="top line" d="M0 0h36v2h-36z"></path>
+<path
+class="mid line" d="M0 12h36v2h-36z"></path>
+<path
+class="bot line" d="M0 24h36v2h-36z"></path>
+</svg>
+</button></div><nav
+class="o-siteHeader__nav -right jsMainNav"><ul
+class="m-mainMenu jsMainMenu"><li
+class="m-mainMenu__item -regular">
+<button
+type="button" class="m-mainMenu__link a-mainMenuLink jsSubMenuToggle" aria-label="View More">Our Work 	<svg
+class="icon icon-chevron-down  -suffix -menuIcon">
+<use
+xlink:href="#icon-chevron-down"></use>
+</svg>
+</button><ul
+class="m-mainMenu__subMenu m-subMenu"><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/our-work" class=" " >Our Work</a></li><li
+class="m-subMenu__divider -dividerThinWide"><hr></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/our-work/trafficking-slavery" class=" " >Trafficking &amp; Slavery</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/our-work/violence-women-children" class=" " >Violence Against Women and Children</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/stories" class=" active" >Stories of Rescue</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/studies" class=" " >Studies</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/public-policy" class=" " >Public Policy</a></li></ul></li><li
+class="m-mainMenu__item -regular">
+<button
+type="button" class="m-mainMenu__link a-mainMenuLink jsSubMenuToggle" aria-label="View More">Get Involved 	<svg
+class="icon icon-chevron-down  -suffix -menuIcon">
+<use
+xlink:href="#icon-chevron-down"></use>
+</svg>
+</button><ul
+class="m-mainMenu__subMenu m-subMenu"><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/get-involved" class=" " >Get Involved</a></li><li
+class="m-subMenu__divider -dividerThinWide"><hr></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/get-involved/churches" class=" " >Churches</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/get-involved/volunteer" class=" " >Volunteer</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/get-involved/advocacy" class=" " >Advocacy</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/get-involved/students" class=" " >Students</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/get-involved/pray" class=" " >Pray</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/get-involved/interns-fellows" class=" " >Interns and Fellows</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/get-involved/start-fundraiser" class=" " >Start a Fundraiser</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/leverage-workplace-force-for-good" class=" " >Workplace</a></li></ul></li><li
+class="m-mainMenu__item -regular">
+<button
+type="button" class="m-mainMenu__link a-mainMenuLink jsSubMenuToggle" aria-label="View More">About IJM 	<svg
+class="icon icon-chevron-down  -suffix -menuIcon">
+<use
+xlink:href="#icon-chevron-down"></use>
+</svg>
+</button><ul
+class="m-mainMenu__subMenu m-subMenu"><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/about-ijm" class=" " >About IJM</a></li><li
+class="m-subMenu__divider -dividerThinWide"><hr></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/leadership/global" class=" " >Leadership</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/2023-year-in-review" class=" " >2023 Year in Review</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/institutional-partners" class=" " >Institutional Partners</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/financials" class=" " >Financials</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/contact-us" class=" " >Contact Us</a></li></ul></li><li
+class="m-mainMenu__item -regular -isGiveMenuRoot">
+<a
+class="m-mainMenu__link a-mainMenuLink a-button -red1 -splitLeft jsDrawerInit" href="https://www.ijm.org/give" data-id="0">Give Now</a>
+<button
+type="button" class="m-mainMenu__arrow a-mainMenuArrow jsSubMenuToggle a-button -red1 -splitRight -iconOnly" aria-label="View More">	<svg
+class="icon icon-chevron-down  -suffix -menuIcon">
+<use
+xlink:href="#icon-chevron-down"></use>
+</svg>
+</button><ul
+class="m-mainMenu__subMenu m-subMenu"><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/give/main-single-form" class=" " >Single Gift</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/give/freedom-partner" class=" " >Monthly Gift (Freedom Partner)</a></li><li
+class="m-subMenu__item -typeVerbb\navigation\nodetypes\CustomType -styleRegular">
+<a
+href="https://gifts.ijm.org/" class=" " >Gift Catalog</a></li><li
+class="m-subMenu__item -typeVerbb\navigation\nodetypes\CustomType -styleRegular">
+<a
+href="https://legacy.ijm.org/" class=" "  target="_blank" rel="noopener">Planned Giving</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/donor-advised-funds" class=" " >Donor-Advised Funds</a></li><li
+class="m-subMenu__item -typeCraft\elements\Entry -styleRegular">
+<a
+href="https://www.ijm.org/give" class=" " >More Ways to Give</a></li></ul></li><li
+class="m-mainMenu__item -regular">
+<a
+class="m-mainMenu__link a-mainMenuLink a-mainMenuLink__top" href="https://ijm.force.com/IJMPortal/s/login/" rel="noopener" target="_blank">Sign In</a></li></ul><div
+class="o-siteHeader__socials m-socials">
+<a
+href="https://twitter.com/ijm" class="m-socials__item" title="IJM Twitter" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-twitter">
+<use
+xlink:href="#icon-twitter"></use>
+</svg>
+</a>
+<a
+href="https://www.instagram.com/ijm/" class="m-socials__item" title="IJM Instagram" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-instagram">
+<use
+xlink:href="#icon-instagram"></use>
+</svg>
+</a>
+<a
+href="https://www.facebook.com/InternationalJusticeMission/" class="m-socials__item" title="IJM Facebook" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-facebook">
+<use
+xlink:href="#icon-facebook"></use>
+</svg>
+</a>
+<a
+href="https://www.youtube.com/IJM" class="m-socials__item" title="IJM Youtube" >
+<svg
+class="m-socials__ico icon icon-youtube">
+<use
+xlink:href="#icon-youtube"></use>
+</svg>
+</a>
+<a
+href="https://www.linkedin.com/company/international-justice-mission/" class="m-socials__item" title="IJM LinkedIn" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-linkedin">
+<use
+xlink:href="#icon-linkedin"></use>
+</svg>
+</a>
+<a
+href="/feed.rss" class="m-socials__item" title="IJM RSS" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-rss">
+<use
+xlink:href="#icon-rss"></use>
+</svg>
+</a></div></nav></div></header><main
+id="main" class="template-none jsMain" tabindex="-1"><div
+class="lightbox jsLightbox stick-bottom-right" data-number="1"><div
+class="lightbox__mask jsLightboxClose"></div><div
+class="lightbox__content">
+<button
+type="button" class="lightbox__close jsLightboxClose" aria-label="Close">
+<svg
+class="icon icon-close">
+<use
+xlink:href="#icon-close"></use>
+</svg>
+</button><div
+class="lightbox__media jsLightboxMedia"></div></div></div><header
+id="hero-1066520" class="o-basicHero -small--floatingCta -large--floatingCta  o-basicHero--overlayType--solidColor has-floatingCta"><style>#hero-1066520__content{grid-column:1/13}@media (min-width:1024px){#hero-1066520__content{grid-column:2/12}}#hero-1066520__content{text-align:center}#hero-1066520__bg{--heroOverlayColor:#000;--heroOverlayAlpha:.3}</style><div
+id="hero-1066520__bg" class="o-basicHero__bg"><div
+class="bg__video"><video
+id="video-1066520" class="jsAutoplayVideo"  poster="https://ijmstoragelive.blob.core.windows.net/ijmna/images/web2-home-hero-1.jpg" playsinline  muted loop>					<source
+src="https://ijmstoragelive.blob.core.windows.net/ijmna/videos/V3-Web2.0-H.264-Saturation-Boost-Test-2_2022-09-28-025412_yksc.mp4" type="video/mp4"></video>
+<button
+type="button" class="video__playButton jsVideoToggleButton" data-video="video-1066520">
+<svg
+class="icon icon-play ">
+<use
+xlink:href="#icon-play"></use>
+</svg>
+<span>Play</span>
+</button></div><picture>
+<source
+type="image/webp" srcset="https://ijmstoragelive.blob.core.windows.net/ijmna/images/_320x413_crop_center-center_none_ns/792036/web2-home-hero-2.webp 320w, https://ijmstoragelive.blob.core.windows.net/ijmna/images/_640x826_crop_center-center_none_ns/792036/web2-home-hero-2.webp 640w, https://ijmstoragelive.blob.core.windows.net/ijmna/images/_1280x1652_crop_center-center_none_ns/792036/web2-home-hero-2.webp 1280w, https://ijmstoragelive.blob.core.windows.net/ijmna/images/_1920x2478_crop_center-center_none_ns/792036/web2-home-hero-2.webp 1920w, https://ijmstoragelive.blob.core.windows.net/ijmna/images/_2560x3304_crop_center-center_none_ns/792036/web2-home-hero-2.webp 2560w" width="640" height="826" sizes="100vw">
+<source
+type="image/jpeg" srcset="https://ijmstoragelive.blob.core.windows.net/ijmna/images/_320x413_crop_center-center_none_ns/web2-home-hero-2.jpg 320w, https://ijmstoragelive.blob.core.windows.net/ijmna/images/_640x826_crop_center-center_none_ns/web2-home-hero-2.jpg 640w, https://ijmstoragelive.blob.core.windows.net/ijmna/images/_1280x1652_crop_center-center_none_ns/web2-home-hero-2.jpg 1280w, https://ijmstoragelive.blob.core.windows.net/ijmna/images/_1920x2478_crop_center-center_none_ns/web2-home-hero-2.jpg 1920w, https://ijmstoragelive.blob.core.windows.net/ijmna/images/_2560x3304_crop_center-center_none_ns/web2-home-hero-2.jpg 2560w" width="640" height="826" sizes="100vw">
+<img
+class="o-basicHero__bgImg" src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/_1280xAUTO_crop_center-center_none_ns/web2-home-hero-2.jpg" width="100%" height="auto" alt="Web2 home hero 2">
+</picture></div><div
+class="o-basicHero__grid box box--content box--padding"><div
+id="hero-1066520__content" class="o-basicHero__content"><h1 class="o-basicHero__heading -font--default heading--default"><style>.o-basicHero__heading{--underlineColor:}</style><span>Today, millions of people live unprotected from modern slavery and abuse.</span></h1><div
+class="o-basicHero__subHeading txt--bigger heading--">
+<span>Together, we can change that.</span></div></div></div><style>.o-basicHero__grid{padding-top:50px;padding-bottom:50px}.o-basicHero__buttonRow .btn-clean{padding-left:1%}.floatingCta__content .o-basicHero__subHeading{margin:10px 0}.floatingCta__image img{object-position:left bottom}</style><section
+class="o-basicHero__floatingCta"><div
+class="floatingCta__content"><h1 class="o-basicHero__heading -font--reader heading--third heading--black"><style>.o-basicHero__heading{--underlineColor:}</style><span>Celebrate a Mom by Restoring Mothers in Need</span></h1><div
+class="o-basicHero__subHeading txt--bigger heading--">
+<span>Gifts that help rescue are now available in our 2024 Spring Gift Catalog.</span></div><div
+class="o-basicHero__buttonRow">
+<a
+href="https://gifts.ijm.org/?v=web-ijm-hp-banner-2024-sgc-mothersday-USEWWM24P1" id="home-cta-primary" class=" btn  btn--standard  btn--primary btn--rounded btn--red1 "   ><span
+class="btn__inner ">
+give gifts that renew
+</span></a></div></div><div><figure
+class="floatingCta__image"><picture><source
+srcset="https://ijmstoragelive.blob.core.windows.net/ijmna/images/_600xAUTO_crop_center-center_none_ns/Mothers-Day_Homepage_Hero_2x.jpg" width="600" height="432" media="(min-width: 1024px)"><source
+srcset="https://ijmstoragelive.blob.core.windows.net/ijmna/images/_600xAUTO_crop_center-center_none_ns/Mothers-Day_Homepage_Hero_2x.jpg" width="600" height="432"><img
+src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/_600xAUTO_crop_center-center_none_ns/Mothers-Day_Homepage_Hero_2x.jpg" alt="Mothers Day Homepage Hero 2x" class="o-basicHero__image">
+</picture></figure></div></section></header><style>:root{--firstBlockBgColor:#edfaff}</style><section
+id="block-794002" class="lazy block block--container pt-medium pb-medium -textColorBlack" style="background-color: #edfaff;"><section
+id="block-794003" class="block block--heading mt-none" style="color: #0079c1;"><div
+class="row box box--content"><div
+class="column 	medium-8 large-6 medium-offset-2 large-offset-3"><h5 class="heading  -align--center">THE PROBLEM</h5></div></div></section><section
+id="block-794004" class="block block--heading mt-small"><div
+class="row box box--content"><div
+class="column 	medium-8 large-6 medium-offset-2 large-offset-3"><h2 class="heading  -align--center">Right now, children, women and men are being <span
+class="half-white">enslaved, abused and exploited.</span></h2></div></div></section><section
+id="block-794005" class="block block--text mt-ex-small"><div
+class="align-center row box box--content article-txt"><div
+class="column 	medium-8 large-6 medium-offset-2 large-offset-3 txt txt--center box txt--regular box--padding"><div
+class="txt--special"><p>People living in poverty are uniquely vulnerable because local justice systems are not equipped to protect them. Every day, they are at risk of brutal violence like <a
+href="https://www.ijm.org/our-work/trafficking-slavery"><strong>trafficking & slavery</strong></a>, <a
+href="https://www.ijm.org/our-work/violence-women-children"><strong>violence against women & children</strong></a>, and <a
+href="https://www.ijm.org/our-work/police-abuse-power"><strong>police abuse of power</strong></a>.</p></div></div></div></section><section
+id="block-794006" class="block block--buttons mt-ex-small   " ><div
+class="box row box--padding"><div
+class="column txt--center large-12"><div
+class="hero__buttons">
+<a
+href="https://www.ijm.org/our-work"  class=" btn  btn--standard  btn--primary btn--rounded btn--blue "   ><span
+class="btn__inner ">
+learn more
+<span
+class="sr-only"> about this article</span></span></a></div></div></div></section></section><section
+id="block-794008" class="block block--heading mt-medium" style="color: #0079c1;"><div
+class="row box box--content"><div
+class="column 	medium-8 large-6 medium-offset-2 large-offset-3"><h5 class="heading  -align--center">Until all are safe and free</h5></div></div></section><section
+id="block-794009" class="block block--heading mt-small"><div
+class="row box box--content"><div
+class="column 	medium-10 large-8 medium-offset-1 large-offset-2"><h2 class="heading  -align--center">We partner with local justice systems around the world to build safe communities, where all are protected from violence and slavery.</h2></div></div></section><section
+id="block-794010" class="block block--heading mt-medium" style="color: #0079c1;"><div
+class="row box box--content"><div
+class="column 	medium-8 large-6 medium-offset-2 large-offset-3"><h3 class="heading  -align--center">Here’s How We Do It:</h3></div></div></section><section
+id="block-794011" class="block block--code mt-medium"><div
+class=""><div
+class=" 	large-12 "><section
+id="three-circles-637537" class="block block--cards mt-medium"><div
+class="circles box box--content"><div
+class="carousel box"><div
+class="row align-center"><div
+class="column large-8"><div
+class="card-flex"><div
+class="small-12 column large-6"><div
+class="carousel-item"><div
+class="carousel-item__img"><img
+src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/icons/Icon_Strengthen_Justice_Systems.svg"
+loading="lazy" alt="Icon Strengthen Justice Systems"></div><div
+class="carousel-item__content"><h4 class="heading heading--fifth heading--left heading--medium heading--dark">
+Strengthen Justice Systems</h4><div
+class="txt txt--regular txt--left" style="color: ;"><p>We partner with police, judges and community leaders to respond to violence. Then work together to make safe communities that last.</p></div></div></div></div><div
+class="small-12 column large-6"><div
+class="carousel-item"><div
+class="carousel-item__img"><img
+src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/icons/Icon_Rescue_restore.svg"
+loading="lazy" class="carousel-item__img" alt="Icon Rescue restore"></div><div
+class="carousel-item__content"><h4 class="heading heading--fifth heading--left heading--medium heading--dark">
+Rescue and Restore Victims</h4><div
+class="txt txt--regular txt--left" style="color: ;"><p>We partner with local authorities to rescue victims of violence and restore survivors until they can thrive in freedom.</p></div></div></div></div><div
+class="small-12 column large-6"><div
+class="carousel-item"><div
+class="carousel-item__img"><img
+src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/icons/Icon_Bring_Criminal_To_Justice.svg"
+loading="lazy" class="carousel-item__img" alt="Icon Bring Criminal To Justice"></div><div
+class="carousel-item__content"><h4 class="heading heading--fifth heading--left heading--medium heading--dark">Bring
+Criminals to Justice</h4><div
+class="txt txt--regular txt--left" style="color: ;"><p>We advocate for our clients in court until the people who trafficked and abused them can no longer exploit, enslave or abuse another person again.</p></div></div></div></div><div
+class="small-12 column large-6"><div
+class="carousel-item"><div
+class="carousel-item__img"><img
+src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/icons/Icon_Scale_Demand_For_Protection.svg"
+loading="lazy" class="carousel-item__img" alt="Icon Scale Demand For Protection"></div><div
+class="carousel-item__content"><h4 class="heading heading--fifth heading--left heading--medium heading--dark">Scale
+Demand for Protection</h4><div
+class="txt txt--regular txt--left" style="color: ;"><p>We equip champions everywhere to advocate for a safer, more just world for everyone.</p></div></div></div></div></div></div></div></div></div></section></div></div></section><section
+id="block-794012" class="block block--buttons mt-medium   " ><div
+class="box row box--padding"><div
+class="column txt--center large-12"><div
+class="hero__buttons">
+<a
+href="#giving"  class=" btn  btn--standard  btn--primary btn--rounded btn--red1 "   ><span
+class="btn__inner ">
+give now
+</span></a>
+<a
+href="https://www.ijm.org/about-ijm"  class=" btn  btn--ico btn-clean btn-clean--blue btn-clean--txt-blue "   ><span
+class="btn__inner ">
+learn more about ijm
+</span><svg
+class="btn__ico btn-clean__ico icon icon-arrow-long-right"><use
+xlink:href="#icon-arrow-long-right"></use></svg></a></div></div></div></section><section
+id="block-794015" class="block block--code mt-medium"><div
+class=""><div
+class=" 	large-12 "><section
+id="homepage__fp--block" class="block block--text"><style>#homepage__fp--block .content-width{text-align:left;background-color:#ffba43;max-width:1200px;display:flex;flex-flow:row wrap;color:#000;padding:0;margin-left:auto;margin-right:auto}#homepage__fp--block{background:linear-gradient(to top,#0a1733 50%,transparent 50%)}@media screen and (max-width:768px){#homepage__fp--block .content-width{flex-flow:column wrap;padding:0;text-align:center}}</style><div
+class="content-width"><div
+style="flex: 2; align-self: stretch; min-height:200px; display:flex; flex-flow: column; justify-content: center; background-image: url(https://ijmstoragelive.blob.core.windows.net/ijmna/images/2022-convene__card-1-rescue-victims_2022-04-28-181353_ixtf_2022-05-31-160340_gqum.jpg); background-size: cover;"></div><div
+style="flex: 3; padding:5%;"><h2><img
+style="width: 25px;" src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/freedom-partner-blue.png"> Send Rescue and Protection Monthly</h2><p
+style="line-height: 24px; margin-top:30px; margin-bottom: 40px;">Together, we can bring justice to everyone everywhere. Will you send rescue and protection month after month until everyone is free from violence and slavery?</p><a
+href="https://www.ijm.org/give/freedom-partner"
+class="btn  btn--standard  btn--primary btn--rounded btn--darkblue ">
+<span
+class="btn__inner">Become a Freedom Partner</span>
+</a></div></div></section></div></div></section><section
+id="block-794016" class="lazy block block--container mt-none pt-medium pb-ex-large -textColorWhite" style="background-color: #0a1733;"><section
+id="block-794017" class="block block--heading mt-ex-small" style="color: #0079c1;"><div
+class="row box box--content"><div
+class="column 	medium-8 large-6 medium-offset-2 large-offset-3"><h5 class="heading  -align--center">Get Involved</h5></div></div></section><section
+id="block-794018" class="block block--heading mt-small"><div
+class="row box box--content"><div
+class="column 	medium-8 large-6 medium-offset-2 large-offset-3"><h2 class="heading  -align--center">Looking to dive deeper into our work of justice?</h2></div></div></section><section
+id="get-involved-button" class="block block--buttons mt-ex-small   " ><div
+class="box row box--padding"><div
+class="column txt--center large-12"><div
+class="hero__buttons">
+<a
+href="https://www.ijm.org/get-involved"  class=" btn  btn--standard  btn--primary btn--rounded btn--blue "   ><span
+class="btn__inner ">
+get involved
+</span></a></div></div></div></section><section
+id="block-794021" class="block block--code mt-medium"><div
+class=""><div
+class=" 	large-12 "><section
+id="homepage__engage--block" class="block block--text"><style>#homepage__engage--block .content-width{text-align:left;background-color:#0a1733;max-width:1200px;display:flex;flex-flow:row wrap;color:#fff;padding:0;margin-left:auto;margin-right:auto;column-gap:40px}#homepage__engage--block a{color:unset}#homepage__engage--block h3{display:flex;flex-flow:row;align-items:center;column-gap:10px;margin-bottom:5px}#homepage__engage--block h3:hover span{background:linear-gradient(to top,#0a1733 50%,transparent 50%)}#homepage__engage--block h3:hover svg{fill:#fff}#homepage__engage--block h3 svg{fill:#0a1733}@media screen and (max-width:768px){#homepage__engage--block .content-width{flex-flow:column-reverse wrap;padding:0;text-align:center}}</style><div
+class="content-width"><div
+style="flex: 2; padding:5%; background-color: #0079C1;"><a
+href="https://www.ijm.org/get-involved/interns-fellows"><h3><span>Interns & Fellows</span><svg
+class="btn__ico btn-clean__ico icon icon-arrow-long-right"><use
+xlink:href="#icon-arrow-long-right"></use></svg></h3></a><a
+href="https://www.ijm.org/get-involved/volunteer"><h3><span>Volunteer</span><svg
+class="btn__ico btn-clean__ico icon icon-arrow-long-right"><use
+xlink:href="#icon-arrow-long-right"></use></svg></h3></a><a
+href="https://www.ijm.org/get-involved/churches"><h3><span>Churches</span><svg
+class="btn__ico btn-clean__ico icon icon-arrow-long-right"><use
+xlink:href="#icon-arrow-long-right"></use></svg></h3></a><a
+href="https://www.ijm.org/advocacy"><h3><span>Advocacy</span><svg
+class="btn__ico btn-clean__ico icon icon-arrow-long-right"><use
+xlink:href="#icon-arrow-long-right"></use></svg></h3></a><a
+href="https://www.ijm.org/get-involved/students"><h3><span>Students</span><svg
+class="btn__ico btn-clean__ico icon icon-arrow-long-right"><use
+xlink:href="#icon-arrow-long-right"></use></svg></h3></a><a
+href="https://www.ijm.org/get-involved/start-fundraiser"><h3><span>Fundraise</span><svg
+class="btn__ico btn-clean__ico icon icon-arrow-long-right"><use
+xlink:href="#icon-arrow-long-right"></use></svg></h3></a></div><div
+style="flex: 4; align-self: stretch; min-height:200px; display:flex; flex-flow: column; justify-content: center; background-image: url(https://ijmstoragelive.blob.core.windows.net/ijmna/images/web2_homepage-engage.jpg); background-size: cover;"></div></div></section></div></div></section></section><section
+id="block-794022" class="block block--code mt-medium"><div
+class="row box box--content"><div
+class="column 	medium-8 large-6 medium-offset-2 large-offset-3"><style>h5{font-size:16px !important;font-weight:700 !important;letter-spacing:3px !important;text-transform:uppercase !important}h2{display:inline-block !important}.half-white{background:linear-gradient(to top,#fff 50%,transparent 50%)}#get-involved-button a span{color:#fff}.carousel-story__content h5{color:#0079c1}.card-flex .carousel-item{gap:40px}.carousel-item__img{display:flex;justify-content:center;background-color:#fff}.carousel-item__img img{width:70%}.carousel-item__content{text-align:left}.carousel-item__content>h4{color:#0079c1}@media screen and (min-width:1024px){.block--cards>div>div>div>div.large-8{max-width:100%}.card-flex .carousel-item{flex-flow:row;align-items:flex-start}.carousel-item__content{margin-top:0}}</style></div></div></section><section
+class=""><div
+id="popup_301821" class="lightbox-hide"><aside
+class="wrap element" data-src="popup_301821" data-type="form"><div
+id="popup-form-wrapper"><div
+class="banner-popup -headingLeft -image--header" return="" data-id="popup_301821"><header
+class="popup-image">
+<picture><source
+type="image/webp" srcset="/imager/7bc0ee636b3b83484fc3b9348863bd22/301789/form-popup-image-desktop__W576_Mcrop_Q80_P100-100__681a6204dc.webp 576w, /imager/7bc0ee636b3b83484fc3b9348863bd22/301789/form-popup-image-desktop__W768_Mcrop_Q80_P100-100__8ade23ed9c.webp 734w"><source
+type="image/jpeg" srcset="/imager/7bc0ee636b3b83484fc3b9348863bd22/301789/form-popup-image-desktop__W576_Mcrop_Q80_P100-100__681a6204dc.jpg 576w, /imager/7bc0ee636b3b83484fc3b9348863bd22/301789/form-popup-image-desktop__W768_Mcrop_Q80_P100-100__8ade23ed9c.jpg 734w"><img
+src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27160%27%20height%3D%271%27%20style%3D%27background%3Atransparent%27%2F%3E"  alt="Form popup image desktop" class="desktop-image"></picture>
+<picture><source
+type="image/webp" srcset="/imager/7bc0ee636b3b83484fc3b9348863bd22/301791/mobile-popup-1__W576_Mcrop_Q80_P100-100__e0127223ab.webp 375w"><source
+type="image/jpeg" srcset="/imager/7bc0ee636b3b83484fc3b9348863bd22/301791/mobile-popup-1__W576_Mcrop_Q80_P100-100__e0127223ab.jpg 375w"><img
+src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27160%27%20height%3D%271%27%20style%3D%27background%3Atransparent%27%2F%3E"  alt="Mobile popup 1" class="mobile-image"></picture><h2 class="popup--heading heading--blue" id="heading-form-part-1">Want more stories of rescue?</h2></header><div
+class="popup-content"><div
+id="content-form-part-1"><p>Sign up for IJM emails to get stories from the field, hear about events in your area and learn how you can make an impact.</p><section
+class="banner-popup-form" data-id="popup_301821"><form
+method="post" id="form-51" class="freeform jsFreeform" data-formscroll="0" data-freeform data-id="d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA" data-handle="popupNewsletter" data-ajax data-disable-submit data-success-message="Form has been submitted successfully!" data-error-message="Sorry, there was an error submitting the form. Please try again." data-honeypot data-honeypot-name="freeform_form_handle_6b9778" data-honeypot-value="bb78ae02a" >
+<input
+class name="hiddenOn" type="hidden" id="form-input-hiddenOn" value="1"/><input
+class name="hiddenOff" type="hidden" id="form-input-hiddenOff" value="0"/><input
+class name="hiddenWebForm" type="hidden" id="form-input-hiddenWebForm" value="Get Updates Popup"/><input
+class name="hiddenOwnerId" type="hidden" id="form-input-hiddenOwnerId" value="005o0000000WJVvAAO"/><div
+class="freeform_form_handle_6b9778" style="position: absolute !important; width: 0 !important; height: 0 !important; overflow: hidden !important;" aria-hidden="true" tabindex="-1"><label
+aria-hidden="true" tabindex="-1" for="freeform_form_handle_6b9778">Leave this field blank</label><input
+type="text" value="610fd9" name="freeform_form_handle_6b9778" id="freeform_form_handle_6b9778" aria-hidden="true" autocomplete="off" tabindex="-1" /></div><input
+type="hidden" name="freeform_payload" value="xdfZHjuc4JZ60pxKfjDsKjZjYzY1YzI2MThiYmJlMDdiNjUxZjRjOWJkNTQ1YWJjZjVjNzEzN2QwZmRkZTZmZDQyOGFlMzQwZGE0MWI2MmRk6iH4m3ra6A4lYKn10H5F8PjJ043vK8CFkZhbZ56Ws3hvjDuschsHmpv/kQqTHClUx5W8zkPaioLn8J9Dp1u6MRvwOTr1AmvIEcN/ISpIosGYulkLLrQWsbqXDs280hfl2mJbQ+fUmMBxVNGW8wvHU2yEk3ZM4J/f5iyw7BpQ5kGtonAVvv+7YcpYayEkBXpgQz2lvvpeaEoEvej2r2z6VRLU8/xaQvYXkSOtpg3+3rQfx9mpo68DoyrkwHRJOl/zJTTuAJolQx/XoCAPpmac28yk6/pT9L0nMHcHSjesTFlTbEfHiNAG0i/DPAiPsdtLOKHVLc+O4/yHcpG1Psa6CgKsd6ljzdQsimQqcPpettxn3obbqUQmvwecFCStO8nkVyEIINLRwVRKZsR3JiQPzrNePEQRqzEUG1nv20AXxM+Q9Ek3oqAOMDyvyuADiOmTBPkMOvLtDKa/DE5ICbwpPRGuVDKrgUarm96+fXAK/irydxx4Dqc6kH04MTCV2NgTIyL+UHqCUbhs2oTem1Z3+8GpGGjEFWDImmSI8+NZH7fhRwqIMuP60mKkr4iSdmRGrm8vpmEzO3BZqlaV1uW62N2nDTBhY+iClZgN/3gKY1ohie6E8I2c9MPZf5LIATNbD1LQ/7vIYILSPnT2/CbDzRAxFoCL8UpxEIf8rTFxTa7kW5l/nTRgymkHceUSoUk=" />
+<input
+type="hidden" name="formHash" value="e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA" /><div
+id="d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA" data-scroll-anchor style="display: none;"></div>
+<input
+type="hidden" name="action" value="freeform/submit" />
+<input
+type="hidden" name="freeform-action" value="submit" />
+<input
+type="hidden" name="CRAFT_CSRF_TOKEN" value="WQvmvneW8PkuH3vFjCbI4ZXleSjNF9hZLJz5nQZNFW6xiy6xuEaJYypHleEn4LKxHHALgvt5jrLt0BxR-kGWIEvGoft0GTgY2Pwd3N4szwQ=" /> <script>if(typeof(formsQueries)==="undefined"){var formsQueries={};}
+formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]={};formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]['form']=document.querySelector('[data-id="d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]');if(formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]['form']){formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]["xhttp"]=new XMLHttpRequest();formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]["xhttp"].onreadystatechange=function(){if(this.readyState==4&&this.status==200){var response=JSON.parse(this.responseText);formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]['form'].querySelector('input[name=formHash]').value=response.hash;var csrf=response.csrf;formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]["returnUrl"]=response.returnUrl;formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]['form'].querySelector('input[name='+csrf.name+']').value=csrf.value;}};formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]["xhttp"].open("GET","/dynamic/refresh-tokens?form=popupNewsletter&_="+new Date().getTime(),true);formsQueries["d362b0-form-e8ga9Dg3P-1d4gKbVax-ugLNvU6kjpDeaeWdZSpz4IdhrByOwSycDhZs7niA"]["xhttp"].send();}</script> <div
+class="form">
+<input
+type="hidden" name="fm-type" value="page-first"><div
+class="row "><div
+class="form__group  medium-6 columns"><div
+class="input"><div
+class="input-wrap">
+<input
+name="firstName" id="firstName-popupNewsletter" type="text" class="forum-add__title jsInput" value="" maxlength="" placeholder="First Name " aria-label="First Name" oninput="copyInputValue(this.value, 'page-last-firstName')"></div>
+<span
+class="form__error"></span></div></div><div
+class="form__group  medium-6 columns"><div
+class="input"><div
+class="input-wrap">
+<input
+name="lastName" id="lastName-popupNewsletter" type="text" class="forum-add__title jsInput" value="" maxlength="" placeholder="Last Name " aria-label="Last Name" oninput="copyInputValue(this.value, 'page-last-lastName')"></div>
+<span
+class="form__error"></span></div></div></div><div
+class="row "><div
+class="form__group  medium-12 columns"><div
+class="input"><div
+class="input-wrap">
+<input
+name="email" id="email-popupNewsletter" type="text" class="forum-add__title jsInput" placeholder="Email " aria-label="Email" oninput="copyInputValue(this.value, 'page-last-email')" /></div>
+<span
+class="form__error"></span></div></div></div><div
+class="row "><div
+class="form__group  medium-6 columns"><div
+class="input input-select freeze"><div
+class="input-wrap">
+<select
+id="country-popupNewsletter" name="country" class="forum-add__title jsInput" aria-label="Country"><option
+value="Afghanistan">Afghanistan</option><option
+value="Aland Islands">Aland Islands</option><option
+value="Albania">Albania</option><option
+value="Algeria">Algeria</option><option
+value="American Samoa">American Samoa</option><option
+value="Andorra">Andorra</option><option
+value="Angola">Angola</option><option
+value="Anguilla">Anguilla</option><option
+value="Antarctica">Antarctica</option><option
+value="Antigua and Barbuda">Antigua and Barbuda</option><option
+value="Argentina">Argentina</option><option
+value="Armenia">Armenia</option><option
+value="Aruba">Aruba</option><option
+value="Australia">Australia</option><option
+value="Austria">Austria</option><option
+value="Azerbaijan">Azerbaijan</option><option
+value="Bahamas">Bahamas</option><option
+value="Bahrain">Bahrain</option><option
+value="Bangladesh">Bangladesh</option><option
+value="Barbados">Barbados</option><option
+value="Belarus">Belarus</option><option
+value="Belgium">Belgium</option><option
+value="Belize">Belize</option><option
+value="Benin">Benin</option><option
+value="Bermuda">Bermuda</option><option
+value="Bhutan">Bhutan</option><option
+value="Bolivia">Bolivia</option><option
+value="Bonaire, Saint Eustatius and Saba ">Bonaire, Saint Eustatius and Saba</option><option
+value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option
+value="Botswana">Botswana</option><option
+value="Bouvet Island">Bouvet Island</option><option
+value="Brazil">Brazil</option><option
+value="British Indian Ocean Territory">British Indian Ocean Territory</option><option
+value="British Virgin Islands">British Virgin Islands</option><option
+value="Brunei">Brunei</option><option
+value="Bulgaria">Bulgaria</option><option
+value="Burkina Faso">Burkina Faso</option><option
+value="Burundi">Burundi</option><option
+value="Cambodia">Cambodia</option><option
+value="Cameroon">Cameroon</option><option
+value="Canada">Canada</option><option
+value="Cape Verde">Cape Verde</option><option
+value="Cayman Islands">Cayman Islands</option><option
+value="Central African Republic">Central African Republic</option><option
+value="Chad">Chad</option><option
+value="Chile">Chile</option><option
+value="China">China</option><option
+value="Christmas Island">Christmas Island</option><option
+value="Cocos Islands">Cocos Islands</option><option
+value="Colombia">Colombia</option><option
+value="Comoros">Comoros</option><option
+value="Cook Islands">Cook Islands</option><option
+value="Costa Rica">Costa Rica</option><option
+value="Croatia">Croatia</option><option
+value="Cuba">Cuba</option><option
+value="Curacao">Curacao</option><option
+value="Cyprus">Cyprus</option><option
+value="Czech Republic">Czech Republic</option><option
+value="Democratic Republic of the Congo">Democratic Republic of the Congo</option><option
+value="Denmark">Denmark</option><option
+value="Djibouti">Djibouti</option><option
+value="Dominica">Dominica</option><option
+value="Dominican Republic">Dominican Republic</option><option
+value="East Timor">East Timor</option><option
+value="Ecuador">Ecuador</option><option
+value="Egypt">Egypt</option><option
+value="El Salvador">El Salvador</option><option
+value="Equatorial Guinea">Equatorial Guinea</option><option
+value="Eritrea">Eritrea</option><option
+value="Estonia">Estonia</option><option
+value="Ethiopia">Ethiopia</option><option
+value="Falkland Islands">Falkland Islands</option><option
+value="Faroe Islands">Faroe Islands</option><option
+value="Fiji">Fiji</option><option
+value="Finland">Finland</option><option
+value="France">France</option><option
+value="French Guiana">French Guiana</option><option
+value="French Polynesia">French Polynesia</option><option
+value="French Southern Territories">French Southern Territories</option><option
+value="Gabon">Gabon</option><option
+value="Gambia">Gambia</option><option
+value="Georgia">Georgia</option><option
+value="Germany">Germany</option><option
+value="Ghana">Ghana</option><option
+value="Gibraltar">Gibraltar</option><option
+value="Greece">Greece</option><option
+value="Greenland">Greenland</option><option
+value="Grenada">Grenada</option><option
+value="Guadeloupe">Guadeloupe</option><option
+value="Guam">Guam</option><option
+value="Guatemala">Guatemala</option><option
+value="Guernsey">Guernsey</option><option
+value="Guinea">Guinea</option><option
+value="Guinea-Bissau">Guinea-Bissau</option><option
+value="Guyana">Guyana</option><option
+value="Haiti">Haiti</option><option
+value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option><option
+value="Honduras">Honduras</option><option
+value="Hong Kong">Hong Kong</option><option
+value="Hungary">Hungary</option><option
+value="Iceland">Iceland</option><option
+value="India">India</option><option
+value="Indonesia">Indonesia</option><option
+value="Iran">Iran</option><option
+value="Iraq">Iraq</option><option
+value="Ireland">Ireland</option><option
+value="Isle of Man">Isle of Man</option><option
+value="Israel">Israel</option><option
+value="Italy">Italy</option><option
+value="Ivory Coast">Ivory Coast</option><option
+value="Jamaica">Jamaica</option><option
+value="Japan">Japan</option><option
+value="Jersey">Jersey</option><option
+value="Jordan">Jordan</option><option
+value="Kazakhstan">Kazakhstan</option><option
+value="Kenya">Kenya</option><option
+value="Kiribati">Kiribati</option><option
+value="Kosovo">Kosovo</option><option
+value="Kuwait">Kuwait</option><option
+value="Kyrgyzstan">Kyrgyzstan</option><option
+value="Laos">Laos</option><option
+value="Latvia">Latvia</option><option
+value="Lebanon">Lebanon</option><option
+value="Lesotho">Lesotho</option><option
+value="Liberia">Liberia</option><option
+value="Libya">Libya</option><option
+value="Liechtenstein">Liechtenstein</option><option
+value="Lithuania">Lithuania</option><option
+value="Luxembourg">Luxembourg</option><option
+value="Macao">Macao</option><option
+value="Macedonia">Macedonia</option><option
+value="Madagascar">Madagascar</option><option
+value="Malawi">Malawi</option><option
+value="Malaysia">Malaysia</option><option
+value="Maldives">Maldives</option><option
+value="Mali">Mali</option><option
+value="Malta">Malta</option><option
+value="Marshall Islands">Marshall Islands</option><option
+value="Martinique">Martinique</option><option
+value="Mauritania">Mauritania</option><option
+value="Mauritius">Mauritius</option><option
+value="Mayotte">Mayotte</option><option
+value="Mexico">Mexico</option><option
+value="Micronesia">Micronesia</option><option
+value="Moldova">Moldova</option><option
+value="Monaco">Monaco</option><option
+value="Mongolia">Mongolia</option><option
+value="Montenegro">Montenegro</option><option
+value="Montserrat">Montserrat</option><option
+value="Morocco">Morocco</option><option
+value="Mozambique">Mozambique</option><option
+value="Myanmar">Myanmar</option><option
+value="Namibia">Namibia</option><option
+value="Nauru">Nauru</option><option
+value="Nepal">Nepal</option><option
+value="Netherlands">Netherlands</option><option
+value="New Caledonia">New Caledonia</option><option
+value="New Zealand">New Zealand</option><option
+value="Nicaragua">Nicaragua</option><option
+value="Niger">Niger</option><option
+value="Nigeria">Nigeria</option><option
+value="Niue">Niue</option><option
+value="Norfolk Island">Norfolk Island</option><option
+value="North Korea">North Korea</option><option
+value="Northern Mariana Islands">Northern Mariana Islands</option><option
+value="Norway">Norway</option><option
+value="Oman">Oman</option><option
+value="Pakistan">Pakistan</option><option
+value="Palau">Palau</option><option
+value="Palestinian Territory">Palestinian Territory</option><option
+value="Panama">Panama</option><option
+value="Papua New Guinea">Papua New Guinea</option><option
+value="Paraguay">Paraguay</option><option
+value="Peru">Peru</option><option
+value="Philippines">Philippines</option><option
+value="Pitcairn">Pitcairn</option><option
+value="Poland">Poland</option><option
+value="Portugal">Portugal</option><option
+value="Puerto Rico">Puerto Rico</option><option
+value="Qatar">Qatar</option><option
+value="Republic of the Congo">Republic of the Congo</option><option
+value="Reunion">Reunion</option><option
+value="Romania">Romania</option><option
+value="Russia">Russia</option><option
+value="Rwanda">Rwanda</option><option
+value="Saint Barthelemy">Saint Barthelemy</option><option
+value="Saint Helena">Saint Helena</option><option
+value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option
+value="Saint Lucia">Saint Lucia</option><option
+value="Saint Martin">Saint Martin</option><option
+value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option><option
+value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option
+value="Samoa">Samoa</option><option
+value="San Marino">San Marino</option><option
+value="Sao Tome and Principe">Sao Tome and Principe</option><option
+value="Saudi Arabia">Saudi Arabia</option><option
+value="Senegal">Senegal</option><option
+value="Serbia">Serbia</option><option
+value="Seychelles">Seychelles</option><option
+value="Sierra Leone">Sierra Leone</option><option
+value="Singapore">Singapore</option><option
+value="Sint Maarten">Sint Maarten</option><option
+value="Slovakia">Slovakia</option><option
+value="Slovenia">Slovenia</option><option
+value="Solomon Islands">Solomon Islands</option><option
+value="Somalia">Somalia</option><option
+value="South Africa">South Africa</option><option
+value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option><option
+value="South Korea">South Korea</option><option
+value="South Sudan">South Sudan</option><option
+value="Spain">Spain</option><option
+value="Sri Lanka">Sri Lanka</option><option
+value="Sudan">Sudan</option><option
+value="Suriname">Suriname</option><option
+value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option><option
+value="Swaziland">Swaziland</option><option
+value="Sweden">Sweden</option><option
+value="Switzerland">Switzerland</option><option
+value="Syria">Syria</option><option
+value="Taiwan">Taiwan</option><option
+value="Tajikistan">Tajikistan</option><option
+value="Tanzania">Tanzania</option><option
+value="Thailand">Thailand</option><option
+value="Togo">Togo</option><option
+value="Tokelau">Tokelau</option><option
+value="Tonga">Tonga</option><option
+value="Trinidad and Tobago">Trinidad and Tobago</option><option
+value="Tunisia">Tunisia</option><option
+value="Turkey">Turkey</option><option
+value="Turkmenistan">Turkmenistan</option><option
+value="Turks and Caicos Islands">Turks and Caicos Islands</option><option
+value="Tuvalu">Tuvalu</option><option
+value="U.S. Virgin Islands">U.S. Virgin Islands</option><option
+value="Uganda">Uganda</option><option
+value="Ukraine">Ukraine</option><option
+value="United Arab Emirates">United Arab Emirates</option><option
+value="United Kingdom">United Kingdom</option><option
+value="United States" selected>United States</option><option
+value="United States Minor Outlying Islands">United States Minor Outlying Islands</option><option
+value="Uruguay">Uruguay</option><option
+value="Uzbekistan">Uzbekistan</option><option
+value="Vanuatu">Vanuatu</option><option
+value="Vatican">Vatican</option><option
+value="Venezuela">Venezuela</option><option
+value="Vietnam">Vietnam</option><option
+value="Wallis and Futuna">Wallis and Futuna</option><option
+value="Western Sahara">Western Sahara</option><option
+value="Yemen">Yemen</option><option
+value="Zambia">Zambia</option><option
+value="Zimbabwe">Zimbabwe</option>
+</select></div>
+<span
+class="form__error"></span></div></div><div
+class="form__group  medium-6 columns"><div
+class="input"><div
+class="input-wrap">
+<input
+name="zipCode" id="zipCode-popupNewsletter" type="text" class="forum-add__title jsInput" value="" maxlength="" placeholder="Zip/Postal Code " aria-label="Zip Code" /></div>
+<span
+class="form__error"></span></div></div></div><div
+class="row "><div
+class="form__group  medium-12 columns button-container">
+<button
+type="submit" class="btn btn--standard btn--blue btn--primary inverse btn--rounded">
+<span
+class="btn__inner">Get Our Emails</span>
+</button></div></div></div></form> <script>function copyInputValue(value,fieldName){document.getElementById(fieldName).value=value;}</script> </section><div
+class="form__group medium-12 footer-txt"><p>IJM cares about your privacy. Read our <a
+href="https://www.ijm.org/policies" target="_blank" rel="noreferrer noopener">privacy policy</a>.</p></div></div><div
+id="content-form-part-2" style="display: none;"><h2 class="popup--heading heading--blue">Thank you for signing up for our emails!</h2><p><strong>Would you also like:</strong></p><section
+class="banner-popup-form" data-id="popup_301821"><form
+method="post" id="form-52" class="freeform jsFreeform" data-formscroll="0" data-freeform data-id="01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz" data-handle="popupNewsletter2" data-ajax data-disable-submit data-success-message="Form has been submitted successfully!" data-error-message="Sorry, there was an error submitting the form. Please try again." data-honeypot data-honeypot-name="freeform_form_handle_282fc4" data-honeypot-value="13be8ee7a" >
+<input
+class name="hiddenOn" type="hidden" id="form-input-hiddenOn" value="1"/><input
+class name="hiddenWebForm" type="hidden" id="form-input-hiddenWebForm" value="Get Updates Popup 2"/><input
+class name="hiddenOwnerId" type="hidden" id="form-input-hiddenOwnerId" value="005o0000000WJVvAAO"/><div
+class="freeform_form_handle_282fc4" style="position: absolute !important; width: 0 !important; height: 0 !important; overflow: hidden !important;" aria-hidden="true" tabindex="-1"><label
+aria-hidden="true" tabindex="-1" for="freeform_form_handle_282fc4">Leave this field blank</label><input
+type="text" value="f914fa" name="freeform_form_handle_282fc4" id="freeform_form_handle_282fc4" aria-hidden="true" autocomplete="off" tabindex="-1" /></div><input
+type="hidden" name="freeform_payload" value="pechEB+p90GekODJrT2NfTI5ZWE5YzI5NWQ1MmViMDVjZGEzMTkwNWRlOTkxYjQ2ZWMzNTM0YmQ2NTVlYWMyODIxZGQwMzNlOGIxOGE4NTLkDeMzOCJfJ3D/Sz0Qr4IPOhuLZyDWnd4w8IX5e51CHUmyp1rpnf9wIyBT+Eq19Nd6UUbjL37+iYgzhkGDTe/z8PI9NaRHq8tqYV64UtSuQi8CgtlA0rzhBTnKlU+VEkqPR9p+sinnXllH8/eVmbYcnLUIlrn1erYmGQPb6rYhmV3d15f09gFr1bCidXFcmBWkfNJn8gOYOaGS2iQAeVzgR0Wic9QTl9//52z+rtr2/93e8hpkWxr8N6mRT+DoWfWwVZ3t0nLo/c5GY+GwG7MzgMGTZglyDfb8B+TikaTT/kIzzpfkyTFSxVIovZWA1PVokEt2MoLkHLd32mhv/LTk1shVQoXj0L9o/UI4TEGcg4YeZF/vMXoFojoixLa66URwe0u3WXaGeHv++dmySsujxApDH9w0q2ZEUDCGhh9COAMPr+VMETjC1X7ARXrTTCj/ceWxJvRSU7utZ+Aa4NVHnouWaB9WfnzPxj/XKdeswhmVMhCb1Q3HNdvMXgJZ1v9rMdzXScTMqxDNyrInJwvNzkLr2m/31fEb1melzcTFl+Cx69uxWUjt0mnGda0Nbst5sJWIW5ZE4rzK2DPsi1pSbqSfYrzHne4COB0jGlPYVbtPaosKelJcXERLxVNJK6FDdo9mKaXYjai/0rI8NWNP1G3i+HtgGxMothkXwSbHhkKhjq51cOaIyF0/x2cZWwo=" />
+<input
+type="hidden" name="formHash" value="ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz" /><div
+id="01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz" data-scroll-anchor style="display: none;"></div>
+<input
+type="hidden" name="action" value="freeform/submit" />
+<input
+type="hidden" name="freeform-action" value="submit" />
+<input
+type="hidden" name="CRAFT_CSRF_TOKEN" value="WQvmvneW8PkuH3vFjCbI4ZXleSjNF9hZLJz5nQZNFW6xiy6xuEaJYypHleEn4LKxHHALgvt5jrLt0BxR-kGWIEvGoft0GTgY2Pwd3N4szwQ=" /> <script>if(typeof(formsQueries)==="undefined"){var formsQueries={};}
+formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]={};formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]['form']=document.querySelector('[data-id="01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]');if(formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]['form']){formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]["xhttp"]=new XMLHttpRequest();formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]["xhttp"].onreadystatechange=function(){if(this.readyState==4&&this.status==200){var response=JSON.parse(this.responseText);formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]['form'].querySelector('input[name=formHash]').value=response.hash;var csrf=response.csrf;formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]["returnUrl"]=response.returnUrl;formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]['form'].querySelector('input[name='+csrf.name+']').value=csrf.value;}};formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]["xhttp"].open("GET","/dynamic/refresh-tokens?form=popupNewsletter2&_="+new Date().getTime(),true);formsQueries["01d895-form-ROWv2ZWlL-QGMPJaKr3-tzkqc951rzMfPIaQ9Q8jxPZ4xtlZVMUuUnqByyKz"]["xhttp"].send();}</script> <div
+class="form">
+<input
+type="hidden" name="fm-type" value="page-last"><div
+class="row ">
+<input
+type="hidden" name="firstName" id="page-last-firstName" aria-label="First Name" value="">
+<span
+class="form__error"></span>
+<input
+type="hidden" name="lastName" id="page-last-lastName" aria-label="Last Name" value="">
+<span
+class="form__error"></span></div><div
+class="row ">
+<input
+type="hidden" name="email" id="page-last-email" aria-label="Email" value="">
+<span
+class="form__error"></span></div><div
+class="row "><div
+class="form__group  medium-12 columns"><div
+class="input">
+<input
+type="hidden" name="weeklyPrayerUpdates" value="No">
+<label
+class="toggle-checkbox">
+Weekly Prayer Partner Updates
+<input
+type="checkbox" name="weeklyPrayerUpdates" value="Yes">
+<span
+class="checkmark"></span>
+</label></div></div></div><div
+class="row "><div
+class="form__group  medium-12 columns button-container">
+<button
+type="submit" class="btn btn--standard btn--blue btn--primary inverse btn--rounded">
+<span
+class="btn__inner">Subscribe</span>
+</button></div></div></div></form> <script>function copyInputValue(value,fieldName){document.getElementById(fieldName).value=value;}</script> </section></div></div></div></div><div
+id="popup-thank-you-wrapper" class="home-popup-height" style="display: none;"><div
+class="banner-popup -headingLeft  mobile-absolute" return="" data-id="popup_301821"><header
+class="popup-image">
+<picture><source
+type="image/webp" srcset="/imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W576_Mcrop_Q80_P100-100__b2b6185d64.webp 576w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W768_Mcrop_Q80_P100-100__7483ab7fbb.webp 768w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W992_Mcrop_Q80_P100-100__7705c568f6.webp 992w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W1080_Mcrop_Q80_P100-100__f37ec6237e.webp 1024w"><source
+type="image/jpeg" srcset="/imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W576_Mcrop_Q80_P100-100__b2b6185d64.jpg 576w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W768_Mcrop_Q80_P100-100__7483ab7fbb.jpg 768w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W992_Mcrop_Q80_P100-100__7705c568f6.jpg 992w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W1080_Mcrop_Q80_P100-100__f37ec6237e.jpg 1024w"><img
+src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27160%27%20height%3D%271%27%20style%3D%27background%3Atransparent%27%2F%3E"  alt="White bg" class="desktop-image newsletter-popup-height"></picture>
+<picture><source
+type="image/webp" srcset="/imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W576_Mcrop_Q80_P100-100__b2b6185d64.webp 576w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W768_Mcrop_Q80_P100-100__7483ab7fbb.webp 768w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W992_Mcrop_Q80_P100-100__7705c568f6.webp 992w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W1080_Mcrop_Q80_P100-100__f37ec6237e.webp 1024w"><source
+type="image/jpeg" srcset="/imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W576_Mcrop_Q80_P100-100__b2b6185d64.jpg 576w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W768_Mcrop_Q80_P100-100__7483ab7fbb.jpg 768w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W992_Mcrop_Q80_P100-100__7705c568f6.jpg 992w, /imager/7bc0ee636b3b83484fc3b9348863bd22/993516/white_bg__W1080_Mcrop_Q80_P100-100__f37ec6237e.jpg 1024w"><img
+src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27160%27%20height%3D%271%27%20style%3D%27background%3Atransparent%27%2F%3E"  alt="White bg" class="mobile-image newsletter-popup-height"></picture></header><div
+class="popup-content"><h2 class="popup--heading heading--blue">Thank you, and welcome!</h2><p
+class="txt text-large"><p>We're excited to have you with us.</p></p></div></div></div></aside></div></section>
+<a
+href="javascript:;" id="btn_popup_301821" data-src="popup_301821" data-type="form" class="jsLightboxInit" style="display: none;"></a> <script type="text/javascript">let showOnSmallScreens=false;let	tabletAndUp=window.matchMedia('(min-width: 640px)');function setCookie(cname,cvalue,exdays){var d=new Date();d.setTime(d.getTime()+(exdays*24*60*60*1000));var expires="expires="+d.toUTCString();document.cookie=cname+"="+cvalue+";"+expires+";path=/";}</script> <script type="text/javascript">document.addEventListener("DOMContentLoaded",function(event){setTimeout(function()
+{if(showOnSmallScreens||tabletAndUp.matches)
+{if(!document.querySelector('body').classList.contains('state-drawer-open'))
+{document.getElementById("btn_popup_301821").click();}
+else
+{}}},6000);});</script> </main><footer
+id="page-footer" class="o-footer"><div
+class="o-footer__logo"><figure
+class="m-ijmLogo -landscape  -blue"  style="--logo__width: 150px;"><div
+class="m-ijmLogo__wrap">
+<svg
+class="m-ijmLogo__graphic" viewBox="0 0 19.73 19.102">
+<use
+xlink:href="#icon-logo--graphic"></use>
+</svg>
+<svg
+class="m-ijmLogo__text" viewBox="0 0 4.953 2.55">
+<use
+xlink:href="#icon-logo--text"></use>
+</svg></div></figure></div><nav
+class="o-footer__sitemap o-sitemap -footer"><ul ><li ><a
+href="https://www.ijm.org/careers">
+Careers
+</a></li><li ><a
+href="https://www.ijm.org/news-media">
+News &amp; Media
+</a></li><li ><a
+href="https://www.ijm.org/policies">
+Policies
+</a></li><li ><a
+href="https://www.ijm.org/frequently-asked-questions">
+FAQs
+</a></li><li ><a
+href="https://www.ijm.org/contact-us">
+Contact Us
+</a></li><li ><a
+href="https://www.ijm.org/sign-up-email">
+Sign up for Email
+</a></li></ul></nav><div
+class="o-footer__copyright"><p>&copy; 1997&ndash;2024 International Justice Mission</p><p>* A pseudonym</p></div><div
+class="o-footer__search-socials"><div
+class="m-search jsSearchPanel">
+<button
+type="button" class="jsSearchToggle m-search__loupe" for="footer__search-input" aria-label="Show search field">
+<svg
+class="icon icon-search">
+<use
+xlink:href="#icon-search"></use>
+</svg>
+</button><div
+class="m-search__content"><form
+action="/search" class="m-search__module">
+<label
+for="footer__search-input" class="sr-only">Search</label>
+<input
+id="footer__search-input" class="m-search__input jsSearchInput" placeholder="Search" name="q" type="search" required />
+<button
+type="submit" class="m-search__submit jsSearchSubmit" aria-label="Search globally">
+<svg
+class="m-search__arrow icon icon-arrow-long-right">
+<use
+xlink:href="#icon-arrow-long-right"></use>
+</svg>
+</button></form></div></div><div
+class="m-socials -circled">
+<a
+href="https://twitter.com/ijm" class="m-socials__item" title="IJM Twitter" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-twitter">
+<use
+xlink:href="#icon-twitter"></use>
+</svg>
+<svg
+class="m-socials__ico -copy icon icon-twitter">
+<use
+xlink:href="#icon-twitter"></use>
+</svg>
+</a>
+<a
+href="https://www.instagram.com/ijm/" class="m-socials__item" title="IJM Instagram" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-instagram">
+<use
+xlink:href="#icon-instagram"></use>
+</svg>
+<svg
+class="m-socials__ico -copy icon icon-instagram">
+<use
+xlink:href="#icon-instagram"></use>
+</svg>
+</a>
+<a
+href="https://www.facebook.com/InternationalJusticeMission/" class="m-socials__item" title="IJM Facebook" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-facebook">
+<use
+xlink:href="#icon-facebook"></use>
+</svg>
+<svg
+class="m-socials__ico -copy icon icon-facebook">
+<use
+xlink:href="#icon-facebook"></use>
+</svg>
+</a>
+<a
+href="https://www.youtube.com/IJM" class="m-socials__item" title="IJM Youtube" >
+<svg
+class="m-socials__ico icon icon-youtube">
+<use
+xlink:href="#icon-youtube"></use>
+</svg>
+<svg
+class="m-socials__ico -copy icon icon-youtube">
+<use
+xlink:href="#icon-youtube"></use>
+</svg>
+</a>
+<a
+href="https://www.linkedin.com/company/international-justice-mission/" class="m-socials__item" title="IJM LinkedIn" target="_blank" rel="noopener">
+<svg
+class="m-socials__ico icon icon-linkedin">
+<use
+xlink:href="#icon-linkedin"></use>
+</svg>
+<svg
+class="m-socials__ico -copy icon icon-linkedin">
+<use
+xlink:href="#icon-linkedin"></use>
+</svg>
+</a></div></div></footer><style>:root{--mobileDonateButtonHeight:60px}@media (min-width:1024px){:root{--mobileDonateButtonHeight:0px}}</style><div
+class="mobile-drop"><div
+class="mobile-drop__mask drop-mask"></div><div
+class="btn-special">
+<button
+data-id="0" class="btn-special__modal jsDrawerInit" aria-label="Trigger Popup">
+<span
+class="btn__inner js-typed-mobile"></span>
+</button>
+<button
+data-drop="0" class="btn-special__drop jsDropInit" aria-label="Open More Options">
+<svg
+class="btn-special__ico icon icon-arrow-simple-bottom">
+<use
+xlink:href="#icon-arrow-simple-bottom"></use>
+</svg>
+</button></div><div
+data-drop="0" class="drop drop--mobile jsDrop"><div
+data-drop="0" class="drop__mask jsDropClose"></div><div
+class="drop__body"><div
+class="drop__wrap">
+<a
+href="https://www.ijm.org/give/main-single-form" class="drop__item drop__link   -typeEntry -styleRegular" >
+Single Gift
+</a>
+<a
+href="https://www.ijm.org/give/freedom-partner" class="drop__item drop__link   -typeEntry -styleRegular" >
+Monthly Gift (Freedom Partner)
+</a>
+<a
+href="https://gifts.ijm.org/" class="drop__item drop__link   -typeCustomURL -styleRegular" >
+Gift Catalog
+</a>
+<a
+href="https://legacy.ijm.org/" class="drop__item drop__link   -typeCustomURL -styleRegular"  target="_blank" rel="noopener">
+Planned Giving
+</a>
+<a
+href="https://www.ijm.org/donor-advised-funds" class="drop__item drop__link   -typeEntry -styleRegular" >
+Donor-Advised Funds
+</a>
+<a
+href="https://www.ijm.org/give" class="drop__item drop__link   -typeEntry -styleRegular" >
+More Ways to Give
+</a></div></div></div></div><div
+id="drawer-team" data-id="team-drawer" class="drawer drawer--light jsDrawer"><div
+class="drawer__wrap drawer__wrap--ajax jsDrawerWrap"><div
+class="drawer__head"><div
+data-id="team-drawer" class="drawer__close jsDrawerClose">
+<svg
+class="drawer__ico icon icon-close">
+<use
+xlink:href="#icon-close"></use>
+</svg></div></div><div
+id="ajax-drawer-content" class="drawer__body"></div></div></div><div
+id="drawer-team-mask" data-id="team-drawer" class="drawer-mask jsDrawerMask jsDrawerClose"></div><aside
+data-id="0" id="giving" class="drawer drawer--light jsDrawer"><section
+id="ajax-response" style="display: none"><div
+class="content"><div
+id="ajax-loading"><div
+id="ajax-processing"><div
+class="ajax-content"><div
+class="spinner"></div><p>Processing</p><p
+class="quotes">Thank you! Please wait while we process your donation.</p></div></div><div
+id="ajax-message" style="display: none;"></div><div
+id="ajax-close" style="display: none;">
+<a
+href="#">Close</a></div></div></div></section><div
+class="drawer__wrap jsDonate jsDrawerWrap "
+><div
+class="drawer__head">
+<button
+type="button" data-id="0" class="drawer__close jsDrawerClose" aria-label="Close Drawer">
+<svg
+class="drawer__ico icon icon-close">
+<use
+xlink:href="#icon-close"></use>
+</svg>
+</button></div><div
+class="drawer__body"><section
+id="donation-form__672133" data-ns="ns__sidebar__672133__" class="donationFormContainer jsDonationFormContainer"><form
+id="sidebar-donation-form-1" method="post" action="/make-gift/donate.php" accept-charset="UTF-8" enctype="multipart/form-data" class="donationForm jsDonationForm sidebar-donation-form"
+data-form-location="sidebar"
+data-show-single="true"
+data-show-monthly="true"
+data-show-annual="false"
+data-default-recurrence="single"
+data-min-single="5"
+data-min-monthly="5"
+data-min-annual="5"
+data-in-honor-of="1"
+><section
+class="overlay jsOverlay" role="dialog" aria-labelledby="ns__sidebar__672133__overlay__title" aria-describedby="ns__sidebar__672133__overlay__text"><h1 id="ns__sidebar__672133__overlay__title" class="overlay__heading jsOverlayHeading">Thank you!</h1><p
+id="ns__sidebar__672133__overlay__text" class="overlay__text jsOverlayText">Please wait while we process your donation.</p>
+<label
+for="ns__sidebar__672133__overlay__progressBar" class="progressLabel jsOverlayProgressLabel">Processing</label>
+<progress
+id="ns__sidebar__672133__overlay__progressBar" class="progressBar jsOverlayProgressBar" max="4" value="0"></progress>
+<button
+type="button" class="overlay__close jsOverlayClose">Close</button></section><div
+class="hiddenFields jsHiddenFields"></div><div
+class="recurrence"></div><section
+id="ns__sidebar__672133__form-page--1" class="formPage -page1 jsFormPage active"><div
+class="textualContents"></div><p
+class="amounts-label"><span
+class="jsHasSuggestedAmountsText">Select or </span>Enter <span
+class="jsDonationRecurrenceText">Monthly</span> Gift Amount:</p><fieldset
+class="amountWrapper">
+<span
+class="amountField__prefix">$</span>
+<input
+type="number" id="ns__sidebar__672133__targetAmount" class="amountField__input jsVisibleAmount" min="5" required value="">
+<input
+type="hidden" id="ns__sidebar__672133__amount" name="amount" class="jsTotalAmount" value="" required></fieldset><fieldset
+class="transactionFeesWrapper checkboxWrapper">
+<input
+type="checkbox" name="cover_transaction_fees" id="ns__sidebar__672133__cover_transaction_fees" class="jsCoverFees">
+<label
+class="jsTransactionFeesLabel" for="ns__sidebar__672133__cover_transaction_fees">
+<span
+class="not-checked" style="">
+<span
+class="show-for-small-only">Cover processing fees</span><span
+class="show-for-medium-up">Yes, I'll cover processing fees so my gift goes even further.</span>
+</span>
+<span
+class="is-checked" style="display: none;">
+<span
+class="show-for-small-only">Cover processing fee (approximately $<b
+class="jsFeesAmount"></b>)</span><span
+class="show-for-medium-up">I'd like to cover the processing fee of approximately $<b
+class="jsFeesAmount"></b>.</span>
+</span>
+</label></fieldset><div
+class="formPage__nav"><div
+class="navButtons  -center">
+<button
+type="button" data-target="#ns__sidebar__672133__form-page--2" class="button jsNextPage" data-payment-method="bank">Connect my bank</button>
+<button
+type="button" data-target="#ns__sidebar__672133__form-page--2" class="button jsNextPage" data-payment-method="card">
+Give by card
+<svg
+class="icon icon--arrow-long-right icon--post" viewBox="0 0 55 32">
+<path
+d="M49.311 16l-13.203 12.024 3.078 3.38 15.059-13.714v-3.38l-15.059-13.714-3.078 3.38z"></path>
+<path
+d="M52.706 13.714h-52.202v4.571h52.202z"></path>
+</svg>
+</button></div><p
+style="margin-bottom: 0;">Or give using your <a
+target="_blank" style="white-space: no-wrap;" title="Donor-Advised Funds" href="https://www.ijm.org/donor-advised-funds">Donor&ndash;Advised&nbsp;Fund</a> <img
+style="margin-bottom: -2px; margin-left: 4px;" alt="Donor-Advised Funds" width="70" src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/DAF-Direct.jpg" /></p></div><div
+class="inHonorOfWrapper"></div></section><section
+id="ns__sidebar__672133__form-page--2" class="formPage -page2 jsFormPage"><header><h2 class="formPage__heading">Billing Information</h2><p
+class="donationSummary">Your Donation: $<span
+class="donationSummary__amount jsSummaryAmount"></span><span
+class="donationSummary__fees jsSummaryCoverFees"> + $<span
+class="jsFeesAmount">0.46</span> fees</span><span
+class="donationSummary__recurrence jsSummaryRecurrence"></span></p></header><fieldset
+class="formRow"><div
+class="field required label--float">
+<input
+type="text" name="billing_first_name" id="ns__sidebar__672133__first_name" class="field" placeholder="First name" maxlength="40" required>
+<label
+for="ns__sidebar__672133__first_name">First Name</label></div><div
+class="field required label--float">
+<input
+type="text" name="billing_last_name" id="ns__sidebar__672133__last_name" class="field" placeholder="Last name" maxlength="80" required>
+<label
+for="ns__sidebar__672133__last_name">Last Name</label></div></fieldset><fieldset
+class="formRow"><div
+class="field required label--float width-66"><div
+class="email-suggestion jsSuggestedEmailBox"><p>
+Did you mean <button
+type="button" class="email-suggestion__email jsSuggestedEmailAddress" title="Click to use this email address"></button>?</p>
+<button
+type="button" class="email-suggestion__close jsSuggestedEmailClose" title="Close" aria-label="Close">
+<svg
+id="ns__sidebar__672133__icon-close" class="icon icon-close" viewBox="0 0 32 32">
+<path
+d="M31.414 28.586l-28-28-2.828 2.828 28 28z"></path>
+<path
+d="M3.414 31.414l28-28-2.828-2.828-28 28z"></path>
+</svg>
+</button></div>
+<input
+type="email" name="email" id="ns__sidebar__672133__email" class="jsMailcheck" placeholder="you@example.com" maxlength="255" required>
+<label
+for="ns__sidebar__672133__email">Email</label></div><div
+class="field required label--float width-33">
+<input
+type="tel" name="phone" id="ns__sidebar__672133__phone" placeholder="123-456-7890" maxlength="32" required>
+<label
+for="ns__sidebar__672133__phone">Mobile Phone</label></div></fieldset><fieldset
+class="formRow"><div
+class="field required">
+<select
+name="billing_country" id="ns__sidebar__672133__country" required><optgroup
+label="Auto-detected Country"><option
+value="CZ" selected>Czech Republic</option></optgroup><optgroup
+label="All Countries"><option
+value="AF">Afghanistan</option><option
+value="AX">Aland Islands</option><option
+value="AL">Albania</option><option
+value="DZ">Algeria</option><option
+value="AS">American Samoa</option><option
+value="AD">Andorra</option><option
+value="AO">Angola</option><option
+value="AI">Anguilla</option><option
+value="AQ">Antarctica</option><option
+value="AG">Antigua and Barbuda</option><option
+value="AR">Argentina</option><option
+value="AM">Armenia</option><option
+value="AW">Aruba</option><option
+value="AU">Australia</option><option
+value="AT">Austria</option><option
+value="AZ">Azerbaijan</option><option
+value="BS">Bahamas</option><option
+value="BH">Bahrain</option><option
+value="BD">Bangladesh</option><option
+value="BB">Barbados</option><option
+value="BY">Belarus</option><option
+value="BE">Belgium</option><option
+value="BZ">Belize</option><option
+value="BJ">Benin</option><option
+value="BM">Bermuda</option><option
+value="BT">Bhutan</option><option
+value="BO">Bolivia</option><option
+value="BA">Bosnia and Herzegovina</option><option
+value="BW">Botswana</option><option
+value="BV">Bouvet Island</option><option
+value="BR">Brazil</option><option
+value="IO">British Indian Ocean Territory</option><option
+value="BN">Brunei Darussalam</option><option
+value="BG">Bulgaria</option><option
+value="BF">Burkina Faso</option><option
+value="BI">Burundi</option><option
+value="KH">Cambodia</option><option
+value="CM">Cameroon</option><option
+value="CA">Canada</option><option
+value="CV">Cape Verde</option><option
+value="KY">Cayman Islands</option><option
+value="CF">Central African Republic</option><option
+value="TD">Chad</option><option
+value="CL">Chile</option><option
+value="CN">China</option><option
+value="CX">Christmas Island</option><option
+value="CC">Cocos (Keeling) Islands</option><option
+value="CO">Colombia</option><option
+value="KM">Comoros</option><option
+value="CG">Congo</option><option
+value="CD">Democratic Rep. of the Congo</option><option
+value="CK">Cook Islands</option><option
+value="CR">Costa Rica</option><option
+value="CI">Cote D&#039;Ivoire</option><option
+value="HR">Croatia</option><option
+value="CU">Cuba</option><option
+value="CY">Cyprus</option><option
+value="CZ">Czech Republic</option><option
+value="DK">Denmark</option><option
+value="DJ">Djibouti</option><option
+value="DM">Dominica</option><option
+value="DO">Dominican Republic</option><option
+value="EC">Ecuador</option><option
+value="EG">Egypt</option><option
+value="SV">El Salvador</option><option
+value="GQ">Equatorial Guinea</option><option
+value="ER">Eritrea</option><option
+value="EE">Estonia</option><option
+value="ET">Ethiopia</option><option
+value="FK">Falkland Islands (Malvinas)</option><option
+value="FO">Faroe Islands</option><option
+value="FJ">Fiji</option><option
+value="FI">Finland</option><option
+value="FR">France</option><option
+value="GF">French Guiana</option><option
+value="PF">French Polynesia</option><option
+value="TF">French Southern Territories</option><option
+value="GA">Gabon</option><option
+value="GM">Gambia</option><option
+value="GE">Georgia</option><option
+value="DE">Germany</option><option
+value="GH">Ghana</option><option
+value="GI">Gibraltar</option><option
+value="GR">Greece</option><option
+value="GL">Greenland</option><option
+value="GD">Grenada</option><option
+value="GP">Guadeloupe</option><option
+value="GU">Guam</option><option
+value="GT">Guatemala</option><option
+value="GG">Guernsey</option><option
+value="GN">Guinea</option><option
+value="GW">Guinea-Bissau</option><option
+value="GY">Guyana</option><option
+value="HT">Haiti</option><option
+value="HM">Heard &amp; Mcdonald Islands</option><option
+value="VA">Holy See (Vatican)</option><option
+value="HN">Honduras</option><option
+value="HK">Hong Kong</option><option
+value="HU">Hungary</option><option
+value="IS">Iceland</option><option
+value="IN">India</option><option
+value="ID">Indonesia</option><option
+value="IR">Iran, Islamic Republic Of</option><option
+value="IQ">Iraq</option><option
+value="IE">Ireland</option><option
+value="IM">Isle of Man</option><option
+value="IL">Israel</option><option
+value="IT">Italy</option><option
+value="JM">Jamaica</option><option
+value="JP">Japan</option><option
+value="JE">Jersey</option><option
+value="JO">Jordan</option><option
+value="KZ">Kazakhstan</option><option
+value="KE">Kenya</option><option
+value="KI">Kiribati</option><option
+value="KP">Korea, DPR</option><option
+value="KR">Korea, Republic of</option><option
+value="KW">Kuwait</option><option
+value="KG">Kyrgyzstan</option><option
+value="LA">Lao People&#039;s Democratic Republic</option><option
+value="LV">Latvia</option><option
+value="LB">Lebanon</option><option
+value="LS">Lesotho</option><option
+value="LR">Liberia</option><option
+value="LY">Libyan Arab Jamahiriya</option><option
+value="LI">Liechtenstein</option><option
+value="LT">Lithuania</option><option
+value="LU">Luxembourg</option><option
+value="MO">Macao</option><option
+value="MK">Macedonia</option><option
+value="MG">Madagascar</option><option
+value="MW">Malawi</option><option
+value="MY">Malaysia</option><option
+value="MV">Maldives</option><option
+value="ML">Mali</option><option
+value="MT">Malta</option><option
+value="MH">Marshall Islands</option><option
+value="MQ">Martinique</option><option
+value="MR">Mauritania</option><option
+value="MU">Mauritius</option><option
+value="YT">Mayotte</option><option
+value="MX">Mexico</option><option
+value="FM">Micronesia, Federated States of</option><option
+value="MD">Moldova, Republic of</option><option
+value="MC">Monaco</option><option
+value="MN">Mongolia</option><option
+value="MS">Montserrat</option><option
+value="MA">Morocco</option><option
+value="MZ">Mozambique</option><option
+value="MM">Myanmar</option><option
+value="NA">Namibia</option><option
+value="NR">Nauru</option><option
+value="NP">Nepal</option><option
+value="NL">Netherlands</option><option
+value="AN">Netherlands Antilles</option><option
+value="NC">New Caledonia</option><option
+value="NZ">New Zealand</option><option
+value="NI">Nicaragua</option><option
+value="NE">Niger</option><option
+value="NG">Nigeria</option><option
+value="NU">Niue</option><option
+value="NF">Norfolk Island</option><option
+value="MP">Northern Mariana Islands</option><option
+value="NO">Norway</option><option
+value="OM">Oman</option><option
+value="PK">Pakistan</option><option
+value="PW">Palau</option><option
+value="PS">Palestinian Territory, Occupied</option><option
+value="PA">Panama</option><option
+value="PG">Papua New Guinea</option><option
+value="PY">Paraguay</option><option
+value="PE">Peru</option><option
+value="PH">Philippines</option><option
+value="PN">Pitcairn</option><option
+value="PL">Poland</option><option
+value="PT">Portugal</option><option
+value="PR">Puerto Rico</option><option
+value="QA">Qatar</option><option
+value="RE">Reunion</option><option
+value="RO">Romania</option><option
+value="RU">Russian Federation</option><option
+value="RW">Rwanda</option><option
+value="SH">Saint Helena</option><option
+value="KN">Saint Kitts and Nevis</option><option
+value="LC">Saint Lucia</option><option
+value="PM">Saint Pierre and Miquelon</option><option
+value="VC">Saint Vincent and the Grenadines</option><option
+value="WS">Samoa</option><option
+value="SM">San Marino</option><option
+value="ST">Sao Tome and Principe</option><option
+value="SA">Saudi Arabia</option><option
+value="SN">Senegal</option><option
+value="CS">Serbia and Montenegro</option><option
+value="SC">Seychelles</option><option
+value="SL">Sierra Leone</option><option
+value="SG">Singapore</option><option
+value="SK">Slovakia</option><option
+value="SI">Slovenia</option><option
+value="SB">Solomon Islands</option><option
+value="SO">Somalia</option><option
+value="ZA">South Africa</option><option
+value="GS">S. Georgia &amp; the S. Sandwich Islands</option><option
+value="ES">Spain</option><option
+value="LK">Sri Lanka</option><option
+value="SD">Sudan</option><option
+value="SR">Suriname</option><option
+value="SJ">Svalbard and Jan Mayen</option><option
+value="SZ">Swaziland</option><option
+value="SE">Sweden</option><option
+value="CH">Switzerland</option><option
+value="SY">Syrian Arab Republic</option><option
+value="TW">Taiwan, Province of China</option><option
+value="TJ">Tajikistan</option><option
+value="TZ">Tanzania, United Republic of</option><option
+value="TH">Thailand</option><option
+value="TL">Timor-Leste</option><option
+value="TG">Togo</option><option
+value="TK">Tokelau</option><option
+value="TO">Tonga</option><option
+value="TT">Trinidad and Tobago</option><option
+value="TN">Tunisia</option><option
+value="TR">Turkey</option><option
+value="TM">Turkmenistan</option><option
+value="TC">Turks and Caicos Islands</option><option
+value="TV">Tuvalu</option><option
+value="UG">Uganda</option><option
+value="UA">Ukraine</option><option
+value="AE">United Arab Emirates</option><option
+value="GB">United Kingdom</option><option
+value="US">United States</option><option
+value="UM">US Minor Outlying Islands</option><option
+value="UY">Uruguay</option><option
+value="UZ">Uzbekistan</option><option
+value="VU">Vanuatu</option><option
+value="VE">Venezuela</option><option
+value="VN">Viet Nam</option><option
+value="VG">Virgin Islands, British</option><option
+value="VI">Virgin Islands, U.S.</option><option
+value="WF">Wallis and Futuna</option><option
+value="EH">Western Sahara</option><option
+value="YE">Yemen</option><option
+value="ZM">Zambia</option><option
+value="ZW">Zimbabwe</option></optgroup>
+</select>
+<label
+for="ns__sidebar__672133__country">Country</label></div></fieldset><fieldset
+class="formRow required"><div
+class="field jsStateField">
+<select
+name="billing_state" id="ns__sidebar__672133__state" required><option
+value="">&mdash; Select a State &mdash;</option><option
+value="AL">Alabama</option><option
+value="AK">Alaska</option><option
+value="AS">American Samoa</option><option
+value="AZ">Arizona</option><option
+value="AR">Arkansas</option><option
+value="AA">Armed Forces Americas</option><option
+value="AE">Armed Forces Others</option><option
+value="AP">Armed Forces Pacific</option><option
+value="CA">California</option><option
+value="CO">Colorado</option><option
+value="CT">Connecticut</option><option
+value="DE">Delaware</option><option
+value="DC">District of Columbia</option><option
+value="FL">Florida</option><option
+value="GA">Georgia</option><option
+value="GU">Guam</option><option
+value="HI">Hawaii</option><option
+value="ID">Idaho</option><option
+value="IL">Illinois</option><option
+value="IN">Indiana</option><option
+value="IA">Iowa</option><option
+value="KS">Kansas</option><option
+value="KY">Kentucky</option><option
+value="LA">Louisiana</option><option
+value="ME">Maine</option><option
+value="MD">Maryland</option><option
+value="MA">Massachusetts</option><option
+value="MI">Michigan</option><option
+value="MN">Minnesota</option><option
+value="MS">Mississippi</option><option
+value="MO">Missouri</option><option
+value="MT">Montana</option><option
+value="NE">Nebraska</option><option
+value="NV">Nevada</option><option
+value="NH">New Hampshire</option><option
+value="NJ">New Jersey</option><option
+value="NM">New Mexico</option><option
+value="NY">New York</option><option
+value="NC">North Carolina</option><option
+value="ND">North Dakota</option><option
+value="MP">Northern Mariana Islands</option><option
+value="OH">Ohio</option><option
+value="OK">Oklahoma</option><option
+value="OR">Oregon</option><option
+value="PA">Pennsylvania</option><option
+value="PR">Puerto Rico</option><option
+value="RI">Rhode Island</option><option
+value="SC">South Carolina</option><option
+value="SD">South Dakota</option><option
+value="TN">Tennessee</option><option
+value="TX">Texas</option><option
+value="UM">US Minor Outlying Islands</option><option
+value="UT">Utah</option><option
+value="VT">Vermont</option><option
+value="VI">Virgin Islands</option><option
+value="VA">Virginia</option><option
+value="WA">Washington</option><option
+value="WV">West Virginia</option><option
+value="WI">Wisconsin</option><option
+value="WY">Wyoming</option>
+</select>
+<label
+for="ns__sidebar__672133__state">State</label></div><div
+class="field jsProvinceField">
+<select
+name="billing_state" id="ns__sidebar__672133__province" required><option
+value="">&mdash; Select a province &mdash;</option><option
+value="AB">Alberta</option><option
+value="BC">British Columbia</option><option
+value="MB">Manitoba</option><option
+value="NB">New Brunswick</option><option
+value="NL">Newfoundland and Labrador</option><option
+value="NS">Nova Scotia</option><option
+value="NT">Northwest Territories</option><option
+value="NU">Nunavut</option><option
+value="ON">Ontario</option><option
+value="PE">Prince Edward Island</option><option
+value="QC">Québec</option><option
+value="SK">Saskatchewan</option><option
+value="YT">Yukon</option>
+</select>
+<label
+for="ns__sidebar__672133__state">Province</label></div><div
+class="field col--postal-code label--float">
+<input
+type="text" name="billing_zip" id="ns__sidebar__672133__zip" placeholder="12345" size="6" maxlength="16" required>
+<label
+for="ns__sidebar__672133__zip" class="jsZipLabel">Zip</label></div></fieldset><fieldset
+class="formRow required"><div
+class="field label--float width-33">
+<input
+type="text" name="billing_city" id="ns__sidebar__672133__city" placeholder="eg. Springfield" maxlength="255" required>
+<label
+for="ns__sidebar__672133__city">City</label></div><div
+class="field label--float width-66">
+<input
+type="text" name="billing_address" id="ns__sidebar__672133__address" placeholder="123 Main St." maxlength="255" required>
+<label
+for="ns__sidebar__672133__address">Address</label></div></fieldset><div
+class="formPage__nav"><div
+class="navButtons  -expand">
+<button
+type="button" data-target="#ns__sidebar__672133__form-page--1" class="button -hollow jsPrevPage" title="Previous">Previous</button>
+<button
+type="button" data-target="#ns__sidebar__672133__form-page--3" class="button -card jsNextPage jsCheckCustomer">Pay by Card</button>
+<button
+id="ns__sidebar__672133__linkButton" type="submit" class="button -red -bank jsGiveButtonText">Connect My Bank</button></div></div></section><section
+id="ns__sidebar__672133__form-page--3" class="formPage -page3 jsFormPage"><header><h2 class="formPage__heading">Card Information</h2><p
+class="donationSummary">Your Donation: $<span
+class="donationSummary__amount jsSummaryAmount"></span><span
+class="donationSummary__fees jsSummaryCoverFees"> + $<span
+class="jsFeesAmount">0.46</span> fees</span><span
+class="donationSummary__recurrence jsSummaryRecurrence"></span></p></header><div
+class="formRow"><div
+class="field required label--float">
+<input
+type="text" name="cc_first_name" id="ns__sidebar__672133__cc_first_name" placeholder="First name" maxlength="40" required>
+<label
+for="ns__sidebar__672133__cc_first_name">First Name</label></div><div
+class="field required label--float">
+<input
+type="text" name="cc_last_name" id="ns__sidebar__672133__cc_last_name" placeholder="Last name" maxlength="80" required>
+<label
+for="ns__sidebar__672133__cc_last_name">Last Name</label></div></div><div
+class="formRow"><div
+class="field required -card"><div
+id="ns__sidebar__672133__card-element" class="card-element"></div>
+<label
+for="ns__sidebar__672133__card-element">
+Credit or debit card
+</label></div></div><div
+class="formPage__nav"><div
+class="navButtons -expand">
+<button
+type="button" data-target="#ns__sidebar__672133__form-page--2" class="button -hollow jsPrevPage">Previous</button>
+<button
+type="submit" class="submit button -red jsGiveButtonText">Give</button></div></div><div
+class="donation-note"><p>You are giving <span
+class="donation-type--text jsDonationNoteRecurrenceText">a one-time</span> gift.</p><p
+style="display: flex; align-items: center; justify-content: center; margin-top: 1.5em;">Give with confidence
+<img
+style="margin-left: 1em;" width="80" alt="BBB Accredited Charity and Guidestar Platinum Participant" src="https://ijmstoragelive.blob.core.windows.net/ijmna/images/giving-confidence.jpg"></p></div><footer
+class="formPage__footer"><p
+class="footnote" style="color: #adb1bc; line-height: 1.35; margin-bottom: 0; font-size: 14px;">This site is protected by reCAPTCHA and the Google <a
+style="color: #adb1bc;" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+style="color: #adb1bc;" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/terms">Terms of Service</a> apply.</p><div
+id="sidebar-donation-captcha"></div>
+<input
+type="hidden" id="sidebar-donation-captcha-response" name="donation_captcha_response" /></footer></section></form></section></div></div></aside><div
+data-id="0" class="drawer-mask jsDrawerMask jsDrawerClose"></div><div
+data-id="1" id="mediadrawer" class="drawer jsDrawer"><div
+class="drawer__wrap drawer__wrap--narrow jsDrawerWrap"><div
+class="drawer__head">
+<button
+type="button" data-id="1" class="drawer__close jsDrawerClose" aria-label="Close Drawer">
+<svg
+class="drawer__ico icon icon-close">
+<use
+xlink:href="#icon-close"></use>
+</svg>
+</button></div><div
+class="drawer__body drawer__body--owl"><div
+class="row"><div
+class="column small-12"><div
+class="drawer__section-owl"><h2 class="heading heading--secondary">Media Contact</h2><div
+class="txt txt--regular"><p>We're here to answer your questions. Please fill out the form below and someone from our team will follow up with you soon.</p></div></div></div></div><div
+class="row"><div
+class="column small-12"><div
+class="drawer__section-owl"><h3 class="heading heading--third">More Information</h3>
+<address
+class="txt txt--regular">
+<span
+class="txt txt--medium">Petra Kooman</span> <br><p>Director of Marketing and Public Relations<br>pkooman@ijm.ca<br>519.679.5030 x.229</p>
+</address></div></div></div><div
+style="height: 10vw"></div></div></div></div><div
+data-id="1" class="drawer-mask jsDrawerMask jsDrawerClose"></div><div
+data-id="2" id="make-impact" class="drawer jsDrawer"><div
+class="drawer__wrap drawer__wrap--narrow jsDrawerWrap"><div
+class="drawer__head">
+<button
+type="button" data-id="2" class="drawer__close jsDrawerClose" aria-label="Close Drawer">
+<svg
+class="drawer__ico icon icon-close">
+<use
+xlink:href="#icon-close"></use>
+</svg>
+</button></div><div
+class="drawer__body drawer__body--owl"><div
+class="row"><div
+class="column small-12"><div
+class="drawer__section-owl"><h2 class="heading heading--secondary">Make an Impact</h2><div
+class="txt txt--regular"><p>Your skills, talents, and ideas are a force for change. From birthday parties to polar dips, your fundraising campaign can stop the violence.</p></div></div></div></div><div
+class="drawer__section-owl drawer__section-owl--tight" ><div
+class="row"><div
+class="column small-12"><h3 class="heading heading--third">Learn More</h3></div></div><form
+method="post" class="freeform jsFreeform" data-formscroll="0" data-freeform data-id="c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2" data-handle="startAFundraiser" data-ajax data-disable-submit data-success-message="Form has been submitted successfully!" data-error-message="Sorry, there was an error submitting the form. Please try again." data-honeypot data-honeypot-name="freeform_form_handle_b0dba3" data-honeypot-value="50db55cb4" ><div
+class="freeform_form_handle_b0dba3" style="position: absolute !important; width: 0 !important; height: 0 !important; overflow: hidden !important;" aria-hidden="true" tabindex="-1"><label
+aria-hidden="true" tabindex="-1" for="freeform_form_handle_b0dba3">Leave this field blank</label><input
+type="text" value="9a0f45" name="freeform_form_handle_b0dba3" id="freeform_form_handle_b0dba3" aria-hidden="true" autocomplete="off" tabindex="-1" /></div><input
+type="hidden" name="freeform_payload" value="ek24enAMw8vEpKyhrZkMOTc0ZTk5OGVhMjJlM2ZiM2JjODhiZjg2ZDY4M2JkZTY3Y2JlZjQ3YWJiOTkyNDI5OTMzMWFkOTU5Y2RkNTQ0MjhyYtl41c+u4/63z/jgEZPRIbkFUFqhUDDtzowOtw+LicgDES72wANmUSFTE6RDVBuJIcphBOf7d0ZrD/YfF0EfyIXiBpfls4xIOT83t8gFhPCcbBGMMnqi56OneYtp/RzfhmCCu50YuuOfHtnipggqVmz7OkyXyD7G2DFQWozjIVoeLYNkCAcWHnONSOD0I8BbB94Ev1YS1wPKm7boYE3jgk8iUHf8PcxcNtVPhnXnR8+YLxdbqhzfIhykmvDJVCyvjdmRJPQLSESgQBsO8T5f+fNQw2zQLFpYqUFTI3dOYuIP04CjbXe3TV18Mg9rIzm7i373RsopkElmSRk3z22wm/BkjDdVHmAN6ja5m5i37Z7z+/HLWFCpQKJOQx6SAqxPh6FfXrJpQBtCAqVcXdKCOin8sGhN/8Uj3mLq4N+Xo4YXCGdOx96ur6vnNpHnngTgSHT+g87xYNtilUYYkx9hFkrfSpGNCDrlXF+0PA74PqlPlXIgA2EAZyTyeMDclOqHaFcSHNnmzHm4XBJw5Oi5/+t+CCLmTKoaZx8DpadAc6PAUHvKhjqzo8ASGuq8OuKnI5UEKYHIK2bJASGCxdy7" />
+<input
+type="hidden" name="formHash" value="d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2" /><div
+id="c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2" data-scroll-anchor style="display: none;"></div>
+<input
+type="hidden" name="action" value="freeform/submit" />
+<input
+type="hidden" name="freeform-action" value="submit" />
+<input
+type="hidden" name="CRAFT_CSRF_TOKEN" value="WQvmvneW8PkuH3vFjCbI4ZXleSjNF9hZLJz5nQZNFW6xiy6xuEaJYypHleEn4LKxHHALgvt5jrLt0BxR-kGWIEvGoft0GTgY2Pwd3N4szwQ=" /> <script>if(typeof(formsQueries)==="undefined"){var formsQueries={};}
+formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]={};formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]['form']=document.querySelector('[data-id="c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]');if(formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]['form']){formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]["xhttp"]=new XMLHttpRequest();formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]["xhttp"].onreadystatechange=function(){if(this.readyState==4&&this.status==200){var response=JSON.parse(this.responseText);formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]['form'].querySelector('input[name=formHash]').value=response.hash;var csrf=response.csrf;formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]["returnUrl"]=response.returnUrl;formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]['form'].querySelector('input[name='+csrf.name+']').value=csrf.value;}};formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]["xhttp"].open("GET","/dynamic/refresh-tokens?form=startAFundraiser",true);formsQueries["c3b4e7-form-d04gB8WJ3-QNMyWeP5l-jrHigDzB1Vjs40SefcwGHRB7Gs4zrqY5dlqHm9a2"]["xhttp"].send();}</script> <div
+class="row "><div
+class="form__group  medium-6 columns"><div
+class="input">
+<input
+name="firstName" id="firstName" type="text" class="forum-add__title input__val jsInput" value="" maxlength="" />
+<label
+for="firstName" class="input__label required">First Name</label></div><div
+class="form__error"></div></div><div
+class="form__group  medium-6 columns"><div
+class="input">
+<input
+name="lastName" id="lastName" type="text" class="forum-add__title input__val jsInput" value="" maxlength="" />
+<label
+for="lastName" class="input__label required">Last Name</label></div><div
+class="form__error"></div></div></div><div
+class="row "><div
+class="form__group  medium-12 columns"><div
+class="input">
+<input
+name="email" id="email" type="text" class="forum-add__title input__val jsInput" />
+<label
+for="email" class="input__label required">Email</label></div><div
+class="form__error"></div></div></div><div
+class="row "><div
+class="small-12 medium-6 medium-offset-6 large-4 medium-offset-8 column">
+<button
+type="submit" class="form__submit form__submit--inquires btn btn--standard btn--blue btn--rounded">
+<span
+class="btn__inner">Submit</span>
+</button></div></div><div
+class="row "><div
+class="form__html  medium-12 columns"><div
+class="form__success"><p>Thank you for signing up to learn more about starting a fundraiser. We will be in touch soon!</p><p>In the meantime, please take a look at our free guide: <a
+target="_blank" href="/documents/25-tips-for-the-novice-fundraiser_01.pdf">25 Tips for the Novice Fundraiser</a>.</p></div></div></div></form></div><div
+class="row"><div
+class="column small-12"><div
+class="drawer__section-owl"><h3 class="heading heading--third">Need Help?</h3>
+<address
+class="txt txt--regular"><p>Need more information? <br>We're here to help. <br>Contact us at <a
+href="mailto:events@ijm.ca">events@ijm.ca</a></p>
+</address></div></div></div><div
+style="height: 10vw"></div></div></div></div><div
+data-id="2" class="drawer-mask jsDrawerMask jsDrawerClose"></div><div
+data-id="3" id="speaker" class="drawer jsDrawer"><div
+class="drawer__wrap drawer__wrap--narrow jsDrawerWrap"><div
+class="drawer__head">
+<button
+type="button" data-id="3" class="drawer__close jsDrawerClose" aria-label="Close Drawer">
+<svg
+class="drawer__ico icon icon-close">
+<use
+xlink:href="#icon-close"></use>
+</svg>
+</button></div><div
+class="drawer__body drawer__body--owl"><div
+class="row"><div
+class="column small-12"><div
+class="drawer__section-owl"><h2 class="heading heading--secondary">Test</h2><div
+class="txt txt--regular"><p>Test</p></div></div></div></div><div
+style="height: 10vw"></div></div></div></div><div
+data-id="3" class="drawer-mask jsDrawerMask jsDrawerClose"></div> <script src="https://ijmstoragelive.blob.core.windows.net/ijmna/documents/js/countdown.js"></script> <script src="/assets/js/home.js?id=dafdb19c87d504e36a060ca87442f20d" defer></script> <script type="text/javascript" src="https://www.ijm.org/freeform/plugin.js?v=12f0405efbbc6fa07563112b0f3f4e8e74702bfc" defer></script> <link
+rel="stylesheet" href="https://www.ijm.org/freeform/plugin.css?v=2dfbfb53da74b982b81d977f65e1a955d38e85f0" defer /></div>
+<script src="https://www.ijm.org/cpresources/2938f78/js/cookieconsent.min.js?v=1711342909" async="async" defer="defer"></script></body></html>

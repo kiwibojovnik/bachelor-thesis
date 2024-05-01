@@ -1,0 +1,2153 @@
+{
+    "youronlinechoices.com": {
+        "Time": 21.96,
+        "URL": "youronlinechoices.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "40.85.112.191"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "40.85.112.191",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.006651163101196289
+            ],
+            [
+                "212.98.161.17",
+                0.0010311603546142578
+            ],
+            [
+                "185.11.76.22",
+                0.0015459060668945312
+            ],
+            [
+                "185.11.76.76",
+                0.0015339851379394531
+            ],
+            [
+                "104.44.43.102",
+                0.02764272689819336
+            ],
+            [
+                "80.81.194.52",
+                0.05478692054748535
+            ],
+            [
+                "104.44.232.127",
+                0.05529356002807617
+            ],
+            [
+                "104.44.28.143",
+                0.0622406005859375
+            ],
+            [
+                "51.10.12.191",
+                0.0671989917755127
+            ],
+            [
+                "104.44.7.243",
+                0.06180977821350098
+            ],
+            [
+                "104.44.16.58",
+                0.06392383575439453
+            ],
+            [
+                "104.44.16.58",
+                0.06422805786132812
+            ],
+            [
+                "104.44.30.71",
+                0.0633842945098877
+            ],
+            [
+                "104.44.30.47",
+                0.06052112579345703
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.youronlinechoices.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "40.85.112.191"
+            ]
+        ],
+        "HTTP Status": "HTTPSConnectionPool(host='www.youronlinechoices.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:877)'),))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "youronlinechoices.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 11:06:33"
+    },
+    "elpais.com": {
+        "Time": 5.43,
+        "URL": "elpais.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "87.245.216.9",
+            "87.245.216.83"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "87.245.216.9",
+        "PING Status": "OK",
+        "PING IP": "87.245.216.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://elpais.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "87.245.216.9",
+                "87.245.216.83"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 450288,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "88010",
+            "Server": "openresty",
+            "Content-Encoding": "gzip",
+            "x-arc-pb-request-id": "dd73da9c-3a56-49ca-818d-0db61798c497, 71fcaf02-72eb-4756-976f-cbe94d207ccc",
+            "ETag": "W/\"6def0-b7SqL782y4F+GK4Q4EZI5uaJfe8\"",
+            "Last-Modified": "Sun, 28 Apr 2024 15:06:59 GMT",
+            "X-Amz-Cf-Pop": "FRA56-P10",
+            "X-Amz-Cf-Id": "fvNZ1b5Kr2fJJ1djNwPffGfqY0PP_jWxIgL6mUZ55S396voe_gs3nw==",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "private, max-age=60",
+            "Expires": "Sun, 28 Apr 2024 15:08:09 GMT",
+            "Date": "Sun, 28 Apr 2024 15:07:09 GMT",
+            "Connection": "keep-alive",
+            "x-arc-request-id": "0.4fd8f557.1714316828.d0f5a01",
+            "Akamai-True-TTL": "120"
+        },
+        "HTML Content": "elpais.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "prisa.web.arc-cdn.net"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03EC21CE952B838AB93968DD0765ED3CEA0F",
+            "notBefore": "Apr 17 14:09:06 2024 GMT",
+            "notAfter": "Jul 16 14:09:05 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "api-prisa-el-pais-america-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-america-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-brasil-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-brasil-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-cataluna-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-cataluna-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-dev.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-in-english-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-in-english-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "api-prisa-el-pais-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "arc-sandbox.america.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "arc-sandbox.brasil.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "arc-sandbox.cat.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "arc-sandbox.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "arc-sandbox.inenglish.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "brasil.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "cat.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "cincodias.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "elpais.com"
+                ],
+                [
+                    "DNS",
+                    "english.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "imagenes.america.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "imagenes.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "imagens.brasil.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "images.english.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "images.inenglish.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "imatges.cat.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-config-prod.api.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-config-sandbox.api.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-america-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-america-prod.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-america-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-america-sandbox.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-brasil-dev.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-brasil-dev.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-brasil-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-brasil-prod.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-brasil-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-brasil-sandbox.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-cataluna-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-cataluna-prod.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-cataluna-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-cataluna-sandbox.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-dev.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-dev.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-in-english-dev.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-in-english-dev.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-in-english-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-in-english-prod.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-in-english-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-in-english-sandbox.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-prod.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-prod.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-sandbox.cdn.arcpublishing.com"
+                ],
+                [
+                    "DNS",
+                    "prisa-el-pais-sandbox.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "prisa.web.arc-cdn.net"
+                ],
+                [
+                    "DNS",
+                    "publicapi.america.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.brasil.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.cat.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.english.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.sandbox.america.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.sandbox.brasil.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.sandbox.cat.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.sandbox.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "publicapi.sandbox.english.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "sandbox.imagenes.elpais.com"
+                ],
+                [
+                    "DNS",
+                    "staging.elpais.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 11:07:13"
+    },
+    "tinyurl.com": {
+        "Time": 13.1,
+        "URL": "tinyurl.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.20.138.65",
+            "172.67.1.225",
+            "104.20.139.65"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "172.67.1.225",
+        "PING Status": "OK",
+        "PING IP": "172.67.1.225",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://tinyurl.com/app",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.20.138.65",
+                "172.67.1.225",
+                "104.20.139.65"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 15067,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 15:08:03 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0, must-revalidate, no-cache, no-store, private",
+            "content-language": "en",
+            "x-frame-options": "SAMEORIGIN",
+            "x-content-type-options": "nosniff",
+            "x-xss-protection": "1; mode=block",
+            "set-cookie": "XSRF-TOKEN=eyJpdiI6InZBMmh4QkRySjZXalR3ZEF3VGVZRFE9PSIsInZhbHVlIjoiL2pnQUhLeVc4ZHcwOXAzdGczcWs1bXgxNmFVU21lbHExWXExL0d4ZWR4QXBXbG5DL005K3dWU2IveTN5ZGMvQ0NzMjVabVAwNjNPb2VvcjhQR0sxZUt6djEzb1NGZnRtU2dHMnlkYXViSFUwc0hPS2JCZmJoRGRNem5rOUVyaWIiLCJtYWMiOiI3ZjA3YmQ4MTA2NjQ2YzQ4YmNlNTU1MDI5ODA1Nzg4ZTI2MjA2NGEwMjQ4NTlhOWZiZDFlMGNkNjZjNmZmYTBiIiwidGFnIjoiIn0%3D; expires=Sun, 28 Apr 2024 17:08:03 GMT; Max-Age=7200; path=/; domain=.tinyurl.com; secure; samesite=lax, tinyurl_session=eyJpdiI6InFQTjlqaTc5Rk9OOWRFbCsyb2Fpa0E9PSIsInZhbHVlIjoiOC9nZWtSNkdRMFM1T1VSOUJ1blNyRUJPdnRwY2JHMmk5SHM5S2Jxd3diN0E0THo0MnhtNzdlYW14cEpsR2RuSlFGZWJsT2o1clhHQzBMZjRWL2dLYnRBTWE2RXM0WDkxTlkvNmdjZ2p1TjJkRU41OVp0M1d0NUZXS2ZtcXdXeTEiLCJtYWMiOiJiYTNkODdhNDkyZmE2OGJmOTM0YTM3ODhiZWU3MjE1M2RiYTlhMjJhODZjMTU3ZmY5YmYwMDIwNTk0ZjM1MGJmIiwidGFnIjoiIn0%3D; expires=Sun, 28 Apr 2024 17:08:03 GMT; Max-Age=7200; path=/; domain=.tinyurl.com; httponly; samesite=lax, tinyUUID=eyJpdiI6IjkxRmlrelNGUDFpa3RvbnNXVy9YU0E9PSIsInZhbHVlIjoiRFI1cUFoZzhXMXdDUFNaUFR2d2dmT2k1UFFuRk5hbkZMQ21rVFJmaWhNSFhPYkdHVWlTcHBxRDVjOFI4Sy95eWxkak40STl4aDBZdktvbkpta2tSd0ZqRmRkUjZPdHRZdGZYWU9FbG5xcUk9IiwibWFjIjoiYzIwNWExNDcyZGJlMjg2ZmZhODZiNWUzMTlkMDk1NjI4NjE1MDRhODRjZTJkNzY5N2I5YzFjMjJkYWQyOTc0ZSIsInRhZyI6IiJ9; expires=Mon, 02 Jun 2025 15:08:03 GMT; Max-Age=34560000; path=/; domain=.tinyurl.com; secure; httponly; samesite=lax, early-access=eyJpdiI6Inc3alhvSnZYZTkyMmpXcVhUMGcwRmc9PSIsInZhbHVlIjoiczVNWnhiUTNrOC8zUDlOMFIrVng0cXdBZitBQUFEdlNBMzVHa1VoLytFV3l2TVEzZE9aUC9USlNkS0V3V3d2TE1SSXI0NnpzNEszbFpKUEQ3Ulk3RXNZT1RlRTVBTU1UdUdQYmthT1dBMWM9IiwibWFjIjoiYzNiNjgyY2JmNTNkYTlmNjIzOGQwMzE1YThlY2Y4YWM0NjM4YTNmMzBmZjE4MGZjOGQ2ZDdmMjA1N2ZjMWFjYSIsInRhZyI6IiJ9; expires=Mon, 02 Jun 2025 15:08:03 GMT; Max-Age=34560000; path=/; domain=.tinyurl.com; secure; httponly; samesite=lax",
+            "CF-Cache-Status": "DYNAMIC",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+            "Server": "cloudflare",
+            "CF-RAY": "87b7f727dc6598ee-ARN",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "tinyurl.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "tinyurl.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "04B2BFFEEBB617FBE2BDD4AC4795FC995125",
+            "notBefore": "Mar 31 23:28:39 2024 GMT",
+            "notAfter": "Jun 29 23:28:38 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.tinyurl.com"
+                ],
+                [
+                    "DNS",
+                    "tinyurl.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 11:08:10"
+    },
+    "yadi.sk": {
+        "Time": 4.9,
+        "URL": "yadi.sk",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "87.250.250.50"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "87.250.250.50",
+        "PING Status": "OK",
+        "PING IP": "87.250.250.50",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://yadi.sk/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "87.250.250.50"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 222584,
+        "Headers": {
+            "Cache-Control": "max-age=0, must-revalidate, proxy-revalidate, no-cache, no-store, private",
+            "Content-Encoding": "gzip",
+            "Content-Security-Policy": "default-src 'none'; script-src yastatic.net https://*.static-dev.mail.yandex.net/s3/psf/ 'unsafe-eval' 'nonce-Eze6nzjtcd0KrXCEXdEPPg==' 'self' 'unsafe-inline' mc.yandex.ru mc.yandex.az mc.yandex.by mc.yandex.co.il mc.yandex.com mc.yandex.com.am mc.yandex.com.ge mc.yandex.com.tr mc.yandex.ee mc.yandex.fr mc.yandex.kg mc.yandex.kz mc.yandex.lt mc.yandex.lv mc.yandex.md mc.yandex.ru mc.yandex.tj mc.yandex.tm mc.yandex.ua mc.yandex.uz mc.webvisor.com mc.webvisor.org mc.admetrica.ru yastatic.net; style-src yastatic.net https://*.static-dev.mail.yandex.net/s3/psf/ 'unsafe-inline' 'self' fonts.googleapis.com; font-src yastatic.net https://*.static-dev.mail.yandex.net/s3/psf/ fonts.gstatic.com; media-src yastatic.net https://*.static-dev.mail.yandex.net/s3/psf/ 'unsafe-inline' 'self' storage.yandexcloud.net s3.mds.yandex.net; img-src yastatic.net https://*.static-dev.mail.yandex.net/s3/psf/ 'self' data: blob: mc.yandex.ru mc.yandex.az mc.yandex.by mc.yandex.co.il mc.yandex.com mc.yandex.com.am mc.yandex.com.ge mc.yandex.com.tr mc.yandex.ee mc.yandex.fr mc.yandex.kg mc.yandex.kz mc.yandex.lt mc.yandex.lv mc.yandex.md mc.yandex.ru mc.yandex.tj mc.yandex.tm mc.yandex.ua mc.yandex.uz mc.webvisor.com mc.webvisor.org mc.admetrica.ru yastatic.net downloader.disk.yandex.by downloader.disk.yandex.net yandex.ru favicon.yandex.net storage.yandexcloud.net s3.mds.yandex.net avatars.mds.yandex.net *.storage.yandex.net *.disk.yandex.net; connect-src yandex.ru mc.yandex.ru mc.yandex.az mc.yandex.by mc.yandex.co.il mc.yandex.com mc.yandex.com.am mc.yandex.com.ge mc.yandex.com.tr mc.yandex.ee mc.yandex.fr mc.yandex.kg mc.yandex.kz mc.yandex.lt mc.yandex.lv mc.yandex.md mc.yandex.ru mc.yandex.tj mc.yandex.tm mc.yandex.ua mc.yandex.uz mc.webvisor.com mc.webvisor.org mc.admetrica.ru yandexmetrica.com:* 'self' api.passport.yandex.by mail.yandex.by https://pdd.yandex.ru:* https://pdd.yandex.com:* api-stable.dst.yandex.ru cloud-api.yandex.ru yastatic.net https://*.static-dev.mail.yandex.net/s3/psf/; frame-src yastatic.net https://*.static-dev.mail.yandex.net/s3/psf/ 'self' blob: mc.yandex.ru forms.yandex.ru www.youtube.com yandex.by trust.yandex.by; child-src 'self' blob: mc.yandex.ru; base-uri 'self'; frame-ancestors 'self' https://*.webvisor.com https://metrika.yandex.com https://metrika.yandex.ru; report-uri https://csp.yandex.net/csp?from=tuning&project=tuning&yandex_login=&yandexuid=5233898761714316958;",
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Sun, 28 Apr 2024 15:09:18 GMT",
+            "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+            "Pragma": "no-cache",
+            "Transfer-Encoding": "chunked",
+            "Vary": "Accept-Encoding",
+            "X-Response-With": "YMail"
+        },
+        "HTML Content": "yadi.sk_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "RU"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Moscow"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Moscow"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Yandex LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "disk.yandex.ru"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign RSA OV SSL CA 2018"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "754116E4278ADF3F2A101B73",
+            "notBefore": "Nov 23 21:05:39 2023 GMT",
+            "notAfter": "May 23 20:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "disk.yandex.ru"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.md"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.az"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.co.il"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.fr"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.com.am"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.com.tr"
+                ],
+                [
+                    "DNS",
+                    "docs.yandex.ru"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.lt"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.ee"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.lv"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.tj"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.tm"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.com.ge"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.by"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.net"
+                ],
+                [
+                    "DNS",
+                    "yadi.sk"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.kg"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.uz"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.com"
+                ],
+                [
+                    "DNS",
+                    "disk.yandex.kz"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/gsrsaovsslca2018"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsrsaovsslca2018.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/gsrsaovsslca2018.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 11:09:22"
+    },
+    "spotify.com": {
+        "Time": 5.6,
+        "URL": "spotify.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "35.186.224.25"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "35.186.224.25",
+        "PING Status": "OK",
+        "PING IP": "35.186.224.25",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.spotify.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "35.186.224.25"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 9483,
+        "Headers": {
+            "server": "envoy",
+            "date": "Sun, 28 Apr 2024 15:10:23 GMT",
+            "content-type": "text/html; charset=utf-8",
+            "vary": "Accept-Encoding,Accept-Encoding",
+            "set-cookie": "sp_t=aab605987e1db2e21e77a6403874d1fa; path=/; expires=Mon, 28 Apr 2025 15:10:23 GMT; domain=.spotify.com; samesite=none; secure, sp_landing=https%3A%2F%2Fopen.spotify.com%2F%3Fsp_cid%3Daab605987e1db2e21e77a6403874d1fa%26device%3Ddesktop; path=/; expires=Mon, 29 Apr 2024 15:10:23 GMT; domain=.spotify.com; samesite=none; secure; httponly",
+            "content-security-policy": "script-src 'self' 'unsafe-eval' blob: open.spotifycdn.com open-review.spotifycdn.com quicksilver.scdn.co www.google-analytics.com www.googletagmanager.com static.ads-twitter.com analytics.twitter.com s.pinimg.com sc-static.net https://www.google.com/recaptcha/ cdn.ravenjs.com connect.facebook.net www.gstatic.com sb.scorecardresearch.com pixel-static.spotify.com cdn.cookielaw.org geolocation.onetrust.com www.googleoptimize.com www.fastly-insights.com static.hotjar.com script.hotjar.com https://www.googleadservices.com/pagead/conversion_async.js https://www.googleadservices.com/pagead/conversion/ https://analytics.tiktok.com/i18n/pixel/sdk.js https://analytics.tiktok.com/i18n/pixel/identify.js https://analytics.tiktok.com/i18n/pixel/config.js https://www.redditstatic.com/ads/pixel.js https://t.contentsquare.net/uxa/22f14577e19f3.js 'sha256-WfsTi7oVogdF9vq5d14s2birjvCglqWF842fyHhzoNw=' 'sha256-KRzjHxCdT8icNaDOqPBdY0AlKiIh5F8r4bnbe1PQwss=' 'sha256-Z5wh7XXSBR1+mTxLSPFhywCZJt77+uP1GikAgPIsu2s='; frame-ancestors 'self';",
+            "content-encoding": "gzip",
+            "x-envoy-upstream-service-time": "17",
+            "strict-transport-security": "max-age=31536000",
+            "x-content-type-options": "nosniff",
+            "Via": "HTTP/1.1 fringe, HTTP/2 edgeproxy, 1.1 google",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "spotify.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "SE"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Stockholm"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Spotify AB"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.spotify.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0186FF0FB60CDAC83B40D9CB98F99747",
+            "notBefore": "Feb  5 00:00:00 2024 GMT",
+            "notAfter": "Feb  4 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.spotify.com"
+                ],
+                [
+                    "DNS",
+                    "spotify.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl",
+                "http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 11:10:27"
+    },
+    "huffpost.com": {
+        "Time": 7.38,
+        "URL": "huffpost.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "18.154.63.113",
+            "18.154.63.17",
+            "18.154.63.114",
+            "18.154.63.64"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.154.63.114",
+        "PING Status": "OK",
+        "PING IP": "18.154.63.114",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://huffpost.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "18.154.63.17",
+                "18.154.63.114",
+                "18.154.63.64",
+                "18.154.63.113"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 616607,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "75726",
+            "Content-Type": "text/html; charset=utf-8",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
+            "Content-Encoding": "gzip",
+            "Document-Policy": "js-profiling",
+            "Expires": "0",
+            "Server": "nginx",
+            "X-Hp-Page-Version": "254155",
+            "X-Hp-Webp": "false",
+            "X-Powered-By": "Express",
+            "X-Request-Id": "88ba9c7b90519cb477bee5180960f2aa",
+            "X-Varnish-Cambria-Ttl": "5s",
+            "Accept-Ranges": "bytes",
+            "Date": "Sun, 28 Apr 2024 15:11:28 GMT",
+            "Via": "1.1 varnish",
+            "Age": "23",
+            "X-Served-By": "cache-ams21062-AMS",
+            "X-Cache": "HIT",
+            "X-Cache-Hits": "1",
+            "X-Timer": "S1714317088.265687,VS0,VE1",
+            "X-Content-Type-Options": "nosniff",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "X-XSS-Protection": "1; mode=block",
+            "content-security-policy": "sandbox allow-forms allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation; frame-ancestors 'self' *.huffpost.com *.huffingtonpost.com *.huffpost.net *.buzzfeed.com clients.opinary.com compass.pressekompass.net *.newsbreak.com *.newsbreakapp.com *.upday-content.com *.upday.com; report-uri https://huffpost.report-uri.com/r/d/csp/enforce;",
+            "Set-Cookie": "bf-geo-country=BY; expires=Mon, 29 Apr 2024 15:11:28 GMT; path=/; domain=www.huffpost.com;, gdpr=true; expires=Sun, 12 May 2024 15:11:28 GMT; path=/; domain=www.huffpost.com;",
+            "Vary": "Accept-Encoding, x-ismobile"
+        },
+        "HTML Content": "huffpost.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "huffpost.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M02"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "046B70E257CCC19719D45AAD03B1E0B7",
+            "notBefore": "Jan  4 00:00:00 2024 GMT",
+            "notAfter": "Feb  1 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "publishing.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "live.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "ryotstudio.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "sketchy.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "help.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "support.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "staging-support.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "search.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "ryotstudios.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "staging.search.huffpost.com"
+                ],
+                [
+                    "DNS",
+                    "flipside.huffpost.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m02.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m02.amazontrust.com/r2m02.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m02.amazontrust.com/r2m02.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 11:11:33"
+    },
+    "ru.wikipedia.org": {
+        "Time": 5.3,
+        "URL": "ru.wikipedia.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.15.59.224"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.15.59.224",
+        "PING Status": "OK",
+        "PING IP": "185.15.59.224",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://ru.wikipedia.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "185.15.59.224"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 167088,
+        "Headers": {
+            "date": "Sun, 28 Apr 2024 15:00:43 GMT",
+            "server": "mw-web.eqiad.main-7c9dc8fdfb-qqfs2",
+            "x-content-type-options": "nosniff",
+            "content-language": "ru",
+            "origin-trial": "AonOP4SwCrqpb0nhZbg554z9iJimP3DxUDB8V4yu9fyyepauGKD0NXqTknWi4gnuDfMG6hNb7TDUDTsl0mDw9gIAAABmeyJvcmlnaW4iOiJodHRwczovL3dpa2lwZWRpYS5vcmc6NDQzIiwiZmVhdHVyZSI6IlRvcExldmVsVHBjZCIsImV4cGlyeSI6MTczNTM0Mzk5OSwiaXNTdWJkb21haW4iOnRydWV9",
+            "accept-ch": "",
+            "vary": "Accept-Encoding,Cookie,Authorization",
+            "last-modified": "Sun, 28 Apr 2024 15:00:41 GMT",
+            "content-type": "text/html; charset=UTF-8",
+            "content-encoding": "gzip",
+            "age": "708",
+            "x-cache": "cp3071 miss, cp3071 hit/182",
+            "x-cache-status": "hit-front",
+            "server-timing": "cache;desc=\"hit-front\", host;desc=\"cp3071\"",
+            "strict-transport-security": "max-age=106384710; includeSubDomains; preload",
+            "report-to": "{ \"group\": \"wm_nel\", \"max_age\": 604800, \"endpoints\": [{ \"url\": \"https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0\" }] }",
+            "nel": "{ \"report_to\": \"wm_nel\", \"max_age\": 604800, \"failure_fraction\": 0.05, \"success_fraction\": 0.0}",
+            "set-cookie": "WMF-DP=cff;Path=/;HttpOnly;secure;Expires=Mon, 29 Apr 2024 00:00:00 GMT, NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600",
+            "x-client-ip": "93.125.114.144",
+            "cache-control": "private, s-maxage=0, max-age=0, must-revalidate",
+            "accept-ranges": "bytes",
+            "content-length": "30626"
+        },
+        "HTML Content": "ru.wikipedia.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Wikimedia Foundation, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.wikipedia.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07419E39583A4C76CF1EA14347FA5F3A",
+            "notBefore": "Oct 18 00:00:00 2023 GMT",
+            "notAfter": "Oct 16 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.wikipedia.org"
+                ],
+                [
+                    "DNS",
+                    "wikimedia.org"
+                ],
+                [
+                    "DNS",
+                    "mediawiki.org"
+                ],
+                [
+                    "DNS",
+                    "wikibooks.org"
+                ],
+                [
+                    "DNS",
+                    "wikidata.org"
+                ],
+                [
+                    "DNS",
+                    "wikinews.org"
+                ],
+                [
+                    "DNS",
+                    "wikiquote.org"
+                ],
+                [
+                    "DNS",
+                    "wikisource.org"
+                ],
+                [
+                    "DNS",
+                    "wikiversity.org"
+                ],
+                [
+                    "DNS",
+                    "wikivoyage.org"
+                ],
+                [
+                    "DNS",
+                    "wiktionary.org"
+                ],
+                [
+                    "DNS",
+                    "wikimediafoundation.org"
+                ],
+                [
+                    "DNS",
+                    "w.wiki"
+                ],
+                [
+                    "DNS",
+                    "wmfusercontent.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikipedia.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikimedia.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikimedia.org"
+                ],
+                [
+                    "DNS",
+                    "*.planet.wikimedia.org"
+                ],
+                [
+                    "DNS",
+                    "*.mediawiki.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.mediawiki.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikibooks.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikibooks.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikidata.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikidata.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikinews.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikinews.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikiquote.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikiquote.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikisource.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikisource.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikiversity.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikiversity.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikivoyage.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikivoyage.org"
+                ],
+                [
+                    "DNS",
+                    "*.wiktionary.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wiktionary.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikimediafoundation.org"
+                ],
+                [
+                    "DNS",
+                    "*.wmfusercontent.org"
+                ],
+                [
+                    "DNS",
+                    "wikipedia.org"
+                ],
+                [
+                    "DNS",
+                    "wikifunctions.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikifunctions.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crl",
+                "http://crl4.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 11:12:35"
+    },
+    "google.fr": {
+        "Time": 7.83,
+        "URL": "google.fr",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.250.185.99"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.250.185.99",
+        "PING Status": "OK",
+        "PING IP": "142.250.185.99",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://www.google.fr/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "142.250.185.163"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 205240,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 15:13:23 GMT",
+            "Expires": "-1",
+            "Cache-Control": "private, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-5k8yBv05kWBElZHAZz86vQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+            "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"gws\"",
+            "Report-To": "{\"group\":\"gws\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gws/other\"}]}",
+            "Accept-CH": "Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Arch, Sec-CH-UA-Model, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64",
+            "Permissions-Policy": "unload=()",
+            "Origin-Trial": "Ap+qNlnLzJDKSmEHjzM5ilaa908GuehlLqGb6ezME5lkhelj20qVzfv06zPmQ3LodoeujZuphAolrnhnPA8w4AIAAABfeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJQZXJtaXNzaW9uc1BvbGljeVVubG9hZCIsImV4cGlyeSI6MTY4NTY2Mzk5OX0=, AvudrjMZqL7335p1KLV2lHo1kxdMeIN0dUI15d0CPz9dovVLCcXk8OAqjho1DX4s6NbHbA/AGobuGvcZv0drGgQAAAB9eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJCYWNrRm9yd2FyZENhY2hlTm90UmVzdG9yZWRSZWFzb25zIiwiZXhwaXJ5IjoxNjkxNTM5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "Content-Encoding": "gzip",
+            "Server": "gws",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Set-Cookie": "1P_JAR=2024-04-28-15; expires=Thu, 01-Jan-1970 00:00:00 GMT; path=/; domain=.google.fr; Secure; SameSite=none, NID=513=H40MdMYgdgEB3I-HoS8XnbfGyqaRKgAswZ4uHYOnmpBLi4fTZXTYEg1zYiJt_CYr2AxPqRF_duHnDUq2Pt-rzwwWwRhHFHbIl2xBVtrI1pRo8Wli4wtZl00jgIzX7jwMEfSVCord5QS2CfSGtLi7xqtpHSdWpIvFh995uz1W__3e3ZGG3_k; expires=Mon, 28-Oct-2024 15:13:23 GMT; path=/; domain=.google.fr; Secure; HttpOnly; SameSite=none",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "google.fr_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.google.fr"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "4B9F1208B745A00309F5172C541F7417",
+            "notBefore": "Apr  8 07:43:32 2024 GMT",
+            "notAfter": "Jul  1 07:43:31 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.google.fr"
+                ],
+                [
+                    "DNS",
+                    "google.fr"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/QOvJ0N1sT2A.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 11:13:30"
+    },
+    "webmd.com": {
+        "Time": 33.75,
+        "URL": "webmd.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "207.231.204.56"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "207.231.204.56",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0012137889862060547
+            ],
+            [
+                "212.98.161.17",
+                0.0015664100646972656
+            ],
+            [
+                "185.11.76.22",
+                0.0015347003936767578
+            ],
+            [
+                "185.11.76.30",
+                0.0015184879302978516
+            ],
+            [
+                "213.242.112.49",
+                0.011269330978393555
+            ],
+            [
+                "4.59.145.74",
+                0.16600537300109863
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.webmd.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.99.224",
+                "188.114.98.224"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 376095,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 15:15:05 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "HIT",
+            "Access-Control-Allow-Origin": "*",
+            "Age": "81",
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Set-Cookie": "ab=default; domain=.webmd.com; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT, lrt_wrk=lrt1_cached_k8_worker_1_40S_21S_2024-04-15_13:56:36_gdbp_false_gtedgefrom_CLOUDFLAREVueJS_true_E_false_UC_false_UD_false_mp_false_active_true_from_MA1_ovr_null_config_envName_.k8s.lb._envNameFound_true_actv_true_blk_N/A_1714317305292_hvid_false; domain=webmd.com; path=/, gtinfo={\"ct\":null,\"c\":null,\"cc\":null,\"st\":null,\"sc\":null,\"z\":null,\"lat\":\"53.00110\",\"lon\":\"28.00650\",\"dma\":null,\"cntr\":\"BLR\",\"cntrc\":\"112\",\"tz\":\"Europe/Minsk\",\"ci\":\"93.125.114.144\",\"debug\":\"Cloudflare\"}; domain=webmd.com; path=/, VisitorId=ca59eb71-3bb3-451f-4f3c-67d0c5245eac; Expires=Fri, 28 Apr 2034 15:15:05 GMT; domain=webmd.com; path=/, ab=default; domain=.webmd.com; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT, __cf_bm=rNHvwq8O1oYsqjFp7eW3y18DNHTW1_GdDXlGnIs8AF8-1714317305-1.0.1.1-wdzH9hPcnDDVvzkoBMpkO4Jk4XYPjKN6yxRLezcPC2nptfk8.vFxO9yDfMgob3LDXme3UapVB4sJ6Cr2sYQPDw; path=/; expires=Sun, 28-Apr-24 15:45:05 GMT; domain=.www.webmd.com; HttpOnly; Secure; SameSite=None",
+            "CF-Edge-Cache-Control": "s-maxage=119, maxage=10, proxy-revalidate, stale-while-revalidate=30",
+            "cf-wrk": "lrt1_cached_k8_worker_1_40S_21S_2024-04-15_13:56:36_gdbp_false_gtedgefrom_CLOUDFLAREVueJS_true_E_false_UC_false_UD_false_mp_false_active_true_from_MA1_ovr_null_config_envName_.k8s.lb._envNameFound_true_actv_true_blk_N/A_1714317305292_SKIP_CMT_NON_US-CA",
+            "Content-Security-Policy": "upgrade-insecure-requests",
+            "X-Backend": "default",
+            "X-Backend-By": "default",
+            "X-Cache": "HIT",
+            "X-Cache-Control-By": "override",
+            "X-Cache-Duration": "0.083333333333333h",
+            "X-Cache-Expiry": "Sunday, 28-Apr-2024 15:17:15 GMT",
+            "X-Cache-Reason": "routing",
+            "X-Cache-Time": "Sunday, 28-Apr-2024 15:12:15 GMT",
+            "X-DataCenter": "MA1",
+            "X-Dbg-Gt": "gtinfo={\"ct\":\"Berlin\",\"c\":null,\"cc\":null,\"st\":\"BE\",\"sc\":null,\"z\":\"10178\",\"lat\":\"52.51960\",\"lon\":\"13.40690\",\"dma\":null,\"cntr\":\"DEU\",\"cntrc\":\"276\",\"tz\":\"Europe/Berlin\",\"ci\":\"5.180.61.177\",\"debug\":\"Cloudflare\"}",
+            "X-Edge-Cache-Duration": "0.033333333333333h",
+            "X-Edge-Cache-Expiry": "Sunday, 28-Apr-2024 15:14:15 GMT",
+            "X-Gt-Setter": "usr",
+            "X-Redis": "redis_server_2",
+            "X-Route": "pg",
+            "X-Route-Akamai": "N/A",
+            "X-Runtime": "new",
+            "X-True-Client-Ip": "93.125.114.144",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ieVm2ZFkgM6fKhKSG4wV%2Fl%2BOSmifyXtOwVzGKQqDSvfmlSYY4Osh%2BMrsZUuLAZJJeNxa4dRGmQeDNCJdWzeM3CkOnTyYAwyiZflJZsypd81WvsssiUaNgEOS5zniUV0%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Vary": "Accept-Encoding",
+            "Server": "cloudflare",
+            "CF-RAY": "87b80175ba45c2a2-VIE",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "webmd.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "le.prod.webmd.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "AT"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "ZeroSSL"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "ZeroSSL RSA Domain Secure Site CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "EF6E3CFE6DBDD5618AC7010A5661125B",
+            "notBefore": "Apr  1 00:00:00 2024 GMT",
+            "notAfter": "Jun 30 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "le.prod.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.derigo.us"
+                ],
+                [
+                    "DNS",
+                    "*.framesdata.com"
+                ],
+                [
+                    "DNS",
+                    "*.k8s-asia-pacific.lb.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.k8s-geo.lb.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.k8s.lb.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.krames.com"
+                ],
+                [
+                    "DNS",
+                    "*.kramesondemand.com"
+                ],
+                [
+                    "DNS",
+                    "*.kramesonline.com"
+                ],
+                [
+                    "DNS",
+                    "*.kramesstaywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.kramesvideo.com"
+                ],
+                [
+                    "DNS",
+                    "*.la1.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.m.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.krames.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.kramesondemand.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.kramesonline.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.kramesstaywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.kramesvideo.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.staywellhealthlibrary.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.staywellknowledgebase.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.staywellsolutionsonline.com"
+                ],
+                [
+                    "DNS",
+                    "*.ma1.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.mediquality.net"
+                ],
+                [
+                    "DNS",
+                    "*.medscape.com"
+                ],
+                [
+                    "DNS",
+                    "*.medscape.org"
+                ],
+                [
+                    "DNS",
+                    "*.medscapestatic.com"
+                ],
+                [
+                    "DNS",
+                    "*.preview.m.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.preview.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.proddev.medscape.com"
+                ],
+                [
+                    "DNS",
+                    "*.proddev.medscape.org"
+                ],
+                [
+                    "DNS",
+                    "*.proddev.medscapestatic.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.krames.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.kramesondemand.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.kramesonline.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.kramesstaywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.kramesvideo.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.m.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.medscape.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.medscape.org"
+                ],
+                [
+                    "DNS",
+                    "*.staging.medscapestatic.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.staywellhealthlibrary.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.staywellknowledgebase.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.staywellsolutionsonline.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.staywellhealthlibrary.com"
+                ],
+                [
+                    "DNS",
+                    "*.staywellknowledgebase.com"
+                ],
+                [
+                    "DNS",
+                    "*.staywellsolutionsonline.com"
+                ],
+                [
+                    "DNS",
+                    "*.stg-ma1.kramesondemand.com"
+                ],
+                [
+                    "DNS",
+                    "*.stg-ma1.kramesonline.com"
+                ],
+                [
+                    "DNS",
+                    "*.stg-ma1.kramesstaywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.stg-ma1.kramesvideo.com"
+                ],
+                [
+                    "DNS",
+                    "*.stg-ma1.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.stg-ma1.staywellhealthlibrary.com"
+                ],
+                [
+                    "DNS",
+                    "*.stg-ma1.staywellknowledgebase.com"
+                ],
+                [
+                    "DNS",
+                    "*.stg-ma1.staywellsolutionsonline.com"
+                ],
+                [
+                    "DNS",
+                    "*.stprod.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "*.ucr.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "*.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "derigo.us"
+                ],
+                [
+                    "DNS",
+                    "external.ws.ma1.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "external.ws.staging.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "external.ws.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "external.ws.stg-ma1.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "fdb.rxlist.com"
+                ],
+                [
+                    "DNS",
+                    "framesdata.com"
+                ],
+                [
+                    "DNS",
+                    "images.emedicinehealth.com"
+                ],
+                [
+                    "DNS",
+                    "images.medicinenet.com"
+                ],
+                [
+                    "DNS",
+                    "images.onhealth.com"
+                ],
+                [
+                    "DNS",
+                    "images.rxlist.com"
+                ],
+                [
+                    "DNS",
+                    "img.medscape.fr"
+                ],
+                [
+                    "DNS",
+                    "img.medscapemedizin.de"
+                ],
+                [
+                    "DNS",
+                    "k8s-asia-pacific.lb.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "k8s-geo.lb.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "k8s.lb.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "kramesondemand.com"
+                ],
+                [
+                    "DNS",
+                    "kramesonline.com"
+                ],
+                [
+                    "DNS",
+                    "kramesvideo.com"
+                ],
+                [
+                    "DNS",
+                    "ma1.external.ws.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "medicinenet.com"
+                ],
+                [
+                    "DNS",
+                    "medscape.com"
+                ],
+                [
+                    "DNS",
+                    "medscape.org"
+                ],
+                [
+                    "DNS",
+                    "mobilebeta.webmdpartner.net"
+                ],
+                [
+                    "DNS",
+                    "sf2aim.webmd.net"
+                ],
+                [
+                    "DNS",
+                    "staging.external.ws.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "staging.mobileconnections.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "staging.patientjourneys.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "staywellknowledgebase.com"
+                ],
+                [
+                    "DNS",
+                    "staywellsolutionsonline.com"
+                ],
+                [
+                    "DNS",
+                    "stg-ma1.external.ws.staywell.com"
+                ],
+                [
+                    "DNS",
+                    "webmd.com"
+                ],
+                [
+                    "DNS",
+                    "www.doctor.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "www.emedicinehealth.com"
+                ],
+                [
+                    "DNS",
+                    "www.medicinenet.com"
+                ],
+                [
+                    "DNS",
+                    "www.onhealth.com"
+                ],
+                [
+                    "DNS",
+                    "www.rxlist.com"
+                ],
+                [
+                    "DNS",
+                    "www.sponsorcontent.webmd.com"
+                ],
+                [
+                    "DNS",
+                    "www.symptomchecker.webmd.com"
+                ]
+            ],
+            "OCSP": [
+                "http://zerossl.ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://zerossl.crt.sectigo.com/ZeroSSLRSADomainSecureSiteCA.crt"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 11:15:12"
+    },
+    "samsung.com": {
+        "Time": 33.67,
+        "URL": "samsung.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "211.45.27.231"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "211.45.27.231",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.001344919204711914
+            ],
+            [
+                "212.98.161.17",
+                0.0009372234344482422
+            ],
+            [
+                "185.11.76.22",
+                0.0013053417205810547
+            ],
+            [
+                "185.11.76.76",
+                0.0011935234069824219
+            ],
+            [
+                "213.242.112.49",
+                0.009185791015625
+            ],
+            [
+                "4.59.222.106",
+                0.28697848320007324
+            ],
+            [
+                "157.197.66.85",
+                0.2673933506011963
+            ],
+            [
+                "157.197.86.2",
+                0.2626209259033203
+            ],
+            [
+                "157.197.82.214",
+                0.26230430603027344
+            ],
+            [
+                "157.197.83.110",
+                0.26737165451049805
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.samsung.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "92.122.108.71"
+            ]
+        ],
+        "HTTP Status": 404,
+        "Content Length": 58995,
+        "Headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "Vary": "Accept-Encoding",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Last-Modified": "Thu, 04 Apr 2024 14:31:16 GMT",
+            "ETag": "W/\"e673-615463128cb38\"",
+            "Content-Encoding": "gzip",
+            "Content-Length": "11348",
+            "Date": "Sun, 28 Apr 2024 15:16:13 GMT",
+            "Connection": "keep-alive",
+            "Set-Cookie": "device_type=pc; path=/; domain=.samsung.com",
+            "Server-Timing": "cdn-cache; desc=HIT, edge; dur=53, origin; dur=0, ak_p; desc=\"1714317373608_2335035156_103896418_5392_20422_27_0_-\";dur=1"
+        },
+        "HTML Content": "samsung.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "KR"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Gyeonggi"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Samsung Electronics Co., Ltd."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.samsung.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Organization Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "50D0728C5DEC394E0EE418F3D08F9ABB",
+            "notBefore": "Apr  5 00:00:00 2024 GMT",
+            "notAfter": "May  6 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.samsung.com"
+                ],
+                [
+                    "DNS",
+                    "samsung.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 11:16:21"
+    }
+}

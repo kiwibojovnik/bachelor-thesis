@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.src).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	
+			<link rel="dns-prefetch" href="//www.google-analytics.com" />
+			<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+			<link rel="dns-prefetch" href="//fonts.gstatic.com">
+			
+
+		
+	
+<!-- Otimização de mecanismos de pesquisa por Rank Math PRO - https://rankmath.com/ -->
+<title>As Melhores Casas de Apostas Esportivas comparadas: Antivigilância</title><link rel="preload" as="font" href="https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" crossorigin><style id="wpr-usedcss">:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}:where(.wp-block-calendar table:not(.has-background) th){background:#ddd}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}:where(.wp-block-post-comments input[type=submit]){border:none}:where(.wp-block-cover-image:not(.has-text-color)),:where(.wp-block-cover:not(.has-text-color)){color:#fff}:where(.wp-block-cover-image.is-light:not(.has-text-color)),:where(.wp-block-cover.is-light:not(.has-text-color)){color:#000}:where(.wp-block-file){margin-bottom:1.5em}:where(.wp-block-file__button){border-radius:2em;display:inline-block;padding:.5em 1em}:where(.wp-block-file__button):is(a):active,:where(.wp-block-file__button):is(a):focus,:where(.wp-block-file__button):is(a):hover,:where(.wp-block-file__button):is(a):visited{box-shadow:none;color:#fff;opacity:.85;text-decoration:none}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}ol,ul{box-sizing:border-box}:where(.wp-block-navigation.has-background .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation.has-background .wp-block-navigation-submenu a:not(.wp-element-button)){padding:.5em 1em}:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu button.wp-block-navigation-item__content),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-pages-list__item button.wp-block-navigation-item__content){padding:.5em 1em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}:where(.wp-block-post-excerpt){margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}:where(.wp-block-pullquote){margin:0 0 1em}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:0}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}:where(.wp-block-term-description){margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}:where(pre.wp-block-verse){font-family:inherit}.entry-content{counter-reset:footnotes}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}.ub-hide{display:none}.ub-hiding{height:0;padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0}.ub_table-of-contents{box-sizing:border-box;transition:all .5s ease-in-out;background-color:#fafafa;border:1px solid #dfdfdf;padding:30px;margin-top:20px;margin-bottom:20px;display:grid}.ub_table-of-contents ol,.ub_table-of-contents ul{margin-bottom:0;margin-left:1.3em;padding-inline-start:0;padding-left:0}.ub_table-of-contents ol{list-style-type:none;counter-reset:item;margin:0;padding:0}.ub_table-of-contents ol>li{display:table;counter-increment:item}.ub_table-of-contents ol>li:before{content:counters(item, ".") ". ";display:table-cell;padding-right:.6em}.ub_table-of-contents li ol>li{margin:0}.ub_table-of-contents li ol>li:before{content:counters(item, ".") " "}.ub_table-of-contents-header{text-align:center;font-size:20px;font-weight:500;display:grid;grid-template-columns:minmax(10px,1fr) auto;transition:all .5s ease-in-out}.ub_table-of-contents-collapsed{padding:10px}.ub_table-of-contents-1-column{column-count:1}.ub_table-of-contents-container{transition:all .5s ease-in-out;overflow:hidden}.ub_table-of-contents .ub_table-of-contents-container ul>li:before{content:none}.ub_table-of-contents-extra-container,.ub_table-of-contents-header-container{padding:15px 30px;transition:all .5s ease-in-out}.ub_table-of-contents-header-container{display:grid}.ub_table-of-contents,.ub_table-of-contents-collapsed{padding:0}.ub_table-of-contents-collapsed .ub_table-of-contents-extra-container{padding:0}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}.ub_table-of-contents-1-column{column-count:1}}body{--wp--preset--color--black:#000000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6, 147, 227, 1) 0%,rgb(155, 81, 224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122, 220, 180) 0%,rgb(0, 208, 130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252, 185, 0, 1) 0%,rgba(255, 105, 0, 1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255, 105, 0, 1) 0%,rgb(207, 46, 46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238, 238, 238) 0%,rgb(169, 184, 195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74, 234, 220) 0%,rgb(151, 120, 209) 20%,rgb(207, 42, 186) 40%,rgb(238, 44, 130) 60%,rgb(251, 105, 98) 80%,rgb(254, 248, 76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255, 206, 236) 0%,rgb(152, 150, 240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254, 205, 165) 0%,rgb(254, 45, 45) 50%,rgb(107, 0, 62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255, 203, 112) 0%,rgb(199, 81, 192) 50%,rgb(65, 88, 208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255, 245, 203) 0%,rgb(182, 227, 212) 50%,rgb(51, 167, 181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202, 248, 128) 0%,rgb(113, 206, 126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2, 3, 129) 0%,rgb(40, 116, 252) 100%);--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:0.44rem;--wp--preset--spacing--30:0.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0, 0, 0, .2);--wp--preset--shadow--deep:12px 12px 50px rgba(0, 0, 0, .4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0, 0, 0, .2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgba(255, 255, 255, 1),6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp:6px 6px 0px rgba(0, 0, 0, 1)}:where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}strong{font-weight:bolder}code,kbd,samp{font-size:1em}small{font-size:80%}sub{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}progress{vertical-align:baseline}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}template{display:none}[hidden]{display:none}html{box-sizing:border-box;font-family:sans-serif}*,:after,:before{box-sizing:inherit}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,p,pre{margin:0}button{background:0 0;padding:0}button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}fieldset{margin:0;padding:0}ol,ul{margin:0}*,:after,:before{border:0 solid #dae1e7}img{border-style:solid}textarea{resize:vertical}img{max-width:100%;height:auto}input::-moz-placeholder,textarea::-moz-placeholder{color:inherit;opacity:.5}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:inherit;opacity:.5}input::placeholder,textarea::placeholder{color:inherit;opacity:.5}[role=button],button{cursor:pointer}table{border-collapse:collapse}.list-reset{list-style:none;padding:0}.bg-transparent{background-color:transparent}.bg-white{background-color:#fff}.hover\:bg-grey:hover{background-color:#b8c2cc}.border-grey{border-color:#b8c2cc}.rounded-none{border-radius:0}.border{border-width:1px}.cursor-pointer{cursor:pointer}.cursor-wait{cursor:wait}.block{display:block}.inline-block{display:inline-block}.table{display:table}.hidden{display:none}.flex{display:flex}.flex-row{flex-direction:row}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-between{justify-content:space-between}.font-system{font-family:system-ui,BlinkMacSystemFont,-apple-system,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif}.font-bold{font-weight:700}.leading-none{line-height:1}.my-4{margin-top:1rem;margin-bottom:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.mb-2{margin-bottom:.5rem}.mr-4{margin-right:1rem}.mb-8{margin-bottom:2rem}.max-w-wrapper{max-width:1240px}.overflow-hidden{overflow:hidden}.p-2{padding:.5rem}.px-0{padding-left:0;padding-right:0}.py-2{padding-top:.5rem;padding-bottom:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pl-2{padding-left:.5rem}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.pin-t{top:0}.pin-r{right:0}.pin-b{bottom:0}.resize{resize:both}.shadow{box-shadow:0 2px 4px 0 rgba(0,0,0,.1)}.text-center{text-align:center}.text-grey-dark{color:#8795a1}.text-sm{font-size:.875rem}.text-base{font-size:1rem}.text-md{font-size:1.1rem}.z-50{z-index:50}.content-area{margin-bottom:2rem;padding:0}@media screen and (min-width:992px){.site-content>div{display:flex;justify-content:space-around}.site-content>div .content-area{flex:0 0 600px;max-width:600px}}@media (min-width:1240px){.site-content .content-wrapper .content-area{flex:0 0 900px;max-width:900px;padding-left:0;padding-right:2rem}}html{scroll-behavior:smooth}.site{word-wrap:break-word}p{margin-bottom:1.25rem;line-height:1.5}h1,h2,h3,h4,h5,h6{margin-bottom:1rem}h1{font-size:2.25rem}h2,h3{font-size:1.5rem}h4{font-size:1.25rem}h5{font-size:1rem}h6{font-size:.75rem}figure,img{max-width:100%}a{color:#4dc0b5;text-decoration:none;transition:color .5s,filter .5s}a:active,a:hover{color:#20504f}a:active,a:focus{outline-color:#38a89d;outline-offset:3px;outline-width:1px;outline-style:none}[role=button]:active,[role=button]:focus{outline-color:#38a89d;outline-offset:3px;outline-width:1px;outline-style:none}.button{display:block;padding-top:.25rem;padding-bottom:.25rem;font-size:1.25rem;text-align:center;transition:all .5s}.cursor-help{cursor:help}.custom-logo{max-height:60px;display:block;width:auto}.site-branding{max-width:280px}@media (min-width:576px){.site-branding{width:332px}}.main-navigation>div{display:none}.main-navigation .menu-toggle{display:block;z-index:4;top:calc(50% - 1.5rem)}.main-navigation .menu-toggle .menu-open{display:block}.main-navigation .menu-toggle .menu-close,.main-navigation.toggled .menu-toggle .menu-open{display:none}.main-navigation.toggled .menu-toggle .menu-close{display:block}.main-navigation.toggled>div{position:fixed;top:0;left:0;width:100%;height:100vh;display:flex;align-items:center;justify-content:center}.main-navigation.toggled>div .primary-menu li{padding:.5rem 0;overflow:hidden;border-bottom-width:1px;width:80vw}.main-navigation.toggled>div .primary-menu li:last-child{border-bottom-width:0}.main-navigation.toggled>div .primary-menu li a{font-weight:700}.main-navigation.toggled>div .primary-menu li.menu-item-has-children{position:relative}.main-navigation.toggled>div .primary-menu li.menu-item-has-children:after{content:"+";position:absolute;right:0;top:.5rem}.main-navigation.toggled>div .primary-menu li.menu-item-has-children.focus:after{content:"-"}@media screen and (min-width:992px){.main-navigation{display:block;flex:1 1 0%}.main-navigation>div{display:block}.main-navigation>div .primary-menu{display:flex;justify-content:flex-end;margin:0;list-style:none;padding:0}.main-navigation>div .primary-menu li{padding:0 .5rem;position:relative}.main-navigation .menu-toggle{display:none}}@media (min-width:1240px){.site-header>div:not(.flex-col) .main-navigation{flex:0 0 900px;max-width:900px}}svg.icon-base{width:1em;height:1em;margin:0 .25rem;vertical-align:-.125rem;fill:currentColor}input[type=number],input[type=text],textarea{box-shadow:0 2px 4px 0 rgba(0,0,0,.1);-webkit-appearance:none;-moz-appearance:none;appearance:none;border-width:1px;border-radius:.25rem;width:100%;padding:.5rem .75rem;color:#606f7b;line-height:1.25}input:focus{outline-color:#38a89d;outline-width:1px;outline-style:dotted}ul{list-style-type:none;padding-left:1rem}ul>li{line-height:1.5}ul>li:before{content:"\2022";color:rgba(0,0,0,.2);display:inline-block;width:1em;margin-left:-1em}ul.list-reset li:before,ul.nav-menu li:before{content:"";display:none}ol{padding-left:1rem}ol li{line-height:1.5}.review-table .review-table--row{margin-top:0;margin-bottom:0;border-bottom-width:1px}.review-table--row--key{flex:0 0 1.5rem}.review-table--row--logo{flex:0 0 7rem}.review-table--row--ratings--stars svg{margin:0}.review-table--row--bonus{width:calc(100% - 8.5rem)}.review-table--row--bonus--code{font-size:.6rem}.review-table--row--button{flex:1 0 100%}@media (min-width:576px){.review-table--row--bonus,.review-table--row--ratings{flex:1 1 0%}}@media (min-width:768px){.review-table--row--button{margin-top:0;flex:1 1 0%}}@media screen and (min-width:992px){.review-table--row--button{flex:1 1 100%;margin-top:.5rem}}@media (min-width:1240px){.review-table--row--button{margin-top:0;flex:1 1 0%}}.terms-loaded{padding:.5rem;box-shadow:0 2px 4px 0 rgba(0,0,0,.1);font-size:.875rem;line-height:1.5;display:block;width:100%;margin-top:1rem}.terms-loaded.terms-loaded--on-hover{position:absolute;top:0;left:0;z-index:50;border-width:1px;border-color:#b8c2cc;text-align:left;margin-top:0}code,kbd,samp{font-family:monospace,monospace;background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2rem .4rem}iframe{max-width:100%}table{width:100%;margin-bottom:1rem}table tr td{border-width:1px;padding:.25rem}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto!important;-webkit-clip-path:none;clip-path:none;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:700;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}@media (min-width:576px){.sm\:block{display:block}.sm\:mr-4{margin-right:1rem}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:pl-0{padding-left:0}.sm\:static{position:static}.sm\:w-auto{width:auto}}.pseudo-clearfy-link{color:#008acf;cursor:pointer}.pseudo-clearfy-link:hover{text-decoration:none}#ub_table-of-contents-9ec6eb1c-4556-4a16-8e40-a28636cdc88d .ub_table-of-contents-header{text-align:left}.site-header{color:#f1f5f8;background-color:#22282c}.main-navigation button span,.primary-menu li.menu-item-has-children::after,.site-description,.site-title a{color:#f1f5f8}.primary-menu li{font-weight:700;border-bottom-color:#f1f5f8}.primary-menu li a,.primary-menu li a:visited{color:#f9ed04}.primary-menu li a:active,.primary-menu li a:hover{color:#a0ed4e}.main-navigation>div{background-color:#22282c}.site-tagline{position:absolute;clip:rect(1px,1px,1px,1px)}.site-footer{color:#f1f5f8;background-color:#22282c}.ai_section{margin-top:1rem;margin-bottom:1rem;background-color:#fcfcfc;border-radius:2px;box-shadow:0 2px 4px 0 rgba(0,0,0,.3)}a{color:#56bf15}a:active,a:hover{color:#527cf9}[role=button]:active,[role=button]:focus,a:active,a:focus{outline-color:#527cf9;outline-style:dotted}.button{font-weight:400;color:#23282d;background-color:#f7da02;border-radius:4px;box-shadow:0 2px 4px 0 rgba(0,0,0,.3)}.button:active,.button:hover{color:#23282d;background-color:#175e82}.content-wrapper:nth-child(2){padding-top:0}.site{color:#23282d}.rating-stars{color:#f99704}#head-custom{background:#344d8d;height:auto;width:100%;font-family:Montserrat,sans-serif;color:#fff;z-index:9;position:relative;padding:30px 0 27px}#head-custom h1{margin-top:0;margin-bottom:40px;font-style:normal;font-weight:700;font-size:36px;line-height:44px;color:#fff;font-family:Montserrat,sans-serif}#head-custom h1 span{color:#3db9ff}#head-custom p{font-style:normal;font-weight:400;font-size:14px;line-height:17px}#head-custom a{color:#3db9ff}#head-custom .list1 ul{list-style:none;padding-left:35px;padding-right:0;margin-top:35px;padding-bottom:20px}#head-custom .list1 ul li{position:relative;padding:3px 0 15px 20px!important;font-style:normal;font-weight:400;font-size:14px;line-height:17px;min-height:40px;vertical-align:middle;display:flex;align-items:center;color:#000}#head-custom .list1 ul li:before{content:"";position:absolute;background:url(https://antivigilancia.org/wp-content/themes/akurai/assets/images/list1.svg) no-repeat;left:-10px;top:8px;width:20px;height:20px}#head-custom .list1 ul li a{color:#000;text-decoration:none;transition:all .2s}#head-custom .list1 ul li a:hover{color:#344d8d;text-decoration:none;transition:all .2s}#head-custom .left-column.list1 ul li a{color:#fff!important}#head-custom .left-column.list1 ul li{color:#fff!important}#head-custom .left-column.list1 ul{padding-left:30px!important;padding-right:0!important;margin-top:15px!important;padding-bottom:0!important}#head-custom .left-column.list1 ul li{position:relative;padding:3px 0 10px 10px!important}#head-custom .inform{background:#fff;border-radius:5px;padding:20px 20px 0;margin-top:8px;width:440px}#head-custom .inform p.title{font-style:normal;font-weight:700;font-size:28px;line-height:29px;position:relative;text-align:left;color:#344d8d;padding-top:5px;padding-left:5px}#head-custom .inform p.title:before{content:'';position:absolute;width:96%;height:2px;background:#344d8d;bottom:-20px;left:2%}#head-custom .button{background:#3db9ff;border-radius:30px;width:100%;height:60px;position:relative;font-style:normal;color:#fff;padding-top:11px;display:grid;transition:all .2s;margin:40px 0 0;font-weight:700;font-size:30px;line-height:37px}#head-custom .button:before{position:absolute;content:'';background:url(https://antivigilancia.org/wp-content/themes/akurai/assets/images/arrow.svg) no-repeat;width:29px;height:40px;right:30px;top:10px;transition:all .3s}#head-custom .button:after{position:absolute;content:'';background:url(https://antivigilancia.org/wp-content/themes/akurai/assets/images/arrow.svg) no-repeat;width:29px;height:40px;left:30px;top:10px;transition:all .3s}#head-custom .button:hover{background:#26a0e4;transition:all .2s}#head-custom .desktop{display:block}#head-custom .mobile{display:none}#head-custom .row{display:flex}#head-custom .left-column{padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 35%;-ms-flex:0 0 35%;flex:0 0 35%;max-width:35%}#head-custom .center-column{padding-right:15px;padding-left:15px;margin-left:20px}#head-custom .right-column{padding-right:15px;padding-left:15px}#head-custom .right-column img{position:absolute;margin-left:40px;bottom:0}@media (max-width:767px){#head-custom .row{display:block}#head-custom .left-column{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}#head-custom h1{margin-bottom:20px;font-size:32px}#head-custom .right-column{display:none}#head-custom .center-column{margin-left:0}#head-custom .inform{width:100%}#head-custom .inform p.title{font-size:22px;text-align:center}#head-custom .button{margin:20px auto;font-size:22px}#head-custom .button.mobile{margin:20px auto;max-width:90%}#head-custom .button span{text-align:left}#head-custom .desktop{display:none}#head-custom .mobile{display:block!important}#head-custom{padding-bottom:20px}}@media (min-width:768px) and (max-width:1199px){#head-custom .row{display:block}#head-custom .left-column{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;text-align:center;margin-bottom:40px}#head-custom .button{margin:20px auto;font-size:22px;max-width:380px}#head-custom .center-column{padding-right:15px;padding-left:15px;margin-left:0;width:60%}#head-custom .right-column img{margin-left:0;bottom:0;right:0}#head-custom .inform{width:100%}}@media (min-width:1200px) and (max-width:1279px){#head-custom .right-column img{position:absolute;margin-left:0;bottom:0}}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+<meta name="description" content="Veja agora um comparativo entre as principais casas de aposta disponíveis para brasileiros, seus bônus, ofertas e reputação entre os usuários. Nosso site te mostra as principais opções de saque, confiabilidade desses serviços, esportes e muito mais."/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://antivigilancia.org/" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="As Melhores Casas de Apostas Esportivas comparadas: Antivigilância" />
+<meta property="og:description" content="Veja agora um comparativo entre as principais casas de aposta disponíveis para brasileiros, seus bônus, ofertas e reputação entre os usuários. Nosso site te mostra as principais opções de saque, confiabilidade desses serviços, esportes e muito mais." />
+<meta property="og:url" content="https://antivigilancia.org/" />
+<meta property="og:site_name" content="Melhores Casas de Apostas Esportivas comparadas: Antivigilância" />
+<meta property="og:updated_time" content="2023-12-19T09:15:48-03:00" />
+<meta property="article:published_time" content="2019-11-11T08:27:55-03:00" />
+<meta property="article:modified_time" content="2023-12-19T09:15:48-03:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="As Melhores Casas de Apostas Esportivas comparadas: Antivigilância" />
+<meta name="twitter:description" content="Veja agora um comparativo entre as principais casas de aposta disponíveis para brasileiros, seus bônus, ofertas e reputação entre os usuários. Nosso site te mostra as principais opções de saque, confiabilidade desses serviços, esportes e muito mais." />
+<meta name="twitter:label1" content="Escrito por" />
+<meta name="twitter:data1" content="crazymeercat925" />
+<meta name="twitter:label2" content="Tempo de leitura" />
+<meta name="twitter:data2" content="8 minutos" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://antivigilancia.org/#person","name":"crazymeercat925","logo":{"@type":"ImageObject","@id":"https://antivigilancia.org/#logo","url":"https://antivigilancia.org/wp-content/uploads/2021/03/antivigilancia.png","contentUrl":"https://antivigilancia.org/wp-content/uploads/2021/03/antivigilancia.png","caption":"crazymeercat925","inLanguage":"pt-BR","width":"320","height":"180"},"image":{"@type":"ImageObject","@id":"https://antivigilancia.org/#logo","url":"https://antivigilancia.org/wp-content/uploads/2021/03/antivigilancia.png","contentUrl":"https://antivigilancia.org/wp-content/uploads/2021/03/antivigilancia.png","caption":"crazymeercat925","inLanguage":"pt-BR","width":"320","height":"180"}},{"@type":"WebSite","@id":"https://antivigilancia.org/#website","url":"https://antivigilancia.org","name":"crazymeercat925","publisher":{"@id":"https://antivigilancia.org/#person"},"inLanguage":"pt-BR","potentialAction":{"@type":"SearchAction","target":"https://antivigilancia.org/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calend\u00e1rio.jpg","url":"https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calend\u00e1rio.jpg","width":"200","height":"200","inLanguage":"pt-BR"},{"@type":"WebPage","@id":"https://antivigilancia.org/#webpage","url":"https://antivigilancia.org/","name":"As Melhores Casas de Apostas Esportivas comparadas: Antivigil\u00e2ncia","datePublished":"2019-11-11T08:27:55-03:00","dateModified":"2023-12-19T09:15:48-03:00","about":{"@id":"https://antivigilancia.org/#person"},"isPartOf":{"@id":"https://antivigilancia.org/#website"},"primaryImageOfPage":{"@id":"https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calend\u00e1rio.jpg"},"inLanguage":"pt-BR"},{"@type":"Person","@id":"https://antivigilancia.org/author/crazymeercat925/","name":"crazymeercat925","url":"https://antivigilancia.org/author/crazymeercat925/","image":{"@type":"ImageObject","@id":"https://antivigilancia.org/wp-content/plugins/clearfy-pro/assets/images/default-avatar.png","url":"https://antivigilancia.org/wp-content/plugins/clearfy-pro/assets/images/default-avatar.png","caption":"crazymeercat925","inLanguage":"pt-BR"}},{"@type":"Article","headline":"As Melhores Casas de Apostas Esportivas comparadas: Antivigil\u00e2ncia","datePublished":"2019-11-11T08:27:55-03:00","dateModified":"2023-12-19T09:15:48-03:00","author":{"@id":"https://antivigilancia.org/author/crazymeercat925/","name":"crazymeercat925"},"publisher":{"@id":"https://antivigilancia.org/#person"},"description":"Veja agora um comparativo entre as principais casas de aposta dispon\u00edveis para brasileiros, seus b\u00f4nus, ofertas e reputa\u00e7\u00e3o entre os usu\u00e1rios. Nosso site te mostra as principais op\u00e7\u00f5es de saque, confiabilidade desses servi\u00e7os, esportes e muito mais.","name":"As Melhores Casas de Apostas Esportivas comparadas: Antivigil\u00e2ncia","@id":"https://antivigilancia.org/#richSnippet","isPartOf":{"@id":"https://antivigilancia.org/#webpage"},"image":{"@id":"https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calend\u00e1rio.jpg"},"inLanguage":"pt-BR","mainEntityOfPage":{"@id":"https://antivigilancia.org/#webpage"}}]}</script>
+<meta name="google-site-verification" content="z0q50xtG14Wg2CZMq-X8R9U4lS7dcC6tdrKJsvFldNI" />
+<!-- /Plugin de SEO do Rank Math para WordPress -->
+
+
+
+
+<style id='classic-theme-styles-inline-css' type='text/css'></style>
+<style id='global-styles-inline-css' type='text/css'></style>
+
+
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://antivigilancia.org/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<style></style>
+	<style></style>
+
+	<style type="text/css"></style><link rel="icon" href="https://antivigilancia.org/wp-content/uploads/2021/03/cropped-a-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://antivigilancia.org/wp-content/uploads/2021/03/cropped-a-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://antivigilancia.org/wp-content/uploads/2021/03/cropped-a-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://antivigilancia.org/wp-content/uploads/2021/03/cropped-a-favicon-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+
+<body class="home page-template-default page page-id-12 wp-custom-logo bg-white ampinactive">
+
+
+<div id="page" class="site font-system text-base">
+
+	
+	<header id="masthead" class="site-header">
+
+		
+		<a class="skip-link screen-reader-text" href="#site-navigation">Skip to navigation</a>
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		
+		<div class="max-w-wrapper flex flex-row items-center justify-between mx-auto py-2 px-0 sm:px-4 relative">
+
+		
+		<div class="site-branding flex items-center pl-2 sm:pl-0">
+
+			
+				<span class="mr-4">
+					<a href="https://antivigilancia.org/" class="custom-logo-link" rel="home" aria-current="page"><img width="275" height="114" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20275%20114'%3E%3C/svg%3E" class="custom-logo" alt="Antivigilancia.org" decoding="async" data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/03/av-logo.png" /><noscript><img width="275" height="114" src="https://antivigilancia.org/wp-content/uploads/2021/03/av-logo.png" class="custom-logo" alt="Antivigilancia.org" decoding="async" /></noscript></a>				</span>
+
+			
+			<div class="site-tagline">
+				<span class="site-title text-md font-bold">
+					<a class="" href="https://antivigilancia.org/" rel="home">Melhores Casas de Apostas Esportivas comparadas: Antivigilância</a>
+				</span>
+				<br />
+
+				
+					<span class="site-description block text-md">
+						Veja agora um comparativo entre as principais casas de aposta disponíveis para brasileiros, seus bônus, ofertas e reputação entre os usuários. Nosso site te mostra as principais opções de saque, confiabilidade desses serviços, esportes e muito mais.					</span>
+
+							</div>
+
+		</div>
+
+		
+		<nav id="site-navigation" class="main-navigation z-50"
+			[class]="'main-navigation' + ( navMenuExpanded ? ' toggled' : '' )">
+
+			<button class="menu-toggle absolute pin-t pin-r mt-2 sm:mr-4 bg-transparent py-2"
+				on="tap:AMP.setState( { navMenuExpanded: ! navMenuExpanded } )"
+				[class]="'menu-toggle absolute pin-t pin-r mt-2 sm:mr-4 bg-transparent py-2' + ( navMenuExpanded ? ' toggled' : '' )"
+				aria-controls="primary-menu" aria-expanded="false">
+				<span class="menu-open"><svg
+		class="icon icon-menu icon-base icon-fill-base icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-menu" xlink:href="#icon-menu"></use> </svg></span>
+				<span class="menu-close"><svg
+		class="icon icon-close icon-base icon-fill-base icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-close" xlink:href="#icon-close"></use> </svg></span>
+				<span class="screen-reader-text">Menu</span>
+			</button>
+
+			<div class="menu-top-menu-container"><ul id="primary-menu" class="primary-menu list-reset"><li id="menu-item-1547" class="menu-item menu-item-type-post_type menu-item-object-review menu-item-1547"><a href="https://antivigilancia.org/copagolbet/">Copa gol</a></li>
+<li id="menu-item-717" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-717"><a href="https://antivigilancia.org/megapari/">Megapari</a></li>
+<li id="menu-item-1574" class="menu-item menu-item-type-post_type menu-item-object-review menu-item-1574"><a href="https://antivigilancia.org/20bet/">20Bet</a></li>
+<li id="menu-item-715" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-715"><a href="https://antivigilancia.org/pinup/">Pin UP</a></li>
+<li id="menu-item-667" class="menu-item menu-item-type-post_type menu-item-object-review menu-item-667"><a href="https://antivigilancia.org/1xbet/">1xBet</a></li>
+<li id="menu-item-668" class="menu-item menu-item-type-post_type menu-item-object-review menu-item-668"><a href="https://antivigilancia.org/22bet/">22Bet</a></li>
+<li id="menu-item-710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-710"><a href="https://antivigilancia.org/betwinner/">Betwinner</a></li>
+<li id="menu-item-711" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-711"><a href="https://antivigilancia.org/sportingbet/">Sportingbet</a></li>
+<li id="menu-item-712" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-712"><a href="https://antivigilancia.org/betboo/">Betboo</a></li>
+<li id="menu-item-713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-713"><a href="https://antivigilancia.org/melbet/">Melbet</a></li>
+<li id="menu-item-716" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-716"><a href="https://antivigilancia.org/bodog/">Bodog</a></li>
+<li id="menu-item-718" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-718"><a href="https://antivigilancia.org/kto/">KTO</a></li>
+</ul></div>
+		</nav>
+
+				</div>
+		
+	</header><!-- #masthead -->
+
+
+
+
+
+<div id="head-custom">
+       <div class="content-wrapper max-w-wrapper mx-auto">
+           <div class="row">
+               <div class="left-column col-12 col-md-6 col-lg-5 list1">
+                   <h1>As Melhores Casas de Apostas Esportivas comparadas</h1>
+                                        <a href="#0-sites-de-apostas-brasileiras-lista-dos-melhores-sites-2024"><div class="button desktop">Lista 2024</div></a>
+               </div>
+               <div class="center-column col-12 col-md-6 col-lg-4 list1">
+                  <div class="inform">
+                     <p class="title">Sites de apostas no Brasil 2024</p>
+                      <ul>
+<li><a href="#0-sites-de-apostas-brasileiras-lista-dos-melhores-sites-2023">Melhores Casas de Apostas do Brasil</a></li>
+<li><a href="#8-outras-casas-de-apostas-esportivas-confiáveis">Outras Casas de Apostas Esportivas Confiáveis</a></li>
+<li>
+<div><a href="#9-como-escolher-um-site-de-apostas-online">Como escolher um site de apostas online?</a></div>
+</li>
+</ul>
+                  </div>
+               </div>
+               <div class="right-column col-12 col-md-12 col-lg-3">
+                 <img width="280" height="363" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20363'%3E%3C/svg%3E" class="img-fluid" alt="" data-lazy-src="/wp-content/themes/akurai/assets/images/3.png"><noscript><img width="280" height="363" src="/wp-content/themes/akurai/assets/images/3.png" class="img-fluid" alt=""></noscript>
+                 </div>
+
+             </div>
+           <a href="#0-sites-de-apostas-brasileiras-lista-dos-melhores-sites-2024"><div class="button mobile">Lista 2024</div></a>
+        </div>
+</div>
+
+
+	
+	<div id="content" class="site-content">
+
+				<div class="content-wrapper max-w-wrapper mx-auto py-8 px-4">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+		
+<article id="post-12" class="mb-8 py-4 post-12 page type-page status-publish hentry">
+
+	      		
+		<div class="entry-content">
+
+			
+<p>Veja agora um comparativo entre as principais casas de aposta disponíveis para brasileiros, seus bônus, ofertas e reputação entre os usuários. Nosso site te mostra as principais opções de saque, confiabilidade desses serviços, esportes e muito mais.</p>
+
+
+
+<span id="more-12"></span>
+
+
+
+<h2 class="wp-block-heading" id="0-sites-de-apostas-brasileiras-lista-dos-melhores-sites-2024">Sites de apostas Brasileiras: lista dos melhores sites 2024</h2>
+
+
+<div class="review-table my-4"><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">1</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/copagol"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="Copagolbet"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2022/09/copagolbet_logo_112.png"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2022/09/copagolbet_logo_112.png"
+					alt="Copagolbet"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="9"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/copagolbet/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">100% Bônus o seu depósito inicial até o valor de R$2.000</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/copagol"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">2</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/20bet"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="20Bet"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/04/20bet_logo_112.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/04/20bet_logo_112.jpg"
+					alt="20Bet"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="9"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/20bet/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">Bônus de até R$600 reais do valor depositado!</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/20bet"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">3</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/megapari"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="Megapari"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/03/Megapari_small.png"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/03/Megapari_small.png"
+					alt="Megapari"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="9"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/megapari/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">Bônus de 100% do valor investido até R$500</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/megapari"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">4</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/campobet"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="CampoBet"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/04/campobet_logo_112.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/04/campobet_logo_112.jpg"
+					alt="CampoBet"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="7.9"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg><svg
+		class="icon icon-star-empty icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-empty" xlink:href="#icon-star-empty"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/campobet/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">Bonificação de até R$7000 reais, mais 50 giros grátis!</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/campobet"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">5</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/rabona"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="Rabona Casino"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/04/rabona_casino_logo_112.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/04/rabona_casino_logo_112.jpg"
+					alt="Rabona Casino"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="8.5"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-empty icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-empty" xlink:href="#icon-star-empty"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/rabona/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">100% de até €500 Euros + 200 giros grátis!</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/rabona"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">6</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/22bet"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="22Bet"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/03/22bet_small.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/03/22bet_small.jpg"
+					alt="22Bet"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="9.7"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/22bet/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">Faça o seu primeiro depósito e receba 100% de bônus de até 600 BRL</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/22bet"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">7</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/fezbet"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="FezBet"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/04/fezbet_logo_112.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/04/fezbet_logo_112.jpg"
+					alt="FezBet"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="7.5"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg><svg
+		class="icon icon-star-empty icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-empty" xlink:href="#icon-star-empty"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/fezbet/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">100% do primeiro depósito até €500 euros + 200 giros grátis!</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/fezbet"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">8</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/wazamba"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="Wazamba Casino"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/04/wazamba_logo_112.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/04/wazamba_logo_112.jpg"
+					alt="Wazamba Casino"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="8.4"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-empty icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-empty" xlink:href="#icon-star-empty"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/wazamba/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">Ganhe até R$6,000 todas as semanas!</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/wazamba"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">9</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/betwinner"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="Betwinner"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/03/Betwinner_small.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/03/Betwinner_small.jpg"
+					alt="Betwinner"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="9.4"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/betwinner/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">Bônus de 100% do valor investido até £100 ou R$450</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/betwinner"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">10</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/yoyo"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="YoYo Casino"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/04/yoyo_casino_logo_112.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/04/yoyo_casino_logo_112.jpg"
+					alt="YoYo Casino"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="9"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/yoyo-casino/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">100% até R$7.000 reais + 50 Giros Grátis!</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/yoyo"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">11</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/cadoola"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="Cadoola Casino"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/04/cadoola_casino_logo_112.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/04/cadoola_casino_logo_112.jpg"
+					alt="Cadoola Casino"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="8.5"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-empty icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-empty" xlink:href="#icon-star-empty"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/cadoola-casino/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">PAcote de Boas-vindas até R$5,730</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/cadoola"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div><div class="review-table--row relative sm:static ai_section flex flex-wrap items-center px-2 py-4 rounded-none"><div class="review-table--row--key font-bold">12</div><div class="review-table--row--logo">
+				<a href="https://antivigilancia.org/bonus/1xbet"  target="_self" rel="nofollow noopener noreferrer">
+					<img width="112" height="54" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2054'%3E%3C/svg%3E"
+					alt="1xBet"
+					class=""
+				 data-lazy-src="https://antivigilancia.org/wp-content/uploads/2021/03/1xBet_small.jpg"	><noscript><img width="112" height="54" decoding="async" src="https://antivigilancia.org/wp-content/uploads/2021/03/1xBet_small.jpg"
+					alt="1xBet"
+					class=""
+					></noscript>
+				</a>
+			</div><div class="review-table--row--ratings text-center hidden sm:block"><span class="review-table--row--ratings--stars rating-stars block"><span data-ratings="9.4"><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-full icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-full" xlink:href="#icon-star-full"></use> </svg><svg
+		class="icon icon-star-half icon-base icon-fill-currentColor icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-star-half" xlink:href="#icon-star-half"></use> </svg></span></span><a class="review-table--row--ratings--review inline-block text-sm" href="https://antivigilancia.org/1xbet/">VER OPINIÃO</a></div><div class="review-table--row--bonus text-center leading-none sm:w-auto">
+				<span class="review-table--row--bonus--content block font-bold">Bônus de 100% sobre o montante depositado em até 500 BRL</span>
+				<span class="review-table--row--bonus--code"></span></div><div class="review-table--row--button mt-2 text-center">
+				<a class="button animation-none"
+					href="https://antivigilancia.org/bonus/1xbet"  target="_self" rel="nofollow noopener noreferrer">VER SITE ▷
+				</a>
+			</div></div></div>
+
+<div class="ub_table-of-contents" data-showtext="show" data-hidetext="hide" data-scrolltype="auto" id="ub_table-of-contents-9ec6eb1c-4556-4a16-8e40-a28636cdc88d" data-initiallyhideonmobile="false"
+                    data-initiallyshow="true"><div class="ub_table-of-contents-header-container"><div class="ub_table-of-contents-header">
+                    <div class="ub_table-of-contents-title">Melhores sites de apostas no Brasil em 2024 ① Seu Guia das melhores casas de apostas do Brasil</div></div></div><div class="ub_table-of-contents-extra-container"><div class="ub_table-of-contents-container ub_table-of-contents-1-column "><ul><li><a href=https://antivigilancia.org/#0-sites-de-apostas-brasileiras-lista-dos-melhores-sites-2024>Sites de apostas Brasileiras: lista dos melhores sites 2024</a></li><li><a href=https://antivigilancia.org/#1-casa-de-apostas-esportivas-o-que-%C3%A9>Casa de Apostas Esportivas: O que é?</a></li><li><a href=https://antivigilancia.org/#2-posso-apostar-em-quais-esportes>Posso apostar em quais esportes?</a></li><li><a href=https://antivigilancia.org/#3-seguran%C3%A7a-de-apostas>Segurança de Apostas</a></li><li><a href=https://antivigilancia.org/#4-top-3-melhores-casas-de-apostas>TOP 3 Melhores Casas de Apostas</a><ul><li><a href=https://antivigilancia.org/#5-%E2%84%961-%E2%80%93-1xbet-site-de-apostas-no-brasil-com-a-melhor-variedade-de-esportes>№1 – 1xBet: site de apostas no Brasil com a melhor variedade de esportes</a></li><li><a href=https://antivigilancia.org/#6-%E2%84%962-%E2%80%93-22bet-melhor-casa-de-apostas-com-odds-ao-vivo>№2 – 22bet: melhor casa de apostas com odds ao vivo</a></li><li><a href=https://antivigilancia.org/#7-%E2%84%963-%E2%80%93-betboo-melhor-site-de-apostas-com-pagamento-r%C3%A1pido>№3 – Betboo: melhor site de apostas com pagamento rápido</a></li></ul></li><li><a href=https://antivigilancia.org/#8-outras-casas-de-apostas-esportivas-confi%C3%A1veis>Outras Casas de Apostas Esportivas Confiáveis</a></li><li><a href=https://antivigilancia.org/#9-como-escolher-um-site-de-apostas-online>Como escolher um site de apostas online?</a></li><li><a href=https://antivigilancia.org/#10-qual-%C3%A9-a-melhor-casa-de-apostas-do-brasil-em-2024>Qual é a melhor casa de apostas do Brasil em 2024?</a></li><li><a href=https://antivigilancia.org/#11-opini%C3%A3o>Opinião</a></li></ul></div></div></div>
+
+
+<h2 class="wp-block-heading" id="1-casa-de-apostas-esportivas-o-que-%C3%A9">Casa de Apostas Esportivas: O que é?</h2>
+
+
+
+<p>Há muitas décadas a prática de fazer apostas esportivas é um costume bastante comum no Brasil. Os apostadores iam até uma banca de jogos e faziam palpites nos seus times e resultados favoritos.</p>
+
+
+
+<p>Caso vencesse, a empresa que processou a aposta pagaria ao usuário do serviço uma premiação pré-determinada em porcentagens sobre o preço pago pela aposta.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" fetchpriority="high" width="650" height="491" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20491'%3E%3C/svg%3E" alt="sportingbet_calendário" class="wp-image-55" data-lazy-srcset="https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calendário.jpg 650w, https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calendário-300x227.jpg 300w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calendário.jpg" /><noscript><img decoding="async" fetchpriority="high" width="650" height="491" src="https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calendário.jpg" alt="sportingbet_calendário" class="wp-image-55" srcset="https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calendário.jpg 650w, https://antivigilancia.org/wp-content/uploads/2019/11/sportingbet_calendário-300x227.jpg 300w" sizes="(max-width: 650px) 100vw, 650px" /></noscript></figure>
+
+
+
+<p>Atualmente, o mecanismo de funcionamento é basicamente o mesmo, mas com a grande vantagem de ser um procedimento totalmente online.</p>
+
+
+
+<p>Agora você pode escolher os resultados que desejar, receber premiações também através da internet e ainda ganhar bônus exclusivos ofertados por esses sites de apostas online.</p>
+
+
+
+<h2 class="wp-block-heading" id="2-posso-apostar-em-quais-esportes">Posso apostar em quais esportes?</h2>
+
+
+
+<p>A resposta para esta questão pode variar um pouco entre uma empresa e outra, mas, no geral, os sites que possuem boa reputação e confiabilidade oferecem minimamente algo em torno de dez esportes.</p>
+
+
+
+<p>Algumas delas, inclusive, pode ultrapassar até mesmo o número de trinta em sua tabela de modalidades esportivas.</p>
+
+
+
+<p>Entre os que não podem faltar no portfólio de praticamente todas elas podemos citar o nosso querido Futebol, também o vôlei, futsal, basquete e corrida de cavalos.</p>
+
+
+
+<p>Para além desses, você pode encontrar sites que oferecem, entre outros, hipismo, corrida de carros, críquete, beisebol, hóquei no gelo, futebol de praia, boxe e jogos virtuais.</p>
+
+
+
+<h2 class="wp-block-heading" id="3-seguran%C3%A7a-de-apostas">Segurança de Apostas</h2>
+
+
+
+<p>Como se trata de um serviço que sempre envolve apostas com dinheiro real, as <a href="https://antivigilancia.org/casas-de-apostas/" class="rank-math-link">casas de apostas</a> devem atender a diversos pré-requizitos para um funcionamento mais seguro e estável para os seus usuários.</p>
+
+
+
+<p>Para suprir a essa demanda por segurança, essas plataformas podem desenvolver parcerias com outras empresas, implementar camadas adicionais de proteção aos sistemas de pagamentos e tráfego de dados, entre outras medidas preventivas contra fraudes e ataques.</p>
+
+
+
+<p>Por esse motivo, quanto mais sistemas de segurança e criptografia de dados a empresa tiver, melhor será para os clientes em relação à segurança.</p>
+
+
+
+<h2 class="wp-block-heading" id="4-top-3-melhores-casas-de-apostas">TOP 3 Melhores Casas de Apostas</h2>
+
+
+
+<p>Com base nos critérios já citados acima, que são a variedade de esportes oferecidos e o fato de ter sistemas de segurança confiáveis, elencamos três dos melhores sites de apostas que operam no Brasil atualmente, são eles <a href="https://antivigilancia.org/1xbet/" class="rank-math-link">1xBet</a>, 22bet e Betboo.</p>
+
+
+
+<p>As três empresas em si não são as mais antigas do mercado de apostas, entretanto, estão entre as que possuem as bases de clientes mais expressivas e recebem maior número de apostas diárias ao redor do mundo.</p>
+
+
+
+<p>Além disso, um outro fator que nos direcionou a considerar essas três plataformas foi o fato de todas elas oferecerem promoções e bônus de boas-vindas. Confira a seguir quais as principais vantagens e condições destas empresas de maneira detalhada.</p>
+
+
+
+<h3 class="wp-block-heading" id="5-%E2%84%961-%E2%80%93-1xbet-site-de-apostas-no-brasil-com-a-melhor-variedade-de-esportes">№1 – 1xBet: site de apostas no Brasil com a melhor variedade de esportes</h3>
+
+
+
+<p>No topo da nossa lista, esta empresa é um dos maiores sites de apostas do mundo em número de usuários, que segundo a própria empresa, possui mais de 19 milhões de clientes espalhados por mais de 200 países.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="650" height="196" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20196'%3E%3C/svg%3E" alt="1xbet_carregue_a_sua_conta_e_receba_bónus" class="wp-image-57" data-lazy-srcset="https://antivigilancia.org/wp-content/uploads/2019/11/1xbet_carregue_a_sua_conta_e_receba_bónus.jpg 650w, https://antivigilancia.org/wp-content/uploads/2019/11/1xbet_carregue_a_sua_conta_e_receba_bónus-300x90.jpg 300w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://antivigilancia.org/wp-content/uploads/2019/11/1xbet_carregue_a_sua_conta_e_receba_bónus.jpg" /><noscript><img decoding="async" width="650" height="196" src="https://antivigilancia.org/wp-content/uploads/2019/11/1xbet_carregue_a_sua_conta_e_receba_bónus.jpg" alt="1xbet_carregue_a_sua_conta_e_receba_bónus" class="wp-image-57" srcset="https://antivigilancia.org/wp-content/uploads/2019/11/1xbet_carregue_a_sua_conta_e_receba_bónus.jpg 650w, https://antivigilancia.org/wp-content/uploads/2019/11/1xbet_carregue_a_sua_conta_e_receba_bónus-300x90.jpg 300w" sizes="(max-width: 650px) 100vw, 650px" /></noscript></figure>
+
+
+
+<p>O serviço recebeu premiações especializadas por reconhecimento de suas qualidades de interface e segurança.</p>
+
+
+
+<p>Para ser um novo cliente da plataforma basta acessar o site e preencher um breve formulário com as suas informações. Após a realização do primeiro depósito, que é de apenas R$4 reais, você pode receber ainda como bonificação de boas-vindas 100% do valor depositado até R$500.</p>
+
+
+
+<p>A empresa possui também um <a href="https://antivigilancia.org/cassino-online/" class="rank-math-link">cassino online</a>, o qual te oferece até €1500 euros de bônus seguindo a mesma lógica, mais 150 rodadas grátis. Significa que ao depositar até este valor, você receberá o dobro diretamente em sua conta de apostas.</p>
+
+
+
+<p>Além disso, dá para apostar em mais de 30 modalidades esportivas, com dinheiro de volta semanal de quase 2% para todas as apostas!</p>
+
+
+
+<p>No 1xBet, os depósitos e saques podem ser feitos sem burocracia. Você só precisa escolher um entre os exatos 40 sistemas de pagamento, escolher o valor e realizar a tranzação.</p>
+
+
+
+<p>Alguns deles, como o depósito bancário, por exemplo, podem demorar até 72 horas úteis, mas a maioria irá processar os seus depósitos imediatamente, sem custos de operação.</p>
+
+
+
+<h3 class="wp-block-heading" id="6-%E2%84%962-%E2%80%93-22bet-melhor-casa-de-apostas-com-odds-ao-vivo">№2 – 22bet: melhor casa de apostas com odds ao vivo</h3>
+
+
+
+<p>A segunda, e igualmente famosa como a primeira, é a <a href="https://antivigilancia.org/22bet/" class="rank-math-link">22bet</a>. Esta empresa possui um pouco menos clientes no mercado mundial, mas ainda assim, sua base de clientes se destaca.</p>
+
+
+
+<p>O serviço europeu não mede esforços na hora de oferecer melhores condições de aposta para os seus usuários e certamente faz isso com muita diferenciação.</p>
+
+
+
+<p>Traduzido para mais de 60 idiomas, o site oferece uma versão exclusivamente criada para clientes brasileiros. Com informações esportivas locais e todas as áreas traduzidas para o nosso português.</p>
+
+
+
+<p>O único ponto negativo sobre o sistema em si que podemos citar é em relação ao atendimento, que às vezes, pode ser um pouco mais demorado, se compararmos com o serviço de suporte do 1xBet, por exemplo. Mas fora isso, é um ótimo serviço em todas as situações.</p>
+
+
+
+<p>Primeiro que, logo de cara, a empresa já te oferta um bônus de boas-vindas sobre 100% do seu depósito inicial no valor de até R$600 reais, cem a mais que o da empresa anterior. Quer dizer que, contado com o bônus de 100%, o seu poder de aposta será de R$200 BRL acima.</p>
+
+
+
+<p>Do ponto de vista da experiência, especialmente para aqueles que gostam de apostar montantes maiores, é uma oportunidade bastante atraente.</p>
+
+
+
+<p>Em relação aos métodos de pagamento, as duas são relativamente parecidas entre si. Com a única diferença de que a 22bet oferece alguns poucos sistemas de pagamento a menos que a 1xbet.</p>
+
+
+
+<p>No mais, você ainda consegue utilziar métodos extremamente populares no Brasil como o Boleto, transferência, cartão de crédito e outros tantos.</p>
+
+
+
+<h3 class="wp-block-heading" id="7-%E2%84%963-%E2%80%93-betboo-melhor-site-de-apostas-com-pagamento-r%C3%A1pido">№3 – Betboo: melhor site de apostas com pagamento rápido</h3>
+
+
+
+<p>Lançada no ano de 2005, a Betboo é uma casa de apostas que, além de oferecer eventos de pôquer, esportes e jogos de <a href="https://antivigilancia.org/jogar-caca-niquel-online/" class="rank-math-link">caça-níqueis online</a>, ela disponibiliza também algumas modalidades de bingo.</p>
+
+
+
+<p>Diferentemente das duas anteriores, esta plataforma foi criada para atender exclusivamente às necessidades dos apostadores sul-americanos.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="650" height="382" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20382'%3E%3C/svg%3E" alt="betboo_futebol_virtual" class="wp-image-54" data-lazy-srcset="https://antivigilancia.org/wp-content/uploads/2019/11/betboo_futebol_virtual.jpg 650w, https://antivigilancia.org/wp-content/uploads/2019/11/betboo_futebol_virtual-300x176.jpg 300w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://antivigilancia.org/wp-content/uploads/2019/11/betboo_futebol_virtual.jpg" /><noscript><img decoding="async" width="650" height="382" src="https://antivigilancia.org/wp-content/uploads/2019/11/betboo_futebol_virtual.jpg" alt="betboo_futebol_virtual" class="wp-image-54" srcset="https://antivigilancia.org/wp-content/uploads/2019/11/betboo_futebol_virtual.jpg 650w, https://antivigilancia.org/wp-content/uploads/2019/11/betboo_futebol_virtual-300x176.jpg 300w" sizes="(max-width: 650px) 100vw, 650px" /></noscript></figure>
+
+
+
+<p>De certo modo, isso implica positivamente no modo mais direcionado como os serviços são oferecidos.</p>
+
+
+
+<p>Para começar a apostar na plataforma você precisa se cadastrar e, em seguida, realizar o primeiro depósito de pelo menos R$20 BRL.</p>
+
+
+
+<p>Os principais métodos de pagamento suportados são: Boleto bancário, transferência entre instituições, cartão de crédito e AstroPay, entre outras.</p>
+
+
+
+<p>Assim como as outras, é uma empresa altamente confiável e com grande reputação internacinal, porém, acaba saindo com uma leve desvantagem em nosso TOP 3 devido ao baixo valor de bônus de boas-vindas.</p>
+
+
+
+<p>Serviço este que é oferecido aos novos usuários em, no máximo, até R$120 reais da quantia; o que quer dizer que se você depositar qualquer montante acima disso, não serão contabilizados bonificações adicionais.</p>
+
+
+
+<h2 class="wp-block-heading" id="8-outras-casas-de-apostas-esportivas-confi%C3%A1veis">Outras Casas de Apostas Esportivas Confiáveis</h2>
+
+
+
+<ul>
+<li><strong>188bet</strong>: Este é um site confiável e com boa variedade de esportes disponíveis. Apesar de ser uma plataforma bastante jovem, ela gratifica novos clientes com bônus que podem chegar a até 100% de R$200 reais.Além dos esportes tradicionais, a 188bet oferece também Cassino, Pôquer e esportes virtuais.</li>
+
+
+
+<li><strong>Betmotion</strong>: O ponto forte dessa plataforma é que ela oferece um bônus de boas-vindas bastante diferenciado.Ao se cadastrar no serviço você irá perceber que há diferentes tipos de bonificação, inclusive, algumas sem a necessidade de um primeiro depósito.Ela conta com códigos promocionais e diversas outras ferramentas vantajosas para novatos.</li>
+
+
+
+<li><strong>SuperAposta</strong>: Logo de cara a primeira coisa que se destaca é o fato do nome desta empresa ser em português, visto que a maioria é em inglês. Pois bem.O site brasileiro é capaz de te oferecer 100% do primeiro depósito para até R$100 reais. Sendo o valor mínimo fixado em R$30 reais. Uma boa opção para quem está começando e pretende fazer apostas pequenas.</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading" id="9-como-escolher-um-site-de-apostas-online">Como escolher um site de apostas online?</h2>
+
+
+
+<p>Ao longo desta análise nós sempre adotamos alguns critérios de avaliação considerados por apostadores mais experientes como sendo fundamentais para o mapeamento de boas casas de apostas online.</p>
+
+
+
+<p>Características sobre a qualidade das apostas, variedade de jogos, segurança online e ofertas para os usuários são sempre fatores de grande relevância nesse sentido.</p>
+
+
+
+<p>Então, para escolher corretamente aquele que for mais conveniente para o seu perfil, você precisa considerar todas essas informações antes de chegar ao resultado. Tenha em mente o que procura e do que precisa.</p>
+
+
+
+<p>Algumas exigem depósitos mais altos, outras pagam melhores promoções. Mesmo que sendo raras excessões, há até mesmo sites que não tem ofertas de nenhum tipo. Apenas o serviço básico.</p>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading" id="10-qual-%C3%A9-a-melhor-casa-de-apostas-do-brasil-em-2024">Qual é a melhor casa de apostas do Brasil em 2024?</h2>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Melhor casa de aposta esportiva</td><td>Copagol Bet</td></tr><tr><td>Os melhores sites de apostas para apostar no futebol</td><td>Pin UP Bet</td></tr><tr><td>Site de apostas esportivas com odds ao vivo</td><td>22Bet</td></tr><tr><td>Site de apostas mais seguro</td><td>Sportaza</td></tr><tr><td>Site de apostas esportivas com bonus gratis</td><td>Fezbet</td></tr><tr><td>Site de apostas que aceitam PIX</td><td>20Bet</td></tr><tr><td>Casa de apostas que aceitam Bitcoin</td><td>Sportsbet.io</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="11-opini%C3%A3o">Opinião</h2>
+
+
+
+<p>Consideradas todos esses dados, você certamente terá mais ou menos uma boa ideia de quais delas podem ser melhores para o que procura. Um ponto positivo das empresas citadas é que todas aceitam depósitos de baixo valor.</p>
+
+
+
+<p>Sendo assim, você pode até mesmo fazer depósitos pequenos para testar o serviço apostando pouco dinheiro por vez. Assim, terá uma noção prática de como cada serviço reage em diferentes situações dentro da plataforma.</p>
+
+		</div><!-- .entry-content -->
+
+		
+</article>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+				</div>
+		
+	</div><!-- #content -->
+
+	
+	<footer id="colophon" class="site-footer py-4">
+		<div class="max-w-wrapper mx-auto">
+
+		
+		<div class="site-info text-center">
+
+			© 2023 Melhores Casas de Apostas Esportivas comparadas: <a href="https://antivigilancia.org">Antivigilância</a>
+		</div>
+		
+		<a href="#" class="scroll-top fixed pin-b pin-r mb-2 mr-2 p-2 text-grey-dark hover:bg-grey border border-grey cursor-pointer hidden">
+			<svg
+		class="icon icon-arrow-thick-up icon-base icon-fill-base icon-stroke-base"
+		 aria-hidden="true" role="img"> <use href="#icon-arrow-thick-up" xlink:href="#icon-arrow-thick-up"></use> </svg>			<span class="screen-reader-text">Scroll to top</span>
+		</a>
+
+		
+		</div>
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<script type="rocketlazyloadscript">var pseudo_links = document.querySelectorAll(".pseudo-clearfy-link");for (var i=0;i<pseudo_links.length;i++ ) { pseudo_links[i].addEventListener("click", function(e){   window.open( e.target.getAttribute("data-uri") ); }); }</script><script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://antivigilancia.org/wp-content/plugins/ultimate-blocks/src/blocks/table-of-contents/front.build.js' id='ultimate_blocks-table-of-contents-front-script-js' defer></script>
+<script type='text/javascript' id='akurai_scripts-js-extra'>
+/* <![CDATA[ */
+var Akurai = {"restUrl":"https:\/\/antivigilancia.org\/wp-json\/wp\/v2\/"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://antivigilancia.org/wp-content/themes/akurai/js/scripts.js' id='akurai_scripts-js' defer></script>
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+  <symbol id="icon-plus" viewBox="0 0 20 20"><path d="M11 9V5H9v4H5v2h4v4h2v-4h4V9h-4zm-1 11a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/></symbol>
+  <symbol id="icon-minus" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm5-11H5v2h10V9z"/></symbol>
+  <symbol id="icon-arrow-thick-up" viewBox="0 0 20 20"><path d="M7 10v8h6v-8h5l-8-8-8 8h5z"/></symbol>
+  <symbol id="icon-arrow-thin-right" viewBox="0 0 20 20"><path d="M16.172 9l-6.071-6.071 1.414-1.414L20 10l-.707.707-7.778 7.778-1.414-1.414L16.172 11H0V9z"/></symbol>
+  <symbol id="icon-arrow-thick-right" viewBox="0 0 20 20"><path d="M10 7H2v6h8v5l8-8-8-8v5z"/></symbol>
+  <symbol id="icon-calendar" viewBox="0 0 20 20"><path d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm0 4h2v2H5v-2zm4-4h2v2H9V9zm0 4h2v2H9v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></symbol>
+  <symbol id="icon-compose" viewBox="0 0 20 20"><path d="M2 4v14h14v-6l2-2v10H0V2h10L8 4H2zm10.3-.3l4 4L8 16H4v-4l8.3-8.3zm1.4-1.4L16 0l4 4-2.3 2.3-4-4z"/></symbol>
+  <symbol id="icon-coffee" viewBox="0 0 20 20"><path d="M4 11H2a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h2V1h14v10a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zm0-2V5H2v4h2zm-2 8v-1h18v1l-4 2H6l-4-2z"/></symbol>
+  <symbol id="icon-conversation" viewBox="0 0 20 20"><path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"/></symbol>
+  <symbol id="icon-currency-dollar" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm1-5h1a3 3 0 0 0 0-6H7.99a1 1 0 0 1 0-2H14V5h-3V3H9v2H8a3 3 0 1 0 0 6h4a1 1 0 1 1 0 2H6v2h3v2h2v-2z"/></symbol>
+  <symbol id="icon-flag" viewBox="0 0 20 20"><path d="M7.667 12H2v8H0V0h12l.333 2H20l-3 6 3 6H8l-.333-2z"/></symbol>
+  <symbol id="icon-folder" viewBox="0 0 20 20"><path d="M0 4c0-1.1.9-2 2-2h7l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"/></symbol>
+  <symbol id="icon-globe" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm2-2.25a8 8 0 0 0 4-2.46V9a2 2 0 0 1-2-2V3.07a7.95 7.95 0 0 0-3-1V3a2 2 0 0 1-2 2v1a2 2 0 0 1-2 2v2h3a2 2 0 0 1 2 2v5.75zm-4 0V15a2 2 0 0 1-2-2v-1h-.5A1.5 1.5 0 0 1 4 10.5V8H2.25A8.01 8.01 0 0 0 8 17.75z"/></symbol>
+  <symbol id="icon-information-outline" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></symbol>
+  <symbol id="icon-library" viewBox="0 0 20 20"><path d="M0 6l10-6 10 6v2H0V6zm0 12h20v2H0v-2zm2-2h16v2H2v-2zm0-8h4v8H2V8zm6 0h4v8H8V8zm6 0h4v8h-4V8z"/></symbol>
+  <symbol id="icon-link" viewBox="0 0 20 20"><path d="M9.26 13a2 2 0 0 1 .01-2.01A3 3 0 0 0 9 5H5a3 3 0 0 0 0 6h.08a6.06 6.06 0 0 0 0 2H5A5 5 0 0 1 5 3h4a5 5 0 0 1 .26 10zm1.48-6a2 2 0 0 1-.01 2.01A3 3 0 0 0 11 15h4a3 3 0 0 0 0-6h-.08a6.06 6.06 0 0 0 0-2H15a5 5 0 0 1 0 10h-4a5 5 0 0 1-.26-10z"/></symbol>
+  <symbol id="icon-menu" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></symbol>
+  <symbol id="icon-music-album" viewBox="0 0 20 20"><path d="M0 0h20v20H0V0zm10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-5a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 20 20"><path d="M19 11a7.5 7.5 0 0 1-3.5 5.94L10 20l-5.5-3.06A7.5 7.5 0 0 1 1 11V3c3.38 0 6.5-1.12 9-3 2.5 1.89 5.62 3 9 3v8zm-9 1.08l2.92 2.04-1.03-3.41 2.84-2.15-3.56-.08L10 5.12 8.83 8.48l-3.56.08L8.1 10.7l-1.03 3.4L10 12.09z"/></symbol>
+  <symbol id="icon-target" viewBox="0 0 20 20"><path d="M17.94 11H13V9h4.94A8 8 0 0 0 11 2.06V7H9V2.06A8 8 0 0 0 2.06 9H7v2H2.06A8 8 0 0 0 9 17.94V13h2v4.94A8 8 0 0 0 17.94 11zM10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/></symbol>
+  <symbol id="icon-cons" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm1.41-1.41A8 8 0 1 0 15.66 4.34 8 8 0 0 0 4.34 15.66zm9.9-8.49L11.41 10l2.83 2.83-1.41 1.41L10 11.41l-2.83 2.83-1.41-1.41L8.59 10 5.76 7.17l1.41-1.41L10 8.59l2.83-2.83 1.41 1.41z"/></symbol>
+  <symbol id="icon-pros" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/></symbol>
+  <symbol id="icon-ticket" viewBox="0 0 20 20"><path d="M20 12v5H0v-5a2 2 0 1 0 0-4V3h20v5a2 2 0 1 0 0 4zM3 5v10h14V5H3zm7 7.08l-2.92 2.04L8.1 10.7 5.27 8.56l3.56-.08L10 5.12l1.17 3.36 3.56.08-2.84 2.15 1.03 3.4L10 12.09z"/></symbol>
+  <symbol id="icon-view-tile" viewBox="0 0 20 20"><path d="M0 0h9v9H0V0zm2 2v5h5V2H2zm-2 9h9v9H0v-9zm2 2v5h5v-5H2zm9-13h9v9h-9V0zm2 2v5h5V2h-5zm-2 9h9v9h-9v-9zm2 2v5h5v-5h-5z"/></symbol>
+  <symbol id="icon-star-full" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></symbol>
+  <symbol id="icon-star-half" viewBox="0 0 20 20"><path d="M20,6.744 L12.809,6.127 L10,-0.5 L7.191,6.127 L0,6.744 L5.455,11.471 L3.82,18.5 L10,14.772 L16.18,18.499 L14.545,11.47 L20,6.744 L20,6.744 Z M10,12.896 L10,3.595 L11.71,7.631 L16.09,8.007 L12.768,10.885 L13.764,15.166 L10,12.896 L10,12.896 Z" /></symbol>
+  <symbol id="icon-star-empty" viewBox="0 0 20 20"><path d="M20,7.244 L12.809,6.627 L10,0 L7.191,6.627 L0,7.244 L5.455,11.971 L3.82,19 L10,15.272 L16.18,19 L14.545,11.971 L20,7.244 L20,7.244 Z M10,13.396 L6.237,15.666 L7.233,11.385 L3.91,8.507 L8.29,8.131 L10,4.095 L11.71,8.131 L16.09,8.507 L12.768,11.385 L13.764,15.666 L10,13.396 L10,13.396 Z" /></symbol>
+  <symbol id="icon-tag" viewBox="0 0 20 20"><path d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></symbol>
+  <symbol id="icon-trophy" viewBox="0 0 20 20"><path d="M15 9a3 3 0 0 0 3-3h2a5 5 0 0 1-5.1 5 5 5 0 0 1-3.9 3.9V17l5 2v1H4v-1l5-2v-2.1A5 5 0 0 1 5.1 11H5a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3V4H2v2H0V2h5V0h10v2h5v4h-2V4h-3v5z"/></symbol>
+  <symbol id="icon-user-solid-circle" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7 6v2a3 3 0 1 0 6 0V6a3 3 0 1 0-6 0zm-3.65 8.44a8 8 0 0 0 13.3 0 15.94 15.94 0 0 0-13.3 0z"/></symbol>
+  <symbol id="icon-question" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm2-13c0 .28-.21.8-.42 1L10 9.58c-.57.58-1 1.6-1 2.42v1h2v-1c0-.29.21-.8.42-1L13 9.42c.57-.58 1-1.6 1-2.42a4 4 0 1 0-8 0h2a2 2 0 1 1 4 0zm-3 8v2h2v-2H9z"/></symbol>
+</defs>
+</svg>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://antivigilancia.org/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script>
+
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1714466622 -->

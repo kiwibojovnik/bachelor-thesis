@@ -1,0 +1,735 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Home - Encyclopaedia Metallum: The Metal Archives</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link rel="stylesheet" type="text/css" href="/min/index.php?g=css&v=125" />
+<script type="642abba4b8e07b743ecd1a7a-text/javascript" src="/min/index.php?g=js&v=127"></script>
+<script type="642abba4b8e07b743ecd1a7a-text/javascript">
+			var URL_SITE	= 'https://www.metal-archives.com/';
+			var URL_IMAGES	= 'https://www.metal-archives.com/images/';
+			var URL_CSS		= 'https://www.metal-archives.com/css/';
+			var csrfToken	= '';
+
+			$(document).ready(function() {
+				toggleFixedPositioning(1280, 600);
+				executeOnAllPages();
+				
+				$('#searchQueryBox').focus();							});
+
+
+		</script>
+<noscript>
+			<style type="text/css">
+				.no-js { display: block !important; }
+			</style>
+		</noscript>
+<!--[if lt IE 8]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+			 <link rel="stylesheet" type="text/css" href="https://www.metal-archives.com/css/default/oldie.css" />
+		<![endif]-->
+<script type="642abba4b8e07b743ecd1a7a-text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-4046749-4']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+		</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="https://www.metal-archives.com/" id="MA_logo">Metal Archives</a>
+<div class="clear loading"><img src="https://www.metal-archives.com/images/loading.gif" alt="loading" width="12" height="12" /> loading...</div>
+<div id="search_box">
+<form id="search_form" action="https://www.metal-archives.com/search" method="get">
+<div>
+<label>Search:</label><br/>
+<input name="searchString" type="text" id="searchQueryBox" size="25" value tabindex="1" />
+<select name="type" tabindex="2">
+<option value="band_name">Band name</option>
+<option value="band_genre">Music genre</option>
+<option value="band_themes">Themes</option>
+<option value="album_title">Album title</option>
+<option value="song_title">Song title</option>
+<option value="label_name">Label</option>
+<option value="artist_alias">Artist</option>
+<option value="user_name">User profile</option>
+<option value="google">Google</option>
+</select>
+<br/>
+<a href="https://www.metal-archives.com/search/advanced/?searchString=&type=" class="float_left" tabindex="4">Advanced search</a>
+<button type="submit" class="btn_submit float_right" tabindex="3">Submit</button>
+</div>
+</form>
+</div>
+<div id="top_menu_box">
+<ul class="menu_style_1">
+<li><a href="https://www.metal-archives.com/content/help">Help</a></li>
+<li><a href="https://www.metal-archives.com/content/rules">Rules</a></li>
+<li><a href="https://metalarchives.threadless.com/" target="_top">Store</a></li>
+<li><a href="https://forum.metal-archives.com" target="_top">Forum</a></li>
+</ul>
+<ul class="menu_style_2">
+<li><a href="https://www.metal-archives.com/content/faq">FAQ</a></li>
+<li><a href="https://www.metal-archives.com/content/support">Support Us</a></li>
+<li><a href="https://www.metal-archives.com/content/tools">Add-ons</a></li>
+</ul>
+</div>
+</div>
+<div id="left_col">
+<div id="member_box">
+<form name="login_form" id="login_form" action="https://www.metal-archives.com/authentication/login" method="post">
+<div>
+<label>Username</label><br/>
+<input type="text" name="loginUsername" />
+<label>Password</label><br/>
+<input type="password" name="loginPassword" />
+<input type="hidden" name="origin" value="/" />
+<button type="submit" class="btn_login float_right">Login</button>
+</div>
+</form>
+<a href="https://www.metal-archives.com/user/signup" class="float-left writeAction">Register</a>
+<span class="float_right"><a href="https://www.metal-archives.com/user/forgot-password" class="float-left writeAction">Forgot login?</a> </span>
+<div class="clear"> </div>
+</div>
+<div id="left_menu_box">
+<ul class="menu_style_3 block_spacer_20">
+<li>
+Bands
+<ul>
+<li><a href="https://www.metal-archives.com/browse/letter">alphabetical</a></li>
+<li><a href="https://www.metal-archives.com/browse/country">country</a></li>
+<li><a href="https://www.metal-archives.com/browse/genre">genre</a></li>
+</ul>
+</li>
+<li>
+Labels
+<ul>
+<li><a href="https://www.metal-archives.com/label">alphabetical</a></li>
+<li><a href="https://www.metal-archives.com/label/country">country</a></li>
+</ul>
+</li>
+<li><a href="https://www.metal-archives.com/review/browse">Reviews</a></li>
+</ul>
+<ul class="menu_style_3 block_spacer_20">
+<li><a href="https://www.metal-archives.com/artist/rip">R.I.P.</a></li>
+<li><a href="https://www.metal-archives.com/band/random">Random Band</a></li>
+<li><a href="https://www.metal-archives.com/user/list">User rankings</a></li>
+<li><a href="https://www.metal-archives.com/news">News archive</a></li>
+</ul>
+<ul class="menu_style_3 ornement_30">
+<li><a href="https://www.metal-archives.com/report/list">Reports</a></li>
+<li><a href="https://www.metal-archives.com/todo">Contribute / To do</a></li>
+</ul>
+</div>
+<div id="left_text_box">
+<p class="small_text center"> &copy; 2002-2024<br/>Encyclopaedia Metallum </p>
+</div>
+<div>
+<p class="small_text center"><a href="https://www.metal-archives.com/content/pp">Privacy Policy</a></p>
+</div>
+</div>
+<div id="content_wrapper">
+<script type="642abba4b8e07b743ecd1a7a-text/javascript">
+	$(document).ready(function() {
+		$('#topStats').load(URL_SITE + 'index/ajax-stats');
+				$('.tabs').tabs({ beforeLoad: cacheTab });
+		$('.no-js').removeClass('no-js');
+	});
+</script>
+<div id="topStats">loading stats...</div>
+<div id="latest">
+<div id="lastAdded" class="block">
+<span class="header">Latest additions:</span>
+<div class="tabs no-js">
+<ul>
+<li><a href="#additionBands">Bands</a></li>
+<li><a href="https://www.metal-archives.com/index/latest-labels" title="Last labels added"><span>Labels</span></a></li>
+<li><a href="https://www.metal-archives.com/index/latest-artists" title="Last artists added"><span>Artists</span></a></li>
+</ul>
+<div id="additionBands">
+<div class="ui-tabs-panel-content">
+<table>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Desahuciado/3540544000">Desahuciado</a></span></td>
+<td class="Xsmall_text">April 29, 22:03</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Paroxism/3540543816">Paroxism</a></span></td>
+<td class="Xsmall_text">April 29, 22:02</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Lichtverschmutzung/3540543972">Lichtverschmutzung</a></span></td>
+<td class="Xsmall_text">April 29, 20:19</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Arbeit/3540544001">Arbeit</a></span></td>
+<td class="Xsmall_text">April 29, 20:15</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Skate_Drunks/3540543967">Skate Drunks</a></span></td>
+<td class="Xsmall_text">April 29, 20:13</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Maddelirium/3540543964">Maddelirium</a></span></td>
+<td class="Xsmall_text">April 29, 20:11</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Serenitus/3540543993">Serenitus</a></span></td>
+<td class="Xsmall_text">April 29, 20:10</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Noctalgia/3540543977">Noctalgia</a></span></td>
+<td class="Xsmall_text">April 29, 19:18</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Nihilg%C3%B8d/3540543988">Nihilgød</a></span></td>
+<td class="Xsmall_text">April 29, 17:41</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Ajatuska/3540543990">Ajatuska</a></span></td>
+<td class="Xsmall_text">April 29, 17:37</td>
+</tr>
+</table>
+<br/>
+<a href="https://www.metal-archives.com/archives/band-list/by/created">more...</a>
+</div>
+</div>
+</div>
+</div>
+<div id="lastUpdated" class="block">
+<span class="header">Latest updates:</span>
+<div class="tabs">
+<ul>
+<li><a href="#updatedBands">Bands</a></li>
+<li><a href="https://www.metal-archives.com/index/latest-labels/by/modified" title="Last labels updated"><span>Labels</span></a></li>
+<li><a href="https://www.metal-archives.com/index/latest-artists/by/modified" title="Last artists updated"><span>Artists</span></a></li>
+</ul>
+<div id="updatedBands">
+<div class="ui-tabs-panel-content">
+<table>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Fuck_Off/19880">Fuck Off</a></span></td>
+<td class="Xsmall_text">April 29, 22:31</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Fleshgate/3540534694">Fleshgate</a></span></td>
+<td class="Xsmall_text">April 29, 22:31</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Anvil/542">Anvil</a></span></td>
+<td class="Xsmall_text">April 29, 22:28</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Loudness/943">Loudness</a></span></td>
+<td class="Xsmall_text">April 29, 22:27</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Heavatar/3540360278">Heavatar</a></span></td>
+<td class="Xsmall_text">April 29, 22:27</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Exit_Eden/3540537382">Exit Eden</a></span></td>
+<td class="Xsmall_text">April 29, 22:23</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Image_Beyond/2138">Image Beyond</a></span></td>
+<td class="Xsmall_text">April 29, 22:22</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Beast_in_Black/3540433441">Beast in Black</a></span></td>
+<td class="Xsmall_text">April 29, 22:17</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Destruction/155">Destruction</a></span></td>
+<td class="Xsmall_text">April 29, 22:15</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Tarja/110710">Tarja</a></span></td>
+<td class="Xsmall_text">April 29, 22:15</td>
+</tr>
+</table>
+<br/>
+<a href="https://www.metal-archives.com/archives/band-list/by/modified">more...</a>
+</div>
+</div>
+</div>
+</div>
+<div id="lastReviews" class="block">
+<span class="header">Latest reviews:</span>
+<div class="tabs">
+<div class="block">
+<div class="ui-tabs-panel-content">
+<table>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Mindrot/5009">Mindrot</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Mindrot/Dawning/12306/robotniq/126459" title="Dawning">Dawning</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Intestine_Baalism/5810">Intestine Baalism</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Intestine_Baalism/An_Anatomy_of_the_Beast/14081/we_hope_you_die/264381" title="An Anatomy of the Beast">An Anatomy of the...</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Sadist/2663">Sadist</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Sadist/Tribe/489373/we_hope_you_die/264381" title="Tribe">Tribe</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Nazg%C3%BBl/7829">Nazgûl</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Nazg%C3%BBl/De_Expugnatione_Elfmuth/17289/we_hope_you_die/264381" title="De Expugnatione Elfmuth">De Expugnatione...</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Barbarie_Medieval/3540324773">Barbarie Medieval</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Barbarie_Medieval/Por_los_senderos_de_la_muerte/689411/we_hope_you_die/264381" title="Por los senderos de la muerte">Por los senderos...</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Immortal/75">Immortal</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Immortal/Diabolical_Fullmoon_Mysticism/235/we_hope_you_die/264381" title="Diabolical Fullmoon Mysticism">Diabolical...</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/DBC/787">DBC</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/DBC/Dead_Brain_Cells/7965/we_hope_you_die/264381" title="Dead Brain Cells">Dead Brain Cells</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Suppression/3540356703">Suppression</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Suppression/The_Sorrow_of_Soul_Through_Flesh/1026701/we_hope_you_die/264381" title="The Sorrow of Soul Through Flesh">The Sorrow of...</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Uchaly/3540543245">Uchaly</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Uchaly/%D0%91%D1%83%D1%80%D0%B0%D0%BD/1231997/NausikaDalazBlindaz/83846" title="Буран">Буран</a></td>
+<td class="Xsmall_text">Apr 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Cirith_Ungol/561">Cirith Ungol</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Cirith_Ungol/One_Foot_in_Hell/1767/CHAIRTHROWER/374625" title="One Foot in Hell">One Foot in Hell</a></td>
+<td class="Xsmall_text">Apr 28th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Graven_Sin/3540529774">Graven Sin</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Graven_Sin/Veil_of_the_Gods/1164961/gasmask_colostomy/210275" title="Veil of the Gods">Veil of the Gods</a></td>
+<td class="Xsmall_text">Apr 28th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Ghost_Bath/3540372489">Ghost Bath</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Ghost_Bath/Funeral/401651/EvigSnostorm/1887246" title="Funeral">Funeral</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Deicide/148">Deicide</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Deicide/Banished_by_Sin/1213281/Annable_Courts/324993" title="Banished by Sin">Banished by Sin</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Necrophagist/207">Necrophagist</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Necrophagist/Onset_of_Putrefaction/862/LedZeppelin2112/1651249" title="Onset of Putrefaction">Onset of...</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Human_Serpent/3540370707">Human Serpent</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Human_Serpent/Heirlooms_Eternal/903774/Abscondescentia/1832084" title="Heirlooms Eternal">Heirlooms Eternal</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/A_Somber_Funeral/3540534095">A Somber Funeral</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/A_Somber_Funeral/Summertime_Sorrow/1210751/Abscondescentia/1832084" title="Summertime Sorrow">Summertime Sorrow</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/LionSoul/3540375390">LionSoul</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/LionSoul/Welcome_Storm/652325/Dragonchaser/117580" title="Welcome Storm">Welcome Storm</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Frozen_Soul/3540450365">Frozen Soul</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Frozen_Soul/Encased_in_Ice/761409/Grumpy_Cat/374916" title="Encased in Ice">Encased in Ice</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Graveshadow/3540385978">Graveshadow</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Graveshadow/The_Uncertain_Hour/1028064/Riveroath_Daniel/2276666" title="The Uncertain Hour">The Uncertain Hour</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Pestilence/238">Pestilence</a></span></td>
+<td><a href="https://www.metal-archives.com/reviews/Pestilence/Levels_of_Perception/1216980/thetruepyromancer/1313539" title="Levels of Perception">Levels of Perception</a></td>
+<td class="Xsmall_text">Apr 27th</td>
+</tr>
+</table>
+<br/>
+<a href="https://www.metal-archives.com/review/browse">more...</a>
+</div>
+</div>
+</div>
+</div>
+<div id="upcomingAlbums" class="block">
+<span class="header">Upcoming albums</span>
+<div class="tabs">
+<div class="block">
+<div class="ui-tabs-panel-content">
+<table>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Olamot/3540490929">Olamot</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Olamot/Path_of_Divinity/1218357" title="Path of Divinity">Path of Divinity</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Darkflight/7834">Darkflight</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Darkflight/Entropy/1223930" title="Entropy">Entropy</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/North/8881">North</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/North/We_Are%2C_We_Remain%E2%80%A6/1230886" title="We Are, We Remain…">We Are, We Remain…</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Numbered_with_the_Transgressors/3540394464">Numbered with the Transgressors</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Numbered_with_the_Transgressors/Idiopathic_Roots_to_Perversion/1233069" title="Idiopathic Roots to Perversion">Idiopathic Roots...</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Gaerea/3540418247">Gaerea</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Gaerea/World_Ablaze/1233877" title="World Ablaze">World Ablaze</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Paradox/271">Paradox</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Paradox/Rearrange_the_Past/1234357" title="Rearrange the Past">Rearrange the Past</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Realm_of_Illusion/3540543947">Realm of Illusion</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Realm_of_Illusion/The_Legacy/1235415" title="The Legacy">The Legacy</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Formalin_Orgasm/3540534386">Formalin Orgasm</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Formalin_Orgasm/Thy_Reign_Is_Now/1235697" title="Thy Reign Is Now">Thy Reign Is Now</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Banisher/54085">Banisher</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Banisher/Demons/1235735" title="Demons">Demons</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Haprefleur/3540539591">Haprefleur</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Haprefleur/Le_Dahlia/1235755" title="Le Dahlia">Le Dahlia</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Mephisto/3540483003">Mephisto</a> / <a href="https://www.metal-archives.com/bands/Nachzehrer/3540513953">Nachzehrer</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Mephisto_-_Nachzehrer/Cries_of_the_Midnight_Hordes/1235780" title="Cries of the Midnight Hordes">Cries of the...</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Rivers_of_Nihil/3540301156">Rivers of Nihil</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Rivers_of_Nihil/Criminals/1235792" title="Criminals">Criminals</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Dragony/3540336425">Dragony</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Dragony/The_Untold_Story_%28Albion_Online%29/1235803" title="The Untold Story (Albion Online)">The Untold Story...</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Void_of_Nothingness/3540507574">Void of Nothingness</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Void_of_Nothingness/Rotting_from_Within_Inside_a_White_Chamber/1235811" title="Rotting from Within Inside a White Chamber">Rotting from...</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Eclipse_Insomnia/3540408741">Eclipse Insomnia</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Eclipse_Insomnia/Deep_Space_Trailblazer/1235829" title="Deep Space Trailblazer">Deep Space...</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Arbeit/3540544001">Arbeit</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Arbeit/Im_sanften_Tanz_der_Sch%C3%B6pfung/1235846" title="Im sanften Tanz der Schöpfung">Im sanften Tanz...</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Mourning_Souls/3540492362">Mourning Souls</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Mourning_Souls/With_Drone_12/1235899" title="With Drone 12">With Drone 12</a></td>
+<td class="Xsmall_text">April 29th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Burning/3540311713">Burning</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Burning/Bloodmoon_Sorceress/1211088" title="Bloodmoon Sorceress">Bloodmoon Sorceress</a></td>
+<td class="Xsmall_text">April 30th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Druid%27s_Crucifixion/3540527613">Druid's Crucifixion</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Druid%27s_Crucifixion/Chtonaut/1214277" title="Chtonaut">Chtonaut</a></td>
+<td class="Xsmall_text">April 30th</td>
+</tr>
+<tr>
+<td><span class="forceBreak"><a href="https://www.metal-archives.com/bands/Veter_Daemonaz/3540398051">Veter Daemonaz</a></span></td>
+<td><a href="https://www.metal-archives.com/albums/Veter_Daemonaz/%D0%9B%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/1214976" title="Литания">Литания</a></td>
+<td class="Xsmall_text">April 30th</td>
+</tr>
+</table>
+<br/>
+<a href="https://www.metal-archives.com/release/upcoming">more...</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="news">
+<div id="message"> </div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/296" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/296'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">AI generated music</span> / <span class="date">2024-04-26 12:53</span>
+</div>
+<p class="body">
+Recently, there has been a noticeable uptick in the number of bands being submitted to the site which have AI generated music. We want to make it clear what our position is on these bands, and how we plan to move forward in assessing them.<br/>
+<br/>
+It went without saying, at least up until now, that when we imagined growing the largest and most complete database of metal music, part of that vision was the preservation of art and human expression through music. Until AI, that was a given. The music described on the site is, in some way, played, programmed, and composed by a human being. That still remains an important criterion for us, and it is our belief that AI generated music does not satisfy that requirement.<br/>
+<br/>
+With the above in mind, <b>we won't be accepting bands with AI generated albums, and we will scrutinize more thoroughly submissions suspected of having AI generated music</b>.<br/>
+<br/>
+For those users submitting bands, if you have a band suspected of having AI generated music, we may call upon you to provide evidence to prove otherwise, whether it's behind-the-scenes material, statements from the band or its label, evidence the band played live, promotional material showing the band is genuine, and so on. The more evidence we have to show that such a band is real, and its music composed by a human being, the better. Our goal isn't to make this harder on you, or anyone for that matter, but we do want to stay true to our vision for the site. <br/>
+<br/>
+This policy isn't perfect and is a work-in-progress which may evolve over time. We know there will be some bands with AI generated music mistakenly added to the site, and we also know mistakes can be made and bands without AI generated material may be flagged for having AI generated music. With your help, we hope to avoid this as much as possible.<br/>
+<br/>
+Thank you. \m/
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/Derigin" class="profileMenu">Derigin</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/295" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/295'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">The Album of the Year Poll 2023 - RESULTS</span> / <span class="date">2024-01-01 22:15</span>
+</div>
+<p class="body">
+The results of the Album of the Year poll for 2023 are now available <a href="https://forum.metal-archives.com/viewtopic.php?f=1&t=141152">here</a>.
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/Derigin" class="profileMenu">Derigin</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/294" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/294'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">The Album of the Year Poll 2023 - VOTING</span> / <span class="date">2023-12-03 10:37</span>
+</div>
+<p class="body">
+Well, with December now upon us, it's time for the Album of the Year poll for 2023!<br/>
+<br/>
+How does it work? Select your top ten metal albums of the year; they have to be metal, they have to be new, original material, they have to be on MA, and they have to have been released in 2023. Put your list in order, with #1 being the album you liked the most. Once you're certain you have your list, send it to <a href="https://forum.metal-archives.com/memberlist.php?mode=viewprofile&u=31832">BastardHead</a> by private message (pm) on the forum. You have until 12:00AM EST on January 1st, 2024 to submit your list to him - once the year changes, the polls are closed!<br/>
+<br/>
+You get one ballot, and your account on MA must've been registered before November 30th, 2023 in order to participate. Please read the first post <a href="https://forum.metal-archives.com/viewtopic.php?p=3128571#p3128571">here</a> for more details on the way the poll works.<br/>
+<br/>
+The results of the poll will (ideally) be announced on January 1st, 2024 or shortly thereafter. In the meantime, feel free to discuss the poll in the thread located <a href="https://forum.metal-archives.com/viewtopic.php?f=1&t=140823">here</a>. <br/>
+<br/>
+Have fun, and look forward to your participation. \m/
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/Derigin" class="profileMenu">Derigin</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/293" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/293'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">12th Diamhea Memorial Review Challenge</span> / <span class="date">2023-11-19 16:50</span>
+</div>
+<p class="body">
+Greetings, all! It's almost that time of the year again - time for our classic reviews challenge!<br/>
+<br/>
+This challenge is a time-honored tradition among our reviewers here. Every spring and autumn, reviewers are encouraged to spend a week writing and submitting as many <b>quality</b> reviews as possible. The challenge is focused on <b>virgin albums: those with no reviews so far</b>. <br/>
+<br/>
+Every day, the reviews submitted and accepted are tallied, so that participants can see how they compare with one another and whether or not, altogether, we've been able to surpass previous challenges' totals. There's no prizes or rewards except knowing that you've given a review to an album that didn't previously have one. There's also bragging rights for the most reviews, if that matters to you. Please read <a href="https://forum.metal-archives.com/viewtopic.php?f=4&t=140640">this thread</a> for the rules and to discuss the challenge!<br/>
+<br/>
+The challenge is named in memory of our friend <a href="https://www.metal-archives.com/users/Diamhea">Diamhea</a>, a long-time contributor to the challenge and staff member here at Metal Archives, who sadly passed away on May 21st, 2018. He was the first person to have ever written 100 reviews for a single challenge! <br/>
+<br/>
+The challenge will start a week from now at <b>12:00AM EST on Monday November 27th</b> and will run until <b>11:59PM EST on Sunday December 3rd</b>. <br/>
+<br/>
+Everyone is welcome to participate - all you have to do is submit reviews as usual during that week.<br/>
+<br/>
+Looking forward to your participation! \m/
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/Derigin" class="profileMenu">Derigin</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/292" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/292'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">Band research list</span> / <span class="date">2023-08-12 08:52</span>
+</div>
+<p class="body">
+Harkening back to a <a href="https://www.metal-archives.com/news/view/id/241">news item from over 7 years ago</a>, the band research thread now comes with <a href="https://azmodes.w0rmhive.at">a neat and shiny list in HTML table form</a>. This list has already helped us tremendously in getting a better overview as well as resolving many entries from that gargantuan and ever-growing thread. If you know <i>anything</i> about <i>any</i> of the listed bands or you're just really into sleuthing work for old forgotten stuff, we'd be grateful for any help in thinning out the list and contributing to the Archives' completeness. Or who knows, maybe you are even so graciously inclined and willing to purchase a release in order to get our collective aural mitts on some crucial piece of music.<br/>
+<br/>
+See <a href="https://forum.metal-archives.com/viewtopic.php?f=17&t=104654">the thread's opening post</a> for more information. If you have any questions, requests or suggestions for the HTML list in particular, feel free to post in the thread or <a href="https://www.metal-archives.com/users/Azmodes">email me</a> directly.<br/>
+<br/>
+Cheers!
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/Azmodes" class="profileMenu">Azmodes</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/290" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/290'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">Donations for Apollo Theater Victims</span> / <span class="date">2023-04-02 00:49</span>
+</div>
+<p class="body">
+On March 31, 2023, a severe storm caused the <a href="https://www.cnn.com/2023/04/01/us/apollo-theatre-roof-collapse-illinois/index.html">roof to collapse</a> on attendees at a metal gig in Belvidere, Illinois. One man was killed, while another 28 people were injured, including five with severe injuries.<br/>
+<br/>
+If you would like to provide support, a GoFundMe has been set up for the family of the man who was killed, to help with the costs that come along with losing a family member:<br/>
+<a href="https://www.gofundme.com/f/fred-livingston-jr">https://www.gofundme.com/f/fred-livingston-jr</a><br/>
+<br/>
+Donation pages were also created to help with financial relief for severely injured attendees:<br/>
+<a href="https://www.gofundme.com/f/financial-relief-for-michelle-il-roof-collapse">https://www.gofundme.com/f/financial-relief-for-michelle-il-roof-collapse</a><br/>
+<a href="https://www.gofundme.com/f/help-paul-rojas-after-apollo-roof-collapse">https://www.gofundme.com/f/help-paul-rojas-after-apollo-roof-collapse</a><br/>
+<a href="https://www.gofundme.com/f/dylans-recover-from-the-apollo">https://www.gofundme.com/f/dylans-recover-from-the-apollo</a><br/>
+<a href="https://www.gofundme.com/f/help-metal-mark-apollo-theater-roof-collapse">https://www.gofundme.com/f/help-metal-mark-apollo-theater-roof-collapse</a><br/>
+<a href="https://www.gofundme.com/f/daniels-recovery-apollo-roof-collapse">https://www.gofundme.com/f/daniels-recovery-apollo-roof-collapse</a><br/>
+<a href="https://www.gofundme.com/f/financial-relief-after-roof-collapse-for-victoria">https://www.gofundme.com/f/financial-relief-after-roof-collapse-for-victoria</a><br/>
+<a href="https://www.gofundme.com/f/vmq5j6-medical-and-monthly-bills">https://www.gofundme.com/f/vmq5j6-medical-and-monthly-bills</a><br/>
+<br/>
+If there are additional official donation pages, we will add them. Our thoughts are with the victims, their families, and all those affected by this tragedy. The metal community is here for you.
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/Derigin" class="profileMenu">Derigin</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/289" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/289'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">April Fools</span> / <span class="date">2023-04-01 21:17</span>
+</div>
+<p class="body">
+Hey gang,<br/>
+<br/>
+I've got a couple bad news. Firstly, there is unfortunately no magic AI that will help us manage the band queue. That was just a bit of April Fools Day wishful thinking. Who knows, maybe one day!<br/>
+<br/>
+Secondly, black metal will remain on the site.
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/HellBlazer" class="profileMenu">HellBlazer</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/288" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/288'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">MA and AI</span> / <span class="date">2023-04-01 02:05</span>
+</div>
+<p class="body">
+<img src="https://www.metal-archives.com/images/2/0/4/3/2043.jpg" style="float: right; width: 300px; margin-left:20px;" /><br/>
+<div style="text-align: justify;"><br/>
+Hello everyone,<br/>
+<br/>
+There are some big changes coming to the way we do things here on MA. I'm sure most of you have noticed the recent rapid advances in AI technology, such as the amazing results that software like ChatGPT and Midjourney can produce. So we've begun to think, could something similar be used for the betterment of MA? One of our main jobs is of course to evaluate bands for inclusion on the site. This is a very time-consuming process, often leaves people dissatisfied (both mods and submitters), and while we do our utmost to reach an impartial consensus on our decisions, the human element means that there is always a degree of subjectivity involved. Would it be possible to use AI technology to develop an entirely unbiased and scientific way of determining if a band is metal?<br/>
+<br/>
+As it turns out, yes. Yes, it is. We've spent the last couple months training an AI algorithm on hundreds and hundreds of songs of every genre and have ended up with a very solid model for predicting whether a band is metal or not to a high degree of accuracy. This means that in the near future, we will be able to evaluate band submissions completely objectively based on sound wave analysis and cold computer logic. For the moment, we will be using this AI model manually to double check the results, but we hope to eventually be able to simply let submitters give a Bandcamp or Spotify link, and the automated system will do the rest!<br/>
+<br/>
+Now, there is one small issue. Algorithms like this create their own way of "thinking" about things, so to speak, and this can sometimes find patterns and details that escape human beings. As such, one very surprising result about metal subgenres came out of our experiments. See, if we throw, say, doom metal at the model, sure, that's fine. Death metal? No problem. Traditional heavy metal? Of course! It's even quite good at determining if the more borderline genres are predominantly metal or not. But... Black metal? It was quite a shocking discovery, but it does appear that when analyzed scientifically, it turns out that black metal isn't actually metal. I know! We were taken aback, too! We even spent a good amount of time redoing the tests while tweaking the parameters and such, but the results remained very consistent: scientifically speaking, black metal is false.<br/>
+<br/>
+Now, what shall we do about this? Remove all black metal from the site? Well, it sounded crazy at first, but the more we thought about it... It might actually make sense. MA has always prided itself on its accuracy, and now that it can be scientifically proven that a good number of bands on here aren't metal, it stands to reason that they shouldn't be here at all. It's not completely unprecedented either, since there have been purges of some niche subgenres in the past, though on a much smaller scale. In the end, we think that the opportunity to be 100% consistent and objective in how we do things trumps the inconvenience. Besides, let's face it, I think deep down we all know that black "metal" has always been the worst subgenre. This move should also cut down on at least 70% of band-related drama on the site. Overall, I think we can consider this a win-win.<br/>
+<br/>
+This is why, in the next few days, we will begin to remove BM bands from the site. This will be a gradual effort since every band needs to be evaluated again. Of course, many black metal bands also incorporate elements from the true metal genres in their sound, and these will be allowed to remain if they are determined to be predominantly metal. This way, you can at least rest assured that the better bands in the genre will stay on MA.<br/>
+<br/>
+Thank you for your comprehension, and we hope this new technology and classification can usher in a new age of enlightenment for the metal community as a whole.<br/>
+</div>
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/HellBlazer" class="profileMenu">HellBlazer</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/287" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/287'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">The Album of the Year Poll 2022</span> / <span class="date">2022-12-02 09:09</span>
+</div>
+<p class="body">
+The end of the year is nearly upon us, which means it's time for the Album of the Year poll for 2022!<br/>
+<br/>
+How does it work? Select your top ten metal albums of the year; they have to be metal, they have to be new, original material, they have to be on MA, and they have to have been released in 2022. Put your list in order, with #1 being the album you liked the most. Once you're certain you have your list, send it to <a href="https://forum.metal-archives.com/memberlist.php?mode=viewprofile&u=31832">BastardHead</a> by private message (pm) on the forum. You have until 12:00AM EST on January 1st, 2023 to submit your list to him - once the year changes, the polls are closed!<br/>
+<br/>
+You get one ballot, and your account on MA must've been registered before November 30th, 2022 in order to participate. Please read the first post <a href="https://forum.metal-archives.com/viewtopic.php?p=3074844#p3074844">here</a> for more details on the way the poll works.<br/>
+<br/>
+The results of the poll will (ideally) be announced on January 1st, 2023 or shortly thereafter. This news post will be updated with a link to the results when available. In the meantime, feel free to discuss the poll in the thread located <a href="https://forum.metal-archives.com/viewtopic.php?f=1&t=137224">here</a>. <br/>
+<br/>
+EDIT: Results can be found <a href="https://forum.metal-archives.com/viewtopic.php?f=1&t=137488">here</a>!<br/>
+<br/>
+Have fun, and look forward to your participation. \m/
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/Derigin" class="profileMenu">Derigin</a>
+</p>
+</div>
+<div class="motd">
+<div class="titleLine">
+<a class="iconContainer ui-state-default ui-corner-all" href="https://www.metal-archives.com/news/view/id/285" title="Link to this news post" onclick="if (!window.__cfRLUnblockHandlers) return false; prompt('Use this URL to link directly to this news post', 'https://www.metal-archives.com/news/view/id/285'); return false;" data-cf-modified-642abba4b8e07b743ecd1a7a->
+<span class="ui-icon ui-icon-link">Link</span>
+</a>
+<span class="title">Merch is here!</span> / <span class="date">2022-10-24 10:41</span>
+</div>
+<p class="body">
+It's here!<br/>
+<br/>
+<div style="display: flex; align-items: start;"><div><picture><source/><img src="/images/assets/artwork.png" style="width: 250px;" /></picture></div><br/>
+<div>Yes, we are finally doing site merch, largely to commemorate the 20th anniversary of Metal Archives (sorry, bit late in the year I know, but it took time to get all of this set up...). We've commissioned artworks and designs by <a href="https://www.metal-archives.com/artists/Misanthropic-Art/484715" target="_blank">Misanthropic Art</a> and <a href="https://www.metal-archives.com/artists/Annick_Giroux/230" target="_blank">Annick Giroux</a> and they look pretty darn awesome if I may say so myself.<br/>
+<br/>
+The store focuses largely on shirts, but we also have wall art/prints, flags, buttons, stickers and other cool stuff, and most items are fairly customizable. You can choose among the proposed items on the store homepage, or browse through the Collections or the menus to pick what you want. Make sure you select the right size/colours/options (back print or not, fabric, etc). <br/>
+</div></div><br/>
+<br/>
+<div style="text-align: center;"><b>Here is the store!</b><br/>
+<a href="https://metalarchives.threadless.com/" target="_blank">https://metalarchives.threadless.com/</a></div><br/>
+<br/>
+<a href="https://metalarchives.threadless.com/" target="_blank"><picture><source/><img src="/images/assets/threadless.png" class="exampleImg" /></picture></a><br/>
+<br/>
+<br/>
+30% of proceeds go towards the <a href="https://www.edenprojects.org/" target="_blank">Eden Reforestation Projects</a>, a non-profit that work in developing countries to combat deforestation, poverty, and climate change and rebuild biodiversity.<br/>
+<br/>
+We hope you like what you see, and we thank you for your support.<br/>
+<br/>
+- <a href="/users/HellBlazer">HellBlazer</a><br/>
+<br/>
+&
+</p>
+<p class="signature">
+-<a href="https://www.metal-archives.com/users/Morrigan" class="profileMenu">Morrigan</a>
+</p>
+</div>
+[ <a href="https://www.metal-archives.com/news">news archives</a> ]
+</div>
+</div>
+</div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="642abba4b8e07b743ecd1a7a-|49" defer></script><script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'87c41f130bd46e96',t:'MTcxNDQ0NDM0Ny44NzUwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

@@ -1,0 +1,995 @@
+{
+    "http://www.online-dating.org": {
+        "Time": 5.46,
+        "URL": "http://www.online-dating.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.182",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "15.197.212.58"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "15.197.212.58",
+        "PING Status": "OK",
+        "PING IP": "15.197.212.58",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 114,
+        "Headers": {
+            "Server": "openresty",
+            "Date": "Tue, 30 Apr 2024 03:29:08 GMT",
+            "Content-Type": "text/html",
+            "Content-Length": "114",
+            "Connection": "keep-alive"
+        },
+        "HTML Content": "www.online-dating.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.online-dating.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "9B5A9A965AE4CC1A",
+            "notBefore": "Apr  5 02:55:29 2024 GMT",
+            "notAfter": "Apr  5 02:55:29 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.online-dating.org"
+                ],
+                [
+                    "DNS",
+                    "online-dating.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-19552.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 05:29:13"
+    },
+    "http://www.online-translator.com": {
+        "Time": 4.53,
+        "URL": "http://www.online-translator.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.182",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "141.95.147.42"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "141.95.147.42",
+        "PING Status": "OK",
+        "PING IP": "141.95.147.42",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.online-translator.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "141.95.147.42"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 59406,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Tue, 30 Apr 2024 03:29:39 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Keep-Alive": "timeout=20",
+            "Cache-Control": "no-cache, no-store",
+            "Pragma": "no-cache",
+            "Set-Cookie": ".AspNetCore.Antiforgery.qKMI6Lrj50Q=CfDJ8DH3ktSSPPxDoy6ijXj_1i7gWuQZO4JQemN-HwfO3CMap-0dMSyrl_xe2O0cuddvtHaF9mVMmjYykKTgy7IV-ep902Q_fWxvanSvSh9c7U1A9CP5teQuj6MfmVVJM9w8tiq6sGjZXC2M18VLp8DpsY8; path=/; samesite=strict; httponly",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Powered-By": "ASP.NET",
+            "Strict-Transport-Security": "max-age=15768000",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.online-translator.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.online-translator.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "AlphaSSL CA - SHA256 - G4"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0745C98FFC5818019146C530",
+            "notBefore": "Dec  6 11:58:45 2023 GMT",
+            "notAfter": "Jan  6 11:58:44 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.online-translator.com"
+                ],
+                [
+                    "DNS",
+                    "online-translator.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/alphasslcasha256g4"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/alphasslcasha256g4.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/alphasslcasha256g4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 05:29:42"
+    },
+    "https://www.onlinegambling.com": {
+        "Time": 5.89,
+        "URL": "https://www.onlinegambling.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.182",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.19.185.101",
+            "104.19.186.101"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.19.185.101",
+        "PING Status": "OK",
+        "PING IP": "104.19.185.101",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 357158,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 03:30:18 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Ray": "87c473d2fd8cb336-PRG",
+            "CF-Cache-Status": "MISS",
+            "Cache-Control": "private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate",
+            "Last-Modified": "Tue, 30 Apr 2024 03:30:18 GMT",
+            "Set-Cookie": "SSID=CQCbYR0AAAAAAADeZTBmeADAbcplMGYBAAAAAAAAAAAAymUwZgDUfQ; path=/; domain=.onlinegambling.com; expires=Wed, 30-Apr-2025 03:30:18 GMT, SSSC=10.G7363497396749205624.1|0.0; path=/; domain=.onlinegambling.com, SSRT=ymUwZgABAA; path=/; domain=.onlinegambling.com; expires=Wed, 30-Apr-2025 03:30:18 GMT, __cf_bm=cdrMpvvlDJmJs7cSmbeR73uqthYaMXwfhvZDLbe4ccE-1714447818-1.0.1.1-dI6yZa7bPkpKW4.GpPvFLknI4GSYaCPDXtn7zRbJUUeIgDUs87S0pier9JnZnKqiLGcQIrDWAK2AP_zSKtYAKg; path=/; expires=Tue, 30-Apr-24 04:00:18 GMT; domain=.onlinegambling.com; HttpOnly; Secure; SameSite=None, __cf_bm=FzukurXq7x3xzh3GgKm2HShhShF_zzcy8qksk4ZY9x8-1714447818-1.0.1.1-6RcMPZA.Id1C3SQKrUKbmSCmM2i4gbSDZwjcADgByWdlWuN1GjTAq587GilG4AdfpQm80DgO2AUTmvtfw5.0lw; path=/; expires=Tue, 30-Apr-24 04:00:18 GMT; domain=.onlinegambling.com; HttpOnly; Secure; SameSite=None",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+            "Vary": "Accept-Encoding",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "content-security-policy": "upgrade-insecure-requests",
+            "pragma": "no-cache",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "rtss": "1-itm-22967-ha",
+            "section-io-id": "752f61f7a3080ae8c0a8c51a4fd9c55f",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "DENY",
+            "x-xss-protection": "1; mode=block",
+            "Server": "cloudflare",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.onlinegambling.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "onlinegambling.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0576842753A39EA05A25ACA6932319C7",
+            "notBefore": "Jan 11 00:00:00 2024 GMT",
+            "notAfter": "Dec 31 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.onlinegambling.com"
+                ],
+                [
+                    "DNS",
+                    "onlinegambling.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 05:30:22"
+    },
+    "http://www.oovoo.com": {
+        "Time": 8.91,
+        "URL": "http://www.oovoo.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.186",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.96.9",
+            "188.114.97.9"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.97.9",
+        "PING Status": "OK",
+        "PING IP": "188.114.97.9",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.oovoo.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.96.9",
+                "188.114.97.9"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 121774,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 03:31:01 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "link": "<https://www.oovoo.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.oovoo.com/wp-json/wp/v2/pages/41>; rel=\"alternate\"; type=\"application/json\", <https://www.oovoo.com/>; rel=shortlink",
+            "x-powered-by": "WordOps",
+            "x-frame-options": "SAMEORIGIN",
+            "x-xss-protection": "1; mode=block",
+            "x-content-type-options": "nosniff",
+            "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
+            "x-download-options": "noopen",
+            "x-srcache-fetch-status": "HIT",
+            "x-srcache-store-status": "BYPASS",
+            "CF-Cache-Status": "DYNAMIC",
+            "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=oe%2FPj1ic%2F3oYQvVTzVAx89I%2FKD2bwlnv2FYccQY6EW%2FREIu%2FzLHfV5UzSybZCrEZoiJYzng0JhHjnWjmayuH8hHo4zAMTNs0wso6c2mlxVhKeFzavos85HMyuAsrt6%2By5rJhx3lpLZu1KmvL\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+            "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+            "Server": "cloudflare",
+            "CF-RAY": "87c474de6a924108-PRG",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "www.oovoo.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "oovoo.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1P5"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "6BFA827C1E4F44F70E1C0524C26E4179",
+            "notBefore": "Apr 16 11:23:57 2024 GMT",
+            "notAfter": "Jul 15 11:23:56 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "oovoo.com"
+                ],
+                [
+                    "DNS",
+                    "*.oovoo.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/s/gts1p5/_LIEmF_bJXY"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1p5.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1p5/s4S0cWQvaPw.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 05:31:09"
+    },
+    "http://www.opec.org": {
+        "Time": 4.22,
+        "URL": "http://www.opec.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.186",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "172.67.43.154",
+            "104.22.49.225",
+            "104.22.48.225"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.22.48.225",
+        "PING Status": "OK",
+        "PING IP": "104.22.48.225",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 23354,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 03:32:03 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "last-modified": "Mon, 29 Apr 2024 07:32:30 GMT",
+            "vary": "Accept-Encoding",
+            "CF-Cache-Status": "DYNAMIC",
+            "Server": "cloudflare",
+            "CF-RAY": "87c47660d805b371-PRG",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "www.opec.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.opec.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "CH"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "SwissSign AG"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "SwissSign RSA TLS DV ICA 2022 - 1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "36ACA77BA593D4CDCEDE0218ADB67CEC9B538DA6",
+            "notBefore": "Jan 18 13:35:01 2024 GMT",
+            "notAfter": "Jan 18 13:35:01 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.opec.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.swisssign.ch/sign/ocs-aaccced5-66e8-4069-9b1b-fd29ab73efec"
+            ],
+            "caIssuers": [
+                "http://aia.swisssign.ch/air-1b863385-f4a9-47fa-88a5-2a5abfd4a167"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.swisssign.ch/cdp-679723b2-8641-4642-8500-f6d2ff37e6ba"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 05:32:07"
+    },
+    "https://www.opendns.com": {
+        "Time": 7.57,
+        "URL": "https://www.opendns.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.182",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "146.112.62.105"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "146.112.62.105",
+        "PING Status": "OK",
+        "PING IP": "146.112.62.105",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 13921,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Tue, 30 Apr 2024 03:33:06 GMT",
+            "Content-Type": "text/html",
+            "Content-Length": "13921",
+            "Connection": "keep-alive",
+            "Last-Modified": "Tue, 02 Apr 2024 22:13:26 GMT",
+            "ETag": "\"660c8306-3661\"",
+            "Accept-Ranges": "bytes",
+            "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff"
+        },
+        "HTML Content": "www.opendns.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.opendns.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "037B1C0A31511EBE1225404E37E20E08ED83",
+            "notBefore": "Apr 28 10:32:51 2024 GMT",
+            "notAfter": "Jul 27 10:32:50 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "opendns.com"
+                ],
+                [
+                    "DNS",
+                    "www.opendns.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 05:33:12"
+    },
+    "https://www.openpgp.org": {
+        "Time": 27.35,
+        "URL": "https://www.openpgp.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.162",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "18.192.231.252",
+            "3.70.101.28"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "3.70.101.28",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "192.168.1.1",
+                0.00418400764465332
+            ],
+            [
+                "80.70.60.254",
+                0.0058629512786865234
+            ],
+            [
+                "90.183.197.126",
+                0.020105361938476562
+            ],
+            [
+                "194.228.115.73",
+                0.014955759048461914
+            ],
+            [
+                "90.182.79.244",
+                0.015246868133544922
+            ],
+            [
+                "90.182.78.226",
+                0.015185832977294922
+            ],
+            [
+                "194.228.115.67",
+                0.017333030700683594
+            ],
+            [
+                "194.228.115.66",
+                0.018793106079101562
+            ],
+            [
+                "52.95.216.62",
+                0.017460346221923828
+            ]
+        ],
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 7736,
+        "Headers": {
+            "Accept-Ranges": "bytes",
+            "Age": "71880",
+            "Cache-Control": "public,max-age=0,must-revalidate",
+            "Cache-Status": "\"Netlify Edge\"; hit",
+            "Content-Encoding": "gzip",
+            "Content-Length": "2331",
+            "Content-Security-Policy": "default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self'; img-src 'self'; frame-src 'self'; font-src 'self' data:; object-src 'none'; frame-ancestors 'none';",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Date": "Tue, 30 Apr 2024 03:34:08 GMT",
+            "Etag": "\"c825cca048cb3ff5cf87bbc1f8cd8bdb-ssl-df\"",
+            "Referrer-Policy": "no-referrer",
+            "Server": "Netlify",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Vary": "Accept-Encoding",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "DENY",
+            "X-Nf-Request-Id": "01HWPH28HWCYSHHW6J69MWS76X",
+            "X-Xss-Protection": "1; mode=block"
+        },
+        "HTML Content": "www.openpgp.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "openpgp.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03E032DADC56B312A42261C93BA7DE8A8BD1",
+            "notBefore": "Apr 14 17:10:13 2024 GMT",
+            "notAfter": "Jul 13 17:10:12 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "openpgp.org"
+                ],
+                [
+                    "DNS",
+                    "www.openpgp.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 05:34:12"
+    },
+    "https://www.opensocietyfoundations.org": {
+        "Time": 4.84,
+        "URL": "https://www.opensocietyfoundations.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.20.63.127",
+            "104.20.62.127"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.20.63.127",
+        "PING Status": "OK",
+        "PING IP": "104.20.63.127",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 136704,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 03:35:04 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "Cache-Control": "public, max-age=3600",
+            "x-frame-options": "SAMEORIGIN",
+            "x-xss-protection": "1; mode=block",
+            "x-content-type-options": "nosniff",
+            "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'sha256-6vmNTbfgubexXPiaZdcqfKCk+vKBe9cfsKsAciXQtMg=' 'sha256-r1aYSsDn5Btub+zo7XZr6P3ZhmNyYTvHf/yjmzIpxT8=' 'sha256-aqdvQaQU9tkorRhtgHldablGaB5SI/SwbLemAOKE7Yo=' 'sha256-Vxv+qm8gMYYzbp7hSMakF5Q81e7GDj/Z5HZYT4ekhho=' 'sha256-uBpmtDakUPHISUCFtaVC869LxTI53EPQREvqhqlxGVU=' 'sha256-h8bC9y2R69GO3nntfTAfOohrJdzeOS7slDdbOSULEJo=' 'sha256-isqZ0Q9pUWxBIyLN3u9Y3hy3MuWSJMoiNKT/nB5AbP8=' 'sha256-E+9KuTkZkFIuiN69g5Y/rS1KDaDR2Wsfoq7Eetly00k=' 'sha256-4A71+eBTUzk+eqeYnEVcDQgmfqADEcilqeQIAiwyPj8=' 'sha256-Ft85708B4GnIXzdTu8nxvQbyFHRn0yYy/8Sa3eDtv38=' 'sha256-IQuu99eybyUVQl8tdKPujuMVZMAtiHk2XPu15i9EH4A=' https://*.google-analytics.com/analytics.js https://cdncache-a.akamaihd.net/sub/b156ae9/98002/l.js https://www.youtube.com https://www.googletagmanager.com https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js https://*.google-analytics.com/analytics.js https://www.googletagmanager.com/gtag/js https://www.youtube.com/iframe_api https://www2.osfound.org/shorten https://connect.facebook.net https://public.flourish.studio/resources/embed.js; style-src 'unsafe-inline' 'self'; object-src 'self' https://video.ted.com; base-uri 'self' https://www.youtube.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.ingest.sentry.io https://cdn.plyr.io https://translate.googleapis.com; font-src 'self' https: data:; frame-src 'self' https://www.youtube.com https://w.soundcloud.com https://www.facebook.com https://player.vimeo.com https://flo.uri.sh; img-src 'self' https://i.ytimg.com https://opensocietyfoundations.imgix.net https://*.google-analytics.com https: data:; manifest-src 'self'; media-src 'self'; report-uri https://opensociety.report-uri.com/r/d/csp/reportOnly; worker-src 'none';",
+            "Content-Encoding": "gzip",
+            "CF-Cache-Status": "HIT",
+            "Age": "6477",
+            "Last-Modified": "Tue, 30 Apr 2024 01:47:07 GMT",
+            "Strict-Transport-Security": "max-age=15552000",
+            "Server": "cloudflare",
+            "CF-RAY": "87c47acc0ef4b33b-PRG"
+        },
+        "HTML Content": "www.opensocietyfoundations.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.opensocietyfoundations.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GeoTrust TLS RSA CA G1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0DFFDEFD65FD18D11D317C78DEF29641",
+            "notBefore": "May 26 00:00:00 2023 GMT",
+            "notAfter": "Jun 25 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.opensocietyfoundations.org"
+                ],
+                [
+                    "DNS",
+                    "opensocietyfoundations.org"
+                ]
+            ],
+            "OCSP": [
+                "http://status.geotrust.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.geotrust.com/GeoTrustTLSRSACAG1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://cdp.geotrust.com/GeoTrustTLSRSACAG1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-30 05:35:08"
+    },
+    "https://www.opioids.com": {
+        "Time": 25.47,
+        "URL": "https://www.opioids.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.214",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "52.44.246.5"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "52.44.246.5",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "192.168.1.1",
+                0.008649826049804688
+            ],
+            [
+                "80.70.60.254",
+                0.005913972854614258
+            ],
+            [
+                "90.183.197.126",
+                0.021986007690429688
+            ],
+            [
+                "194.228.115.73",
+                0.015368938446044922
+            ],
+            [
+                "90.182.79.244",
+                0.015527009963989258
+            ],
+            [
+                "90.182.78.194",
+                0.01577901840209961
+            ],
+            [
+                "194.228.115.67",
+                0.01638627052307129
+            ],
+            [
+                "194.228.115.64",
+                0.020971059799194336
+            ],
+            [
+                "194.228.190.114",
+                0.018990755081176758
+            ],
+            [
+                "62.115.58.198",
+                0.01842498779296875
+            ],
+            [
+                "62.115.122.159",
+                0.12247490882873535
+            ]
+        ],
+        "Redirected Status": "N/A",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": "HTTPSConnectionPool(host='www.opioids.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)')))",
+        "Content Length": "N/A",
+        "Headers": "N/A",
+        "HTML Content": "www.opioids.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "N/A",
+        "Middle box - invalid request line": "Fail",
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 05:36:17"
+    },
+    "http://www.originalelf.com": {
+        "Time": 5.23,
+        "URL": "http://www.originalelf.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "194.228.92.170",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "107.180.3.243"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "107.180.3.243",
+        "PING Status": "OK",
+        "PING IP": "107.180.3.243",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 18587,
+        "Headers": {
+            "Date": "Tue, 30 Apr 2024 03:36:43 GMT",
+            "Server": "Apache",
+            "Upgrade": "h2,h2c",
+            "Connection": "Upgrade, Keep-Alive",
+            "Last-Modified": "Fri, 12 Apr 2024 01:32:11 GMT",
+            "ETag": "\"36c083d-489b-615dc3da525ae-gzip\"",
+            "Accept-Ranges": "bytes",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Length": "5259",
+            "Keep-Alive": "timeout=5",
+            "Content-Type": "text/html"
+        },
+        "HTML Content": "www.originalelf.com_content.html",
+        "Cert Status": "N/A",
+        "Cert Content": "N/A",
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-30 05:36:47"
+    }
+}

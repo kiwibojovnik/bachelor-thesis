@@ -1,24 +1,30 @@
-import requests
-
-def check_website_via_tor(url):
-    # Adresa veřejného Tor proxy serveru
-    tor_proxy = {
-        'http': 'socks5h://51.161.62.197:9050',
-        'https': 'socks5h://51.161.62.197:9050'
+censorship_rules = {
+    'Podvržení obsahu HTTP': {
+        'Content Length': {
+            'CZ': lambda x: x,
+            'BY': lambda y: y,
+            'comparison': lambda x, y: abs(x - y) > 0.9 * max(x, y),
+        },
     }
+}
 
-    try:
-        # Provedení HTTP požadavku přes veřejné Tor proxy
-        response = requests.get(url, proxies=tor_proxy)
+# Předpokládáme hodnoty pro délky obsahu pro CZ a BY
+content_length_CZ = 71608
+content_length_BY = 71635
 
-        # Kontrola, zda byl požadavek úspěšný
-        if response.ok:
-            print("Stránka je dostupná přes Tor.")
-        else:
-            print("Stránka není dostupná přes Tor.")
-    except Exception as e:
-        print("Chyba při připojování přes Tor:", e)
+# Získání funkcí pro zpracování délek obsahu
+func_CZ = censorship_rules['Podvržení obsahu HTTP']['Content Length']['CZ']
+func_BY = censorship_rules['Podvržení obsahu HTTP']['Content Length']['BY']
+comparison_func = censorship_rules['Podvržení obsahu HTTP']['Content Length']['comparison']
 
+# Vypočtení x a y
+x = func_CZ(content_length_CZ)
+y = func_BY(content_length_BY)
 
-url = "https://www.idnes.cz"  # Změňte na požadovanou URL
-check_website_via_tor(url)
+# Výsledek porovnání
+result = comparison_func(x, y)
+
+# Vypsání x, y a výsledku porovnání
+print("x =", x)
+print("y =", y)
+print("Porovnání výsledku:", result)

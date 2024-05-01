@@ -1,0 +1,1492 @@
+<!doctype html>
+<!-- Report problems to https://www.fark.com/farkback/error -->
+<!-- Duke Sucks -->
+<html class="no-js" lang="en-US">
+<head>
+<title>Drew Curtis' FARK.com</title>   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Humorous views on interesting, bizarre and amusing articles, submitted by a community of millions of news junkies, with regular Photoshop contests.">
+<meta name="keywords" content="Fark, Fark.com, Drew Curtis, News, Community News, Social News, News Flash, Funny News, Weird News, Odd News, Strange News, Satirical News, Humor, Photoshop, Photoshop Contest, Memes, Caturday, Comments, News Commentary, Political News, Celebrity News, Sports News, Geek News">
+
+ <meta property="fb:admins" content="741339004,690298743,503216953">
+<meta property="og:type" content="website">  <meta property="og:image" content="https://img.fark.net/images/2013/site/farkLogo2Big.gif">  <link rel="image_src" type="image/gif" href="https://img.fark.net/images/2013/site/farkLogo2Big.gif">  <meta property="og:url" content="https://www.fark.com/?noad=1">   <link rel="canonical" href="https://www.fark.com/?noad=1">       <meta name="viewport" content="minimum-scale=0.35, width=device-width"> <link rel="shortcut icon" href="https://www.fark.com/favicon.ico">
+<link rel="apple-touch-icon" href="https://img.fark.net/images/2008/site/fark-webclip.png"> 
+
+  <meta name="referrer" content="always">      <link rel="stylesheet" href="https://www.fark.com/css/farkstyle_desktop.min_1714291201.css" media="screen">           <script src="https://www.fark.com/js/farktools_desktop.min_1713960010.js"></script>   <script>fark.page.isAllHouseAds = true;</script>  <script>
+    // fark.page.headerbidTargeting = "";
+    fark.page.rcPageName = "homepage";
+    fark.page.isMobile = false;
+    fark.page.isDesktop = true;
+
+    $.ajaxSetup({ timeout: 15000 });
+    fark.ajax.ajaxSpinner = new Image();
+    fark.ajax.ajaxSpinner.src = 'https://img.fark.net/images/2011/site/ajax-loader.gif';
+    fark.ajax.ajaxSpinnerRaw = '<\img alt="..." src="https://img.fark.net/images/2011/site/ajax-loader.gif" width="16" height="16">';
+</script>
+
+   <!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+<script async>
+(function() {
+  var host = 'fark.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.inmobi.com'
+    .concat('/choice/', '90W110YesRJyT', '/', host, '/choice.js?tag_version=V3');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = Object.assign(args[3], { tag_version: 'V3' });
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->  <!-- CONFIANT CODE -->
+
+  <script async src="https://cdn.confiant-integrations.net/cEfft1aujoR3mcJAi8Jzh_8If_c/gpt_and_prebid/config.js"></script>  <!-- END CONFIANT CODE --> <!-- CARBON STUB -->
+    <script>
+    !function(e,a){e.cca=e.cca||{tapPrebidQue:[],tapGAMQue:[]};var n=e.cca;e.pbjs=e.pbjs||{que:[]};var t=e.pbjs;t.que.push(function(){t.onEvent("bidWon",function(e){n.tapReady||n.tapPrebidQue.push(JSON.stringify(e))})}),e.googletag=e.googletag||{cmd:[]};var u=e.googletag;u.cmd.push(function(){u.pubads().addEventListener("slotRenderEnded",function(e){n.tapReady||n.tapGAMQue.push(e)})})}(window);  
+    </script>
+    <!-- END CARBON STUB -->  <script>  // dimension2
+var pixelRatio = (window.devicePixelRatio >= 1.5) ? "high" : "normal";
+
+// dimension4
+var hlview_mode = fark.helpers.getCookie('hlview') ? fark.helpers.getCookie('hlview') : 'd';
+
+// dimension5  </script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics for GA4 -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-225200-2"></script>
+
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // add data collection for GA4
+  gtag('config', 'G-2CGLGL25G6', {
+    'ads_on_page': 'h-na',
+    'user_type': 'Lurker',
+    'pixel_ratio': pixelRatio,
+    'platform': 'd',
+    'gam_rand_key': fark.page.gamRandKey,  });
+
+</script>
+<!-- End Google Analytics 4 -->    <script>
+        abimg(1);
+        //  ga('send', 'event', 'Ads', 'Display', 'A', 1, {'nonInteraction': 1});
+
+        var dfp_ad_source = ''; 
+            dfp_ad_source = 'Fark DFP';
+            // ga('send', 'event', 'dfpsource', 'Display', 'Fark', 1, {'nonInteraction': 1});   </script>  <meta name="robots" content="max-image-preview:large"><link rel="alternate" href="https://www.fark.com/fark.rss" type="application/rss+xml" title="FARK.com Fark RSS Feed">       <style> .headlineRow:hover, .headlineRow:hover:nth-child(odd) { background-color: #eeeeff; } </style> <script src="https://www.youtube.com/iframe_api"></script>
+
+     <!-- END CARBON RULES -->
+
+
+</head>  <body >        <a href="#newsContainer" class="skipToContent" tabindex="1">Skip to content</a>  <script>  fark.ajax.globalToken = 'Fbkk88mQLkAszwA6Yu2XuNNWjYVelGa0pmEv3xG-Fmwt5mGXA2TTf5mloRy5fNPcZCmzogYCV96H8nR9SCVrc2i8k_npfafW64npD';
+</script><!-- BEGIN left 2024-04-29 18:50:08--> <div class="fullwidthheaderbackground"></div>
+
+  <div class="fullwidthheaderbackground">&nbsp;</div>
+<div id="container">
+<table id="newLayoutTable">
+<tr>
+<td colspan="2">
+    
+<div id="header">  <div class="tryBareFark">
+        <a href="https://www.fark.com/barefarksignup" target="_blank">Try Ads-Free Fark</a>
+    </div>   <a id="logo" class="retina header_logo" href="https://www.fark.com"><img src="https://img.fark.net/images/2013/site/farkLogoBig.png" srcset="https://img.fark.net/images/2013/site/farkLogoBig.png 1x, https://img.fark.net/images/2013/site/farkLogoBig-2x.png 2x" alt="Fark" height="85"></a>   <div class="ad_container top">  <div id="topAd728x90"><script src="https://www.fark.com/aptminus/size1"></script></div>   <div class="reportAdBlock"  id="topAd728x90-reportLink"><a href="https://www.fark.com/farkback/" onclick="reportAd('topAd728x90'); return false;">Report</a></div>   </div> <div id="headerBottom">  <div id="tagLine">It's Not News, It's Fark </div> <form method="post" name="signinbox" enctype="application/x-www-form-urlencoded" action="https://www.fark.com/login"> <input type="hidden" name="e0$FbTk_KnJAocS4vKsljVmQV$8yM38vRSa8UbHb" value="Fbdk-EwJWrFwnHz884CIcZ9rkxV4yQaMtrw0i2PRP7xkdyrL17lDEMoZLwkQB383lwrp_wYosT4P5zq38cAlVhxXvtMD37WU-0AlR">
+    <input type="hidden" name="continue" value="Fbek9k_WQkda84gGF-ZsEiWuera1bmkrzTYKyj23XeYxixcraoLBIy1PtDMgqnTxqqnKqmlV7PDAPe7D">  <input type="hidden" name="noad" value="1">
+ <div id="messageCenter">
+
+
+         <div id="loginContainer">
+        <div id="loginContent" class="js">
+            <div id="loginLinks">  <a href="javascript:run_walkthrough('Link')" id="how_to_fark_link">How To Fark</a>  <a href="#" id="loginLink" onclick="document.getElementById('loginLinks').classList.add('slidup'); setTimeout(function() { document.getElementById('loginName').focus(); }, 250); return false;">Log In</a> &nbsp;|&nbsp; <a href="https://www.fark.com/signup?e0$FbGk_qP$YrNT7mMtXSiETa9WrOVK5oMMt7wLt=Fbck_jqScdsAyFj8-Xiihg2gClPoAvtX-byM54O9_ztndpScRB6LJFv_f7">Sign Up &raquo;</a>
+            </div>
+            <div id="loginBoxes">
+                <div class="loginSection">
+                    <label for="loginName">Login</label>
+                    <input type="text" name="ulogin" id="loginName" autocomplete="username" autocorrect="off" autocapitalize="off" spellcheck="false">
+                </div>
+                <div class="loginSection">
+                    <label for="loginPass">Password</label>
+                    <input type="password" name="passwd" id="loginPass" autocomplete="current-password" autocorrect="off" autocapitalize="off" spellcheck="false">
+                </div>
+                <div class="loginSection submitLogin">
+                    <input type="submit" class="searchSubmButton" value="Go">
+                </div>
+                <div class="loginForgotPass">
+                    <a href="https://www.fark.com/forgotpassword">Forgot password?</a>
+                </div>
+                <div class="loginCancel">
+                    <a href="#" id="cancelLogin" onclick="document.getElementById('loginLinks').classList.remove('slidup'); return false;">X</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>  </div> </form> </div>
+</div>  </td>
+</tr>
+<tr>
+<td colspan="2">
+
+ <div id="headerMenuContainer"> <!-- Top navigation menu -->
+    <ul id="headerMenu">
+    <li class="menuSelected"><a href="https://www.fark.com/">FARK</a></li>
+    <li><a href="https://total.fark.com/commented">TotalFark</a></li>
+    <li><a href="https://www.fark.com/users"><em>my</em>Fark</a></li>
+    <li><a href="https://www.fark.com/farq/">About/FArQ</a></li>  <li><a href="https://www.fark.com/contests/">Contests</a></li>  <li><a href="https://www.fark.com/shop">Store</a></li>
+    <li><a href="https://www.fark.com/farkback" title="Farkback">Contact Us</a></li>
+    <li><a href="https://m.fark.com">Mobile</a></li>
+    </ul>
+
+    <div id="searchBar" style="display: flex; gap: 8px">
+        <a href="https://www.fark.com/subscribe" class="farkButton sButton">SUBSCRIBE</a>
+        
+        <!-- Dropdown Trigger for Search -->
+        <div class="dropdown searchDD" style="display: inline-block; position: relative;">
+        <div class="searchContainer" style="display: flex;">
+            <button class="farkButton searchButton" id="searchDropdownButton" title="Fark Search">
+                <img src="https://img.fark.net/images/2014/site/magnify.png" alt="Search Fark" style="height: 1em; vertical-align: middle;">
+            </button>
+
+            <form method="get" action="https://www.fark.com/hlsearch" name="topSearchFrm" target="_top" class="killspacehack">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <input type="text" placeholder="Search Fark" name="qq" id="searchInput" maxlength="255" style="flex-grow: 1; padding: 5px; margin-top: 0;border-width: 1px;" onclick="event.stopPropagation();">
+                    <input type="submit" class="searchSubmButton" value="Go" style="margin-left: 8px;" onclick="event.stopPropagation();">
+                </div>
+            </form>
+        </div></div>
+
+<!--
+        <div id="searchDropdown" class="dropdown-content" style="display: none; padding-right: 14px; padding-left: 14px; margin-top: 6px;">
+            <form method="get" action="https://www.fark.com/hlsearch" name="topSearchFrm" target="_top" class="killspacehack">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <input type="text" placeholder="Search Fark" name="qq" id="searchInput" maxlength="255" style="flex-grow: 1;" onclick="event.stopPropagation();">
+                    <input type="submit" class="searchSubmButton" value="Go" style="margin-left: 8px;" onclick="event.stopPropagation();">
+                </div>
+            </form>
+        </div>
+-->
+        <!-- Existing Dropdown for Menu -->
+        <div class="dropdown" style="display: inline-block; position: relative;">
+            <button class="farkButton" id="dropdownMenuButton">&#9776;</button>
+            <div id="myDropdown" class="dropdown-content" style="display: none; margin-top: 6px;">
+              <a target="_blank" href="https://youtu.be/o6QDjDPRF5c?si=UjI4RcphEdHKxBYY" style="display: block; color: black;">Bobcaygeon</a>  </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var dropdownButton = document.getElementById('dropdownMenuButton');
+                var searchDropdownButton = document.getElementById('searchDropdownButton');
+                var dropdownContent = document.getElementById('myDropdown');
+                var searchDropdownContent = document.getElementById('searchDropdown');
+
+                function closeAllDropdowns(exceptId) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        if (dropdowns[i].id !== exceptId) {
+                            dropdowns[i].style.display = 'none';
+                        }
+                    }
+                }
+
+                dropdownButton.addEventListener('click', function() {
+                    closeAllDropdowns('myDropdown');
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+
+                searchDropdownButton.addEventListener('click', function() {
+                document.querySelector('.searchDD').classList.toggle('searchOpen')
+
+                });
+
+                window.addEventListener('click', function(event) {
+                    if (!event.target.matches('#dropdownMenuButton') && !event.target.matches('#searchDropdownButton') && !event.target.matches('img')) {
+                        closeAllDropdowns('');
+                    }
+                });
+            });
+        </script>
+    </div>
+    
+</div> <!-- headerMenuContainer -->  <!-- headerMenuContainer NOSCRIPT -->  <noscript>
+ <div id="headerMenuContainerNoScript"> <!-- Top navigation menu -->
+    <div id="loginBoxesNoScript">                
+        <form method="post" enctype="application/x-www-form-urlencoded" action="https://www.fark.com/login"> <input type="hidden" name="e0$FbTk_KnJAocS4vKsljVmQV$8yM38vRSa8UbHb" value="Fbak9j_mddk11RxLDmdAgl5ylWTXVq4xEsLuuj0fbsHK7fXvIcuG1cjvEwdLl4ADYsOmz27g-qthRCBFuRvZ6V9dAdGVY4oIrG19Z">
+  <div class="loginSectionNoScript submitLogin">
+                <input type="submit" class="searchSubmButtonNoScript" value="Go">
+            </div>
+            <div class="loginSectionNoScript">
+                <label for="loginPass_ns">Password</label>
+                <input type="password" name="passwd" id="loginPass_ns" autocomplete="current-password" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+            <div class="loginSectionNoScript">
+                <label for="loginName_ns">Login</label>
+                <input type="text" name="ulogin" id="loginName_ns" autocomplete="username" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+            <div class="loginSectionNoScript" style="vertical-align:middle; padding-right:15px; padding-top:10px;"> Turn on javascript (or enable it for Fark) for a better user experience.</div>
+        </form>
+    </div>  
+</div>
+</noscript> <!-- /headerMenuContainer NOSCRIPT -->         <div class="invis"><strong><small>If you can read this, either the style sheet didn't load or you have an older browser that doesn't support 
+style sheets. Try clearing your browser cache and refreshing the page.</small></strong></div>
+
+</td>
+</tr>
+ <tr><td id="leftColSpacer"><!-- --></td><td id="rightColSpacer"><!-- --></td></tr>
+<tr>
+<td id="leftCol">
+
+ <ul id="catMenu">
+
+     
+        <li class="catSelected"><a href="https://www.fark.com/"> Main</a></li>
+        <li><a href="https://www.fark.com/discussion/"> Discussion</a></li>
+        <li><a href="https://www.fark.com/sports/"> Sports</a></li>
+        <li><a href="https://www.fark.com/business/"> Business</a></li>
+        <li><a href="https://www.fark.com/stem/"> STEM</a></li>
+        <li><a href="https://www.fark.com/entertainment/"> Entertainment</a></li>
+        <li><a href="https://www.fark.com/fandom/"> Fandom</a></li>
+        <li><a href="https://www.fark.com/dawww/"> D'awww</a></li>
+        <li><a href="https://www.fark.com/food/"> Food</a></li>
+        <li><a href="https://www.fark.com/politics/"> Politics</a></li>        </ul> <div id="newsContainer"><!-- TOP end -->
+<!-- Temporary announcements go here -->
+<!-- $Id: motd 43105 2024-01-31 04:45:51Z mandrews $ -->
+
+<script>
+    var number_newer_headlines = 0;
+    fark.page.ajaxTab = 'main';
+    fark.page.ajaxTabGroup = 'Fark';
+    fark.ajax.headlineAjaxPerCall = 25;
+    fark.page.title = document.title;
+    fark.page.type = "headline";
+
+    // noheadlinecount = don't show the number of headlines to load
+    fark.ajax.noHeadlineCount = false;
+    fark.ajax.ajaxCheckEnabled = true;  $(document).ready(function() { 
+          fark.ajax.headlinesPerCall = fark.ajax.normalHeadlinesPerCall;  fark.ajax.headlinesCheckInterval = fark.ajax.desktopHeadlinesCheckInterval;
+        check_for_new_headlines(); /* run automatically to update link } */ 
+        headline_check_new_headlines_timer = setInterval( function() { check_for_new_headlines(); }, fark.ajax.headlinesCheckInterval );
+    });  fark.headlines.newestEpochDate = '1714429207';
+fark.headlines.firstNewEpochDate = '1714429207';
+fark.headlines.firstHeadlineDate = 'Mon April 29, 2024';
+fark.headlines.oldestEpochDate = '1714345511';
+fark.headlines.lastHeadlineDate = 'Sun April 28, 2024';
+ </script>     <p class="new_to_fark_p" style="display: none">NEW To Fark? Find Out <a href="javascript:run_walkthrough('Banner')">HOW TO FARK</a><a href="javascript:close_new_to_fark_p()" class="close_new_to_fark_p">X</a></p>  <div style="text-align: center;">
+    <a href="https://www.fark.com/submit/" class="submitLink loadNewerHeadlinesTrigger">Submit a Link &raquo;</a>
+</div>   <div class="load_newer_container" style="display: none">
+        <a id="headline_ajax_load_newer">&nbsp;</a>
+    </div>   <table style="width: 100%;">
+    <tr>
+        <td id="headline_container">      <table class="headlineTable ">
+            <tbody>
+                <tr>
+                    <td class="mainDate headline_date" colspan="4" data-farkHD="MonApril292024"> Mon April 29, 2024 </td>
+                </tr> <tr class="headlineRow id13236604" data-headline-count="1">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236604 "  data-farkdomain="aol.com" target="_blank" href="https://www.fark.com/goto/13236604/www.aol.com/news/british-man-savaged-shark-attack-072430630.html%3Futm_source%3Dfark%26utm_medium%3D"><img src="https://img.fark.net/images/2013/links/aol.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/aol.png 1x, https://img.fark.net/images/2013/links/aol-2x.png 2x"  class="retina" alt="(AOL)" title="AOL"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/scary" title="Scary"><span class="ttag topic19">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236604 "  data-farkdomain="aol.com" target="_blank" href="https://www.fark.com/goto/13236604/www.aol.com/news/british-man-savaged-shark-attack-072430630.html%3Futm_source%3Dfark%26utm_medium%3D">British man savaged in shark attack &#39;aware and communicating,&#39; wife says. We can assume he&#39;s saying &#39;get this shark off of me&#39;</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236604 "  data-farkdomain="aol.com" target="_blank" href="https://www.fark.com/goto/13236604">aol.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236604_1986" onclick="copyLinkToClipboard('copylink_13236604_1986', 'https://fark.com/13236604 --Fark headline: British man savaged in shark attack \&#39;aware and communicating,\&#39; wife says. We can assume he\&#39;s saying \&#39;get this shark off of me\&#39;')" onmouseout="showCopyLink('copylink_13236604_1986')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236604/British-man-savaged-in-shark-attack-aware-communicating-wife-says-We-can-assume-hes-saying-get-this-shark-off-of-me" target="_top" class="icon_comment">  <span class="icon_comment_count">9</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236980" data-headline-count="2">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236980 "  data-farkdomain="dailystar.co.uk" target="_blank" href="https://www.fark.com/goto/13236980/www.dailystar.co.uk/news/world-news/fearless-monkey-gang-tear-down-32693493%3Futm_source%3Dfark%26ut"><img src="https://img.fark.net/images/2014/links/dailystar.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/dailystar.png 1x, https://img.fark.net/images/2014/links/dailystar-2x.png 2x"  class="retina" alt="(Daily Star)" title="Daily Star"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/scary" title="Scary"><span class="ttag topic19">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236980 "  data-farkdomain="dailystar.co.uk" target="_blank" href="https://www.fark.com/goto/13236980/www.dailystar.co.uk/news/world-news/fearless-monkey-gang-tear-down-32693493%3Futm_source%3Dfark%26ut">Fearless monkey gang go apesh*t, tear down anti-monkey posters in terrifying town uprising (possible nsfw content on page)</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236980 "  data-farkdomain="dailystar.co.uk" target="_blank" href="https://www.fark.com/goto/13236980">dailystar.co.uk</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236980_9280" onclick="copyLinkToClipboard('copylink_13236980_9280', 'https://fark.com/13236980 --Fark headline: Fearless monkey gang go apesh*t, tear down anti-monkey posters in terrifying town uprising (possible nsfw content on page)')" onmouseout="showCopyLink('copylink_13236980_9280')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236980/Fearless-monkey-gang-go-apesht-tear-down-anti-monkey-posters-in-terrifying-town-uprising-possible-nsfw-content-on-page" target="_top" class="icon_comment">  <span class="icon_comment_count">20</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236596" data-headline-count="3">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236596 "  data-farkdomain="abcnews.go.com" target="_blank" href="https://www.fark.com/goto/13236596/abcnews.go.com/US/delta-planes-emergency-slide-falls-off-flight/story%3Fid%3D109701348%26utm_source"><img src="https://img.fark.net/images/2022/links/abcnews.png" width="77" height="27" srcset="https://img.fark.net/images/2022/links/abcnews.png 1x, https://img.fark.net/images/2022/links/abcnews-2x.png 2x"  class="retina" alt="(ABC News)" title="ABC News"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/scary" title="Scary"><span class="ttag topic19">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236596 "  data-farkdomain="abcnews.go.com" target="_blank" href="https://www.fark.com/goto/13236596/abcnews.go.com/US/delta-planes-emergency-slide-falls-off-flight/story%3Fid%3D109701348%26utm_source">Please note: if you&#39;ve recently found a Boeing 767 emergency slide, Delta would like it back</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236596 "  data-farkdomain="abcnews.go.com" target="_blank" href="https://www.fark.com/goto/13236596">abcnews.go.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236596_395" onclick="copyLinkToClipboard('copylink_13236596_395', 'https://fark.com/13236596 --Fark headline: Please note: if you\&#39;ve recently found a Boeing 767 emergency slide, Delta would like it back')" onmouseout="showCopyLink('copylink_13236596_395')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236596/Please-note-if-youve-recently-found-a-Boeing-767-emergency-slide-Delta-would-like-it-back" target="_top" class="icon_comment">  <span class="icon_comment_count">32</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236594" data-headline-count="4">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236594 "  data-farkdomain="abcnews.go.com" target="_blank" href="https://www.fark.com/goto/13236594/abcnews.go.com/International/wireStory/pope-visits-venice-speak-artists-inmates-finds-city-109724032"><img src="https://img.fark.net/images/2022/links/abcnews.png" width="77" height="27" srcset="https://img.fark.net/images/2022/links/abcnews.png 1x, https://img.fark.net/images/2022/links/abcnews-2x.png 2x"  class="retina" alt="(ABC News)" title="ABC News"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/interesting" title="Interesting"><span class="ttag topic02">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236594 "  data-farkdomain="abcnews.go.com" target="_blank" href="https://www.fark.com/goto/13236594/abcnews.go.com/International/wireStory/pope-visits-venice-speak-artists-inmates-finds-city-109724032">Pope visit strippers. Wait, &#39;Pope visits trippers.&#39; He&#39;s in a place full of little men in boats either way</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236594 "  data-farkdomain="abcnews.go.com" target="_blank" href="https://www.fark.com/goto/13236594">abcnews.go.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236594_3660" onclick="copyLinkToClipboard('copylink_13236594_3660', 'https://fark.com/13236594 --Fark headline: Pope visit strippers. Wait, \&#39;Pope visits trippers.\&#39; He\&#39;s in a place full of little men in boats either way')" onmouseout="showCopyLink('copylink_13236594_3660')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236594/Pope-visit-strippers-Wait-Pope-visits-trippers-Hes-in-a-place-full-of-little-men-in-boats-either-way" target="_top" class="icon_comment">  <span class="icon_comment_count">6</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236488" data-headline-count="5">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236488 "  data-farkdomain="japantimes.co.jp" target="_blank" href="https://www.fark.com/goto/13236488/www.japantimes.co.jp/news/2024/04/24/asia-pacific/philippines-extreme-heat/%3Ficid%3Dref_fark%26icid"><img src="https://img.fark.net/images/2014/links/japantimes.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/japantimes.png 1x, https://img.fark.net/images/2014/links/japantimes-2x.png 2x"  class="retina" alt="(Japan Times)" title="Japan Times"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/misc" title="Misc"><span class="ttag topic03">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236488 "  data-farkdomain="japantimes.co.jp" target="_blank" href="https://www.fark.com/goto/13236488/www.japantimes.co.jp/news/2024/04/24/asia-pacific/philippines-extreme-heat/%3Ficid%3Dref_fark%26icid">It&#39;s getting hot in here (so hot). So close off all your schools. I&#39;m gettin so hot, I wanna close my schools off</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236488 "  data-farkdomain="japantimes.co.jp" target="_blank" href="https://www.fark.com/goto/13236488">japantimes.co.jp</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236488_2030" onclick="copyLinkToClipboard('copylink_13236488_2030', 'https://fark.com/13236488 --Fark headline: It\&#39;s getting hot in here (so hot). So close off all your schools. I\&#39;m gettin so hot, I wanna close my schools off')" onmouseout="showCopyLink('copylink_13236488_2030')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236488/Its-getting-hot-in-here-so-hot-So-close-off-all-your-schools-Im-gettin-so-hot-I-wanna-close-my-schools-off" target="_top" class="icon_comment">  <span class="icon_comment_count">17</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13234104" data-headline-count="6">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13234104 "  data-farkdomain="contemporist.com" target="_blank" href="https://www.fark.com/goto/13234104/www.contemporist.com/wp-content/uploads/2024/04/cabin-manufacturing-240424-1123-02.jpg%3Futm_source"><img src="https://img.fark.net/images/2014/links/contemporist.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/contemporist.png 1x, https://img.fark.net/images/2014/links/contemporist-2x.png 2x"  class="retina" alt="(Contemporist)" title="Contemporist"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/photoshop" title="Photoshop"><span class="ttag topic23">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13234104 "  data-farkdomain="contemporist.com" target="_blank" href="https://www.fark.com/goto/13234104/www.contemporist.com/wp-content/uploads/2024/04/cabin-manufacturing-240424-1123-02.jpg%3Futm_source">Photoshop these people building this.....thing?</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13234104 "  data-farkdomain="contemporist.com" target="_blank" href="https://www.fark.com/goto/13234104">contemporist.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13234104_734" onclick="copyLinkToClipboard('copylink_13234104_734', 'https://fark.com/13234104 --Fark headline: Photoshop these people building this.....thing?')" onmouseout="showCopyLink('copylink_13234104_734')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13234104/Photoshop-these-people-building-thisthing" target="_top" class="icon_comment">  <span class="icon_comment_count">15</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236512" data-headline-count="7">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236512 "  data-farkdomain="thesmokinggun.com" target="_blank" href="https://www.fark.com/goto/13236512/www.thesmokinggun.com/buster/battery/pasta-battery-bust-759032%3Futm_source%3Dfark%26utm_medium%3Dwe"><img src="https://img.fark.net/images/2014/links/thesmokinggun.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/thesmokinggun.png 1x, https://img.fark.net/images/2014/links/thesmokinggun-2x.png 2x"  class="retina" alt="(The Smoking Gun)" title="The Smoking Gun"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/dumbass" title="Dumbass"><span class="ttag topic34">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236512 "  data-farkdomain="thesmokinggun.com" target="_blank" href="https://www.fark.com/goto/13236512/www.thesmokinggun.com/buster/battery/pasta-battery-bust-759032%3Futm_source%3Dfark%26utm_medium%3Dwe">Man arrested for a fusilli road rage incident</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236512 "  data-farkdomain="thesmokinggun.com" target="_blank" href="https://www.fark.com/goto/13236512">thesmokinggun.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236512_8864" onclick="copyLinkToClipboard('copylink_13236512_8864', 'https://fark.com/13236512 --Fark headline: Man arrested for a fusilli road rage incident')" onmouseout="showCopyLink('copylink_13236512_8864')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236512/Man-arrested-for-a-fusilli-road-rage-incident" target="_top" class="icon_comment">  <span class="icon_comment_count">21</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236572" data-headline-count="8">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236572 "  data-farkdomain="history.com" target="_blank" href="https://www.fark.com/goto/13236572/www.history.com/this-day-in-history/mutiny-on-the-hms-bounty"><img src="https://img.fark.net/images/2013/links/historychannel.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/historychannel.png 1x, https://img.fark.net/images/2013/links/historychannel-2x.png 2x"  class="retina" alt="(History Channel)" title="History Channel"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/vintage" title="Vintage"><span class="ttag topic56">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236572 "  data-farkdomain="history.com" target="_blank" href="https://www.fark.com/goto/13236572/www.history.com/this-day-in-history/mutiny-on-the-hms-bounty">On this day in history, in 1789, Fletcher Christian led a mutiny on the HMS Bounty against Captain Bligh, a violent event which was over quickly as the Bounty was the Quicker Picker Upper</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236572 "  data-farkdomain="history.com" target="_blank" href="https://www.fark.com/goto/13236572">history.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236572_7992" onclick="copyLinkToClipboard('copylink_13236572_7992', 'https://fark.com/13236572 --Fark headline: On this day in history, in 1789, Fletcher Christian led a mutiny on the HMS Bounty against Captain Bligh, a violent event which was over quickly as the Bounty was the Quicker Picker Upper')" onmouseout="showCopyLink('copylink_13236572_7992')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236572/On-this-day-in-history-in-1789-Fletcher-Christian-led-a-mutiny-on-HMS-Bounty-against-Captain-Bligh-a-violent-event-which-was-over-quickly-as-Bounty-was-Quicker-Picker-Upper" target="_top" class="icon_comment">  <span class="icon_comment_count">32</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236544" data-headline-count="9">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236544 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236544/www.msn.com/en-us/travel/news/a-japan-airlines-flight-was-canceled-after-the-pilot-got-drunk-at-a-da"><img src="https://img.fark.net/images/2014/links/msn.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/msn.png 1x, https://img.fark.net/images/2014/links/msn-2x.png 2x"  class="retina" alt="(MSN)" title="MSN"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/scary" title="Scary"><span class="ttag topic19">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236544 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236544/www.msn.com/en-us/travel/news/a-japan-airlines-flight-was-canceled-after-the-pilot-got-drunk-at-a-da">Pairotto no aruk&#333;ru ni yoru fuch&#333; ni yori, kono furaito ga kyanseru ni natta koto o oshirase itashimasu. Nihonk&#333;k&#363; o go riy&#333; itadaki arigat&#333;gozaimasu</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236544 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236544">msn.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236544_458" onclick="copyLinkToClipboard('copylink_13236544_458', 'https://fark.com/13236544 --Fark headline: Pairotto no aruk&#333;ru ni yoru fuch&#333; ni yori, kono furaito ga kyanseru ni natta koto o oshirase itashimasu. Nihonk&#333;k&#363; o go riy&#333; itadaki arigat&#333;gozaimasu')" onmouseout="showCopyLink('copylink_13236544_458')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236544/Pairotto-no-arukru-ni-yoru-fuch-ni-yori-kono-furaito-ga-kyanseru-ni-natta-koto-o-oshirase-itashimasu-Nihonkk-o-go-riy-itadaki-arigatgozaimasu" target="_top" class="icon_comment">  <span class="icon_comment_count">19</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236490" data-headline-count="10">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236490 "  data-farkdomain="wfmynews2.com" target="_blank" href="https://www.fark.com/goto/13236490/www.wfmynews2.com/article/news/local/cicadas-emerging-in-asheboro-north-carolina/83-3c549abc-96cf-42">(Some Guy)</a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/obvious" title="Obvious"><span class="ttag topic15">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236490 "  data-farkdomain="wfmynews2.com" target="_blank" href="https://www.fark.com/goto/13236490/www.wfmynews2.com/article/news/local/cicadas-emerging-in-asheboro-north-carolina/83-3c549abc-96cf-42">Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236490 "  data-farkdomain="wfmynews2.com" target="_blank" href="https://www.fark.com/goto/13236490">wfmynews2.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236490_1009" onclick="copyLinkToClipboard('copylink_13236490_1009', 'https://fark.com/13236490 --Fark headline: Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz Bzzzzzzzzzzzzzzzzzzzzzzz')" onmouseout="showCopyLink('copylink_13236490_1009')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236490/Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz-Bzzzzzzzzzzzzzzzzzzzzzzz" target="_top" class="icon_comment">  <span class="icon_comment_count">46</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236312" data-headline-count="11">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236312 "  data-farkdomain="deadline.com" target="_blank" href="https://www.fark.com/goto/13236312/deadline.com/2024/04/bbc-liz-bonnin-ai-scam-incognito-insect-repellent-1235898282/%3Futm_source%3Dfa"><img src="https://img.fark.net/images/2014/links/deadline.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/deadline.png 1x, https://img.fark.net/images/2014/links/deadline-2x.png 2x"  class="retina" alt="(Deadline)" title="Deadline"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/ironic" title="Ironic"><span class="ttag topic20">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236312 "  data-farkdomain="deadline.com" target="_blank" href="https://www.fark.com/goto/13236312/deadline.com/2024/04/bbc-liz-bonnin-ai-scam-incognito-insect-repellent-1235898282/%3Futm_source%3Dfa">BBC wildlife presenter involved in bug spray AI scam is a real thing that happened apparently</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236312 "  data-farkdomain="deadline.com" target="_blank" href="https://www.fark.com/goto/13236312">deadline.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236312_7196" onclick="copyLinkToClipboard('copylink_13236312_7196', 'https://fark.com/13236312 --Fark headline: BBC wildlife presenter involved in bug spray AI scam is a real thing that happened apparently')" onmouseout="showCopyLink('copylink_13236312_7196')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236312/BBC-wildlife-presenter-involved-in-bug-spray-AI-scam-is-a-real-thing-that-happened-apparently" target="_top" class="icon_comment">  <span class="icon_comment_count">17</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236444" data-headline-count="12">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236444 "  data-farkdomain="mprnews.org" target="_blank" href="https://www.fark.com/goto/13236444/www.mprnews.org/story/2024/04/28/npr-gmo-purple-tomato-seeds-baker-creek-controversy%3Futm_source%3D"><img src="https://img.fark.net/images/2013/links/mprnews.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/mprnews.png 1x, https://img.fark.net/images/2013/links/mprnews-2x.png 2x"  class="retina" alt="(MPR News)" title="MPR News"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/creepy" title="Creepy"><span class="ttag topic53">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236444 "  data-farkdomain="mprnews.org" target="_blank" href="https://www.fark.com/goto/13236444/www.mprnews.org/story/2024/04/28/npr-gmo-purple-tomato-seeds-baker-creek-controversy%3Futm_source%3D">Mutant Tomato DNA escapes British lab, sneaks into supposedly GMO-Free Heirloom seeds. Subby remembers this documentary from Saturday morning cartoons</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236444 "  data-farkdomain="mprnews.org" target="_blank" href="https://www.fark.com/goto/13236444">mprnews.org</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236444_3034" onclick="copyLinkToClipboard('copylink_13236444_3034', 'https://fark.com/13236444 --Fark headline: Mutant Tomato DNA escapes British lab, sneaks into supposedly GMO-Free Heirloom seeds. Subby remembers this documentary from Saturday morning cartoons')" onmouseout="showCopyLink('copylink_13236444_3034')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236444/Mutant-Tomato-DNA-escapes-British-lab-sneaks-into-supposedly-GMO-Free-Heirloom-seeds-Subby-remembers-this-documentary-from-Saturday-morning-cartoons" target="_top" class="icon_comment">  <span class="icon_comment_count">30</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236506" data-headline-count="13">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236506 "  data-farkdomain="metro.co.uk" target="_blank" href="https://www.fark.com/goto/13236506/metro.co.uk/2024/04/29/this-much-costs-raise-a-child-2024-20733087/%3Futm_source%3Dfark%26utm_medium"><img src="https://img.fark.net/images/2013/links/metro.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/metro.png 1x, https://img.fark.net/images/2013/links/metro-2x.png 2x"  class="retina" alt="(Metro)" title="Metro"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/facepalm" title="Facepalm"><span class="ttag topic49">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236506 "  data-farkdomain="metro.co.uk" target="_blank" href="https://www.fark.com/goto/13236506/metro.co.uk/2024/04/29/this-much-costs-raise-a-child-2024-20733087/%3Futm_source%3Dfark%26utm_medium">It costs $275,000 to raise a child in 2024. Guess we&#39;ll be childless then</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236506 "  data-farkdomain="metro.co.uk" target="_blank" href="https://www.fark.com/goto/13236506">metro.co.uk</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236506_6192" onclick="copyLinkToClipboard('copylink_13236506_6192', 'https://fark.com/13236506 --Fark headline: It costs $275,000 to raise a child in 2024. Guess we\&#39;ll be childless then')" onmouseout="showCopyLink('copylink_13236506_6192')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236506/It-costs-$275000-to-raise-a-child-in-2024-Guess-well-be-childless-then" target="_top" class="icon_comment">  <span class="icon_comment_count">72</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236370" data-headline-count="14">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236370 "  data-farkdomain="npr.org" target="_blank" href="https://www.fark.com/goto/13236370/www.npr.org/2024/04/29/1247739040/cdc-women-hiv-vampire-facials"><img src="https://img.fark.net/images/2013/links/npr.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/npr.png 1x, https://img.fark.net/images/2013/links/npr-2x.png 2x"  class="retina" alt="(NPR)" title="NPR"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/sick" title="Sick"><span class="ttag topic08">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236370 "  data-farkdomain="npr.org" target="_blank" href="https://www.fark.com/goto/13236370/www.npr.org/2024/04/29/1247739040/cdc-women-hiv-vampire-facials">Make sure your vampire has had a recent HIV test</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236370 "  data-farkdomain="npr.org" target="_blank" href="https://www.fark.com/goto/13236370">npr.org</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236370_643" onclick="copyLinkToClipboard('copylink_13236370_643', 'https://fark.com/13236370 --Fark headline: Make sure your vampire has had a recent HIV test')" onmouseout="showCopyLink('copylink_13236370_643')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236370/Make-sure-your-vampire-has-had-a-recent-HIV-test" target="_top" class="icon_comment">  <span class="icon_comment_count">23</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236656" data-headline-count="15">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236656 "  data-farkdomain="ktla.com" target="_blank" href="https://www.fark.com/goto/13236656/ktla.com/news/australian-billionaire-set-to-build-titanic-ii/"><img src="https://img.fark.net/images/2013/links/ktlalosangeles.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/ktlalosangeles.png 1x, https://img.fark.net/images/2013/links/ktlalosangeles-2x.png 2x"  class="retina" alt="(KTLA Los Angeles)" title="KTLA Los Angeles"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/asinine" title="Asinine"><span class="ttag topic13">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236656 "  data-farkdomain="ktla.com" target="_blank" href="https://www.fark.com/goto/13236656/ktla.com/news/australian-billionaire-set-to-build-titanic-ii/">Australian billionaire plans to sink a fortune into recreating the Titan 1C II. In addition to First, and Second class, it will include steerage cabins where the passengers will be treated as the third class humans the rich believe they are</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236656 "  data-farkdomain="ktla.com" target="_blank" href="https://www.fark.com/goto/13236656">ktla.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236656_2093" onclick="copyLinkToClipboard('copylink_13236656_2093', 'https://fark.com/13236656 --Fark headline: Australian billionaire plans to sink a fortune into recreating the Titan 1C II. In addition to First, and Second class, it will include steerage cabins where the passengers will be treated as the third class humans the rich believe they are')" onmouseout="showCopyLink('copylink_13236656_2093')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236656/Australian-billionaire-plans-to-sink-a-fortune-into-recreating-Titan-1C-II-In-addition-to-First-Second-class-it-will-include-steerage-cabins-where-passengers-will-be-treated-as-third-class-humans-rich-believe-they-are" target="_top" class="icon_comment">  <span class="icon_comment_count">45</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236574" data-headline-count="16">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236574 "  data-farkdomain="history.com" target="_blank" href="https://www.fark.com/goto/13236574/www.history.com/this-day-in-history/aloha-airlines-flight-243-roof"><img src="https://img.fark.net/images/2013/links/historychannel.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/historychannel.png 1x, https://img.fark.net/images/2013/links/historychannel-2x.png 2x"  class="retina" alt="(History Channel)" title="History Channel"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/vintage" title="Vintage"><span class="ttag topic56">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236574 "  data-farkdomain="history.com" target="_blank" href="https://www.fark.com/goto/13236574/www.history.com/this-day-in-history/aloha-airlines-flight-243-roof">On this day in history, in 1988, Aloha Airlines Flight 243 looked at Boeing 737&#39;s doors falling off and said &#39;Hold my beer&#39;</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236574 "  data-farkdomain="history.com" target="_blank" href="https://www.fark.com/goto/13236574">history.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236574_9087" onclick="copyLinkToClipboard('copylink_13236574_9087', 'https://fark.com/13236574 --Fark headline: On this day in history, in 1988, Aloha Airlines Flight 243 looked at Boeing 737\&#39;s doors falling off and said \&#39;Hold my beer\&#39;')" onmouseout="showCopyLink('copylink_13236574_9087')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236574/On-this-day-in-history-in-1988-Aloha-Airlines-Flight-243-looked-at-Boeing-737s-doors-falling-off-said-Hold-my-beer" target="_top" class="icon_comment">  <span class="icon_comment_count">40</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13235490" data-headline-count="17">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13235490 "  data-farkdomain="i.dailymail.co.uk" target="_blank" href="https://www.fark.com/goto/13235490/i.dailymail.co.uk/i/newpix/2018/05/14/10/4C35EAD700000578-0-image-a-35_1526291767886.jpg%3Futm_sourc"><img src="https://img.fark.net/images/2012/links/dailymail.png" width="77" height="27" srcset="https://img.fark.net/images/2012/links/dailymail.png 1x, https://img.fark.net/images/2012/links/dailymail-2x.png 2x"  class="retina" alt="(Daily Mail)" title="Daily Mail"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/caption" title="Caption"><span class="ttag topic22">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13235490 "  data-farkdomain="i.dailymail.co.uk" target="_blank" href="https://www.fark.com/goto/13235490/i.dailymail.co.uk/i/newpix/2018/05/14/10/4C35EAD700000578-0-image-a-35_1526291767886.jpg%3Futm_sourc">Caption this first day on the job</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13235490 "  data-farkdomain="i.dailymail.co.uk" target="_blank" href="https://www.fark.com/goto/13235490">i.dailymail.co.uk</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13235490_9133" onclick="copyLinkToClipboard('copylink_13235490_9133', 'https://fark.com/13235490 --Fark headline: Caption this first day on the job')" onmouseout="showCopyLink('copylink_13235490_9133')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13235490/Caption-this-first-day-on-job" target="_top" class="icon_comment">  <span class="icon_comment_count">25</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236598" data-headline-count="18">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236598 "  data-farkdomain="aol.com" target="_blank" href="https://www.fark.com/goto/13236598/www.aol.com/news/fishing-trip-turns-deadly-man-112514969.html%3Futm_source%3Dfark%26utm_medium%3Dweb"><img src="https://img.fark.net/images/2013/links/aol.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/aol.png 1x, https://img.fark.net/images/2013/links/aol-2x.png 2x"  class="retina" alt="(AOL)" title="AOL"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/florida" title="Florida"><span class="ttag topic35">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236598 "  data-farkdomain="aol.com" target="_blank" href="https://www.fark.com/goto/13236598/www.aol.com/news/fishing-trip-turns-deadly-man-112514969.html%3Futm_source%3Dfark%26utm_medium%3Dweb">Fishing trip turns deadly when man pulls gun, shoots fishing buddy, Florida cops say. Of course, you should have seen the fisherman who got away</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236598 "  data-farkdomain="aol.com" target="_blank" href="https://www.fark.com/goto/13236598">aol.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236598_217" onclick="copyLinkToClipboard('copylink_13236598_217', 'https://fark.com/13236598 --Fark headline: Fishing trip turns deadly when man pulls gun, shoots fishing buddy, Florida cops say. Of course, you should have seen the fisherman who got away')" onmouseout="showCopyLink('copylink_13236598_217')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236598/Fishing-trip-turns-deadly-when-man-pulls-gun-shoots-fishing-buddy-Florida-cops-say-Of-course-you-should-have-seen-fisherman-who-got-away" target="_top" class="icon_comment">  <span class="icon_comment_count">22</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236474" data-headline-count="19">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236474 "  data-farkdomain="the-express.com" target="_blank" href="https://www.fark.com/goto/13236474/www.the-express.com/news/space-news/135825/aliens-space-planets-panspermia-meteorites%3Futm_source"><img src="https://img.fark.net/images/2013/links/dailyexpress.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/dailyexpress.png 1x, https://img.fark.net/images/2013/links/dailyexpress-2x.png 2x"  class="retina" alt="(Daily Express)" title="Daily Express"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/unlikely" title="Unlikely"><span class="ttag topic33">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236474 "  data-farkdomain="the-express.com" target="_blank" href="https://www.fark.com/goto/13236474/www.the-express.com/news/space-news/135825/aliens-space-planets-panspermia-meteorites%3Futm_source">Astronomers now say hitchhiking aliens are already traveling between planets throughout the cosmos. No word if some are taking up motorcycle maintenance also (possible nsfw content on page)</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236474 "  data-farkdomain="the-express.com" target="_blank" href="https://www.fark.com/goto/13236474">the-express.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236474_3155" onclick="copyLinkToClipboard('copylink_13236474_3155', 'https://fark.com/13236474 --Fark headline: Astronomers now say hitchhiking aliens are already traveling between planets throughout the cosmos. No word if some are taking up motorcycle maintenance also (possible nsfw content on page)')" onmouseout="showCopyLink('copylink_13236474_3155')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236474/Astronomers-now-say-hitchhiking-aliens-are-already-traveling-between-planets-throughout-cosmos-No-word-if-some-are-taking-up-motorcycle-maintenance-also-possible-nsfw-content-on-page" target="_top" class="icon_comment">  <span class="icon_comment_count">34</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236634" data-headline-count="20">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236634 "  data-farkdomain="bbc.com" target="_blank" href="https://www.fark.com/goto/13236634/www.bbc.com/worklife/article/20240426-temu-gamification-marketing%3Futm_source%3Dfark%26utm_medium"><img src="https://img.fark.net/images/2013/links/bbcus.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/bbcus.png 1x, https://img.fark.net/images/2013/links/bbcus-2x.png 2x"  class="retina" alt="(BBC-US)" title="BBC-US"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/unlikely" title="Unlikely"><span class="ttag topic33">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236634 "  data-farkdomain="bbc.com" target="_blank" href="https://www.fark.com/goto/13236634/www.bbc.com/worklife/article/20240426-temu-gamification-marketing%3Futm_source%3Dfark%26utm_medium">Why you&#39;re so addicted to Temu. Wait, I&#39;m addicted to Temu? What&#39;s a Temu?</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236634 "  data-farkdomain="bbc.com" target="_blank" href="https://www.fark.com/goto/13236634">bbc.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236634_1327" onclick="copyLinkToClipboard('copylink_13236634_1327', 'https://fark.com/13236634 --Fark headline: Why you\&#39;re so addicted to Temu. Wait, I\&#39;m addicted to Temu? What\&#39;s a Temu?')" onmouseout="showCopyLink('copylink_13236634_1327')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236634/Why-youre-so-addicted-to-Temu-Wait-Im-addicted-to-Temu-Whats-a-Temu" target="_top" class="icon_comment">  <span class="icon_comment_count">106</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236540" data-headline-count="21">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236540 "  data-farkdomain="nypost.com" target="_blank" href="https://www.fark.com/goto/13236540/nypost.com/2024/04/28/us-news/blame-the-pandemic-for-pro-palestine-demonstrations/%3Futm_source%3Dfa"><img src="https://img.fark.net/images/2013/links/nypost.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/nypost.png 1x, https://img.fark.net/images/2013/links/nypost-2x.png 2x"  class="retina" alt="(NYPost)" title="NYPost"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/facepalm" title="Facepalm"><span class="ttag topic49">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236540 "  data-farkdomain="nypost.com" target="_blank" href="https://www.fark.com/goto/13236540/nypost.com/2024/04/28/us-news/blame-the-pandemic-for-pro-palestine-demonstrations/%3Futm_source%3Dfa">What&#39;s to blame for all the pro-Palestinian protests across the country? Given that the NYPost always blames either Soros, millennials not wanting to work anymore, or Covid, which one do you think they went with this time?</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236540 "  data-farkdomain="nypost.com" target="_blank" href="https://www.fark.com/goto/13236540">nypost.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236540_805" onclick="copyLinkToClipboard('copylink_13236540_805', 'https://fark.com/13236540 --Fark headline: What\&#39;s to blame for all the pro-Palestinian protests across the country? Given that the NYPost always blames either Soros, millennials not wanting to work anymore, or Covid, which one do you think they went with this time?')" onmouseout="showCopyLink('copylink_13236540_805')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236540/Whats-to-blame-for-all-pro-Palestinian-protests-across-country-Given-that-NYPost-always-blames-either-Soros-millennials-not-wanting-to-work-anymore-Covid-which-one-do-you-think-they-went-with-this-time" target="_top" class="icon_comment">  <span class="icon_comment_count">143</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236520" data-headline-count="22">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236520 "  data-farkdomain="ibtimes.co.uk" target="_blank" href="https://www.fark.com/goto/13236520/www.ibtimes.co.uk/elon-sorry-calling-asana-ceo-rtard-i-meant-hes-pompous-diot-head-his-s-1724462%3Fu"><img src="https://img.fark.net/images/2021/links/ibtimes.png" width="77" height="27" srcset="https://img.fark.net/images/2021/links/ibtimes.png 1x, https://img.fark.net/images/2021/links/ibtimes-2x.png 2x"  class="retina" alt="(International Business Times)" title="International Business Times"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/amusing" title="Amusing"><span class="ttag topic01">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236520 "  data-farkdomain="ibtimes.co.uk" target="_blank" href="https://www.fark.com/goto/13236520/www.ibtimes.co.uk/elon-sorry-calling-asana-ceo-rtard-i-meant-hes-pompous-diot-head-his-s-1724462%3Fu">Elon Musk and Asana Founder go back to kindergarten and call each other poopyheads</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236520 "  data-farkdomain="ibtimes.co.uk" target="_blank" href="https://www.fark.com/goto/13236520">ibtimes.co.uk</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236520_7783" onclick="copyLinkToClipboard('copylink_13236520_7783', 'https://fark.com/13236520 --Fark headline: Elon Musk and Asana Founder go back to kindergarten and call each other poopyheads')" onmouseout="showCopyLink('copylink_13236520_7783')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236520/Elon-Musk-Asana-Founder-go-back-to-kindergarten-call-each-other-poopyheads" target="_top" class="icon_comment">  <span class="icon_comment_count">32</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236422" data-headline-count="23">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236422 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236422/www.theguardian.com/global-development/2024/apr/29/cats-cuddly-toys-and-a-portrait-of-stalin-the-lif"><img src="https://img.fark.net/images/2013/links/guardian.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/guardian.png 1x, https://img.fark.net/images/2013/links/guardian-2x.png 2x"  class="retina" alt="(Guardian)" title="Guardian"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/interesting" title="Interesting"><span class="ttag topic02">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236422 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236422/www.theguardian.com/global-development/2024/apr/29/cats-cuddly-toys-and-a-portrait-of-stalin-the-lif">Cats, cuddly toys, and a portrait of Stalin - NO, not the Fark Home Office (probably), but the apartment of the lady operating the last pay-as-you-go Soviet-era elevator</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236422 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236422">theguardian.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236422_3527" onclick="copyLinkToClipboard('copylink_13236422_3527', 'https://fark.com/13236422 --Fark headline: Cats, cuddly toys, and a portrait of Stalin - NO, not the Fark Home Office (probably), but the apartment of the lady operating the last pay-as-you-go Soviet-era elevator')" onmouseout="showCopyLink('copylink_13236422_3527')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236422/Cats-cuddly-toys-a-portrait-of-Stalin-NO-not-Fark-Home-Office-probably-but-apartment-of-lady-operating-last-pay-as-you-go-Soviet-era-elevator" target="_top" class="icon_comment">  <span class="icon_comment_count">12</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236358" data-headline-count="24">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236358 "  data-farkdomain="azfamily.com" target="_blank" href="https://www.fark.com/goto/13236358/www.azfamily.com/2024/04/24/scary-scottsdale-man-spots-rattlesnake-his-front-door/%3Ftbref%3Dhp%26ut"><img src="https://img.fark.net/images/2013/links/azfamily.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/azfamily.png 1x, https://img.fark.net/images/2013/links/azfamily-2x.png 2x"  class="retina" alt="(AZ Family)" title="AZ Family"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/scary" title="Scary"><span class="ttag topic19">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236358 "  data-farkdomain="azfamily.com" target="_blank" href="https://www.fark.com/goto/13236358/www.azfamily.com/2024/04/24/scary-scottsdale-man-spots-rattlesnake-his-front-door/%3Ftbref%3Dhp%26ut">Knock, knock. Who&#39;s there? Nope</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236358 "  data-farkdomain="azfamily.com" target="_blank" href="https://www.fark.com/goto/13236358">azfamily.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236358_3876" onclick="copyLinkToClipboard('copylink_13236358_3876', 'https://fark.com/13236358 --Fark headline: Knock, knock. Who\&#39;s there? Nope')" onmouseout="showCopyLink('copylink_13236358_3876')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236358/Knock-knock-Whos-there-Nope" target="_top" class="icon_comment">  <span class="icon_comment_count">28</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236362" data-headline-count="25">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236362 "  data-farkdomain="merriam-webster.com" target="_blank" href="https://www.fark.com/goto/13236362/www.merriam-webster.com/word-of-the-day/inviolable-2024-04-29%3Futm_source%3Dfark%26utm_medium%3Dweb"><img src="https://img.fark.net/images/2013/links/merriamwebster.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/merriamwebster.png 1x, https://img.fark.net/images/2013/links/merriamwebster-2x.png 2x"  class="retina" alt="(Merriam-Webster)" title="Merriam-Webster"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/amusing" title="Amusing"><span class="ttag topic01">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236362 "  data-farkdomain="merriam-webster.com" target="_blank" href="https://www.fark.com/goto/13236362/www.merriam-webster.com/word-of-the-day/inviolable-2024-04-29%3Futm_source%3Dfark%26utm_medium%3Dweb">The Merriam-Webster word of the day for April 29 is inviolable, as in Some pieces for strings must be played on a violin as they are inviolable</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236362 "  data-farkdomain="merriam-webster.com" target="_blank" href="https://www.fark.com/goto/13236362">merriam-webster.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236362_7222" onclick="copyLinkToClipboard('copylink_13236362_7222', 'https://fark.com/13236362 --Fark headline: The Merriam-Webster word of the day for April 29 is inviolable, as in Some pieces for strings must be played on a violin as they are inviolable')" onmouseout="showCopyLink('copylink_13236362_7222')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236362/The-Merriam-Webster-word-of-day-for-April-29-is-inviolable-as-in-Some-pieces-for-strings-must-be-played-on-a-violin-as-they-are-inviolable" target="_top" class="icon_comment">  <span class="icon_comment_count">17</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236244" data-headline-count="26">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236244 "  data-farkdomain="lenconnect.com" target="_blank" href="https://www.fark.com/goto/13236244/www.lenconnect.com/story/news/crime/2024/04/29/police-seek-tips-sculpture-tecumseh-mi-art-trail-defa"><img src="https://img.fark.net/images/2013/links/adriandailytelegram.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/adriandailytelegram.png 1x, https://img.fark.net/images/2013/links/adriandailytelegram-2x.png 2x"  class="retina" alt="(Adrian Daily Telegram)" title="Adrian Daily Telegram"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/obvious" title="Obvious"><span class="ttag topic15">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236244 "  data-farkdomain="lenconnect.com" target="_blank" href="https://www.fark.com/goto/13236244/www.lenconnect.com/story/news/crime/2024/04/29/police-seek-tips-sculpture-tecumseh-mi-art-trail-defa">Sculpture of silverback gorilla on art trail kinda looks like a chalkboard, is near place where there are public chalkboards. Guess what happened next</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236244 "  data-farkdomain="lenconnect.com" target="_blank" href="https://www.fark.com/goto/13236244">lenconnect.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236244_7774" onclick="copyLinkToClipboard('copylink_13236244_7774', 'https://fark.com/13236244 --Fark headline: Sculpture of silverback gorilla on art trail kinda looks like a chalkboard, is near place where there are public chalkboards. Guess what happened next')" onmouseout="showCopyLink('copylink_13236244_7774')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236244/Sculpture-of-silverback-gorilla-on-art-trail-kinda-looks-like-a-chalkboard-is-near-place-where-there-are-public-chalkboards-Guess-what-happened-next" target="_top" class="icon_comment">  <span class="icon_comment_count">51</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236190" data-headline-count="27">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236190 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236190/www.theguardian.com/world/2024/apr/29/urination-equality-amsterdam-women-win-fight-more-public-toile"><img src="https://img.fark.net/images/2013/links/guardian.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/guardian.png 1x, https://img.fark.net/images/2013/links/guardian-2x.png 2x"  class="retina" alt="(Guardian)" title="Guardian"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/spiffy" title="Spiffy"><span class="ttag topic16">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236190 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236190/www.theguardian.com/world/2024/apr/29/urination-equality-amsterdam-women-win-fight-more-public-toile">Pissed off Dutch women win more chances to piss after a night on the piss</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236190 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236190">theguardian.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236190_2016" onclick="copyLinkToClipboard('copylink_13236190_2016', 'https://fark.com/13236190 --Fark headline: Pissed off Dutch women win more chances to piss after a night on the piss')" onmouseout="showCopyLink('copylink_13236190_2016')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236190/Pissed-off-Dutch-women-win-more-chances-to-piss-after-a-night-on-piss" target="_top" class="icon_comment">  <span class="icon_comment_count">35</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236200" data-headline-count="28">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236200 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236200/www.theguardian.com/technology/2024/apr/29/devices-with-weak-passwords-to-be-banned-uk%3Futm_source"><img src="https://img.fark.net/images/2013/links/guardian.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/guardian.png 1x, https://img.fark.net/images/2013/links/guardian-2x.png 2x"  class="retina" alt="(Guardian)" title="Guardian"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/interesting" title="Interesting"><span class="ttag topic02">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236200 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236200/www.theguardian.com/technology/2024/apr/29/devices-with-weak-passwords-to-be-banned-uk%3Futm_source">UK bans devices that have the same password as your luggage combination</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236200 "  data-farkdomain="theguardian.com" target="_blank" href="https://www.fark.com/goto/13236200">theguardian.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236200_4866" onclick="copyLinkToClipboard('copylink_13236200_4866', 'https://fark.com/13236200 --Fark headline: UK bans devices that have the same password as your luggage combination')" onmouseout="showCopyLink('copylink_13236200_4866')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236200/UK-bans-devices-that-have-same-password-as-your-luggage-combination" target="_top" class="icon_comment">  <span class="icon_comment_count">52</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236330" data-headline-count="29">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236330 "  data-farkdomain="npr.org" target="_blank" href="https://www.fark.com/goto/13236330/www.npr.org/2024/04/26/1242488590/what-to-read-fiction-nonfiction-kids-books-trees"><img src="https://img.fark.net/images/2013/links/npr.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/npr.png 1x, https://img.fark.net/images/2013/links/npr-2x.png 2x"  class="retina" alt="(NPR)" title="NPR"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/interesting" title="Interesting"><span class="ttag topic02">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236330 "  data-farkdomain="npr.org" target="_blank" href="https://www.fark.com/goto/13236330/www.npr.org/2024/04/26/1242488590/what-to-read-fiction-nonfiction-kids-books-trees">Looking for a good way to celebrate Arbor Day? Try one of these 20 books that will totally change the way you look at trees. List kind of fails without including The Lorax, but it&#39;s NPR so just roll with it</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236330 "  data-farkdomain="npr.org" target="_blank" href="https://www.fark.com/goto/13236330">npr.org</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236330_7625" onclick="copyLinkToClipboard('copylink_13236330_7625', 'https://fark.com/13236330 --Fark headline: Looking for a good way to celebrate Arbor Day? Try one of these 20 books that will totally change the way you look at trees. List kind of fails without including The Lorax, but it\&#39;s NPR so just roll with it')" onmouseout="showCopyLink('copylink_13236330_7625')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236330/Looking-for-a-good-way-to-celebrate-Arbor-Day-Try-one-of-these-20-books-that-will-totally-change-way-you-look-at-trees-List-kind-of-fails-without-including-The-Lorax-but-its-NPR-so-just-roll-with-it" target="_top" class="icon_comment">  <span class="icon_comment_count">79</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13233444" data-headline-count="30">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13233444 "  data-farkdomain="live.staticflickr.com" target="_blank" href="https://www.fark.com/goto/13233444/live.staticflickr.com/65535/53677582421_8fefa657d4_b.jpg%3Futm_source%3Dfark%26utm_medium%3Dwebsite"><img src="https://img.fark.net/images/2013/links/flickr.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/flickr.png 1x, https://img.fark.net/images/2013/links/flickr-2x.png 2x"  class="retina" alt="(Flickr)" title="Flickr"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/photoshop" title="Photoshop"><span class="ttag topic23">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13233444 "  data-farkdomain="live.staticflickr.com" target="_blank" href="https://www.fark.com/goto/13233444/live.staticflickr.com/65535/53677582421_8fefa657d4_b.jpg%3Futm_source%3Dfark%26utm_medium%3Dwebsite">Photoshop this start of the race</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13233444 "  data-farkdomain="live.staticflickr.com" target="_blank" href="https://www.fark.com/goto/13233444">live.staticflickr.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13233444_6144" onclick="copyLinkToClipboard('copylink_13233444_6144', 'https://fark.com/13233444 --Fark headline: Photoshop this start of the race')" onmouseout="showCopyLink('copylink_13233444_6144')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13233444/Photoshop-this-start-of-race" target="_top" class="icon_comment">  <span class="icon_comment_count">14</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236348" data-headline-count="31">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236348 "  data-farkdomain="apnews.com" target="_blank" href="https://www.fark.com/goto/13236348/apnews.com/article/hawaii-macadamia-nuts-farming-a45ed035eb30b3406288fc524d13634d%3Futm_source%3Dfar"><img src="https://img.fark.net/images/2013/links/apnews.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/apnews.png 1x, https://img.fark.net/images/2013/links/apnews-2x.png 2x"  class="retina" alt="(AP News)" title="AP News"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/interesting" title="Interesting"><span class="ttag topic02">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236348 "  data-farkdomain="apnews.com" target="_blank" href="https://www.fark.com/goto/13236348/apnews.com/article/hawaii-macadamia-nuts-farming-a45ed035eb30b3406288fc524d13634d%3Futm_source%3Dfar">Hawaiian lawmakers want you to be thinking about their nuts</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236348 "  data-farkdomain="apnews.com" target="_blank" href="https://www.fark.com/goto/13236348">apnews.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236348_1042" onclick="copyLinkToClipboard('copylink_13236348_1042', 'https://fark.com/13236348 --Fark headline: Hawaiian lawmakers want you to be thinking about their nuts')" onmouseout="showCopyLink('copylink_13236348_1042')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236348/Hawaiian-lawmakers-want-you-to-be-thinking-about-their-nuts" target="_top" class="icon_comment">  <span class="icon_comment_count">18</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236044" data-headline-count="32">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236044 "  data-farkdomain="nbcbayarea.com" target="_blank" href="https://www.fark.com/goto/13236044/www.nbcbayarea.com/news/local/bay-area-proud/193-countries-san-jose-2nd-grade-teacher-becomes-rare-t"><img src="https://img.fark.net/images/2014/links/nbcbayarea.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/nbcbayarea.png 1x, https://img.fark.net/images/2014/links/nbcbayarea-2x.png 2x"  class="retina" alt="(NBC Bay Area)" title="NBC Bay Area"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/spiffy" title="Spiffy"><span class="ttag topic16">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236044 "  data-farkdomain="nbcbayarea.com" target="_blank" href="https://www.fark.com/goto/13236044/www.nbcbayarea.com/news/local/bay-area-proud/193-countries-san-jose-2nd-grade-teacher-becomes-rare-t">School teacher messed around on her days off and ended up visiting every country in the world. Hopes Ferris gets well soon</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236044 "  data-farkdomain="nbcbayarea.com" target="_blank" href="https://www.fark.com/goto/13236044">nbcbayarea.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236044_9878" onclick="copyLinkToClipboard('copylink_13236044_9878', 'https://fark.com/13236044 --Fark headline: School teacher messed around on her days off and ended up visiting every country in the world. Hopes Ferris gets well soon')" onmouseout="showCopyLink('copylink_13236044_9878')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236044/School-teacher-messed-around-on-her-days-off-ended-up-visiting-every-country-in-world-Hopes-Ferris-gets-well-soon" target="_top" class="icon_comment">  <span class="icon_comment_count">37</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236218" data-headline-count="33">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236218 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236218/www.msn.com/en-us/news/us/nashville-is-booming-locals-fret-about-their-future-in-music-city/ar-AA1nN"><img src="https://img.fark.net/images/2014/links/msn.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/msn.png 1x, https://img.fark.net/images/2014/links/msn-2x.png 2x"  class="retina" alt="(MSN)" title="MSN"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/interesting" title="Interesting"><span class="ttag topic02">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236218 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236218/www.msn.com/en-us/news/us/nashville-is-booming-locals-fret-about-their-future-in-music-city/ar-AA1nN">Nashville is booming, but locals fear that the city is now becoming unaffordable. At least we&#39;ll always have the hot chicken</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236218 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236218">msn.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236218_6663" onclick="copyLinkToClipboard('copylink_13236218_6663', 'https://fark.com/13236218 --Fark headline: Nashville is booming, but locals fear that the city is now becoming unaffordable. At least we\&#39;ll always have the hot chicken')" onmouseout="showCopyLink('copylink_13236218_6663')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236218/Nashville-is-booming-but-locals-fear-that-city-is-now-becoming-unaffordable-At-least-well-always-have-hot-chicken" target="_top" class="icon_comment">  <span class="icon_comment_count">39</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236178" data-headline-count="34">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236178 "  data-farkdomain="businessinsider.com" target="_blank" href="https://www.fark.com/goto/13236178/www.businessinsider.com/mint-butterfield-teen-child-tech-founders-found-safely-police-2024-4%3Futm_s"><img src="https://img.fark.net/images/2013/links/businessinsider.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/businessinsider.png 1x, https://img.fark.net/images/2013/links/businessinsider-2x.png 2x"  class="retina" alt="(Business Insider)" title="Business Insider"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/followup" title="Followup"><span class="ttag topic26">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236178 "  data-farkdomain="businessinsider.com" target="_blank" href="https://www.fark.com/goto/13236178/www.businessinsider.com/mint-butterfield-teen-child-tech-founders-found-safely-police-2024-4%3Futm_s">Missing rich, white teenage girl has been found, everybody unclench</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236178 "  data-farkdomain="businessinsider.com" target="_blank" href="https://www.fark.com/goto/13236178">businessinsider.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236178_1485" onclick="copyLinkToClipboard('copylink_13236178_1485', 'https://fark.com/13236178 --Fark headline: Missing rich, white teenage girl has been found, everybody unclench')" onmouseout="showCopyLink('copylink_13236178_1485')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236178/Missing-rich-white-teenage-girl-has-been-found-everybody-unclench" target="_top" class="icon_comment">  <span class="icon_comment_count">57</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236266" data-headline-count="35">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236266 "  data-farkdomain="kyivindependent.com" target="_blank" href="https://www.fark.com/goto/13236266/kyivindependent.com/isw-russia-unlikely-to-achieve-significant-near-term-gains-near-avdiivka-despite"><img src="https://img.fark.net/images/2022/links/kyivindependent.png" width="77" height="27" srcset="https://img.fark.net/images/2022/links/kyivindependent.png 1x, https://img.fark.net/images/2022/links/kyivindependent-2x.png 2x"  class="retina" alt="(The Kyiv Independent)" title="The Kyiv Independent"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/news" title="News"><span class="ttag topic04">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236266 "  data-farkdomain="kyivindependent.com" target="_blank" href="https://www.fark.com/goto/13236266/kyivindependent.com/isw-russia-unlikely-to-achieve-significant-near-term-gains-near-avdiivka-despite">Day 796 of WW3. ISW says Russia&#39;s current push in Donbas unlikely to achieve significant operational results. The dead-orc numbers agree. Latvia sends replacement energy infrastructure to Ukraine. This is your Monday Ukraine War thread</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236266 "  data-farkdomain="kyivindependent.com" target="_blank" href="https://www.fark.com/goto/13236266">kyivindependent.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236266_4035" onclick="copyLinkToClipboard('copylink_13236266_4035', 'https://fark.com/13236266 --Fark headline: Day 796 of WW3. ISW says Russia\&#39;s current push in Donbas unlikely to achieve significant operational results. The dead-orc numbers agree. Latvia sends replacement energy infrastructure to Ukraine. This is your Monday Ukraine War thread')" onmouseout="showCopyLink('copylink_13236266_4035')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236266/Day-796-of-WW3-ISW-says-Russias-current-push-in-Donbas-unlikely-to-achieve-significant-operational-results-The-dead-orc-numbers-agree-Latvia-sends-replacement-energy-infrastructure-to-Ukraine-This-is-your-Monday-Ukraine-War-thread" target="_top" class="icon_comment">  <span class="icon_comment_count">261</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236094" data-headline-count="36">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236094 "  data-farkdomain="pjstar.com" target="_blank" href="https://www.fark.com/goto/13236094/www.pjstar.com/story/news/columns/2024/04/22/the-curious-case-of-a-hitler-radio-station-in-peoria-il"><img src="https://img.fark.net/images/2014/links/peoriajournalstar.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/peoriajournalstar.png 1x, https://img.fark.net/images/2014/links/peoriajournalstar-2x.png 2x"  class="retina" alt="(Peoria Journal Star)" title="Peoria Journal Star"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/strange" title="Strange"><span class="ttag topic10">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236094 "  data-farkdomain="pjstar.com" target="_blank" href="https://www.fark.com/goto/13236094/www.pjstar.com/story/news/columns/2024/04/22/the-curious-case-of-a-hitler-radio-station-in-peoria-il">Was there an unlicensed &quot;Heil Hitler&quot; radio station operating in Peoria, Illinois during 1941 playing German military marches and Hitler&#39;s greatest speeches? Yup. Was it a gag? Maybe</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236094 "  data-farkdomain="pjstar.com" target="_blank" href="https://www.fark.com/goto/13236094">pjstar.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236094_7679" onclick="copyLinkToClipboard('copylink_13236094_7679', 'https://fark.com/13236094 --Fark headline: Was there an unlicensed &quot;Heil Hitler&quot; radio station operating in Peoria, Illinois during 1941 playing German military marches and Hitler\&#39;s greatest speeches? Yup. Was it a gag? Maybe')" onmouseout="showCopyLink('copylink_13236094_7679')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236094/Was-there-an-unlicensed-Heil-Hitler-radio-station-operating-in-Peoria-Illinois-during-1941-playing-German-military-marches-Hitlers-greatest-speeches-Yup-Was-it-a-gag-Maybe" target="_top" class="icon_comment">  <span class="icon_comment_count">34</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236064" data-headline-count="37">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236064 "  data-farkdomain="cnn.com" target="_blank" href="https://www.fark.com/goto/13236064/www.cnn.com/travel/kalaupapa-national-historical-park-hawaii/index.html%3Futm_source%3Dfark%26utm_me"><img src="https://img.fark.net/images/2023/links/cnn0.png" width="77" height="27" srcset="https://img.fark.net/images/2023/links/cnn0.png 1x, https://img.fark.net/images/2023/links/cnn0-2x.png 2x"  class="retina" alt="(CNN)" title="CNN"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/interesting" title="Interesting"><span class="ttag topic02">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236064 "  data-farkdomain="cnn.com" target="_blank" href="https://www.fark.com/goto/13236064/www.cnn.com/travel/kalaupapa-national-historical-park-hawaii/index.html%3Futm_source%3Dfark%26utm_me">Avoid Kalaupapa National Historical Park. The lepers will eat your face</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236064 "  data-farkdomain="cnn.com" target="_blank" href="https://www.fark.com/goto/13236064">cnn.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236064_4645" onclick="copyLinkToClipboard('copylink_13236064_4645', 'https://fark.com/13236064 --Fark headline: Avoid Kalaupapa National Historical Park. The lepers will eat your face')" onmouseout="showCopyLink('copylink_13236064_4645')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236064/Avoid-Kalaupapa-National-Historical-Park-The-lepers-will-eat-your-face" target="_top" class="icon_comment">  <span class="icon_comment_count">17</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236148" data-headline-count="38">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236148 "  data-farkdomain="cnn.com" target="_blank" href="https://www.fark.com/goto/13236148/www.cnn.com/travel/haiku-stairs-hawaii-visits-continue-arrests/index.html%3Futm_source%3Dfark%26utm_"><img src="https://img.fark.net/images/2023/links/cnn0.png" width="77" height="27" srcset="https://img.fark.net/images/2023/links/cnn0.png 1x, https://img.fark.net/images/2023/links/cnn0-2x.png 2x"  class="retina" alt="(CNN)" title="CNN"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/followup" title="Followup"><span class="ttag topic26">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236148 "  data-farkdomain="cnn.com" target="_blank" href="https://www.fark.com/goto/13236148/www.cnn.com/travel/haiku-stairs-hawaii-visits-continue-arrests/index.html%3Futm_source%3Dfark%26utm_">US Navy steps; fallen into disrepair; tourists trespassing</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236148 "  data-farkdomain="cnn.com" target="_blank" href="https://www.fark.com/goto/13236148">cnn.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236148_1788" onclick="copyLinkToClipboard('copylink_13236148_1788', 'https://fark.com/13236148 --Fark headline: US Navy steps; fallen into disrepair; tourists trespassing')" onmouseout="showCopyLink('copylink_13236148_1788')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236148/US-Navy-steps-fallen-into-disrepair-tourists-trespassing" target="_top" class="icon_comment">  <span class="icon_comment_count">23</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236098" data-headline-count="39">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236098 "  data-farkdomain="i.imgur.com" target="_blank" href="https://www.fark.com/goto/13236098/i.imgur.com/3fZR9np.jpeg%3Futm_source%3Dfark%26utm_medium%3Dwebsite%26utm_content%3Dlink%26ICID%3Dre"><img src="https://img.fark.net/images/2013/links/imgur.gif" width="77" height="27" srcset="https://img.fark.net/images/2013/links/imgur.gif 1x, https://img.fark.net/images/2013/links/imgur-2x.gif 2x"  class="retina" alt="(Imgur)" title="Imgur"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/fail" title="Fail"><span class="ttag topic42">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236098 "  data-farkdomain="i.imgur.com" target="_blank" href="https://www.fark.com/goto/13236098/i.imgur.com/3fZR9np.jpeg%3Futm_source%3Dfark%26utm_medium%3Dwebsite%26utm_content%3Dlink%26ICID%3Dre">&quot;Homeless man under house arrest.&quot; How?</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236098 "  data-farkdomain="i.imgur.com" target="_blank" href="https://www.fark.com/goto/13236098">i.imgur.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236098_5544" onclick="copyLinkToClipboard('copylink_13236098_5544', 'https://fark.com/13236098 --Fark headline: &quot;Homeless man under house arrest.&quot; How?')" onmouseout="showCopyLink('copylink_13236098_5544')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236098/Homeless-man-under-house-arrest-How" target="_top" class="icon_comment">  <span class="icon_comment_count">21</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236058" data-headline-count="40">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236058 "  data-farkdomain="kiro7.com" target="_blank" href="https://www.fark.com/goto/13236058/www.kiro7.com/news/local/zebras-loose-north-bend/4URTUP7Y7BES7FTIITWB6ITMTE/%3Futm_source%3Dfark%26u"><img src="https://img.fark.net/images/2016/links/kiro7.png" width="77" height="27" srcset="https://img.fark.net/images/2016/links/kiro7.png 1x, https://img.fark.net/images/2016/links/kiro7-2x.png 2x"  class="retina" alt="(KIRO-7 Seattle)" title="KIRO-7 Seattle"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/psa" title="PSA"><span class="ttag topic14">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236058 "  data-farkdomain="kiro7.com" target="_blank" href="https://www.fark.com/goto/13236058/www.kiro7.com/news/local/zebras-loose-north-bend/4URTUP7Y7BES7FTIITWB6ITMTE/%3Futm_source%3Dfark%26u">3 of 4 escapees clad in black and white stripes apprehended by Washington State Highway Patrol near l-90 in North Bend</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236058 "  data-farkdomain="kiro7.com" target="_blank" href="https://www.fark.com/goto/13236058">kiro7.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236058_5007" onclick="copyLinkToClipboard('copylink_13236058_5007', 'https://fark.com/13236058 --Fark headline: 3 of 4 escapees clad in black and white stripes apprehended by Washington State Highway Patrol near l-90 in North Bend')" onmouseout="showCopyLink('copylink_13236058_5007')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236058/-3-of-4-escapees-clad-in-black-white-stripes-apprehended-by-Washington-State-Highway-Patrol-near-l-90-in-North-Bend" target="_top" class="icon_comment">  <span class="icon_comment_count">21</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236122" data-headline-count="41">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236122 "  data-farkdomain="coloradosun.com" target="_blank" href="https://www.fark.com/goto/13236122/coloradosun.com/2024/04/28/cielo-vista-ranch-fence/%3Futm_source%3Dfark%26utm_medium%3Dwebsite%26utm"><img src="https://img.fark.net/images/2023/links/coloradosun.png" width="77" height="27" srcset="https://img.fark.net/images/2023/links/coloradosun.png 1x, https://img.fark.net/images/2023/links/coloradosun-2x.png 2x"  class="retina" alt="(The Colorado Sun)" title="The Colorado Sun"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/asinine" title="Asinine"><span class="ttag topic13">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236122 "  data-farkdomain="coloradosun.com" target="_blank" href="https://www.fark.com/goto/13236122/coloradosun.com/2024/04/28/cielo-vista-ranch-fence/%3Futm_source%3Dfark%26utm_medium%3Dwebsite%26utm">Break out your tiniest violin for the billionaire who feels &#39;demonized&#39; by impoverished descendants of Colorado&#39;s first Mexican settlers after he began fencing off 100 square miles of land they had used for subsistence over the past 150 years</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236122 "  data-farkdomain="coloradosun.com" target="_blank" href="https://www.fark.com/goto/13236122">coloradosun.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236122_5634" onclick="copyLinkToClipboard('copylink_13236122_5634', 'https://fark.com/13236122 --Fark headline: Break out your tiniest violin for the billionaire who feels \&#39;demonized\&#39; by impoverished descendants of Colorado\&#39;s first Mexican settlers after he began fencing off 100 square miles of land they had used for subsistence over the past 150 years')" onmouseout="showCopyLink('copylink_13236122_5634')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236122/Break-out-your-tiniest-violin-for-billionaire-who-feels-demonized-by-impoverished-descendants-of-Colorados-first-Mexican-settlers-after-he-began-fencing-off-100-square-miles-of-land-they-had-used-for-subsistence-over-past-150-years" target="_top" class="icon_comment">  <span class="icon_comment_count">70</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13236014" data-headline-count="42">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13236014 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236014/www.msn.com/en-us/travel/tripideas/california-s-most-underrated-national-park-is-like-a-mini-yellows"><img src="https://img.fark.net/images/2014/links/msn.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/msn.png 1x, https://img.fark.net/images/2014/links/msn-2x.png 2x"  class="retina" alt="(MSN)" title="MSN"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/cool" title="Cool"><span class="ttag topic18">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13236014 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236014/www.msn.com/en-us/travel/tripideas/california-s-most-underrated-national-park-is-like-a-mini-yellows">California&#39;s most underrated park is a great place to visit without the big crowds like Yellowstone. Well, it was until you published this article</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13236014 "  data-farkdomain="msn.com" target="_blank" href="https://www.fark.com/goto/13236014">msn.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13236014_9593" onclick="copyLinkToClipboard('copylink_13236014_9593', 'https://fark.com/13236014 --Fark headline: California\&#39;s most underrated park is a great place to visit without the big crowds like Yellowstone. Well, it was until you published this article')" onmouseout="showCopyLink('copylink_13236014_9593')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13236014/Californias-most-underrated-park-is-a-great-place-to-visit-without-big-crowds-like-Yellowstone-Well-it-was-until-you-published-this-article" target="_top" class="icon_comment">  <span class="icon_comment_count">43</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13235998" data-headline-count="43">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13235998 "  data-farkdomain="bbc.com" target="_blank" href="https://www.fark.com/goto/13235998/www.bbc.com/news/articles/cz5d6mj5gp8o%3Futm_source%3Dfark%26utm_medium%3Dwebsite%26utm_content%3Dli"><img src="https://img.fark.net/images/2013/links/bbcus.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/bbcus.png 1x, https://img.fark.net/images/2013/links/bbcus-2x.png 2x"  class="retina" alt="(BBC-US)" title="BBC-US"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/sad" title="Sad"><span class="ttag topic05">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13235998 "  data-farkdomain="bbc.com" target="_blank" href="https://www.fark.com/goto/13235998/www.bbc.com/news/articles/cz5d6mj5gp8o%3Futm_source%3Dfark%26utm_medium%3Dwebsite%26utm_content%3Dli">Heineken. Not just shiatty beer, but a really shiatty company</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13235998 "  data-farkdomain="bbc.com" target="_blank" href="https://www.fark.com/goto/13235998">bbc.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13235998_6069" onclick="copyLinkToClipboard('copylink_13235998_6069', 'https://fark.com/13235998 --Fark headline: Heineken. Not just shiatty beer, but a really shiatty company')" onmouseout="showCopyLink('copylink_13235998_6069')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13235998/Heineken-Not-just-shiatty-beer-but-a-really-shiatty-company" target="_top" class="icon_comment">  <span class="icon_comment_count">90</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr> </tbody>
+        </table>  <table class="headlineTable ">
+            <tbody>
+                <tr>
+                    <td class="mainDate headline_date" colspan="4" data-farkHD="SunApril282024"> Sun April 28, 2024 </td>
+                </tr> <tr class="headlineRow id13235904" data-headline-count="44">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13235904 "  data-farkdomain="carscoops.com" target="_blank" href="https://www.fark.com/goto/13235904/www.carscoops.com/2024/04/fisker-ocean-totaled-over-door-damage-due-to-lack-of-parts/%3Futm_source"><img src="https://img.fark.net/images/2013/links/carscoops.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/carscoops.png 1x, https://img.fark.net/images/2013/links/carscoops-2x.png 2x"  class="retina" alt="(Carscoops)" title="Carscoops"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/fail" title="Fail"><span class="ttag topic42">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13235904 "  data-farkdomain="carscoops.com" target="_blank" href="https://www.fark.com/goto/13235904/www.carscoops.com/2024/04/fisker-ocean-totaled-over-door-damage-due-to-lack-of-parts/%3Futm_source">New car. Key ding, total loss. $53,303</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13235904 "  data-farkdomain="carscoops.com" target="_blank" href="https://www.fark.com/goto/13235904">carscoops.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13235904_1958" onclick="copyLinkToClipboard('copylink_13235904_1958', 'https://fark.com/13235904 --Fark headline: New car. Key ding, total loss. $53,303')" onmouseout="showCopyLink('copylink_13235904_1958')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13235904/New-car-Key-ding-total-loss-$53303" target="_top" class="icon_comment">  <span class="icon_comment_count">135</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13235972" data-headline-count="45">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13235972 "  data-farkdomain="nbc-2.com" target="_blank" href="https://www.fark.com/goto/13235972/www.nbc-2.com/article/florida-insurance-company-drops-homeowners-swfl-hurricane-season/60621379%3Fut"><img src="https://img.fark.net/images/2013/links/nbc2fortmyers.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/nbc2fortmyers.png 1x, https://img.fark.net/images/2013/links/nbc2fortmyers-2x.png 2x"  class="retina" alt="(NBC 2 Fort Myers)" title="NBC 2 Fort Myers"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/florida" title="Florida"><span class="ttag topic35">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13235972 "  data-farkdomain="nbc-2.com" target="_blank" href="https://www.fark.com/goto/13235972/www.nbc-2.com/article/florida-insurance-company-drops-homeowners-swfl-hurricane-season/60621379%3Fut">ASI-Progressive Insurance drops 1000s of home policies just 34 days before 2024 supercharged Atlantic hurricane season starts. Buy plywood now while prices are still low</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13235972 "  data-farkdomain="nbc-2.com" target="_blank" href="https://www.fark.com/goto/13235972">nbc-2.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13235972_7001" onclick="copyLinkToClipboard('copylink_13235972_7001', 'https://fark.com/13235972 --Fark headline: ASI-Progressive Insurance drops 1000s of home policies just 34 days before 2024 supercharged Atlantic hurricane season starts. Buy plywood now while prices are still low')" onmouseout="showCopyLink('copylink_13235972_7001')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13235972/ASI-Progressive-Insurance-drops-1000s-of-home-policies-just-34-days-before-2024-supercharged-Atlantic-hurricane-season-starts-Buy-plywood-now-while-prices-are-still-low" target="_top" class="icon_comment">  <span class="icon_comment_count">84</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13235840" data-headline-count="46">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13235840 "  data-farkdomain="potatonewstoday.com" target="_blank" href="https://www.fark.com/goto/13235840/www.potatonewstoday.com/2024/04/28/message-on-a-spud-the-rise-of-potato-parcel-and-other-startups-th"><img src="https://img.fark.net/images/2023/links/potatonews.png" width="77" height="27" srcset="https://img.fark.net/images/2023/links/potatonews.png 1x, https://img.fark.net/images/2023/links/potatonews-2x.png 2x"  class="retina" alt="(Potato News Today)" title="Potato News Today"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/amusing" title="Amusing"><span class="ttag topic01">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13235840 "  data-farkdomain="potatonewstoday.com" target="_blank" href="https://www.fark.com/goto/13235840/www.potatonewstoday.com/2024/04/28/message-on-a-spud-the-rise-of-potato-parcel-and-other-startups-th">Your mom has gotten bored with typical Mothers Day cards. Surprise her this year with a message on a potato</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13235840 "  data-farkdomain="potatonewstoday.com" target="_blank" href="https://www.fark.com/goto/13235840">potatonewstoday.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13235840_3057" onclick="copyLinkToClipboard('copylink_13235840_3057', 'https://fark.com/13235840 --Fark headline: Your mom has gotten bored with typical Mothers Day cards. Surprise her this year with a message on a potato')" onmouseout="showCopyLink('copylink_13235840_3057')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13235840/Your-mom-has-gotten-bored-with-typical-Mothers-Day-cards-Surprise-her-this-year-with-a-message-on-a-potato" target="_top" class="icon_comment">  <span class="icon_comment_count">37</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13235824" data-headline-count="47">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13235824 "  data-farkdomain="yahoo.com" target="_blank" href="https://www.fark.com/goto/13235824/www.yahoo.com/news/central-park-robbery-spree-visitors-200200307.html%3Futm_source%3Dfark%26utm_medi"><img src="https://img.fark.net/images/2014/links/yahoo.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/yahoo.png 1x, https://img.fark.net/images/2014/links/yahoo-2x.png 2x"  class="retina" alt="(Yahoo)" title="Yahoo"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/misc" title="Misc"><span class="ttag topic03">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13235824 "  data-farkdomain="yahoo.com" target="_blank" href="https://www.fark.com/goto/13235824/www.yahoo.com/news/central-park-robbery-spree-visitors-200200307.html%3Futm_source%3Dfark%26utm_medi">You don&#39;t go into Central Park at night. Or in the day. Definitely not the morning. Dusk&#39;s a bit dangerous, too. Just avoid it completely if the sun is down. Or up</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13235824 "  data-farkdomain="yahoo.com" target="_blank" href="https://www.fark.com/goto/13235824">yahoo.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13235824_7106" onclick="copyLinkToClipboard('copylink_13235824_7106', 'https://fark.com/13235824 --Fark headline: You don\&#39;t go into Central Park at night. Or in the day. Definitely not the morning. Dusk\&#39;s a bit dangerous, too. Just avoid it completely if the sun is down. Or up')" onmouseout="showCopyLink('copylink_13235824_7106')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13235824/You-dont-go-into-Central-Park-at-night-Or-in-day-Definitely-not-morning-Dusks-a-bit-dangerous-too-Just-avoid-it-completely-if-sun-is-down-Or-up" target="_top" class="icon_comment">  <span class="icon_comment_count">70</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13235858" data-headline-count="48">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13235858 "  data-farkdomain="weather.com" target="_blank" href="https://www.fark.com/goto/13235858/weather.com/storms/severe/video/dollar-tree-warehouse-decimated-in-tornado-outbreak%3Futm_source%3Df"><img src="https://img.fark.net/images/2014/links/theweatherchannel.png" width="77" height="27" srcset="https://img.fark.net/images/2014/links/theweatherchannel.png 1x, https://img.fark.net/images/2014/links/theweatherchannel-2x.png 2x"  class="retina" alt="(The Weather Channel)" title="The Weather Channel"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/scary" title="Scary"><span class="ttag topic19">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13235858 "  data-farkdomain="weather.com" target="_blank" href="https://www.fark.com/goto/13235858/weather.com/storms/severe/video/dollar-tree-warehouse-decimated-in-tornado-outbreak%3Futm_source%3Df">Tornado rips open Dollar Tree warehouse. Company estimates hundreds of cents in losses</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13235858 "  data-farkdomain="weather.com" target="_blank" href="https://www.fark.com/goto/13235858">weather.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13235858_8205" onclick="copyLinkToClipboard('copylink_13235858_8205', 'https://fark.com/13235858 --Fark headline: Tornado rips open Dollar Tree warehouse. Company estimates hundreds of cents in losses')" onmouseout="showCopyLink('copylink_13235858_8205')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13235858/Tornado-rips-open-Dollar-Tree-warehouse-Company-estimates-hundreds-of-cents-in-losses" target="_top" class="icon_comment">  <span class="icon_comment_count">50</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13233686" data-headline-count="49">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13233686 "  data-farkdomain="geekireland.com" target="_blank" href="https://www.fark.com/goto/13233686/geekireland.com/wp-content/uploads/2023/12/deadpool-and-wolverine-3.jpg%3Futm_source%3Dfark%26utm_me">(Some great ass in red spandex)</a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/photoshop" title="Photoshop"><span class="ttag topic23">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13233686 "  data-farkdomain="geekireland.com" target="_blank" href="https://www.fark.com/goto/13233686/geekireland.com/wp-content/uploads/2023/12/deadpool-and-wolverine-3.jpg%3Futm_source%3Dfark%26utm_me">Photoshop these regenerating degenerates</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13233686 "  data-farkdomain="geekireland.com" target="_blank" href="https://www.fark.com/goto/13233686">geekireland.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13233686_5610" onclick="copyLinkToClipboard('copylink_13233686_5610', 'https://fark.com/13233686 --Fark headline: Photoshop these regenerating degenerates')" onmouseout="showCopyLink('copylink_13233686_5610')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13233686/Photoshop-these-regenerating-degenerates" target="_top" class="icon_comment">  <span class="icon_comment_count">20</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr><tr class="headlineRow id13235766" data-headline-count="50">
+
+     <td class="headlineSourceImage">   <a rel="nofollow" class="outbound_link id13235766 "  data-farkdomain="cbsnews.com" target="_blank" href="https://www.fark.com/goto/13235766/www.cbsnews.com/pittsburgh/news/local-17-year-old-receives-masters-degree-computer-science-universit"><img src="https://img.fark.net/images/2013/links/cbsnews.png" width="77" height="27" srcset="https://img.fark.net/images/2013/links/cbsnews.png 1x, https://img.fark.net/images/2013/links/cbsnews-2x.png 2x"  class="retina" alt="(CBS News)" title="CBS News"></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+    <td class="headlineTopic">
+          <a target="_top" href="https://www.fark.com/topic/spiffy" title="Spiffy"><span class="ttag topic16">&nbsp;</span></a>         <div class="hlSpacer">&nbsp;</div>  </td>
+
+     <td class="headlineText">  <span class="headline"> <a rel="nofollow" class="outbound_link id13235766 "  data-farkdomain="cbsnews.com" target="_blank" href="https://www.fark.com/goto/13235766/www.cbsnews.com/pittsburgh/news/local-17-year-old-receives-masters-degree-computer-science-universit">Knock knock knock, Penny</a> </span>
+                <div class="hlSpacer URLHover">
+                    source: <a rel="nofollow" class="outbound_link id13235766 "  data-farkdomain="cbsnews.com" target="_blank" href="https://www.fark.com/goto/13235766">cbsnews.com</a> &nbsp;&nbsp;|&nbsp;&nbsp; share:  <a href="javascript:void(0);" id="copylink_13235766_7897" onclick="copyLinkToClipboard('copylink_13235766_7897', 'https://fark.com/13235766 --Fark headline: Knock knock knock, Penny')" onmouseout="showCopyLink('copylink_13235766_7897')">Copy Link</a>  </div>   </td>
+
+    <td class="headlineComments">    <div class="icon_comment_container">
+                 <a href="https://www.fark.com/comments/13235766/Knock-knock-knock-Penny" target="_top" class="icon_comment">  <span class="icon_comment_count">30</span>  </a>    </div>          <div class="hlSpacer">&nbsp;</div>  </td>   </tr> </tbody>
+        </table>   </td>
+    </tr>
+</table>
+
+<script>
+    var total_headlines_to_track = 0;
+     fark.headlines.headlineCount = 50;
+
+    //setTimeout(function() { process_extra_tracking_logic(); }, 2000);
+</script>  <a id="headline_ajax_load_older">Load older headlines</a>    <div id="native_ad3"></div> <div class="comlinkcount">These are only a small percentage of links submitted. Join <a href="https://www.fark.com/farq/about#What_is_TotalFark">TotalFark</a> to see them all!</div><p class="linkArchives"><a href="https://www.fark.com/archives/">Link archives &raquo;</a></p>    <!-- BOTTOM start -->
+</div> <!-- end #newsContainer -->
+        </td>
+        <td id="rightCol">
+            <div class="rightColContent">   <div class="ad_container intelli1">  <div id="intelli-1"><script src="https://www.fark.com/aptminus/size3"></script></div>   <div class="reportAdBlock"  id="intelli-1-reportLink"><a href="https://www.fark.com/farkback/" onclick="reportAd('intelli-1'); return false;">Report</a></div>   </div>  <div class="sidebar_callout_container tfark_callout">
+                    <p style="font-size:13px;">If you like these links, you'll love</p>
+                    <!--<img src="https://img.fark.net/images/2017/site/totalfark_logo_2017.png" srcset="https://img.fark.net/images/2017/site/totalfark_logo_2017.png 1x, https://img.fark.net/images/2017/site/totalfark_logo_2017-2x.png 2x" class="retina" alt="TotalFark">-->
+                    <img src="https://img.fark.net/images/2017/site/totalfark_logo_2017.png" srcset="https://img.fark.net/images/2017/site/totalfark_logo_2017.png 1x, https://img.fark.net/images/2017/site/totalfark_logo_2017-2x.png 2x" class="retina" alt="TotalFark">
+                    <p class="tf-callout-text">All the submissions, none of the calories.</p>
+
+                    <a href="https://www.fark.com/farq/about/#What_is_TotalFark">learn more</a> | <a href="/totalfarksignup">sign up</a>
+                </div>      <div class="top_right_container"> <div class="ad_container rightTop">  <div id="rightAd300x250"><script src="https://www.fark.com/aptminus/size3"></script></div>   <div class="reportAdBlock"  id="rightAd300x250-reportLink"><a href="https://www.fark.com/farkback/" onclick="reportAd('rightAd300x250'); return false;">Report</a></div>   </div> </div>   <div id="supportfark">
+            <hr>
+            <a href="https://www.fark.com/supportfark">Support Fark</a>
+            <hr>
+        </div>
+
+        <div class="sidebar_callout_container newsletter_callout">
+            <p>Sign up for the Fark NotNewsletter!</p>
+              <form name="newsletter_signup" action="https://www.fark.com/newslettersignup" method="post" class="ajaxsubmit">
+                <input type="text" name="nnl_e" placeholder="you@you.com">
+                <input type="hidden" name="submitbutton" value="Sign Me Up!"> <input type="hidden" name="e0$FbTk_KnJAocS4vKsljVmQV$8yM38vRSa8UbHb" value="FbNk_R3HgQvnfniX_PgNfio7IhJ0ZaJIM5DPa8sCvCwTfJywtWQ25QrNOIIlOkMBgVKx6Z61z1cumTTWIQt0j3_XzGlE2-Ntjfuub">
+ <input type="submit" class="gradientbutton" value="Go&raquo;">
+            </form>
+            <a href="https://www.fark.com/farq/services/#What_is_the_Fark_NotNewsletter" style="display: inline-block; margin-top: 5px; ">learn more</a>
+        </div>  <hr>
+        <div id="hotw"><a href="https://www.fark.com/topic/hotm">Headlines of the Month</a><br>
+                       <a href="https://www.fark.com/blog/NotNewsletterMonkey">Fark NotNewsletter</a>
+        </div> 
+
+        <hr>
+        <ul class="sidebarLinks">  <li><a target="_top" href="https://www.fark.com/totalfarksignup">TotalFark signup</a></li>   <li><a target="_top" href="https://www.fark.com/barefarksignup">BareFark signup</a></li>  <li><a target="_top" href="https://www.fark.com/farkunits">Purchase FarkUnits</a></li>
+            <li><a target="_top" href="https://www.fark.com/ohfark">Purchase OhFark</a></li>
+        </ul>
+
+        <hr>
+
+        <ul class="sidebarLinks">
+            <li><a href="https://www.fark.com/top/links/">Top Links</a></li>
+            <li><a href="https://www.fark.com/top/comments/">Top Comments</a></li>
+            <li><a href="https://www.fark.com/top/submitters/">Top Submitters</a></li>
+            <li><a href="https://www.fark.com/top/comments/smart/">Top Smart Comments</a></li>
+            <li><a href="https://www.fark.com/top/source-topic/">Top Sources/Topics</a></li>
+            <li><a href="https://www.fark.com/top/comments/funny/">Top Funny Comments</a></li>
+            <li><a href="https://www.fark.com/publicity/">Press/Publicity</a></li>
+        </ul>
+
+        <hr>
+
+          <div class="ad_container right">  <div id="rightAd300x250Middle"><script src="https://www.fark.com/aptminus/size3"></script></div>   <div class="reportAdBlock"  id="rightAd300x250Middle-reportLink"><a href="https://www.fark.com/farkback/" onclick="reportAd('rightAd300x250Middle'); return false;">Report</a></div>   </div>  <ul class="sidebarLinks">
+            <li><a href="https://www.fark.com/combined/">All Latest</a></li>
+            <li><a href="https://www.fark.com/comments/1">Fark Forum</a></li>  <li><a href="https://www.fark.com/linkvote/">Link Voting</a></li>
+            <li><a href="https://www.fark.com/comments/2">Sports Forum</a></li>
+
+            <li><a href="https://www.fark.com/blog/DisseminationMonkey">Fark Blogs</a></li>
+            <li><a href="https://www.fark.com/comments/4">Fandom Forum</a></li>
+
+            <li><a target="_blank" href="https://www.amazon.com/Its-Not-News-Fark-Media/dp/1592402917/sr=8-1/qid=1168639219/ref=pd_bbs_sr_1/102-1500276-2229705?ie=UTF8&amp;s=books&amp;tag=farkcom-20">Fark Book</a></li>
+            <li><a href="https://www.fark.com/comments/3">Entertainment Forum</a></li>
+
+            <li><a href="https://www.fark.com/quiz">Fark Quiz</a></li>
+            <li><a href="https://www.fark.com/comments/5">Politics Forum</a></li>
+
+            <li><a href="https://www.fark.com/farkparty/">Fark Parties</a></li>
+            <li><a href="https://www.fark.com/comments/550396">Fark Party Forum</a></li>
+
+            <li><a href="https://www.fark.com/psbrowser">PS/Photo Browser</a></li>
+            <li><a href="https://www.fark.com/comments/6">Photoshop Forum</a></li>
+
+            <li><a target="_blank" rel="nofollow" href="http://chat.mibbit.com/#fark@irc.fdfnet.net">Fark Chat</a></li>
+            <li><a href="https://www.fark.com/comments/7">Farktography Forum</a></li>
+
+            <li>&nbsp;</li>
+            <li><a href="https://www.fark.com/comments/8">Discussion/TF Live Forum</a></li>
+
+        </ul>
+        <hr>
+
+
+        <!-- <br> -->
+           <div class="ad_container right">  <div id="rightAd300x250Lower"><script src="https://www.fark.com/aptminus/size3"></script></div>   <div class="reportAdBlock"  id="rightAd300x250Lower-reportLink"><a href="https://www.fark.com/farkback/" onclick="reportAd('rightAd300x250Lower'); return false;">Report</a></div>   </div>       <div id="rightBottomWidget">
+              <div id="rightBottomWidgetLinks"> <div id="widgetTopHeadlinescontainer">
+    <div id="widgetTopHeadlinesheader">
+        <div id="widgetTopHeadlinesfark_logo">Fark.com</div>
+        <div id="widgetTopHeadlinesheadertitles" class="headertitles">
+            Top Commented
+        </div>
+    </div>
+
+    <div class="widgetOptions">
+        <a id="widgetSelected" onclick="toggleDropdown()">
+            <span id="widgetHeader">Top Commented</span> <span class="arrow">&#x25BC;</span>
+        </a>
+        <ul id="widgetOptionsDropdown"> 
+            <li><a onclick="changeWidgetLink('topcommented'); return false;" id="widgetDropdown-topcommented">Top Commented</a></li>
+            <li><a onclick="changeWidgetLink('topclicked'); return false;" id="widgetDropdown-topclicked">Top Clicked</a></li>
+            <li><a onclick="changeWidgetLink('topvoted'); return false;" id="widgetDropdown-topvoted">Top Voted</a></li>
+            <li><a onclick="changeWidgetLink('mycommented'); return false;" id="widgetDropdown-mycommented">My Recent Commented</a></li>
+            <li><a onclick="changeWidgetLink('mytagged'); return false;" id="widgetDropdown-mytagged">Recent Mentions</a></li>
+        </ul>
+    </div>
+
+    <div id="widgetTopHeadlineslinkbody">
+        <div id="widgetContent">
+            <div style="margin: 20px 10px;">Javascript is required to view headlines in widget.</div>
+            <script>
+            $('#widgetContent').html('<p style="margin-left: 15px;">Loading headlines...</p>').load('/widget?ajax=1', function() {
+                refreshIconAnimation(false);
+            });
+            </script>
+        </div>
+    </div>
+</div>
+<div id="widgetTopHeadlinesrefreshListing">
+    <a onclick="refreshIconAnimation(true); changeWidgetLink(openWidget);"><svg height="32" id="refresh" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d=" M16 2 A14 14 0 0 0 2 16 A14 14 0 0 0 16 30 A14 14 0 0 0 26 26 L 23.25 23 A10 10 0 0 1 16 26 A10 10 0 0 1 6 16 A10 10 0 0 1 16 6 A10 10 0 0 1 23.25 9 L19 13 L30 13 L30 2 L26 6 A14 14 0 0 0 16 2 "></path></svg></a>
+</div>
+<script>
+    var stickyWidget = 'rbw';
+    function toggleDropdown() {
+        var dropdown = document.getElementById('widgetOptionsDropdown');
+        var is_view = (dropdown.style.display == 'block') ? true : false;
+        if (is_view) {
+            dropdown.style.display = 'none';
+        } else {
+            dropdown.style.display = 'block';
+        }
+    }
+
+    function refreshIconAnimation(doit) {
+        if (doit) {
+            document.getElementById('widgetTopHeadlinesrefreshListing').classList.add('active');
+        } else {
+            document.getElementById('widgetTopHeadlinesrefreshListing').classList.remove('active');
+        }
+    }
+
+    var openWidget;
+    function changeWidgetLink(value, skipRedirect) {
+        $('#widgetOptionsDropdown a').removeClass('active_widget');
+        $('#widgetDropdown-'+value).addClass('active_widget');
+        openWidget = value;
+        if (typeof skipRedirect !==  undefined && skipRedirect != true) { 
+            refreshIconAnimation(true);
+        }
+        var headertitle = document.getElementById('widgetHeader');
+            headertext = '';
+        switch (value) {
+            case 'topcommented':
+                headertext = 'Top Commented';
+                break;
+            case 'topclicked':
+                headertext = 'Top Clicked';
+                break;
+            case 'topvoted':
+                headertext = 'Top Voted';
+                break;
+            case 'mycommented':
+                headertext = 'My Recent Commented';
+                break;
+            case 'mytagged':
+                headertext = 'Recent Mentions';
+                break;
+        }
+        headertitle.innerHTML = headertext;
+        // if (typeof skipRedirect !==  undefined && skipRedirect != true) { document.getElementById('sidebarWidgetIframe').src = '/widget/'+value; }
+        if (typeof skipRedirect !==  undefined && skipRedirect != true) { 
+            document.getElementById('widgetOptionsDropdown').style.display = 'none';
+            $('#widgetContent').text('');
+            $('#widgetContent').load('/widget/'+value+'?ajax=1', function() {
+                setTimeout(function() {
+                    refreshIconAnimation(false);
+                }, 500);
+            });
+        }
+    }
+</script> </div>
+        </div>  </div>
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2"><script>
+/*
+var loadNewer = new Vue({
+  el: '#load_newer_container',
+  data: {
+    newer: 0,
+    count: 25,
+    getCount: function() {
+        return (this.newer > this.count ) ? this.count : this.newer
+    },
+    isLoading: false,
+    showLoadNewer: true,
+    linkText: fark.ajax.headlineAjaxCheckNewer,
+    getText: function () {
+        this.showLoadNewer = true;
+        if ( this.newer == 0 && this.getCount() == 0 ) {
+            if ( fark.page.isDesktop ) {
+                // this.showLoadNewer = false;
+            }
+            return fark.ajax.headlineAjaxCheckNewer;
+        } else if ( (this.newer < this.count) || this.newer >= 1000 ) {
+            var return_msg = "Load "+this.newer+" newer headlines";
+            if ( this.isLoading ) {
+                return_msg = return_msg.replace('Load', 'Loading');
+            }
+            return return_msg;
+        } else {
+            var return_msg = fark.ajax.headlineAjaxLoadNewer.replace( "XX", this.getCount() );
+            return_msg = return_msg.replace( "YY", this.newer );
+            if ( this.isLoading ) {
+                return_msg = return_msg.replace('Load', 'Loading');
+            }
+            return return_msg;
+        }
+    }
+  }
+});
+*/
+</script>
+
+ <ol id="joyRideTipContent">
+    <li data-class="headlineRow" data-text="Next" class="walkthrough_headline">
+        <!--<h2>Stop #1</h2>-->
+        <p>Links are submitted by members of the Fark community.</p>
+    </li>
+    <li data-class="headlineText" data-button="Next" data-options="tipLocation:top;tipAnimation:fade" class="walkthrough_subject">
+        <!--<h2>Stop #2</h2>-->
+        <p>When community members submit a link, they also write a custom headline for the story.</p>
+    </li>
+    <li data-class="headlineComments" data-button="Next" data-options="tipLocation:left" class="walkthrough_comments">
+        <!--<h2>Stop #3</h2>-->
+        <p>Other Farkers comment on the links. This is the number of comments. Click here to read them.</p>
+    </li>
+    <li data-id="loginLinks" data-button="Next" data-options="tipLocation:top;nubPosition:top-right" class="walkthrough_login">
+        <!--<h2>Stop #4</h2>-->
+        <p>You need to create an account to submit links or post comments.</p>
+    </li>
+    <li data-class="submitLink" data-button="Done" data-options="tipLocation:left" class="walkthrough_submit">
+        <!--<h2>Stop #5</h2>-->
+        <p>Click here to submit a link.</p>
+    </li>
+</ol>
+<script>
+    function run_walkthrough(trackInfo) {
+        $('#joyRideTipContent').joyride({
+            autoStart : true,
+            modal : true,
+            expose: false
+        });
+        // console.log("Tracking Walkthrough Click: "+trackInfo);
+        gtag('event', 'How to Fark Walkthrough', {
+            'send_to': 'G-2CGLGL25G6',
+            'event_label': trackInfo
+        });
+    }
+    // check if the get params contain "walkthrough" and if so 
+    // run the walkthrough automatically
+    // we do this to auto run the walkthrough when users aren't on headline pages
+    var getParams = window.location.search.replace("?", "");
+    if (getParams.indexOf("walkthrough") > -1) { run_walkthrough(); }
+</script>
+ <div id="footer">  <p class="alsoOnFark">Also on Fark</p>
+        <script>
+            function send_ga_events(event_category, event_name, event_label) {
+                gtag('event', event_category, {
+                    'send_to': 'G-2CGLGL25G6',
+                    'page_name': event_label,
+                    'event_label': event_name
+                });
+            }
+        </script>
+        <table id="alsoOnFarkTable">
+            <tbody>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is Main -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/">Main</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236604" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'Main');">British man savaged in shark attack &#39;aware and communicating,&#39; wife says. We can assume he&#39;s saying &#39;get this shark off of me&#39;</a> ( <a rel="nofollow" class="outbound_link id13236604 "  data-farkdomain="aol.com" target="_blank" href="https://www.fark.com/goto/13236604">aol.com</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236604/British-man-savaged-in-shark-attack-aware-communicating-wife-says-We-can-assume-hes-saying-get-this-shark-off-of-me" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'Main');">(9 comments)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is Discussion -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/discussion/">Discussion</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236778" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'Discussion');">If you masturbate in your sleep, how would you even know?</a> ( <a rel="nofollow" class="outbound_link id13236778 "  data-farkdomain="dailymail.co.uk" target="_blank" href="https://www.fark.com/goto/13236778">dailymail.co.uk</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236778/If-you-masturbate-in-your-sleep-how-would-you-even-know" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'Discussion');">(15 comments)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is Sports -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/sports/">Sports</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236810" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'Sports');">It&#39;s not uncommon for an NFL draft pick to disappear, but it is if they jump out of a plane with 10,000 unmarked $20 bills</a> ( <a rel="nofollow" class="outbound_link id13236810 "  data-farkdomain="nfl.com" target="_blank" href="https://www.fark.com/goto/13236810">nfl.com</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236810/Its-not-uncommon-for-an-NFL-draft-pick-to-disappear-but-it-is-if-they-jump-out-of-a-plane-with-10000-unmarked-$20-bills" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'Sports');">(3 comments)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is Business -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/business/">Business</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236942" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'Business');">EU to send Zuckerbot a sternly worded letter following Russian disinformation investigation</a> ( <a rel="nofollow" class="outbound_link id13236942 "  data-farkdomain="arstechnica.com" target="_blank" href="https://www.fark.com/goto/13236942">arstechnica.com</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236942/EU-to-send-Zuckerbot-a-sternly-worded-letter-following-Russian-disinformation-investigation" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'Business');">(3 comments)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is STEM -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/stem/">STEM</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236468" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'STEM');">Hubble Space Telescope has gyro problems again. Maybe needs some tzatziki</a> ( <a rel="nofollow" class="outbound_link id13236468 "  data-farkdomain="theregister.com" target="_blank" href="https://www.fark.com/goto/13236468">theregister.com</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236468/Hubble-Space-Telescope-has-gyro-problems-again-Maybe-needs-some-tzatziki" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'STEM');">(1 comment)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is Entertainment -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/entertainment/">Entertainment</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236482" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'Entertainment');">Don&#39;t forget to share a weed cupcake with infused icing and maybe a couple of ice cold Lone Stars tonight for Willie&#39;s 91st birthday</a> ( <a rel="nofollow" class="outbound_link id13236482 "  data-farkdomain="biography.com" target="_blank" href="https://www.fark.com/goto/13236482">biography.com</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236482/Dont-forget-to-share-a-weed-cupcake-with-infused-icing-maybe-a-couple-of-ice-cold-Lone-Stars-tonight-for-Willies-91st-birthday" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'Entertainment');">(5 comments)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is Fandom -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/fandom/">Fandom</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236948" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'Fandom');">Legendary game designer Warren Spector, who worked on Ultima VI, Ultima VII, Wing Commander, System Shock, Deus Ex, Thief, says the next step for immersive singleplayer sims is . . . oh, you gotta be shiatting me</a> ( <a rel="nofollow" class="outbound_link id13236948 "  data-farkdomain="gamedeveloper.com" target="_blank" href="https://www.fark.com/goto/13236948">gamedeveloper.com</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236948/Legendary-game-designer-Warren-Spector-who-worked-on-Ultima-VI-Ultima-VII-Wing-Commander-System-Shock-Deus-Ex-Thief-says-next-step-for-immersive-singleplayer-sims-is-oh-you-gotta-be-shiatting-me" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'Fandom');">(12 comments)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is D'awww -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/dawww/">D'awww</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236446" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'D\'awww');">Rescued pigeon wears cute little trousers and goes on walks with his new human dad</a> ( <a rel="nofollow" class="outbound_link id13236446 "  data-farkdomain="metro.co.uk" target="_blank" href="https://www.fark.com/goto/13236446">metro.co.uk</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236446/Rescued-pigeon-wears-cute-little-trousers-goes-on-walks-with-his-new-human-dad" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'D\'awww');">(1 comment)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is Food -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/food/">Food</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13237016" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'Food');">Irish weed out the weak with The Chicago Handshake</a> ( <a rel="nofollow" class="outbound_link id13237016 "  data-farkdomain="youtube.com" target="_blank" href="https://www.fark.com/goto/13237016">youtube.com</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13237016/Irish-weed-out-weak-with-The-Chicago-Handshake" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'Food');">(6 comments)</a></td>
+                    </tr>      <!-- MEG DEBUG after creating the tab with page.new: tab display name is Politics -->
+                    <tr>
+                        <td class="alsoOnFarkLabel"><a href="https://www.fark.com/politics/">Politics</a></td>
+                         <td><a target="_blank" href="https://www.fark.com/goto/13236926" rel="nofollow" onClick="send_ga_events('Also on Fark Links', 'Outbound Click', 'Politics');">OAN runs fake story about Michael Cohen having an affair with Stormy Daniels. Michael Cohen hires lawyers who represented Dominion against Fox. OAN promptly takes down fake story. ta da</a> ( <a rel="nofollow" class="outbound_link id13236926 "  data-farkdomain="mediaite.com" target="_blank" href="https://www.fark.com/goto/13236926">mediaite.com</a> ) &raquo;&nbsp;<a href="https://www.fark.com/comments/13236926/OAN-runs-fake-story-about-Michael-Cohen-having-an-affair-with-Stormy-Daniels-Michael-Cohen-hires-lawyers-who-represented-Dominion-against-Fox-OAN-promptly-takes-down-fake-story-ta-da" target="_top" onClick="send_ga_events('Also on Fark Links', 'Internal Click', 'Politics');">(4 comments)</a></td>
+                    </tr>  </tbody>
+        </table>   <ul id="footerFarkLinks">
+        <li>Fark :: <a href="https://www.fark.com/">Main</a> | <a href="https://www.fark.com/discussion/">Discussion</a> | <a href="https://www.fark.com/sports/">Sports</a> | <a href="https://www.fark.com/business/">Business</a> | <a href="https://www.fark.com/stem/">STEM</a> | <a href="https://www.fark.com/entertainment/">Entertainment</a> | <a href="https://www.fark.com/fandom/">Fandom</a> | <a href="https://www.fark.com/dawww/">D'awww</a> | <a href="https://www.fark.com/food/">Food</a> | <a href="https://www.fark.com/politics/">Politics</a></li>
+        <li>Total Fark :: <a href="https://total.fark.com/">TotalFark</a> | <a href="https://total.fark.com/live/">TF Live</a> | <a href="https://total.fark.com/advice/">TF Advice</a> | <a href="https://total.fark.com/tfdiscussion/">TF Discussion</a> | <a href="https://total.fark.com/commented/">Commented</a> | <a href="https://total.fark.com/linkvote/">Top Voted</a> | <a href="https://total.fark.com/greenlit/">Greenlit</a></li>
+        <li>FArQ :: <a href="https://www.fark.com/farq/about#What_is_Fark" target="_blank">About Us</a> | <a href="https://www.fark.com/farq/faq#Quick_Answers" target="_blank">Quick Answers</a> | <a href="https://www.fark.com/farq/posting#Posting_Rules" target="_blank">Posting Rules</a> | <a href="https://www.fark.com/farq/farkisms#Farkisms" target="_blank">Farkisms</a></li>
+        <li>Contests :: <a href="https://www.fark.com/topic/photoshop">Photoshop</a> | <a href="https://www.fark.com/topic/farktography">Farktography</a> | <a href="https://www.fark.com/topic/caption">Caption</a></li>
+        <li>Buy Fark :: <a href="https://www.amazon.com/Its-Not-News-Fark-Media/dp/1592402917/sr=8-1/qid=1168639219/ref=pd_bbs_sr_1/102-1500276-2229705?ie=UTF8&amp;s=books&amp;tag=farkcom-20">Fark Book</a> | <a href="https://www.fark.com/shop">Fark Store</a></li>
+    </ul>
+    <p class="submitLinkcontainer"><a href="https://www.fark.com/submit/" class="submitLink">Submit a Link &raquo;</a></p>
+    <p id="copyrightInfo">
+        Copyright &copy; 1999 - 2024 Fark, Inc | Last updated: Apr 29 2024 18:50:08<br>
+        <a href="https://www.fark.com/farkback" target="_blank">Contact Us via Farkback</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.fark.com/farkback/error" target="_blank">Report a bug/error msg</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.fark.com/farq/legal" target="_blank">Terms of service/legal/privacy policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0)" onclick="__uspapi('displayUspUi');">Do Not Sell or Share My Personal Information</a><br>
+<img src="https://www.fark.com/ll" width="4" height="1" alt="">  </p>
+
+</div>  </td>
+</tr>
+</table> <!-- newLayoutTable -->
+</div> <!-- container -->
+<script>
+    var is_tfark = (typeof fark.page.ajaxTabGroup != "undefined" && fark.page.ajaxTabGroup == "TotalFark") ? true : false;
+</script>
+
+<script>
+     $(function() {
+        process_lazy_load();
+    });
+</script>  <noscript>
+<img src="https://img.fark.net/imagesnoc/trans.gif?usertype=Lurker" width="16" height="1" alt="">
+</noscript>   <script src="/js/plugins/footer-ad.js?adx"></script>       <br><br>
+
+  <div id="modal">
+        <a href="#" onclick="Custombox.modal.close(); return false;" class="modal_close">X</a>
+
+        <div class="modal_header">
+            <span class="modal_header_title"></span>
+        </div>
+        <div class="modal_content"></div>
+    </div>
+    <script>
+        // Instantiate new modal
+        fark.modal = new Custombox.modal({
+            content: {
+                effect: 'fadein',
+                target: '#modal',
+                onClose: function() {
+                    // clear classes when closing
+                    document.getElementById("modal").className = ''; 
+                }
+            }
+        });
+
+        function processGTEventListener(event) {
+            // process any googletag stuff we need for specific ads
+            if (event.slot.getSlotElementId() == "stickyAd300x250" && event.advertiserId === 4920996698) {
+                // right sticky video ad
+                document.querySelector("#stickyAd300x250 iframe").setAttribute("height",175);
+            }
+        }
+        
+        
+
+    </script>
+
+
+<!-- CARBON TAG -->
+<script>
+!function(a,l,b,c,k,s,t,g,A){a.CustomerConnectAnalytics=k,a[k]=a[k]||function(){
+  (a[k].q=a[k].q||[]).push(arguments)},g=l.createElement(b),A=l.getElementsByTagName(b)[0],
+  g.type="text/javascript",g.async=!0,g.src=c+"?id="+s+"&parentId="+t,A.parentNode.insertBefore(g,A)
+}(window,document,"script","//carbon-cdn.ccgateway.net/script","cca",window.location.hostname,"53fe1d4767");
+</script>  
+<!-- END CARBON TAG -->
+
+<script>
+    googletag.cmd.push(function() {
+        googletag.pubads().addEventListener('slotOnload', function(event) {
+            fark.sl = true;
+            var adContainer = $("#"+event.slot.getSlotElementId());
+            adContainer.parent().addClass('advis');
+            if (event.slot.getSlotElementId() == "stickyAd300x250") {
+                // turn this back on if we switch back to the X close from the "Close Ad" link text 
+                // which we can do if we stop allowing the 336x280 size and only allow 300x250
+                // document.getElementById("closeVid").style.display = 'block';
+                document.getElementById("stickyAd300x250-closeAdLink").style.display = 'block';
+            }
+        });
+    });
+    console.log(1);
+      $(".ad_container").addClass('advis');  </script>
+
+<script>
+    var as = [];
+    fark.page.adSlots.forEach(slot => {
+         if (slot.id != 'intelli-1') {
+            as.push(document.getElementById(slot.id));
+        }
+    });
+
+    googletag.cmd.push(function() {
+        googletag.pubads().setTargeting("io_vp", fark.page.io_vp);
+    });
+
+    var observer = new IntersectionObserver(handleIntersection, { rootMargin: fark.page.io_vp + '%' });
+
+    function handleIntersection(entries) {
+        entries.map((entry) => {
+            // let divId = entry.target.id;
+            // let content = divId+' - ';
+            // content += (entry.isIntersecting) ? 'Is Shown' : 'Not Shown';
+            // let currentDate = new Date();
+            // let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+            // farkDebug.log(time+' - '+content);
+
+            if (entry.isIntersecting) {
+                let divId = entry.target.id;
+                farkDebug.log('fetching ad for '+divId);
+                executeParallelAuctionAlongsidePrebidForSingleAdUnit(divId, fark.globals.adUnitsDict[divId].full_dfp_ad_unit_name, fark.globals.adUnitsDict[divId].defined_ad_slot, fark.globals.adUnitsDict[divId].ad_sizes);
+                observer.unobserve(entry.target);
+            }
+        });
+
+    }
+
+    // push this on the googletag.cmd queue so that fark.globals.adUnitsDict is populated before we get here
+    googletag.cmd.push(function() {
+        as.forEach((slot) => {
+            if (slot) {
+                observer.observe(slot);
+                // slot.style.border = '1px solid red';
+            }
+        })
+    });
+
+</script>  </body>
+</html>

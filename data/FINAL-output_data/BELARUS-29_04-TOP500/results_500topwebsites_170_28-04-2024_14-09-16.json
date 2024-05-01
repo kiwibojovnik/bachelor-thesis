@@ -1,0 +1,1810 @@
+{
+    "nginx.org": {
+        "Time": 4.46,
+        "URL": "nginx.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "52.58.199.22",
+            "3.125.197.172"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "52.58.199.22",
+        "PING Status": "OK",
+        "PING IP": "52.58.199.22",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 7127,
+        "Headers": {
+            "Server": "nginx/1.25.3",
+            "Date": "Sun, 28 Apr 2024 18:00:59 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "2279",
+            "Last-Modified": "Tue, 23 Apr 2024 22:50:34 GMT",
+            "Connection": "keep-alive",
+            "Keep-Alive": "timeout=15",
+            "ETag": "\"66283b3a-8e7\"",
+            "Content-Encoding": "gzip",
+            "Accept-Ranges": "bytes"
+        },
+        "HTML Content": "nginx.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "nginx.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03FA04D422F643C669D102E276DE69448428",
+            "notBefore": "Feb 14 18:14:07 2024 GMT",
+            "notAfter": "May 14 18:14:06 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "hg.nginx.org"
+                ],
+                [
+                    "DNS",
+                    "lxr.nginx.org"
+                ],
+                [
+                    "DNS",
+                    "nginx.org"
+                ],
+                [
+                    "DNS",
+                    "nginx.ru"
+                ],
+                [
+                    "DNS",
+                    "packages.nginx.org"
+                ],
+                [
+                    "DNS",
+                    "quic.nginx.org"
+                ],
+                [
+                    "DNS",
+                    "sources.nginx.org"
+                ],
+                [
+                    "DNS",
+                    "trac.nginx.org"
+                ],
+                [
+                    "DNS",
+                    "unit.nginx.org"
+                ],
+                [
+                    "DNS",
+                    "www.nginx.org"
+                ],
+                [
+                    "DNS",
+                    "www.nginx.ru"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 14:00:29"
+    },
+    "twitter.com": {
+        "Time": 5.06,
+        "URL": "twitter.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "104.244.42.1"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "104.244.42.1",
+        "PING Status": "OK",
+        "PING IP": "104.244.42.1",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://twitter.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.244.42.1"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 181540,
+        "Headers": {
+            "date": "Sun, 28 Apr 2024 18:01:34 GMT",
+            "perf": "7402827104",
+            "expiry": "Tue, 31 Mar 1981 05:00:00 GMT",
+            "pragma": "no-cache",
+            "server": "tsa_o",
+            "set-cookie": "guest_id_marketing=v1%3A171432729452414238; Max-Age=63072000; Expires=Tue, 28 Apr 2026 18:01:34 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, guest_id_ads=v1%3A171432729452414238; Max-Age=63072000; Expires=Tue, 28 Apr 2026 18:01:34 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, personalization_id=\"v1_3I7AJ3Zh/1OP4xbi1521CA==\"; Max-Age=63072000; Expires=Tue, 28 Apr 2026 18:01:34 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, guest_id=v1%3A171432729452414238; Max-Age=63072000; Expires=Tue, 28 Apr 2026 18:01:34 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, ct0=; Max-Age=-1714327293; Expires=Thu, 01 Jan 1970 00:00:01 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=Lax",
+            "content-type": "text/html; charset=utf-8",
+            "x-powered-by": "Express",
+            "cache-control": "no-cache, no-store, must-revalidate, pre-check=0, post-check=0",
+            "last-modified": "Sun, 28 Apr 2024 18:01:34 GMT",
+            "x-frame-options": "DENY",
+            "x-transaction-id": "cb27a92b1b6c5061",
+            "x-xss-protection": "0",
+            "x-content-type-options": "nosniff",
+            "content-security-policy": "connect-src 'self' blob: https://api.x.ai https://api.x.com https://*.pscp.tv https://*.video.pscp.tv https://*.twimg.com https://api.twitter.com https://api.x.com https://api-stream.twitter.com https://api-stream.x.com https://ads-api.twitter.com https://ads-api.x.com https://aa.twitter.com https://aa.x.com https://caps.twitter.com https://caps.x.com https://pay.twitter.com https://pay.x.com https://sentry.io https://ton.twitter.com https://ton.x.com https://ton-staging.atla.twitter.com https://ton-staging.atla.x.com https://ton-staging.pdxa.twitter.com https://ton-staging.pdxa.x.com https://twitter.com https://x.com https://upload.twitter.com https://upload.x.com https://www.google-analytics.com https://accounts.google.com/gsi/status https://accounts.google.com/gsi/log https://checkoutshopper-live.adyen.com wss://*.pscp.tv https://vmap.snappytv.com https://vmapstage.snappytv.com https://vmaprel.snappytv.com https://vmap.grabyo.com https://dhdsnappytv-vh.akamaihd.net https://pdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://dwo3ckksxlb0v.cloudfront.net https://media.riffsy.com https://*.giphy.com https://media.tenor.com https://c.tenor.com https://ads-twitter.com https://analytics.twitter.com https://analytics.x.com  ; default-src 'self'; form-action 'self' https://twitter.com https://*.twitter.com https://x.com https://*.x.com https://localhost.twitter.com:3443 https://localhost.x.com:3443; font-src 'self' https://*.twimg.com; frame-src 'self' https://twitter.com https://x.com https://mobile.twitter.com https://mobile.x.com https://pay.twitter.com https://pay.x.com https://cards-frame.twitter.com https://accounts.google.com/ https://client-api.arkoselabs.com/ https://iframe.arkoselabs.com/ https://vaultjs.apideck.com/  https://recaptcha.net/recaptcha/ https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; img-src 'self' blob: data: https://*.cdn.twitter.com https://*.cdn.x.com https://ton.twitter.com https://ton.x.com https://*.twimg.com https://analytics.twitter.com https://analytics.x.com https://cm.g.doubleclick.net https://www.google-analytics.com https://maps.googleapis.com https://www.periscope.tv https://www.pscp.tv https://ads-twitter.com https://ads-api.twitter.com https://ads-api.x.com https://media.riffsy.com https://*.giphy.com https://media.tenor.com https://c.tenor.com https://*.pscp.tv https://*.periscope.tv https://prod-periscope-profile.s3-us-west-2.amazonaws.com https://platform-lookaside.fbsbx.com https://scontent.xx.fbcdn.net https://scontent-sea1-1.xx.fbcdn.net https://*.googleusercontent.com https://t.co/1/i/adsct; manifest-src 'self'; media-src 'self' blob: https://twitter.com https://x.com https://*.twimg.com https://*.vine.co https://*.pscp.tv https://*.video.pscp.tv https://dhdsnappytv-vh.akamaihd.net https://pdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://dwo3ckksxlb0v.cloudfront.net; object-src 'none'; script-src 'self' 'unsafe-inline' https://*.twimg.com https://recaptcha.net/recaptcha/ https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://client-api.arkoselabs.com/ https://www.google-analytics.com https://twitter.com https://x.com https://accounts.google.com/gsi/client https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js https://static.ads-twitter.com  'nonce-ODQ2ZGM3MmItOTFmNC00Y2YxLTk5OWUtMjE4Y2JkY2VhODVk'; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style https://*.twimg.com; worker-src 'self' blob:; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false",
+            "strict-transport-security": "max-age=631138519",
+            "cross-origin-opener-policy": "same-origin-allow-popups",
+            "cross-origin-embedder-policy": "unsafe-none",
+            "content-encoding": "gzip",
+            "x-response-time": "125",
+            "x-connection-hash": "62903b2f1d000574cc0d4e1e22a2c6eccabc28190dff31e83a49ac5905faa8a7",
+            "transfer-encoding": "chunked"
+        },
+        "HTML Content": "twitter.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Twitter, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "twitter.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0F2E59ED67F6EC933D2A2A0AE21E66A5",
+            "notBefore": "Oct 31 00:00:00 2023 GMT",
+            "notAfter": "Oct 29 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "twitter.com"
+                ],
+                [
+                    "DNS",
+                    "www.twitter.com"
+                ],
+                [
+                    "DNS",
+                    "x.com"
+                ],
+                [
+                    "DNS",
+                    "www.x.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl",
+                "http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 14:01:38"
+    },
+    "www.wikipedia.org": {
+        "Time": 5.14,
+        "URL": "www.wikipedia.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "185.15.59.224"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "185.15.59.224",
+        "PING Status": "OK",
+        "PING IP": "185.15.59.224",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.wikipedia.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "185.15.59.224"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 78031,
+        "Headers": {
+            "date": "Sun, 28 Apr 2024 07:38:45 GMT",
+            "cache-control": "s-maxage=86400, must-revalidate, max-age=3600",
+            "server": "ATS/9.1.4",
+            "etag": "W/\"130cf-6147ed6f3ca40\"",
+            "last-modified": "Mon, 25 Mar 2024 16:41:05 GMT",
+            "content-type": "text/html",
+            "content-encoding": "gzip",
+            "vary": "Accept-Encoding",
+            "age": "37424",
+            "x-cache": "cp3071 miss, cp3071 hit/711131",
+            "x-cache-status": "hit-front",
+            "server-timing": "cache;desc=\"hit-front\", host;desc=\"cp3071\"",
+            "strict-transport-security": "max-age=106384710; includeSubDomains; preload",
+            "report-to": "{ \"group\": \"wm_nel\", \"max_age\": 604800, \"endpoints\": [{ \"url\": \"https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0\" }] }",
+            "nel": "{ \"report_to\": \"wm_nel\", \"max_age\": 604800, \"failure_fraction\": 0.05, \"success_fraction\": 0.0}",
+            "set-cookie": "WMF-Last-Access=28-Apr-2024;Path=/;HttpOnly;secure;Expires=Thu, 30 May 2024 12:00:00 GMT, WMF-Last-Access-Global=28-Apr-2024;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Thu, 30 May 2024 12:00:00 GMT, GeoIP=BY:::53.00:28.01:v4; Path=/; secure; Domain=.wikipedia.org, NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600",
+            "x-client-ip": "93.125.114.144",
+            "accept-ranges": "bytes",
+            "content-length": "18703"
+        },
+        "HTML Content": "www.wikipedia.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Wikimedia Foundation, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.wikipedia.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "07419E39583A4C76CF1EA14347FA5F3A",
+            "notBefore": "Oct 18 00:00:00 2023 GMT",
+            "notAfter": "Oct 16 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.wikipedia.org"
+                ],
+                [
+                    "DNS",
+                    "wikimedia.org"
+                ],
+                [
+                    "DNS",
+                    "mediawiki.org"
+                ],
+                [
+                    "DNS",
+                    "wikibooks.org"
+                ],
+                [
+                    "DNS",
+                    "wikidata.org"
+                ],
+                [
+                    "DNS",
+                    "wikinews.org"
+                ],
+                [
+                    "DNS",
+                    "wikiquote.org"
+                ],
+                [
+                    "DNS",
+                    "wikisource.org"
+                ],
+                [
+                    "DNS",
+                    "wikiversity.org"
+                ],
+                [
+                    "DNS",
+                    "wikivoyage.org"
+                ],
+                [
+                    "DNS",
+                    "wiktionary.org"
+                ],
+                [
+                    "DNS",
+                    "wikimediafoundation.org"
+                ],
+                [
+                    "DNS",
+                    "w.wiki"
+                ],
+                [
+                    "DNS",
+                    "wmfusercontent.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikipedia.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikimedia.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikimedia.org"
+                ],
+                [
+                    "DNS",
+                    "*.planet.wikimedia.org"
+                ],
+                [
+                    "DNS",
+                    "*.mediawiki.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.mediawiki.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikibooks.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikibooks.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikidata.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikidata.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikinews.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikinews.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikiquote.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikiquote.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikisource.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikisource.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikiversity.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikiversity.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikivoyage.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wikivoyage.org"
+                ],
+                [
+                    "DNS",
+                    "*.wiktionary.org"
+                ],
+                [
+                    "DNS",
+                    "*.m.wiktionary.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikimediafoundation.org"
+                ],
+                [
+                    "DNS",
+                    "*.wmfusercontent.org"
+                ],
+                [
+                    "DNS",
+                    "wikipedia.org"
+                ],
+                [
+                    "DNS",
+                    "wikifunctions.org"
+                ],
+                [
+                    "DNS",
+                    "*.wikifunctions.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crl",
+                "http://crl4.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 14:02:33"
+    },
+    "archive.org": {
+        "Time": 7.1,
+        "URL": "archive.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "207.241.224.2"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "207.241.224.2",
+        "PING Status": "OK",
+        "PING IP": "207.241.224.2",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 2587,
+        "Headers": {
+            "Server": "nginx/1.25.1",
+            "Date": "Sun, 28 Apr 2024 18:03:03 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "vary": "Accept-Encoding",
+            "content-security-policy": "base-uri 'self'; default-src *; img-src * data:; object-src 'none'; script-src https://archive.org/offshoot_assets/ https://*.archive.org/offshoot_assets/ https://offshoot.prod.archive.org/offshoot_assets/ https://archive.org/includes/ https://*.archive.org/includes/ https://offshoot.prod.archive.org/includes/ https://archive.org/components/ https://*.archive.org/components/ https://offshoot.prod.archive.org/components/ https://archive.org/jw/ https://*.archive.org/jw/ https://offshoot.prod.archive.org/jw/ https://av.prod.archive.org/js/ https://esm.archive.org/ https://polyfill.archive.org/v3/polyfill.min.js 'sha256-CoX53XgCdkM1zegYEEpMUeYIZnv663inNm8bQv2VRbM='; style-src 'unsafe-inline' https://archive.org/ https://*.archive.org/ https://offshoot.prod.archive.org/;",
+            "Strict-Transport-Security": "max-age=15724800",
+            "Onion-Location": "https://archive6zg5vrdwm4ljllgxleekeoj43lqayscd4d4kmhnyblq4h3ead.onion/",
+            "Expires": "Sun, 28 Apr 2024 18:18:03 GMT",
+            "Cache-Control": "max-age=900",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "archive.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.archive.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "12BCB2F174BDCD3F",
+            "notBefore": "Dec 23 14:17:22 2023 GMT",
+            "notAfter": "Jan 23 14:17:22 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.archive.org"
+                ],
+                [
+                    "DNS",
+                    "archive.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-14080.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 14:03:08"
+    },
+    "cbsnews.com": {
+        "Time": 14.85,
+        "URL": "cbsnews.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.65.188",
+            "151.101.129.188",
+            "151.101.1.188",
+            "151.101.193.188"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.193.188",
+        "PING Status": "OK",
+        "PING IP": "151.101.193.188",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.cbsnews.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.241.188"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 438207,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "92854",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Link": "<https://assets1.cbsnewsstatic.com>; rel=\"preconnect\", <https://assets2.cbsnewsstatic.com>; rel=\"preconnect\", <https://assets3.cbsnewsstatic.com>; rel=\"preconnect\", </fly/bundles/cbsnewscontent/fonts/ProximaNova-Regular/ProximaNova-Regular.woff2>; rel=\"preload\"; as=\"font\"; crossorigin, </fly/bundles/cbsnewscontent/fonts/ProximaNova-Bold/ProximaNova-Bold.woff2>; rel=\"preload\"; as=\"font\"; crossorigin, </fly/bundles/cbsnewscontent/fonts/PublicoHeadline-Bold/PublicoHeadline-Bold.woff2>; rel=\"preload\"; as=\"font\"; crossorigin, </fly/bundles/cbsnewscontent/fonts/PublicoHeadline-Black/PublicoHeadline-Black.woff2>; rel=\"preload\"; as=\"font\"; crossorigin, </fly/bundles/cbsnewscontent/fonts/PublicoText/PublicoText.woff2>; rel=\"preload\"; as=\"font\"; crossorigin, </fly/bundles/cbsnewscontent/css/door.min.css?v=63c131a0051f3823d92b0d1dffb5e0e4>; rel=\"stylesheet preload\"; as=\"style\", <https://www.cbsnews.com/fly/bundles/cbsnewscore/js-build/main.js?v=63c131a0051f3823d92b0d1dffb5e0e4>; rel=\"preload\"; as=\"script\", <https://www.cbsnews.com/fly/bundles/cbsnewscore/js-build/main.responsive.js?v=63c131a0051f3823d92b0d1dffb5e0e4>; rel=\"preload\"; as=\"script\", <https://vidtech.cbsinteractive.com>; rel=\"preconnect\"",
+            "Cache-Control": "max-age=90, public",
+            "Last-Modified": "Sun, 28 Apr 2024 18:02:05 GMT",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "core-api-cache-key": "e8074928-8717-4e96-94d3-c57247d92fc5",
+            "X-Device": "desktop",
+            "X-Edge-Forwarded-Proto": "https",
+            "Accept-Ranges": "bytes",
+            "Age": "117",
+            "Date": "Sun, 28 Apr 2024 18:04:03 GMT",
+            "Via": "1.1 varnish",
+            "Set-Cookie": "fly_device=desktop; expires=Sun, 28 Apr 2024 18:09:03 GMT; path=/; domain=.cbsnews.com, fly_geo={\"countryCode\": \"BY\", \"region\": \"HM\", \"dma\": \"-1\", \"connection\": { \"type\": \"broadband\"}}; expires=Sun, 28 Apr 2024 18:09:03 GMT; path=/; domain=.cbsnews.com, CBS_INTERNAL=0; expires=Sun, 28 Apr 2024 18:09:03 GMT; path=/; domain=.cbsnews.com",
+            "X-CBSI-Stale": "1",
+            "Vary": "Accept-Encoding, X-Geo-GDPR, X-Device, X-Edge-Forwarded-Proto"
+        },
+        "HTML Content": "cbsnews.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "New York"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "CBS Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.cbsnews.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "GB"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Greater Manchester"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Salford"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Sectigo Limited"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Sectigo RSA Organization Validation Secure Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "C6790B82E99B43EDDD01FCCDD1CC6FBD",
+            "notBefore": "Feb 27 00:00:00 2024 GMT",
+            "notAfter": "Mar 15 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.cbsnews.com"
+                ],
+                [
+                    "DNS",
+                    "cbsnews.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.sectigo.com"
+            ],
+            "caIssuers": [
+                "http://crt.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 14:04:16"
+    },
+    "networkadvertising.org": {
+        "Time": 6.61,
+        "URL": "networkadvertising.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "52.222.130.24",
+            "52.222.130.47",
+            "52.222.130.44",
+            "52.222.130.119"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "52.222.130.44",
+        "PING Status": "OK",
+        "PING IP": "52.222.130.44",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://thenai.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "141.193.213.11",
+                "141.193.213.10"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 371152,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 18:04:49 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding, Accept-Encoding,Cookie",
+            "x-powered-by": "WP Engine",
+            "Link": "<https://thenai.org/wp-json/>; rel=\"https://api.w.org/\", <https://thenai.org/wp-json/wp/v2/pages/126>; rel=\"alternate\"; type=\"application/json\", <https://thenai.org/>; rel=shortlink",
+            "X-ET-API-VERSION": "v1",
+            "X-ET-API-ROOT": "https://thenai.org/wp-json/tribe/tickets/v1/",
+            "X-ET-API-ORIGIN": "https://thenai.org",
+            "X-TEC-API-VERSION": "v1",
+            "X-TEC-API-ROOT": "https://thenai.org/wp-json/tribe/events/v1/",
+            "X-TEC-API-ORIGIN": "https://thenai.org",
+            "X-Cacheable": "SHORT",
+            "Cache-Control": "max-age=600, must-revalidate",
+            "X-Cache": "HIT: 88",
+            "X-Cache-Group": "normal",
+            "CF-Cache-Status": "DYNAMIC",
+            "Set-Cookie": "__cf_bm=HBch74abCGhkQnMNIBVDd0MwXoy9FM0TkHLUlRpDPss-1714327489-1.0.1.1-ZGFM6uErFL5NoGbnKRUjicWT_xNoYeq1PSJeTme_PX7_5n9jnENJVUOecV.75Bf2Ib8gDyNhTtp1dswewQB.ew; path=/; expires=Sun, 28-Apr-24 18:34:49 GMT; domain=.thenai.org; HttpOnly; Secure; SameSite=None",
+            "Server": "cloudflare",
+            "CF-RAY": "87b8fa16dfc33a7c-FRA",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "networkadvertising.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.networkadvertising.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M03"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0BEE5DA377C114A771D0783FE0BC49E9",
+            "notBefore": "Sep  5 00:00:00 2023 GMT",
+            "notAfter": "Oct  3 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.networkadvertising.org"
+                ],
+                [
+                    "DNS",
+                    "networkadvertising.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m03.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m03.amazontrust.com/r2m03.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m03.amazontrust.com/r2m03.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 14:04:54"
+    },
+    "telegraph.co.uk": {
+        "Time": 22.58,
+        "URL": "telegraph.co.uk",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "18.154.161.104",
+            "18.154.161.44",
+            "18.154.161.81",
+            "18.154.161.61"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.154.161.81",
+        "PING Status": "OK",
+        "PING IP": "18.154.161.81",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://telegraph.co.uk/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "18.154.161.61",
+                "18.154.161.104",
+                "18.154.161.44",
+                "18.154.161.81"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 584557,
+        "Headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "x-frame-options": "SAMEORIGIN",
+            "X-TMG-Pref-Exists": "false",
+            "X-TMG-Geo-Action": "UK_ON_UK_HP",
+            "Akamai-X-True-Cache-TTL": "60",
+            "Vary": "Accept-Encoding",
+            "X-Timer": "S1714327525.913873,VS0,VS0,VE4",
+            "X-Served-By": "cache-fra-eddf8230046-FRA",
+            "X-Content-Type-Options": "nosniff",
+            "x-vhost": "${SERVER_NAME}, publish",
+            "Content-Security-Policy": "frame-ancestors 'self' *.telegraph.co.uk;",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "Content-Encoding": "gzip",
+            "Expires": "Sun, 28 Apr 2024 18:06:07 GMT",
+            "Cache-Control": "max-age=0, no-cache",
+            "Pragma": "no-cache",
+            "Date": "Sun, 28 Apr 2024 18:06:07 GMT",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive, Transfer-Encoding"
+        },
+        "HTML Content": "telegraph.co.uk_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "telegraph.co.uk"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M03"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0EC57826D2AEF9C6CBB5C45D52AD169C",
+            "notBefore": "Nov  6 00:00:00 2023 GMT",
+            "notAfter": "Dec  3 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "telegraph.co.uk"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m03.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m03.amazontrust.com/r2m03.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m03.amazontrust.com/r2m03.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 14:06:18"
+    },
+    "pinterest.com": {
+        "Time": 11.73,
+        "URL": "pinterest.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.192.84",
+            "151.101.0.84",
+            "151.101.64.84",
+            "151.101.128.84"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.64.84",
+        "PING Status": "OK",
+        "PING IP": "151.101.64.84",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://pinterest.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "151.101.128.84",
+                "151.101.192.84",
+                "151.101.0.84",
+                "151.101.64.84"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 399095,
+        "Headers": {
+            "x-xss-protection": "1; mode=block",
+            "x-content-type-options": "nosniff",
+            "Vary": "User-Agent, Accept-Encoding",
+            "x-ua-compatible": "IE=edge",
+            "reporting-endpoints": "coop-endpoint=\"https://www.pinterest.com/_/_/coop_report/\", coep-endpoint=\"https://www.pinterest.com/_/_/coep_report/\"",
+            "cross-origin-opener-policy-report-only": "same-origin; report-to=\"coop-endpoint\"",
+            "cross-origin-embedder-policy-report-only": "require-corp; report-to=\"coep-endpoint\"",
+            "p3p": "CP=\"This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info.\"",
+            "Content-Security-Policy": "default-src 'self' blob: s.pinimg.com; font-src 'self' s.pinimg.com data: fonts.googleapis.com fonts.gstatic.com use.typekit.net; style-src 'self' blob: 'unsafe-inline' data: *.pinimg.com *.pinterest.com accounts.google.com fonts.googleapis.com *.adyen.com *.adyenpayments.com; img-src blob: data: *; base-uri 'none'; connect-src 'self' blob: *.pinimg.com *.pinterest.com accounts.google.com *.adyen.com pinterest-salvador.s3.amazonaws.com *.adyenpayments.com *.facebook.com www.googleapis.com *.dropboxapi.com pinterest-aberdeen.s3.amazonaws.com pinterest-aberdeen.s3.us-east-1.amazonaws.com pinterest-anaheim.s3.amazonaws.com pinterest-anaheim.s3.us-east-1.amazonaws.com pinterest-hilo.s3.amazonaws.com pinterest-hilo.s3.us-east-1.amazonaws.com pinterest-sim-toontown.s3.amazonaws.com pinterest-sim-toontown.s3.us-east-1.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-media-upload.s3.us-east-1.amazonaws.com pinterest-media-upload.s3-accelerate.amazonaws.com pinterest-media-upload.s3-accelerate.us-east-1.amazonaws.com pinterest-milwaukee.s3.amazonaws.com pinterest-milwaukee.s3.us-east-1.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-poughkeepsie.s3.us-east-1.amazonaws.com pinterest-waterloo.s3.amazonaws.com pinterest-waterloo.s3.us-east-1.amazonaws.com pinterest-plymouth.s3.amazonaws.com pinterest-plymouth.s3.us-east-1.amazonaws.com pinterest-salvador.s3.us-east-1.amazonaws.com *.cedexis.com *.cedexis-radar.net *.tvpixel.com api.pinadmin.com *.live-video.net https://*.daily.co https://*.pluot.blue wss://*.wss.daily.co; form-action 'self' *.adyen.com *.sofort.com *.adyenpayments.com; frame-src 'self' *.pinimg.com *.pinterest.com *.adyen.com static-sandbox.dlocal.com static.dlocal.com *.google.com *.facebook.com www.recaptcha.net pinterest-hilo.s3.amazonaws.com pinterest-hilo.s3.us-east-1.amazonaws.com pinterest-sim-toontown.s3.amazonaws.com pinterest-sim-toontown.s3.us-east-1.amazonaws.com pinterest-milwaukee.s3.amazonaws.com pinterest-milwaukee.s3.us-east-1.amazonaws.com pinterest-waterloo.s3.amazonaws.com pinterest-waterloo.s3.us-east-1.amazonaws.com pinterest-tolu.s3.amazonaws.com *.pinterdev.com content.googleapis.com *.youtube.com *.ytimg.com player.vimeo.com calendly.com vine.co bid.g.doubleclick.net *.fls.doubleclick.net pinlogs.s3.amazonaws.com pinlogs.s3.us-east-1.amazonaws.com advertising-delivery-metric-reports.s3.amazonaws.com advertising-delivery-metric-reports.s3.us-east-1.amazonaws.com servedby.flashtalking.com pinterest-uk.admo.tv pinterest-uk-web.admo.tv fbrpc://call *.linkedin.com px.ads.linkedin.com; media-src 'self' blob: data: *.pinimg.com *.live-video.net; object-src 'self'; script-src 'nonce-ae7822019aae0f824cd5e7a760ad2f61' 'strict-dynamic' 'self' blob: 'unsafe-inline' *.pinimg.com *.pinterest.com *.adyen.com js.dlocal.com js-sandbox.dlocal.com static-sandbox.dlocal.com static.dlocal.com *.adyenpayments.com 'report-sample' *.google.com connect.facebook.net *.google-analytics.com *.facebook.com *.googleadservices.com *.doubleclick.net *.googletagmanager.com radar.cedexis.com *.cedexis-test.com www.gstatic.com/recaptcha/ www.gstatic.cn/recaptcha/ www.recaptcha.net 'wasm-unsafe-eval'; worker-src 'self' blob: 'unsafe-inline'; report-uri /_/_/csp_report/?rid=1794175364891830; frame-ancestors 'self' , script-src 'self' blob: 'unsafe-inline' *.pinimg.com *.pinterest.com *.adyen.com js.dlocal.com js-sandbox.dlocal.com static-sandbox.dlocal.com static.dlocal.com *.adyenpayments.com 'report-sample' *.google.com connect.facebook.net *.google-analytics.com *.facebook.com *.googleadservices.com *.doubleclick.net *.googletagmanager.com radar.cedexis.com *.cedexis-test.com www.gstatic.com/recaptcha/ www.gstatic.cn/recaptcha/ www.recaptcha.net 'wasm-unsafe-eval'; report-uri /_/_/csp_report/?rid=1794175364891830",
+            "content-security-policy-report-only": "img-src 'self' blob: data: *.pinimg.com *.pinterest.com *.google.com *.facebook.com *.cedexis.com *.cedexis-test.com *.citrix.com *.tvpixel.com; report-uri /_/_/csp_report/?reportonly",
+            "x-frame-options": "SAMEORIGIN",
+            "origin-trial": "AvlUIFJouPpJAKljRGh7EnYm2Brnx/eu51h39Z7p11vbzNlw2YhkUhxvxZdkS709VlGGNw4Gcg/a9mAzHDrEcQ0AAAB5eyJvcmlnaW4iOiJodHRwczovL3BpbnRlcmVzdC5jb206NDQzIiwiZmVhdHVyZSI6IlNlbmRGdWxsVXNlckFnZW50QWZ0ZXJSZWR1Y3Rpb24iLCJleHBpcnkiOjE2ODQ4ODYzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+            "Accept-CH": "Sec-CH-UA-Full,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-UA-Platform-Version",
+            "Content-Type": "text/html; charset=utf-8",
+            "Link": "<https://i.pinimg.com>; rel=preconnect; crossorigin=anonymous, <https://s.pinimg.com>; rel=preconnect; crossorigin=anonymous, <https://v1.pinimg.com>; rel=preconnect; crossorigin=anonymous",
+            "Trailer": "x-pinterest-sli-streamed-response-type",
+            "x-envoy-upstream-service-time": "152",
+            "pinterest-generated-by": "coreapp-webapp-prod-0a011f58",
+            "Content-Encoding": "gzip",
+            "pinterest-version": "60d1554",
+            "referrer-policy": "origin",
+            "x-pinterest-rid": "1794175364891830",
+            "Date": "Sun, 28 Apr 2024 18:07:08 GMT",
+            "Alt-Svc": "h3=\":443\"; ma=600",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive, Transfer-Encoding",
+            "Set-Cookie": "csrftoken=5476285a82730ca4a61f42f18f211dc0; path=/; expires=Mon, 28 Apr 2025 18:07:08 GMT; samesite=lax; secure, _pinterest_sess=TWc9PSZKWFNjUmpKc01FWHhhV3RDajRzQ1Vna2E1UHpXV2dSeEtDbFpwQUcxUFFzUytBYzhuNkZxQzNCek5vdjVMTFhjek5BZHRlZGFrQW42cVpienFOUTNyRWltYUlEYUFDUTRPdU9PQkZ4S2FLTT0mSTJReWFySUNjUDFwNFczRnVxV2d0dS8zeUN3PQ==; path=/; expires=Wed, 23 Apr 2025 18:07:08 GMT; domain=.pinterest.com; samesite=none; secure; httponly, _auth=0; path=/; expires=Wed, 23 Apr 2025 18:07:08 GMT; domain=.pinterest.com; secure; httponly, _routing_id=\"d982c662-98d3-4fbc-8782-0ec09814ffe8\"; Max-Age=86400; Path=/; HttpOnly",
+            "AKAMAI-GRN": "0.64361060.1714327628.5f67db51",
+            "X-CDN": "akamai",
+            "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+        },
+        "HTML Content": "pinterest.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Pinterest, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.pinterest.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "08564931E1B16A2724AABCC5FC888D0F",
+            "notBefore": "Jul 31 00:00:00 2023 GMT",
+            "notAfter": "Aug  7 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.pinterest.com"
+                ],
+                [
+                    "DNS",
+                    "*.pinimg.com"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.info"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.engineering"
+                ],
+                [
+                    "DNS",
+                    "*.pinterestmail.com"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.at"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.ch"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.de"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.dk"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.ie"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.jp"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.kr"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.mx"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.pt"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.se"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.co.at"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.co.kr"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.co.uk"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.com.mx"
+                ],
+                [
+                    "DNS",
+                    "pin.it"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com"
+                ],
+                [
+                    "DNS",
+                    "pinimg.com"
+                ],
+                [
+                    "DNS",
+                    "pinterest.info"
+                ],
+                [
+                    "DNS",
+                    "pinterest.engineering"
+                ],
+                [
+                    "DNS",
+                    "pinterestmail.com"
+                ],
+                [
+                    "DNS",
+                    "pinterest.at"
+                ],
+                [
+                    "DNS",
+                    "pinterest.ch"
+                ],
+                [
+                    "DNS",
+                    "pinterest.de"
+                ],
+                [
+                    "DNS",
+                    "pinterest.dk"
+                ],
+                [
+                    "DNS",
+                    "pinterest.ie"
+                ],
+                [
+                    "DNS",
+                    "pinterest.jp"
+                ],
+                [
+                    "DNS",
+                    "pinterest.kr"
+                ],
+                [
+                    "DNS",
+                    "pinterest.mx"
+                ],
+                [
+                    "DNS",
+                    "pinterest.pt"
+                ],
+                [
+                    "DNS",
+                    "pinterest.se"
+                ],
+                [
+                    "DNS",
+                    "pinterest.co.at"
+                ],
+                [
+                    "DNS",
+                    "pinterest.co.kr"
+                ],
+                [
+                    "DNS",
+                    "pinterest.co.uk"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com.mx"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.ca"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.fr"
+                ],
+                [
+                    "DNS",
+                    "pinterest.ca"
+                ],
+                [
+                    "DNS",
+                    "pinterest.fr"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com.au"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.com.au"
+                ],
+                [
+                    "DNS",
+                    "pinterest.nz"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.nz"
+                ],
+                [
+                    "DNS",
+                    "pinterest.es"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.es"
+                ],
+                [
+                    "DNS",
+                    "pinterest.cl"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.cl"
+                ],
+                [
+                    "DNS",
+                    "pinterest.ph"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.ph"
+                ],
+                [
+                    "DNS",
+                    "pinterest.in"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.in"
+                ],
+                [
+                    "DNS",
+                    "pinterest.co.in"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.co.in"
+                ],
+                [
+                    "DNS",
+                    "pinterest.be"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.be"
+                ],
+                [
+                    "DNS",
+                    "pinterest.pe"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.pe"
+                ],
+                [
+                    "DNS",
+                    "pinterest.co"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.co"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com.py"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.com.py"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com.bo"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.com.bo"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com.ec"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.com.ec"
+                ],
+                [
+                    "DNS",
+                    "pinterest.ec"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.ec"
+                ],
+                [
+                    "DNS",
+                    "pinterest.hu"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.hu"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com.vn"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.com.vn"
+                ],
+                [
+                    "DNS",
+                    "pinterest.it"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.it"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com.pe"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.com.pe"
+                ],
+                [
+                    "DNS",
+                    "pinterest.com.uy"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.com.uy"
+                ],
+                [
+                    "DNS",
+                    "pinterest.co.nz"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.co.nz"
+                ],
+                [
+                    "DNS",
+                    "pinterest.uk"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.uk"
+                ],
+                [
+                    "DNS",
+                    "pinterest.vn"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.vn"
+                ],
+                [
+                    "DNS",
+                    "pinterest.id"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.id"
+                ],
+                [
+                    "DNS",
+                    "pinterest.th"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.th"
+                ],
+                [
+                    "DNS",
+                    "pinterest.tw"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.tw"
+                ],
+                [
+                    "DNS",
+                    "pinterest.nl"
+                ],
+                [
+                    "DNS",
+                    "*.pinterest.nl"
+                ],
+                [
+                    "DNS",
+                    "*.testing.pinterest.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl",
+                "http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 14:07:18"
+    },
+    "google.co.jp": {
+        "Time": 4.88,
+        "URL": "google.co.jp",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "142.250.181.227"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "142.250.181.227",
+        "PING Status": "OK",
+        "PING IP": "142.250.181.227",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://www.google.co.jp/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "142.250.181.227"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 205165,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 18:08:02 GMT",
+            "Expires": "-1",
+            "Cache-Control": "private, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-M-Oi4RrnFxAdCZUpJFQ13w' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+            "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"gws\"",
+            "Report-To": "{\"group\":\"gws\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gws/other\"}]}",
+            "Accept-CH": "Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Arch, Sec-CH-UA-Model, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64",
+            "Permissions-Policy": "unload=()",
+            "Origin-Trial": "Ap+qNlnLzJDKSmEHjzM5ilaa908GuehlLqGb6ezME5lkhelj20qVzfv06zPmQ3LodoeujZuphAolrnhnPA8w4AIAAABfeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJQZXJtaXNzaW9uc1BvbGljeVVubG9hZCIsImV4cGlyeSI6MTY4NTY2Mzk5OX0=, AvudrjMZqL7335p1KLV2lHo1kxdMeIN0dUI15d0CPz9dovVLCcXk8OAqjho1DX4s6NbHbA/AGobuGvcZv0drGgQAAAB9eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJCYWNrRm9yd2FyZENhY2hlTm90UmVzdG9yZWRSZWFzb25zIiwiZXhwaXJ5IjoxNjkxNTM5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "Content-Encoding": "gzip",
+            "Server": "gws",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Set-Cookie": "NID=513=iVaMrJj7zFgV0gm5Ag3vi_IsFI-EalDP1nLxVSqDU3SpEOfX7eeSGVRA6l7ogH9jhDllSoMVKzMV2Ky8upy5vOyUxiw0vQhuvQE0nN4Z0SHnQLp2h3ttaFyZAdDQFPs_VCMvrRb3bsd955QfVuy01voTyEf2oYRQP8Ppst1QEYE; expires=Mon, 28-Oct-2024 18:08:02 GMT; path=/; domain=.google.co.jp; Secure; HttpOnly; SameSite=none",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Transfer-Encoding": "chunked"
+        },
+        "HTML Content": "google.co.jp_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.google.co.jp"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Google Trust Services LLC"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GTS CA 1C3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "2F285569270B8B4509F5542D1850AB04",
+            "notBefore": "Apr  8 07:37:18 2024 GMT",
+            "notAfter": "Jul  1 07:37:17 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.google.co.jp"
+                ],
+                [
+                    "DNS",
+                    "google.co.jp"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.pki.goog/gts1c3"
+            ],
+            "caIssuers": [
+                "http://pki.goog/repo/certs/gts1c3.der"
+            ],
+            "crlDistributionPoints": [
+                "http://crls.pki.goog/gts1c3/QqFxbi9M48c.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 14:08:06"
+    },
+    "pixabay.com": {
+        "Time": 6.65,
+        "URL": "pixabay.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.98.235",
+            "188.114.99.235"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.98.235",
+        "PING Status": "OK",
+        "PING IP": "188.114.98.235",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://pixabay.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.99.235",
+                "188.114.98.235"
+            ]
+        ],
+        "HTTP Status": 403,
+        "Content Length": 15579,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 18:09:10 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "close",
+            "Accept-CH": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+            "Cross-Origin-Embedder-Policy": "require-corp",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Origin-Agent-Cluster": "?1",
+            "Permissions-Policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+            "Referrer-Policy": "same-origin",
+            "X-Frame-Options": "SAMEORIGIN",
+            "cf-mitigated": "challenge",
+            "cf-chl-out": "7MiA7AOW3bRhWghgo6B7pUThI5hf+qfFgh+jC+JGWKpHubRyhfAtLvU92GZ/e7U5JrhLtqLtboX7uFDAeaBfPZ1Pujtfd3V8l4wIUeQ+WBSQNc/0spwBwjnorbmYUgsTtsU8e+4kDJ3fQvBrmnjssQ==$XJOAhIzzyhTlvmc5PUi31A==",
+            "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+            "Vary": "Accept-Encoding",
+            "Server": "cloudflare",
+            "CF-RAY": "87b900794f263678-FRA",
+            "Content-Encoding": "gzip",
+            "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "HTML Content": "pixabay.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "San Francisco"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "pixabay.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Cloudflare, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Cloudflare Inc ECC CA-3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0639988284B37DF85C2DB6741B541B37",
+            "notBefore": "Feb 12 00:00:00 2024 GMT",
+            "notAfter": "Dec 31 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "pixabay.com"
+                ],
+                [
+                    "DNS",
+                    "*.pixabay.com"
+                ],
+                [
+                    "DNS",
+                    "*.community.pixabay.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/CloudflareIncECCCA-3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/CloudflareIncECCCA-3.crl",
+                "http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 14:09:16"
+    }
+}

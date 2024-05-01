@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>TalkU - Free Phone Calls, Texts & Walkie Talkie, PTT</title>
+		<meta name="description" content="TalkU is a mobile app for iPhone and Android, that lets you make free phone calls and send free text messages, share photos, videos and location with your friends in anywhere, anytime. TalkU can even turn your phone into a live Walkie Talkie, simply push to talk! TalkU has seamlessly integration with Facebook. With TalkU, you can talk to your Facebook friends on the phone never worring about your cell calling minutes." />
+		<meta name="keywords" content="free phone calls, free video calls, free calls, free SMS, free text, free text message, free voip calls, cheap VoIP calls, VoIP phone call, softphone, free international calls, cheap international calls, free long distance calls, calling cards, mobile messenger, messaging, message, mobile chat, call Facebook friend, chat Facebook friend, Walkie Talkie, push to talk, PTT, direct connect, directconnect, Sprint, app, Smartphone, TalkU" />
+		<link rel="shortcut icon" href="//resource.talkyou.me/images/favicon.ico"/>
+		<link href="res/v2/en/css/main.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="//resource.talkyou.me/res/v2/js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="//resource.talkyou.me/res/v2/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript" src="//resource.talkyou.me/js/util2.js"></script>
+		<!--google analytics-->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-96358692-1']);
+			_gaq.push(['_trackPageview']);
+		
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-96358692-1', 'auto');
+			ga('send', 'event', 'talku_website', 'talku_website', location.href, 1);
+		</script>
+		<script type="text/javascript">
+
+			function doRedirect() {
+				var _referer = getCookie("_referer");
+				
+				if(_referer == null 
+						&& document.referrer != null && document.referrer.indexOf("talkyou.me") < 0) {
+					setCookie("_referer", document.referrer, 86400);
+				}
+				
+				var client = new Client();
+				var isChinese = client.isChineseClient();
+				var isMobile = client.isMobileClient(navigator.userAgent);
+				var isAndroid = client.isAndroidClient(navigator.userAgent);
+		
+				var pageUrl = "index.html";
+				var paramStr = document.location.search;
+				var redirectTo = ""; 
+				// if (isChinese) {
+					// if(isAndroid) {
+					// 	redirectTo = "mcn/android.html" + paramStr;
+					// }else if (isMobile) {
+					// 	redirectTo = "mcn/" + pageUrl + paramStr;
+					// } else {
+					// 	redirectTo = "cn/" + pageUrl + paramStr;
+					// }
+				// } else {
+					if(isAndroid) {
+						redirectTo = "men/android.html" + paramStr;
+						window.location.href = redirectTo;
+					}else if (isMobile) {
+						redirectTo = "men/" + pageUrl + paramStr;
+						window.location.href = redirectTo;
+					} else {
+						// alert(1)
+						redirectTo = "en/" + pageUrl + paramStr;
+						window.location.href = redirectTo;
+					}
+			}
+		
+		</script>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-96358692-1']);
+			_gaq.push(['_trackPageview']);
+			_gaq.push(function (){
+				setTimeout("doRedirect()", 50);
+			});
+		
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		
+		</script>
+		
+	</head>
+<HEAD>
+<script type="text/javascript" src="//resource.talkyou.me/js/util2.js"></script>
+</HEAD>
+
+<!-- <BODY>
+<a href="https://plus.google.com/117914945862475453910" rel="publisher">Google+</a>
+</BODY> -->
+<body>
+	<div class="main">
+	<div class="div01">
+		<div id="wrapper">
+				<div class="header">
+						<div class="header_logo"><a href="index.html"><img src="//resource.talkyou.me/res/v2/en/images/logo.png" /></a></div>
+							<div class="header_right">
+								<div class="header_faq">
+										<ul>
+												<li class="nobor"><a href="faq.html">FAQ</a></li>
+													<li><a href="support.html">Support</a></li>
+													<li onclick="javascript:openShutManager(this,'box1',false)" style="cursor:pointer;"><a>English</a><i></i></li>
+															<div class="header_faq_sub" id="box1" style="display:none">
+																<input type="hidden" id="language" value="en"/>
+																	<ul>
+																			<li><a href="../cn/index.html">中文</a></li>
+																			<li><a href="../es/index.html">Español</a></li>
+																			<li><a href="../pt/index.html">Português</a></li>
+																			<li><a href="../tr/index.html">Türk</a></li>
+																			<li><a href="../fr/index.html">Français</a></li>
+																			<li><a href="index.html">English</a></li>
+																	</ul>
+															</div>
+											</ul>
+									</div>
+									<div class="header_nav">
+										<ul>
+													<!--<li><a href="https://www.dingtone.me/en/buy/index.html" class="aheadbnt">Add Credits</a></li>-->
+													<li ><a href="http://blog.talkyou.me/en/">Blog</a></li>
+													<li id="download"><a href="">Download</a></li>
+													<li><a href="index.html#rates">Rates</a></li>
+													<li><a href="index.html#makeItFree">Make It Free</a></li>
+													<li><a href="index.html" class="nobor">Home</a></li>
+											</ul>
+									</div>
+							</div>
+					</div>
+					<div class="bannerbg"><img src="//resource.talkyou.me/res/v2/cn/images/bannerbg.png" /></div>
+					<div class="banner">
+							<div id="slideBox" class="slideBox">
+									<div class="bd">
+											<ul>
+													<li><a><img src="../res/v2/en/images/banner01-TalkU.png" /></a></li>
+													<li><a><img src="//resource.talkyou.me/res/v2/en/images/banner02.png" /></a></li>
+													<li><a><img src="//resource.talkyou.me/res/v2/en/images/banner03.png" /></a></li>
+													<li><a><img src="//resource.talkyou.me/res/v2/en/images/banner04.png" /></a></li>
+											</ul>
+									</div>    
+							</div>
+							<script type="text/javascript">
+								jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,trigger:"click",delayTime:2000,interTime:5000,});
+							</script>
+					</div>
+					<div class="banner_paly"><a href="video.html" style="display: none"></a></div>
+					<div class="banner_font">
+						<h1>The NEW way to talk, text and share.</h1>
+							<ul>
+								<li>
+										<span>1</span>
+											<div class="banner_font_div">
+												<h3>Free Calling</h3>
+													<p>Calls to anyone on TalkU are completely free…anywhere in the world.</p>
+											</div>
+									</li>
+									<li class="nopad">
+										<span>2</span>
+											<div class="banner_font_div">
+												<h3>Free Texting</h3>
+													<p>Unlimited free text messages with typing indicator, read recipient, read notification.</p>
+											</div>
+									</li>
+									<li>
+										<span>3</span>
+											<div class="banner_font_div">
+												<h3>Walkie Talkie</h3>
+													<p>Transform your phone into a real Walkie Talkie - simply push a button and speak.</p>
+											</div>
+									</li>
+									<li class="nopad">
+										<span>4</span>
+											<div class="banner_font_div">
+												<h3>Cool Sharing</h3>
+													<p>Share your videos, pictures, doodles, music and locations with friends and family.</p>
+											</div>
+									</li>
+							</ul>
+					</div>
+			</div>
+	</div>
+	<div class="div02">
+		<div id="wrapper">
+				<h2>We give you a real U.S. phone number.</h2>
+					<div class="formula">
+						<div class="formula_num formula01">iPod, iPad,<br />Tablet, Phone<br /></div>
+							<div class="formula_img"><img src="//resource.talkyou.me/res/v2/en/images/add.png" /></div>
+							<div class="formula_num formula01 formula02">TalkU<br />Phone<br />Number</div>
+							<div class="formula_img"><img src="//resource.talkyou.me/res/v2/en/images/equal.png" /></div>
+							<div class="formula_num formula03">A phone with a<br />new phone number</div>
+					</div>
+					<div class="formula_font">
+						<ul>
+								<li>
+										<h3>Receive Calls & Texts</h3>
+											<p>Receive incoming calls and texts from anyone. Even those not using TalkU.</p>
+									</li>
+									<li class="nopad">
+										<h3>Cheap Calling Plans</h3>
+											<p>No monthly fee. No activation fee. No commitment. Save up to 90%! Free yourself from the phone companies.</p>
+									</li>
+									<li>
+										<h3>Voicemail & Call Screening</h3>
+											<p>Visual voicemail with your own greeting. Call Block. Call Forwarding…and more.</p>
+									</li>
+									<li class="nopad">
+										<h3>Privacy Protection</h3>
+											<p>A TalkU phone number masks your real identity. Never leave your real phone number on the Web!</p>
+									</li>
+							</ul>
+					</div>
+			</div>
+	</div>
+	<div id="makeItFree" class="div03">
+		<div id="wrapper">
+				<div class="free">
+							<p><h2>Calls and texts between <span>30 million</span><img src="//resource.talkyou.me/res/v2/en/images/free.png" /><br />
+			TalkU users are always free!</h2></p>
+							<p>Invite your friends and family to use TalkU.</p>
+			</div>
+					<div class="free_font">
+						<h2><span>Earn free TalkU credits by:</span></h2>
+						<ul>
+								<li><i class="free_font_01"></i>Checking in daily</li>
+									<li><i class="free_font_02"></i>Watching video ads</li>
+									<li><i class="free_font_03"></i>Completing sponsored offers</li>
+									<li><i class="free_font_04"></i>Inviting friends to join TalkU</li>
+							</ul>
+					</div>
+			</div>
+	</div>
+	<div id="rates" class="div04">
+		<div id="wrapper">
+				<h2>Inexpensive International Calls</h2>
+					<div class="inter">
+						<ul>
+								<li><img src="//resource.talkyou.me/res/v2/en/images/inter_img01.png" /><h3>United States</h3><p>1 credits/min</p></li>
+									<li><img src="//resource.talkyou.me/res/v2/en/images/inter_img02.png" /><h3>China</h3><p>1 credits/min</p></li>
+									<li><img src="//resource.talkyou.me/res/v2/en/images/inter_img03.png" /><h3>Mexico</h3><p>1.1 credits/min</p></li>
+									<li><img src="//resource.talkyou.me/res/v2/en/images/inter_img04.png" /><h3>UK</h3><p>1.1 credits/min</p></li>
+							</ul>
+					</div>
+					<div id="checkMoreRates" class="inter_bot"><a href="">Check More Rates</a></div>
+			</div>
+	</div>
+	<div class="foot">
+		<div id="wrapper">
+			<a name="download"></a>
+				<div class="foot_font">
+							<ul>
+								<h4>Legal</h4>
+									<li><a href="privacy_policy.html">Privacy Policy</a></li>
+									<li><a href="Terms_of_Service.html">Terms of Service</a></li>
+							</ul>
+							<ul>
+								<h4>Follow Us</h4>
+									<li><a href="http://www.twitter.com/talkuapp">Twitter</a></li>
+									<li><a href="http://www.facebook.com/talkuapp">Facebook</a></li>
+							</ul>
+							<ul>
+								<h4>About Us</h4>
+									<li><a id="contractus" href="">Contact Us</a></li>
+									<li><a href="support.html">Support</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+							</ul>
+							<!-- <ul class="ul_heihgt_200">
+									<h4 class="">Partner</h4>
+									<li><a href="https://www.gainfollowers.com">Gainfollowers</a> </li>
+									<li><a href="https://www.dingtone.me">Dingtone</a></li>
+									<li><a href="http://www.skyvpn.net">SkyVPN</a></li>
+							<li><a href="http://www.coverme.ws">CoverMe</a></li>
+							</ul> -->
+							<ul class="nobor">
+								<h4>Download</h4>
+								<li><a href="https://itunes.apple.com/us/app/shuo-dao-wang-luo-yu-yin-dui/id863809868?l=ja&ls=1&mt=8"><img src="//resource.talkyou.me/res/v2/en/images/down_bot01.png" class="img" /></a><a href="https://play.google.com/store/apps/details?id=me.talkyou.app.im"><img src="//resource.talkyou.me/res/v2/en/images/down_bot02.png" /></a></li>
+							</ul>
+					</div>
+					<div class="foot_ding">© TalkU. All Rights Reserved. 2020</div>
+			</div>
+	</div>
+	
+		<div class="mask"></div>
+		<div class="con_pop">
+				<div class="con_poptit">Important Information</div>
+				<div class="con_poptxt">
+					<strong>Dear users:</strong> <br /> If you have any problems when
+					using TalkU, Please send an issue report via TalkU App<span>
+						(open TalkU -> Help & About Us -> Feedback or Report an Issue)</span>,
+					which is the fastest way to have a problem solved. For business
+					cooperation, please contact us via info@talkyou.me
+				</div>
+				<div class="clear"></div>
+				<div class="con_popbnt">
+					<a href="javascript:void">Close</a>
+				</div>
+				<div class="cancel mess_close">
+					<a href="javascript:void"><img
+						src="//resource.talkyou.me/res/v2/en/images/close.png"
+						width="40" height="40" alt="close" /></a>
+				</div>
+			</div>   
+		<div id="downloadDlg" class="mess">
+			<div class="mess_tit">Download TalkU</div>
+				 <div class="mess_txt">
+			<ul>
+				<li><p>iPhone, iPod Touch &amp; iPad</p>
+					<a target="_blank" href="https://itunes.apple.com/us/app/shuo-dao-wang-luo-yu-yin-dui/id863809868?l=ja&ls=1&mt=8"><img src="//resource.talkyou.me/res/v2/en/images/down_bot01.png" width="192" height="70" alt="ios" /></a></li>
+				<li><p>Android</p>
+					<a target="_blank" href="https://play.google.com/store/apps/details?id=me.talkyou.app.im"><img src="//resource.talkyou.me/res/v2/en/images/down_bot02.png" width="192" height="70" alt="android" /></a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="mess_img"><img src="//resource.talkyou.me/res/v2/en/images/img1.png" width="278" height="288" /></div>
+			<div class="cancel mess_close close-download" style="cursor:pointer;"><img src="//resource.talkyou.me/res/v2/en/images/close.png" width="40" height="40" alt="close" /></div>
+		</div>
+	
+		<div id="checkMoreRateDlg" class="mess">
+			<div class="mess_tit">Check More Rates</div>
+				<div class="mess_txt">
+				<h3>Download the TalkU app to your phone or device to check the rates of the countries you want to call.</h3>
+			<h4>You won’t be disappointed!</h4>
+			<ul>
+					<li>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					<td><p>iPhone, iPod Touch &amp; iPad</p></td>
+					<td><p>Android</p></td>
+					</tr>
+					<tr>
+					<td><a target="_blank" href="https://itunes.apple.com/us/app/shuo-dao-wang-luo-yu-yin-dui/id863809868?l=ja&ls=1&mt=8"><img src="//resource.talkyou.me/res/v2/en/images/down_bot01.png" width="192" height="70" alt="ios" /></a></td>
+					<td><a target="_blank" href="https://play.google.com/store/apps/details?id=me.talkyou.app.im"><img src="//resource.talkyou.me/res/v2/en/images/down_bot02.png" width="192" height="70" alt="android" /></a></td>
+					</tr>
+				</table>
+				</li>
+				<li><p>&nbsp;</p></li>
+					<li></li>
+			</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="cancel mess_close close-morerates" style="cursor:pointer;"><img src="//resource.talkyou.me/res/v2/en/images/close.png" width="40" height="40" alt="close" /></div>
+		</div>
+		
+		</div>
+	
+	
+	<script type="text/javascript" src="//resource.talkyou.me/js/util2.js"></script>
+	<script type="text/javascript" src="//resource.talkyou.me/res/v2/js/common.js"></script>
+	<script type="text/javascript">
+	(function() {
+		var _referer = getCookie("_referer");
+	
+		if(_referer == null 
+				&& document.referrer != null && document.referrer.indexOf("talkyou.me") < 0) {
+			setCookie("_referer", document.referrer, 86400);
+		}
+	})();
+	</script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var headerHeight = $(".header").height() - 30;
+	
+		$("a[href*=#]").on('click', function(e) {
+			var scrollTarget = $(this.hash).offset().top - headerHeight;
+			if(scrollTarget)
+				e.preventDefault();
+					if(parseInt(scrollTarget) !== parseInt($(window).scrollTop())) {
+						$('html,body').animate({scrollTop:scrollTarget}, 1000, "swing", function(evt) {});
+					}
+			});
+	});
+	
+	$("#download a,.close-download").click(function(event){
+			event.preventDefault();
+	
+			center($('#downloadDlg'));
+					$("#downloadDlg").slideToggle("med");
+			$(".mask").toggle();
+	});
+	
+	$("#checkMoreRates a,.close-morerates").click(function(event){
+			event.preventDefault();
+			center($('#checkMoreRateDlg'));
+			$("#checkMoreRateDlg").slideToggle("med");
+			$(".mask").toggle();
+	});
+	
+	
+	</script>
+	<script type="text/javascript" src="//resource.talkyou.me/js/contractus.js?V=2016061601"></script>
+	</body>
+</HTML>

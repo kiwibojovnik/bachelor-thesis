@@ -12,3 +12,4 @@ def count_censorship_types(data):
             censorship_stats[censorship_type] = censorship_stats.get(censorship_type, 0) + 1
 
     return censorship_stats
+

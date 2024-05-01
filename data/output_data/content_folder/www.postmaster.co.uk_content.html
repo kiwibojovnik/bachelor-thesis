@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-
+
+transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base href="https://www.postmaster.co.uk/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>PostMaster</title>
+	<link href="/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/plugins/system/jce/css/content.css?badb4208be409b1335b815dde676300e" rel="stylesheet" type="text/css" />
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"738c96cca87c38a8ed11fd78d7b9d83b","system.paths":{"root":"","base":""},"system.keepalive":{"interval":45000,"uri":"\/component\/ajax\/?format=json"}}</script>
+	<script src="/media/jui/js/jquery.min.js?831759c26d523b22857df5ee29fd53eb" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?831759c26d523b22857df5ee29fd53eb" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?831759c26d523b22857df5ee29fd53eb" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?831759c26d523b22857df5ee29fd53eb" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?831759c26d523b22857df5ee29fd53eb" type="text/javascript"></script>
+	<!--[if lt IE 9]><script src="/media/system/js/polyfill.event.js?831759c26d523b22857df5ee29fd53eb" type="text/javascript"></script><![endif]-->
+	<script src="/media/system/js/keepalive.js?831759c26d523b22857df5ee29fd53eb" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?831759c26d523b22857df5ee29fd53eb" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" /> 
+<link rel="stylesheet" href="/templates/system/css/general.css" type="text/css" /> 
+<link rel="stylesheet" href="/templates/postmasterresposive/css/style.css" 
+
+type="text/css" />
+<link href="/templates/postmasterresposive/css/bootstrap.css" 
+
+rel="stylesheet" type="text/css" />
+<link href="/templates/postmasterresposive/css/bootstrap-responsive.css" 
+rel="stylesheet" type="text/css" />
+<script src="/templates/postmasterresposive/js/jquery.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+
+if (window.location.search !== '?a') {
+    document.getElementById('login-form').onsubmit=function(){document.getElementById('modlgn-username').value = document.getElementById('modlgn-username').value.split('@')[0];};
+}
+
+  var first = document.getElementById('cb_username2'),
+      second = document.getElementById('email');
+    third = document.getElementById('username');
+  if (first && second && third) {
+    first.onkeyup = function () { // or first.onchange
+    second.value = first.value+"@postmaster.co.uk";
+    third.value = first.value+"@postmaster.co.uk";
+  }
+  };
+};
+
+
+function goBack() {
+    window.history.back()
+}
+$(document).ready(function() { 
+      $('#registrationTable input[type=submit]').attr('disabled', 'disabled');
+    $('#password').keyup(function() {
+      $('span.error-keyup-7').remove();
+      var inputVal = $(this).val();
+           var pwordlength = inputVal.length;
+      var emailReg = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,64}$/;
+      var pwordupper = /^(?=.*[A-Z]).{1,64}$/;
+      var pwordlower = /^(?=.*[a-z]).{1,64}$/;
+      var pwordnum = /^(?=.*[0-9]).{1,64}$/;
+      if(pwordlength<8){
+      var pwordlen="<li>8 characters</li>";
+      }
+      else {
+      var pwordlen="";
+      }
+      if(!pwordupper.test(inputVal)) {
+      var pwordcaps="<li>1 upper-case letter</li>";
+      }
+      else {
+      var pwordcaps="";
+      }
+      if(!pwordlower.test(inputVal)) {
+      var pwordsmall="<li>Lower-case letters</li>";
+      }
+      else {
+      var pwordsmall="";
+      }
+      if(!pwordnum.test(inputVal)) {
+      var pwordnums="<li>1 number</li>";
+      }
+      else {
+      var pwordnums="";
+      }
+      
+      if(!emailReg.test(inputVal) || (pwordlength<8) || (!pwordupper.test(inputVal)) || (!pwordlower.test(inputVal)) || (!pwordnum.test(inputVal)))  {
+        $('#cbfv_51 .cbFieldIcons').after('<span class="error error-keyup-7">Please enter a valid password. At least '+ pwordlen + pwordcaps + pwordsmall + pwordnums +'</span>');
+        
+      }
+
+    });
+    $('#password__verify').keyup(function() {
+      $('span.error-keyup-8').remove();
+      var inputVal = $(this).val();
+      var oldPass = $('#password').val();
+      var emailReg = /^(?=.*[A-Z])(?=.*[0-9]).{8,64}$/;
+      if((inputVal!=oldPass) || (!emailReg.test(inputVal))) {  
+        $('#cbfv_51__verify .cbFieldIcons').after('<span class="error error-keyup-8">Please enter the same value again.</span>');
+      }
+      else {
+      $('#registrationTable input[type=submit]').removeAttr('disabled');
+      }
+    });
+    
+});
+</script>
+  
+  <script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(["setDomains", ["*.www.postmaster.co.uk"]]);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+var u="//ws.alaincharles.com/";
+_paq.push(['setTrackerUrl', u+'js/']);
+_paq.push(['setSiteId', 15]);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<noscript><p><img src="//ws.alaincharles.com/piwik.php?idsite=15" style="border:0;" alt="" /></p></noscript>
+</head>
+
+<body>
+<div class="container">
+      <div class="row">
+        <div class="span6">
+<a href="/index.php"><img src="/templates/postmasterresposive/images/logo.png" alt="Postmaster" /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+		<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p> <a href="/new-postmaster-account-registration/registers"><img src="/images/pm-header-sign-up-copy.jpg" alt="pm-header-sign-up" width="730" height="49" border="0" /></a></p></div>
+		</div>
+	
+</div>
+</div>
+      <div class="row">
+        <div class="span8" style="float:right;">
+        <div class="row">
+
+</div>
+        <div class="row">
+<div id="system-message-container">
+	</div>
+
+<div class="blog-featured" itemscope itemtype="https://schema.org/Blog">
+<div class="items-leading clearfix">
+			<div class="leading-0 clearfix"
+			itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+			
+
+
+
+
+
+
+
+
+<h4>MAINTENANCE NOTICE:</h4>
+<p> Maintenance is now complete, if you have any issues with your account please contact <a href="https://www.postmaster.co.uk/support-request">support</a>. </p>
+<div id="pmLogRight"><img src="/images/stories/pm-login-image.jpg" alt="pm-login-image" border="0" />
+<div id="loginCopy">
+<p>Postmaster gives you a bucket full of quality tools to manage your online email, including; IMAP, spam controls, calendars, storage areas and much more.</p>
+<p><span style="color: #000000;">Access anywhere in the world. </span><!--<a href="/component/nbill/?view=nbill&amp;Itemid=54">Sign up now</a> or --></p>
+<p>&nbsp;</p>
+</div>
+<div id="goldDetails"><br />
+<ul>
+<li>4 gigabytes of storage</li>
+<li>IMAP client</li>
+<li>virus filtering</li>
+<li>spam controls</li>
+<li>personal calendar</li>
+<li>ad free</li>
+<li>+ more</li>
+</ul>
+<img style="margin-bottom: 25px;" src="/images/stories/pm-login-gold-price.gif" alt="pm-login-gold-price" width="261" height="41" border="0" /> <!--<a href="/component/nbill/?view=nbill&amp;Itemid=54"><img src="/images/stories/pm-login-sign-up-button.gif" border="0" alt="pm-login-sign-up-button" width="261" height="44" /></a>--></div>
+<br /><br /> <!-- Individual logos--><div style="width:100%; float:left;"><img src="/images/linked/VISA.gif" alt="Visa Credit payments supported by WorldPay" border="0" /> <img src="/images/linked/visa_debit.gif" alt="Visa Debit payments supported by WorldPay" border="0" /> <img src="/images/linked/visa_electron.gif" alt="Visa Electron payments supported by WorldPay" border="0" /> <img src="/images/linked/mastercard.gif" alt="Mastercard payments supported by WorldPay" border="0" /> <img src="/images/linked/maestro.gif" alt="Maestro payments supported by WorldPay" border="0" /> <img src="/images/linked/AMEX.gif" alt="American Express payments supported by WorldPay" border="0" /> <img src="/images/linked/JCB.gif" alt="JCB payments supported by WorldPay" border="0" /></div> <!-- Powered by WorldPay logo--> <img style="float:left;" src="/images/linked/poweredByWorldPay.gif" alt="WorldPay Payments Processing" border="0" /></div>
+
+
+
+		</div>
+			</div>
+
+
+
+</div>
+
+</div>
+        <div class="row">
+
+</div>
+</div>
+<div class="span4" style="float:left;">
+		<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="/support" target="_self"><img style="padding-left:10px" src="/images/buttons/Homepage_Support02.png" alt="" /></a></p></div>
+		</div>
+			<div class="moduletable-login">
+						<form action="/" method="post" id="login-form" class="form-inline">
+		<div class="userdata">
+		<div id="form-login-username" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on1">
+							
+							<label for="modlgn-username" class="element-invisible">Username:<span class="icon-user hasTooltip" title="Username"></span></label>
+						</span>
+						<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder=" " />
+					</div>
+							</div>
+		</div>
+		<div id="form-login-password" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on1">
+							
+								<label for="modlgn-passwd" class="element-invisible">Password:
+							<span class="icon-lock hasTooltip" title="Password">
+							</span></label>
+                            
+						</span>
+						<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="" />
+					</div>
+							</div>
+		</div>
+				
+		<div id="form-login-submit" class="control-group">
+			<div class="controls">
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary"> LOGIN</button>
+			</div>
+		</div>
+        <div style="clear:both"></div>
+                
+		<div id="form-login-remember" class="control-group checkbox">
+			<input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/><label for="modlgn-remember" class="control-label">Remember me</label> 
+		</div>
+									<input type="hidden" name="option" value="com_users" />
+		<input type="hidden" name="task" value="user.login" />
+		<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD02OTE=" />
+		<input type="hidden" name="738c96cca87c38a8ed11fd78d7b9d83b" value="1" />	</div>
+	</form>
+		</div>
+	
+</div>
+</div>
+      <div class="row">
+        <div class="span12">
+<div id="pmLogFooter">
+		<div class="moduletable">
+						
+
+<div class="custom"  >
+	<div id="pmLogFooter">
+    <p><a href="/index.php">Home</a> // <a href="/about-postmaster">About Postmaster</a> // <a href="/terms-of-use">Terms of Use &amp; Policies</a> // <a href="/support?id=511">Support</a></p>
+    <p>Postmaster.co.uk is owned and operated by V2C PARTNERS LLP,    registered in England &amp; Wales, number OC353114. Registered office; UNIVERSITY HOUSE, 11-13 LOWER GROSVENOR PLACE, LONDON, SW1W 0EX   
+</p>
+    <p> © Copyright 2014. V2C PARTNERS LLP. All rights reserved.</p>
+  </div></div>
+		</div>
+	
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

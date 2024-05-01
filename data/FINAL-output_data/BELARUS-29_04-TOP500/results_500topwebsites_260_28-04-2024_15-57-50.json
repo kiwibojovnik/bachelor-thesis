@@ -1,0 +1,3355 @@
+{
+    "detik.com": {
+        "Time": 23.94,
+        "URL": "detik.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "103.49.221.211",
+            "203.190.242.211"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "203.190.242.211",
+        "PING Status": "OK",
+        "PING IP": "203.190.242.211",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.detik.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "203.190.242.211",
+                "103.49.221.211"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 238601,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 19:47:52 GMT",
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Keep-Alive": "timeout=10",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "S": "25",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; always",
+            "X-Content-Type-Options": "nosniff",
+            "Access-Control-Allow-Credentials": "true",
+            "X-FastCGI-Cache": "HIT",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "detik.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "ID"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Daerah Khusus Ibukota Jakarta"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Jakarta Selatan"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "PT. Trans Digital Media"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.detik.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Thawte TLS RSA CA G1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "02FB0035B846D7A8E82BA9DDA995AD0D",
+            "notBefore": "Dec 14 00:00:00 2023 GMT",
+            "notAfter": "Dec 22 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.detik.com"
+                ],
+                [
+                    "DNS",
+                    "detik.com"
+                ]
+            ],
+            "OCSP": [
+                "http://status.thawte.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.thawte.com/ThawteTLSRSACAG1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://cdp.thawte.com/ThawteTLSRSACAG1.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 15:48:12"
+    },
+    "mystrikingly.com": {
+        "Time": 6.51,
+        "URL": "mystrikingly.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "18.64.119.97",
+            "18.64.119.108",
+            "18.64.119.96",
+            "18.64.119.33"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.64.119.96",
+        "PING Status": "OK",
+        "PING IP": "18.64.119.96",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.strikingly.com",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "18.66.2.30",
+                "18.66.2.73",
+                "18.66.2.94",
+                "18.66.2.49"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 130472,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Date": "Sun, 28 Apr 2024 19:48:52 GMT",
+            "Status": "200 OK",
+            "X-Frame-Options": "Allow-From https://my.livechatinc.com/",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "Set-Cookie": "__strk_viewer_country=BY, __strk_cookie_eu_visitor=false; path=/, __strk_viewer_country=BY, XSRF-TOKEN=G7z0SJq0E5qwiygixQucMb3YXHDJWpx0ww3xeRmSzOA4zJA4oUrWTAqDGqGLOkVEUlPjvy5qdUtZ8FI7g20w5Q%3D%3D; path=/",
+            "ETag": "W/\"c39adf194d5873178e040e3f9747fbc2\"",
+            "Cache-Control": "max-age=0, private, must-revalidate",
+            "X-Request-Id": "a74bda9d77dd3028a38738dc699f1f31",
+            "X-Runtime": "0.632801",
+            "Content-Encoding": "gzip",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "X-Cache": "Miss from cloudfront",
+            "Via": "1.1 2f927b8fefe61ec7dd1d6dda3df37d18.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "TXL50-P1",
+            "X-Amz-Cf-Id": "MYcOMvpsgrSvd_CRsJ36pZMru7OZvuXglSIWIPDdFRbkNNk_3Cw0Ag=="
+        },
+        "HTML Content": "mystrikingly.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "mystrikingly.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M02"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03633FBCA39A72D694FAD4152E938DFE",
+            "notBefore": "Jun  8 00:00:00 2023 GMT",
+            "notAfter": "Jul  7 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "mystrikingly.com"
+                ],
+                [
+                    "DNS",
+                    "*.mystrikingly.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m02.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m02.amazontrust.com/r2m02.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m02.amazontrust.com/r2m02.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 15:48:57"
+    },
+    "rakuten.co.jp": {
+        "Time": 23.03,
+        "URL": "rakuten.co.jp",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "133.237.180.69"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "133.237.180.69",
+        "PING Status": "OK",
+        "PING IP": "133.237.180.69",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.rakuten.co.jp/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "104.91.49.207"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 346996,
+        "Headers": {
+            "Server": "Apache",
+            "Pragma": "no-cache",
+            "Cache-Control": "private",
+            "Content-Encoding": "gzip",
+            "x-content-type-options": "nosniff",
+            "x-xss-protection": "1; mode=block",
+            "x-frame-options": "DENY",
+            "Content-Type": "text/html",
+            "Content-Length": "62920",
+            "Date": "Sun, 28 Apr 2024 19:50:21 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, User-Agent"
+        },
+        "HTML Content": "rakuten.co.jp_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "JP"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Tokyo"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Setagaya-ku"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Rakuten Group, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.rakuten.co.jp"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "048C739663871600A9FE9EF1088DB93B",
+            "notBefore": "Oct 25 00:00:00 2023 GMT",
+            "notAfter": "Nov 18 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.rakuten.co.jp"
+                ],
+                [
+                    "DNS",
+                    "rakuten.co.jp"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 15:50:30"
+    },
+    "amzn.to": {
+        "Time": 11.48,
+        "URL": "amzn.to",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "67.199.248.12",
+            "67.199.248.13"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "67.199.248.13",
+        "PING Status": "OK",
+        "PING IP": "67.199.248.13",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://www.amazon.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "3.162.84.60"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 6591,
+        "Headers": {
+            "Content-Type": "text/html",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Server": "Server",
+            "Date": "Sun, 28 Apr 2024 19:51:41 GMT",
+            "x-amz-rid": "5DTGPD5A0W6PVRBESXEX",
+            "Vary": "Content-Type,Accept-Encoding,User-Agent",
+            "Content-Encoding": "gzip",
+            "Strict-Transport-Security": "max-age=47474747; includeSubDomains; preload",
+            "X-Cache": "Miss from cloudfront",
+            "Via": "1.1 365a977b864574759e83e211b333db7e.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "TXL50-P5",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "X-Amz-Cf-Id": "qJ8BgxahKQlOAawy7jUNWB2cDl3D_InpQCgHoTiFc9E1KuOuCGDI1w=="
+        },
+        "HTML Content": "amzn.to_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "amzn.to"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "033720CFCB20C91914B31CF0A592CF1BD9C1",
+            "notBefore": "Mar 15 18:31:54 2024 GMT",
+            "notAfter": "Jun 13 18:31:53 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "amzn.to"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 15:51:51"
+    },
+    "arxiv.org": {
+        "Time": 4.47,
+        "URL": "arxiv.org",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.195.42",
+            "151.101.67.42",
+            "151.101.3.42",
+            "151.101.131.42"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.195.42",
+        "PING Status": "OK",
+        "PING IP": "151.101.195.42",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 44300,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "44300",
+            "cache-control": "max-age: 3600",
+            "content-type": "text/html; charset=utf-8",
+            "content-security-policy": "frame-ancestors 'none'",
+            "x-frame-options": "SAMEORIGIN",
+            "x-cloud-trace-context": "0d325b9dced4720ff0be456ec04ef10e",
+            "server": "Google Frontend",
+            "via": "1.1 google, 1.1 google, 1.1 varnish, 1.1 varnish",
+            "Accept-Ranges": "bytes",
+            "Date": "Sun, 28 Apr 2024 19:52:20 GMT",
+            "Age": "36",
+            "X-Served-By": "cache-lga13623-LGA, cache-ams21034-AMS",
+            "X-Cache": "HIT, HIT",
+            "X-Timer": "S1714333940.213701,VS0,VE1"
+        },
+        "HTML Content": "arxiv.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "arxiv.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Certainly"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Certainly Intermediate R1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "76780AC6BE4C449E6BF97A7849ACA23738AA",
+            "notBefore": "Apr 18 16:25:15 2024 GMT",
+            "notAfter": "May 18 16:25:14 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.arxiv.org"
+                ],
+                [
+                    "DNS",
+                    "arxiv.org"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.int-r1.certainly.com"
+            ],
+            "caIssuers": [
+                "http://int-r1.certainly.com"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 15:52:24"
+    },
+    "alibaba.com": {
+        "Time": 17.48,
+        "URL": "alibaba.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "47.246.131.30",
+            "47.246.131.55"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "47.246.131.55",
+        "PING Status": "OK",
+        "PING IP": "47.246.131.55",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://alibaba.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "47.246.131.30",
+                "47.246.131.55"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 167321,
+        "Headers": {
+            "Content-Type": "text/html;charset=UTF-8",
+            "render-policy": "cache-static",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0",
+            "X-Frame-Options": "DENY",
+            "Content-Encoding": "gzip",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Timing-Allow-Origin": "*",
+            "EagleId": "21032cb117143340123144585e3de2",
+            "Server-Timing": "rt;dur=0.009,eagleid;desc=21032cb117143340123144585e3de2",
+            "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+            "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+            "Access-Control-Allow-Credentials": "true",
+            "Date": "Sun, 28 Apr 2024 19:53:32 GMT",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive, Transfer-Encoding",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "cna=PJe1HhPuWzECAS/2gNE9biiQ; Domain=.alibaba.com; Path=/; Expires=Fri, 16-May-2092 23:07:39 GMT; Secure; SameSite=None, ug_se_c=organic_1714334012321; Domain=.alibaba.com; Expires=Wed, 05-Jan-2056 21:40:11 GMT; Path=/; Secure; HttpOnly; SameSite=None",
+            "Alt-Svc": "h3=\":443\"; ma=2592000",
+            "Object-Status": "ttl=-1,age=0",
+            "Edge-Type": "akamai"
+        },
+        "HTML Content": "alibaba.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "CN"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "ZheJiang"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "HangZhou"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Alibaba (China) Technology Co., Ltd."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.alibaba.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign Organization Validation CA - SHA256 - G3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "756F3DA1A08274B01D71365B",
+            "notBefore": "Mar 13 08:47:05 2024 GMT",
+            "notAfter": "Apr 14 08:41:13 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "gw.api.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "m.dutch.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "m.indonesian.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "service.blue.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.100x100w.com"
+                ],
+                [
+                    "DNS",
+                    "*.10e.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.4.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.aas-ehp-data-service.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.ad.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.ade.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.admin.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.admin.shejijia.com"
+                ],
+                [
+                    "DNS",
+                    "*.ae.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.agtech-develop.cn"
+                ],
+                [
+                    "DNS",
+                    "*.ai.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.aicloud.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.aid.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.ailabs.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.algo-serverless.cainiao-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.ali-health.com"
+                ],
+                [
+                    "DNS",
+                    "*.alibaba.org"
+                ],
+                [
+                    "DNS",
+                    "*.alicom-mcm.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.aliexpress.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.alihealth.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.alijk.com"
+                ],
+                [
+                    "DNS",
+                    "*.alimebot.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.alinode-pre.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.alinode.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.alipay.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.alipsports.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.alisports.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.alitalk.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.alivecdn.com"
+                ],
+                [
+                    "DNS",
+                    "*.aliwx.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.aliyundrive.com"
+                ],
+                [
+                    "DNS",
+                    "*.alog.cc"
+                ],
+                [
+                    "DNS",
+                    "*.alog.com"
+                ],
+                [
+                    "DNS",
+                    "*.alsc.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.alsc.ele.me"
+                ],
+                [
+                    "DNS",
+                    "*.alta.elenet.me"
+                ],
+                [
+                    "DNS",
+                    "*.alwx.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.amap.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.ams.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.analysis.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.apollo.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.apsaraun.com"
+                ],
+                [
+                    "DNS",
+                    "*.arabic.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.arrival.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.art.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.ascp.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.ascp.hemaos.com"
+                ],
+                [
+                    "DNS",
+                    "*.asi.yushanfang.com"
+                ],
+                [
+                    "DNS",
+                    "*.atom-polymer.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.auto-rtti.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.auwms.com"
+                ],
+                [
+                    "DNS",
+                    "*.b.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.baidu.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.bcp.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.bid.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.bifrost.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.bops.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.boss.alog.cc"
+                ],
+                [
+                    "DNS",
+                    "*.boss.alog.com"
+                ],
+                [
+                    "DNS",
+                    "*.botframework.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.bpaas.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.brain.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.budao.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.buyermaket.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.c2m.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cacheadmin.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.cangjie-test.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cangyibao.com"
+                ],
+                [
+                    "DNS",
+                    "*.car.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.cashier.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.cc-schedule.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cdnfc.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cdnsreportal.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.center.opens.alios.cn"
+                ],
+                [
+                    "DNS",
+                    "*.cf.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cgame.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.chaoniu.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.chaos.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.china.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.chinasuppliers.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.chinese.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.client.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.cloud-ide.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cloud.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.cloudavn.zebred.com"
+                ],
+                [
+                    "DNS",
+                    "*.cloudgame.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cloudsinger.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cmc.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.cmns.yunos-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cmt.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.cntec.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.como.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.company.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.cone.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.content.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.corona-web.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.corp.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.corp.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.coverage.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.creation.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.crm.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.crm.koubei.com"
+                ],
+                [
+                    "DNS",
+                    "*.crmweb.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.cro.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cs.shejijia.com"
+                ],
+                [
+                    "DNS",
+                    "*.cse.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.cus.dingtalk.com"
+                ],
+                [
+                    "DNS",
+                    "*.customize.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.cw-inbound.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.d.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.daisy.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.damo.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.data.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.datav-app.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.datax.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.dayu.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.dazlogistics-mm.com"
+                ],
+                [
+                    "DNS",
+                    "*.dazlogistics-np.com"
+                ],
+                [
+                    "DNS",
+                    "*.dazlogistics.com.bd"
+                ],
+                [
+                    "DNS",
+                    "*.dazlogistics.lk"
+                ],
+                [
+                    "DNS",
+                    "*.dazlogistics.pk"
+                ],
+                [
+                    "DNS",
+                    "*.de.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.delivery.quality.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.delivery.report.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.developers.alios.cn"
+                ],
+                [
+                    "DNS",
+                    "*.dg-work.cn"
+                ],
+                [
+                    "DNS",
+                    "*.diamond.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.dianwoda.cn"
+                ],
+                [
+                    "DNS",
+                    "*.dianwoda.com"
+                ],
+                [
+                    "DNS",
+                    "*.dingding.xin"
+                ],
+                [
+                    "DNS",
+                    "*.directory.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.dlportal-mm.com"
+                ],
+                [
+                    "DNS",
+                    "*.dlportal-np.com"
+                ],
+                [
+                    "DNS",
+                    "*.dlportal.com.bd"
+                ],
+                [
+                    "DNS",
+                    "*.dlportal.lk"
+                ],
+                [
+                    "DNS",
+                    "*.dlportal.pk"
+                ],
+                [
+                    "DNS",
+                    "*.dm.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.dm.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.do.elenet.me"
+                ],
+                [
+                    "DNS",
+                    "*.dolphin.alimama.com"
+                ],
+                [
+                    "DNS",
+                    "*.download.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.drds-histore-manager.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.dryrun.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.drzpcb.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.dwms.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.e2d.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.edi.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.edi.hemaos.com"
+                ],
+                [
+                    "DNS",
+                    "*.ei.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.eiworkspace.com"
+                ],
+                [
+                    "DNS",
+                    "*.ele-finnet.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.ele.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.en.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.enasa.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.engine.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.erp.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.f2e.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.faas.elenet.me"
+                ],
+                [
+                    "DNS",
+                    "*.fbi.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.fe.uczzd.cn"
+                ],
+                [
+                    "DNS",
+                    "*.finance.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.find.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.finnet.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.fita.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.fm.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.french.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.friday123.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.fs-proxy.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.fx.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.gamenow.club"
+                ],
+                [
+                    "DNS",
+                    "*.gateway.koubei.com"
+                ],
+                [
+                    "DNS",
+                    "*.gdb.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.gds.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.gds.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.gds.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.german.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.ggp.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.global.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.goc-ding-isv.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.goc.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.goofish.com"
+                ],
+                [
+                    "DNS",
+                    "*.gov-deliver.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.gov-devops.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.gray.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.green.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.gts-x.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.gts.work"
+                ],
+                [
+                    "DNS",
+                    "*.guobei.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.h.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.halo.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.hangzhou.myalicdn.com"
+                ],
+                [
+                    "DNS",
+                    "*.hanoi.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.hbase.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.hdfs.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.heartbeat.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.hebrew.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.hindi.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.holoweb.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.homelab.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.hospital.ali-health.com"
+                ],
+                [
+                    "DNS",
+                    "*.hr.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.huichuan.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.huikuanbao.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.hz-productposting.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.icbu-uic-ops.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.icbu.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.idcenvinspect.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.idst-open.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.iflow.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.importer.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.impp.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.inc.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.india.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.inner.alicdn.com"
+                ],
+                [
+                    "DNS",
+                    "*.insights.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.inspection.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.instar.elenet.me"
+                ],
+                [
+                    "DNS",
+                    "*.invoice.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.invoice.kaola.com"
+                ],
+                [
+                    "DNS",
+                    "*.iot.aligenie.com"
+                ],
+                [
+                    "DNS",
+                    "*.iot.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.irs.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.italian.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.japanese.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.koala-id.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.koala-sg.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.korean.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.kun-sit.ejoy.com"
+                ],
+                [
+                    "DNS",
+                    "*.kun.ejoy.com"
+                ],
+                [
+                    "DNS",
+                    "*.labs.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.lakers.hupan.com"
+                ],
+                [
+                    "DNS",
+                    "*.lazadapcb.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.lena.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.loginx.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.loginx.cainiao-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.loginx.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.lsy.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.m.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.m.en.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.m.fm.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.m.kaola.com"
+                ],
+                [
+                    "DNS",
+                    "*.m.trustpass.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.manager.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.masp.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.master.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.mcu.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.mds.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.mechanism.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.media.alimama.com"
+                ],
+                [
+                    "DNS",
+                    "*.message.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.metric-gateway.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.mid.ejoy.com"
+                ],
+                [
+                    "DNS",
+                    "*.mini.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.miniapp.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.model-construction2.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.monitor.dingtalk.com"
+                ],
+                [
+                    "DNS",
+                    "*.mos.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.mw.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.my.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.myalicdn.com"
+                ],
+                [
+                    "DNS",
+                    "*.nb.cainiao-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.nls-domo.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.notebook.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.notebook1.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.o2o.ele.me"
+                ],
+                [
+                    "DNS",
+                    "*.o2oclick.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.offer.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.ok.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.olympic.alimebot.com"
+                ],
+                [
+                    "DNS",
+                    "*.omni.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.oms.hemaos.com"
+                ],
+                [
+                    "DNS",
+                    "*.one-voice-platform.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.onebox.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.oneops.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.onepub.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.onesite.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.online.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.open.alimama.com"
+                ],
+                [
+                    "DNS",
+                    "*.opens.alios.cn"
+                ],
+                [
+                    "DNS",
+                    "*.opensearch-cn-shanghai-in.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.operation.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.orch.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.orchestration.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.orchestrator.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.orion-api.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.oversea.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.package.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.partner.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.pay.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.philstone.client.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.philstone.server.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.photostore-admin.yunos.com"
+                ],
+                [
+                    "DNS",
+                    "*.piao.cn"
+                ],
+                [
+                    "DNS",
+                    "*.piao.com.cn"
+                ],
+                [
+                    "DNS",
+                    "*.pinpoint.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.platform.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.porschemaster.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.portuguese.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.ppc.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.pre-chaos.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.pre-corona-web.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.pre-seller.fliggy.com"
+                ],
+                [
+                    "DNS",
+                    "*.pre-test.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.pre.ele.me"
+                ],
+                [
+                    "DNS",
+                    "*.pre.gamenow.club"
+                ],
+                [
+                    "DNS",
+                    "*.prepub.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.prepub.ele.me"
+                ],
+                [
+                    "DNS",
+                    "*.preview.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.product.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.productdict.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.profile.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.proxy.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.pts.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.qatool.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.qd.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.qookkagames.com"
+                ],
+                [
+                    "DNS",
+                    "*.quark.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.quark.cn"
+                ],
+                [
+                    "DNS",
+                    "*.rec.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.recmd.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.resources.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.rest.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.rfq.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.riskflow.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.roadline.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.rtp.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.ru-inc.cainiao.com"
+                ],
+                [
+                    "DNS",
+                    "*.ru.cainiao-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.russian.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.sa.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.sec-ops.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.security.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.seenew.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.seller.fliggy.com"
+                ],
+                [
+                    "DNS",
+                    "*.shadow-caijing.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.shield-alisports.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.shippingma.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.shishike.com"
+                ],
+                [
+                    "DNS",
+                    "*.shujupie.com"
+                ],
+                [
+                    "DNS",
+                    "*.skywalker-manager.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.sm.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.solar-id.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.solar-sg.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.solr.yunos-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.solr.yunos.com"
+                ],
+                [
+                    "DNS",
+                    "*.sourcing.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.sp.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.sp.yisou.com"
+                ],
+                [
+                    "DNS",
+                    "*.sp2.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.spanish.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.sqlflow.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.staging-sg.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.static.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.structure.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.studio.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.surge.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.t.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.tae.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.tag.xiami.com"
+                ],
+                [
+                    "DNS",
+                    "*.taohuazg.com"
+                ],
+                [
+                    "DNS",
+                    "*.tbpw.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.tdum.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.teamix.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.telematics.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.telematics.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.test1.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.testaone.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.thai.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.themis.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.thor.amap.com"
+                ],
+                [
+                    "DNS",
+                    "*.tiddo.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.tinya1.cn"
+                ],
+                [
+                    "DNS",
+                    "*.tiyan.plus"
+                ],
+                [
+                    "DNS",
+                    "*.tools.elenet.me"
+                ],
+                [
+                    "DNS",
+                    "*.touch.umeng.com"
+                ],
+                [
+                    "DNS",
+                    "*.tpp.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.tq-meta.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.translate.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.trustpass.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.tsp.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.tuipre.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.turkish.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.tvos.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.uat-caijing.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.umstest.hemaos.com"
+                ],
+                [
+                    "DNS",
+                    "*.unicorn.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.union.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.university.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.ups.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.upush.umeng.com"
+                ],
+                [
+                    "DNS",
+                    "*.us.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.vertical.freshhema.com"
+                ],
+                [
+                    "DNS",
+                    "*.video.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.vidmagic.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.vietnamese.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.vip.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.vipprod.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.virtual.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.vmac.yunos.com"
+                ],
+                [
+                    "DNS",
+                    "*.vs.cainiao-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.vscode.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.w.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.waimai.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.wap.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.wap2.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.wapa.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.wapa.gamenow.club"
+                ],
+                [
+                    "DNS",
+                    "*.wapseo.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.web.taobao.org"
+                ],
+                [
+                    "DNS",
+                    "*.weixin.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.weixin.static.keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "*.wing.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.workbench.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.wscrosstool-bops.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.x-medic.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.xnet2-model.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.xnet2-service.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.xunxi.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.yamp.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.youku.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.yp.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.yuekeyun.cn"
+                ],
+                [
+                    "DNS",
+                    "*.zaihuadong.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.zebred.com"
+                ],
+                [
+                    "DNS",
+                    "*.zeus.alibaba.com"
+                ],
+                [
+                    "DNS",
+                    "*.zhanzhang.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "*.zzd.alibaba-inc.com"
+                ],
+                [
+                    "DNS",
+                    "*.zzd.sm.cn"
+                ],
+                [
+                    "DNS",
+                    "alibabadesign.com"
+                ],
+                [
+                    "DNS",
+                    "alibabaued.com"
+                ],
+                [
+                    "DNS",
+                    "alidns.com"
+                ],
+                [
+                    "DNS",
+                    "dcdcrm.com"
+                ],
+                [
+                    "DNS",
+                    "ewtp.com"
+                ],
+                [
+                    "DNS",
+                    "gamenow.club"
+                ],
+                [
+                    "DNS",
+                    "goofish.com"
+                ],
+                [
+                    "DNS",
+                    "keruyun.com"
+                ],
+                [
+                    "DNS",
+                    "myquark.cn"
+                ],
+                [
+                    "DNS",
+                    "quark.cn"
+                ],
+                [
+                    "DNS",
+                    "shishike.com"
+                ],
+                [
+                    "DNS",
+                    "sm.cn"
+                ],
+                [
+                    "DNS",
+                    "tiyan.plus"
+                ],
+                [
+                    "DNS",
+                    "uc-engine.cn"
+                ],
+                [
+                    "DNS",
+                    "yisou.com"
+                ],
+                [
+                    "DNS",
+                    "yunshangzhipian.com"
+                ],
+                [
+                    "DNS",
+                    "alibaba.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp2.globalsign.com/gsorganizationvalsha2g3"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gsorganizationvalsha2g3.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/gsorganizationvalsha2g3.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 15:53:45"
+    },
+    "fb.me": {
+        "Time": 17.88,
+        "URL": "fb.me",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "157.240.0.35"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "157.240.0.35",
+        "PING Status": "OK",
+        "PING IP": "157.240.0.35",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://fb.me/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "157.240.0.35"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 61221,
+        "Headers": {
+            "Content-Encoding": "gzip",
+            "Pragma": "no-cache",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate",
+            "Expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+            "content-security-policy": "default-src *.fbcdn.net fb.me;connect-src fb.me *.facebook.com;font-src *.fbcdn.net fb.me https://fonts.gstatic.com;img-src fb.me *.facebook.com *.fbcdn.net;block-all-mixed-content;upgrade-insecure-requests;",
+            "X-Frame-Options": "DENY",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "0",
+            "reporting-endpoints": "coop_report=\"https://www.facebook.com/browser_reporting/coop/?minimize=0\", coep_report=\"https://www.facebook.com/browser_reporting/coep/?minimize=0\"",
+            "report-to": "{\"max_age\":2592000,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coop\\/?minimize=0\"}],\"group\":\"coop_report\",\"include_subdomains\":true}, {\"max_age\":86400,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coep\\/?minimize=0\"}],\"group\":\"coep_report\"}",
+            "cross-origin-embedder-policy-report-only": "require-corp;report-to=\"coep_report\"",
+            "cross-origin-opener-policy": "same-origin-allow-popups;report-to=\"coop_report\"",
+            "Vary": "Sec-Fetch-Site, Sec-Fetch-Mode, Accept-Encoding",
+            "Strict-Transport-Security": "max-age=31536000; preload; includeSubDomains",
+            "Content-Type": "text/html; charset=\"utf-8\"",
+            "X-FB-Debug": "qiApGedyKZB474JmjQqApulefxzoDY1RIvA4CE9hxlAP9N3g1LRRwXFesDB8QaA1J1muj6Twbubm8ZMT2jeIOA==",
+            "Date": "Sun, 28 Apr 2024 19:54:12 GMT",
+            "X-FB-Connection-Quality": "EXCELLENT; q=0.9, rtt=29, rtx=0, c=10, mss=1380, tbw=3459, tp=-1, tpl=-1, uplat=152, ullat=0",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive"
+        },
+        "HTML Content": "fb.me_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "California"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Menlo Park"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Meta Platforms, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "*.fb.me"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "www.digicert.com"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert SHA2 High Assurance Server CA"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0BFF5173D1830AFBDCD0495881B3E691",
+            "notBefore": "Feb  6 00:00:00 2024 GMT",
+            "notAfter": "May  6 23:59:59 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.fb.me"
+                ],
+                [
+                    "DNS",
+                    "fb.me"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/sha2-ha-server-g6.crl",
+                "http://crl4.digicert.com/sha2-ha-server-g6.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 15:54:28"
+    },
+    "wikia.com": {
+        "Time": 6.57,
+        "URL": "wikia.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "151.101.64.194",
+            "151.101.0.194",
+            "151.101.128.194",
+            "151.101.192.194"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "151.101.0.194",
+        "PING Status": "OK",
+        "PING IP": "151.101.0.194",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.fandom.com/explore",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "199.232.208.194",
+                "199.232.212.194"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 698971,
+        "Headers": {
+            "Connection": "keep-alive",
+            "Content-Length": "183070",
+            "server": "envoy",
+            "cache-control": "max-age=60,stale-while-revalidate=86400,stale-if-error=86400",
+            "content-security-policy": "upgrade-insecure-requests",
+            "content-security-policy-report-only": "default-src https: 'self' data: blob:; script-src https: 'self' data: 'unsafe-inline' 'unsafe-eval' blob:; style-src https: 'self' 'unsafe-inline' blob:; report-uri https://services.fandom.com/csp-logger/csp/upstream",
+            "link": "<https://www.fandom.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.fandom.com/?p=3211>; rel=shortlink",
+            "content-encoding": "gzip",
+            "content-type": "text/html; charset=UTF-8",
+            "x-envoy-upstream-service-time": "222",
+            "Via": "1.1 varnish, 1.1 varnish",
+            "Accept-Ranges": "bytes",
+            "Date": "Sun, 28 Apr 2024 19:55:36 GMT",
+            "Age": "48",
+            "X-Served-By": "cache-wk-sjc11420-SJC, cache-mxp6978-MXP",
+            "X-Cache": "HIT, HIT",
+            "X-Cache-Hits": "15, 1",
+            "X-Timer": "S1714334137.881263,VS0,VE2",
+            "Vary": "Fastly-SSL, Fastly-SSL, Accept-Language,Geo-Region,Accept-Encoding",
+            "Set-Cookie": "wikia_beacon_id=Qc4XHrMpPr; domain=.fandom.com; path=/; expires=Fri, 25 Oct 2024 19:55:36 GMT; SameSite=None; Secure;, _b2=8gkPHXM9b1.1714334136881; domain=.fandom.com; path=/; expires=Tue, 28 Apr 2026 19:55:36 GMT; SameSite=None; Secure;, Geo={%22region%22:%22HM%22%2C%22city%22:%22minsk%22%2C%22country_name%22:%22belarus%22%2C%22country%22:%22BY%22%2C%22continent%22:%22EU%22}; path=/; domain=.fandom.com; SameSite=None; Secure;"
+        },
+        "HTML Content": "wikia.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.www.fandom.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "038F5C50DAB25D2BAF4249DA101D1F9596C2",
+            "notBefore": "Apr 20 23:02:09 2024 GMT",
+            "notAfter": "Jul 19 23:02:08 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.apps.fandom-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "*.apps.fandom-dev.us"
+                ],
+                [
+                    "DNS",
+                    "*.apps.fandom.com"
+                ],
+                [
+                    "DNS",
+                    "*.fandom-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "*.fandom-dev.us"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-dev.com"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "*.wikia-dev.us"
+                ],
+                [
+                    "DNS",
+                    "*.wikia.com"
+                ],
+                [
+                    "DNS",
+                    "*.www.fandom-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "*.www.fandom-dev.us"
+                ],
+                [
+                    "DNS",
+                    "*.www.fandom.com"
+                ],
+                [
+                    "DNS",
+                    "fandom-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "fandom-dev.us"
+                ],
+                [
+                    "DNS",
+                    "fandom.dev"
+                ],
+                [
+                    "DNS",
+                    "wikia-dev.com"
+                ],
+                [
+                    "DNS",
+                    "wikia-dev.pl"
+                ],
+                [
+                    "DNS",
+                    "wikia-dev.us"
+                ],
+                [
+                    "DNS",
+                    "wikia.com"
+                ],
+                [
+                    "DNS",
+                    "wikia.dev"
+                ],
+                [
+                    "DNS",
+                    "wikia.net"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 15:55:42"
+    },
+    "t-online.de": {
+        "Time": 36.97,
+        "URL": "t-online.de",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "34.246.241.220",
+            "52.209.116.123",
+            "54.217.253.146"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "34.246.241.220",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.001186370849609375
+            ],
+            [
+                "212.98.161.17",
+                0.0011262893676757812
+            ],
+            [
+                "185.11.76.22",
+                0.0018286705017089844
+            ],
+            [
+                "185.11.76.26",
+                0.0011479854583740234
+            ],
+            [
+                "85.26.163.180",
+                0.014620065689086914
+            ],
+            [
+                "172.16.0.62",
+                0.018209457397460938
+            ],
+            [
+                "195.208.209.119",
+                0.056481122970581055
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://t-online.de/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "54.217.253.146",
+                "34.246.241.220",
+                "52.209.116.123"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 1285199,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "187564",
+            "Connection": "keep-alive",
+            "Date": "Sun, 28 Apr 2024 19:55:36 GMT",
+            "Cache-Control": "max-age=90, stale-while-revalidate=30, stale-if-error=86400",
+            "x-envoy-upstream-service-time": "0",
+            "Server": "envoy",
+            "x-varnish": "319817665 323782365, 289797324 315658557",
+            "Content-Encoding": "gzip",
+            "ETag": "\"vetag782b6cbccd21771075f10d707205a7c847cde5a4cdbc0bc7974343660370f17e\"",
+            "Via": "1.1 ip-10-0-67-169.eu-west-1.compute.internal (Varnish/7.5), 1.1 ip-10-0-67-169.eu-west-1.compute.internal (Varnish/7.5), 1.1 8ba5a7db0f86d152bf852f67ddf89e84.cloudfront.net (CloudFront)",
+            "Accept-Ranges": "bytes",
+            "hits": "1",
+            "x-ttl": "89.480",
+            "x-grace": "30.000",
+            "x-keep": "128.000",
+            "Vary": "Accept-Encoding, Origin",
+            "X-Cache": "Hit from cloudfront",
+            "X-Amz-Cf-Pop": "TXL50-P1",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "X-Amz-Cf-Id": "0dSVqTDNwDHsI9WWtAiLVzSSR_k6xSPzfpwlLO7JZLRRPdtzLmWvug==",
+            "Age": "85",
+            "X-XSS-Protection": "1; mode=block",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "Content-Security-Policy": "frame-ancestors 'self' https://*.t-online.de;",
+            "X-Content-Type-Options": "nosniff",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload"
+        },
+        "HTML Content": "t-online.de_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "t-online.de"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "03BA173B63871E7CF77CE29255FA193B3467",
+            "notBefore": "Apr 19 02:03:27 2024 GMT",
+            "notAfter": "Jul 18 02:03:26 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "augenblicke.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "auto.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "autobewertung.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "bilder.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "blog.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "boersenradar.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "bundesliga.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "business-online.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "computer-electronics.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "computer-insider.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "computer.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "derivate.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "digital.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "dsl-und-dienste.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "eltern.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "em.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "email-logout-abgeschlossen.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "emaildienste.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "finanzen.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "fussball.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "gaspreise.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "gold.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "handy.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "home.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "internetpraesenz.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "jobsuche.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "karrierewissen.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "kids.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "lifestyle.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "login.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "lottoservice.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "nachrichten.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "olympia.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "oncomputer.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "onnachrichten.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "onsport.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "onunterhaltung.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "partnerfragmente2013.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "perlfrech.de"
+                ],
+                [
+                    "DNS",
+                    "reise.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "reisen.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "service.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "shopping-portal.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "spiele.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "sport.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "surfen-und-telefonieren.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "t-games.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "t-online-business.de"
+                ],
+                [
+                    "DNS",
+                    "t-online-travel.de"
+                ],
+                [
+                    "DNS",
+                    "t-online.de"
+                ],
+                [
+                    "DNS",
+                    "themen.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "top-themen.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "tourenplaner.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "unterhaltung.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "wahlzeit.de"
+                ],
+                [
+                    "DNS",
+                    "wetter.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "wirtschaft.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "wlan.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "ww.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "www.dsl-und-dienste.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "www.gold.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "www.handy.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "www.heute.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "www.home.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "www.surfen-und-telefonieren.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "www.t-online-business.de"
+                ],
+                [
+                    "DNS",
+                    "www.t-online-travel.de"
+                ],
+                [
+                    "DNS",
+                    "www.themen.t-online.de"
+                ],
+                [
+                    "DNS",
+                    "www.wahlzeit.de"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 15:57:11"
+    },
+    "telegra.ph": {
+        "Time": 5.43,
+        "URL": "telegra.ph",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "149.154.164.13"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "149.154.164.13",
+        "PING Status": "OK",
+        "PING IP": "149.154.164.13",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://telegra.ph/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "149.154.164.13"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 4553,
+        "Headers": {
+            "Server": "nginx/1.20.1",
+            "Date": "Sun, 28 Apr 2024 19:57:45 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "1431",
+            "Connection": "keep-alive",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Pragma": "no-cache",
+            "Cache-control": "no-store",
+            "Content-Encoding": "gzip",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload"
+        },
+        "HTML Content": "telegra.ph_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.telegra.ph"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "B573383376CC109C",
+            "notBefore": "Sep  5 19:09:41 2023 GMT",
+            "notAfter": "Oct  6 19:09:41 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.telegra.ph"
+                ],
+                [
+                    "DNS",
+                    "telegra.ph"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-8850.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 15:57:50"
+    }
+}

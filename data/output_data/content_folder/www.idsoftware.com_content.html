@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>id Software</title>
+<meta name="description" content />
+<meta name="viewport" content="width=device-width" />
+
+<link rel="stylesheet" href="/css/normalize.css" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/css/agegate.css" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HX9S08TZT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5HX9S08TZT');
+</script>
+
+<script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="//use.typekit.net/uzr8jqy.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.hoverIntent.js"></script>
+<script src="/js/jquery.superslides.js"></script>
+<script type="text/javascript" src="/js/cookie.js"></script>
+<script type="text/javascript" src="/js/globals.js"></script>
+<script type="text/javascript" src="/js/agegate.js"></script>
+<script>
+        $(document).ready(function() {
+            $('.contents').hover(function(){
+                $(this).find('span').addClass('bgover');
+                $(this).find('strong').addClass('txtover');
+                $(this).addClass('opacityover');
+              }, function(){
+                $('span').removeClass('bgover');
+                $('strong').removeClass('txtover');
+                $(this).removeClass('opacityover');
+              });
+            $('.buttoncontainer .actionbutton').click(function(){$(this).addClass('highlight'), $(this).siblings().removeClass('highlight')});
+            
+        });
+        </script>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+<div id="wrapper" class="bgsize ">
+<div id="blocker"></div>
+<div id="main">
+<div id="container">
+<header>
+<h1 class="ir">id Software</h1>
+</header>
+<div id="agegate_container"></div>
+</div>
+</div>
+<div id="parts" class="hidden">
+<div id="step1">
+<div class="agegate_language">
+<h2><span>01</span>Select language </h2>
+<ul>
+<li>
+<a id="en" href="javascript:;">ENGLISH </a>
+</li>
+<li>
+<a id="fr-fr" href="javascript:;">FRAN&Ccedil;AIS </a>
+</li>
+<li>
+<a id="de-de" href="javascript:;">DEUTSCH </a>
+</li>
+<li>
+<a id="it-it" href="javascript:;">ITALIANO </a>
+</li>
+<li>
+<a id="es-es" href="javascript:;">ESPA&Ntilde;OL </a>
+</li>
+</ul>
+</div>
+</div>
+<div id="step2">
+<div class="agegate_language selected">
+<h2><span>01</span>Your language </h2>
+<ul>
+<li>
+<a class="your-language" href="#">ENGLISH </a><div class="triangle-left"></div>
+</li>
+</ul>
+</div>
+<div class="agegate_country">
+<h2><span>02</span>Select country</h2>
+<ul>
+<li>
+<a id="en-us" href="#">North America</a>
+</li>
+<li>
+<a id="en-gb" class="ca" href="#">International</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="step3">
+<div class="agegate_language selected">
+<h2><span>01</span>Your language </h2>
+<ul>
+<li>
+<a class="your-language" href="#">ENGLISH </a><div class="triangle-left"></div>
+</li>
+</ul>
+</div>
+<div class="agegate_country selected">
+<h2><span>02</span>Your country </h2>
+<ul>
+<li>
+<a id="your-country" href="#">USA </a><div class="triangle-left"></div>
+</li>
+</ul>
+</div>
+<form method="post" id="agegate_dob" action="/age_gate/check">
+<div class="agegate_dob selected">
+<h2><span>03</span>Your Date of Birth</h2>
+<ul>
+<li>
+<input class="month" type="text" name="month" value="MM" maxlength="2">
+<span class="separator">/</span>
+<input class="day" type="text" name="day" value="DD" maxlength="2">
+<span class="separator">/</span>
+<input class="year" type="text" name="year" value="YYYY" maxlength="4">
+</li>
+</ul>
+</div>
+<div id="agegate-submit" class="bevel-bg bevel-btn">
+<div class="overlay"></div>
+
+<p>Submit</p>
+<div class="bg"></div>
+</div>
+</form>
+</div>
+</div>
+<div id="age-gate-bg-preloader">
+<span class="bg-step2"></span>
+<span class="bg-step3"></span>
+</div>
+<div class="hidden" id="analytics_help">
+<span class="sectionName">Age Gate</span>
+</div>
+<div id="footer">
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'87c38ca15efd27c0',t:'MTcxNDQzODM0OS40MzgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

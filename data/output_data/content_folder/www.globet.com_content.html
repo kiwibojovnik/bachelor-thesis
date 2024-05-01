@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Globet.com</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+*{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+img{
+	max-width: 100%;
+}
+.container{
+	height: 100vh;
+	width: 100%;
+	background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image:url(globetbg.jpg);
+	background-size: cover;
+	background-position: 50% 0%;
+	/*overflow: hidden;*/
+}
+.wrapper{
+	width: 100%;
+    height: 100%;
+	opacity: 0.9;
+	background: linear-gradient(-55deg, transparent 25%, #16181E 25%, #16181E 75%, transparent 75%, transparent 100%);
+	/*background: linear-gradient(-210deg, transparent 0%, #16181E 0%, #16181E 70%, transparent 50%, transparent 100%);*/
+	transition: all 0.5s cubic-bezier(0.67, 0, 0.3, 1) 1s;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+}
+.content{
+	/*transform:rotate(50deg);*/
+	padding: 1rem;
+	color:rgba(255,255,255,1);
+}
+.content h2 {
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0px;
+    font-style: italic;
+    text-transform: uppercase;
+	text-align:center;
+}
+.content h1{
+font-size: 2.7rem;
+color: rgba(255,255,255,1);
+text-transform: uppercase;
+font-weight: bold;
+padding: 0px;
+margin: 0px;
+}
+.content p{
+	font-size: 1.2rem;
+color: rgba(255,255,255,1);
+font-weight: bold;
+font-style: italic;
+margin-bottom:30px;
+}
+.content a{
+	color:rgba(255,255,255,1);
+	display: inline-block;
+	padding: 2.1% 4%;
+    overflow: hidden;
+    border-radius: 0;
+    text-decoration: none;
+    
+}
+.btn1{
+	border: 1px solid rgba(255,255,255,1);;
+	transition: .2s ease-in-out;
+}
+.btn1:hover{
+	border: 1px solid rgba(255,255,255,1);;
+	background-color:rgba(255,255,255,1);;
+	color: black;
+	transition: .2s ease-in-out;
+}
+.btn2{
+	margin-left: 3%;
+    background: linear-gradient(to right, #252AFF 0%, #25FFED 100%);
+    border-image: linear-gradient(to bottom right, #f7b733, #fc4a1a);
+	background: #fc4a1a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	border-image-slice: 1;
+	border-width: 1px;
+    border-style: solid;
+    transition: .2s ease-in-out
+}
+.btn2:hover{
+	background: none;
+	border-image: linear-gradient(to bottom right, #f7b733, #fc4a1a);
+	border-image-slice: 1;
+	border-width: 1px;
+    border-style: solid;
+    transition: .2s ease-in-out
+}
+li {
+    width: 33%;
+	display: block;
+text-align: center;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.1rem;
+}
+li img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 32px;
+    margin-bottom: 10px;
+	
+}
+.hex:hover {
+
+    max-width: 360px !important;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+
+}
+.hex1{
+    top: 10px;
+    right: 10px;
+	}
+.hex2 {
+
+    left: 70px;
+    bottom: 20px;
+    max-width: 250px!important;
+
+}
+.hex3 {
+    left: 120px;
+    top: 150px;
+    max-width: 250px!important;
+}
+	.hex {   -webkit-transition: 0.2s;
+    transition: 0.2s;
+    position: absolute;
+    max-width: 300px;
+}
+ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+	margin-left:-40px;
+margin-top: 40px;
+font-size: 1.3rem;
+font-weight: 800;
+}
+@media screen and (max-width: 768px){
+ul li img{
+max-width:32px!important;}
+.hex1, .hex2,.hex3{
+max-width:100px!important;
+}
+.hex1{
+top:100px;}
+.hex3{
+bottom:50px;
+top:auto;
+left:auto;
+right:10px;}
+img{max-width:100%!important;}
+	.content{
+		/*transform:rotate(50deg);*/
+		padding: 1rem 1.4rem;
+	}
+	.content h1{
+		font-size: 1.5rem;
+text-align: center;
+	}
+	.wrapper{
+		background: linear-gradient(-210deg, transparent 0%, #16181E 0%, #16181E 70%, transparent 50%, transparent 100%);
+		transition: all 0.5s cubic-bezier(0.67, 0, 0.3, 1) 1s;
+		display: flex;
+		justify-content:center;
+		align-items:flex-start;
+		text-align: left;
+	}
+	.content a{
+	margin: auto auto;
+display: block;
+max-width: 140px;
+text-align: center;}
+}
+
+@media screen and (min-width: 356px) and (max-width: 768px){
+	.content{
+		/*transform:rotate(50deg);*/
+		padding: 1rem 1.4rem;
+	}
+	.wrapper{
+		background: linear-gradient(-210deg, transparent 0%, #16181E 0%, #16181E 70%, transparent 50%, transparent 100%);
+		transition: all 0.5s cubic-bezier(0.67, 0, 0.3, 1) 1s;
+		display: flex;
+		justify-content:center;
+		align-items:flex-start;
+		text-align: left;
+	}
+}
+
+@-webkit-keyframes spinning-circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes spinning-circle-x {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.wrapper{
+overflow: hidden;
+
+position: relative;
+}
+.hex{
+
+-webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; transition: all 0.5s linear;
+animation-name: spinning-circle-x;
+animation-timing-function: ease-in-out;
+-webkit-animation-timing-function: ease-in-out;
+animation-duration: 5s;
+
+animation-iteration-count: 1;
+}
+.hexmaster{
+-webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; transition: all 0.5s linear;
+animation-name: spinning-circle;
+animation-timing-function: ease-in-out;
+-webkit-animation-timing-function: ease-in-out;
+animation-duration: 5s;
+animation-iteration-count: 1;
+
+width: 100%;
+
+height: 100%;
+
+position: absolute;
+  }
+  .content{z-index:2;}
+</style>
+<body>
+<div class="container">
+			<div class="wrapper">
+			<div class="hexmaster">
+							<div class="hex hex1"><img src="hex1.png"/></div>
+				<div class="hex hex2"><img src="hex2.png"/></div>
+				<div class="hex hex3"><img src="hex3.png"/></div>
+				</div>
+				<div class="content">
+
+				<img style="max-width:400px;" src="globet800.png"/>
+					<h1>TRUST THE FIRST</h1>
+					<h2>The ultimate sportsbook will return</h2>
+					<ul>
+					<li><img src="checked.png"/>Better Odds</li>
+					<li><img src="checked.png"/>Biggest Jackpots</li>
+					<li><img src="checked.png"/>Huge Bonuses</li>
+					</ul>
+									<img style="max-width:500px;" src="globetfeatures1000.png"/>
+
+					<!-- <a href="#" class="btn1">Subscribe</a> -->
+					<a href="/" class="btn2">COMING SOON</a>
+
+				</div> <!-- content ends -->
+			</div> <!-- wrapper ends -->
+		</div> <!-- container ends -->
+		
+
+</body>
+
+<!-- Default Statcounter code for Globet.com
+https://globet.com/ -->
+<script type="text/javascript">
+var sc_project=12161301; 
+var sc_invisible=1; 
+var sc_security="75a32bb4"; 
+var sc_https=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="free hit
+counter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12161301/0/75a32bb4/1/"
+alt="free hit counter"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+</html>

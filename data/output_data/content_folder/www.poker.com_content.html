@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8" />
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+
+<style>
+</style>
+
+<style>  
+
+      /**
+@import url('//fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+**/
+* {
+    --bg-brand: #d22749;
+    --text-white: #fff;
+}
+.pink {color:#d22749;}
+
+body {
+    background: black;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    font-display: swap;
+    
+}
+
+.article {
+  padding: 1em;
+  background: #fff;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 20px 20px rgba(0, 0, 0, 0.05);
+}
+ /** https://css-tricks.com/responsive-grid-magazine-layout-in-just-20-lines-of-css/ **/
+    .archive {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 32px;
+      grid-auto-flow: dense;
+    }
+ 
+
+  .archive-players {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 32px;
+      grid-auto-flow: dense;
+    }
+ 
+
+
+    /* Single column display for phones */
+    @media (max-width: 459px) {
+      .archive {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    
+
+
+.newslettersection p {color:white !important; }
+.full-width {
+    width: 100%;
+}
+
+#vegasbaby {
+ 
+    /**background: #1f2426;**/
+    background: url('/assets/pokerbg_dark.webp');
+    background-repeat: repeat;
+    
+    min-height:200px;
+    padding-top:30px;
+
+}
+#vegasbaby a {color:black; border-bottom:2px solid #ccc;}
+#vegasbaby h4 {color:#d22749}
+.intro_section_header_long {display:none;min-height:100px;margin-bottom:1rem;}
+.intro_section_header_square {width:100px;height:100px}
+
+#vegasbaby .media-left, .media>.pull-left {
+    padding-right: 10px;
+}
+
+#vegasbaby .bp {
+    color:black;margin-bottom:1.5rem;    
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0px 8px 6px rgba(0, 0, 0, 0.1);
+    padding:15px;
+}
+
+
+#vegasbaby .media-left {width: 100px;    text-align: center;}
+#vegasbaby .alert {padding:0;}
+#vegasbaby .alert-block { }
+#vegasbaby .bp h2 {color:#d22749;}
+#vegasbaby h4 {font-size: 1.3rem;margin-bottom:0.5rem;}
+#vegasbaby .alert {margin-bottom:0;}
+#upcoming_tourneys .nav-link {   padding: .5rem 0.3rem;}
+#upcoming_tourneys p {font-size:1rem;}
+#upcoming_tourneys h2 {color:#d22749;font-size:1.2rem;margin-bottom:5px}
+#upcoming_tourneys .tab-pane {padding: 10px;    border: 1px solid #ccc;}
+#upcoming_tourneys .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {border: 1px solid #ccc;}
+#upcoming_tourneys .currentservertime {font-size: 0.6rem}
+
+a.whitetext {color:white;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    color:white;
+}
+
+.popular-poker h4 a:hover {color: #d22749;}
+.hpfaqsection .card-body .card-text p {color:black !important;}
+
+a {color:#d22749;}
+#welcome .media {    margin-bottom: 2rem;}
+#blurbrow {align-items: center;display: flex;-webkit-box-align: start; padding: 0.5rem 0.875rem; border-radius: 0.5rem;}
+#blurbtitle {    line-height: 3rem;font-size: 1.2rem;font-weight: bold;color: #bd1c33;}    
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-star {
+    color: #f6a841;
+    /**font-size: 14px;**/
+}
+.mystar {color: inherit;}
+.welcomeheader {color:#d22749;text-align: center;margin-bottom: 15px;font-size: 1.1rem}
+.myicon {font-size: 4rem; }
+.onetwothree {min-height:128px}
+.roomheading {display: inline}
+.playnowtop img {max-width: 150px}
+h5.latestnewsheader {color:black;}
+.newslettersection {background: #11162b; margin-top: 1.5rem}
+.btn {
+    font-size: 0.875rem;
+}
+
+.btn-md {
+    font-size: 1rem;
+    padding: 0.425rem 1.875rem;
+}
+
+.btn-lg {
+    font-size: 1rem;
+}
+
+.btn-brand,
+.btn-brand:focus,
+.btn-brand:hover {
+    background: var(--bg-brand);
+    border-color: var(--bg-brand);
+    color: var(--text-white);
+}
+
+.btn-brand-inverse,
+.btn-brand-inverse:focus,
+.btn-brand-inverse:hover {
+    background: var(--text-white);
+    border: 1px solid var(--bg-brand);
+    color: var(--bg-brand);
+    font-weight: 500;
+}
+.topcont {padding-top: 10px;}
+
+.bg-brand {
+    background: #000;
+}
+
+.text-brand {
+    color: var(--bg-brand);
+}
+
+.text-white {
+    color: var(--text-white);
+}
+
+.bg-white {
+    background: #fff;
+}
+
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Bullet Points CSS Start */
+
+.bullets {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 100vw;
+    padding: 10px 0;
+}
+
+.bullets>div {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  /**  background: #000; **/
+}
+
+.bullets h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.bullets>div span {
+    color: var(--bg-brand);
+    font-size: 4rem;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+
+/*******************
+        EOF
+*******************/
+
+.overlay-text span {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    width: 100%;
+    display: block;
+}
+
+.overlay-text span:not(:first-child) {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+
+/* Latest Nes Box CSS */
+
+.latest-news {
+    font-family: 'Exo 2', sans-serif;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0px 8px 6px rgba(0, 0, 0, 0.1);
+}
+
+.latest-news .cc-head {
+    padding: 20px;
+}
+
+.latest-news .cc-head h5 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.latest-news .cc-head i {
+    padding-right: 15px;
+}
+
+.latest-news .cc-head p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.latest-news .cc-banner {
+   
+    background: url('/images/latest-news-banner.png') no-repeat;
+    background-position: -100px -132px;
+    background-size: auto auto;
+    min-height: 350px;
+    height: 100%;
+    padding: 1.5rem;
+    color: #fff;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+
+.latest-news .cc-banner .cc-bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.latest-news .cc-banner h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.latest-news .cc-banner p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.latest-news .cc-footer {
+    line-height: normal;
+}
+
+.latest-news .cc-footer ul {
+    flex-wrap: nowrap;
+    border-bottom: none;
+}
+
+.latest-news .cc-footer ul li {
+    border-right: 1px solid #585d71;
+}
+
+.latest-news .cc-footer ul li:last-child {
+    border-right: none;
+}
+
+.latest-news .cc-footer ul li a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    padding: 15px 15px 40px 20px;
+    border: none;
+    border-top: 10px solid #585d71;
+    border-radius: 0;
+}
+
+.latest-news .cc-footer ul li a.active {
+    border-top-color: #d22749;
+}
+
+.latest-news .cc-footer ul li a:hover {
+    border-top-color: #d22749;
+}
+
+.latest-news .cc-footer div {
+    padding: 0.75rem 0.875rem;
+    font-weight: 500;
+}
+
+.latest-news .cc-footer div:nth-child(2) {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+
+/*********************
+        EOF
+*********************/
+
+
+/* Newsletter CSS */
+
+.news-letter-section h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.news-letter-section p {font-style: italic}
+.news-letter-section .btn {
+    height: 40px;
+}
+
+.form-group input,
+.form-group input:focus {
+    color: var(--text-white);
+    border: 2px solid var(--text-white);
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 24px 20px !important;
+}
+
+.form-group input[placeholder=""] {
+    color: rgba(255, 255, 255, 0.875);
+}
+
+.form-group {
+    margin: 0 0.5rem;
+}
+
+
+/*********************
+        EOF
+*********************/
+
+
+/* Featured Section CSS */
+
+.featured-poker {}
+.mostpopular {color:white;}
+.featured-poker h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.card {margin:auto;}
+.card-carousel {
+    border-radius: 2rem;
+}
+
+.card-carousel .carousel-indicators {
+    bottom: -2rem;
+}
+
+.card-carousel .carousel-indicators li {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0;
+    border-radius: 50%;
+    background: #333;
+}
+
+.card-carousel .carousel-item {
+    border-radius: 15px;
+    height: 23.7rem;
+    overflow: hidden;
+}
+
+.card-carousel .carousel-item img {
+    height: 100%;
+}
+
+.card-carousel .carousel-item h5 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 10px 5px;
+}
+
+.card-carousel .carousel-item h6 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 5px;
+}
+
+.bet-image {
+    /*width: 100%;*/
+}
+
+.card-carousel .carousel-caption {
+    padding-top:20%;
+    text-align: left;
+    left: 25px;
+    right: auto;
+    bottom: 0.25rem;
+    top: 0;
+}
+
+
+/*********************
+        EOF
+*********************/
+
+
+/* Featured Section CSS */
+
+.popular-poker { }
+.popular-poker h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.popular-poker small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#pokertourneysheader h4  {  font-size:2.8rem;}
+
+/*********************
+        EOF
+*********************/
+
+.media-list li {
+    align-items: center;
+    padding: 0.5rem 0.875rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
+    min-height:64px;
+    background: #ced1dd;
+}
+
+.media-list li+li {
+    margin-top: 0.75rem;
+}
+
+.media-list img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.media-list h4 {
+    font-size: 1rem;
+}
+.media-list h4   {color:black;}
+.media-list p {
+    font-size: 0.875rem;
+}
+
+.media-list span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--bg-brand);
+}
+
+.img-card {
+    border-radius: 2rem;
+}
+
+.card-img-top {
+    /** height: 360px; **/
+}
+ 
+
+  
+
+/*********************
+        EOF
+*********************/
+
+.masonry {
+    flex-flow: column wrap;
+    max-height: 850px;
+    /*max-width: calc(100% + 30px);*/
+    overflow: hidden;
+}
+
+.masonry-brick {
+    margin-bottom: 10px;
+}
+
+.masonry-brick h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 750;
+    margin-bottom: 0.875rem;
+    color:#d22749;
+}
+
+.masonry-brick p {
+    font-size: 1rem;
+}
+
+.masonry-brick img {
+   /**
+    max-width: 100%;
+    height: auto;
+    **/
+    border-radius: 15px;
+}
+
+.masonry-brick p img {
+    float: right;
+    margin-left: 8px;
+}
+
+.masonry-brick.lg img {
+    display: block;
+    margin-bottom: 0.5rem;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.more-articles {}
+
+.features-block {
+    justify-content: space-around;
+    border-radius: 1rem;
+    background: #000;
+    padding: 1.25rem 0.5rem 2.5rem;
+}
+
+.feature {
+    /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; */
+    max-width: 20%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+.feature h4 {
+    line-height: 1;
+    max-width: 58%;
+    font-size: 1.125rem;
+    color: #ffcc33;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 1rem 0 5rem;
+    color: #fff;
+    background: #000;
+}
+
+footer p {
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+}
+
+hr {
+   /**  border-color: #fff; **/
+}
+ 
+ .darkhr {color:black !important;}
+
+.features {
+   /**
+    padding: 20px;
+    background: #000000;
+    **/
+    border-radius: 15px;
+}
+
+.features ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.features ul li {
+    position: relative;
+    width: 20%;
+    height: 210px;
+    margin: 0 15px;
+    list-style: none;
+}
+
+.features li .ellipse {}
+
+.features li .feature-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*width: 269px;
+    height: 269px;*/
+    text-align: center;
+}
+
+.features li:last-child .feature-info {
+    top: 30%;
+}
+
+.feature-info img {
+    width: 100%;
+    margin-top:
+}
+
+.feature-info h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #ccab28;
+    text-transform: uppercase;
+    margin-top: -26px;
+}
+
+@media screen and (max-width: 1260px) {
+    
+    .features ul {
+        /* transform: scale(0.8);*/
+    }
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    #blurbtitle {    font-size: 1.0rem;}    
+}
+
+
+@media screen and (max-width: 1024px) {
+    .masonry {
+        max-height: 100%;
+    }
+    .masonry-brick {
+        max-width: 100%;
+    }
+    .bullets {
+        max-width: 100vw;
+    }
+    .steps ul li strong {
+        font-size: 36px;
+    }
+    .steps ul li span {
+        font-size: 20px;
+    }
+    .navbar-brand {
+        margin: 0 15px 0 0;
+    }
+    .banner-overlay {
+        padding: 4rem 0;
+    }
+    .bullets h3 {
+        font-size: 1.7rem;
+    }
+    .features ul {
+        /*transform: scale(0.7)*/
+    }
+
+    .featured-poker h4,  #pokertourneysheader h4{
+        font-size:1.2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    header {height: 230px;overflow: hidden;}
+    
+    .features {
+        padding: 0;
+    }
+    .features ul {
+        transform: scale(0.6);
+    }
+}
+
+@media screen and (max-width:991px) {
+ header {max-height: 230px;}
+    .card-carousel .carousel-item h5 {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin: 10px 5px;
+    }
+
+ .card-carousel .carousel-item h6 {
+        font-family: 'Exo 2', sans-serif;
+          font-size: 0.7rem;
+        font-weight: 700;
+        margin: 10px 5px;
+    }
+    .carousel-caption  img {max-width:50%;}
+    .card-carousel .carousel-caption {padding-top:0%;}
+    .dk-button {
+        display: none;
+    }
+    .mo-button {
+        display: block;
+    }
+    .play-now-btn {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .bg-tournament {
+        background-position-x: -550px;
+    }
+
+    .ann-icon {
+           max-width: 190px;
+     /**  width: 30% ;
+       margin: 20px;**/
+    }
+    .search-icon {
+        display: none;
+    }
+    .nav-container {
+        padding: 0;
+        text-align: center;
+    }
+    .nav-container .navbar-brand {
+        float: none;
+        margin: 0;
+    }
+    .nav-container .navbar-brand img {
+        height: 2.5rem;
+    }
+    .nav-container .toggle-btn {
+        float: left;
+    }
+    .nav-container .mobile-login-btn {
+        display: block;
+        float: right;
+        margin-top: 12px;
+    }
+    header .bg-brand {
+        height: 2.5rem;
+    }
+    .menu {
+        display: none;
+    }
+    .toggle-btn {
+        display: block;
+        margin: 15px 0 0 0;
+        float: right;
+    }
+    .banner-overlay {
+       /** display: block !important;
+        padding: 1rem;
+        **/
+        align-items: center;
+        justify-content: center;
+    }
+    .overlay-text span {
+        font-size: 1.5rem;
+    }
+    .overlay-text span:not(:first-child) {
+        font-size: 32px;
+    }
+    ..bullets {
+        display: block !important;
+    }
+    .bullets h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 24px !important;
+    }
+    .bullets>div span {
+        font-size: 1.5rem;
+    }
+    .banner-overlay img {
+        /*height: 8rem;*/
+        /**width: 50%;**/
+    }
+    .masonry {
+        max-height: 100%;
+        margin: 0;
+    }
+    .card-carousel .carousel-item {
+        height: 15rem;
+    }
+    .card-carousel {
+        margin-bottom: 2rem;
+    }
+   
+    .img-sm {
+        height: 3rem;
+    }
+    .latest-news .cc-footer {
+        flex-direction: column;
+    }
+    .latest-news .cc-footer div+div {
+        border-top: 1px solid #ccc;
+    }
+    .feature {
+        max-width: 50%;
+        width: 100%;
+        text-align: center;
+    }
+    .steps ul li strong {
+        font-size: 60px;
+    }
+    .steps ul li span {
+        font-size: 28px;
+    }
+    .card-carousel .carousel-item img {
+        height: auto;
+    }
+    .media-list img {
+   /**    width: 5rem;
+        height: 5rem;
+        **/
+    }
+    .media-body {
+        /** margin-left: 20%; **/
+    }
+
+    .form-group img {
+        margin-top: 10px;
+    }
+    .features {
+        padding: 40px 0 20px;
+    }
+    .features ul {
+        flex-wrap: wrap;
+        transform: scale(1);
+    }
+    .features ul li {
+        width: calc(50% - 30px);
+    }
+    .features li .feature-info {
+        left: calc(50% - 65px);
+    }
+    .features li:last-child .feature-info {
+        position: relative;
+        left: 0;
+    }
+    .features li:last-child .feature-info img {
+        width: auto;
+    }
+
+    .featured-poker h4 {font-size:1.0rem !important;}
+    .media-list p {font-size:small;}
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    .roomheading {display: block !important}
+
+    .card-carousel .carousel-caption {padding-top:0%;}
+     header {max-height: 230px;}
+    .popular-poker small {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        
+    }
+
+    .featured-poker h4 {font-size:1.0rem !important;}
+    .media-list p {font-size:small;}
+
+    .bg-tournament h4 {line-height:54px;}
+    .dk-button {
+        display: none;
+    }
+    .mo-button {
+        display: block;
+    }
+    .play-now-btn {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .ann-icon {
+    /**    width: 40% ;
+        margin: 10px; **/
+        max-width: 190px;
+    }
+    .nav-container {
+        padding: 0;
+        text-align: center;
+    }
+    .nav-container .navbar-brand {
+        float: none;
+        margin: 0;
+    }
+    .nav-container .navbar-brand img {
+        height: 2.5rem;
+    }
+    .nav-container .toggle-btn {
+        float: left;
+    }
+    .nav-container .mobile-login-btn {
+        display: block;
+        float: right;
+        margin-top: 12px;
+    }
+    .features-block {
+        justify-content: center;
+    }
+    .feature {
+        max-width: 100%;
+        /*width: 100%;*/
+        width: 50%;
+    }
+    .feature img {
+        display: block;
+        margin: 0 auto;
+    }
+    .bullets>div {
+        padding: 0.2rem 0.5rem;
+    }
+    .bullets h3 {
+        font-size: 0.975rem;
+    }
+    /*.form-group {
+        margin: 0 0 0.5rem;
+        width: 100%;
+        text-align: center;
+    }*/
+    .form-group {
+        width: calc(33% - 10px);
+        text-align: center;
+        margin: 0 5px;
+    }
+    .sm-wrap {
+        flex-wrap: wrap;
+    }
+    .sm-wrap img {
+        margin: 0;
+    }
+    .card-carousel .carousel-item img {
+        height: auto;
+    }
+    .media-list img {
+        width: 5rem;
+        height: 5rem;
+    }
+    .media-body {
+        /** margin-left: 20%; **/
+    }
+    .features {
+        padding: 40px 0 20px;
+    }
+    .features ul {
+        flex-wrap: wrap;
+        transform: scale(1);
+    }
+    .features ul li {
+        width: calc(50% - 30px);
+    }
+    .features li .feature-info {
+        left: calc(50% - 65px);
+    }
+    .features li:last-child .feature-info {
+        position: relative;
+        left: 0;
+    }
+    .features li:last-child .feature-info img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 667px) 
+{
+    .roomheading {display: block !important}
+    .features ul li {
+        width: 100%;
+    }
+    .features li .feature-info {
+        left: calc(50% - 65px);
+    }
+    .features li:last-child .feature-info {
+        position: relative;
+        left: 0;
+    }
+    .features li:last-child .feature-info img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 640px) 
+{
+
+     .roomheading {display: block !important}
+
+    .card-carousel .carousel-caption {padding-top:0%;}
+    .form-group {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .media-body {
+     /** margin-left: 15%; **/
+    }
+    .features ul li {
+        width: 100%;
+    }
+    .features li .feature-info {
+        left: calc(50% - 65px);
+    }
+    .features li:last-child .feature-info {
+        position: relative;
+        left: 0;
+    }
+    .features li:last-child .feature-info img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 580px) 
+{
+    .card-carousel .carousel-caption {padding-top:0%;}
+    .form-group {
+        margin: 0 0 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .media-body {
+        margin-left: 0%;
+    }
+      .newslettersection p {    font-size: 1.0rem;    text-align: center;}
+}
+
+@media screen and (max-width: 470px) {
+    .card-carousel .carousel-caption {padding-top:0%;}
+   
+    .latest-news .cc-banner {
+        background-position: auto auto !important;
+    }
+}
+
+
+ 
+
+
+.featured-carousel-desktop,
+{
+    position: relative;
+    border-bottom: 2px solid #1f2426;
+    margin: 0;
+}
+
+.featured-carousel {
+    width: 100%;
+    height: 380px;
+    background-color: #1f2426;
+    border-radius: 3px
+}
+ 
+.featured-carousel__slide {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    min-height: 380px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    /**background-position: 100%**/
+    padding:10px;
+}
+ 
+.featured-carousel__slide:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .25
+}
+
+
+.featured-carousel__content {
+    max-width: 380px; 
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+    margin-right: 18px
+}
+
+.featured-carousel__dot {
+    padding: 0 3px;
+    font-size: 14px
+}
+
+.featured-carousel__header {
+    margin: 12px 0
+}
+
+.featured-carousel__header a,
+.featured-carousel__header a:active,
+.featured-carousel__header a:focus,
+.featured-carousel__header a:hover {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .4)
+}
+
+.featured-carousel__header a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.4);
+}
+
+
+.featured-carousel__excerpt,
+.featured-carousel__excerpt-read-more {
+    color: white;
+    /**
+    font-family: Lato Regular;
+    font-size: 14px;**/
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    
+    line-height: 1.43;
+    
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
+    margin-bottom: 18px
+}
+
+.featured-carousel__excerpt-read-more a,
+.featured-carousel__excerpt a {
+    font-family: Lato Regular
+}
+
+@media only screen and (max-width:767px) {
+    .featured-carousel__excerpt,
+    .featured-carousel__excerpt-read-more {
+       /** font-size: 12px;
+        line-height: 1.83**/
+    }
+}
+
+.featured-carousel__excerpt-read-more {
+    color: #d72429;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .4)
+}
+
+.featured-carousel__meta {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: Lato Bold;
+    font-weight: 700;
+    color: #fff
+}
+
+.featured-carousel__meta span {
+    display: inline-block
+}
+
+.featured-carousel__meta a {
+    font-family: Lato Bold;
+    padding: 0 2px
+}
+
+.featured-carousel__meta a:last-of-type {
+    padding-right: 0;
+    margin-right: 6px
+}
+
+.featured-carousel__meta a:hover {
+    color: #d72429
+}
+ 
+@media (max-width:767px) {
+    .featured-carousel {
+        margin-top: 24px
+    }
+    .featured-carousel__content {
+        bottom: 36px;
+        left: 18px
+    }
+  
+    .featured-carousel__meta>span>span {
+        display: block
+    }
+    
+   
+}
+.large_img_features {margin-bottom:20px;}
+.small_img_features {width:185px;height:125px;}
+
+div#submitNewsletterForm input {
+  background: url("/images/signup-newsletter.png") no-repeat scroll 0 0 transparent;
+  color: #000000;
+  cursor: pointer;
+  font-weight: bold;
+  height: 53px;
+  padding-bottom: 2px;
+  width: 233px;
+}
+
+ 
+@media (max-width:767px) {
+    .featured-carousel__slide {
+        background-position: center !important;
+    }
+    .featured-carousel__slide:before {
+        opacity: .35
+    }
+
+    h3.carousel__header {font-size: 1.3rem}
+    .featured-carousel__content {max-width: 100%}
+} 
+
+.featured-carousel__excerpt-read-more a,
+.featured-carousel__excerpt a {
+    font-family: Lato Regular
+}
+
+
+.featured-carousel__excerpt-read-more {
+    color: #d72429;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .4)
+}
+ 
+.featured-carousel__indicators {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 32px;
+    margin-bottom: 3px
+}
+
+.featured-carousel__indicator-wrapper {
+    position: relative;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    border-bottom: 1px solid #e3e7e8;
+    border-right: 1px solid #e3e7e8
+}
+
+.featured-carousel__indicator-wrapper:hover {
+    cursor: pointer
+}
+
+.featured-carousel__indicator-wrapper:last-of-type {
+    border-right: none
+}
+
+.featured-carousel__indicator-wrapper:last-of-type .featured-carousel__indicator-upper {
+    border-radius: 0 0 3px 0
+}
+
+.featured-carousel__indicator-wrapper:first-of-type {
+    border-left: none
+}
+
+.featured-carousel__indicator-wrapper:first-of-type .featured-carousel__indicator-upper {
+    border-radius: 0 0 0 3px
+}
+
+.featured-carousel__indicator-upper {
+    background-color: rgba(232, 242, 251, .2);
+    height: 12px;
+    width: 50px;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    transition: all .4s cubic-bezier(.455, .03, .515, .955)
+}
+
+.featured-carousel__indicator-upper--active {
+    background-color: #d22749;
+}
+
+.featured-carousel__indicator-lower {
+    color: #d22749;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    padding: 15px 15px 10px 20px;
+    border: none;
+    border-radius: 0;
+    transition: all .4s cubic-bezier(.455, .03, .515, .955)
+}
+
+.featured-carousel__indicator-lower--active {
+    color:  #d22749;
+}
+
+
+
+@media (max-width:1500px) {
+    .featured-carousel__slide {
+       background-position: center !important;
+       
+    }
+   
+}
+
+
+@media (max-width:1000px) {
+    .featured-carousel__slide {
+           background-position: center !important;
+   
+    }
+   .featured-carousel__indicator-lower  {font-size:1rem;}
+}
+
+
+@media (max-width:960px) {
+    .featured-carousel__slide {
+        
+        background-position-x: -650px;
+    }
+   
+}
+ 
+
+
+@media (max-width:767px) 
+{
+
+      .featured-carousel__slide {
+        
+        background-position-x: -380px;
+    }
+    .featured-carousel__slide:before {
+        opacity: .35
+    }
+
+    .featured-carousel {
+        margin-top: 24px
+    }
+    .featured-carousel__content {
+        bottom: 36px;
+        left: 18px
+    }
+    .featured-carousel__indicator-wrapper {
+        border-bottom: none;
+        border-right-width: 2px;
+        border-left-width: 2px
+    }
+    .featured-carousel__meta>span>span {
+        display: block
+    }
+    .featured-carousel__indicator-upper {
+        transition: all .2s cubic-bezier(.455, .03, .515, .955);
+        transition-timing-function: ease
+    }
+    .featured-carousel__indicator-lower {
+        display: none
+    }
+
+}
+
+
+@media (max-width:600px) {
+    .featured-carousel__slide {
+        
+        background-position-x: -80%;
+    }
+    .intro_section_header_square {display:none;}
+    .intro_section_header_long {display:inline-block}
+    #vegasbaby .media-left  {margin:auto;}
+    #vegasbaby .media-left img {}
+    #vegasbaby .media {flex-direction: column;}
+    #vegasbaby {padding-top:0}
+    #vegasbaby .bp {:none;border-radius: 0 }
+}
+
+     
+
+
+  /**
+        .featured-carousel {
+            
+            width: 100%;
+            height: 380px;
+            background-color: #1f2426;
+            border-radius: 3px;
+        }
+
+
+        .featured-carousel h3 a {
+           color:white;
+        }
+
+
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+
+
+        .card {
+            position: relative;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: rgb(255,255,255);
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.121569);
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem
+        }
+
+        .card-body {
+            -webkit-box-flex: 1;
+            padding: 1.25rem
+        }
+
+        .card-text:last-child {
+            margin-bottom: 0
+        }
+
+        .card-img-top {
+            width: 100%;
+            border-top-left-radius: calc(.25rem - 1px);
+            border-top-right-radius: calc(.25rem - 1px)
+        }
+
+        .media {
+            display: -webkit-box;
+            -webkit-box-align: start
+        }
+
+        .media-body {
+            -webkit-box-flex: 1
+        }
+
+        .d-flex {
+            display: -webkit-box!important
+        }
+
+        .flex-column {
+            -webkit-box-orient: vertical!important;
+            -webkit-box-direction: normal!important
+        }
+
+        .justify-content-start {
+            -webkit-box-pack: start!important
+        }
+
+        .justify-content-between {
+            -webkit-box-pack: justify!important
+        }
+
+        .align-items-center {
+            -webkit-box-align: center!important
+        }
+
+
+
+        .featured-carousel {
+            background:black;
+            width: 100%;
+            height: 380px;
+            background-color: #1f2426;
+            border-radius: 3px;
+        }
+
+        .featured-carousel__content {
+            position: absolute;
+            bottom: 48px;
+            left: 48px;
+            margin-right: 18px;
+             
+        }
+
+        .featured-carousel__content a {    color: #fff;    text-shadow: 0 1px 0 rgba(0, 0, 0, .4); font-size: 1.75rem;}
+        .featured-carousel__header {
+            margin: 12px 0;
+        }
+
+
+        .latest-news .cc-head h5 {
+            line-height: 1.2;
+        }
+
+        .featured-carousel__header {
+            margin: 12px 0;
+        }
+
+        .featured-carousel__header a {
+            font-size: 1.75rem;
+            color: white;
+        }
+
+        .latest-news {
+            font-family: 'Exo 2', sans-serif;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0px 8px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-carousel__slide {
+            min-height: 380px;
+            border: 1px solid #d22749;
+        }
+
+        .topcont {
+            padding-top: 10px;
+        }
+
+
+        .featured-carousel__indicator-upper {
+            background-color: rgba(232, 242, 251, .2);
+            height: 12px;
+            width: 50px;
+            position: absolute;
+            top: -12px;
+            left: 0;
+            width: 100%;
+            transition: all .4s cubic-bezier(.455, .03, .515, .955)
+        }
+
+        .featured-carousel__indicator-upper--active {
+            background-color: #d22749;
+        }
+
+        .featured-carousel__indicator-lower {
+            color: #d22749;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #000;
+            padding: 15px 15px 10px 20px;
+            border: none;
+            border-radius: 0;
+            transition: all .4s cubic-bezier(.455, .03, .515, .955)
+        }
+
+        .latest-news {
+        font-family: 'Exo 2', sans-serif;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0px 8px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .latest-news .cc-head {
+        padding: 20px;
+        }
+ **/
+</style>
+
+<link rel="stylesheet preload" id href="https://poker.com/wp-content/cache/autoptimize/autoptimize_single_a28e836bfa1632392663c50dc5030bcd.php?ver=1912399" type="text/css" media="all" />
+<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAANDQ0AHFxcQBPT08AjIyMAAsLCwAUFBQA0tLSAHNzcwDb29sAJiYmAOTk5AAvLy8A7e3tAMLCwgAEBAQA9vb2AMvLywD///8AqampALu7uwCQkJAAMTExAAYGBgD4+PgA1tbWAImJiQDx8fEAMzMzADw8PAD6+voApKSkAOHh4QABAQEANTU1AAoKCgD8/PwAPj4+ABMTEwDa2toA4+PjAOzs7ACNjY0AYmJiAAMDAwDBwcEAysrKAAwMDAD+/v4AUlJSAOXl5QCGhoYAurq6AFtbWwAwMDAA7u7uAPf39wDV1dUA3t7eAOfn5wAyMjIAxcXFAAcHBwCampoAzs7OABkZGQDX19cAtbW1ACsrKwDp6ekAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEhIQEwgdCjY8RBYrKhsSEhISEhIkCQMAAEQ9GyQSEhISEhISEhIbAQUgEhISEhISEhISOhQnEh8VEjIuKRISEhISLSMhLCoJOTQ+IQYOEhISN0EAAAAACAQ+AAAALygkEjQAAAAAAA8XAAAAAAA/CxJFIwAAAAAAAAAAAAAABx4SEjMAAAAAAAAAAAAAIh4SEhIYMQAAAAAAAAAAJkASEhISEjgCAAAAAAAADEISEhISEhISMBoAAAAAJTsSEhISEhISEhISMwAAFkUSEhISEhISEhISEh4cABESEhISEhISEhISEhISQzUSEhISEhISEhISEhISEg0ZEhISEhISEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108715619-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108715619-2');
+</script>
+
+<script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCF9ZCG');</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Poker.com</title>
+
+<meta name="description" content="The Poker Experts, We&#039;re &quot;All-In&quot; on Poker. Your #1 source for poker site reviews, news, pro strategy guides, tournament &amp; freeroll listings, &amp; promos" />
+<script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://poker.com/#organization","url":"https://poker.com/","name":"Poker.com","sameAs":["https://twitter.com/pokercom"],"logo":{"@type":"ImageObject","@id":"https://poker.com/#logo","url":"https://poker.com/wp-content/uploads/2020/06/pcom_square.png","caption":""},"image":{"@id":"https://poker.com/#logo"}},{"@type":"WebSite","@id":"https://poker.com/#website","url":"https://poker.com/","name":"Poker.com","publisher":{"@id":"https://poker.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://poker.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://poker.com#webpage","url":"https://poker.com","inLanguage":"en-US","name":"Poker.com","isPartOf":{"@id":"https://poker.com/#website"},"breadcrumb":{"@id":"https://poker.com#breadcrumblist"},"image":{"@type":"ImageObject","@id":"https://poker.com#primaryimage","url":"https://poker.com/wp-content/uploads/2020/05/legal-usa-poker-tracker.png","width":500,"height":281},"primaryImageOfPage":{"@id":"https://poker.com#primaryimage"},"datePublished":"2020-07-12T20:29:13+00:00","dateModified":"2020-09-29T15:26:36+00:00","about":{"@id":"https://poker.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://poker.com#breadcrumblist","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://poker.com/","url":"https://poker.com/","name":"Poker.com"}}]}]}</script>
+<link rel="canonical" href="https://poker.com/" />
+
+<link rel="dns-prefetch" href="//s.w.org" />
+<link rel="alternate" type="application/rss+xml" title="Poker.com &raquo; Feed" href="https://poker.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Poker.com &raquo; Comments Feed" href="https://poker.com/comments/feed/" />
+<link rel="stylesheet" id="child-understrap-styles-css" href="https://poker.com/wp-content/themes/understrap-child/css/child-theme.min.css?ver=5.5.14" media="all" />
+<link rel="stylesheet" id="lgc-unsemantic-grid-responsive-tablet-css" href="https://poker.com/wp-content/cache/autoptimize/autoptimize_single_d5d4027caaf9753c96cee53a3225f10e.php?ver=1.0" media="all" />
+<script src="https://poker.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp" id="jquery-core-js"></script>
+<link rel="https://api.w.org/" href="https://poker.com/wp-json/" /><link rel="alternate" type="application/json" href="https://poker.com/wp-json/wp/v2/pages/3318" /><link rel="alternate" type="application/json+oembed" href="https://poker.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpoker.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://poker.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpoker.com%2F&#038;format=xml" />
+<!--[if lt IE 9]>
+			<link rel="stylesheet" href="https://poker.com/wp-content/plugins/lightweight-grid-columns/css/ie.min.css" />
+		<![endif]-->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Poker.com - ">
+<script>
+	var clicky_custom = clicky_custom || {}; clicky_custom.outbound_pattern = ['/visit/'];
+
+	var clicky_site_ids = clicky_site_ids || [];
+	clicky_site_ids.push("101312251");
+</script>
+<script async src="//static.getclicky.com/js"></script><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript> <link rel="canonical" href="https://poker.com/" />
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://poker.com/wp-content/uploads/2020/05/legal-usa-poker-tracker.png" />
+<meta property="og:title" content="Poker.com" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="The Poker Experts, We&#039;re &quot;All-In&quot; on Poker. Your #1 source for poker site reviews, news, pro strategy guides, tournament &amp; freeroll listings, &amp; promos" />
+<meta property="og:url" content="https://poker.com/" />
+<meta property="article:author" content="Poker.com" />
+<meta property="fb:app_id" content />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pokercom" />
+<meta name="twitter:creator" content="@pokercom" />
+<meta name="twitter:title" content="Poker.com" />
+<meta name="twitter:description" content="The Poker Experts, We&#039;re &quot;All-In&quot; on Poker. Your #1 source for poker site reviews, news, pro strategy guides, tournament &amp; freeroll listings, &amp; promos" />
+<meta name="twitter:image" content="https://poker.com/wp-content/uploads/2020/05/legal-usa-poker-tracker.png" />
+
+
+<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                  "@type": "Question",
+                  "name": "What are the &quot;Button&quot; and the &quot;Blinds&quot; in Poker?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "&quot;Blinds&quot; are shorthand for “blind bets,” these are the compulsory bets which must be made by two players in a poker hand before any cards are dealt. In Texas hold'em, blinds replace the “ante.”  &lt;br/&gt;&lt;br/&gt;The Button is the name for the player in the seat before the small and big-blinds, who acts as the dealer in the current hand. The button moves around the table clockwise after each hand of poker.  More poker terms are explained in our &lt;a href=&quot;/poker-glossary/&quot;&gt;poker glossary&lt;/a&gt;."
+                  }
+                }
+        ,                {
+                  "@type": "Question",
+                  "name": "Where can I play free poker games?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A lot of online poker rooms offer &quot;freerolls&quot; which are free-to-enter poker tournaments with real prizes.. They generally pay out 10-15% of the field in cash, tournament tickets and other goodies.  The Poker.com &lt;a href=&quot;/online-poker-freerolls/&quot;&gt;freeroll tracker page&lt;/a&gt; lists upcoming freerolls from the top poker rooms worldwide, updated every 5 minutes. If you live in the USA, Australia or New-Zealand, check out the &lt;a href=&quot;https://poker.com/poker-industry-news/2500-freeroll-at-ignition-poker/&quot;&gt;$10,000 in monthly freerolls running at Ignition Poker&lt;/a&gt;."
+                  }
+                }
+        ,                {
+                  "@type": "Question",
+                  "name": "Can I play poker online using Bitcoin and other Cryptocurrency?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes- poker sites have been quick to embrace BTC for deposits and withdrawals because it cuts down on bank/transaction fees for their customers, as well as offering privacy benefits.  In fact some sites (such as &lt;a href=&quot;https://poker.com/poker-sites/ignition-poker/&quot;&gt;Ignition Poker&lt;/a&gt;) ONLY accept cryptocurrency. Getting started is as simple as registering on a crypto exchange, buying Bitcoin and transferring it to your poker site wallet.  &lt;a href=&quot;https://poker.com/bitcoin-poker/bitcoin-poker-guide/&quot;&gt;Read our BTC Poker Guide&lt;/a&gt;"
+                  }
+                }
+        ,                {
+                  "@type": "Question",
+                  "name": "What is a Poker Rakeback Deal?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Rakeback is a refund to players of a significant portion of the money taken by poker rooms in 'rake' from cash-pots on cash-games and from tournament fees in Multi-Table Tournaments (MTTs) and Sit and Go tournaments (SNGs). Rakeback deals vary, depending mostly on the stakes played, and volume  (of hands/tournaments) a player puts in over a week/month.   More rake taken by poker room generally equates to more rakeback for a player who has a good rakeback deal.  See our &lt;a href=&quot;/poker-rakeback/&quot;&gt;Poker Rakeback Offers&lt;/a&gt; page for more details."
+                  }
+                }
+        ,                {
+                  "@type": "Question",
+                  "name": "Where can I play video poker games?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Video poker is a simple affair - with the player battling against the computer in a draw poker game. Some of the top poker rooms we recommend have casino games on offer - including video poker (and a number of variants to keep things interesting, including deuces wild, jacks wild). See our &lt;a href=&quot;/video-poker/&quot;&gt;Video Poker&lt;/a&gt; page to see what's hot in video poker."
+                  }
+                }
+        ,                {
+                  "@type": "Question",
+                  "name": "Who is the Best Poker player in the World?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "That is a tricky question to answer. Cash game winnings online and live are difficult to track, as is profitability. Tournament wins on the other hand are well documented, and we have compiled a &quot;global money list&quot;, ranking players based on their tracked tournament winnings. Currently in 2020, the player with the most recorded live tournament cashes is &lt;a href=&quot;/player-profiles/bryn-kenney-profile-poker-career-earnings/&quot;&gt;Bryn Kenney&lt;/a&gt; with over $56,000,000 in tracked tournament cashes. View the &lt;a href=&quot;/money-lists/top-100-live-poker-players-by-winnings-worldwide/&quot;&gt;top 100 global poker players by tournament earnings&lt;/a&gt;."
+                  }
+                }
+        ,                {
+                  "@type": "Question",
+                  "name": "I Live in the U.S.A - Can I play live or online poker in my State?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Poker legislation in the United States differs from state to state. Poker is legal to play in many states, and there is talk of regulation in many more. Our USA poker guide dives in to the ins and outs of playing poker in the USA on a state by state level. &lt;a href=&quot;/features/usa-poker-legislation-by-state/&quot;&gt;USA Poker Guide&lt;/a&gt;"
+                  }
+                }
+        ,                {
+                  "@type": "Question",
+                  "name": "Are there poker tools, apps or trackers that can help me monitor and improve my poker game?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes- you can analyse your own plays and those of your opponents using equity calculators, tracking software and poker solvers. We have reviewed a number of essential pro poker tools on our &lt;a href=&quot;/poker-tools-apps-solvers-trackers/&quot;&gt;poker tools and apps&lt;/a&gt; page."
+                  }
+                }
+        
+     
+         ]
+        }
+        </script>
+</head>
+<body class="home page-template page-template-page-templates page-template-template-homepage3 page-template-page-templatestemplate-homepage3-php page page-id-3318 wp-embed-responsive no-webp-support">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCF9ZCG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="site" id="page">
+
+<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+<a class="skip-link sr-only sr-only-focusable" style="display:none" href="#content">Skip to content</a>
+<nav class="navbar navbar-expand-md navbar-dark" style="background:black">
+<div class="container">
+
+<h1><a class="navbar-brand" rel="home" href="/" title="Poker.com" itemprop="url"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="min-width:258px;max-height: 34px;z-index: 10" alt="Poker" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcoAAAA8CAYAAADmIPpsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFwmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMC0wNi0wM1QwNTo1MjowNSswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNi0wM1QwNTo1MjowNSswMjowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjAtMDYtMDNUMDU6NTI6MDUrMDI6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZTUwODc5MzgtYWUyMi1lNjRhLThkMWEtN2M2ODllMjJkMjlkIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6Y2U1ZGRlYTgtNzJhNy05NDQ0LTlmNzctODI3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"><noscript><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcoAAAA8CAYAAADmIPpsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFwmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMC0wNi0wM1QwNTo1MjowNSswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNi0wM1QwNTo1MjowNSswMjowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjAtMDYtMDNUMDU6NTI6MDUrMDI6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZTUwODc5MzgtYWUyMi1lNjRhLThkMWEtN2M2ODllMjJkMjlkIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6Y2U1ZGRlYTgtNzJhNy05NDQ0LTlmNzctODI3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"   style="min-width:258px;max-height: 34px;z-index: 10" alt="Poker"></noscript></a></h1>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div id="navbarNavDropdown" class="collapse navbar-collapse"><ul id="main-menu" class="navbar-nav ml-auto"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2639" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2639 nav-item"><a title="Online Poker" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-2639">Online Poker</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-2639" role="menu">
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2638 nav-item"><a title="Tournament Listings" href="https://poker.com/online-poker-tournaments/" class="dropdown-item">Tournament Listings</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3915 nav-item"><a title="Video Poker" href="https://poker.com/video-poker/" class="dropdown-item">Video Poker</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2128 nav-item"><a title="Poker Rakeback" href="https://poker.com/poker-rakeback/" class="dropdown-item">Poker Rakeback</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2108" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2108 nav-item"><a title="Bitcoin Poker" href="https://poker.com/bitcoin-poker/" class="dropdown-item">Bitcoin Poker</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3596 nav-item"><a title="Poker Freerolls" href="https://poker.com/online-poker-freerolls/" class="dropdown-item">Poker Freerolls</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2319 nav-item"><a title="USA Poker" href="https://poker.com/features/usa-poker-legislation-by-state/" class="dropdown-item">USA Poker</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-506 nav-item"><a title="Learn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-506">Learn</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-506" role="menu">
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2832" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2832 nav-item"><a title="Poker Strategy &amp; Pro Tips" href="https://poker.com/learn-poker/" class="dropdown-item">Poker Strategy &#038; Pro Tips</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3804 nav-item"><a title="Poker Tools" href="https://poker.com/poker-tools-apps-solvers-trackers/" class="dropdown-item">Poker Tools</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3391 nav-item"><a title="Poker Glossary" href="https://poker.com/poker-glossary/" class="dropdown-item">Poker Glossary</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2845" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2845 nav-item"><a title="Hand Rankings" href="/learn-poker/winning-poker-hands-poker-hand-rankings/" class="dropdown-item">Hand Rankings</a></li>
+</ul>
+</li>
+</ul></div> </div>
+</nav>
+</div>
+<style>
+ 
+ </style>
+<div class="wrapper" id="page-wrapper" style="padding:0; background:white;">
+<div class="container-fluid" id="vegasbaby" style="padding-left:0;padding-right:0;">
+<div class="container">
+<div class="bnr" class="rb" style="margin:auto;text-align: center;">
+
+</div>
+<div class="alert alert-block" style>
+<div class="row" style=" ">
+<div class="col bp" style="color:black;">
+
+
+
+<hr class="darkhr" />
+<div class="media">
+<div class="media-left media-middle">
+<img class="intro_section_header_square" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Online Poker Site Reviews" style="width:100px;height:100px" data-lazy-src="https://poker.com/assets/welcome/chipstacks_square.webp" /><noscript><img class="intro_section_header_square" src="https://poker.com/assets/welcome/chipstacks_square.webp" alt="Online Poker Site Reviews" style="width:100px;height:100px"/></noscript>
+
+</div>
+<div class="media-body">
+<h4 class="media-heading"><i class="mystar fa fa-star"></i> Poker Site Reviews</h4>
+<img class="intro_section_header_long" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Online Poker Site Reviews" style="width:900px;height:100px" data-lazy-src="https://poker.com/assets/welcome/chipstacks.webp" /><noscript><img class="intro_section_header_long" src="https://poker.com/assets/welcome/chipstacks.webp" alt="Online Poker Site Reviews" style="width:900px;height:100px"/></noscript>
+<p>Read our detailed poker site reviews to find out what the top rated poker sites are in terms of bonuses, <a href="/poker-rakeback/">rakeback</a>, <a href="/online-poker-tournaments/">tournaments</a>, cash-games, traffic, <a href="/online-poker-freerolls/">freerolls</a> &amp; more.</p>
+</div>
+</div>
+<hr class="darkhr" />
+<div class="media">
+<div class="media-left media-middle">
+<img class="intro_section_header_square" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Learn Poker Rules and Strategy" style data-lazy-src="https://poker.com/assets/welcome/learnpoker_square.webp" /><noscript><img class="intro_section_header_square" src="https://poker.com/assets/welcome/learnpoker_square.webp" alt="Learn Poker Rules and Strategy" style=""/></noscript>
+
+</div>
+<div class="media-body">
+<h4 class="media-heading"><i class="fa fa-graduation-cap"></i> Learn Poker</h4>
+<img class="intro_section_header_long" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Learn Poker Rules and Strategy" data-lazy-src="https://poker.com/assets/welcome/learnpoker.webp" /><noscript><img class="intro_section_header_long" src="https://poker.com/assets/welcome/learnpoker.webp" alt="Learn Poker Rules and Strategy" /></noscript>
+<p>Learn the basics of poker - from <a href="/learn-poker/winning-poker-hands-poker-hand-rankings/">poker hand rankings</a> and <a href="https://poker.com/learn-poker/nash-equilibrium-pushbot-charts-for-poker-tournaments/">pushbot charts</a> to advanced poker concepts with our <a href="#learn">professional poker guides</a> from some of the sharpest players and coaches in the poker industry. We also have a comprehensive <a href="/poker-glossary/">poker glossary</a> for your reference.</p>
+</div>
+</div>
+<hr class="darkhr" />
+<div class="media">
+<div class="media-left media-middle">
+<img class="intro_section_header_square" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker Events, News and Promotions" style="width:100px;height:100px" data-lazy-src="https://poker.com/assets/welcome/livetournaments_square.webp" /><noscript><img class="intro_section_header_square" src="https://poker.com/assets/welcome/livetournaments_square.webp" alt="Poker Events, News and Promotions" style="width:100px;height:100px"/></noscript>
+
+</div>
+<div class="media-body">
+<h4 class="media-heading"> <i class="fa fa-calendar"></i> Poker Events, News &amp; Promotions</h4>
+<img class="intro_section_header_long" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker Events, News and Promotions" style="width:900px;height:100px" data-lazy-src="https://poker.com/assets/welcome/livetournaments.webp" /><noscript><img class="intro_section_header_long" src="https://poker.com/assets/welcome/livetournaments.webp" alt="Poker Events, News and Promotions" style="width:900px;height:100px"/></noscript>
+<p>Stay up to date with upcoming <a href="/online-poker-tournaments/">online poker tournaments</a> &amp; <a href="/tournaments/">live poker tournaments</a>, boost your bankroll with the latest and greatest poker promotions &amp; offers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid" id="content" tabindex="-1" style="padding-left:0;padding-right:0;">
+<section class="container topcont hidden-xs_">
+<div class="d-flex flex-column latest-news">
+<div class="d-flex justify-content-between cc-head">
+<span class="text-capitalize latestnewsheader" style="color:black;font-size:1.3rem"> <img width="41px" height="44px" class="tour-icon" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2041%2044'%3E%3C/svg%3E" alt="Poker Features" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAKlBMVEVHcEzTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkgqX8utAAAADXRSTlMAIKrvEGDfcL/PRDCKE8GTYwAAAblJREFUOMu9VdtyxSAIRLzH+P+/W1AhmphO2zlTnxKz4rIsBOC/lokYagWoNWA030J9qm0xmFfy71hn6wqu4Q15HnDewR6O023I5poAwo0G7+QH9WJ7nBXc77LlFrextQ5Sxdi+HRHrKftLbJd7pAhu2jdOksgzb0ksN6UTMQ+pqTyC0B2Tvl0zdGDkHL8acNgVPBYekT/qqbEs1YTQNhJA4/JBg0TM19vy4BLdR0GkllTj1PJ6YBnNyuQmeUu6p+CGTu3+64l49zS6TLGOF1REKYrGEYxk5YWyaRU7KroEwQYO42AUsQuUwl6py4duQLFB0moVS8GlqukyjILlBsqIKRB60AoXYlpya6dLaL8BrWAjdJLIsAEJDafcwW1o9McyQNQAGY+CZAE/bigTeJUuqGVc2EiHa6XyAVRZ0wzxLIqW+7Kydjfbfim3UeNriVN6MxJn1lvhzaIlqUXJ2dwK54v5M3UXHEEHmev99N5Wy1Aamd8a9rwa1v91FIgd8SdDRlRjrafxhWMIW7MZjPEymnRE3AzGNnKtOk7AeT9yWWiduFe5qRV2w3wy4AS27jM/oN/92j65vgDOqiyfmHhvqwAAAABJRU5ErkJggg==" /><noscript><img width="41px" height="44px" class="tour-icon" src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAKlBMVEVHcEzTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkjTJkgqX8utAAAADXRSTlMAIKrvEGDfcL/PRDCKE8GTYwAAAblJREFUOMu9VdtyxSAIRLzH+P+/W1AhmphO2zlTnxKz4rIsBOC/lokYagWoNWA030J9qm0xmFfy71hn6wqu4Q15HnDewR6O023I5poAwo0G7+QH9WJ7nBXc77LlFrextQ5Sxdi+HRHrKftLbJd7pAhu2jdOksgzb0ksN6UTMQ+pqTyC0B2Tvl0zdGDkHL8acNgVPBYekT/qqbEs1YTQNhJA4/JBg0TM19vy4BLdR0GkllTj1PJ6YBnNyuQmeUu6p+CGTu3+64l49zS6TLGOF1REKYrGEYxk5YWyaRU7KroEwQYO42AUsQuUwl6py4duQLFB0moVS8GlqukyjILlBsqIKRB60AoXYlpya6dLaL8BrWAjdJLIsAEJDafcwW1o9McyQNQAGY+CZAE/bigTeJUuqGVc2EiHa6XyAVRZ0wzxLIqW+7Kydjfbfim3UeNriVN6MxJn1lvhzaIlqUXJ2dwK54v5M3UXHEEHmev99N5Wy1Aamd8a9rwa1v91FIgd8SdDRlRjrafxhWMIW7MZjPEymnRE3AzGNnKtOk7AeT9yWWiduFe5qRV2w3wy4AS27jM/oN/92j65vgDOqiyfmHhvqwAAAABJRU5ErkJggg==' alt="Poker Features"/></noscript> Features</span>
+</div>
+<div class="show-above-450px">
+<div class="featured-carousel-desktop">
+<div class="featured-carousel fc" style="overflow: hidden; direction: ltr;background-color: black;">
+<div class="featured-carousel__slide" data-bg-image="https://poker.com/wp-content/uploads/2020/09/poker-bad-beat-jackpot.webp" style="border:1px solid black;background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://poker.com/wp-content/uploads/2020/09/poker-bad-beat-jackpot.webp')">
+<div class="featured-carousel__content">
+<h3 class="featured-carousel__header"><a href="https://poker.com/features/poker-bad-beat-jackpots/">Poker Bad Beat Jackpots</a></h3>
+<p class="featured-carousel__excerpt">The Poker.com guide to poker bad-beat jackpots – including mechanics, triggers, qualifying hands – and where to play for $100,000+ jackpots!
+</p>
+
+</div>
+</div>
+<div class="featured-carousel__slide" data-bg-image="https://poker.com/wp-content/uploads/2020/06/wsop-satellites.webp" style="border:1px solid black;background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://poker.com/wp-content/uploads/2020/06/wsop-satellites.webp')">
+<div class="featured-carousel__content">
+<h3 class="featured-carousel__header"><a href="https://poker.com/learn-poker/pro-tips-to-win-wsop-satellite-tournaments-with-dara-o-kearney/">Pro Tips to Win Satellite Tournaments &#8211; With Dara O&#8217; Kearney</a></h3>
+<p class="featured-carousel__excerpt">Dara O' Kearney, poker pro, and author of "Satellite Poker Strategy" and "PKO Poker Strategy" gives expert tips and advice for players hoping to win WSOP seats via satellites
+</p>
+
+</div>
+</div>
+<div class="featured-carousel__slide" data-bg-image="https://poker.com/wp-content/uploads/2020/06/aces_webp.webp" style="border:1px solid black;background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://poker.com/wp-content/uploads/2020/06/aces_webp.webp')">
+<div class="featured-carousel__content">
+<h3 class="featured-carousel__header"><a href="https://poker.com/learn-poker/9-critical-reasons-why-youre-still-struggling-to-beat-small-stakes-poker-games/">9 Reasons You’re Struggling to Beat The Small Stakes</a></h3>
+<p class="featured-carousel__excerpt">Poker Crusher and Poker Author Nathan "Blackrain79" Williams identifies key adjustments players need make in order to beat small-stakes poker in 2020. </p>
+
+</div>
+</div>
+</div>
+<div class="featured-carousel__indicators">
+<div class="featured-carousel__indicator-wrapper" data-index="0">
+<div class="featured-carousel__indicator-upper featured-carousel__indicator-upper--active"></div>
+<div class="featured-carousel__indicator-lower featured-carousel__indicator-lower--active">
+<span class>Poker Bad Beat Jackpots </span>
+</div>
+</div>
+<div class="featured-carousel__indicator-wrapper" data-index="1">
+<div class="featured-carousel__indicator-upper "></div>
+<div class="featured-carousel__indicator-lower ">
+<span class>Pro Tips to Win Satellite Tournaments - With Dara O' Kearney </span>
+</div>
+</div>
+<div class="featured-carousel__indicator-wrapper" data-index="2">
+<div class="featured-carousel__indicator-upper "></div>
+<div class="featured-carousel__indicator-lower ">
+<span class>9 Reasons You’re Struggling to Beat The Small Stakes </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="news-letter-section newslettersection">
+<div class="container">
+<div class="d-flex flex-column align-items-center py-4">
+<h4 class="text-center text-white"><span class="pink">LEARN POKER:</span> Pro Poker Tips, News &amp; Offers Delivered to your Inbox Weekly</h4>
+<form class="d-flex flex-wrap justify-content-start justify-content-sm-center full-width" method="post" action="/?na=s" onsubmit="return newsletter_check(this)">
+<div class="form-group">
+<label for="nn" aria-label="nn" class="visuallyhidden">Name:</label>
+<input type="text" name="nn" id="nn" placeholder="Full Name" class="form-control" />
+</div>
+<div class="form-group">
+<label for="ne" aria-label="ne" class="visuallyhidden">Email Address:</label>
+<input type="text" name="ne" id="ne" placeholder="Email address" class="form-control" />
+</div>
+<div class="form-group" id="submitNewsletterForm">
+<input type="submit" value style="border:none;">
+</div>
+</form>
+</div>
+</div>
+</section>
+
+<section class="my-4">
+<div class="container">
+<div class="d-flex flex-wrap row">
+<div class="col col-md-12 col-lg-7   hidden-xs_" style="min-height:380px">
+<div class="d-flex flex-column align-items-center">
+<h4 class="mb-3 text-brand text-uppercase" style="font-size: 1rem; font-weight: 700;"> All Time Global Poker Money List</h4>
+
+</div>
+<div class="promobox" style>
+<a href="/money-lists/top-100-live-poker-players-by-winnings-worldwide/"><img class="img-responsive" style="width:100%; height:380px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Global All Time Poker Money List" data-lazy-src="https://poker.com/wp-content/uploads/2020/07/money-768x371-1.jpg" /><noscript><img class="img-responsive" style="width:100%; height:380px;" src="https://poker.com/wp-content/uploads/2020/07/money-768x371-1.jpg" alt="Global All Time Poker Money List"/></noscript></a>
+</div>
+<div id="blurbrow" style>
+<p><a href="/money-lists/top-100-live-poker-players-by-winnings-worldwide/">View the top 100 live tournament players in Global &#9655;</a></p>
+
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<section class="  my-4 news-letter-section newslettersection">
+<div class="container">
+<div class="d-flex flex-column align-items-center py-4">
+<h4 class="text-center text-white"><a name="pokernews" href="/poker-industry-news/">Poker News</a></h4>
+<p>The latest news, views &amp; gossip from the poker world</p>
+</div>
+</section>
+
+<section class="bg-white_ py-4">
+<div class="container">
+<div class="row_  archive">
+
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/poker-industry-news/dnegs-partypokers-rob-yong-more-on-the-orbit-ep-4/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="DNegs, PartyPoker&#8217;s Rob Yong &#038; More on The Orbit ep 4" data-lazy-src="https://poker.com/wp-content/uploads/2020/10/the_orbit-370x208.png"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/10/the_orbit-370x208.png" alt="DNegs, PartyPoker&#8217;s Rob Yong &#038; More on The Orbit ep 4"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/poker-industry-news/dnegs-partypokers-rob-yong-more-on-the-orbit-ep-4/">DNegs, PartyPoker&#8217;s Rob Yong &#038; More on The Orbit ep 4</a></p>
+</div>
+</div>
+</article>
+
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/poker-industry-news/poker-sites-to-combat-real-time-assistance-cheating-in-online-poker/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker Sites Combat Real-Time Assistance &#038; Cheating in Online Poker" data-lazy-src="https://poker.com/wp-content/uploads/2020/10/realtime-assistance-poker.webp"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/10/realtime-assistance-poker.webp" alt="Poker Sites Combat Real-Time Assistance &#038; Cheating in Online Poker"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/poker-industry-news/poker-sites-to-combat-real-time-assistance-cheating-in-online-poker/">Poker Sites Combat Real-Time Assistance &#038; Cheating in Online Poker</a></p>
+</div>
+</div>
+</article>
+
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/poker-industry-news/unibet-launches-e120-refer-a-friend-bonus/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Unibet Launches €120 Refer A Friend Program offering FREE Bonus Cash" data-lazy-src="https://poker.com/wp-content/uploads/2020/08/unibet-hexapro-370x208.png"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/08/unibet-hexapro-370x208.png" alt="Unibet Launches €120 Refer A Friend Program offering FREE Bonus Cash"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/poker-industry-news/unibet-launches-e120-refer-a-friend-bonus/">Unibet Launches €120 Refer A Friend Program offering FREE Bonus Cash</a></p>
+</div>
+</div>
+</article>
+
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/poker-industry-news/venetian-announces-first-vegas-live-tournament-series-since-covid/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Venetian Announces First Vegas Live MTT Series Since Covid" data-lazy-src="https://poker.com/wp-content/uploads/2020/08/venetian.webp"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/08/venetian.webp" alt="Venetian Announces First Vegas Live MTT Series Since Covid"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/poker-industry-news/venetian-announces-first-vegas-live-tournament-series-since-covid/">Venetian Announces First Vegas Live MTT Series Since Covid</a></p>
+</div>
+</div>
+</article>
+
+</div>
+</div>
+</div>
+</section>
+<section class="  my-4 news-letter-section newslettersection">
+<div class="container">
+<div class="d-flex flex-column align-items-center py-4">
+<h4 class="text-center text-white"><a name="learn" href="/learn-poker/">Poker Strategy &amp; Tips</a></h4>
+<p>Expert poker advice to improve your poker game - covering <acronym title="Sit and Go">SNG</acronym>'s, Cash Games &amp; Tournaments</p>
+</div>
+</div>
+</section>
+
+<section class="bg-white_ py-4">
+<div class="container">
+<div class="row_ archive ">
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/learn-poker/nash-equilibrium-pushbot-charts-for-poker-tournaments/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Nash Equilibrium Pushbot And Call Charts for Poker Tournaments" data-lazy-src="https://poker.com/wp-content/uploads/2020/09/nash-370x205.png"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/09/nash-370x205.png" alt="Nash Equilibrium Pushbot And Call Charts for Poker Tournaments"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/learn-poker/nash-equilibrium-pushbot-charts-for-poker-tournaments/">Nash Equilibrium Pushbot And Call Charts for Poker Tournaments</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/learn-poker/poker-is-a-game-of-chips-that-uses-cards/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker is a Game of Chips that Uses Cards &#038; Live Poker Tournament Advice &#8211; with Chris &#8220;Fox&#8221; Wallace" data-lazy-src="https://poker.com/wp-content/uploads/2020/09/chip_city-500x326-1-319x208.jpg"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/09/chip_city-500x326-1-319x208.jpg" alt="Poker is a Game of Chips that Uses Cards &#038; Live Poker Tournament Advice &#8211; with Chris &#8220;Fox&#8221; Wallace"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/learn-poker/poker-is-a-game-of-chips-that-uses-cards/">Poker is a Game of Chips that Uses Cards &#038; Live Poker Tournament Advice &#8211; with Chris &#8220;Fox&#8221; Wallace</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/learn-poker/track-your-poker-progress-improve-at-poker/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Tracking Your Poker Progress is ESSENTIAL To Improve Your Game" data-lazy-src="https://poker.com/wp-content/uploads/2020/08/hem-309x208.png"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/08/hem-309x208.png" alt="Tracking Your Poker Progress is ESSENTIAL To Improve Your Game"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/learn-poker/track-your-poker-progress-improve-at-poker/">Tracking Your Poker Progress is ESSENTIAL To Improve Your Game</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/learn-poker/how-to-improve-your-poker-results-in-multiway-pots/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Multi-Way Pots &#8211; Adjustments You should Make To Improve Your Results" data-lazy-src="https://poker.com/wp-content/uploads/2020/08/chips_031-370x208.png"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/08/chips_031-370x208.png" alt="Multi-Way Pots &#8211; Adjustments You should Make To Improve Your Results"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/learn-poker/how-to-improve-your-poker-results-in-multiway-pots/">Multi-Way Pots &#8211; Adjustments You should Make To Improve Your Results</a></p>
+</div>
+</div>
+</article>
+
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="ml-3 text-center" style="margin-top:20px">
+<button class="text-center" style="background:#d22749;color:white;padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5; border-radius: .3rem;" class="btn btn-brand"><a style="color:white" href="/learn-poker/">More Poker Strategy &amp; Tips</a></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="  my-4 news-letter-section newslettersection">
+<div class="container">
+<div class="d-flex flex-column align-items-center py-4">
+<h4 class="text-center text-white">Popular Pages</h4>
+<p class="text-center">Find out about Poker Rakeback, Bitcoin poker, the history of Poker &amp; more</p>
+</div>
+</section>
+<section class="my-4">
+<div class="container">
+<div class="row_ archive">
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/features/usa-poker-legislation-by-state/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="USA Poker Legislation Federal and State Law" data-lazy-src="https://poker.com/wp-content/uploads/2020/05/usa-poker-webp.webp"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/05/usa-poker-webp.webp" alt="USA Poker Legislation Federal and State Law"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/features/usa-poker-legislation-by-state/">USA Poker Legislation Federal and State Law</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/poker-podcasts/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="🎙 Poker Podcasts" data-lazy-src="https://poker.com/wp-content/uploads/2020/06/podcasts_img.jpg"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/06/podcasts_img.jpg" alt="🎙 Poker Podcasts"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/poker-podcasts/">🎙 Poker Podcasts</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/poker-rakeback/poker-rakeback-the-history-of-rakeback/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker Rakeback & The History of Rakeback" data-lazy-src="https://poker.com/wp-content/uploads/2020/05/rakeback.jpg"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/05/rakeback.jpg" alt="Poker Rakeback & The History of Rakeback"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/poker-rakeback/poker-rakeback-the-history-of-rakeback/">Poker Rakeback & The History of Rakeback</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/features/history-of-poker/"><img class="card-img-top" style="min-height: 150px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="The History of Poker" data-lazy-src="https://poker.com/wp-content/uploads/2020/05/history_of_poker-scaled.jpg"><noscript><img class="card-img-top" style="min-height: 150px;" src="https://poker.com/wp-content/uploads/2020/05/history_of_poker-scaled.jpg" alt="The History of Poker"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/features/history-of-poker/">The History of Poker</a></p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="  my-4 news-letter-section newslettersection">
+<div class="container">
+<div class="d-flex flex-column align-items-center py-4">
+<h4 class="text-center text-white"><a name="bitcoinpoker"></a>Bitcoin Poker</h4>
+<p class="text-center">Everything you need to know to play online-poker with cryptocurrency (<acronym title="Bitcoin">BTC</acronym>, Ethereum etc)</p>
+</div>
+</section>
+<section class="my-4">
+<div class="container">
+<div class="row_ archive">
+<article class="article">
+<div class="card_">
+<a href="/bitcoin-poker/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Best Bitcoin Poker Sites" data-lazy-src="/wp-content/uploads/2020/07/crypto_poker_webp.webp"><noscript><img class="card-img-top"   src="/wp-content/uploads/2020/07/crypto_poker_webp.webp" alt="Best Bitcoin Poker Sites"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/bitcoin-poker/">Best Bitcoin Poker Sites 2020</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/bitcoin-poker/bitcoin-poker-guide/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="A Bitcoin Poker Guide - How to Get Started" data-lazy-src="https://poker.com/wp-content/uploads/2020/04/btc-poker-webp.webp"><noscript><img class="card-img-top"   src="https://poker.com/wp-content/uploads/2020/04/btc-poker-webp.webp" alt="A Bitcoin Poker Guide - How to Get Started"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/bitcoin-poker/bitcoin-poker-guide/">A Bitcoin Poker Guide - How to Get Started</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/bitcoin-usd-mbtc-converter-blinds-calculator/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Bitcoin / USD / mBTC Converter & Blinds Calculator" data-lazy-src="https://poker.com/wp-content/uploads/2020/07/crypto_poker_webp.webp"><noscript><img class="card-img-top"   src="https://poker.com/wp-content/uploads/2020/07/crypto_poker_webp.webp" alt="Bitcoin / USD / mBTC Converter & Blinds Calculator"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/bitcoin-usd-mbtc-converter-blinds-calculator/">Bitcoin / USD / mBTC Converter & Blinds Calculator</a></p>
+</div>
+</div>
+</article>
+
+
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="ml-3 text-center" style="margin-top:20px">
+<button class="text-center" style="background:#d22749;color:white;padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5; border-radius: .3rem;" class="btn btn-brand"><a style="color:white" href="/bitcoin-poker/">Best Bitcoin Poker Sites</a></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="  my-4 news-letter-section newslettersection">
+<div class="container">
+<div class="d-flex flex-column align-items-center py-4">
+<h4 class="text-center text-white"><a name="proprofiles" href="/player-profiles/">Pro-Player Profiles & Career Earnings</a></h4>
+<p class="text-center">Pro Poker Player profiles, Bios, Quotes and information</p>
+</div>
+</section>
+<section class="my-4">
+<div class="container">
+<div class="row_ archive-players" style="margin:auto;text-align: center;">
+<article class="article">
+<div class="card_" style="margin:auto;">
+<a href="https://poker.com/player-profiles/phil-ivey/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Phil Ivey" data-lazy-src="https://poker.com/livetournaments/player-images/phil-ivey.jpg"><noscript><img class="card-img-top" src="https://poker.com/livetournaments/player-images/phil-ivey.jpg" alt="Phil Ivey"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/player-profiles/phil-ivey/">Phil Ivey</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_" style="margin:auto;">
+<a href="https://poker.com/player-profiles/vanessa-selbst-profile-poker-career-earnings/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Vanessa Selbst" data-lazy-src="https://poker.com/livetournaments/player-images/vanessa-selbst.jpg"><noscript><img class="card-img-top" src="https://poker.com/livetournaments/player-images/vanessa-selbst.jpg" alt="Vanessa Selbst"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/player-profiles/vanessa-selbst-profile-poker-career-earnings/">Vanessa Selbst</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_" style="margin:auto;">
+<a href="https://poker.com/player-profiles/kristen-bicknell/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Kristen Bicknell" data-lazy-src="https://poker.com/livetournaments/player-images/kristen-bicknell.jpg"><noscript><img class="card-img-top" src="https://poker.com/livetournaments/player-images/kristen-bicknell.jpg" alt="Kristen Bicknell"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/player-profiles/kristen-bicknell/">Kristen Bicknell</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_" style="margin:auto;">
+<a href="https://poker.com/player-profiles/richard-yong-profile-poker-career-earnings/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Richard Yong" data-lazy-src="https://poker.com/livetournaments/player-images/richard-yong.jpg"><noscript><img class="card-img-top" src="https://poker.com/livetournaments/player-images/richard-yong.jpg" alt="Richard Yong"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/player-profiles/richard-yong-profile-poker-career-earnings/">Richard Yong</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_" style="margin:auto;">
+<a href="https://poker.com/player-profiles/phil-hellmuth-profile-poker-career-earnings/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Phil Hellmuth" data-lazy-src="https://poker.com/livetournaments/player-images/phil-hellmuth.jpg"><noscript><img class="card-img-top" src="https://poker.com/livetournaments/player-images/phil-hellmuth.jpg" alt="Phil Hellmuth"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/player-profiles/phil-hellmuth-profile-poker-career-earnings/">Phil Hellmuth</a></p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="my-4 news-letter-section newslettersection">
+<div class="container">
+<div class="d-flex flex-column align-items-center py-4">
+<h4 class="text-center text-white">International Poker Tours</h4>
+<p class="text-center">The Global Poker Circuit: Tournament information &amp; Results</p>
+</div>
+</div>
+</section>
+<section class="my-4">
+<div class="container">
+<div class="row_ archive">
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/tournaments/triton-poker/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Triton Poker" data-lazy-src="https://poker.com/wp-content/uploads/2020/08/tp.webp"><noscript><img class="card-img-top" src="https://poker.com/wp-content/uploads/2020/08/tp.webp" alt="Triton Poker"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/tournaments/triton-poker/">Triton Poker</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/tournaments/aussie-millions/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Aussie Millions" data-lazy-src="https://poker.com/wp-content/uploads/2020/06/181129-Crown-Melbourne-Gaming-Poker-Green-Chips-748x530-1-294x208.jpg"><noscript><img class="card-img-top" src="https://poker.com/wp-content/uploads/2020/06/181129-Crown-Melbourne-Gaming-Poker-Green-Chips-748x530-1-294x208.jpg" alt="Aussie Millions"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/tournaments/aussie-millions/">Aussie Millions</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/tournaments/irish-open/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Irish Poker Open" data-lazy-src="https://poker.com/wp-content/uploads/2020/06/irish_poker_open-312x208.jpg"><noscript><img class="card-img-top" src="https://poker.com/wp-content/uploads/2020/06/irish_poker_open-312x208.jpg" alt="Irish Poker Open"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/tournaments/irish-open/">Irish Poker Open</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/tournaments/world-poker-tour/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="World Poker Tour" data-lazy-src="https://poker.com/wp-content/uploads/2018/11/wpt-370x179.jpg"><noscript><img class="card-img-top" src="https://poker.com/wp-content/uploads/2018/11/wpt-370x179.jpg" alt="World Poker Tour"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/tournaments/world-poker-tour/">World Poker Tour</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/tournaments/wsop-europe/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="WSOP Europe" data-lazy-src="https://poker.com/wp-content/uploads/2018/11/wsop-europe.jpg"><noscript><img class="card-img-top" src="https://poker.com/wp-content/uploads/2018/11/wsop-europe.jpg" alt="WSOP Europe"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/tournaments/wsop-europe/">WSOP Europe</a></p>
+</div>
+</div>
+</article>
+<article class="article">
+<div class="card_">
+<a href="https://poker.com/tournaments/world-series-of-poker/"><img class="card-img-top" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="World Series of Poker History &#038; WSOP Winners" data-lazy-src="https://poker.com/wp-content/uploads/2018/11/images.jpg"><noscript><img class="card-img-top" src="https://poker.com/wp-content/uploads/2018/11/images.jpg" alt="World Series of Poker History &#038; WSOP Winners"></noscript></a>
+<div class="card-body">
+<p class="card-text" style="color:#bd1c33"><a href="https://poker.com/tournaments/world-series-of-poker/">World Series of Poker History &#038; WSOP Winners</a></p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="my-4 news-letter-section newslettersection">
+<div class="container">
+<div class="d-flex flex-column align-items-center py-4">
+<h4 class="text-center text-white">Poker Frequently Asked Questions</h4>
+
+</div>
+</div>
+</section>
+<section class="hpfaqsection">
+<div class="container">
+<div class="row">
+<div class="col-md-12" style="margin-top:15px;margin-bottom:25px;">
+
+<div class="accordion" id="accordionExample">
+<div class="card">
+<div class="card-header" id="heading-0">
+<h5 class="mb-0">
+<button class="btn btn-link " type="button" data-toggle="collapse" data-target="#collapse-0" aria-expanded="false" aria-controls="collapse-0">
+What are the "Button" and the "Blinds" in Poker?
+</button>
+</h5>
+</div>
+<div id="collapse-0" class="collapse show" aria-labelledby="heading-0" data-parent="#accordionExample">
+<div class="card-body">
+<p> "Blinds" are shorthand for “blind bets,” these are the compulsory bets which must be made by two players in a poker hand before any cards are dealt. In Texas hold'em, blinds replace the “ante.” </p>
+<p>The Button is the name for the player in the seat before the small and big-blinds, who acts as the dealer in the current hand. The button moves around the table clockwise after each hand of poker. More poker terms are explained in our <a href="/poker-glossary/">poker glossary</a>.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading-1">
+<h5 class="mb-0">
+<button class="btn btn-link " type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+Where can I play free poker games?
+</button>
+</h5>
+</div>
+<div id="collapse-1" class="collapse " aria-labelledby="heading-1" data-parent="#accordionExample">
+<div class="card-body">
+<p> A lot of online poker rooms offer "freerolls" which are free-to-enter poker tournaments with real prizes.. They generally pay out 10-15% of the field in cash, tournament tickets and other goodies. The Poker.com <a href="/online-poker-freerolls/">freeroll tracker page</a> lists upcoming freerolls from the top poker rooms worldwide, updated every 5 minutes. If you live in the USA, Australia or New-Zealand, check out the <a href="https://poker.com/poker-industry-news/2500-freeroll-at-ignition-poker/">$10,000 in monthly freerolls running at Ignition Poker</a>. </p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading-2">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+Can I play poker online using Bitcoin and other Cryptocurrency?
+</button>
+</h5>
+</div>
+<div id="collapse-2" class="collapse " aria-labelledby="heading-2" data-parent="#accordionExample">
+<div class="card-body">
+<p> Yes- poker sites have been quick to embrace BTC for deposits and withdrawals because it cuts down on bank/transaction fees for their customers, as well as offering privacy benefits. In fact some sites (such as <a href="https://poker.com/poker-sites/ignition-poker/">Ignition Poker</a>) ONLY accept cryptocurrency. Getting started is as simple as registering on a crypto exchange, buying Bitcoin and transferring it to your poker site wallet. <a href="https://poker.com/bitcoin-poker/bitcoin-poker-guide/">Read our BTC Poker Guide</a></p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading-3">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+What is a Poker Rakeback Deal?
+</button>
+</h5>
+</div>
+<div id="collapse-3" class="collapse " aria-labelledby="heading-3" data-parent="#accordionExample">
+<div class="card-body">
+<p> Rakeback is a refund to players of a significant portion of the money taken by poker rooms in 'rake' from cash-pots on cash-games and from tournament fees in Multi-Table Tournaments (MTTs) and Sit and Go tournaments (SNGs). Rakeback deals vary, depending mostly on the stakes played, and volume (of hands/tournaments) a player puts in over a week/month. More rake taken by poker room generally equates to more rakeback for a player who has a good rakeback deal. See our <a href="/poker-rakeback/">Poker Rakeback Offers</a> page for more details.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading-4">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+Where can I play video poker games?
+</button>
+</h5>
+</div>
+<div id="collapse-4" class="collapse " aria-labelledby="heading-4" data-parent="#accordionExample">
+<div class="card-body">
+<p> Video poker is a simple affair - with the player battling against the computer in a draw poker game. Some of the top poker rooms we recommend have casino games on offer - including video poker (and a number of variants to keep things interesting, including deuces wild, jacks wild). See our <a href="/video-poker/">Video Poker</a> page to see what's hot in video poker.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading-5">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+Who is the Best Poker player in the World?
+</button>
+</h5>
+</div>
+<div id="collapse-5" class="collapse " aria-labelledby="heading-5" data-parent="#accordionExample">
+<div class="card-body">
+<p> That is a tricky question to answer. Cash game winnings online and live are difficult to track, as is profitability. Tournament wins on the other hand are well documented, and we have compiled a "global money list", ranking players based on their tracked tournament winnings. Currently in 2020, the player with the most recorded live tournament cashes is <a href="/player-profiles/bryn-kenney-profile-poker-career-earnings/">Bryn Kenney</a> with over $56,000,000 in tracked tournament cashes. View the <a href="/money-lists/top-100-live-poker-players-by-winnings-worldwide/">top 100 global poker players by tournament earnings</a>.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading-6">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+I Live in the U.S.A - Can I play live or online poker in my State?
+</button>
+</h5>
+</div>
+<div id="collapse-6" class="collapse " aria-labelledby="heading-6" data-parent="#accordionExample">
+<div class="card-body">
+<p> Poker legislation in the United States differs from state to state. Poker is legal to play in many states, and there is talk of regulation in many more. Our USA poker guide dives in to the ins and outs of playing poker in the USA on a state by state level. <a href="/features/usa-poker-legislation-by-state/">USA Poker Guide</a></p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading-7">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+Are there poker tools, apps or trackers that can help me monitor and improve my poker game?
+</button>
+</h5>
+</div>
+<div id="collapse-7" class="collapse " aria-labelledby="heading-7" data-parent="#accordionExample">
+<div class="card-body">
+<p> Yes- you can analyse your own plays and those of your opponents using equity calculators, tracking software and poker solvers. We have reviewed a number of essential pro poker tools on our <a href="/poker-tools-apps-solvers-trackers/">poker tools and apps</a> page.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-4 darkblue onetwothreefour">
+<div class="container">
+<div class="d-flex flex-column align-items-center mb-4">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class alt="Poker.com 20th year anniversary" data-lazy-src="/images/20.png" /><noscript><img src="/images/20.png" class="" alt="Poker.com 20th year anniversary" /></noscript>
+<p class="text-center"></p>
+</div>
+</div>
+
+</section>
+
+
+</div>
+</div>
+<style>
+	.popupbtn {background-color: #d22749;color:white;}
+    a, a:hover {color:#d22749}
+	h1 {font-size: 1.8rem}
+ </style>
+<div class="bannercontainer">
+<div class="container-fluid" id="funkyparent">
+<div class="container" id="funkycontainer">
+<div class="row thefooterbanner" id="funkyrow">
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 email_capture">
+<div class="newslettercontainer">
+<h2>WANT THE LATEST? </h2>
+<div class="copy">Get exclusive poker news and the latest deals from top-rated online poker rooms to your inbox &amp; social feeds.
+</div>
+<form class="subform" method="post" action="/?na=s" onsubmit="return newsletter_check(this)">
+<div class="input-group">
+<input class="form-control subscribe-field" title="Newsletter" placeholder="Your email address" id="emailfield" name="ne" id="ne" type="email" required>
+<span class="input-group-btn">
+<button class="btn btn-default btn-success btn-subscribe-footer" type="submit">Subscribe</button>
+</span>
+</div>
+</form>
+</div>
+</div>
+<div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12 flexycenter" style="background-color: #b61e22;">
+<div class="row footer_social_icons">
+<div class="col flexycenter">
+<a rel="nofollow external noreferrer" href="https://twitter.com/pokercom" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker.com on Twitter" data-lazy-src="/assets/footer/ico-twitter-o.png"><noscript><img src="/assets/footer/ico-twitter-o.png" alt="Poker.com on Twitter"></noscript></a>
+</div>
+
+<div class="col flexycenter">
+<a rel="nofollow external noreferrer" href="https://www.instagram.com/poker_dot_com/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker.com on Instagram" data-lazy-src="/assets/footer/ico-instagram-o.png"><noscript><img src="/assets/footer/ico-instagram-o.png" alt="Poker.com on Instagram"></noscript></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="first-footer">
+<div class="container" id="ftwo" style="padding-top:15px;padding-bottom:15px;">
+<div class="row hidden-xs hidden-sm">
+
+<div class="col-sm-12">
+<ul id="menu-footer-menu" class="footer-nav">
+<li class="visible-lg">
+<a href="https://poker.com/">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="max-height:15px;z-index: 10" alt="Poker.com" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcoAAAA8CAYAAADmIPpsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFwmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMC0wNi0wM1QwNTo1MjowNSswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNi0wM1QwNTo1MjowNSswMjowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjAtMDYtMDNUMDU6NTI6MDUrMDI6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZTUwODc5MzgtYWUyMi1lNjRhLThkMWEtN2M2ODllMjJkMjlkIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6Y2U1ZGRlYTgtNzJhNy05NDQ0LTlmNzctODI3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"><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcoAAAA8CAYAAADmIPpsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFwmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMC0wNi0wM1QwNTo1MjowNSswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNi0wM1QwNTo1MjowNSswMjowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjAtMDYtMDNUMDU6NTI6MDUrMDI6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZTUwODc5MzgtYWUyMi1lNjRhLThkMWEtN2M2ODllMjJkMjlkIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6Y2U1ZGRlYTgtNzJhNy05NDQ0LTlmNzctODI3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" style="max-height:15px;z-index: 10" alt="Poker.com"></noscript>
+</a>
+</li>
+<li id="menu-item-30151" class="menu-item menu-item-type-post_type menu-item-object-page"><a title="About" href="/about-us/">About Us</a></li>
+<li id class="menu-item menu-item-type-post_type menu-item-object-page"><a title="Contact" href="/contact/">Contact</a></li>
+<li id class="menu-item menu-item-type-post_type menu-item-object-page"><a title="Site Map" href="/site-map/">Site Map</a></li>
+
+
+</ul>
+</div>
+</div>
+</div>
+<div class="hidden-md hidden-lg">
+<ul id="mobile-footer-nav" class="nav navbar-nav float-lg-left">
+<li class="visible-lg">
+<a href>
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker.com" style="height:28px" data-lazy-src="https://poker.com/branding/poker_com_white_trans.png"><noscript><img src="https://poker.com/branding/poker_com_white_trans.png" alt="Poker.com" style="height:28px"></noscript>
+</a>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page "><a href="/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page "><a href="/contact/">Contact</a></li>
+
+<li class="menu-item menu-item-type-post_type menu-item-object-page "><a href="/contact/">Media Inquiries</a></li>
+</ul>
+</div>
+</footer>
+<footer class="secondary-footer">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-4 privacy text-xs-center text-md-left">
+<p>Read our <a class="underlined" href="/privacy-policy/">Privacy Policy</a></p>
+</div>
+<div class="col-xs-12 col-md-5 copyright text-xs-center text-sm-center text-md-left">
+<p class="fg">© &nbsp;2020 Poker.com All rights reserved</p>
+</div>
+</div>
+<div class="row gambling">
+<div class="col-sx-12 col-md-4">
+<div class="gambling-icons">
+<div class="footer-sprite">
+<a rel="noopener nofollow external" target="_blank" href="https://www.gamcare.org.uk/">
+<div class="sprite sprite-gambling-gamecare" title="18+"></div>
+</a>
+<a rel="noopener nofollow external" target="_blank" href="https://www.begambleaware.org/">
+<div class="sprite sprite-gambling-18" title="Gamcare"></div>
+</a>
+<a rel="noopener nofollow external" target="_blank" href="https://www.gamblingtherapy.org/">
+<div class="sprite sprite-gambling-therapy" title="Gambling Therapy"></div>
+</a>
+<a rel="noopener nofollow external" target="_blank" href="https://www.begambleaware.org/">
+<div class="sprite sprite-gambling-aware" title="BeGambleAware"></div>
+</a>
+</div>
+</div>
+</div>
+<div class="col-sx-12 col-md-8 gambling-disclaimer fb">
+<p style="font-size:0.8rem">Poker.com is committed to providing high-quality content to our visitors whilst providing an effective marketing platform for our advertisers. Poker.com does not intend for any of the information contained on this website to be used for illegal purposes. The information in this site is for news and entertainment purposes only. It is the sole responsibility of any businesses advertised on poker.com to conduct themselves in a manner, which satisfies various legal jurisdictions, and governing laws, which relate to their businesses. Online gambling is illegal in some jurisdictions and users should consult legal counsel regarding the legal status of online gambling and gaming in their jurisdiction. Links to third party websites on Poker.com are provided solely for informative/educational purposes. If you use these links, you leave this website.
+</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<link rel="stylesheet" href="https://poker.com/wp-content/cache/autoptimize/autoptimize_single_4e35358f37cff83f7729ef340eb33557.php">
+
+
+<script src="https://poker.com/wp-content/themes/understrap-child/js/child-theme.min.js?ver=0.5.3" id="child-understrap-scripts-js"></script>
+<script>window.lazyLoadOptions = {
+                elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",
+                data_src: "lazy-src",
+                data_srcset: "lazy-srcset",
+                data_sizes: "lazy-sizes",
+                class_loading: "lazyloading",
+                class_loaded: "lazyloaded",
+                threshold: 300,
+                callback_loaded: function(element) {
+                    if ( element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible" ) {
+                        if (element.classList.contains("lazyloaded") ) {
+                            if (typeof window.jQuery != "undefined") {
+                                if (jQuery.fn.fitVids) {
+                                    jQuery(element).parent().fitVids();
+                                }
+                            }
+                        }
+                    }
+                }};
+        window.addEventListener('LazyLoad::Initialized', function (e) {
+            var lazyLoadInstance = e.detail.instance;
+
+            if (window.MutationObserver) {
+                var observer = new MutationObserver(function(mutations) {
+                    var image_count = 0;
+                    var iframe_count = 0;
+                    var rocketlazy_count = 0;
+
+                    mutations.forEach(function(mutation) {
+                        for (i = 0; i < mutation.addedNodes.length; i++) {
+                            if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
+                                return;
+                            }
+
+                           if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
+                                return;
+                            }
+
+                            images = mutation.addedNodes[i].getElementsByTagName('img');
+                            is_image = mutation.addedNodes[i].tagName == "IMG";
+                            iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+                            is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+                            rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
+
+                            image_count += images.length;
+			                iframe_count += iframes.length;
+			                rocketlazy_count += rocket_lazy.length;
+
+                            if(is_image){
+                                image_count += 1;
+                            }
+
+                            if(is_iframe){
+                                iframe_count += 1;
+                            }
+                        }
+                    } );
+
+                    if(image_count > 0 || iframe_count > 0 || rocketlazy_count > 0){
+                        lazyLoadInstance.update();
+                    }
+                } );
+
+                var b      = document.getElementsByTagName("body")[0];
+                var config = { childList: true, subtree: true };
+
+                observer.observe(b, config);
+            }
+        }, false);</script><script data-no-minify="1" async src="https://poker.com/wp-content/plugins/rocket-lazy-load/assets/js/16.1/lazyload.min.js"></script>
+<script defer src="/js/siema.min.js"></script>
+<script type="text/javascript">
+		/* First CSS File */
+		var giftofspeed = document.createElement('link');
+		giftofspeed.rel = 'stylesheet';
+		giftofspeed.href = 'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css';
+		giftofspeed.type = 'text/css';
+		var godefer = document.getElementsByTagName('link')[0];
+		godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+		</script>
+<noscript>
+			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
+		</noscript>
+<script type="text/javascript">
+
+
+
+
+( function($) {
+
+    $(document).ready( function()
+    {
+
+
+
+    	console.log('"Poker.com is all in.');
+
+    	 		//display promo dialog after 7 secs - one time per session
+    	 if (typeof Storage != "undefined")
+    	 {
+
+		   if (!sessionStorage.getItem("done"))
+		    {
+		        setTimeout(function() {
+		        $('#promo_modal').modal('show');
+		        //localStorage.setItem("done", true);
+		        sessionStorage.setItem('done', 'true');
+		      }, 70000000000);
+		    }
+
+		  }
+
+
+
+    
+	
+
+	
+
+     
+
+		
+
+
+    	const mySiema  = new Siema({
+			  selector: '.fc',
+			  duration: 200,
+				easing: "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+				perPage: 1,
+				startIndex:0,
+				draggable: true,
+				multipleDrag: false,
+				threshold: 20,
+			  loop: true,
+			  rtl: false,
+			  onInit: () => { },
+			  onChange: () => {updateSliderIndicators(mySiema.currentSlide)},
+			});
+
+		 	function updateSliderIndicators(index)
+		 	{
+
+		 		for (var s=0; s<3; s++){
+ 		 		 		 var selector='.featured-carousel__indicator-wrapper[data-index="'+s+'"] .featured-carousel__indicator-upper';
+		 		 		  var selectorlower='.featured-carousel__indicator-wrapper[data-index="'+s+'"] .featured-carousel__indicator-lower';
+
+		 		 		 $(selector).removeClass("featured-carousel__indicator-upper--active");
+		 		 		 $(selectorlower).removeClass("featured-carousel__indicator-lower--active");
+
+			 		  	if(s==index)
+			 		 	{
+							$(selector).addClass("featured-carousel__indicator-upper--active");
+							$(selectorlower).addClass("featured-carousel__indicator-lower--active");
+			 		 	}
+		 		 }
+
+		 	}
+
+		 	function showSlide(index)
+		 	{
+		 		updateSliderIndicators(index);
+		 	    mySiema.goTo(index);
+		 	}
+
+			jQuery.each(jQuery(".featured-carousel__indicator-wrapper")	, function (index, item) {
+			  var index = jQuery(item).data('index');
+			  this.addEventListener('click', () =>showSlide(index));
+			});
+
+ 		
+     });
+
+
+
+} ) ( jQuery );
+
+
+
+</script>
+<div class="modal fade" id="promo_modal" tabindex="-1" role="dialog" aria-labelledby="modal_title" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header text-center">
+<h5 class="modal-title" id="modal_title" style="color:black;">The #1 Rated Poker Site</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+<div class="modal-body">
+<div class="row" style="color:black;">
+<div class="col-md-12 text-center">
+<a href="https://wlnsusaff.adsrv.eacdn.com/C.ashx?btag=a_1515b_88c_&affid=656901&siteid=1515&adid=88&c="><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Poker" data-lazy-src="https://poker.com/assets/popup/gg_welcome.gif" /><noscript><img src="https://poker.com/assets/popup/gg_welcome.gif" alt="Poker"/></noscript></a>
+</div>
+</div>
+</div>
+<div class="modal-footer text-center">
+<a style="margin:auto" class="popuplink popup-rotw" href="https://wlnsusaff.adsrv.eacdn.com/C.ashx?btag=a_1515b_88c_&affid=656901&siteid=1515&adid=88&c="><button type="button" data-button-action="https://wlnsusaff.adsrv.eacdn.com/C.ashx?btag=a_1515b_88c_&affid=656901&siteid=1515&adid=88&c=" data-button-label="rotw" class="btn popupbtn btn-primary">$100 in Free Cash & Tickets</button></a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

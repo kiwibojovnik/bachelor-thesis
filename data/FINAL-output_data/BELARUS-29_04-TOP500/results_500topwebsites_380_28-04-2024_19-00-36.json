@@ -1,0 +1,1493 @@
+{
+    "gofundme.com": {
+        "Time": 3.7,
+        "URL": "gofundme.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "18.172.242.127",
+            "18.172.242.111",
+            "18.172.242.90",
+            "18.172.242.86"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "18.172.242.86",
+        "PING Status": "OK",
+        "PING IP": "18.172.242.86",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 403,
+        "Content Length": 986,
+        "Headers": {
+            "Server": "CloudFront",
+            "Date": "Sun, 28 Apr 2024 22:51:00 GMT",
+            "Content-Type": "text/html",
+            "Content-Length": "986",
+            "Connection": "keep-alive",
+            "X-Cache": "Error from cloudfront",
+            "Via": "1.1 f0efcf486dfad7df6b61d353231c3c78.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "BUD50-P1",
+            "X-Amz-Cf-Id": "r3kBRsShvyLmnPI2J_Ly0WdyS5gEKHwvD8JRrq37GJ71e244ikVOZA=="
+        },
+        "HTML Content": "gofundme.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "*.gofundme.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arizona"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Scottsdale"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GoDaddy.com, Inc."
+                    ]
+                ],
+                [
+                    [
+                        "organizationalUnitName",
+                        "http://certs.godaddy.com/repository/"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Go Daddy Secure Certificate Authority - G2"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "8AD55B60957BFE8D",
+            "notBefore": "Sep 12 18:25:11 2023 GMT",
+            "notAfter": "Oct 13 18:25:11 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.gofundme.com"
+                ],
+                [
+                    "DNS",
+                    "gofundme.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.godaddy.com/"
+            ],
+            "caIssuers": [
+                "http://certificates.godaddy.com/repository/gdig2.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.godaddy.com/gdig2s1-8954.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 18:51:03"
+    },
+    "pbs.org": {
+        "Time": 28.43,
+        "URL": "pbs.org",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "54.225.206.152",
+            "54.225.198.196"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "54.225.198.196",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.0014142990112304688
+            ],
+            [
+                "212.98.161.17",
+                0.0010373592376708984
+            ],
+            [
+                "185.11.76.45",
+                0.0009696483612060547
+            ],
+            [
+                "185.11.76.76",
+                0.0012066364288330078
+            ],
+            [
+                "85.26.163.180",
+                0.014696598052978516
+            ],
+            [
+                "83.169.204.114",
+                0.04817843437194824
+            ],
+            [
+                "83.169.204.124",
+                0.047196388244628906
+            ],
+            [
+                "223.120.14.134",
+                0.10308527946472168
+            ],
+            [
+                "223.120.6.82",
+                0.10335659980773926
+            ],
+            [
+                "99.83.91.180",
+                0.10344171524047852
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "http://www.pbs.org/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "18.172.242.48",
+                "18.172.242.50",
+                "18.172.242.94",
+                "18.172.242.67"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 233061,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Date": "Sun, 28 Apr 2024 22:52:15 GMT",
+            "Expires": "Sun, 28 Apr 2024 23:02:15 GMT",
+            "Cache-Control": "max-age=600",
+            "Content-Security-Policy": "style-src 'self' *.pbs.org 'unsafe-inline'; script-src 'self' *.pbs.org *.googlesyndication.com adservice.google.com adservice.google.co.in connect.facebook.net fundingchoicesmessages.google.com *.2mdn.net *.nr-data.net sb.scorecardresearch.com securepubads.g.doubleclick.net www.google-analytics.com www.googletagmanager.com *.googletagservices.com 'unsafe-inline' 'unsafe-eval' *.cookielaw.org www.redditstatic.com alb.reddit.com analytics.tiktok.com s.pinimg.com; default-src 'self' *.pbs.org; frame-src 'self' *.pbs.org *.doubleclick.net *.2mdn.net *.googlesyndication.com www.facebook.com www.google.com *.googletagservices.com *.youtube.com ct.pinterest.com; connect-src 'self' *.pbs.org *.doubleclick.net *.googlesyndication.com *.2mdn.net *.nr-data.net *.eloqua.com *.cookielaw.org *.onetrust.com csi.gstatic.com fundingchoicesmessages.google.com www.google-analytics.com www.redditstatic.com alb.reddit.com analytics.tiktok.com ct.pinterest.com *.ingest.sentry.io; img-src 'self' data: *.pbs.org *.doubleclick.net *.cookielaw.org *.googlesyndication.com sb.scorecardresearch.com www.googletagmanager.com www.facebook.com graph.facebook.com platform-lookaside.fbsbx.com *.2mdn.net *.agkn.com *.fbsbx.com *.fbcdn.net www.google-analytics.com www.google.com *.googleusercontent.com tags.w55c.net www.redditstatic.com alb.reddit.com analytics.tiktok.com ct.pinterest.com impressions.onelink.me",
+            "Permissions-Policy": "accelerometer=(), autoplay=(self \"https://player.pbs.org\" \"https://player-staging.pbs.org\"), camera=(), display-capture=(), document-domain=(), encrypted-media=(self \"https://player.pbs.org\" \"https://player-staging.pbs.org\"), fullscreen=(self \"https://player.pbs.org\" \"https://player-staging.pbs.org\"), geolocation=(self \"https://player.pbs.org\" \"https://player-staging.pbs.org\"), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=()",
+            "X-Frame-Options": "DENY",
+            "ETag": "W/\"2e4057a3a2992b72f37af78b3e8dc780\"",
+            "Strict-Transport-Security": "max-age=31536000",
+            "X-Content-Type-Options": "nosniff",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Content-Encoding": "gzip",
+            "Vary": "Accept-Encoding,Cloudfront-Viewer-Country,Cookie",
+            "X-Cache": "Miss from cloudfront",
+            "Via": "1.1 4cfa930fc6c84f21e8b75edab9c07bbc.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "BUD50-P1",
+            "X-Amz-Cf-Id": "mi406ODVf1Y0eHVTI1Aqu_-edQXsW2aZ9sGwBjyXcvue-5Vt9TdF7w=="
+        },
+        "HTML Content": "pbs.org_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "www.pbs.org"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0314103E501026300AE7D47A2411A2C84F23",
+            "notBefore": "Apr 11 13:00:49 2024 GMT",
+            "notAfter": "Jul 10 13:00:48 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "pbs.org"
+                ],
+                [
+                    "DNS",
+                    "www.pbs.org"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 18:52:20"
+    },
+    "stackoverflow.com": {
+        "Time": 6.13,
+        "URL": "stackoverflow.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "188.114.99.224",
+            "188.114.98.224"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "188.114.99.224",
+        "PING Status": "OK",
+        "PING IP": "188.114.99.224",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://stackoverflow.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "188.114.99.224",
+                "188.114.98.224"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 174433,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 22:53:27 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "cache-control": "private",
+            "vary": "Accept-Encoding",
+            "strict-transport-security": "max-age=15552000",
+            "x-frame-options": "SAMEORIGIN",
+            "x-request-guid": "b5a94bf6-b4e6-400f-bde8-23cdf002a4a4",
+            "set-cookie": "prov=60993590-c311-452b-9ebd-e47494909b80; expires=Mon, 28 Apr 2025 22:53:27 GMT; domain=.stackoverflow.com; path=/; secure; samesite=none; httponly, __cflb=0H28vFHtoAR1ohjxFgDZBwZ5H5NWURYXkAtgRqBxD3i; SameSite=None; Secure; path=/; expires=Mon, 29-Apr-24 21:53:27 GMT; HttpOnly",
+            "feature-policy": "microphone 'none'; speaker 'none'",
+            "content-security-policy": "upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com",
+            "CF-Cache-Status": "DYNAMIC",
+            "X-DNS-Prefetch-Control": "off",
+            "Server": "cloudflare",
+            "CF-RAY": "87baa0e7a8965b84-VIE",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "stackoverflow.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "stackoverflow.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "040904FD21E5322E49F2E406A06099067852",
+            "notBefore": "Mar 13 20:46:26 2024 GMT",
+            "notAfter": "Jun 11 20:46:25 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.stackoverflow.com"
+                ],
+                [
+                    "DNS",
+                    "stackoverflow.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 18:53:33"
+    },
+    "abc.net.au": {
+        "Time": 4.08,
+        "URL": "abc.net.au",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "92.122.108.128"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "92.122.108.128",
+        "PING Status": "OK",
+        "PING IP": "92.122.108.128",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.abc.net.au/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "92.122.108.128"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 225065,
+        "Headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Download-Options": "noopen",
+            "X-DNS-Prefetch-Control": "off",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "ETag": "\"dtxalfzj3x4tmx\"",
+            "Content-Encoding": "gzip",
+            "Content-Length": "46560",
+            "Cache-Control": "public, max-age=120",
+            "Expires": "Sun, 28 Apr 2024 22:56:37 GMT",
+            "Date": "Sun, 28 Apr 2024 22:54:37 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding, Origin, User-Agent",
+            "Set-Cookie": "ABCGuestID=139.45.207.7.35829081714344877963; expires=Mon, 31-Dec-2038 23:59:59 GMT; path=/; domain=.abc.net.au, ABC_LD=int; path=/; domain=.abc.net.au, ABC_FF=desktop; expires=Mon, 29-Apr-2024 00:54:37 GMT; path=/",
+            "Content-Security-Policy": "upgrade-insecure-requests;"
+        },
+        "HTML Content": "abc.net.au_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "AU"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "New South Wales"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Ultimo"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Australian Broadcasting Corporation"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "abc.net.au"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "05758BAA19FE55821E81B06BC713F6F3",
+            "notBefore": "Jan 17 00:00:00 2024 GMT",
+            "notAfter": "Jan 17 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.abc-cdn.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.abc-host.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.abc-prod.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.abc-stage.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.abc-test.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.abc-uat.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.abcradio.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.c0.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.c1.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.c2.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.iview.abc-prod.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.iview.abc-stage.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.iview.abc-test.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.iview.abc-uat.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.iview.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.secure-abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.test.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.wcms-np.abc-cdn.net.au"
+                ],
+                [
+                    "DNS",
+                    "*.wcms.abc-cdn.net.au"
+                ],
+                [
+                    "DNS",
+                    "abc.gov.au"
+                ],
+                [
+                    "DNS",
+                    "abcaustralia.net.au"
+                ],
+                [
+                    "DNS",
+                    "abcspla.sh"
+                ],
+                [
+                    "DNS",
+                    "alpha.abcopen.net.au"
+                ],
+                [
+                    "DNS",
+                    "api.seesaw.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "bamboo.ss.c0.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "bitbucket.ss.c0.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "confluence.abc-dev.net.au"
+                ],
+                [
+                    "DNS",
+                    "crowd.abc-dev.net.au"
+                ],
+                [
+                    "DNS",
+                    "developers.digital.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "imageresizer.abctv.net.au"
+                ],
+                [
+                    "DNS",
+                    "ios.tviview.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "ios.tviview.iview.abc-prod.net.au"
+                ],
+                [
+                    "DNS",
+                    "ios.tviview.iview.abc-stage.net.au"
+                ],
+                [
+                    "DNS",
+                    "ios.tviview.iview.abc-test.net.au"
+                ],
+                [
+                    "DNS",
+                    "jira.abc-dev.net.au"
+                ],
+                [
+                    "DNS",
+                    "streaming.c3.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "test.abcaustralia.net.au"
+                ],
+                [
+                    "DNS",
+                    "triplejunearthed.com"
+                ],
+                [
+                    "DNS",
+                    "www.abcaustralia.net.au"
+                ],
+                [
+                    "DNS",
+                    "www.abccommercial.com"
+                ],
+                [
+                    "DNS",
+                    "www.abcentertainsme.com.au"
+                ],
+                [
+                    "DNS",
+                    "www.abcmusic.com.au"
+                ],
+                [
+                    "DNS",
+                    "www.cdn.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "www.iviewsupport.abc.net.au"
+                ],
+                [
+                    "DNS",
+                    "www.triplejunearthed.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 18:54:41"
+    },
+    "sciencedirect.com": {
+        "Time": 5.92,
+        "URL": "sciencedirect.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "162.159.137.70",
+            "162.159.136.70"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "162.159.136.70",
+        "PING Status": "OK",
+        "PING IP": "162.159.136.70",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 403,
+        "Content Length": 725589,
+        "Headers": {
+            "Date": "Sun, 28 Apr 2024 22:55:44 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "close",
+            "Accept-CH": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+            "Cross-Origin-Embedder-Policy": "require-corp",
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Origin-Agent-Cluster": "?1",
+            "Permissions-Policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+            "Referrer-Policy": "same-origin",
+            "X-Frame-Options": "SAMEORIGIN",
+            "cf-mitigated": "challenge",
+            "cf-chl-out": "FOLnxmMpeKdBg7PpBibdOBsjv8RYyJ1ovTYRQImCV+xiWjk9VOws3ZWOcKgQYFkrekHe13U7mXBxg+nJQve4o7uYyuVQ/D/EWsO++iHsYvxXfPyJXkU3+ZKLR4f5uCNQ8hAtWggUoipsyqb2NXexeA==$VrIO3Ovh8jAnOzli5ip4qQ==",
+            "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+            "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+            "Vary": "Accept-Encoding",
+            "Strict-Transport-Security": "max-age=2678400; preload",
+            "X-Content-Type-Options": "nosniff",
+            "Server": "cloudflare",
+            "CF-RAY": "87baa43d19858474-LED",
+            "Content-Encoding": "gzip"
+        },
+        "HTML Content": "sciencedirect.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "sciencedirect.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "E1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0364A179F9874414D4F6B2E51E01414BF4FB",
+            "notBefore": "Apr 15 03:18:27 2024 GMT",
+            "notAfter": "Jul 14 03:18:26 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "*.sciencedirect.com"
+                ],
+                [
+                    "DNS",
+                    "sciencedirect.com"
+                ]
+            ],
+            "OCSP": [
+                "http://e1.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://e1.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 18:55:49"
+    },
+    "ft.com": {
+        "URL": "ft.com",
+        "Error": "'Timed Out'"
+    },
+    "variety.com": {
+        "Time": 9.29,
+        "URL": "variety.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "192.0.66.176"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "192.0.66.176",
+        "PING Status": "OK",
+        "PING IP": "192.0.66.176",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://variety.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "192.0.66.176"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 742094,
+        "Headers": {
+            "Server": "nginx",
+            "Date": "Sun, 28 Apr 2024 22:58:00 GMT",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-hacker": "If you're reading this, you should visit wpvip.com/careers and apply to join the fun, mention this header.",
+            "X-Powered-By": "WordPress VIP <https://wpvip.com>",
+            "Host-Header": "a9130478a60e5f9135f765b23f26593b",
+            "X-UA-Compatible": "IE=Edge",
+            "Content-Security-Policy": "upgrade-insecure-requests, frame-ancestors 'none'",
+            "Content-Security-Policy-Report-Only": "default-src data: 'unsafe-inline' 'unsafe-eval' https: blob: http://*.files.wordpress.com wss://variety.com; report-uri https://pmcuri.report-uri.com/r/d/csp/reportOnly",
+            "X-Frame-Options": "DENY",
+            "Link": "<https://variety.com/wp-json/>; rel=\"https://api.w.org/\", <https://wp.me/c8uak>; rel=shortlink",
+            "Content-Encoding": "gzip",
+            "x-rq": "hhn2 111 253 443",
+            "accept-ranges": "bytes",
+            "cache-control": "private, no-store",
+            "x-cache": "MISS"
+        },
+        "HTML Content": "variety.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "variety.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Let's Encrypt"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "R3"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "034F74F7C79641D334D94A8E5588D91AABEB",
+            "notBefore": "Mar 13 17:32:13 2024 GMT",
+            "notAfter": "Jun 11 17:32:12 2024 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "variety.com"
+                ],
+                [
+                    "DNS",
+                    "www.variety.com"
+                ]
+            ],
+            "OCSP": [
+                "http://r3.o.lencr.org"
+            ],
+            "caIssuers": [
+                "http://r3.i.lencr.org/"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 18:58:09"
+    },
+    "alexa.com": {
+        "Time": 29.82,
+        "URL": "alexa.com",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "34.196.72.20",
+            "44.215.52.22",
+            "34.234.163.55",
+            "35.173.110.55",
+            "34.194.80.229",
+            "44.199.167.141"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "34.196.72.20",
+        "PING Status": "Fail",
+        "PING IP": "N/A",
+        "Trace hop IP": [
+            [
+                "31.130.202.129",
+                0.002016305923461914
+            ],
+            [
+                "212.98.161.17",
+                0.0010039806365966797
+            ],
+            [
+                "185.11.76.45",
+                0.0010318756103515625
+            ],
+            [
+                "185.11.76.30",
+                0.0022928714752197266
+            ],
+            [
+                "223.119.65.185",
+                0.02324199676513672
+            ],
+            [
+                "223.118.18.46",
+                0.023990631103515625
+            ],
+            [
+                "223.120.10.93",
+                0.025146961212158203
+            ],
+            [
+                "223.120.14.134",
+                0.10344147682189941
+            ],
+            [
+                "223.120.6.82",
+                0.10421323776245117
+            ],
+            [
+                "99.83.91.180",
+                0.10368204116821289
+            ]
+        ],
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://alexa.com:443/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "44.215.52.22",
+                "34.234.163.55",
+                "35.173.110.55",
+                "34.194.80.229",
+                "44.199.167.141",
+                "34.196.72.20"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 6779,
+        "Headers": {
+            "Server": "awselb/2.0",
+            "Date": "Sun, 28 Apr 2024 22:58:56 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Content-Length": "6779",
+            "Connection": "keep-alive"
+        },
+        "HTML Content": "alexa.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "commonName",
+                        "alexa.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Amazon"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "Amazon RSA 2048 M03"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "0F679A5624FDA93AA04B721B7B2AE356",
+            "notBefore": "Dec 20 00:00:00 2023 GMT",
+            "notAfter": "Jan 18 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "alexa.com"
+                ],
+                [
+                    "DNS",
+                    "www.alexa.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.r2m03.amazontrust.com"
+            ],
+            "caIssuers": [
+                "http://crt.r2m03.amazontrust.com/r2m03.cer"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.r2m03.amazontrust.com/r2m03.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 0.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 18:59:04"
+    },
+    "abc.es": {
+        "Time": 4.5,
+        "URL": "abc.es",
+        "Resolver Status": "RESOLVER ERROR",
+        "Resolver IP": "N/A",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "139.45.207.90",
+            "139.45.207.16"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "139.45.207.90",
+        "PING Status": "OK",
+        "PING IP": "139.45.207.90",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Not redirected",
+        "Redirected Location": "N/A",
+        "Redirected Location IPs": "N/A",
+        "HTTP Status": 200,
+        "Content Length": 362836,
+        "Headers": {
+            "Server": "nginx",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Set-Cookie": "ev_sid=662ed4ea067ccf4f0e692eeb; expires=Fri, 28-Apr-2028 22:59:54 GMT; path=/; domain=abc.es; SameSite=None; Secure, ev_did=662ed4ea067ccf4f0e692eea; expires=Fri, 28-Apr-2028 22:59:54 GMT; path=/; domain=abc.es; SameSite=None; Secure",
+            "request-id": "1714345172-0048-f221bec3-bce2-462b-85a5-16d9a4c47e92",
+            "Vary": "User-Agent,Cookie, Accept-Encoding",
+            "Akamai-Request-BC": "[a=139.45.207.12,b=45104566,c=g,n=LV__RIGA,o=9002],[c=c,n=SE_AB_STOCKHOLM,o=20940]",
+            "Alt-Svc": "h3=\":443\"; ma=93600",
+            "Content-Encoding": "gzip",
+            "Expires": "Sun, 28 Apr 2024 22:59:55 GMT",
+            "Cache-Control": "max-age=0, no-cache, no-store",
+            "Pragma": "no-cache",
+            "Date": "Sun, 28 Apr 2024 22:59:55 GMT",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive, Transfer-Encoding"
+        },
+        "HTML Content": "abc.es_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "ES"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "BILBAO"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Vocento SA"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "vocento.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "DigiCert Inc"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "DigiCert TLS RSA SHA256 2020 CA1"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "028B2A28890F88F54A54E813F80D1F8E",
+            "notBefore": "Mar  7 00:00:00 2024 GMT",
+            "notAfter": "Mar  7 23:59:59 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "vocento.com"
+                ],
+                [
+                    "DNS",
+                    "*.abc.es"
+                ],
+                [
+                    "DNS",
+                    "*.burgosconecta.es"
+                ],
+                [
+                    "DNS",
+                    "*.canarias7.es"
+                ],
+                [
+                    "DNS",
+                    "*.diariosur.es"
+                ],
+                [
+                    "DNS",
+                    "*.diariotodoalicante.es"
+                ],
+                [
+                    "DNS",
+                    "*.diariovasco.com"
+                ],
+                [
+                    "DNS",
+                    "*.elcomercio.es"
+                ],
+                [
+                    "DNS",
+                    "*.elcorreo.com"
+                ],
+                [
+                    "DNS",
+                    "*.eldiariomontanes.es"
+                ],
+                [
+                    "DNS",
+                    "*.elnortedecastilla.es"
+                ],
+                [
+                    "DNS",
+                    "*.hoy.es"
+                ],
+                [
+                    "DNS",
+                    "*.huelva24.com"
+                ],
+                [
+                    "DNS",
+                    "*.ideal.es"
+                ],
+                [
+                    "DNS",
+                    "*.lagacetadesalamanca.es"
+                ],
+                [
+                    "DNS",
+                    "*.larioja.com"
+                ],
+                [
+                    "DNS",
+                    "*.lasprovincias.es"
+                ],
+                [
+                    "DNS",
+                    "*.laverdad.es"
+                ],
+                [
+                    "DNS",
+                    "*.lavozdeaviles.es"
+                ],
+                [
+                    "DNS",
+                    "*.lavozdigital.es"
+                ],
+                [
+                    "DNS",
+                    "*.leonoticias.com"
+                ],
+                [
+                    "DNS",
+                    "*.mujerhoy.com"
+                ],
+                [
+                    "DNS",
+                    "*.salamancahoy.es"
+                ],
+                [
+                    "DNS",
+                    "*.sevilla.abc.es"
+                ],
+                [
+                    "DNS",
+                    "*.todoalicante.es"
+                ],
+                [
+                    "DNS",
+                    "*.vocento.com"
+                ],
+                [
+                    "DNS",
+                    "abc.es"
+                ],
+                [
+                    "DNS",
+                    "burgosconecta.es"
+                ],
+                [
+                    "DNS",
+                    "canarias7.es"
+                ],
+                [
+                    "DNS",
+                    "diariosur.es"
+                ],
+                [
+                    "DNS",
+                    "diariotodoalicante.es"
+                ],
+                [
+                    "DNS",
+                    "diariovasco.com"
+                ],
+                [
+                    "DNS",
+                    "elcomercio.es"
+                ],
+                [
+                    "DNS",
+                    "elcorreo.com"
+                ],
+                [
+                    "DNS",
+                    "eldiariomontanes.es"
+                ],
+                [
+                    "DNS",
+                    "elnortedecastilla.es"
+                ],
+                [
+                    "DNS",
+                    "hoy.es"
+                ],
+                [
+                    "DNS",
+                    "huelva24.com"
+                ],
+                [
+                    "DNS",
+                    "ideal.es"
+                ],
+                [
+                    "DNS",
+                    "lagacetadesalamanca.es"
+                ],
+                [
+                    "DNS",
+                    "larioja.com"
+                ],
+                [
+                    "DNS",
+                    "lasprovincias.es"
+                ],
+                [
+                    "DNS",
+                    "laverdad.es"
+                ],
+                [
+                    "DNS",
+                    "lavozdeaviles.es"
+                ],
+                [
+                    "DNS",
+                    "lavozdigital.es"
+                ],
+                [
+                    "DNS",
+                    "leonoticias.com"
+                ],
+                [
+                    "DNS",
+                    "mujerhoy.com"
+                ],
+                [
+                    "DNS",
+                    "salamancahoy.es"
+                ],
+                [
+                    "DNS",
+                    "todoalicante.es"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.digicert.com"
+            ],
+            "caIssuers": [
+                "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl",
+                "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "No match",
+        "Timestamp": "2024-04-28 18:59:58"
+    },
+    "walmart.com": {
+        "Time": 3.99,
+        "URL": "walmart.com",
+        "Resolver Status": "OK",
+        "Resolver IP": "31.130.200.2",
+        "DNS Status": "OK",
+        "DNS IPs": [
+            "92.122.108.111"
+        ],
+        "TCP Status": "Established",
+        "TCP Remote IP": "92.122.108.111",
+        "PING Status": "OK",
+        "PING IP": "92.122.108.111",
+        "Trace hop IP": "N/A",
+        "Redirected Status": "Redirected",
+        "Redirected Location": "https://www.walmart.com/",
+        "Redirected Location IPs": [
+            "OK",
+            [
+                "92.122.108.111"
+            ]
+        ],
+        "HTTP Status": 200,
+        "Content Length": 197528,
+        "Headers": {
+            "Accept-CH": "Downlink, DPR",
+            "Accept-Ranges": "bytes",
+            "Content-Encoding": "gzip",
+            "Content-Length": "48641",
+            "Content-Security-Policy": "child-src 'self' blob:; connect-src 'self' *.1worldsync.com *.accenture.com *.akamaihd.net *.babylist.com *.buywith.com *.cloudinary.com *.cnetcontent.com *.digital-cloud.medallia.com *.doubleclick.net *.flix360.com *.flix360.io *.kampyle.co *.kampyle.com *.ksckreate.net *.perimeterx.net *.purpleportal.net *.px-cdn.net *.px-cloud.net *.pxchk.net *.quantummetric.com *.richcontext.com *.salsify.com *.stylitics.com *.syndigo.cloud *.syndigo.com *.talkshop.live *.thestable.com *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com *.zeekit.walmart.com a02f69a90dstg.blob.core.windows.net ads01.groovinads.com api.bazaarvoice.com aroptical-scan.wal-mart.com assets-jpcust.jwpsrv.com assets.optiwise.ai azmatch.adsrvr.org beacon.walmart.com blob: c.bing.com c.sspinc.io c0b535ed7astg.blob.core.windows.net cdn-assets.affirm.com cdn.jwplayer.com cdn.quantummetric.com content.etilize.com content.jwplatform.com directline.botframework.com dw.wmt.co fitpredictor-api.sspinc.io gum.criteo.com https://www-qa.walmart.com.mx i.liadm.com i6.liadm.com ib.adnxs.com idsync.rlcdn.com ingest.quantummetric.com ls.chatid.com maps.googleapis.com maps.gstatic.com media.flixcar.com media.flixfacts.com media.sku.ninja mmwm-scan-dev.centralus.cloudapp.azure.com mmwm-scan-prod.centralus.cloudapp.azure.com photorankstatics-a.akamaihd.net rackcdn.com rl.quantummetric.com secure.adnxs.com sizeguide-api.sspinc.io ssl.p.jwpcdn.com stats.g.doubleclick.net sync.mathtag.com t.myvisualiq.net tap.walmart.com tps.doubleverify.com us.creativecdn.com videos-cloudfront.jwpsrv.com walmart-app.quantummetric.com walmart-sync.quantummetric.com walmart.sspinc.io wss://api.talkshop.live wss://directline.botframework.com wss://us.server.buywith.com wss://wm-converse-wss.dev.walmart.com wss://www-perf.walmart.com wss://www-stage.walmart.com wss://www-teflon.walmart.com wss://www.walmart.com www.facebook.com www.google.com www.gstatic.com zeekit.walmart.com; default-src 'self' 'unsafe-eval' 'unsafe-inline' *.quantummetric.com *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com https://www-qa.walmart.com.mx; font-src 'self' *.1worldsync.com *.accenture.com *.buywith.com *.cloudinary.com *.cnetcontent.com *.flix360.com *.flix360.io *.ksckreate.net *.richcontext.com *.salsify.com *.syndigo.cloud *.syndigo.com *.thestable.com *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com assets-jpcust.jwpsrv.com assets.optiwise.ai cc.cs.1worldsync.com ccsprodus1.blob.core.windows.net cdn.cs.1worldsync.com cdn.jwplayer.com content.etilize.com content.jwplatform.com d3nkfb7815bs43.cloudfront.net d3np41mctoibfu.cloudfront.net fonts.googleapis.com fonts.gstatic.com https://www-qa.walmart.com.mx ls.chatid.com media.flixcar.com media.flixfacts.com media.sku.ninja photorankstatics-a.akamaihd.net rackcdn.com salsify-ecdn.com ssl.p.jwpcdn.com videos-cloudfront.jwpsrv.com ws.cnetcontent.com www.ezdia.com; frame-ancestors 'self' *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com https://www-qa.walmart.com.mx; frame-src 'self' *.1worldsync.com *.accenture.com *.affirm.com *.alldata.cashedge.com *.babylist.com *.buywith.com *.cloudinary.com *.cnetcontent.com *.countr.one *.digital-cloud.medallia.com *.eko.com *.fiservapps.com *.flix360.com *.flix360.io *.kampyle.co *.kampyle.com *.ksckreate.net *.one.app *.onefinance.com *.online-metrix.net *.quantummetric.com *.richcontext.com *.salsify.com *.shopstylecollective.com *.syndigo.cloud *.syndigo.com *.talkshop.live *.thestable.com *.vantivcnp.com *.vimeo.com *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com adclick.g.doubleclick.net app.collectivevoice.com app.collectivevoiceqa.com assets-jpcust.jwpsrv.com assets.optiwise.ai ccsprodus1.blob.core.windows.net cdn.jwplayer.com content.etilize.com content.jwplatform.com https://www-qa.walmart.com.mx ln-rules.rewardstyle.com ls.chatid.com media.flixcar.com media.flixfacts.com media.sku.ninja mmwmpdscanoprod.z19.web.core.windows.net one.app.link photorankstatics-a.akamaihd.net pinpad.paysecure.acculynk.net rackcdn.com salsify-ecdn.com ssl.p.jwpcdn.com tpc.googlesyndication.com videos-cloudfront.jwpsrv.com ws.cnetcontent.com wss://api.talkshop.live www.ezdia.com www.facebook.com www.google.com www.recaptcha.net; img-src 'self' *.1worldsync.com *.accenture.com *.akamaihd.net *.buywith.com *.cloudinary.com *.cnetcontent.com *.digital-cloud.medallia.com *.doubleclick.net *.doubleverify.com *.flix360.com *.flix360.io *.geekseller.com *.imrworldwide.com *.kampyle.co *.kampyle.com *.ksckreate.net *.online-metrix.net *.paypal.com *.px-cdn.net *.px-cloud.net *.richcontext.com *.salsify.com *.stylitics.com *.syndigo.cloud *.syndigo.com *.talkshop.live *.thestable.com *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com *.zeekit.walmart.com 1d81e75c4337a6e2e3c2-4a69748413de5fcbd7a7a944817c2356.ssl.cf1.rackcdn.com 3d-qc.walmartimages.com 3d.walmartimages.com a.sellpoint.net a02f69a90dstg.blob.core.windows.net ad.doubleclick.net ads01.groovinads.com akamai.ksckreate.net aroptical-scan.wal-mart.com assets-jpcust.jwpsrv.com assets.optiwise.ai azmatch.adsrvr.org beacon.walmart.com blob: c.bing.com c0b535ed7astg.blob.core.windows.net ccsprodus1.blob.core.windows.net cdn-assets.affirm.com cdn.jwplayer.com content.etilize.com content.jwplatform.com content.syndigo.com crtormassetmguseprod.blob.core.windows.net cyborg-wm-auth-service-v2.jet.com d3nkfb7815bs43.cloudfront.net d3np41mctoibfu.cloudfront.net data: dw.wmt.co gum.criteo.com https://www-qa.walmart.com.mx i.liadm.com i6.liadm.com ib.adnxs.com idsync.rlcdn.com ir.surveywall-api.survata.com ls.chatid.com maps.googleapis.com maps.gstatic.com media.flixcar.com media.flixfacts.com media.sku.ninja mmwm-scan-dev.centralus.cloudapp.azure.com mmwm-scan-prod.centralus.cloudapp.azure.com photorankstatics-a.akamaihd.net pixel.adsafeprotected.com player.cloudinary.com rackcdn.com res.cloudinary.com s0.2mdn.net salsify-ecdn.com secure.adnxs.com securepubads.g.doubleclick.net smedia.webcollage.net ssl.p.jwpcdn.com static.adsafeprotected.com stats.g.doubleclick.net sync.mathtag.com t.myvisualiq.net tap.walmart.com tpc.googlesyndication.com us.creativecdn.com videos-cloudfront.jwpsrv.com walmart.ugc.bazaarvoice.com wss://api.talkshop.live www.ezdia.com www.facebook.com www.gstatic.com; media-src *.1worldsync.com *.accenture.com *.akamaized.net *.buywith.com *.cloudinary.com *.cnetcontent.com *.flix360.com *.flix360.io *.ksckreate.net *.richcontext.com *.salsify.com *.syndigo.cloud *.syndigo.com *.thestable.com *.vimeo.com *.vimeocdn.com *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com 1d81e75c4337a6e2e3c2-4a69748413de5fcbd7a7a944817c2356.ssl.cf1.rackcdn.com a.sellpoint.net advertising.staging.walmart.com akamai.ksckreate.net assets-jpcust.jwpsrv.com assets.optiwise.ai blob: ca-media.contentanalyticsinc.com cc.cnetcontent.com cc.cs.1worldsync.com ccsprodus1.blob.core.windows.net cdn-azure.kwikee.com cdn.cnetcontent.com cdn.cs.1worldsync.com cdn.jwplayer.com content.etilize.com content.jwplatform.com content.syndigo.com cyborg-wm-auth-service-v2.jet.com d3nkfb7815bs43.cloudfront.net d3np41mctoibfu.cloudfront.net https://www-qa.walmart.com.mx images.salsify.com ls.chatid.com media.flixcar.com media.flixfacts.com media.sku.ninja photorankstatics-a.akamaihd.net rackcdn.com salsify-ecdn.com ssl.p.jwpcdn.com videos-cloudfront.jwpsrv.com vimeo.com ws.cnetcontent.com www.ezdia.com; object-src *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com https://www-qa.walmart.com.mx; script-src 'self' 'strict-dynamic' 'wasm-unsafe-eval' *.1worldsync.com *.accenture.com *.babylist.com *.buywith.com *.cloudinary.com *.cnetcontent.com *.digital-cloud.medallia.com *.flix360.com *.flix360.io *.kampyle.co *.kampyle.com *.ksckreate.net *.px-cloud.net *.richcontext.com *.salsify.com *.syndigo.cloud *.syndigo.com *.talkshop.live *.thestable.com *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com *.zeekit.walmart.com aroptical-scan.wal-mart.com assets-jpcust.jwpsrv.com assets.optiwise.ai ccsprodus1.blob.core.windows.net cdn.jwplayer.com cdn.quantummetric.com connect.facebook.net content.etilize.com content.jwplatform.com d3nkfb7815bs43.cloudfront.net d3np41mctoibfu.cloudfront.net https://www-qa.walmart.com.mx ls.chatid.com maps.googleapis.com media.flixcar.com media.flixfacts.com media.sku.ninja mmwm-scan-dev.centralus.cloudapp.azure.com mmwm-scan-prod.centralus.cloudapp.azure.com photorankstatics-a.akamaihd.net rackcdn.com salsify-ecdn.com ssl.p.jwpcdn.com videos-cloudfront.jwpsrv.com ws.cnetcontent.com wss://api.talkshop.live www.ezdia.com www.recaptcha.net 'nonce-L0Ujn-harNK4tjI1'; style-src 'self' 'unsafe-inline' *.1worldsync.com *.accenture.com *.buywith.com *.cloudinary.com *.cnetcontent.com *.flix360.com *.flix360.io *.kampyle.com *.ksckreate.net *.richcontext.com *.salsify.com *.stylitics.com *.syndigo.cloud *.syndigo.com *.thestable.com *.wal.co *.walmart.com:* *.walmart.net *.walmartimages.com *.walmartlabs.com assets-jpcust.jwpsrv.com assets.optiwise.ai cc.cs.1worldsync.com ccsprodus1.blob.core.windows.net cdn.cs.1worldsync.com cdn.jwplayer.com content.etilize.com content.jwplatform.com d3nkfb7815bs43.cloudfront.net d3np41mctoibfu.cloudfront.net fonts.googleapis.com https://www-qa.walmart.com.mx ls.chatid.com media.flixcar.com media.flixfacts.com media.sku.ninja photorankstatics-a.akamaihd.net rackcdn.com rl.quantummetric.com salsify-ecdn.com sizeguide-api.sspinc.io ssl.p.jwpcdn.com videos-cloudfront.jwpsrv.com walmart.sspinc.io ws.cnetcontent.com www.ezdia.com; worker-src 'self' blob:; report-uri https://csp.walmart.com/c/r/gl",
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Sun, 28 Apr 2024 22:59:56 GMT",
+            "X-Envoy-Upstream-Service-Time": "328",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Tb": "1",
+            "X-Tb-Optimization-Total-Bytes-Saved": "0",
+            "Expires": "Sun, 28 Apr 2024 23:00:33 GMT",
+            "Cache-Control": "max-age=0, no-cache, no-store",
+            "Pragma": "no-cache",
+            "Date": "Sun, 28 Apr 2024 23:00:33 GMT",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Cache-Status": "Miss",
+            "Server-Timing": "cdn-cache; desc=HIT, edge; dur=45, origin; dur=0, product;desc=\"edge\",host;desc=\"86ef565013fd\",dc;desc=\"a652627\",fetch-ms;dur=329,req-proc-ms;dur=62,resp-proc-ms;dur=12, ak_p; desc=\"1714345233035_2335035182_311164506_4499_11220_29_23_-\";dur=1",
+            "Origin-EX": "",
+            "Origin-CC": "max-age=30, public",
+            "Set-Cookie": "akavpau_p2=1714345833~id=632657318b6ad24e7a59c1d582067cae; Path=/; HttpOnly; Secure; SameSite=None",
+            "Strict-Transport-Security": "max-age=31536000"
+        },
+        "HTML Content": "walmart.com_content.html",
+        "Cert Status": "OK",
+        "Cert Content": {
+            "subject": [
+                [
+                    [
+                        "countryName",
+                        "US"
+                    ]
+                ],
+                [
+                    [
+                        "stateOrProvinceName",
+                        "Arkansas"
+                    ]
+                ],
+                [
+                    [
+                        "localityName",
+                        "Bentonville"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "Walmart Inc."
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "www.walmart.com"
+                    ]
+                ]
+            ],
+            "issuer": [
+                [
+                    [
+                        "countryName",
+                        "BE"
+                    ]
+                ],
+                [
+                    [
+                        "organizationName",
+                        "GlobalSign nv-sa"
+                    ]
+                ],
+                [
+                    [
+                        "commonName",
+                        "GlobalSign ECC OV SSL CA 2018"
+                    ]
+                ]
+            ],
+            "version": 3,
+            "serialNumber": "6BFF0C0FBB628BB1739FD91E",
+            "notBefore": "Feb 26 21:01:33 2024 GMT",
+            "notAfter": "Mar 29 21:01:32 2025 GMT",
+            "subjectAltName": [
+                [
+                    "DNS",
+                    "www.walmart.com"
+                ],
+                [
+                    "DNS",
+                    "beta.walmart.com"
+                ],
+                [
+                    "DNS",
+                    "grocery.walmart.com"
+                ],
+                [
+                    "DNS",
+                    "walmart.pharmacy"
+                ],
+                [
+                    "DNS",
+                    "walmartspecialty.pharmacy"
+                ],
+                [
+                    "DNS",
+                    "www.wal-mart.com"
+                ],
+                [
+                    "DNS",
+                    "walmart.com"
+                ]
+            ],
+            "OCSP": [
+                "http://ocsp.globalsign.com/gseccovsslca2018"
+            ],
+            "caIssuers": [
+                "http://secure.globalsign.com/cacert/gseccovsslca2018.crt"
+            ],
+            "crlDistributionPoints": [
+                "http://crl.globalsign.com/gseccovsslca2018.crl"
+            ]
+        },
+        "Middle box - header manipulation test": "No manipulation",
+        "Middle box - invalid request line": 1.0,
+        "DNS manipulation - repeated query": "No manipulation",
+        "DNS manipulation - hijacking detect": "No manipulation",
+        "Is domain in G search": "Match",
+        "Timestamp": "2024-04-28 19:00:36"
+    }
+}
